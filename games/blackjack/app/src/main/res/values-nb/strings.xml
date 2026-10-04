@@ -48,4 +48,5 @@
     <string name="help_decisions">Trekk tar ett kort; Stå beholder hånden din. Doble, på de to første kortene, dobler innsatsen og tar nøyaktig ett kort til. Splitt, på to kort med samme verdi, lager to hender, opptil fire til sammen. Splittede ess får ett kort hver. Når dealeren viser et ess, kan du ta forsikring for halve innsatsen: den betaler 2 til 1 hvis dealeren har blackjack. Hver runde deles ut fra en nystokket kortstokk, og det finnes ingen angre.</string>
     <string name="help_chips_title">Sjetonger</string>
     <string name="help_chips">Du starter med 1 000 sjetonger. Sjetonger er bare for spilling og kan ikke kjøpes eller veksles inn. Innsatser går i trinn på 10, fra 10 til 500. Går du tom for sjetonger, kan du nullstille til 1 000, og statistikken din beholdes.</string>
+    <string name="hint_basic_strategy">Grunnstrategi: %1$s</string>
 </resources>

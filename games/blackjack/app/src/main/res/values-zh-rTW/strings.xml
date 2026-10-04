@@ -48,4 +48,5 @@
     <string name="help_decisions">要牌是再拿一張牌；停牌是保留目前手牌。加倍只能在頭兩張牌時使用，下注加倍並且只再拿一張牌。分牌用於點數相同的兩張牌，分成兩手，最多共四手；分開的 A 各只拿一張牌。莊家亮出 A 時，你可以用一半賭注買保險：若莊家有黑傑克，按 2 比 1 賠付。每局都從重新洗好的牌中發牌，且無法復原。</string>
     <string name="help_chips_title">籌碼</string>
     <string name="help_chips">你從 1,000 籌碼開始。籌碼僅供遊戲，不能購買或兌現。下注以 10 為單位，從 10 到 500。如果籌碼用完，可以重設為 1,000，統計資料會保留。</string>
+    <string name="hint_basic_strategy">基本策略：%1$s</string>
 </resources>

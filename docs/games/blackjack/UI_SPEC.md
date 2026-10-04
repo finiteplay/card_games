@@ -15,14 +15,13 @@ true of it:
 | State | Table | Action bar |
 |---|---|---|
 | **Idle** — before the first Deal, or after Reset | Empty felt; the bet stepper | Settings, Bet −, Bet +, Deal |
-| **Insurance** | Four cards dealt, hole face down | Settings, Insure, Decline |
-| **Playing** | The hands; the active hand marked | Settings, then each of Hit, Stand, Double, Split that is legal |
+| **Insurance** | Four cards dealt, hole face down | Settings, Insure, Decline, Hint |
+| **Playing** | The hands; the active hand marked | Settings, then each of Hit, Stand, Double, Split that is legal, then Hint |
 | **Settled** | Every card turned over; each hand's result; the round's net | Settings, Bet −, Bet +, Next round (or Reset) |
 | **Loading** | A progress indicator; nothing touchable | none |
 
-The Hint action (`DESIGN.md` "Hint") arrives with `EXECUTION_PLAN.md` B6 and is not in the first
-release's bar; every number below holds with it added, since the widest phase is six buttons with it
-and five without.
+The Hint action (`DESIGN.md` "Hint") is the last button of the bar whenever a decision is on offer,
+including insurance; the widest phase is therefore six buttons.
 
 Back closes an open panel or dialog first. With none open it leaves the app, and a round in progress
 is already saved, so leaving costs nothing and restores exactly (`DESIGN.md` "Persistence").
@@ -72,12 +71,11 @@ shown rather than shown disabled (`RULES.md` "Legal Actions"), so the bar's cont
 |---|---|---|
 | Idle | Settings · Bet − · Bet + · Deal | 4 |
 | Insurance | Settings · Insure · Decline | 3 |
-| Playing, widest | Settings · Hit · Stand · Double · Split | 5 |
+| Playing, widest | Settings · Hit · Stand · Double · Split · Hint | 6 |
 | Settled | Settings · Bet − · Bet + · Next round, or Settings · Reset | 4 / 2 |
 
-**The widest phase fits.** Five equal buttons at 320 dp are 64 dp each before the bar's padding —
-over the platform's 48 dp minimum (`docs/PLATFORM.md` "Accessibility"), and the same width Klondike's
-five-action bar gives its buttons. With Hint (B6) it is six at 53 dp, still over 48. Labels are one
+**The widest phase fits.** Six equal buttons at 320 dp are 53 dp each before the bar's padding —
+over the platform's 48 dp minimum (`docs/PLATFORM.md` "Accessibility"). Labels are one
 word where a word exists (`Hit`, `Stand`, `Double`, `Split`, `Insure`, `Decline`) and wrap inside
 their two reserved lines where a translation needs it, so a long one never widens its own button.
 
@@ -112,6 +110,13 @@ minimum card width and the exposed face-up band the platform requires of every g
   does not overlap, carries the information.
 - Text scales with the system font size; card faces scale with the card (`docs/PLATFORM.md`
   "Accessibility").
+
+## Hint Presentation
+
+A notice above the action bar names the table's answer as the action's own button is labelled —
+*Basic strategy: Stand* — and stays until the round changes or Hint is pressed again. Nothing is
+highlighted and nothing is counted: there is no hints statistic, since the hint proves nothing
+(`DESIGN.md` "Hint").
 
 ## Settlement Presentation
 
@@ -155,9 +160,11 @@ and what happens when they run out.
 
 ## Settings
 
-Skip animations, handedness, sound, theme, language — in the same groups and with the same shared
-rows as the other games — and the version label last. No automatic-moves setting
-(`DESIGN.md` "What Blackjack is not"), and no rest reminder in the first release (`TODO.md`).
+Skip animations, handedness, sound, theme, language, and the rest reminder with its running total in
+a Breaks group — the same groups and shared rows as the other games — and the version label last. No
+automatic-moves setting (`DESIGN.md` "What Blackjack is not"). The reminder's dialogs are the shared
+ones; accepting a break blocks the board but touches no round, since a round is saved before every
+card is shown and nothing about it is timed.
 
 ## Motion
 

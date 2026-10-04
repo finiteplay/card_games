@@ -48,4 +48,5 @@
     <string name="help_decisions">Vuci uzima kartu; Stani zadržava vašu ruku. Udvostruči, na prve dvije karte, udvostručuje ulog i uzima točno jednu kartu. Podijeli, na dvije karte iste vrijednosti, stvara dvije ruke, ukupno do četiri. Podijeljeni asovi dobivaju po jednu kartu. Kad djelitelj pokaže asa, možete uzeti osiguranje za pola uloga: isplaćuje 2 prema 1 ako djelitelj ima blackjack. Svaka se runda dijeli iz novog miješanja i nema poništavanja.</string>
     <string name="help_chips_title">Žetoni</string>
     <string name="help_chips">Počinjete s 1.000 žetona. Žetoni služe samo za igru i ne mogu se kupiti ni unovčiti. Ulozi idu u koracima od 10, od 10 do 500. Ako vam ponestane žetona, možete resetirati na 1.000, a statistika se zadržava.</string>
+    <string name="hint_basic_strategy">Osnovna strategija: %1$s</string>
 </resources>

@@ -48,4 +48,5 @@
     <string name="help_decisions">Ota kortti ottaa kortin; Jää pitää kätesi. Tuplaus kahdella ensimmäisellä kortilla kaksinkertaistaa panoksen ja antaa tasan yhden kortin. Jakaminen kahdella samanarvoisella kortilla tekee kaksi kättä, enintään neljä yhteensä. Jaetut ässät saavat yhden kortin kukin. Kun jakajalla on ässä näkyvissä, voit ottaa vakuutuksen puolesta panoksesta: se maksaa 2 vastaan 1, jos jakajalla on blackjack. Jokainen kierros jaetaan uudesta sekoituksesta, eikä kumoamista ole.</string>
     <string name="help_chips_title">Pelimerkit</string>
     <string name="help_chips">Aloitat 1 000 pelimerkillä. Pelimerkit ovat vain pelaamista varten, eikä niitä voi ostaa tai lunastaa. Panokset nousevat 10:n askelin, 10:stä 500:aan. Jos pelimerkit loppuvat, voit nollata ne 1 000:een, ja tilastosi säilyvät.</string>
+    <string name="hint_basic_strategy">Perusstrategia: %1$s</string>
 </resources>

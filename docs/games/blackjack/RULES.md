@@ -37,7 +37,10 @@ regenerates its table.
   Ten do not split — into two hands, each staked at the original bet. Resplitting is allowed up to
   three splits, four hands in all.
 - A pair of Aces splits once only. Each Ace receives exactly one card and that hand is complete: it
-  cannot be hit, doubled, or resplit, and an Ace with a ten-value card is 21, not blackjack.
+  cannot be hit, doubled, or resplit, and an Ace with a ten-value card is 21, not blackjack. This is
+  the standard casino rule, and it needs no separate "no resplit Aces" clause: a split hand starts
+  with one card of the pair, so an Ace pair can only ever be the original deal, and a hand that came
+  from splitting Aces is already complete.
 - Double after split is allowed on every split hand except split Aces.
 - No surrender.
 - Insurance is offered when the dealer's up card is an Ace, costs exactly half the original bet,
@@ -158,7 +161,8 @@ Each hand settles on its own stake. Doubling and splitting change the stake, nev
 - If the bankroll is below the table minimum once a round settles, no round can be dealt. The
   player is offered a reset to the starting 1,000 chips in place of New Round — a way out, never a
   dead end. A reset changes the bankroll and sets the selected bet to the table minimum;
-  statistics are kept, and the reset is counted (`DESIGN.md` "Scoring and statistics").
+  statistics are kept, and the reset is counted (`DESIGN.md` "Scoring and statistics"). The bankroll
+  becomes exactly 1,000: whatever few chips were left (0 to 5, never 10 or more) are not kept.
 
 ## Scoring
 

@@ -222,4 +222,13 @@ class RoundFixturesTest {
         assertEquals(session, replayed)
         assertEquals(session.log, decodeLog(encodeLog(session.log)))
     }
+
+    @Test
+    fun `an Ace pair splits once and the Aces never resplit, whatever they draw`() {
+        // A,A split; each Ace draws another Ace. Both hands are a pair again, but complete: no further split.
+        val round = roundFrom("AC", "6D", "AH", "TS", "AS", "AD", "2S", "2H").play(Decision.SPLIT)
+        assertEquals(Phase.SETTLED, round.state.phase)
+        assertEquals(2, round.state.hands.size)
+        assertTrue(round.state.hands.all { it.complete && it.cards.size == 2 })
+    }
 }

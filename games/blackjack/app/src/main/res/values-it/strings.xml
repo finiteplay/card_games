@@ -48,4 +48,5 @@
     <string name="help_decisions">Carta prende una carta; Stai mantiene la tua mano. Raddoppia, sulle prime due carte, raddoppia la puntata e prende esattamente una carta in più. Dividi, su due carte dello stesso valore, crea due mani, fino a quattro in tutto. Gli assi divisi ricevono una carta ciascuno. Quando il banco mostra un asso puoi prendere un\'assicurazione pari a metà puntata: paga 2 a 1 se il banco ha blackjack. Ogni mano è distribuita da un mazzo appena mescolato e non c\'è annulla.</string>
     <string name="help_chips_title">Fiches</string>
     <string name="help_chips">Inizi con 1.000 fiches. Le fiches servono solo per giocare e non si possono comprare né incassare. Le puntate salgono a passi di 10, da 10 a 500. Se finisci le fiches puoi reimpostare a 1.000 e le tue statistiche vengono mantenute.</string>
+    <string name="hint_basic_strategy">Strategia di base: %1$s</string>
 </resources>

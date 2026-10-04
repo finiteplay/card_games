@@ -116,7 +116,7 @@ timer (`RULES.md` "Round Lifecycle"). The bankroll itself is the running score: 
 the chip delta of the last settlement highlighted.
 
 Statistics track hands played, won, lost, and pushed (each split hand counts as a hand), player
-blackjacks, the bankroll's current value, its high-water mark, lifetime net chips, and resets, kept
+blackjacks (a player blackjack is also a won hand, and is counted in both), the bankroll's current value, its high-water mark, lifetime net chips, and resets, kept
 as one pool with no difficulty axis to split by — the same "one pool" shape
 `docs/games/freecell/DESIGN.md` "Scoring and statistics" chose for FreeCell. A bankroll reset
 leaves them all in place.
@@ -124,8 +124,8 @@ leaves them all in place.
 - **Lifetime net chips** is the sum of every settled round's chip delta, insurance included. It may
   be negative, and it is the only figure that still shows what was won or lost once the bankroll has
   been reset. It is kept as its own running sum rather than derived from the bankroll and the reset
-  count, because a reset tops up from whatever was left — anything from 0 to 5 chips — so the chips a
-  reset adds are not a fixed amount.
+  count, because a reset sets the bankroll to 1,000 from whatever was left — anything from 0 to 5
+  chips, which are not kept — so the chips a reset adds are not a fixed amount.
 - **Resets** counts bankroll resets (`RULES.md` "Round Lifecycle"). A reset changes neither lifetime
   net chips nor the high-water mark.
 

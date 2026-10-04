@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.map
 import org.finiteplay.core.storage.SYSTEM_LANGUAGE
 import org.finiteplay.core.storage.preferencesDataStoreAt
 import org.finiteplay.core.ui.layout.Handedness
+import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.ui.theme.ThemeMode
 import java.io.File
 
@@ -25,6 +26,7 @@ data class BlackjackSettings(
     val soundEnabled: Boolean,
     val languageTag: String,
     val themeMode: ThemeMode,
+    val restReminderInterval: RestReminderInterval,
 ) {
     companion object {
         val DEFAULT = BlackjackSettings(
@@ -33,6 +35,7 @@ data class BlackjackSettings(
             soundEnabled = false,
             languageTag = SYSTEM_LANGUAGE,
             themeMode = ThemeMode.SYSTEM,
+            restReminderInterval = RestReminderInterval.DEFAULT,
         )
     }
 }
@@ -53,6 +56,9 @@ class BlackjackSettingsStore(
             languageTag = prefs[LANGUAGE_TAG] ?: BlackjackSettings.DEFAULT.languageTag,
             themeMode = prefs[THEME_MODE]?.let { stored -> ThemeMode.entries.find { it.name == stored } }
                 ?: BlackjackSettings.DEFAULT.themeMode,
+            restReminderInterval = prefs[REST_REMINDER_INTERVAL]?.let { stored ->
+                RestReminderInterval.entries.find { it.name == stored }
+            } ?: BlackjackSettings.DEFAULT.restReminderInterval,
         )
     }
 
@@ -63,6 +69,7 @@ class BlackjackSettingsStore(
     suspend fun setSoundEnabled(value: Boolean) = edit { it[SOUND_ENABLED] = value }
     suspend fun setLanguageTag(value: String) = edit { it[LANGUAGE_TAG] = value }
     suspend fun setThemeMode(value: ThemeMode) = edit { it[THEME_MODE] = value.name }
+    suspend fun setRestReminderInterval(value: RestReminderInterval) = edit { it[REST_REMINDER_INTERVAL] = value.name }
 
     private suspend fun edit(block: (MutablePreferences) -> Unit) {
         dataStore.edit(block)
@@ -77,5 +84,6 @@ class BlackjackSettingsStore(
         val SOUND_ENABLED = booleanPreferencesKey("sound_enabled")
         val LANGUAGE_TAG = stringPreferencesKey("language_tag")
         val THEME_MODE = stringPreferencesKey("theme_mode")
+        val REST_REMINDER_INTERVAL = stringPreferencesKey("rest_reminder_interval")
     }
 }

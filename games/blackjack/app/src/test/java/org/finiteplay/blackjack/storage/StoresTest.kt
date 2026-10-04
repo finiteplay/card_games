@@ -96,6 +96,7 @@ class StoresTest {
             setSoundEnabled(true)
             setThemeMode(ThemeMode.entries.last())
             setLanguageTag("de")
+            setRestReminderInterval(org.finiteplay.core.ui.layout.RestReminderInterval.THIRTY)
         }
         val reopened = BlackjackSettingsStore(dir, FakeDataStores::create).current()
         assertEquals(false, reopened.animationsEnabled)
@@ -103,5 +104,6 @@ class StoresTest {
         assertEquals(true, reopened.soundEnabled)
         assertEquals(ThemeMode.entries.last(), reopened.themeMode)
         assertEquals("de", reopened.languageTag)
+        assertEquals(org.finiteplay.core.ui.layout.RestReminderInterval.THIRTY, reopened.restReminderInterval)
     }
 }

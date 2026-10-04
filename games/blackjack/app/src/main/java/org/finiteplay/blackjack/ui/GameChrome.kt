@@ -14,6 +14,7 @@ import androidx.compose.material.icons.filled.BarChart
 import androidx.compose.material.icons.filled.Block
 import androidx.compose.material.icons.filled.CallSplit
 import androidx.compose.material.icons.filled.Layers
+import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.PanTool
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Refresh
@@ -138,6 +139,7 @@ data class BarState(
     val canStepBetDown: Boolean,
     val canStepBetUp: Boolean,
     val busy: Boolean,
+    val canHint: Boolean = false,
 )
 
 /**
@@ -156,6 +158,7 @@ internal fun ActionBar(
     onBet: (Int) -> Unit,
     onDeal: () -> Unit,
     onReset: () -> Unit,
+    onHint: () -> Unit,
     onSettings: () -> Unit,
 ) {
     val accents = LocalAppColors.current.action
@@ -169,7 +172,7 @@ internal fun ActionBar(
             }
             TableState.PLAYING -> {
                 if (Decision.HIT in bar.legal) add(action(R.string.action_hit, Icons.Filled.TouchApp, accents.new, !bar.busy, "action_hit") { onDecision(Decision.HIT) })
-                if (Decision.STAND in bar.legal) add(action(R.string.action_stand, Icons.Filled.PanTool, accents.hint, !bar.busy, "action_stand") { onDecision(Decision.STAND) })
+                if (Decision.STAND in bar.legal) add(action(R.string.action_stand, Icons.Filled.PanTool, accents.settings, !bar.busy, "action_stand") { onDecision(Decision.STAND) })
                 if (Decision.DOUBLE in bar.legal) add(action(R.string.action_double, Icons.Filled.Layers, accents.statistics, !bar.busy, "action_double") { onDecision(Decision.DOUBLE) })
                 if (Decision.SPLIT in bar.legal) add(action(R.string.action_split, Icons.Filled.CallSplit, accents.replay, !bar.busy, "action_split") { onDecision(Decision.SPLIT) })
             }
@@ -185,7 +188,38 @@ internal fun ActionBar(
             }
         }
     }
-    BoardActionBar(orientation = orientation, mirrored = mirrored, actions = actions)
+    val withHint = if (bar.canHint) {
+        actions + action(CoreR.string.action_hint, Icons.Filled.Lightbulb, accents.hint, true, "action_hint", onHint)
+    } else {
+        actions
+    }
+    BoardActionBar(orientation = orientation, mirrored = mirrored, actions = withHint)
+}
+
+/** The Hint's answer, named as the action's own button is, above the action bar. */
+@Composable
+internal fun HintNotice(decision: Decision) {
+    val label = when (decision) {
+        Decision.HIT -> R.string.action_hit
+        Decision.STAND -> R.string.action_stand
+        Decision.DOUBLE -> R.string.action_double
+        Decision.SPLIT -> R.string.action_split
+        Decision.TAKE_INSURANCE -> R.string.action_insure
+        Decision.DECLINE_INSURANCE -> R.string.action_decline
+    }
+    Surface(
+        color = MaterialTheme.colorScheme.secondaryContainer,
+        shape = MaterialTheme.shapes.medium,
+        modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp).testTag("hint_notice"),
+    ) {
+        Text(
+            text = stringResource(R.string.hint_basic_strategy, stringResource(label)),
+            style = MaterialTheme.typography.titleSmall,
+            color = MaterialTheme.colorScheme.onSecondaryContainer,
+            textAlign = TextAlign.Center,
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp),
+        )
+    }
 }
 
 @Composable

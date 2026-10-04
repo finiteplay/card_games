@@ -48,4 +48,5 @@
     <string name="help_decisions">Dobierz bierze kartę; Pas zostawia twoją rękę. Podwój, na pierwszych dwóch kartach, podwaja stawkę i daje dokładnie jedną kartę. Rozdziel, na dwóch kartach tej samej wartości, tworzy dwie ręce, w sumie do czterech. Rozdzielone asy dostają po jednej karcie. Gdy krupier pokazuje asa, możesz wykupić ubezpieczenie na połowę stawki: wypłaca 2 do 1, jeśli krupier ma blackjacka. Każda runda jest rozdawana z nowo potasowanej talii i nie ma cofania.</string>
     <string name="help_chips_title">Żetony</string>
     <string name="help_chips">Zaczynasz z 1000 żetonów. Żetony służą tylko do gry i nie można ich kupić ani wymienić. Stawki rosną co 10, od 10 do 500. Gdy skończą ci się żetony, możesz zresetować je do 1000, a statystyki zostaną zachowane.</string>
+    <string name="hint_basic_strategy">Strategia podstawowa: %1$s</string>
 </resources>

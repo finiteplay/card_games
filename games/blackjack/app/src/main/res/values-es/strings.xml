@@ -48,4 +48,5 @@
     <string name="help_decisions">Pedir toma una carta; Plantarse conserva tu mano. Doblar, con tus dos primeras cartas, duplica tu apuesta y toma exactamente una carta más. Dividir, con dos cartas del mismo valor, forma dos manos, hasta cuatro en total. Los ases divididos reciben una carta cada uno. Cuando el crupier muestra un as, puedes tomar un seguro por la mitad de tu apuesta: paga 2 a 1 si el crupier tiene blackjack. Cada ronda se reparte con una mezcla nueva y no hay deshacer.</string>
     <string name="help_chips_title">Fichas</string>
     <string name="help_chips">Empiezas con 1.000 fichas. Las fichas son solo para jugar y no se pueden comprar ni canjear. Las apuestas van de 10 en 10, de 10 a 500. Si te quedas sin fichas, puedes reiniciar a 1.000 y tus estadísticas se conservan.</string>
+    <string name="hint_basic_strategy">Estrategia básica: %1$s</string>
 </resources>

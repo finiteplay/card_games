@@ -48,4 +48,5 @@
     <string name="help_decisions">Ambil mengambil satu kartu; Tahan mempertahankan tangan Anda. Gandakan, pada dua kartu pertama, melipatgandakan taruhan dan mengambil tepat satu kartu lagi. Pisah, pada dua kartu bernilai sama, membuat dua tangan, hingga empat sekaligus. As yang dipisah mendapat satu kartu masing-masing. Saat bandar menunjukkan As, Anda bisa mengambil asuransi setengah taruhan: dibayar 2 banding 1 jika bandar punya Blackjack. Setiap ronde dibagikan dari kocokan baru, dan tidak ada batalkan.</string>
     <string name="help_chips_title">Chip</string>
     <string name="help_chips">Anda mulai dengan 1.000 chip. Chip hanya untuk bermain dan tidak bisa dibeli atau ditukar. Taruhan naik per 10, dari 10 sampai 500. Jika chip habis, Anda bisa mengatur ulang ke 1.000, dan statistik Anda tetap tersimpan.</string>
+    <string name="hint_basic_strategy">Strategi dasar: %1$s</string>
 </resources>

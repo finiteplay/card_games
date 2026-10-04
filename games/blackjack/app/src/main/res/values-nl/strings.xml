@@ -48,4 +48,5 @@
     <string name="help_decisions">Kaart pakt een kaart; Blijven houdt je hand. Verdubbelen, op je eerste twee kaarten, verdubbelt je inzet en geeft precies één kaart extra. Splitsen, op twee kaarten van gelijke waarde, maakt twee handen, in totaal maximaal vier. Gesplitste azen krijgen elk één kaart. Als de deler een aas toont, kun je een verzekering nemen voor de helft van je inzet: die betaalt 2 tegen 1 als de deler blackjack heeft. Elke ronde wordt gedeeld uit een vers geschudde stapel en ongedaan maken bestaat niet.</string>
     <string name="help_chips_title">Fiches</string>
     <string name="help_chips">Je begint met 1.000 fiches. Fiches zijn alleen om mee te spelen en kunnen niet worden gekocht of uitbetaald. Inzetten gaan in stappen van 10, van 10 tot 500. Als je fiches op zijn, kun je resetten naar 1.000 en blijven je statistieken bewaard.</string>
+    <string name="hint_basic_strategy">Basisstrategie: %1$s</string>
 </resources>

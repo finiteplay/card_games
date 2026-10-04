@@ -1,12 +1,17 @@
 package org.finiteplay.blackjack.ui
 
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
+import org.finiteplay.blackjack.rules.BasicStrategy
 import org.finiteplay.blackjack.rules.BlackjackSession
 import org.finiteplay.blackjack.rules.Chips
 import org.finiteplay.blackjack.rules.Decision
@@ -23,7 +28,13 @@ import org.finiteplay.blackjack.storage.BlackjackSettings
 import org.finiteplay.blackjack.storage.BlackjackSettingsStore
 import org.finiteplay.blackjack.storage.RoundLoad
 import org.finiteplay.blackjack.storage.SavedRound
+import org.finiteplay.core.session.RestReminderWindow
+import org.finiteplay.core.session.foregroundEntered
+import org.finiteplay.core.session.foregroundExited
+import org.finiteplay.core.session.foregroundMsAsOf
+import org.finiteplay.core.session.isRestReminderDue
 import org.finiteplay.core.ui.layout.Handedness
+import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.ui.theme.ThemeMode
 import java.security.SecureRandom
 import java.util.UUID
@@ -84,6 +95,24 @@ class BlackjackViewModel(
 
     var isForeground = true
         private set
+
+    /**
+     * What basic strategy says to do right now, once the player asks (`DESIGN.md` "Hint"); null
+     * otherwise. Always one of the offered decisions, never a promise: the dealer's hidden cards
+     * decide the round. Cleared by any change to the round.
+     */
+    var hint by mutableStateOf<Decision?>(null)
+        private set
+
+    /** Whether Hint can be asked: a decision is on offer and nothing is mid-save. */
+    val canHint: Boolean get() = !busy && (tableState == TableState.PLAYING || tableState == TableState.INSURANCE)
+
+    /** Shows the recommendation, or hides it if it is already showing. Not counted anywhere: there is no statistic for it. */
+    fun requestHint() {
+        if (!canHint) return
+        val current = session ?: return
+        hint = if (hint != null) null else BasicStrategy.recommend(current.state, ledger.bankroll)
+    }
 
     val bankroll: Int get() = ledger.bankroll
     val selectedBet: Int get() = ledger.selectedBet
@@ -201,6 +230,7 @@ class BlackjackViewModel(
                     roundStore.save(SavedRound(gameId, state.seed, state.bet, next.log))
                 }
                 session = next
+                hint = null
             } catch (e: CancellationException) {
                 throw e
             } catch (e: Exception) {
@@ -224,6 +254,7 @@ class BlackjackViewModel(
                 ledgerStore.save(fresh)
                 ledger = fresh
                 session = null
+                hint = null
                 resetOfferVisible = false
             } catch (e: CancellationException) {
                 throw e
@@ -266,7 +297,112 @@ class BlackjackViewModel(
         viewModelScope.launch { persist(settingsStore) }
     }
 
+    // ---- rest reminder (`docs/PLATFORM.md` "Rest Reminders") ----------------------------------
+
+    private var restReminderWindow: RestReminderWindow? = null
+    private var restReminderTickerJob: Job? = null
+    private var restBreakJob: Job? = null
+
+    /** True while the reminder's offer is showing. */
+    var showRestReminderDialog by mutableStateOf(false)
+        private set
+
+    /** Seconds left in an accepted break, or null when none is running. */
+    var restBreakRemainingSeconds by mutableStateOf<Int?>(null)
+        private set
+
+    /** The current window's running total, for Settings' read-only display. */
+    var restReminderElapsedSeconds by mutableIntStateOf(0)
+        private set
+
+    /** Applies immediately and persists; restarts the window so a new choice takes effect right away. */
+    fun setRestReminderInterval(value: RestReminderInterval) {
+        update({ it.copy(restReminderInterval = value) }) { it.setRestReminderInterval(value) }
+        restReminderWindow = RestReminderWindow.start(System.currentTimeMillis())
+        refreshRestReminderElapsed()
+        syncRestReminderTicker()
+    }
+
     fun setForeground(foreground: Boolean) {
         isForeground = foreground
+        val now = System.currentTimeMillis()
+        restReminderWindow = if (foreground) {
+            (restReminderWindow ?: RestReminderWindow.start(now)).foregroundEntered(now)
+        } else {
+            restReminderWindow?.foregroundExited(now)
+        }
+        refreshRestReminderElapsed()
+        syncRestReminderTicker()
+    }
+
+    /**
+     * Accepts the offer: a countdown for half the configured interval, during which no usage is
+     * tracked. The board is blocked meanwhile, but a round is untouched — it is saved before every
+     * card is shown, and nothing about a round is timed.
+     */
+    fun startRestBreak() {
+        showRestReminderDialog = false
+        val minutes = settings.restReminderInterval.minutes ?: return
+        restBreakRemainingSeconds = (minutes * 60) / 2
+        syncRestReminderTicker()
+        restBreakJob = viewModelScope.launch {
+            while ((restBreakRemainingSeconds ?: 0) > 0) {
+                delay(1_000)
+                restBreakRemainingSeconds = (restBreakRemainingSeconds ?: 1) - 1
+            }
+            endRestBreak()
+        }
+    }
+
+    /** Declines the offer; the next is a full interval away, since the window already rolled over. */
+    fun dismissRestReminder() {
+        showRestReminderDialog = false
+    }
+
+    /** Ends an accepted break early. */
+    fun cancelRestBreak() {
+        restBreakJob?.cancel()
+        endRestBreak()
+    }
+
+    private fun endRestBreak() {
+        restBreakJob = null
+        restBreakRemainingSeconds = null
+        // The break is excluded from usage entirely, so a fresh window starts rather than resuming the old one.
+        restReminderWindow = RestReminderWindow.start(System.currentTimeMillis())
+        refreshRestReminderElapsed()
+        syncRestReminderTicker()
+    }
+
+    private fun syncRestReminderTicker() {
+        val shouldRun = isForeground && restBreakRemainingSeconds == null
+        if (shouldRun) {
+            if (restReminderTickerJob?.isActive == true) return
+            restReminderTickerJob = viewModelScope.launch {
+                while (isActive) {
+                    delay(1_000)
+                    refreshRestReminderElapsed()
+                    checkRestReminder()
+                }
+            }
+        } else {
+            restReminderTickerJob?.cancel()
+            restReminderTickerJob = null
+        }
+    }
+
+    private fun refreshRestReminderElapsed() {
+        val window = restReminderWindow
+        restReminderElapsedSeconds = if (window == null) 0 else (window.foregroundMsAsOf(System.currentTimeMillis()) / 1_000L).toInt()
+    }
+
+    private fun checkRestReminder() {
+        val minutes = settings.restReminderInterval.minutes ?: return
+        val window = restReminderWindow ?: return
+        val now = System.currentTimeMillis()
+        if (!isRestReminderDue(window, now, minutes * 60_000L)) return
+        showRestReminderDialog = true
+        restReminderWindow = RestReminderWindow.start(now)
+        refreshRestReminderElapsed()
     }
 }

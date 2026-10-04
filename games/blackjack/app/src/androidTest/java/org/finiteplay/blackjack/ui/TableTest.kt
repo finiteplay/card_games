@@ -290,4 +290,17 @@ class TableTest {
         assertEquals(1, viewModel.ledger.statistics.handsPlayed)
         assertEquals(1, viewModel.ledger.statistics.handsPushed)
     }
+
+    @Test
+    fun hintShowsBasicStrategyAndIsNeverAnActionThatIsNotOffered() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        assertEquals(false, present("action_hint"))
+        tap("action_deal")
+        tap("action_hint")
+        composeRule.onNodeWithTag("hint_notice").assertIsDisplayed()
+        assertEquals(org.finiteplay.blackjack.rules.Decision.STAND, viewModel.hint)
+        assertEquals(true, viewModel.hint in viewModel.legal)
+        tap("action_stand")
+        assertEquals(false, present("hint_notice"))
+    }
 }

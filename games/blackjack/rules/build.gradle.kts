@@ -19,4 +19,6 @@ dependencies {
 
 tasks.test {
     useJUnit()
+    // The Hint-table generator tracks the shoe by composition and memoizes dealer outcomes.
+    maxHeapSize = "3g"
 }

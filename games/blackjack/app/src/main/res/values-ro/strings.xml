@@ -48,4 +48,5 @@
     <string name="help_decisions">Cartă ia o carte; Stai îți păstrează mâna. Dublează, pe primele două cărți, îți dublează pariul și ia exact o carte în plus. Împarte, pe două cărți de aceeași valoare, face două mâini, până la patru în total. Asii împărțiți primesc câte o carte. Când dealerul arată un as, poți lua o asigurare de jumătate din pariu: plătește 2 la 1 dacă dealerul are blackjack. Fiecare rundă se împarte dintr-un pachet amestecat din nou și nu există anulare.</string>
     <string name="help_chips_title">Jetoane</string>
     <string name="help_chips">Începi cu 1.000 de jetoane. Jetoanele sunt doar pentru joc și nu pot fi cumpărate sau încasate. Pariurile merg din 10 în 10, de la 10 la 500. Dacă rămâi fără jetoane, poți reseta la 1.000, iar statisticile se păstrează.</string>
+    <string name="hint_basic_strategy">Strategia de bază: %1$s</string>
 </resources>

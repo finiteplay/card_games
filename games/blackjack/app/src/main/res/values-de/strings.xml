@@ -48,4 +48,5 @@
     <string name="help_decisions">Karte nimmt eine Karte; Halten behält deine Hand. Verdoppeln, mit den ersten zwei Karten, verdoppelt deinen Einsatz und gibt genau eine weitere Karte. Teilen, bei zwei Karten gleichen Werts, macht zwei Hände, insgesamt bis zu vier. Geteilte Asse erhalten je eine Karte. Zeigt der Geber ein Ass, kannst du eine Versicherung über den halben Einsatz abschließen: Sie zahlt 2 zu 1, wenn der Geber Blackjack hat. Jede Runde wird aus einem frisch gemischten Stapel gegeben, und es gibt kein Zurück.</string>
     <string name="help_chips_title">Chips</string>
     <string name="help_chips">Du startest mit 1.000 Chips. Chips sind nur zum Spielen da und können weder gekauft noch ausgezahlt werden. Einsätze gehen in Schritten von 10, von 10 bis 500. Gehen dir die Chips aus, kannst du auf 1.000 zurücksetzen, und deine Statistik bleibt erhalten.</string>
+    <string name="hint_basic_strategy">Grundstrategie: %1$s</string>
 </resources>

@@ -406,4 +406,32 @@ class BlackjackViewModelTest {
         vm.deal()
         assertTrue(vm.session!!.state.phase == Phase.PLAYING)
     }
+
+    @Test
+    fun `hint names basic strategy, is an offered action, and clears with the next change`() {
+        val vm = newViewModel(plain)
+        assertFalse("no hint between rounds", vm.canHint)
+        vm.deal()
+        assertTrue(vm.canHint)
+
+        vm.requestHint()
+        // 9 + 8 = hard 17 against a ten: stand.
+        assertEquals(Decision.STAND, vm.hint)
+        assertTrue(vm.hint in vm.legal)
+
+        vm.requestHint()
+        assertNull("asking again hides it", vm.hint)
+
+        vm.requestHint()
+        vm.decide(Decision.HIT)
+        assertNull("a change to the round clears it", vm.hint)
+    }
+
+    @Test
+    fun `hint always declines insurance`() {
+        val vm = newViewModel(shoeOf("TC", "AD", "9H", "5S", "KH"))
+        vm.deal()
+        vm.requestHint()
+        assertEquals(Decision.DECLINE_INSURANCE, vm.hint)
+    }
 }

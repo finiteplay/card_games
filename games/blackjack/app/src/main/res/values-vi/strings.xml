@@ -48,4 +48,5 @@
     <string name="help_decisions">Rút là lấy thêm một lá; Dừng là giữ bài hiện tại. Gấp đôi, với hai lá đầu, nhân đôi tiền cược và lấy đúng một lá nữa. Tách, với hai lá cùng giá trị, tạo hai bài, tối đa bốn bài. Mỗi lá Át được tách chỉ nhận một lá. Khi nhà cái lật lá Át, bạn có thể mua bảo hiểm bằng nửa tiền cược: trả 2 ăn 1 nếu nhà cái có Blackjack. Mỗi ván được chia từ bộ bài mới xáo và không có hoàn tác.</string>
     <string name="help_chips_title">Chip</string>
     <string name="help_chips">Bạn bắt đầu với 1.000 chip. Chip chỉ dùng để chơi, không thể mua hay đổi lấy tiền. Mức cược tăng theo bước 10, từ 10 đến 500. Nếu hết chip, bạn có thể đặt lại về 1.000 và thống kê vẫn được giữ.</string>
+    <string name="hint_basic_strategy">Chiến thuật cơ bản: %1$s</string>
 </resources>

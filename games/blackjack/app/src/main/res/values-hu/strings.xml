@@ -48,4 +48,5 @@
     <string name="help_decisions">A Lapot kér egy lapot húz; a Megáll megtartja a kezed. A Duplázás az első két lapon duplázza a tétet, és pontosan egy lapot ad. Az Osztás két azonos értékű lapon két kezet hoz létre, összesen legfeljebb négyet. Az osztott ászok egy-egy lapot kapnak. Ha az osztó ászt mutat, a tét felére biztosítást köthetsz: 2:1-et fizet, ha az osztónak blackjackje van. Minden kör újonnan kevert pakliból indul, és nincs visszavonás.</string>
     <string name="help_chips_title">Zsetonok</string>
     <string name="help_chips">1000 zsetonnal indulsz. A zsetonok csak játékra valók, nem vásárolhatók és nem váltható be őket. A tétek 10-es lépésekben mennek, 10-től 500-ig. Ha elfogynak a zsetonjaid, visszaállíthatod 1000-re, és a statisztikáid megmaradnak.</string>
+    <string name="hint_basic_strategy">Alapstratégia: %1$s</string>
 </resources>

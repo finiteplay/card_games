@@ -38,7 +38,10 @@ import org.finiteplay.blackjack.rules.Chips
 import org.finiteplay.blackjack.rules.Settlement
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.BoardOrientation
+import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.ui.layout.Handedness
+import org.finiteplay.core.ui.layout.RestBreakDialog
+import org.finiteplay.core.ui.layout.RestReminderDialog
 import org.finiteplay.core.ui.layout.landscapeRailWidth
 import org.finiteplay.core.ui.sound.AndroidSoundPlayer
 import org.finiteplay.core.ui.sound.GatedSoundPlayer
@@ -139,6 +142,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
             // Next round waits for the reveal to finish: the settlement is already paid, but pressing it
             // early would skip past the results.
             busy = viewModel.busy || (settledState != null && !resultsShown),
+            canHint = viewModel.canHint,
         )
         val actionBar: @Composable (BoardOrientation) -> Unit = { barOrientation ->
             ActionBar(
@@ -150,6 +154,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                 onBet = viewModel::stepBet,
                 onDeal = viewModel::deal,
                 onReset = viewModel::resetBankroll,
+                onHint = viewModel::requestHint,
                 onSettings = { showSettings = true },
             )
         }
@@ -184,6 +189,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                         Column(modifier = Modifier.weight(1f).fillMaxSize()) {
                             table(Modifier.weight(1f))
                             SummaryLine(settlement)
+                            viewModel.hint?.let { HintNotice(it) }
                         }
                         actionBar(BoardOrientation.LANDSCAPE)
                     }
@@ -193,6 +199,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                     heading()
                     table(Modifier.weight(1f))
                     SummaryLine(settlement)
+                    viewModel.hint?.let { HintNotice(it) }
                     actionBar(BoardOrientation.PORTRAIT)
                 }
             }
@@ -212,6 +219,17 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
             },
             dismissButton = { TextButton(onClick = viewModel::dismissResetOffer) { Text(stringResource(R.string.reset_offer_not_now)) } },
         )
+    }
+
+    if (viewModel.showRestReminderDialog) {
+        RestReminderDialog(
+            playedLabel = formatElapsed((viewModel.settings.restReminderInterval.minutes ?: 0) * 60),
+            onTakeBreak = viewModel::startRestBreak,
+            onKeepPlaying = viewModel::dismissRestReminder,
+        )
+    }
+    viewModel.restBreakRemainingSeconds?.let { remaining ->
+        RestBreakDialog(remainingLabel = formatElapsed(remaining), onCancel = viewModel::cancelRestBreak)
     }
 
     if (showHelp) HelpScreen(onClose = { showHelp = false })

@@ -48,4 +48,5 @@
     <string name="help_decisions">Kart çek bir kart alır; Dur elinizi korur. İkiye katla, ilk iki kartta, bahsi ikiye katlar ve tam bir kart daha alır. Böl, aynı değerdeki iki kartta, iki el oluşturur, toplamda dörde kadar. Bölünen aslar birer kart alır. Krupiye as gösterdiğinde bahsin yarısı kadar sigorta alabilirsiniz: krupiyede Blackjack varsa 2\'ye 1 öder. Her el yeni karılmış bir desteden dağıtılır ve geri alma yoktur.</string>
     <string name="help_chips_title">Fişler</string>
     <string name="help_chips">1.000 fişle başlarsınız. Fişler yalnızca oyun içindir, satın alınamaz veya paraya çevrilemez. Bahisler 10\'ar artar, 10\'dan 500\'e kadar. Fişleriniz biterse 1.000\'e sıfırlayabilirsiniz ve istatistikleriniz korunur.</string>
+    <string name="hint_basic_strategy">Temel strateji: %1$s</string>
 </resources>

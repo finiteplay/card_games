@@ -48,4 +48,5 @@
     <string name="help_decisions">Ťahať vezme kartu; Stáť ponechá vašu ruku. Zdvojiť, na prvých dvoch kartách, zdvojnásobí stávku a vezme presne jednu kartu. Rozdeliť, na dvoch kartách rovnakej hodnoty, vytvorí dve ruky, najviac štyri. Rozdelené esá dostanú po jednej karte. Keď krupiér ukazuje eso, môžete si vziať poistenie za polovicu stávky: vypláca sa 2 ku 1, ak má krupiér blackjack. Každé kolo sa rozdáva z novo zamiešaného balíčka a vrátenie ťahu neexistuje.</string>
     <string name="help_chips_title">Žetóny</string>
     <string name="help_chips">Začínate s 1 000 žetónmi. Žetóny slúžia len na hru a nedajú sa kúpiť ani vyplatiť. Stávky idú po 10, od 10 do 500. Ak vám žetóny dôjdu, môžete ich obnoviť na 1 000 a štatistiky zostanú.</string>
+    <string name="hint_basic_strategy">Základná stratégia: %1$s</string>
 </resources>

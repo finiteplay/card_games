@@ -48,4 +48,5 @@
     <string name="help_decisions">Pedir pega uma carta; Parar mantém sua mão. Dobrar, nas duas primeiras cartas, dobra a aposta e pega exatamente mais uma carta. Dividir, em duas cartas de mesmo valor, forma duas mãos, até quatro no total. Ases divididos recebem uma carta cada. Quando o dealer mostra um Ás, você pode fazer um seguro de metade da aposta: ele paga 2 para 1 se o dealer tiver blackjack. Cada rodada é distribuída de um baralho recém-embaralhado e não há desfazer.</string>
     <string name="help_chips_title">Fichas</string>
     <string name="help_chips">Você começa com 1.000 fichas. As fichas servem só para jogar e não podem ser compradas nem trocadas. As apostas vão de 10 em 10, de 10 a 500. Se acabarem as fichas, você pode reiniciar para 1.000, e suas estatísticas são mantidas.</string>
+    <string name="hint_basic_strategy">Estratégia básica: %1$s</string>
 </resources>

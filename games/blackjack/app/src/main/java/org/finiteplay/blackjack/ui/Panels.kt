@@ -26,7 +26,11 @@ import org.finiteplay.core.ui.layout.AppLanguages
 import org.finiteplay.core.ui.layout.AppVersionLabel
 import org.finiteplay.core.ui.layout.DropdownSettingRow
 import org.finiteplay.core.ui.layout.FullScreenPanel
+import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.ui.layout.Handedness
+import org.finiteplay.core.ui.layout.InfoSettingRow
+import org.finiteplay.core.ui.layout.RestReminderInterval
+import org.finiteplay.core.ui.layout.label
 import org.finiteplay.core.ui.layout.ResetStatisticsDialog
 import org.finiteplay.core.ui.layout.SettingsGroup
 import org.finiteplay.core.ui.layout.StatSectionCard
@@ -91,6 +95,21 @@ fun SettingsScreen(viewModel: BlackjackViewModel, onClose: () -> Unit) {
                     (context as? Activity)?.recreate()
                 },
                 testTag = "setting_language",
+            )
+        }
+        SettingsGroup(stringResource(CoreR.string.settings_group_breaks)) {
+            DropdownSettingRow(
+                label = stringResource(CoreR.string.setting_rest_reminder),
+                options = RestReminderInterval.entries,
+                selected = settings.restReminderInterval,
+                optionLabel = { it.label() },
+                onSelect = viewModel::setRestReminderInterval,
+                testTag = "setting_rest_reminder",
+            )
+            InfoSettingRow(
+                label = stringResource(CoreR.string.setting_rest_reminder_current_session),
+                value = formatElapsed(viewModel.restReminderElapsedSeconds),
+                testTag = "setting_rest_reminder_current_session",
             )
         }
         AppVersionLabel()

@@ -70,4 +70,7 @@
     <string name="help_decisions">Hit takes a card; Stand keeps your hand. Double, on your first two cards, doubles your bet and takes exactly one more card. Split, on two cards of the same rank, makes two hands, up to four in all; split Aces get one card each. When the dealer shows an Ace you may take insurance for half your bet: it pays 2 to 1 if the dealer has Blackjack. Every round is dealt from a fresh shuffle, and there is no undo.</string>
     <string name="help_chips_title">Chips</string>
     <string name="help_chips">You start with 1,000 chips. Chips are for play only and cannot be bought or cashed out. Bets go in steps of 10, from 10 up to 500. If you run out of chips you can reset to 1,000, and your statistics are kept.</string>
+
+    <!-- The Hint: what basic strategy says to do, naming the action as its own button is labelled. -->
+    <string name="hint_basic_strategy">Basic strategy: %1$s</string>
 </resources>
