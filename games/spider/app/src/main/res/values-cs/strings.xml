@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Jedna barva</string>
+    <string name="suit_count_two">Dvě barvy</string>
+    <string name="suit_count_four">Čtyři barvy</string>
+
+    <string name="setting_suit_count">Barvy</string>
+
+    <string name="suit_count_switch_forfeits">Změna barev ukončí tuto hru po %1$d tazích a započítá ji jako prohru.</string>
+
+    <string name="deal_row_refused">Nelze rozdat, dokud je sloupec prázdný</string>
+
+    <string name="recovery_notice">Uloženou hru se nepodařilo otevřít, proto byla rozdána nová.</string>
+
+    <string name="uncertified_notice">Toto rozdání není certifikováno jako řešitelné</string>
+
+    <string name="catalog_status_notice">Rozdání s jednou a dvěma barvami pocházejí z certifikovaného katalogu ověřeného jako řešitelný. Rozdání se čtyřmi barvami zatím certifikována nejsou.</string>
+
+    <string name="banked_sequences">Uloženo: %1$d z 8</string>
+
+    <string name="action_help">Nápověda</string>
+    <string name="help_title">Jak hrát</string>
+    <string name="help_goal_title">Cíl</string>
+    <string name="help_goal">Sestavte osm posloupností od krále po eso, každou v jedné barvě. Dokončená posloupnost se uloží a opustí hrací plochu. Dokončete všech osm a vyhrajete.</string>
+    <string name="help_moving_title">Přesouvání karet</string>
+    <string name="help_moving">Jakoukoli lícem nahoru otočenou kartu lze přesunout na kartu o jednu hodnotu vyšší, bez ohledu na barvu. Více karet se přesouvá společně pouze tehdy, pokud již jdou sestupně za sebou a mají stejnou barvu. Prázdný sloupec přijme cokoli, což z něj dělá nejcennější místo na hrací ploše.</string>
+    <string name="help_stock_title">Rozdání řady</string>
+    <string name="help_stock">Klepnutím na balíček se rozdá jedna karta lícem nahoru na každý sloupec najednou — neexistuje odkládací balíček a karty se netáhnou jednotlivě. Rozdání odmítne, dokud je nějaký sloupec prázdný, proto mezeru nejprve zaplňte.</string>
+    <string name="help_suits_title">Barvy</string>
+    <string name="help_suits">Jedna barva je nejmírnější hra, čtyři nejtěžší; dvě jsou mezi tím a jsou výchozím nastavením. Počet se stanoví při rozdání hry — změňte jej v Nastavení a projeví se u příští nové hry.</string>
+    <string name="help_controls_title">Klepnutí, tažení a nápověda</string>
+    <string name="help_controls">Klepnutím na kartu ji pošlete do nejbližšího povoleného sloupce napravo, v případě potřeby s návratem na začátek; dalším klepnutím ji posunete dál. Přetažením zvolíte sloupec sami. Nápověda rozsvítí horní kartu každé posloupnosti, která má kam jít. Když zbývá jen poslední posloupnost, hra ji dokončí za vás.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Přemýšlí…</string>
+    <string name="hint_no_solution">Odtud nevede cesta k výhře.</string>
+    <string name="hint_inconclusive">Nepodařilo se to zjistit včas — zkuste to znovu, nebo hrajte dál.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Une couleur</string>
+    <string name="suit_count_two">Deux couleurs</string>
+    <string name="suit_count_four">Quatre couleurs</string>
+
+    <string name="setting_suit_count">Couleurs</string>
+
+    <string name="suit_count_switch_forfeits">Changer de couleurs met fin à cette partie après %1$d coups et la compte comme une défaite.</string>
+
+    <string name="deal_row_refused">Impossible de distribuer tant qu\'une colonne est vide</string>
+
+    <string name="recovery_notice">Votre partie sauvegardée n\'a pas pu être ouverte, une nouvelle partie a donc été distribuée.</string>
+
+    <string name="uncertified_notice">Cette donne n\'est pas certifiée résoluble</string>
+
+    <string name="catalog_status_notice">Les donnes à une et deux couleurs proviennent d\'un catalogue certifié et vérifié résoluble. Les donnes à quatre couleurs ne sont pas encore certifiées.</string>
+
+    <string name="banked_sequences">Rangées : %1$d sur 8</string>
+
+    <string name="action_help">Aide</string>
+    <string name="help_title">Comment jouer</string>
+    <string name="help_goal_title">Le but</string>
+    <string name="help_goal">Construisez huit suites du Roi à l\'As, chacune d\'une seule couleur. Une suite terminée est rangée et quitte le plateau. Terminez les huit et vous gagnez.</string>
+    <string name="help_moving_title">Déplacer les cartes</string>
+    <string name="help_moving">Toute carte face visible peut se déplacer sur une carte d\'un rang supérieur, quelle que soit sa couleur. Plusieurs cartes ne se déplacent ensemble que si elles sont déjà en ordre décroissant et de la même couleur. Une colonne vide accepte n\'importe quoi, ce qui en fait l\'élément le plus précieux du plateau.</string>
+    <string name="help_stock_title">Distribuer une rangée</string>
+    <string name="help_stock">Toucher la pioche distribue une carte face visible sur chaque colonne à la fois — il n\'y a pas de talon ni de pioche carte par carte. Elle refuse tant qu\'une colonne est vide, comblez donc le vide avant de distribuer.</string>
+    <string name="help_suits_title">Couleurs</string>
+    <string name="help_suits">Une couleur est la partie la plus douce, quatre la plus difficile ; deux se situe entre les deux et c\'est le réglage par défaut. Le nombre est fixé au moment de la distribution — changez-le dans les Réglages et cela s\'appliquera à la prochaine nouvelle partie.</string>
+    <string name="help_controls_title">Toucher, glisser et indice</string>
+    <string name="help_controls">Touchez une carte pour l\'envoyer vers la prochaine colonne valide à sa droite, en revenant au début si besoin ; touchez à nouveau pour continuer à la faire avancer. Glissez pour choisir vous-même la colonne. L\'indice illumine la carte du dessus de chaque suite qui peut aller quelque part. Quand il ne reste que la dernière suite, la partie la termine pour vous.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Réflexion…</string>
+    <string name="hint_no_solution">Aucune voie vers la victoire à partir d\'ici.</string>
+    <string name="hint_inconclusive">Impossible de déterminer à temps — réessayez ou continuez à jouer.</string>
+</resources>

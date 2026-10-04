@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s %2$s, základ %2$s</string>
+    <string name="cd_foundation_empty">základ %1$s, prázdny</string>
+    <string name="cd_move_to_tableau">Presunúť do stĺpca</string>
+    <string name="cd_stock_with_cards">Balík, %1$d kariet</string>
+    <string name="cd_stock_empty_recycles">Balík, prázdny. Recykluje odpad.</string>
+    <string name="cd_stock_empty">Balík, prázdny</string>
+    <string name="cd_draw_action">Ťahať</string>
+    <string name="cd_waste_card">%1$s %2$s, odkladacia kôpka</string>
+    <string name="cd_waste_empty">Odkladacia kôpka, prázdna</string>
+    <string name="cd_move_card">Presunúť kartu</string>
+    <string name="cd_tableau_card">%1$s %2$s, stĺpec %3$d, pozícia %4$d z %5$d</string>
+    <string name="cd_tableau_face_down">Otočená karta lícom dole, stĺpec %1$d, pozícia %2$d z %3$d</string>
+    <string name="cd_move">Presunúť</string>
+    <string name="status_deal_prefix">Rozdanie %1$d</string>
+    <string name="status_level_prefix">Úroveň: %1$s</string>
+    <string name="level_trivial">Triviálna</string>
+    <string name="level_easy">Ľahká</string>
+    <string name="level_medium">Stredná</string>
+    <string name="level_hard">Ťažká</string>
+    <string name="level_expert">Expertná</string>
+    <string name="level_insane">Šialená</string>
+    <string name="recovery_notice_text">Uloženú hru sa nepodarilo obnoviť. Spúšťa sa nová hra.</string>
+    <string name="hint_thinking">Rozmýšľam…</string>
+    <string name="hint_no_solution">Odtiaľto už nevedie cesta k výhre.</string>
+    <string name="hint_inconclusive">Nestihlo sa to zistiť včas — skús to znova alebo pokračuj v hre.</string>
+    <string name="setting_automatic_moves">Automatické presuny na základy</string>
+    <string name="setting_draw_three">Ťahať tri karty</string>
+    <string name="setting_difficulty">Obtiažnosť</string>
+    <string name="difficulty_random">Náhodná</string>
+    <string name="level_switch_forfeits">Zmena obtiažnosti ukončí túto hru po %1$d ťahoch a započíta ju ako prehru.</string>
+    <string name="draw_mode_one">Ťahanie jednej karty</string>
+    <string name="draw_mode_three">Ťahanie troch kariet</string>
+    <string name="stuck_title">Žiadne ďalšie ťahy</string>
+    <string name="stuck_body">Nie je k dispozícii žiadny legálny ťah a balík nepomôže. Vráť ťah späť alebo začni novú hru.</string>
+    <string name="unrecoverable_title">Túto hru nemožno spustiť</string>
+    <string name="unrecoverable_body">Vstavaný katalóg hier neprešiel overením, takže žiadnu hru nemožno potvrdiť ako riešiteľnú. Preinštalovanie aplikácie by to mohlo vyriešiť.</string>
+    <string name="unrecoverable_retry">Skúsiť znova</string>
+</resources>

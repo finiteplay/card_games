@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s %2$s, основа %2$s</string>
+    <string name="cd_foundation_empty">Основа %1$s, празна</string>
+    <string name="cd_move_to_tableau">Премести на игралното поле</string>
+    <string name="cd_stock_with_cards">Талон, %1$d карти</string>
+    <string name="cd_stock_empty_recycles">Талон, празен. Разбърква изхвърлените.</string>
+    <string name="cd_stock_empty">Талон, празен</string>
+    <string name="cd_draw_action">Тегли</string>
+    <string name="cd_waste_card">%1$s %2$s, изхвърлени</string>
+    <string name="cd_waste_empty">Изхвърлени, празно</string>
+    <string name="cd_move_card">Премести картата</string>
+    <string name="cd_tableau_card">%1$s %2$s, колона %3$d, позиция %4$d от %5$d</string>
+    <string name="cd_tableau_face_down">Обърната карта, колона %1$d, позиция %2$d от %3$d</string>
+    <string name="cd_move">Премести</string>
+    <string name="status_deal_prefix">Раздаване %1$d</string>
+    <string name="status_level_prefix">Ниво: %1$s</string>
+    <string name="level_trivial">Тривиална</string>
+    <string name="level_easy">Лесно</string>
+    <string name="level_medium">Средно</string>
+    <string name="level_hard">Трудно</string>
+    <string name="level_expert">Експертно</string>
+    <string name="level_insane">Безумна</string>
+    <string name="recovery_notice_text">Запазената ви игра не можа да бъде възстановена. Стартира се нова игра.</string>
+    <string name="hint_thinking">Мисли…</string>
+    <string name="hint_no_solution">Оттук няма път към победа.</string>
+    <string name="hint_inconclusive">Не успяхме да установим навреме — опитайте отново или продължете да играете.</string>
+    <string name="setting_automatic_moves">Автоматични ходове към основите</string>
+    <string name="setting_draw_three">Тегляне по три</string>
+    <string name="setting_difficulty">Трудност</string>
+    <string name="difficulty_random">Случайна</string>
+    <string name="level_switch_forfeits">Смяната на нивото прекратява тази игра след %1$d хода и я записва като загуба.</string>
+    <string name="draw_mode_one">Тегляне по една</string>
+    <string name="draw_mode_three">Тегляне по три</string>
+    <string name="stuck_title">Няма повече ходове</string>
+    <string name="stuck_body">Няма законен ход и тестето не може да помогне. Отменете или започнете нова игра.</string>
+    <string name="unrecoverable_title">Тази игра не може да стартира</string>
+    <string name="unrecoverable_body">Вграденият каталог с игри не премина проверката, така че нито една игра не може да бъде сертифицирана като решима. Преинсталирането на приложението може да реши това.</string>
+    <string name="unrecoverable_retry">Опитайте отново</string>
+</resources>

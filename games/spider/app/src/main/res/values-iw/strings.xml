@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">צבע אחד</string>
+    <string name="suit_count_two">שני צבעים</string>
+    <string name="suit_count_four">ארבעה צבעים</string>
+
+    <string name="setting_suit_count">צבעים</string>
+
+    <string name="suit_count_switch_forfeits">החלפת הצבעים מסיימת את המשחק הזה אחרי %1$d מהלכים ורושמת אותו כהפסד.</string>
+
+    <string name="deal_row_refused">אי אפשר לחלק כל עוד עמודה ריקה</string>
+
+    <string name="recovery_notice">לא ניתן היה לפתוח את המשחק השמור, ולכן חולק משחק חדש.</string>
+
+    <string name="uncertified_notice">יד זו אינה מאושרת כפתירה</string>
+
+    <string name="catalog_status_notice">ידיים בצבע אחד ובשני צבעים מגיעות מקטלוג מאושר שאומת כפתיר. ידיים בארבעה צבעים עדיין אינן מאושרות.</string>
+
+    <string name="banked_sequences">נשמרו: %1$d מתוך 8</string>
+
+    <string name="action_help">עזרה</string>
+    <string name="help_title">איך משחקים</string>
+    <string name="help_goal_title">המטרה</string>
+    <string name="help_goal">בנה שמונה רצפים ממלך ועד אס, כל אחד בצבע יחיד. רצף שהושלם נשמר ועוזב את הלוח. השלם את כל השמונה ותנצח.</string>
+    <string name="help_moving_title">הזזת קלפים</string>
+    <string name="help_moving">כל קלף גלוי אפשר להעביר לקלף בדרגה גבוהה יותר, ללא קשר לצבע. כמה קלפים זזים יחד רק כאשר הם כבר בסדר יורד וחולקים צבע. עמודה ריקה מקבלת כל דבר, מה שהופך אותה למקום היקר ביותר בלוח.</string>
+    <string name="help_stock_title">חלוקת שורה</string>
+    <string name="help_stock">הקשה על הקלפייה מחלקת קלף גלוי אחד לכל עמודה בבת אחת — אין ערימת פסולת ולא מושכים קלף אחד בכל פעם. החלוקה נדחית כל עוד עמודה ריקה, לכן מלא את הפער לפני החלוקה.</string>
+    <string name="help_suits_title">צבעים</string>
+    <string name="help_suits">צבע אחד הוא המשחק המתון ביותר, ארבעה הקשה ביותר; שניים באמצע וזו ברירת המחדל. המספר נקבע בעת חלוקת המשחק — שנה אותו בהגדרות והוא ייכנס לתוקף במשחק החדש הבא.</string>
+    <string name="help_controls_title">הקשה, גרירה ורמז</string>
+    <string name="help_controls">הקש על קלף כדי לשלוח אותו לעמודה החוקית הבאה מימינו, עם חזרה להתחלה בעת הצורך; הקש שוב כדי להמשיך להזיז אותו. גרור כדי לבחור בעצמך את העמודה. הרמז מאיר את הקלף העליון של כל רצף שיש לו לאן ללכת. כשנשאר רק הרצף האחרון, המשחק משלים אותו עבורך.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">חושב…</string>
+    <string name="hint_no_solution">אין דרך לניצחון מכאן.</string>
+    <string name="hint_inconclusive">לא הצלחתי לקבוע בזמן — נסה שוב, או המשך לשחק.</string>
+</resources>

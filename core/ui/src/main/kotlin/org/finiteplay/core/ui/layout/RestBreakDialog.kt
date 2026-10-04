@@ -1,0 +1,62 @@
+package org.finiteplay.core.ui.layout
+
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import org.finiteplay.core.ui.R
+import org.finiteplay.core.ui.theme.LocalAppColors
+
+/**
+ * The break itself, once the player has accepted [RestReminderDialog]'s offer: blocks the board
+ * for [remainingLabel] (a stopwatch-formatted countdown the caller ticks down) rather than just
+ * showing a timer alongside play, since a break that does not stop the game is cosmetic. Not
+ * dismissible by tapping outside — only [onCancel] ends it early, same restraint as
+ * [HintProgressDialog]'s own cancel-only dismissal.
+ *
+ * The caller owns the countdown and auto-dismisses this once it reaches zero; this composable has
+ * no clock of its own, matching [org.finiteplay.core.session.RestReminderWindow]'s own
+ * timestamp-driven style.
+ */
+@Composable
+fun RestBreakDialog(remainingLabel: String, onCancel: () -> Unit) {
+    AlertDialog(
+        modifier = Modifier.testTag("rest_break_dialog"),
+        onDismissRequest = {},
+        title = { Text(stringResource(R.string.rest_break_title)) },
+        text = {
+            // The countdown is the whole message, so it is the large element in the accent colour;
+            // "Back in 04:32" is its spoken form, kept for screen readers rather than drawn twice.
+            val spoken = stringResource(R.string.rest_break_body, remainingLabel)
+            Text(
+                text = remainingLabel,
+                style = MaterialTheme.typography.displayLarge.copy(fontFeatureSettings = "tnum"),
+                fontWeight = FontWeight.Bold,
+                color = LocalAppColors.current.action.new,
+                textAlign = TextAlign.Center,
+                maxLines = 1,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 8.dp)
+                    .semantics { contentDescription = spoken }
+                    .testTag("rest_break_countdown"),
+            )
+        },
+        confirmButton = {
+            TextButton(onClick = onCancel, modifier = Modifier.testTag("rest_break_dialog_cancel")) {
+                Text(stringResource(R.string.action_cancel))
+            }
+        },
+    )
+}

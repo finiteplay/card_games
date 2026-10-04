@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Hra č. %1$d</string>
+    <string name="recovery_notice">Uloženou hru se nepodařilo otevřít, proto byla rozdána nová.</string>
+    <string name="setting_automatic_moves">Automatické přesuny do sbírek</string>
+    <string name="stuck_title">Nezbývají žádné tahy</string>
+    <string name="stuck_body">Nezbývá žádný platný tah. Vezmi zpět nebo začni novou hru.</string>
+    <string name="hint_thinking">Přemýšlí…</string>
+    <string name="hint_no_solution">Odtud nevede cesta k výhře.</string>
+    <string name="hint_inconclusive">Nepodařilo se to zjistit včas — zkuste to znovu, nebo hrajte dál.</string>
+    <string name="unrecoverable_title">Tuto hru nelze spustit</string>
+    <string name="unrecoverable_body">Vestavěný katalog her neprošel ověřením, takže žádnou hru nelze potvrdit jako řešitelnou. Přeinstalování aplikace to může vyřešit.</string>
+    <string name="unrecoverable_retry">Zkusit znovu</string>
+    <string name="help_title">Jak hrát</string>
+    <string name="help_goal_title">Cíl</string>
+    <string name="help_goal">Postav všechny čtyři sbírky podle barvy, od esa po krále. Ulož všechny karty a vyhráváš.</string>
+    <string name="help_free_cells_title">Volné buňky</string>
+    <string name="help_free_cells">Čtyři volné buňky pojmou každá jednu kartu libovolné hodnoty nebo barvy, odloženou stranou, dokud ji znovu nepotřebuješ. Prázdný sloupec funguje stejně, ale pojme celou posloupnost místo jedné karty.</string>
+    <string name="help_moving_title">Skládání a přesouvání</string>
+    <string name="help_moving">Kartu lze položit na kartu o jednu hodnotu vyšší a opačné barvy. Do prázdného sloupce může vstoupit jakákoli jednotlivá karta. Několik karet se přesune najednou jako jeden superzáznam, pokud to umožní dostatek volných buněk a prázdných sloupců — hra to za tebe spočítá.</string>
+    <string name="help_controls_title">Klepnutí, tažení a nápověda</string>
+    <string name="help_controls">Klepnutím na kartu ji pošleš do nejbližšího platného sloupce vpravo, poté do bezpečné sbírky, poté do nejbližšího sloupce vlevo, a nebezpečná sbírka nebo prázdná volná buňka přijde na řadu až jako poslední možnost. Tažením si cíl zvolíš sám, včetně volné buňky. Nápověda dokáže, že tah existuje, a ukáže ti ho, nebo ti čestně řekne, že to nejde.</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Parti #%1$d</string>
+    <string name="recovery_notice">Det lagrede spillet ditt kunne ikke åpnes, så et nytt ble delt ut.</string>
+    <string name="setting_automatic_moves">Automatiske trekk til grunnbunkene</string>
+    <string name="stuck_title">Ingen trekk igjen</string>
+    <string name="stuck_body">Det finnes ikke flere lovlige trekk. Angre eller start et nytt spill.</string>
+    <string name="hint_thinking">Tenker…</string>
+    <string name="hint_no_solution">Ingen vei til seier herfra.</string>
+    <string name="hint_inconclusive">Klarte ikke å avgjøre i tide — prøv igjen, eller fortsett å spille.</string>
+    <string name="unrecoverable_title">Dette spillet kan ikke starte</string>
+    <string name="unrecoverable_body">Den medfølgende spillkatalogen besto ikke verifiseringen, så intet parti kan sertifiseres som løsbart. Å installere appen på nytt kan løse dette.</string>
+    <string name="unrecoverable_retry">Prøv igjen</string>
+    <string name="help_title">Slik spiller du</string>
+    <string name="help_goal_title">Målet</string>
+    <string name="help_goal">Bygg opp alle fire grunnbunkene etter farge, fra ess til konge. Legg bort hvert kort, så vinner du.</string>
+    <string name="help_free_cells_title">Friceller</string>
+    <string name="help_free_cells">Hver av de fire fricellene rommer ett kort av hvilken som helst valør eller farge, lagt til side til du trenger det igjen. En tom kolonne fungerer på samme måte, men rommer en hel rekke i stedet for ett kort.</string>
+    <string name="help_moving_title">Bygge og flytte</string>
+    <string name="help_moving">Et kort kan legges på et kort én valør høyere og av motsatt farge. Ethvert enkeltkort kan flyttes til en tom kolonne. Flere kort flyttes sammen som ett supertrekk når nok friceller og tomme kolonner gjør reisen mulig — spillet regner det ut for deg.</string>
+    <string name="help_controls_title">Trykk, dra og hint</string>
+    <string name="help_controls">Trykk på et kort for å sende det til nærmeste lovlige kolonne til høyre, deretter en trygg grunnbunke, deretter nærmeste kolonne til venstre, og en utrygg grunnbunke eller en tom fricelle bare som siste utvei. Dra for å velge mål selv, også en fricelle. Hint beviser at et trekk finnes og viser deg det, eller forteller deg ærlig når det ikke gjør det.</string>
+</resources>

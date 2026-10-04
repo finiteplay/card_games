@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">משחק מס\' %1$d</string>
+    <string name="recovery_notice">לא ניתן היה לפתוח את המשחק השמור, ולכן חולק משחק חדש.</string>
+    <string name="setting_automatic_moves">מהלכים אוטומטיים ליסודות</string>
+    <string name="stuck_title">לא נותרו מהלכים</string>
+    <string name="stuck_body">לא נותר מהלך חוקי. בטל מהלך או התחל משחק חדש.</string>
+    <string name="hint_thinking">חושב…</string>
+    <string name="hint_no_solution">אין דרך לניצחון מכאן.</string>
+    <string name="hint_inconclusive">לא הצלחתי לקבוע בזמן — נסה שוב, או המשך לשחק.</string>
+    <string name="unrecoverable_title">לא ניתן להתחיל את המשחק הזה</string>
+    <string name="unrecoverable_body">קטלוג החלוקות המובנה נכשל באימות, ולכן לא ניתן לאשר שאף חלוקה ניתנת לפתרון. התקנה מחדש של האפליקציה עשויה לפתור את זה.</string>
+    <string name="unrecoverable_retry">נסה שוב</string>
+    <string name="help_title">איך משחקים</string>
+    <string name="help_goal_title">המטרה</string>
+    <string name="help_goal">בנה את כל ארבעת היסודות לפי סוג, מאס עד מלך. אסוף כל קלף ותנצח.</string>
+    <string name="help_free_cells_title">תאים חופשיים</string>
+    <string name="help_free_cells">כל אחד מארבעת התאים החופשיים מחזיק קלף אחד מכל דרגה או סוג, המונח בצד עד שתזדקק לו שוב. עמודה ריקה פועלת באותו אופן, אך מחזיקה רצף שלם במקום קלף בודד.</string>
+    <string name="help_moving_title">בנייה והזזה</string>
+    <string name="help_moving">ניתן להניח קלף על קלף בדרגה גבוהה יותר בדרגה אחת ובצבע הפוך. כל קלף בודד רשאי להיכנס לעמודה ריקה. מספר קלפים זזים יחד כמהלך־על אחד כאשר מספיק תאים חופשיים ועמודות ריקות מאפשרים את המעבר — המשחק מחשב זאת עבורך.</string>
+    <string name="help_controls_title">הקשה, גרירה ורמז</string>
+    <string name="help_controls">הקש על קלף כדי לשלוח אותו לעמודה החוקית הקרובה ביותר מימין, לאחר מכן ליסוד בטוח, לאחר מכן לעמודה הקרובה ביותר משמאל, ויסוד לא בטוח או תא חופשי ריק רק כמוצא אחרון. גרור כדי לבחור יעד בעצמך, כולל תא חופשי. הרמז מוכיח שקיים מהלך ומראה לך אותו, או אומר לך בכנות כשאין.</string>
+</resources>

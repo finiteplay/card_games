@@ -1,0 +1,8 @@
+candidate_id,lower_bound_weight,down_card_weight,ace_burial_weight,needed_card_depth_weight,foundation_withdrawal,provenance
+exact,1,0,0,0,true,exact A-star baseline
+opener,10,0,0,0,true,current hint opener
+informed_narrow_a,25,50,100,50,false,current portfolio effective coefficients
+informed_narrow_b,25,150,25,0,false,current portfolio effective coefficients
+needed_full,25,0,0,50,true,current portfolio effective coefficients
+greedy_full,25,0,0,0,true,current portfolio final attempt
+pilot_8,46,87,104,55,false,Optuna pilot winner on partial 6415-seed manifest; not production-approved

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Hogyan kell játszani</string>
+    <string name="help_tab_rules">Szabályok</string>
+    <string name="help_tab_strategy">Stratégia</string>
+    <string name="help_tab_levels">Szintek</string>
+
+    <string name="help_rules_goal_title">A cél</string>
+    <string name="help_rules_goal">Vidd fel mind az 52 lapot a felül lévő négy alapra. Minden alap egyetlen színt fogad, és az Ásztól felfelé épül: A, 2, 3, egészen a Királyig. Fejezd be mind a négyet, és nyertél.</string>
+    <string name="help_rules_board_title">A játéktér</string>
+    <string name="help_rules_board">A középső hét oszlop a játéktér - itt folyik a munka. A képpel lefelé fordított pakli a húzópakli; koppints rá, hogy egyesével fordítsd a lapokat a mellette lévő dobott lapokra. Ha a húzópakli elfogy, koppints rá újra, hogy a dobott lapok visszaforduljanak, és mehessen egy újabb kör, ahányszor csak akarod.</string>
+    <string name="help_rules_moves_title">Mely lépések szabályosak</string>
+    <string name="help_rules_moves">A játéktéren egy lap egy nála eggyel magasabb és ellentétes színű lapra kerül: piros 8 fekete 9-re. Bármely sorozat, amely már ebben a rendben áll, egyben mozdul. Üres oszlopba csak Király léphet. Egy szabaddá vált lap bármikor felmehet a saját alapjára, és az alap legfelső lapját vissza is veheted, ha szükséged van rá.</string>
+    <string name="help_rules_help_title">Amit az alkalmazás elvégez helyetted</string>
+    <string name="help_rules_help">Koppints egy lapra, és a legjobb szabályos helyre kerül, vagy húzd oda, ahová szeretnéd. Az Ászok és a biztonságos lapok maguktól mennek fel az alapokra, hacsak ki nem kapcsolod ezt a Beállításokban. A visszavonás korlátlan, a Tipp pedig mindig olyan lépést mutat, amely nyitva hagyja a győzelmet.</string>
+
+    <string name="help_strategy_intro">Ezek a Klondike közismert alapelvei. Egyik sem titok és egyik sem garancia - egyszerűen azok, amik általában működni szoktak.</string>
+    <string name="help_strategy_1_title">Előbb fordíts fel lapokat</string>
+    <string name="help_strategy_1">Minden lefordított lap olyan információ, ami hiányzik neked. Az a lépés, amely felfordít egyet, majdnem mindig jobb annál, amelyik nem, és a legtöbb lefordított lapot rejtő oszlop általában az, amelyikbe érdemes beleásni.</string>
+    <string name="help_strategy_2_title">Ne siess az alapokkal</string>
+    <string name="help_strategy_2">A túl korán felküldött lap már nem jöhet vissza, hogy megtartson valamit. Tartsd az alacsony lapokat a játéktéren, amíg még elkaphatnak egy szükséges lapot, és akkor küldd fel őket, amikor már senkinek nem kellenek.</string>
+    <string name="help_strategy_3_title">Tervvel üríts oszlopot</string>
+    <string name="help_strategy_3">Az üres oszlop a legértékesebb dolog az asztalon, mert csak Király töltheti be. Akkor üríts egyet, ha van készenlétben egy Királyod, vagy egy Király, amelyet el tudsz érni - nem pedig önmagáért.</string>
+    <string name="help_strategy_4_title">Az egész húzópaklit figyeld, ne csak a dobott lapokat</string>
+    <string name="help_strategy_4">A húzás ingyen van, és a húzópakli sosem keveredik újra, így végigmenni rajta csak lépésekbe kerül. Figyeld, mi megy el melletted: ha tudod, hogy egy lap újra körbeér, az megváltoztatja, melyik lépést érdemes most megtenned.</string>
+    <string name="help_strategy_5_title">Ha elakadsz, menj vissza</string>
+    <string name="help_strategy_5">A visszavonás semmibe nem kerül, csak egy lépésbe a számlálón. Ha egy osztás kiszárad, néhány lépést visszalépni és a másik ágra fordulni általában gyorsabb, mint abban reménykedni, hogy a húzópakli megment.</string>
+
+    <string name="help_levels_intro">Minden itteni osztás átment egy számítógépen, mielőtt hozzád került, és a szint azt mondja meg, mi kellett a győzelemhez - vagy a létra tetején azt, hogy semminek sem sikerült. Az osztás mértéke ez, nem a tiéd.</string>
+    <string name="help_levels_trivial_title">Triviális</string>
+    <string name="help_levels_trivial">Puszta kézenfekvő lépésekkel megnyerhető: fordíts fel lapokat, vedd el, amit kínálnak, játszd ki a dobott lapokat. Jó osztások a tanuláshoz, és a szint azokkal kezdődik, amelyek a legtöbb hibát megbocsátják.</string>
+    <string name="help_levels_easy_title">Könnyű</string>
+    <string name="help_levels_easy">Választást kíván kézenfekvő lépések között: ásni a legmélyebb oszlopba, és visszatartani egy lapot, amíg valami még igényli. Itt a kézenfekvő lépések már nem elegendők.</string>
+    <string name="help_levels_medium_title">Közepes</string>
+    <string name="help_levels_medium">Olyan lépést kíván, amely helyben semmit nem hoz - egy sorozat egy részét arrébb tenni, hogy az alatta lévő lap felszabaduljon. Az előkészítés a haszon előtt: erről szól ez a szint.</string>
+    <string name="help_levels_hard_title">Nehéz</string>
+    <string name="help_levels_hard">Olyan lapot kíván, amelyet visszaveszel egy alapról. Ellentmond a megérzésnek, és gyakran az egyetlen átjáró - ezért áll ilyen magasan.</string>
+    <string name="help_levels_expert_title">Szakértő</string>
+    <string name="help_levels_expert">Túl minden ökölszabályon: ezeket az osztásokat kereséssel nyerték meg, és épp csak - a két megoldó közül az egyik talált vonalat, a másik nem. Számíts rá, hogy sokszor kell visszalépned.</string>
+    <string name="help_levels_insane_title">Őrült</string>
+    <string name="help_levels_insane">Ezeket semmi nem oldotta meg, így senki nem ismer nyerő vonalat, mi sem. Némelyik egyáltalán nem nyerhető meg: a hasonló osztások közül, amelyeket egy megoldó eldöntött, nagyjából minden tizedik lehetetlennek bizonyult, ezek pedig a nehezebbek, amelyeket nem tudott eldönteni. Egy vereség itt tehát nem feltétlenül a te hibád - lehet, hogy az osztásnak egyszerűen nem volt átjárója. A küzdelemért játszd őket, ne a statisztikáért.</string>
+</resources>

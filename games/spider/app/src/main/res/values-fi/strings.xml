@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Yksi maa</string>
+    <string name="suit_count_two">Kaksi maata</string>
+    <string name="suit_count_four">Neljä maata</string>
+
+    <string name="setting_suit_count">Maat</string>
+
+    <string name="suit_count_switch_forfeits">Maan vaihtaminen päättää tämän pelin %1$d siirron jälkeen ja kirjaa sen tappioksi.</string>
+
+    <string name="deal_row_refused">Ei voi jakaa, kun sarake on tyhjä</string>
+
+    <string name="recovery_notice">Tallennettua peliä ei voitu avata, joten uusi jaettiin.</string>
+
+    <string name="uncertified_notice">Tätä jakoa ei ole varmennettu ratkeavaksi</string>
+
+    <string name="catalog_status_notice">Yhden ja kahden maan jaot tulevat varmennetusta luettelosta, joka on todennettu ratkeavaksi. Neljän maan jakoja ei ole vielä varmennettu.</string>
+
+    <string name="banked_sequences">Kerätty: %1$d/8</string>
+
+    <string name="action_help">Ohje</string>
+    <string name="help_title">Näin pelataan</string>
+    <string name="help_goal_title">Tavoite</string>
+    <string name="help_goal">Rakenna kahdeksan sarjaa kuninkaasta ässään, kukin yhtä maata. Valmis sarja kerätään talteen ja poistuu pöydältä. Kerää kaikki kahdeksan, niin voitat.</string>
+    <string name="help_moving_title">Korttien siirtäminen</string>
+    <string name="help_moving">Minkä tahansa avoimen kortin voi siirtää kortille, joka on yhtä arvoa korkeampi, maasta riippumatta. Useampi kortti siirtyy yhdessä vain, jos ne ovat jo laskevassa järjestyksessä ja samaa maata. Tyhjä sarake hyväksyy mitä tahansa, mikä tekee siitä pöydän arvokkaimman paikan.</string>
+    <string name="help_stock_title">Rivin jakaminen</string>
+    <string name="help_stock">Pakkaa napauttamalla jaetaan yksi avoin kortti jokaiseen sarakkeeseen kerralla — poisheittopinoa ei ole, eikä kortteja noste yksi kerrallaan. Jako evätään, kun sarake on tyhjä, joten täytä aukko ennen jakamista.</string>
+    <string name="help_suits_title">Maat</string>
+    <string name="help_suits">Yksi maa on lempein peli, neljä vaikein; kaksi on niiden välissä ja on oletusasetus. Määrä lukitaan, kun peli jaetaan — vaihda se asetuksista, ja se koskee seuraavaa uutta peliä.</string>
+    <string name="help_controls_title">Napautus, veto ja vihje</string>
+    <string name="help_controls">Napauta korttia lähettääksesi sen seuraavaan sallittuun sarakkeeseen oikealla, kiertäen tarvittaessa alkuun; napauta uudelleen jatkaaksesi sen siirtämistä. Vedä valitaksesi sarakkeen itse. Vihje syttyy jokaisen sarjan ylimpään korttiin, jolla on jokin paikka mennä. Kun jäljellä on enää viimeinen sarja, peli viimeistelee sen puolestasi.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Mietitään…</string>
+    <string name="hint_no_solution">Tästä ei ole enää voitollista jatkoa.</string>
+    <string name="hint_inconclusive">Ei saatu selvää ajoissa — yritä uudelleen tai jatka pelaamista.</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s de %2$s, fundação de %2$s</string>
+    <string name="cd_foundation_empty">Fundação de %1$s, vazia</string>
+    <string name="cd_move_to_tableau">Mover para o tabuleiro</string>
+    <string name="cd_stock_with_cards">Monte, %1$d cartas</string>
+    <string name="cd_stock_empty_recycles">Monte, vazio. Recicla o descarte.</string>
+    <string name="cd_stock_empty">Monte, vazio</string>
+    <string name="cd_draw_action">Comprar</string>
+    <string name="cd_waste_card">%1$s de %2$s, descarte</string>
+    <string name="cd_waste_empty">Descarte, vazio</string>
+    <string name="cd_move_card">Mover carta</string>
+    <string name="cd_tableau_card">%1$s de %2$s, coluna %3$d, posição %4$d de %5$d</string>
+    <string name="cd_tableau_face_down">Carta virada para baixo, coluna %1$d, posição %2$d de %3$d</string>
+    <string name="cd_move">Mover</string>
+    <string name="status_deal_prefix">Partida %1$d</string>
+    <string name="status_level_prefix">Nível: %1$s</string>
+    <string name="level_trivial">Trivial</string>
+    <string name="level_easy">Fácil</string>
+    <string name="level_medium">Médio</string>
+    <string name="level_hard">Difícil</string>
+    <string name="level_expert">Especialista</string>
+    <string name="level_insane">Insano</string>
+    <string name="recovery_notice_text">Não foi possível restaurar seu jogo salvo. Um novo jogo será iniciado.</string>
+    <string name="hint_thinking">Pensando…</string>
+    <string name="hint_no_solution">Não há caminho para vencer a partir daqui.</string>
+    <string name="hint_inconclusive">Não foi possível determinar a tempo — tente novamente ou continue jogando.</string>
+    <string name="setting_automatic_moves">Movimentos automáticos para a fundação</string>
+    <string name="setting_draw_three">Comprar três</string>
+    <string name="setting_difficulty">Dificuldade</string>
+    <string name="difficulty_random">Aleatória</string>
+    <string name="level_switch_forfeits">Mudar de nível encerra este jogo após %1$d jogadas e o registra como derrota.</string>
+    <string name="draw_mode_one">Comprar uma</string>
+    <string name="draw_mode_three">Comprar três</string>
+    <string name="stuck_title">Não há mais jogadas</string>
+    <string name="stuck_body">Não há jogada legal e o monte não pode ajudar. Desfaça ou inicie um novo jogo.</string>
+    <string name="unrecoverable_title">Este jogo não pode começar</string>
+    <string name="unrecoverable_body">O catálogo de jogos incluído falhou na verificação, então nenhum jogo pode ser certificado como solucionável. Reinstalar o app pode corrigir isso.</string>
+    <string name="unrecoverable_retry">Tentar novamente</string>
+</resources>

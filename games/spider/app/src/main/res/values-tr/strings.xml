@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Tek renk</string>
+    <string name="suit_count_two">İki renk</string>
+    <string name="suit_count_four">Dört renk</string>
+
+    <string name="setting_suit_count">Renkler</string>
+
+    <string name="suit_count_switch_forfeits">Renk değiştirmek bu oyunu %1$d hamle sonra bitirir ve kayıp olarak kaydeder.</string>
+
+    <string name="deal_row_refused">Bir sütun boşken dağıtılamaz</string>
+
+    <string name="recovery_notice">Kayıtlı oyununuz açılamadığı için yeni bir oyun dağıtıldı.</string>
+
+    <string name="uncertified_notice">Bu el çözülebilir olarak onaylanmamış</string>
+
+    <string name="catalog_status_notice">Tek ve iki renkli eller, çözülebilirliği doğrulanmış onaylı bir katalogdan gelir. Dört renkli eller henüz onaylanmamıştır.</string>
+
+    <string name="banked_sequences">Tamamlanan: %1$d / 8</string>
+
+    <string name="action_help">Yardım</string>
+    <string name="help_title">Nasıl Oynanır</string>
+    <string name="help_goal_title">Amaç</string>
+    <string name="help_goal">Papadan asa kadar, her biri tek bir renkte olan sekiz dizi oluşturun. Tamamlanan bir dizi saklanır ve tahtadan kalkar. Sekizini de tamamlayın, kazanın.</string>
+    <string name="help_moving_title">Kartları taşımak</string>
+    <string name="help_moving">Açık herhangi bir kart, rengi ne olursa olsun bir üst değerdeki karta taşınabilir. Birden fazla kart yalnızca zaten azalan sırada ve aynı renkteyse birlikte taşınır. Boş bir sütun her şeyi kabul eder, bu da onu tahtadaki en değerli yer yapar.</string>
+    <string name="help_stock_title">Sıra dağıtmak</string>
+    <string name="help_stock">Desteye dokunmak her sütuna aynı anda açık bir kart dağıtır — atık destesi yoktur ve tek tek kart çekilmez. Bir sütun boşken dağıtım reddedilir, bu yüzden dağıtmadan önce boşluğu doldurun.</string>
+    <string name="help_suits_title">Renkler</string>
+    <string name="help_suits">Tek renk en kolay oyundur, dört renk en zoru; iki renk ikisinin ortasındadır ve varsayılan ayardır. Sayı, oyun dağıtıldığında sabitlenir — Ayarlar\'dan değiştirin, bir sonraki yeni oyuna uygulanır.</string>
+    <string name="help_controls_title">Dokunma, sürükleme ve ipucu</string>
+    <string name="help_controls">Bir kartı sağındaki bir sonraki uygun sütuna göndermek için dokunun, gerekirse başa dönerek; devam ettirmek için tekrar dokunun. Sütunu kendiniz seçmek için sürükleyin. İpucu, gidebileceği bir yer olan her dizinin en üstteki kartını aydınlatır. Yalnızca son dizi kaldığında oyun onu sizin için tamamlar.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Düşünülüyor…</string>
+    <string name="hint_no_solution">Buradan kazanmaya giden bir yol yok.</string>
+    <string name="hint_inconclusive">Zamanında belirlenemedi — tekrar deneyin veya oynamaya devam edin.</string>
+</resources>

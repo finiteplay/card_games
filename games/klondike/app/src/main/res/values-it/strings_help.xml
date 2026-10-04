@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Come si gioca</string>
+    <string name="help_tab_rules">Regole</string>
+    <string name="help_tab_strategy">Strategia</string>
+    <string name="help_tab_levels">Livelli</string>
+
+    <string name="help_rules_goal_title">Lo scopo</string>
+    <string name="help_rules_goal">Porta tutte le 52 carte sulle quattro fondazioni in alto. Ogni fondazione accoglie un solo seme e si costruisce a partire dall\'Asso: A, 2, 3, fino al Re. Completale tutte e quattro e hai vinto.</string>
+    <string name="help_rules_board_title">Il tavolo</string>
+    <string name="help_rules_board">Le sette colonne al centro sono il tableau: è lì che si lavora. Il mucchio coperto è il mazzo; toccalo per girare le carte una alla volta sugli scarti accanto. Quando il mazzo finisce, toccalo di nuovo per rivoltare gli scarti e ricominciare il giro, tutte le volte che vuoi.</string>
+    <string name="help_rules_moves_title">Quali mosse sono valide</string>
+    <string name="help_rules_moves">Nel tableau una carta va su una carta di un rango più alto e di colore opposto: un 8 rosso su un 9 nero. Qualsiasi sequenza già in quest\'ordine si sposta tutta insieme. Solo un Re può entrare in una colonna vuota. Una carta scoperta può sempre salire sulla sua fondazione, e puoi far scendere di nuovo la carta in cima a una fondazione se ti serve.</string>
+    <string name="help_rules_help_title">Cosa fa l\'app per te</string>
+    <string name="help_rules_help">Tocca una carta e andrà nel miglior posto consentito, oppure trascinala dove vuoi. Assi e carte sicure salgono da sole sulle fondazioni, a meno che tu non lo disattivi nelle Impostazioni. Annulla è illimitato, e Suggerimento ti mostrerà sempre una mossa che lascia la vittoria possibile.</string>
+
+    <string name="help_strategy_intro">Questi sono i principi noti del Klondike. Nessuno è un segreto e nessuno è una garanzia: sono semplicemente quelli che di solito funzionano.</string>
+    <string name="help_strategy_1_title">Prima scopri le carte</string>
+    <string name="help_strategy_1">Ogni carta coperta è un\'informazione che non hai. Una mossa che ne gira una è quasi sempre migliore di una che non lo fa, e la colonna con più carte coperte è di solito quella su cui vale la pena scavare.</string>
+    <string name="help_strategy_2_title">Non avere fretta con le fondazioni</string>
+    <string name="help_strategy_2">Una carta mandata su troppo presto non può più scendere a reggere qualcosa. Tieni le carte basse nel tableau finché possono ancora accogliere una carta che ti serve, e mandale su quando non servono più a nessuno.</string>
+    <string name="help_strategy_3_title">Svuota una colonna con un piano</string>
+    <string name="help_strategy_3">Una colonna vuota è la cosa più preziosa sul tavolo, perché solo un Re può riempirla. Svuotane una quando hai un Re pronto, o un Re che puoi raggiungere, non per il gusto di farlo.</string>
+    <string name="help_strategy_4_title">Guarda tutto il mazzo, non solo gli scarti</string>
+    <string name="help_strategy_4">Pescare non costa nulla e il mazzo non viene mai rimescolato, quindi scorrerlo costa solo mosse. Osserva ciò che passa: sapere che una carta tornerà cambia la mossa da fare adesso.</string>
+    <string name="help_strategy_5_title">Quando sei bloccato, torna indietro</string>
+    <string name="help_strategy_5">Annulla non ti costa altro che una mossa nel contatore. Se una partita si prosciuga, tornare indietro di qualche mossa e prendere l\'altro ramo è di solito più veloce che sperare nel mazzo.</string>
+
+    <string name="help_levels_intro">Ogni partita è passata da un computer prima di arrivare a te, e il livello dice cosa è servito per vincerla - o, in cima alla scala, che nulla ci è riuscito. È una misura della partita, non tua.</string>
+    <string name="help_levels_trivial_title">Banale</string>
+    <string name="help_levels_trivial">Si vince con le sole mosse ovvie: scoprire carte, prendere ciò che si offre, giocare gli scarti. Buone partite per imparare, e il livello si apre con quelle che perdonano di più.</string>
+    <string name="help_levels_easy_title">Facile</string>
+    <string name="help_levels_easy">Richiede di scegliere tra mosse ovvie: scavare nella colonna più profonda e trattenere una carta finché qualcosa ne ha ancora bisogno. Qui le mosse ovvie non bastano.</string>
+    <string name="help_levels_medium_title">Medio</string>
+    <string name="help_levels_medium">Richiede una mossa che sul momento non guadagna nulla: spostare parte di una sequenza per scoprire la carta sotto. Preparare prima di raccogliere: di questo parla il livello.</string>
+    <string name="help_levels_hard_title">Difficile</string>
+    <string name="help_levels_hard">Richiede di far scendere una carta da una fondazione. Poco intuitivo, e spesso l\'unico passaggio: per questo sta così in alto.</string>
+    <string name="help_levels_expert_title">Esperto</string>
+    <string name="help_levels_expert">Oltre ogni regola pratica: queste partite sono state vinte dalla ricerca, e per poco - uno dei due solutori ha trovato una linea, l\'altro no. Aspettati di tornare indietro spesso.</string>
+    <string name="help_levels_insane_title">Folle</string>
+    <string name="help_levels_insane">Nessuno le ha risolte, quindi nessuno conosce una linea vincente, noi compresi. Alcune non si possono proprio vincere: tra le partite comparabili che un solutore ha risolto, circa una su dieci si è rivelata impossibile, e queste sono le più dure, quelle che non è riuscito a risolvere. Quindi una sconfitta qui può non essere colpa tua: la partita potrebbe semplicemente non avere via d\'uscita. Giocale per la sfida, non per il risultato.</string>
+</resources>

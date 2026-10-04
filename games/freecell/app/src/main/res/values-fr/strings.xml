@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Donne n° %1$d</string>
+    <string name="recovery_notice">Votre partie sauvegardée n\'a pas pu être ouverte, une nouvelle partie a donc été distribuée.</string>
+    <string name="setting_automatic_moves">Déplacements automatiques vers les fondations</string>
+    <string name="stuck_title">Plus aucun coup possible</string>
+    <string name="stuck_body">Il ne reste aucun coup légal. Annulez ou commencez une nouvelle partie.</string>
+    <string name="hint_thinking">Réflexion…</string>
+    <string name="hint_no_solution">Aucune voie vers la victoire à partir d\'ici.</string>
+    <string name="hint_inconclusive">Impossible de déterminer à temps — réessayez ou continuez à jouer.</string>
+    <string name="unrecoverable_title">Cette partie ne peut pas démarrer</string>
+    <string name="unrecoverable_body">Le catalogue de donnes intégré n\'a pas passé la vérification, donc aucune donne ne peut être certifiée comme soluble. Réinstaller l\'application pourrait résoudre le problème.</string>
+    <string name="unrecoverable_retry">Réessayer</string>
+    <string name="help_title">Comment jouer</string>
+    <string name="help_goal_title">Le but</string>
+    <string name="help_goal">Construisez les quatre fondations par couleur, de l\'as au roi. Rangez toutes les cartes et vous gagnez.</string>
+    <string name="help_free_cells_title">Cases libres</string>
+    <string name="help_free_cells">Chacune des quatre cases libres accueille une carte de n\'importe quelle valeur ou couleur, mise de côté jusqu\'à ce que vous en ayez de nouveau besoin. Une colonne vide fonctionne de la même façon, mais accueille toute une séquence au lieu d\'une seule carte.</string>
+    <string name="help_moving_title">Construire et déplacer</string>
+    <string name="help_moving">Une carte peut être posée sur une carte une valeur au-dessus et de couleur opposée. N\'importe quelle carte seule peut entrer dans une colonne vide. Plusieurs cartes se déplacent ensemble en un seul super-déplacement lorsque suffisamment de cases libres et de colonnes vides le permettent — le jeu calcule cela pour vous.</string>
+    <string name="help_controls_title">Toucher, glisser et indice</string>
+    <string name="help_controls">Touchez une carte pour l\'envoyer vers la colonne légale la plus proche à droite, puis vers une fondation sûre, puis vers la colonne la plus proche à gauche, et vers une fondation risquée ou une case libre vide seulement en dernier recours. Glissez pour choisir vous-même la destination, y compris une case libre. L\'indice prouve qu\'un coup existe et vous le montre, ou vous dit honnêtement quand ce n\'est pas le cas.</string>
+</resources>

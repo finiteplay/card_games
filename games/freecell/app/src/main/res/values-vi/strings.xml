@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Ván #%1$d</string>
+    <string name="recovery_notice">Không thể mở ván đã lưu của bạn, vì vậy một ván mới đã được chia.</string>
+    <string name="setting_automatic_moves">Tự động chuyển bài vào nền</string>
+    <string name="stuck_title">Không còn nước đi nào</string>
+    <string name="stuck_body">Không còn nước đi hợp lệ nào. Hoàn tác hoặc bắt đầu ván mới.</string>
+    <string name="hint_thinking">Đang suy nghĩ…</string>
+    <string name="hint_no_solution">Không còn cách nào để thắng từ đây.</string>
+    <string name="hint_inconclusive">Không kịp xác định — hãy thử lại hoặc tiếp tục chơi.</string>
+    <string name="unrecoverable_title">Không thể bắt đầu ván này</string>
+    <string name="unrecoverable_body">Danh mục ván bài đi kèm không vượt qua kiểm tra, nên không có ván nào được xác nhận là có thể giải được. Cài đặt lại ứng dụng có thể khắc phục điều này.</string>
+    <string name="unrecoverable_retry">Thử lại</string>
+    <string name="help_title">Cách chơi</string>
+    <string name="help_goal_title">Mục tiêu</string>
+    <string name="help_goal">Xây cả bốn nền theo chất bài, từ Át đến Già. Cất hết mọi lá bài là bạn thắng.</string>
+    <string name="help_free_cells_title">Ô trống</string>
+    <string name="help_free_cells">Mỗi ô trong bốn ô trống giữ một lá bài bất kỳ hạng hoặc chất nào, để sang một bên cho đến khi bạn cần lại. Một cột trống hoạt động tương tự, nhưng giữ cả một chuỗi thay vì một lá bài.</string>
+    <string name="help_moving_title">Xếp bài và di chuyển</string>
+    <string name="help_moving">Một lá bài có thể đặt lên lá bài cao hơn một hạng và khác màu. Bất kỳ lá bài đơn lẻ nào cũng có thể vào cột trống. Nhiều lá bài di chuyển cùng nhau như một siêu nước đi khi đủ ô trống và cột trống cho phép — trò chơi sẽ tự tính toán điều đó cho bạn.</string>
+    <string name="help_controls_title">Chạm, kéo và gợi ý</string>
+    <string name="help_controls">Chạm vào một lá bài để gửi nó đến cột hợp lệ gần nhất bên phải, sau đó đến nền an toàn, sau đó đến cột gần nhất bên trái, còn nền không an toàn hoặc ô trống chỉ được dùng như phương án cuối cùng. Kéo để tự chọn điểm đến, kể cả một ô trống. Gợi ý chứng minh có một nước đi và cho bạn thấy, hoặc thành thật cho bạn biết khi không tìm được.</string>
+</resources>

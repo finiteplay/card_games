@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Jak grać</string>
+    <string name="help_tab_rules">Zasady</string>
+    <string name="help_tab_strategy">Strategia</string>
+    <string name="help_tab_levels">Poziomy</string>
+
+    <string name="help_rules_goal_title">Cel gry</string>
+    <string name="help_rules_goal">Przenieś wszystkie 52 karty na cztery stosy u góry. Każdy stos przyjmuje jeden kolor i jest budowany od Asa w górę: A, 2, 3, aż do Króla. Ukończ wszystkie cztery, a wygrasz.</string>
+    <string name="help_rules_board_title">Stół</string>
+    <string name="help_rules_board">Siedem kolumn pośrodku to obszar gry - to tam wykonujesz pracę. Zakryta kupka to talia; dotknij jej, aby odkrywać karty pojedynczo na odkładce obok. Gdy talia się skończy, dotknij jej ponownie, aby odwrócić odkładkę i przejść kolejne okrążenie, dowolną liczbę razy.</string>
+    <string name="help_rules_moves_title">Które ruchy są dozwolone</string>
+    <string name="help_rules_moves">W kolumnach karta kładzie się na karcie o jedną rangę wyższej i w przeciwnym kolorze: czerwona 8 na czarnej 9. Sekwencja ułożona już w tym porządku przenosi się w całości. Do pustej kolumny może wejść tylko Król. Odkryta karta zawsze może pójść na swój stos, a wierzchnią kartę ze stosu możesz zdjąć z powrotem, jeśli jej potrzebujesz.</string>
+    <string name="help_rules_help_title">Co aplikacja robi za ciebie</string>
+    <string name="help_rules_help">Dotknij karty, a trafi w najlepsze dozwolone miejsce, albo przeciągnij ją tam, gdzie chcesz. Asy i bezpieczne karty same wędrują na stosy, o ile nie wyłączysz tego w Ustawieniach. Cofanie jest nieograniczone, a Podpowiedź zawsze pokaże ruch, który zachowuje szansę na wygraną.</string>
+
+    <string name="help_strategy_intro">To powszechnie znane zasady gry Klondike. Żadna z nich nie jest tajemnicą i żadna nie jest gwarancją - to po prostu to, co zwykle działa.</string>
+    <string name="help_strategy_1_title">Najpierw odkrywaj karty</string>
+    <string name="help_strategy_1">Każda zakryta karta to informacja, której nie masz. Ruch, który odkrywa jedną z nich, jest prawie zawsze lepszy od ruchu, który tego nie robi, a kolumna z największą liczbą zakrytych kart to zwykle ta, w którą warto się wkopać.</string>
+    <string name="help_strategy_2_title">Nie spiesz się ze stosami</string>
+    <string name="help_strategy_2">Karta wysłana na górę zbyt wcześnie nie wróci już na dół, żeby coś przyjąć. Trzymaj niskie karty w kolumnach, dopóki mogą jeszcze złapać potrzebną ci kartę, i wysyłaj je w górę, gdy nikomu nie są już potrzebne.</string>
+    <string name="help_strategy_3_title">Opróżniaj kolumnę z planem</string>
+    <string name="help_strategy_3">Pusta kolumna to najcenniejsza rzecz na stole, bo wypełnić ją może tylko Król. Opróżnij ją, gdy masz gotowego Króla albo Króla, do którego możesz dotrzeć, a nie dla samego opróżniania.</string>
+    <string name="help_strategy_4_title">Obserwuj całą talię, nie tylko odkładkę</string>
+    <string name="help_strategy_4">Dobieranie nic nie kosztuje, a talia nigdy nie jest tasowana ponownie, więc przejście przez nią kosztuje tylko ruchy. Patrz, co przewija się obok: świadomość, że karta wróci, zmienia ruch, który warto wykonać teraz.</string>
+    <string name="help_strategy_5_title">Gdy utkniesz, cofnij się</string>
+    <string name="help_strategy_5">Cofnięcie nie kosztuje cię nic poza jednym ruchem w liczniku. Jeśli rozdanie wysycha, cofnięcie się o kilka ruchów i wybranie drugiej gałęzi jest zwykle szybsze niż liczenie na to, że uratuje cię talia.</string>
+
+    <string name="help_levels_intro">Każde rozdanie przeszło przez komputer, zanim trafiło do ciebie, a poziom mówi, czego wymagała wygrana - albo, na szczycie drabiny, że nic jej nie osiągnęło. To miara rozdania, nie twoja.</string>
+    <string name="help_levels_trivial_title">Trywialny</string>
+    <string name="help_levels_trivial">Wygrywa się samymi oczywistymi ruchami: odkrywaj karty, bierz to, co się nadarza, graj odkładką. Dobre rozdania do nauki, a poziom zaczyna się od tych, które najbardziej wybaczają błędy.</string>
+    <string name="help_levels_easy_title">Łatwy</string>
+    <string name="help_levels_easy">Wymaga wyboru między oczywistymi ruchami: wkopania się w najgłębszą kolumnę i przytrzymania karty, dopóki coś jej jeszcze potrzebuje. Same oczywiste ruchy już tu nie wystarczą.</string>
+    <string name="help_levels_medium_title">Średni</string>
+    <string name="help_levels_medium">Wymaga ruchu, który na miejscu nic nie daje - przełożenia części sekwencji, aby odsłonić kartę pod spodem. Przygotowanie, zanim przyjdzie zysk, to właśnie ten poziom.</string>
+    <string name="help_levels_hard_title">Trudny</string>
+    <string name="help_levels_hard">Wymaga karty zdjętej z powrotem ze stosu. Wbrew intuicji, a często jedyne przejście - dlatego stoi tak wysoko.</string>
+    <string name="help_levels_expert_title">Ekspert</string>
+    <string name="help_levels_expert">Poza wszelkimi praktycznymi regułami: te rozdania wygrało przeszukiwanie, i to ledwie - jeden z dwóch solverów znalazł linię, a drugi nie. Licz się z częstym cofaniem.</string>
+    <string name="help_levels_insane_title">Szalony</string>
+    <string name="help_levels_insane">Tych rozdań nie rozwiązało nic, więc nikt nie zna wygrywającej linii, my również. Niektórych w ogóle nie da się wygrać: wśród porównywalnych rozdań, które solver zdołał rozstrzygnąć, mniej więcej jedno na dziesięć okazało się niemożliwe, a te są trudniejsze i pozostały nierozstrzygnięte. Przegrana tutaj może więc nie być twoją winą - rozdanie mogło po prostu nie mieć przejścia. Graj je dla walki, a nie dla statystyk.</string>
+</resources>

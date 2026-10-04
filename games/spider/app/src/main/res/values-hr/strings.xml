@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Jedna boja</string>
+    <string name="suit_count_two">Dvije boje</string>
+    <string name="suit_count_four">Četiri boje</string>
+
+    <string name="setting_suit_count">Boje</string>
+
+    <string name="suit_count_switch_forfeits">Promjena boja završava ovu igru nakon %1$d poteza i bilježi je kao poraz.</string>
+
+    <string name="deal_row_refused">Nije moguće dijeliti dok je stupac prazan</string>
+
+    <string name="recovery_notice">Spremljena igra nije se mogla otvoriti, pa je podijeljena nova.</string>
+
+    <string name="uncertified_notice">Ovo dijeljenje nije certificirano kao rješivo</string>
+
+    <string name="catalog_status_notice">Dijeljenja s jednom i dvije boje dolaze iz certificiranog kataloga, potvrđenog kao rješiv. Dijeljenja s četiri boje još nisu certificirana.</string>
+
+    <string name="banked_sequences">Pohranjeno: %1$d od 8</string>
+
+    <string name="action_help">Pomoć</string>
+    <string name="help_title">Kako igrati</string>
+    <string name="help_goal_title">Cilj</string>
+    <string name="help_goal">Izgradite osam nizova od kralja do asa, svaki u jednoj boji. Dovršen niz se pohranjuje i napušta ploču. Dovršite svih osam i pobjeđujete.</string>
+    <string name="help_moving_title">Pomicanje karata</string>
+    <string name="help_moving">Bilo koja otvorena karta može se premjestiti na kartu jedan rang višu, bez obzira na boju. Više karata pomiče se zajedno samo kada su već u silaznom nizu i dijele boju. Prazan stupac prihvaća bilo što, što ga čini najvrjednijim mjestom na ploči.</string>
+    <string name="help_stock_title">Dijeljenje reda</string>
+    <string name="help_stock">Dodirom na špil dijeli se po jedna otvorena karta na svaki stupac odjednom — nema odbačenog špila i ne vuče se karta po karta. Dijeljenje se odbija dok je neki stupac prazan, pa prvo popunite prazninu.</string>
+    <string name="help_suits_title">Boje</string>
+    <string name="help_suits">Jedna boja je najblaža igra, četiri najteža; dvije su između i zadana su postavka. Broj se određuje pri dijeljenju igre — promijenite ga u Postavkama i primijenit će se na sljedeću novu igru.</string>
+    <string name="help_controls_title">Dodir, povlačenje i savjet</string>
+    <string name="help_controls">Dodirnite kartu da je pošaljete u sljedeći dopušteni stupac desno, uz povratak na početak po potrebi; dodirnite ponovno da je nastavite pomicati. Povucite da sami odaberete stupac. Savjet osvjetljava gornju kartu svakog niza koji ima kamo ići. Kad preostane samo posljednji niz, igra ga dovršava umjesto vas.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Razmišljam…</string>
+    <string name="hint_no_solution">Odavde nema puta do pobjede.</string>
+    <string name="hint_inconclusive">Nisam uspio utvrditi na vrijeme — pokušaj ponovno ili nastavi igrati.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">한 가지 무늬</string>
+    <string name="suit_count_two">두 가지 무늬</string>
+    <string name="suit_count_four">네 가지 무늬</string>
+
+    <string name="setting_suit_count">무늬 수</string>
+
+    <string name="suit_count_switch_forfeits">무늬 수를 변경하면 %1$d수 만에 이 게임이 종료되고 패배로 기록됩니다.</string>
+
+    <string name="deal_row_refused">빈 열이 있는 동안에는 나눠줄 수 없습니다</string>
+
+    <string name="recovery_notice">저장된 게임을 열 수 없어 새 게임이 배분되었습니다.</string>
+
+    <string name="uncertified_notice">이 판은 풀 수 있다고 인증되지 않았습니다</string>
+
+    <string name="catalog_status_notice">한 가지 및 두 가지 무늬 판은 풀 수 있다고 검증된 인증 카탈로그에서 제공됩니다. 네 가지 무늬 판은 아직 인증되지 않았습니다.</string>
+
+    <string name="banked_sequences">보관됨: %1$d / 8</string>
+
+    <string name="action_help">도움말</string>
+    <string name="help_title">게임 방법</string>
+    <string name="help_goal_title">목표</string>
+    <string name="help_goal">킹부터 에이스까지 이어지는 여덟 개의 순열을 각각 한 가지 무늬로 만드세요. 완성된 순열은 보관되어 보드에서 사라집니다. 여덟 개를 모두 완성하면 승리합니다.</string>
+    <string name="help_moving_title">카드 옮기기</string>
+    <string name="help_moving">앞면이 보이는 카드는 무늬에 상관없이 한 단계 높은 카드 위로 옮길 수 있습니다. 여러 장의 카드는 이미 내림차순으로 정렬되어 있고 같은 무늬를 공유할 때만 함께 이동합니다. 빈 열은 무엇이든 받아들이므로 보드에서 가장 가치 있는 자리가 됩니다.</string>
+    <string name="help_stock_title">한 줄 나눠주기</string>
+    <string name="help_stock">스톡을 탭하면 모든 열에 동시에 앞면이 보이는 카드가 한 장씩 나눠집니다 — 버림 더미는 없으며 카드를 한 장씩 뽑지도 않습니다. 빈 열이 있는 동안에는 거부되므로 나눠주기 전에 빈 칸을 채우세요.</string>
+    <string name="help_suits_title">무늬 수</string>
+    <string name="help_suits">한 가지 무늬가 가장 쉬운 게임이고 네 가지가 가장 어려우며, 두 가지는 그 중간으로 기본값입니다. 게임이 배분될 때 개수가 고정됩니다 — 설정에서 변경하면 다음 새 게임에 적용됩니다.</string>
+    <string name="help_controls_title">탭, 드래그, 힌트</string>
+    <string name="help_controls">카드를 탭하면 오른쪽의 다음 합법적인 열로 보내지며, 필요하면 처음으로 돌아갑니다. 다시 탭하면 계속 이동합니다. 드래그하면 직접 열을 선택할 수 있습니다. 힌트는 갈 곳이 있는 모든 순열의 맨 위 카드를 밝힙니다. 마지막 순열만 남으면 게임이 대신 완성해 줍니다.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">생각 중…</string>
+    <string name="hint_no_solution">여기서는 이길 방법이 없습니다.</string>
+    <string name="hint_inconclusive">제한 시간 안에 판단하지 못했습니다 — 다시 시도하거나 계속 플레이하세요.</string>
+</resources>

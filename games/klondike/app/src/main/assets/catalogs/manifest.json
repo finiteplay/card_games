@@ -1,0 +1,65 @@
+{
+  "formatVersion": 1,
+  "catalogVersion": 1,
+  "rulesVersion": 1,
+  "shuffleVersion": 1,
+  "solverVersion": 1,
+  "generatedAt": "2026-08-19T21:48:29.841893600Z",
+  "totalSeeds": 60000,
+  "catalogs": [
+    {
+      "level": "TRIVIAL",
+      "file": "trivial.catalog",
+      "partitionId": 1,
+      "recordCount": 10000,
+      "certified": true,
+      "payloadHash": "45c269192822024b8e75cd56d1ef08fd5400be1590f994a9314a14e2715751d9",
+      "fileHash": "1bef721cadb5be2814f1ecef677a6ce278f65b12638ceab2f32117b2253436bc"
+    },
+    {
+      "level": "EASY",
+      "file": "easy.catalog",
+      "partitionId": 2,
+      "recordCount": 10000,
+      "certified": true,
+      "payloadHash": "31a1db6a5ccc77d4640eee723ea7f9985f81d0941774865241a12795eeffbac1",
+      "fileHash": "ab3ec32c640dc8e62507d0f64893cc0f40c0e070b9c9b9a3022608cab161fed2"
+    },
+    {
+      "level": "MEDIUM",
+      "file": "medium.catalog",
+      "partitionId": 3,
+      "recordCount": 10000,
+      "certified": true,
+      "payloadHash": "e06301f8e01f0497d2bc51b83bcb504fcce25d3bd554c3ff1988368d636de09f",
+      "fileHash": "d4dcf9292a0011f7bec1402e612368d2d74b553e88f0592bdaa2e3b175fc62cb"
+    },
+    {
+      "level": "HARD",
+      "file": "hard.catalog",
+      "partitionId": 4,
+      "recordCount": 10000,
+      "certified": true,
+      "payloadHash": "efa6606447e8dbf095b4238672b5304f9ed2d3ca11126920e71ee367efc57399",
+      "fileHash": "5c8859f0ba4ad0f2fdb435b6e6d40ba44708d29cdb8b85d43f7d035624a70aa3"
+    },
+    {
+      "level": "EXPERT",
+      "file": "expert.catalog",
+      "partitionId": 5,
+      "recordCount": 10000,
+      "certified": true,
+      "payloadHash": "e7f433428924a5e100c17e5ec3826828a95808f91bba948e6e850ec0e6cbb27d",
+      "fileHash": "0a8114237da305a4ceca1bf2de5490a774cd64f9b0cb255ba3130379821bf147"
+    },
+    {
+      "level": "INSANE",
+      "file": "insane.catalog",
+      "partitionId": 6,
+      "recordCount": 10000,
+      "certified": false,
+      "payloadHash": "fc9087e11d07dbf11584313008dadbf4cc5bb125eff5a15465aa3fdb39f52340",
+      "fileHash": "cf36640037c31698c287b5c9a4f9489038aff3537b0d3686146e06ac0ac8db91"
+    }
+  ]
+}

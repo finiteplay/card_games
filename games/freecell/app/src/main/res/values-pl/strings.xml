@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Rozdanie #%1$d</string>
+    <string name="recovery_notice">Nie udało się otworzyć zapisanej gry, więc rozdano nową.</string>
+    <string name="setting_automatic_moves">Automatyczne przenoszenie na stosy</string>
+    <string name="stuck_title">Brak ruchów</string>
+    <string name="stuck_body">Nie ma już żadnego legalnego ruchu. Cofnij lub zacznij nową grę.</string>
+    <string name="hint_thinking">Myślenie…</string>
+    <string name="hint_no_solution">Stąd nie da się już wygrać.</string>
+    <string name="hint_inconclusive">Nie udało się ustalić na czas — spróbuj ponownie lub graj dalej.</string>
+    <string name="unrecoverable_title">Nie można rozpocząć gry</string>
+    <string name="unrecoverable_body">Wbudowany katalog rozdań nie przeszedł weryfikacji, więc żadne rozdanie nie może zostać uznane za rozwiązywalne. Ponowna instalacja aplikacji może to naprawić.</string>
+    <string name="unrecoverable_retry">Spróbuj ponownie</string>
+    <string name="help_title">Jak grać</string>
+    <string name="help_goal_title">Cel</string>
+    <string name="help_goal">Zbuduj wszystkie cztery stosy według koloru, od asa do króla. Odłóż każdą kartę i wygrywasz.</string>
+    <string name="help_free_cells_title">Wolne komórki</string>
+    <string name="help_free_cells">Każda z czterech wolnych komórek mieści jedną kartę dowolnej wartości lub koloru, odłożoną na bok, dopóki znów jej nie potrzebujesz. Pusta kolumna działa tak samo, ale mieści całą sekwencję zamiast jednej karty.</string>
+    <string name="help_moving_title">Układanie i przenoszenie</string>
+    <string name="help_moving">Kartę można położyć na karcie o jedną wartość wyższej i przeciwnym kolorze. Dowolna pojedyncza karta może wejść na pustą kolumnę. Kilka kart przenosi się razem jako jeden superruch, gdy wystarczająca liczba wolnych komórek i pustych kolumn na to pozwala — gra sama to obliczy.</string>
+    <string name="help_controls_title">Dotknięcie, przeciąganie i podpowiedź</string>
+    <string name="help_controls">Dotknij karty, aby wysłać ją do najbliższej legalnej kolumny po prawej, potem do bezpiecznego stosu, potem do najbliższej kolumny po lewej, a do niebezpiecznego stosu lub pustej wolnej komórki tylko w ostateczności. Przeciągnij, aby samodzielnie wybrać cel, w tym wolną komórkę. Podpowiedź dowodzi, że ruch istnieje, i pokazuje go, albo szczerze mówi, że go nie ma.</string>
+</resources>

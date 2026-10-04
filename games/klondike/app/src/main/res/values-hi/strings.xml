@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%2$s का %1$s, %2$s आधार</string>
+    <string name="cd_foundation_empty">%1$s आधार, खाली</string>
+    <string name="cd_move_to_tableau">स्तंभ में ले जाएँ</string>
+    <string name="cd_stock_with_cards">स्टॉक, %1$d पत्ते</string>
+    <string name="cd_stock_empty_recycles">स्टॉक, खाली। बेकार ढेर को पुनः उपयोग करता है।</string>
+    <string name="cd_stock_empty">स्टॉक, खाली</string>
+    <string name="cd_draw_action">खींचें</string>
+    <string name="cd_waste_card">%2$s का %1$s, फेंके गए पत्ते</string>
+    <string name="cd_waste_empty">फेंके गए पत्ते, खाली</string>
+    <string name="cd_move_card">पत्ता ले जाएँ</string>
+    <string name="cd_tableau_card">%2$s का %1$s, स्तंभ %3$d, स्थिति %4$d में से %5$d</string>
+    <string name="cd_tableau_face_down">उल्टा पत्ता, स्तंभ %1$d, स्थिति %2$d में से %3$d</string>
+    <string name="cd_move">ले जाएँ</string>
+    <string name="status_deal_prefix">बाज़ी %1$d</string>
+    <string name="status_level_prefix">स्तर: %1$s</string>
+    <string name="level_trivial">साधारण</string>
+    <string name="level_easy">आसान</string>
+    <string name="level_medium">मध्यम</string>
+    <string name="level_hard">कठिन</string>
+    <string name="level_expert">विशेषज्ञ</string>
+    <string name="level_insane">अत्यधिक</string>
+    <string name="recovery_notice_text">आपका सहेजा गया खेल पुनर्स्थापित नहीं हो सका। नया खेल शुरू किया जा रहा है।</string>
+    <string name="hint_thinking">सोच रहे हैं…</string>
+    <string name="hint_no_solution">यहाँ से जीत का कोई रास्ता नहीं है।</string>
+    <string name="hint_inconclusive">समय पर पता नहीं चल सका — फिर से कोशिश करें, या खेलना जारी रखें।</string>
+    <string name="setting_automatic_moves">आधार पर स्वचालित चालें</string>
+    <string name="setting_draw_three">तीन पत्ते खींचें</string>
+    <string name="setting_difficulty">कठिनाई</string>
+    <string name="difficulty_random">यादृच्छिक</string>
+    <string name="level_switch_forfeits">स्तर बदलने पर यह खेल %1$d चालों के बाद समाप्त हो जाएगा और हार के रूप में दर्ज होगा।</string>
+    <string name="draw_mode_one">एक पत्ता खींचें</string>
+    <string name="draw_mode_three">तीन पत्ते खींचें</string>
+    <string name="stuck_title">कोई चाल शेष नहीं</string>
+    <string name="stuck_body">कोई वैध चाल नहीं है और स्टॉक भी मदद नहीं कर सकता। पूर्ववत करें या नया खेल शुरू करें।</string>
+    <string name="unrecoverable_title">यह खेल शुरू नहीं हो सकता</string>
+    <string name="unrecoverable_body">बंडल किया गया डील कैटलॉग सत्यापन में विफल रहा, इसलिए किसी भी डील को हल करने योग्य प्रमाणित नहीं किया जा सकता। ऐप को फिर से इंस्टॉल करने से यह ठीक हो सकता है।</string>
+    <string name="unrecoverable_retry">फिर से कोशिश करें</string>
+</resources>

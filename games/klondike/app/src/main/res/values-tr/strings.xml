@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%2$s %1$s, %2$s temeli</string>
+    <string name="cd_foundation_empty">%1$s temeli, boş</string>
+    <string name="cd_move_to_tableau">Oyun alanına taşı</string>
+    <string name="cd_stock_with_cards">Deste, %1$d kâğıt</string>
+    <string name="cd_stock_empty_recycles">Deste, boş. Atıkları geri kazanır.</string>
+    <string name="cd_stock_empty">Deste, boş</string>
+    <string name="cd_draw_action">Çek</string>
+    <string name="cd_waste_card">%2$s %1$s, ıskarta</string>
+    <string name="cd_waste_empty">Iskarta, boş</string>
+    <string name="cd_move_card">Kâğıdı taşı</string>
+    <string name="cd_tableau_card">%2$s %1$s, oyun alanı %3$d. sütun, %5$d üzerinden %4$d. sıra</string>
+    <string name="cd_tableau_face_down">Kapalı kâğıt, oyun alanı %1$d. sütun, %3$d üzerinden %2$d. sıra</string>
+    <string name="cd_move">Taşı</string>
+    <string name="status_deal_prefix">El %1$d</string>
+    <string name="status_level_prefix">Seviye: %1$s</string>
+    <string name="level_trivial">Çok kolay</string>
+    <string name="level_easy">Kolay</string>
+    <string name="level_medium">Orta</string>
+    <string name="level_hard">Zor</string>
+    <string name="level_expert">Uzman</string>
+    <string name="level_insane">Çılgın</string>
+    <string name="recovery_notice_text">Kayıtlı oyununuz geri yüklenemedi. Yeni bir oyun başlatılıyor.</string>
+    <string name="hint_thinking">Düşünülüyor…</string>
+    <string name="hint_no_solution">Buradan kazanmaya giden bir yol yok.</string>
+    <string name="hint_inconclusive">Zamanında belirlenemedi — tekrar deneyin veya oynamaya devam edin.</string>
+    <string name="setting_automatic_moves">Otomatik vakıf hamleleri</string>
+    <string name="setting_draw_three">Üçlü çekiliş</string>
+    <string name="setting_difficulty">Zorluk</string>
+    <string name="difficulty_random">Rastgele</string>
+    <string name="level_switch_forfeits">Seviye değiştirmek bu oyunu %1$d hamle sonra bitirir ve kayıp olarak kaydeder.</string>
+    <string name="draw_mode_one">Tek Çek</string>
+    <string name="draw_mode_three">Üçlü Çek</string>
+    <string name="stuck_title">Hamle kalmadı</string>
+    <string name="stuck_body">Geçerli bir hamle yok ve deste yardımcı olamıyor. Geri alın veya yeni bir oyun başlatın.</string>
+    <string name="unrecoverable_title">Bu oyun başlatılamıyor</string>
+    <string name="unrecoverable_body">Uygulamayla birlikte gelen el kataloğu doğrulamayı geçemedi, bu yüzden hiçbir el çözülebilir olarak onaylanamıyor. Uygulamayı yeniden yüklemek bunu çözebilir.</string>
+    <string name="unrecoverable_retry">Tekrar dene</string>
+</resources>

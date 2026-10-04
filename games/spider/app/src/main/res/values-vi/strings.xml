@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Một chất</string>
+    <string name="suit_count_two">Hai chất</string>
+    <string name="suit_count_four">Bốn chất</string>
+
+    <string name="setting_suit_count">Chất bài</string>
+
+    <string name="suit_count_switch_forfeits">Đổi chất bài sẽ kết thúc ván này sau %1$d nước đi và ghi nhận là thua.</string>
+
+    <string name="deal_row_refused">Không thể chia khi còn cột trống</string>
+
+    <string name="recovery_notice">Không thể mở ván đã lưu của bạn, vì vậy một ván mới đã được chia.</string>
+
+    <string name="uncertified_notice">Ván bài này chưa được chứng nhận là có thể giải được</string>
+
+    <string name="catalog_status_notice">Các ván một và hai chất đến từ danh mục đã được chứng nhận, xác minh là có thể giải được. Các ván bốn chất chưa được chứng nhận.</string>
+
+    <string name="banked_sequences">Đã cất: %1$d trên 8</string>
+
+    <string name="action_help">Trợ giúp</string>
+    <string name="help_title">Cách chơi</string>
+    <string name="help_goal_title">Mục tiêu</string>
+    <string name="help_goal">Xây dựng tám chuỗi từ Già đến Át, mỗi chuỗi một chất. Một chuỗi hoàn thành sẽ được cất đi và rời khỏi bàn chơi. Hoàn thành cả tám chuỗi là bạn thắng.</string>
+    <string name="help_moving_title">Di chuyển quân bài</string>
+    <string name="help_moving">Bất kỳ quân bài ngửa nào cũng có thể di chuyển lên quân bài cao hơn một bậc, bất kể chất gì. Nhiều quân bài chỉ di chuyển cùng nhau khi chúng đã xếp giảm dần và cùng chất. Cột trống chấp nhận bất cứ thứ gì, khiến nó trở thành nơi giá trị nhất trên bàn chơi.</string>
+    <string name="help_stock_title">Chia một hàng</string>
+    <string name="help_stock">Chạm vào chồng bài sẽ chia một quân bài ngửa lên mỗi cột cùng lúc — không có chồng bỏ và không rút từng quân một. Việc chia bị từ chối khi còn cột trống, vì vậy hãy lấp đầy khoảng trống trước khi chia.</string>
+    <string name="help_suits_title">Chất bài</string>
+    <string name="help_suits">Một chất là ván dễ nhất, bốn chất là khó nhất; hai chất nằm giữa và là mặc định. Số lượng được cố định khi ván bài được chia — thay đổi trong Cài đặt và nó sẽ áp dụng cho ván mới tiếp theo.</string>
+    <string name="help_controls_title">Chạm, kéo và gợi ý</string>
+    <string name="help_controls">Chạm vào một quân bài để gửi nó đến cột hợp lệ tiếp theo bên phải, quay lại từ đầu nếu cần; chạm lại để tiếp tục di chuyển nó. Kéo để tự chọn cột. Gợi ý làm sáng quân bài trên cùng của mỗi chuỗi có nơi để đến. Khi chỉ còn lại chuỗi cuối cùng, trò chơi sẽ hoàn thành nó giúp bạn.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Đang suy nghĩ…</string>
+    <string name="hint_no_solution">Không còn cách nào để thắng từ đây.</string>
+    <string name="hint_inconclusive">Không kịp xác định — hãy thử lại hoặc tiếp tục chơi.</string>
+</resources>

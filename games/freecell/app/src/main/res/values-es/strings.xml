@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Partida n.º %1$d</string>
+    <string name="recovery_notice">No se pudo abrir tu partida guardada, así que se repartió una nueva.</string>
+    <string name="setting_automatic_moves">Movimientos automáticos a la fundación</string>
+    <string name="stuck_title">No quedan movimientos</string>
+    <string name="stuck_body">No queda ningún movimiento legal. Deshacer o empezar una partida nueva.</string>
+    <string name="hint_thinking">Pensando…</string>
+    <string name="hint_no_solution">No hay forma de ganar desde aquí.</string>
+    <string name="hint_inconclusive">No se pudo determinar a tiempo — inténtalo de nuevo o sigue jugando.</string>
+    <string name="unrecoverable_title">Esta partida no puede iniciarse</string>
+    <string name="unrecoverable_body">El catálogo de partidas incluido no superó la verificación, así que ninguna partida puede certificarse como resoluble. Reinstalar la app podría solucionarlo.</string>
+    <string name="unrecoverable_retry">Reintentar</string>
+    <string name="help_title">Cómo jugar</string>
+    <string name="help_goal_title">El objetivo</string>
+    <string name="help_goal">Construye las cuatro fundaciones por palo, del as al rey. Guarda todas las cartas y ganas.</string>
+    <string name="help_free_cells_title">Celdas libres</string>
+    <string name="help_free_cells">Cada una de las cuatro celdas libres guarda una carta de cualquier valor o palo, apartada hasta que vuelvas a necesitarla. Una columna vacía funciona igual, pero admite una secuencia entera en lugar de una sola carta.</string>
+    <string name="help_moving_title">Construir y mover</string>
+    <string name="help_moving">Una carta puede colocarse sobre otra un valor más alta y de color opuesto. Cualquier carta individual puede entrar en una columna vacía. Varias cartas se mueven juntas como un supermovimiento cuando hay suficientes celdas libres y columnas vacías para hacerlo posible — el juego lo calcula por ti.</string>
+    <string name="help_controls_title">Tocar, arrastrar y pista</string>
+    <string name="help_controls">Toca una carta para enviarla a la columna legal más cercana a la derecha, luego a una fundación segura, luego a la columna más cercana a la izquierda, y a una fundación insegura o una celda libre vacía solo como último recurso. Arrastra para elegir tú mismo el destino, incluida una celda libre. La pista demuestra que existe un movimiento y te lo muestra, o te dice honestamente cuando no puede.</string>
+</resources>

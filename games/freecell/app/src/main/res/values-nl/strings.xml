@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Spel #%1$d</string>
+    <string name="recovery_notice">Je opgeslagen spel kon niet worden geopend, dus er is een nieuw spel gedeeld.</string>
+    <string name="setting_automatic_moves">Automatisch naar de stapels verplaatsen</string>
+    <string name="stuck_title">Geen zetten meer</string>
+    <string name="stuck_body">Er is geen geldige zet meer. Maak ongedaan of start een nieuw spel.</string>
+    <string name="hint_thinking">Denken…</string>
+    <string name="hint_no_solution">Vanaf hier is winnen niet meer mogelijk.</string>
+    <string name="hint_inconclusive">Kon het niet op tijd bepalen — probeer het opnieuw of speel verder.</string>
+    <string name="unrecoverable_title">Dit spel kan niet starten</string>
+    <string name="unrecoverable_body">De ingebouwde speldeel-catalogus is niet goedgekeurd, dus geen enkel spel kan als oplosbaar worden gecertificeerd. Het opnieuw installeren van de app kan dit oplossen.</string>
+    <string name="unrecoverable_retry">Opnieuw proberen</string>
+    <string name="help_title">Hoe te spelen</string>
+    <string name="help_goal_title">Het doel</string>
+    <string name="help_goal">Bouw alle vier de stapels op per kleur, van aas tot heer. Berg elke kaart op en je wint.</string>
+    <string name="help_free_cells_title">Vrije vakken</string>
+    <string name="help_free_cells">Elk van de vier vrije vakken bevat één kaart van elke waarde of kleur, opzijgezet totdat je hem weer nodig hebt. Een lege kolom werkt op dezelfde manier, maar bevat een hele reeks in plaats van één kaart.</string>
+    <string name="help_moving_title">Opbouwen en verplaatsen</string>
+    <string name="help_moving">Een kaart kan worden geplaatst op een kaart die één waarde hoger is en de tegenovergestelde kleur heeft. Elke losse kaart mag naar een lege kolom. Meerdere kaarten verplaatsen zich samen als één superzet wanneer genoeg vrije vakken en lege kolommen dat mogelijk maken — het spel rekent dat voor je uit.</string>
+    <string name="help_controls_title">Tikken, slepen en hint</string>
+    <string name="help_controls">Tik op een kaart om hem naar de dichtstbijzijnde geldige kolom rechts te sturen, dan naar een veilige stapel, dan naar de dichtstbijzijnde kolom links, en pas als laatste redmiddel naar een onveilige stapel of een leeg vrij vak. Sleep om zelf een bestemming te kiezen, ook een vrij vak. De hint bewijst dat er een zet bestaat en toont hem je, of vertelt je eerlijk wanneer dat niet zo is.</string>
+</resources>

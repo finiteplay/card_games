@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">So wird gespielt</string>
+    <string name="help_tab_rules">Regeln</string>
+    <string name="help_tab_strategy">Strategie</string>
+    <string name="help_tab_levels">Stufen</string>
+
+    <string name="help_rules_goal_title">Das Ziel</string>
+    <string name="help_rules_goal">Bring alle 52 Karten auf die vier Fundamente oben. Jedes Fundament nimmt eine Farbe auf und wird ab dem Ass aufgebaut: A, 2, 3, bis zum König. Sind alle vier fertig, hast du gewonnen.</string>
+    <string name="help_rules_board_title">Das Spielfeld</string>
+    <string name="help_rules_board">Die sieben Spalten in der Mitte sind das Tableau - dort wird gearbeitet. Der verdeckte Stapel ist der Talon; tippe ihn an, um Karten einzeln auf den Abwurfstapel daneben zu drehen. Ist der Talon leer, tippe ihn erneut an, um den Abwurfstapel umzudrehen und noch eine Runde zu drehen, so oft du willst.</string>
+    <string name="help_rules_moves_title">Welche Züge erlaubt sind</string>
+    <string name="help_rules_moves">Im Tableau kommt eine Karte auf eine Karte, die einen Rang höher und von der Gegenfarbe ist: eine rote 8 auf eine schwarze 9. Jede Folge, die bereits in dieser Reihenfolge liegt, wandert als Ganzes. Nur ein König darf in eine leere Spalte. Eine freiliegende Karte darf jederzeit auf ihr Fundament, und die oberste Fundamentkarte darfst du wieder herunterholen, wenn du sie brauchst.</string>
+    <string name="help_rules_help_title">Was die App für dich erledigt</string>
+    <string name="help_rules_help">Tippe eine Karte an, und sie geht an den besten erlaubten Platz, oder zieh sie dorthin, wo du sie haben willst. Asse und sichere Karten wandern von selbst auf die Fundamente, sofern du das nicht in den Einstellungen abschaltest. Rückgängig ist unbegrenzt, und Tipp zeigt dir immer einen Zug, der einen Sieg möglich lässt.</string>
+
+    <string name="help_strategy_intro">Das sind die allgemein bekannten Grundsätze von Klondike. Keiner davon ist ein Geheimnis und keiner eine Garantie - sie sind einfach das, was meistens funktioniert.</string>
+    <string name="help_strategy_1_title">Deck zuerst Karten auf</string>
+    <string name="help_strategy_1">Jede verdeckte Karte ist Information, die dir fehlt. Ein Zug, der eine davon umdreht, ist fast immer besser als einer, der es nicht tut, und die Spalte mit den meisten verdeckten Karten ist meist die, in der sich Graben lohnt.</string>
+    <string name="help_strategy_2_title">Überstürze die Fundamente nicht</string>
+    <string name="help_strategy_2">Eine zu früh abgelegte Karte kann nicht mehr herunterkommen, um etwas aufzunehmen. Lass niedrige Karten im Tableau, solange sie noch eine Karte auffangen können, die du brauchst, und leg sie ab, sobald sie niemand mehr braucht.</string>
+    <string name="help_strategy_3_title">Räum eine Spalte mit einem Plan</string>
+    <string name="help_strategy_3">Eine leere Spalte ist das Wertvollste auf dem Tisch, denn nur ein König kann sie füllen. Räum eine, wenn du einen König bereit hast oder einen König erreichen kannst, und nicht um des Räumens willen.</string>
+    <string name="help_strategy_4_title">Behalte den ganzen Talon im Blick, nicht nur den Abwurfstapel</string>
+    <string name="help_strategy_4">Ziehen kostet nichts, und der Talon wird nie neu gemischt - ihn durchzugehen kostet nur Züge. Achte darauf, was vorbeizieht: Zu wissen, dass eine Karte wiederkommt, ändert den Zug, den du jetzt machen solltest.</string>
+    <string name="help_strategy_5_title">Wenn du feststeckst, geh zurück</string>
+    <string name="help_strategy_5">Rückgängig kostet dich nur einen Zug im Zähler. Wenn ein Spiel versiegt, ist es meist schneller, ein paar Züge zurückzugehen und den anderen Ast zu nehmen, als darauf zu hoffen, dass der Talon dich rettet.</string>
+
+    <string name="help_levels_intro">Jedes Spiel hier hat einen Computer durchlaufen, bevor es zu dir kam, und die Stufe sagt, was zum Sieg nötig war - oder, ganz oben auf der Leiter, dass nichts es geschafft hat. Sie misst das Spiel, nicht dich.</string>
+    <string name="help_levels_trivial_title">Trivial</string>
+    <string name="help_levels_trivial">Zu gewinnen allein mit offensichtlichen Zügen: Karten aufdecken, nehmen, was sich anbietet, den Abwurfstapel spielen. Gute Spiele zum Lernen, und die Stufe beginnt mit denen, die Fehler am ehesten verzeihen.</string>
+    <string name="help_levels_easy_title">Leicht</string>
+    <string name="help_levels_easy">Verlangt eine Wahl zwischen offensichtlichen Zügen: in die tiefste Spalte graben und eine Karte zurückhalten, solange etwas sie noch braucht. Offensichtliche Züge allein reichen hier nicht.</string>
+    <string name="help_levels_medium_title">Mittel</string>
+    <string name="help_levels_medium">Verlangt einen Zug, der auf der Stelle nichts einbringt - einen Teil einer Folge zu versetzen, um die Karte darunter freizulegen. Erst vorbereiten, dann ernten: darum geht es auf dieser Stufe.</string>
+    <string name="help_levels_hard_title">Schwer</string>
+    <string name="help_levels_hard">Verlangt eine Karte, die vom Fundament wieder heruntergeholt wird. Widersinnig und oft der einzige Weg, weshalb diese Stufe so weit oben steht.</string>
+    <string name="help_levels_expert_title">Experte</string>
+    <string name="help_levels_expert">Jenseits jeder Faustregel: Diese Spiele wurden per Suche gewonnen, und nur knapp - einer der beiden Löser fand eine Linie, der andere nicht. Rechne damit, oft zurückzugehen.</string>
+    <string name="help_levels_insane_title">Wahnsinnig</string>
+    <string name="help_levels_insane">Nichts hat diese Spiele gelöst, also kennt niemand eine Gewinnlinie, wir eingeschlossen. Manche sind überhaupt nicht zu gewinnen: Unter den vergleichbaren Spielen, die ein Löser entschieden hat, erwies sich etwa jedes zehnte als unmöglich, und dies hier sind die härteren, die er nicht entscheiden konnte. Eine Niederlage ist hier also vielleicht nicht deine Schuld - vielleicht hatte das Spiel schlicht keinen Weg. Spiel sie um des Kampfes willen, nicht für die Statistik.</string>
+</resources>

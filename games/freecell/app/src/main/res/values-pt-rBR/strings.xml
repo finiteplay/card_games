@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Jogo nº %1$d</string>
+    <string name="recovery_notice">Não foi possível abrir seu jogo salvo, então um novo foi distribuído.</string>
+    <string name="setting_automatic_moves">Movimentos automáticos para a fundação</string>
+    <string name="stuck_title">Não há mais jogadas</string>
+    <string name="stuck_body">Não há mais jogadas legais. Desfazer ou comece um novo jogo.</string>
+    <string name="hint_thinking">Pensando…</string>
+    <string name="hint_no_solution">Não há caminho para vencer a partir daqui.</string>
+    <string name="hint_inconclusive">Não foi possível determinar a tempo — tente novamente ou continue jogando.</string>
+    <string name="unrecoverable_title">Este jogo não pode começar</string>
+    <string name="unrecoverable_body">O catálogo de jogos incluído falhou na verificação, então nenhum jogo pode ser certificado como solucionável. Reinstalar o app pode corrigir isso.</string>
+    <string name="unrecoverable_retry">Tentar novamente</string>
+    <string name="help_title">Como jogar</string>
+    <string name="help_goal_title">O objetivo</string>
+    <string name="help_goal">Construa as quatro fundações por naipe, do Ás ao Rei. Guarde cada carta e você vence.</string>
+    <string name="help_free_cells_title">Células livres</string>
+    <string name="help_free_cells">Cada uma das quatro células livres guarda uma carta de qualquer valor ou naipe, deixada de lado até você precisar dela de novo. Uma coluna vazia funciona da mesma forma, mas guarda uma sequência inteira em vez de uma única carta.</string>
+    <string name="help_moving_title">Construir e mover</string>
+    <string name="help_moving">Uma carta pode ser colocada sobre uma carta um valor acima e de cor oposta. Qualquer carta avulsa pode entrar em uma coluna vazia. Várias cartas se movem juntas como um supermovimento quando células livres e colunas vazias suficientes tornam isso possível — o jogo calcula isso para você.</string>
+    <string name="help_controls_title">Tocar, arrastar e dica</string>
+    <string name="help_controls">Toque em uma carta para enviá-la à coluna legal mais próxima à direita, depois a uma fundação segura, depois à coluna mais próxima à esquerda, e a uma fundação arriscada ou célula livre vazia apenas como último recurso. Arraste para escolher o destino você mesmo, incluindo uma célula livre. A dica prova que existe uma jogada e mostra a você, ou avisa honestamente quando não há.</string>
+</resources>

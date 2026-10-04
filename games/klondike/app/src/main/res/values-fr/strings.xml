@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s de %2$s, fondation %2$s</string>
+    <string name="cd_foundation_empty">Fondation %1$s, vide</string>
+    <string name="cd_move_to_tableau">Déplacer vers le tableau</string>
+    <string name="cd_stock_with_cards">Pioche, %1$d cartes</string>
+    <string name="cd_stock_empty_recycles">Pioche, vide. Recycle la défausse.</string>
+    <string name="cd_stock_empty">Pioche, vide</string>
+    <string name="cd_draw_action">Piocher</string>
+    <string name="cd_waste_card">%1$s de %2$s, défausse</string>
+    <string name="cd_waste_empty">Défausse, vide</string>
+    <string name="cd_move_card">Déplacer la carte</string>
+    <string name="cd_tableau_card">%1$s de %2$s, colonne %3$d, position %4$d sur %5$d</string>
+    <string name="cd_tableau_face_down">Carte face cachée, colonne %1$d, position %2$d sur %3$d</string>
+    <string name="cd_move">Déplacer</string>
+    <string name="status_deal_prefix">Donne %1$d</string>
+    <string name="status_level_prefix">Niveau : %1$s</string>
+    <string name="level_trivial">Trivial</string>
+    <string name="level_easy">Facile</string>
+    <string name="level_medium">Moyen</string>
+    <string name="level_hard">Difficile</string>
+    <string name="level_expert">Expert</string>
+    <string name="level_insane">Démentiel</string>
+    <string name="recovery_notice_text">Votre partie enregistrée n\'a pas pu être restaurée. Démarrage d\'une nouvelle partie.</string>
+    <string name="hint_thinking">Réflexion…</string>
+    <string name="hint_no_solution">Aucune voie vers la victoire à partir d\'ici.</string>
+    <string name="hint_inconclusive">Impossible de déterminer à temps — réessayez ou continuez à jouer.</string>
+    <string name="setting_automatic_moves">Déplacements automatiques vers les fondations</string>
+    <string name="setting_draw_three">Piocher trois</string>
+    <string name="setting_difficulty">Difficulté</string>
+    <string name="difficulty_random">Aléatoire</string>
+    <string name="level_switch_forfeits">Changer de niveau met fin à cette partie après %1$d coups et la compte comme une défaite.</string>
+    <string name="draw_mode_one">Piocher une</string>
+    <string name="draw_mode_three">Piocher trois</string>
+    <string name="stuck_title">Plus aucun coup possible</string>
+    <string name="stuck_body">Aucun coup légal n\'est possible et la pioche ne peut pas aider. Annulez ou démarrez une nouvelle partie.</string>
+    <string name="unrecoverable_title">Cette partie ne peut pas démarrer</string>
+    <string name="unrecoverable_body">Le catalogue de donnes intégré n\'a pas passé la vérification, donc aucune donne ne peut être certifiée comme soluble. Réinstaller l\'application pourrait résoudre le problème.</string>
+    <string name="unrecoverable_retry">Réessayer</string>
+</resources>

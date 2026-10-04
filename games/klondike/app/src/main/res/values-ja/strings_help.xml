@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">遊び方</string>
+    <string name="help_tab_rules">ルール</string>
+    <string name="help_tab_strategy">戦略</string>
+    <string name="help_tab_levels">レベル</string>
+
+    <string name="help_rules_goal_title">目的</string>
+    <string name="help_rules_goal">52枚すべてのカードを、上部にある4つの組み札へ移します。組み札は1つにつき1スート、エースから順に積み上げます。A、2、3、と続けてキングまで。4つとも仕上げれば勝ちです。</string>
+    <string name="help_rules_board_title">盤面</string>
+    <string name="help_rules_board">中央の7列が場札で、作業はここで進めます。裏向きの山が山札です。タップすると1枚ずつめくられ、隣の捨て札へ送られます。山札がなくなったらもう一度タップしてください。捨て札が裏返って戻り、また一巡できます。何度でもかまいません。</string>
+    <string name="help_rules_moves_title">許される手</string>
+    <string name="help_rules_moves">場札では、1つ上のランクで色が逆のカードの上に置けます。赤の8なら黒の9の上です。すでにその並びになっている連なりは、まとめて動かせます。空いた列に置けるのはキングだけです。表になっているカードはいつでも自分の組み札へ上げられますし、必要なら組み札のいちばん上のカードを引き戻すこともできます。</string>
+    <string name="help_rules_help_title">アプリが代わりにやること</string>
+    <string name="help_rules_help">カードをタップすれば、許される中で最善の場所へ移動します。好きな場所へドラッグしてもかまいません。エースと安全なカードは、設定でオフにしないかぎり自動で組み札へ上がります。元に戻す操作は無制限で、ヒントは必ず、勝ちの可能性を残す手を示します。</string>
+
+    <string name="help_strategy_intro">Klondike でよく知られている原則です。どれも秘密ではなく、どれも保証ではありません。単に、たいていうまくいくというだけのことです。</string>
+    <string name="help_strategy_1_title">まずカードをめくる</string>
+    <string name="help_strategy_1">裏向きのカードは、そのぶん手元にない情報です。1枚めくれる手は、めくれない手よりほぼ常に優れています。裏向きのカードがいちばん多い列が、たいていは掘る価値のある列です。</string>
+    <string name="help_strategy_2_title">組み札を急がない</string>
+    <string name="help_strategy_2">早く上げすぎたカードは、もう下りてきて何かを受けることができません。必要なカードを受け止められる可能性があるうちは低いカードを場札に残し、どこからも必要とされなくなってから上げましょう。</string>
+    <string name="help_strategy_3_title">列は計画を持って空ける</string>
+    <string name="help_strategy_3">空き列は盤上でもっとも価値のあるものです。埋められるのはキングだけだからです。手元にキングがあるとき、あるいは届くところにキングがあるときに空けてください。空けること自体が目的ではありません。</string>
+    <string name="help_strategy_4_title">捨て札だけでなく山札全体を見る</string>
+    <string name="help_strategy_4">引くこと自体に損はなく、山札が切り直されることもありません。一巡するのに要るのは手数だけです。何が通り過ぎたかを見ておきましょう。あのカードがまた回ってくると分かっているかどうかで、いま指すべき手は変わります。</string>
+    <string name="help_strategy_5_title">詰まったら戻る</string>
+    <string name="help_strategy_5">元に戻しても、失うのはカウンターの1手だけです。手詰まりになったら、数手戻って別の枝を選ぶほうが、山札が助けてくれるのを願うより早いのが普通です。</string>
+
+    <string name="help_levels_intro">ここにあるゲームはどれも、あなたの手元に届く前にコンピューターを通しています。レベルは、勝つのに何が必要だったかを示します。いちばん上では、何をもってしても勝てなかったことを示します。測っているのはゲームであって、あなたではありません。</string>
+    <string name="help_levels_trivial_title">非常に簡単</string>
+    <string name="help_levels_trivial">明らかな手だけで勝てます。カードをめくり、差し出されたものを取り、捨て札を使う。学ぶのに向いたゲームで、このレベルはミスをいちばん許してくれるものから始まります。</string>
+    <string name="help_levels_easy_title">簡単</string>
+    <string name="help_levels_easy">明らかな手の中から選ぶ必要があります。いちばん深い列を掘り、まだ必要とされているカードは手元に留める。ここからは明らかな手だけでは足りません。</string>
+    <string name="help_levels_medium_title">普通</string>
+    <string name="help_levels_medium">その場では何も得られない手が要ります。連なりの一部を動かして、その下のカードを開けるような手です。得をする前に仕込むこと、それがこのレベルの主題です。</string>
+    <string name="help_levels_hard_title">難しい</string>
+    <string name="help_levels_hard">組み札から引き戻す手が必要になります。直感に反しますが、多くの場合それが唯一の通り道で、だからこそこの高さにあります。</string>
+    <string name="help_levels_expert_title">上級</string>
+    <string name="help_levels_expert">経験則の及ばない領域です。これらは探索によって、それもぎりぎりで勝ちが見つかりました。2つのソルバーのうち一方は筋を見つけ、もう一方は見つけられませんでした。何度も戻ることになると思ってください。</string>
+    <string name="help_levels_insane_title">無謀</string>
+    <string name="help_levels_insane">これらを解けたものは何もなく、勝ち筋は誰も知りません。私たちもです。中にはそもそも勝てないものもあります。ソルバーが決着をつけられた同種のゲームのうち、およそ10に1つは不可能だと分かりました。ここにあるのは、それより難しく決着のつかなかったものです。ですからここでの敗北は、あなたのせいではないかもしれません。そのゲームには初めから道がなかった可能性があります。記録のためではなく、勝負そのもののために遊んでください。</string>
+</resources>

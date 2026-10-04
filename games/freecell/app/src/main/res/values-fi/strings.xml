@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Käsi #%1$d</string>
+    <string name="recovery_notice">Tallennettua peliä ei voitu avata, joten uusi jaettiin.</string>
+    <string name="setting_automatic_moves">Automaattiset siirrot pinoihin</string>
+    <string name="stuck_title">Ei siirtoja jäljellä</string>
+    <string name="stuck_body">Yhtään laillista siirtoa ei ole jäljellä. Peruuta tai aloita uusi peli.</string>
+    <string name="hint_thinking">Mietitään…</string>
+    <string name="hint_no_solution">Tästä ei ole enää voitollista jatkoa.</string>
+    <string name="hint_inconclusive">Ei saatu selvää ajoissa — yritä uudelleen tai jatka pelaamista.</string>
+    <string name="unrecoverable_title">Peliä ei voida aloittaa</string>
+    <string name="unrecoverable_body">Mukana tuleva jakoluettelo ei läpäissyt varmennusta, joten yhtäkään jakoa ei voida varmentaa ratkaistavaksi. Sovelluksen uudelleenasennus saattaa korjata tämän.</string>
+    <string name="unrecoverable_retry">Yritä uudelleen</string>
+    <string name="help_title">Näin pelataan</string>
+    <string name="help_goal_title">Tavoite</string>
+    <string name="help_goal">Rakenna kaikki neljä perustaa maittain, ässästä kuninkaaseen. Kerää jokainen kortti ja voitat.</string>
+    <string name="help_free_cells_title">Vapaat solut</string>
+    <string name="help_free_cells">Jokaiseen neljästä vapaasta solusta mahtuu yksi kortti, mitä tahansa arvoa tai maata, sivuun laitettuna kunnes tarvitset sen uudelleen. Tyhjä sarake toimii samalla tavalla, mutta siihen mahtuu koko sarja yhden kortin sijaan.</string>
+    <string name="help_moving_title">Rakentaminen ja siirtäminen</string>
+    <string name="help_moving">Kortin voi asettaa kortille, joka on yhtä arvoa korkeampi ja vastakkaista väriä. Mikä tahansa yksittäinen kortti voi siirtyä tyhjään sarakkeeseen. Useampi kortti siirtyy yhdessä yhtenä supersiirtona, kun riittävästi vapaita soluja ja tyhjiä sarakkeita tekee siitä mahdollista — peli laskee sen puolestasi.</string>
+    <string name="help_controls_title">Napautus, veto ja vihje</string>
+    <string name="help_controls">Napauta korttia lähettääksesi sen lähimpään lailliseen sarakkeeseen oikealla, sitten turvalliseen perustaan, sitten lähimpään sarakkeeseen vasemmalla, ja vasta viimeisenä keinona turvattomaan perustaan tai tyhjään vapaaseen soluun. Vedä valitaksesi kohteen itse, myös vapaan solun. Vihje todistaa, että siirto on olemassa, ja näyttää sen sinulle, tai kertoo rehellisesti, ettei sitä löydy.</string>
+</resources>

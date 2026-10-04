@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Cum se joacă</string>
+    <string name="help_tab_rules">Reguli</string>
+    <string name="help_tab_strategy">Strategie</string>
+    <string name="help_tab_levels">Niveluri</string>
+
+    <string name="help_rules_goal_title">Scopul</string>
+    <string name="help_rules_goal">Mută toate cele 52 de cărți pe cele patru fundații de sus. Fiecare fundație primește o singură culoare și se construiește începând cu Asul: A, 2, 3, până la Rege. Termină-le pe toate patru și ai câștigat.</string>
+    <string name="help_rules_board_title">Tabla</string>
+    <string name="help_rules_board">Cele șapte coloane din mijloc sunt tabla: acolo se joacă. Grămada cu fața în jos este pachetul; atinge-l ca să întorci cărțile una câte una pe teancul de cărți aruncate de alături. Când pachetul se termină, atinge-l din nou ca să întorci cărțile aruncate înapoi și să o iei de la capăt, de câte ori vrei.</string>
+    <string name="help_rules_moves_title">Ce mutări sunt permise</string>
+    <string name="help_rules_moves">Pe tablă, o carte se așază peste o carte cu un rang mai mare și de culoare opusă: un 8 roșu peste un 9 negru. Orice secvență aflată deja în această ordine se mută întreagă. Doar un Rege poate intra într-o coloană goală. O carte descoperită poate urca oricând pe fundația ei, iar cartea din vârful unei fundații poate fi coborâtă înapoi dacă ai nevoie de ea.</string>
+    <string name="help_rules_help_title">Ce face aplicația pentru tine</string>
+    <string name="help_rules_help">Atinge o carte și ajunge în cel mai bun loc permis, sau trage-o unde vrei tu. Așii și cărțile sigure urcă singuri pe fundații, dacă nu dezactivezi asta din Setări. Înapoi este nelimitat, iar Indiciu îți arată mereu o mutare care păstrează victoria posibilă.</string>
+
+    <string name="help_strategy_intro">Acestea sunt principiile binecunoscute ale jocului Klondike. Niciunul nu este un secret și niciunul nu este o garanție: sunt pur și simplu cele care funcționează de obicei.</string>
+    <string name="help_strategy_1_title">Întoarce mai întâi cărțile</string>
+    <string name="help_strategy_1">Fiecare carte cu fața în jos este o informație pe care nu o ai. O mutare care întoarce una este aproape întotdeauna mai bună decât una care nu o face, iar coloana cu cele mai multe cărți întoarse cu fața în jos este de obicei cea în care merită să sapi.</string>
+    <string name="help_strategy_2_title">Nu te grăbi cu fundațiile</string>
+    <string name="help_strategy_2">O carte urcată prea devreme nu mai poate coborî ca să țină ceva. Ține cărțile mici pe tablă cât timp mai pot prinde o carte de care ai nevoie și urcă-le când nu le mai trebuie nimănui.</string>
+    <string name="help_strategy_3_title">Golește o coloană cu un plan</string>
+    <string name="help_strategy_3">O coloană goală este cel mai valoros lucru de pe masă, pentru că doar un Rege o poate umple. Golește una când ai un Rege pregătit sau un Rege la care poți ajunge, nu de dragul golirii.</string>
+    <string name="help_strategy_4_title">Urmărește tot pachetul, nu doar cărțile aruncate</string>
+    <string name="help_strategy_4">Extragerea este gratuită, iar pachetul nu se amestecă niciodată din nou, așa că parcurgerea lui costă doar mutări. Fii atent la ce trece: să știi că o carte va reveni schimbă mutarea pe care ar trebui să o faci acum.</string>
+    <string name="help_strategy_5_title">Când ești blocat, întoarce-te</string>
+    <string name="help_strategy_5">Anularea nu te costă decât o mutare la contor. Dacă o partidă seacă, întoarcerea cu câteva mutări și alegerea celeilalte ramuri este de obicei mai rapidă decât speranța că te salvează pachetul.</string>
+
+    <string name="help_levels_intro">Fiecare partidă a trecut printr-un calculator înainte să ajungă la tine, iar nivelul spune ce a fost nevoie ca să fie câștigată - sau, în vârful scării, că nimic nu a reușit. Este o măsură a partidei, nu a ta.</string>
+    <string name="help_levels_trivial_title">Trivial</string>
+    <string name="help_levels_trivial">Se câștigă doar cu mutări evidente: întoarce cărți, ia ce ți se oferă, joacă teancul de cărți aruncate. Partide bune pentru început, iar nivelul începe cu cele care iartă cele mai multe greșeli.</string>
+    <string name="help_levels_easy_title">Ușor</string>
+    <string name="help_levels_easy">Cere să alegi între mutări evidente: să sapi în coloana cea mai adâncă și să reții o carte cât timp altceva încă are nevoie de ea. Aici mutările evidente nu mai sunt de ajuns.</string>
+    <string name="help_levels_medium_title">Mediu</string>
+    <string name="help_levels_medium">Cere o mutare care nu câștigă nimic pe loc: mutarea unei părți dintr-o secvență ca să descoperi cartea de dedesubt. Despre pregătirea dinaintea câștigului este vorba la acest nivel.</string>
+    <string name="help_levels_hard_title">Dificil</string>
+    <string name="help_levels_hard">Cere o carte coborâtă înapoi de pe o fundație. Contraintuitiv și adesea singura cale de trecere, motiv pentru care stă atât de sus.</string>
+    <string name="help_levels_expert_title">Expert</string>
+    <string name="help_levels_expert">Dincolo de orice regulă practică: aceste partide au fost câștigate prin căutare, și la limită - unul dintre cei doi rezolvitori a găsit o linie, celălalt nu. Așteaptă-te să dai des înapoi.</string>
+    <string name="help_levels_insane_title">Nebunesc</string>
+    <string name="help_levels_insane">Nimic nu a rezolvat aceste partide, așa că nimeni nu cunoaște o linie câștigătoare, nici noi. Unele nu pot fi câștigate deloc: dintre partidele comparabile pe care un rezolvitor le-a lămurit, aproximativ una din zece s-a dovedit imposibilă, iar acestea sunt cele mai grele, cele pe care nu le-a putut lămuri. Așa că o înfrângere aici s-ar putea să nu fie vina ta - se poate ca partida să nu fi avut nicio cale de ieșire. Joacă-le pentru luptă, nu pentru statistică.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">لون واحد</string>
+    <string name="suit_count_two">لونان</string>
+    <string name="suit_count_four">أربعة ألوان</string>
+
+    <string name="setting_suit_count">الألوان</string>
+
+    <string name="suit_count_switch_forfeits">تبديل الألوان ينهي هذه اللعبة بعد %1$d نقلة ويسجلها كخسارة.</string>
+
+    <string name="deal_row_refused">لا يمكن التوزيع أثناء وجود عمود فارغ</string>
+
+    <string name="recovery_notice">تعذّر فتح اللعبة المحفوظة، لذا تم توزيع لعبة جديدة.</string>
+
+    <string name="uncertified_notice">هذه التوزيعة غير معتمدة كقابلة للحل</string>
+
+    <string name="catalog_status_notice">توزيعات اللون الواحد واللونين تأتي من كتالوج معتمد تم التحقق من قابليته للحل. توزيعات الألوان الأربعة لم تُعتمد بعد.</string>
+
+    <string name="banked_sequences">المُدخرة: %1$d من 8</string>
+
+    <string name="action_help">مساعدة</string>
+    <string name="help_title">كيفية اللعب</string>
+    <string name="help_goal_title">الهدف</string>
+    <string name="help_goal">ابنِ ثماني سلاسل من الملك إلى الآس، كل واحدة بلون واحد. عند اكتمال السلسلة تُدّخر وتُزال من اللوحة. أكمل الثماني كلها لتفوز.</string>
+    <string name="help_moving_title">تحريك الأوراق</string>
+    <string name="help_moving">يمكن لأي ورقة مكشوفة أن تنتقل إلى ورقة أعلى برتبة واحدة، بغض النظر عن لونها. تتحرك عدة أوراق معًا فقط عندما تكون بالفعل مرتبة تنازليًا وتشترك في اللون. يقبل العمود الفارغ أي شيء، ما يجعله أكثر الأماكن قيمة على اللوحة.</string>
+    <string name="help_stock_title">توزيع صف</string>
+    <string name="help_stock">النقر على الحزمة يوزّع ورقة واحدة مكشوفة على كل عمود في آنٍ واحد — لا توجد كومة نبذ ولا يُسحب سوى ورقة واحدة في كل مرة. يُرفض التوزيع أثناء وجود عمود فارغ، فاملأ الفراغ قبل التوزيع.</string>
+    <string name="help_suits_title">الألوان</string>
+    <string name="help_suits">اللون الواحد هو أسهل لعبة، والأربعة الأصعب؛ اللونان في المنتصف وهما الإعداد الافتراضي. يُحدَّد العدد عند توزيع اللعبة — غيّره من الإعدادات ليُطبَّق على اللعبة الجديدة التالية.</string>
+    <string name="help_controls_title">النقر والسحب والتلميح</string>
+    <string name="help_controls">انقر على ورقة لإرسالها إلى العمود الصالح التالي على يمينها، مع العودة إلى البداية عند الحاجة؛ انقر مرة أخرى لمواصلة تحريكها. اسحب لاختيار العمود بنفسك. يُضيء التلميح الورقة العلوية لكل سلسلة لديها وجهة تذهب إليها. عندما تتبقى السلسلة الأخيرة فقط، تُكملها اللعبة نيابةً عنك.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">جارٍ التفكير…</string>
+    <string name="hint_no_solution">لا يوجد طريق للفوز من هنا.</string>
+    <string name="hint_inconclusive">تعذّر التأكد في الوقت المحدد — حاول مرة أخرى أو واصل اللعب.</string>
+</resources>

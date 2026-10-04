@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Help content for beginners: the rules, the strategies that are public knowledge, and what
+  the six levels mean in plain words.
+
+  Translated into all 30 locales, one values-XX/strings_help.xml each, and covered by
+  LocaleStringsCompletenessTest alongside strings.xml. Each locale reuses the card vocabulary its
+  own strings.xml already ships - its words for foundation, stock, waste, tableau, and each level
+  name - so the pages and the buttons call the same things by the same names. Like the rest of the
+  non-English strings they are machine-generated and not native-reviewed
+  (`docs/games/klondike/TODO.md`, "Localization - Native-Speaker Review").
+
+  Plain ASCII punctuation throughout, and no apostrophes. AAPT2 decodes &amp;apos; back to a bare
+  apostrophe and then rejects the string as unescaped, reporting it as an "invalid unicode escape
+  sequence" - a long way from the actual problem. Where one is needed, escape it as ' the way
+  recovery_notice_text does; where it is not, this file simply avoids it.
+-->
+<resources>
+    <string name="help_title">How to play</string>
+    <string name="help_tab_rules">Rules</string>
+    <string name="help_tab_strategy">Strategy</string>
+    <string name="help_tab_levels">Levels</string>
+
+    <!-- Rules -->
+    <string name="help_rules_goal_title">The goal</string>
+    <string name="help_rules_goal">Move all 52 cards onto the four foundations at the top. Each foundation takes one suit, starting with the Ace and building up: A, 2, 3, all the way to the King. Finish all four and you have won.</string>
+    <string name="help_rules_board_title">The board</string>
+    <string name="help_rules_board">The seven columns in the middle are the tableau - this is where you do your work. The face-down pile is the stock; tap it to turn cards over one at a time onto the waste beside it. When the stock runs out, tap it again to turn the waste back over and go round again, as often as you like.</string>
+    <string name="help_rules_moves_title">Which moves are legal</string>
+    <string name="help_rules_moves">In the tableau, a card goes on a card one rank higher of the opposite colour: a red 8 on a black 9. Any sequence already in that order moves as one. Only a King may go into an empty column. A card that is uncovered can always go to its foundation, and you may take the top foundation card back down if you need it.</string>
+    <string name="help_rules_help_title">What the app does for you</string>
+    <string name="help_rules_help">Tap a card and it goes to the best legal place, or drag it where you want. Aces and safe cards go to the foundations by themselves unless you turn that off in Settings. Undo is unlimited, and Hint will always show you a move that keeps a win possible.</string>
+
+    <!-- Strategy -->
+    <string name="help_strategy_intro">These are the well-known principles of Klondike. None of them is a secret and none is a guarantee - they are simply what tends to work.</string>
+    <string name="help_strategy_1_title">Turn cards over first</string>
+    <string name="help_strategy_1">Every face-down card is information you do not have. A move that flips one is almost always better than a move that does not, and the column with the most face-down cards is usually the one worth digging into.</string>
+    <string name="help_strategy_2_title">Do not rush the foundations</string>
+    <string name="help_strategy_2">A card sent up early cannot come back down to hold anything. Keep low cards in the tableau while they might still catch a card you need, and send them up once nothing needs them.</string>
+    <string name="help_strategy_3_title">Empty a column with a plan</string>
+    <string name="help_strategy_3">An empty column is the most valuable thing on the board, because only a King can fill it. Empty one when you have a King ready, or a King you can reach, rather than for its own sake.</string>
+    <string name="help_strategy_4_title">Watch the whole stock, not just the waste</string>
+    <string name="help_strategy_4">Drawing is free and the stock never reshuffles, so cycling through it costs nothing but moves. Watch what goes past: knowing a card is coming round again changes which move you should make now.</string>
+    <string name="help_strategy_5_title">When you are stuck, go back</string>
+    <string name="help_strategy_5">Undo costs you nothing but a move in the counter. If a deal dries up, walking back a few moves and taking the other branch is usually faster than hoping the stock saves you.</string>
+
+    <!-- Levels -->
+    <string name="help_levels_intro">Every deal here was put through a computer before it reached you, and the level says what it took to win - or, at the top of the ladder, that nothing managed it. It is a measure of the deal, not of you.</string>
+    <string name="help_levels_trivial_title">Trivial</string>
+    <string name="help_levels_trivial">Wins by obvious moves alone: turn cards over, take what is offered, play the waste. Good deals to learn on, and the level opens with the ones that forgive the most mistakes.</string>
+    <string name="help_levels_easy_title">Easy</string>
+    <string name="help_levels_easy">Needs you to choose between obvious moves: dig into the deepest column, and hold a card back when something still needs it. Obvious moves alone are not enough here.</string>
+    <string name="help_levels_medium_title">Medium</string>
+    <string name="help_levels_medium">Needs a move that gains nothing on the spot - shifting part of a sequence to uncover the card beneath it. Setting up before you profit is what this level is about.</string>
+    <string name="help_levels_hard_title">Hard</string>
+    <string name="help_levels_hard">Needs a card taken back down from a foundation. Counter-intuitive, and often the only way through, which is why it sits this high.</string>
+    <string name="help_levels_expert_title">Expert</string>
+    <string name="help_levels_expert">Beyond every rule of thumb: these deals were won by search, and only just - one of the two solvers found a line and the other could not. Expect to back up often.</string>
+    <string name="help_levels_insane_title">Insane</string>
+    <string name="help_levels_insane">Nothing solved these, so nobody knows a winning line, including us. Some of them cannot be won at all: among the comparable deals a solver did settle, about one in ten turned out to be impossible, and these are the harder ones it could not settle. So a loss here may not be your fault - the deal may simply have had no way through. Play them for the fight rather than the record.</string>
+</resources>

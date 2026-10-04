@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">第 %1$d 局</string>
+    <string name="recovery_notice">無法開啟已儲存的遊戲，因此發了一局新的。</string>
+    <string name="setting_automatic_moves">自動移動到基礎牌組</string>
+    <string name="stuck_title">沒有可用的走法了</string>
+    <string name="stuck_body">已經沒有合法的走法了。復原或開始新遊戲。</string>
+    <string name="hint_thinking">思考中…</string>
+    <string name="hint_no_solution">從目前局面無法獲勝。</string>
+    <string name="hint_inconclusive">未能在限定時間內判斷——請再試一次，或繼續遊戲。</string>
+    <string name="unrecoverable_title">無法開始這局遊戲</string>
+    <string name="unrecoverable_body">內建的牌局目錄未通過驗證，因此無法認證任何牌局可解。重新安裝應用程式可能會解決此問題。</string>
+    <string name="unrecoverable_retry">重試</string>
+    <string name="help_title">玩法說明</string>
+    <string name="help_goal_title">目標</string>
+    <string name="help_goal">依花色建立全部四組基礎堆，從A到K。收好每一張牌即可獲勝。</string>
+    <string name="help_free_cells_title">空閒格</string>
+    <string name="help_free_cells">四個空閒格中的每一個都能存放任意點數或花色的一張牌，暫放一旁，等再次需要時取出。空列的作用相同，但可以存放一整組序列，而不只是一張牌。</string>
+    <string name="help_moving_title">排列與移動</string>
+    <string name="help_moving">一張牌可以放在比它大一點、顏色相反的牌上。任何單張牌都可以移入空列。當空閒格和空列足夠多、能夠容納整趟移動時，多張牌會作為一次超級移動一起移動——遊戲會替你計算好。</string>
+    <string name="help_controls_title">點擊、拖曳與提示</string>
+    <string name="help_controls">點擊一張牌，會先送往右側最近的合法列，其次是安全的基礎堆，再次是左側最近的列，只有在別無選擇時才會送往不安全的基礎堆或空的空閒格。拖曳可以自行選擇目的地，包括空閒格。提示會證明存在可行的走法並展示給你，或者在找不到時如實告訴你。</string>
+</resources>

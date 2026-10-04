@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Näin peliä pelataan</string>
+    <string name="help_tab_rules">Säännöt</string>
+    <string name="help_tab_strategy">Strategia</string>
+    <string name="help_tab_levels">Tasot</string>
+
+    <string name="help_rules_goal_title">Tavoite</string>
+    <string name="help_rules_goal">Siirrä kaikki 52 korttia ylhäällä oleviin neljään pinoon. Kukin pino ottaa yhden maan ja rakentuu Ässästä ylöspäin: A, 2, 3, aina Kuninkaaseen asti. Kun kaikki neljä ovat valmiit, olet voittanut.</string>
+    <string name="help_rules_board_title">Pelialue</string>
+    <string name="help_rules_board">Keskellä olevat seitsemän saraketta ovat pelialue - siellä työ tehdään. Kuvapuoli alaspäin oleva kasa on pakka; napauta sitä kääntääksesi kortteja yksi kerrallaan viereiseen poistopinoon. Kun pakka loppuu, napauta sitä uudelleen, niin poistopino kääntyy takaisin ja pääset uudelle kierrokselle, niin monta kertaa kuin haluat.</string>
+    <string name="help_rules_moves_title">Mitkä siirrot ovat sallittuja</string>
+    <string name="help_rules_moves">Pelialueella kortti asettuu yhtä arvoa korkeamman ja vastakkaisen värisen kortin päälle: punainen 8 mustan 9:n päälle. Jono, joka on jo tuossa järjestyksessä, siirtyy kokonaisena. Tyhjään sarakkeeseen käy vain Kuningas. Vapaana oleva kortti pääsee aina omaan pinoonsa, ja pinon päällimmäisen kortin voi ottaa takaisin alas, jos sitä tarvitsee.</string>
+    <string name="help_rules_help_title">Mitä sovellus tekee puolestasi</string>
+    <string name="help_rules_help">Napauta korttia, niin se menee parhaaseen sallittuun paikkaan, tai vedä se minne haluat. Ässät ja turvalliset kortit siirtyvät pinoihin itsestään, ellet kytke sitä pois Asetuksista. Kumoaminen on rajatonta, ja Vihje näyttää aina siirron, joka pitää voiton mahdollisena.</string>
+
+    <string name="help_strategy_intro">Nämä ovat Klondiken yleisesti tunnetut periaatteet. Yksikään niistä ei ole salaisuus eikä yksikään ole takuu - ne ovat yksinkertaisesti sitä, mikä yleensä toimii.</string>
+    <string name="help_strategy_1_title">Käännä kortteja ensin</string>
+    <string name="help_strategy_1">Jokainen kuvapuoli alaspäin oleva kortti on tietoa, jota sinulla ei ole. Siirto, joka kääntää yhden niistä, on lähes aina parempi kuin siirto joka ei käännä, ja sarake jossa on eniten kääntämättömiä kortteja on yleensä se, jota kannattaa kaivaa.</string>
+    <string name="help_strategy_2_title">Älä kiirehdi pinoihin</string>
+    <string name="help_strategy_2">Liian aikaisin ylös lähetetty kortti ei voi tulla takaisin alas kannattelemaan mitään. Pidä matalat kortit pelialueella niin kauan kuin ne voivat vielä ottaa vastaan tarvitsemasi kortin, ja lähetä ne ylös, kun mikään ei enää tarvitse niitä.</string>
+    <string name="help_strategy_3_title">Tyhjennä sarake suunnitelmalla</string>
+    <string name="help_strategy_3">Tyhjä sarake on pöydän arvokkain asia, koska vain Kuningas voi täyttää sen. Tyhjennä sarake silloin, kun sinulla on Kuningas valmiina tai Kuningas johon ylletään - ei tyhjentämisen itsensä vuoksi.</string>
+    <string name="help_strategy_4_title">Seuraa koko pakkaa, älä vain poistopinoa</string>
+    <string name="help_strategy_4">Nostaminen on ilmaista eikä pakkaa sekoiteta koskaan uudelleen, joten sen läpi käyminen maksaa vain siirtoja. Katso mitä ohi menee: tieto siitä, että kortti tulee vielä uudelleen, muuttaa sen, mikä siirto kannattaa tehdä nyt.</string>
+    <string name="help_strategy_5_title">Kun jumitut, palaa taaksepäin</string>
+    <string name="help_strategy_5">Kumoaminen ei maksa sinulle muuta kuin yhden siirron laskurissa. Jos jako ehtyy, muutaman siirron peruuttaminen ja toiselle haaralle lähteminen on yleensä nopeampaa kuin toivoa pakan pelastavan sinut.</string>
+
+    <string name="help_levels_intro">Jokainen jako täällä on kulkenut tietokoneen läpi ennen kuin se päätyi sinulle, ja taso kertoo, mitä voittoon tarvittiin - tai tikkaiden huipulla sen, ettei mikään siihen pystynyt. Se mittaa jakoa, ei sinua.</string>
+    <string name="help_levels_trivial_title">Triviaali</string>
+    <string name="help_levels_trivial">Voitetaan pelkillä ilmeisillä siirroilla: käännä kortteja, ota mitä tarjotaan, pelaa poistopino. Hyviä jakoja opetteluun, ja taso alkaa niistä, jotka antavat eniten virheitä anteeksi.</string>
+    <string name="help_levels_easy_title">Helppo</string>
+    <string name="help_levels_easy">Vaatii valintaa ilmeisten siirtojen välillä: kaivamista syvimpään sarakkeeseen ja kortin pidättelyä niin kauan kuin jokin vielä tarvitsee sitä. Pelkät ilmeiset siirrot eivät täällä enää riitä.</string>
+    <string name="help_levels_medium_title">Keskitaso</string>
+    <string name="help_levels_medium">Vaatii siirron, joka ei tuota heti mitään - jonon osan siirtämistä, jotta sen alla oleva kortti paljastuu. Valmistelu ennen hyötyä on tämän tason ydin.</string>
+    <string name="help_levels_hard_title">Vaikea</string>
+    <string name="help_levels_hard">Vaatii kortin, joka otetaan takaisin alas pinosta. Vastoin vaistoa ja usein ainoa läpipääsy, ja siksi tämä taso on näin korkealla.</string>
+    <string name="help_levels_expert_title">Asiantuntija</string>
+    <string name="help_levels_expert">Kaikkien nyrkkisääntöjen tuolla puolen: nämä jaot voitettiin haulla, ja juuri ja juuri - kahdesta ratkaisijasta toinen löysi linjan, toinen ei. Varaudu palaamaan usein taaksepäin.</string>
+    <string name="help_levels_insane_title">Mieletön</string>
+    <string name="help_levels_insane">Mikään ei ratkaissut näitä, joten kukaan ei tunne voittavaa linjaa, emme mekään. Osaa ei voi voittaa lainkaan: vertailukelpoisista jaoista, jotka ratkaisija sai selvitettyä, noin joka kymmenes osoittautui mahdottomaksi, ja nämä ovat niitä vaikeampia, joita se ei saanut selvitettyä. Tappio täällä ei siis välttämättä ole sinun vikasi - jaossa ei ehkä yksinkertaisesti ollut läpipääsyä. Pelaa ne taistelun vuoksi, älä tilaston.</string>
+</resources>

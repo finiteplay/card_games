@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">หนึ่งดอก</string>
+    <string name="suit_count_two">สองดอก</string>
+    <string name="suit_count_four">สี่ดอก</string>
+
+    <string name="setting_suit_count">ดอก</string>
+
+    <string name="suit_count_switch_forfeits">การเปลี่ยนดอกจะจบเกมนี้หลังจาก %1$d ตา และบันทึกเป็นการแพ้</string>
+
+    <string name="deal_row_refused">แจกไม่ได้ในขณะที่มีคอลัมน์ว่าง</string>
+
+    <string name="recovery_notice">ไม่สามารถเปิดเกมที่บันทึกไว้ได้ จึงแจกเกมใหม่แทน</string>
+
+    <string name="uncertified_notice">กระดานนี้ยังไม่ได้รับการรับรองว่าแก้ได้</string>
+
+    <string name="catalog_status_notice">กระดานแบบหนึ่งและสองดอกมาจากรายการที่ได้รับการรับรองและตรวจสอบแล้วว่าแก้ได้ ส่วนกระดานแบบสี่ดอกยังไม่ได้รับการรับรอง</string>
+
+    <string name="banked_sequences">เก็บแล้ว: %1$d จาก 8</string>
+
+    <string name="action_help">ช่วยเหลือ</string>
+    <string name="help_title">วิธีเล่น</string>
+    <string name="help_goal_title">เป้าหมาย</string>
+    <string name="help_goal">สร้างชุดไพ่แปดชุดจากคิงไปจนถึงเอซ แต่ละชุดต้องเป็นดอกเดียวกัน ชุดที่เสร็จสมบูรณ์จะถูกเก็บและออกจากกระดาน เก็บให้ครบแปดชุดแล้วคุณจะชนะ</string>
+    <string name="help_moving_title">การย้ายไพ่</string>
+    <string name="help_moving">ไพ่ที่หงายอยู่ใบใดก็ได้สามารถย้ายไปวางบนไพ่ที่มีอันดับสูงกว่าหนึ่งขั้นได้ ไม่ว่าจะดอกใด ไพ่หลายใบจะย้ายไปด้วยกันก็ต่อเมื่อเรียงลำดับลดหลั่นและเป็นดอกเดียวกันอยู่แล้ว คอลัมน์ว่างรับไพ่อะไรก็ได้ ทำให้เป็นจุดที่มีค่าที่สุดบนกระดาน</string>
+    <string name="help_stock_title">การแจกแถว</string>
+    <string name="help_stock">การแตะกองไพ่จะแจกไพ่หงายหนึ่งใบลงทุกคอลัมน์พร้อมกัน — ไม่มีกองทิ้งและไม่มีการจั่วทีละใบ การแจกจะถูกปฏิเสธในขณะที่มีคอลัมน์ว่าง ดังนั้นให้เติมช่องว่างก่อนแจก</string>
+    <string name="help_suits_title">ดอก</string>
+    <string name="help_suits">หนึ่งดอกเป็นเกมที่ง่ายที่สุด สี่ดอกยากที่สุด ส่วนสองดอกอยู่ตรงกลางและเป็นค่าเริ่มต้น จำนวนจะถูกกำหนดตอนแจกเกม เปลี่ยนได้ในการตั้งค่าและจะมีผลกับเกมใหม่ครั้งถัดไป</string>
+    <string name="help_controls_title">แตะ ลาก และคำใบ้</string>
+    <string name="help_controls">แตะไพ่เพื่อส่งไปยังคอลัมน์ที่ถูกต้องถัดไปทางขวา โดยวนกลับไปเริ่มต้นหากจำเป็น แตะอีกครั้งเพื่อย้ายต่อไปเรื่อยๆ ลากเพื่อเลือกคอลัมน์เอง คำใบ้จะทำให้ไพ่บนสุดของทุกชุดที่มีที่ไปสว่างขึ้น เมื่อเหลือเพียงชุดสุดท้าย เกมจะจบให้คุณเอง</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">กำลังคิด…</string>
+    <string name="hint_no_solution">ไม่มีทางชนะจากจุดนี้</string>
+    <string name="hint_inconclusive">หาคำตอบไม่ทันเวลา — ลองใหม่อีกครั้ง หรือเล่นต่อไป</string>
+</resources>

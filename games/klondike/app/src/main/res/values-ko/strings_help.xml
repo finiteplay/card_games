@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">게임 방법</string>
+    <string name="help_tab_rules">규칙</string>
+    <string name="help_tab_strategy">전략</string>
+    <string name="help_tab_levels">난이도</string>
+
+    <string name="help_rules_goal_title">목표</string>
+    <string name="help_rules_goal">52장의 카드를 모두 위쪽의 기초 더미 네 곳으로 옮기세요. 기초 더미는 각각 한 무늬만 받으며 에이스부터 위로 쌓습니다. A, 2, 3, 그렇게 킹까지 올라갑니다. 네 더미를 모두 완성하면 승리입니다.</string>
+    <string name="help_rules_board_title">판</string>
+    <string name="help_rules_board">가운데 일곱 열이 테이블이고, 실제 작업은 여기서 이루어집니다. 뒷면이 보이는 더미가 뽑기 더미입니다. 탭하면 카드가 한 장씩 옆의 버린 더미로 넘어갑니다. 뽑기 더미가 바닥나면 다시 탭하세요. 버린 더미가 뒤집혀 돌아오고 한 바퀴 더 돌 수 있습니다. 횟수 제한은 없습니다.</string>
+    <string name="help_rules_moves_title">어떤 수가 유효한가</string>
+    <string name="help_rules_moves">테이블에서는 한 끗 높고 색이 반대인 카드 위에 놓을 수 있습니다. 빨간 8은 검은 9 위에 놓습니다. 이미 그 순서로 놓인 연속된 카드는 한 덩어리로 함께 옮겨집니다. 빈 열에는 킹만 들어갈 수 있습니다. 드러난 카드는 언제든 자기 기초 더미로 올릴 수 있고, 필요하면 기초 더미의 맨 위 카드를 다시 내릴 수도 있습니다.</string>
+    <string name="help_rules_help_title">앱이 대신 해 주는 일</string>
+    <string name="help_rules_help">카드를 탭하면 유효한 자리 중 가장 좋은 곳으로 이동하고, 원하는 곳으로 끌어다 놓을 수도 있습니다. 에이스와 안전한 카드는 설정에서 끄지 않는 한 알아서 기초 더미로 올라갑니다. 실행 취소에는 제한이 없으며, 힌트는 언제나 승리 가능성을 남기는 수를 보여 줍니다.</string>
+
+    <string name="help_strategy_intro">Klondike에서 널리 알려진 원칙들입니다. 어느 것도 비밀이 아니고 어느 것도 보장은 아닙니다. 그저 대체로 통하는 방법일 뿐입니다.</string>
+    <string name="help_strategy_1_title">카드를 먼저 뒤집기</string>
+    <string name="help_strategy_1">뒷면으로 놓인 카드는 그만큼 없는 정보입니다. 한 장을 뒤집는 수는 그러지 못하는 수보다 거의 언제나 낫고, 뒤집히지 않은 카드가 가장 많은 열이 대개 파고들 만한 열입니다.</string>
+    <string name="help_strategy_2_title">기초 더미를 서두르지 않기</string>
+    <string name="help_strategy_2">너무 일찍 올린 카드는 다시 내려와 무언가를 받아 줄 수 없습니다. 필요한 카드를 받아 낼 가능성이 남아 있는 동안에는 낮은 카드를 테이블에 두고, 아무것도 그 카드를 필요로 하지 않게 되면 그때 올리세요.</string>
+    <string name="help_strategy_3_title">계획을 가지고 열 비우기</string>
+    <string name="help_strategy_3">빈 열은 판에서 가장 값진 자리입니다. 그 자리를 채울 수 있는 것은 킹뿐이기 때문입니다. 킹이 준비되어 있거나 손닿는 곳에 킹이 있을 때 비우세요. 비우는 것 자체가 목적이 되어서는 안 됩니다.</string>
+    <string name="help_strategy_4_title">버린 더미만이 아니라 뽑기 더미 전체를 보기</string>
+    <string name="help_strategy_4">뽑는 데에는 대가가 없고 뽑기 더미는 다시 섞이지 않으므로, 한 바퀴 도는 데 드는 것은 수뿐입니다. 무엇이 지나가는지 지켜보세요. 어떤 카드가 다시 돌아온다는 것을 아는지 여부에 따라 지금 두어야 할 수가 달라집니다.</string>
+    <string name="help_strategy_5_title">막히면 되돌아가기</string>
+    <string name="help_strategy_5">실행 취소로 잃는 것은 카운터의 한 수뿐입니다. 판이 말라붙으면, 몇 수 되돌아가 다른 갈래를 택하는 편이 뽑기 더미가 구해 주기를 바라는 것보다 대개 빠릅니다.</string>
+
+    <string name="help_levels_intro">여기 있는 게임은 모두 여러분에게 오기 전에 컴퓨터를 거쳤고, 난이도는 그 게임을 이기는 데 무엇이 필요했는지를 말해 줍니다. 사다리의 맨 위에서는 무엇으로도 이기지 못했다는 뜻입니다. 이것은 게임에 대한 척도이지 여러분에 대한 척도가 아닙니다.</string>
+    <string name="help_levels_trivial_title">매우 쉬움</string>
+    <string name="help_levels_trivial">뻔한 수만으로 이깁니다. 카드를 뒤집고, 주어지는 것을 받고, 버린 더미를 쓰면 됩니다. 배우기 좋은 게임이며, 이 난이도는 실수를 가장 많이 눈감아 주는 게임부터 시작합니다.</string>
+    <string name="help_levels_easy_title">쉬움</string>
+    <string name="help_levels_easy">뻔한 수들 사이에서 고르는 일이 필요합니다. 가장 깊은 열을 파고들고, 무언가가 아직 필요로 하는 카드는 붙잡아 두는 것입니다. 여기서부터는 뻔한 수만으로는 부족합니다.</string>
+    <string name="help_levels_medium_title">보통</string>
+    <string name="help_levels_medium">당장은 아무 이득이 없는 수가 필요합니다. 연속된 카드의 일부를 옮겨 그 아래 카드를 드러내는 것이지요. 이득을 보기 전에 판을 짜 두는 것, 그것이 이 난이도의 주제입니다.</string>
+    <string name="help_levels_hard_title">어려움</string>
+    <string name="help_levels_hard">기초 더미에서 카드를 다시 내리는 수가 필요합니다. 직관에 어긋나지만 흔히 유일한 통로이고, 그래서 이만큼 높은 자리에 있습니다.</string>
+    <string name="help_levels_expert_title">전문가</string>
+    <string name="help_levels_expert">모든 경험칙 너머입니다. 이 게임들은 탐색으로, 그것도 간신히 이겨 냈습니다. 두 솔버 중 하나는 경로를 찾았고 다른 하나는 찾지 못했습니다. 자주 되돌아가게 될 것을 각오하세요.</string>
+    <string name="help_levels_insane_title">미친</string>
+    <string name="help_levels_insane">이 게임들은 무엇으로도 풀리지 않았습니다. 그래서 이기는 경로를 아는 사람이 아무도 없습니다. 저희도 마찬가지입니다. 아예 이길 수 없는 것도 있습니다. 솔버가 판정을 내린 비슷한 게임들 가운데 대략 열에 하나는 불가능한 것으로 드러났고, 여기 있는 것들은 그보다 어려워 판정조차 내리지 못한 게임입니다. 그러니 여기서의 패배는 여러분의 잘못이 아닐 수 있습니다. 애초에 그 게임에 길이 없었을지도 모릅니다. 기록이 아니라 승부 그 자체를 위해 즐기세요.</string>
+</resources>

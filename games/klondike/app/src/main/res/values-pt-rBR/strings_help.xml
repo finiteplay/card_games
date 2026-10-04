@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Como jogar</string>
+    <string name="help_tab_rules">Regras</string>
+    <string name="help_tab_strategy">Estratégia</string>
+    <string name="help_tab_levels">Níveis</string>
+
+    <string name="help_rules_goal_title">O objetivo</string>
+    <string name="help_rules_goal">Leve as 52 cartas para as quatro fundações no topo. Cada fundação recebe um único naipe e é construída a partir do Ás: A, 2, 3, até o Rei. Complete as quatro e você venceu.</string>
+    <string name="help_rules_board_title">O tabuleiro</string>
+    <string name="help_rules_board">As sete colunas do meio são o tabuleiro: é ali que se joga. A pilha virada para baixo é o monte; toque nele para virar as cartas uma a uma no descarte ao lado. Quando o monte acabar, toque de novo para virar o descarte e dar mais uma volta, quantas vezes quiser.</string>
+    <string name="help_rules_moves_title">Quais jogadas são válidas</string>
+    <string name="help_rules_moves">No tabuleiro, uma carta vai sobre uma carta de valor um acima e de cor oposta: um 8 vermelho sobre um 9 preto. Qualquer sequência já nessa ordem se move inteira. Só um Rei pode ocupar uma coluna vazia. Uma carta descoberta sempre pode subir para a sua fundação, e você pode trazer de volta a carta do topo de uma fundação se precisar dela.</string>
+    <string name="help_rules_help_title">O que o aplicativo faz por você</string>
+    <string name="help_rules_help">Toque numa carta e ela vai para o melhor lugar permitido, ou arraste-a para onde quiser. Ases e cartas seguras sobem sozinhos para as fundações, a menos que você desligue isso nas Configurações. Desfazer é ilimitado, e Dica sempre mostra uma jogada que mantém a vitória possível.</string>
+
+    <string name="help_strategy_intro">Estes são os princípios conhecidos do Klondike. Nenhum é segredo e nenhum é garantia: são simplesmente o que costuma funcionar.</string>
+    <string name="help_strategy_1_title">Vire as cartas primeiro</string>
+    <string name="help_strategy_1">Toda carta virada para baixo é informação que você não tem. Uma jogada que vira uma delas é quase sempre melhor do que uma que não vira, e a coluna com mais cartas viradas para baixo costuma ser a que vale a pena cavar.</string>
+    <string name="help_strategy_2_title">Não tenha pressa com as fundações</string>
+    <string name="help_strategy_2">Uma carta que sobe cedo demais não pode mais descer para segurar nada. Mantenha as cartas baixas no tabuleiro enquanto ainda puderem receber uma carta de que você precisa, e suba-as quando nada mais precisar delas.</string>
+    <string name="help_strategy_3_title">Esvazie uma coluna com um plano</string>
+    <string name="help_strategy_3">Uma coluna vazia é a coisa mais valiosa da mesa, porque só um Rei pode preenchê-la. Esvazie uma quando tiver um Rei pronto, ou um Rei que consiga alcançar, e não apenas por esvaziar.</string>
+    <string name="help_strategy_4_title">Observe todo o monte, não só o descarte</string>
+    <string name="help_strategy_4">Comprar é de graça e o monte nunca é embaralhado de novo, então percorrê-lo custa apenas jogadas. Repare no que passa: saber que uma carta vai voltar muda a jogada que você deve fazer agora.</string>
+    <string name="help_strategy_5_title">Quando travar, volte atrás</string>
+    <string name="help_strategy_5">Desfazer não custa nada além de uma jogada no contador. Se uma partida seca, voltar algumas jogadas e pegar o outro caminho costuma ser mais rápido do que torcer para o monte salvar você.</string>
+
+    <string name="help_levels_intro">Cada partida passou por um computador antes de chegar até você, e o nível diz o que foi preciso para vencê-la - ou, no topo da escada, que nada conseguiu. É uma medida da partida, não sua.</string>
+    <string name="help_levels_trivial_title">Trivial</string>
+    <string name="help_levels_trivial">Vence só com jogadas óbvias: virar cartas, pegar o que é oferecido, jogar o descarte. Boas partidas para aprender, e o nível começa pelas que mais perdoam erros.</string>
+    <string name="help_levels_easy_title">Fácil</string>
+    <string name="help_levels_easy">Exige escolher entre jogadas óbvias: cavar na coluna mais profunda e segurar uma carta enquanto algo ainda precisa dela. Aqui as jogadas óbvias já não bastam.</string>
+    <string name="help_levels_medium_title">Médio</string>
+    <string name="help_levels_medium">Exige uma jogada que não ganha nada na hora: mover parte de uma sequência para descobrir a carta debaixo dela. Preparar antes de lucrar é do que trata este nível.</string>
+    <string name="help_levels_hard_title">Difícil</string>
+    <string name="help_levels_hard">Exige trazer uma carta de volta de uma fundação. Pouco intuitivo, e muitas vezes a única saída, por isso está tão alto.</string>
+    <string name="help_levels_expert_title">Especialista</string>
+    <string name="help_levels_expert">Além de qualquer regra de bolso: estas partidas foram vencidas por busca, e por pouco - um dos dois solucionadores encontrou uma linha e o outro não. Espere voltar atrás com frequência.</string>
+    <string name="help_levels_insane_title">Insano</string>
+    <string name="help_levels_insane">Nada resolveu estas partidas, então ninguém conhece uma linha vencedora, nós inclusive. Algumas não têm como ser vencidas: entre as partidas comparáveis que um solucionador resolveu, cerca de uma em cada dez se mostrou impossível, e estas são as mais duras, as que ele não conseguiu resolver. Então uma derrota aqui pode não ser culpa sua: a partida talvez simplesmente não tivesse saída. Jogue-as pela briga, não pelo placar.</string>
+</resources>

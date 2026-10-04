@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Spider by FinitePlay</string>
+
+    <!-- Board title. "Spider" is a proper noun (the game's traditional name) and is
+         intentionally identical in every locale, matching Klondike's game_title. -->
+    <string name="game_title" translatable="false">Spider</string>
+
+    <!-- Suit-count picker (docs/games/spider/EXECUTION_PLAN.md S3a). "Spades" and "Spades and
+         Hearts" name what a level deals, not a difficulty word, so they stay plain nouns. -->
+    <string name="suit_count_one">One suit</string>
+    <string name="suit_count_two">Two suits</string>
+    <string name="suit_count_four">Four suits</string>
+    <!-- Settings label for the suit count the next new game deals at. -->
+    <!-- Status line: which suit count and which deal, e.g. "Two Suits #7". -->
+
+    <string name="setting_suit_count">Suits</string>
+
+    <!-- Status row's suit-count picker dialog (UI_SPEC.md "Status Row"): shown only when the
+         current game has moves that would be forfeited by switching, mirroring Klondike's own
+         level_switch_forfeits. -->
+    <string name="suit_count_switch_forfeits">Switching suits ends this game after %1$d moves and records it as a loss.</string>
+
+
+    <!-- Row-deal refusal (DESIGN.md "Interaction"): shown when Deal Row is tapped while a
+         column is empty. -->
+    <string name="deal_row_refused">Can\'t deal while a column is empty</string>
+
+    <!-- Shown when a save existed but could not be read (EXECUTION_PLAN.md S3b). A player whose
+         game vanished is owed the notice; one who never had a save is not. -->
+    <string name="recovery_notice">Your saved game couldn\'t be opened, so a new one was dealt.</string>
+
+    <!-- Shown only when the certified catalog could not be loaded and the deal fell back to the
+         uncertified formula (docs/games/spider/DEALS.md); a deal from the catalog never shows this. -->
+    <string name="uncertified_notice">This deal isn\'t certified solvable</string>
+
+    <!-- Help's standing statement about catalog coverage (docs/games/spider/DEALS.md), shown
+         regardless of which suit count is being played. -->
+    <string name="catalog_status_notice">One- and two-suit deals come from a certified catalog verified solvable. Four-suit deals are not yet certified.</string>
+
+    <string name="banked_sequences">Banked: %1$d of 8</string>
+
+    <!-- Help. Prose for a new player, not a rules reference; RULES.md stays the contract. -->
+    <string name="action_help">Help</string>
+    <string name="help_title">How to Play</string>
+    <string name="help_goal_title">The goal</string>
+    <string name="help_goal">Build eight runs from King down to Ace, each in a single suit. A finished run is banked and leaves the board. Clear all eight and you win.</string>
+    <string name="help_moving_title">Moving cards</string>
+    <string name="help_moving">Any face-up card can move onto a card one rank higher, whatever its suit. Several cards move together only when they already run down in order and share a suit. An empty column accepts anything, which makes it the most valuable thing on the board.</string>
+    <string name="help_stock_title">Dealing a row</string>
+    <string name="help_stock">Tapping the stock deals one card face up onto every column at once — there is no waste pile and nothing to draw one card at a time. It refuses while any column is empty, so fill the gap before dealing.</string>
+    <string name="help_suits_title">Suits</string>
+    <string name="help_suits">One suit is the gentlest game, four the hardest; two sits between them and is the default. The count is fixed when a game is dealt — change it in Settings and it applies to the next new game.</string>
+    <string name="help_controls_title">Tap, drag, and hint</string>
+    <string name="help_controls">Tap a card to send it to the next legal column on its right, wrapping around; tap again to keep walking it along. Drag to choose a column yourself. Hint lights the top card of every run that has somewhere to go. When only the last run is left, the game finishes it for you.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Thinking…</string>
+    <string name="hint_no_solution">No path to a win from here.</string>
+    <string name="hint_inconclusive">Searching for a win took too long. This game is likely unsolvable from here.</string>
+</resources>

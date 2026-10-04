@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">第 %1$d 局</string>
+    <string name="recovery_notice">无法打开已保存的游戏，因此发了一局新的。</string>
+    <string name="setting_automatic_moves">自动移动到基础牌堆</string>
+    <string name="stuck_title">没有可用的走法了</string>
+    <string name="stuck_body">已经没有合法的走法了。撤销或开始新游戏。</string>
+    <string name="hint_thinking">思考中…</string>
+    <string name="hint_no_solution">从当前局面无法获胜。</string>
+    <string name="hint_inconclusive">未能在限定时间内得出结果——请重试，或继续游戏。</string>
+    <string name="unrecoverable_title">无法开始这局游戏</string>
+    <string name="unrecoverable_body">内置的牌局目录未通过验证，因此无法认证任何牌局可解。重新安装应用可能会解决此问题。</string>
+    <string name="unrecoverable_retry">重试</string>
+    <string name="help_title">玩法说明</string>
+    <string name="help_goal_title">目标</string>
+    <string name="help_goal">按花色搭建全部四组基础堆，从A到K。收好每一张牌即可获胜。</string>
+    <string name="help_free_cells_title">空闲格</string>
+    <string name="help_free_cells">四个空闲格中的每一个都能存放任意点数或花色的一张牌，暂放一旁，等再次需要时取出。空列的作用相同，但可以存放一整组序列，而不只是一张牌。</string>
+    <string name="help_moving_title">排列与移动</string>
+    <string name="help_moving">一张牌可以放在比它大一点、颜色相反的牌上。任何单张牌都可以移入空列。当空闲格和空列足够多、能够容纳整趟移动时，多张牌会作为一次超级移动一起移动——游戏会替你计算好。</string>
+    <string name="help_controls_title">点击、拖动与提示</string>
+    <string name="help_controls">点击一张牌，会先送往右侧最近的合法列，其次是安全的基础堆，再次是左侧最近的列，只有在别无选择时才会送往不安全的基础堆或空的空闲格。拖动可以自行选择目的地，包括空闲格。提示会证明存在可行的走法并展示给你，或者在找不到时如实告诉你。</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Én farve</string>
+    <string name="suit_count_two">To farver</string>
+    <string name="suit_count_four">Fire farver</string>
+
+    <string name="setting_suit_count">Farver</string>
+
+    <string name="suit_count_switch_forfeits">Skift af farver afslutter dette spil efter %1$d træk og registrerer det som et tab.</string>
+
+    <string name="deal_row_refused">Kan ikke give kort, mens en kolonne er tom</string>
+
+    <string name="recovery_notice">Dit gemte spil kunne ikke åbnes, så et nyt blev givet.</string>
+
+    <string name="uncertified_notice">Dette spil er ikke certificeret som løseligt</string>
+
+    <string name="catalog_status_notice">Spil med én og to farver kommer fra et certificeret katalog, der er verificeret som løseligt. Spil med fire farver er endnu ikke certificeret.</string>
+
+    <string name="banked_sequences">Lagt til side: %1$d af 8</string>
+
+    <string name="action_help">Hjælp</string>
+    <string name="help_title">Sådan spiller du</string>
+    <string name="help_goal_title">Målet</string>
+    <string name="help_goal">Byg otte rækker fra konge til es, hver i én farve. En færdig række lægges til side og forlader brættet. Færdiggør alle otte, og du vinder.</string>
+    <string name="help_moving_title">Flytte kort</string>
+    <string name="help_moving">Ethvert vendt kort kan flyttes til et kort én valør højere, uanset farve. Flere kort flyttes kun sammen, når de allerede ligger i faldende rækkefølge og har samme farve. En tom kolonne accepterer hvad som helst, hvilket gør den til det mest værdifulde på brættet.</string>
+    <string name="help_stock_title">Give en række</string>
+    <string name="help_stock">At trykke på bunken giver ét vendt kort til hver kolonne på én gang — der er ingen kasseret bunke, og man trækker ikke ét kort ad gangen. Den afviser, mens en kolonne er tom, så udfyld hullet, før du giver kort.</string>
+    <string name="help_suits_title">Farver</string>
+    <string name="help_suits">Én farve er det mildeste spil, fire det sværeste; to ligger midtimellem og er standardindstillingen. Antallet fastlægges, når et spil gives — skift det i Indstillinger, så gælder det for næste nye spil.</string>
+    <string name="help_controls_title">Tryk, træk og hint</string>
+    <string name="help_controls">Tryk på et kort for at sende det til den nærmeste gyldige kolonne til højre, med tilbagevenden til starten ved behov; tryk igen for at blive ved med at flytte det. Træk for selv at vælge kolonne. Hintet lyser det øverste kort op i hver række, der har et sted at gå hen. Når kun den sidste række er tilbage, fuldfører spillet den for dig.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Tænker…</string>
+    <string name="hint_no_solution">Ingen vej til gevinst herfra.</string>
+    <string name="hint_inconclusive">Kunne ikke afgøre det i tide — prøv igen, eller fortsæt med at spille.</string>
+</resources>

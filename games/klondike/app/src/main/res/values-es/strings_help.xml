@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Cómo jugar</string>
+    <string name="help_tab_rules">Reglas</string>
+    <string name="help_tab_strategy">Estrategia</string>
+    <string name="help_tab_levels">Niveles</string>
+
+    <string name="help_rules_goal_title">El objetivo</string>
+    <string name="help_rules_goal">Lleva las 52 cartas a las cuatro fundaciones de arriba. Cada fundación admite un solo palo y se construye desde el As hacia arriba: A, 2, 3, hasta el Rey. Completa las cuatro y habrás ganado.</string>
+    <string name="help_rules_board_title">El tablero</string>
+    <string name="help_rules_board">Las siete columnas del centro son el tablero: ahí es donde se juega. El montón boca abajo es el mazo; tócalo para pasar cartas de una en una al descarte que tiene al lado. Cuando el mazo se agote, tócalo otra vez para dar la vuelta al descarte y empezar otra ronda, tantas veces como quieras.</string>
+    <string name="help_rules_moves_title">Qué movimientos son válidos</string>
+    <string name="help_rules_moves">En el tablero, una carta se coloca sobre otra de un rango superior y de color contrario: un 8 rojo sobre un 9 negro. Cualquier secuencia que ya esté en ese orden se mueve entera. Solo un Rey puede ocupar una columna vacía. Una carta descubierta siempre puede subir a su fundación, y puedes bajar de nuevo la carta superior de una fundación si la necesitas.</string>
+    <string name="help_rules_help_title">Lo que la aplicación hace por ti</string>
+    <string name="help_rules_help">Toca una carta y irá al mejor sitio permitido, o arrástrala adonde quieras. Los Ases y las cartas seguras suben solos a las fundaciones salvo que lo desactives en Ajustes. Deshacer es ilimitado, y Pista siempre te mostrará un movimiento que mantenga posible la victoria.</string>
+
+    <string name="help_strategy_intro">Estos son los principios conocidos del Klondike. Ninguno es un secreto y ninguno es una garantía: son simplemente lo que suele funcionar.</string>
+    <string name="help_strategy_1_title">Descubre cartas primero</string>
+    <string name="help_strategy_1">Cada carta boca abajo es información que no tienes. Un movimiento que dé la vuelta a una casi siempre es mejor que uno que no lo haga, y la columna con más cartas boca abajo suele ser la que merece la pena excavar.</string>
+    <string name="help_strategy_2_title">No tengas prisa con las fundaciones</string>
+    <string name="help_strategy_2">Una carta que sube pronto ya no puede bajar a sostener nada. Mantén las cartas bajas en el tablero mientras aún puedan recibir una carta que necesites, y súbelas cuando ya no le hagan falta a nadie.</string>
+    <string name="help_strategy_3_title">Vacía una columna con un plan</string>
+    <string name="help_strategy_3">Una columna vacía es lo más valioso del tablero, porque solo un Rey puede ocuparla. Vacía una cuando tengas un Rey listo, o un Rey al que puedas llegar, y no por el simple hecho de vaciarla.</string>
+    <string name="help_strategy_4_title">Vigila todo el mazo, no solo el descarte</string>
+    <string name="help_strategy_4">Robar es gratis y el mazo nunca se vuelve a barajar, así que recorrerlo solo cuesta movimientos. Fíjate en lo que va pasando: saber que una carta volverá a aparecer cambia el movimiento que deberías hacer ahora.</string>
+    <string name="help_strategy_5_title">Si te atascas, vuelve atrás</string>
+    <string name="help_strategy_5">Deshacer no te cuesta más que un movimiento en el contador. Si una partida se seca, retroceder unos movimientos y tomar la otra rama suele ser más rápido que esperar a que el mazo te salve.</string>
+
+    <string name="help_levels_intro">Cada partida pasó por un ordenador antes de llegar a ti, y el nivel dice lo que hizo falta para ganarla o, en lo más alto de la escala, que nada lo consiguió. Es una medida de la partida, no tuya.</string>
+    <string name="help_levels_trivial_title">Trivial</string>
+    <string name="help_levels_trivial">Se gana solo con movimientos obvios: descubrir cartas, tomar lo que se ofrece, jugar el descarte. Buenas partidas para aprender, y el nivel empieza por las que más perdonan los errores.</string>
+    <string name="help_levels_easy_title">Fácil</string>
+    <string name="help_levels_easy">Exige elegir entre movimientos obvios: excavar en la columna más profunda y retener una carta cuando algo todavía la necesita. Aquí los movimientos obvios no bastan.</string>
+    <string name="help_levels_medium_title">Medio</string>
+    <string name="help_levels_medium">Exige un movimiento que no gana nada en el momento: mover parte de una secuencia para descubrir la carta de debajo. Preparar antes de sacar provecho es de lo que trata este nivel.</string>
+    <string name="help_levels_hard_title">Difícil</string>
+    <string name="help_levels_hard">Exige bajar una carta desde una fundación. Poco intuitivo, y a menudo la única vía, que es por lo que está tan arriba.</string>
+    <string name="help_levels_expert_title">Experto</string>
+    <string name="help_levels_expert">Más allá de cualquier regla general: estas partidas se ganaron por búsqueda, y por muy poco: uno de los dos solucionadores encontró una línea y el otro no. Cuenta con retroceder a menudo.</string>
+    <string name="help_levels_insane_title">Demencial</string>
+    <string name="help_levels_insane">Nada resolvió estas partidas, así que nadie conoce una línea ganadora, nosotros incluidos. Algunas no se pueden ganar en absoluto: entre las partidas comparables que un solucionador sí resolvió, alrededor de una de cada diez resultó imposible, y estas son las más duras, las que no logró resolver. Así que una derrota aquí puede no ser culpa tuya: puede que la partida simplemente no tuviera salida. Juégalas por la pelea, no por el registro.</string>
+</resources>

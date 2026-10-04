@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Blatt Nr. %1$d</string>
+    <string name="recovery_notice">Dein gespeichertes Spiel konnte nicht geöffnet werden, daher wurde ein neues ausgeteilt.</string>
+    <string name="setting_automatic_moves">Automatische Ablage-Züge</string>
+    <string name="stuck_title">Keine Züge mehr möglich</string>
+    <string name="stuck_body">Es gibt keinen legalen Zug mehr. Mach den letzten Zug rückgängig oder starte ein neues Spiel.</string>
+    <string name="hint_thinking">Denke nach…</string>
+    <string name="hint_no_solution">Von hier aus gibt es keinen Weg zum Sieg.</string>
+    <string name="hint_inconclusive">Konnte nicht rechtzeitig ermittelt werden — versuche es erneut oder spiele weiter.</string>
+    <string name="unrecoverable_title">Dieses Spiel kann nicht gestartet werden</string>
+    <string name="unrecoverable_body">Der mitgelieferte Blattkatalog hat die Überprüfung nicht bestanden, daher kann kein Blatt als lösbar zertifiziert werden. Eine Neuinstallation der App könnte das beheben.</string>
+    <string name="unrecoverable_retry">Erneut versuchen</string>
+    <string name="help_title">Spielanleitung</string>
+    <string name="help_goal_title">Das Ziel</string>
+    <string name="help_goal">Baue alle vier Ablagestapel nach Farbe auf, vom Ass bis zum König. Lege jede Karte ab und du gewinnst.</string>
+    <string name="help_free_cells_title">Freizellen</string>
+    <string name="help_free_cells">Jede der vier Freizellen fasst eine Karte beliebigen Werts oder beliebiger Farbe, die dort wartet, bis du sie wieder brauchst. Eine leere Spalte funktioniert genauso, fasst aber eine ganze Folge statt einer einzelnen Karte.</string>
+    <string name="help_moving_title">Aufbauen und Verschieben</string>
+    <string name="help_moving">Eine Karte kann auf eine Karte gelegt werden, die einen Wert höher und von der entgegengesetzten Farbe ist. Jede einzelne Karte darf in eine leere Spalte gelegt werden. Mehrere Karten bewegen sich gemeinsam als ein Superzug, wenn genug Freizellen und leere Spalten die Reise erlauben — das Spiel rechnet das für dich aus.</string>
+    <string name="help_controls_title">Tippen, Ziehen und Hinweis</string>
+    <string name="help_controls">Tippe auf eine Karte, um sie in die nächste legale Spalte rechts zu schicken, dann in einen sicheren Ablagestapel, dann in die nächste Spalte links, und erst als letzten Ausweg in einen unsicheren Ablagestapel oder eine leere Freizelle. Ziehe, um das Ziel selbst zu wählen, auch eine Freizelle. Der Hinweis beweist, dass ein Zug existiert, und zeigt ihn dir, oder sagt dir ehrlich, wenn er keinen findet.</string>
+</resources>

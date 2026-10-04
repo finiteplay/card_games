@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%2$s %1$s, %2$s alap</string>
+    <string name="cd_foundation_empty">%1$s alap, üres</string>
+    <string name="cd_move_to_tableau">Áthelyezés a játéktérre</string>
+    <string name="cd_stock_with_cards">Húzópakli, %1$d lap</string>
+    <string name="cd_stock_empty_recycles">Húzópakli, üres. Újrahasznosítja a dobott lapokat.</string>
+    <string name="cd_stock_empty">Húzópakli, üres</string>
+    <string name="cd_draw_action">Húzás</string>
+    <string name="cd_waste_card">%2$s %1$s, dobott lap</string>
+    <string name="cd_waste_empty">Dobott lapok, üres</string>
+    <string name="cd_move_card">Lap áthelyezése</string>
+    <string name="cd_tableau_card">%2$s %1$s, %3$d. oszlop, %4$d/%5$d pozíció</string>
+    <string name="cd_tableau_face_down">Lefelé fordított lap, %1$d. oszlop, %2$d/%3$d pozíció</string>
+    <string name="cd_move">Áthelyezés</string>
+    <string name="status_deal_prefix">%1$d. osztás</string>
+    <string name="status_level_prefix">Szint: %1$s</string>
+    <string name="level_trivial">Triviális</string>
+    <string name="level_easy">Könnyű</string>
+    <string name="level_medium">Közepes</string>
+    <string name="level_hard">Nehéz</string>
+    <string name="level_expert">Szakértő</string>
+    <string name="level_insane">Őrült</string>
+    <string name="recovery_notice_text">A mentett játékot nem sikerült visszaállítani. Új játék indul.</string>
+    <string name="hint_thinking">Gondolkodik…</string>
+    <string name="hint_no_solution">Innen nincs út a győzelemhez.</string>
+    <string name="hint_inconclusive">Nem sikerült időben eldönteni — próbáld újra, vagy folytasd a játékot.</string>
+    <string name="setting_automatic_moves">Automatikus lépések az alapba</string>
+    <string name="setting_draw_three">Hármas húzás</string>
+    <string name="setting_difficulty">Nehézség</string>
+    <string name="difficulty_random">Véletlenszerű</string>
+    <string name="level_switch_forfeits">A szint váltása %1$d lépés után befejezi ezt a játékot, és vereségként rögzíti.</string>
+    <string name="draw_mode_one">Egyes húzás</string>
+    <string name="draw_mode_three">Hármas húzás</string>
+    <string name="stuck_title">Nincs több lépés</string>
+    <string name="stuck_body">Nincs érvényes lépés, és a húzópakli sem segít. Vonj vissza egy lépést, vagy indíts új játékot.</string>
+    <string name="unrecoverable_title">Ez a játék nem indítható el</string>
+    <string name="unrecoverable_body">A beépített játékkatalógus nem ment át az ellenőrzésen, így egyetlen játék sem igazolható megoldhatóként. Az alkalmazás újratelepítése megoldhatja ezt.</string>
+    <string name="unrecoverable_retry">Próbáld újra</string>
+</resources>

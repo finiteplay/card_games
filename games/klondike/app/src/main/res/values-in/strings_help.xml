@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Cara bermain</string>
+    <string name="help_tab_rules">Aturan</string>
+    <string name="help_tab_strategy">Strategi</string>
+    <string name="help_tab_levels">Level</string>
+
+    <string name="help_rules_goal_title">Tujuannya</string>
+    <string name="help_rules_goal">Pindahkan seluruh 52 kartu ke empat fondasi di bagian atas. Setiap fondasi menerima satu jenis dan disusun naik mulai dari As: A, 2, 3, sampai Raja. Selesaikan keempatnya dan Anda menang.</string>
+    <string name="help_rules_board_title">Meja permainan</string>
+    <string name="help_rules_board">Tujuh kolom di tengah adalah area permainan - di situlah pekerjaan dilakukan. Tumpukan tertutup adalah stok; ketuk untuk membalik kartu satu per satu ke buangan di sebelahnya. Ketika stok habis, ketuk lagi untuk membalik buangan kembali dan berputar sekali lagi, sesering yang Anda mau.</string>
+    <string name="help_rules_moves_title">Langkah mana yang sah</string>
+    <string name="help_rules_moves">Di area permainan, sebuah kartu diletakkan di atas kartu yang satu tingkat lebih tinggi dan berwarna berlawanan: 8 merah di atas 9 hitam. Rangkaian yang sudah tersusun dalam urutan itu berpindah sekaligus. Hanya Raja yang boleh masuk ke kolom kosong. Kartu yang terbuka selalu boleh naik ke fondasinya, dan kartu teratas sebuah fondasi boleh Anda turunkan lagi jika dibutuhkan.</string>
+    <string name="help_rules_help_title">Yang dikerjakan aplikasi untuk Anda</string>
+    <string name="help_rules_help">Ketuk sebuah kartu dan kartu itu akan menuju tempat sah yang terbaik, atau seret ke mana pun Anda mau. As dan kartu yang aman naik sendiri ke fondasi, kecuali Anda mematikannya di Pengaturan. Urungkan tidak terbatas, dan Petunjuk selalu menunjukkan langkah yang menjaga kemenangan tetap mungkin.</string>
+
+    <string name="help_strategy_intro">Ini adalah prinsip-prinsip Klondike yang sudah umum diketahui. Tidak ada yang rahasia dan tidak ada yang menjamin apa pun - semuanya sekadar hal yang biasanya berhasil.</string>
+    <string name="help_strategy_1_title">Buka kartu lebih dulu</string>
+    <string name="help_strategy_1">Setiap kartu tertutup adalah informasi yang tidak Anda miliki. Langkah yang membalik satu kartu hampir selalu lebih baik daripada langkah yang tidak, dan kolom dengan kartu tertutup terbanyak biasanya kolom yang layak digali.</string>
+    <string name="help_strategy_2_title">Jangan terburu-buru ke fondasi</string>
+    <string name="help_strategy_2">Kartu yang dinaikkan terlalu dini tidak bisa turun lagi untuk menampung apa pun. Tahan kartu-kartu rendah di area permainan selama masih bisa menangkap kartu yang Anda butuhkan, dan naikkan ketika tidak ada lagi yang memerlukannya.</string>
+    <string name="help_strategy_3_title">Kosongkan kolom dengan rencana</string>
+    <string name="help_strategy_3">Kolom kosong adalah hal paling berharga di meja, karena hanya Raja yang bisa mengisinya. Kosongkan satu kolom saat Anda punya Raja yang siap, atau Raja yang bisa Anda jangkau, bukan demi pengosongan itu sendiri.</string>
+    <string name="help_strategy_4_title">Perhatikan seluruh stok, bukan hanya buangan</string>
+    <string name="help_strategy_4">Mengambil kartu itu gratis dan stok tidak pernah dikocok ulang, jadi menyusurinya hanya menghabiskan langkah. Perhatikan apa yang lewat: mengetahui bahwa sebuah kartu akan datang lagi mengubah langkah yang sebaiknya Anda ambil sekarang.</string>
+    <string name="help_strategy_5_title">Saat buntu, mundurlah</string>
+    <string name="help_strategy_5">Mengurungkan hanya menambah satu langkah di penghitung. Jika sebuah permainan mengering, mundur beberapa langkah dan mengambil cabang yang lain biasanya lebih cepat daripada berharap stok menyelamatkan Anda.</string>
+
+    <string name="help_levels_intro">Setiap permainan di sini sudah dilewatkan komputer sebelum sampai kepada Anda, dan levelnya menyatakan apa yang dibutuhkan untuk memenangkannya - atau, di puncak tangga, bahwa tidak ada yang berhasil. Ini ukuran permainannya, bukan ukuran Anda.</string>
+    <string name="help_levels_trivial_title">Sepele</string>
+    <string name="help_levels_trivial">Dimenangkan hanya dengan langkah-langkah yang jelas: buka kartu, ambil yang ditawarkan, mainkan buangan. Permainan yang baik untuk belajar, dan level ini dibuka dengan yang paling memaafkan kesalahan.</string>
+    <string name="help_levels_easy_title">Mudah</string>
+    <string name="help_levels_easy">Menuntut pilihan di antara langkah-langkah yang jelas: menggali kolom terdalam, dan menahan sebuah kartu selama masih ada yang membutuhkannya. Di sini langkah yang jelas saja tidak cukup.</string>
+    <string name="help_levels_medium_title">Sedang</string>
+    <string name="help_levels_medium">Menuntut langkah yang saat itu tidak memberi keuntungan apa pun - memindahkan sebagian rangkaian untuk membuka kartu di bawahnya. Bersiap sebelum menuai, itulah inti level ini.</string>
+    <string name="help_levels_hard_title">Sulit</string>
+    <string name="help_levels_hard">Menuntut sebuah kartu yang diturunkan kembali dari fondasi. Berlawanan dengan naluri, dan sering kali satu-satunya jalan, karena itu ia duduk setinggi ini.</string>
+    <string name="help_levels_expert_title">Ahli</string>
+    <string name="help_levels_expert">Di luar segala aturan praktis: permainan-permainan ini dimenangkan oleh pencarian, dan nyaris saja - satu dari dua pemecah menemukan jalur, yang lain tidak. Bersiaplah untuk sering mundur.</string>
+    <string name="help_levels_insane_title">Gila</string>
+    <string name="help_levels_insane">Tidak ada yang berhasil memecahkan permainan-permainan ini, jadi tidak seorang pun tahu jalur kemenangannya, termasuk kami. Sebagian bahkan tidak bisa dimenangkan sama sekali: di antara permainan sebanding yang berhasil dipastikan oleh sebuah pemecah, sekitar satu dari sepuluh ternyata mustahil, dan yang ini adalah yang lebih berat, yang tidak bisa ia pastikan. Jadi kekalahan di sini belum tentu salah Anda - bisa jadi permainan itu memang tidak punya jalan keluar. Mainkanlah demi perlawanannya, bukan demi catatan.</string>
+</resources>

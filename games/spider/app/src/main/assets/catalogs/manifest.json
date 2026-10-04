@@ -1,0 +1,35 @@
+{
+  "formatVersion": 1,
+  "catalogVersion": 1,
+  "rulesVersion": 1,
+  "shuffleVersion": 1,
+  "solverVersion": 1,
+  "generatedAt": "2026-10-01T04:06:47.225447500Z",
+  "totalSeeds": 20447,
+  "catalogs": [
+    {
+      "suitCount": "ONE",
+      "file": "one.catalog",
+      "partitionId": 1,
+      "recordCount": 10000,
+      "payloadHash": "c005c11eff369f65984384d2ccbf6fcc945c9dcf4260c4ffc6878cb74c2d58cb",
+      "fileHash": "29b78bbeb6d7e5003db2cc30d8ee389f1ce7204277fcb65070d6e20729dda52f"
+    },
+    {
+      "suitCount": "TWO",
+      "file": "two.catalog",
+      "partitionId": 2,
+      "recordCount": 5443,
+      "payloadHash": "25a988eff5cfa447d61f7e63042ec04156fc1d47f1221bc4b5c6be80fad5148a",
+      "fileHash": "6ce4ec4b3e05f3e90a006c8ed6917c7250a57cf9034b19c14e4527d576a0f852"
+    },
+    {
+      "suitCount": "FOUR",
+      "file": "four.catalog",
+      "partitionId": 3,
+      "recordCount": 5004,
+      "payloadHash": "5c62bec0ed7fa5398d3526c479426ce3b97f08789b6330c49d485815b394ecd1",
+      "fileHash": "9f40dc1969168fe0a954730c4fa6d3e771919ffabeefb2258ab817cb9bd1d7be"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <rect width="1024" height="500" fill="#0B1F33"/>
+  <g fill="#163653" opacity="0.85">
+    <circle cx="92" cy="386" r="34"/><circle cx="916" cy="114" r="34"/>
+    <path d="M40 126h152v18H40zM832 356h152v18H832z"/>
+  </g>
+  <g transform="translate(512 250)">
+    <g fill="#08DCE8">
+      <rect x="-166" y="-166" width="142" height="142" rx="30"/>
+      <rect x="24" y="-166" width="142" height="142" rx="30"/>
+      <rect x="-166" y="24" width="142" height="142" rx="30"/>
+      <rect x="24" y="24" width="142" height="142" rx="30"/>
+    </g>
+    <g fill="#0B1F33">
+      <rect x="-140" y="-140" width="90" height="90" rx="18"/>
+      <rect x="50" y="-140" width="90" height="90" rx="18"/>
+      <rect x="-140" y="50" width="90" height="90" rx="18"/>
+      <rect x="50" y="50" width="90" height="90" rx="18"/>
+    </g>
+    <rect x="-120" y="-112" width="106" height="148" rx="14" fill="#F7FCFF" transform="rotate(-8)"/>
+    <path d="M-81-70-59-45-81-20-103-45Z" fill="#8E5BEE"/>
+  </g>
+  <path d="M166 84h14v14h14v14h-14v14h-14v-14h-14V98h14Z" fill="#08DCE8"/>
+</svg>

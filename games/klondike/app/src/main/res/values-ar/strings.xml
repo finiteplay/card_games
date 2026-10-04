@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s من %2$s، أساس %2$s</string>
+    <string name="cd_foundation_empty">أساس %1$s، فارغ</string>
+    <string name="cd_move_to_tableau">نقل إلى العمود</string>
+    <string name="cd_stock_with_cards">المخزون، %1$d ورقة</string>
+    <string name="cd_stock_empty_recycles">المخزون، فارغ. يعيد تدوير الفضلات.</string>
+    <string name="cd_stock_empty">المخزون، فارغ</string>
+    <string name="cd_draw_action">سحب</string>
+    <string name="cd_waste_card">%1$s من %2$s، المهملات</string>
+    <string name="cd_waste_empty">المهملات، فارغة</string>
+    <string name="cd_move_card">نقل الورقة</string>
+    <string name="cd_tableau_card">%1$s من %2$s، العمود %3$d، الموضع %4$d من %5$d</string>
+    <string name="cd_tableau_face_down">ورقة مقلوبة، العمود %1$d، الموضع %2$d من %3$d</string>
+    <string name="cd_move">نقل</string>
+    <string name="status_deal_prefix">توزيعة %1$d</string>
+    <string name="status_level_prefix">المستوى: %1$s</string>
+    <string name="level_trivial">تافه</string>
+    <string name="level_easy">سهل</string>
+    <string name="level_medium">متوسط</string>
+    <string name="level_hard">صعب</string>
+    <string name="level_expert">خبير</string>
+    <string name="level_insane">جنوني</string>
+    <string name="recovery_notice_text">تعذّرت استعادة اللعبة المحفوظة. سيتم بدء لعبة جديدة.</string>
+    <string name="hint_thinking">جارٍ التفكير…</string>
+    <string name="hint_no_solution">لا يوجد طريق للفوز من هنا.</string>
+    <string name="hint_inconclusive">تعذّر التأكد في الوقت المحدد — حاول مرة أخرى أو واصل اللعب.</string>
+    <string name="setting_automatic_moves">النقل التلقائي إلى الأساسات</string>
+    <string name="setting_draw_three">سحب ثلاث ورقات</string>
+    <string name="setting_difficulty">الصعوبة</string>
+    <string name="difficulty_random">عشوائي</string>
+    <string name="level_switch_forfeits">تبديل المستوى ينهي هذه اللعبة بعد %1$d نقلة ويسجلها كخسارة.</string>
+    <string name="draw_mode_one">سحب ورقة واحدة</string>
+    <string name="draw_mode_three">سحب ثلاث ورقات</string>
+    <string name="stuck_title">لا توجد حركات متبقية</string>
+    <string name="stuck_body">لا توجد حركة قانونية ولا يمكن للمخزون المساعدة. تراجع أو ابدأ لعبة جديدة.</string>
+    <string name="unrecoverable_title">لا يمكن بدء هذه اللعبة</string>
+    <string name="unrecoverable_body">فشل التحقق من كتالوج اللعب المضمّن، لذا لا يمكن اعتماد أي لعبة كقابلة للحل. قد تؤدي إعادة تثبيت التطبيق إلى حل هذه المشكلة.</string>
+    <string name="unrecoverable_retry">حاول مرة أخرى</string>
+</resources>

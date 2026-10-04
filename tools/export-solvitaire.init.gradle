@@ -1,0 +1,28 @@
+// Paths come from -P, e.g. -PsolvitaireDealsDir=<Solvitaire checkout>/deals.
+def requiredProperty = { String name ->
+    def value = gradle.rootProject.findProperty(name)
+    if (value == null) throw new GradleException("pass -P${name}=<path>")
+    value
+}
+
+gradle.projectsEvaluated {
+    def solverProject = gradle.rootProject.findProject(':games:spider:solver')
+    if (solverProject == null) return
+    solverProject.tasks.register('exportSolvitaireDeals', JavaExec) {
+        dependsOn solverProject.tasks.named('testClasses')
+        def testTask = solverProject.tasks.named('test', Test)
+        classpath = solverProject.files(testTask.get().testClassesDirs, solverProject.configurations.testRuntimeClasspath)
+        mainClass = 'org.finiteplay.spider.solver.ExportSolvitaireDealsKt'
+        args requiredProperty('solvitaireDealsDir'),
+             (project.findProperty('firstSeed') ?: '1'),
+             (project.findProperty('lastSeed') ?: '4')
+    }
+    solverProject.tasks.register('replaySolvitaireSeedOne', JavaExec) {
+        dependsOn solverProject.tasks.named('testClasses')
+        def testTask = solverProject.tasks.named('test', Test)
+        classpath = solverProject.files(testTask.get().testClassesDirs, solverProject.configurations.testRuntimeClasspath)
+        mainClass = 'org.finiteplay.spider.solver.ReplaySolvitaireSolutionKt'
+        args requiredProperty('solvitaireSolutionLog'),
+             requiredProperty('solvitaireCertificate')
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">اليد رقم %1$d</string>
+    <string name="recovery_notice">تعذّر فتح اللعبة المحفوظة، لذا تم توزيع لعبة جديدة.</string>
+    <string name="setting_automatic_moves">النقل التلقائي إلى الأساسات</string>
+    <string name="stuck_title">لا توجد حركات متبقية</string>
+    <string name="stuck_body">لا توجد حركة قانونية متبقية. تراجع أو ابدأ لعبة جديدة.</string>
+    <string name="hint_thinking">جارٍ التفكير…</string>
+    <string name="hint_no_solution">لا يوجد طريق للفوز من هنا.</string>
+    <string name="hint_inconclusive">تعذّر التأكد في الوقت المحدد — حاول مرة أخرى أو واصل اللعب.</string>
+    <string name="unrecoverable_title">لا يمكن بدء هذه اللعبة</string>
+    <string name="unrecoverable_body">فشل التحقق من كتالوج اللعب المضمّن، لذا لا يمكن اعتماد أي لعبة كقابلة للحل. قد تؤدي إعادة تثبيت التطبيق إلى حل هذه المشكلة.</string>
+    <string name="unrecoverable_retry">حاول مرة أخرى</string>
+    <string name="help_title">كيفية اللعب</string>
+    <string name="help_goal_title">الهدف</string>
+    <string name="help_goal">ابنِ الأسس الأربعة حسب النوع، من الآس إلى الملك. اجمع كل ورقة وتفوز.</string>
+    <string name="help_free_cells_title">الخلايا الحرة</string>
+    <string name="help_free_cells">تحتوي كل خلية من الخلايا الحرة الأربع على ورقة واحدة من أي رتبة أو نوع، تُترك جانبًا حتى تحتاجها مرة أخرى. يعمل العمود الفارغ بنفس الطريقة، لكنه يحتفظ بتسلسل كامل بدلاً من ورقة واحدة.</string>
+    <string name="help_moving_title">البناء والتحريك</string>
+    <string name="help_moving">يمكن وضع أي ورقة على ورقة أعلى منها برتبة واحدة ومن اللون المعاكس. يمكن لأي ورقة منفردة دخول عمود فارغ. تتحرك عدة أوراق معًا كحركة فائقة واحدة عندما تسمح الخلايا الحرة والأعمدة الفارغة الكافية بذلك — تتولى اللعبة حساب ذلك لك.</string>
+    <string name="help_controls_title">اللمس والسحب والتلميح</string>
+    <string name="help_controls">المس ورقة لإرسالها إلى أقرب عمود قانوني إلى اليمين، ثم أساس آمن، ثم أقرب عمود إلى اليسار، وأساس غير آمن أو خلية حرة فارغة كملاذ أخير فقط. اسحب لاختيار الوجهة بنفسك، بما في ذلك خلية حرة. يثبت التلميح وجود حركة ويعرضها لك، أو يخبرك بصدق عندما لا يستطيع ذلك.</string>
+</resources>

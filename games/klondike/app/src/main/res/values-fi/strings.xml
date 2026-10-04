@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App / publisher branding. -->
+
+    <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
+
+    <!-- Card ranks and suits, spoken for accessibility -->
+
+    <!-- Board content descriptions (Board.kt) -->
+    <string name="cd_foundation_top_card">%2$s %1$s, %2$s-pino</string>
+    <string name="cd_foundation_empty">%1$s-pino, tyhjä</string>
+    <string name="cd_move_to_tableau">Siirrä pelialueelle</string>
+    <string name="cd_stock_with_cards">Pakka, %1$d korttia</string>
+    <string name="cd_stock_empty_recycles">Pakka, tyhjä. Täyttyy poistopinosta.</string>
+    <string name="cd_stock_empty">Pakka, tyhjä</string>
+    <string name="cd_draw_action">Nosta</string>
+    <string name="cd_waste_card">%2$s %1$s, poistopino</string>
+    <string name="cd_waste_empty">Poistopino, tyhjä</string>
+    <string name="cd_move_card">Siirrä kortti</string>
+    <string name="cd_tableau_card">%2$s %1$s, pelialueen sarake %3$d, paikka %4$d/%5$d</string>
+    <string name="cd_tableau_face_down">Piilossa oleva kortti, sarake %1$d, paikka %2$d/%3$d</string>
+    <string name="cd_move">Siirrä</string>
+
+    <!-- Status row (GameScreen.kt) -->
+    <string name="status_deal_prefix">Jako %1$d</string>
+    <string name="status_level_prefix">Taso: %1$s</string>
+    <string name="level_trivial">Triviaali</string>
+    <string name="level_easy">Helppo</string>
+    <string name="level_medium">Keskitaso</string>
+    <string name="level_hard">Vaikea</string>
+    <string name="level_expert">Asiantuntija</string>
+    <string name="level_insane">Mieletön</string>
+
+    <!-- Recovery notice -->
+    <string name="recovery_notice_text">Tallennettua peliä ei voitu palauttaa. Aloitetaan uusi peli.</string>
+
+    <!-- Hint notice (docs/games/klondike/DESIGN.md "On-Device Hint Search") -->
+    <string name="hint_thinking">Mietitään…</string>
+    <string name="hint_no_solution">Tästä ei ole enää voitollista jatkoa.</string>
+    <string name="hint_inconclusive">Ei saatu selvää ajoissa — yritä uudelleen tai jatka pelaamista.</string>
+
+    <!-- Settings screen -->
+    <string name="setting_automatic_moves">Automaattiset siirrot pinoihin</string>
+    <string name="setting_draw_three">Nosta kolme</string>
+    <string name="setting_difficulty">Vaikeustaso</string>
+    <string name="difficulty_random">Satunnainen</string>
+    <string name="level_switch_forfeits">Tason vaihtaminen päättää tämän pelin %1$d siirron jälkeen ja kirjaa sen tappioksi.</string>
+
+    <!-- Statistics screen -->
+    <string name="draw_mode_one">Nosta yksi</string>
+    <string name="draw_mode_three">Nosta kolme</string>
+
+    <!-- Pending action (New Game / Replay) confirmation -->
+
+    <!-- Win dialog -->
+
+    <!-- Stuck (no moves) notice -->
+    <string name="stuck_title">Ei siirtoja jäljellä</string>
+    <string name="stuck_body">Laillista siirtoa ei ole, eikä pakka auta. Kumoa tai aloita uusi peli.</string>
+
+    <!-- Unrecoverable screen -->
+    <string name="unrecoverable_title">Peliä ei voida aloittaa</string>
+    <string name="unrecoverable_body">Mukana tuleva jakoluettelo ei läpäissyt varmennusta, joten yhtäkään jakoa ei voida varmentaa ratkaistavaksi. Sovelluksen uudelleenasennus saattaa korjata tämän.</string>
+    <string name="unrecoverable_retry">Yritä uudelleen</string>
+</resources>

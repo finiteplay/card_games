@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">1スート</string>
+    <string name="suit_count_two">2スート</string>
+    <string name="suit_count_four">4スート</string>
+
+    <string name="setting_suit_count">スート数</string>
+
+    <string name="suit_count_switch_forfeits">スート数を変更すると、%1$d 手でこのゲームは終了し、敗北として記録されます。</string>
+
+    <string name="deal_row_refused">空の列がある間は配れません</string>
+
+    <string name="recovery_notice">保存されたゲームを開けなかったため、新しいゲームが配られました。</string>
+
+    <string name="uncertified_notice">この配り札は解決可能と証明されていません</string>
+
+    <string name="catalog_status_notice">1スートと2スートの配り札は、解決可能と検証済みの証明済みカタログから来ています。4スートの配り札はまだ証明されていません。</string>
+
+    <string name="banked_sequences">完成: %1$d / 8</string>
+
+    <string name="action_help">ヘルプ</string>
+    <string name="help_title">遊び方</string>
+    <string name="help_goal_title">目的</string>
+    <string name="help_goal">キングからエースまでの8つの並びを、それぞれ単一のスートで作ります。完成した並びは片付けられ、盤面から消えます。8つすべてを完成させれば勝利です。</string>
+    <string name="help_moving_title">カードの移動</string>
+    <string name="help_moving">表向きのカードは、スートに関係なく1つ上のランクのカードに移動できます。複数のカードは、すでに降順で並び、同じスートを共有している場合にのみ一緒に移動します。空の列は何でも受け入れるため、盤面で最も価値のある場所になります。</string>
+    <string name="help_stock_title">1列を配る</string>
+    <string name="help_stock">ストックをタップすると、すべての列に一度に表向きのカードが1枚ずつ配られます — 捨て札の山はなく、1枚ずつ引くこともありません。列が空の間は配布が拒否されるため、配る前にその隙間を埋めてください。</string>
+    <string name="help_suits_title">スート数</string>
+    <string name="help_suits">1スートが最も易しく、4スートが最も難しいゲームです。2スートはその中間で、デフォルト設定です。数はゲームが配られた時点で固定されます — 設定で変更すると、次の新しいゲームに適用されます。</string>
+    <string name="help_controls_title">タップ、ドラッグ、ヒント</string>
+    <string name="help_controls">カードをタップすると、その右側にある次の合法な列に送られ、必要に応じて先頭に戻ります。もう一度タップすると、さらに移動します。ドラッグすれば自分で列を選べます。ヒントは、行き先のあるすべての並びの一番上のカードを光らせます。最後の並びだけが残ると、ゲームがそれを代わりに完成させます。</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">考え中…</string>
+    <string name="hint_no_solution">ここから勝てる手順はありません。</string>
+    <string name="hint_inconclusive">時間内に判定できませんでした。もう一度試すか、そのままプレイを続けてください。</string>
+</resources>

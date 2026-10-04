@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">एक सूट</string>
+    <string name="suit_count_two">दो सूट</string>
+    <string name="suit_count_four">चार सूट</string>
+
+    <string name="setting_suit_count">सूट</string>
+
+    <string name="suit_count_switch_forfeits">सूट बदलने पर यह खेल %1$d चालों के बाद समाप्त हो जाएगा और हार के रूप में दर्ज होगा।</string>
+
+    <string name="deal_row_refused">जब तक कोई कॉलम खाली है, बाँटा नहीं जा सकता</string>
+
+    <string name="recovery_notice">आपका सेव किया गया गेम खोला नहीं जा सका, इसलिए एक नया गेम बाँटा गया।</string>
+
+    <string name="uncertified_notice">यह डील हल करने योग्य प्रमाणित नहीं है</string>
+
+    <string name="catalog_status_notice">एक और दो सूट वाली डील एक प्रमाणित सूची से आती हैं जो हल करने योग्य सत्यापित है। चार सूट वाली डील अभी तक प्रमाणित नहीं हैं।</string>
+
+    <string name="banked_sequences">जमा: %1$d/8</string>
+
+    <string name="action_help">सहायता</string>
+    <string name="help_title">कैसे खेलें</string>
+    <string name="help_goal_title">लक्ष्य</string>
+    <string name="help_goal">राजा से इक्के तक आठ क्रम बनाएँ, हर एक एक ही सूट में। पूरा हुआ क्रम जमा हो जाता है और बोर्ड से हट जाता है। सभी आठ पूरे करें और आप जीत जाते हैं।</string>
+    <string name="help_moving_title">पत्ते हिलाना</string>
+    <string name="help_moving">कोई भी खुला पत्ता एक रैंक ऊँचे पत्ते पर रखा जा सकता है, चाहे सूट कोई भी हो। कई पत्ते एक साथ तभी हिलते हैं जब वे पहले से घटते क्रम में हों और एक ही सूट के हों। खाली कॉलम कुछ भी स्वीकार करता है, जो उसे बोर्ड की सबसे कीमती जगह बनाता है।</string>
+    <string name="help_stock_title">एक पंक्ति बाँटना</string>
+    <string name="help_stock">स्टॉक पर टैप करने से हर कॉलम पर एक साथ एक खुला पत्ता बँटता है — कोई वेस्ट पाइल नहीं है और एक-एक करके पत्ता नहीं खींचा जाता। जब तक कोई कॉलम खाली है, यह मना कर देता है, इसलिए बाँटने से पहले खाली जगह भरें।</string>
+    <string name="help_suits_title">सूट</string>
+    <string name="help_suits">एक सूट सबसे आसान खेल है, चार सबसे कठिन; दो बीच में है और डिफ़ॉल्ट है। संख्या गेम बाँटते समय तय होती है — इसे सेटिंग्स में बदलें और यह अगले नए गेम पर लागू होगी।</string>
+    <string name="help_controls_title">टैप, खींचना और संकेत</string>
+    <string name="help_controls">किसी पत्ते को उसके दाईं ओर अगले वैध कॉलम में भेजने के लिए टैप करें, ज़रूरत पड़ने पर शुरुआत में लौटते हुए; इसे आगे बढ़ाते रहने के लिए फिर से टैप करें। कॉलम खुद चुनने के लिए खींचें। संकेत हर उस क्रम के ऊपरी पत्ते को रोशन करता है जिसके पास जाने के लिए कोई जगह है। जब केवल आखिरी क्रम बचता है, तो गेम इसे आपके लिए पूरा कर देता है।</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">सोच रहे हैं…</string>
+    <string name="hint_no_solution">यहाँ से जीत का कोई रास्ता नहीं है।</string>
+    <string name="hint_inconclusive">समय पर पता नहीं चल सका — फिर से कोशिश करें, या खेलना जारी रखें।</string>
+</resources>

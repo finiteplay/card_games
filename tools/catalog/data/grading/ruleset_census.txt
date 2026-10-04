@@ -1,0 +1,21 @@
+status: running
+seeds: 10000000 / 10000000 from 1
+elapsed: 3075s
+rate: 3252 seeds/s
+
+level EASY: 1463331
+level HARD: 45466
+level MEDIUM: 1150903
+level TRIVIAL: 2912321
+no ruleset wins: 4427979
+robustness 0: 5331318
+robustness 1: 217373
+robustness 2: 17326
+robustness 3: 5469
+robustness 4: 490
+robustness 5: 43
+robustness 6: 2
+ruleset EASY: 1463331
+ruleset HARD: 45466
+ruleset MEDIUM: 1150903
+ruleset TRIVIAL: 2912321

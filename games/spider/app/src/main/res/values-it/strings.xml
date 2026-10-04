@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Un seme</string>
+    <string name="suit_count_two">Due semi</string>
+    <string name="suit_count_four">Quattro semi</string>
+
+    <string name="setting_suit_count">Semi</string>
+
+    <string name="suit_count_switch_forfeits">Cambiare semi termina questa partita dopo %1$d mosse e la registra come sconfitta.</string>
+
+    <string name="deal_row_refused">Impossibile distribuire mentre una colonna è vuota</string>
+
+    <string name="recovery_notice">La partita salvata non poteva essere aperta, quindi ne è stata distribuita una nuova.</string>
+
+    <string name="uncertified_notice">Questa mano non è certificata come risolvibile</string>
+
+    <string name="catalog_status_notice">Le mani a uno e due semi provengono da un catalogo certificato e verificato come risolvibile. Le mani a quattro semi non sono ancora certificate.</string>
+
+    <string name="banked_sequences">Archiviate: %1$d su 8</string>
+
+    <string name="action_help">Aiuto</string>
+    <string name="help_title">Come giocare</string>
+    <string name="help_goal_title">L\'obiettivo</string>
+    <string name="help_goal">Costruisci otto sequenze dal Re all\'Asso, ciascuna di un solo seme. Una sequenza completata viene archiviata e lascia il tavolo. Completale tutte e otto e vinci.</string>
+    <string name="help_moving_title">Muovere le carte</string>
+    <string name="help_moving">Ogni carta scoperta può essere spostata su una carta di un rango superiore, di qualsiasi seme. Più carte si spostano insieme solo se sono già in ordine decrescente e dello stesso seme. Una colonna vuota accetta qualsiasi cosa, il che la rende l\'elemento più prezioso del tavolo.</string>
+    <string name="help_stock_title">Distribuire una riga</string>
+    <string name="help_stock">Toccando il tallone si distribuisce una carta scoperta su ogni colonna contemporaneamente: non c\'è uno scarto né si pesca una carta alla volta. Si rifiuta mentre una colonna è vuota, quindi riempi il vuoto prima di distribuire.</string>
+    <string name="help_suits_title">Semi</string>
+    <string name="help_suits">Un seme è la partita più semplice, quattro la più difficile; due sta nel mezzo ed è l\'impostazione predefinita. Il numero si fissa quando la partita viene distribuita: cambialo nelle Impostazioni e si applicherà alla prossima nuova partita.</string>
+    <string name="help_controls_title">Tocco, trascinamento e suggerimento</string>
+    <string name="help_controls">Tocca una carta per inviarla alla successiva colonna valida alla sua destra, tornando all\'inizio se necessario; tocca di nuovo per continuare a spostarla. Trascina per scegliere tu stesso la colonna. Il suggerimento illumina la carta in cima a ogni sequenza che ha dove andare. Quando resta solo l\'ultima sequenza, il gioco la completa per te.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Sto pensando…</string>
+    <string name="hint_no_solution">Da qui non c\'è modo di vincere.</string>
+    <string name="hint_inconclusive">Impossibile stabilirlo in tempo — riprova, oppure continua a giocare.</string>
+</resources>

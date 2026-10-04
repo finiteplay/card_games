@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "catalogVersion": 1,
+  "rulesVersion": 1,
+  "shuffleVersion": 1,
+  "solverVersion": 1,
+  "generatedAt": "2026-09-20T21:36:42.773517200Z",
+  "file": "freecell.catalog",
+  "partitionId": 0,
+  "recordCount": 10000,
+  "payloadHash": "88ba68dd111c5bfc6150ccb15c526419ef7a2049ff8ca2eb90e7332ab7b13917",
+  "fileHash": "7b75aa3fdeba339ad12dedf97f28bdd9b4c563c095224cc4a6ad2973fb30a307"
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">单一花色</string>
+    <string name="suit_count_two">两种花色</string>
+    <string name="suit_count_four">四种花色</string>
+
+    <string name="setting_suit_count">花色数</string>
+
+    <string name="suit_count_switch_forfeits">切换花色将结束这局游戏（已走 %1$d 步）并记为失败。</string>
+
+    <string name="deal_row_refused">有空列时无法发牌</string>
+
+    <string name="recovery_notice">无法打开已保存的游戏，因此发了一局新的。</string>
+
+    <string name="uncertified_notice">此牌局尚未被验证为可解</string>
+
+    <string name="catalog_status_notice">单花色和双花色牌局来自经过验证、确认可解的认证目录。四花色牌局尚未通过认证。</string>
+
+    <string name="banked_sequences">已收好：%1$d / 8</string>
+
+    <string name="action_help">帮助</string>
+    <string name="help_title">玩法说明</string>
+    <string name="help_goal_title">目标</string>
+    <string name="help_goal">从K到A组成八条同一花色的顺序牌组。完成的牌组会被收起并离开牌桌。收齐八组即可获胜。</string>
+    <string name="help_moving_title">移动纸牌</string>
+    <string name="help_moving">任何明牌都可以移到比它大一级的牌上，花色不限。只有当多张牌已经按降序排列且花色相同时，它们才能一起移动。空列可以接受任何牌，这使它成为牌桌上最有价值的位置。</string>
+    <string name="help_stock_title">发一行牌</string>
+    <string name="help_stock">点击发牌堆会同时向每一列发一张明牌——没有废牌堆，也不会一张一张地抽牌。只要有一列是空的，发牌就会被拒绝，所以发牌前请先填满空缺。</string>
+    <string name="help_suits_title">花色数</string>
+    <string name="help_suits">单一花色是最轻松的玩法，四种花色最难；两种花色居中，是默认设置。花色数在发牌时固定——在设置中更改后，会在下一局新游戏中生效。</string>
+    <string name="help_controls_title">点击、拖动与提示</string>
+    <string name="help_controls">点击一张牌，会把它送到其右侧下一个合法的列，必要时绕回开头；再次点击可继续移动它。拖动可以自行选择列。提示会点亮每个有地方可去的牌组的最上面一张牌。当只剩最后一组时，游戏会替你完成它。</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">思考中…</string>
+    <string name="hint_no_solution">从当前局面无法获胜。</string>
+    <string name="hint_inconclusive">未能在限定时间内得出结果——请重试，或继续游戏。</string>
+</resources>

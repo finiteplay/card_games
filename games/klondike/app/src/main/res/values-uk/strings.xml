@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s %2$s, основа %2$s</string>
+    <string name="cd_foundation_empty">Основа %1$s, порожня</string>
+    <string name="cd_move_to_tableau">Перемістити на ігрове поле</string>
+    <string name="cd_stock_with_cards">Колода, %1$d карт</string>
+    <string name="cd_stock_empty_recycles">Колода порожня. Перекладає скид.</string>
+    <string name="cd_stock_empty">Колода порожня</string>
+    <string name="cd_draw_action">Взяти</string>
+    <string name="cd_waste_card">%1$s, масть %2$s, скид</string>
+    <string name="cd_waste_empty">Скид, порожній</string>
+    <string name="cd_move_card">Перемістити карту</string>
+    <string name="cd_tableau_card">%1$s, масть %2$s, стовпчик %3$d, позиція %4$d з %5$d</string>
+    <string name="cd_tableau_face_down">Карта долілиць, стовпчик %1$d, позиція %2$d з %3$d</string>
+    <string name="cd_move">Перемістити</string>
+    <string name="status_deal_prefix">Роздача %1$d</string>
+    <string name="status_level_prefix">Рівень: %1$s</string>
+    <string name="level_trivial">Тривіальний</string>
+    <string name="level_easy">Легкий</string>
+    <string name="level_medium">Середній</string>
+    <string name="level_hard">Складний</string>
+    <string name="level_expert">Експертний</string>
+    <string name="level_insane">Божевільний</string>
+    <string name="recovery_notice_text">Не вдалося відновити збережену гру. Починаємо нову.</string>
+    <string name="hint_thinking">Обмірковую…</string>
+    <string name="hint_no_solution">Звідси немає шляху до перемоги.</string>
+    <string name="hint_inconclusive">Не вдалося визначити вчасно — спробуйте ще раз або продовжуйте гру.</string>
+    <string name="setting_automatic_moves">Автоматичні ходи у фундацію</string>
+    <string name="setting_draw_three">Тягнути по три</string>
+    <string name="setting_difficulty">Складність</string>
+    <string name="difficulty_random">Випадкова</string>
+    <string name="level_switch_forfeits">Зміна рівня завершує цю гру після %1$d ходів і зараховує її як поразку.</string>
+    <string name="draw_mode_one">Тягнути по одній</string>
+    <string name="draw_mode_three">Тягнути по три</string>
+    <string name="stuck_title">Ходів не залишилося</string>
+    <string name="stuck_body">Немає жодного дозволеного ходу, і колода не допоможе. Скасуйте хід або почніть нову гру.</string>
+    <string name="unrecoverable_title">Цю гру неможливо почати</string>
+    <string name="unrecoverable_body">Вбудований каталог роздач не пройшов перевірку, тому жодну роздачу не можна сертифікувати як розв\'язну. Перевстановлення застосунку може це виправити.</string>
+    <string name="unrecoverable_retry">Спробувати ще раз</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%2$s%1$s，%2$s基础牌堆</string>
+    <string name="cd_foundation_empty">%1$s基础牌堆，空</string>
+    <string name="cd_move_to_tableau">移动到接龙牌堆</string>
+    <string name="cd_stock_with_cards">发牌堆，%1$d张</string>
+    <string name="cd_stock_empty_recycles">发牌堆，空。重新使用废牌堆。</string>
+    <string name="cd_stock_empty">发牌堆，空</string>
+    <string name="cd_draw_action">发牌</string>
+    <string name="cd_waste_card">%2$s%1$s，废牌堆</string>
+    <string name="cd_waste_empty">废牌堆，空</string>
+    <string name="cd_move_card">移动牌</string>
+    <string name="cd_tableau_card">%2$s%1$s，接龙牌堆第%3$d列，第%4$d张（共%5$d张）</string>
+    <string name="cd_tableau_face_down">背面朝上的牌，接龙牌堆第%1$d列，第%2$d张（共%3$d张）</string>
+    <string name="cd_move">移动</string>
+    <string name="status_deal_prefix">第%1$d局</string>
+    <string name="status_level_prefix">难度：%1$s</string>
+    <string name="level_trivial">入门</string>
+    <string name="level_easy">简单</string>
+    <string name="level_medium">中等</string>
+    <string name="level_hard">困难</string>
+    <string name="level_expert">专家</string>
+    <string name="level_insane">疯狂</string>
+    <string name="recovery_notice_text">无法恢复已保存的游戏，正在开始新游戏。</string>
+    <string name="hint_thinking">思考中…</string>
+    <string name="hint_no_solution">从当前局面无法获胜。</string>
+    <string name="hint_inconclusive">未能在限定时间内得出结果——请重试，或继续游戏。</string>
+    <string name="setting_automatic_moves">自动移动到基础牌堆</string>
+    <string name="setting_draw_three">三张翻牌</string>
+    <string name="setting_difficulty">难度</string>
+    <string name="difficulty_random">随机</string>
+    <string name="level_switch_forfeits">切换难度将结束这局游戏（已走 %1$d 步）并记为失败。</string>
+    <string name="draw_mode_one">单张翻牌</string>
+    <string name="draw_mode_three">三张翻牌</string>
+    <string name="stuck_title">没有可用的走法了</string>
+    <string name="stuck_body">没有合法的走法，发牌堆也无法提供帮助。请撤销或开始新游戏。</string>
+    <string name="unrecoverable_title">无法开始这局游戏</string>
+    <string name="unrecoverable_body">内置的牌局目录未通过验证，因此无法认证任何牌局可解。重新安装应用可能会解决此问题。</string>
+    <string name="unrecoverable_retry">重试</string>
+</resources>

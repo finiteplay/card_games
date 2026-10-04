@@ -1,0 +1,39 @@
+Copyright (c) 2026 FinitePlay LLC (https://finiteplay.org). All rights reserved.
+
+This repository's own source, assets, and documentation are distributed under
+the PolyForm Noncommercial License 1.0.0 — see LICENSE.txt.
+
+## Third-party dependencies
+
+Nothing that ships inside a built app — release or debug — may carry a
+license other than the Apache License 2.0, the MIT License, or a BSD license
+(`AGENTS.md` "Licensing"). Every dependency declared in
+`gradle/libs.versions.toml` that reaches `implementation`, `api`, or
+`debugImplementation` is, as of this file's last update, Apache-2.0:
+
+- AndroidX Activity, Lifecycle, DataStore, Compose (bom, foundation,
+  material3, ui, ui-tooling-preview, ui-tooling, ui-test-manifest,
+  material-icons-extended) — The Android Open Source Project —
+  Apache License 2.0
+- Kotlin standard library and kotlinx.coroutines-core —
+  JetBrains s.r.o. and the Kotlin Programming Language contributors —
+  Apache License 2.0
+
+Build- and test-only tooling — `testImplementation` and
+`androidTestImplementation` dependencies, plus the Gradle plugins themselves —
+is never packaged into anything distributed and is not held to this policy:
+
+- JUnit 4 (`testImplementation` only) — Eclipse Public License 1.0
+- kotlinx.coroutines-test (`testImplementation` only) —
+  JetBrains s.r.o. and the Kotlin Programming Language contributors —
+  Apache License 2.0
+- AndroidX Test (ext-junit, runner, orchestrator), Espresso Core, Compose
+  ui-test-junit4 (`testImplementation` / `androidTestImplementation` only) —
+  The Android Open Source Project — Apache License 2.0
+- Android Gradle Plugin, Kotlin Gradle plugins, the Foojay toolchain
+  resolver (`gradle/libs.versions.toml` `[plugins]`, build-time only) —
+  Apache License 2.0
+
+Before adding a new dependency, confirm its license the same way and record
+it here; a dependency that ships in the app and carries any other license
+(including copyleft licenses such as GPL/LGPL/AGPL, or EPL) is not permitted.

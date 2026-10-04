@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Permainan #%1$d</string>
+    <string name="recovery_notice">Permainan tersimpan Anda tidak dapat dibuka, jadi permainan baru dibagikan.</string>
+    <string name="setting_automatic_moves">Langkah otomatis ke fondasi</string>
+    <string name="stuck_title">Tidak ada langkah tersisa</string>
+    <string name="stuck_body">Tidak ada langkah sah yang tersisa. Batalkan atau mulai permainan baru.</string>
+    <string name="hint_thinking">Berpikir…</string>
+    <string name="hint_no_solution">Tidak ada jalan menuju kemenangan dari sini.</string>
+    <string name="hint_inconclusive">Tidak sempat diketahui tepat waktu — coba lagi, atau lanjutkan bermain.</string>
+    <string name="unrecoverable_title">Permainan ini tidak dapat dimulai</string>
+    <string name="unrecoverable_body">Katalog permainan bawaan gagal verifikasi, sehingga tidak ada permainan yang dapat disertifikasi sebagai dapat dipecahkan. Menginstal ulang aplikasi mungkin dapat memperbaiki ini.</string>
+    <string name="unrecoverable_retry">Coba lagi</string>
+    <string name="help_title">Cara bermain</string>
+    <string name="help_goal_title">Tujuan</string>
+    <string name="help_goal">Bangun keempat fondasi berdasarkan jenis kartu, dari As hingga King. Simpan setiap kartu dan Anda menang.</string>
+    <string name="help_free_cells_title">Sel bebas</string>
+    <string name="help_free_cells">Setiap dari empat sel bebas menampung satu kartu dengan peringkat atau jenis apa pun, disisihkan sampai Anda membutuhkannya lagi. Kolom kosong bekerja dengan cara yang sama, tetapi menampung satu urutan penuh alih-alih satu kartu.</string>
+    <string name="help_moving_title">Menyusun dan memindahkan</string>
+    <string name="help_moving">Sebuah kartu dapat diletakkan di atas kartu yang satu peringkat lebih tinggi dan berwarna berlawanan. Kartu tunggal apa pun boleh masuk ke kolom kosong. Beberapa kartu berpindah bersama sebagai satu langkah super ketika cukup sel bebas dan kolom kosong memungkinkan perjalanan itu — permainan menghitungnya untuk Anda.</string>
+    <string name="help_controls_title">Ketuk, seret, dan petunjuk</string>
+    <string name="help_controls">Ketuk kartu untuk mengirimkannya ke kolom sah terdekat di kanan, lalu fondasi yang aman, lalu kolom terdekat di kiri, dan fondasi yang tidak aman atau sel bebas kosong hanya sebagai upaya terakhir. Seret untuk memilih tujuan sendiri, termasuk sel bebas. Petunjuk membuktikan bahwa langkah itu ada dan menunjukkannya kepada Anda, atau memberi tahu Anda dengan jujur ketika tidak bisa.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">En färg</string>
+    <string name="suit_count_two">Två färger</string>
+    <string name="suit_count_four">Fyra färger</string>
+
+    <string name="setting_suit_count">Färger</string>
+
+    <string name="suit_count_switch_forfeits">Att byta färger avslutar det här spelet efter %1$d drag och registrerar det som en förlust.</string>
+
+    <string name="deal_row_refused">Kan inte dela ut medan en kolumn är tom</string>
+
+    <string name="recovery_notice">Ditt sparade spel kunde inte öppnas, så ett nytt delades ut.</string>
+
+    <string name="uncertified_notice">Den här given är inte certifierad som lösbar</string>
+
+    <string name="catalog_status_notice">Givar med en och två färger kommer från en certifierad katalog som är verifierad som lösbar. Givar med fyra färger är ännu inte certifierade.</string>
+
+    <string name="banked_sequences">Lagda: %1$d av 8</string>
+
+    <string name="action_help">Hjälp</string>
+    <string name="help_title">Hur man spelar</string>
+    <string name="help_goal_title">Målet</string>
+    <string name="help_goal">Bygg åtta sviter från Kung till Ess, var och en i en enda färg. En färdig svit läggs undan och lämnar brädet. Klara alla åtta så vinner du.</string>
+    <string name="help_moving_title">Flytta kort</string>
+    <string name="help_moving">Vilket vänt kort som helst kan flyttas till ett kort en valör högre, oavsett färg. Flera kort flyttas tillsammans bara när de redan ligger i fallande ordning och delar färg. En tom kolumn accepterar vad som helst, vilket gör den till det mest värdefulla på brädet.</string>
+    <string name="help_stock_title">Dela ut en rad</string>
+    <string name="help_stock">Att trycka på talongen delar ut ett vänt kort på varje kolumn samtidigt — det finns ingen avlagd hög och man drar inte ett kort i taget. Det avvisas medan en kolumn är tom, så fyll luckan innan du delar ut.</string>
+    <string name="help_suits_title">Färger</string>
+    <string name="help_suits">En färg är det mildaste spelet, fyra det svåraste; två ligger mitt emellan och är standardinställningen. Antalet fastställs när ett spel delas ut — ändra det i Inställningar så gäller det nästa nya spel.</string>
+    <string name="help_controls_title">Tryck, dra och tips</string>
+    <string name="help_controls">Tryck på ett kort för att skicka det till nästa tillåtna kolumn till höger, med återgång till början vid behov; tryck igen för att fortsätta flytta det. Dra för att själv välja kolumn. Tipset lyser upp det översta kortet i varje svit som har någonstans att ta vägen. När bara den sista sviten återstår avslutar spelet den åt dig.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Tänker…</string>
+    <string name="hint_no_solution">Ingen väg till vinst härifrån.</string>
+    <string name="hint_inconclusive">Kunde inte avgöra i tid — försök igen, eller fortsätt spela.</string>
+</resources>

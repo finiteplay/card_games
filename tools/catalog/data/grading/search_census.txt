@@ -1,0 +1,12 @@
+status: complete
+scanned: 134445 / 10000000
+searched: 57822
+expert: 15005 / 15000
+insane: 21229 / 15000
+elapsed: 4476s
+searches/s: 12.9
+
+verdict BOTH_WON: 17896
+verdict EXPERT_SPLIT: 15005
+verdict INSANE_UNRESOLVED: 21229
+verdict PROVEN_LOST: 3692

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">玩法說明</string>
+    <string name="help_tab_rules">規則</string>
+    <string name="help_tab_strategy">策略</string>
+    <string name="help_tab_levels">等級</string>
+
+    <string name="help_rules_goal_title">目標</string>
+    <string name="help_rules_goal">把全部 52 張牌移到頂端的四個基礎牌組上。每個基礎牌組只收一種花色，從 A 開始往上疊：A、2、3，一路到 K。四組都完成就算贏了。</string>
+    <string name="help_rules_board_title">牌桌</string>
+    <string name="help_rules_board">中間的七列是接龍區，也就是真正動手的地方。牌背朝上的那一疊是發牌堆；點它就會把牌一張張翻到旁邊的廢牌堆。發牌堆翻完後再點一次，廢牌堆會翻回去，你可以再走一輪，想走幾輪都行。</string>
+    <string name="help_rules_moves_title">哪些走法合法</string>
+    <string name="help_rules_moves">在接龍區裡，一張牌要放到比它大一階且顏色相反的牌上：紅 8 放在黑 9 上。已經照這個順序排好的一串牌可以整串移動。空列只能放 K。沒有被壓住的牌隨時可以上到自己的基礎牌組，需要的話，也可以把基礎牌組最上面的牌再拿下來。</string>
+    <string name="help_rules_help_title">應用程式替你做的事</string>
+    <string name="help_rules_help">點一張牌，它就會前往合法位置中最好的那一個，你也可以把它拖到想放的地方。除非你在設定裡關掉，A 和安全的牌會自動上到基礎牌組。復原次數不限，提示則一定會給出一個仍能保住勝局的走法。</string>
+
+    <string name="help_strategy_intro">這些是 Klondike 眾所皆知的原則。沒有一條是祕密，也沒有一條是保證，它們只是通常管用的做法。</string>
+    <string name="help_strategy_1_title">先把牌翻開</string>
+    <string name="help_strategy_1">每一張牌背朝上的牌，都是你缺的一則資訊。能翻開一張牌的走法，幾乎總是勝過翻不開的走法；牌背朝上的牌最多的那一列，通常就是值得往下挖的那一列。</string>
+    <string name="help_strategy_2_title">別急著往基礎牌組送</string>
+    <string name="help_strategy_2">太早送上去的牌就下不來了，也就接不住任何東西。只要小牌還有可能接住你需要的牌，就把它們留在接龍區；等到誰都不再需要它們時，再送上去。</string>
+    <string name="help_strategy_3_title">清空一列要有計畫</string>
+    <string name="help_strategy_3">空列是牌桌上最有價值的東西，因為只有 K 能填進去。手上已經有 K，或有一張構得到的 K，再去清空，而不是為了清空而清空。</string>
+    <string name="help_strategy_4_title">盯住整個發牌堆，不只是廢牌堆</string>
+    <string name="help_strategy_4">翻牌不花代價，發牌堆也從不重洗，所以走完一整輪只消耗步數。留意從眼前經過的是什麼：知道某張牌還會再轉回來，會改變你現在該走哪一步。</string>
+    <string name="help_strategy_5_title">卡住了就往回走</string>
+    <string name="help_strategy_5">復原只會在計數器上多記一步，此外毫無代價。一局如果走乾了，退回幾步改走另一條分支，通常比指望發牌堆救你要快。</string>
+
+    <string name="help_levels_intro">這裡的每一局在到你手上之前都跑過一遍電腦，等級說的是贏下它需要什麼，或者在階梯最頂端，說的是沒有任何方法贏得了它。它衡量的是這一局，不是你。</string>
+    <string name="help_levels_trivial_title">入門</string>
+    <string name="help_levels_trivial">只靠顯而易見的走法就能贏：翻牌、接住送上門的牌、打廢牌堆。適合上手的牌局，而且這個等級是從最容忍失誤的那些開始排的。</string>
+    <string name="help_levels_easy_title">簡單</string>
+    <string name="help_levels_easy">需要你在幾個顯而易見的走法之間做選擇：挖最深的那一列，以及在還有牌需要它時先按住不放。到這裡，光靠顯而易見的走法已經不夠了。</string>
+    <string name="help_levels_medium_title">中等</string>
+    <string name="help_levels_medium">需要一步當下什麼也撈不到的棋：挪走一串牌中的一段，好露出它底下那一張。先鋪陳、後得利，這就是這個等級的主題。</string>
+    <string name="help_levels_hard_title">困難</string>
+    <string name="help_levels_hard">需要把一張牌從基礎牌組再拿下來。這有違直覺，卻往往是唯一的通路，所以它排得這麼高。</string>
+    <string name="help_levels_expert_title">專家</string>
+    <string name="help_levels_expert">超出一切經驗法則：這些牌局是靠搜尋贏下來的，而且只是勉強贏下——兩個求解器裡有一個找到了路線，另一個沒有。請做好頻繁回退的準備。</string>
+    <string name="help_levels_insane_title">瘋狂</string>
+    <string name="help_levels_insane">沒有任何方法解開這些牌局，所以沒有人知道取勝的路線，我們也不知道。其中有一些根本贏不了：在求解器確實給出結論的同類牌局裡，大約每十局就有一局被證實不可能，而這裡的這些更難，連結論都給不出來。所以在這裡輸掉未必是你的錯，這一局本來可能就沒有出路。玩它們是為了這場較量，不是為了戰績。</string>
+</resources>

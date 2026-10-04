@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">हाथ #%1$d</string>
+    <string name="recovery_notice">आपका सेव किया गया गेम खोला नहीं जा सका, इसलिए एक नया गेम बाँटा गया।</string>
+    <string name="setting_automatic_moves">आधार पर स्वचालित चालें</string>
+    <string name="stuck_title">कोई चाल शेष नहीं</string>
+    <string name="stuck_body">कोई वैध चाल शेष नहीं है। पूर्ववत करें या नया गेम शुरू करें।</string>
+    <string name="hint_thinking">सोच रहे हैं…</string>
+    <string name="hint_no_solution">यहाँ से जीत का कोई रास्ता नहीं है।</string>
+    <string name="hint_inconclusive">समय पर पता नहीं चल सका — फिर से कोशिश करें, या खेलना जारी रखें।</string>
+    <string name="unrecoverable_title">यह खेल शुरू नहीं हो सकता</string>
+    <string name="unrecoverable_body">बंडल किया गया डील कैटलॉग सत्यापन में विफल रहा, इसलिए किसी भी डील को हल करने योग्य प्रमाणित नहीं किया जा सकता। ऐप को फिर से इंस्टॉल करने से यह ठीक हो सकता है।</string>
+    <string name="unrecoverable_retry">फिर से कोशिश करें</string>
+    <string name="help_title">कैसे खेलें</string>
+    <string name="help_goal_title">लक्ष्य</string>
+    <string name="help_goal">सूट के अनुसार सभी चार आधार बनाएं, इक्के से लेकर बादशाह तक। हर पत्ता जमा करें और आप जीत जाते हैं।</string>
+    <string name="help_free_cells_title">मुक्त सेल</string>
+    <string name="help_free_cells">चार मुक्त सेलों में से हर एक किसी भी रैंक या सूट का एक पत्ता रखता है, जब तक आपको उसकी दोबारा ज़रूरत न पड़े। एक खाली स्तंभ भी उसी तरह काम करता है, लेकिन एक पत्ते के बजाय पूरी शृंखला रखता है।</string>
+    <string name="help_moving_title">क्रम बनाना और चालें चलना</string>
+    <string name="help_moving">किसी पत्ते को उससे एक रैंक ऊँचे और विपरीत रंग के पत्ते पर रखा जा सकता है। कोई भी अकेला पत्ता खाली स्तंभ में जा सकता है। जब पर्याप्त मुक्त सेल और खाली स्तंभ यात्रा को संभव बनाते हैं, तो कई पत्ते एक साथ एक सुपरमूव के रूप में चलते हैं — खेल यह हिसाब आपके लिए लगाता है।</string>
+    <string name="help_controls_title">टैप, खींचना और संकेत</string>
+    <string name="help_controls">किसी पत्ते को दाईं ओर की निकटतम वैध स्तंभ पर भेजने के लिए टैप करें, फिर एक सुरक्षित आधार पर, फिर बाईं ओर की निकटतम स्तंभ पर, और असुरक्षित आधार या खाली मुक्त सेल केवल अंतिम उपाय के रूप में। गंतव्य स्वयं चुनने के लिए खींचें, जिसमें मुक्त सेल भी शामिल है। संकेत यह साबित करता है कि कोई चाल मौजूद है और आपको दिखाता है, या ईमानदारी से बताता है जब यह नहीं मिलती।</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Um naipe</string>
+    <string name="suit_count_two">Dois naipes</string>
+    <string name="suit_count_four">Quatro naipes</string>
+
+    <string name="setting_suit_count">Naipes</string>
+
+    <string name="suit_count_switch_forfeits">Mudar de naipes encerra este jogo após %1$d jogadas e o registra como derrota.</string>
+
+    <string name="deal_row_refused">Não é possível distribuir enquanto houver uma coluna vazia</string>
+
+    <string name="recovery_notice">Não foi possível abrir seu jogo salvo, então um novo foi distribuído.</string>
+
+    <string name="uncertified_notice">Esta partida não é certificada como solucionável</string>
+
+    <string name="catalog_status_notice">As partidas de um e dois naipes vêm de um catálogo certificado e verificado como solucionável. As de quatro naipes ainda não são certificadas.</string>
+
+    <string name="banked_sequences">Arquivadas: %1$d de 8</string>
+
+    <string name="action_help">Ajuda</string>
+    <string name="help_title">Como jogar</string>
+    <string name="help_goal_title">O objetivo</string>
+    <string name="help_goal">Monte oito sequências do Rei ao Ás, cada uma em um único naipe. Uma sequência concluída é arquivada e sai do tabuleiro. Complete as oito e você vence.</string>
+    <string name="help_moving_title">Movendo cartas</string>
+    <string name="help_moving">Qualquer carta virada para cima pode ser movida para uma carta de valor imediatamente superior, seja qual for o naipe. Várias cartas se movem juntas somente quando já estão em ordem decrescente e com o mesmo naipe. Uma coluna vazia aceita qualquer coisa, o que a torna o item mais valioso do tabuleiro.</string>
+    <string name="help_stock_title">Distribuindo uma fileira</string>
+    <string name="help_stock">Tocar no monte distribui uma carta virada para cima em cada coluna de uma vez — não há pilha de descarte nem se compra uma carta por vez. Ele recusa enquanto houver uma coluna vazia, então preencha o espaço antes de distribuir.</string>
+    <string name="help_suits_title">Naipes</string>
+    <string name="help_suits">Um naipe é o jogo mais tranquilo, quatro o mais difícil; dois fica entre os dois e é o padrão. A quantidade é fixada quando o jogo é distribuído — altere-a em Configurações e ela se aplicará ao próximo novo jogo.</string>
+    <string name="help_controls_title">Tocar, arrastar e dica</string>
+    <string name="help_controls">Toque em uma carta para enviá-la à próxima coluna válida à direita, voltando ao início se necessário; toque novamente para continuar movendo-a. Arraste para escolher você mesmo a coluna. A dica acende a carta do topo de cada sequência que tem para onde ir. Quando resta apenas a última sequência, o jogo a termina para você.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Pensando…</string>
+    <string name="hint_no_solution">Não há caminho para vencer a partir daqui.</string>
+    <string name="hint_inconclusive">Não foi possível determinar a tempo — tente novamente ou continue jogando.</string>
+</resources>

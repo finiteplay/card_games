@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App / publisher branding. -->
+
+    <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
+
+    <!-- Card ranks and suits, spoken for accessibility -->
+
+    <!-- Board content descriptions (Board.kt) -->
+    <string name="cd_foundation_top_card">%1$s i %2$s, %2$s-hög</string>
+    <string name="cd_foundation_empty">%1$s-hög, tom</string>
+    <string name="cd_move_to_tableau">Flytta till kolumn</string>
+    <string name="cd_stock_with_cards">Talong, %1$d kort</string>
+    <string name="cd_stock_empty_recycles">Talong, tom. Återanvänder kasserade kort.</string>
+    <string name="cd_stock_empty">Talong, tom</string>
+    <string name="cd_draw_action">Dra</string>
+    <string name="cd_waste_card">%1$s i %2$s, kasserade kort</string>
+    <string name="cd_waste_empty">Kasserade kort, tomt</string>
+    <string name="cd_move_card">Flytta kort</string>
+    <string name="cd_tableau_card">%1$s i %2$s, kolumn %3$d, plats %4$d av %5$d</string>
+    <string name="cd_tableau_face_down">Nedvänt kort, kolumn %1$d, plats %2$d av %3$d</string>
+    <string name="cd_move">Flytta</string>
+
+    <!-- Status row (GameScreen.kt) -->
+    <string name="status_deal_prefix">Giv %1$d</string>
+    <string name="status_level_prefix">Nivå: %1$s</string>
+    <string name="level_trivial">Trivial</string>
+    <string name="level_easy">Lätt</string>
+    <string name="level_medium">Medel</string>
+    <string name="level_hard">Svår</string>
+    <string name="level_expert">Expert</string>
+    <string name="level_insane">Vansinnig</string>
+
+    <!-- Recovery notice -->
+    <string name="recovery_notice_text">Ditt sparade spel kunde inte återställas. Startar ett nytt.</string>
+
+    <!-- Hint notice (docs/games/klondike/DESIGN.md "On-Device Hint Search") -->
+    <string name="hint_thinking">Tänker…</string>
+    <string name="hint_no_solution">Ingen väg till vinst härifrån.</string>
+    <string name="hint_inconclusive">Kunde inte avgöra i tid — försök igen, eller fortsätt spela.</string>
+
+    <!-- Settings screen -->
+    <string name="setting_automatic_moves">Automatiska flyttar till hemhögarna</string>
+    <string name="setting_draw_three">Dra tre</string>
+    <string name="setting_difficulty">Svårighetsgrad</string>
+    <string name="difficulty_random">Slumpmässig</string>
+    <string name="level_switch_forfeits">Att byta nivå avslutar det här spelet efter %1$d drag och registrerar det som en förlust.</string>
+
+    <!-- Statistics screen -->
+    <string name="draw_mode_one">Dra en</string>
+    <string name="draw_mode_three">Dra tre</string>
+
+    <!-- Pending action (New Game / Replay) confirmation -->
+
+    <!-- Win dialog -->
+
+    <!-- Stuck (no moves) notice -->
+    <string name="stuck_title">Inga drag kvar</string>
+    <string name="stuck_body">Det finns inget lagligt drag och kortleken kan inte hjälpa till. Ångra eller starta ett nytt spel.</string>
+
+    <!-- Unrecoverable screen -->
+    <string name="unrecoverable_title">Spelet kan inte starta</string>
+    <string name="unrecoverable_body">Den medföljande spelkatalogen klarade inte verifieringen, så inget parti kan certifieras som lösbart. En ominstallation av appen kan lösa detta.</string>
+    <string name="unrecoverable_retry">Försök igen</string>
+</resources>

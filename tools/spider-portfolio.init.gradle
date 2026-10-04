@@ -1,0 +1,10 @@
+gradle.projectsEvaluated {
+    def solverProject = gradle.rootProject.findProject(':games:spider:solver')
+    if (solverProject == null) return
+    solverProject.tasks.withType(Test).configureEach {
+        maxHeapSize = '12g'
+        maxParallelForks = 1
+        systemProperty 'spider.portfolio', 'true'
+        testLogging.showStandardStreams = true
+    }
+}

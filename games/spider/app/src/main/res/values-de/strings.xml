@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Eine Farbe</string>
+    <string name="suit_count_two">Zwei Farben</string>
+    <string name="suit_count_four">Vier Farben</string>
+
+    <string name="setting_suit_count">Farben</string>
+
+    <string name="suit_count_switch_forfeits">Ein Wechsel der Farben beendet dieses Spiel nach %1$d Zügen und wertet es als Niederlage.</string>
+
+    <string name="deal_row_refused">Kann nicht austeilen, solange eine Spalte leer ist</string>
+
+    <string name="recovery_notice">Dein gespeichertes Spiel konnte nicht geöffnet werden, daher wurde ein neues ausgeteilt.</string>
+
+    <string name="uncertified_notice">Dieses Blatt ist nicht als lösbar zertifiziert</string>
+
+    <string name="catalog_status_notice">Ein- und Zweifarben-Blätter stammen aus einem zertifizierten, als lösbar geprüften Katalog. Vierfarben-Blätter sind noch nicht zertifiziert.</string>
+
+    <string name="banked_sequences">Abgelegt: %1$d von 8</string>
+
+    <string name="action_help">Hilfe</string>
+    <string name="help_title">Spielanleitung</string>
+    <string name="help_goal_title">Das Ziel</string>
+    <string name="help_goal">Baue acht Folgen vom König bis zum Ass auf, jede in nur einer Farbe. Eine fertige Folge wird abgelegt und verlässt das Feld. Räume alle acht ab und du gewinnst.</string>
+    <string name="help_moving_title">Karten bewegen</string>
+    <string name="help_moving">Jede offene Karte kann auf eine Karte mit einem Rang höher gelegt werden, egal welcher Farbe. Mehrere Karten bewegen sich nur zusammen, wenn sie bereits absteigend geordnet sind und dieselbe Farbe haben. Eine leere Spalte nimmt alles an, was sie zum wertvollsten Platz auf dem Feld macht.</string>
+    <string name="help_stock_title">Eine Reihe austeilen</string>
+    <string name="help_stock">Ein Tippen auf den Stapel teilt eine Karte offen auf jede Spalte gleichzeitig aus — es gibt keinen Ablagestapel und man zieht nicht Karte für Karte. Es wird verweigert, solange eine Spalte leer ist, also fülle die Lücke vor dem Austeilen.</string>
+    <string name="help_suits_title">Farben</string>
+    <string name="help_suits">Eine Farbe ist das sanfteste Spiel, vier das schwerste; zwei liegt dazwischen und ist die Standardeinstellung. Die Anzahl wird beim Austeilen festgelegt — ändere sie in den Einstellungen, damit sie für das nächste neue Spiel gilt.</string>
+    <string name="help_controls_title">Tippen, Ziehen und Hinweis</string>
+    <string name="help_controls">Tippe auf eine Karte, um sie in die nächste zulässige Spalte rechts davon zu schicken, mit Umlauf zum Anfang; tippe erneut, um sie weiterzubewegen. Ziehe, um die Spalte selbst zu wählen. Der Hinweis lässt die oberste Karte jeder Folge aufleuchten, die irgendwohin ziehen kann. Bleibt nur noch die letzte Folge übrig, beendet das Spiel sie für dich.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Denke nach…</string>
+    <string name="hint_no_solution">Von hier aus gibt es keinen Weg zum Sieg.</string>
+    <string name="hint_inconclusive">Konnte nicht rechtzeitig ermittelt werden — versuche es erneut oder spiele weiter.</string>
+</resources>

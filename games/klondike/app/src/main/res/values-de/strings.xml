@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s von %2$s, Fundament %2$s</string>
+    <string name="cd_foundation_empty">Fundament %1$s, leer</string>
+    <string name="cd_move_to_tableau">Zum Tableau verschieben</string>
+    <string name="cd_stock_with_cards">Talon, %1$d Karten</string>
+    <string name="cd_stock_empty_recycles">Talon, leer. Abwurfstapel wird neu aufgenommen.</string>
+    <string name="cd_stock_empty">Talon, leer</string>
+    <string name="cd_draw_action">Ziehen</string>
+    <string name="cd_waste_card">%1$s von %2$s, Abwurfstapel</string>
+    <string name="cd_waste_empty">Abwurfstapel, leer</string>
+    <string name="cd_move_card">Karte verschieben</string>
+    <string name="cd_tableau_card">%1$s von %2$s, Tableau-Spalte %3$d, Position %4$d von %5$d</string>
+    <string name="cd_tableau_face_down">Verdeckte Karte, Tableau-Spalte %1$d, Position %2$d von %3$d</string>
+    <string name="cd_move">Verschieben</string>
+    <string name="status_deal_prefix">Spiel %1$d</string>
+    <string name="status_level_prefix">Stufe: %1$s</string>
+    <string name="level_trivial">Trivial</string>
+    <string name="level_easy">Leicht</string>
+    <string name="level_medium">Mittel</string>
+    <string name="level_hard">Schwer</string>
+    <string name="level_expert">Experte</string>
+    <string name="level_insane">Wahnsinnig</string>
+    <string name="recovery_notice_text">Dein gespeichertes Spiel konnte nicht wiederhergestellt werden. Ein neues Spiel wird gestartet.</string>
+    <string name="hint_thinking">Denke nach…</string>
+    <string name="hint_no_solution">Von hier aus gibt es keinen Weg zum Sieg.</string>
+    <string name="hint_inconclusive">Konnte nicht rechtzeitig ermittelt werden — versuche es erneut oder spiele weiter.</string>
+    <string name="setting_automatic_moves">Automatische Ablage-Züge</string>
+    <string name="setting_draw_three">Drei ziehen</string>
+    <string name="setting_difficulty">Schwierigkeit</string>
+    <string name="difficulty_random">Zufällig</string>
+    <string name="level_switch_forfeits">Ein Wechsel der Schwierigkeit beendet dieses Spiel nach %1$d Zügen und wertet es als Niederlage.</string>
+    <string name="draw_mode_one">Eine ziehen</string>
+    <string name="draw_mode_three">Drei ziehen</string>
+    <string name="stuck_title">Keine Züge mehr möglich</string>
+    <string name="stuck_body">Es gibt keinen gültigen Zug, und der Stapel kann nicht helfen. Mach einen Zug rückgängig oder starte ein neues Spiel.</string>
+    <string name="unrecoverable_title">Dieses Spiel kann nicht gestartet werden</string>
+    <string name="unrecoverable_body">Der mitgelieferte Blattkatalog hat die Überprüfung nicht bestanden, daher kann kein Blatt als lösbar zertifiziert werden. Eine Neuinstallation der App könnte das beheben.</string>
+    <string name="unrecoverable_retry">Erneut versuchen</string>
+</resources>

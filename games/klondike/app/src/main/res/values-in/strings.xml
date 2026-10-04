@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s dari %2$s, fondasi %2$s</string>
+    <string name="cd_foundation_empty">fondasi %1$s, kosong</string>
+    <string name="cd_move_to_tableau">Pindahkan ke kolom</string>
+    <string name="cd_stock_with_cards">Stok, %1$d kartu</string>
+    <string name="cd_stock_empty_recycles">Stok, kosong. Mendaur ulang buangan.</string>
+    <string name="cd_stock_empty">Stok, kosong</string>
+    <string name="cd_draw_action">Ambil</string>
+    <string name="cd_waste_card">%1$s dari %2$s, buangan</string>
+    <string name="cd_waste_empty">Buangan, kosong</string>
+    <string name="cd_move_card">Pindahkan kartu</string>
+    <string name="cd_tableau_card">%1$s dari %2$s, kolom %3$d, posisi %4$d dari %5$d</string>
+    <string name="cd_tableau_face_down">Kartu tertutup, kolom %1$d, posisi %2$d dari %3$d</string>
+    <string name="cd_move">Pindahkan</string>
+    <string name="status_deal_prefix">Permainan %1$d</string>
+    <string name="status_level_prefix">Level: %1$s</string>
+    <string name="level_trivial">Sepele</string>
+    <string name="level_easy">Mudah</string>
+    <string name="level_medium">Sedang</string>
+    <string name="level_hard">Sulit</string>
+    <string name="level_expert">Ahli</string>
+    <string name="level_insane">Gila</string>
+    <string name="recovery_notice_text">Permainan tersimpan tidak dapat dipulihkan. Memulai permainan baru.</string>
+    <string name="hint_thinking">Berpikir…</string>
+    <string name="hint_no_solution">Tidak ada jalan menuju kemenangan dari sini.</string>
+    <string name="hint_inconclusive">Tidak sempat diketahui tepat waktu — coba lagi, atau lanjutkan bermain.</string>
+    <string name="setting_automatic_moves">Langkah otomatis ke fondasi</string>
+    <string name="setting_draw_three">Ambil tiga kartu</string>
+    <string name="setting_difficulty">Tingkat kesulitan</string>
+    <string name="difficulty_random">Acak</string>
+    <string name="level_switch_forfeits">Mengganti tingkat kesulitan mengakhiri permainan ini setelah %1$d langkah dan mencatatnya sebagai kekalahan.</string>
+    <string name="draw_mode_one">Ambil Satu</string>
+    <string name="draw_mode_three">Ambil Tiga</string>
+    <string name="stuck_title">Tidak ada langkah tersisa</string>
+    <string name="stuck_body">Tidak ada langkah yang sah dan stok tidak dapat membantu. Urungkan atau mulai permainan baru.</string>
+    <string name="unrecoverable_title">Permainan ini tidak dapat dimulai</string>
+    <string name="unrecoverable_body">Katalog permainan bawaan gagal verifikasi, sehingga tidak ada permainan yang dapat disertifikasi sebagai dapat dipecahkan. Menginstal ulang aplikasi mungkin dapat memperbaiki ini.</string>
+    <string name="unrecoverable_retry">Coba lagi</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s de %2$s, base de %2$s</string>
+    <string name="cd_foundation_empty">Base de %1$s, vacía</string>
+    <string name="cd_move_to_tableau">Mover al tablero</string>
+    <string name="cd_stock_with_cards">Mazo, %1$d cartas</string>
+    <string name="cd_stock_empty_recycles">Mazo, vacío. Recicla el descarte.</string>
+    <string name="cd_stock_empty">Mazo, vacío</string>
+    <string name="cd_draw_action">Robar</string>
+    <string name="cd_waste_card">%1$s de %2$s, descarte</string>
+    <string name="cd_waste_empty">Descarte, vacío</string>
+    <string name="cd_move_card">Mover carta</string>
+    <string name="cd_tableau_card">%1$s de %2$s, columna %3$d, posición %4$d de %5$d</string>
+    <string name="cd_tableau_face_down">Carta boca abajo, columna %1$d, posición %2$d de %3$d</string>
+    <string name="cd_move">Mover</string>
+    <string name="status_deal_prefix">Partida %1$d</string>
+    <string name="status_level_prefix">Nivel: %1$s</string>
+    <string name="level_trivial">Trivial</string>
+    <string name="level_easy">Fácil</string>
+    <string name="level_medium">Medio</string>
+    <string name="level_hard">Difícil</string>
+    <string name="level_expert">Experto</string>
+    <string name="level_insane">Demencial</string>
+    <string name="recovery_notice_text">No se pudo restaurar tu partida guardada. Se iniciará una nueva.</string>
+    <string name="hint_thinking">Pensando…</string>
+    <string name="hint_no_solution">No hay forma de ganar desde aquí.</string>
+    <string name="hint_inconclusive">No se pudo determinar a tiempo — inténtalo de nuevo o sigue jugando.</string>
+    <string name="setting_automatic_moves">Movimientos automáticos a la fundación</string>
+    <string name="setting_draw_three">Robar de tres</string>
+    <string name="setting_difficulty">Dificultad</string>
+    <string name="difficulty_random">Aleatoria</string>
+    <string name="level_switch_forfeits">Cambiar de nivel termina esta partida tras %1$d movimientos y la registra como derrota.</string>
+    <string name="draw_mode_one">Robar uno</string>
+    <string name="draw_mode_three">Robar tres</string>
+    <string name="stuck_title">No quedan movimientos</string>
+    <string name="stuck_body">No hay ningún movimiento legal y el mazo no puede ayudar. Deshacer o iniciar una nueva partida.</string>
+    <string name="unrecoverable_title">Esta partida no puede iniciarse</string>
+    <string name="unrecoverable_body">El catálogo de partidas incluido no superó la verificación, así que ninguna partida puede certificarse como resoluble. Reinstalar la app podría solucionarlo.</string>
+    <string name="unrecoverable_retry">Reintentar</string>
+</resources>

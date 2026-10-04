@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Nasıl oynanır</string>
+    <string name="help_tab_rules">Kurallar</string>
+    <string name="help_tab_strategy">Strateji</string>
+    <string name="help_tab_levels">Seviyeler</string>
+
+    <string name="help_rules_goal_title">Amaç</string>
+    <string name="help_rules_goal">52 kâğıdın tamamını yukarıdaki dört temele taşıyın. Her temel tek bir takım alır ve As\'tan yukarı doğru kurulur: A, 2, 3, ta Papaz\'a kadar. Dördünü de tamamladığınızda kazanmış olursunuz.</string>
+    <string name="help_rules_board_title">Oyun alanı</string>
+    <string name="help_rules_board">Ortadaki yedi sütun oyun alanıdır; işin yapıldığı yer orasıdır. Yüzü kapalı yığın destedir; ona dokunarak kâğıtları birer birer yanındaki ıskartaya çevirirsiniz. Deste bittiğinde ona tekrar dokunun; ıskarta geri çevrilir ve yeni bir tur başlar, istediğiniz kadar.</string>
+    <string name="help_rules_moves_title">Hangi hamleler geçerli</string>
+    <string name="help_rules_moves">Oyun alanında bir kâğıt, bir derece üstündeki ve karşıt renkteki kâğıdın üzerine gider: siyah 9 üzerine kırmızı 8. Zaten bu sırada duran bir dizi tek parça hâlinde taşınır. Boş bir sütuna yalnızca Papaz girebilir. Üstü açılmış bir kâğıt her zaman kendi temeline çıkabilir, gerekirse bir temelin en üstteki kâğıdını geri indirebilirsiniz.</string>
+    <string name="help_rules_help_title">Uygulamanın sizin için yaptıkları</string>
+    <string name="help_rules_help">Bir kâğıda dokunun, izin verilen en iyi yere gitsin; ya da istediğiniz yere sürükleyin. Ayarlar\'dan kapatmadığınız sürece Aslar ve güvenli kâğıtlar temellere kendiliğinden çıkar. Geri alma sınırsızdır ve İpucu size her zaman galibiyeti mümkün bırakan bir hamle gösterir.</string>
+
+    <string name="help_strategy_intro">Bunlar Klondike\'ın herkesçe bilinen ilkeleridir. Hiçbiri sır değildir ve hiçbiri garanti vermez; sadece genellikle işe yarayanlardır.</string>
+    <string name="help_strategy_1_title">Önce kâğıtları açın</string>
+    <string name="help_strategy_1">Yüzü kapalı her kâğıt, sahip olmadığınız bir bilgidir. Bunlardan birini çeviren bir hamle, çevirmeyen bir hamleden neredeyse her zaman iyidir ve en çok kapalı kâğıdı olan sütun genellikle kazmaya değen sütundur.</string>
+    <string name="help_strategy_2_title">Temellere acele etmeyin</string>
+    <string name="help_strategy_2">Erken yukarı gönderilen bir kâğıt, bir şeyi tutmak için geri inemez. Küçük kâğıtları, ihtiyacınız olan bir kâğıdı hâlâ yakalayabildikleri sürece oyun alanında tutun; kimse onlara ihtiyaç duymaz olduğunda yukarı gönderin.</string>
+    <string name="help_strategy_3_title">Bir sütunu planla boşaltın</string>
+    <string name="help_strategy_3">Boş sütun masadaki en değerli şeydir, çünkü onu ancak bir Papaz doldurabilir. Elinizde hazır bir Papaz ya da ulaşabileceğiniz bir Papaz varken boşaltın; boşaltmış olmak için değil.</string>
+    <string name="help_strategy_4_title">Yalnızca ıskartayı değil, tüm desteyi izleyin</string>
+    <string name="help_strategy_4">Çekmek bedavadır ve deste hiçbir zaman yeniden karılmaz, dolayısıyla onu baştan sona geçmek yalnızca hamleye mal olur. Neyin geçtiğine dikkat edin: bir kâğıdın tekrar döneceğini bilmek, şimdi yapmanız gereken hamleyi değiştirir.</string>
+    <string name="help_strategy_5_title">Sıkıştığınızda geri dönün</string>
+    <string name="help_strategy_5">Geri almanın size maliyeti sayaçtaki bir hamleden ibarettir. Bir el kuruduğunda, birkaç hamle geri gidip diğer dalı seçmek, destenin sizi kurtarmasını ummaktan genellikle daha hızlıdır.</string>
+
+    <string name="help_levels_intro">Buradaki her el, size ulaşmadan önce bir bilgisayardan geçti ve seviye, kazanmak için nelerin gerektiğini söyler - ya da merdivenin en tepesinde, hiçbir şeyin başaramadığını. Bu, elin ölçüsüdür, sizin değil.</string>
+    <string name="help_levels_trivial_title">Çok kolay</string>
+    <string name="help_levels_trivial">Yalnızca apaçık hamlelerle kazanılır: kâğıtları çevirin, sunulanı alın, ıskartayı oynayın. Öğrenmek için iyi eller; seviye, hataları en çok bağışlayanlarla başlar.</string>
+    <string name="help_levels_easy_title">Kolay</string>
+    <string name="help_levels_easy">Apaçık hamleler arasında seçim yapmayı gerektirir: en derin sütunu kazmak ve bir şey ona hâlâ ihtiyaç duyduğu sürece bir kâğıdı tutmak. Burada apaçık hamleler tek başına yetmez.</string>
+    <string name="help_levels_medium_title">Orta</string>
+    <string name="help_levels_medium">O anda hiçbir kazanç sağlamayan bir hamle gerektirir: altındaki kâğıdı açmak için bir dizinin bir bölümünü kaydırmak. Kazanmadan önce hazırlık yapmak, bu seviyenin konusudur.</string>
+    <string name="help_levels_hard_title">Zor</string>
+    <string name="help_levels_hard">Bir temelden geri indirilen bir kâğıt gerektirir. Sezgiye aykırıdır ve çoğu zaman tek geçittir; bu yüzden bu kadar yukarıdadır.</string>
+    <string name="help_levels_expert_title">Uzman</string>
+    <string name="help_levels_expert">Her pratik kuralın ötesinde: bu eller aramayla kazanıldı, hem de kıl payı - iki çözücüden biri bir hat buldu, diğeri bulamadı. Sık sık geri dönmeyi bekleyin.</string>
+    <string name="help_levels_insane_title">Çılgın</string>
+    <string name="help_levels_insane">Bunları hiçbir şey çözemedi, dolayısıyla kazandıran bir hattı kimse bilmiyor, biz de dâhil. Bazıları hiç kazanılamaz: bir çözücünün sonuca bağladığı benzer eller arasında yaklaşık onda biri imkânsız çıktı ve bunlar, sonuca bağlayamadığı daha zor olanlar. Yani buradaki bir yenilgi sizin hatanız olmayabilir; elin bir çıkış yolu hiç olmamış olabilir. Onları rekor için değil, mücadele için oynayın.</string>
+</resources>

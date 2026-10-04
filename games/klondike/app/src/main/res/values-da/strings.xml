@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App / publisher branding. -->
+
+    <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
+
+    <!-- Card ranks and suits, spoken for accessibility -->
+
+    <!-- Board content descriptions (Board.kt) -->
+    <string name="cd_foundation_top_card">%1$s i %2$s, %2$s-bunke</string>
+    <string name="cd_foundation_empty">%1$s-bunke, tom</string>
+    <string name="cd_move_to_tableau">Flyt til kolonne</string>
+    <string name="cd_stock_with_cards">Talon, %1$d kort</string>
+    <string name="cd_stock_empty_recycles">Talon, tom. Genbruger kasserede kort.</string>
+    <string name="cd_stock_empty">Talon, tom</string>
+    <string name="cd_draw_action">Træk</string>
+    <string name="cd_waste_card">%1$s i %2$s, kasserede kort</string>
+    <string name="cd_waste_empty">Kasserede kort, tomt</string>
+    <string name="cd_move_card">Flyt kort</string>
+    <string name="cd_tableau_card">%1$s i %2$s, kolonne %3$d, plads %4$d af %5$d</string>
+    <string name="cd_tableau_face_down">Vendt kort, kolonne %1$d, plads %2$d af %3$d</string>
+    <string name="cd_move">Flyt</string>
+
+    <!-- Status row (GameScreen.kt) -->
+    <string name="status_deal_prefix">Giv %1$d</string>
+    <string name="status_level_prefix">Niveau: %1$s</string>
+    <string name="level_trivial">Triviel</string>
+    <string name="level_easy">Let</string>
+    <string name="level_medium">Middel</string>
+    <string name="level_hard">Svær</string>
+    <string name="level_expert">Ekspert</string>
+    <string name="level_insane">Vanvittig</string>
+
+    <!-- Recovery notice -->
+    <string name="recovery_notice_text">Dit gemte spil kunne ikke gendannes. Starter et nyt.</string>
+
+    <!-- Hint notice (docs/games/klondike/DESIGN.md "On-Device Hint Search") -->
+    <string name="hint_thinking">Tænker…</string>
+    <string name="hint_no_solution">Ingen vej til gevinst herfra.</string>
+    <string name="hint_inconclusive">Kunne ikke afgøre det i tide — prøv igen, eller fortsæt med at spille.</string>
+
+    <!-- Settings screen -->
+    <string name="setting_automatic_moves">Automatiske træk til hjemmebunkerne</string>
+    <string name="setting_draw_three">Træk tre</string>
+    <string name="setting_difficulty">Sværhedsgrad</string>
+    <string name="difficulty_random">Tilfældig</string>
+    <string name="level_switch_forfeits">Skift af niveau afslutter dette spil efter %1$d træk og registrerer det som et tab.</string>
+
+    <!-- Statistics screen -->
+    <string name="draw_mode_one">Træk én</string>
+    <string name="draw_mode_three">Træk tre</string>
+
+    <!-- Pending action (New Game / Replay) confirmation -->
+
+    <!-- Win dialog -->
+
+    <!-- Stuck (no moves) notice -->
+    <string name="stuck_title">Ingen træk tilbage</string>
+    <string name="stuck_body">Der er ikke noget lovligt træk, og stokken kan ikke hjælpe. Fortryd, eller start et nyt spil.</string>
+
+    <!-- Unrecoverable screen -->
+    <string name="unrecoverable_title">Dette spil kan ikke starte</string>
+    <string name="unrecoverable_body">Det medfølgende spilkatalog bestod ikke verifikationen, så intet parti kan certificeres som løsbart. Geninstallation af appen kan løse dette.</string>
+    <string name="unrecoverable_retry">Prøv igen</string>
+</resources>

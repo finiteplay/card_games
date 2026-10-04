@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Parti #%1$d</string>
+    <string name="recovery_notice">Ditt sparade spel kunde inte öppnas, så ett nytt delades ut.</string>
+    <string name="setting_automatic_moves">Automatiska flyttar till hemhögarna</string>
+    <string name="stuck_title">Inga drag kvar</string>
+    <string name="stuck_body">Det finns inga fler lagliga drag. Ångra eller starta ett nytt spel.</string>
+    <string name="hint_thinking">Tänker…</string>
+    <string name="hint_no_solution">Ingen väg till vinst härifrån.</string>
+    <string name="hint_inconclusive">Kunde inte avgöra i tid — försök igen, eller fortsätt spela.</string>
+    <string name="unrecoverable_title">Spelet kan inte starta</string>
+    <string name="unrecoverable_body">Den medföljande spelkatalogen klarade inte verifieringen, så inget parti kan certifieras som lösbart. En ominstallation av appen kan lösa detta.</string>
+    <string name="unrecoverable_retry">Försök igen</string>
+    <string name="help_title">Hur man spelar</string>
+    <string name="help_goal_title">Målet</string>
+    <string name="help_goal">Bygg upp alla fyra hemhögarna efter färg, från ess till kung. Lägg undan varje kort så vinner du.</string>
+    <string name="help_free_cells_title">Frizoner</string>
+    <string name="help_free_cells">Var och en av de fyra frizonerna rymmer ett kort av valfri valör eller färg, undanlagt tills du behöver det igen. En tom kolumn fungerar likadant, men rymmer en hel följd istället för ett enda kort.</string>
+    <string name="help_moving_title">Bygga och flytta</string>
+    <string name="help_moving">Ett kort kan läggas på ett kort en valör högre och av motsatt färg. Vilket enskilt kort som helst får flyttas till en tom kolumn. Flera kort flyttas tillsammans som ett superdrag när tillräckligt många frizoner och tomma kolumner gör resan möjlig — spelet räknar ut det åt dig.</string>
+    <string name="help_controls_title">Tryck, dra och ledtråd</string>
+    <string name="help_controls">Tryck på ett kort för att skicka det till närmaste lagliga kolumn till höger, sedan en säker hemhög, sedan närmaste kolumn till vänster, och en osäker hemhög eller en tom frizon endast som sista utväg. Dra för att själv välja mål, även en frizon. Ledtråden bevisar att ett drag finns och visar dig det, eller talar ärligt om när den inte hittar något.</string>
+</resources>

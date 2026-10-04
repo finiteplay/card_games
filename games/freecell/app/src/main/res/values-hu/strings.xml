@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Kör #%1$d</string>
+    <string name="recovery_notice">A mentett játékot nem sikerült megnyitni, ezért új osztás készült.</string>
+    <string name="setting_automatic_moves">Automatikus lépések az alapba</string>
+    <string name="stuck_title">Nincs több lépés</string>
+    <string name="stuck_body">Nincs több lehetséges lépés. Vonj vissza, vagy kezdj új játékot.</string>
+    <string name="hint_thinking">Gondolkodik…</string>
+    <string name="hint_no_solution">Innen nincs út a győzelemhez.</string>
+    <string name="hint_inconclusive">Nem sikerült időben eldönteni — próbáld újra, vagy folytasd a játékot.</string>
+    <string name="unrecoverable_title">Ez a játék nem indítható el</string>
+    <string name="unrecoverable_body">A beépített játékkatalógus nem ment át az ellenőrzésen, így egyetlen játék sem igazolható megoldhatóként. Az alkalmazás újratelepítése megoldhatja ezt.</string>
+    <string name="unrecoverable_retry">Próbáld újra</string>
+    <string name="help_title">Hogyan kell játszani</string>
+    <string name="help_goal_title">A cél</string>
+    <string name="help_goal">Építsd fel mind a négy alapot színenként, ásztól a királyig. Rakj le minden lapot, és nyersz.</string>
+    <string name="help_free_cells_title">Szabad mezők</string>
+    <string name="help_free_cells">A négy szabad mező mindegyike egy tetszőleges értékű vagy színű lapot fogad be, félretéve, amíg újra szükséged nem lesz rá. Egy üres oszlop ugyanígy működik, de egy lap helyett egy teljes sorozatot fogad be.</string>
+    <string name="help_moving_title">Építés és mozgatás</string>
+    <string name="help_moving">Egy lapot egy nála eggyel magasabb értékű és ellentétes színű lapra lehet helyezni. Bármelyik önálló lap beléphet egy üres oszlopba. Több lap együtt mozog egyetlen szuperlépésként, ha elég szabad mező és üres oszlop teszi lehetővé az utat — a játék ezt helyetted kiszámolja.</string>
+    <string name="help_controls_title">Koppintás, húzás és tipp</string>
+    <string name="help_controls">Koppints egy lapra, hogy a legközelebbi jogos oszlopba küldd jobbra, majd egy biztonságos alapba, majd a legközelebbi oszlopba balra, és csak végső esetben egy nem biztonságos alapba vagy egy üres szabad mezőbe. Húzással magad választhatod ki a célt, beleértve egy szabad mezőt is. A tipp bizonyítja, hogy létezik lépés, és megmutatja, vagy őszintén megmondja, ha nem talál.</string>
+</resources>

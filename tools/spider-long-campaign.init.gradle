@@ -1,0 +1,12 @@
+gradle.projectsEvaluated {
+    def solver = gradle.rootProject.findProject(':games:spider:solver')
+    if (solver == null) return
+    solver.tasks.register('longCampaignClasspath') {
+        dependsOn solver.tasks.named('testClasses')
+        doLast {
+            def output = new File(solver.layout.buildDirectory.get().asFile, 'long-campaign-classpath.txt')
+            output.text = solver.sourceSets.test.runtimeClasspath.asPath
+            println output.absolutePath
+        }
+    }
+}

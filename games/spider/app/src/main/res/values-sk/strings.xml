@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Jedna farba</string>
+    <string name="suit_count_two">Dve farby</string>
+    <string name="suit_count_four">Štyri farby</string>
+
+    <string name="setting_suit_count">Farby</string>
+
+    <string name="suit_count_switch_forfeits">Zmena farieb ukončí túto hru po %1$d ťahoch a započíta ju ako prehru.</string>
+
+    <string name="deal_row_refused">Nemožno rozdať, kým je stĺpec prázdny</string>
+
+    <string name="recovery_notice">Uloženú hru sa nepodarilo otvoriť, preto bola rozdaná nová.</string>
+
+    <string name="uncertified_notice">Toto rozdanie nie je certifikované ako riešiteľné</string>
+
+    <string name="catalog_status_notice">Rozdania s jednou a dvoma farbami pochádzajú z certifikovaného katalógu, overeného ako riešiteľný. Rozdania so štyrmi farbami zatiaľ certifikované nie sú.</string>
+
+    <string name="banked_sequences">Uložené: %1$d z 8</string>
+
+    <string name="action_help">Pomocník</string>
+    <string name="help_title">Ako hrať</string>
+    <string name="help_goal_title">Cieľ</string>
+    <string name="help_goal">Zostavte osem postupností od kráľa po eso, každú v jednej farbe. Dokončená postupnosť sa uloží a opustí hraciu plochu. Dokončite všetkých osem a vyhráte.</string>
+    <string name="help_moving_title">Presúvanie kariet</string>
+    <string name="help_moving">Akúkoľvek lícom nahor otočenú kartu možno presunúť na kartu o jednu hodnotu vyššiu, bez ohľadu na farbu. Viac kariet sa presúva spolu iba vtedy, ak už idú zostupne za sebou a majú rovnakú farbu. Prázdny stĺpec prijme čokoľvek, čo z neho robí najcennejšie miesto na hracej ploche.</string>
+    <string name="help_stock_title">Rozdanie radu</string>
+    <string name="help_stock">Klepnutím na balík sa rozdá jedna karta lícom nahor na každý stĺpec naraz — neexistuje odkladací balík a karty sa neťahajú jednotlivo. Rozdanie odmietne, kým je nejaký stĺpec prázdny, preto medzeru najprv zaplňte.</string>
+    <string name="help_suits_title">Farby</string>
+    <string name="help_suits">Jedna farba je najmiernejšia hra, štyri najťažšia; dve sú medzi tým a sú predvolené. Počet sa stanoví pri rozdaní hry — zmeňte ho v Nastaveniach a prejaví sa pri ďalšej novej hre.</string>
+    <string name="help_controls_title">Klepnutie, ťahanie a pomôcka</string>
+    <string name="help_controls">Klepnutím na kartu ju pošlete do najbližšieho povoleného stĺpca vpravo, v prípade potreby s návratom na začiatok; ďalším klepnutím ju posuniete ďalej. Pretiahnutím zvolíte stĺpec sami. Pomôcka rozsvieti vrchnú kartu každej postupnosti, ktorá má kam ísť. Keď zostáva len posledná postupnosť, hra ju dokončí za vás.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Rozmýšľam…</string>
+    <string name="hint_no_solution">Odtiaľto už nevedie cesta k výhre.</string>
+    <string name="hint_inconclusive">Nestihlo sa to zistiť včas — skús to znova alebo pokračuj v hre.</string>
+</resources>

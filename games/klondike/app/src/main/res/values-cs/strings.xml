@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s %2$s, základ %2$s</string>
+    <string name="cd_foundation_empty">Základ %1$s, prázdný</string>
+    <string name="cd_move_to_tableau">Přesunout na hrací plochu</string>
+    <string name="cd_stock_with_cards">Talon, %1$d karet</string>
+    <string name="cd_stock_empty_recycles">Talon, prázdný. Recykluje odpad.</string>
+    <string name="cd_stock_empty">Talon, prázdný</string>
+    <string name="cd_draw_action">Táhnout</string>
+    <string name="cd_waste_card">%1$s %2$s, odkládací hromádka</string>
+    <string name="cd_waste_empty">Odkládací hromádka, prázdná</string>
+    <string name="cd_move_card">Přesunout kartu</string>
+    <string name="cd_tableau_card">%1$s %2$s, sloupec %3$d, pozice %4$d z %5$d</string>
+    <string name="cd_tableau_face_down">Karta lícem dolů, sloupec %1$d, pozice %2$d z %3$d</string>
+    <string name="cd_move">Přesunout</string>
+    <string name="status_deal_prefix">Rozdání %1$d</string>
+    <string name="status_level_prefix">Úroveň: %1$s</string>
+    <string name="level_trivial">Triviální</string>
+    <string name="level_easy">Snadná</string>
+    <string name="level_medium">Střední</string>
+    <string name="level_hard">Těžká</string>
+    <string name="level_expert">Expertní</string>
+    <string name="level_insane">Šílená</string>
+    <string name="recovery_notice_text">Vaši uloženou hru se nepodařilo obnovit. Spouští se nová hra.</string>
+    <string name="hint_thinking">Přemýšlí…</string>
+    <string name="hint_no_solution">Odtud nevede cesta k výhře.</string>
+    <string name="hint_inconclusive">Nepodařilo se to zjistit včas — zkuste to znovu, nebo hrajte dál.</string>
+    <string name="setting_automatic_moves">Automatické přesuny do sbírek</string>
+    <string name="setting_draw_three">Líznutí tří karet</string>
+    <string name="setting_difficulty">Obtížnost</string>
+    <string name="difficulty_random">Náhodná</string>
+    <string name="level_switch_forfeits">Změna obtížnosti ukončí tuto hru po %1$d tazích a započítá ji jako prohru.</string>
+    <string name="draw_mode_one">Líznutí jedné</string>
+    <string name="draw_mode_three">Líznutí tří</string>
+    <string name="stuck_title">Nezbývají žádné tahy</string>
+    <string name="stuck_body">Není k dispozici žádný platný tah a talon nemůže pomoci. Vraťte tah zpět nebo začněte novou hru.</string>
+    <string name="unrecoverable_title">Tuto hru nelze spustit</string>
+    <string name="unrecoverable_body">Vestavěný katalog her neprošel ověřením, takže žádnou hru nelze potvrdit jako řešitelnou. Přeinstalování aplikace to může vyřešit.</string>
+    <string name="unrecoverable_retry">Zkusit znovu</string>
+</resources>

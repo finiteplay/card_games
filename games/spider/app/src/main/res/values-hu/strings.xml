@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Egy szín</string>
+    <string name="suit_count_two">Két szín</string>
+    <string name="suit_count_four">Négy szín</string>
+
+    <string name="setting_suit_count">Színek</string>
+
+    <string name="suit_count_switch_forfeits">A színek váltása %1$d lépés után befejezi ezt a játékot, és vereségként rögzíti.</string>
+
+    <string name="deal_row_refused">Nem osztható, amíg egy oszlop üres</string>
+
+    <string name="recovery_notice">A mentett játékot nem sikerült megnyitni, ezért új osztás készült.</string>
+
+    <string name="uncertified_notice">Ez az osztás nincs megoldhatóként hitelesítve</string>
+
+    <string name="catalog_status_notice">Az egy- és kétszínű osztások hitelesített, megoldhatónak igazolt katalógusból származnak. A négyszínű osztások még nincsenek hitelesítve.</string>
+
+    <string name="banked_sequences">Letéve: %1$d / 8</string>
+
+    <string name="action_help">Súgó</string>
+    <string name="help_title">Hogyan kell játszani</string>
+    <string name="help_goal_title">A cél</string>
+    <string name="help_goal">Építs nyolc sorozatot Királytól Ászig, mindegyiket egyetlen színben. A kész sorozat letevésre kerül, és lekerül a tábláról. Fejezd be mind a nyolcat, és nyersz.</string>
+    <string name="help_moving_title">Lapok mozgatása</string>
+    <string name="help_moving">Bármely felfelé fordított lap egy eggyel magasabb értékű lapra mozgatható, színtől függetlenül. Több lap csak akkor mozog együtt, ha már csökkenő sorrendben állnak, és azonos színűek. Egy üres oszlop bármit elfogad, ami a tábla legértékesebb helyévé teszi.</string>
+    <string name="help_stock_title">Sor osztása</string>
+    <string name="help_stock">A húzópakli megérintése minden oszlopra egyszerre oszt egy felfelé fordított lapot — nincs dobott kupac, és nem egyesével húzol lapot. Az osztás megtagadva, amíg egy oszlop üres, ezért előbb töltsd ki a rést.</string>
+    <string name="help_suits_title">Színek</string>
+    <string name="help_suits">Egy szín a legenyhébb játék, négy a legnehezebb; kettő középen van, és ez az alapértelmezett. A szám az osztáskor rögzül — a Beállításokban módosítható, és a következő új játékra lép érvénybe.</string>
+    <string name="help_controls_title">Érintés, húzás és tipp</string>
+    <string name="help_controls">Érints meg egy lapot, hogy a jobbra eső következő megfelelő oszlopba küldd, szükség esetén az elejére visszafordulva; érints rá újra, hogy tovább mozgasd. Húzással magad választhatod ki az oszlopot. A tipp megvilágítja minden olyan sorozat felső lapját, amelynek van hova mennie. Amikor már csak az utolsó sorozat marad, a játék befejezi helyetted.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Gondolkodik…</string>
+    <string name="hint_no_solution">Innen nincs út a győzelemhez.</string>
+    <string name="hint_inconclusive">Nem sikerült időben eldönteni — próbáld újra, vagy folytasd a játékot.</string>
+</resources>

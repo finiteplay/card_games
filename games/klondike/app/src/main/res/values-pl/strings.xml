@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App / publisher branding. -->
+
+    <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
+
+    <!-- Card ranks and suits, spoken for accessibility -->
+
+    <!-- Board content descriptions (Board.kt) -->
+    <string name="cd_foundation_top_card">%1$s %2$s, stos %2$s</string>
+    <string name="cd_foundation_empty">Stos %1$s, pusty</string>
+    <string name="cd_move_to_tableau">Przenieś na kolumnę</string>
+    <string name="cd_stock_with_cards">Talia, %1$d kart</string>
+    <string name="cd_stock_empty_recycles">Talia, pusta. Uzupełnia się z odkładki.</string>
+    <string name="cd_stock_empty">Talia, pusta</string>
+    <string name="cd_draw_action">Dobierz</string>
+    <string name="cd_waste_card">%1$s %2$s, odkładka</string>
+    <string name="cd_waste_empty">Odkładka, pusta</string>
+    <string name="cd_move_card">Przenieś kartę</string>
+    <string name="cd_tableau_card">%1$s %2$s, kolumna %3$d, pozycja %4$d z %5$d</string>
+    <string name="cd_tableau_face_down">Karta zakryta, kolumna %1$d, pozycja %2$d z %3$d</string>
+    <string name="cd_move">Przenieś</string>
+
+    <!-- Status row (GameScreen.kt) -->
+    <string name="status_deal_prefix">Rozdanie %1$d</string>
+    <string name="status_level_prefix">Poziom: %1$s</string>
+    <string name="level_trivial">Trywialny</string>
+    <string name="level_easy">Łatwy</string>
+    <string name="level_medium">Średni</string>
+    <string name="level_hard">Trudny</string>
+    <string name="level_expert">Ekspert</string>
+    <string name="level_insane">Szalony</string>
+
+    <!-- Recovery notice -->
+    <string name="recovery_notice_text">Nie udało się przywrócić zapisanej gry. Rozpoczynanie nowej.</string>
+
+    <!-- Hint notice (docs/games/klondike/DESIGN.md "On-Device Hint Search") -->
+    <string name="hint_thinking">Myślenie…</string>
+    <string name="hint_no_solution">Stąd nie da się już wygrać.</string>
+    <string name="hint_inconclusive">Nie udało się ustalić na czas — spróbuj ponownie lub graj dalej.</string>
+
+    <!-- Settings screen -->
+    <string name="setting_automatic_moves">Automatyczne przenoszenie na stosy</string>
+    <string name="setting_draw_three">Dobieranie po trzy</string>
+    <string name="setting_difficulty">Poziom trudności</string>
+    <string name="difficulty_random">Losowy</string>
+    <string name="level_switch_forfeits">Zmiana poziomu kończy tę grę po %1$d ruchach i zapisuje ją jako przegraną.</string>
+
+    <!-- Statistics screen -->
+    <string name="draw_mode_one">Dobieranie po jednej</string>
+    <string name="draw_mode_three">Dobieranie po trzy</string>
+
+    <!-- Pending action (New Game / Replay) confirmation -->
+
+    <!-- Win dialog -->
+
+    <!-- Stuck (no moves) notice -->
+    <string name="stuck_title">Brak ruchów</string>
+    <string name="stuck_body">Nie ma legalnego ruchu, a talia nie pomoże. Cofnij lub rozpocznij nową grę.</string>
+
+    <!-- Unrecoverable screen -->
+    <string name="unrecoverable_title">Nie można rozpocząć gry</string>
+    <string name="unrecoverable_body">Wbudowany katalog rozdań nie przeszedł weryfikacji, więc żadne rozdanie nie może zostać uznane za rozwiązywalne. Ponowna instalacja aplikacji może to naprawić.</string>
+    <string name="unrecoverable_retry">Spróbuj ponownie</string>
+</resources>

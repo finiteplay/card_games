@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Igra br. %1$d</string>
+    <string name="recovery_notice">Spremljena igra nije se mogla otvoriti, pa je podijeljena nova.</string>
+    <string name="setting_automatic_moves">Automatski potezi na temelje</string>
+    <string name="stuck_title">Nema više poteza</string>
+    <string name="stuck_body">Nema više legalnih poteza. Poništi potez ili započni novu igru.</string>
+    <string name="hint_thinking">Razmišljam…</string>
+    <string name="hint_no_solution">Odavde nema puta do pobjede.</string>
+    <string name="hint_inconclusive">Nisam uspio utvrditi na vrijeme — pokušaj ponovno ili nastavi igrati.</string>
+    <string name="unrecoverable_title">Igra se ne može pokrenuti</string>
+    <string name="unrecoverable_body">Ugrađeni katalog igara nije prošao provjeru, pa se nijedna igra ne može potvrditi kao rješiva. Ponovna instalacija aplikacije mogla bi ovo riješiti.</string>
+    <string name="unrecoverable_retry">Pokušaj ponovno</string>
+    <string name="help_title">Kako igrati</string>
+    <string name="help_goal_title">Cilj</string>
+    <string name="help_goal">Izgradi sve četiri temeljne hrpe po boji, od asa do kralja. Odloži svaku kartu i pobjeđuješ.</string>
+    <string name="help_free_cells_title">Slobodne ćelije</string>
+    <string name="help_free_cells">Svaka od četiri slobodne ćelije prima jednu kartu bilo koje vrijednosti ili boje, ostavljenu po strani dok ti ponovno ne zatreba. Prazan stupac radi na isti način, ali prima cijeli niz umjesto jedne karte.</string>
+    <string name="help_moving_title">Slaganje i pomicanje</string>
+    <string name="help_moving">Karta se može staviti na kartu jednu vrijednost višu i suprotne boje. Bilo koja pojedinačna karta može ući u prazan stupac. Nekoliko karata pomiče se zajedno kao jedan super-potez kad dovoljno slobodnih ćelija i praznih stupaca to omogućuje — igra to sama izračunava umjesto tebe.</string>
+    <string name="help_controls_title">Dodir, povlačenje i savjet</string>
+    <string name="help_controls">Dodirni kartu da je pošalješ u najbliži legalan stupac desno, zatim u sigurnu temeljnu hrpu, zatim u najbliži stupac lijevo, a u nesigurnu temeljnu hrpu ili praznu slobodnu ćeliju tek kao posljednje pribježište. Povuci da sam odabereš odredište, uključujući slobodnu ćeliju. Savjet dokazuje da potez postoji i pokazuje ti ga, ili ti iskreno kaže kad ga nema.</string>
+</resources>

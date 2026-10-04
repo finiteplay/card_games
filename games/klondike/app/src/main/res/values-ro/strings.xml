@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s de %2$s, fundația de %2$s</string>
+    <string name="cd_foundation_empty">Fundația de %1$s, goală</string>
+    <string name="cd_move_to_tableau">Mută pe tablă</string>
+    <string name="cd_stock_with_cards">Pachet, %1$d cărți</string>
+    <string name="cd_stock_empty_recycles">Pachet, gol. Reciclează resturile.</string>
+    <string name="cd_stock_empty">Pachet, gol</string>
+    <string name="cd_draw_action">Trage</string>
+    <string name="cd_waste_card">%1$s de %2$s, cărți aruncate</string>
+    <string name="cd_waste_empty">Cărți aruncate, gol</string>
+    <string name="cd_move_card">Mută cartea</string>
+    <string name="cd_tableau_card">%1$s de %2$s, coloana %3$d, poziția %4$d din %5$d</string>
+    <string name="cd_tableau_face_down">Carte cu fața în jos, coloana %1$d, poziția %2$d din %3$d</string>
+    <string name="cd_move">Mută</string>
+    <string name="status_deal_prefix">Partida %1$d</string>
+    <string name="status_level_prefix">Nivel: %1$s</string>
+    <string name="level_trivial">Trivial</string>
+    <string name="level_easy">Ușor</string>
+    <string name="level_medium">Mediu</string>
+    <string name="level_hard">Dificil</string>
+    <string name="level_expert">Expert</string>
+    <string name="level_insane">Nebunesc</string>
+    <string name="recovery_notice_text">Jocul salvat nu a putut fi restaurat. Se începe un joc nou.</string>
+    <string name="hint_thinking">Se gândește…</string>
+    <string name="hint_no_solution">Nu există nicio cale spre victorie de aici.</string>
+    <string name="hint_inconclusive">Nu s-a putut stabili la timp — încearcă din nou sau continuă să joci.</string>
+    <string name="setting_automatic_moves">Mutări automate în fundație</string>
+    <string name="setting_draw_three">Extragere de trei</string>
+    <string name="setting_difficulty">Dificultate</string>
+    <string name="difficulty_random">Aleatoriu</string>
+    <string name="level_switch_forfeits">Schimbarea nivelului încheie acest joc după %1$d mutări și îl înregistrează ca înfrângere.</string>
+    <string name="draw_mode_one">Extragere unu</string>
+    <string name="draw_mode_three">Extragere trei</string>
+    <string name="stuck_title">Nu mai sunt mutări disponibile</string>
+    <string name="stuck_body">Nu există nicio mutare legală, iar pachetul nu mai poate ajuta. Anulează sau începe un joc nou.</string>
+    <string name="unrecoverable_title">Acest joc nu poate porni</string>
+    <string name="unrecoverable_body">Catalogul de jocuri inclus nu a trecut verificarea, așa că niciun joc nu poate fi certificat ca fiind rezolvabil. Reinstalarea aplicației ar putea rezolva problema.</string>
+    <string name="unrecoverable_retry">Încearcă din nou</string>
+</resources>

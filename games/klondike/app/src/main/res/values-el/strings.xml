@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s %2$s, βάση %2$s</string>
+    <string name="cd_foundation_empty">Βάση %1$s, άδεια</string>
+    <string name="cd_move_to_tableau">Μετακίνηση στο ταμπλό</string>
+    <string name="cd_stock_with_cards">Τράπουλα, %1$d χαρτιά</string>
+    <string name="cd_stock_empty_recycles">Τράπουλα, άδεια. Ανακυκλώνει τα σκάρτα.</string>
+    <string name="cd_stock_empty">Τράπουλα, άδεια</string>
+    <string name="cd_draw_action">Τράβηγμα</string>
+    <string name="cd_waste_card">%1$s %2$s, σκάρτα</string>
+    <string name="cd_waste_empty">Σκάρτα, άδεια</string>
+    <string name="cd_move_card">Μετακίνηση χαρτιού</string>
+    <string name="cd_tableau_card">%1$s %2$s, στήλη ταμπλό %3$d, θέση %4$d από %5$d</string>
+    <string name="cd_tableau_face_down">Κλειστό χαρτί, στήλη ταμπλό %1$d, θέση %2$d από %3$d</string>
+    <string name="cd_move">Μετακίνηση</string>
+    <string name="status_deal_prefix">Παρτίδα %1$d</string>
+    <string name="status_level_prefix">Επίπεδο: %1$s</string>
+    <string name="level_trivial">Ασήμαντο</string>
+    <string name="level_easy">Εύκολο</string>
+    <string name="level_medium">Μέτριο</string>
+    <string name="level_hard">Δύσκολο</string>
+    <string name="level_expert">Έμπειρο</string>
+    <string name="level_insane">Παράλογο</string>
+    <string name="recovery_notice_text">Το αποθηκευμένο παιχνίδι σας δεν μπόρεσε να αποκατασταθεί. Ξεκινά νέο παιχνίδι.</string>
+    <string name="hint_thinking">Σκέφτεται…</string>
+    <string name="hint_no_solution">Δεν υπάρχει διαδρομή προς τη νίκη από εδώ.</string>
+    <string name="hint_inconclusive">Δεν βρέθηκε λύση εγκαίρως — δοκιμάστε ξανά ή συνεχίστε να παίζετε.</string>
+    <string name="setting_automatic_moves">Αυτόματες κινήσεις βάσης</string>
+    <string name="setting_draw_three">Τράβηγμα τριών</string>
+    <string name="setting_difficulty">Δυσκολία</string>
+    <string name="difficulty_random">Τυχαία</string>
+    <string name="level_switch_forfeits">Η αλλαγή επιπέδου τερματίζει αυτό το παιχνίδι μετά από %1$d κινήσεις και το καταγράφει ως ήττα.</string>
+    <string name="draw_mode_one">Τράβηγμα Ενός</string>
+    <string name="draw_mode_three">Τράβηγμα Τριών</string>
+    <string name="stuck_title">Δεν υπάρχουν άλλες κινήσεις</string>
+    <string name="stuck_body">Δεν υπάρχει νόμιμη κίνηση και η τράπουλα δεν μπορεί να βοηθήσει. Αναιρέστε ή ξεκινήστε νέο παιχνίδι.</string>
+    <string name="unrecoverable_title">Αυτό το παιχνίδι δεν μπορεί να ξεκινήσει</string>
+    <string name="unrecoverable_body">Ο ενσωματωμένος κατάλογος παρτίδων απέτυχε στην επαλήθευση, επομένως καμία παρτίδα δεν μπορεί να πιστοποιηθεί ως επιλύσιμη. Η επανεγκατάσταση της εφαρμογής μπορεί να το διορθώσει.</string>
+    <string name="unrecoverable_retry">Δοκιμάστε ξανά</string>
+</resources>

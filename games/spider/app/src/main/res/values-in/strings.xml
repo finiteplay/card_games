@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Satu jenis</string>
+    <string name="suit_count_two">Dua jenis</string>
+    <string name="suit_count_four">Empat jenis</string>
+
+    <string name="setting_suit_count">Jenis</string>
+
+    <string name="suit_count_switch_forfeits">Mengganti jenis mengakhiri permainan ini setelah %1$d langkah dan mencatatnya sebagai kekalahan.</string>
+
+    <string name="deal_row_refused">Tidak bisa membagikan selama ada kolom kosong</string>
+
+    <string name="recovery_notice">Permainan tersimpan Anda tidak dapat dibuka, jadi permainan baru dibagikan.</string>
+
+    <string name="uncertified_notice">Kocokan ini belum tersertifikasi dapat dipecahkan</string>
+
+    <string name="catalog_status_notice">Kocokan satu dan dua jenis berasal dari katalog tersertifikasi yang telah diverifikasi dapat dipecahkan. Kocokan empat jenis belum tersertifikasi.</string>
+
+    <string name="banked_sequences">Tersimpan: %1$d dari 8</string>
+
+    <string name="action_help">Bantuan</string>
+    <string name="help_title">Cara bermain</string>
+    <string name="help_goal_title">Tujuan</string>
+    <string name="help_goal">Bangun delapan rangkaian dari Raja hingga As, masing-masing dalam satu jenis. Rangkaian yang selesai akan disimpan dan meninggalkan papan. Selesaikan kedelapannya dan Anda menang.</string>
+    <string name="help_moving_title">Memindahkan kartu</string>
+    <string name="help_moving">Kartu terbuka mana pun dapat dipindahkan ke kartu satu peringkat lebih tinggi, apa pun jenisnya. Beberapa kartu berpindah bersama hanya jika sudah berurutan menurun dan berbagi jenis yang sama. Kolom kosong menerima apa saja, menjadikannya tempat paling berharga di papan.</string>
+    <string name="help_stock_title">Membagikan satu baris</string>
+    <string name="help_stock">Mengetuk tumpukan kartu membagikan satu kartu terbuka ke setiap kolom sekaligus — tidak ada tumpukan buangan dan tidak ada kartu yang diambil satu per satu. Pembagian ditolak selama ada kolom kosong, jadi isi celah itu sebelum membagikan.</string>
+    <string name="help_suits_title">Jenis</string>
+    <string name="help_suits">Satu jenis adalah permainan paling ringan, empat yang paling sulit; dua berada di tengah dan merupakan pengaturan default. Jumlahnya ditetapkan saat permainan dibagikan — ubah di Pengaturan dan akan berlaku untuk permainan baru berikutnya.</string>
+    <string name="help_controls_title">Ketuk, seret, dan petunjuk</string>
+    <string name="help_controls">Ketuk kartu untuk mengirimkannya ke kolom sah berikutnya di sebelah kanannya, kembali ke awal jika perlu; ketuk lagi untuk terus memindahkannya. Seret untuk memilih kolom sendiri. Petunjuk menyalakan kartu teratas dari setiap rangkaian yang memiliki tujuan. Saat hanya rangkaian terakhir yang tersisa, permainan menyelesaikannya untuk Anda.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Berpikir…</string>
+    <string name="hint_no_solution">Tidak ada jalan menuju kemenangan dari sini.</string>
+    <string name="hint_inconclusive">Tidak sempat diketahui tepat waktu — coba lagi, atau lanjutkan bermain.</string>
+</resources>

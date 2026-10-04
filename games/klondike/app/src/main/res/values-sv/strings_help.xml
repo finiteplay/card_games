@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Så spelar du</string>
+    <string name="help_tab_rules">Regler</string>
+    <string name="help_tab_strategy">Strategi</string>
+    <string name="help_tab_levels">Nivåer</string>
+
+    <string name="help_rules_goal_title">Målet</string>
+    <string name="help_rules_goal">Flytta alla 52 korten till de fyra hemhögarna högst upp. Varje hemhög tar en färg och byggs uppåt från Esset: A, 2, 3, ända till Kungen. Fyll alla fyra så har du vunnit.</string>
+    <string name="help_rules_board_title">Spelplanen</string>
+    <string name="help_rules_board">De sju kolumnerna i mitten är spelplanen - det är där arbetet görs. Den nedåtvända högen är talongen; tryck på den för att vända kort ett i taget till de kasserade korten bredvid. När talongen tar slut trycker du på den igen för att vända tillbaka de kasserade korten och gå ett varv till, hur många gånger du vill.</string>
+    <string name="help_rules_moves_title">Vilka drag som är tillåtna</string>
+    <string name="help_rules_moves">På spelplanen läggs ett kort på ett kort som är ett steg högre och har motsatt färg: en röd 8 på en svart 9. En sekvens som redan ligger i den ordningen flyttas i ett svep. Bara en Kung får läggas i en tom kolumn. Ett fritt kort får alltid gå upp till sin hemhög, och det översta kortet i en hemhög får du ta ner igen om du behöver det.</string>
+    <string name="help_rules_help_title">Vad appen gör åt dig</string>
+    <string name="help_rules_help">Tryck på ett kort så går det till den bästa tillåtna platsen, eller dra det dit du vill. Ess och säkra kort går upp till hemhögarna av sig själva om du inte stänger av det i Inställningar. Ångra är obegränsat, och Tips visar alltid ett drag som håller vinsten möjlig.</string>
+
+    <string name="help_strategy_intro">Det här är de välkända principerna i Klondike. Ingen av dem är en hemlighet och ingen är en garanti - de är helt enkelt det som brukar fungera.</string>
+    <string name="help_strategy_1_title">Vänd upp kort först</string>
+    <string name="help_strategy_1">Varje nedåtvänt kort är information du saknar. Ett drag som vänder upp ett är nästan alltid bättre än ett drag som inte gör det, och kolumnen med flest nedåtvända kort är oftast den det lönar sig att gräva i.</string>
+    <string name="help_strategy_2_title">Skynda inte till hemhögarna</string>
+    <string name="help_strategy_2">Ett kort som skickas upp för tidigt kan inte komma ner igen och hålla något. Behåll låga kort på spelplanen så länge de fortfarande kan fånga ett kort du behöver, och skicka upp dem när ingenting längre behöver dem.</string>
+    <string name="help_strategy_3_title">Töm en kolumn med en plan</string>
+    <string name="help_strategy_3">En tom kolumn är det värdefullaste på bordet, eftersom bara en Kung kan fylla den. Töm en när du har en Kung redo, eller en Kung du kan nå, snarare än för sakens egen skull.</string>
+    <string name="help_strategy_4_title">Håll koll på hela talongen, inte bara på de kasserade korten</string>
+    <string name="help_strategy_4">Att dra är gratis och talongen blandas aldrig om, så att gå igenom den kostar bara drag. Se vad som passerar: att veta att ett kort kommer tillbaka ändrar vilket drag du bör göra nu.</string>
+    <string name="help_strategy_5_title">När du kört fast, gå tillbaka</string>
+    <string name="help_strategy_5">Ångra kostar dig inget mer än ett drag i räknaren. Om en giv sinar är det oftast snabbare att backa några drag och ta den andra grenen än att hoppas på att talongen räddar dig.</string>
+
+    <string name="help_levels_intro">Varje giv här har gått igenom en dator innan den nådde dig, och nivån säger vad som krävdes för att vinna den - eller, högst upp på stegen, att ingenting klarade det. Den mäter given, inte dig.</string>
+    <string name="help_levels_trivial_title">Trivial</string>
+    <string name="help_levels_trivial">Vinns med enbart självklara drag: vänd upp kort, ta det som erbjuds, spela de kasserade korten. Bra givar att lära sig på, och nivån inleds med dem som förlåter flest misstag.</string>
+    <string name="help_levels_easy_title">Lätt</string>
+    <string name="help_levels_easy">Kräver att du väljer mellan självklara drag: gräv i den djupaste kolumnen och håll tillbaka ett kort så länge något fortfarande behöver det. Här räcker inte självklara drag.</string>
+    <string name="help_levels_medium_title">Medel</string>
+    <string name="help_levels_medium">Kräver ett drag som inte ger något på stället - att flytta en del av en sekvens för att frilägga kortet under. Att förbereda innan man skördar är vad den här nivån handlar om.</string>
+    <string name="help_levels_hard_title">Svår</string>
+    <string name="help_levels_hard">Kräver ett kort som tas ner igen från en hemhög. Kontraintuitivt, och ofta den enda vägen förbi, vilket är därför nivån ligger så högt.</string>
+    <string name="help_levels_expert_title">Expert</string>
+    <string name="help_levels_expert">Bortom alla tumregler: de här givarna vanns genom sökning, och med knapp marginal - en av de två lösarna hittade en linje och den andra inte. Räkna med att backa ofta.</string>
+    <string name="help_levels_insane_title">Vansinnig</string>
+    <string name="help_levels_insane">Ingenting löste de här givarna, så ingen känner till en vinnande linje, inte vi heller. Vissa går inte att vinna alls: bland de jämförbara givar som en lösare faktiskt avgjorde visade sig ungefär en av tio vara omöjlig, och det här är de svårare som den inte kunde avgöra. En förlust här behöver alltså inte vara ditt fel - given kanske helt enkelt inte hade någon väg igenom. Spela dem för kampens skull, inte för statistiken.</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">FreeCell by FinitePlay</string>
+
+    <!-- Board title. "FreeCell" is a proper noun (the game's traditional name) and is
+         intentionally identical in every locale, matching Klondike's and Spider's game_title. -->
+    <string name="game_title" translatable="false">FreeCell</string>
+
+    <!-- Status row: the active seed's stable position in the certified catalog
+         (FreeCellViewModel.dealNumber), the same shape as Klondike's "%1$s #%2$d" and Spider's
+         own, minus a difficulty/suit-count qualifier since FreeCell has neither. -->
+    <string name="status_hand_number">Hand #%1$d</string>
+
+    <!-- Shown when a save existed but could not be read (docs/games/freecell/EXECUTION_PLAN.md
+         F3a). A player whose game vanished is owed the notice; one who never had a save is not. -->
+    <string name="recovery_notice">Your saved game couldn\'t be opened, so a new one was dealt.</string>
+
+    <!-- Settings: the automatic foundation cascade (RULES.md "Automatic Foundation Moves"). -->
+    <string name="setting_automatic_moves">Automatic foundation moves</string>
+
+    <!-- Shown when no legal move exists at all (RULES.md "Game Lifecycle" > stuck). Being stuck
+         is not a loss — undo can still recover it — so this offers Undo and New Game rather than
+         ending the game on its own. FreeCell has no stock to try, unlike Klondike's own notice. -->
+    <string name="stuck_title">No moves left</string>
+    <string name="stuck_body">There\'s no legal move left. Undo or start a new game.</string>
+
+    <!-- Hint's three outcomes (docs/games/freecell/DESIGN.md "Hint"). Guidance itself has no
+         notice — the board pulses the suggested cards directly — so only these two notices and
+         the loading state need strings. -->
+    <string name="hint_thinking">Thinking…</string>
+    <string name="hint_no_solution">No path to a win from here.</string>
+    <string name="hint_inconclusive">Searching for a win took too long. This game is likely unsolvable from here.</string>
+
+    <!-- Non-playable state for a bundled catalog that fails verification
+         (docs/games/freecell/UI_SPEC.md "Screens and States" > "Unrecoverable"). FreeCell ships a
+         certified catalog from the start (`DEALS.md`), unlike Spider's silent uncertified
+         fallback, so a failure here has no fallback deal to fall back to. -->
+    <string name="unrecoverable_title">This game can\'t start</string>
+    <string name="unrecoverable_body">The bundled deal catalog failed verification, so no deal can be certified as solvable. Reinstalling the app may fix this.</string>
+    <string name="unrecoverable_retry">Try again</string>
+
+    <!-- Help screen: goal, free cells, building/supermove, and controls, in the order a new
+         player needs them, mirroring Spider\'s own HelpScreen shape (docs/games/freecell/UI_SPEC.md
+         "Screens and States"). -->
+    <string name="help_title">How to Play</string>
+    <string name="help_goal_title">The goal</string>
+    <string name="help_goal">Build all four foundations by suit, Ace up to King. Bank every card and you win.</string>
+    <string name="help_free_cells_title">Free cells</string>
+    <string name="help_free_cells">Four free cells each hold one card of any rank or suit, set aside until you need it again. An empty column works the same way, but holds a whole sequence instead of one card.</string>
+    <string name="help_moving_title">Building and moving</string>
+    <string name="help_moving">A card can be placed on any card one rank higher and the opposite colour. Any single card may enter an empty column. Several cards move together as one supermove when enough free cells and empty columns make the trip possible — the game works this out for you.</string>
+    <string name="help_controls_title">Tap, drag, and hint</string>
+    <string name="help_controls">Tap a card to send it to the nearest legal column to the right, then a safe foundation, then the nearest column to the left, and an unsafe foundation or an empty free cell only as a last resort. Drag to choose a destination yourself, including a free cell. Hint proves a move exists and shows it to you, or tells you honestly when it can\'t.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Един цвят</string>
+    <string name="suit_count_two">Два цвята</string>
+    <string name="suit_count_four">Четири цвята</string>
+
+    <string name="setting_suit_count">Цветове</string>
+
+    <string name="suit_count_switch_forfeits">Смяната на цветовете прекратява тази игра след %1$d хода и я записва като загуба.</string>
+
+    <string name="deal_row_refused">Не може да се раздава, докато има празна колона</string>
+
+    <string name="recovery_notice">Запазената ви игра не можа да се отвори, затова беше раздадена нова.</string>
+
+    <string name="uncertified_notice">Тази раздача не е сертифицирана като разрешима</string>
+
+    <string name="catalog_status_notice">Раздачите с един и два цвята идват от сертифициран каталог, потвърден като разрешим. Раздачите с четири цвята все още не са сертифицирани.</string>
+
+    <string name="banked_sequences">Прибрани: %1$d от 8</string>
+
+    <string name="action_help">Помощ</string>
+    <string name="help_title">Как се играе</string>
+    <string name="help_goal_title">Целта</string>
+    <string name="help_goal">Изградете осем последователности от поп до асо, всяка в един цвят. Завършената последователност се прибира и напуска дъската. Завършете и осемте, за да спечелите.</string>
+    <string name="help_moving_title">Местене на карти</string>
+    <string name="help_moving">Всяка отворена карта може да се премести върху карта с един ранг по-висока, независимо от цвета. Няколко карти се местят заедно само когато вече са в низходящ ред и споделят цвят. Празна колона приема всичко, което я прави най-ценното място на дъската.</string>
+    <string name="help_stock_title">Раздаване на ред</string>
+    <string name="help_stock">Докосването на тестето раздава по една отворена карта на всяка колона едновременно — няма купчина за отпадъци и не се тегли по една карта. Раздаването отказва, докато има празна колона, затова първо запълнете празнината.</string>
+    <string name="help_suits_title">Цветове</string>
+    <string name="help_suits">Един цвят е най-лесната игра, четири — най-трудната; два е по средата и е стойността по подразбиране. Броят се фиксира при раздаването на играта — сменете го в Настройки и ще важи за следващата нова игра.</string>
+    <string name="help_controls_title">Докосване, плъзгане и подсказка</string>
+    <string name="help_controls">Докоснете карта, за да я изпратите в следващата разрешена колона вдясно, с връщане в началото при нужда; докоснете отново, за да продължите да я местите. Плъзнете, за да изберете колоната сами. Подсказката осветява горната карта на всяка последователност, която има къде да отиде. Когато остане само последната последователност, играта я завършва вместо вас.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Мисли…</string>
+    <string name="hint_no_solution">Оттук няма път към победа.</string>
+    <string name="hint_inconclusive">Не успяхме да установим навреме — опитайте отново или продължете да играете.</string>
+</resources>

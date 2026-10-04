@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s od %2$s, temelj %2$s</string>
+    <string name="cd_foundation_empty">temelj %1$s, prazno</string>
+    <string name="cd_move_to_tableau">Premjesti na stup</string>
+    <string name="cd_stock_with_cards">Špil, %1$d karata</string>
+    <string name="cd_stock_empty_recycles">Špil, prazan. Reciklira otpad.</string>
+    <string name="cd_stock_empty">Špil, prazan</string>
+    <string name="cd_draw_action">Izvuci</string>
+    <string name="cd_waste_card">%1$s %2$s, odbačene karte</string>
+    <string name="cd_waste_empty">Odbačene karte, prazno</string>
+    <string name="cd_move_card">Premjesti kartu</string>
+    <string name="cd_tableau_card">%1$s od %2$s, stup %3$d, pozicija %4$d od %5$d</string>
+    <string name="cd_tableau_face_down">Okrenuta karta, stup %1$d, pozicija %2$d od %3$d</string>
+    <string name="cd_move">Premjesti</string>
+    <string name="status_deal_prefix">Partija %1$d</string>
+    <string name="status_level_prefix">Razina: %1$s</string>
+    <string name="level_trivial">Trivijalno</string>
+    <string name="level_easy">Lako</string>
+    <string name="level_medium">Srednje</string>
+    <string name="level_hard">Teško</string>
+    <string name="level_expert">Stručno</string>
+    <string name="level_insane">Ludo</string>
+    <string name="recovery_notice_text">Spremljena igra nije mogla biti vraćena. Pokreće se nova igra.</string>
+    <string name="hint_thinking">Razmišljam…</string>
+    <string name="hint_no_solution">Odavde nema puta do pobjede.</string>
+    <string name="hint_inconclusive">Nisam uspio utvrditi na vrijeme — pokušaj ponovno ili nastavi igrati.</string>
+    <string name="setting_automatic_moves">Automatski potezi na temelje</string>
+    <string name="setting_draw_three">Izvlačenje tri karte</string>
+    <string name="setting_difficulty">Težina</string>
+    <string name="difficulty_random">Nasumično</string>
+    <string name="level_switch_forfeits">Promjena razine završava ovu igru nakon %1$d poteza i bilježi je kao poraz.</string>
+    <string name="draw_mode_one">Izvlačenje jedne</string>
+    <string name="draw_mode_three">Izvlačenje tri</string>
+    <string name="stuck_title">Nema više poteza</string>
+    <string name="stuck_body">Nema legalnog poteza, a špil ne može pomoći. Poništi potez ili pokreni novu igru.</string>
+    <string name="unrecoverable_title">Igra se ne može pokrenuti</string>
+    <string name="unrecoverable_body">Ugrađeni katalog igara nije prošao provjeru, pa se nijedna igra ne može potvrditi kao rješiva. Ponovna instalacija aplikacije mogla bi ovo riješiti.</string>
+    <string name="unrecoverable_retry">Pokušaj ponovno</string>
+</resources>

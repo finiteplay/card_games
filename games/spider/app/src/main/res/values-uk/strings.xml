@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Одна масть</string>
+    <string name="suit_count_two">Дві масті</string>
+    <string name="suit_count_four">Чотири масті</string>
+
+    <string name="setting_suit_count">Масті</string>
+
+    <string name="suit_count_switch_forfeits">Зміна мастей завершує цю гру після %1$d ходів і зараховує її як поразку.</string>
+
+    <string name="deal_row_refused">Неможливо роздати, поки є порожня колонка</string>
+
+    <string name="recovery_notice">Збережену гру не вдалося відкрити, тому роздано нову.</string>
+
+    <string name="uncertified_notice">Ця роздача не сертифікована як розв\'язна</string>
+
+    <string name="catalog_status_notice">Роздачі з однією та двома мастями беруться із сертифікованого каталогу, перевіреного на розв\'язність. Роздачі з чотирма мастями ще не сертифіковані.</string>
+
+    <string name="banked_sequences">Заховано: %1$d з 8</string>
+
+    <string name="action_help">Довідка</string>
+    <string name="help_title">Як грати</string>
+    <string name="help_goal_title">Мета</string>
+    <string name="help_goal">Складіть вісім послідовностей від Короля до Туза, кожну однієї масті. Завершена послідовність ховається і йде з поля. Зберіть усі вісім — і ви виграли.</string>
+    <string name="help_moving_title">Переміщення карт</string>
+    <string name="help_moving">Будь-яку відкриту карту можна покласти на карту на один ранг вищу, незалежно від масті. Кілька карт рухаються разом, лише якщо вони вже йдуть за спаданням і мають однакову масть. Порожня колонка приймає будь-що, що робить її найціннішим місцем на полі.</string>
+    <string name="help_stock_title">Роздача ряду</string>
+    <string name="help_stock">Дотик до колоди роздає по одній відкритій карті одразу на кожну колонку — тут немає скидання і не тягнуть по одній карті. Роздача відмовляє, поки є порожня колонка, тож спершу заповніть прогалину.</string>
+    <string name="help_suits_title">Масті</string>
+    <string name="help_suits">Одна масть — найлегша гра, чотири — найважча; дві масті посередині і є типовим варіантом. Кількість фіксується під час роздачі — змініть її в Налаштуваннях, і вона застосується до наступної нової гри.</string>
+    <string name="help_controls_title">Дотик, перетягування та підказка</string>
+    <string name="help_controls">Торкніться карти, щоб надіслати її в наступну придатну колонку праворуч, з переходом на початок за потреби; торкніться ще раз, щоб рухати її далі. Перетягніть, щоб самостійно вибрати колонку. Підказка підсвічує верхню карту кожної послідовності, якій є куди піти. Коли залишається лише остання послідовність, гра завершує її за вас.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Обмірковую…</string>
+    <string name="hint_no_solution">Звідси немає шляху до перемоги.</string>
+    <string name="hint_inconclusive">Не вдалося визначити вчасно — спробуйте ще раз або продовжуйте гру.</string>
+</resources>

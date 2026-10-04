@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Comment jouer</string>
+    <string name="help_tab_rules">Règles</string>
+    <string name="help_tab_strategy">Stratégie</string>
+    <string name="help_tab_levels">Niveaux</string>
+
+    <string name="help_rules_goal_title">Le but</string>
+    <string name="help_rules_goal">Amenez les 52 cartes sur les quatre fondations, en haut. Chaque fondation ne reçoit qu\'une couleur et se construit à partir de l\'As : A, 2, 3, jusqu\'au Roi. Terminez les quatre et la partie est gagnée.</string>
+    <string name="help_rules_board_title">Le tableau</string>
+    <string name="help_rules_board">Les sept colonnes du milieu forment le tableau : c\'est là que tout se joue. Le paquet face cachée est la pioche ; touchez-le pour retourner les cartes une par une sur la défausse, à côté. Quand la pioche est vide, touchez-la de nouveau pour retourner la défausse et repartir pour un tour, autant de fois que vous le voulez.</string>
+    <string name="help_rules_moves_title">Les coups autorisés</string>
+    <string name="help_rules_moves">Dans le tableau, une carte se pose sur une carte d\'un rang plus haut et de couleur opposée : un 8 rouge sur un 9 noir. Toute séquence déjà dans cet ordre se déplace d\'un bloc. Seul un Roi peut occuper une colonne vide. Une carte dégagée peut toujours monter sur sa fondation, et vous pouvez redescendre la carte du dessus d\'une fondation si vous en avez besoin.</string>
+    <string name="help_rules_help_title">Ce que l\'application fait pour vous</string>
+    <string name="help_rules_help">Touchez une carte et elle rejoint le meilleur emplacement autorisé, ou faites-la glisser où vous voulez. Les As et les cartes sans risque montent seuls sur les fondations, sauf si vous désactivez cela dans les Réglages. Annuler est illimité, et Indice vous montrera toujours un coup qui laisse la victoire possible.</string>
+
+    <string name="help_strategy_intro">Voici les principes bien connus du Klondike. Aucun n\'est un secret et aucun n\'est une garantie : ce sont simplement ceux qui marchent le plus souvent.</string>
+    <string name="help_strategy_1_title">Retournez des cartes d\'abord</string>
+    <string name="help_strategy_1">Chaque carte face cachée est une information qui vous manque. Un coup qui en retourne une vaut presque toujours mieux qu\'un coup qui n\'en retourne pas, et la colonne qui en compte le plus est en général celle qu\'il faut creuser.</string>
+    <string name="help_strategy_2_title">Ne montez pas trop vite sur les fondations</string>
+    <string name="help_strategy_2">Une carte montée trop tôt ne peut plus redescendre pour accueillir quoi que ce soit. Gardez les petites cartes dans le tableau tant qu\'elles peuvent encore recevoir une carte utile, et montez-les quand plus rien n\'en a besoin.</string>
+    <string name="help_strategy_3_title">Videz une colonne avec un plan</string>
+    <string name="help_strategy_3">Une colonne vide est ce qu\'il y a de plus précieux sur la table, parce que seul un Roi peut la remplir. Videz-en une quand vous avez un Roi prêt, ou un Roi que vous pouvez atteindre, plutôt que pour le principe.</string>
+    <string name="help_strategy_4_title">Surveillez toute la pioche, pas seulement la défausse</string>
+    <string name="help_strategy_4">Piocher ne coûte rien et la pioche n\'est jamais rebattue : la parcourir ne coûte que des coups. Regardez ce qui défile : savoir qu\'une carte reviendra change le coup à jouer maintenant.</string>
+    <string name="help_strategy_5_title">Quand vous êtes bloqué, revenez en arrière</string>
+    <string name="help_strategy_5">Annuler ne vous coûte qu\'un coup au compteur. Si une donne s\'épuise, revenir de quelques coups et prendre l\'autre branche est en général plus rapide que d\'espérer que la pioche vous sauve.</string>
+
+    <string name="help_levels_intro">Chaque donne est passée par un ordinateur avant de vous parvenir, et le niveau dit ce qu\'il a fallu pour la gagner - ou, tout en haut de l\'échelle, que rien n\'y est parvenu. C\'est une mesure de la donne, pas de vous.</string>
+    <string name="help_levels_trivial_title">Trivial</string>
+    <string name="help_levels_trivial">Se gagne avec les seuls coups évidents : retourner des cartes, prendre ce qui se présente, jouer la défausse. De bonnes donnes pour apprendre, et le niveau commence par celles qui pardonnent le plus.</string>
+    <string name="help_levels_easy_title">Facile</string>
+    <string name="help_levels_easy">Demande de choisir entre des coups évidents : creuser la colonne la plus profonde, et retenir une carte tant que quelque chose en a encore besoin. Les coups évidents ne suffisent plus ici.</string>
+    <string name="help_levels_medium_title">Moyen</string>
+    <string name="help_levels_medium">Demande un coup qui ne rapporte rien sur le moment : déplacer une partie d\'une séquence pour dégager la carte du dessous. Préparer avant de profiter, voilà ce niveau.</string>
+    <string name="help_levels_hard_title">Difficile</string>
+    <string name="help_levels_hard">Demande de redescendre une carte d\'une fondation. Contre-intuitif, et souvent le seul passage, ce qui explique sa place si haut.</string>
+    <string name="help_levels_expert_title">Expert</string>
+    <string name="help_levels_expert">Au-delà de toute règle empirique : ces donnes ont été gagnées par recherche, et de justesse - l\'un des deux solveurs a trouvé une ligne, l\'autre non. Attendez-vous à revenir souvent en arrière.</string>
+    <string name="help_levels_insane_title">Démentiel</string>
+    <string name="help_levels_insane">Rien n\'a résolu ces donnes, donc personne ne connaît de ligne gagnante, nous compris. Certaines ne peuvent pas être gagnées du tout : parmi les donnes comparables qu\'un solveur a tranchées, environ une sur dix s\'est révélée impossible, et celles-ci sont les plus dures, celles qu\'il n\'a pas pu trancher. Une défaite ici n\'est donc peut-être pas de votre faute - la donne n\'avait peut-être aucune issue. Jouez-les pour le combat plutôt que pour le palmarès.</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%2$s %1$s, %2$s 기초 더미</string>
+    <string name="cd_foundation_empty">%1$s 기초 더미, 비어 있음</string>
+    <string name="cd_move_to_tableau">테이블로 이동</string>
+    <string name="cd_stock_with_cards">뽑기 더미, %1$d장</string>
+    <string name="cd_stock_empty_recycles">뽑기 더미, 비어 있음. 버린 더미를 다시 씁니다.</string>
+    <string name="cd_stock_empty">뽑기 더미, 비어 있음</string>
+    <string name="cd_draw_action">뽑기</string>
+    <string name="cd_waste_card">%2$s %1$s, 버린 더미</string>
+    <string name="cd_waste_empty">버린 더미, 비어 있음</string>
+    <string name="cd_move_card">카드 이동</string>
+    <string name="cd_tableau_card">%2$s %1$s, 테이블로 %3$d열, %5$d장 중 %4$d번째</string>
+    <string name="cd_tableau_face_down">뒷면 카드, 테이블로 %1$d열, %3$d장 중 %2$d번째</string>
+    <string name="cd_move">이동</string>
+    <string name="status_deal_prefix">게임 %1$d</string>
+    <string name="status_level_prefix">난이도: %1$s</string>
+    <string name="level_trivial">매우 쉬움</string>
+    <string name="level_easy">쉬움</string>
+    <string name="level_medium">보통</string>
+    <string name="level_hard">어려움</string>
+    <string name="level_expert">전문가</string>
+    <string name="level_insane">미친</string>
+    <string name="recovery_notice_text">저장된 게임을 복구할 수 없습니다. 새 게임을 시작합니다.</string>
+    <string name="hint_thinking">생각 중…</string>
+    <string name="hint_no_solution">여기서는 이길 방법이 없습니다.</string>
+    <string name="hint_inconclusive">제한 시간 안에 판단하지 못했습니다 — 다시 시도하거나 계속 플레이하세요.</string>
+    <string name="setting_automatic_moves">파운데이션 자동 이동</string>
+    <string name="setting_draw_three">3장씩 뽑기</string>
+    <string name="setting_difficulty">난이도</string>
+    <string name="difficulty_random">무작위</string>
+    <string name="level_switch_forfeits">레벨을 변경하면 %1$d수 만에 이 게임이 종료되고 패배로 기록됩니다.</string>
+    <string name="draw_mode_one">1장 뽑기</string>
+    <string name="draw_mode_three">3장 뽑기</string>
+    <string name="stuck_title">더 이상 할 수 있는 수가 없습니다</string>
+    <string name="stuck_body">가능한 수가 없고 스톡도 도움이 되지 않습니다. 실행 취소하거나 새 게임을 시작하세요.</string>
+    <string name="unrecoverable_title">이 게임을 시작할 수 없습니다</string>
+    <string name="unrecoverable_body">내장된 게임 카탈로그가 검증에 실패하여 풀 수 있는 게임으로 인증할 수 없습니다. 앱을 다시 설치하면 해결될 수 있습니다.</string>
+    <string name="unrecoverable_retry">다시 시도</string>
+</resources>

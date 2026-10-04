@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s %2$s, nền %2$s</string>
+    <string name="cd_foundation_empty">Nền %1$s, trống</string>
+    <string name="cd_move_to_tableau">Di chuyển đến cột bài</string>
+    <string name="cd_stock_with_cards">Chồng bài, %1$d lá</string>
+    <string name="cd_stock_empty_recycles">Chồng bài, trống. Dùng lại bài đã bỏ.</string>
+    <string name="cd_stock_empty">Chồng bài, trống</string>
+    <string name="cd_draw_action">Rút bài</string>
+    <string name="cd_waste_card">%1$s %2$s, bài bỏ</string>
+    <string name="cd_waste_empty">Bài bỏ, trống</string>
+    <string name="cd_move_card">Di chuyển lá bài</string>
+    <string name="cd_tableau_card">%1$s %2$s, cột bài %3$d, vị trí %4$d trên %5$d</string>
+    <string name="cd_tableau_face_down">Lá bài úp, cột bài %1$d, vị trí %2$d trên %3$d</string>
+    <string name="cd_move">Di chuyển</string>
+    <string name="status_deal_prefix">Ván %1$d</string>
+    <string name="status_level_prefix">Mức độ: %1$s</string>
+    <string name="level_trivial">Rất dễ</string>
+    <string name="level_easy">Dễ</string>
+    <string name="level_medium">Trung bình</string>
+    <string name="level_hard">Khó</string>
+    <string name="level_expert">Chuyên gia</string>
+    <string name="level_insane">Điên rồ</string>
+    <string name="recovery_notice_text">Không thể khôi phục ván đã lưu. Đang bắt đầu ván mới.</string>
+    <string name="hint_thinking">Đang suy nghĩ…</string>
+    <string name="hint_no_solution">Không còn cách nào để thắng từ đây.</string>
+    <string name="hint_inconclusive">Không kịp xác định — hãy thử lại hoặc tiếp tục chơi.</string>
+    <string name="setting_automatic_moves">Tự động chuyển bài vào nền</string>
+    <string name="setting_draw_three">Rút ba lá</string>
+    <string name="setting_difficulty">Độ khó</string>
+    <string name="difficulty_random">Ngẫu nhiên</string>
+    <string name="level_switch_forfeits">Đổi cấp độ sẽ kết thúc ván này sau %1$d nước đi và ghi nhận là thua.</string>
+    <string name="draw_mode_one">Rút một lá</string>
+    <string name="draw_mode_three">Rút ba lá</string>
+    <string name="stuck_title">Không còn nước đi nào</string>
+    <string name="stuck_body">Không có nước đi hợp lệ nào và chồng bài không thể giúp được. Hãy hoàn tác hoặc bắt đầu ván mới.</string>
+    <string name="unrecoverable_title">Không thể bắt đầu ván này</string>
+    <string name="unrecoverable_body">Danh mục ván bài đi kèm không vượt qua kiểm tra, nên không có ván nào được xác nhận là có thể giải được. Cài đặt lại ứng dụng có thể khắc phục điều này.</string>
+    <string name="unrecoverable_retry">Thử lại</string>
+</resources>

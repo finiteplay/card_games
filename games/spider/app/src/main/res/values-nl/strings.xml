@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Eén kleur</string>
+    <string name="suit_count_two">Twee kleuren</string>
+    <string name="suit_count_four">Vier kleuren</string>
+
+    <string name="setting_suit_count">Kleuren</string>
+
+    <string name="suit_count_switch_forfeits">Kleuren wisselen beëindigt dit spel na %1$d zetten en registreert het als verlies.</string>
+
+    <string name="deal_row_refused">Kan niet delen zolang een kolom leeg is</string>
+
+    <string name="recovery_notice">Je opgeslagen spel kon niet worden geopend, dus er is een nieuw spel gedeeld.</string>
+
+    <string name="uncertified_notice">Dit spel is niet gecertificeerd als oplosbaar</string>
+
+    <string name="catalog_status_notice">Spellen met één of twee kleuren komen uit een gecertificeerde catalogus die geverifieerd is als oplosbaar. Spellen met vier kleuren zijn nog niet gecertificeerd.</string>
+
+    <string name="banked_sequences">Opgeborgen: %1$d van 8</string>
+
+    <string name="action_help">Hulp</string>
+    <string name="help_title">Hoe te spelen</string>
+    <string name="help_goal_title">Het doel</string>
+    <string name="help_goal">Bouw acht reeksen van Heer tot Aas, elk in één kleur. Een voltooide reeks wordt opgeborgen en verlaat het bord. Maak alle acht af en je wint.</string>
+    <string name="help_moving_title">Kaarten verplaatsen</string>
+    <string name="help_moving">Elke open kaart kan worden verplaatst naar een kaart met één rang hoger, ongeacht de kleur. Meerdere kaarten verplaatsen alleen samen als ze al aflopend geordend zijn en dezelfde kleur delen. Een lege kolom accepteert alles, wat het de waardevolste plek op het bord maakt.</string>
+    <string name="help_stock_title">Een rij delen</string>
+    <string name="help_stock">Tikken op de stok deelt één open kaart tegelijk op elke kolom — er is geen aflegstapel en je trekt niet één kaart tegelijk. Delen wordt geweigerd zolang een kolom leeg is, dus vul het gat eerst op.</string>
+    <string name="help_suits_title">Kleuren</string>
+    <string name="help_suits">Eén kleur is het mildste spel, vier het moeilijkste; twee zit ertussenin en is de standaardinstelling. Het aantal ligt vast zodra een spel is gedeeld — wijzig het in Instellingen en het geldt voor het volgende nieuwe spel.</string>
+    <string name="help_controls_title">Tikken, slepen en hint</string>
+    <string name="help_controls">Tik op een kaart om hem naar de eerstvolgende geldige kolom rechts te sturen, met terugkeer naar het begin indien nodig; tik nogmaals om hem verder te laten gaan. Sleep om zelf een kolom te kiezen. De hint laat de bovenste kaart oplichten van elke reeks die ergens naartoe kan. Blijft alleen de laatste reeks over, dan maakt het spel die voor je af.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Denken…</string>
+    <string name="hint_no_solution">Vanaf hier is winnen niet meer mogelijk.</string>
+    <string name="hint_inconclusive">Kon het niet op tijd bepalen — probeer het opnieuw of speel verder.</string>
+</resources>

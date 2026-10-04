@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">O culoare</string>
+    <string name="suit_count_two">Două culori</string>
+    <string name="suit_count_four">Patru culori</string>
+
+    <string name="setting_suit_count">Culori</string>
+
+    <string name="suit_count_switch_forfeits">Schimbarea culorilor încheie acest joc după %1$d mutări și îl înregistrează ca înfrângere.</string>
+
+    <string name="deal_row_refused">Nu se poate împărți cât timp o coloană este goală</string>
+
+    <string name="recovery_notice">Jocul salvat nu a putut fi deschis, așa că a fost împărțit unul nou.</string>
+
+    <string name="uncertified_notice">Această împărțeală nu este certificată ca rezolvabilă</string>
+
+    <string name="catalog_status_notice">Împărțelile cu una și două culori provin dintr-un catalog certificat, verificat ca rezolvabil. Împărțelile cu patru culori nu sunt încă certificate.</string>
+
+    <string name="banked_sequences">Depuse: %1$d din 8</string>
+
+    <string name="action_help">Ajutor</string>
+    <string name="help_title">Cum se joacă</string>
+    <string name="help_goal_title">Obiectivul</string>
+    <string name="help_goal">Construiește opt succesiuni de la Rege la As, fiecare într-o singură culoare. O succesiune finalizată este depusă și părăsește tabla. Finalizează toate cele opt și câștigi.</string>
+    <string name="help_moving_title">Mutarea cărților</string>
+    <string name="help_moving">Orice carte cu fața în sus poate fi mutată pe o carte cu o valoare mai mare, indiferent de culoare. Mai multe cărți se mută împreună doar dacă sunt deja în ordine descrescătoare și au aceeași culoare. O coloană goală acceptă orice, ceea ce o face cel mai valoros loc de pe tablă.</string>
+    <string name="help_stock_title">Împărțirea unui rând</string>
+    <string name="help_stock">Atingerea pachetului împarte câte o carte cu fața în sus pe fiecare coloană deodată — nu există teanc de aruncare și nu se trage câte o carte pe rând. Este refuzată cât timp o coloană este goală, așa că umple golul înainte de a împărți.</string>
+    <string name="help_suits_title">Culori</string>
+    <string name="help_suits">O culoare este cel mai blând joc, patru cel mai greu; două se află la mijloc și este setarea implicită. Numărul este fixat la împărțirea jocului — schimbă-l din Setări și se va aplica următorului joc nou.</string>
+    <string name="help_controls_title">Atingere, tragere și indiciu</string>
+    <string name="help_controls">Atinge o carte pentru a o trimite în următoarea coloană validă din dreapta ei, revenind la început dacă e nevoie; atinge din nou pentru a o muta mai departe. Trage pentru a alege tu însuți coloana. Indiciul luminează cartea de deasupra fiecărei succesiuni care are unde să meargă. Când rămâne doar ultima succesiune, jocul o finalizează pentru tine.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Se gândește…</string>
+    <string name="hint_no_solution">Nu există nicio cale spre victorie de aici.</string>
+    <string name="hint_inconclusive">Nu s-a putut stabili la timp — încearcă din nou sau continuă să joci.</string>
+</resources>

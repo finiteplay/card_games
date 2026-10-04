@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">玩法说明</string>
+    <string name="help_tab_rules">规则</string>
+    <string name="help_tab_strategy">策略</string>
+    <string name="help_tab_levels">难度</string>
+
+    <string name="help_rules_goal_title">目标</string>
+    <string name="help_rules_goal">把全部 52 张牌移到顶部的四个基础牌堆上。每个基础牌堆只收一种花色，从 A 开始往上叠：A、2、3，一直到 K。四堆都完成就赢了。</string>
+    <string name="help_rules_board_title">牌桌</string>
+    <string name="help_rules_board">中间的七列是接龙牌堆，也就是真正干活的地方。背面朝上的那一叠是发牌堆；点它就会把牌一张张翻到旁边的废牌堆。发牌堆翻完后再点一次，废牌堆会翻回去，你可以再走一轮，想走多少轮都行。</string>
+    <string name="help_rules_moves_title">哪些走法合法</string>
+    <string name="help_rules_moves">在接龙牌堆里，一张牌要放到比它大一点且颜色相反的牌上：红 8 放在黑 9 上。已经按这个顺序排好的一串牌可以整体移动。空列只能放 K。没有被压住的牌随时可以上到自己的基础牌堆，需要的话，也可以把基础牌堆最上面的牌再拿下来。</string>
+    <string name="help_rules_help_title">应用替你做的事</string>
+    <string name="help_rules_help">点一张牌，它就会去到合法位置中最好的那个，你也可以把它拖到想放的地方。除非你在设置里关掉，A 和安全的牌会自动上到基础牌堆。撤销次数不限，提示则始终会给出一个仍能保住胜局的走法。</string>
+
+    <string name="help_strategy_intro">这些是 Klondike 众所周知的原则。没有一条是秘密，也没有一条是保证，它们只是通常管用的做法。</string>
+    <string name="help_strategy_1_title">先把牌翻开</string>
+    <string name="help_strategy_1">每一张背面朝上的牌，都是你缺的一条信息。能翻开一张牌的走法，几乎总好过翻不开的走法；背面朝上的牌最多的那一列，通常就是值得挖下去的那一列。</string>
+    <string name="help_strategy_2_title">别急着往基础牌堆送</string>
+    <string name="help_strategy_2">太早送上去的牌就下不来了，也就接不住任何东西。只要小牌还可能接住你需要的牌，就把它们留在接龙牌堆里；等到谁都不再需要它们时，再送上去。</string>
+    <string name="help_strategy_3_title">腾空一列要有计划</string>
+    <string name="help_strategy_3">空列是牌桌上最值钱的东西，因为只有 K 能填进去。手上已经有 K，或者有一张够得到的 K，再去腾空，而不是为腾空而腾空。</string>
+    <string name="help_strategy_4_title">盯住整个发牌堆，不只是废牌堆</string>
+    <string name="help_strategy_4">翻牌不花代价，发牌堆也从不重洗，所以走完一整轮只消耗步数。留意从眼前过去的是什么：知道某张牌还会再转回来，会改变你现在该走哪一步。</string>
+    <string name="help_strategy_5_title">卡住了就往回走</string>
+    <string name="help_strategy_5">撤销只会在计数器上多记一步，此外毫无代价。一局如果走干了，退回几步换另一条岔路，通常比指望发牌堆救你要快。</string>
+
+    <string name="help_levels_intro">这里的每一局在到你手上之前都过了一遍计算机，难度说的是赢下它需要什么，或者在阶梯最顶端，说的是没有任何办法赢下它。它衡量的是这一局，不是你。</string>
+    <string name="help_levels_trivial_title">入门</string>
+    <string name="help_levels_trivial">只靠显而易见的走法就能赢：翻牌、接住送上门的牌、打废牌堆。适合上手的牌局，而且这一难度是从最容忍失误的那些开始的。</string>
+    <string name="help_levels_easy_title">简单</string>
+    <string name="help_levels_easy">需要你在几个显而易见的走法之间做选择：挖最深的那一列，以及在还有牌需要它时先按住不放。到这里，光靠显而易见的走法已经不够了。</string>
+    <string name="help_levels_medium_title">中等</string>
+    <string name="help_levels_medium">需要一步当下什么也捞不到的棋：挪走一串牌中的一段，好露出它下面那张。先铺垫、后得利，这就是这一难度的主题。</string>
+    <string name="help_levels_hard_title">困难</string>
+    <string name="help_levels_hard">需要把一张牌从基础牌堆再拿下来。这有违直觉，却往往是唯一的通路，所以它排得这么高。</string>
+    <string name="help_levels_expert_title">专家</string>
+    <string name="help_levels_expert">超出一切经验法则：这些牌局是靠搜索赢下来的，而且只是勉强赢下——两个求解器里有一个找到了路线，另一个没有。请做好频繁回退的准备。</string>
+    <string name="help_levels_insane_title">疯狂</string>
+    <string name="help_levels_insane">没有任何办法解开这些牌局，所以没有人知道取胜的路线，我们也不知道。其中有一些根本赢不了：在求解器确实给出结论的同类牌局里，大约每十局就有一局被证明不可能，而这里的这些更难，连结论都给不出。所以在这里输掉未必是你的错，这一局本来可能就没有出路。玩它们是为了这场较量，不是为了战绩。</string>
+</resources>

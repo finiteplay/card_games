@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Joc nr. %1$d</string>
+    <string name="recovery_notice">Jocul salvat nu a putut fi deschis, așa că a fost împărțit unul nou.</string>
+    <string name="setting_automatic_moves">Mutări automate în fundație</string>
+    <string name="stuck_title">Nu mai sunt mutări disponibile</string>
+    <string name="stuck_body">Nu mai există nicio mutare legală. Anulează sau începe un joc nou.</string>
+    <string name="hint_thinking">Se gândește…</string>
+    <string name="hint_no_solution">Nu există nicio cale spre victorie de aici.</string>
+    <string name="hint_inconclusive">Nu s-a putut stabili la timp — încearcă din nou sau continuă să joci.</string>
+    <string name="unrecoverable_title">Acest joc nu poate porni</string>
+    <string name="unrecoverable_body">Catalogul de jocuri inclus nu a trecut verificarea, așa că niciun joc nu poate fi certificat ca fiind rezolvabil. Reinstalarea aplicației ar putea rezolva problema.</string>
+    <string name="unrecoverable_retry">Încearcă din nou</string>
+    <string name="help_title">Cum se joacă</string>
+    <string name="help_goal_title">Obiectivul</string>
+    <string name="help_goal">Construiește toate cele patru fundații pe culoare, de la as la rege. Depozitează fiecare carte și câștigi.</string>
+    <string name="help_free_cells_title">Celule libere</string>
+    <string name="help_free_cells">Fiecare dintre cele patru celule libere ține câte o carte de orice rang sau culoare, pusă deoparte până când ai nevoie din nou de ea. O coloană goală funcționează la fel, dar ține o secvență întreagă în loc de o singură carte.</string>
+    <string name="help_moving_title">Construire și mutare</string>
+    <string name="help_moving">O carte poate fi așezată pe o carte cu un rang mai mare și de culoare opusă. Orice carte singură poate intra într-o coloană goală. Mai multe cărți se mută împreună ca o singură super-mutare atunci când suficiente celule libere și coloane goale permit acest lucru — jocul calculează asta pentru tine.</string>
+    <string name="help_controls_title">Atingere, tragere și indiciu</string>
+    <string name="help_controls">Atinge o carte pentru a o trimite în cea mai apropiată coloană legală din dreapta, apoi într-o fundație sigură, apoi în cea mai apropiată coloană din stânga, iar o fundație nesigură sau o celulă liberă goală doar ca ultimă soluție. Trage pentru a alege singur destinația, inclusiv o celulă liberă. Indiciul dovedește că există o mutare și ți-o arată, sau îți spune sincer când nu găsește una.</string>
+</resources>

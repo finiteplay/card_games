@@ -1,0 +1,34 @@
+# Locales this repo ships, one per line as "<values-XX suffix>  <language name>".
+# English (`values/`, no suffix) is the base every other app locale mirrors exactly
+# (`docs/PLATFORM.md` "Localization").
+
+ar      Arabic
+bg      Bulgarian
+cs      Czech
+da      Danish
+de      German
+el      Greek
+es      Spanish
+fi      Finnish
+fr      French
+hi      Hindi
+hr      Croatian
+hu      Hungarian
+in      Indonesian
+it      Italian
+iw      Hebrew
+ja      Japanese
+ko      Korean
+nb      Norwegian Bokmål
+nl      Dutch
+pl      Polish
+pt-rBR  Portuguese (Brazil)
+ro      Romanian
+sk      Slovak
+sv      Swedish
+th      Thai
+tr      Turkish
+uk      Ukrainian
+vi      Vietnamese
+zh-rCN  Chinese (Simplified)
+zh-rTW  Chinese (Traditional)

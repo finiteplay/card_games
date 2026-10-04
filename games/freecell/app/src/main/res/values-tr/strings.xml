@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Oyun #%1$d</string>
+    <string name="recovery_notice">Kayıtlı oyununuz açılamadığı için yeni bir oyun dağıtıldı.</string>
+    <string name="setting_automatic_moves">Otomatik vakıf hamleleri</string>
+    <string name="stuck_title">Hamle kalmadı</string>
+    <string name="stuck_body">Yapılacak geçerli hamle kalmadı. Geri al veya yeni bir oyuna başla.</string>
+    <string name="hint_thinking">Düşünülüyor…</string>
+    <string name="hint_no_solution">Buradan kazanmaya giden bir yol yok.</string>
+    <string name="hint_inconclusive">Zamanında belirlenemedi — tekrar deneyin veya oynamaya devam edin.</string>
+    <string name="unrecoverable_title">Bu oyun başlatılamıyor</string>
+    <string name="unrecoverable_body">Uygulamayla birlikte gelen el kataloğu doğrulamayı geçemedi, bu yüzden hiçbir el çözülebilir olarak onaylanamıyor. Uygulamayı yeniden yüklemek bunu çözebilir.</string>
+    <string name="unrecoverable_retry">Tekrar dene</string>
+    <string name="help_title">Nasıl Oynanır</string>
+    <string name="help_goal_title">Amaç</string>
+    <string name="help_goal">Dört vakfı da türe göre, astan papaza kadar oluştur. Her kartı yerleştir ve kazan.</string>
+    <string name="help_free_cells_title">Boş hücreler</string>
+    <string name="help_free_cells">Dört boş hücrenin her biri, tekrar ihtiyacın olana kadar bir kenara bırakılmış herhangi bir değer veya türden bir kart tutar. Boş bir sütun da aynı şekilde çalışır, ama tek bir kart yerine tüm bir diziyi tutar.</string>
+    <string name="help_moving_title">Diziler oluşturma ve taşıma</string>
+    <string name="help_moving">Bir kart, kendisinden bir değer yüksek ve zıt renkteki bir kartın üzerine konabilir. Herhangi bir tek kart boş bir sütuna girebilir. Yeterli boş hücre ve boş sütun yolculuğu mümkün kıldığında birden fazla kart tek bir süper hamle olarak birlikte hareket eder — oyun bunu senin için hesaplar.</string>
+    <string name="help_controls_title">Dokunma, sürükleme ve ipucu</string>
+    <string name="help_controls">Bir kartı sağdaki en yakın geçerli sütuna göndermek için dokun, ardından güvenli bir vakfa, ardından soldaki en yakın sütuna; güvensiz bir vakıf veya boş bir hücre yalnızca son çare olarak kullanılır. Hedefi kendin seçmek için sürükle, boş hücre dahil. İpucu bir hamlenin var olduğunu kanıtlar ve sana gösterir, ya da bulamadığında dürüstçe söyler.</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%2$s%1$s，%2$s基礎牌組</string>
+    <string name="cd_foundation_empty">%1$s基礎牌組，空</string>
+    <string name="cd_move_to_tableau">移動到接龍區</string>
+    <string name="cd_stock_with_cards">發牌堆，%1$d張</string>
+    <string name="cd_stock_empty_recycles">發牌堆，空。重新使用廢牌堆。</string>
+    <string name="cd_stock_empty">發牌堆，空</string>
+    <string name="cd_draw_action">抽牌</string>
+    <string name="cd_waste_card">%2$s%1$s，廢牌堆</string>
+    <string name="cd_waste_empty">廢牌堆，空</string>
+    <string name="cd_move_card">移動牌</string>
+    <string name="cd_tableau_card">%2$s%1$s，接龍區第%3$d列，第%4$d張（共%5$d張）</string>
+    <string name="cd_tableau_face_down">背面朝上的牌，接龍區第%1$d列，第%2$d張（共%3$d張）</string>
+    <string name="cd_move">移動</string>
+    <string name="status_deal_prefix">第%1$d局</string>
+    <string name="status_level_prefix">等級：%1$s</string>
+    <string name="level_trivial">入門</string>
+    <string name="level_easy">簡單</string>
+    <string name="level_medium">中等</string>
+    <string name="level_hard">困難</string>
+    <string name="level_expert">專家</string>
+    <string name="level_insane">瘋狂</string>
+    <string name="recovery_notice_text">無法還原已儲存的遊戲，正在開始新遊戲。</string>
+    <string name="hint_thinking">思考中…</string>
+    <string name="hint_no_solution">從目前局面無法獲勝。</string>
+    <string name="hint_inconclusive">未能在限定時間內判斷——請再試一次，或繼續遊戲。</string>
+    <string name="setting_automatic_moves">自動移動到基礎牌組</string>
+    <string name="setting_draw_three">三張抽牌</string>
+    <string name="setting_difficulty">難度</string>
+    <string name="difficulty_random">隨機</string>
+    <string name="level_switch_forfeits">切換難度將結束這局遊戲（已走 %1$d 步）並記為失敗。</string>
+    <string name="draw_mode_one">單張抽牌</string>
+    <string name="draw_mode_three">三張抽牌</string>
+    <string name="stuck_title">沒有可用的走法了</string>
+    <string name="stuck_body">沒有合法的走法，發牌堆也無法提供協助。請復原或開始新遊戲。</string>
+    <string name="unrecoverable_title">無法開始這局遊戲</string>
+    <string name="unrecoverable_body">內建的牌局目錄未通過驗證，因此無法認證任何牌局可解。重新安裝應用程式可能會解決此問題。</string>
+    <string name="unrecoverable_retry">重試</string>
+</resources>

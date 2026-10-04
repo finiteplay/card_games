@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Partita n. %1$d</string>
+    <string name="recovery_notice">La partita salvata non poteva essere aperta, quindi ne è stata distribuita una nuova.</string>
+    <string name="setting_automatic_moves">Mosse automatiche verso le fondazioni</string>
+    <string name="stuck_title">Nessuna mossa disponibile</string>
+    <string name="stuck_body">Non resta alcuna mossa legale. Annulla o inizia una nuova partita.</string>
+    <string name="hint_thinking">Sto pensando…</string>
+    <string name="hint_no_solution">Da qui non c\'è modo di vincere.</string>
+    <string name="hint_inconclusive">Impossibile stabilirlo in tempo — riprova, oppure continua a giocare.</string>
+    <string name="unrecoverable_title">Questa partita non può iniziare</string>
+    <string name="unrecoverable_body">Il catalogo di partite incluso non ha superato la verifica, quindi nessuna partita può essere certificata come risolvibile. Reinstallare l\'app potrebbe risolvere il problema.</string>
+    <string name="unrecoverable_retry">Riprova</string>
+    <string name="help_title">Come giocare</string>
+    <string name="help_goal_title">L\'obiettivo</string>
+    <string name="help_goal">Costruisci tutte e quattro le fondazioni per seme, dall\'asso al re. Deposita ogni carta e vinci.</string>
+    <string name="help_free_cells_title">Celle libere</string>
+    <string name="help_free_cells">Ciascuna delle quattro celle libere contiene una carta di qualsiasi valore o seme, messa da parte finché non ti serve di nuovo. Una colonna vuota funziona allo stesso modo, ma contiene un\'intera sequenza invece di una sola carta.</string>
+    <string name="help_moving_title">Costruire e spostare</string>
+    <string name="help_moving">Una carta può essere posata su una carta di un valore superiore e di colore opposto. Qualsiasi carta singola può entrare in una colonna vuota. Più carte si spostano insieme come una sola supermossa quando abbastanza celle libere e colonne vuote rendono possibile il tragitto — il gioco lo calcola per te.</string>
+    <string name="help_controls_title">Tocco, trascinamento e suggerimento</string>
+    <string name="help_controls">Tocca una carta per inviarla alla colonna legale più vicina a destra, poi a una fondazione sicura, poi alla colonna più vicina a sinistra, e a una fondazione rischiosa o a una cella libera vuota solo come ultima risorsa. Trascina per scegliere tu stesso la destinazione, inclusa una cella libera. Il suggerimento dimostra che esiste una mossa e te la mostra, oppure ti dice onestamente quando non ce n\'è una.</string>
+</resources>

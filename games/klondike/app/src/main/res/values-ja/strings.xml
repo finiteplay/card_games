@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%2$sの%1$s、%2$sの組み札</string>
+    <string name="cd_foundation_empty">%1$sの組み札、空</string>
+    <string name="cd_move_to_tableau">場札に移動</string>
+    <string name="cd_stock_with_cards">山札、%1$d枚</string>
+    <string name="cd_stock_empty_recycles">山札、空。捨て札を再利用します。</string>
+    <string name="cd_stock_empty">山札、空</string>
+    <string name="cd_draw_action">引く</string>
+    <string name="cd_waste_card">%2$sの%1$s、捨て札</string>
+    <string name="cd_waste_empty">捨て札、空</string>
+    <string name="cd_move_card">カードを移動</string>
+    <string name="cd_tableau_card">%2$sの%1$s、場札の列%3$d、%5$d枚中%4$d番目</string>
+    <string name="cd_tableau_face_down">裏向きのカード、場札の列%1$d、%3$d枚中%2$d番目</string>
+    <string name="cd_move">移動</string>
+    <string name="status_deal_prefix">ゲーム %1$d</string>
+    <string name="status_level_prefix">レベル: %1$s</string>
+    <string name="level_trivial">非常に簡単</string>
+    <string name="level_easy">簡単</string>
+    <string name="level_medium">普通</string>
+    <string name="level_hard">難しい</string>
+    <string name="level_expert">上級</string>
+    <string name="level_insane">無謀</string>
+    <string name="recovery_notice_text">保存されたゲームを復元できませんでした。新しいゲームを開始します。</string>
+    <string name="hint_thinking">考え中…</string>
+    <string name="hint_no_solution">ここから勝てる手順はありません。</string>
+    <string name="hint_inconclusive">時間内に判定できませんでした。もう一度試すか、そのままプレイを続けてください。</string>
+    <string name="setting_automatic_moves">組み札への自動移動</string>
+    <string name="setting_draw_three">3枚引き</string>
+    <string name="setting_difficulty">難易度</string>
+    <string name="difficulty_random">ランダム</string>
+    <string name="level_switch_forfeits">レベルを変更すると、%1$d 手でこのゲームは終了し、敗北として記録されます。</string>
+    <string name="draw_mode_one">1枚引き</string>
+    <string name="draw_mode_three">3枚引き</string>
+    <string name="stuck_title">動かせる手がありません</string>
+    <string name="stuck_body">有効な手がなく、山札も使えません。元に戻すか、新しいゲームを開始してください。</string>
+    <string name="unrecoverable_title">このゲームは開始できません</string>
+    <string name="unrecoverable_body">同梱の配り札カタログの検証に失敗したため、解ける配り札として認証できませんでした。アプリを再インストールすると解決する場合があります。</string>
+    <string name="unrecoverable_retry">再試行</string>
+</resources>

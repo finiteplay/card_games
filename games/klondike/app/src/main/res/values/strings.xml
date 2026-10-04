@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App / publisher branding. The Play Store listing title/launcher label: fixed in every
+         locale, like company_name and company_website, since it now carries the brand name
+         FinitePlay rather than a translatable description. company_byline is still ordinary
+         language and is translated. -->
+    <string name="app_name" translatable="false">Klondike by FinitePlay</string>
+
+    <!-- Board title. "Klondike" is a proper noun (the game's traditional name) and is
+         intentionally identical in every locale. -->
+    <string name="game_title" translatable="false">Klondike</string>
+
+    <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
+
+    <!-- Card ranks and suits, spoken for accessibility (rankSpokenLabel/suitSpokenLabel
+         in CardArt.kt) - never the card-face glyphs Board draws on Canvas, which stay
+         universal (A, 2-10, J, Q, K; suit symbols) in every locale. -->
+
+    <!-- Board content descriptions (Board.kt). Card counts always use the plural noun,
+         matching English "1 cards" avoided by never actually reaching count 1 in a
+         sentence that reads oddly - kept as a plain %d (not <plurals>) in every locale
+         for this pass; see the localization commit message for that scope decision. -->
+    <string name="cd_foundation_top_card">%1$s of %2$s, %2$s foundation</string>
+    <string name="cd_foundation_empty">%1$s foundation, empty</string>
+    <string name="cd_move_to_tableau">Move to tableau</string>
+    <string name="cd_stock_with_cards">Stock, %1$d cards</string>
+    <string name="cd_stock_empty_recycles">Stock, empty. Recycles waste.</string>
+    <string name="cd_stock_empty">Stock, empty</string>
+    <string name="cd_draw_action">Draw</string>
+    <string name="cd_waste_card">%1$s of %2$s, waste</string>
+    <string name="cd_waste_empty">Waste, empty</string>
+    <string name="cd_move_card">Move card</string>
+    <string name="cd_tableau_card">%1$s of %2$s, tableau column %3$d, position %4$d of %5$d</string>
+    <string name="cd_tableau_face_down">Face-down card, tableau column %1$d, position %2$d of %3$d</string>
+    <string name="cd_move">Move</string>
+
+    <!-- Status row (GameScreen.kt) -->
+    <string name="status_deal_prefix">Deal %1$d</string>
+    <string name="status_level_prefix">Level: %1$s</string>
+    <!-- Difficulty and deal number together, e.g. "Medium #5". "#" is a numeral sign,
+         not a word, and is intentionally identical in every locale; translate only the
+         separator/order if a locale needs a different convention. -->
+    <string name="level_trivial">Trivial</string>
+    <string name="level_easy">Easy</string>
+    <string name="level_medium">Medium</string>
+    <string name="level_hard">Hard</string>
+    <string name="level_expert">Expert</string>
+    <string name="level_insane">Insane</string>
+
+    <!-- Recovery notice -->
+    <string name="recovery_notice_text">Your saved game couldn\'t be restored. Starting a new one.</string>
+
+    <!-- Hint notice (docs/games/klondike/DESIGN.md "On-Device Hint Search") -->
+    <string name="hint_thinking">Thinking…</string>
+    <string name="hint_no_solution">No path to a win from here.</string>
+    <string name="hint_inconclusive">Searching for a win took too long. This game is likely unsolvable from here.</string>
+
+    <!-- Settings screen -->
+    <string name="setting_automatic_moves">Automatic foundation moves</string>
+    <string name="setting_draw_three">Draw three</string>
+    <string name="setting_difficulty">Difficulty</string>
+    <string name="difficulty_random">Random</string>
+    <!-- Shown in the level picker when switching level will forfeit a game already played.
+         %1$d is the move count of the game that would be given up. -->
+    <string name="level_switch_forfeits">Switching level ends this game after %1$d moves and records it as a loss.</string>
+    <!-- Every other entry in the language list names itself in its own language, so a
+         player who picked one they cannot read can still get back; only this one, which
+         by definition is read in the current language, is translated. -->
+
+    <!-- Statistics screen -->
+    <string name="draw_mode_one">Draw One</string>
+    <string name="draw_mode_three">Draw Three</string>
+
+    <!-- Pending action (New Game / Replay) confirmation -->
+
+    <!-- Win dialog -->
+
+    <!-- Stuck (no moves) notice -->
+    <string name="stuck_title">No moves left</string>
+    <string name="stuck_body">There\'s no legal move and the stock can\'t help. Undo or start a new game.</string>
+
+    <!-- Unrecoverable screen (not yet reachable; wired once D1b ships a bundled catalog) -->
+    <string name="unrecoverable_title">This game can\'t start</string>
+    <string name="unrecoverable_body">The bundled deal catalog failed verification, so no deal can be certified as solvable. Reinstalling the app may fix this.</string>
+    <string name="unrecoverable_retry">Try again</string>
+</resources>

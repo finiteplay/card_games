@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s di %2$s, fondazione %2$s</string>
+    <string name="cd_foundation_empty">Fondazione %1$s, vuota</string>
+    <string name="cd_move_to_tableau">Sposta nel tableau</string>
+    <string name="cd_stock_with_cards">Mazzo, %1$d carte</string>
+    <string name="cd_stock_empty_recycles">Mazzo, vuoto. Ricicla gli scarti.</string>
+    <string name="cd_stock_empty">Mazzo, vuoto</string>
+    <string name="cd_draw_action">Pesca</string>
+    <string name="cd_waste_card">%1$s di %2$s, scarti</string>
+    <string name="cd_waste_empty">Scarti, vuoti</string>
+    <string name="cd_move_card">Sposta carta</string>
+    <string name="cd_tableau_card">%1$s di %2$s, colonna %3$d, posizione %4$d di %5$d</string>
+    <string name="cd_tableau_face_down">Carta coperta, colonna %1$d, posizione %2$d di %3$d</string>
+    <string name="cd_move">Sposta</string>
+    <string name="status_deal_prefix">Partita %1$d</string>
+    <string name="status_level_prefix">Livello: %1$s</string>
+    <string name="level_trivial">Banale</string>
+    <string name="level_easy">Facile</string>
+    <string name="level_medium">Medio</string>
+    <string name="level_hard">Difficile</string>
+    <string name="level_expert">Esperto</string>
+    <string name="level_insane">Folle</string>
+    <string name="recovery_notice_text">Impossibile ripristinare la partita salvata. Verrà avviata una nuova partita.</string>
+    <string name="hint_thinking">Sto pensando…</string>
+    <string name="hint_no_solution">Da qui non c\'è modo di vincere.</string>
+    <string name="hint_inconclusive">Impossibile stabilirlo in tempo — riprova, oppure continua a giocare.</string>
+    <string name="setting_automatic_moves">Mosse automatiche verso le fondazioni</string>
+    <string name="setting_draw_three">Pesca tre</string>
+    <string name="setting_difficulty">Difficoltà</string>
+    <string name="difficulty_random">Casuale</string>
+    <string name="level_switch_forfeits">Cambiare livello termina questa partita dopo %1$d mosse e la registra come sconfitta.</string>
+    <string name="draw_mode_one">Pesca una</string>
+    <string name="draw_mode_three">Pesca tre</string>
+    <string name="stuck_title">Nessuna mossa disponibile</string>
+    <string name="stuck_body">Non ci sono mosse legali e il mazzo non può aiutare. Annulla o avvia una nuova partita.</string>
+    <string name="unrecoverable_title">Questa partita non può iniziare</string>
+    <string name="unrecoverable_body">Il catalogo di partite incluso non ha superato la verifica, quindi nessuna partita può essere certificata come risolvibile. Reinstallare l\'app potrebbe risolvere il problema.</string>
+    <string name="unrecoverable_retry">Riprova</string>
+</resources>

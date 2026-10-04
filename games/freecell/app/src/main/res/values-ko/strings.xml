@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">게임 #%1$d</string>
+    <string name="recovery_notice">저장된 게임을 열 수 없어 새 게임이 배분되었습니다.</string>
+    <string name="setting_automatic_moves">파운데이션 자동 이동</string>
+    <string name="stuck_title">더 이상 할 수 있는 수가 없습니다</string>
+    <string name="stuck_body">가능한 수가 더 이상 없습니다. 되돌리거나 새 게임을 시작하세요.</string>
+    <string name="hint_thinking">생각 중…</string>
+    <string name="hint_no_solution">여기서는 이길 방법이 없습니다.</string>
+    <string name="hint_inconclusive">제한 시간 안에 판단하지 못했습니다 — 다시 시도하거나 계속 플레이하세요.</string>
+    <string name="unrecoverable_title">이 게임을 시작할 수 없습니다</string>
+    <string name="unrecoverable_body">내장된 게임 카탈로그가 검증에 실패하여 풀 수 있는 게임으로 인증할 수 없습니다. 앱을 다시 설치하면 해결될 수 있습니다.</string>
+    <string name="unrecoverable_retry">다시 시도</string>
+    <string name="help_title">게임 방법</string>
+    <string name="help_goal_title">목표</string>
+    <string name="help_goal">무늬별로 네 개의 파운데이션을 에이스부터 킹까지 완성하세요. 모든 카드를 쌓으면 승리합니다.</string>
+    <string name="help_free_cells_title">프리셀</string>
+    <string name="help_free_cells">네 개의 프리셀은 각각 등급이나 무늬에 상관없이 카드 한 장을 보관하며, 다시 필요할 때까지 옆에 둡니다. 빈 열도 같은 방식으로 작동하지만, 카드 한 장 대신 전체 시퀀스를 보관할 수 있습니다.</string>
+    <string name="help_moving_title">쌓기와 이동</string>
+    <string name="help_moving">카드는 한 등급 높고 반대 색인 카드 위에 놓을 수 있습니다. 낱장 카드는 어떤 것이든 빈 열로 이동할 수 있습니다. 충분한 프리셀과 빈 열이 있으면 여러 장의 카드가 슈퍼무브로 함께 이동합니다 — 게임이 대신 계산해 줍니다.</string>
+    <string name="help_controls_title">탭, 드래그, 힌트</string>
+    <string name="help_controls">카드를 탭하면 오른쪽에서 가장 가까운 유효한 열로, 그다음 안전한 파운데이션으로, 그다음 왼쪽에서 가장 가까운 열로 보내지며, 위험한 파운데이션이나 빈 프리셀은 최후의 수단으로만 사용됩니다. 드래그하면 프리셀을 포함해 직접 목적지를 선택할 수 있습니다. 힌트는 수가 존재함을 증명해 보여주거나, 없을 때는 정직하게 알려줍니다.</string>
+</resources>

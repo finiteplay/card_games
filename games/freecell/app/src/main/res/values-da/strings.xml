@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Spil nr. %1$d</string>
+    <string name="recovery_notice">Dit gemte spil kunne ikke åbnes, så et nyt blev givet.</string>
+    <string name="setting_automatic_moves">Automatiske træk til hjemmebunkerne</string>
+    <string name="stuck_title">Ingen træk tilbage</string>
+    <string name="stuck_body">Der er ikke flere lovlige træk. Fortryd, eller start et nyt spil.</string>
+    <string name="hint_thinking">Tænker…</string>
+    <string name="hint_no_solution">Ingen vej til gevinst herfra.</string>
+    <string name="hint_inconclusive">Kunne ikke afgøre det i tide — prøv igen, eller fortsæt med at spille.</string>
+    <string name="unrecoverable_title">Dette spil kan ikke starte</string>
+    <string name="unrecoverable_body">Det medfølgende spilkatalog bestod ikke verifikationen, så intet parti kan certificeres som løsbart. Geninstallation af appen kan løse dette.</string>
+    <string name="unrecoverable_retry">Prøv igen</string>
+    <string name="help_title">Sådan spiller du</string>
+    <string name="help_goal_title">Målet</string>
+    <string name="help_goal">Byg alle fire hjemmebunker efter farve, fra es til konge. Læg alle kort på plads, så vinder du.</string>
+    <string name="help_free_cells_title">Fritceller</string>
+    <string name="help_free_cells">De fire fritceller rummer hver ét kort af vilkårlig valør eller farve, lagt til side indtil du får brug for det igen. En tom kolonne fungerer på samme måde, men rummer en hel række i stedet for ét kort.</string>
+    <string name="help_moving_title">Opbygning og flytning</string>
+    <string name="help_moving">Et kort kan lægges på et kort én valør højere og af modsat farve. Et enkelt kort kan altid flyttes til en tom kolonne. Flere kort flyttes sammen som ét superflyt, når nok fritceller og tomme kolonner gør det muligt — spillet regner selv det ud for dig.</string>
+    <string name="help_controls_title">Tryk, træk og hint</string>
+    <string name="help_controls">Tryk på et kort for at sende det til den nærmeste lovlige kolonne til højre, dernæst en sikker hjemmebunke, dernæst den nærmeste kolonne til venstre, og en usikker hjemmebunke eller en tom fritcelle kun som sidste udvej. Træk for selv at vælge destination, også en fritcelle. Hint beviser, at der findes et træk, og viser dig det, eller fortæller dig ærligt, at det ikke kan.</string>
+</resources>

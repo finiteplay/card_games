@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Zo speel je</string>
+    <string name="help_tab_rules">Regels</string>
+    <string name="help_tab_strategy">Strategie</string>
+    <string name="help_tab_levels">Niveaus</string>
+
+    <string name="help_rules_goal_title">Het doel</string>
+    <string name="help_rules_goal">Breng alle 52 kaarten naar de vier stapels bovenaan. Elke stapel neemt één kleur en wordt vanaf de Aas opgebouwd: A, 2, 3, tot en met de Heer. Maak alle vier af en je hebt gewonnen.</string>
+    <string name="help_rules_board_title">Het speelveld</string>
+    <string name="help_rules_board">De zeven kolommen in het midden vormen het speelveld - daar doe je het werk. De gesloten stapel is de talon; tik erop om kaarten één voor één op de aflegstapel ernaast te draaien. Is de talon op, tik er dan opnieuw op om de aflegstapel om te keren en nog een ronde te maken, zo vaak je wilt.</string>
+    <string name="help_rules_moves_title">Welke zetten mogen</string>
+    <string name="help_rules_moves">In de kolommen gaat een kaart op een kaart die één rang hoger is en van de andere kleur: een rode 8 op een zwarte 9. Een reeks die al in die volgorde ligt, verhuist in één keer. Alleen een Heer mag naar een lege kolom. Een vrijliggende kaart mag altijd naar haar stapel bovenaan, en de bovenste kaart daarvan mag je weer terughalen als je haar nodig hebt.</string>
+    <string name="help_rules_help_title">Wat de app voor je doet</string>
+    <string name="help_rules_help">Tik op een kaart en die gaat naar de beste toegestane plek, of sleep haar waarheen je wilt. Azen en veilige kaarten gaan vanzelf naar boven, tenzij je dat uitzet in Instellingen. Ongedaan maken is onbeperkt, en Hint laat je altijd een zet zien die winnen mogelijk houdt.</string>
+
+    <string name="help_strategy_intro">Dit zijn de bekende principes van Klondike. Geen ervan is een geheim en geen ervan is een garantie - het is simpelweg wat meestal werkt.</string>
+    <string name="help_strategy_1_title">Draai eerst kaarten om</string>
+    <string name="help_strategy_1">Elke gesloten kaart is informatie die je niet hebt. Een zet die er een omdraait is bijna altijd beter dan een zet die dat niet doet, en de kolom met de meeste gesloten kaarten is meestal de kolom om in te graven.</string>
+    <string name="help_strategy_2_title">Haast je niet naar boven</string>
+    <string name="help_strategy_2">Een kaart die te vroeg naar boven gaat, kan niet meer terugkomen om iets op te vangen. Houd lage kaarten in de kolommen zolang ze nog een kaart kunnen opvangen die je nodig hebt, en stuur ze naar boven zodra niets ze meer nodig heeft.</string>
+    <string name="help_strategy_3_title">Maak een kolom leeg met een plan</string>
+    <string name="help_strategy_3">Een lege kolom is het waardevolste op tafel, want alleen een Heer kan hem vullen. Maak er een leeg als je een Heer klaar hebt staan of een Heer kunt bereiken, en niet zomaar.</string>
+    <string name="help_strategy_4_title">Let op de hele talon, niet alleen op de aflegstapel</string>
+    <string name="help_strategy_4">Trekken is gratis en de talon wordt nooit opnieuw geschud, dus erdoorheen gaan kost alleen zetten. Let op wat voorbijkomt: weten dat een kaart terugkomt verandert de zet die je nu moet doen.</string>
+    <string name="help_strategy_5_title">Zit je vast, ga dan terug</string>
+    <string name="help_strategy_5">Ongedaan maken kost je niets dan een zet in de teller. Als een gift opdroogt, is een paar zetten teruglopen en de andere tak nemen meestal sneller dan hopen dat de talon je redt.</string>
+
+    <string name="help_levels_intro">Elke gift hier is door een computer gehaald voordat hij bij jou kwam, en het niveau zegt wat er nodig was om te winnen - of, bovenaan de ladder, dat niets het lukte. Het meet de gift, niet jou.</string>
+    <string name="help_levels_trivial_title">Triviaal</string>
+    <string name="help_levels_trivial">Te winnen met alleen voor de hand liggende zetten: kaarten omdraaien, pakken wat wordt aangeboden, de aflegstapel spelen. Goede giften om op te leren, en het niveau begint met die welke fouten het meest vergeven.</string>
+    <string name="help_levels_easy_title">Makkelijk</string>
+    <string name="help_levels_easy">Vraagt om een keuze tussen voor de hand liggende zetten: graven in de diepste kolom en een kaart achterhouden zolang iets haar nog nodig heeft. Voor de hand liggende zetten alleen zijn hier niet genoeg.</string>
+    <string name="help_levels_medium_title">Gemiddeld</string>
+    <string name="help_levels_medium">Vraagt om een zet die op dat moment niets oplevert: een deel van een reeks verplaatsen om de kaart eronder vrij te maken. Eerst klaarzetten, dan oogsten - daar gaat dit niveau over.</string>
+    <string name="help_levels_hard_title">Moeilijk</string>
+    <string name="help_levels_hard">Vraagt om een kaart die je van een stapel bovenaan weer terughaalt. Tegenintuïtief, en vaak de enige doorgang, en daarom staat het zo hoog.</string>
+    <string name="help_levels_expert_title">Expert</string>
+    <string name="help_levels_expert">Voorbij elke vuistregel: deze giften zijn met zoeken gewonnen, en maar net - een van de twee oplossers vond een lijn en de andere niet. Reken erop dat je vaak terug moet.</string>
+    <string name="help_levels_insane_title">Waanzinnig</string>
+    <string name="help_levels_insane">Niets loste deze giften op, dus niemand kent een winnende lijn, wij ook niet. Sommige zijn helemaal niet te winnen: van de vergelijkbare giften waarover een oplosser wel uitsluitsel gaf, bleek ongeveer één op de tien onmogelijk, en dit zijn de zwaardere waarover hij niets kon zeggen. Een verlies hier is dus misschien niet jouw schuld - de gift had misschien gewoon geen weg naar de winst. Speel ze om het gevecht, niet om de statistiek.</string>
+</resources>

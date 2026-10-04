@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App / publisher branding. -->
+
+    <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
+
+    <!-- Card ranks and suits, spoken for accessibility -->
+
+    <!-- Board content descriptions (Board.kt) -->
+    <string name="cd_foundation_top_card">%1$s i %2$s, %2$s-bunke</string>
+    <string name="cd_foundation_empty">%1$s-bunke, tom</string>
+    <string name="cd_move_to_tableau">Flytt til kolonne</string>
+    <string name="cd_stock_with_cards">Talong, %1$d kort</string>
+    <string name="cd_stock_empty_recycles">Talong, tom. Bruker kastebunken på nytt.</string>
+    <string name="cd_stock_empty">Talong, tom</string>
+    <string name="cd_draw_action">Trekk</string>
+    <string name="cd_waste_card">%1$s i %2$s, kastebunken</string>
+    <string name="cd_waste_empty">Kastebunken, tom</string>
+    <string name="cd_move_card">Flytt kort</string>
+    <string name="cd_tableau_card">%1$s i %2$s, kolonne %3$d, plass %4$d av %5$d</string>
+    <string name="cd_tableau_face_down">Vendt kort, kolonne %1$d, plass %2$d av %3$d</string>
+    <string name="cd_move">Flytt</string>
+
+    <!-- Status row (GameScreen.kt) -->
+    <string name="status_deal_prefix">Giv %1$d</string>
+    <string name="status_level_prefix">Nivå: %1$s</string>
+    <string name="level_trivial">Triviell</string>
+    <string name="level_easy">Lett</string>
+    <string name="level_medium">Middels</string>
+    <string name="level_hard">Vanskelig</string>
+    <string name="level_expert">Ekspert</string>
+    <string name="level_insane">Vanvittig</string>
+
+    <!-- Recovery notice -->
+    <string name="recovery_notice_text">Det lagrede spillet kunne ikke gjenopprettes. Starter et nytt.</string>
+
+    <!-- Hint notice (docs/games/klondike/DESIGN.md "On-Device Hint Search") -->
+    <string name="hint_thinking">Tenker…</string>
+    <string name="hint_no_solution">Ingen vei til seier herfra.</string>
+    <string name="hint_inconclusive">Klarte ikke å avgjøre i tide — prøv igjen, eller fortsett å spille.</string>
+
+    <!-- Settings screen -->
+    <string name="setting_automatic_moves">Automatiske trekk til grunnbunkene</string>
+    <string name="setting_draw_three">Trekk tre</string>
+    <string name="setting_difficulty">Vanskelighetsgrad</string>
+    <string name="difficulty_random">Tilfeldig</string>
+    <string name="level_switch_forfeits">Å bytte nivå avslutter dette spillet etter %1$d trekk og registrerer det som et tap.</string>
+
+    <!-- Statistics screen -->
+    <string name="draw_mode_one">Trekk én</string>
+    <string name="draw_mode_three">Trekk tre</string>
+
+    <!-- Pending action (New Game / Replay) confirmation -->
+
+    <!-- Win dialog -->
+
+    <!-- Stuck (no moves) notice -->
+    <string name="stuck_title">Ingen trekk igjen</string>
+    <string name="stuck_body">Det finnes ikke noe lovlig trekk, og kortstokken kan ikke hjelpe. Angre eller start et nytt spill.</string>
+
+    <!-- Unrecoverable screen -->
+    <string name="unrecoverable_title">Dette spillet kan ikke starte</string>
+    <string name="unrecoverable_body">Den medfølgende spillkatalogen besto ikke verifiseringen, så intet parti kan sertifiseres som løsbart. Å installere appen på nytt kan løse dette.</string>
+    <string name="unrecoverable_retry">Prøv igjen</string>
+</resources>

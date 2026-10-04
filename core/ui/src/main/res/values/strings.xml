@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="company_name" translatable="false">FinitePlay LLC</string>
+    <string name="company_byline">by FinitePlay LLC</string>
+    <string name="company_website" translatable="false">https://finiteplay.org</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_statistics">Statistics</string>
+    <string name="action_replay">Replay</string>
+    <string name="action_new">New</string>
+    <string name="action_hint">Hint</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_close">Close</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_new_game">New Game</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="rank_ace">Ace</string>
+    <string name="rank_two">Two</string>
+    <string name="rank_three">Three</string>
+    <string name="rank_four">Four</string>
+    <string name="rank_five">Five</string>
+    <string name="rank_six">Six</string>
+    <string name="rank_seven">Seven</string>
+    <string name="rank_eight">Eight</string>
+    <string name="rank_nine">Nine</string>
+    <string name="rank_ten">Ten</string>
+    <string name="rank_jack">Jack</string>
+    <string name="rank_queen">Queen</string>
+    <string name="rank_king">King</string>
+    <string name="suit_clubs">Clubs</string>
+    <string name="suit_diamonds">Diamonds</string>
+    <string name="suit_hearts">Hearts</string>
+    <string name="suit_spades">Spades</string>
+    <string name="settings_title">Settings</string>
+    <string name="setting_enable_animations">Enable Animation</string>
+
+    <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
+    <string name="setting_hint_shows_winning_move">Hint shows the winning move</string>
+    <string name="setting_hint_timeout">Hint timeout</string>
+    <!-- The dropdown's own value, e.g. "5 seconds" - kept as a plain %d rather than <plurals>,
+         matching this project's existing choice for other numeric+noun displays. -->
+    <string name="hint_timeout_seconds_value">%1$d seconds</string>
+    <string name="setting_rest_reminder">Rest reminders</string>
+    <string name="rest_reminder_never">Never</string>
+    <string name="rest_reminder_minutes_value">%1$d minutes</string>
+    <string name="rest_reminder_title">Take a break?</string>
+    <string name="rest_reminder_body">You’ve been playing for %1$s. Would you like to take a break?</string>
+    <string name="rest_reminder_take_break">Take a break</string>
+    <string name="rest_reminder_keep_playing">Keep playing</string>
+    <string name="rest_break_title">Taking a break</string>
+    <string name="rest_break_body">Back in %1$s.</string>
+    <string name="setting_rest_reminder_current_session">Continuous play</string>
+    <string name="setting_left_handed">Left-handed layout</string>
+    <string name="setting_sound">Sound</string>
+    <string name="setting_language">Language</string>
+    <string name="language_system">System default</string>
+    <string name="setting_theme">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_auto">Automatic</string>
+    <string name="statistics_title">Statistics</string>
+    <string name="period_week">Week</string>
+    <string name="period_month">Month</string>
+    <string name="period_all_time">All Time</string>
+    <string name="stat_wins">Wins: %1$d</string>
+    <string name="stat_losses">Losses: %1$d</string>
+    <string name="stat_games_played">Games played: %1$d</string>
+    <string name="stat_win_rate">Win rate: %1$s</string>
+    <string name="stat_win_rate_value">%1$.0f%%</string>
+    <string name="stat_dash" translatable="false">—</string>
+    <string name="stat_current_streak">Current streak: %1$d</string>
+    <string name="stat_longest_streak">Longest streak: %1$d</string>
+    <string name="stat_hints_used">Hints used: %1$d</string>
+    <string name="stat_best">Best: %1$s, %2$s</string>
+    <string name="stat_best_moves">%1$d moves</string>
+    <string name="stat_no_completed_games">No completed games yet</string>
+    <string name="stat_sample_size">Sample size: %1$d</string>
+    <string name="stat_completion_time_title">Completion time</string>
+    <string name="stat_moves_title">Moves</string>
+    <string name="stat_median">median %1$s</string>
+    <string name="stat_reset_button">Reset Statistics</string>
+    <string name="stat_reset_title">Reset statistics?</string>
+    <string name="stat_reset_body">This permanently deletes all recorded wins, losses, and history.</string>
+    <string name="stat_reset_confirm">Reset</string>
+    <string name="cd_distribution_range">Range %1$s to %2$s, 10th percentile %3$s, median %4$s, 90th percentile %5$s</string>
+    <string name="win_title">You won!</string>
+    <string name="win_moves">Moves: %1$d</string>
+    <string name="win_time">Time: %1$s</string>
+    <string name="stat_vs_solution_title">Moves vs. certified solution</string>
+    <string name="stat_percent_value">%1$d%%</string>
+    <string name="stat_section_summary">Summary</string>
+    <string name="stat_section_distributions">Distributions</string>
+    <string name="stat_tile_wins">Wins</string>
+    <string name="stat_tile_losses">Losses</string>
+    <string name="stat_tile_win_rate">Win rate</string>
+    <string name="stat_tile_played">Games played</string>
+    <string name="stat_tile_streak">Current streak</string>
+    <string name="stat_tile_longest_streak">Longest streak</string>
+    <string name="stat_tile_hints">Hints used</string>
+    <string name="stat_tile_hint_free_wins">Wins without hints</string>
+    <string name="settings_group_play">This game</string>
+    <string name="settings_group_next_game">Next new game</string>
+    <string name="settings_group_appearance">Appearance</string>
+    <string name="settings_group_breaks">Breaks</string>
+
+    <!-- New Game / Replay confirmation, shown for an unfinished played game. -->
+    <string name="pending_new_game_action">Start a new game</string>
+    <string name="pending_replay_action">Replay this deal</string>
+    <string name="pending_body">Current game: %1$d moves, %2$s. This game will be lost.</string>
+
+    <!-- Status row: what the game in play currently reads. -->
+    <string name="status_moves_time">Moves: %1$d  Time: %2$s</string>
+    <string name="status_won">Won</string>
+    <string name="stat_section_efficiency">Efficiency vs. certified solution</string>
+    <string name="stat_section_hints">Hints</string>
+    <string name="stat_section_by_level">Win rate by level</string>
+    <string name="stat_level_label">%1$s · %2$d of %3$d won</string>
+    <string name="stat_tile_loss_streak">Longest losing streak</string>
+    <string name="stat_tile_avg_time">Average time</string>
+    <string name="stat_tile_recent_win_rate">Last %1$d games</string>
+    <string name="stat_tile_avg_vs_solution">Average vs. solution</string>
+    <string name="stat_tile_best_vs_solution">Best vs. solution</string>
+    <string name="stat_tile_matched_solution">Matched or beat solution</string>
+    <string name="stat_efficiency_explainer">Your moves in each win as a percent of the certified solution\'s for the same deal. 100 is a match; lower is better.</string>
+    <string name="win_ai_solution">AI solved it in %1$d moves</string>
+    <string name="win_your_moves">You: %1$d moves (%2$s)</string>
+    <string name="win_delta_more">+%1$d%%</string>
+    <string name="win_delta_fewer">−%1$d%%</string>
+    <string name="win_delta_match">exactly the same</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="deal_picker_title">Choose a deal</string>
+    <string name="deal_status_not_played">Not played</string>
+    <string name="deal_status_played">Played</string>
+    <string name="deal_status_won">Won</string>
+    <string name="deal_filter_all">All</string>
+    <string name="deal_picker_empty">No deals match this filter.</string>
+    <string name="deal_current">Current</string>
+    <string name="deal_number" translatable="false">#%1$d</string>
+</resources>

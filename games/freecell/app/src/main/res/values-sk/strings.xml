@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">Hra č. %1$d</string>
+    <string name="recovery_notice">Uloženú hru sa nepodarilo otvoriť, preto bola rozdaná nová.</string>
+    <string name="setting_automatic_moves">Automatické presuny na základy</string>
+    <string name="stuck_title">Žiadne ďalšie ťahy</string>
+    <string name="stuck_body">Nezostáva žiadny platný ťah. Vráť ťah späť alebo začni novú hru.</string>
+    <string name="hint_thinking">Rozmýšľam…</string>
+    <string name="hint_no_solution">Odtiaľto už nevedie cesta k výhre.</string>
+    <string name="hint_inconclusive">Nestihlo sa to zistiť včas — skús to znova alebo pokračuj v hre.</string>
+    <string name="unrecoverable_title">Túto hru nemožno spustiť</string>
+    <string name="unrecoverable_body">Vstavaný katalóg hier neprešiel overením, takže žiadnu hru nemožno potvrdiť ako riešiteľnú. Preinštalovanie aplikácie by to mohlo vyriešiť.</string>
+    <string name="unrecoverable_retry">Skúsiť znova</string>
+    <string name="help_title">Ako hrať</string>
+    <string name="help_goal_title">Cieľ</string>
+    <string name="help_goal">Postav všetky štyri základy podľa farby, od esa po kráľa. Ulož každú kartu a vyhrávaš.</string>
+    <string name="help_free_cells_title">Voľné bunky</string>
+    <string name="help_free_cells">Každá zo štyroch voľných buniek pojme jednu kartu ľubovoľnej hodnoty alebo farby, odloženú bokom, kým ju znova nepotrebuješ. Prázdny stĺpec funguje rovnako, ale pojme celú postupnosť namiesto jednej karty.</string>
+    <string name="help_moving_title">Skladanie a presúvanie</string>
+    <string name="help_moving">Kartu možno položiť na kartu o jednu hodnotu vyššiu a opačnej farby. Do prázdneho stĺpca môže vstúpiť ľubovoľná samostatná karta. Viacero kariet sa presúva spolu ako jeden superťah, keď to umožní dostatok voľných buniek a prázdnych stĺpcov — hra to za teba vypočíta.</string>
+    <string name="help_controls_title">Klepnutie, ťahanie a pomôcka</string>
+    <string name="help_controls">Klepnutím na kartu ju pošleš do najbližšieho platného stĺpca vpravo, potom do bezpečného základu, potom do najbližšieho stĺpca vľavo, a do nebezpečného základu alebo prázdnej voľnej bunky iba ako poslednú možnosť. Ťahaním si cieľ zvolíš sám, vrátane voľnej bunky. Pomôcka dokazuje, že ťah existuje, a ukáže ti ho, alebo ti úprimne povie, že ho niet.</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s של %2$s, יסוד %2$s</string>
+    <string name="cd_foundation_empty">יסוד %1$s, ריק</string>
+    <string name="cd_move_to_tableau">הזז לעמודה</string>
+    <string name="cd_stock_with_cards">חפיסה, %1$d קלפים</string>
+    <string name="cd_stock_empty_recycles">חפיסה, ריקה. ממחזרת את הפסולת.</string>
+    <string name="cd_stock_empty">חפיסה, ריקה</string>
+    <string name="cd_draw_action">משוך</string>
+    <string name="cd_waste_card">%1$s %2$s, קלפים מושלכים</string>
+    <string name="cd_waste_empty">קלפים מושלכים, ריק</string>
+    <string name="cd_move_card">הזז קלף</string>
+    <string name="cd_tableau_card">%1$s של %2$s, עמודה %3$d, מיקום %4$d מתוך %5$d</string>
+    <string name="cd_tableau_face_down">קלף הפוך, עמודה %1$d, מיקום %2$d מתוך %3$d</string>
+    <string name="cd_move">הזז</string>
+    <string name="status_deal_prefix">חלוקה %1$d</string>
+    <string name="status_level_prefix">רמה: %1$s</string>
+    <string name="level_trivial">טריוויאלי</string>
+    <string name="level_easy">קלה</string>
+    <string name="level_medium">בינונית</string>
+    <string name="level_hard">קשה</string>
+    <string name="level_expert">מומחה</string>
+    <string name="level_insane">מטורף</string>
+    <string name="recovery_notice_text">לא ניתן היה לשחזר את המשחק השמור. מתחילים משחק חדש.</string>
+    <string name="hint_thinking">חושב…</string>
+    <string name="hint_no_solution">אין דרך לניצחון מכאן.</string>
+    <string name="hint_inconclusive">לא הצלחתי לקבוע בזמן — נסה שוב, או המשך לשחק.</string>
+    <string name="setting_automatic_moves">מהלכים אוטומטיים ליסודות</string>
+    <string name="setting_draw_three">משיכת שלושה קלפים</string>
+    <string name="setting_difficulty">רמת קושי</string>
+    <string name="difficulty_random">אקראי</string>
+    <string name="level_switch_forfeits">החלפת רמה מסיימת את המשחק הזה אחרי %1$d מהלכים ורושמת אותו כהפסד.</string>
+    <string name="draw_mode_one">משיכת קלף אחד</string>
+    <string name="draw_mode_three">משיכת שלושה קלפים</string>
+    <string name="stuck_title">לא נותרו מהלכים</string>
+    <string name="stuck_body">אין מהלך חוקי והחפיסה לא יכולה לעזור. בטל מהלך או התחל משחק חדש.</string>
+    <string name="unrecoverable_title">לא ניתן להתחיל את המשחק הזה</string>
+    <string name="unrecoverable_body">קטלוג החלוקות המובנה נכשל באימות, ולכן לא ניתן לאשר שאף חלוקה ניתנת לפתרון. התקנה מחדש של האפליקציה עשויה לפתור את זה.</string>
+    <string name="unrecoverable_retry">נסה שוב</string>
+</resources>

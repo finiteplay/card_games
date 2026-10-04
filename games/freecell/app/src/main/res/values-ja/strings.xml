@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_hand_number">第%1$d局</string>
+    <string name="recovery_notice">保存されたゲームを開けなかったため、新しいゲームが配られました。</string>
+    <string name="setting_automatic_moves">組み札への自動移動</string>
+    <string name="stuck_title">動かせる手がありません</string>
+    <string name="stuck_body">合法な手がもうありません。元に戻すか、新しいゲームを始めてください。</string>
+    <string name="hint_thinking">考え中…</string>
+    <string name="hint_no_solution">ここから勝てる手順はありません。</string>
+    <string name="hint_inconclusive">時間内に判定できませんでした。もう一度試すか、そのままプレイを続けてください。</string>
+    <string name="unrecoverable_title">このゲームは開始できません</string>
+    <string name="unrecoverable_body">同梱の配り札カタログの検証に失敗したため、解ける配り札として認証できませんでした。アプリを再インストールすると解決する場合があります。</string>
+    <string name="unrecoverable_retry">再試行</string>
+    <string name="help_title">遊び方</string>
+    <string name="help_goal_title">目的</string>
+    <string name="help_goal">4つの組み札をスートごとに、エースからキングまで完成させましょう。すべてのカードを組み札に収めれば勝ちです。</string>
+    <string name="help_free_cells_title">フリーセル</string>
+    <string name="help_free_cells">4つのフリーセルにはそれぞれ、ランクやスートを問わずカードを1枚だけ、再び必要になるまで置いておけます。空の列も同じように使えますが、1枚ではなく連続した列全体を保持できます。</string>
+    <string name="help_moving_title">組み立てと移動</string>
+    <string name="help_moving">カードは、1つ上のランクで色が反対のカードの上に置けます。単独のカードならどれでも空の列に移動できます。十分なフリーセルと空の列があれば、複数枚のカードを1回のスーパームーブとしてまとめて移動できます — その計算はゲームが代わりに行います。</string>
+    <string name="help_controls_title">タップ、ドラッグ、ヒント</string>
+    <string name="help_controls">カードをタップすると、右側の最も近い合法な列へ、次に安全な組み札へ、次に左側の最も近い列へ送られ、危険な組み札や空のフリーセルは最後の手段としてのみ使われます。ドラッグすれば、フリーセルを含めて自分で行き先を選べます。ヒントは手があることを証明して見せてくれるか、見つからないときは正直にそう伝えます。</string>
+</resources>

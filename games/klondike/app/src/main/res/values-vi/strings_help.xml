@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Cách chơi</string>
+    <string name="help_tab_rules">Luật chơi</string>
+    <string name="help_tab_strategy">Chiến thuật</string>
+    <string name="help_tab_levels">Mức độ</string>
+
+    <string name="help_rules_goal_title">Mục tiêu</string>
+    <string name="help_rules_goal">Đưa cả 52 lá bài lên bốn nền ở phía trên. Mỗi nền nhận một chất và được xếp tăng dần từ con Át: A, 2, 3, cho tới con Già. Hoàn tất cả bốn nền là bạn thắng.</string>
+    <string name="help_rules_board_title">Mặt bàn</string>
+    <string name="help_rules_board">Bảy cột ở giữa là khu chơi - đó là nơi bạn làm việc. Chồng bài úp là chồng bài rút; chạm vào nó để lật từng lá một sang chỗ bài bỏ bên cạnh. Khi chồng bài rút hết, chạm lại lần nữa để lật bài bỏ trở lại và đi thêm một vòng, bao nhiêu lần tùy ý.</string>
+    <string name="help_rules_moves_title">Những nước đi hợp lệ</string>
+    <string name="help_rules_moves">Trong khu chơi, một lá bài đặt lên lá cao hơn một bậc và khác màu: lá 8 đỏ đặt lên lá 9 đen. Một dãy đã xếp sẵn theo thứ tự đó sẽ di chuyển nguyên khối. Chỉ con Già mới được vào cột trống. Lá bài đã lộ luôn có thể lên nền của nó, và bạn có thể lấy lá trên cùng của một nền xuống lại nếu cần.</string>
+    <string name="help_rules_help_title">Ứng dụng làm gì giúp bạn</string>
+    <string name="help_rules_help">Chạm vào một lá bài và nó sẽ đi tới chỗ hợp lệ tốt nhất, hoặc kéo nó tới nơi bạn muốn. Các con Át và những lá an toàn tự lên nền, trừ khi bạn tắt điều đó trong Cài đặt. Hoàn tác là không giới hạn, và Gợi ý luôn chỉ cho bạn một nước đi giữ cho chiến thắng còn khả thi.</string>
+
+    <string name="help_strategy_intro">Đây là những nguyên tắc ai cũng biết của Klondike. Không điều nào là bí mật và không điều nào là bảo đảm - chúng đơn giản là những gì thường có hiệu quả.</string>
+    <string name="help_strategy_1_title">Lật bài trước đã</string>
+    <string name="help_strategy_1">Mỗi lá bài úp là một thông tin bạn không có. Nước đi lật được một lá gần như luôn tốt hơn nước đi không lật được lá nào, và cột có nhiều lá úp nhất thường là cột đáng đào sâu.</string>
+    <string name="help_strategy_2_title">Đừng vội đưa bài lên nền</string>
+    <string name="help_strategy_2">Lá bài đưa lên quá sớm sẽ không xuống lại được để đỡ lá nào nữa. Hãy giữ những lá nhỏ trong khu chơi chừng nào chúng còn có thể hứng một lá bạn cần, và chỉ đưa lên khi không còn gì cần đến chúng.</string>
+    <string name="help_strategy_3_title">Dọn trống một cột theo kế hoạch</string>
+    <string name="help_strategy_3">Cột trống là thứ giá trị nhất trên bàn, vì chỉ con Già mới lấp được nó. Hãy dọn trống một cột khi bạn đã có sẵn một con Già, hoặc một con Già bạn với tới được, chứ không phải dọn cho có.</string>
+    <string name="help_strategy_4_title">Theo dõi cả chồng bài rút, không chỉ bài bỏ</string>
+    <string name="help_strategy_4">Rút bài không mất gì và chồng bài rút không bao giờ được xáo lại, nên đi hết một vòng chỉ tốn nước đi. Hãy để ý những gì lướt qua: biết rằng một lá bài sẽ quay lại làm thay đổi nước đi bạn nên chọn lúc này.</string>
+    <string name="help_strategy_5_title">Khi bế tắc, hãy lùi lại</string>
+    <string name="help_strategy_5">Hoàn tác chẳng tốn gì ngoài một nước đi trên bộ đếm. Nếu một ván cạn đường, lùi lại vài nước và rẽ sang nhánh kia thường nhanh hơn là trông chờ chồng bài rút cứu bạn.</string>
+
+    <string name="help_levels_intro">Mỗi ván ở đây đều đã được máy tính chạy qua trước khi đến tay bạn, và mức độ cho biết cần những gì để thắng nó - hoặc, ở đỉnh thang, rằng không gì thắng nổi. Đó là thước đo của ván bài, không phải của bạn.</string>
+    <string name="help_levels_trivial_title">Rất dễ</string>
+    <string name="help_levels_trivial">Thắng chỉ bằng những nước đi hiển nhiên: lật bài, lấy thứ được đưa ra, đánh bài bỏ. Những ván tốt để học, và mức độ này mở đầu bằng những ván tha thứ nhiều sai lầm nhất.</string>
+    <string name="help_levels_easy_title">Dễ</string>
+    <string name="help_levels_easy">Đòi hỏi bạn chọn giữa các nước đi hiển nhiên: đào vào cột sâu nhất, và giữ lại một lá chừng nào còn thứ gì cần đến nó. Ở đây chỉ các nước hiển nhiên thôi thì chưa đủ.</string>
+    <string name="help_levels_medium_title">Trung bình</string>
+    <string name="help_levels_medium">Đòi hỏi một nước đi không đem lại gì ngay lúc đó - dời một phần của dãy để lộ lá bài bên dưới. Chuẩn bị trước khi thu lợi chính là điều mức độ này nói tới.</string>
+    <string name="help_levels_hard_title">Khó</string>
+    <string name="help_levels_hard">Đòi hỏi lấy một lá bài xuống lại từ nền. Trái với trực giác, và thường là lối đi duy nhất, nên nó mới nằm cao đến vậy.</string>
+    <string name="help_levels_expert_title">Chuyên gia</string>
+    <string name="help_levels_expert">Vượt khỏi mọi quy tắc kinh nghiệm: những ván này thắng được nhờ tìm kiếm, mà cũng chỉ vừa đủ - một trong hai bộ giải tìm ra đường đi, bộ kia thì không. Hãy chuẩn bị tinh thần lùi lại thường xuyên.</string>
+    <string name="help_levels_insane_title">Điên rồ</string>
+    <string name="help_levels_insane">Không gì giải nổi những ván này, nên không ai biết đường thắng, kể cả chúng tôi. Một số ván hoàn toàn không thể thắng: trong những ván tương đương mà một bộ giải đã kết luận được, khoảng một phần mười hóa ra là bất khả thi, và đây là những ván khó hơn mà nó không kết luận nổi. Vậy nên thua ở đây có thể không phải lỗi của bạn - có thể ván bài vốn dĩ không có lối ra. Hãy chơi chúng vì cuộc đấu, chứ không vì thành tích.</string>
+</resources>

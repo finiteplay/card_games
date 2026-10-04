@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Jeden kolor</string>
+    <string name="suit_count_two">Dwa kolory</string>
+    <string name="suit_count_four">Cztery kolory</string>
+
+    <string name="setting_suit_count">Kolory</string>
+
+    <string name="suit_count_switch_forfeits">Zmiana kolorów kończy tę grę po %1$d ruchach i zapisuje ją jako przegraną.</string>
+
+    <string name="deal_row_refused">Nie można rozdać, gdy kolumna jest pusta</string>
+
+    <string name="recovery_notice">Nie udało się otworzyć zapisanej gry, więc rozdano nową.</string>
+
+    <string name="uncertified_notice">Ten rozkład nie jest certyfikowany jako rozwiązywalny</string>
+
+    <string name="catalog_status_notice">Rozkłady z jednym i dwoma kolorami pochodzą z certyfikowanego katalogu, sprawdzonego jako rozwiązywalne. Rozkłady z czterema kolorami nie są jeszcze certyfikowane.</string>
+
+    <string name="banked_sequences">Odłożone: %1$d z 8</string>
+
+    <string name="action_help">Pomoc</string>
+    <string name="help_title">Jak grać</string>
+    <string name="help_goal_title">Cel</string>
+    <string name="help_goal">Ułóż osiem sekwencji od Króla do Asa, każdą w jednym kolorze. Ukończona sekwencja jest odkładana i znika z planszy. Ukończ wszystkie osiem, aby wygrać.</string>
+    <string name="help_moving_title">Przenoszenie kart</string>
+    <string name="help_moving">Każdą odkrytą kartę można przenieść na kartę o randze o jeden wyższej, niezależnie od koloru. Kilka kart przenosi się razem tylko wtedy, gdy już tworzą malejący ciąg w tym samym kolorze. Pusta kolumna przyjmuje wszystko, co czyni ją najcenniejszym miejscem na planszy.</string>
+    <string name="help_stock_title">Rozdawanie rzędu</string>
+    <string name="help_stock">Dotknięcie stosu rozdaje jedną odkrytą kartę na każdą kolumnę naraz — nie ma stosu odrzuconych ani dobierania pojedynczych kart. Rozdanie jest odrzucane, gdy jakaś kolumna jest pusta, więc uzupełnij lukę przed rozdaniem.</string>
+    <string name="help_suits_title">Kolory</string>
+    <string name="help_suits">Jeden kolor to najłagodniejsza gra, cztery — najtrudniejsza; dwa znajdują się pośrodku i są ustawieniem domyślnym. Liczba jest ustalana przy rozdaniu — zmień ją w Ustawieniach, a zastosuje się do kolejnej nowej gry.</string>
+    <string name="help_controls_title">Dotknięcie, przeciąganie i podpowiedź</string>
+    <string name="help_controls">Dotknij karty, aby wysłać ją do najbliższej dozwolonej kolumny po prawej, z zawinięciem do początku; dotknij ponownie, aby przenieść ją dalej. Przeciągnij, aby samodzielnie wybrać kolumnę. Podpowiedź podświetla górną kartę każdej sekwencji, która ma dokąd pójść. Gdy zostanie tylko ostatnia sekwencja, gra kończy ją za ciebie.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Myślenie…</string>
+    <string name="hint_no_solution">Stąd nie da się już wygrać.</string>
+    <string name="hint_inconclusive">Nie udało się ustalić na czas — spróbuj ponownie lub graj dalej.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suit_count_one">Un palo</string>
+    <string name="suit_count_two">Dos palos</string>
+    <string name="suit_count_four">Cuatro palos</string>
+
+    <string name="setting_suit_count">Palos</string>
+
+    <string name="suit_count_switch_forfeits">Cambiar de palos termina esta partida tras %1$d movimientos y la registra como derrota.</string>
+
+    <string name="deal_row_refused">No se puede repartir mientras haya una columna vacía</string>
+
+    <string name="recovery_notice">No se pudo abrir tu partida guardada, así que se repartió una nueva.</string>
+
+    <string name="uncertified_notice">Esta partida no está certificada como resoluble</string>
+
+    <string name="catalog_status_notice">Las partidas de uno y dos palos provienen de un catálogo certificado y verificado como resoluble. Las de cuatro palos aún no están certificadas.</string>
+
+    <string name="banked_sequences">Guardadas: %1$d de 8</string>
+
+    <string name="action_help">Ayuda</string>
+    <string name="help_title">Cómo jugar</string>
+    <string name="help_goal_title">El objetivo</string>
+    <string name="help_goal">Forma ocho secuencias de Rey a As, cada una de un solo palo. Una secuencia terminada se guarda y sale del tablero. Completa las ocho y ganas.</string>
+    <string name="help_moving_title">Mover cartas</string>
+    <string name="help_moving">Cualquier carta boca arriba puede moverse sobre una carta de rango inmediatamente superior, sin importar el palo. Varias cartas se mueven juntas solo cuando ya están en orden descendente y comparten palo. Una columna vacía acepta cualquier carta, lo que la convierte en lo más valioso del tablero.</string>
+    <string name="help_stock_title">Repartir una fila</string>
+    <string name="help_stock">Al tocar el mazo se reparte una carta boca arriba en cada columna a la vez; no hay pila de descarte ni se roba una carta a la vez. Se niega mientras haya una columna vacía, así que llena el hueco antes de repartir.</string>
+    <string name="help_suits_title">Palos</string>
+    <string name="help_suits">Un palo es la partida más suave, cuatro la más difícil; dos queda en medio y es la opción predeterminada. El número se fija al repartir la partida: cámbialo en Ajustes y se aplicará a la próxima partida nueva.</string>
+    <string name="help_controls_title">Tocar, arrastrar y pista</string>
+    <string name="help_controls">Toca una carta para enviarla a la siguiente columna legal a su derecha, volviendo al principio si es necesario; toca otra vez para seguir moviéndola. Arrastra para elegir tú mismo la columna. La pista ilumina la carta superior de cada secuencia que tenga adónde ir. Cuando solo queda la última secuencia, el juego la termina por ti.</string>
+
+    <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
+         Klondike's and FreeCell's own text. -->
+    <string name="hint_thinking">Pensando…</string>
+    <string name="hint_no_solution">No hay forma de ganar desde aquí.</string>
+    <string name="hint_inconclusive">No se pudo determinar a tiempo — inténtalo de nuevo o sigue jugando.</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Sådan spiller du</string>
+    <string name="help_tab_rules">Regler</string>
+    <string name="help_tab_strategy">Strategi</string>
+    <string name="help_tab_levels">Niveauer</string>
+
+    <string name="help_rules_goal_title">Målet</string>
+    <string name="help_rules_goal">Flyt alle 52 kort op på de fire hjemmebunker øverst. Hver hjemmebunke tager én farve og bygges opad fra Esset: A, 2, 3, hele vejen til Kongen. Fyld alle fire, så har du vundet.</string>
+    <string name="help_rules_board_title">Spillebordet</string>
+    <string name="help_rules_board">De syv kolonner i midten er spillebordet - det er der, arbejdet foregår. Bunken med bagsiden opad er talonen; tryk på den for at vende kort et ad gangen over på de kasserede kort ved siden af. Når talonen er tom, trykker du på den igen for at vende de kasserede kort tilbage og tage en runde mere, så mange gange du vil.</string>
+    <string name="help_rules_moves_title">Hvilke træk der er lovlige</string>
+    <string name="help_rules_moves">På spillebordet lægges et kort på et kort, der er én værdi højere og har modsat farve: en rød 8 på en sort 9. En sekvens, der allerede ligger i den rækkefølge, flyttes samlet. Kun en Konge må lægges i en tom kolonne. Et frilagt kort må altid ryge op på sin hjemmebunke, og det øverste kort i en hjemmebunke må du hente ned igen, hvis du får brug for det.</string>
+    <string name="help_rules_help_title">Hvad appen gør for dig</string>
+    <string name="help_rules_help">Tryk på et kort, så ryger det hen på den bedste lovlige plads, eller træk det derhen, hvor du vil have det. Esser og sikre kort ryger op på hjemmebunkerne af sig selv, medmindre du slår det fra i Indstillinger. Fortryd er ubegrænset, og Hint viser dig altid et træk, der holder sejren mulig.</string>
+
+    <string name="help_strategy_intro">Det er de velkendte principper i Klondike. Ingen af dem er en hemmelighed, og ingen er en garanti - de er ganske enkelt det, der plejer at virke.</string>
+    <string name="help_strategy_1_title">Vend kort først</string>
+    <string name="help_strategy_1">Hvert kort med bagsiden opad er information, du ikke har. Et træk, der vender et af dem, er næsten altid bedre end et træk, der ikke gør, og kolonnen med flest skjulte kort er som regel den, det kan betale sig at grave i.</string>
+    <string name="help_strategy_2_title">Skynd dig ikke op på hjemmebunkerne</string>
+    <string name="help_strategy_2">Et kort, der sendes op for tidligt, kan ikke komme ned igen og holde på noget. Behold lave kort på spillebordet, så længe de stadig kan tage imod et kort, du har brug for, og send dem op, når ingenting længere har brug for dem.</string>
+    <string name="help_strategy_3_title">Tøm en kolonne med en plan</string>
+    <string name="help_strategy_3">En tom kolonne er det mest værdifulde på bordet, for kun en Konge kan fylde den. Tøm en, når du har en Konge klar, eller en Konge du kan nå, ikke bare for at tømme.</string>
+    <string name="help_strategy_4_title">Hold øje med hele talonen, ikke kun de kasserede kort</string>
+    <string name="help_strategy_4">At trække er gratis, og talonen blandes aldrig om, så at gå den igennem koster kun træk. Læg mærke til, hvad der passerer: at vide, at et kort kommer rundt igen, ændrer, hvilket træk du bør lave nu.</string>
+    <string name="help_strategy_5_title">Når du sidder fast, så gå tilbage</string>
+    <string name="help_strategy_5">Fortryd koster dig ikke andet end et træk på tælleren. Hvis en giv tørrer ud, er det som regel hurtigere at gå et par træk tilbage og tage den anden gren end at håbe på, at talonen redder dig.</string>
+
+    <string name="help_levels_intro">Hver giv her er kørt gennem en computer, før den nåede frem til dig, og niveauet fortæller, hvad der skulle til for at vinde den - eller, øverst på stigen, at intet klarede det. Det måler given, ikke dig.</string>
+    <string name="help_levels_trivial_title">Triviel</string>
+    <string name="help_levels_trivial">Vindes med indlysende træk alene: vend kort, tag det, der bydes, spil de kasserede kort. Gode giv at lære på, og niveauet begynder med dem, der tilgiver flest fejl.</string>
+    <string name="help_levels_easy_title">Let</string>
+    <string name="help_levels_easy">Kræver, at du vælger mellem indlysende træk: grav i den dybeste kolonne, og hold et kort tilbage, så længe noget stadig har brug for det. Her rækker indlysende træk ikke alene.</string>
+    <string name="help_levels_medium_title">Middel</string>
+    <string name="help_levels_medium">Kræver et træk, der ikke giver noget på stedet - at flytte en del af en sekvens for at frilægge kortet nedenunder. At gøre klar, før du høster, er det, dette niveau handler om.</string>
+    <string name="help_levels_hard_title">Svær</string>
+    <string name="help_levels_hard">Kræver et kort hentet ned igen fra en hjemmebunke. Imod intuitionen og ofte den eneste vej igennem, og derfor ligger niveauet så højt.</string>
+    <string name="help_levels_expert_title">Ekspert</string>
+    <string name="help_levels_expert">Hinsides enhver tommelfingerregel: disse giv blev vundet ved søgning, og kun lige akkurat - den ene af de to løsere fandt en linje, den anden gjorde ikke. Regn med at gå tilbage tit.</string>
+    <string name="help_levels_insane_title">Vanvittig</string>
+    <string name="help_levels_insane">Intet løste disse giv, så ingen kender en vindende linje, heller ikke vi. Nogle kan slet ikke vindes: blandt de sammenlignelige giv, som en løser rent faktisk afgjorde, viste omkring én ud af ti sig at være umulig, og det her er de hårdere, som den ikke kunne afgøre. Et tab her er derfor ikke nødvendigvis din skyld - given havde måske simpelthen ingen vej igennem. Spil dem for kampens skyld, ikke for statistikken.</string>
+</resources>

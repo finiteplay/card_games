@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_foundation_top_card">%1$s %2$s, กองสะสม %2$s</string>
+    <string name="cd_foundation_empty">กองสะสม %1$s, ว่างเปล่า</string>
+    <string name="cd_move_to_tableau">ย้ายไปยังแถวไพ่</string>
+    <string name="cd_stock_with_cards">กองจั่ว, %1$d ใบ</string>
+    <string name="cd_stock_empty_recycles">กองจั่ว, ว่างเปล่า นำไพ่ทิ้งกลับมาใช้ใหม่</string>
+    <string name="cd_stock_empty">กองจั่ว, ว่างเปล่า</string>
+    <string name="cd_draw_action">จั่วไพ่</string>
+    <string name="cd_waste_card">%1$s %2$s, กองไพ่ทิ้ง</string>
+    <string name="cd_waste_empty">กองไพ่ทิ้ง, ว่างเปล่า</string>
+    <string name="cd_move_card">ย้ายไพ่</string>
+    <string name="cd_tableau_card">%1$s %2$s, แถวไพ่ที่ %3$d ตำแหน่งที่ %4$d จาก %5$d</string>
+    <string name="cd_tableau_face_down">ไพ่คว่ำ, แถวไพ่ที่ %1$d ตำแหน่งที่ %2$d จาก %3$d</string>
+    <string name="cd_move">ย้าย</string>
+    <string name="status_deal_prefix">รอบที่ %1$d</string>
+    <string name="status_level_prefix">ระดับ: %1$s</string>
+    <string name="level_trivial">ง่ายมาก</string>
+    <string name="level_easy">ง่าย</string>
+    <string name="level_medium">ปานกลาง</string>
+    <string name="level_hard">ยาก</string>
+    <string name="level_expert">ผู้เชี่ยวชาญ</string>
+    <string name="level_insane">โหดมาก</string>
+    <string name="recovery_notice_text">ไม่สามารถกู้คืนเกมที่บันทึกไว้ได้ กำลังเริ่มเกมใหม่</string>
+    <string name="hint_thinking">กำลังคิด…</string>
+    <string name="hint_no_solution">ไม่มีทางชนะจากจุดนี้</string>
+    <string name="hint_inconclusive">หาคำตอบไม่ทันเวลา — ลองใหม่อีกครั้ง หรือเล่นต่อไป</string>
+    <string name="setting_automatic_moves">ย้ายไพ่ไปกองสะสมอัตโนมัติ</string>
+    <string name="setting_draw_three">จั่วสามใบ</string>
+    <string name="setting_difficulty">ระดับความยาก</string>
+    <string name="difficulty_random">สุ่ม</string>
+    <string name="level_switch_forfeits">การเปลี่ยนระดับจะจบเกมนี้หลังจาก %1$d ตา และบันทึกเป็นการแพ้</string>
+    <string name="draw_mode_one">จั่วทีละใบ</string>
+    <string name="draw_mode_three">จั่วทีละสามใบ</string>
+    <string name="stuck_title">ไม่มีการเดินที่เหลืออยู่</string>
+    <string name="stuck_body">ไม่มีการเดินที่ถูกต้อง และกองจั่วก็ช่วยไม่ได้ กรุณาเลิกทำหรือเริ่มเกมใหม่</string>
+    <string name="unrecoverable_title">ไม่สามารถเริ่มเกมนี้ได้</string>
+    <string name="unrecoverable_body">แคตตาล็อกเกมที่มากับแอปตรวจสอบไม่ผ่าน จึงไม่มีเกมใดได้รับการรับรองว่าแก้ได้ ลองติดตั้งแอปใหม่อาจช่วยแก้ไขปัญหานี้ได้</string>
+    <string name="unrecoverable_retry">ลองอีกครั้ง</string>
+</resources>

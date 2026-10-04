@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Kako se igra</string>
+    <string name="help_tab_rules">Pravila</string>
+    <string name="help_tab_strategy">Strategija</string>
+    <string name="help_tab_levels">Razine</string>
+
+    <string name="help_rules_goal_title">Cilj</string>
+    <string name="help_rules_goal">Prebaci svih 52 karte na četiri temelja na vrhu. Svaki temelj prima jednu boju i gradi se od Asa naviše: A, 2, 3, sve do Kralja. Dovrši sva četiri i partija je dobivena.</string>
+    <string name="help_rules_board_title">Stol</string>
+    <string name="help_rules_board">Sedam stupova u sredini je igralište - ondje se odvija tvoj posao. Hrpa okrenuta licem prema dolje je špil; dodirni ga da okrećeš karte jednu po jednu na hrpu odbačenih karata pokraj. Kad se špil potroši, dodirni ga ponovno da se odbačene karte okrenu natrag i kreneš u novi krug, koliko god puta želiš.</string>
+    <string name="help_rules_moves_title">Koji su potezi dopušteni</string>
+    <string name="help_rules_moves">U stupovima karta ide na kartu za jedan rang višu i suprotne boje: crvena 8 na crnu 9. Niz koji već leži u tom redoslijedu premješta se cijeli. U prazan stup smije samo Kralj. Otkrivena karta uvijek može na svoj temelj, a gornju kartu s temelja možeš vratiti dolje ako ti zatreba.</string>
+    <string name="help_rules_help_title">Što aplikacija radi umjesto tebe</string>
+    <string name="help_rules_help">Dodirni kartu i otići će na najbolje dopušteno mjesto, ili je povuci kamo želiš. Asovi i sigurne karte same odlaze na temelje, osim ako to ne isključiš u Postavkama. Poništavanje poteza je neograničeno, a Savjet ti uvijek pokaže potez koji ostavlja pobjedu mogućom.</string>
+
+    <string name="help_strategy_intro">Ovo su dobro poznata načela igre Klondike. Nijedno nije tajna i nijedno nije jamstvo - to je jednostavno ono što obično djeluje.</string>
+    <string name="help_strategy_1_title">Prvo otkrivaj karte</string>
+    <string name="help_strategy_1">Svaka karta okrenuta licem prema dolje informacija je koju nemaš. Potez koji jednu od njih okrene gotovo je uvijek bolji od poteza koji to ne čini, a stup s najviše skrivenih karata obično je onaj u koji se isplati kopati.</string>
+    <string name="help_strategy_2_title">Ne žuri s temeljima</string>
+    <string name="help_strategy_2">Karta poslana gore prerano ne može se vratiti dolje da nešto primi. Drži niske karte u stupovima dok još mogu uhvatiti kartu koja ti treba, i šalji ih gore kad ih više nitko ne treba.</string>
+    <string name="help_strategy_3_title">Isprazni stup s planom</string>
+    <string name="help_strategy_3">Prazan stup najvrjednija je stvar na stolu jer ga može popuniti samo Kralj. Isprazni ga kad imaš spremnog Kralja ili Kralja do kojeg možeš doći, a ne radi samog pražnjenja.</string>
+    <string name="help_strategy_4_title">Prati cijeli špil, ne samo odbačene karte</string>
+    <string name="help_strategy_4">Izvlačenje je besplatno i špil se nikada ne miješa ponovno, pa proći kroz njega stoji samo poteza. Gledaj što prolazi: saznanje da se karta vraća mijenja potez koji se sada isplati odigrati.</string>
+    <string name="help_strategy_5_title">Kad zapneš, vrati se</string>
+    <string name="help_strategy_5">Poništavanje te ne stoji ništa osim jednog poteza na brojaču. Ako partija presuši, vratiti se nekoliko poteza i krenuti drugom granom obično je brže nego se nadati da će te špil spasiti.</string>
+
+    <string name="help_levels_intro">Svaka partija ovdje prošla je kroz računalo prije nego što je stigla do tebe, a razina govori što je trebalo da se pobijedi - ili, na vrhu ljestvice, da nitko nije uspio. To je mjera partije, a ne tebe.</string>
+    <string name="help_levels_trivial_title">Trivijalno</string>
+    <string name="help_levels_trivial">Dobiva se samim očitim potezima: otkrivaj karte, uzimaj što se nudi, igraj odbačene karte. Dobre partije za učenje, a razina počinje onima koje najviše opraštaju.</string>
+    <string name="help_levels_easy_title">Lako</string>
+    <string name="help_levels_easy">Traži izbor između očitih poteza: kopanje u najdublji stup i zadržavanje karte dok je nešto još treba. Sami očiti potezi ovdje više nisu dovoljni.</string>
+    <string name="help_levels_medium_title">Srednje</string>
+    <string name="help_levels_medium">Traži potez koji na licu mjesta ne donosi ništa - premještanje dijela niza da se otkrije karta ispod njega. Pripremiti se prije nego što zaradiš, o tome je ova razina.</string>
+    <string name="help_levels_hard_title">Teško</string>
+    <string name="help_levels_hard">Traži kartu vraćenu dolje s temelja. Protivno intuiciji i često jedini prolaz, zbog čega stoji ovako visoko.</string>
+    <string name="help_levels_expert_title">Stručno</string>
+    <string name="help_levels_expert">Iznad svih praktičnih pravila: ove partije dobilo je pretraživanje, i to tek za dlaku - jedan od dva rješavača našao je liniju, drugi nije. Očekuj da ćeš se često vraćati.</string>
+    <string name="help_levels_insane_title">Ludo</string>
+    <string name="help_levels_insane">Ove partije nije riješilo ništa, pa pobjedničku liniju ne zna nitko, ni mi. Neke se uopće ne mogu dobiti: među usporedivim partijama koje je rješavač razriješio, otprilike jedna od deset pokazala se nemogućom, a ove su teže i ostale su neriješene. Poraz ovdje stoga možda nije tvoja krivnja - partija možda jednostavno nije imala prolaz. Igraj ih zbog borbe, a ne zbog statistike.</string>
+</resources>

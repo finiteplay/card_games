@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App / publisher branding. -->
+
+    <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
+
+    <!-- Card ranks and suits, spoken for accessibility -->
+
+    <!-- Board content descriptions (Board.kt) -->
+    <string name="cd_foundation_top_card">%1$s van %2$s, %2$s-stapel</string>
+    <string name="cd_foundation_empty">%1$s-stapel, leeg</string>
+    <string name="cd_move_to_tableau">Verplaatsen naar kolom</string>
+    <string name="cd_stock_with_cards">Talon, %1$d kaarten</string>
+    <string name="cd_stock_empty_recycles">Talon, leeg. Aflegstapel wordt hergebruikt.</string>
+    <string name="cd_stock_empty">Talon, leeg</string>
+    <string name="cd_draw_action">Trekken</string>
+    <string name="cd_waste_card">%1$s van %2$s, aflegstapel</string>
+    <string name="cd_waste_empty">Aflegstapel, leeg</string>
+    <string name="cd_move_card">Kaart verplaatsen</string>
+    <string name="cd_tableau_card">%1$s van %2$s, kolom %3$d, positie %4$d van %5$d</string>
+    <string name="cd_tableau_face_down">Gedekte kaart, kolom %1$d, positie %2$d van %3$d</string>
+    <string name="cd_move">Verplaatsen</string>
+
+    <!-- Status row (GameScreen.kt) -->
+    <string name="status_deal_prefix">Gift %1$d</string>
+    <string name="status_level_prefix">Niveau: %1$s</string>
+    <string name="level_trivial">Triviaal</string>
+    <string name="level_easy">Makkelijk</string>
+    <string name="level_medium">Gemiddeld</string>
+    <string name="level_hard">Moeilijk</string>
+    <string name="level_expert">Expert</string>
+    <string name="level_insane">Waanzinnig</string>
+
+    <!-- Recovery notice -->
+    <string name="recovery_notice_text">Je opgeslagen spel kon niet worden hersteld. Er wordt een nieuw spel gestart.</string>
+
+    <!-- Hint notice (docs/games/klondike/DESIGN.md "On-Device Hint Search") -->
+    <string name="hint_thinking">Denken…</string>
+    <string name="hint_no_solution">Vanaf hier is winnen niet meer mogelijk.</string>
+    <string name="hint_inconclusive">Kon het niet op tijd bepalen — probeer het opnieuw of speel verder.</string>
+
+    <!-- Settings screen -->
+    <string name="setting_automatic_moves">Automatisch naar de stapels verplaatsen</string>
+    <string name="setting_draw_three">Drie trekken</string>
+    <string name="setting_difficulty">Moeilijkheid</string>
+    <string name="difficulty_random">Willekeurig</string>
+    <string name="level_switch_forfeits">Van niveau wisselen beëindigt dit spel na %1$d zetten en registreert het als verlies.</string>
+
+    <!-- Statistics screen -->
+    <string name="draw_mode_one">Eén trekken</string>
+    <string name="draw_mode_three">Drie trekken</string>
+
+    <!-- Pending action (New Game / Replay) confirmation -->
+
+    <!-- Win dialog -->
+
+    <!-- Stuck (no moves) notice -->
+    <string name="stuck_title">Geen zetten meer</string>
+    <string name="stuck_body">Er is geen geldige zet en de voorraad kan niet helpen. Maak ongedaan of start een nieuw spel.</string>
+
+    <!-- Unrecoverable screen -->
+    <string name="unrecoverable_title">Dit spel kan niet starten</string>
+    <string name="unrecoverable_body">De ingebouwde speldeel-catalogus is niet goedgekeurd, dus geen enkel spel kan als oplosbaar worden gecertificeerd. Het opnieuw installeren van de app kan dit oplossen.</string>
+    <string name="unrecoverable_retry">Opnieuw proberen</string>
+</resources>

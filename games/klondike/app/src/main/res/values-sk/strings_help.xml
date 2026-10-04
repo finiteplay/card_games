@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Ako hrať</string>
+    <string name="help_tab_rules">Pravidlá</string>
+    <string name="help_tab_strategy">Stratégia</string>
+    <string name="help_tab_levels">Úrovne</string>
+
+    <string name="help_rules_goal_title">Cieľ hry</string>
+    <string name="help_rules_goal">Presuň všetkých 52 kariet na štyri základy hore. Každý základ prijíma jednu farbu a stavia sa od Esa nahor: A, 2, 3, až po Kráľa. Dokonči všetky štyri a hra je vyhratá.</string>
+    <string name="help_rules_board_title">Hracia plocha</string>
+    <string name="help_rules_board">Sedem stĺpcov v strede je hracia plocha - tam sa odohráva tvoja práca. Kôpka lícom nadol je balík; ťuknutím naň otáčaš karty po jednej na odkladaciu kôpku vedľa. Keď sa balík minie, ťukni naň znova, aby sa odkladacia kôpka otočila späť a šlo sa na ďalšie kolo, koľkokrát chceš.</string>
+    <string name="help_rules_moves_title">Ktoré ťahy sú povolené</string>
+    <string name="help_rules_moves">Na hracej ploche sa karta kladie na kartu o hodnotu vyššiu a opačnej farby: červená 8 na čiernu 9. Postupnosť, ktorá už v tomto poradí leží, sa presúva celá. Do prázdneho stĺpca smie iba Kráľ. Odkrytá karta môže kedykoľvek ísť na svoj základ a vrchnú kartu zo základu si môžeš vziať späť, ak ju potrebuješ.</string>
+    <string name="help_rules_help_title">Čo za teba robí aplikácia</string>
+    <string name="help_rules_help">Ťukni na kartu a pôjde na najlepšie povolené miesto, alebo ju potiahni tam, kam chceš. Esá a bezpečné karty putujú na základy samy, pokiaľ to nevypneš v Nastaveniach. Vracanie ťahov je neobmedzené a Nápoveda ti vždy ukáže ťah, ktorý ponecháva výhru možnou.</string>
+
+    <string name="help_strategy_intro">Toto sú všeobecne známe zásady hry Klondike. Žiadna z nich nie je tajomstvom a žiadna nie je zárukou - sú to jednoducho tie, ktoré zvyčajne fungujú.</string>
+    <string name="help_strategy_1_title">Najprv odkrývaj karty</string>
+    <string name="help_strategy_1">Každá karta lícom nadol je informácia, ktorú nemáš. Ťah, ktorý jednu z nich otočí, je takmer vždy lepší než ťah, ktorý to neurobí, a stĺpec s najviac zakrytými kartami býva ten, do ktorého sa oplatí kopať.</string>
+    <string name="help_strategy_2_title">Neponáhľaj sa so základmi</string>
+    <string name="help_strategy_2">Karta poslaná hore príliš skoro už nemôže zísť dolu a niečo prijať. Nechávaj nízke karty na hracej ploche, kým môžu zachytiť kartu, ktorú potrebuješ, a posielaj ich hore, až keď ich nikto nepotrebuje.</string>
+    <string name="help_strategy_3_title">Uvoľňuj stĺpec s plánom</string>
+    <string name="help_strategy_3">Prázdny stĺpec je to najcennejšie na stole, lebo zaplniť ho môže iba Kráľ. Uvoľni ho, keď máš Kráľa pripraveného alebo Kráľa, na ktorého dosiahneš, nie kvôli samotnému uvoľneniu.</string>
+    <string name="help_strategy_4_title">Sleduj celý balík, nielen odkladaciu kôpku</string>
+    <string name="help_strategy_4">Ťahanie nič nestojí a balík sa nikdy nemieša, takže prejsť ho stojí len ťahy. Sleduj, čo ide okolo: vedomie, že sa karta vráti, mení ťah, ktorý sa oplatí urobiť teraz.</string>
+    <string name="help_strategy_5_title">Keď uviazneš, vráť sa</string>
+    <string name="help_strategy_5">Vrátenie ťahu ťa nestojí nič okrem jedného ťahu na počítadle. Keď rozdanie vyschne, vrátiť sa o pár ťahov a vydať sa druhou vetvou býva rýchlejšie než dúfať, že ťa zachráni balík.</string>
+
+    <string name="help_levels_intro">Každé rozdanie tu prešlo počítačom, než sa dostalo k tebe, a úroveň hovorí, čo bolo potrebné na výhru - alebo, na vrchole rebríka, že to nezvládlo nič. Je to miera rozdania, nie teba.</string>
+    <string name="help_levels_trivial_title">Triviálna</string>
+    <string name="help_levels_trivial">Vyhráva sa samotnými zrejmými ťahmi: odkrývaj karty, ber, čo sa ponúka, hraj odkladaciu kôpku. Dobré rozdania na učenie a úroveň sa začína tými, ktoré odpúšťajú najviac chýb.</string>
+    <string name="help_levels_easy_title">Ľahká</string>
+    <string name="help_levels_easy">Vyžaduje voľbu medzi zrejmými ťahmi: kopať do najhlbšieho stĺpca a zadržať kartu, kým ju ešte niečo potrebuje. Samotné zrejmé ťahy tu už nestačia.</string>
+    <string name="help_levels_medium_title">Stredná</string>
+    <string name="help_levels_medium">Vyžaduje ťah, ktorý na mieste nič neprinesie - preložiť časť postupnosti, aby sa odkryla karta pod ňou. Pripraviť sa skôr, než príde zisk, o tom je táto úroveň.</string>
+    <string name="help_levels_hard_title">Ťažká</string>
+    <string name="help_levels_hard">Vyžaduje kartu vzatú späť zo základu. Proti intuícii a často jediná cesta, preto stojí tak vysoko.</string>
+    <string name="help_levels_expert_title">Expertná</string>
+    <string name="help_levels_expert">Za hranicou všetkých praktických pravidiel: tieto rozdania vyhralo prehľadávanie, a len o vlások - jeden z dvoch solverov našiel líniu, druhý nie. Počítaj s tým, že sa budeš často vracať.</string>
+    <string name="help_levels_insane_title">Šialená</string>
+    <string name="help_levels_insane">Tieto rozdania nevyriešilo nič, takže víťaznú líniu nepozná nikto, ani my. Niektoré sa vyhrať vôbec nedajú: spomedzi porovnateľných rozdaní, ktoré solver rozhodol, sa asi jedno z desiatich ukázalo ako nemožné, a tieto sú tie ťažšie, ktoré rozhodnúť nedokázal. Prehra tu teda nemusí byť tvoja chyba - rozdanie možno jednoducho nemalo cestu von. Hraj ich pre súboj, nie pre štatistiku.</string>
+</resources>
