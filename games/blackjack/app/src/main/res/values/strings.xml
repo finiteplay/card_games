@@ -30,21 +30,13 @@
     <string name="hand_blackjack">Blackjack</string>
 
     <!-- A hand's result beneath it; %1$s is the signed chip change, such as +150 or −100. -->
-    <string name="outcome_blackjack">Blackjack %1$s</string>
-    <string name="outcome_win">Win %1$s</string>
-    <string name="outcome_loss">Lose %1$s</string>
-    <string name="outcome_bust">Bust %1$s</string>
     <string name="outcome_push">Push</string>
     <!-- The big banner over a settled round; a blackjack, a bust and a push use the hand outcome words above. -->
     <string name="banner_win">You win!</string>
     <string name="banner_lose">You lose</string>
 
     <!-- The round's net, and the insurance's own result. -->
-    <string name="summary_won">You won %1$d</string>
-    <string name="summary_lost">You lost %1$d</string>
     <string name="summary_even">Even</string>
-    <string name="summary_insurance_paid">Insurance paid %1$d</string>
-    <string name="summary_insurance_lost">Insurance lost %1$d</string>
 
     <!-- The offer made when the bankroll cannot cover the table minimum (RULES.md "Round Lifecycle"). -->
     <string name="reset_offer_title">Out of chips</string>

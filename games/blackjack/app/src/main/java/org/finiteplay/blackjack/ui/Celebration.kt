@@ -11,6 +11,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.DragHandle
+import androidx.compose.material.icons.filled.EmojiEvents
+import androidx.compose.material.icons.filled.SentimentVeryDissatisfied
+import androidx.compose.material.icons.filled.Shield
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -25,7 +34,9 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.liveRegion
@@ -37,9 +48,7 @@ import kotlinx.coroutines.launch
 import org.finiteplay.blackjack.R
 import org.finiteplay.blackjack.rules.HandOutcome
 import org.finiteplay.blackjack.rules.Settlement
-import org.finiteplay.core.ui.layout.BannerTone
 import org.finiteplay.core.ui.layout.ConfettiBurst
-import org.finiteplay.core.ui.layout.ResultBanner
 
 /** What a settled round is called on the big banner. */
 enum class ResultKind { BLACKJACK, WIN, PUSH, EVEN, BUST, LOSE }
@@ -61,18 +70,24 @@ fun resultKindOf(settlement: Settlement): ResultKind {
     }
 }
 
-/** How long the banner stays up before it clears the table. The summary line below stays. */
-internal const val BANNER_MS = 2_600L
+/** The pictogram a round's result is drawn as, and what colours it. */
+private fun ResultKind.icon(): ImageVector = when (this) {
+    ResultKind.BLACKJACK -> Icons.Filled.Star
+    ResultKind.WIN -> Icons.Filled.EmojiEvents
+    ResultKind.BUST, ResultKind.LOSE -> Icons.Filled.SentimentVeryDissatisfied
+    // Two bars: an equals sign for a round that came out level.
+    ResultKind.PUSH, ResultKind.EVEN -> Icons.Filled.DragHandle
+}
 
-private fun ResultKind.tone(): BannerTone = when (this) {
-    ResultKind.BLACKJACK -> BannerTone.GOLD
-    ResultKind.WIN -> BannerTone.WIN
-    ResultKind.BUST, ResultKind.LOSE -> BannerTone.LOSS
-    ResultKind.PUSH, ResultKind.EVEN -> BannerTone.NEUTRAL
+private fun ResultKind.tint(): Color = when (this) {
+    ResultKind.BLACKJACK -> Color(0xFFFFD54F)
+    ResultKind.WIN -> Color(0xFF7CE08F)
+    ResultKind.BUST, ResultKind.LOSE -> Color(0xFFFF8A80)
+    ResultKind.PUSH, ResultKind.EVEN -> Color(0xFFB0BEC5)
 }
 
 @Composable
-private fun bannerWord(kind: ResultKind): String = stringResource(
+private fun spokenResult(kind: ResultKind): String = stringResource(
     when (kind) {
         ResultKind.BLACKJACK -> R.string.hand_blackjack
         ResultKind.WIN -> R.string.banner_win
@@ -87,18 +102,19 @@ private fun bannerWord(kind: ResultKind): String = stringResource(
  * Everything that celebrates (or commiserates) a settled round, layered over the table and never
  * intercepting a touch — nothing here is modal (`UI_SPEC.md` "Settlement Presentation"):
  *
- * - the big banner, which pops in with a spring (and never shakes: a loss is shown plainly);
- * - confetti on a win, more of it for a blackjack, thrown from the banner;
- * - a brief red wash on a loss;
- * - the round's signed net, floating up toward the bankroll it is about to change.
+ * - the one result mark: a pictogram and the round's signed net, in the middle of the table's lower
+ *   half. It is the only place the result is stated, and it stays until the next round;
+ * - confetti on a win, more of it for a blackjack, thrown from the mark;
+ * - a brief red wash on a loss.
  *
- * With [animate] off (Skip Animations, or the system's reduced motion) the banner is simply there:
- * no spring, no shake, no confetti, no float.
+ * With [animate] off (Skip Animations, or the system's reduced motion) the mark is simply there: no
+ * spring, no confetti, no wash.
  */
 @Composable
 internal fun ResultCelebration(
     kind: ResultKind,
     net: Int,
+    insuranceDelta: Int,
     seed: Long,
     animate: Boolean,
     landscape: Boolean,
@@ -107,31 +123,73 @@ internal fun ResultCelebration(
     Box(modifier = modifier.fillMaxSize()) {
         if (animate && (kind == ResultKind.BUST || kind == ResultKind.LOSE)) LossWash()
         if (animate && (kind == ResultKind.WIN || kind == ResultKind.BLACKJACK)) ConfettiBurst(seed, if (kind == ResultKind.BLACKJACK) 84 else 44)
-        // Portrait: in the gap between the dealer's hand and the player's, so neither is covered. The
-        // table gives the dealer a third of its height and the player the rest from the middle down.
-        // Landscape puts the hands side by side, so the banner takes the middle.
+        // The middle of the lower half in portrait, below the player's hands; the middle of the table
+        // in landscape, where the hands sit side by side.
         Box(
-            modifier = Modifier.align(BiasAlignment(0f, if (landscape) 0f else BANNER_BIAS)),
+            modifier = Modifier.align(BiasAlignment(0f, if (landscape) 0f else MARK_BIAS)),
             contentAlignment = Alignment.Center,
         ) {
-            Banner(kind, net, animate)
-            if (animate && net != 0) FloatingNet(net)
+            ResultMark(kind, net, insuranceDelta, animate)
         }
     }
 }
 
-/** Where the banner sits vertically in portrait: -1 is the top of the table, 1 the bottom. */
-private const val BANNER_BIAS = -0.36f
+/** Where the mark sits vertically in portrait: -1 is the top of the table, 1 the bottom. */
+private const val MARK_BIAS = 0.62f
 
+/** The pictogram, the signed net and — when insurance was taken — a shield with its own signed result. */
 @Composable
-private fun Banner(kind: ResultKind, net: Int, animate: Boolean) {
-    ResultBanner(
-        word = bannerWord(kind),
-        tone = kind.tone(),
-        animate = animate,
-        amount = if (net == 0) null else signed(net),
-        amountPositive = net > 0,
-    )
+private fun ResultMark(kind: ResultKind, net: Int, insuranceDelta: Int, animate: Boolean) {
+    val scale = remember { Animatable(if (animate) 0.3f else 1f) }
+    val alpha = remember { Animatable(if (animate) 0f else 1f) }
+    LaunchedEffect(kind, net) {
+        if (!animate) return@LaunchedEffect
+        launch { alpha.animateTo(1f, tween(110)) }
+        launch { scale.animateTo(1f, spring(dampingRatio = 0.42f, stiffness = 260f)) }
+    }
+    val spoken = spokenResult(kind) + " " + signed(net)
+    Surface(
+        shape = RoundedCornerShape(36.dp),
+        color = Color.Black.copy(alpha = 0.62f),
+        border = BorderStroke(3.dp, kind.tint()),
+        modifier = Modifier
+            .scale(scale.value)
+            .alpha(alpha.value)
+            .semantics(mergeDescendants = true) {
+                contentDescription = spoken
+                liveRegion = LiveRegionMode.Polite
+            }
+            .testTag("result_mark"),
+    ) {
+        Column(
+            modifier = Modifier.padding(horizontal = 24.dp, vertical = 8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(kind.icon(), contentDescription = null, tint = kind.tint(), modifier = Modifier.size(52.dp).testTag("result_mark_icon"))
+                Text(
+                    text = signed(net),
+                    style = MaterialTheme.typography.displaySmall,
+                    fontWeight = FontWeight.ExtraBold,
+                    color = Color.White,
+                    maxLines = 1,
+                    modifier = Modifier.padding(start = 12.dp).testTag("result_mark_amount"),
+                )
+            }
+            if (insuranceDelta != 0) {
+                Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.testTag("result_mark_insurance")) {
+                    Icon(Icons.Filled.Shield, contentDescription = null, tint = Color(0xFFB0BEC5), modifier = Modifier.size(20.dp))
+                    Text(
+                        text = signed(insuranceDelta),
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = if (insuranceDelta > 0) Color(0xFF7CE08F) else Color(0xFFFF8A80),
+                        modifier = Modifier.padding(start = 4.dp),
+                    )
+                }
+            }
+        }
+    }
 }
 
 /** A short red wash across the table after a loss, fading out. */
@@ -140,24 +198,4 @@ private fun LossWash() {
     val wash = remember { Animatable(0.26f) }
     LaunchedEffect(Unit) { wash.animateTo(0f, tween(700)) }
     Box(modifier = Modifier.fillMaxSize().background(Color(0xFFB02F26).copy(alpha = wash.value)))
-}
-
-/** The round's signed net, rising from the banner toward the bankroll and fading as it arrives. */
-@Composable
-private fun FloatingNet(net: Int) {
-    val progress = remember { Animatable(0f) }
-    LaunchedEffect(net) {
-        kotlinx.coroutines.delay(700)
-        progress.animateTo(1f, tween(900))
-    }
-    if (progress.value <= 0f) return
-    Text(
-        text = signed(net),
-        style = MaterialTheme.typography.headlineLarge,
-        fontWeight = FontWeight.ExtraBold,
-        color = if (net > 0) Color(0xFF7CE08F) else Color(0xFFFF8A80),
-        modifier = Modifier
-            .offset(y = (-(60f + 260f * progress.value)).dp)
-            .alpha(1f - progress.value * progress.value),
-    )
 }

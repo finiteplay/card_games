@@ -167,14 +167,6 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
             )
         }
         val animate = viewModel.settings.animationsEnabled
-        // The banner and its celebration stay up for a moment once the results are shown, then clear the table.
-        var bannerDone by rememberSaveable(seed) { mutableStateOf(false) }
-        LaunchedEffect(seed, resultsShown) {
-            if (resultsShown && settledState != null && !bannerDone) {
-                delay(BANNER_MS)
-                bannerDone = true
-            }
-        }
         val table: @Composable (Modifier) -> Unit = { tableModifier ->
             Box(modifier = tableModifier) {
                 val state = round?.state
@@ -189,12 +181,10 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                     }
                 }
                 val result = settledState?.settlement
-                AnimatedVisibility(
-                    visible = resultsShown && result != null && !bannerDone,
-                    enter = EnterTransition.None,
-                    exit = if (animate) fadeOut(tween(300)) else ExitTransition.None,
-                ) {
-                    if (result != null) ResultCelebration(resultKindOf(result), result.total, seed ?: 0L, animate, landscape)
+                // The one place the result is stated: shown once the dealer's reveal has finished, and kept
+                // until the next round starts.
+                if (resultsShown && result != null) {
+                    ResultCelebration(resultKindOf(result), result.total, result.insuranceDelta, seed ?: 0L, animate, landscape)
                 }
             }
         }
@@ -209,7 +199,6 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                 ChipsHud(
                     bankroll = shownBankroll,
                     bet = staked ?: viewModel.selectedBet,
-                    lastDelta = settlement?.total,
                     animate = animate,
                 )
             }
@@ -219,7 +208,6 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                     Row(modifier = Modifier.fillMaxSize()) {
                         Column(modifier = Modifier.weight(1f).fillMaxSize()) {
                             table(Modifier.weight(1f))
-                            SummaryLine(settlement)
                             hud()
                         }
                         actionBar(BoardOrientation.LANDSCAPE)
@@ -229,7 +217,6 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                 Column(modifier = Modifier.fillMaxSize()) {
                     heading()
                     table(Modifier.weight(1f))
-                    SummaryLine(settlement)
                     hud()
                     actionBar(BoardOrientation.PORTRAIT)
                 }
@@ -274,47 +261,5 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
     }
     if (showSettings) {
         SettingsScreen(viewModel = viewModel, onClose = { showSettings = false })
-    }
-}
-
-/**
- * The round's net, once its results are shown (`UI_SPEC.md` "Settlement Presentation"): won, lost
- * or even, and the insurance's own result when it was taken.
- */
-@Composable
-private fun SummaryLine(settlement: Settlement?) {
-    Column(
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp).testTag("summary_line"),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(2.dp),
-    ) {
-        if (settlement == null) return@Column
-        val net = settlement.total
-        Text(
-            text = when {
-                net > 0 -> stringResource(R.string.summary_won, net)
-                net < 0 -> stringResource(R.string.summary_lost, -net)
-                else -> stringResource(R.string.summary_even)
-            },
-            style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.Bold,
-            color = when {
-                net > 0 -> LocalAppColors.current.action.new
-                net < 0 -> LocalAppColors.current.action.undo
-                else -> MaterialTheme.colorScheme.onBackground
-            },
-            textAlign = TextAlign.Center,
-            modifier = Modifier.testTag("summary_net"),
-        )
-        val insurance = settlement.insuranceDelta
-        if (insurance != 0) {
-            Text(
-                text = if (insurance > 0) stringResource(R.string.summary_insurance_paid, insurance)
-                else stringResource(R.string.summary_insurance_lost, -insurance),
-                style = MaterialTheme.typography.labelMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.testTag("summary_insurance"),
-            )
-        }
     }
 }

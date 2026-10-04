@@ -136,13 +136,13 @@ internal fun rollingCount(target: Int, animate: Boolean): Int =
 
 /**
  * The bankroll and the bet as two big pills (`UI_SPEC.md` "Status row"). The bankroll counts up or
- * down to its new figure when a round's result is shown, and the bet pops when it changes. The text
+ * down to its new figure when a round's result is shown, and the bet pops when it changes. It states
+ * no result of its own: the round's signed net is on the result mark, once. The text
  * the old status row printed is still this row's accessibility description, tagged `status_row`.
  */
 @Composable
-internal fun ChipsHud(bankroll: Int, bet: Int, lastDelta: Int?, animate: Boolean, modifier: Modifier = Modifier) {
-    val spoken = stringResource(R.string.status_chips, bankroll) + "\n" + stringResource(R.string.status_bet, bet) +
-        (lastDelta?.let { "  " + signed(it) } ?: "")
+internal fun ChipsHud(bankroll: Int, bet: Int, animate: Boolean, modifier: Modifier = Modifier) {
+    val spoken = stringResource(R.string.status_chips, bankroll) + "\n" + stringResource(R.string.status_bet, bet)
     val shownBankroll = rollingCount(bankroll, animate)
     val pop = remember { Animatable(1f) }
     LaunchedEffect(bet) {
@@ -186,15 +186,6 @@ internal fun ChipsHud(bankroll: Int, bet: Int, lastDelta: Int?, animate: Boolean
                 maxLines = 1,
                 modifier = Modifier.padding(start = 8.dp).testTag("bet_value"),
             )
-            if (lastDelta != null && lastDelta != 0) {
-                Text(
-                    text = signed(lastDelta),
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    color = if (lastDelta > 0) Color(0xFF7CE08F) else Color(0xFFFF8A80),
-                    modifier = Modifier.padding(start = 8.dp),
-                )
-            }
         }
     }
 }

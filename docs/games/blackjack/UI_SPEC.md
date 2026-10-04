@@ -134,30 +134,22 @@ is counted: there is no hints statistic, since the hint proves nothing (`DESIGN.
 ## Settlement Presentation
 
 Settlement is a transaction (`RULES.md` "Round Lifecycle") and is presented as a result, not a win
-dialog — there is no larger game that has been won. It is presented *loudly*, though, as the round's
-payoff: a banner and, on a win, confetti, none of it ever blocking the table.
+dialog — there is no larger game that has been won.
 
-- **The banner.** Once the results are shown, a large banner names the round in the gap between the
-  dealer's hand and the player's (in the middle in landscape): `You win!` with the net in large
-  figures, `Blackjack` for a win that includes a natural, `You lose`, `Bust` for a lost round in
-  which every hand went over, `Push` for a round in which every hand tied, and `Even` for any other
-  round that nets nothing. It is chosen from the round's net, not one hand: a split round that wins
-  one hand and loses a bigger one is a loss. It is green, dark gold, red, or slate with white type,
-  announced to a screen reader as a polite live region, and gone after about 2.6 seconds; the
-  summary line below stays. It never intercepts a touch.
-- **Celebration.** The banner springs in. A win throws confetti from it, more for a blackjack; a
-  loss washes the table red for a moment; the net floats up toward the bankroll as it counts to its
-  new figure. The banner does not shake. Under Skip Animations or system reduced motion the banner
-  is simply there for the same time, with none of the rest.
-- Nothing modal. The table stays in place, every card face up, and each hand's result sits beneath
-  its total badge: `Blackjack +150`, `Win +100`, `Push`, `Lose −100`, `Bust −100`. A doubled hand
-  shows its doubled stake.
-- Each hand's result is set in larger bold type than its total. A summary line above the action bar states the round's net — `You won 150`, `You lost 100`, or
-  `Even` — and, when insurance was taken, its own result (`Insurance paid 100` / `Insurance lost
-  50`). The status row shows the same net as its signed delta.
-- The dealer's draws are paced (**Motion**, below). Results appear only after the dealer's last card
-  has been shown; a player's bust is the exception only in that the bust badge appears at once,
-  since the hand is over at that card (`RULES.md` "Settlement").
+- **One result, stated once.** A single *result mark* sits in the middle of the table's lower half
+  (in landscape, the middle of the table): a pictogram and the round's signed net, with no words —
+  a trophy and `+10` for a win, a star and `+15` for a blackjack, a dissatisfied face and `−10` for
+  a loss or a bust, an equals sign and `0` for a push or an even round. The sign is always printed, so
+  colour is never the only cue. When insurance was taken a small shield with its own signed result
+  sits beneath. The words ("You win!", "Bust"…) are its spoken description only. It is not modal, and
+  it stays until the next round.
+- **Nowhere else.** The hands carry no per-hand result, there is no summary line, and the chips
+  display shows no delta: the bankroll simply counts to its new figure.
+- A win throws confetti from the mark, more for a blackjack; a loss washes the table red briefly.
+  Skip Animations leaves just the mark.
+- The dealer's draws are paced (**Motion**, below). The mark appears only after the dealer's last
+  card has been shown; a player's bust is the exception only in that the hand's `Bust` total badge
+  appears at once, since the hand is over at that card (`RULES.md` "Settlement").
 - A win plays the shared win sound when the net is positive. Pushes and losses are silent.
 
 ## The Reset Offer

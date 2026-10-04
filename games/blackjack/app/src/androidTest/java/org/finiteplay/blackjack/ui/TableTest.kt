@@ -111,7 +111,7 @@ class TableTest {
 
     private fun present(tag: String) = composeRule.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty()
 
-    private fun waitForResults() = composeRule.waitUntil(8_000) { present("summary_net") }
+    private fun waitForResults() = composeRule.waitUntil(8_000) { present("result_mark") }
 
     @Test
     fun anIdleTableOffersTheBetStepperAndDealAndNothingElse() {
@@ -151,7 +151,7 @@ class TableTest {
         waitForResults()
         assertEquals(Chips.STARTING_BANKROLL, viewModel.bankroll)
         assertEquals(HandOutcome.PUSH, viewModel.session!!.state.settlement!!.hands[0].outcome)
-        composeRule.onNodeWithTag("hand_0_result").assertIsDisplayed()
+        composeRule.onNodeWithTag("result_mark").assertIsDisplayed()
     }
 
     @Test
@@ -199,7 +199,7 @@ class TableTest {
         waitForResults()
         // The hand loses its stake and the insurance pays 2:1 on half of it: even.
         assertEquals(Chips.STARTING_BANKROLL, viewModel.bankroll)
-        assertEquals(true, present("summary_insurance"))
+        assertEquals(true, composeRule.onAllNodesWithTag("result_mark_insurance", useUnmergedTree = true).fetchSemanticsNodes().isNotEmpty())
     }
 
     @Test
@@ -261,7 +261,7 @@ class TableTest {
         tap("action_deal")
         tap("action_stand")
         waitForResults()
-        composeRule.onNodeWithTag("summary_net").assertIsDisplayed()
+        composeRule.onNodeWithTag("result_mark").assertIsDisplayed()
     }
 
     @Test
@@ -271,63 +271,65 @@ class TableTest {
         tap("action_deal")
         tap("action_stand")
         // The settlement is already computed and paid, but nothing about it is shown yet.
-        assertEquals(false, present("summary_net"))
+        assertEquals(false, present("result_mark"))
         waitForResults()
         assertEquals(5, viewModel.session!!.state.dealer.size)
     }
 
-    private fun assertBanner(word: String, amount: String?) {
-        composeRule.onNodeWithTag("result_banner").assertIsDisplayed()
-        composeRule.onNodeWithTag("result_banner_word", useUnmergedTree = true).assertTextEquals(word)
-        if (amount == null) assertEquals("a push has no amount", false, composeRule.onAllNodesWithTag("result_banner_amount", useUnmergedTree = true).fetchSemanticsNodes().isNotEmpty())
-        else composeRule.onNodeWithTag("result_banner_amount", useUnmergedTree = true).assertTextEquals(amount)
+    /** The one result mark: a pictogram and the signed net, with no words on screen. */
+    private fun assertMark(amount: String) {
+        composeRule.onNodeWithTag("result_mark").assertIsDisplayed()
+        composeRule.onNodeWithTag("result_mark_icon", useUnmergedTree = true).assertIsDisplayed()
+        composeRule.onNodeWithTag("result_mark_amount", useUnmergedTree = true).assertTextEquals(amount)
+        // The result is stated once: no per-hand result, no summary line, no second figure beside the bet.
+        assertEquals(false, present("hand_0_result"))
+        assertEquals(false, present("summary_line"))
+        assertEquals(1, composeRule.onAllNodesWithTag("result_mark").fetchSemanticsNodes().size)
     }
 
     @Test
-    fun aWinShowsABigBannerWithItsNetAndThenClearsTheTable() {
+    fun aWinShowsOneMarkWithItsSignedNetAndItStaysForTheRound() {
         // 19 against a dealer 16 that draws a King and busts.
         showTable(shoeOf("TC", "6D", "9H", "TS", "KS"))
         tap("action_deal")
         tap("action_stand")
         waitForResults()
-        assertBanner("You win!", "+10")
-        // It is not modal: the table's own controls are still there under it, and it goes by itself.
+        assertMark("+10")
+        // It is not modal: the table's own controls are still there under it.
         composeRule.onNodeWithTag("action_deal").assertIsEnabled()
-        composeRule.waitUntil(8_000) { !present("result_banner") }
-        composeRule.onNodeWithTag("summary_net").assertIsDisplayed()
     }
 
     @Test
-    fun aLossShowsALoseBannerWithTheChipsLost() {
+    fun aLossShowsTheMarkWithTheChipsLost() {
         showTable(shoeOf("TC", "TD", "8H", "9S"))
         tap("action_deal")
         tap("action_stand")
         waitForResults()
-        assertBanner("You lose", "−10")
+        assertMark("−10")
     }
 
     @Test
-    fun aPushShowsAPushBannerAndNoAmount() {
+    fun aPushShowsTheMarkWithZero() {
         showTable(shoeOf("9C", "TD", "8H", "7S"))
         tap("action_deal")
         tap("action_stand")
         waitForResults()
-        assertBanner("Push", null)
+        assertMark("0")
     }
 
     @Test
-    fun aNaturalShowsABlackjackBannerPayingThreeToTwo() {
+    fun aNaturalShowsTheMarkPayingThreeToTwo() {
         showTable(shoeOf("AC", "9D", "KH", "7S"))
         tap("action_deal")
         waitForResults()
-        assertBanner("Blackjack", "+15")
+        assertMark("+15")
     }
 
     @Test
-    fun noBannerIsShownWhileTheRoundIsStillBeingPlayed() {
+    fun noMarkIsShownWhileTheRoundIsStillBeingPlayed() {
         showTable(shoeOf("9C", "TD", "8H", "7S"))
         tap("action_deal")
-        assertEquals(false, present("result_banner"))
+        assertEquals(false, present("result_mark"))
     }
 
     @Test

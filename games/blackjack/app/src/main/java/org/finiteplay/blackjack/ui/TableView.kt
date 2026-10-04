@@ -216,24 +216,7 @@ fun PlayerHandView(
                 )
             }
         }
-        if (result != null) {
-            Text(
-                text = resultText(result),
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.ExtraBold,
-                color = resultColor(result),
-                textAlign = TextAlign.Center,
-                modifier = Modifier.testTag("hand_${index}_result"),
-            )
-        }
     }
-}
-
-@Composable
-private fun resultColor(result: HandResult): Color = when (result.outcome) {
-    HandOutcome.BLACKJACK, HandOutcome.WIN -> LocalAppColors.current.action.new
-    HandOutcome.PUSH -> MaterialTheme.colorScheme.onSurfaceVariant
-    HandOutcome.LOSS, HandOutcome.BUST -> LocalAppColors.current.action.undo
 }
 
 /** `+150`, `−100`, `0`: the sign is always printed, so colour is never the only cue. */
@@ -241,15 +224,6 @@ fun signed(amount: Int): String = when {
     amount > 0 -> "+$amount"
     amount < 0 -> "−${-amount}"
     else -> "0"
-}
-
-@Composable
-fun resultText(result: HandResult): String = when (result.outcome) {
-    HandOutcome.BLACKJACK -> stringResource(R.string.outcome_blackjack, signed(result.delta))
-    HandOutcome.WIN -> stringResource(R.string.outcome_win, signed(result.delta))
-    HandOutcome.PUSH -> stringResource(R.string.outcome_push)
-    HandOutcome.LOSS -> stringResource(R.string.outcome_loss, signed(result.delta))
-    HandOutcome.BUST -> stringResource(R.string.outcome_bust, signed(result.delta))
 }
 
 /** The dealer: one hand, with the hole card face down until it has been turned over. */
