@@ -6,6 +6,7 @@ import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
+import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.performClick
 import androidx.test.platform.app.InstrumentationRegistry
@@ -374,16 +375,20 @@ class TableTest {
     }
 
     @Test
-    fun hintShowsBasicStrategyAndIsNeverAnActionThatIsNotOffered() {
+    fun hintHighlightsTheButtonToPressAndIsNeverAnActionThatIsNotOffered() {
         showTable(shoeOf("9C", "TD", "8H", "7S"))
         assertEquals(false, present("action_hint"))
         tap("action_deal")
+        assertEquals("nothing is suggested until Hint is pressed", null, handState("action_stand"))
         tap("action_hint")
-        composeRule.onNodeWithTag("hint_notice").assertIsDisplayed()
         assertEquals(org.finiteplay.blackjack.rules.Decision.STAND, viewModel.hint)
         assertEquals(true, viewModel.hint in viewModel.legal)
-        tap("action_stand")
+        // 17 against a ten: Stand is the suggestion, and only Stand is marked — by a state a screen reader reads.
+        assertEquals("Suggested", handState("action_stand"))
+        assertEquals(null, handState("action_hit"))
         assertEquals(false, present("hint_notice"))
+        tap("action_stand")
+        assertEquals(null, handState("action_stand"))
     }
 
     private fun handState(tag: String): String? =
@@ -416,5 +421,18 @@ class TableTest {
         showTable(shoeOf("9C", "TD", "8H", "7S"), animations = false)
         tap("action_deal")
         assertEquals("settled", handState("hand_0_cards"))
+    }
+
+    @Test
+    fun helpHasARulesTabAndASeparateStrategyTab() {
+        showTable(shoeOf("TC", "TD", "8H", "8S"))
+        tap("help_button")
+        composeRule.onNodeWithTag("help_screen").assertIsDisplayed()
+        composeRule.onNodeWithTag("help_tab_rules").assertIsDisplayed()
+        // Each decision has its own heading on the rules page.
+        composeRule.onNodeWithText("Hit").assertIsDisplayed()
+        composeRule.onNodeWithTag("help_tab_strategy").performClick()
+        composeRule.waitForIdle()
+        composeRule.onNodeWithText("Never take insurance.", substring = true).assertIsDisplayed()
     }
 }

@@ -5,6 +5,7 @@
     <string name="action_replay">שחק שוב</string>
     <string name="action_new">חדש</string>
     <string name="action_hint">רמז</string>
+    <string name="action_suggested">מומלץ</string>
     <string name="action_undo">בטל</string>
     <string name="action_close">סגור</string>
     <string name="action_dismiss">התעלם</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">לא שוחקה</string>
     <string name="deal_status_played">שוחקה</string>
     <string name="deal_status_won">נוצחה</string>
+    <string name="deal_moves_best">מהלכים, הטוב ביותר: %1$d</string>
+    <string name="deal_moves_last">מהלכים, אחרון: %1$d</string>
+    <string name="win_banner">ניצחת!</string>
     <string name="deal_filter_all">הכול</string>
     <string name="deal_picker_empty">אין חלוקות שמתאימות למסנן.</string>
     <string name="deal_current">נוכחית</string>

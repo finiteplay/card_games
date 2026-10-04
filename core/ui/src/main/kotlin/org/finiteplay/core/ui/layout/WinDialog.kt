@@ -80,6 +80,13 @@ fun WinDialog(
         confirmButton = { TextButton(onClick = onNewGame) { Text(stringResource(R.string.action_new_game)) } },
         dismissButton = { TextButton(onClick = onReplay) { Text(stringResource(R.string.action_replay)) } },
     )
+    // The banner and the confetti are a window of their own above the dialog, so neither is dimmed by its
+    // scrim nor in the way of its buttons. It is composed after the dialog because a later window sits
+    // above an earlier one. The banner stays for as long as the dialog is up; the same win throws the same
+    // confetti, and under Skip Animations there is the banner alone, with no motion.
+    CelebrationOverlay(seed = moveCount * 31L + elapsedSeconds, confetti = !skipAnimations) {
+        ResultBanner(word = stringResource(R.string.win_banner), tone = BannerTone.WIN, animate = !skipAnimations)
+    }
 }
 
 @Composable

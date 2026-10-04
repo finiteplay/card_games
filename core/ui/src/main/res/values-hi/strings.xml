@@ -5,6 +5,7 @@
     <string name="action_replay">फिर से खेलें</string>
     <string name="action_new">नया</string>
     <string name="action_hint">संकेत</string>
+    <string name="action_suggested">सुझाया गया</string>
     <string name="action_undo">पूर्ववत करें</string>
     <string name="action_close">बंद करें</string>
     <string name="action_dismiss">खारिज करें</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">खेला नहीं</string>
     <string name="deal_status_played">खेला गया</string>
     <string name="deal_status_won">जीता</string>
+    <string name="deal_moves_best">चालें, सर्वश्रेष्ठ: %1$d</string>
+    <string name="deal_moves_last">चालें, पिछली: %1$d</string>
+    <string name="win_banner">आप जीते!</string>
     <string name="deal_filter_all">सभी</string>
     <string name="deal_picker_empty">इस फ़िल्टर से कोई बँटवारा मेल नहीं खाता।</string>
     <string name="deal_current">वर्तमान</string>

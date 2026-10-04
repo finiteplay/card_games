@@ -5,6 +5,7 @@
     <string name="action_replay">重玩</string>
     <string name="action_new">新建</string>
     <string name="action_hint">提示</string>
+    <string name="action_suggested">建议</string>
     <string name="action_undo">撤销</string>
     <string name="action_close">关闭</string>
     <string name="action_dismiss">忽略</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">未玩</string>
     <string name="deal_status_played">已玩</string>
     <string name="deal_status_won">已赢</string>
+    <string name="deal_moves_best">步数，最佳：%1$d</string>
+    <string name="deal_moves_last">步数，上次：%1$d</string>
+    <string name="win_banner">你赢了！</string>
     <string name="deal_filter_all">全部</string>
     <string name="deal_picker_empty">没有符合筛选条件的牌局。</string>
     <string name="deal_current">当前</string>

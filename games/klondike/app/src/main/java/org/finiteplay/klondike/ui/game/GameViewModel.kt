@@ -67,7 +67,9 @@ import org.finiteplay.klondike.storage.TraversalLoadResult
 import org.finiteplay.klondike.storage.computeStatistics
 import org.finiteplay.core.session.solutionRatioPercent
 import org.finiteplay.core.storage.DealProgressStore
+import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
+import org.finiteplay.core.storage.advancedBy
 import org.finiteplay.klondike.storage.filterByDrawMode
 import org.finiteplay.klondike.storage.filterByPeriod
 import org.finiteplay.klondike.storage.shouldRunTimer
@@ -292,10 +294,13 @@ class GameViewModel(
      * share one — so no level needs recording beside it. Draw-three's random shuffles are not a
      * list a player can choose from and are not tracked.
      */
-    var dealProgress by mutableStateOf<Map<Long, DealStatus>>(emptyMap())
+    var dealProgress by mutableStateOf<Map<Long, DealProgress>>(emptyMap())
         private set
 
-    /** Raises the active deal's progress: played once the player has acted on it, won once it is. */
+    /**
+     * Raises the active deal's progress: played once the player has acted on it, won once it is, and
+     * keeps the moves with it — the fewest of any win, or those of the game last played.
+     */
     private fun syncDealProgress() {
         val state = session.state
         if (state.drawMode != DrawMode.ONE) return
@@ -305,10 +310,11 @@ class GameViewModel(
             else -> return
         }
         val old = dealProgress[state.seed]
-        if (old != null && old.ordinal >= reached.ordinal) return
-        dealProgress = dealProgress + (state.seed to reached)
+        val updated = old.advancedBy(reached, state.moveCount)
+        if (updated == old) return
+        dealProgress = dealProgress + (state.seed to updated)
         val store = dealProgressStore ?: return
-        viewModelScope.launch { store.mark(state.seed, reached) }
+        viewModelScope.launch { store.mark(state.seed, reached, state.moveCount) }
     }
 
     /**
@@ -319,7 +325,7 @@ class GameViewModel(
     val dealPickerCount: Int? get() = dealDifficulty?.let { activeSeedsFor(it).size }
 
     /** [dealProgress] for the picker's level, keyed by the deal numbers the picker lists. */
-    fun dealPickerProgress(): Map<Int, DealStatus> {
+    fun dealPickerProgress(): Map<Int, DealProgress> {
         val tier = dealDifficulty ?: return emptyMap()
         return buildMap {
             activeSeedsFor(tier).forEachIndexed { index, deal -> dealProgress[deal]?.let { put(index + 1, it) } }
@@ -354,7 +360,7 @@ class GameViewModel(
         recordAbandonmentIfNeeded()
         seed = chosen
         gameId = UUID.randomUUID().toString()
-        currentGameCountsForStatistics = dealProgress[chosen] != DealStatus.WON
+        currentGameCountsForStatistics = dealProgress[chosen]?.status != DealStatus.WON
         resetTo(startSession(chosen, initialAutomaticMovesEnabledForCurrentDeal, DrawMode.ONE))
     }
 

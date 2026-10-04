@@ -5,6 +5,7 @@
     <string name="action_replay">เล่นซ้ำ</string>
     <string name="action_new">ใหม่</string>
     <string name="action_hint">คำใบ้</string>
+    <string name="action_suggested">แนะนำ</string>
     <string name="action_undo">เลิกทำ</string>
     <string name="action_close">ปิด</string>
     <string name="action_dismiss">ข้าม</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">ยังไม่ได้เล่น</string>
     <string name="deal_status_played">เล่นแล้ว</string>
     <string name="deal_status_won">ชนะแล้ว</string>
+    <string name="deal_moves_best">การเดิน, ดีที่สุด: %1$d</string>
+    <string name="deal_moves_last">การเดิน, ล่าสุด: %1$d</string>
+    <string name="win_banner">คุณชนะ!</string>
     <string name="deal_filter_all">ทั้งหมด</string>
     <string name="deal_picker_empty">ไม่มีกระดานที่ตรงกับตัวกรอง</string>
     <string name="deal_current">ปัจจุบัน</string>

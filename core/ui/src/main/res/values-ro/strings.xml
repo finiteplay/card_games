@@ -5,6 +5,7 @@
     <string name="action_replay">Reluare</string>
     <string name="action_new">Nou</string>
     <string name="action_hint">Indiciu</string>
+    <string name="action_suggested">Sugerat</string>
     <string name="action_undo">Înapoi</string>
     <string name="action_close">Închide</string>
     <string name="action_dismiss">Ignoră</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">Nejucată</string>
     <string name="deal_status_played">Jucată</string>
     <string name="deal_status_won">Câștigată</string>
+    <string name="deal_moves_best">Mutări, cel mai bun: %1$d</string>
+    <string name="deal_moves_last">Mutări, ultimul: %1$d</string>
+    <string name="win_banner">Ai câștigat!</string>
     <string name="deal_filter_all">Toate</string>
     <string name="deal_picker_empty">Nicio împărțire nu se potrivește filtrului.</string>
     <string name="deal_current">Curentă</string>

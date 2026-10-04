@@ -5,6 +5,7 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
+import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
 import org.finiteplay.freecell.rules.legalMoves
 import org.junit.After
@@ -23,7 +24,7 @@ class FreeCellDealProgressTest {
     @Test
     fun `a dealt board nobody has touched has no progress`() {
         val viewModel = FreeCellViewModel(initialSeed = 7L)
-        assertEquals(emptyMap<Long, DealStatus>(), viewModel.dealProgress)
+        assertEquals(emptyMap<Long, DealProgress>(), viewModel.dealProgress)
     }
 
     @Test
@@ -33,7 +34,8 @@ class FreeCellDealProgressTest {
 
         viewModel.dragMove(legalMoves(viewModel.session.state).first())
 
-        assertEquals(DealStatus.PLAYED, viewModel.dealProgress[seed])
+        assertEquals(DealStatus.PLAYED, viewModel.dealProgress[seed]?.status)
+        assertEquals(viewModel.session.state.moveCount, viewModel.dealProgress.getValue(seed).moves)
     }
 
     @Test

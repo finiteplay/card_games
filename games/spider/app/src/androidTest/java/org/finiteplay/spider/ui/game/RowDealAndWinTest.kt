@@ -6,6 +6,8 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
+import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.performClick
 import org.finiteplay.cards.Card
 import org.finiteplay.cards.Rank
@@ -132,6 +134,34 @@ class RowDealAndWinTest {
         assertEquals(GameStatus.WON, viewModel.session.state.status)
         assertEquals(8, viewModel.session.state.banked.getValue(Suit.SPADES))
         composeRule.onNodeWithTag("win_dialog").assertIsDisplayed()
+    }
+
+    @Test
+    fun theWinConfettiNeverBlocksTheWinDialogsButtons() {
+        // Confetti is a second, transparent window over the win dialog. It must pass every touch
+        // through, or the player could not start another game while it falls.
+        val run = (Rank.KING.value downTo Rank.TWO.value).map { Card(Suit.SPADES, Rank.entries.first { r -> r.value == it }) }
+        val blocker = listOf(Card(Suit.SPADES, Rank.KING))
+        val state = boardOf(
+            columns = listOf(run, listOf(Card(Suit.SPADES, Rank.ACE))) + List(TABLEAU_COLUMNS - 2) { blocker },
+            banked = 7,
+            stockRows = 0,
+        )
+        setContent(state)
+        composeRule.onNodeWithTag("card_1_0").performClick()
+        composeRule.waitForIdle()
+        composeRule.onNodeWithTag("win_dialog").assertIsDisplayed()
+        // The win banner is up beside the dialog, and stays up for as long as the dialog does.
+        composeRule.onNodeWithTag("result_banner").assertIsDisplayed()
+        composeRule.mainClock.advanceTimeBy(10_000)
+        composeRule.onNodeWithTag("result_banner").assertIsDisplayed()
+
+        // Straight away, while the confetti is still in the air.
+        composeRule.onNodeWithText("New Game").performClick()
+        composeRule.waitForIdle()
+
+        assertEquals(0, composeRule.onAllNodesWithTag("win_dialog").fetchSemanticsNodes().size)
+        assertEquals("the banner goes with the dialog", 0, composeRule.onAllNodesWithTag("result_banner").fetchSemanticsNodes().size)
     }
 
     @Test

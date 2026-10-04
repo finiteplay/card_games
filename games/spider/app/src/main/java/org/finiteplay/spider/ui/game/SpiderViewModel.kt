@@ -62,7 +62,9 @@ import org.finiteplay.spider.storage.SpiderSettingsStore
 import org.finiteplay.spider.storage.SpiderTraversalStore
 import org.finiteplay.spider.storage.SpiderStatistics
 import org.finiteplay.core.storage.DealProgressStore
+import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
+import org.finiteplay.core.storage.advancedBy
 import org.finiteplay.spider.storage.computeSpiderStatistics
 import kotlin.random.Random
 import kotlin.time.Duration.Companion.seconds
@@ -204,10 +206,13 @@ class SpiderViewModel(
      * Which deals have been played and won, by seed. Seeds are derived per suit count, so a seed
      * names a board at one suit count only and no suit count needs recording beside it.
      */
-    var dealProgress by mutableStateOf<Map<Long, DealStatus>>(emptyMap())
+    var dealProgress by mutableStateOf<Map<Long, DealProgress>>(emptyMap())
         private set
 
-    /** Raises the active deal's progress: played once the player has moved, won once it is. */
+    /**
+     * Raises the active deal's progress: played once the player has moved, won once it is, and keeps
+     * the moves with it — the fewest of any win, or those of the game last played.
+     */
     private fun syncDealProgress() {
         val state = session.state
         val reached = when {
@@ -216,10 +221,11 @@ class SpiderViewModel(
             else -> return
         }
         val old = dealProgress[state.seed]
-        if (old != null && old.ordinal >= reached.ordinal) return
-        dealProgress = dealProgress + (state.seed to reached)
+        val updated = old.advancedBy(reached, state.moveCount)
+        if (updated == old) return
+        dealProgress = dealProgress + (state.seed to updated)
         val store = dealProgressStore ?: return
-        viewModelScope.launch { store.mark(state.seed, reached) }
+        viewModelScope.launch { store.mark(state.seed, reached, state.moveCount) }
     }
 
     /**
@@ -231,7 +237,7 @@ class SpiderViewModel(
         get() = certifiedCatalog?.seedsFor(session.state.suitCount)?.size ?: UNCERTIFIED_PICKER_DEALS
 
     /** [dealProgress] for the active suit count, keyed by the deal numbers the picker lists. */
-    fun dealPickerProgress(): Map<Int, DealStatus> {
+    fun dealPickerProgress(): Map<Int, DealProgress> {
         val suitCount = session.state.suitCount
         return buildMap {
             for (number in 1..dealPickerCount) dealProgress[seedFor(suitCount, number)]?.let { put(number, it) }

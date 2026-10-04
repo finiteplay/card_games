@@ -59,7 +59,7 @@ Modal screens pause the timer. Android back closes the current modal before leav
 
 One line in landscape, two in portrait: the title at the leading edge, then the hand number and
 the moves and timer, centered in the space the title leaves — the same shape as Klondike's own
-status row, minus the difficulty span (FreeCell has nothing to put there). The number is the one link: FreeCell has no difficulty or suit-count level to pick, so it opens the deal picker alone. The deal number is a link to the **deal picker** (`core:ui`'s `DealPickerDialog`): a list of the certified catalog's deals, each marked *not played*, *played* or *won*, opening scrolled to the deal on screen, with a filter by those states. Picking one starts it, asking first, as New Game does, when the game on screen has been played and is unfinished — and recording the same loss. Picking the deal already on screen does nothing. *Played* is a first move, not a result; *won* is never undone by playing the deal again. Progress is kept per seed (`core:storage`'s `DealProgressStore`), cleared by Reset Statistics, and does not reach back before it was introduced: games finished earlier are not marked. The hand number is the active seed's stable position in the certified catalog
+status row, minus the difficulty span (FreeCell has nothing to put there). The number is the one link: FreeCell has no difficulty or suit-count level to pick, so it opens the deal picker alone. The deal number is a link to the **deal picker** (`core:ui`'s `DealPickerDialog`): a list of the certified catalog's deals, each marked *not played*, *played* or *won*, Each row also states its moves: the **fewest moves of any win** for a won deal, and the **moves of the game last played** for one not won yet (`DealProgress`); a deal whose moves are unknown shows none. It opens scrolled to the deal on screen, with a filter by those states. Picking one starts it, asking first, as New Game does, when the game on screen has been played and is unfinished — and recording the same loss. Picking the deal already on screen does nothing. *Played* is a first move, not a result; *won* is never undone by playing the deal again. Progress is kept per seed (`core:storage`'s `DealProgressStore`), cleared by Reset Statistics, and does not reach back before it was introduced: games finished earlier are not marked. The hand number is the active seed's stable position in the certified catalog
 (`FreeCellViewModel.dealNumber`, `DEALS.md` "App integration"), the same shape as Klondike's and
 Spider's own numbered deals.
 
@@ -174,3 +174,6 @@ Stop the timer when all 52 cards reach the foundations, or when the automatic fi
 whichever comes first. Show completion time, move count, relevant personal bests, and New
 Game/Replay actions. Record the win exactly once, even after rotation, restoration, or repeated
 presentation.
+
+The win is announced as well as shown: a large *You win!* banner and confetti over the dialog, the
+banner staying until the dialog is closed (`docs/PLATFORM.md` "Win Celebration").

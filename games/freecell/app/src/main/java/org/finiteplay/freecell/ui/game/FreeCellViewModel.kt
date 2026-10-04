@@ -54,7 +54,9 @@ import org.finiteplay.freecell.storage.FreeCellSettingsStore
 import org.finiteplay.freecell.storage.FreeCellTraversalStore
 import org.finiteplay.freecell.storage.FreeCellStatistics
 import org.finiteplay.core.storage.DealProgressStore
+import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
+import org.finiteplay.core.storage.advancedBy
 import org.finiteplay.freecell.storage.computeFreeCellStatistics
 import org.finiteplay.freecell.solver.HINT_SOLVER_LIMITS
 import org.finiteplay.freecell.solver.HintEngine
@@ -259,10 +261,13 @@ class FreeCellViewModel(
     }
 
     /** Which deals have been played and won, by seed. */
-    var dealProgress by mutableStateOf<Map<Long, DealStatus>>(emptyMap())
+    var dealProgress by mutableStateOf<Map<Long, DealProgress>>(emptyMap())
         private set
 
-    /** Raises the active deal's progress: played once the player has acted on it, won once it is. */
+    /**
+     * Raises the active deal's progress: played once the player has acted on it, won once it is, and
+     * keeps the moves with it — the fewest of any win, or those of the game last played.
+     */
     private fun syncDealProgress() {
         val state = session.state
         val reached = when {
@@ -271,17 +276,18 @@ class FreeCellViewModel(
             else -> return
         }
         val old = dealProgress[state.seed]
-        if (old != null && old.ordinal >= reached.ordinal) return
-        dealProgress = dealProgress + (state.seed to reached)
+        val updated = old.advancedBy(reached, state.moveCount)
+        if (updated == old) return
+        dealProgress = dealProgress + (state.seed to updated)
         val store = dealProgressStore ?: return
-        viewModelScope.launch { store.mark(state.seed, reached) }
+        viewModelScope.launch { store.mark(state.seed, reached, state.moveCount) }
     }
 
     /** How many deals the picker lists: the whole certified catalog, or null before it has loaded (no picker then). */
     val dealPickerCount: Int? get() = certifiedCatalog?.seeds?.size
 
     /** [dealProgress] keyed by the deal numbers the picker lists. */
-    fun dealPickerProgress(): Map<Int, DealStatus> {
+    fun dealPickerProgress(): Map<Int, DealProgress> {
         val seeds = certifiedCatalog?.seeds ?: return emptyMap()
         return buildMap {
             seeds.forEachIndexed { index, seed -> dealProgress[seed]?.let { put(index + 1, it) } }

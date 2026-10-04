@@ -6,6 +6,7 @@
     <string name="action_replay">Powtórz</string>
     <string name="action_new">Nowa</string>
     <string name="action_hint">Podpowiedź</string>
+    <string name="action_suggested">Sugerowane</string>
     <string name="action_undo">Cofnij</string>
     <string name="action_close">Zamknij</string>
     <string name="action_dismiss">Odrzuć</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">Nie grano</string>
     <string name="deal_status_played">Grano</string>
     <string name="deal_status_won">Wygrano</string>
+    <string name="deal_moves_best">Ruchy, najlepszy: %1$d</string>
+    <string name="deal_moves_last">Ruchy, ostatni: %1$d</string>
+    <string name="win_banner">Wygrana!</string>
     <string name="deal_filter_all">Wszystkie</string>
     <string name="deal_picker_empty">Żadne rozdanie nie pasuje do filtra.</string>
     <string name="deal_current">Bieżące</string>

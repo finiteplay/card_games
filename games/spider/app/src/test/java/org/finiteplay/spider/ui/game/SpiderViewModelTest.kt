@@ -9,6 +9,7 @@ import org.finiteplay.spider.layout.SpiderState
 import org.finiteplay.spider.layout.SuitCount
 import org.finiteplay.spider.layout.TABLEAU_COLUMNS
 import org.finiteplay.spider.layout.TableauCard
+import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
 import org.finiteplay.core.ui.layout.DiscardingAction
 import org.finiteplay.spider.game.DealSequence
@@ -155,17 +156,35 @@ class SpiderViewModelTest {
         val viewModel = SpiderViewModel(initialSeed = 1L)
         val played = boardWithAMovableCard().copy(moveCount = 3)
         viewModel.loadFixtureForDebugging(played)
-        assertEquals(DealStatus.PLAYED, viewModel.dealProgress[played.seed])
+        assertEquals(DealProgress(DealStatus.PLAYED, 3), viewModel.dealProgress[played.seed])
 
         viewModel.loadFixtureForDebugging(played.copy(status = GameStatus.WON))
-        assertEquals(DealStatus.WON, viewModel.dealProgress[played.seed])
+        assertEquals(DealProgress(DealStatus.WON, 3), viewModel.dealProgress[played.seed])
+    }
+
+    @Test
+    fun `a deal keeps the moves of the game last played, then the fewest moves of any win`() {
+        val viewModel = SpiderViewModel(initialSeed = 1L)
+        val board = boardWithAMovableCard()
+
+        viewModel.loadFixtureForDebugging(board.copy(moveCount = 30))
+        viewModel.loadFixtureForDebugging(board.copy(moveCount = 12))
+        assertEquals("the last game played, not the longest", DealProgress(DealStatus.PLAYED, 12), viewModel.dealProgress[board.seed])
+
+        viewModel.loadFixtureForDebugging(board.copy(moveCount = 150, status = GameStatus.WON))
+        viewModel.loadFixtureForDebugging(board.copy(moveCount = 180, status = GameStatus.WON))
+        viewModel.loadFixtureForDebugging(board.copy(moveCount = 5))
+        assertEquals("a worse win and a later unfinished game leave the best win", DealProgress(DealStatus.WON, 150), viewModel.dealProgress[board.seed])
+
+        viewModel.loadFixtureForDebugging(board.copy(moveCount = 140, status = GameStatus.WON))
+        assertEquals(DealProgress(DealStatus.WON, 140), viewModel.dealProgress[board.seed])
     }
 
     @Test
     fun `an untouched board has no progress`() {
         val viewModel = SpiderViewModel(initialSeed = 1L)
         viewModel.loadFixtureForDebugging(boardWithAMovableCard())
-        assertEquals(emptyMap<Long, DealStatus>(), viewModel.dealProgress)
+        assertEquals(emptyMap<Long, DealProgress>(), viewModel.dealProgress)
     }
 
     @Test

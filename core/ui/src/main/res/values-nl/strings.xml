@@ -6,6 +6,7 @@
     <string name="action_replay">Opnieuw spelen</string>
     <string name="action_new">Nieuw</string>
     <string name="action_hint">Hint</string>
+    <string name="action_suggested">Aanbevolen</string>
     <string name="action_undo">Ongedaan maken</string>
     <string name="action_close">Sluiten</string>
     <string name="action_dismiss">Negeren</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">Niet gespeeld</string>
     <string name="deal_status_played">Gespeeld</string>
     <string name="deal_status_won">Gewonnen</string>
+    <string name="deal_moves_best">Zetten, beste: %1$d</string>
+    <string name="deal_moves_last">Zetten, laatste: %1$d</string>
+    <string name="win_banner">Gewonnen!</string>
     <string name="deal_filter_all">Alle</string>
     <string name="deal_picker_empty">Geen deals komen overeen met het filter.</string>
     <string name="deal_current">Huidige</string>

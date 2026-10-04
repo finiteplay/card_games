@@ -7,6 +7,7 @@ import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
 import org.finiteplay.core.storage.DealProgressStore
+import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
 import org.finiteplay.klondike.debug.nearWinGameState
 import org.finiteplay.klondike.deal.DealSeedSource
@@ -58,7 +59,7 @@ class DealPickerViewModelTest {
     fun `a deal nobody has touched has no progress`() {
         val vm = viewModel()
         assertNull(vm.dealProgress[seeds[0]])
-        assertEquals(emptyMap<Int, DealStatus>(), vm.dealPickerProgress())
+        assertEquals(emptyMap<Int, DealProgress>(), vm.dealPickerProgress())
     }
 
     @Test
@@ -66,10 +67,12 @@ class DealPickerViewModelTest {
         val vm = viewModel()
         vm.tryCommitMove(Move.Draw)
 
-        assertEquals(DealStatus.PLAYED, vm.dealProgress[seeds[0]])
-        assertEquals(mapOf(1 to DealStatus.PLAYED), vm.dealPickerProgress())
-        assertEquals(DealStatus.PLAYED, runBlocking { progressStore().current() }[seeds[0]])
-        assertEquals(DealStatus.PLAYED, viewModel().dealProgress[seeds[0]])
+        assertEquals(DealStatus.PLAYED, vm.dealProgress[seeds[0]]?.status)
+        // The game last played keeps its moves beside "played".
+        assertEquals(vm.session.state.moveCount, vm.dealProgress.getValue(seeds[0]).moves)
+        assertEquals(mapOf(1 to vm.dealProgress.getValue(seeds[0])), vm.dealPickerProgress())
+        assertEquals(DealStatus.PLAYED, runBlocking { progressStore().current() }[seeds[0]]?.status)
+        assertEquals(vm.dealProgress.getValue(seeds[0]), viewModel().dealProgress[seeds[0]])
     }
 
     @Test
@@ -86,7 +89,8 @@ class DealPickerViewModelTest {
         }
 
         assertEquals(true, vm.session.state.isWon)
-        assertEquals(DealStatus.WON, vm.dealProgress[seed])
+        assertEquals(DealStatus.WON, vm.dealProgress[seed]?.status)
+        assertEquals(vm.session.state.moveCount, vm.dealProgress.getValue(seed).moves)
     }
 
     @Test
@@ -141,7 +145,7 @@ class DealPickerViewModelTest {
         vm.tryCommitMove(Move.Draw)
         vm.resetStatistics()
 
-        assertEquals(emptyMap<Long, DealStatus>(), vm.dealProgress)
-        assertEquals(emptyMap<Long, DealStatus>(), runBlocking { progressStore().current() })
+        assertEquals(emptyMap<Long, DealProgress>(), vm.dealProgress)
+        assertEquals(emptyMap<Long, DealProgress>(), runBlocking { progressStore().current() })
     }
 }

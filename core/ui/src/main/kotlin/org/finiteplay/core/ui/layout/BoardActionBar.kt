@@ -1,5 +1,7 @@
 package org.finiteplay.core.ui.layout
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,21 +12,28 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.semantics.traversalIndex
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import org.finiteplay.core.ui.R
+import org.finiteplay.core.ui.theme.LocalAppColors
 
 /** Board orientation, which decides whether the actions form a row or an edge rail. */
 enum class BoardOrientation { PORTRAIT, LANDSCAPE }
@@ -63,6 +72,11 @@ data class BoardAction(
     val onClick: () -> Unit,
     /** Optional tag for this action's button, so a caller's tests can address it by name. */
     val testTag: String? = null,
+    /**
+     * Whether this is the move the game suggests: the button gets a filled, ringed background and
+     * bold type, and a screen reader says it is suggested — so the cue is never only a colour.
+     */
+    val highlighted: Boolean = false,
 )
 
 /**
@@ -124,13 +138,27 @@ private fun ActionButton(
     action: BoardAction,
     modifier: Modifier = Modifier,
 ) {
-    val (label, icon, accentColor, enabled, onClick, tag) = action
+    val (label, icon, accentColor, enabled, onClick, tag, highlighted) = action
+    val suggestion = LocalAppColors.current.action.hint
+    val shape = RoundedCornerShape(16.dp)
+    val suggestedLabel = stringResource(R.string.action_suggested)
     val textColor = if (enabled) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant
     val iconColor = if (enabled) accentColor else MaterialTheme.colorScheme.onSurfaceVariant
     Column(
         modifier = modifier
             .defaultMinSize(minHeight = ACTION_TOUCH_TARGET_DP.dp * chromeScale())
             .then(if (tag != null) Modifier.testTag(tag) else Modifier)
+            .then(
+                if (highlighted) {
+                    Modifier
+                        .clip(shape)
+                        .background(suggestion.copy(alpha = 0.28f))
+                        .border(2.dp, suggestion, shape)
+                        .semantics { stateDescription = suggestedLabel }
+                } else {
+                    Modifier
+                },
+            )
             .clickable(enabled = enabled, onClickLabel = label, onClick = onClick)
             .padding(PaddingValues(horizontal = 2.dp, vertical = 4.dp)),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -146,6 +174,7 @@ private fun ActionButton(
             text = label,
             style = MaterialTheme.typography.labelMedium.let { it.copy(fontSize = it.fontSize * chromeScale()) },
             textAlign = TextAlign.Center,
+            fontWeight = if (highlighted) FontWeight.Bold else null,
             minLines = ACTION_LABEL_LINES,
             maxLines = ACTION_LABEL_LINES,
             overflow = TextOverflow.Ellipsis,

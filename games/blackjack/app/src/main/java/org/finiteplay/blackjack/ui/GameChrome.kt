@@ -120,6 +120,8 @@ data class BarState(
     val canStepBetUp: Boolean,
     val busy: Boolean,
     val canHint: Boolean = false,
+    /** The decision the hint recommends, whose button is highlighted. */
+    val suggested: Decision? = null,
 )
 
 /**
@@ -173,33 +175,19 @@ internal fun ActionBar(
     } else {
         actions
     }
-    BoardActionBar(orientation = orientation, mirrored = mirrored, actions = withHint)
+    val suggestedTag = bar.suggested?.let(::decisionTag)
+    val marked = withHint.map { if (it.testTag == suggestedTag) it.copy(highlighted = true) else it }
+    BoardActionBar(orientation = orientation, mirrored = mirrored, actions = marked)
 }
 
-/** The Hint's answer, named as the action's own button is, above the action bar. */
-@Composable
-internal fun HintNotice(decision: Decision) {
-    val label = when (decision) {
-        Decision.HIT -> R.string.action_hit
-        Decision.STAND -> R.string.action_stand
-        Decision.DOUBLE -> R.string.action_double
-        Decision.SPLIT -> R.string.action_split
-        Decision.TAKE_INSURANCE -> R.string.action_insure
-        Decision.DECLINE_INSURANCE -> R.string.action_decline
-    }
-    Surface(
-        color = MaterialTheme.colorScheme.secondaryContainer,
-        shape = MaterialTheme.shapes.medium,
-        modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp).testTag("hint_notice"),
-    ) {
-        Text(
-            text = stringResource(R.string.hint_basic_strategy, stringResource(label)),
-            style = MaterialTheme.typography.titleSmall,
-            color = MaterialTheme.colorScheme.onSecondaryContainer,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp),
-        )
-    }
+/** The tag of the button that plays [decision]: the Hint answers by highlighting it. */
+private fun decisionTag(decision: Decision): String = when (decision) {
+    Decision.HIT -> "action_hit"
+    Decision.STAND -> "action_stand"
+    Decision.DOUBLE -> "action_double"
+    Decision.SPLIT -> "action_split"
+    Decision.TAKE_INSURANCE -> "action_insure"
+    Decision.DECLINE_INSURANCE -> "action_decline"
 }
 
 @Composable

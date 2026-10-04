@@ -5,6 +5,7 @@
     <string name="action_replay">Přehrát znovu</string>
     <string name="action_new">Nová</string>
     <string name="action_hint">Nápověda</string>
+    <string name="action_suggested">Doporučeno</string>
     <string name="action_undo">Zpět</string>
     <string name="action_close">Zavřít</string>
     <string name="action_dismiss">Skrýt</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">Nehráno</string>
     <string name="deal_status_played">Hráno</string>
     <string name="deal_status_won">Vyhráno</string>
+    <string name="deal_moves_best">Tahy, nejlepší: %1$d</string>
+    <string name="deal_moves_last">Tahy, poslední: %1$d</string>
+    <string name="win_banner">Výhra!</string>
     <string name="deal_filter_all">Vše</string>
     <string name="deal_picker_empty">Žádná rozdání neodpovídají filtru.</string>
     <string name="deal_current">Aktuální</string>

@@ -130,6 +130,24 @@ skipped, since they address different accessibility needs.
 
 The shipped assets are placeholder synthesized audio, not final sound design.
 
+## Win Celebration
+
+Every game announces a win — a solitaire's, or a Blackjack round's — with a large **result banner**
+(`core/ui`'s `ResultBanner`) and, on a win, **confetti** (`ConfettiBurst`). They are shared, so the
+games feel alike:
+
+- **Above everything, and never in the way.** A solitaire's win dialog is a window of its own, so
+  its banner and confetti are a second transparent window over it (`CelebrationOverlay`), created
+  after the dialog so the dialog's scrim does not dim them. That window takes neither a touch nor
+  the focus: the dialog's buttons work exactly as without it.
+- **The banner stays as long as the thing it announces.** For a solitaire, until the win dialog is
+  closed; for a Blackjack round, a few seconds (`docs/games/blackjack/UI_SPEC.md` "Settlement
+  Presentation"). The confetti lasts two seconds and then nothing runs: no idle cost.
+- **It does not shake or flash** to say a result, and it is a polite live region, so a screen
+  reader announces it. The words on it say the result, so its colour is never the only cue.
+- **Skip Animations and system reduced motion** leave the banner, with no spring and no confetti
+  (`## Accessibility`).
+
 ## Accessibility
 
 - At least 4.5:1 text contrast and 3:1 meaningful graphic contrast

@@ -150,6 +150,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
             // early would skip past the results.
             busy = viewModel.busy || (settledState != null && !resultsShown),
             canHint = viewModel.canHint,
+            suggested = viewModel.hint,
         )
         val actionBar: @Composable (BoardOrientation) -> Unit = { barOrientation ->
             ActionBar(
@@ -219,7 +220,6 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                         Column(modifier = Modifier.weight(1f).fillMaxSize()) {
                             table(Modifier.weight(1f))
                             SummaryLine(settlement)
-                            viewModel.hint?.let { HintNotice(it) }
                             hud()
                         }
                         actionBar(BoardOrientation.LANDSCAPE)
@@ -230,7 +230,6 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                     heading()
                     table(Modifier.weight(1f))
                     SummaryLine(settlement)
-                    viewModel.hint?.let { HintNotice(it) }
                     hud()
                     actionBar(BoardOrientation.PORTRAIT)
                 }

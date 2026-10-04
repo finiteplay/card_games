@@ -2,6 +2,9 @@ package org.finiteplay.blackjack.ui
 
 import android.app.Activity
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -34,6 +37,7 @@ import org.finiteplay.core.ui.layout.label
 import org.finiteplay.core.ui.layout.ResetStatisticsDialog
 import org.finiteplay.core.ui.layout.SettingsGroup
 import org.finiteplay.core.ui.layout.StatSectionCard
+import org.finiteplay.core.ui.layout.StatTabs
 import org.finiteplay.core.ui.layout.StatTileGrid
 import org.finiteplay.core.ui.layout.SwitchSettingRow
 import org.finiteplay.core.ui.layout.labelRes
@@ -172,23 +176,72 @@ fun StatisticsScreen(
     }
 }
 
-/** How Blackjack is played, in three short sections; the contract is `RULES.md`. */
+/** Which help page is showing. */
+private enum class HelpPage { RULES, STRATEGY }
+
+/**
+ * How Blackjack is played, for someone who has never played it: the rules in short sections, with
+ * each decision — Hit, Stand, Double, Split, Insurance — explained in a paragraph of its own, and a
+ * second tab with a simple strategy for when a player starts wondering what to do. The contract is
+ * `RULES.md`; this is its plain-language summary.
+ */
 @Composable
 fun HelpScreen(onClose: () -> Unit) {
+    var page by remember { mutableStateOf(HelpPage.RULES) }
     FullScreenPanel(
         title = stringResource(R.string.help_title),
         onClose = onClose,
         testTag = "help_screen",
+        scrollable = false,
     ) {
-        HelpSection(stringResource(R.string.help_goal_title), stringResource(R.string.help_goal))
-        HelpSection(stringResource(R.string.help_decisions_title), stringResource(R.string.help_decisions))
-        HelpSection(stringResource(R.string.help_chips_title), stringResource(R.string.help_chips))
-        Text(
-            text = stringResource(CoreR.string.company_byline),
-            style = MaterialTheme.typography.labelMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.padding(top = 20.dp, bottom = 16.dp),
+        StatTabs(
+            options = HelpPage.entries,
+            selected = page,
+            label = { stringResource(if (it == HelpPage.RULES) R.string.help_tab_rules else R.string.help_tab_strategy) },
+            onSelect = { page = it },
+            tagPrefix = "help_tab",
         )
+        Column(
+            modifier = Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(bottom = 8.dp),
+        ) {
+            when (page) {
+                HelpPage.RULES -> {
+                    HelpSection(stringResource(R.string.help_goal_title), stringResource(R.string.help_goal))
+                    HelpSection(stringResource(R.string.help_values_title), stringResource(R.string.help_values))
+                    HelpSection(stringResource(R.string.help_round_title), stringResource(R.string.help_round))
+                    HelpSection(stringResource(R.string.help_hit_title), stringResource(R.string.help_hit))
+                    HelpSection(stringResource(R.string.help_stand_title), stringResource(R.string.help_stand))
+                    HelpSection(stringResource(R.string.help_double_title), stringResource(R.string.help_double))
+                    HelpSection(stringResource(R.string.help_split_title), stringResource(R.string.help_split))
+                    HelpSection(stringResource(R.string.help_insurance_title), stringResource(R.string.help_insurance))
+                    HelpSection(stringResource(R.string.help_dealer_title), stringResource(R.string.help_dealer))
+                    HelpSection(stringResource(R.string.help_chips_title), stringResource(R.string.help_chips))
+                }
+                HelpPage.STRATEGY -> {
+                    Text(
+                        text = stringResource(R.string.help_strategy_intro),
+                        style = MaterialTheme.typography.bodyMedium,
+                        modifier = Modifier.padding(top = 16.dp),
+                    )
+                    for (tip in listOf(
+                        R.string.help_strategy_1, R.string.help_strategy_2, R.string.help_strategy_3, R.string.help_strategy_4,
+                        R.string.help_strategy_5, R.string.help_strategy_6, R.string.help_strategy_7,
+                    )) {
+                        Text(
+                            text = stringResource(tip),
+                            style = MaterialTheme.typography.bodyMedium,
+                            modifier = Modifier.padding(top = 12.dp),
+                        )
+                    }
+                }
+            }
+            Text(
+                text = stringResource(CoreR.string.company_byline),
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(top = 20.dp, bottom = 16.dp),
+            )
+        }
     }
 }
 

@@ -5,6 +5,7 @@
     <string name="action_replay">Повторити</string>
     <string name="action_new">Нова</string>
     <string name="action_hint">Підказка</string>
+    <string name="action_suggested">Рекомендовано</string>
     <string name="action_undo">Скасувати</string>
     <string name="action_close">Закрити</string>
     <string name="action_dismiss">Відхилити</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">Не зіграно</string>
     <string name="deal_status_played">Зіграно</string>
     <string name="deal_status_won">Виграно</string>
+    <string name="deal_moves_best">Ходи, найкраще: %1$d</string>
+    <string name="deal_moves_last">Ходи, останнє: %1$d</string>
+    <string name="win_banner">Перемога!</string>
     <string name="deal_filter_all">Усі</string>
     <string name="deal_picker_empty">Жодна роздача не відповідає фільтру.</string>
     <string name="deal_current">Поточна</string>

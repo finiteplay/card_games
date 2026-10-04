@@ -68,12 +68,35 @@
     <!-- Help. -->
     <string name="help_title">How to play</string>
     <string name="help_goal_title">The goal</string>
-    <string name="help_goal">Beat the dealer\'s hand without going over 21. Number cards count their number, face cards count 10, and an Ace counts 1 or 11, whichever is better. An Ace and a ten-value card on the first two cards is Blackjack, and pays 3 to 2. The dealer always stands on 17 or more, including soft 17.</string>
-    <string name="help_decisions_title">Your decisions</string>
-    <string name="help_decisions">Hit takes a card; Stand keeps your hand. Double, on your first two cards, doubles your bet and takes exactly one more card. Split, on two cards of the same rank, makes two hands, up to four in all; split Aces get one card each. When the dealer shows an Ace you may take insurance for half your bet: it pays 2 to 1 if the dealer has Blackjack. Every round is dealt from a fresh shuffle, and there is no undo.</string>
+    <string name="help_goal">Get a hand worth more than the dealer\'s without going over 21. If you go over, you bust and lose at once.</string>
     <string name="help_chips_title">Chips</string>
     <string name="help_chips">You start with 1,000 chips. Chips are for play only and cannot be bought or cashed out. Bets go in steps of 10, from 10 up to 500. If you run out of chips you can reset to 1,000, and your statistics are kept.</string>
 
     <!-- The Hint: what basic strategy says to do, naming the action as its own button is labelled. -->
-    <string name="hint_basic_strategy">Basic strategy: %1$s</string>
+    <string name="help_tab_rules">Rules</string>
+    <string name="help_tab_strategy">Strategy</string>
+    <string name="help_values_title">Card values</string>
+    <string name="help_values">Number cards count their number. Jack, Queen and King count 10. An Ace counts 1 or 11, whichever is better for the hand. An Ace with a ten-value card on your first two cards is Blackjack, and pays 3 to 2.</string>
+    <string name="help_round_title">A round</string>
+    <string name="help_round">Place your bet and press Deal. You and the dealer each get two cards, and one of the dealer\'s stays face down. You then make your decisions, one hand at a time, and when you are done the dealer plays. Every round is dealt from a fresh shuffle, and there is no undo.</string>
+    <string name="help_hit_title">Hit</string>
+    <string name="help_hit">Take one more card. You can keep hitting as long as your hand is under 21.</string>
+    <string name="help_stand_title">Stand</string>
+    <string name="help_stand">Keep your hand as it is and end your turn.</string>
+    <string name="help_double_title">Double</string>
+    <string name="help_double">On your first two cards, double your bet and take exactly one more card. Your turn then ends. Use it when your hand is strong but not finished yet.</string>
+    <string name="help_split_title">Split</string>
+    <string name="help_split">When your first two cards have the same rank, split them into two hands, each with the original bet. You can have up to four hands in all. Split Aces get one card each and cannot be hit again.</string>
+    <string name="help_insurance_title">Insurance</string>
+    <string name="help_insurance">When the dealer shows an Ace, you may insure for half your bet. It pays 2 to 1 if the dealer has Blackjack, and is lost if not.</string>
+    <string name="help_dealer_title">The dealer</string>
+    <string name="help_dealer">The dealer makes no choices: they take cards until they have 17 or more, and stand on every 17, including a soft 17 that counts an Ace as 11.</string>
+    <string name="help_strategy_intro">A simple plan that gives you good odds. The Hint button follows the same strategy in full detail.</string>
+    <string name="help_strategy_1">Always hit a total of 8 or less, and always stand on a hard 17 or more.</string>
+    <string name="help_strategy_2">With 12 to 16, stand if the dealer shows 2 to 6, because the dealer is likely to bust. Hit if the dealer shows 7 or higher.</string>
+    <string name="help_strategy_3">Double on 11, and on 10 when the dealer shows 9 or less. If you cannot double, hit.</string>
+    <string name="help_strategy_4">Always split Aces and 8s. Never split 5s or 10s; play them as 10 and 20.</string>
+    <string name="help_strategy_5">With an Ace counting as 11 (a soft hand), hit up to soft 17 and stand on soft 19 or more.</string>
+    <string name="help_strategy_6">Never take insurance. Over time it costs more than it pays back.</string>
+    <string name="help_strategy_7">Strategy lowers the house\'s edge but cannot promise a win: the dealer\'s hidden card still decides many rounds.</string>
 </resources>

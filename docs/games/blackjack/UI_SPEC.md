@@ -125,10 +125,11 @@ minimum card width and the exposed face-up band the platform requires of every g
 
 ## Hint Presentation
 
-A notice above the action bar names the table's answer as the action's own button is labelled —
-*Basic strategy: Stand* — and stays until the round changes or Hint is pressed again. Nothing is
-highlighted and nothing is counted: there is no hints statistic, since the hint proves nothing
-(`DESIGN.md` "Hint").
+The table's answer is shown by **highlighting the button to press**, in the action bar itself — no
+text line: the suggested button gets a filled, ringed background and bold type, and a screen reader
+reads it as *Suggested* (`BoardAction.highlighted`, shared with every game's bar). It stays until the
+round changes, a decision is made, or Hint is pressed again. Nothing else is highlighted and nothing
+is counted: there is no hints statistic, since the hint proves nothing (`DESIGN.md` "Hint").
 
 ## Settlement Presentation
 

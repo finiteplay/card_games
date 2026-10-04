@@ -5,6 +5,7 @@
     <string name="action_replay">Ulangi</string>
     <string name="action_new">Baru</string>
     <string name="action_hint">Petunjuk</string>
+    <string name="action_suggested">Disarankan</string>
     <string name="action_undo">Urungkan</string>
     <string name="action_close">Tutup</string>
     <string name="action_dismiss">Abaikan</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">Belum dimainkan</string>
     <string name="deal_status_played">Dimainkan</string>
     <string name="deal_status_won">Dimenangkan</string>
+    <string name="deal_moves_best">Langkah, terbaik: %1$d</string>
+    <string name="deal_moves_last">Langkah, terakhir: %1$d</string>
+    <string name="win_banner">Kamu menang!</string>
     <string name="deal_filter_all">Semua</string>
     <string name="deal_picker_empty">Tidak ada pembagian yang cocok.</string>
     <string name="deal_current">Saat ini</string>

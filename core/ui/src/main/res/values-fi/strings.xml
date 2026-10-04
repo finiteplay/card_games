@@ -6,6 +6,7 @@
     <string name="action_replay">Toista</string>
     <string name="action_new">Uusi</string>
     <string name="action_hint">Vihje</string>
+    <string name="action_suggested">Ehdotus</string>
     <string name="action_undo">Kumoa</string>
     <string name="action_close">Sulje</string>
     <string name="action_dismiss">Hylkää</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">Pelaamatta</string>
     <string name="deal_status_played">Pelattu</string>
     <string name="deal_status_won">Voitettu</string>
+    <string name="deal_moves_best">Siirrot, paras: %1$d</string>
+    <string name="deal_moves_last">Siirrot, viimeisin: %1$d</string>
+    <string name="win_banner">Voitit!</string>
     <string name="deal_filter_all">Kaikki</string>
     <string name="deal_picker_empty">Mikään jako ei vastaa suodatinta.</string>
     <string name="deal_current">Nykyinen</string>

@@ -5,6 +5,7 @@
     <string name="action_replay">다시 하기</string>
     <string name="action_new">새로 하기</string>
     <string name="action_hint">힌트</string>
+    <string name="action_suggested">추천</string>
     <string name="action_undo">실행 취소</string>
     <string name="action_close">닫기</string>
     <string name="action_dismiss">닫기</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">플레이 안 함</string>
     <string name="deal_status_played">플레이함</string>
     <string name="deal_status_won">승리</string>
+    <string name="deal_moves_best">이동, 최고: %1$d</string>
+    <string name="deal_moves_last">이동, 최근: %1$d</string>
+    <string name="win_banner">승리!</string>
     <string name="deal_filter_all">전체</string>
     <string name="deal_picker_empty">필터에 맞는 판이 없습니다.</string>
     <string name="deal_current">현재</string>

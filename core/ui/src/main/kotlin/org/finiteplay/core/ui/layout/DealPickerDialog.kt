@@ -35,6 +35,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
 import org.finiteplay.core.ui.R
 import org.finiteplay.core.ui.theme.LocalAppColors
@@ -65,13 +66,13 @@ private fun DealFilter.matches(status: DealStatus?): Boolean = when (this) {
 fun DealPickerDialog(
     dealCount: Int,
     currentNumber: Int?,
-    progress: Map<Int, DealStatus>,
+    progress: Map<Int, DealProgress>,
     onSelect: (Int) -> Unit,
     onDismiss: () -> Unit,
 ) {
     var filter by remember { mutableStateOf(DealFilter.ALL) }
     val numbers = remember(filter, dealCount, progress) {
-        if (filter == DealFilter.ALL) null else (1..dealCount).filter { filter.matches(progress[it]) }
+        if (filter == DealFilter.ALL) null else (1..dealCount).filter { filter.matches(progress[it]?.status) }
     }
     val count = numbers?.size ?: dealCount
     val listState = rememberLazyListState(
@@ -125,8 +126,12 @@ fun DealPickerDialog(
 }
 
 @Composable
-private fun DealRow(number: Int, status: DealStatus?, isCurrent: Boolean, onClick: () -> Unit) {
+private fun DealRow(number: Int, deal: DealProgress?, isCurrent: Boolean, onClick: () -> Unit) {
+    val status = deal?.status
     val (icon, tint) = status.icon()
+    val movesText = deal?.moves?.takeIf { it > 0 }?.let {
+        stringResource(if (status == DealStatus.WON) R.string.deal_moves_best else R.string.deal_moves_last, it)
+    }
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
@@ -142,11 +147,22 @@ private fun DealRow(number: Int, status: DealStatus?, isCurrent: Boolean, onClic
             fontWeight = if (isCurrent) FontWeight.Bold else FontWeight.Normal,
             modifier = Modifier.weight(1f),
         )
-        Text(
-            text = if (isCurrent) stringResource(R.string.deal_current) else stringResource(status.labelRes()),
-            style = MaterialTheme.typography.labelLarge,
-            color = if (isCurrent) LocalAppColors.current.action.statistics else MaterialTheme.colorScheme.onSurfaceVariant,
-        )
+        Column(horizontalAlignment = Alignment.End) {
+            Text(
+                text = if (isCurrent) stringResource(R.string.deal_current) else stringResource(status.labelRes()),
+                style = MaterialTheme.typography.labelLarge,
+                color = if (isCurrent) LocalAppColors.current.action.statistics else MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            // The moves of the best win, or of the game last played where there is no win yet.
+            if (movesText != null) {
+                Text(
+                    text = movesText,
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.testTag("deal_row_${number}_moves"),
+                )
+            }
+        }
     }
 }
 

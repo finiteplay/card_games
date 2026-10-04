@@ -37,7 +37,7 @@ Modal screens pause the timer. Android back closes the current modal before leav
 
 One line: the title at the leading edge, then the deal's difficulty and its number within that level (`docs/games/klondike/DEALS.md` "Interim Pre-RF Seed Source") and the moves/timer, centered in the space the title leaves, with Statistics as an icon in the trailing corner.
 
-The level and the number are separate links: the level opens the level picker, the number opens the deal picker. The deal number is a link to the **deal picker** (`core:ui`'s `DealPickerDialog`): a list of the active level's deals, each marked *not played*, *played* or *won*, opening scrolled to the deal on screen, with a filter by those states. Picking one starts it, asking first, as New Game does, when the game on screen has been played and is unfinished — and recording the same loss. Picking the deal already on screen does nothing. *Played* is a first move, not a result; *won* is never undone by playing the deal again. Progress is kept per seed (`core:storage`'s `DealProgressStore`), cleared by Reset Statistics, and does not reach back before it was introduced: games finished earlier are not marked. Draw-three has no list to choose from, so its status row has no number and no picker.
+The level and the number are separate links: the level opens the level picker, the number opens the deal picker. The deal number is a link to the **deal picker** (`core:ui`'s `DealPickerDialog`): a list of the active level's deals, each marked *not played*, *played* or *won*, Each row also states its moves: the **fewest moves of any win** for a won deal, and the **moves of the game last played** for one not won yet (`DealProgress`); a deal whose moves are unknown shows none. It opens scrolled to the deal on screen, with a filter by those states. Picking one starts it, asking first, as New Game does, when the game on screen has been played and is unfinished — and recording the same loss. Picking the deal already on screen does nothing. *Played* is a first move, not a result; *won* is never undone by playing the deal again. Progress is kept per seed (`core:storage`'s `DealProgressStore`), cleared by Reset Statistics, and does not reach back before it was introduced: games finished earlier are not marked. Draw-three has no list to choose from, so its status row has no number and no picker.
 
 - The title is the product name — one line, untranslated.
 - Portrait puts the level on one line and the moves/timer on the next, and reserves both
@@ -258,5 +258,8 @@ Stop the timer when all 52 cards reach foundations, or when the automatic finish
 - New Game and Replay actions
 
 Record the win exactly once, even after rotation, restoration, or repeated presentation.
+
+The win is announced as well as shown: a large *You win!* banner and confetti over the dialog, the
+banner staying until the dialog is closed (`docs/PLATFORM.md` "Win Celebration").
 
 A debug-only build additionally shows a difficulty-rating prompt in the win dialog (`docs/games/klondike/DEALS.md` "Difficulty Grading (Interim)"); it renders nothing in release builds.

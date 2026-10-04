@@ -97,7 +97,7 @@ a trailing group that differs by orientation.
   (`GameChrome.kt`'s `SuitCount.accent`) — one calmest, four warmest — so a glance at the color
   alone hints at which count is in play, though the count is always spelled out beside it too.
 
-The deal number is a link to the **deal picker** (`core:ui`'s `DealPickerDialog`): a list of the active suit count's deals — the whole certified catalog (the first 500 of the endless formula sequence only in a build with no catalog loaded, which is tests), each marked *not played*, *played* or *won*, opening scrolled to the deal on screen, with a filter by those states. Picking one starts it, asking first, as New Game does, when the game on screen has been played and is unfinished — and recording the same loss. Picking the deal already on screen does nothing. *Played* is a first move, not a result; *won* is never undone by playing the deal again. Progress is kept per seed (`core:storage`'s `DealProgressStore`), cleared by Reset Statistics, and does not reach back before it was introduced: games finished earlier are not marked.
+The deal number is a link to the **deal picker** (`core:ui`'s `DealPickerDialog`): a list of the active suit count's deals — the whole certified catalog (the first 500 of the endless formula sequence only in a build with no catalog loaded, which is tests), each marked *not played*, *played* or *won*, Each row also states its moves: the **fewest moves of any win** for a won deal, and the **moves of the game last played** for one not won yet (`DealProgress`); a deal whose moves are unknown shows none. It opens scrolled to the deal on screen, with a filter by those states. Picking one starts it, asking first, as New Game does, when the game on screen has been played and is unfinished — and recording the same loss. Picking the deal already on screen does nothing. *Played* is a first move, not a result; *won* is never undone by playing the deal again. Progress is kept per seed (`core:storage`'s `DealProgressStore`), cleared by Reset Statistics, and does not reach back before it was introduced: games finished earlier are not marked.
 
 ### Layout
 
@@ -263,6 +263,9 @@ Stop the timer when every card reaches its bank, or when the automatic finish be
 comes first. The shared win dialog (`core/ui`'s `WinDialog`) shows completion time, move count,
 and personal bests for that suit count. A win is recorded exactly once, even after rotation or
 repeated presentation of the dialog.
+
+The win is announced as well as shown: a large *You win!* banner and confetti over the dialog, the
+banner staying until the dialog is closed (`docs/PLATFORM.md` "Win Celebration").
 
 The board's own state turns won the instant the winning move commits — same as any other win — but
 when that move was the automatic finish's own, the dialog itself waits for the finish to actually

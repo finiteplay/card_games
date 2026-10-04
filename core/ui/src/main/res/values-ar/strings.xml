@@ -5,6 +5,7 @@
     <string name="action_replay">إعادة اللعب</string>
     <string name="action_new">جديد</string>
     <string name="action_hint">تلميح</string>
+    <string name="action_suggested">مقترح</string>
     <string name="action_undo">تراجع</string>
     <string name="action_close">إغلاق</string>
     <string name="action_dismiss">تجاهل</string>
@@ -122,6 +123,9 @@
     <string name="deal_status_not_played">لم تُلعب</string>
     <string name="deal_status_played">لُعبت</string>
     <string name="deal_status_won">فزت</string>
+    <string name="deal_moves_best">الحركات، الأفضل: %1$d</string>
+    <string name="deal_moves_last">الحركات، الأخيرة: %1$d</string>
+    <string name="win_banner">فزت!</string>
     <string name="deal_filter_all">الكل</string>
     <string name="deal_picker_empty">لا توجد توزيعات مطابقة.</string>
     <string name="deal_current">الحالية</string>
