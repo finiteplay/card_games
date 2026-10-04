@@ -6,7 +6,7 @@ Two things to keep in mind while reading it.
 
 **Spider's guides are noticeably weaker than Klondike's.** Klondike has at least two sources that argue from structure and hold up under scrutiny. Spider's public writing is dominated by SEO listicles that restate each other, and several of them contradict each other on numbers while sounding equally confident. Where that happens it is recorded below rather than resolved.
 
-**Suit count changes which advice applies.** A tip about "build in suit" is vacuous at one suit, where every build is in-suit, and is the whole game at four. Tips are marked **[1-suit: n/a]** where the one-suit game makes them meaningless, since this app ships all three counts (`RULES.md` "Suit counts") and defaults to two.
+**Suit count changes which advice applies.** A tip about "build in suit" is vacuous at one suit, where every build is in-suit, and is the whole game at four. Tips are marked **[1-suit: n/a]** where the one-suit game makes them meaningless, since this app ships all three counts (`RULES.md` "Suit counts") and defaults to one.
 
 ## Core principles (broad agreement across sources)
 
