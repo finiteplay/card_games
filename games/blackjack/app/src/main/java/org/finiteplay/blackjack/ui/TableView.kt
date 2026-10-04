@@ -86,6 +86,15 @@ val LocalAnimateCards = compositionLocalOf { true }
 internal const val FLIGHT_MS = 280
 internal const val FLIGHT_STAGGER_MS = 140
 
+/** The flight progress of each card position in one fan; a class so its animations are made outside composition. */
+private class CardFlights {
+    val progress = mutableStateMapOf<Int, Animatable<Float, AnimationVector1D>>()
+
+    fun ensure(index: Int, animate: Boolean) {
+        if (index !in progress) progress[index] = Animatable(if (animate) 0f else 1f)
+    }
+}
+
 /**
  * A hand's cards fanned on a canvas, with one optionally face down. Each card that appears flies in
  * from the shoe — a point above and beyond the trailing corner of the table — to its place, in the
@@ -111,11 +120,10 @@ fun CardFan(
     val cardHeight = TableGeometry.cardHeight(cardWidth.value).dp
 
     // One progress value per card position, created the first time that position holds a card.
-    val progress = remember { mutableStateMapOf<Int, Animatable<Float, AnimationVector1D>>() }
+    val flights = remember { CardFlights() }
+    val progress = flights.progress
     val firstNew = cards.indices.firstOrNull { it !in progress }
-    cards.indices.forEach { index ->
-        if (index !in progress) progress[index] = Animatable(if (animate) 0f else 1f)
-    }
+    cards.indices.forEach { index -> flights.ensure(index, animate) }
     cards.indices.forEach { index ->
         val flight = progress.getValue(index)
         LaunchedEffect(index, animate) {
