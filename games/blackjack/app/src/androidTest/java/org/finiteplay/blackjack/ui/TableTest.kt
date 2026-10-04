@@ -80,11 +80,12 @@ class TableTest {
         landscape: Boolean = false,
         darkTheme: Boolean = true,
         leftHanded: Boolean = false,
+        animations: Boolean = false,
     ) {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         dir = File(context.cacheDir, "table-test-${System.nanoTime()}").also { it.mkdirs() }
         runBlocking {
-            BlackjackSettingsStore(dir).setAnimationsEnabled(false)
+            BlackjackSettingsStore(dir).setAnimationsEnabled(animations)
             if (leftHanded) BlackjackSettingsStore(dir).setHandedness(org.finiteplay.core.ui.layout.Handedness.LEFT)
             if (ledger != null) BlackjackLedgerStore(dir).save(ledger)
         }
@@ -302,5 +303,37 @@ class TableTest {
         assertEquals(true, viewModel.hint in viewModel.legal)
         tap("action_stand")
         assertEquals(false, present("hint_notice"))
+    }
+
+    private fun handState(tag: String): String? =
+        composeRule.onAllNodesWithTag(tag).fetchSemanticsNodes().firstOrNull()
+            ?.config?.let { c -> if (c.contains(androidx.compose.ui.semantics.SemanticsProperties.StateDescription)) c[androidx.compose.ui.semantics.SemanticsProperties.StateDescription] else null }
+
+    /** `EXECUTION_PLAN.md` B7: the deal actually animates, rather than only ending in the right place. */
+    @Test
+    fun dealtCardsFlyInFromTheShoeBeforeSettling() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"), animations = true)
+        composeRule.mainClock.autoAdvance = false
+        composeRule.onNodeWithTag("action_deal").performClick()
+
+        // The deal is saved off the main thread; step frames until the hand is on screen and flying.
+        var sawFlying = false
+        val deadline = System.currentTimeMillis() + 8_000
+        while (!sawFlying && System.currentTimeMillis() < deadline) {
+            composeRule.mainClock.advanceTimeByFrame()
+            sawFlying = handState("hand_0_cards") == "flying"
+            Thread.sleep(20)
+        }
+        assertEquals("the player's cards fly in", true, sawFlying)
+
+        composeRule.mainClock.advanceTimeBy(3_000)
+        assertEquals("settled", handState("hand_0_cards"))
+    }
+
+    @Test
+    fun skipAnimationsPutsCardsStraightDown() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"), animations = false)
+        tap("action_deal")
+        assertEquals("settled", handState("hand_0_cards"))
     }
 }

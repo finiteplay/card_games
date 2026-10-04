@@ -87,6 +87,7 @@ implementation (`EXECUTION_PLAN.md`'s Status table says how far).
   dealer's play, settlement, round lifecycle
 - `UI_SPEC.md` — screens, action bar per phase, card geometry, settlement presentation, the reset offer
 - `EXECUTION_PLAN.md` — work packages B0–B8 and their gates
+- `ACCEPTANCE.md` — gates run and the release evidence, with what only hardware can settle marked open
 - `TODO.md` — deferred, out of first-release scope
 
 A game's spec never restates the platform spec. Where they disagree, `PLATFORM.md`

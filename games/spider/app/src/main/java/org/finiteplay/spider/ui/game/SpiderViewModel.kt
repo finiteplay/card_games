@@ -154,6 +154,8 @@ class SpiderViewModel(
     private val moveRecorder: MoveRecorder? = null,
     /** Which deals have been played and won; null in tests that do not exercise it (progress is then kept in memory only). */
     private val dealProgressStore: DealProgressStore? = null,
+    /** Builds the hint engine for a timeout; a seam so a test can supply one that never finds a line. */
+    private val hintEngineFactory: (HintTimeout) -> HintEngine = { HintEngine(SpiderSolver(hintSolverLimits(it))) },
 ) : ViewModel() {
 
     /** Whether the active deal came from the certified catalog rather than the uncertified formula. */
@@ -421,7 +423,7 @@ class SpiderViewModel(
     /** Owns the cached winning line successive hints resolve against (`HintEngine`'s own doc on why
      * this matters); reset alongside every fresh deal so it never carries a cached line from the
      * game before into a board it no longer describes. */
-    private var hintEngine = HintEngine(SpiderSolver(hintSolverLimits(HintTimeout.DEFAULT)))
+    private var hintEngine = hintEngineFactory(HintTimeout.DEFAULT)
 
     /** The [HintTimeout] [hintEngine] is currently built for; rebuilt in [requestGuidedHint] on change. */
     private var hintEngineTimeout = HintTimeout.DEFAULT
@@ -448,6 +450,12 @@ class SpiderViewModel(
     fun showHint() {
         val guidedModeOffered = session.state.suitCount == SuitCount.ONE || dealIsCertified
         if (settings.hintShowsWinningMove && guidedModeOffered) {
+            // The fallback highlight below is on screen: this tap puts it away, as in the plain mode.
+            // A search on the same board would only time out the same way; the next move's Hint searches.
+            if (hintFallbackShowing) {
+                dismissHint()
+                return
+            }
             requestGuidedHint()
             return
         }
@@ -461,6 +469,12 @@ class SpiderViewModel(
     }
 
     /**
+     * True while the plain highlight of every movable card is up because a guided search timed out.
+     * The player's mode is untouched, so the next Hint after a move searches for a winning line again.
+     */
+    private var hintFallbackShowing = false
+
+    /**
      * Runs [hintEngine] off the main thread and shows what it finds. A no-op while already loading
      * or showing a result, the same gate Klondike's and FreeCell's own `requestHint` use — repeating
      * the request has nothing new to show, since the engine resolves to the next step of a cached
@@ -470,7 +484,7 @@ class SpiderViewModel(
         if (hintState != HintUiState.Hidden) return
         if (settings.hintTimeout != hintEngineTimeout) {
             hintEngineTimeout = settings.hintTimeout
-            hintEngine = HintEngine(SpiderSolver(hintSolverLimits(hintEngineTimeout)))
+            hintEngine = hintEngineFactory(hintEngineTimeout)
         }
         hintState = HintUiState.Loading
         val requestedState = session.state
@@ -503,6 +517,14 @@ class SpiderViewModel(
                     }
                 }
             }
+            if (shown is HintUiState.Inconclusive) {
+                // No winning line in the time allowed, but the player still gets what the plain mode
+                // gives: every card that has somewhere to go, not counted as a hint taken.
+                val movable = hintedCards(session.state)
+                hintedCards = movable
+                hintedStock = movable.isEmpty()
+                hintFallbackShowing = true
+            }
             if (shown is HintUiState.NoSolution || shown is HintUiState.Inconclusive) {
                 launch {
                     delay(HINT_NOTICE_AUTO_DISMISS)
@@ -521,6 +543,7 @@ class SpiderViewModel(
         hintShowsProgressDialog = false
         hintedCards = emptySet()
         hintedStock = false
+        hintFallbackShowing = false
     }
 
     fun dismissRecoveryNotice() {

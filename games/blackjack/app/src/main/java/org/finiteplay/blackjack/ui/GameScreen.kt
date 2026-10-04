@@ -16,6 +16,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -163,11 +164,13 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
             if (state == null) {
                 EmptyTable(tableModifier)
             } else {
-                Table(
-                    view = TableView(state, dealerFaceUp = dealerFaceUp, resultsShown = resultsShown || !state.isSettled),
-                    landscape = landscape,
-                    modifier = tableModifier,
-                )
+                CompositionLocalProvider(LocalAnimateCards provides viewModel.settings.animationsEnabled) {
+                    Table(
+                        view = TableView(state, dealerFaceUp = dealerFaceUp, resultsShown = resultsShown || !state.isSettled),
+                        landscape = landscape,
+                        modifier = tableModifier,
+                    )
+                }
             }
         }
         Box(modifier = Modifier.fillMaxSize().padding(padding)) {

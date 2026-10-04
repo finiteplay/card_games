@@ -181,6 +181,13 @@ decision at two). At four suits no search here wins a board within an interactiv
 hint after leaving the shipped line ends in the Inconclusive notice. Repeating the request while
 one is already showing has nothing new to advance to.
 
+**When the guided search finds no line in the time allowed** (the Inconclusive notice), Hint also
+lights what the plain mode lights — every card that has somewhere legal to go, or the stock when
+none does — so the player is never left with only a notice. This is a fallback, not a mode change:
+the setting stays on, the highlight is not counted as a hint taken, and tapping Hint again clears
+it rather than searching the same board a second time. The next Hint after a move searches for a
+winning line again.
+
 ## Motion
 
 - Card moves and the pulse animation follow the same easing and duration conventions as

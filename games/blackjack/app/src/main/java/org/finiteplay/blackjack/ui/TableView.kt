@@ -1,5 +1,8 @@
 package org.finiteplay.blackjack.ui
 
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.AnimationVector1D
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -17,6 +20,10 @@ import androidx.compose.foundation.background
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.compositionLocalOf
+import androidx.compose.runtime.mutableStateMapOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
@@ -25,6 +32,8 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
@@ -38,6 +47,7 @@ import org.finiteplay.blackjack.rules.PlayerHand
 import org.finiteplay.blackjack.rules.handValue
 import org.finiteplay.blackjack.rules.isBlackjackShape
 import org.finiteplay.cards.Card
+import kotlinx.coroutines.delay
 import org.finiteplay.core.ui.card.drawCardBack
 import org.finiteplay.core.ui.card.drawCardFace
 import org.finiteplay.core.ui.theme.LocalAppColors
@@ -69,7 +79,22 @@ private fun badgeText(cards: List<Card>, naturalPays: Boolean): String {
     }
 }
 
-/** A hand's cards fanned on a canvas, with one optionally face down. */
+/** Whether cards fly in from the shoe: false under Skip Animations and system reduced motion. */
+val LocalAnimateCards = compositionLocalOf { true }
+
+/** How long one card's flight from the shoe to its place takes, and the stagger between cards dealt together. */
+internal const val FLIGHT_MS = 280
+internal const val FLIGHT_STAGGER_MS = 140
+
+/**
+ * A hand's cards fanned on a canvas, with one optionally face down. Each card that appears flies in
+ * from the shoe — a point above and beyond the trailing corner of the table — to its place, in the
+ * order it was dealt (`UI_SPEC.md` "Motion"); a card already on the table stays put. Under Skip
+ * Animations a card is simply there.
+ *
+ * [stateDescription] reads `flying` while any card is still in flight, which is what lets a test
+ * prove the flight actually happened rather than only checking where the cards ended up.
+ */
 @Composable
 fun CardFan(
     cards: List<Card>,
@@ -80,13 +105,52 @@ fun CardFan(
     testTag: String,
 ) {
     val colors = LocalAppColors.current.card
+    val animate = LocalAnimateCards.current
     val step = TableGeometry.fanStep(cardWidth.value, handWidth.value, cards.size)
     val fanWidth = TableGeometry.fanWidth(cardWidth.value, step, cards.size).dp
     val cardHeight = TableGeometry.cardHeight(cardWidth.value).dp
-    Canvas(modifier = modifier.width(fanWidth).height(cardHeight).testTag(testTag)) {
+
+    // One progress value per card position, created the first time that position holds a card.
+    val progress = remember { mutableStateMapOf<Int, Animatable<Float, AnimationVector1D>>() }
+    val firstNew = cards.indices.firstOrNull { it !in progress }
+    cards.indices.forEach { index ->
+        if (index !in progress) progress[index] = Animatable(if (animate) 0f else 1f)
+    }
+    cards.indices.forEach { index ->
+        val flight = progress.getValue(index)
+        LaunchedEffect(index, animate) {
+            if (flight.value < 1f) {
+                val order = if (firstNew == null) 0 else (index - firstNew).coerceAtLeast(0)
+                if (animate) {
+                    delay(order * FLIGHT_STAGGER_MS.toLong())
+                    flight.animateTo(1f, tween(FLIGHT_MS))
+                } else {
+                    flight.snapTo(1f)
+                }
+            }
+        }
+    }
+    val flying = cards.indices.any { (progress[it]?.value ?: 1f) < 1f }
+
+    Canvas(
+        modifier = modifier
+            .width(fanWidth)
+            .height(cardHeight)
+            .testTag(testTag)
+            .semantics { stateDescription = if (flying) "flying" else "settled" },
+    ) {
         val size = Size(cardWidth.toPx(), cardHeight.toPx())
+        // The shoe sits off the trailing corner: cards leave from there and settle into the fan.
+        val shoe = Offset(size.width * 2.2f, -size.height * 1.4f)
         cards.forEachIndexed { index, card ->
-            val topLeft = Offset(index * step.dp.toPx(), 0f)
+            val t = progress[index]?.value ?: 1f
+            val target = Offset(index * step.dp.toPx(), 0f)
+            val topLeft = Offset(
+                target.x + (shoe.x - target.x) * (1f - t),
+                target.y + (shoe.y - target.y) * (1f - t),
+            )
+            // A card that has not left the shoe yet is not drawn at all.
+            if (t <= 0f) return@forEachIndexed
             if (index == faceDownIndex) drawCardBack(topLeft, size, colors) else drawCardFace(topLeft, size, card, colors)
         }
     }

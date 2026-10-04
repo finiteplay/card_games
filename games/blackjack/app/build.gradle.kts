@@ -90,7 +90,14 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
-            signingConfigs.findByName("release")?.let { signingConfig = it }
+            // `-Pfiniteplay.signReleaseWithDebugKey=true` signs with the debug key so a minified build can be
+            // installed on an emulator for release-variant checks (`EXECUTION_PLAN.md` B4a, B8). It never
+            // produces an uploadable artifact: Play rejects a debug-signed bundle.
+            if (providers.gradleProperty("finiteplay.signReleaseWithDebugKey").isPresent) {
+                signingConfig = signingConfigs.getByName("debug")
+            } else {
+                signingConfigs.findByName("release")?.let { signingConfig = it }
+            }
         }
     }
 }
