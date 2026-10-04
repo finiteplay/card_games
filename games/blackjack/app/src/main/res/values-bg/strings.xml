@@ -23,6 +23,8 @@
     <string name="outcome_loss">Загуба %1$s</string>
     <string name="outcome_bust">Прехвърляне %1$s</string>
     <string name="outcome_push">Равенство</string>
+    <string name="banner_win">Победа!</string>
+    <string name="banner_lose">Загуба</string>
     <string name="summary_won">Спечелихте %1$d</string>
     <string name="summary_lost">Загубихте %1$d</string>
     <string name="summary_even">Наравно</string>

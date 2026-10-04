@@ -23,6 +23,8 @@
     <string name="outcome_loss">Gubitak %1$s</string>
     <string name="outcome_bust">Preko %1$s</string>
     <string name="outcome_push">Neriješeno</string>
+    <string name="banner_win">Pobjeda!</string>
+    <string name="banner_lose">Poraz</string>
     <string name="summary_won">Dobili ste %1$d</string>
     <string name="summary_lost">Izgubili ste %1$d</string>
     <string name="summary_even">Izjednačeno</string>

@@ -23,6 +23,8 @@
     <string name="outcome_loss">패배 %1$s</string>
     <string name="outcome_bust">버스트 %1$s</string>
     <string name="outcome_push">푸시</string>
+    <string name="banner_win">승리!</string>
+    <string name="banner_lose">패배</string>
     <string name="summary_won">%1$d 땄습니다</string>
     <string name="summary_lost">%1$d 잃었습니다</string>
     <string name="summary_even">비김</string>

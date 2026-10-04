@@ -3,6 +3,7 @@ package org.finiteplay.blackjack.ui
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertIsNotEnabled
+import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onAllNodesWithTag
@@ -272,6 +273,86 @@ class TableTest {
         assertEquals(false, present("summary_net"))
         waitForResults()
         assertEquals(5, viewModel.session!!.state.dealer.size)
+    }
+
+    private fun assertBanner(word: String, amount: String?) {
+        composeRule.onNodeWithTag("result_banner").assertIsDisplayed()
+        composeRule.onNodeWithTag("result_banner_word", useUnmergedTree = true).assertTextEquals(word)
+        if (amount == null) assertEquals("a push has no amount", false, composeRule.onAllNodesWithTag("result_banner_amount", useUnmergedTree = true).fetchSemanticsNodes().isNotEmpty())
+        else composeRule.onNodeWithTag("result_banner_amount", useUnmergedTree = true).assertTextEquals(amount)
+    }
+
+    @Test
+    fun aWinShowsABigBannerWithItsNetAndThenClearsTheTable() {
+        // 19 against a dealer 16 that draws a King and busts.
+        showTable(shoeOf("TC", "6D", "9H", "TS", "KS"))
+        tap("action_deal")
+        tap("action_stand")
+        waitForResults()
+        assertBanner("You win!", "+10")
+        // It is not modal: the table's own controls are still there under it, and it goes by itself.
+        composeRule.onNodeWithTag("action_deal").assertIsEnabled()
+        composeRule.waitUntil(8_000) { !present("result_banner") }
+        composeRule.onNodeWithTag("summary_net").assertIsDisplayed()
+    }
+
+    @Test
+    fun aLossShowsALoseBannerWithTheChipsLost() {
+        showTable(shoeOf("TC", "TD", "8H", "9S"))
+        tap("action_deal")
+        tap("action_stand")
+        waitForResults()
+        assertBanner("You lose", "−10")
+    }
+
+    @Test
+    fun aPushShowsAPushBannerAndNoAmount() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        tap("action_deal")
+        tap("action_stand")
+        waitForResults()
+        assertBanner("Push", null)
+    }
+
+    @Test
+    fun aNaturalShowsABlackjackBannerPayingThreeToTwo() {
+        showTable(shoeOf("AC", "9D", "KH", "7S"))
+        tap("action_deal")
+        waitForResults()
+        assertBanner("Blackjack", "+15")
+    }
+
+    @Test
+    fun noBannerIsShownWhileTheRoundIsStillBeingPlayed() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        tap("action_deal")
+        assertEquals(false, present("result_banner"))
+    }
+
+    @Test
+    fun theEmptyFeltShowsABettingCircleAndTheBetIsStatedOnlyOnce() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        composeRule.onNodeWithTag("betting_circle").assertIsDisplayed()
+        // The circle holds the chips; the figure lives in the HUD alone.
+        assertEquals(1, composeRule.onAllNodesWithTag("bet_value", useUnmergedTree = true).fetchSemanticsNodes().size)
+        tap("action_bet_up")
+        composeRule.onNodeWithTag("bet_value", useUnmergedTree = true).assertTextEquals((Chips.MIN_BET + Chips.BET_STEP).toString())
+    }
+
+    @Test
+    fun aSingleHandDoesNotRepeatItsStakeUnderTheCards() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        tap("action_deal")
+        assertEquals(false, present("hand_0_stake"))
+    }
+
+    @Test
+    fun theHudStatesTheBankrollAndTheBetInBigFigures() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        composeRule.onNodeWithTag("bankroll_value", useUnmergedTree = true).assertTextEquals(Chips.STARTING_BANKROLL.toString())
+        composeRule.onNodeWithTag("bet_value", useUnmergedTree = true).assertTextEquals(Chips.MIN_BET.toString())
+        tap("action_bet_up")
+        composeRule.onNodeWithTag("bet_value", useUnmergedTree = true).assertTextEquals((Chips.MIN_BET + Chips.BET_STEP).toString())
     }
 
     @Test

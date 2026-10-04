@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Omogući animacije</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Savjet prikazuje pobjednički potez</string>
+    <string name="setting_hint_shows_winning_move">Pametni savjet</string>
     <string name="setting_hint_timeout">Vremensko ograničenje savjeta</string>
     <string name="hint_timeout_seconds_value">%1$d sekundi</string>
     <string name="setting_rest_reminder">Podsjetnici za odmor</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">potpuno jednako</string>
-    <string name="settings_version">Verzija %1$s</string>
     <string name="deal_picker_title">Odaberite dijeljenje</string>
     <string name="deal_status_not_played">Neodigrano</string>
     <string name="deal_status_played">Odigrano</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Sva</string>
     <string name="deal_picker_empty">Nijedno dijeljenje ne odgovara filtru.</string>
     <string name="deal_current">Trenutno</string>
+    <string name="settings_group_about">O aplikaciji</string>
+    <string name="setting_version">Verzija</string>
+    <string name="about_website">Web-stranica</string>
+    <string name="about_privacy_policy">Pravila privatnosti</string>
+    <string name="about_acknowledgements">Zahvale</string>
+    <string name="acknowledgements_intro">Ova aplikacija uključuje softver otvorenog koda:</string>
 </resources>

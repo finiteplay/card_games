@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Activează animațiile</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Indiciul arată mutarea câștigătoare</string>
+    <string name="setting_hint_shows_winning_move">Indiciu inteligent</string>
     <string name="setting_hint_timeout">Timp limită pentru indiciu</string>
     <string name="hint_timeout_seconds_value">%1$d secunde</string>
     <string name="setting_rest_reminder">Amintiri pentru pauză</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">exact la fel</string>
-    <string name="settings_version">Versiunea %1$s</string>
     <string name="deal_picker_title">Alege o împărțire</string>
     <string name="deal_status_not_played">Nejucată</string>
     <string name="deal_status_played">Jucată</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Toate</string>
     <string name="deal_picker_empty">Nicio împărțire nu se potrivește filtrului.</string>
     <string name="deal_current">Curentă</string>
+    <string name="settings_group_about">Despre</string>
+    <string name="setting_version">Versiune</string>
+    <string name="about_website">Site web</string>
+    <string name="about_privacy_policy">Politica de confidențialitate</string>
+    <string name="about_acknowledgements">Mulțumiri</string>
+    <string name="acknowledgements_intro">Această aplicație include software open-source:</string>
 </resources>

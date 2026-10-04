@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">تفعيل الرسوم المتحركة</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">التلميح يعرض الحركة الفائزة</string>
+    <string name="setting_hint_shows_winning_move">تلميح ذكي</string>
     <string name="setting_hint_timeout">مهلة التلميح</string>
     <string name="hint_timeout_seconds_value">%1$d ثانية</string>
     <string name="setting_rest_reminder">تذكيرات الراحة</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">مطابق تمامًا</string>
-    <string name="settings_version">الإصدار %1$s</string>
     <string name="deal_picker_title">اختر توزيعة</string>
     <string name="deal_status_not_played">لم تُلعب</string>
     <string name="deal_status_played">لُعبت</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">الكل</string>
     <string name="deal_picker_empty">لا توجد توزيعات مطابقة.</string>
     <string name="deal_current">الحالية</string>
+    <string name="settings_group_about">حول</string>
+    <string name="setting_version">الإصدار</string>
+    <string name="about_website">الموقع الإلكتروني</string>
+    <string name="about_privacy_policy">سياسة الخصوصية</string>
+    <string name="about_acknowledgements">شكر وتقدير</string>
+    <string name="acknowledgements_intro">يتضمن هذا التطبيق برامج مفتوحة المصدر:</string>
 </resources>

@@ -23,6 +23,8 @@
     <string name="outcome_loss">輸 %1$s</string>
     <string name="outcome_bust">爆牌 %1$s</string>
     <string name="outcome_push">平手</string>
+    <string name="banner_win">你贏了！</string>
+    <string name="banner_lose">你輸了</string>
     <string name="summary_won">你贏了 %1$d</string>
     <string name="summary_lost">你輸了 %1$d</string>
     <string name="summary_even">持平</string>

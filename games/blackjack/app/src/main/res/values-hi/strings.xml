@@ -23,6 +23,8 @@
     <string name="outcome_loss">हार %1$s</string>
     <string name="outcome_bust">बस्ट %1$s</string>
     <string name="outcome_push">बराबरी</string>
+    <string name="banner_win">आप जीते!</string>
+    <string name="banner_lose">आप हारे</string>
     <string name="summary_won">आपने %1$d जीते</string>
     <string name="summary_lost">आपने %1$d हारे</string>
     <string name="summary_even">बराबर</string>

@@ -724,4 +724,34 @@ class GameViewModelTest {
 
         assertEquals(2, viewModel.statistics.wins)
     }
+
+    /**
+     * With Intelligent Hint off, a game that has no move behind it still follows the deal's
+     * certified path — the shipped line makes it free — and once the player has moved the setting
+     * decides again.
+     */
+    @Test
+    fun aFreshGameFollowsTheCertifiedPathWhateverTheHintSettingSays() {
+        val viewModel = newViewModel()
+        viewModel.setHintShowsWinningMove(false)
+        viewModel.solutionMoveCount = 120 // as if the deal shipped a certified line
+
+        viewModel.requestHint()
+        assertEquals("the certified path, not a list of legal moves", emptyList<Move>(), viewModel.legalMoveHighlights)
+        assertEquals(true, viewModel.hintState != HintUiState.Hidden)
+
+        viewModel.dismissHint()
+        viewModel.tryCommitMove(Move.Draw)
+        viewModel.requestHint()
+        assertEquals("after a move the setting decides", true, viewModel.legalMoveHighlights.isNotEmpty())
+    }
+
+    @Test
+    fun aFreshGameWithNoCertifiedLineStillShowsLegalMovesWhenTheSettingIsOff() {
+        val viewModel = newViewModel()
+        viewModel.setHintShowsWinningMove(false)
+        viewModel.requestHint()
+        assertEquals(true, viewModel.legalMoveHighlights.isNotEmpty())
+        assertEquals(HintUiState.Hidden, viewModel.hintState)
+    }
 }

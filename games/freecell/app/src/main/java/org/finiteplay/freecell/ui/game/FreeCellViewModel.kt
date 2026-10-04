@@ -21,6 +21,7 @@ import org.finiteplay.core.ui.layout.Handedness
 import org.finiteplay.core.ui.layout.HintTimeout
 import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.session.RestReminderWindow
+import org.finiteplay.core.session.afterIntervalChange
 import org.finiteplay.core.session.foregroundEntered
 import org.finiteplay.core.session.foregroundExited
 import org.finiteplay.core.session.foregroundMsAsOf
@@ -700,7 +701,7 @@ class FreeCellViewModel(
         private set
 
     var solutionMoveCount by mutableIntStateOf(0)
-        private set
+        internal set
 
     /**
      * Looks the shipped line's length up off the main thread — the first lookup parses the whole
@@ -773,7 +774,9 @@ class FreeCellViewModel(
      * own last entry decides which.
      */
     fun requestHint() {
-        if (!settings.hintShowsWinningMove) {
+        // A game with no move behind it follows the deal's certified path whatever the setting says.
+        val followsCertifiedPath = !session.hasPlayerActed && solutionMoveCount > 0
+        if (!settings.hintShowsWinningMove && !followsCertifiedPath) {
             // No search, so no loading state and nothing that can be stale: toggles instantly.
             legalMoveHighlights = if (legalMoveHighlights.isEmpty()) legalMoves(session.state) else emptyList()
             return
@@ -853,7 +856,9 @@ class FreeCellViewModel(
     /** Applies immediately and persists; restarts the current window so a new choice takes effect right away. */
     fun setRestReminderInterval(value: RestReminderInterval) {
         updateSettings({ it.copy(restReminderInterval = value) }) { it.setRestReminderInterval(value) }
-        restReminderWindow = RestReminderWindow.start(System.currentTimeMillis())
+        val now = System.currentTimeMillis()
+        restReminderWindow = (restReminderWindow ?: RestReminderWindow.start(now))
+            .afterIntervalChange(now, value.minutes?.let { it * 60_000L })
         refreshRestReminderElapsed()
         syncRestReminderTicker()
     }

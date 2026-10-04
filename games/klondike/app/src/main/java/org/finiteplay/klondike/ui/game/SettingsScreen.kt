@@ -10,7 +10,7 @@ import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.ui.layout.HintTimeout
 import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.ui.layout.label
-import org.finiteplay.core.ui.layout.AppVersionLabel
+import org.finiteplay.core.ui.layout.AboutSettingsGroup
 import org.finiteplay.core.ui.layout.labelRes
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.platform.LocalContext
@@ -177,7 +177,7 @@ fun SettingsScreen(
 
         debugTools()
 
-        AppVersionLabel()
+        AboutSettingsGroup()
     }
 }
 

@@ -50,6 +50,7 @@ import org.finiteplay.core.ui.layout.HintTimeout
 import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.ui.theme.ThemeMode
 import org.finiteplay.core.session.RestReminderWindow
+import org.finiteplay.core.session.afterIntervalChange
 import org.finiteplay.core.session.foregroundEntered
 import org.finiteplay.core.session.foregroundExited
 import org.finiteplay.core.session.foregroundMsAsOf
@@ -475,7 +476,7 @@ class GameViewModel(
         private set
 
     var solutionMoveCount by mutableIntStateOf(0)
-        private set
+        internal set
 
     /** This game's moves as a percentage of the certified line's, or null without one. */
     val solutionRatioPercent: Long?
@@ -843,8 +844,16 @@ class GameViewModel(
      * the result is discarded as stale rather than shown against a board it no
      * longer describes.
      */
+    /**
+     * A game that has no player move behind it follows the deal's certified path whatever the
+     * Intelligent Hint setting says (`docs/games/klondike/DESIGN.md` "On-Device Hint Search"): the
+     * line is shipped, so showing it costs no search and leaves nothing to guess. Once the player
+     * has moved, the setting decides. Without a shipped line (Insane, draw-three) it never applies.
+     */
+    private fun followsCertifiedPath(): Boolean = !session.hasPlayerActed && solutionMoveCount > 0
+
     fun requestHint() {
-        if (!persistedHintShowsWinningMove) {
+        if (!persistedHintShowsWinningMove && !followsCertifiedPath()) {
             // No search, so no loading state and nothing that can be stale: toggles instantly.
             legalMoveHighlights = if (legalMoveHighlights.isEmpty()) legalMoves(session.state) else emptyList()
             return
@@ -964,7 +973,9 @@ class GameViewModel(
     /** Applies immediately and persists; restarts the current window so a new choice takes effect right away. */
     fun setRestReminderInterval(restReminderInterval: RestReminderInterval) {
         persistedRestReminderInterval = restReminderInterval
-        restReminderWindow = RestReminderWindow.start(System.currentTimeMillis())
+        val now = System.currentTimeMillis()
+        restReminderWindow = (restReminderWindow ?: RestReminderWindow.start(now))
+            .afterIntervalChange(now, restReminderInterval.minutes?.let { it * 60_000L })
         refreshRestReminderElapsed()
         syncRestReminderTicker()
         viewModelScope.launch { settingsStore.setRestReminderInterval(restReminderInterval) }

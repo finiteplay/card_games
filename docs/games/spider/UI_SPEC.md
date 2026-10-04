@@ -150,8 +150,8 @@ and not this package's gate to close.
 
 ### Hint
 
-A Settings toggle ("Hint shows the winning move", on by default) picks which of two modes Hint is
-in. The guided mode below is offered at one suit unconditionally and at two suits only for a
+A Settings toggle ("Intelligent hint", on by default) picks which of two modes Hint is
+in. A game with no player move behind it follows the deal's certified path whatever this setting says — the line is shipped, so showing it costs no search — and the setting decides again from the first move; a deal that ships no line (and so never reaches this rule) behaves as the setting says. The guided mode below is offered at one suit unconditionally and at two suits only for a
 certified deal (`SpiderViewModel.dealIsCertified`) — see below for why.
 
 **Off, or when the guided mode is not offered:** Hint highlights **the top card of every liftable

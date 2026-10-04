@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Bật hiệu ứng chuyển động</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Gợi ý hiển thị nước đi chiến thắng</string>
+    <string name="setting_hint_shows_winning_move">Gợi ý thông minh</string>
     <string name="setting_hint_timeout">Thời gian chờ gợi ý</string>
     <string name="hint_timeout_seconds_value">%1$d giây</string>
     <string name="setting_rest_reminder">Nhắc nhở nghỉ ngơi</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">hoàn toàn bằng nhau</string>
-    <string name="settings_version">Phiên bản %1$s</string>
     <string name="deal_picker_title">Chọn ván bài</string>
     <string name="deal_status_not_played">Chưa chơi</string>
     <string name="deal_status_played">Đã chơi</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Tất cả</string>
     <string name="deal_picker_empty">Không có ván nào khớp bộ lọc.</string>
     <string name="deal_current">Hiện tại</string>
+    <string name="settings_group_about">Giới thiệu</string>
+    <string name="setting_version">Phiên bản</string>
+    <string name="about_website">Trang web</string>
+    <string name="about_privacy_policy">Chính sách quyền riêng tư</string>
+    <string name="about_acknowledgements">Ghi nhận</string>
+    <string name="acknowledgements_intro">Ứng dụng này có phần mềm nguồn mở:</string>
 </resources>

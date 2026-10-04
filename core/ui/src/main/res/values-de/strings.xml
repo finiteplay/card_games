@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Animationen aktivieren</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Hinweis zeigt den Gewinnzug</string>
+    <string name="setting_hint_shows_winning_move">Intelligenter Tipp</string>
     <string name="setting_hint_timeout">Hinweis-Zeitlimit</string>
     <string name="hint_timeout_seconds_value">%1$d Sekunden</string>
     <string name="setting_rest_reminder">Pausenerinnerung</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">genau gleich</string>
-    <string name="settings_version">Version %1$s</string>
     <string name="deal_picker_title">Blatt wählen</string>
     <string name="deal_status_not_played">Nicht gespielt</string>
     <string name="deal_status_played">Gespielt</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Alle</string>
     <string name="deal_picker_empty">Keine Blätter passen zum Filter.</string>
     <string name="deal_current">Aktuell</string>
+    <string name="settings_group_about">Info</string>
+    <string name="setting_version">Version</string>
+    <string name="about_website">Webseite</string>
+    <string name="about_privacy_policy">Datenschutzerklärung</string>
+    <string name="about_acknowledgements">Danksagungen</string>
+    <string name="acknowledgements_intro">Diese App enthält Open-Source-Software:</string>
 </resources>

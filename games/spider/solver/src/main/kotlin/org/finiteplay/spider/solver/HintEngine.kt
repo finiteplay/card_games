@@ -17,14 +17,18 @@ import org.finiteplay.spider.rules.isLegal
  * (`AStarSolver.MAX_CREATED_NODES`) exhausts in well under a second regardless of the wall-clock
  * budget handed to it without solving the deals greedy and beam-limited DFS could not — both stages
  * exist for offline catalog generation, which can spend far more time and memory per deal, not for
- * a player waiting on a UI response. With them off, the only way this can prove a board lost is a
- * beam that never had to discard a move ([SpiderSolver]'s `beamPruned`).
+ * a player waiting on a UI response. [SolverLimits.exhaustiveDfs] is on instead: after the beam, the
+ * full-legal DFS runs within the same budget and, if it exhausts the board's whole reachable space,
+ * proves the board lost — whatever the beam's strategy would have ranked first. Without it the only
+ * proof available was a beam that never had to discard a move ([SpiderSolver]'s `beamPruned`),
+ * which a real board almost never satisfies.
  */
 val HINT_SOLVER_LIMITS = SolverLimits(
     maxNodes = 400_000L,
     maxMillis = 4_000L,
     playouts = 40,
     useDfsAndAStarFallback = false,
+    exhaustiveDfs = true,
     cacheCapacityPowerOfTwo = 1 shl 22,
 )
 

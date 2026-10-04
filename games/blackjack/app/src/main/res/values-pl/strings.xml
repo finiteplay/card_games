@@ -23,6 +23,8 @@
     <string name="outcome_loss">Przegrana %1$s</string>
     <string name="outcome_bust">Przebicie %1$s</string>
     <string name="outcome_push">Remis</string>
+    <string name="banner_win">Wygrana!</string>
+    <string name="banner_lose">Przegrana</string>
     <string name="summary_won">Wygrywasz %1$d</string>
     <string name="summary_lost">Przegrywasz %1$d</string>
     <string name="summary_even">Na zero</string>

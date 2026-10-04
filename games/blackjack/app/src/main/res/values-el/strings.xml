@@ -23,6 +23,8 @@
     <string name="outcome_loss">Ήττα %1$s</string>
     <string name="outcome_bust">Υπέρβαση %1$s</string>
     <string name="outcome_push">Ισοπαλία</string>
+    <string name="banner_win">Κέρδισες!</string>
+    <string name="banner_lose">Έχασες</string>
     <string name="summary_won">Κερδίσατε %1$d</string>
     <string name="summary_lost">Χάσατε %1$d</string>
     <string name="summary_even">Ισόπαλο</string>

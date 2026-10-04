@@ -55,6 +55,15 @@ data class SolverLimits(
      * to stay fast and cheap: greedy and beam alone, no exhaustive fallback.
      */
     val useDfsAndAStarFallback: Boolean = true,
+    /**
+     * Runs the full-legal DFS after the beam stage even when [useDfsAndAStarFallback] is off — and
+     * never the A* fallback. The beam alone can only prove a board lost if it never had to discard a
+     * move, which almost no real board satisfies, so without this a lost position could only ever be
+     * reported as "inconclusive". The DFS rules nothing out: if it exhausts the board's whole
+     * reachable space within the node and time budget, the board is proven lost, however the beam's
+     * strategy ranked its moves; if it does not, nothing is claimed.
+     */
+    val exhaustiveDfs: Boolean = false,
 )
 
 /** Why a solve stopped. Unsolved is not the same as unsolvable, and is never reported as one. */
@@ -395,7 +404,7 @@ class SpiderSolver(val limits: SolverLimits = SolverLimits()) {
             if (System.nanoTime() > deadline) return SolveOutcome(SolveResult.LIMIT, nodes, 0)
         }
 
-        if (!limits.useDfsAndAStarFallback) {
+        if (!limits.useDfsAndAStarFallback && !limits.exhaustiveDfs) {
             val proved = !beamPruned && !stageNodesExhausted
             return SolveOutcome(if (proved) SolveResult.EXHAUSTED else SolveResult.LIMIT, nodes, 0)
         }
@@ -419,6 +428,9 @@ class SpiderSolver(val limits: SolverLimits = SolverLimits()) {
             // already ruled out.
             return SolveOutcome(SolveResult.EXHAUSTED, nodes, 0)
         }
+        // The hint's exhaustive stage stops here: it proves a lost board or claims nothing, and
+        // leaves the strategy-informed A* to offline generation.
+        if (!limits.useDfsAndAStarFallback) return SolveOutcome(SolveResult.LIMIT, nodes, 0)
 
         // DFS ran out of node budget without exhausting the board — the common case for a two- or
         // four-suit deal, where blind traversal wanders a state space large enough that neither

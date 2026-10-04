@@ -23,6 +23,8 @@
     <string name="outcome_loss">Tappio %1$s</string>
     <string name="outcome_bust">Yli %1$s</string>
     <string name="outcome_push">Tasapeli</string>
+    <string name="banner_win">Voitit!</string>
+    <string name="banner_lose">Hävisit</string>
     <string name="summary_won">Voitit %1$d</string>
     <string name="summary_lost">Hävisit %1$d</string>
     <string name="summary_even">Tasan</string>

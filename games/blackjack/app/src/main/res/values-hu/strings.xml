@@ -23,6 +23,8 @@
     <string name="outcome_loss">Veszett %1$s</string>
     <string name="outcome_bust">Bukott %1$s</string>
     <string name="outcome_push">Döntetlen</string>
+    <string name="banner_win">Nyertél!</string>
+    <string name="banner_lose">Vesztettél</string>
     <string name="summary_won">Nyertél %1$d zsetont</string>
     <string name="summary_lost">Vesztettél %1$d zsetont</string>
     <string name="summary_even">Egyenlő</string>

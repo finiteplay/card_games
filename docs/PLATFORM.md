@@ -155,6 +155,10 @@ contrast floors, touch targets, suit symbols, font scaling, and reduced-motion r
 low-vision, motor, and vestibular needs, and they remain requirements. Any Compose semantics
 still present in a game's code are incidental, not a contract, and nothing verifies them.
 
+## Settings: About
+
+Every app's Settings ends with an About group (`core/ui`'s `AboutSettingsGroup`): the running build's version, a link to the publisher's website, a link to the privacy policy, and an Acknowledgements entry that opens a dialog listing the open-source software the app ships and its licences (`COPYRIGHT.txt` is the record, and what it may contain is `AGENTS.md` "Licensing"). The links open in the player's browser; the app itself makes no network request. The privacy policy address is `privacy_policy_url` in `core/ui`'s resources.
+
 ## Persistence
 
 Save asynchronously after every committed action, every settings or statistics change,

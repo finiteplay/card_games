@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Aktiver animasjon</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Hint viser det vinnende trekket</string>
+    <string name="setting_hint_shows_winning_move">Intelligent hint</string>
     <string name="setting_hint_timeout">Tidsavbrudd for hint</string>
     <string name="hint_timeout_seconds_value">%1$d sekunder</string>
     <string name="setting_rest_reminder">Pausepåminnelser</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">nøyaktig likt</string>
-    <string name="settings_version">Versjon %1$s</string>
     <string name="deal_picker_title">Velg et spill</string>
     <string name="deal_status_not_played">Ikke spilt</string>
     <string name="deal_status_played">Spilt</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Alle</string>
     <string name="deal_picker_empty">Ingen spill samsvarer med filteret.</string>
     <string name="deal_current">Gjeldende</string>
+    <string name="settings_group_about">Om</string>
+    <string name="setting_version">Versjon</string>
+    <string name="about_website">Nettsted</string>
+    <string name="about_privacy_policy">Personvernerklæring</string>
+    <string name="about_acknowledgements">Anerkjennelser</string>
+    <string name="acknowledgements_intro">Denne appen inneholder åpen kildekode-programvare:</string>
 </resources>

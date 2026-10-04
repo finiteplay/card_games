@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Активиране на анимациите</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Съветът показва печелившия ход</string>
+    <string name="setting_hint_shows_winning_move">Интелигентна подсказка</string>
     <string name="setting_hint_timeout">Време за изчакване на подсказка</string>
     <string name="hint_timeout_seconds_value">%1$d секунди</string>
     <string name="setting_rest_reminder">Напомняния за почивка</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">точно същото</string>
-    <string name="settings_version">Версия %1$s</string>
     <string name="deal_picker_title">Изберете раздаване</string>
     <string name="deal_status_not_played">Неизиграно</string>
     <string name="deal_status_played">Играно</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Всички</string>
     <string name="deal_picker_empty">Няма раздавания за този филтър.</string>
     <string name="deal_current">Текущо</string>
+    <string name="settings_group_about">Относно</string>
+    <string name="setting_version">Версия</string>
+    <string name="about_website">Уебсайт</string>
+    <string name="about_privacy_policy">Политика за поверителност</string>
+    <string name="about_acknowledgements">Благодарности</string>
+    <string name="acknowledgements_intro">Това приложение включва софтуер с отворен код:</string>
 </resources>

@@ -34,7 +34,7 @@
     <string name="setting_enable_animations">Enable Animation</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Hint shows the winning move</string>
+    <string name="setting_hint_shows_winning_move">Intelligent hint</string>
     <string name="setting_hint_timeout">Hint timeout</string>
     <!-- The dropdown's own value, e.g. "5 seconds" - kept as a plain %d rather than <plurals>,
          matching this project's existing choice for other numeric+noun displays. -->
@@ -127,7 +127,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">exactly the same</string>
-    <string name="settings_version">Version %1$s</string>
     <string name="deal_picker_title">Choose a deal</string>
     <string name="deal_status_not_played">Not played</string>
     <string name="deal_status_played">Played</string>
@@ -136,4 +135,11 @@
     <string name="deal_picker_empty">No deals match this filter.</string>
     <string name="deal_current">Current</string>
     <string name="deal_number" translatable="false">#%1$d</string>
+    <string name="settings_group_about">About</string>
+    <string name="setting_version">Version</string>
+    <string name="about_website">Website</string>
+    <string name="about_privacy_policy">Privacy policy</string>
+    <string name="about_acknowledgements">Acknowledgements</string>
+    <string name="acknowledgements_intro">This app includes open-source software:</string>
+    <string name="privacy_policy_url" translatable="false">https://finiteplay.org/privacy</string>
 </resources>

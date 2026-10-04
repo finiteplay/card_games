@@ -78,4 +78,36 @@ class RestReminderWindowTest {
         val exitedAgain = window.foregroundExited(INTERVAL_MS)
         assertEquals(window, exitedAgain)
     }
+
+    @Test
+    fun `changing the interval keeps the time played when it is still under the new interval`() {
+        val window = RestReminderWindow.start(0L)
+        val after = window.afterIntervalChange(nowMs = 20 * 60_000L, newIntervalMs = 30 * 60_000L)
+        assertEquals(20 * 60_000L, after.foregroundMsAsOf(20 * 60_000L))
+    }
+
+    @Test
+    fun `changing the interval starts over when the time played already reaches the new interval`() {
+        val window = RestReminderWindow.start(0L)
+        val now = 30 * 60_000L
+        val after = window.afterIntervalChange(nowMs = now, newIntervalMs = 30 * 60_000L)
+        // Keeping it would make the reminder due the instant the setting changed.
+        assertEquals(0L, after.foregroundMsAsOf(now))
+        assertFalse(isRestReminderDue(after, now, 30 * 60_000L))
+    }
+
+    @Test
+    fun `changing to never keeps the time played, so a later interval can count from it`() {
+        val window = RestReminderWindow.start(0L)
+        val after = window.afterIntervalChange(nowMs = 45 * 60_000L, newIntervalMs = null)
+        assertEquals(45 * 60_000L, after.foregroundMsAsOf(45 * 60_000L))
+    }
+
+    @Test
+    fun `a kept window keeps its background bookkeeping`() {
+        var window = RestReminderWindow.start(0L)
+        window = window.foregroundExited(10 * 60_000L)
+        val after = window.afterIntervalChange(nowMs = 12 * 60_000L, newIntervalMs = 30 * 60_000L)
+        assertEquals(window, after)
+    }
 }

@@ -29,6 +29,7 @@ import org.finiteplay.blackjack.storage.BlackjackSettingsStore
 import org.finiteplay.blackjack.storage.RoundLoad
 import org.finiteplay.blackjack.storage.SavedRound
 import org.finiteplay.core.session.RestReminderWindow
+import org.finiteplay.core.session.afterIntervalChange
 import org.finiteplay.core.session.foregroundEntered
 import org.finiteplay.core.session.foregroundExited
 import org.finiteplay.core.session.foregroundMsAsOf
@@ -318,7 +319,9 @@ class BlackjackViewModel(
     /** Applies immediately and persists; restarts the window so a new choice takes effect right away. */
     fun setRestReminderInterval(value: RestReminderInterval) {
         update({ it.copy(restReminderInterval = value) }) { it.setRestReminderInterval(value) }
-        restReminderWindow = RestReminderWindow.start(System.currentTimeMillis())
+        val now = System.currentTimeMillis()
+        restReminderWindow = (restReminderWindow ?: RestReminderWindow.start(now))
+            .afterIntervalChange(now, value.minutes?.let { it * 60_000L })
         refreshRestReminderElapsed()
         syncRestReminderTicker()
     }

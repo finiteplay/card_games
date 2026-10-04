@@ -35,6 +35,9 @@
     <string name="outcome_loss">Lose %1$s</string>
     <string name="outcome_bust">Bust %1$s</string>
     <string name="outcome_push">Push</string>
+    <!-- The big banner over a settled round; a blackjack, a bust and a push use the hand outcome words above. -->
+    <string name="banner_win">You win!</string>
+    <string name="banner_lose">You lose</string>
 
     <!-- The round's net, and the insurance's own result. -->
     <string name="summary_won">You won %1$d</string>

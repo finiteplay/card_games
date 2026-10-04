@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">애니메이션 사용</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">힌트가 승리하는 수를 보여줍니다</string>
+    <string name="setting_hint_shows_winning_move">스마트 힌트</string>
     <string name="setting_hint_timeout">힌트 제한 시간</string>
     <string name="hint_timeout_seconds_value">%1$d초</string>
     <string name="setting_rest_reminder">휴식 알림</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">완전히 동일</string>
-    <string name="settings_version">버전 %1$s</string>
     <string name="deal_picker_title">판 선택</string>
     <string name="deal_status_not_played">플레이 안 함</string>
     <string name="deal_status_played">플레이함</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">전체</string>
     <string name="deal_picker_empty">필터에 맞는 판이 없습니다.</string>
     <string name="deal_current">현재</string>
+    <string name="settings_group_about">정보</string>
+    <string name="setting_version">버전</string>
+    <string name="about_website">웹사이트</string>
+    <string name="about_privacy_policy">개인정보 처리방침</string>
+    <string name="about_acknowledgements">오픈소스 고지</string>
+    <string name="acknowledgements_intro">이 앱에는 오픈소스 소프트웨어가 포함되어 있습니다:</string>
 </resources>

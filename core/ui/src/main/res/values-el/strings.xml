@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Ενεργοποίηση κίνησης</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Η υπόδειξη δείχνει τη νικηφόρα κίνηση</string>
+    <string name="setting_hint_shows_winning_move">Έξυπνη υπόδειξη</string>
     <string name="setting_hint_timeout">Χρονικό όριο υπόδειξης</string>
     <string name="hint_timeout_seconds_value">%1$d δευτερόλεπτα</string>
     <string name="setting_rest_reminder">Αναμνήσεις διαλείμματος</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">ακριβώς το ίδιο</string>
-    <string name="settings_version">Έκδοση %1$s</string>
     <string name="deal_picker_title">Επιλέξτε διανομή</string>
     <string name="deal_status_not_played">Δεν παίχτηκε</string>
     <string name="deal_status_played">Παίχτηκε</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Όλες</string>
     <string name="deal_picker_empty">Καμία διανομή δεν ταιριάζει.</string>
     <string name="deal_current">Τρέχουσα</string>
+    <string name="settings_group_about">Πληροφορίες</string>
+    <string name="setting_version">Έκδοση</string>
+    <string name="about_website">Ιστότοπος</string>
+    <string name="about_privacy_policy">Πολιτική απορρήτου</string>
+    <string name="about_acknowledgements">Αναγνωρίσεις</string>
+    <string name="acknowledgements_intro">Αυτή η εφαρμογή περιλαμβάνει λογισμικό ανοικτού κώδικα:</string>
 </resources>

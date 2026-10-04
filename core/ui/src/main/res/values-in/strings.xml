@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Aktifkan animasi</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Petunjuk menampilkan langkah kemenangan</string>
+    <string name="setting_hint_shows_winning_move">Petunjuk cerdas</string>
     <string name="setting_hint_timeout">Batas waktu petunjuk</string>
     <string name="hint_timeout_seconds_value">%1$d detik</string>
     <string name="setting_rest_reminder">Pengingat istirahat</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">persis sama</string>
-    <string name="settings_version">Versi %1$s</string>
     <string name="deal_picker_title">Pilih pembagian</string>
     <string name="deal_status_not_played">Belum dimainkan</string>
     <string name="deal_status_played">Dimainkan</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Semua</string>
     <string name="deal_picker_empty">Tidak ada pembagian yang cocok.</string>
     <string name="deal_current">Saat ini</string>
+    <string name="settings_group_about">Tentang</string>
+    <string name="setting_version">Versi</string>
+    <string name="about_website">Situs web</string>
+    <string name="about_privacy_policy">Kebijakan privasi</string>
+    <string name="about_acknowledgements">Ucapan terima kasih</string>
+    <string name="acknowledgements_intro">Aplikasi ini menyertakan perangkat lunak sumber terbuka:</string>
 </resources>

@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Ota animaatiot käyttöön</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Vihje näyttää voittavan siirron</string>
+    <string name="setting_hint_shows_winning_move">Älykäs vihje</string>
     <string name="setting_hint_timeout">Vihjeen aikaraja</string>
     <string name="hint_timeout_seconds_value">%1$d sekuntia</string>
     <string name="setting_rest_reminder">Taukomuistutukset</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">täsmälleen sama</string>
-    <string name="settings_version">Versio %1$s</string>
     <string name="deal_picker_title">Valitse jako</string>
     <string name="deal_status_not_played">Pelaamatta</string>
     <string name="deal_status_played">Pelattu</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Kaikki</string>
     <string name="deal_picker_empty">Mikään jako ei vastaa suodatinta.</string>
     <string name="deal_current">Nykyinen</string>
+    <string name="settings_group_about">Tietoja</string>
+    <string name="setting_version">Versio</string>
+    <string name="about_website">Verkkosivusto</string>
+    <string name="about_privacy_policy">Tietosuojakäytäntö</string>
+    <string name="about_acknowledgements">Kiitokset</string>
+    <string name="acknowledgements_intro">Tämä sovellus sisältää avoimen lähdekoodin ohjelmistoja:</string>
 </resources>

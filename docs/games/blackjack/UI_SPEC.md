@@ -14,7 +14,7 @@ true of it:
 
 | State | Table | Action bar |
 |---|---|---|
-| **Idle** — before the first Deal, or after Reset | Empty felt; the bet stepper | Settings, Bet −, Bet +, Deal |
+| **Idle** — before the first Deal, or after Reset | Empty felt with a betting circle holding the bet as a chip stack; the bet stepper | Settings, Bet −, Bet +, Deal |
 | **Insurance** | Four cards dealt, hole face down | Settings, Insure, Decline, Hint |
 | **Playing** | The hands; the active hand marked | Settings, then each of Hit, Stand, Double, Split that is legal, then Hint |
 | **Settled** | Every card turned over; each hand's result; the round's net | Settings, Bet −, Bet +, Next round (or Reset) |
@@ -30,16 +30,28 @@ is already saved, so leaving costs nothing and restores exactly (`DESIGN.md` "Pe
 
 ### Status row
 
-The title at the leading edge; centred in the space it leaves, two lines — the bankroll on the first
-(`Chips 1,000`), the selected or staked bet on the second (`Bet 100`, with the last settlement's
-chip delta appended once settled, `+150` in the positive accent or `−100` in the negative one; the
-sign is always printed, so colour is never the only cue). Help and Statistics are icons in the
-trailing corner, as in the other games. The row reserves two lines whatever the translation.
+The row at the top is the title at the leading edge, with Help and Statistics as icons in the
+trailing corner, as in the other games. The bankroll and the bet are not in it: they are the **chips
+HUD**, a row of two pills **directly above the action bar**, where the thumb already is. The
+bankroll is a large gold-ringed pill at the leading edge (a coin and the figure), and the selected
+or staked bet a second pill at the trailing edge (a stack of chips in the denominations the bet is
+made of, and the figure), with the last settlement's chip delta beside it once settled, `+150` in the positive
+accent or `−100` in the negative one; the sign is always printed, so colour is never the only cue.
+The bankroll counts up or down to its new figure when a round's result is shown, and the bet pops
+when it changes; under Skip Animations both simply change. The pills are dark and translucent, so
+their white figures read on the felt in either theme. The HUD is one accessibility node that reads
+as `Chips 1,000` / `Bet 100`, as the old two-line row did.
+
+**Chip stacks** are drawn, never an asset: the fewest chips of the largest denominations (10, 50,
+100, 500, 1,000), one column per denomination. They are decorative — the amount is always printed
+beside them. The bet's figure is stated **once**, in the HUD: the betting circle holds only
+the chips, and a hand states its own stake under its cards only when the round is split, since a
+split round has several stakes and the HUD shows their total.
 
 ### Table, portrait
 
-Top to bottom: the status row; the **dealer** area; the **player** area; the bet stepper's value
-(Idle and Settled only); the action bar.
+Top to bottom: the status row; the **dealer** area; the **player** area; the summary line; the
+chips HUD; the action bar.
 
 - The dealer area holds one hand, centred, a total badge beneath it. While the hole card is face
   down the badge shows the up card's value alone.
@@ -121,12 +133,25 @@ highlighted and nothing is counted: there is no hints statistic, since the hint 
 ## Settlement Presentation
 
 Settlement is a transaction (`RULES.md` "Round Lifecycle") and is presented as a result, not a win
-dialog — there is no larger game that has been won.
+dialog — there is no larger game that has been won. It is presented *loudly*, though, as the round's
+payoff: a banner and, on a win, confetti, none of it ever blocking the table.
 
+- **The banner.** Once the results are shown, a large banner names the round in the gap between the
+  dealer's hand and the player's (in the middle in landscape): `You win!` with the net in large
+  figures, `Blackjack` for a win that includes a natural, `You lose`, `Bust` for a lost round in
+  which every hand went over, `Push` for a round in which every hand tied, and `Even` for any other
+  round that nets nothing. It is chosen from the round's net, not one hand: a split round that wins
+  one hand and loses a bigger one is a loss. It is green, dark gold, red, or slate with white type,
+  announced to a screen reader as a polite live region, and gone after about 2.6 seconds; the
+  summary line below stays. It never intercepts a touch.
+- **Celebration.** The banner springs in. A win throws confetti from it, more for a blackjack; a
+  loss washes the table red for a moment; the net floats up toward the bankroll as it counts to its
+  new figure. The banner does not shake. Under Skip Animations or system reduced motion the banner
+  is simply there for the same time, with none of the rest.
 - Nothing modal. The table stays in place, every card face up, and each hand's result sits beneath
   its total badge: `Blackjack +150`, `Win +100`, `Push`, `Lose −100`, `Bust −100`. A doubled hand
   shows its doubled stake.
-- A summary line above the action bar states the round's net — `You won 150`, `You lost 100`, or
+- Each hand's result is set in larger bold type than its total. A summary line above the action bar states the round's net — `You won 150`, `You lost 100`, or
   `Even` — and, when insurance was taken, its own result (`Insurance paid 100` / `Insurance lost
   50`). The status row shows the same net as its signed delta.
 - The dealer's draws are paced (**Motion**, below). Results appear only after the dealer's last card
@@ -172,6 +197,8 @@ card is shown and nothing about it is timed.
   further dealer card appears one at a time, 600 ms apart, and results follow 400 ms after the last.
   Skip Animations (or system reduced motion) shortens each step to 150 ms — the draws stay visibly
   discrete, never collapsed into one frame (`EXECUTION_PLAN.md` B7).
+- **The result banner and its celebration** are described in "Settlement Presentation"; they run
+  only after the results are shown and respect the same Skip Animations and reduced-motion rule.
 - Card *flights* from the shoe, and the hole-card flip as an animation rather than a step, are B7's
   and are not in the first release (`TODO.md`).
 

@@ -23,7 +23,7 @@ import org.finiteplay.core.storage.AppLocale
 import org.finiteplay.core.storage.SYSTEM_LANGUAGE
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.AppLanguages
-import org.finiteplay.core.ui.layout.AppVersionLabel
+import org.finiteplay.core.ui.layout.AboutSettingsGroup
 import org.finiteplay.core.ui.layout.DropdownSettingRow
 import org.finiteplay.core.ui.layout.FullScreenPanel
 import org.finiteplay.core.session.formatElapsed
@@ -112,7 +112,7 @@ fun SettingsScreen(viewModel: BlackjackViewModel, onClose: () -> Unit) {
                 testTag = "setting_rest_reminder_current_session",
             )
         }
-        AppVersionLabel()
+        AboutSettingsGroup()
     }
 }
 

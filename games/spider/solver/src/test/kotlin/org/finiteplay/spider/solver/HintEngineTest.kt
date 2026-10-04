@@ -106,4 +106,41 @@ class HintEngineTest {
         assertTrue("expected guidance, got $outcome", outcome is HintOutcome.Guidance)
         assertTrue(org.finiteplay.spider.rules.isLegal(start, (outcome as HintOutcome.Guidance).move))
     }
+
+    /**
+     * Three single-suit cards that can shuffle among themselves and ten full columns: more than one
+     * legal move, so a beam of width one must discard some, yet a tiny reachable space that never
+     * banks a suit — a lost board that only an exhaustive search can prove lost.
+     */
+    private fun smallLostBoard(): SpiderState {
+        val tableau = listOf(
+            listOf(up(Card(Suit.SPADES, Rank.FIVE))),
+            listOf(up(Card(Suit.SPADES, Rank.FOUR))),
+            listOf(up(Card(Suit.SPADES, Rank.THREE))),
+        ) + (3 until 10).map { listOf(up(Card(Suit.CLUBS, Rank.KING))) }
+        return SpiderState(
+            seed = 1L,
+            versions = versions,
+            suitCount = SuitCount.TWO,
+            tableau = tableau,
+            stock = emptyList(),
+            banked = mapOf(Suit.SPADES to 0, Suit.HEARTS to 0, Suit.CLUBS to 0, Suit.DIAMONDS to 0),
+            status = GameStatus.IN_PROGRESS,
+        )
+    }
+
+    @Test
+    fun `a beam that had to discard moves proves nothing, but the exhaustive stage does`() {
+        val board = smallLostBoard()
+        val beamOnly = SolverLimits(playouts = 0, beamWidth = 1, useDfsAndAStarFallback = false)
+        assertEquals(SolveResult.LIMIT, SpiderSolver(beamOnly).certifyWithOutcome(board).outcome.result)
+
+        val exhaustive = beamOnly.copy(exhaustiveDfs = true)
+        assertEquals(SolveResult.EXHAUSTED, SpiderSolver(exhaustive).certifyWithOutcome(board).outcome.result)
+    }
+
+    @Test
+    fun `the hint reports no solution once every path from the board is exhausted`() {
+        assertEquals(HintOutcome.NoSolution, HintEngine(SpiderSolver(HINT_SOLVER_LIMITS)).hint(smallLostBoard()))
+    }
 }

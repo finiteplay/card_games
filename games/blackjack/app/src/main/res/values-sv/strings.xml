@@ -23,6 +23,8 @@
     <string name="outcome_loss">Förlust %1$s</string>
     <string name="outcome_bust">Över %1$s</string>
     <string name="outcome_push">Oavgjort</string>
+    <string name="banner_win">Du vann!</string>
+    <string name="banner_lose">Du förlorade</string>
     <string name="summary_won">Du vann %1$d</string>
     <string name="summary_lost">Du förlorade %1$d</string>
     <string name="summary_even">Lika</string>

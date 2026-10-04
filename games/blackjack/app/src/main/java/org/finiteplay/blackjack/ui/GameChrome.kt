@@ -53,20 +53,17 @@ import org.finiteplay.core.ui.layout.boardTitleStyle
 import org.finiteplay.core.ui.theme.LocalAppColors
 
 /**
- * The status row (`UI_SPEC.md` "Status row"): the title, then the bankroll and the bet — with the
- * last settlement's signed delta appended once it has been shown — and Help and Statistics in the
- * trailing corner. Two lines are reserved whatever the translation.
+ * The status row (`UI_SPEC.md` "Status row"): the title, with Help and Statistics in the trailing
+ * corner. The bankroll and the bet are not here but in the chips HUD above the action bar, where
+ * the thumb is.
  */
 @Composable
 internal fun StatusRow(
-    bankroll: Int,
-    bet: Int,
-    lastDelta: Int?,
     onHelp: () -> Unit,
     onStatistics: () -> Unit,
 ) {
     Row(
-        modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 6.dp, bottom = 6.dp),
+        modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 2.dp, bottom = 2.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Text(
@@ -76,25 +73,8 @@ internal fun StatusRow(
             color = boardTitleColor(),
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.testTag("game_title"),
+            modifier = Modifier.weight(1f).testTag("game_title"),
         )
-        val statusStyle = boardStatusStyle()
-        val reservedHeight = with(LocalDensity.current) { (statusStyle.lineHeight * 2).toDp() }
-        Box(
-            modifier = Modifier.weight(1f).heightIn(min = reservedHeight).padding(horizontal = 8.dp),
-            contentAlignment = Alignment.Center,
-        ) {
-            val betLine = stringResource(R.string.status_bet, bet) + (lastDelta?.let { "  " + signed(it) } ?: "")
-            Text(
-                text = stringResource(R.string.status_chips, bankroll) + "\n" + betLine,
-                style = statusStyle,
-                color = boardStatusColor(),
-                textAlign = TextAlign.Center,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis,
-                modifier = Modifier.testTag("status_row"),
-            )
-        }
         StatusIcon(Icons.AutoMirrored.Filled.HelpOutline, R.string.help_title, LocalAppColors.current.action.replay, "help_button", onHelp)
         StatusIcon(Icons.Filled.BarChart, CoreR.string.statistics_title, LocalAppColors.current.action.statistics, "statistics_button", onStatistics)
     }

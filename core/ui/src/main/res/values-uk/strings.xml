@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Увімкнути анімацію</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Підказка показує переможний хід</string>
+    <string name="setting_hint_shows_winning_move">Розумна підказка</string>
     <string name="setting_hint_timeout">Тайм-аут підказки</string>
     <string name="hint_timeout_seconds_value">%1$d секунд</string>
     <string name="setting_rest_reminder">Нагадування про відпочинок</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">точно так само</string>
-    <string name="settings_version">Версія %1$s</string>
     <string name="deal_picker_title">Оберіть роздачу</string>
     <string name="deal_status_not_played">Не зіграно</string>
     <string name="deal_status_played">Зіграно</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Усі</string>
     <string name="deal_picker_empty">Жодна роздача не відповідає фільтру.</string>
     <string name="deal_current">Поточна</string>
+    <string name="settings_group_about">Про застосунок</string>
+    <string name="setting_version">Версія</string>
+    <string name="about_website">Вебсайт</string>
+    <string name="about_privacy_policy">Політика конфіденційності</string>
+    <string name="about_acknowledgements">Подяки</string>
+    <string name="acknowledgements_intro">Цей застосунок містить програмне забезпечення з відкритим кодом:</string>
 </resources>

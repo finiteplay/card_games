@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Activer les animations</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">L\'indice montre le coup gagnant</string>
+    <string name="setting_hint_shows_winning_move">Indice intelligent</string>
     <string name="setting_hint_timeout">Délai d\'indice</string>
     <string name="hint_timeout_seconds_value">%1$d secondes</string>
     <string name="setting_rest_reminder">Rappels de pause</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">exactement pareil</string>
-    <string name="settings_version">Version %1$s</string>
     <string name="deal_picker_title">Choisir une donne</string>
     <string name="deal_status_not_played">Non jouée</string>
     <string name="deal_status_played">Jouée</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Toutes</string>
     <string name="deal_picker_empty">Aucune donne ne correspond au filtre.</string>
     <string name="deal_current">En cours</string>
+    <string name="settings_group_about">À propos</string>
+    <string name="setting_version">Version</string>
+    <string name="about_website">Site web</string>
+    <string name="about_privacy_policy">Politique de confidentialité</string>
+    <string name="about_acknowledgements">Remerciements</string>
+    <string name="acknowledgements_intro">Cette application inclut des logiciels open source :</string>
 </resources>

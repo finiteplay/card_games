@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">एनिमेशन सक्षम करें</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">संकेत जीतने वाली चाल दिखाता है</string>
+    <string name="setting_hint_shows_winning_move">स्मार्ट संकेत</string>
     <string name="setting_hint_timeout">संकेत समय सीमा</string>
     <string name="hint_timeout_seconds_value">%1$d सेकंड</string>
     <string name="setting_rest_reminder">आराम अनुस्ठापक</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">बिल्कुल बराबर</string>
-    <string name="settings_version">संस्करण %1$s</string>
     <string name="deal_picker_title">बँटवारा चुनें</string>
     <string name="deal_status_not_played">खेला नहीं</string>
     <string name="deal_status_played">खेला गया</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">सभी</string>
     <string name="deal_picker_empty">इस फ़िल्टर से कोई बँटवारा मेल नहीं खाता।</string>
     <string name="deal_current">वर्तमान</string>
+    <string name="settings_group_about">परिचय</string>
+    <string name="setting_version">संस्करण</string>
+    <string name="about_website">वेबसाइट</string>
+    <string name="about_privacy_policy">गोपनीयता नीति</string>
+    <string name="about_acknowledgements">आभार</string>
+    <string name="acknowledgements_intro">इस ऐप में ओपन-सोर्स सॉफ़्टवेयर शामिल है:</string>
 </resources>

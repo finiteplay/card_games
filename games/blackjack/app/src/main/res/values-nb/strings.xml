@@ -23,6 +23,8 @@
     <string name="outcome_loss">Tap %1$s</string>
     <string name="outcome_bust">Bust %1$s</string>
     <string name="outcome_push">Uavgjort</string>
+    <string name="banner_win">Du vant!</string>
+    <string name="banner_lose">Du tapte</string>
     <string name="summary_won">Du vant %1$d</string>
     <string name="summary_lost">Du tapte %1$d</string>
     <string name="summary_even">Likt</string>

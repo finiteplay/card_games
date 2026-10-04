@@ -23,6 +23,8 @@
     <string name="outcome_loss">Perdi %1$s</string>
     <string name="outcome_bust">Sballato %1$s</string>
     <string name="outcome_push">Pareggio</string>
+    <string name="banner_win">Hai vinto!</string>
+    <string name="banner_lose">Hai perso</string>
     <string name="summary_won">Hai vinto %1$d</string>
     <string name="summary_lost">Hai perso %1$d</string>
     <string name="summary_even">Pari</string>

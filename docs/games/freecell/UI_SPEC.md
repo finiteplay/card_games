@@ -129,8 +129,8 @@ handedness, exactly as Klondike states.
 
 ### Hint
 
-A Settings toggle ("Hint shows the winning move", on by default) picks which of two modes the
-Hint action is in. Off, Hint highlights every legal move at once and has no search behind it at
+A Settings toggle ("Intelligent hint", on by default) picks which of two modes the
+Hint action is in. A game with no player move behind it follows the deal's certified path whatever this setting says — the line is shipped, so showing it costs no search — and the setting decides again from the first move; a deal that ships no line (and so never reaches this rule) behaves as the setting says. Off, Hint highlights every legal move at once and has no search behind it at
 all — tapping Hint again while highlights are showing hides them. Turning this setting on or off
 does not change what a hint already on screen shows, only the next request. On (the default),
 Hint runs the on-device solver as described below.

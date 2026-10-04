@@ -23,6 +23,8 @@
     <string name="outcome_loss">Prohra %1$s</string>
     <string name="outcome_bust">Přes %1$s</string>
     <string name="outcome_push">Remíza</string>
+    <string name="banner_win">Výhra!</string>
+    <string name="banner_lose">Prohra</string>
     <string name="summary_won">Vyhráli jste %1$d</string>
     <string name="summary_lost">Prohráli jste %1$d</string>
     <string name="summary_even">Vyrovnáno</string>

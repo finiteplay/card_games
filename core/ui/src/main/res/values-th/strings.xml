@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">เปิดใช้งานแอนิเมชัน</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">คำใบ้แสดงการเดินที่จะชนะ</string>
+    <string name="setting_hint_shows_winning_move">คำใบ้อัจฉริยะ</string>
     <string name="setting_hint_timeout">หมดเวลาคำใบ้</string>
     <string name="hint_timeout_seconds_value">%1$d วินาที</string>
     <string name="setting_rest_reminder">การแจ้งเตือนพักผ้อน</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">เท่ากันพอดี</string>
-    <string name="settings_version">เวอร์ชัน %1$s</string>
     <string name="deal_picker_title">เลือกกระดาน</string>
     <string name="deal_status_not_played">ยังไม่ได้เล่น</string>
     <string name="deal_status_played">เล่นแล้ว</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">ทั้งหมด</string>
     <string name="deal_picker_empty">ไม่มีกระดานที่ตรงกับตัวกรอง</string>
     <string name="deal_current">ปัจจุบัน</string>
+    <string name="settings_group_about">เกี่ยวกับ</string>
+    <string name="setting_version">เวอร์ชัน</string>
+    <string name="about_website">เว็บไซต์</string>
+    <string name="about_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="about_acknowledgements">การรับทราบ</string>
+    <string name="acknowledgements_intro">แอปนี้มีซอฟต์แวร์โอเพนซอร์ส:</string>
 </resources>

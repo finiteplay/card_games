@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Włącz animacje</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Podpowiedź pokazuje zwycięski ruch</string>
+    <string name="setting_hint_shows_winning_move">Inteligentna podpowiedź</string>
     <string name="setting_hint_timeout">Limit czasu podpowiedzi</string>
     <string name="hint_timeout_seconds_value">%1$d sekund</string>
     <string name="setting_rest_reminder">Przypomnienia o przerwie</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">dokładnie tyle samo</string>
-    <string name="settings_version">Wersja %1$s</string>
     <string name="deal_picker_title">Wybierz rozdanie</string>
     <string name="deal_status_not_played">Nie grano</string>
     <string name="deal_status_played">Grano</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Wszystkie</string>
     <string name="deal_picker_empty">Żadne rozdanie nie pasuje do filtra.</string>
     <string name="deal_current">Bieżące</string>
+    <string name="settings_group_about">O aplikacji</string>
+    <string name="setting_version">Wersja</string>
+    <string name="about_website">Strona internetowa</string>
+    <string name="about_privacy_policy">Polityka prywatności</string>
+    <string name="about_acknowledgements">Podziękowania</string>
+    <string name="acknowledgements_intro">Ta aplikacja zawiera oprogramowanie open source:</string>
 </resources>

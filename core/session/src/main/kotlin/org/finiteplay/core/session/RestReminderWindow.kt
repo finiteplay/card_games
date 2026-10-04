@@ -60,6 +60,17 @@ fun RestReminderWindow.foregroundExited(nowMs: Long): RestReminderWindow {
 fun RestReminderWindow.foregroundMsAsOf(nowMs: Long): Long =
     foregroundMs + (openSegmentStartMs?.let { nowMs - it } ?: 0L)
 
+/**
+ * The window after the player picks a new reminder interval ([newIntervalMs], or null for never).
+ * Time already played toward the reminder is kept while it is still under the new interval — a
+ * player who has played twenty minutes and moves a thirty-minute reminder to forty is not made to
+ * start over. Once the time played already reaches the new interval, keeping it would make the
+ * reminder due the instant the setting changed, so the window starts fresh from [nowMs] instead.
+ * Choosing never keeps the time played, so choosing an interval again later counts from it.
+ */
+fun RestReminderWindow.afterIntervalChange(nowMs: Long, newIntervalMs: Long?): RestReminderWindow =
+    if (newIntervalMs == null || foregroundMsAsOf(nowMs) < newIntervalMs) this else RestReminderWindow.start(nowMs)
+
 /** Whether [window] has accumulated at least [intervalMs] of foreground time as of [nowMs]. */
 fun isRestReminderDue(window: RestReminderWindow, nowMs: Long, intervalMs: Long): Boolean =
     window.foregroundMsAsOf(nowMs) >= intervalMs

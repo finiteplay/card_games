@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Activar animaciones</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">La pista muestra el movimiento ganador</string>
+    <string name="setting_hint_shows_winning_move">Pista inteligente</string>
     <string name="setting_hint_timeout">Tiempo de espera de la pista</string>
     <string name="hint_timeout_seconds_value">%1$d segundos</string>
     <string name="setting_rest_reminder">Recordatorios de descanso</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">exactamente igual</string>
-    <string name="settings_version">Versión %1$s</string>
     <string name="deal_picker_title">Elige un reparto</string>
     <string name="deal_status_not_played">Sin jugar</string>
     <string name="deal_status_played">Jugado</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Todos</string>
     <string name="deal_picker_empty">Ningún reparto coincide con el filtro.</string>
     <string name="deal_current">Actual</string>
+    <string name="settings_group_about">Acerca de</string>
+    <string name="setting_version">Versión</string>
+    <string name="about_website">Sitio web</string>
+    <string name="about_privacy_policy">Política de privacidad</string>
+    <string name="about_acknowledgements">Agradecimientos</string>
+    <string name="acknowledgements_intro">Esta aplicación incluye software de código abierto:</string>
 </resources>

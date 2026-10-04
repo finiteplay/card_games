@@ -23,6 +23,8 @@
     <string name="outcome_loss">Verlust %1$s</string>
     <string name="outcome_bust">Überkauft %1$s</string>
     <string name="outcome_push">Push</string>
+    <string name="banner_win">Gewonnen!</string>
+    <string name="banner_lose">Verloren</string>
     <string name="summary_won">Du hast %1$d gewonnen</string>
     <string name="summary_lost">Du hast %1$d verloren</string>
     <string name="summary_even">Ausgeglichen</string>

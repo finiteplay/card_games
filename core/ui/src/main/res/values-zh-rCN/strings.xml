@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">启用动画</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">提示显示获胜的一步</string>
+    <string name="setting_hint_shows_winning_move">智能提示</string>
     <string name="setting_hint_timeout">提示超时</string>
     <string name="hint_timeout_seconds_value">%1$d 秒</string>
     <string name="setting_rest_reminder">休息提醒</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">完全相同</string>
-    <string name="settings_version">版本 %1$s</string>
     <string name="deal_picker_title">选择牌局</string>
     <string name="deal_status_not_played">未玩</string>
     <string name="deal_status_played">已玩</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">全部</string>
     <string name="deal_picker_empty">没有符合筛选条件的牌局。</string>
     <string name="deal_current">当前</string>
+    <string name="settings_group_about">关于</string>
+    <string name="setting_version">版本</string>
+    <string name="about_website">网站</string>
+    <string name="about_privacy_policy">隐私政策</string>
+    <string name="about_acknowledgements">致谢</string>
+    <string name="acknowledgements_intro">本应用包含开源软件：</string>
 </resources>

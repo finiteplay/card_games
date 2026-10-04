@@ -23,6 +23,8 @@
     <string name="outcome_loss">Kalah %1$s</string>
     <string name="outcome_bust">Bust %1$s</string>
     <string name="outcome_push">Seri</string>
+    <string name="banner_win">Kamu menang!</string>
+    <string name="banner_lose">Kamu kalah</string>
     <string name="summary_won">Anda menang %1$d</string>
     <string name="summary_lost">Anda kalah %1$d</string>
     <string name="summary_even">Impas</string>

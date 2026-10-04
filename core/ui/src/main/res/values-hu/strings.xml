@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Animációk engedélyezése</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">A tipp megmutatja a nyerő lépést</string>
+    <string name="setting_hint_shows_winning_move">Intelligens tipp</string>
     <string name="setting_hint_timeout">Tipp időkorlátja</string>
     <string name="hint_timeout_seconds_value">%1$d másodperc</string>
     <string name="setting_rest_reminder">Pihenési emlékeztetők</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">pontosan ugyanannyi</string>
-    <string name="settings_version">Verzió: %1$s</string>
     <string name="deal_picker_title">Osztás kiválasztása</string>
     <string name="deal_status_not_played">Nem játszott</string>
     <string name="deal_status_played">Játszott</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Mind</string>
     <string name="deal_picker_empty">Egy osztás sem felel meg a szűrőnek.</string>
     <string name="deal_current">Aktuális</string>
+    <string name="settings_group_about">Névjegy</string>
+    <string name="setting_version">Verzió</string>
+    <string name="about_website">Weboldal</string>
+    <string name="about_privacy_policy">Adatvédelmi irányelvek</string>
+    <string name="about_acknowledgements">Köszönetnyilvánítás</string>
+    <string name="acknowledgements_intro">Ez az alkalmazás nyílt forráskódú szoftvert tartalmaz:</string>
 </resources>

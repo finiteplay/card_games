@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Animaties inschakelen</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Hint toont de winnende zet</string>
+    <string name="setting_hint_shows_winning_move">Slimme hint</string>
     <string name="setting_hint_timeout">Time-out voor hint</string>
     <string name="hint_timeout_seconds_value">%1$d seconden</string>
     <string name="setting_rest_reminder">Pauzeherinneringen</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">precies gelijk</string>
-    <string name="settings_version">Versie %1$s</string>
     <string name="deal_picker_title">Kies een deal</string>
     <string name="deal_status_not_played">Niet gespeeld</string>
     <string name="deal_status_played">Gespeeld</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Alle</string>
     <string name="deal_picker_empty">Geen deals komen overeen met het filter.</string>
     <string name="deal_current">Huidige</string>
+    <string name="settings_group_about">Over</string>
+    <string name="setting_version">Versie</string>
+    <string name="about_website">Website</string>
+    <string name="about_privacy_policy">Privacybeleid</string>
+    <string name="about_acknowledgements">Erkenningen</string>
+    <string name="acknowledgements_intro">Deze app bevat open-sourcesoftware:</string>
 </resources>

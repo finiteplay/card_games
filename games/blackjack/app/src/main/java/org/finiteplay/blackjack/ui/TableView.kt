@@ -202,18 +202,25 @@ fun PlayerHandView(
             maxLines = 1,
             modifier = Modifier.testTag("hand_${index}_total"),
         )
-        Text(
-            text = stringResource(R.string.status_bet, hand.bet),
-            style = MaterialTheme.typography.labelMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            maxLines = 1,
-            modifier = Modifier.testTag("hand_${index}_stake"),
-        )
+        // The bet is stated once, in the HUD. A split round has several stakes, so each hand states its own.
+        if (split) {
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                ChipStack(amount = hand.bet, chipWidth = 18.dp)
+                Text(
+                    text = stringResource(R.string.status_bet, hand.bet),
+                    style = MaterialTheme.typography.labelLarge,
+                    fontWeight = FontWeight.SemiBold,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    modifier = Modifier.testTag("hand_${index}_stake"),
+                )
+            }
+        }
         if (result != null) {
             Text(
                 text = resultText(result),
-                style = MaterialTheme.typography.labelLarge,
-                fontWeight = FontWeight.SemiBold,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.ExtraBold,
                 color = resultColor(result),
                 textAlign = TextAlign.Center,
                 modifier = Modifier.testTag("hand_${index}_result"),
@@ -335,15 +342,20 @@ fun Table(view: TableView, landscape: Boolean, modifier: Modifier = Modifier) {
     }
 }
 
-/** A placeholder shown on an empty felt, before the first Deal: nothing is dealt until the bet is placed. */
+/** The empty felt before the first Deal: a betting circle holding the chosen bet; nothing is dealt until it is placed. */
 @Composable
-fun EmptyTable(modifier: Modifier = Modifier) {
+fun EmptyTable(bet: Int, animate: Boolean, modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize().widthIn(max = 480.dp).testTag("empty_table"), contentAlignment = Alignment.Center) {
-        Text(
-            text = stringResource(R.string.label_place_bet),
-            style = MaterialTheme.typography.titleMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = TextAlign.Center,
-        )
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                text = stringResource(R.string.label_place_bet),
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onBackground,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.padding(bottom = 12.dp),
+            )
+            BettingCircle(bet = bet, animate = animate)
+        }
     }
 }

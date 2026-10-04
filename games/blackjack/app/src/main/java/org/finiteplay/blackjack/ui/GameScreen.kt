@@ -2,6 +2,11 @@ package org.finiteplay.blackjack.ui
 
 import android.content.res.Configuration
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -31,6 +36,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
@@ -159,31 +165,52 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                 onSettings = { showSettings = true },
             )
         }
+        val animate = viewModel.settings.animationsEnabled
+        // The banner and its celebration stay up for a moment once the results are shown, then clear the table.
+        var bannerDone by rememberSaveable(seed) { mutableStateOf(false) }
+        LaunchedEffect(seed, resultsShown) {
+            if (resultsShown && settledState != null && !bannerDone) {
+                delay(BANNER_MS)
+                bannerDone = true
+            }
+        }
         val table: @Composable (Modifier) -> Unit = { tableModifier ->
-            val state = round?.state
-            if (state == null) {
-                EmptyTable(tableModifier)
-            } else {
-                CompositionLocalProvider(LocalAnimateCards provides viewModel.settings.animationsEnabled) {
-                    Table(
-                        view = TableView(state, dealerFaceUp = dealerFaceUp, resultsShown = resultsShown || !state.isSettled),
-                        landscape = landscape,
-                        modifier = tableModifier,
-                    )
+            Box(modifier = tableModifier) {
+                val state = round?.state
+                if (state == null) {
+                    EmptyTable(bet = viewModel.selectedBet, animate = animate)
+                } else {
+                    CompositionLocalProvider(LocalAnimateCards provides animate) {
+                        Table(
+                            view = TableView(state, dealerFaceUp = dealerFaceUp, resultsShown = resultsShown || !state.isSettled),
+                            landscape = landscape,
+                        )
+                    }
+                }
+                val result = settledState?.settlement
+                AnimatedVisibility(
+                    visible = resultsShown && result != null && !bannerDone,
+                    enter = EnterTransition.None,
+                    exit = if (animate) fadeOut(tween(300)) else ExitTransition.None,
+                ) {
+                    if (result != null) ResultCelebration(resultKindOf(result), result.total, seed ?: 0L, animate, landscape)
                 }
             }
         }
         Box(modifier = Modifier.fillMaxSize().padding(padding)) {
             val heading: @Composable () -> Unit = {
+                StatusRow(onHelp = { showHelp = true }, onStatistics = { showStatistics = true })
+                if (viewModel.recoveryNoticeVisible) RecoveryNotice(onDismiss = viewModel::dismissRecoveryNotice)
+            }
+            // The bankroll and the bet sit just above the action bar, within the thumb's reach.
+            val hud: @Composable () -> Unit = {
                 val staked = round?.state?.takeIf { !it.isSettled }?.hands?.sumOf { it.bet }
-                StatusRow(
+                ChipsHud(
                     bankroll = shownBankroll,
                     bet = staked ?: viewModel.selectedBet,
                     lastDelta = settlement?.total,
-                    onHelp = { showHelp = true },
-                    onStatistics = { showStatistics = true },
+                    animate = animate,
                 )
-                if (viewModel.recoveryNoticeVisible) RecoveryNotice(onDismiss = viewModel::dismissRecoveryNotice)
             }
             if (landscape) {
                 Column(modifier = Modifier.fillMaxSize()) {
@@ -193,6 +220,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                             table(Modifier.weight(1f))
                             SummaryLine(settlement)
                             viewModel.hint?.let { HintNotice(it) }
+                            hud()
                         }
                         actionBar(BoardOrientation.LANDSCAPE)
                     }
@@ -203,6 +231,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                     table(Modifier.weight(1f))
                     SummaryLine(settlement)
                     viewModel.hint?.let { HintNotice(it) }
+                    hud()
                     actionBar(BoardOrientation.PORTRAIT)
                 }
             }
@@ -268,7 +297,8 @@ private fun SummaryLine(settlement: Settlement?) {
                 net < 0 -> stringResource(R.string.summary_lost, -net)
                 else -> stringResource(R.string.summary_even)
             },
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.Bold,
             color = when {
                 net > 0 -> LocalAppColors.current.action.new
                 net < 0 -> LocalAppColors.current.action.undo

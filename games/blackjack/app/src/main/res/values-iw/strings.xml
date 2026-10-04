@@ -23,6 +23,8 @@
     <string name="outcome_loss">הפסד %1$s</string>
     <string name="outcome_bust">חריגה %1$s</string>
     <string name="outcome_push">תיקו</string>
+    <string name="banner_win">ניצחת!</string>
+    <string name="banner_lose">הפסדת</string>
     <string name="summary_won">זכית ב-%1$d</string>
     <string name="summary_lost">הפסדת %1$d</string>
     <string name="summary_even">שווה</string>

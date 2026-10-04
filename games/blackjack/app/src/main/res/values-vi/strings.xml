@@ -23,6 +23,8 @@
     <string name="outcome_loss">Thua %1$s</string>
     <string name="outcome_bust">Quá 21 %1$s</string>
     <string name="outcome_push">Hòa</string>
+    <string name="banner_win">Bạn thắng!</string>
+    <string name="banner_lose">Bạn thua</string>
     <string name="summary_won">Bạn thắng %1$d</string>
     <string name="summary_lost">Bạn thua %1$d</string>
     <string name="summary_even">Hòa vốn</string>

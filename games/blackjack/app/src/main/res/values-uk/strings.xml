@@ -23,6 +23,8 @@
     <string name="outcome_loss">Програш %1$s</string>
     <string name="outcome_bust">Перебір %1$s</string>
     <string name="outcome_push">Нічия</string>
+    <string name="banner_win">Перемога!</string>
+    <string name="banner_lose">Програш</string>
     <string name="summary_won">Ви виграли %1$d</string>
     <string name="summary_lost">Ви програли %1$d</string>
     <string name="summary_even">Рівно</string>

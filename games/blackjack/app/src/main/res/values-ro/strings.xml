@@ -23,6 +23,8 @@
     <string name="outcome_loss">Pierdere %1$s</string>
     <string name="outcome_bust">Depășit %1$s</string>
     <string name="outcome_push">Egalitate</string>
+    <string name="banner_win">Ai câștigat!</string>
+    <string name="banner_lose">Ai pierdut</string>
     <string name="summary_won">Ai câștigat %1$d</string>
     <string name="summary_lost">Ai pierdut %1$d</string>
     <string name="summary_even">Egal</string>

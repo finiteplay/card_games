@@ -46,6 +46,7 @@ import org.finiteplay.core.ui.layout.Handedness
 import org.finiteplay.core.ui.layout.HintTimeout
 import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.session.RestReminderWindow
+import org.finiteplay.core.session.afterIntervalChange
 import org.finiteplay.core.session.foregroundEntered
 import org.finiteplay.core.session.foregroundExited
 import org.finiteplay.core.session.foregroundMsAsOf
@@ -449,7 +450,9 @@ class SpiderViewModel(
      */
     fun showHint() {
         val guidedModeOffered = session.state.suitCount == SuitCount.ONE || dealIsCertified
-        if (settings.hintShowsWinningMove && guidedModeOffered) {
+        // A game with no move behind it follows the deal's certified path whatever the setting says.
+        val followsCertifiedPath = session.state.moveCount == 0 && solutionMoveCount > 0
+        if ((settings.hintShowsWinningMove || followsCertifiedPath) && guidedModeOffered) {
             // The fallback highlight below is on screen: this tap puts it away, as in the plain mode.
             // A search on the same board would only time out the same way; the next move's Hint searches.
             if (hintFallbackShowing) {
@@ -820,7 +823,9 @@ class SpiderViewModel(
     /** Applies immediately and persists; restarts the current window so a new choice takes effect right away. */
     fun setRestReminderInterval(value: RestReminderInterval) {
         updateSettings({ it.copy(restReminderInterval = value) }) { it.setRestReminderInterval(value) }
-        restReminderWindow = RestReminderWindow.start(System.currentTimeMillis())
+        val now = System.currentTimeMillis()
+        restReminderWindow = (restReminderWindow ?: RestReminderWindow.start(now))
+            .afterIntervalChange(now, value.minutes?.let { it * 60_000L })
         refreshRestReminderElapsed()
         syncRestReminderTicker()
     }
@@ -930,7 +935,7 @@ class SpiderViewModel(
      * derived later, because the catalog can be regenerated under a player's feet.
      */
     var solutionMoveCount by mutableIntStateOf(0)
-        private set
+        internal set
 
     /**
      * Looks the shipped line's length up off the main thread — the first lookup parses the whole

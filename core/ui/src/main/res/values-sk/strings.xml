@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Povoliť animácie</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Rada zobrazí víťazný ťah</string>
+    <string name="setting_hint_shows_winning_move">Inteligentná nápoveda</string>
     <string name="setting_hint_timeout">Časový limit pre nápovedu</string>
     <string name="hint_timeout_seconds_value">%1$d sekúnd</string>
     <string name="setting_rest_reminder">Pripomenutie prestávky</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">presne rovnako</string>
-    <string name="settings_version">Verzia %1$s</string>
     <string name="deal_picker_title">Vyberte rozdanie</string>
     <string name="deal_status_not_played">Nehrané</string>
     <string name="deal_status_played">Hrané</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Všetky</string>
     <string name="deal_picker_empty">Žiadne rozdanie nezodpovedá filtru.</string>
     <string name="deal_current">Aktuálne</string>
+    <string name="settings_group_about">O aplikácii</string>
+    <string name="setting_version">Verzia</string>
+    <string name="about_website">Webová stránka</string>
+    <string name="about_privacy_policy">Zásady ochrany osobných údajov</string>
+    <string name="about_acknowledgements">Poďakovanie</string>
+    <string name="acknowledgements_intro">Táto aplikácia obsahuje softvér s otvoreným zdrojovým kódom:</string>
 </resources>

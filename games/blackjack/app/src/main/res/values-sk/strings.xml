@@ -23,6 +23,8 @@
     <string name="outcome_loss">Prehra %1$s</string>
     <string name="outcome_bust">Cez %1$s</string>
     <string name="outcome_push">Remíza</string>
+    <string name="banner_win">Výhra!</string>
+    <string name="banner_lose">Prehra</string>
     <string name="summary_won">Vyhrali ste %1$d</string>
     <string name="summary_lost">Prehrali ste %1$d</string>
     <string name="summary_even">Vyrovnané</string>

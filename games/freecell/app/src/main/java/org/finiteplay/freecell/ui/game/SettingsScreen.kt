@@ -15,7 +15,7 @@ import org.finiteplay.core.ui.layout.label
 import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.ui.layout.SettingsGroup
 import org.finiteplay.core.ui.layout.SwitchSettingRow
-import org.finiteplay.core.ui.layout.AppVersionLabel
+import org.finiteplay.core.ui.layout.AboutSettingsGroup
 import org.finiteplay.core.ui.layout.labelRes
 import org.finiteplay.core.ui.theme.ThemeMode
 import org.finiteplay.freecell.R
@@ -135,6 +135,6 @@ fun SettingsScreen(
             )
         }
 
-        AppVersionLabel()
+        AboutSettingsGroup()
     }
 }

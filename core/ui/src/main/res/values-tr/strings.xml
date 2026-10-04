@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Animasyonları etkinleştir</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">İpucu kazandıran hamleyi gösterir</string>
+    <string name="setting_hint_shows_winning_move">Akıllı ipucu</string>
     <string name="setting_hint_timeout">İpucu zaman aşımı</string>
     <string name="hint_timeout_seconds_value">%1$d saniye</string>
     <string name="setting_rest_reminder">Dinlenme hatırlatıcıları</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">%%%1$d artı</string>
     <string name="win_delta_fewer">%%%1$d eksi</string>
     <string name="win_delta_match">tamamen aynı</string>
-    <string name="settings_version">Sürüm %1$s</string>
     <string name="deal_picker_title">Dağıtım seç</string>
     <string name="deal_status_not_played">Oynanmadı</string>
     <string name="deal_status_played">Oynandı</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Tümü</string>
     <string name="deal_picker_empty">Filtreyle eşleşen dağıtım yok.</string>
     <string name="deal_current">Geçerli</string>
+    <string name="settings_group_about">Hakkında</string>
+    <string name="setting_version">Sürüm</string>
+    <string name="about_website">Web sitesi</string>
+    <string name="about_privacy_policy">Gizlilik politikası</string>
+    <string name="about_acknowledgements">Teşekkürler</string>
+    <string name="acknowledgements_intro">Bu uygulama açık kaynak yazılım içerir:</string>
 </resources>

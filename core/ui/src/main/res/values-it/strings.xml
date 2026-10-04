@@ -32,7 +32,7 @@
     <string name="setting_enable_animations">Attiva animazioni</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Il suggerimento mostra la mossa vincente</string>
+    <string name="setting_hint_shows_winning_move">Suggerimento intelligente</string>
     <string name="setting_hint_timeout">Timeout suggerimento</string>
     <string name="hint_timeout_seconds_value">%1$d secondi</string>
     <string name="setting_rest_reminder">Promemoria pausa</string>
@@ -118,7 +118,6 @@
     <string name="win_delta_more">+%1$d%%</string>
     <string name="win_delta_fewer">−%1$d%%</string>
     <string name="win_delta_match">esattamente uguale</string>
-    <string name="settings_version">Versione %1$s</string>
     <string name="deal_picker_title">Scegli una distribuzione</string>
     <string name="deal_status_not_played">Non giocata</string>
     <string name="deal_status_played">Giocata</string>
@@ -126,4 +125,10 @@
     <string name="deal_filter_all">Tutte</string>
     <string name="deal_picker_empty">Nessuna distribuzione corrisponde al filtro.</string>
     <string name="deal_current">Attuale</string>
+    <string name="settings_group_about">Informazioni</string>
+    <string name="setting_version">Versione</string>
+    <string name="about_website">Sito web</string>
+    <string name="about_privacy_policy">Informativa sulla privacy</string>
+    <string name="about_acknowledgements">Riconoscimenti</string>
+    <string name="acknowledgements_intro">Questa app include software open source:</string>
 </resources>
