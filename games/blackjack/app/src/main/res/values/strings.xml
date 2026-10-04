@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Blackjack by FinitePlay</string>
+
+    <!-- Board title: the game's traditional name, identical in every locale like the other games'. -->
+    <string name="game_title" translatable="false">Blackjack</string>
+
+    <!-- Action bar (UI_SPEC.md "Action Bar"). One word where a word exists; a label may wrap inside its two reserved lines. -->
+    <string name="action_hit">Hit</string>
+    <string name="action_stand">Stand</string>
+    <string name="action_double">Double</string>
+    <string name="action_split">Split</string>
+    <string name="action_deal">Deal</string>
+    <string name="action_next_round">Next round</string>
+    <string name="action_bet_up">Bet +%1$d</string>
+    <string name="action_bet_down">Bet −%1$d</string>
+    <string name="action_insure">Insure</string>
+    <string name="action_decline">Decline</string>
+    <string name="action_reset_chips">Reset chips</string>
+
+    <!-- Status row: the bankroll in chips, and the bet staked or selected. -->
+    <string name="status_chips">Chips %1$d</string>
+    <string name="status_bet">Bet %1$d</string>
+
+    <!-- The table. -->
+    <string name="label_dealer">Dealer</string>
+    <string name="label_place_bet">Place your bet</string>
+    <string name="hand_total_soft">Soft %1$d</string>
+    <string name="hand_bust">Bust</string>
+    <string name="hand_blackjack">Blackjack</string>
+
+    <!-- A hand's result beneath it; %1$s is the signed chip change, such as +150 or −100. -->
+    <string name="outcome_blackjack">Blackjack %1$s</string>
+    <string name="outcome_win">Win %1$s</string>
+    <string name="outcome_loss">Lose %1$s</string>
+    <string name="outcome_bust">Bust %1$s</string>
+    <string name="outcome_push">Push</string>
+
+    <!-- The round's net, and the insurance's own result. -->
+    <string name="summary_won">You won %1$d</string>
+    <string name="summary_lost">You lost %1$d</string>
+    <string name="summary_even">Even</string>
+    <string name="summary_insurance_paid">Insurance paid %1$d</string>
+    <string name="summary_insurance_lost">Insurance lost %1$d</string>
+
+    <!-- The offer made when the bankroll cannot cover the table minimum (RULES.md "Round Lifecycle"). -->
+    <string name="reset_offer_title">Out of chips</string>
+    <string name="reset_offer_body">You can\'t cover the minimum bet. Reset to %1$d chips? Your statistics are kept.</string>
+    <string name="reset_offer_not_now">Not now</string>
+
+    <!-- Shown when a saved round could not be read. Its stakes were never taken, so nothing was lost. -->
+    <string name="recovery_notice">Your saved round couldn\'t be opened. It was cancelled and no chips were lost.</string>
+
+    <!-- Statistics (DESIGN.md "Scoring and statistics"). Wins and Losses are the shared labels. -->
+    <string name="stat_section_hands">Hands</string>
+    <string name="stat_section_chips">Chips</string>
+    <string name="stat_tile_hands">Hands played</string>
+    <string name="stat_tile_pushes">Pushes</string>
+    <string name="stat_tile_blackjacks">Blackjacks</string>
+    <string name="stat_tile_bankroll">Bankroll</string>
+    <string name="stat_tile_peak">Highest bankroll</string>
+    <string name="stat_tile_net">Net chips</string>
+    <string name="stat_tile_resets">Resets</string>
+
+    <!-- Help. -->
+    <string name="help_title">How to play</string>
+    <string name="help_goal_title">The goal</string>
+    <string name="help_goal">Beat the dealer\'s hand without going over 21. Number cards count their number, face cards count 10, and an Ace counts 1 or 11, whichever is better. An Ace and a ten-value card on the first two cards is Blackjack, and pays 3 to 2. The dealer always stands on 17 or more, including soft 17.</string>
+    <string name="help_decisions_title">Your decisions</string>
+    <string name="help_decisions">Hit takes a card; Stand keeps your hand. Double, on your first two cards, doubles your bet and takes exactly one more card. Split, on two cards of the same rank, makes two hands, up to four in all; split Aces get one card each. When the dealer shows an Ace you may take insurance for half your bet: it pays 2 to 1 if the dealer has Blackjack. Every round is dealt from a fresh shuffle, and there is no undo.</string>
+    <string name="help_chips_title">Chips</string>
+    <string name="help_chips">You start with 1,000 chips. Chips are for play only and cannot be bought or cashed out. Bets go in steps of 10, from 10 up to 500. If you run out of chips you can reset to 1,000, and your statistics are kept.</string>
+</resources>

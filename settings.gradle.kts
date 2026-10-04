@@ -46,5 +46,8 @@ include(":games:freecell:rules")
 include(":games:freecell:solver")
 include(":games:freecell:app")
 
+include(":games:blackjack:rules")
+include(":games:blackjack:app")
+
 // Desktop-only tooling; asserted never to reach an app's classpath.
 include(":tools:catalog")

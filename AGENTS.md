@@ -4,7 +4,7 @@ A family of Android-only, offline card games sharing one core. Kotlin + Jetpack 
 Canvas-rendered boards, local-only persistence. Publisher: FinitePlay LLC.
 
 Klondike is the first game; Spider and FreeCell followed, and Blackjack, the first game that is
-not a solitaire, is planned. The repo is structured so each is an
+not a solitaire, is under implementation. The repo is structured so each is an
 addition rather than a rewrite — when working on Klondike, keep changes that aren't about
 Klondike out of Klondike.
 
@@ -78,15 +78,16 @@ one game lives under `docs/games/<game>/`.
 - `EXECUTION_PLAN.md` — work packages and gates
 - `TODO.md` — deferred, out of first-release scope
 
-**Blackjack** (`docs/games/blackjack/`) — the fourth game and the first non-solitaire, planned
-but not started (`EXECUTION_PLAN.md`'s Status table says how far); `UI_SPEC.md` and `TODO.md` are
-its first package.
+**Blackjack** (`docs/games/blackjack/`) — the fourth game and the first non-solitaire, under
+implementation (`EXECUTION_PLAN.md`'s Status table says how far).
 
 - `DESIGN.md` — product, interaction, hint, statistics, architecture, persistence, what
   Blackjack is not (including why it has no undo)
 - `RULES.md` — hand values, table rules, betting, the shoe, order of play, legal actions, the
   dealer's play, settlement, round lifecycle
+- `UI_SPEC.md` — screens, action bar per phase, card geometry, settlement presentation, the reset offer
 - `EXECUTION_PLAN.md` — work packages B0–B8 and their gates
+- `TODO.md` — deferred, out of first-release scope
 
 A game's spec never restates the platform spec. Where they disagree, `PLATFORM.md`
 governs and the game's spec is the bug.
@@ -100,6 +101,7 @@ Full map and the "adding a game" recipe: `docs/ARCHITECTURE.md`.
 - `:games:klondike:{rules,solver,app}` — one game, one app
 - `:games:spider:{rules,solver,app}` — the second game; its solver certifies catalogs and powers the on-device hint
 - `:games:freecell:{rules,solver,app}` — the third game
+- `:games:blackjack:{rules,app}` — the fourth game and the first non-solitaire: no solitaire layer, no solver, ever
 - `:tools:catalog` — desktop only. A `:benchmark` module is planned (Klondike's Q2), not yet created
 
 Dependencies run one way: `games/* → solitaire/* → core/*`. Nothing under `core/` or

@@ -15,16 +15,16 @@ exists today.
 
 | Package | State |
 |---|---|
-| B0 — interface specification | Not started. |
-| B1 — modules and build scaffolding | Not started. |
-| B2 — rules engine | Not started. |
-| B3 — playable table vertical slice | Not started. |
-| B4a — persistence and restoration | Not started. |
-| B4b — settings, statistics, help | Not started. |
-| B5 — instrumented tests | Not started. |
+| B0 — interface specification | Done: `UI_SPEC.md` and `TODO.md`. |
+| B1 — modules and build scaffolding | Done. `games/blackjack/{rules,app}`; `check` verifies neither reaches `solitaire/*` or `tools/catalog`. The app's release build compiles and shrinks, and stops at signing: the shared upload keystore has no `blackjack-upload` alias yet. |
+| B2 — rules engine | Done, gate met: brute-force hand values, a generated legal-decision matrix and settlement table (case counts committed), a 6,000-round soak, constructed fixtures, and reference shoe vectors. |
+| B3 — playable table vertical slice | Built: portrait and landscape table, action bar, dealer reveal paced step by step, settlement, reset offer. Geometry is unit-tested at 320 dp and 360 dp. The emulator gate (fixed-seed rounds through every case listed) is **not run**, and no debug fixture loader exists yet. |
+| B4a — persistence and restoration | Done at the store seam: round and ledger stores, written-before-shown, settled exactly once, fault injection at each point, corrupt-save recovery. The on-device restart, force-stop and release-variant round-trip checks are **not run**. |
+| B4b — settings, statistics, help | Built and unit-tested; help and every string are in all 30 locales (machine-generated, like the rest). The Back-closes-every-screen check is **not run**. |
+| B5 — instrumented tests | Not started; needs an emulator. |
 | RF — rules freeze | Not started. |
-| B6 — basic-strategy hint | Not started. |
-| B7 — card motion | Not started. |
+| B6 — basic-strategy hint | Not started; waits on RF. |
+| B7 — card motion | Partly: the dealer's draws are paced. Flights from the shoe and the hole-card flip animation are not built. |
 | B8 — performance and release | Not started. |
 
 ## Deterministic Shoe Contract

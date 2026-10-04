@@ -8,8 +8,7 @@ everything true of every FinitePlay game and is not restated here.
 ## Status
 
 This is a design document. What exists today is `EXECUTION_PLAN.md`'s Status table, the only
-place in Blackjack's docs kept current. `UI_SPEC.md` and `TODO.md` are not yet written; they are
-that plan's first package.
+place in Blackjack's docs kept current.
 
 ## The product
 
@@ -191,7 +190,7 @@ are two things to save, and that a saved round must never trail what the player 
 
 ## Interface
 
-`UI_SPEC.md` is not yet written; this is the shape the interface follows once it is. One dealer
+`UI_SPEC.md` is the authority on the interface; this is its shape. One dealer
 hand across the top of the board, one to four player hands (a split fans them) across the bottom,
 the bankroll and current bet always visible, and the action bar in the same position and
 touch-target shape `core/ui`'s `BoardActionBar` already gives every other game. At most five
@@ -209,4 +208,5 @@ merge in from `core/ui`.
 - [RULES.md](RULES.md): hand values, table rules, betting, the shoe, order of play, legal actions, the dealer's
   play, settlement, and round lifecycle
 - [EXECUTION_PLAN.md](EXECUTION_PLAN.md): work packages B0–B8 and their gates
-- `UI_SPEC.md`, `TODO.md`: not yet written (`EXECUTION_PLAN.md` B0)
+- [UI_SPEC.md](UI_SPEC.md): screens, action bar per phase, card geometry, settlement presentation, the reset offer
+- [TODO.md](TODO.md): deferred, out of first-release scope

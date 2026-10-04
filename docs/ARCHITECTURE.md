@@ -1,7 +1,7 @@
 # Architecture
 
 This repo hosts a family of card games sharing one core. Klondike is the first, Spider and
-FreeCell followed, and Blackjack is planned; the structure exists so each is an addition rather
+FreeCell followed, and Blackjack, the first non-solitaire, is under implementation; the structure exists so each is an addition rather
 than a rewrite. Each game ships as its own Android app.
 
 ## Module map
@@ -32,6 +32,10 @@ games/spider/app        the Android application
 games/freecell/rules    layout, deal, legal moves including supermoves, the reducer
 games/freecell/solver   deal certification and the on-device hint
 games/freecell/app      the Android application
+
+games/blackjack/rules   hand values, the shoe, the order of play, legal actions, dealer play,
+                        settlement, the reducer (no solver, no catalog, no undo)
+games/blackjack/app     the Android application: table, ledger and round stores
 
 tools/catalog           offline deal generator (desktop only, never on an app classpath)
 ```
@@ -219,6 +223,7 @@ and Blackjack are already listed there.
 Either way, the app module declares its own `applicationId`, `app_name`, and launcher
 icon, and wires `assertAppExcludesSolver` if it ships a certified deal catalog.
 
-There is no skeleton Blackjack module. Dead code that compiles but does
-nothing would need maintaining and would still not prove the seam; the boundary gate plus
-this recipe is the honest version of "prepared".
+Blackjack's app is the proof: it depends on `core/cards`, `core/session`, `core/storage`,
+`core/ui` and its own rules, and `assertAppExcludesSolitaireUi`, `…SolitaireCatalog` and
+`…ToolsCatalog` (registered in its `build.gradle.kts`, wired into `check`) fail the build if any
+solitaire project reaches its release classpath.
