@@ -1,0 +1,1 @@
+Classic offline blackjack with fair dealing and basic-strategy guidance.
