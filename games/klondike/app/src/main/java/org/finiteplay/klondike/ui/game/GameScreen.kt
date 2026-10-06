@@ -451,8 +451,8 @@ fun GameScreen(
             onRestReminderIntervalChange = viewModel::setRestReminderInterval,
             onHandednessChange = viewModel::setHandedness,
             onSoundEnabledChange = viewModel::setSoundEnabled,
-            onDrawModeChange = viewModel::setDrawMode,
-            onDifficultyChange = viewModel::setDifficulty,
+            onDrawModeChange = viewModel::requestDrawMode,
+            onDifficultyChange = viewModel::requestDifficulty,
             onLanguageChange = { tag ->
                 viewModel.setLanguageTag(tag)
                 // The locale is read in attachBaseContext, so it only takes hold on a

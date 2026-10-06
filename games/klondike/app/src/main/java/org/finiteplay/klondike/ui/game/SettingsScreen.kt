@@ -121,9 +121,6 @@ fun SettingsScreen(
                 onSelect = onHintTimeoutChange,
                 testTag = "setting_hint_timeout",
             )
-        }
-
-        SettingsGroup(stringResource(CoreR.string.settings_group_next_game)) {
             SwitchSettingRow(
                 label = stringResource(R.string.setting_draw_three),
                 checked = drawMode == DrawMode.THREE,

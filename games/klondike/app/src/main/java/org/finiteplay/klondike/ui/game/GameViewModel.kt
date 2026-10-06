@@ -140,7 +140,7 @@ internal val HINT_PROGRESS_DIALOG_DELAY = 1.seconds
 internal val REST_REMINDER_CHECK_INTERVAL = 1.seconds
 
 /** New Game, Replay and picking a deal ask for confirmation only for an unfinished played game (`DESIGN.md` "Game Lifecycle"). */
-enum class PendingConfirmation { NEW_GAME, REPLAY, SELECT_DEAL }
+enum class PendingConfirmation { NEW_GAME, REPLAY, SELECT_DEAL, SET_DRAW_MODE, SET_DIFFICULTY }
 
 /**
  * What the Hint action currently shows, per `docs/games/klondike/DESIGN.md` "On-Device Hint Search":
@@ -646,13 +646,19 @@ class GameViewModel(
             PendingConfirmation.NEW_GAME -> performNewGame()
             PendingConfirmation.REPLAY -> performReplay()
             PendingConfirmation.SELECT_DEAL -> pendingDealNumber?.let(::performSelectDeal)
+            PendingConfirmation.SET_DRAW_MODE -> pendingDrawMode?.let(::setDrawModeAndDeal)
+            PendingConfirmation.SET_DIFFICULTY -> pendingDifficulty?.let(::setDifficulty)
             null -> Unit
         }
         pendingConfirmation = null
         pendingDealNumber = null
+        pendingDrawMode = null
+        pendingDifficulty = null
     }
 
     fun cancelPendingAction() {
+        pendingDrawMode = null
+        pendingDifficulty = null
         pendingConfirmation = null
         pendingDealNumber = null
     }
@@ -1093,10 +1099,45 @@ class GameViewModel(
         viewModelScope.launch { settingsStore.setSoundEnabled(enabled) }
     }
 
-    /** Persists for the *next* New Game only — never touches the game in progress. See [persistedDrawMode]. */
+    /** Persists the draw mode for new games; never touches the game in progress. See [persistedDrawMode]. */
     fun setDrawMode(drawMode: DrawMode) {
         persistedDrawMode = drawMode
         viewModelScope.launch { settingsStore.setDrawMode(drawMode) }
+    }
+
+    private var pendingDrawMode: DrawMode? = null
+    private var pendingDifficulty: DifficultyPreference? = null
+
+    /**
+     * Settings' draw-mode choice: choosing a different mode than the game in play starts a new game
+     * in it, asking first — as New Game does — when the game on screen has been played and is
+     * unfinished, since leaving it records a loss. Choosing the mode already in play only records it
+     * for later deals.
+     */
+    fun requestDrawMode(drawMode: DrawMode) {
+        if (drawMode == session.state.drawMode) {
+            setDrawMode(drawMode)
+        } else if (needsConfirmation()) {
+            pendingDrawMode = drawMode
+            pendingConfirmation = PendingConfirmation.SET_DRAW_MODE
+        } else {
+            setDrawModeAndDeal(drawMode)
+        }
+    }
+
+    private fun setDrawModeAndDeal(drawMode: DrawMode) {
+        setDrawMode(drawMode)
+        performNewGame()
+    }
+
+    /** Settings' level choice: [setDifficulty] after the same confirmation [requestDrawMode] asks. */
+    fun requestDifficulty(difficulty: DifficultyPreference) {
+        if (difficulty != persistedDifficulty && needsConfirmation()) {
+            pendingDifficulty = difficulty
+            pendingConfirmation = PendingConfirmation.SET_DIFFICULTY
+        } else {
+            setDifficulty(difficulty)
+        }
     }
 
     /**

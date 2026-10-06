@@ -754,4 +754,59 @@ class GameViewModelTest {
         assertEquals(true, viewModel.legalMoveHighlights.isNotEmpty())
         assertEquals(HintUiState.Hidden, viewModel.hintState)
     }
+
+    @Test
+    fun choosingAnotherDrawModeInSettingsStartsANewGameInIt() {
+        val viewModel = newViewModel()
+        val other = if (viewModel.session.state.drawMode == DrawMode.ONE) DrawMode.THREE else DrawMode.ONE
+
+        viewModel.requestDrawMode(other)
+
+        assertEquals(other, viewModel.session.state.drawMode)
+        assertEquals(null, viewModel.pendingConfirmation)
+    }
+
+    @Test
+    fun choosingAnotherDrawModeMidGameAsksFirstAndCancellingKeepsTheGame() {
+        val viewModel = newViewModel()
+        viewModel.tryCommitMove(Move.Draw)
+        val before = viewModel.session.state
+        val other = if (before.drawMode == DrawMode.ONE) DrawMode.THREE else DrawMode.ONE
+
+        viewModel.requestDrawMode(other)
+        assertEquals(PendingConfirmation.SET_DRAW_MODE, viewModel.pendingConfirmation)
+        assertEquals(before.drawMode, viewModel.session.state.drawMode)
+
+        viewModel.cancelPendingAction()
+        viewModel.confirmPendingAction()
+        assertEquals(before, viewModel.session.state)
+
+        viewModel.requestDrawMode(other)
+        viewModel.confirmPendingAction()
+        assertEquals(other, viewModel.session.state.drawMode)
+    }
+
+    @Test
+    fun choosingTheDrawModeAlreadyInPlayStartsNothing() {
+        val viewModel = newViewModel()
+        viewModel.tryCommitMove(Move.Draw)
+        viewModel.requestDrawMode(viewModel.session.state.drawMode)
+        assertEquals(null, viewModel.pendingConfirmation)
+    }
+
+    @Test
+    fun choosingAnotherLevelMidGameInSettingsAsksFirst() {
+        val viewModel = newViewModel()
+        viewModel.tryCommitMove(Move.Draw)
+        val other = DifficultyPreference.entries.first { it != viewModel.difficulty }
+        val seedBefore = viewModel.session.state.seed
+
+        viewModel.requestDifficulty(other)
+        assertEquals(PendingConfirmation.SET_DIFFICULTY, viewModel.pendingConfirmation)
+        assertEquals(seedBefore, viewModel.session.state.seed)
+
+        viewModel.confirmPendingAction()
+        assertEquals(other, viewModel.difficulty)
+        assertEquals(null, viewModel.pendingConfirmation)
+    }
 }

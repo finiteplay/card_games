@@ -8,7 +8,7 @@ The interface is fast, calm, readable, and defaults to a right-handed layout, wi
 
 - **Game:** board, moves, timer, and actions
 - **Loading:** static board-colored surface; no animated splash
-- **Settings:** automatic moves, enable animation, hint mode, handedness, sound, theme, language, draw mode, and difficulty (the last two apply to the next New Game only)
+- **Settings:** automatic moves, enable animation, hint mode, handedness, sound, theme, language, draw mode, and difficulty (the last two start a new game in the chosen mode or level, asking first when a played game would be lost)
 - **Statistics:** Draw One/Draw Three tabs, Week/Month/All Time tabs within each, summary, range-graph distributions, sample size, and reset
 - **Help:** Rules, Strategy, and Levels pages behind one icon (below)
 - **Confirmation:** new game, replay, and statistics reset
@@ -241,7 +241,7 @@ support is out of scope. Klondike's own numbers:
 ## Dialog Behavior
 
 - New and Replay show the current moves and elapsed time before confirmation.
-- Settings apply immediately, except draw mode and difficulty, which are fixed once a game is dealt and so only take effect on the next New Game.
+- Settings apply immediately. Draw mode and difficulty are fixed once a game is dealt, so choosing a different one starts a new game in it — asking first, as New Game does, when the game on screen has been played and is unfinished, since leaving it records a loss. Choosing the draw mode already in play only records it for later deals.
 - Difficulty, theme, and language are dropdowns rather than toggles or chip rows; everything else on the screen is a switch. Difficulty has seven options (Trivial, Easy, Medium, Hard, Expert, Insane, Random), theme four (Light, Dark, System default, Automatic), and language thirty-one, which a chip row would wrap into an unreadable block. Random picks a level afresh for each new game. Each language names itself in its own language, so a player who picked one they cannot read can still find their way back; only "System default" is translated. Changing language recreates the activity, which is what applies it. Each level keeps its own place in its own deal list, so switching away and back resumes where that level was left (`docs/games/klondike/DEALS.md`).
 - Statistics show one draw mode's results and sample size at a time (the screen's Draw One/Draw Three selector), never both blended together.
 - Statistics show wins, losses, and games played as separate values, since an unfinished played game raises games played without affecting win rate.
