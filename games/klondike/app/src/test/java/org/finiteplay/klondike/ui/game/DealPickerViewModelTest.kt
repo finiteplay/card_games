@@ -148,4 +148,28 @@ class DealPickerViewModelTest {
         assertEquals(emptyMap<Long, DealProgress>(), vm.dealProgress)
         assertEquals(emptyMap<Long, DealProgress>(), runBlocking { progressStore().current() })
     }
+
+    @Test
+    fun `switching level and back finds the same hand, and marks nothing played`() {
+        val vm = GameViewModel(
+            activeGameStore = ActiveGameStore(dir, dataStoreFactory = FakeDataStores::create),
+            settingsStore = SettingsStore(dir, dataStoreFactory = FakeDataStores::create),
+            historyStore = HistoryStore(dir, dataStoreFactory = FakeDataStores::create),
+            hintDispatcher = Dispatchers.Main,
+            dealProgressStore = progressStore(),
+        )
+        val level = vm.difficulty
+        val other = org.finiteplay.klondike.storage.DifficultyPreference.entries.first { it != level && it != org.finiteplay.klondike.storage.DifficultyPreference.RANDOM }
+        val deal = vm.dealNumber
+        val seed = vm.session.state.seed
+
+        repeat(3) {
+            vm.setDifficulty(other)
+            vm.setDifficulty(level)
+        }
+
+        assertEquals(deal, vm.dealNumber)
+        assertEquals(seed, vm.session.state.seed)
+        assertEquals(emptyMap<Long, Any>(), vm.dealProgress)
+    }
 }

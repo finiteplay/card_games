@@ -799,6 +799,20 @@ class SpiderViewModel(
     private var pendingSuitCount: SuitCount? = null
 
     /**
+     * Switching away from a game with no move behind it gives its deal back to its suit count's
+     * sequence, so switching there and back finds the same hand rather than burning one each time.
+     * Plain New Game does not: it is a request for a different deal.
+     */
+    private fun returnUnplayedDeal() {
+        val traversal = traversalStore ?: return
+        if (session.state.moveCount > 0) return
+        val suitCount = session.state.suitCount
+        val number = dealNumber
+        val wrapAt = certifiedCatalog?.seedsFor(suitCount)?.size
+        viewModelScope.launch { traversal.giveBack(suitCount, number, wrapAt) }
+    }
+
+    /**
      * Settings' suit-count choice: picking a different count than the game in play starts a new game
      * at it, asking first — as New Game does — when the game on screen has been played and is
      * unfinished, since leaving it records a loss. Picking the count already in play only records it
@@ -836,6 +850,7 @@ class SpiderViewModel(
      */
     fun setSuitCount(suitCount: SuitCount) {
         if (suitCount == session.state.suitCount) return
+        returnUnplayedDeal()
         pickNextSuitCount(suitCount)
         // Dealt at the count chosen, not at the persisted setting: the write has not landed yet, so
         // reading it back would deal at the old count and need the choice made twice.

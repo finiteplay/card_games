@@ -72,4 +72,54 @@ class SuitCountSwitchTest {
 
         assertEquals(other, viewModel.session.state.suitCount)
     }
+
+    @Test
+    fun `switching suit counts and back finds the same hand, and marks nothing played`() {
+        val viewModel = SpiderViewModel(
+            initialSeed = 1L,
+            settingsStore = SpiderSettingsStore(dir, FakeDataStores::create),
+            traversalStore = org.finiteplay.spider.storage.SpiderTraversalStore(dir, FakeDataStores::create),
+            dealProgressStore = org.finiteplay.core.storage.DealProgressStore(dir, dataStoreFactory = FakeDataStores::create),
+        )
+        val first = viewModel.session.state.suitCount
+        val other = SuitCount.entries.first { it != first }
+        // The opening game is dealt from the constructor's seed; the first switch there and back
+        // reaches the sequence's own first hand, which every further switch must find again.
+        viewModel.setSuitCount(other)
+        viewModel.setSuitCount(first)
+        val firstDeal = viewModel.dealNumber
+        val firstSeed = viewModel.session.state.seed
+
+        repeat(3) {
+            viewModel.setSuitCount(other)
+            viewModel.setSuitCount(first)
+        }
+
+        assertEquals(first, viewModel.session.state.suitCount)
+        assertEquals(firstDeal, viewModel.dealNumber)
+        assertEquals(firstSeed, viewModel.session.state.seed)
+        assertEquals("no deal was played", emptyMap<Long, Any>(), viewModel.dealProgress)
+    }
+
+    @Test
+    fun `a played game's deal is not given back when its suit count is left`() {
+        val viewModel = SpiderViewModel(
+            initialSeed = 1L,
+            settingsStore = SpiderSettingsStore(dir, FakeDataStores::create),
+            traversalStore = org.finiteplay.spider.storage.SpiderTraversalStore(dir, FakeDataStores::create),
+        )
+        val first = viewModel.session.state.suitCount
+        val other = SuitCount.entries.first { it != first }
+        // Reach a game dealt from the sequence, then play it.
+        viewModel.setSuitCount(other)
+        viewModel.setSuitCount(first)
+        val firstDeal = viewModel.dealNumber
+        viewModel.loadFixtureForDebugging(viewModel.session.state.copy(moveCount = 3))
+
+        viewModel.requestSuitCount(other)
+        viewModel.confirmPendingAction()
+        viewModel.setSuitCount(first)
+
+        assertEquals("the played deal was used up", firstDeal + 1, viewModel.dealNumber)
+    }
 }

@@ -43,6 +43,22 @@ class SpiderTraversalStore(
         dataStore.edit { it[keyFor(suitCount)] = if (wrapAt != null) ((next - 1).mod(wrapAt)) + 1 else next }
     }
 
+    /**
+     * Takes back [dealNumber], the deal just handed out, so the next [next] returns it again — for a
+     * deal dealt and abandoned without a move. Only when [dealNumber] is still the latest handed out
+     * (the stored position is the one after it); otherwise later deals have followed it and the
+     * position is left alone.
+     */
+    suspend fun giveBack(suitCount: SuitCount, dealNumber: Int, wrapAt: Int? = null) {
+        dataStore.edit { prefs ->
+            val key = keyFor(suitCount)
+            val stored = prefs[key] ?: DealSequence.FIRST
+            val after = dealNumber + 1
+            val expected = if (wrapAt != null) ((after - 1).mod(wrapAt)) + 1 else after
+            if (stored == expected) prefs[key] = dealNumber
+        }
+    }
+
     suspend fun reset(suitCount: SuitCount) {
         dataStore.edit { it.remove(keyFor(suitCount)) }
     }

@@ -65,6 +65,17 @@ class DifficultyDealSeedSource(
         nextIndex = (nextIndex + 1) % seeds.size
         return seed
     }
+
+    /**
+     * Takes back the deal just handed out, if [seed] is it: the cursor steps back so the next
+     * [nextSeed] returns [seed] again. For a deal that was dealt and abandoned without a single
+     * move, so leaving it does not use it up. A no-op when [seed] is not the last one handed out
+     * (a deal picked by hand, or one that other deals have followed).
+     */
+    fun giveBack(seed: Long) {
+        val last = (nextIndex - 1).mod(seeds.size)
+        if (seeds[last] == seed) nextIndex = last
+    }
 }
 
 /**

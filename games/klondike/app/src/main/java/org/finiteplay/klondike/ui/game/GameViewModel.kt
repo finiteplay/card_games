@@ -1127,7 +1127,20 @@ class GameViewModel(
 
     private fun setDrawModeAndDeal(drawMode: DrawMode) {
         setDrawMode(drawMode)
+        returnUnplayedDeal()
         performNewGame()
+    }
+
+    /**
+     * Switching away from a game with no move behind it — to another level or draw mode — gives its
+     * deal back to its level's sequence, so switching there and back finds the same hand rather
+     * than burning one each time. Plain New Game does not: it is a request for a different deal.
+     */
+    private fun returnUnplayedDeal() {
+        if (session.hasPlayerActed || session.state.drawMode != DrawMode.ONE) return
+        val tier = dealDifficulty ?: return
+        sourceForDifficulty(tier).giveBack(session.state.seed)
+        persistInterimSeedPositionIfNeeded()
     }
 
     /** Settings' level choice: [setDifficulty] after the same confirmation [requestDrawMode] asks. */
@@ -1155,6 +1168,7 @@ class GameViewModel(
      */
     fun setDifficulty(difficulty: DifficultyPreference) {
         if (difficulty == persistedDifficulty) return
+        returnUnplayedDeal()
         persistedDifficulty = difficulty
         viewModelScope.launch { settingsStore.setDifficulty(difficulty) }
         performNewGame()
