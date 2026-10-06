@@ -837,7 +837,9 @@ class SpiderViewModel(
     fun setSuitCount(suitCount: SuitCount) {
         if (suitCount == session.state.suitCount) return
         pickNextSuitCount(suitCount)
-        newGame()
+        // Dealt at the count chosen, not at the persisted setting: the write has not landed yet, so
+        // reading it back would deal at the old count and need the choice made twice.
+        newGame(suitCount)
     }
 
     fun setAnimationsEnabled(value: Boolean) = updateSettings({ it.copy(animationsEnabled = value) }) { it.setAnimationsEnabled(value) }
@@ -951,9 +953,9 @@ class SpiderViewModel(
         afterCommit()
     }
 
-    fun newGame() {
+    fun newGame(suitCount: SuitCount = nextSuitCount) {
         recordLossIfAbandoned()
-        dealNext(nextSuitCount)
+        dealNext(suitCount)
         currentGameRecorded = false
         dealRowRefused = false
         elapsedSeconds = 0
