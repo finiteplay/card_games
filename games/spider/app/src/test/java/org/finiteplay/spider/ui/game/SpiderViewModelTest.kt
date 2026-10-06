@@ -227,4 +227,44 @@ class SpiderViewModelTest {
 
         assertEquals(before, viewModel.session.state.seed)
     }
+
+    @Test
+    fun `choosing another suit count in Settings starts a new game at it`() {
+        val viewModel = SpiderViewModel(initialSeed = 1L)
+        val before = viewModel.session.state.suitCount
+        val other = SuitCount.entries.first { it != before }
+
+        viewModel.requestSuitCount(other)
+
+        assertEquals(other, viewModel.session.state.suitCount)
+        assertEquals(null, viewModel.pendingAction)
+    }
+
+    @Test
+    fun `choosing another suit count mid-game asks first, and cancelling keeps the game`() {
+        val viewModel = SpiderViewModel(initialSeed = 1L)
+        viewModel.loadFixtureForDebugging(boardWithAMovableCard().copy(moveCount = 3))
+        val before = viewModel.session.state.suitCount
+        val other = SuitCount.entries.first { it != before }
+
+        viewModel.requestSuitCount(other)
+        assertEquals(DiscardingAction.NEW_GAME, viewModel.pendingAction)
+        assertEquals(before, viewModel.session.state.suitCount)
+
+        viewModel.dismissPendingAction()
+        viewModel.confirmPendingAction()
+        assertEquals(before, viewModel.session.state.suitCount)
+
+        viewModel.requestSuitCount(other)
+        viewModel.confirmPendingAction()
+        assertEquals(other, viewModel.session.state.suitCount)
+    }
+
+    @Test
+    fun `choosing the suit count already in play starts nothing`() {
+        val viewModel = SpiderViewModel(initialSeed = 1L)
+        viewModel.loadFixtureForDebugging(boardWithAMovableCard().copy(moveCount = 3))
+        viewModel.requestSuitCount(viewModel.session.state.suitCount)
+        assertEquals(null, viewModel.pendingAction)
+    }
 }

@@ -12,7 +12,7 @@ platform-wide and are not restated here.
 
 - **Game:** board, moves, timer, and actions
 - **Loading:** a centered spinner while the active-game store is checked; no animated splash
-- **Settings:** suit count (next New Game only), enable animation, hint mode, handedness, sound,
+- **Settings:** suit count (changing it starts a new game at that count, asking first when a played game would be lost), enable animation, hint mode, handedness, sound,
   theme, language — no draw mode and no difficulty setting, since Spider has neither
   (`RULES.md` "What Spider does not have")
 - **Statistics:** one tab per suit count, period tabs within each, wins/losses/streaks, and reset

@@ -337,7 +337,7 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
                 (context as? Activity)?.recreate()
             },
             onThemeModeChange = viewModel::setThemeMode,
-            onNextSuitCountChange = viewModel::pickNextSuitCount,
+            onNextSuitCountChange = viewModel::requestSuitCount,
             onClose = { showSettings = false },
         )
     }

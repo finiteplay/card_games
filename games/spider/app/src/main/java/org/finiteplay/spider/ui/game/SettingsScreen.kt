@@ -60,7 +60,7 @@ fun SettingsScreen(
         onClose = onClose,
         testTag = "settings_screen",
     ) {
-        SettingsGroup(stringResource(CoreR.string.settings_group_next_game)) {
+        SettingsGroup(stringResource(CoreR.string.settings_group_play)) {
             DropdownSettingRow(
                 label = stringResource(R.string.setting_suit_count),
                 options = SuitCount.entries,

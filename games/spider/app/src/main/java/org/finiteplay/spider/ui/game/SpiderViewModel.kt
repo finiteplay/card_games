@@ -796,6 +796,25 @@ class SpiderViewModel(
     /** The suit count the *next* New Game deals at; the current deal's own count never changes. */
     val nextSuitCount: SuitCount get() = settings.nextSuitCount
 
+    private var pendingSuitCount: SuitCount? = null
+
+    /**
+     * Settings' suit-count choice: picking a different count than the game in play starts a new game
+     * at it, asking first — as New Game does — when the game on screen has been played and is
+     * unfinished, since leaving it records a loss. Picking the count already in play only records it
+     * as the choice for later deals.
+     */
+    fun requestSuitCount(suitCount: SuitCount) {
+        if (suitCount == session.state.suitCount) {
+            pickNextSuitCount(suitCount)
+        } else if (needsConfirmation()) {
+            pendingSuitCount = suitCount
+            pendingAction = DiscardingAction.NEW_GAME
+        } else {
+            setSuitCount(suitCount)
+        }
+    }
+
     fun pickNextSuitCount(suitCount: SuitCount) {
         if (settingsStore == null) {
             settings = settings.copy(nextSuitCount = suitCount)
@@ -890,8 +909,14 @@ class SpiderViewModel(
         pendingAction = null
         val deal = pendingDealNumber
         pendingDealNumber = null
+        val suits = pendingSuitCount
+        pendingSuitCount = null
         when (action) {
-            DiscardingAction.NEW_GAME -> if (deal != null) selectDeal(deal) else newGame()
+            DiscardingAction.NEW_GAME -> when {
+                deal != null -> selectDeal(deal)
+                suits != null -> setSuitCount(suits)
+                else -> newGame()
+            }
             DiscardingAction.REPLAY -> restart()
         }
     }
@@ -899,6 +924,7 @@ class SpiderViewModel(
     fun dismissPendingAction() {
         pendingAction = null
         pendingDealNumber = null
+        pendingSuitCount = null
     }
 
     /**

@@ -26,6 +26,9 @@ tools/catalog/data/solver_benchmark_*.log
 tools/catalog/data/grading/*_progress.txt
 hs_err_pid*.log
 replay_pid*.log
+fastlane/report.xml
+*.json_key.json
+**/*-publishing-*.json
 .venv-astar-tuning/
 tools/catalog/data/astar_tuning/models/
 tools/catalog/data/astar_tuning/raw/

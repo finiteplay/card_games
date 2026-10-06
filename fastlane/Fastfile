@@ -1,0 +1,51 @@
+default_platform(:android)
+
+PACKAGE_NAMES = {
+  klondike: "org.finiteplay.klondike",
+  spider: "org.finiteplay.spider",
+  freecell: "org.finiteplay.freecell",
+  blackjack: "org.finiteplay.blackjack"
+}
+
+PACKAGE_NAMES.each do |game, package_name|
+  desc "Upload #{game}'s release AAB to the internal testing track"
+  lane "#{game}_internal".to_sym do
+    supply(
+      package_name: package_name,
+      track: "internal",
+      aab: "games/#{game}/app/build/outputs/bundle/release/app-release.aab",
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true
+    )
+  end
+
+  desc "Promote #{game}'s current internal release to production at a given rollout percentage"
+  lane "#{game}_promote_to_production".to_sym do |options|
+    supply(
+      package_name: package_name,
+      track: "internal",
+      track_promote_to: "production",
+      rollout: (options[:rollout] || "1.0").to_s,
+      skip_upload_apk: true,
+      skip_upload_aab: true,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true
+    )
+  end
+
+  desc "Update the production rollout percentage for #{game} without promoting"
+  lane "#{game}_set_rollout".to_sym do |options|
+    supply(
+      package_name: package_name,
+      track: "production",
+      rollout: options[:rollout].to_s,
+      skip_upload_apk: true,
+      skip_upload_aab: true,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true
+    )
+  end
+end

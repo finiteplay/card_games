@@ -104,7 +104,7 @@ A release-variant test round-trips save and restore with minification enabled.
 
 Depends on: S3a, S3b.
 
-- Settings: suit count (next New Game only), skip animations, handedness, sound, theme,
+- Settings: suit count (changing it starts a new game at that count, asking first when a played game would be lost), skip animations, handedness, sound, theme,
   language — no draw mode, no difficulty setting; Spider has neither (`RULES.md` "What Spider
   does not have").
 - Statistics kept per suit count, never blended (`DESIGN.md` "Scoring and statistics"), built

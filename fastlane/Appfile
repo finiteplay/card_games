@@ -1,0 +1,1 @@
+json_key_file(ENV["PLAY_JSON_KEY_FILE"] || "C:/Users/oleks/dev/Games/finiteplay-publishing-9aa9a70f33c7.json")
