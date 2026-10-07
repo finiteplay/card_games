@@ -136,13 +136,13 @@ fun GameScreen(
 
     if (viewModel.showRestReminderDialog) {
         RestReminderDialog(
-            playedLabel = formatElapsed((viewModel.settings.restReminderInterval.minutes ?: 0) * 60),
+            playedSeconds = (viewModel.settings.restReminderInterval.minutes ?: 0) * 60,
             onTakeBreak = viewModel::startRestBreak,
             onKeepPlaying = viewModel::dismissRestReminder,
         )
     }
     viewModel.restBreakRemainingSeconds?.let { remaining ->
-        RestBreakDialog(remainingLabel = formatElapsed(remaining), onCancel = viewModel::cancelRestBreak)
+        RestBreakDialog(remainingSeconds = remaining, onCancel = viewModel::cancelRestBreak)
     }
 }
 
