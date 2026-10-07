@@ -58,4 +58,15 @@ class TableGeometryTest {
     fun `one card has no step`() {
         assertEquals(0f, TableGeometry.fanStep(60f, 300f, 1), 0f)
     }
+
+    @Test
+    fun `two cards overlap by under a third, so the covered card's pip reads`() {
+        for (screen in widths) {
+            val area = TableGeometry.areaWidth(screen)
+            val card = TableGeometry.cardWidth(area, 1)
+            val step = TableGeometry.fanStep(card, TableGeometry.handWidth(area, 1), 2)
+            assertEquals(card * TableGeometry.MAX_STEP_FRACTION, step, 0.01f)
+            assertTrue("the covered card shows more than two thirds of its width", step / card > 0.66f)
+        }
+    }
 }

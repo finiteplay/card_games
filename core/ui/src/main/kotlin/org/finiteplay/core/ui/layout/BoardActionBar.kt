@@ -3,6 +3,16 @@ package org.finiteplay.core.ui.layout
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.coroutineScope
+import androidx.compose.ui.semantics.role
+import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.composed
+import androidx.compose.runtime.rememberUpdatedState
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -77,6 +87,11 @@ data class BoardAction(
      * bold type, and a screen reader says it is suggested — so the cue is never only a colour.
      */
     val highlighted: Boolean = false,
+    /**
+     * Press and hold repeats [onClick]: once on the press, then again and again, faster the longer it is
+     * held, until the finger lifts or the action is disabled. For a stepper that moves a number.
+     */
+    val repeatOnHold: Boolean = false,
 )
 
 /**
@@ -138,7 +153,7 @@ private fun ActionButton(
     action: BoardAction,
     modifier: Modifier = Modifier,
 ) {
-    val (label, icon, accentColor, enabled, onClick, tag, highlighted) = action
+    val (label, icon, accentColor, enabled, onClick, tag, highlighted, repeatOnHold) = action
     val suggestion = LocalAppColors.current.action.hint
     val shape = RoundedCornerShape(16.dp)
     val suggestedLabel = stringResource(R.string.action_suggested)
@@ -159,7 +174,13 @@ private fun ActionButton(
                     Modifier
                 },
             )
-            .clickable(enabled = enabled, onClickLabel = label, onClick = onClick)
+            .then(
+                if (repeatOnHold && enabled) {
+                    Modifier.holdToRepeat(label, onClick)
+                } else {
+                    Modifier.clickable(enabled = enabled, onClickLabel = label, onClick = onClick)
+                },
+            )
             .padding(PaddingValues(horizontal = 2.dp, vertical = 4.dp)),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
@@ -181,4 +202,43 @@ private fun ActionButton(
             color = textColor,
         )
     }
+}
+
+/** First repeat after this long held, then every [HOLD_START_MS] shrinking toward [HOLD_FASTEST_MS]. */
+private const val HOLD_DELAY_MS = 420L
+private const val HOLD_START_MS = 180L
+private const val HOLD_FASTEST_MS = 45L
+
+/**
+ * A press that acts at once and, held, keeps acting — slowly at first, then faster, so one step is
+ * easy to land and a long run is quick. Exposes an ordinary click to accessibility services, which
+ * have no "hold".
+ */
+private fun Modifier.holdToRepeat(label: String, onClick: () -> Unit): Modifier = composed {
+    val current = rememberUpdatedState(onClick)
+    this
+        .pointerInput(Unit) {
+            coroutineScope {
+                detectTapGestures(
+                    onPress = {
+                        current.value()
+                        val repeating = launch {
+                            delay(HOLD_DELAY_MS)
+                            var gap = HOLD_START_MS
+                            while (true) {
+                                current.value()
+                                delay(gap)
+                                gap = (gap * 85 / 100).coerceAtLeast(HOLD_FASTEST_MS)
+                            }
+                        }
+                        tryAwaitRelease()
+                        repeating.cancel()
+                    },
+                )
+            }
+        }
+        .semantics(mergeDescendants = true) {
+            role = Role.Button
+            onClick(label) { current.value(); true }
+        }
 }

@@ -9,6 +9,7 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performTouchInput
 import androidx.test.platform.app.InstrumentationRegistry
 import kotlinx.coroutines.runBlocking
 import org.finiteplay.blackjack.rules.Chips
@@ -436,5 +437,59 @@ class TableTest {
         composeRule.onNodeWithTag("help_tab_strategy").performClick()
         composeRule.waitForIdle()
         composeRule.onNodeWithText("Never take insurance.", substring = true).assertIsDisplayed()
+    }
+
+    @Test
+    fun aSplitRoundMarksEachHandWithATickCrossOrEqualsAndNoFigure() {
+        // Split eights against a dealer 16: both hands stand and the dealer draws to 21... the reference
+        // round's shoe, which settles both hands the same way; what matters here is a mark on each.
+        showTable(shoeOf("8C", "6D", "8H", "TS", "3S", "2S", "9S", "TH", "5S"))
+        tap("action_deal")
+        tap("action_split")
+        tap("action_stand")
+        tap("action_stand")
+        waitForResults()
+        composeRule.onNodeWithTag("hand_0_mark").assertIsDisplayed()
+        composeRule.onNodeWithTag("hand_1_mark").assertIsDisplayed()
+        // The signed net is still stated once, on the result mark alone.
+        assertEquals(1, composeRule.onAllNodesWithTag("result_mark").fetchSemanticsNodes().size)
+    }
+
+    @Test
+    fun aSingleHandRoundHasNoPerHandMark() {
+        showTable(shoeOf("TC", "TD", "8H", "8S"))
+        tap("action_deal")
+        tap("action_stand")
+        waitForResults()
+        assertEquals(false, present("hand_0_mark"))
+    }
+
+    @Test
+    fun holdingABetButtonKeepsStepping() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        assertEquals(Chips.MIN_BET, viewModel.selectedBet)
+        composeRule.onNodeWithTag("action_bet_up").performTouchInput {
+            down(center)
+            advanceEventTime(1_800)
+            up()
+        }
+        composeRule.waitForIdle()
+        // One step on the press, then a run of repeats while held: well beyond a single tap.
+        assertEquals(true, viewModel.selectedBet >= Chips.MIN_BET + 5 * Chips.BET_STEP)
+        // It stops at what the bankroll covers rather than running past it.
+        composeRule.onNodeWithTag("action_bet_up").performTouchInput {
+            down(center)
+            advanceEventTime(60_000)
+            up()
+        }
+        composeRule.waitForIdle()
+        assertEquals(Chips.maxBetFor(viewModel.bankroll), viewModel.selectedBet)
+    }
+
+    @Test
+    fun aSingleTapOnABetButtonStillStepsOnce() {
+        showTable(shoeOf("9C", "TD", "8H", "7S"))
+        tap("action_bet_up")
+        assertEquals(Chips.MIN_BET + Chips.BET_STEP, viewModel.selectedBet)
     }
 }

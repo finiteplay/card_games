@@ -70,7 +70,7 @@ fun chipStackOf(amount: Int): List<ChipGroup> {
 private fun chipColor(denomination: Int): Color = when (denomination) {
     1_000 -> Color(0xFFF2B600)
     500 -> Color(0xFF7E57C2)
-    100 -> Color(0xFF2B3A42)
+    100 -> Color(0xFF455A64)
     50 -> Color(0xFFD13B3B)
     10 -> Color(0xFF1E78D2)
     5 -> Color(0xFFE5779E)
@@ -110,6 +110,13 @@ fun ChipStack(amount: Int, chipWidth: Dp, modifier: Modifier = Modifier) {
                 drawOval(side, Offset(left, top + thickness), Size(w, h))
                 drawRect(side, Offset(left, top + h / 2f), Size(w, thickness))
                 drawOval(face, Offset(left, top), Size(w, h))
+                // A light outline, so a dark chip does not vanish into the felt or the dark pill.
+                drawOval(
+                    color = Color.White.copy(alpha = 0.9f),
+                    topLeft = Offset(left, top),
+                    size = Size(w, h),
+                    style = Stroke(width = w * 0.06f),
+                )
                 val inset = w * 0.12f
                 for (stripe in 0 until 6) {
                     drawArc(

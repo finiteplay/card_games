@@ -202,6 +202,8 @@ private fun action(label: Int, icon: ImageVector, color: Color, enabled: Boolean
 
 @Composable
 private fun actionWithArg(label: Int, arg: Int, icon: ImageVector, color: Color, enabled: Boolean, tag: String, onClick: () -> Unit) = BoardAction(
+    // The bet steppers repeat while held: ten steps of 10 to reach 100 is too many taps.
+    repeatOnHold = true,
     label = stringResource(label, arg),
     icon = icon,
     accentColor = color,

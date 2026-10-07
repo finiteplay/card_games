@@ -16,6 +16,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.DragHandle
+import androidx.compose.material3.Icon
 import androidx.compose.foundation.background
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -193,15 +199,20 @@ fun PlayerHandView(
                 .background(if (active) MaterialTheme.colorScheme.primary else Color.Transparent, RoundedCornerShape(2.dp))
                 .testTag(if (active) "active_hand_marker" else "inactive_hand_marker_$index"),
         )
-        Text(
-            text = badgeText(hand.cards, naturalPays = !hand.fromSplit),
-            style = if (active) MaterialTheme.typography.titleMedium else MaterialTheme.typography.titleSmall,
-            fontWeight = if (active) FontWeight.Bold else FontWeight.Normal,
-            color = MaterialTheme.colorScheme.onBackground,
-            textAlign = TextAlign.Center,
-            maxLines = 1,
-            modifier = Modifier.testTag("hand_${index}_total"),
-        )
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center) {
+            Text(
+                text = badgeText(hand.cards, naturalPays = !hand.fromSplit),
+                style = if (active) MaterialTheme.typography.titleMedium else MaterialTheme.typography.titleSmall,
+                fontWeight = if (active) FontWeight.Bold else FontWeight.Normal,
+                color = MaterialTheme.colorScheme.onBackground,
+                textAlign = TextAlign.Center,
+                maxLines = 1,
+                modifier = Modifier.testTag("hand_${index}_total"),
+            )
+            // Only on a split round, where the round's one result mark cannot say which hand won: a
+            // tick, a cross or an equals sign, with no figure — the signed net stays on the mark alone.
+            if (split && result != null) HandMark(index, result)
+        }
         // The bet is stated once, in the HUD. A split round has several stakes, so each hand states its own.
         if (split) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -224,6 +235,22 @@ fun signed(amount: Int): String = when {
     amount > 0 -> "+$amount"
     amount < 0 -> "−${-amount}"
     else -> "0"
+}
+
+/** A hand's result as a pictogram beside its total: tick for a win, cross for a loss, equals for a push. */
+@Composable
+private fun HandMark(index: Int, result: HandResult) {
+    val (icon, tint, description) = when (result.outcome) {
+        HandOutcome.BLACKJACK, HandOutcome.WIN -> Triple(Icons.Filled.Check, Color(0xFF7CE08F), R.string.banner_win)
+        HandOutcome.LOSS, HandOutcome.BUST -> Triple(Icons.Filled.Close, Color(0xFFFF8A80), R.string.banner_lose)
+        HandOutcome.PUSH -> Triple(Icons.Filled.DragHandle, Color(0xFFB0BEC5), R.string.outcome_push)
+    }
+    Icon(
+        imageVector = icon,
+        contentDescription = stringResource(description),
+        tint = tint,
+        modifier = Modifier.padding(start = 4.dp).size(20.dp).testTag("hand_${index}_mark"),
+    )
 }
 
 /** The dealer: one hand, with the hole card face down until it has been turned over. */

@@ -79,6 +79,10 @@ order in portrait and its side in landscape and changes nothing else.
 shown rather than shown disabled (`RULES.md` "Legal Actions"), so the bar's contents are exactly
 `legalDecisions` plus the fixed Settings button.
 
+Bet − and + repeat while held: one step on the press, a second after about 0.4 s, then faster the longer
+the finger stays, until it lifts or the bet reaches its limit. A tap is still one step, and
+accessibility services get an ordinary click.
+
 | Phase | Buttons | Count |
 |---|---|---|
 | Idle | Settings · Bet − · Bet + · Deal | 4 |
@@ -105,7 +109,7 @@ minimum card width and the exposed face-up band the platform requires of every g
   `min(56 dp, column width × 0.5)`, floor **40 dp**. At 320 dp with four hands the columns are 76 dp
   (after the 8 dp side margins) and the cards 40 dp; at 360 dp the columns are 86 dp and the cards 43 dp.
 - **Fan.** Cards in a hand overlap horizontally. The step between card left edges is
-  `min(card width × 0.5, (hand width − card width) ÷ (cards − 1))`, floored at **6 dp**. The step is
+  `min(card width × 0.7, (hand width − card width) ÷ (cards − 1))`, floored at **6 dp**. The step is
   what exposes each covered card's corner index, so a floor under the corner's width would keep
   every index readable; 6 dp does not, and does not need to — the total badge states the hand, and
   only the last card's face is complete.
@@ -143,7 +147,8 @@ dialog — there is no larger game that has been won.
   colour is never the only cue. When insurance was taken a small shield with its own signed result
   sits beneath. The words ("You win!", "Bust"…) are its spoken description only. It is not modal, and
   it stays until the next round.
-- **Nowhere else.** The hands carry no per-hand result, there is no summary line, and the chips
+- **Split hands carry a pictogram, never a figure.** Where a round has several hands the one mark cannot say which won, so each hand's total badge gets a small tick (won), cross (lost or bust) or equals sign (push) once results are shown. A single-hand round has none: the mark says it all. The signed net stays on the result mark alone.
+- **Nowhere else.** The hands carry no per-hand result figure, there is no summary line, and the chips
   display shows no delta: the bankroll simply counts to its new figure.
 - A win throws confetti from the mark, more for a blackjack; a loss washes the table red briefly.
   Skip Animations leaves just the mark.

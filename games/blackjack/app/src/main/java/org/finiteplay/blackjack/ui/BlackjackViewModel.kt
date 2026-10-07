@@ -190,8 +190,12 @@ class BlackjackViewModel(
         if (next == selectedBet) return
         val updated = ledger.copy(selectedBet = next)
         ledger = updated
-        viewModelScope.launch { runCatching { ledgerStore.save(updated) } }
+        // A held button steps many times a second; only the last value needs to reach the disk.
+        betSave?.cancel()
+        betSave = viewModelScope.launch { runCatching { ledgerStore.save(updated) } }
     }
+
+    private var betSave: Job? = null
 
     // ---- the round -------------------------------------------------------------------------
 
