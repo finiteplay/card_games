@@ -47,8 +47,8 @@ data class Announced(val id: Int, val what: Announcement)
 
 /** The decision's salt: from the hand's seed, the seat and the action's index, never the seed itself (`DESIGN.md` "The policy"). */
 internal fun decisionSalt(handSeed: Long, seat: Int, actionIndex: Int): Long {
-    val perSeat = SplitMix64(handSeed + seat).nextULong().toLong()
-    return SplitMix64(perSeat + actionIndex).nextULong().toLong()
+    fun mix(x: Long) = SplitMix64(x).nextULong().toLong()
+    return mix(mix(mix(handSeed) + seat) + actionIndex)
 }
 
 /**
