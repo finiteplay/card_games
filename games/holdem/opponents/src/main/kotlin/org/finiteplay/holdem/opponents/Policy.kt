@@ -21,8 +21,8 @@ internal class Decision(val action: Action, val equity: Double)
 
 internal object Brain {
     /** Fixed, never time-bounded: the same view must give the same answer on any device. */
-    const val DECISION_SAMPLES = 300
-    const val HINT_SAMPLES = 1500
+    const val DECISION_SAMPLES = 600
+    const val HINT_SAMPLES = 3000
 
     private const val MC_DOMAIN = 0x4D43L
 
