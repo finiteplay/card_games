@@ -150,7 +150,12 @@ dialog — there is no larger game that has been won.
 - The dealer's draws are paced (**Motion**, below). The mark appears only after the dealer's last
   card has been shown; a player's bust is the exception only in that the hand's `Bust` total badge
   appears at once, since the hand is over at that card (`RULES.md` "Settlement").
-- A win plays the shared win sound when the net is positive. Pushes and losses are silent.
+- Deal/New Round plays the shared shuffle cue. Hint, Hit, Stand, Double, and Split each have a
+  distinct short cue; dealer card reveals use the deal cue. A hand that crosses 21 plays its bust
+  cue immediately. An ordinary positive settlement plays the shared win sound, while a natural
+  blackjack has its own casino-chip celebration. A losing round plays a descending loss cue; when
+  the resulting bankroll cannot cover the minimum bet, a stronger out-of-chips cue replaces it.
+  Pushes are silent.
 
 ## The Reset Offer
 

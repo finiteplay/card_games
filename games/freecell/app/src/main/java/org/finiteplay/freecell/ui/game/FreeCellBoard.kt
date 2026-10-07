@@ -463,6 +463,7 @@ fun FreeCellBoard(
                 anims += MoveAnimation(
                     cards, fromPoint, toPoint, stepPx, stepState,
                     durationMs = if (skipAnimations) SKIP_ANIMATIONS_FLIGHT_MS else durationForFlight(fromPoint, toPoint, density, AUTO_FINISH_SPEED_MULTIPLIER),
+                    sound = SoundEffect.AUTOMATIC_MOVE,
                     fromKey = fromKey,
                     fromIndex = fromIndex,
                     onComplete = if (isLast) viewModel::onSweepAnimationFinished else null,

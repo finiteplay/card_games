@@ -234,14 +234,10 @@ Two board themes ship, light and dark, chosen by a persisted setting that also o
 ## Sound
 
 Mechanism, gating, and per-step timing: [PLATFORM.md](../../PLATFORM.md) "Sound". The
-four assets live in `games/klondike/app/src/main/res/raw`. Move and automatic-transfer
-play a quiet, smooth "sh" (a single bandpass-filtered noise swell, not a tone or a
-granular riffle); invalid plays a short percussive tap (a fast-decaying low thump plus a
-brief click transient); win is a plain synthesized tone.
-
-The automatic-finish sweep is Klondike's one exception to the per-step rule: it plays no
-per-card blip at its 3x speed, which would read as a machine-gun burst, and relies on the
-win sound alone once it completes.
+The shared CC0 library lives in `core/ui/src/main/res/raw` and is inventoried in
+`docs/SOUND_ASSETS.md`. A player move, each automatic transfer, a new-game shuffle, a hint,
+an invalid action, and a win have distinct quiet cues. The automatic-finish sweep uses the
+softer automatic-transfer recording for every card even at its 3x visual speed.
 
 ## Localization
 

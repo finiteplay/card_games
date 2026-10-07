@@ -37,3 +37,11 @@ is never packaged into anything distributed and is not held to this policy:
 Before adding a new dependency, confirm its license the same way and record
 it here; a dependency that ships in the app and carries any other license
 (including copyleft licenses such as GPL/LGPL/AGPL, or EPL) is not permitted.
+
+## Third-party sound assets
+
+The bundled sound effects listed in `docs/SOUND_ASSETS.md` are dedicated to the public domain
+under Creative Commons CC0 1.0. They include card and chip recordings by Kenney Vleugels
+(Kenney.nl), a card-riffle recording by Brian MacIntosh (BMacZero), and generated/procedural cues
+distributed by SFXMint. The shared win jingle is by Fupi. Attribution is not required; FinitePlay
+records it here and in the asset manifest for provenance.

@@ -11,17 +11,13 @@ import org.finiteplay.core.ui.R
  * Plays short game sound effects via [SoundPool], one sample per [SoundEffect],
  * loaded once at construction. Requests transient, ducking-tolerant audio focus
  * immediately before each play and abandons it right after — appropriate for the
- * brief (<= ~700 ms) incidental sounds here, which should momentarily duck whatever
+ * brief incidental sounds here, which should momentarily duck whatever
  * else is playing rather than interrupt it, and never need to hold focus between
  * sounds. [SoundPool] plays on the attributes' matching audio stream, so it already
  * respects that stream's system volume without any extra work here.
  *
- * [SoundEffect.MOVE]/[SoundEffect.AUTOMATIC_MOVE]/[SoundEffect.INVALID]/
- * [SoundEffect.WIN] are placeholder synthesized audio (`tools/` has no asset
- * pipeline for this yet) — functionally complete, not final sound design.
- * [SoundEffect.MOVE]/[SoundEffect.AUTOMATIC_MOVE] are a quiet "sh" (a single
- * bandpass-filtered noise swell); [SoundEffect.INVALID] is a short percussive tap;
- * [SoundEffect.WIN] remains a tone.
+ * The bundled recordings and generated cues are documented, licensed, and checksummed in
+ * `docs/SOUND_ASSETS.md`.
  */
 class AndroidSoundPlayer(context: Context) : SoundPlayer {
     private val appContext = context.applicationContext
@@ -40,6 +36,20 @@ class AndroidSoundPlayer(context: Context) : SoundPlayer {
     private val soundIds: Map<SoundEffect, Int> = mapOf(
         SoundEffect.MOVE to soundPool.load(appContext, R.raw.sound_move, 1),
         SoundEffect.AUTOMATIC_MOVE to soundPool.load(appContext, R.raw.sound_automove, 1),
+        SoundEffect.UNDO to soundPool.load(appContext, R.raw.sound_undo, 1),
+        SoundEffect.SHUFFLE to soundPool.load(appContext, R.raw.sound_shuffle, 1),
+        SoundEffect.HINT to soundPool.load(appContext, R.raw.sound_hint, 1),
+        SoundEffect.DEAL to soundPool.load(appContext, R.raw.sound_deal, 1),
+        SoundEffect.CHIP to soundPool.load(appContext, R.raw.sound_chip, 1),
+        SoundEffect.CARD_DRAW to soundPool.load(appContext, R.raw.sound_card_draw, 1),
+        SoundEffect.ACTION_CONFIRM to soundPool.load(appContext, R.raw.sound_action_confirm, 1),
+        SoundEffect.WAGER_COMMIT to soundPool.load(appContext, R.raw.sound_wager_commit, 1),
+        SoundEffect.CARD_SPLIT to soundPool.load(appContext, R.raw.sound_card_split, 1),
+        SoundEffect.SEQUENCE_COMPLETE to soundPool.load(appContext, R.raw.sound_sequence_complete, 1),
+        SoundEffect.BUST to soundPool.load(appContext, R.raw.sound_bust, 1),
+        SoundEffect.NATURAL_WIN to soundPool.load(appContext, R.raw.sound_natural_win, 1),
+        SoundEffect.ROUND_LOSS to soundPool.load(appContext, R.raw.sound_round_loss, 1),
+        SoundEffect.GAME_OVER to soundPool.load(appContext, R.raw.sound_bankroll_lost, 1),
         SoundEffect.INVALID to soundPool.load(appContext, R.raw.sound_invalid, 1),
         SoundEffect.WIN to soundPool.load(appContext, R.raw.sound_win, 1),
     )

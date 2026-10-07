@@ -73,6 +73,22 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
 
     val mirrored = viewModel.settings.handedness == Handedness.LEFT
     val isWon = session.state.status == GameStatus.WON
+    val requestHintWithSound = {
+        soundPlayer.play(SoundEffect.HINT)
+        viewModel.requestHint()
+    }
+    val requestUndoWithSound = {
+        soundPlayer.play(SoundEffect.UNDO)
+        viewModel.undo()
+    }
+    val requestNewWithSound = {
+        if (!session.hasPlayerActed || isWon) soundPlayer.play(SoundEffect.SHUFFLE)
+        viewModel.requestNewGame()
+    }
+    val requestReplayWithSound = {
+        if (!session.hasPlayerActed || isWon) soundPlayer.play(SoundEffect.SHUFFLE)
+        viewModel.requestReplay()
+    }
     // The dialog waits for FreeCellBoard to finish animating every card into place — including an
     // automatic-finish sweep — before it appears, rather than popping up the instant the state
     // itself becomes won (mirrors Klondike's own `boardAnimating`).
@@ -142,10 +158,10 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
                     orientation = BoardOrientation.PORTRAIT,
                     canUndo = session.canUndo,
                     mirrored = mirrored,
-                    onUndo = viewModel::undo,
-                    onReplay = viewModel::requestReplay,
-                    onNewGame = viewModel::requestNewGame,
-                    onHint = viewModel::requestHint,
+                    onUndo = requestUndoWithSound,
+                    onReplay = requestReplayWithSound,
+                    onNewGame = requestNewWithSound,
+                    onHint = requestHintWithSound,
                     onSettings = { showSettings = true },
                 )
             }
@@ -193,16 +209,16 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
             bestElapsedMillis = bests.session.bestElapsedMillis,
             bestMoveCount = bests.session.bestMoveCount,
             solutionMoveCount = viewModel.solutionMoveCount,
-            onNewGame = viewModel::requestNewGame,
-            onReplay = viewModel::replay,
+            onNewGame = requestNewWithSound,
+            onReplay = requestReplayWithSound,
         )
     }
 
     if (showStuckNotice) {
         StuckNotice(
             canUndo = session.canUndo,
-            onUndo = { viewModel.undo(); stuckNoticeDismissed = true },
-            onNewGame = { viewModel.requestNewGame(); stuckNoticeDismissed = true },
+            onUndo = { requestUndoWithSound(); stuckNoticeDismissed = true },
+            onNewGame = { requestNewWithSound(); stuckNoticeDismissed = true },
             onDismiss = { stuckNoticeDismissed = true },
         )
     }
@@ -212,7 +228,10 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
             action = pending,
             moveCount = session.state.moveCount,
             elapsedSeconds = viewModel.elapsedSeconds,
-            onConfirm = viewModel::confirmPendingAction,
+            onConfirm = {
+                soundPlayer.play(SoundEffect.SHUFFLE)
+                viewModel.confirmPendingAction()
+            },
             onDismiss = viewModel::dismissPendingAction,
         )
     }
@@ -243,6 +262,7 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
             progress = progress,
             onSelect = {
                 dealPickerVisible = false
+                if (!session.hasPlayerActed || isWon) soundPlayer.play(SoundEffect.SHUFFLE)
                 viewModel.requestSelectDeal(it)
             },
             onDismiss = { dealPickerVisible = false },

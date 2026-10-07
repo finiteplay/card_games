@@ -96,6 +96,22 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
     val soundPlayer = remember(androidSoundPlayer) {
         GatedSoundPlayer(androidSoundPlayer, isEnabled = { viewModel.settings.soundEnabled }, isForeground = { viewModel.isForeground })
     }
+    val requestHintWithSound = {
+        soundPlayer.play(SoundEffect.HINT)
+        viewModel.showHint()
+    }
+    val requestUndoWithSound = {
+        soundPlayer.play(SoundEffect.UNDO)
+        viewModel.undo()
+    }
+    val requestNewWithSound = {
+        if (session.state.moveCount == 0 || session.state.status == GameStatus.WON) soundPlayer.play(SoundEffect.SHUFFLE)
+        viewModel.requestNewGame()
+    }
+    val requestReplayWithSound = {
+        if (session.state.moveCount == 0 || session.state.status == GameStatus.WON) soundPlayer.play(SoundEffect.SHUFFLE)
+        viewModel.requestRestart()
+    }
 
     // Brief flash plus sound for a tap or drag that found no legal destination — Klondike's own
     // `markInvalid`, adapted here since the resolution itself happens in the ViewModel rather
@@ -107,14 +123,21 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
             viewModel.dismissInvalidFeedback()
         }
     }
-    // Fires once per committed player move — never during the automatic finish, which stays
-    // silent per move the same way Klondike's own sweep does, relying on the win sound alone
-    // once it completes (`docs/games/klondike/DESIGN.md` "Sound"). The three fields below are
+    // Fires once per committed move. Automatic-finish steps use the quieter automatic cue; the
+    // three fields below are
     // reset together on every reassignment of `session` that is not a real move (undo, restore,
     // restart, a fresh deal), so their being set is itself the signal a move actually happened.
     LaunchedEffect(session.state) {
         val moved = viewModel.lastMovedSequence != null || viewModel.lastBankedRuns.isNotEmpty() || viewModel.lastDealtRow != null
-        if (moved && !viewModel.lastMoveWasAutomatic) soundPlayer.play(SoundEffect.MOVE)
+        if (moved) {
+            val effect = when {
+                viewModel.lastMoveWasAutomatic -> SoundEffect.AUTOMATIC_MOVE
+                viewModel.lastDealtRow != null -> SoundEffect.DEAL
+                viewModel.lastBankedRuns.isNotEmpty() -> SoundEffect.SEQUENCE_COMPLETE
+                else -> SoundEffect.MOVE
+            }
+            soundPlayer.play(effect)
+        }
     }
 
     Scaffold(
@@ -172,6 +195,10 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
                             onSettings = { showSettings = true },
                             onHelp = { showHelp = true },
                             onStatistics = { showStatistics = true },
+                            onHint = requestHintWithSound,
+                            onUndo = requestUndoWithSound,
+                            onReplay = requestReplayWithSound,
+                            onNewGame = requestNewWithSound,
                         )
                         SpiderBoard(
                             viewModel = viewModel,
@@ -184,6 +211,10 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
                             onSettings = { showSettings = true },
                             onHelp = { showHelp = true },
                             onStatistics = { showStatistics = true },
+                            onHint = requestHintWithSound,
+                            onUndo = requestUndoWithSound,
+                            onReplay = requestReplayWithSound,
+                            onNewGame = requestNewWithSound,
                         )
                     }
                 } else {
@@ -191,10 +222,10 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
                     ActionBar(
                         canUndo = session.canUndo,
                         mirrored = mirrored,
-                        onUndo = viewModel::undo,
-                        onHint = viewModel::showHint,
-                        onRestart = viewModel::requestRestart,
-                        onNewGame = viewModel::requestNewGame,
+                        onUndo = requestUndoWithSound,
+                        onHint = requestHintWithSound,
+                        onRestart = requestReplayWithSound,
+                        onNewGame = requestNewWithSound,
                         onSettings = { showSettings = true },
                     )
                 }
@@ -246,8 +277,8 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
             moveCount = session.state.moveCount,
             elapsedSeconds = viewModel.elapsedSeconds,
             skipAnimations = !viewModel.settings.animationsEnabled,
-            onNewGame = viewModel::requestNewGame,
-            onReplay = viewModel::restart,
+            onNewGame = requestNewWithSound,
+            onReplay = requestReplayWithSound,
         ) {
             SolutionComparison(session.state.moveCount, viewModel.solutionMoveCount)
         }
@@ -258,7 +289,10 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
             action = pending,
             moveCount = session.state.moveCount,
             elapsedSeconds = viewModel.elapsedSeconds,
-            onConfirm = viewModel::confirmPendingAction,
+            onConfirm = {
+                soundPlayer.play(SoundEffect.SHUFFLE)
+                viewModel.confirmPendingAction()
+            },
             onDismiss = viewModel::dismissPendingAction,
         )
     }
@@ -286,6 +320,7 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
             forfeitsMoveCount = session.state.moveCount.takeIf { viewModel.suitCountSwitchWouldForfeit },
             onSelect = {
                 suitCountPickerVisible = false
+                if (session.state.moveCount == 0 || session.state.status == GameStatus.WON) soundPlayer.play(SoundEffect.SHUFFLE)
                 viewModel.setSuitCount(it)
             },
             onDismiss = { suitCountPickerVisible = false },
@@ -302,6 +337,7 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
             progress = progress,
             onSelect = {
                 dealPickerVisible = false
+                if (session.state.moveCount == 0 || session.state.status == GameStatus.WON) soundPlayer.play(SoundEffect.SHUFFLE)
                 viewModel.requestSelectDeal(it)
             },
             onDismiss = { dealPickerVisible = false },

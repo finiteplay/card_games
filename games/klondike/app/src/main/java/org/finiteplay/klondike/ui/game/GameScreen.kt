@@ -182,6 +182,22 @@ fun GameScreen(
 
     val pending = viewModel.pendingConfirmation
     val isWon = session.state.status == GameStatus.WON
+    val requestHintWithSound = {
+        soundPlayer.play(SoundEffect.HINT)
+        viewModel.requestHint()
+    }
+    val requestUndoWithSound = {
+        soundPlayer.play(SoundEffect.UNDO)
+        viewModel.undo()
+    }
+    val requestNewWithSound = {
+        if (!session.hasPlayerActed || isWon) soundPlayer.play(SoundEffect.SHUFFLE)
+        viewModel.requestNewGame()
+    }
+    val requestReplayWithSound = {
+        if (!session.hasPlayerActed || isWon) soundPlayer.play(SoundEffect.SHUFFLE)
+        viewModel.requestReplay()
+    }
     // The win dialog waits for Board to finish animating every card into place
     // (including an automatic-finish sweep) before it appears, rather than popping
     // up the instant the state itself becomes won.
@@ -296,10 +312,10 @@ fun GameScreen(
                         mirrored = viewModel.persistedHandedness == Handedness.LEFT,
                         canUndo = session.canUndo,
                         hintEnabled = viewModel.hasHint && viewModel.hintState == HintUiState.Hidden,
-                        onUndo = viewModel::undo,
-                        onNew = viewModel::requestNewGame,
-                        onReplay = viewModel::requestReplay,
-                        onHint = viewModel::requestHint,
+                        onUndo = requestUndoWithSound,
+                        onNew = requestNewWithSound,
+                        onReplay = requestReplayWithSound,
+                        onHint = requestHintWithSound,
                         onSettings = { overlay = Overlay.SETTINGS },
                     )
                 } else {
@@ -349,10 +365,10 @@ fun GameScreen(
                                 landscapeGroup = LandscapeActionGroup.PRIMARY,
                                 canUndo = session.canUndo,
                                 hintEnabled = viewModel.hasHint && viewModel.hintState == HintUiState.Hidden,
-                                onUndo = viewModel::undo,
-                                onNew = viewModel::requestNewGame,
-                                onReplay = viewModel::requestReplay,
-                                onHint = viewModel::requestHint,
+                                onUndo = requestUndoWithSound,
+                                onNew = requestNewWithSound,
+                                onReplay = requestReplayWithSound,
+                                onHint = requestHintWithSound,
                                 onSettings = { overlay = Overlay.SETTINGS },
                             )
                         }
@@ -369,10 +385,10 @@ fun GameScreen(
                                 landscapeGroup = LandscapeActionGroup.SECONDARY,
                                 canUndo = session.canUndo,
                                 hintEnabled = viewModel.hasHint && viewModel.hintState == HintUiState.Hidden,
-                                onUndo = viewModel::undo,
-                                onNew = viewModel::requestNewGame,
-                                onReplay = viewModel::requestReplay,
-                                onHint = viewModel::requestHint,
+                                onUndo = requestUndoWithSound,
+                                onNew = requestNewWithSound,
+                                onReplay = requestReplayWithSound,
+                                onHint = requestHintWithSound,
                                 onSettings = { overlay = Overlay.SETTINGS },
                             )
                         }
@@ -491,8 +507,8 @@ fun GameScreen(
     if (showStuckNotice) {
         StuckNotice(
             canUndo = session.canUndo,
-            onUndo = { viewModel.undo(); stuckNoticeDismissed = true },
-            onNewGame = { viewModel.requestNewGame(); stuckNoticeDismissed = true },
+            onUndo = { requestUndoWithSound(); stuckNoticeDismissed = true },
+            onNewGame = { requestNewWithSound(); stuckNoticeDismissed = true },
             onDismiss = { stuckNoticeDismissed = true },
         )
     }
@@ -502,7 +518,10 @@ fun GameScreen(
             pending = pending,
             moveCount = session.state.moveCount,
             elapsedSeconds = elapsedSeconds,
-            onConfirm = viewModel::confirmPendingAction,
+            onConfirm = {
+                soundPlayer.play(SoundEffect.SHUFFLE)
+                viewModel.confirmPendingAction()
+            },
             onDismiss = viewModel::cancelPendingAction,
         )
     }
@@ -515,6 +534,7 @@ fun GameScreen(
             forfeitsMoveCount = session.state.moveCount.takeIf { viewModel.levelSwitchWouldForfeit },
             onSelect = {
                 levelPickerVisible = false
+                if (!session.hasPlayerActed || isWon) soundPlayer.play(SoundEffect.SHUFFLE)
                 viewModel.setDifficulty(it)
             },
             onDismiss = { levelPickerVisible = false },
@@ -533,6 +553,7 @@ fun GameScreen(
                 progress = progress,
                 onSelect = {
                     dealPickerVisible = false
+                    if (!session.hasPlayerActed || isWon) soundPlayer.play(SoundEffect.SHUFFLE)
                     viewModel.requestSelectDeal(it)
                 },
                 onDismiss = { dealPickerVisible = false },
@@ -547,8 +568,8 @@ fun GameScreen(
             skipAnimations = skipAnimations,
             dealDifficulty = viewModel.dealDifficulty,
             solutionMoveCount = viewModel.solutionMoveCount,
-            onNewGame = viewModel::requestNewGame,
-            onReplay = viewModel::requestReplay,
+            onNewGame = requestNewWithSound,
+            onReplay = requestReplayWithSound,
         )
     }
 

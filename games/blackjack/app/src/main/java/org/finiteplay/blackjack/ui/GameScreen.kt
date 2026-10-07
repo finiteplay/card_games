@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 import org.finiteplay.blackjack.R
 import org.finiteplay.blackjack.rules.Chips
+import org.finiteplay.blackjack.rules.Decision
 import org.finiteplay.blackjack.rules.Settlement
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.BoardOrientation
@@ -87,6 +88,12 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
     // round settles, so the steps are a view over the settled state. The progress is saved with the
     // instance state, so a rotation mid-reveal does not replay it.
     val seed = round?.state?.seed
+    val bustCount = round?.state?.hands?.count { it.busted } ?: 0
+    var heardBusts by rememberSaveable(seed) { mutableStateOf(bustCount) }
+    LaunchedEffect(seed, bustCount) {
+        if (shouldPlayBustSound(heardBusts, bustCount)) soundPlayer.play(SoundEffect.BUST)
+        heardBusts = bustCount
+    }
     var dealerFaceUp by rememberSaveable(seed) { mutableStateOf(1) }
     var resultsShown by rememberSaveable(seed) { mutableStateOf(false) }
     val settledState = round?.state?.takeIf { it.isSettled }
@@ -98,20 +105,17 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
         if (dealerFaceUp < 2) {
             delay(stepMs)
             dealerFaceUp = 2
-            soundPlayer.play(SoundEffect.MOVE)
+            soundPlayer.play(SoundEffect.DEAL)
         }
         while (dealerFaceUp < state.dealer.size) {
             delay(stepMs)
             dealerFaceUp += 1
-            soundPlayer.play(SoundEffect.MOVE)
+            soundPlayer.play(SoundEffect.DEAL)
         }
         delay(if (viewModel.settings.animationsEnabled) RESULTS_DELAY_MS else DEALER_STEP_SKIP_MS)
         resultsShown = true
-        if (state.settlement!!.total > 0) soundPlayer.play(SoundEffect.WIN)
+        resultSoundEffect(state.settlement!!, viewModel.bankroll)?.let(soundPlayer::play)
     }
-    // A card dealt to the player is heard when it appears.
-    LaunchedEffect(round?.state?.shoePosition, seed) { if (round != null && !round.state.isSettled) soundPlayer.play(SoundEffect.MOVE) }
-
     val settlement: Settlement? = if (resultsShown) settledState?.settlement else null
     // The bankroll already includes a settled round, so until its results are shown the status row
     // reads what it was before — showing the new figure first would give the result away.
@@ -158,11 +162,32 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                 mirrored = mirrored,
                 bar = bar,
                 selectedBetStep = Chips.BET_STEP,
-                onDecision = viewModel::decide,
-                onBet = viewModel::stepBet,
-                onDeal = viewModel::deal,
+                onDecision = { decision ->
+                    soundPlayer.play(
+                        when (decision) {
+                            Decision.HIT -> SoundEffect.CARD_DRAW
+                            Decision.STAND -> SoundEffect.ACTION_CONFIRM
+                            Decision.DOUBLE -> SoundEffect.WAGER_COMMIT
+                            Decision.SPLIT -> SoundEffect.CARD_SPLIT
+                            Decision.TAKE_INSURANCE -> SoundEffect.CHIP
+                            Decision.DECLINE_INSURANCE -> SoundEffect.ACTION_CONFIRM
+                        },
+                    )
+                    viewModel.decide(decision)
+                },
+                onBet = { direction ->
+                    soundPlayer.play(SoundEffect.CHIP)
+                    viewModel.stepBet(direction)
+                },
+                onDeal = {
+                    soundPlayer.play(SoundEffect.SHUFFLE)
+                    viewModel.deal()
+                },
                 onReset = viewModel::resetBankroll,
-                onHint = viewModel::requestHint,
+                onHint = {
+                    soundPlayer.play(SoundEffect.HINT)
+                    viewModel.requestHint()
+                },
                 onSettings = { showSettings = true },
             )
         }
@@ -263,3 +288,14 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
         SettingsScreen(viewModel = viewModel, onClose = { showSettings = false })
     }
 }
+
+/** The stronger cue wins when a loss leaves too few chips to deal another round. */
+internal fun resultSoundEffect(settlement: Settlement, bankroll: Int): SoundEffect? = when {
+    resultKindOf(settlement) == ResultKind.BLACKJACK -> SoundEffect.NATURAL_WIN
+    settlement.total > 0 -> SoundEffect.WIN
+    settlement.total < 0 && Chips.needsReset(bankroll) -> SoundEffect.GAME_OVER
+    settlement.total < 0 -> SoundEffect.ROUND_LOSS
+    else -> null
+}
+
+internal fun shouldPlayBustSound(previousBusts: Int, currentBusts: Int): Boolean = currentBusts > previousBusts

@@ -299,6 +299,10 @@ internal fun ActionRail(
     onSettings: () -> Unit,
     onHelp: () -> Unit,
     onStatistics: () -> Unit,
+    onHint: () -> Unit,
+    onUndo: () -> Unit,
+    onReplay: () -> Unit,
+    onNewGame: () -> Unit,
 ) {
     val accents = LocalAppColors.current.action
     when (group) {
@@ -311,8 +315,8 @@ internal fun ActionRail(
                 orientation = BoardOrientation.LANDSCAPE,
                 actions = listOf(
                     settingsAction(accents.settings, onSettings),
-                    replayAction(accents.replay, viewModel::requestRestart),
-                    newAction(accents.new, viewModel::requestNewGame),
+                    replayAction(accents.replay, onReplay),
+                    newAction(accents.new, onNewGame),
                 ),
             )
         }
@@ -334,8 +338,8 @@ internal fun ActionRail(
             BoardActionBar(
                 orientation = BoardOrientation.LANDSCAPE,
                 actions = listOf(
-                    hintAction(accents.hint, viewModel::showHint),
-                    undoAction(accents.undo, viewModel.session.canUndo, viewModel::undo),
+                    hintAction(accents.hint, onHint),
+                    undoAction(accents.undo, viewModel.session.canUndo, onUndo),
                 ),
             )
         }

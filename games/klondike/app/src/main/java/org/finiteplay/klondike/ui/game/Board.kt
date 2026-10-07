@@ -843,10 +843,8 @@ fun Board(
                     val revealsNext = movesRevealCard(sweepMove, stepState)
                     stepState = applyMove(stepState, sweepMove).copy(moveCount = stepState.moveCount + 1)
                     val toPoint = toKey?.let { pileTopLeft(stepState, it) } ?: fromPoint
-                    // The sweep never gets skipAnimations's uniform step pause, on top
-                    // of already never playing a per-card sound: "the player has no
-                    // decisions left to watch for" applies just as much to skipping
-                    // the wait as to skipping the blip (`docs/games/klondike/DESIGN.md` "Sound").
+                    // The sweep never gets skipAnimations's uniform step pause, but every
+                    // transfer keeps the quieter automatic-move cue even at the faster pace.
                     anims += MoveAnimation(
                         sweepCards, fromPoint, toPoint, stepPx, stepState,
                         durationMs = if (skipAnimations) {
@@ -855,6 +853,7 @@ fun Board(
                             durationForFlight(fromPoint, toPoint, density, AUTO_FINISH_SPEED_MULTIPLIER)
                         },
                         startDelayMs = pendingRevealDelay,
+                        sound = SoundEffect.AUTOMATIC_MOVE,
                         fromKey = fromKey,
                         fromIndex = fromIndex,
                     )

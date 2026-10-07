@@ -664,8 +664,7 @@ class SpiderViewModel(
     /**
      * Whether the move behind the current [session] value was one of [runAutoFinishIfAvailable]'s
      * own commits rather than the player's — read by the screen's sound trigger (`GameScreen.kt`)
-     * to keep the sweep silent the same way Klondike's own automatic finish is (no per-card blip
-     * at speed; the win sound alone covers it once the sweep completes).
+     * to select the quieter automatic-transfer cue.
      */
     var lastMoveWasAutomatic: Boolean = false
         private set

@@ -110,8 +110,10 @@ the first time the light theme shipped.
 
 ## Sound
 
-A short effect plays for a player's own move, an automatic transfer, an invalid action,
-and a win. A persisted Sound setting (default off — the player opts in) and the app's own
+A short effect plays for a player's own move, every automatic transfer including an automatic
+finish, a new-game shuffle, a hint request, a deal, a chip or decision action, a completed sequence,
+an invalid action, and a win where the game exposes that event. A persisted
+Sound setting (default off — the player opts in) and the app's own
 foreground state gate playback independently of each other and of system audio-focus and
 volume behavior: `GatedSoundPlayer` (pure Kotlin, unit-tested with no Android dependency)
 only forwards to the real player when both are true, so backgrounding or muting silences
@@ -128,7 +130,9 @@ order, staying audibly tied to whichever card is actually moving. Sound and skip
 animations are independent settings: a move still plays its sound with animations
 skipped, since they address different accessibility needs.
 
-The shipped assets are placeholder synthesized audio, not final sound design.
+The shipped library uses quiet card and chip Foley for physical actions and restrained generated
+cues for hints, confirmations, invalid actions, and wins. `docs/SOUND_ASSETS.md` records the source, license, and checksum
+of every file. Cue names in `core:ui` describe reusable events and must remain game-neutral.
 
 ## Win Celebration
 

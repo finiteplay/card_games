@@ -1,6 +1,8 @@
 package org.finiteplay.blackjack.ui
 
 import android.app.Activity
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.rememberScrollState
@@ -138,6 +140,9 @@ fun StatisticsScreen(
         onClose = onClose,
         testTag = "statistics_screen",
     ) {
+        // The panel's column has no spacing of its own: the cards are separated here, by the same
+        // 12 dp the other games' statistics screens use.
+        Spacer(Modifier.height(12.dp))
         StatSectionCard(stringResource(R.string.stat_section_hands)) {
             StatTileGrid(
                 tiles = listOf(
@@ -150,6 +155,7 @@ fun StatisticsScreen(
                 testTag = "statistics_hands",
             )
         }
+        Spacer(Modifier.height(12.dp))
         StatSectionCard(stringResource(R.string.stat_section_chips)) {
             StatTileGrid(
                 tiles = listOf(

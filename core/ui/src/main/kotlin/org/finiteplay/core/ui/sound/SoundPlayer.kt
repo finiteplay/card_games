@@ -1,7 +1,26 @@
 package org.finiteplay.core.ui.sound
 
-/** Short game sound effects (`docs/PLATFORM.md` "Sound"). */
-enum class SoundEffect { MOVE, AUTOMATIC_MOVE, INVALID, WIN }
+/** Short, game-neutral sound effects (`docs/PLATFORM.md` "Sound"). */
+enum class SoundEffect {
+    MOVE,
+    AUTOMATIC_MOVE,
+    UNDO,
+    SHUFFLE,
+    HINT,
+    DEAL,
+    CHIP,
+    CARD_DRAW,
+    ACTION_CONFIRM,
+    WAGER_COMMIT,
+    CARD_SPLIT,
+    SEQUENCE_COMPLETE,
+    BUST,
+    NATURAL_WIN,
+    ROUND_LOSS,
+    GAME_OVER,
+    INVALID,
+    WIN,
+}
 
 fun interface SoundPlayer {
     fun play(effect: SoundEffect)
