@@ -114,7 +114,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
         }
         delay(if (viewModel.settings.animationsEnabled) RESULTS_DELAY_MS else DEALER_STEP_SKIP_MS)
         resultsShown = true
-        resultSoundEffect(state.settlement!!, viewModel.bankroll)?.let(soundPlayer::play)
+        resultSoundEffects(state.settlement!!, viewModel.bankroll).forEach(soundPlayer::play)
     }
     val settlement: Settlement? = if (resultsShown) settledState?.settlement else null
     // The bankroll already includes a settled round, so until its results are shown the status row
@@ -292,10 +292,19 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
 /** The stronger cue wins when a loss leaves too few chips to deal another round. */
 internal fun resultSoundEffect(settlement: Settlement, bankroll: Int): SoundEffect? = when {
     resultKindOf(settlement) == ResultKind.BLACKJACK -> SoundEffect.NATURAL_WIN
-    settlement.total > 0 -> SoundEffect.WIN
+    settlement.total > 0 -> SoundEffect.ROUND_WIN
     settlement.total < 0 && Chips.needsReset(bankroll) -> SoundEffect.GAME_OVER
     settlement.total < 0 -> SoundEffect.ROUND_LOSS
     else -> null
+}
+
+internal fun resultSoundEffects(settlement: Settlement, bankroll: Int): List<SoundEffect> {
+    val primary = resultSoundEffect(settlement, bankroll) ?: return emptyList()
+    return if (primary == SoundEffect.NATURAL_WIN) {
+        listOf(primary, SoundEffect.VOICE_ANNOUNCEMENT)
+    } else {
+        listOf(primary)
+    }
 }
 
 internal fun shouldPlayBustSound(previousBusts: Int, currentBusts: Int): Boolean = currentBusts > previousBusts

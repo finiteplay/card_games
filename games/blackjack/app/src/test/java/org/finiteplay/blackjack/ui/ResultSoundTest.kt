@@ -20,12 +20,15 @@ class ResultSoundTest {
 
     @Test
     fun `ordinary win uses shared win sound`() {
-        assertEquals(SoundEffect.WIN, resultSoundEffect(settlement(HandOutcome.WIN, 20), bankroll = 1_020))
+        assertEquals(SoundEffect.ROUND_WIN, resultSoundEffect(settlement(HandOutcome.WIN, 20), bankroll = 1_020))
     }
 
     @Test
     fun `natural blackjack uses its own celebration`() {
-        assertEquals(SoundEffect.NATURAL_WIN, resultSoundEffect(settlement(HandOutcome.BLACKJACK, 30), bankroll = 1_030))
+        assertEquals(
+            listOf(SoundEffect.NATURAL_WIN, SoundEffect.VOICE_ANNOUNCEMENT),
+            resultSoundEffects(settlement(HandOutcome.BLACKJACK, 30), bankroll = 1_030),
+        )
     }
 
     @Test

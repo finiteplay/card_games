@@ -2,8 +2,9 @@
 
 The short cues in `core/ui/src/main/res/raw/` form one quiet, game-neutral library shared by
 Klondike, Spider, FreeCell, and Blackjack. Physical actions use recorded card and chip Foley;
-semantic feedback uses generated or procedural audio. All files are CC0 1.0 and may be shipped,
-modified, and used commercially without attribution.
+semantic feedback uses generated or procedural audio. The library uses CC0 1.0 assets plus one
+locally generated voice announcement made with the Apache-2.0-licensed Kokoro model. The applicable
+license and provenance of every source are recorded below.
 
 ## Manifest
 
@@ -21,9 +22,11 @@ modified, and used commercially without attribution.
 | `sound_wager_commit.ogg` | Increased-wager decision | Kenney Casino Audio 1.1 `chips-stack-3.ogg` | `48cc0f01e2b62be7677f2e8c02177906cab80e96fa8176fa05b3ced35bc2a9c2` |
 | `sound_card_split.ogg` | Divide cards into separate hands | Kenney Casino Audio 1.1 `card-fan-2.ogg` | `5743373c9dde00c6eee949a2c8e65d75946522768999167e1f5632451630e848` |
 | `sound_sequence_complete.ogg` | Completed card sequence | Kenney Casino Audio 1.1 `card-fan-1.ogg` | `7a9758ccad8899baef1b9f60b4064e4baa724a548293832fdaea07e6e07e638d` |
-| `sound_bust.ogg` | Blackjack hand bust | Kenney Casino Audio 1.1 `card-shove-4.ogg` | `0a1ad3a2f16bd2ed73349e6342426ca7a59a6e26b7e26e36d51d51c2c2349d6f` |
-| `sound_natural_win.ogg` | Natural Blackjack celebration | Kenney Casino Audio 1.1 `chips-stack-5.ogg` | `42dd800e3e24bbd07d3ebfc86c44b6500d376641e30270dc363d95a73e90b56e` |
-| `sound_round_loss.ogg` | Losing Blackjack round | SFXMint `feedback-fail-56.ogg` | `f8aac3ba217f71d1e8a37425c6c9d74225f46c8331af71a4091dc4ef6214d1c4` |
+| `sound_bust.ogg` | Blackjack hand bust | SFXMint `short-ui-error-05.ogg` | `63d48098ca55bf65fc530eac9fe3fe84cd820362273d6e6c732804d572307e54` |
+| `sound_round_win.ogg` | Short Blackjack round-win cue | SFXMint `ready-success-05.ogg` | `2e01aa63835222884e12b1fa2511d5fbdc0ba49b459227ada1b3805869b52a69` |
+| `sound_natural_win.ogg` | Natural Blackjack celebration | SFXMint `short-video-ding-04.ogg` | `15dee552cce494cc3fc9c137fd27c227bf3f2794207ae316cc21132ef7eb248b` |
+| `sound_voice_announcement.wav` | Spoken natural-win announcement | Kokoro-82M `af_nicole`, speed `1.50` | `295ede53f144a45d3a4d779d152d1e89f285029980a5fc055afea5cdc0667698` |
+| `sound_round_loss.ogg` | Losing Blackjack round | SFXMint `feedback-error-01.ogg` | `ff0cfe44740559b0851c50adbb2953a193cb65e5cabaf130aa8806c9575ddaa9` |
 | `sound_bankroll_lost.ogg` | Blackjack bankroll below the minimum bet | Kenney Casino Audio 1.1 `chips-handle-5.ogg` | `589753ea21b1955626e82975be8979f42140f5b0645a8c33c2d1f7e33fba68cb` |
 | `sound_invalid.ogg` | Restrained invalid-action tap | SFXMint `backlog-adapt-editorial-tap.ogg` | `b672ca2ee8b43c8883259448dc340995da216b208377f5de53cefe48b4197d0d` |
 | `sound_win.ogg` | Shared game-win jingle | Fupi `winfretless.ogg` | `066d704a58af2bbd293cb9a32488b832be7803e365d3f15a264aa803c238c944` |
@@ -44,10 +47,20 @@ modified, and used commercially without attribution.
 - SFXMint, [Restrained Short Wood Tap](https://sfxmint.com/sounds/backlog-adapt-editorial-tap),
   [Warm Notification Chime 15](https://sfxmint.com/sounds/ui-chime-15),
   [Wooden User Interface Click 08](https://sfxmint.com/sounds/ui-click-08), and
-  [Sad Slow Failure Descending Tone 56](https://sfxmint.com/sounds/feedback-fail-56), downloaded
-  2026-10-06. SFXMint's [license](https://sfxmint.com/license) dedicates every library sound to the
+  [Soft Rewarding Success Chime 54](https://sfxmint.com/sounds/feedback-success-54), downloaded
+  2026-10-06.
+- SFXMint, [Short UI Error 05](https://sfxmint.com/sounds/short-ui-error-05) and
+  [Descending Sad Error Buzz 01](https://sfxmint.com/sounds/feedback-error-01),
+  [Success Cue 05](https://sfxmint.com/sounds/ready-success-05), and
+  [Short Video Ding 04](https://sfxmint.com/sounds/short-video-ding-04), downloaded
+  2026-10-07. SFXMint's [license](https://sfxmint.com/license) dedicates every library sound to the
   public domain under CC0 1.0 and states that its library is produced with AI generation or
-  procedural synthesis. The files above are unmodified Ogg Vorbis downloads.
+  procedural synthesis. The SFXMint files above are unmodified Ogg Vorbis downloads.
+- Hexgrad, [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M), downloaded and run locally on
+  2026-10-07 under Apache License 2.0. `sound_voice_announcement.wav` was synthesized from
+  `Blackjack!` with Kokoro 0.9.4, voice `af_nicole`, and speed `1.50`. Quiet model padding below
+  amplitude 0.002 was trimmed with a 25 ms margin, then the peak was normalized to 0.89. The result
+  is 0.636 seconds of mono, 16-bit PCM audio at 24 kHz. No hosted synthesis service was used.
 
 Keep this manifest current whenever a cue is replaced. Preserve the exact downloaded bytes when
 possible; if a file is processed, record the processing recipe and checksum of the shipped result.

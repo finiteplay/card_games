@@ -173,8 +173,8 @@ dialog — there is no larger game that has been won.
 - Deal and Next round play the shared shuffle cue. Hit, Double, Split and Hint each have a distinct
   short cue; Stand and Decline share a confirm cue, and Insure and each bet step a chip cue. Dealer
   card reveals use the deal cue. A hand that crosses 21 plays its bust
-  cue immediately. An ordinary positive settlement plays the shared win sound, while a natural
-  blackjack has its own casino-chip celebration. A losing round plays a descending loss cue; when
+  cue immediately. An ordinary positive settlement plays a short round-win chime, while a natural
+  blackjack has its own short celebration followed by a spoken `Blackjack!` announcement. A losing round plays a descending loss cue; when
   the resulting bankroll cannot cover the minimum bet, a stronger out-of-chips cue replaces it.
   Pushes are silent.
 
