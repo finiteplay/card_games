@@ -90,6 +90,14 @@ offered, then the action bar as a rail one button wide at the edge nearest the h
 (`core/ui`'s `BoardActionBar` in its landscape form). The sizing column is the sizing row's five
 controls stacked, the rail's width.
 
+**The rail holds only the round's actions.** A labelled rail button is about 77 dp tall at a phone's
+chrome scale, so five of them (Fold, Call, Raise, All in and Hint, with Settings besides) overrun a
+phone's height, as the first emulator run showed. In landscape Settings and Hint therefore move into
+the status row's trailing icons — Hint only on the player's turn, ahead of Settings, Help, Statistics
+and Leave — and the rail keeps at most four buttons (Fold, Call, Raise, All in), 308 dp tall, which
+fits the 316 dp a 360 dp window leaves under the status row. The test tags stay `action_settings` and
+`action_hint` wherever the control is. Portrait is unchanged.
+
 The table is three bands: the top band of three seats; a middle band with an opponent seat at each
 edge and the board between them, the pot line under the board; and your seat. Handedness mirrors
 the bar's order in portrait and its side in landscape and changes nothing else.

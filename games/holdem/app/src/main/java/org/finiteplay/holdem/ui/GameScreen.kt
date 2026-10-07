@@ -112,11 +112,19 @@ fun GameScreen(
                 onNewTournament = viewModel::newTournament,
                 onSettings = onSettings,
                 onHint = viewModel::requestHint,
+                landscape = orientation == BoardOrientation.LANDSCAPE,
             )
         }
         Box(modifier = Modifier.fillMaxSize().padding(padding)) {
             Column(modifier = Modifier.fillMaxSize()) {
-                StatusRow(table = table, onHelp = onHelp, onStatistics = onStatistics, onLeave = viewModel::requestLeave)
+                StatusRow(
+                    table = table,
+                    onHelp = onHelp,
+                    onStatistics = onStatistics,
+                    onLeave = viewModel::requestLeave,
+                    onSettings = if (landscape) onSettings else null,
+                    onHint = if (landscape && table.stage == Stage.YOUR_TURN && viewModel.legal != null && !viewModel.busy) viewModel::requestHint else null,
+                )
                 if (viewModel.recoveryNoticeVisible) RecoveryNotice(onDismiss = viewModel::dismissRecoveryNotice)
                 CompositionLocalProvider(LocalAnimateCards provides animate) {
                     if (landscape) {

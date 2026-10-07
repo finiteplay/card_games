@@ -60,10 +60,20 @@ import org.finiteplay.holdem.rules.LegalActions
 
 /**
  * The status row (`UI_SPEC.md` "Status row"): the blinds in bold, the hand and the next level beneath,
- * and Help, Statistics and — while a tournament is in progress — Leave in the trailing corner.
+ * and Help, Statistics and — while a tournament is in progress — Leave in the trailing corner. In
+ * landscape it also carries Settings and, on the player's turn, Hint ([onSettings], [onHint]): the rail
+ * is one button wide and five labelled buttons overrun a phone's height, so the rail keeps only the
+ * actions (`UI_SPEC.md` "Table, landscape").
  */
 @Composable
-internal fun StatusRow(table: TableModel, onHelp: () -> Unit, onStatistics: () -> Unit, onLeave: () -> Unit) {
+internal fun StatusRow(
+    table: TableModel,
+    onHelp: () -> Unit,
+    onStatistics: () -> Unit,
+    onLeave: () -> Unit,
+    onSettings: (() -> Unit)? = null,
+    onHint: (() -> Unit)? = null,
+) {
     val level = table.blinds.level
     val next = BlindSchedule.blinds(level + 1)
     val handsLeft = BlindSchedule.handsLeftAtLevel(table.handNumber)
@@ -89,6 +99,12 @@ internal fun StatusRow(table: TableModel, onHelp: () -> Unit, onStatistics: () -
                 overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.testTag("status_hand"),
             )
+        }
+        if (onHint != null) {
+            BoardStatusIcon(Icons.Filled.Lightbulb, stringResource(CoreR.string.action_hint), LocalAppColors.current.action.hint, "action_hint", onHint)
+        }
+        if (onSettings != null) {
+            BoardStatusIcon(Icons.Filled.Settings, stringResource(CoreR.string.action_settings), LocalAppColors.current.action.settings, "action_settings", onSettings)
         }
         BoardStatusIcon(Icons.AutoMirrored.Filled.HelpOutline, stringResource(R.string.help_title), LocalAppColors.current.action.replay, "help_button", onHelp)
         BoardStatusIcon(Icons.Filled.BarChart, stringResource(CoreR.string.statistics_title), LocalAppColors.current.action.statistics, "statistics_button", onStatistics)
@@ -123,11 +139,13 @@ internal fun ActionBar(
     onNewTournament: () -> Unit,
     onSettings: () -> Unit,
     onHint: () -> Unit = {},
+    /** In landscape Settings and Hint live in the status row, so the rail holds only the actions. */
+    landscape: Boolean = false,
 ) {
     val accents = LocalAppColors.current.action
     val legal = bar.legal
     val actions = buildList {
-        add(action(CoreR.string.action_settings, Icons.Filled.Settings, accents.settings, true, "action_settings", onSettings))
+        if (!landscape) add(action(CoreR.string.action_settings, Icons.Filled.Settings, accents.settings, true, "action_settings", onSettings))
         when (bar.stage) {
             Stage.YOUR_TURN -> if (legal != null) {
                 val live = !bar.busy
@@ -154,7 +172,7 @@ internal fun ActionBar(
             Stage.OPPONENT_TURN, Stage.SHOWDOWN -> Unit
         }
     }
-    val withHint = if (bar.stage == Stage.YOUR_TURN && legal != null) {
+    val withHint = if (!landscape && bar.stage == Stage.YOUR_TURN && legal != null) {
         actions + action(CoreR.string.action_hint, Icons.Filled.Lightbulb, accents.hint, !bar.busy, "action_hint", onHint)
     } else {
         actions
