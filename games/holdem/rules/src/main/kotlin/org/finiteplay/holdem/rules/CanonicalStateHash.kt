@@ -7,8 +7,10 @@ package org.finiteplay.holdem.rules
  * platforms and Kotlin/JVM versions.
  *
  * It covers the tournament as dealt, the whole deck, every seat's cards, chips and flags, the
- * betting position, the history and the result. It is never used for play and is not part of the
- * saved format, which is a seed, the tournament at the hand's start and a log.
+ * betting position, the history and the result. Hands shown at a showdown enter by category only: a
+ * value's number is not a contract, so the hash survives a faster evaluator. It is never used for
+ * play and is not part of the saved format, which is a seed, the tournament at the hand's start and
+ * a log.
  */
 fun canonicalStateHash(state: HoldemState): Long {
     var h = -3750763034362895579L // FNV-1a 64-bit offset basis
@@ -82,7 +84,7 @@ fun canonicalStateHash(state: HoldemState): Long {
         mixInts(result.payouts)
         for ((seat, value) in result.values.toSortedMap()) {
             mixInt(seat)
-            mixInt(value.strength)
+            mixInt(categoryOf(value).ordinal)
         }
         mixInts(result.eliminated)
     }

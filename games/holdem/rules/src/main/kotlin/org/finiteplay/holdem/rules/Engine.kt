@@ -145,8 +145,14 @@ private fun HoldemState.nextToAct(after: Int): Int? {
     return null
 }
 
-/** `RULES.md` "Betting": betting only starts while at least two contesting seats still have chips. */
-private fun HoldemState.bettingPossible(): Boolean = (0 until Contract.SEATS).count(::active) >= 2
+/**
+ * `RULES.md` "Betting": betting only starts while at least two contesting seats still have chips,
+ * or one that still faces a bet it has not matched (a blind put in short by everyone else).
+ */
+private fun HoldemState.bettingPossible(): Boolean {
+    val actives = (0 until Contract.SEATS).filter(::active)
+    return actives.size >= 2 || (actives.size == 1 && streetBets[actives[0]] < currentBet)
+}
 
 private fun afterAction(state: HoldemState, actor: Int): HoldemState {
     if ((0 until Contract.SEATS).count(state::contesting) == 1) return finishHand(returnUncalled(state))
