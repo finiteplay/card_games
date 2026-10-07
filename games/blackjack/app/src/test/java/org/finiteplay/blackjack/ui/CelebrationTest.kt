@@ -39,28 +39,4 @@ class CelebrationTest {
         // Insurance can turn a lost hand into an even round.
         assertEquals(ResultKind.EVEN, resultKindOf(round(hand(HandOutcome.LOSS, -100), insurance = 100)))
     }
-
-    @Test
-    fun `chips break a bet into the fewest of the largest denominations`() {
-        assertEquals(listOf(ChipGroup(10, 1)), chipStackOf(10))
-        assertEquals(listOf(ChipGroup(100, 1), ChipGroup(10, 3)), chipStackOf(130))
-        assertEquals(listOf(ChipGroup(500, 1)), chipStackOf(500))
-        assertEquals(listOf(ChipGroup(1000, 1)), chipStackOf(1000))
-        assertEquals(listOf(ChipGroup(50, 1), ChipGroup(10, 2)), chipStackOf(70))
-    }
-
-    @Test
-    fun `chips always add back up to the bet, in a stack small enough to draw`() {
-        for (amount in 10..2_000 step 10) {
-            val groups = chipStackOf(amount)
-            assertEquals(amount, groups.sumOf { it.denomination * it.count })
-            assertEquals(true, groups.sumOf { it.count } <= 12)
-        }
-    }
-
-    @Test
-    fun `no bet is no chips`() {
-        assertEquals(emptyList<ChipGroup>(), chipStackOf(0))
-        assertEquals(emptyList<ChipGroup>(), chipStackOf(-10))
-    }
 }

@@ -50,6 +50,14 @@ android {
         testInstrumentationRunnerArguments["clearPackageData"] = "true"
     }
 
+    // Fixed-seed tournaments and the scripts that play them (`EXECUTION_PLAN.md` H3): one source set
+    // read by both the JVM tests that prove each scenario still occurs and the instrumented tests that
+    // play it through the screen, so neither can drift from the other.
+    sourceSets {
+        getByName("test").kotlin.directories.add("src/scenarios/java")
+        getByName("androidTest").kotlin.directories.add("src/scenarios/java")
+    }
+
     buildFeatures {
         compose = true
         buildConfig = false
