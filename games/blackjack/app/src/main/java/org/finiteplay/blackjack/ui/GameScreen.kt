@@ -45,6 +45,7 @@ import org.finiteplay.blackjack.rules.Chips
 import org.finiteplay.blackjack.rules.Decision
 import org.finiteplay.blackjack.rules.Settlement
 import org.finiteplay.core.ui.R as CoreR
+import org.finiteplay.core.ui.card.LocalAnimateCards
 import org.finiteplay.core.ui.layout.BoardOrientation
 import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.ui.layout.Handedness
