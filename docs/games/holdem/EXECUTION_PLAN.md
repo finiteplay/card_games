@@ -14,7 +14,7 @@ Hold'em's docs that says what exists today.
 
 | Package | State |
 |---|---|
-| H0 — interface specification | Not started. `DESIGN.md`, `RULES.md` and this plan are written. |
+| H0 — interface specification | Done: `UI_SPEC.md` and `TODO.md`. Its numbers wait on H3's geometry test. |
 | H1–H9 | Not started. |
 
 ## Deterministic Deal Contract

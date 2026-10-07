@@ -91,14 +91,16 @@ implementation (`EXECUTION_PLAN.md`'s Status table says how far).
 - `TODO.md` — deferred, out of first-release scope
 
 **Texas Hold'em** (`docs/games/holdem/`) — the fifth game and the second non-solitaire, designed
-but not started (`EXECUTION_PLAN.md`'s Status table says how far); `UI_SPEC.md` and `TODO.md` are
-its first package.
+but not built (`EXECUTION_PLAN.md`'s Status table says how far).
 
 - `DESIGN.md` — product (a six-seat sit-and-go against five opponents), interaction, hint, the
   opponents and the bar they must meet, statistics, architecture, persistence
 - `RULES.md` — hand rankings, the tournament and its blinds, the deal, betting, legal actions,
   pots and showdown, leaving
+- `UI_SPEC.md` — seats, layouts and geometry, the action bar and sizing row, showdown and results,
+  panels, motion, accessibility
 - `EXECUTION_PLAN.md` — work packages H0–H9 and their gates
+- `TODO.md` — deferred, out of first-release scope
 
 A game's spec never restates the platform spec. Where they disagree, `PLATFORM.md`
 governs and the game's spec is the bug.

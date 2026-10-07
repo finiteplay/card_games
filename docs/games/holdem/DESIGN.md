@@ -226,7 +226,7 @@ thing in progress, a store for what outlives it, and a write order that keeps th
 
 ## Interface
 
-`UI_SPEC.md` (`EXECUTION_PLAN.md` H0) is the authority once written; this is its shape. An oval
+`UI_SPEC.md` is the authority on the interface; this is its shape. An oval
 table: the player's seat at the bottom centre with both cards face up and large, five opponent
 seats around the top and sides, each a name, an avatar, a stack, a style word, a dealer-button or
 blind marker, and two card backs while in the hand. The board's five cards and the pot (with side
@@ -256,3 +256,6 @@ budget keeps it from ever being the pause.
 - [RULES.md](RULES.md): hand rankings, the tournament, the deal, betting, legal actions, pots and
   showdown, leaving
 - [EXECUTION_PLAN.md](EXECUTION_PLAN.md): work packages H0–H9 and their gates
+- [UI_SPEC.md](UI_SPEC.md): screens, seats, layouts and geometry, the action bar and sizing row,
+  opponents' turns, hint, showdown and results, leaving, panels, motion, accessibility
+- [TODO.md](TODO.md): deferred, out of first-release scope
