@@ -214,7 +214,7 @@ private const val HOLD_FASTEST_MS = 45L
  * easy to land and a long run is quick. Exposes an ordinary click to accessibility services, which
  * have no "hold".
  */
-private fun Modifier.holdToRepeat(label: String, onClick: () -> Unit): Modifier = composed {
+fun Modifier.holdToRepeat(label: String, onClick: () -> Unit): Modifier = composed {
     val current = rememberUpdatedState(onClick)
     this
         .pointerInput(Unit) {
