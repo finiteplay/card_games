@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Khả năng thắng ước tính là %1$d phần trăm so với các bài có khả năng; theo tốn %2$d phần trăm pot.</string>
+    <string name="hint_notice_free_desc">Khả năng thắng ước tính là %1$d phần trăm so với các bài có khả năng.</string>
+    <string name="recovery_notice">Không mở được ván đã lưu của bạn nên đã chia lại từ đầu. Không mất chip nào.</string>
+</resources>

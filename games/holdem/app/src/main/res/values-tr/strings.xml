@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Nasıl oynanır</string>
+    <string name="help_tab_rules">Kurallar</string>
+    <string name="help_tab_hands">Eller</string>
+    <string name="help_tab_strategy">Strateji</string>
+
+    <string name="help_goal_title">Amaç</string>
+    <string name="help_goal">Masadaki tüm fişleri kazan. Beş rakibe karşı bir turnuva oynarsın ve herkes 1.500 fişle başlar. Fişi biten oyuncu elenir, geriye kalan son oyuncu kazanır.</string>
+    <string name="help_hand_title">Bir el</string>
+    <string name="help_hand_cards">Her elde iki özel kart alırsın, bunlar hole cards (el kartları). Beş ortak kart ortaya açık dağıtılır, buna board denir. Elin, senin iki kartın ve board arasından en iyi beş karttır; kendi kartlarından ikisini, birini ya da hiçbirini kullanabilirsin.</string>
+    <string name="help_hand_flop">El kartlarından sonra bir bahis turu olur. Sonra board\'a üç kart gelir, buna flop denir, ardından yine bir bahis turu. Dördüncü kart olan turn bir tur daha getirir, beşinci kart olan river da öyle.</string>
+    <string name="help_actions_title">Seçeneklerin</string>
+    <string name="help_actions_check">Check: senden önce kimse bahis yapmadıysa, bahis yapmadan oyunda kal.</string>
+    <string name="help_actions_call">Call: karşılaştığın bahsi karşıla.</string>
+    <string name="help_actions_bet">Bet veya Raise: daha fazla fiş koy. Tutarı çubuğun üstündeki düğmelerle seç: − ve + big blind kadar adım atar, ½ pot ve Pot ise tutarı senin için ayarlar. Bir raise en az son bahis veya raise kadar büyük olmalı.</string>
+    <string name="help_actions_fold">Fold: kartlarından ve şimdiye kadar koyduğun fişlerden vazgeç. Yalnızca bu elin dışında kalırsın.</string>
+    <string name="help_actions_all_in">All in: elindeki tüm fişleri koy.</string>
+    <string name="help_button_title">Button ve blindlar</string>
+    <string name="help_button">D ile işaretli dealer button her elde saat yönünde bir koltuk ilerler. Ondan sonraki iki oyuncu kartlar dağıtılmadan önce zorunlu bahis koymalıdır: small blind (SB) ve big blind (BB). Bu, pot\'u başlatır, yani oynanacak bir şey her zaman vardır. Big blind en küçük bahsi belirler.</string>
+    <string name="help_allin_title">All in ve yan potlar</string>
+    <string name="help_allin">All in olan bir oyuncu oyundan atılamaz, ama her oyuncudan yalnızca kendi koyduğu kadarını kazanabilir. Bunun ötesindeki fişler, all in oyuncusunun kazanamayacağı bir yan pota gider. Potlar masada gösterilir ve her biri, ona fiş koymuş oyuncular arasındaki en iyi ele gider.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Son bahis turundan sonra iki veya daha fazla oyuncu kalırsa kartlarını açarlar ve en iyi el pot\'u kazanır. Diğer herkes fold ederse son oyuncu kartlarını göstermeden pot\'u kazanır. Eşit eller pot\'u eşit paylaşır.</string>
+    <string name="help_tournament_title">Turnuva</string>
+    <string name="help_tournament">Blindlar her 10 elde bir yükselir; böylece fişler orantılı olarak azalır ve beklemek pahalıya gelir. Hiçbir şey süreli değildir: istediğin kadar düşün. Elendiğinde geriye kalan oyuncu sayısına eşit sırada bitirirsin; yani 6. ilk elenen, 1. ise zaferdir.</string>
+    <string name="help_leave_title">Ayrılmak</string>
+    <string name="help_leave">En üstteki bayrak turnuvayı erken bitirir ve şimdi elenmiş olsaydın nerede biterdiysen orada bitirirsin. Uygulamayı kapatmak bunu yapmaz: elin kaydedilir ve geri geldiğinde seni bekler. Geri alma yoktur, çünkü her karardan sonra göremeyeceğin kartlar gelir.</string>
+
+    <string name="help_hands_intro">En güçlü elden en zayıfa doğru. Gösterilen beş kart, her birinin bir örneğidir.</string>
+    <string name="help_hand_straight_flush_title">Straight flush</string>
+    <string name="help_hand_straight_flush">Hepsi aynı renkten, art arda beş kart. Bunların en iyisi, ondan ası kadar olanı, royal flush\'tır.</string>
+    <string name="help_hand_four_title">Kare</string>
+    <string name="help_hand_four">Aynı değerde dört kart.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Bir değerden üç, başka bir değerden iki kart.</string>
+    <string name="help_hand_flush_title">Flush</string>
+    <string name="help_hand_flush">Aynı renkten herhangi beş kart.</string>
+    <string name="help_hand_straight_title">Kent</string>
+    <string name="help_hand_straight">Herhangi renklerden art arda beş kart. As yüksek olabilir, onludan ası kadar, ya da düşük olabilir, astan beşe kadar; ama asla ikisi birden olmaz.</string>
+    <string name="help_hand_three_title">Üçlü</string>
+    <string name="help_hand_three">Aynı değerde üç kart.</string>
+    <string name="help_hand_two_pair_title">İki çift</string>
+    <string name="help_hand_two_pair">Bir değerden iki, başka bir değerden iki kart.</string>
+    <string name="help_hand_pair_title">Bir çift</string>
+    <string name="help_hand_pair">Aynı değerde iki kart.</string>
+    <string name="help_hand_high_card_title">Yüksek kart</string>
+    <string name="help_hand_high_card">Yukarıdakilerin hiçbiri: en yüksek kartın sayılır.</string>
+    <string name="help_ties_title">Beraberlik</string>
+    <string name="help_ties">İki oyuncuda aynı türden el varsa yüksek kartlar kazanır. As ve yedili iki çift, papaz ve kız iki çiftini yener; ana kartlar aynıysa bir sonraki en yüksek kart belirler. Yalnızca beş kart sayılır ve renk asla beraberliği bozmaz: eşit eller pot\'u paylaşır.</string>
+
+    <string name="help_strategy_intro">Yeni bir oyuncuya iyi gelen yedi fikir. Her eli kazandırmazlar, ama bir turnuva boyunca birikirler.</string>
+    <string name="help_strategy_1">Erken koltuklardan daha az el oyna. İlk hareket edenlerin arkasında en çok rakip kalır; bu yüzden orada yalnızca güçlü kartlarla başla, koltuklar button\'a yaklaştıkça daha rahat oyna.</string>
+    <string name="help_strategy_2">Call yerine raise yap. Raise pot\'u anında kazandırabilir ve karşılandığında daha sık güçlü el sende olur. Sadece call yapmak, başkalarının ucuza kart görmesine izin verir.</string>
+    <string name="help_strategy_3">Rahat hissettirdiğinden daha çok fold et. Çoğu el oynamaya değmez ve fold edilen el sana yalnızca zaten koyduğun kadarına mal olur.</string>
+    <string name="help_strategy_4">Pot odds\'u bil. 75\'lik bir pot\'u kazanmak için call 25 fişe mal oluyorsa, kazanabileceğin her üç fiş için bir fiş ödersin; yani dört seferde bir\'den fazla kazanırsan call kârlıdır. Bunu, eli en iyi bitirme şansınla karşılaştır.</string>
+    <string name="help_strategy_5">Pozisyon önemlidir. Son hareket etmek, önce herkesin ne yaptığını görmeni sağlar ve bunun değeri büyüktür. Geç koltuklardan daha çok, erken koltuklardan daha az el oyna.</string>
+    <string name="help_strategy_6">Rakiplerin tarzlarına dikkat et. Her koltuk tight, loose, agresif veya pasif olarak etiketlenir. Tight bir oyuncunun raise\'ine saygı göster, loose ve agresif birinin bahsine inanmakta daha yavaş ol.</string>
+    <string name="help_strategy_7">Kısa stack ile all in git ya da fold et. Fişlerin yalnızca birkaç big blind ise küçük bahisler ve call\'lar sana manevra alanı bırakmaz; iyi zamanlanmış bir all in, ikiye katlamak için en iyi şansındır.</string>
+</resources>

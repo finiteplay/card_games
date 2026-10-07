@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Becsült nyerési esély %1$d százalék a valószínű kezek ellen; egy megadás a pot %2$d százalékába kerül.</string>
+    <string name="hint_notice_free_desc">Becsült nyerési esély %1$d százalék a valószínű kezek ellen.</string>
+
+    <string name="recovery_notice">A mentett kezedet nem sikerült megnyitni, ezért elölről osztottuk újra. Nem veszett el zseton.</string>
+</resources>

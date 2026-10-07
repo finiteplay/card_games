@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Turnee</string>
+    <string name="stat_section_finishes">Clasări</string>
+    <string name="stat_section_hands">Mâini</string>
+
+    <string name="stat_tile_tournaments_played">Jucate</string>
+    <string name="stat_tile_tournaments_won">Câștigate</string>
+    <string name="stat_tile_avg_finish">Clasare medie</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Mâini jucate</string>
+    <string name="stat_tile_hands_won">Mâini câștigate</string>
+    <string name="stat_tile_showdowns_won">Showdownuri câștigate</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Cel mai mare pot</string>
+    <string name="stat_tile_vpip">Intrat de bunăvoie înainte de flop</string>
+    <string name="stat_tile_pfr">Mărit înainte de flop</string>
+
+    <string name="place_1">1</string>
+    <string name="place_2">2</string>
+    <string name="place_3">3</string>
+    <string name="place_4">4</string>
+    <string name="place_5">5</string>
+    <string name="place_6">6</string>
+    <string name="cd_finish_bar">Locul %1$s: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, de exemplu %2$s</string>
+    <string name="cd_example_card">%1$s de %2$s</string>
+</resources>

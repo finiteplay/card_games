@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Šansa %1$d%% · Odnos pota %2$d%%</string>
+    <string name="hint_notice_free">Šansa %1$d%%</string>
+    <string name="hint_notice_desc">Procijenjena šansa za pobjedu od %1$d posto protiv vjerojatnih ruku; praćenje košta %2$d posto pota.</string>
+    <string name="hint_notice_free_desc">Procijenjena šansa za pobjedu od %1$d posto protiv vjerojatnih ruku.</string>
+
+    <string name="recovery_notice">Vaša spremljena ruka nije se mogla otvoriti pa je podijeljena ispočetka. Nijedan žeton nije izgubljen.</string>
+</resources>

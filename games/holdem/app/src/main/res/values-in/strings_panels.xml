@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Turnamen</string>
+    <string name="stat_section_finishes">Posisi akhir</string>
+    <string name="stat_section_hands">Tangan</string>
+
+    <string name="stat_tile_tournaments_played">Dimainkan</string>
+    <string name="stat_tile_tournaments_won">Menang</string>
+    <string name="stat_tile_avg_finish">Rata-rata posisi akhir</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Tangan dimainkan</string>
+    <string name="stat_tile_hands_won">Tangan dimenangkan</string>
+    <string name="stat_tile_showdowns_won">Showdown dimenangkan</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Pot terbesar</string>
+    <string name="stat_tile_vpip">Ikut sukarela sebelum flop</string>
+    <string name="stat_tile_pfr">Raise sebelum flop</string>
+
+    <string name="place_1">ke-1</string>
+    <string name="place_2">ke-2</string>
+    <string name="place_3">ke-3</string>
+    <string name="place_4">ke-4</string>
+    <string name="place_5">ke-5</string>
+    <string name="place_6">ke-6</string>
+    <string name="cd_finish_bar">Posisi %1$s: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, misalnya %2$s</string>
+    <string name="cd_example_card">%1$s %2$s</string>
+</resources>

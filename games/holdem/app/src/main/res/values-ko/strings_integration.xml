@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">에퀴티 %1$d%% · 팟 오즈 %2$d%%</string>
+    <string name="hint_notice_free">에퀴티 %1$d%%</string>
+    <string name="hint_notice_desc">가능성 높은 핸드를 상대로 한 예상 승률은 %1$d퍼센트이며, 콜 비용은 팟의 %2$d퍼센트입니다.</string>
+    <string name="hint_notice_free_desc">가능성 높은 핸드를 상대로 한 예상 승률은 %1$d퍼센트입니다.</string>
+    <string name="recovery_notice">저장된 핸드를 열 수 없어 처음부터 다시 나눴습니다. 잃은 칩은 없습니다.</string>
+</resources>

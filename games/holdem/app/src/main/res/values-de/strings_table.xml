@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blinds %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Hand %1$d · %2$,d / %3$,d in %4$d Hand</item>
+        <item quantity="other">Hand %1$d · %2$,d / %3$,d in %4$d Händen</item>
+    </plurals>
+    <string name="action_leave_tournament">Turnier verlassen</string>
+    <string name="action_fold">Fold</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Call&#10;%1$,d</string>
+    <string name="action_call_all_in">Call&#10;All-in</string>
+    <string name="action_bet">Bet&#10;%1$,d</string>
+    <string name="action_raise">Raise auf&#10;%1$,d</string>
+    <string name="action_all_in">All-in&#10;%1$,d</string>
+    <string name="action_next_hand">Nächste Hand</string>
+    <string name="action_new_tournament">Neues Turnier</string>
+    <string name="sizing_minus_desc">Um %1$,d verringern</string>
+    <string name="sizing_plus_desc">Um %1$,d erhöhen</string>
+    <string name="sizing_half_pot">½ Pot</string>
+    <string name="sizing_pot">Pot</string>
+    <string name="sizing_bet_desc">Bet %1$,d</string>
+    <string name="sizing_raise_desc">Raise auf %1$,d</string>
+    <string name="pot_label">Pot %1$,d</string>
+    <string name="pot_count">%1$d Pots</string>
+    <string name="banner_pot">Pot · %1$,d</string>
+    <string name="banner_main_pot">Hauptpot · %1$,d</string>
+    <string name="banner_side_pot">Nebenpot · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+    <string name="you">Du</string>
+    <string name="your_line">Du · %1$,d</string>
+    <string name="seat_out">Raus · %1$s</string>
+    <string name="seat_all_in">All-in</string>
+    <string name="seat_action_bet">Bet %1$,d</string>
+    <string name="seat_action_raise">Raise %1$,d</string>
+    <string name="seat_action_call">Call</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Fold</string>
+    <string name="seat_action_all_in">All-in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">tight</string>
+    <string name="style_loose">loose</string>
+    <string name="style_aggressive">aggressiv</string>
+    <string name="style_passive">passiv</string>
+    <string-array name="places">
+        <item>Platz 1</item>
+        <item>Platz 2</item>
+        <item>Platz 3</item>
+        <item>Platz 4</item>
+        <item>Platz 5</item>
+        <item>Platz 6</item>
+    </string-array>
+    <string-array name="rank_singular">
+        <item>Ass</item>
+        <item>Zwei</item>
+        <item>Drei</item>
+        <item>Vier</item>
+        <item>Fünf</item>
+        <item>Sechs</item>
+        <item>Sieben</item>
+        <item>Acht</item>
+        <item>Neun</item>
+        <item>Zehn</item>
+        <item>Bube</item>
+        <item>Dame</item>
+        <item>König</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>Asse</item>
+        <item>Zweier</item>
+        <item>Dreier</item>
+        <item>Vierer</item>
+        <item>Fünfer</item>
+        <item>Sechser</item>
+        <item>Siebener</item>
+        <item>Achter</item>
+        <item>Neuner</item>
+        <item>Zehner</item>
+        <item>Buben</item>
+        <item>Damen</item>
+        <item>Könige</item>
+    </string-array>
+    <string name="hand_royal_flush">Royal Flush</string>
+    <string name="hand_straight_flush">Straight Flush, %1$s hoch</string>
+    <string name="hand_four_of_a_kind">Vierling, %1$s</string>
+    <string name="hand_full_house">Full House, %1$s über %2$s</string>
+    <string name="hand_flush">Flush, %1$s hoch</string>
+    <string name="hand_straight">Straight, %1$s hoch</string>
+    <string name="hand_three_of_a_kind">Drilling, %1$s</string>
+    <string name="hand_two_pair">Zwei Paare, %1$s und %2$s</string>
+    <string name="hand_pair">Paar %1$s</string>
+    <string name="hand_high_card">Höchste Karte, %1$s</string>
+    <string name="mark_win">Gewonnen</string>
+    <string name="mark_even">Gleich</string>
+    <string name="mark_lose">Verloren</string>
+    <string name="leave_title">Dieses Turnier verlassen?</string>
+    <string name="leave_body">Du endest auf %1$s, als wärst du jetzt ausgeschieden.</string>
+    <string name="leave_confirm">Verlassen</string>
+    <string name="leave_stay">Bleiben</string>
+    <string name="end_title_place">Du hast %1$s belegt</string>
+    <string name="end_title_won">Du hast das Turnier gewonnen</string>
+    <string name="end_body_lost">Gespielte Hände: %1$d\nGrößter Pot: %2$,d</string>
+    <string name="end_body_won">Es dauerte %1$d Hände.\nGrößter Pot: %2$,d</string>
+    <string name="card_spoken">%2$s %1$s</string>
+    <string name="a11y_your_cards">Deine Karten: %1$s</string>
+    <string name="a11y_board">Board: %1$s</string>
+    <string name="a11y_board_empty">Board: noch keine Karten</string>
+    <string name="a11y_pot">Pot %1$,d</string>
+    <string name="a11y_pot_pots">Pot %1$,d, %2$d Pots</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d Chips</string>
+    <string name="a11y_seat_you">Du, %1$,d Chips</string>
+    <string name="a11y_dealer">Dealer</string>
+    <string name="a11y_small_blind">Small Blind</string>
+    <string name="a11y_big_blind">Big Blind</string>
+    <string name="a11y_bet">Bet %1$,d</string>
+    <string name="a11y_folded">Gefoldet</string>
+    <string name="a11y_out">Raus, %1$s belegt</string>
+    <string name="a11y_all_in">All-in</string>
+    <string name="a11y_thinking">ist dran</string>
+    <string name="ann_fold">%1$s foldet</string>
+    <string name="ann_check">%1$s checkt</string>
+    <string name="ann_call">%1$s called %2$,d</string>
+    <string name="ann_bet">%1$s setzt %2$,d</string>
+    <string name="ann_raise">%1$s erhöht auf %2$,d</string>
+    <string name="ann_all_in">%1$s ist All-in mit %2$,d</string>
+    <string name="ann_flop">Der Flop: %1$s</string>
+    <string name="ann_turn">Der Turn: %1$s</string>
+    <string name="ann_river">Der River: %1$s</string>
+    <string name="ann_shows">%1$s zeigt %2$s</string>
+    <string name="ann_wins">%1$s gewinnt %2$,d</string>
+</resources>

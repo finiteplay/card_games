@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Turnuvalar</string>
+    <string name="stat_section_finishes">Bitiriş sıraları</string>
+    <string name="stat_section_hands">Eller</string>
+
+    <string name="stat_tile_tournaments_played">Oynanan</string>
+    <string name="stat_tile_tournaments_won">Kazanılan</string>
+    <string name="stat_tile_avg_finish">Ortalama sıra</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Oynanan eller</string>
+    <string name="stat_tile_hands_won">Kazanılan eller</string>
+    <string name="stat_tile_showdowns_won">Kazanılan showdown</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">En büyük pot</string>
+    <string name="stat_tile_vpip">Flop öncesi gönüllü katılım</string>
+    <string name="stat_tile_pfr">Flop öncesi raise</string>
+
+    <string name="place_1">1.</string>
+    <string name="place_2">2.</string>
+    <string name="place_3">3.</string>
+    <string name="place_4">4.</string>
+    <string name="place_5">5.</string>
+    <string name="place_6">6.</string>
+    <string name="cd_finish_bar">%1$s sıra: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, örneğin %2$s</string>
+    <string name="cd_example_card">%2$s %1$s</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Jak hrát</string>
+    <string name="help_tab_rules">Pravidla</string>
+    <string name="help_tab_hands">Kombinace</string>
+    <string name="help_tab_strategy">Strategie</string>
+
+    <string name="help_goal_title">Cíl</string>
+    <string name="help_goal">Získej všechny žetony u stolu. Hraješ turnaj proti pěti soupeřům a každý začíná s 1 500 žetony. Když hráči žetony dojdou, vypadává a vyhrává poslední, kdo zůstane.</string>
+    <string name="help_hand_title">Hra</string>
+    <string name="help_hand_cards">V každé hře dostaneš dvě soukromé karty, své vlastní karty. Pět společných karet leží lícem nahoru uprostřed a říká se jim stůl. Tvoje kombinace je nejlepších pět karet z tvých dvou a ze stolu, přičemž můžeš použít obě své, jednu, nebo žádnou.</string>
+    <string name="help_hand_flop">Po rozdání vlastních karet následuje kolo sázek. Pak se na stůl rozdají tři karty, flop, a další kolo sázek. Čtvrtá karta, turn, přinese další kolo a stejně tak pátá, river.</string>
+    <string name="help_actions_title">Tvoje možnosti</string>
+    <string name="help_actions_check">Check: zůstaneš ve hře bez sázky, když před tebou nikdo nevsadil.</string>
+    <string name="help_actions_call">Vyrovnat: doplatíš sázku, které čelíš.</string>
+    <string name="help_actions_bet">Vsadit nebo Zvýšit: vložíš víc žetonů. Částku vybereš tlačítky nad lištou: − a + mění částku o velký blind a ½ banku a Banka ji nastaví za tebe. Zvýšení musí být alespoň tak velké jako poslední sázka nebo zvýšení.</string>
+    <string name="help_actions_fold">Zahodit: vzdáš se karet i žetonů, které jsi už vložil. Vypadáváš jen z této hry.</string>
+    <string name="help_actions_all_in">All in: vsadíš všechny své žetony.</string>
+    <string name="help_button_title">Dealer a blindy</string>
+    <string name="help_button">Dealerův žeton, označený D, se každou hru posune o jedno místo ve směru hodinových ručiček. Dva hráči za ním musí před rozdáním karet vložit povinné sázky: malý blind (SB) a velký blind (BB). Tím vzniká banka, takže je vždy o co hrát. Velký blind určuje nejmenší sázku.</string>
+    <string name="help_allin_title">All in a vedlejší banky</string>
+    <string name="help_allin">Hráče, který je all in, nelze ze hry vytlačit, ale od každého hráče může vyhrát jen tolik, kolik sám vložil. Žetony navíc jdou do vedlejší banky, kterou hráč all in vyhrát nemůže. Banky jsou vidět na stole a každá připadne nejlepší kombinaci mezi hráči, kteří do ní vložili.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Pokud po posledním kole sázek zůstávají ve hře dva nebo víc hráčů, otočí karty lícem nahoru a nejlepší kombinace vyhrává banku. Když všichni ostatní zahodí karty, poslední hráč vyhrává banku bez ukázání karet. Shodné kombinace si banku rozdělí rovným dílem.</string>
+    <string name="help_tournament_title">Turnaj</string>
+    <string name="help_tournament">Blindy rostou každých 10 her, takže žetonů je poměrně méně a čekání se prodražuje. Nic není na čas: měj tolik času, kolik chceš. Skončíš na místě, které odpovídá počtu hráčů zbývajících ve chvíli, kdy vypadneš, takže 6. je první, kdo vypadne, a 1. je výhra.</string>
+    <string name="help_leave_title">Odchod</string>
+    <string name="help_leave">Vlajka nahoře turnaj předčasně ukončí a skončíš tam, kde bys skončil, kdybys právě vypadl. Zavření aplikace ho neukončí: tvoje hra se uloží a po návratu na tebe čeká. Zpět to nejde, protože po každém rozhodnutí přijdou karty, které jsi nemohl vidět.</string>
+
+    <string name="help_hands_intro">Od nejsilnější kombinace k nejslabší. Zobrazených pět karet je vždy jeden příklad.</string>
+    <string name="help_hand_straight_flush_title">Straight flush</string>
+    <string name="help_hand_straight_flush">Pět karet v řadě, všechny jedné barvy. Nejlepší z nich, od desítky po eso, je royal flush.</string>
+    <string name="help_hand_four_title">Poker</string>
+    <string name="help_hand_four">Čtyři karty stejné hodnoty.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Tři karty jedné hodnoty a dvě jiné.</string>
+    <string name="help_hand_flush_title">Flush</string>
+    <string name="help_hand_flush">Libovolných pět karet jedné barvy.</string>
+    <string name="help_hand_straight_title">Postupka</string>
+    <string name="help_hand_straight">Pět karet v řadě, v jakýchkoli barvách. Eso může být vysoké, od desítky po eso, nebo nízké, od esa po pětku, ale nikdy obojí zároveň.</string>
+    <string name="help_hand_three_title">Trojice</string>
+    <string name="help_hand_three">Tři karty stejné hodnoty.</string>
+    <string name="help_hand_two_pair_title">Dva páry</string>
+    <string name="help_hand_two_pair">Dvě karty jedné hodnoty a dvě jiné.</string>
+    <string name="help_hand_pair_title">Pár</string>
+    <string name="help_hand_pair">Dvě karty stejné hodnoty.</string>
+    <string name="help_hand_high_card_title">Nejvyšší karta</string>
+    <string name="help_hand_high_card">Nic z výše uvedeného: počítá se tvoje nejvyšší karta.</string>
+    <string name="help_ties_title">Remízy</string>
+    <string name="help_ties">Pokud mají dva hráči stejný druh kombinace, vyhrají vyšší karty. Dva páry es a sedmiček porazí dva páry králů a dam a když se hlavní karty shodují, rozhodne další nejvyšší karta. Počítá se jen pět karet a barvy remízu nikdy nerozhodují: stejné kombinace si banku rozdělí.</string>
+
+    <string name="help_strategy_intro">Sedm nápadů, které novému hráči dobře poslouží. Nevyhrají každou hru, ale za celý turnaj se sčítají.</string>
+    <string name="help_strategy_1">Hraj méně her z prvních míst. Hráči, kteří jednají jako první, mají za sebou nejvíc soupeřů, takže tam začínej jen se silnými kartami a uvolňuj se, jak se blížíš k dealerovi.</string>
+    <string name="help_strategy_2">Raději zvyšuj, než vyrovnávej. Zvýšení může banku vyhrát hned a když ho někdo vyrovná, máš častěji silnější kombinaci. Samotné vyrovnávání dovolí ostatním vidět karty levně.</string>
+    <string name="help_strategy_3">Zahazuj karty víc, než je ti pohodlné. Většina her nestojí za hraní a zahozená hra tě stojí jen to, co jsi už vložil.</string>
+    <string name="help_strategy_4">Znej šance banky. Pokud vyrovnání stojí 25 žetonů a vyhraješ banku 75, platíš jeden žeton za každé tři, které můžeš vyhrát, takže se vyrovnání vyplatí, když vyhraješ víc než jednou ze čtyř. Porovnej to se šancí, že skončíš s nejlepší kombinací.</string>
+    <string name="help_strategy_5">Pozice záleží. Jednat jako poslední ti dovolí nejdřív vidět, co dělají ostatní, což je hodně cenné. Hraj víc her z pozdních míst a méně z raných.</string>
+    <string name="help_strategy_6">Sleduj styly soupeřů. Každé místo má štítek: tight, loose, agresivní nebo pasivní. Respektuj zvýšení od tight hráče a věř pomaleji sázce od loose, agresivního.</string>
+    <string name="help_strategy_7">S malým stackem jdi all in, nebo zahoď. Když máš jen pár velkých blindů, malé sázky a vyrovnání ti nenechají prostor k manévrování a dobře načasovaný all in je tvá nejlepší šance zdvojnásobit se.</string>
+</resources>

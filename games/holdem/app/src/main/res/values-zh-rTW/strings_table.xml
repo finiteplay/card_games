@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">盲注 %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">第 %1$d 手 · %4$d 手後 %2$,d / %3$,d</item>
+        <item quantity="other">第 %1$d 手 · %4$d 手後 %2$,d / %3$,d</item>
+    </plurals>
+    <string name="action_leave_tournament">退出錦標賽</string>
+    <string name="action_fold">棄牌</string>
+    <string name="action_check">過牌</string>
+    <string name="action_call">跟注&#10;%1$,d</string>
+    <string name="action_call_all_in">跟注&#10;全下</string>
+    <string name="action_bet">下注&#10;%1$,d</string>
+    <string name="action_raise">加注到&#10;%1$,d</string>
+    <string name="action_all_in">全下&#10;%1$,d</string>
+    <string name="action_next_hand">下一手</string>
+    <string name="action_new_tournament">新錦標賽</string>
+    <string name="sizing_minus_desc">減少 %1$,d</string>
+    <string name="sizing_plus_desc">增加 %1$,d</string>
+    <string name="sizing_half_pot">½ 底池</string>
+    <string name="sizing_pot">底池</string>
+    <string name="sizing_bet_desc">下注 %1$,d</string>
+    <string name="sizing_raise_desc">加注到 %1$,d</string>
+    <string name="pot_label">底池 %1$,d</string>
+    <string name="pot_count">%1$d 個底池</string>
+    <string name="banner_pot">底池 · %1$,d</string>
+    <string name="banner_main_pot">主池 · %1$,d</string>
+    <string name="banner_side_pot">邊池 · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+    <string name="you">你</string>
+    <string name="your_line">你 · %1$,d</string>
+    <string name="seat_out">出局 · %1$s</string>
+    <string name="seat_all_in">全下</string>
+    <string name="seat_action_bet">下注 %1$,d</string>
+    <string name="seat_action_raise">加注 %1$,d</string>
+    <string name="seat_action_call">跟注</string>
+    <string name="seat_action_check">過牌</string>
+    <string name="seat_action_fold">棄牌</string>
+    <string name="seat_action_all_in">全下</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">緊</string>
+    <string name="style_loose">鬆</string>
+    <string name="style_aggressive">激進</string>
+    <string name="style_passive">被動</string>
+    <string-array name="places">
+        <item>第 1 名</item>
+        <item>第 2 名</item>
+        <item>第 3 名</item>
+        <item>第 4 名</item>
+        <item>第 5 名</item>
+        <item>第 6 名</item>
+    </string-array>
+    <string-array name="rank_singular">
+        <item>A</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>A</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string name="hand_royal_flush">皇家同花順</string>
+    <string name="hand_straight_flush">同花順，%1$s 高</string>
+    <string name="hand_four_of_a_kind">四條 %1$s</string>
+    <string name="hand_full_house">葫蘆，%1$s 帶 %2$s</string>
+    <string name="hand_flush">同花，%1$s 高</string>
+    <string name="hand_straight">順子，%1$s 高</string>
+    <string name="hand_three_of_a_kind">三條 %1$s</string>
+    <string name="hand_two_pair">兩對，%1$s 和 %2$s</string>
+    <string name="hand_pair">一對 %1$s</string>
+    <string name="hand_high_card">高牌 %1$s</string>
+    <string name="mark_win">贏</string>
+    <string name="mark_even">平</string>
+    <string name="mark_lose">輸</string>
+    <string name="leave_title">退出這場錦標賽？</string>
+    <string name="leave_body">你將獲得%1$s，就像現在出局一樣。</string>
+    <string name="leave_confirm">退出</string>
+    <string name="leave_stay">留下</string>
+    <string name="end_title_place">你獲得%1$s</string>
+    <string name="end_title_won">你贏得了錦標賽</string>
+    <string name="end_body_lost">已玩手數：%1$d\n最大底池：%2$,d</string>
+    <string name="end_body_won">共用了 %1$d 手。\n最大底池：%2$,d</string>
+    <string name="card_spoken">%2$s%1$s</string>
+    <string name="a11y_your_cards">你的牌：%1$s</string>
+    <string name="a11y_board">公共牌：%1$s</string>
+    <string name="a11y_board_empty">公共牌：還沒有牌</string>
+    <string name="a11y_pot">底池 %1$,d</string>
+    <string name="a11y_pot_pots">底池 %1$,d，%2$d 個底池</string>
+    <string name="a11y_seat">%1$s，%2$s，%3$,d 籌碼</string>
+    <string name="a11y_seat_you">你，%1$,d 籌碼</string>
+    <string name="a11y_dealer">莊家</string>
+    <string name="a11y_small_blind">小盲注</string>
+    <string name="a11y_big_blind">大盲注</string>
+    <string name="a11y_bet">下注 %1$,d</string>
+    <string name="a11y_folded">已棄牌</string>
+    <string name="a11y_out">出局，獲得%1$s</string>
+    <string name="a11y_all_in">全下</string>
+    <string name="a11y_thinking">輪到行動</string>
+    <string name="ann_fold">%1$s棄牌</string>
+    <string name="ann_check">%1$s過牌</string>
+    <string name="ann_call">%1$s跟注 %2$,d</string>
+    <string name="ann_bet">%1$s下注 %2$,d</string>
+    <string name="ann_raise">%1$s加注到 %2$,d</string>
+    <string name="ann_all_in">%1$s全下 %2$,d</string>
+    <string name="ann_flop">翻牌：%1$s</string>
+    <string name="ann_turn">轉牌：%1$s</string>
+    <string name="ann_river">河牌：%1$s</string>
+    <string name="ann_shows">%1$s亮出 %2$s</string>
+    <string name="ann_wins">%1$s贏得 %2$,d</string>
+</resources>

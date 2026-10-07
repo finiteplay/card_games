@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Torneos</string>
+    <string name="stat_section_finishes">Puestos</string>
+    <string name="stat_section_hands">Manos</string>
+    <string name="stat_tile_tournaments_played">Jugados</string>
+    <string name="stat_tile_tournaments_won">Ganados</string>
+    <string name="stat_tile_avg_finish">Puesto medio</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+    <string name="stat_tile_hands_played">Manos jugadas</string>
+    <string name="stat_tile_hands_won">Manos ganadas</string>
+    <string name="stat_tile_showdowns_won">Showdowns ganados</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Bote más grande</string>
+    <string name="stat_tile_vpip">Entró voluntariamente antes del flop</string>
+    <string name="stat_tile_pfr">Subió antes del flop</string>
+    <string name="place_1">1.º</string>
+    <string name="place_2">2.º</string>
+    <string name="place_3">3.º</string>
+    <string name="place_4">4.º</string>
+    <string name="place_5">5.º</string>
+    <string name="place_6">6.º</string>
+    <string name="cd_finish_bar">Puesto %1$s: %2$d</string>
+    <string name="cd_example_hand">%1$s, por ejemplo %2$s</string>
+    <string name="cd_example_card">%1$s de %2$s</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Vakok %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">%1$d. kéz · %2$,d / %3$,d %4$d kéz múlva</item>
+        <item quantity="other">%1$d. kéz · %2$,d / %3$,d %4$d kéz múlva</item>
+    </plurals>
+    <string name="action_leave_tournament">Kilépés a versenyből</string>
+
+    <string name="action_fold">Eldob</string>
+    <string name="action_check">Passz</string>
+    <string name="action_call">Megad&#10;%1$,d</string>
+    <string name="action_call_all_in">Megad&#10;all in</string>
+    <string name="action_bet">Tét&#10;%1$,d</string>
+    <string name="action_raise">Emel erre&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Következő kéz</string>
+    <string name="action_new_tournament">Új verseny</string>
+
+    <string name="sizing_minus_desc">Csökkentés %1$,d-vel</string>
+    <string name="sizing_plus_desc">Növelés %1$,d-vel</string>
+    <string name="sizing_half_pot">½ pot</string>
+    <string name="sizing_pot">Pot</string>
+    <string name="sizing_bet_desc">Tét: %1$,d</string>
+    <string name="sizing_raise_desc">Emelés erre: %1$,d</string>
+
+    <string name="pot_label">Pot %1$,d</string>
+    <string name="pot_count">%1$d pot</string>
+    <string name="banner_pot">Pot · %1$,d</string>
+    <string name="banner_main_pot">Főpot · %1$,d</string>
+    <string name="banner_side_pot">Mellékpot · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Te</string>
+    <string name="your_line">Te · %1$,d</string>
+    <string name="seat_out">Kiesett · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Tét %1$,d</string>
+    <string name="seat_action_raise">Emel %1$,d</string>
+    <string name="seat_action_call">Megad</string>
+    <string name="seat_action_check">Passz</string>
+    <string name="seat_action_fold">Eldob</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">szoros</string>
+    <string name="style_loose">laza</string>
+    <string name="style_aggressive">agresszív</string>
+    <string name="style_passive">passzív</string>
+    <string-array name="places">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+        <item>5.</item>
+        <item>6.</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>ász</item>
+        <item>kettes</item>
+        <item>hármas</item>
+        <item>négyes</item>
+        <item>ötös</item>
+        <item>hatos</item>
+        <item>hetes</item>
+        <item>nyolcas</item>
+        <item>kilences</item>
+        <item>tízes</item>
+        <item>bubi</item>
+        <item>dáma</item>
+        <item>király</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>ászok</item>
+        <item>kettesek</item>
+        <item>hármasok</item>
+        <item>négyesek</item>
+        <item>ötösök</item>
+        <item>hatosok</item>
+        <item>hetesek</item>
+        <item>nyolcasok</item>
+        <item>kilencesek</item>
+        <item>tízesek</item>
+        <item>bubik</item>
+        <item>dámák</item>
+        <item>királyok</item>
+    </string-array>
+    <string name="hand_royal_flush">Royal flush</string>
+    <string name="hand_straight_flush">Színsor, %1$s magas</string>
+    <string name="hand_four_of_a_kind">Póker, %1$s</string>
+    <string name="hand_full_house">Full house, %1$s és %2$s</string>
+    <string name="hand_flush">Szín, %1$s magas</string>
+    <string name="hand_straight">Sor, %1$s magas</string>
+    <string name="hand_three_of_a_kind">Drill, %1$s</string>
+    <string name="hand_two_pair">Két pár, %1$s és %2$s</string>
+    <string name="hand_pair">Pár, %1$s</string>
+    <string name="hand_high_card">Magas lap, %1$s</string>
+
+    <string name="mark_win">Nyert</string>
+    <string name="mark_even">Döntetlen</string>
+    <string name="mark_lose">Vesztett</string>
+
+    <string name="leave_title">Kilépsz ebből a versenyből?</string>
+    <string name="leave_body">%1$s helyen végzel, mintha most esnél ki.</string>
+    <string name="leave_confirm">Kilépés</string>
+    <string name="leave_stay">Maradok</string>
+    <string name="end_title_place">%1$s helyen végeztél</string>
+    <string name="end_title_won">Megnyerted a versenyt</string>
+    <string name="end_body_lost">Lejátszott kezek: %1$d\nLegnagyobb pot: %2$,d</string>
+    <string name="end_body_won">%1$d kézbe telt.\nLegnagyobb pot: %2$,d</string>
+
+    <string name="card_spoken">%1$s, %2$s</string>
+    <string name="a11y_your_cards">A lapjaid: %1$s</string>
+    <string name="a11y_board">Board: %1$s</string>
+    <string name="a11y_board_empty">Board: még nincs lap</string>
+    <string name="a11y_pot">Pot %1$,d</string>
+    <string name="a11y_pot_pots">Pot %1$,d, %2$d pot</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d zseton</string>
+    <string name="a11y_seat_you">Te, %1$,d zseton</string>
+    <string name="a11y_dealer">osztó</string>
+    <string name="a11y_small_blind">kis vak</string>
+    <string name="a11y_big_blind">nagy vak</string>
+    <string name="a11y_bet">tét %1$,d</string>
+    <string name="a11y_folded">Eldobta</string>
+    <string name="a11y_out">Kiesett, %1$s helyen végzett</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">következik</string>
+    <string name="ann_fold">%1$s eldobja</string>
+    <string name="ann_check">%1$s passzol</string>
+    <string name="ann_call">%1$s megad: %2$,d</string>
+    <string name="ann_bet">%1$s tétet tesz: %2$,d</string>
+    <string name="ann_raise">%1$s emel erre: %2$,d</string>
+    <string name="ann_all_in">%1$s all in megy: %2$,d</string>
+    <string name="ann_flop">A flop: %1$s</string>
+    <string name="ann_turn">A turn: %1$s</string>
+    <string name="ann_river">A river: %1$s</string>
+    <string name="ann_shows">%1$s megmutatja: %2$s</string>
+    <string name="ann_wins">%1$s nyer: %2$,d</string>
+</resources>

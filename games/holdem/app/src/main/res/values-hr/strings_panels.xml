@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Turniri</string>
+    <string name="stat_section_finishes">Plasmani</string>
+    <string name="stat_section_hands">Ruke</string>
+
+    <string name="stat_tile_tournaments_played">Odigrano</string>
+    <string name="stat_tile_tournaments_won">Pobjede</string>
+    <string name="stat_tile_avg_finish">Prosječni plasman</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Odigrane ruke</string>
+    <string name="stat_tile_hands_won">Dobivene ruke</string>
+    <string name="stat_tile_showdowns_won">Dobiveni showdowni</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Najveći pot</string>
+    <string name="stat_tile_vpip">Dobrovoljno u igri prije flopa</string>
+    <string name="stat_tile_pfr">Podizanje prije flopa</string>
+
+    <string name="place_1">1.</string>
+    <string name="place_2">2.</string>
+    <string name="place_3">3.</string>
+    <string name="place_4">4.</string>
+    <string name="place_5">5.</string>
+    <string name="place_6">6.</string>
+    <string name="cd_finish_bar">%1$s mjesto: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, na primjer %2$s</string>
+    <string name="cd_example_card">%1$s, %2$s</string>
+</resources>

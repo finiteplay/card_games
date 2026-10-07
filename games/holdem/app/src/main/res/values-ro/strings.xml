@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Cum se joacă</string>
+    <string name="help_tab_rules">Reguli</string>
+    <string name="help_tab_hands">Combinații</string>
+    <string name="help_tab_strategy">Strategie</string>
+
+    <string name="help_goal_title">Scopul</string>
+    <string name="help_goal">Câștigă toți jetoanele de la masă. Joci un turneu împotriva a cinci adversari, iar fiecare începe cu 1.500 de jetoane. Când unui jucător i se termină jetoanele, este eliminat, iar ultimul rămas câștigă.</string>
+    <string name="help_hand_title">O mână</string>
+    <string name="help_hand_cards">În fiecare mână primești două cărți private, cărțile tale (hole cards). Cinci cărți comune se pun cu fața în sus la mijloc și se numesc board. Mâna ta este cele mai bune cinci cărți din cele două ale tale și din board, folosind amândouă cărțile tale, una sau niciuna.</string>
+    <string name="help_hand_flop">După cărțile private urmează o rundă de pariuri. Apoi se dau trei cărți pe board, flopul, și încă o rundă de pariuri. A patra carte, turn, aduce o nouă rundă, la fel și a cincea, river.</string>
+    <string name="help_actions_title">Alegerile tale</string>
+    <string name="help_actions_check">Check: rămâi în mână fără să pariezi, când nimeni înaintea ta nu a pariat.</string>
+    <string name="help_actions_call">Call: egalezi pariul cu care te confrunți.</string>
+    <string name="help_actions_bet">Pariază sau Mărește: pui mai multe jetoane. Alegi suma cu butoanele de deasupra barei: − și + o schimbă cu un big blind, iar ½ pot și Pot o stabilesc pentru tine. O mărire trebuie să fie cel puțin la fel de mare ca ultimul pariu sau ultima mărire.</string>
+    <string name="help_actions_fold">Fold: renunți la cărți și la jetoanele pe care le-ai pus deja. Ieși doar din această mână.</string>
+    <string name="help_actions_all_in">All in: pariezi toate jetoanele pe care le ai.</string>
+    <string name="help_button_title">Butonul și blindurile</string>
+    <string name="help_button">Butonul dealerului, marcat cu D, se mută un loc spre dreapta la fiecare mână. Cei doi jucători de după el trebuie să pună pariuri forțate înainte de împărțirea cărților: small blind (SB) și big blind (BB). Asta pornește potul, așa că există mereu ceva de câștigat. Big blindul stabilește cel mai mic pariu.</string>
+    <string name="help_allin_title">All in și poturi laterale</string>
+    <string name="help_allin">Un jucător care este all in nu poate fi scos din joc, dar poate câștiga de la fiecare jucător doar cât a pus el însuși. Jetoanele peste această sumă merg într-un pot lateral pe care jucătorul all in nu îl poate câștiga. Poturile se văd pe masă, iar fiecare merge la cea mai bună mână dintre jucătorii care au pus în el.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Dacă după ultima rundă de pariuri rămân doi sau mai mulți jucători, își întorc cărțile cu fața în sus, iar cea mai bună mână câștigă potul. Dacă toți ceilalți dau fold, ultimul jucător câștigă potul fără să-și arate cărțile. Mâinile egale împart potul în mod egal.</string>
+    <string name="help_tournament_title">Turneul</string>
+    <string name="help_tournament">Blindurile cresc la fiecare 10 mâini, deci jetoanele devin proporțional mai puține, iar așteptarea devine scumpă. Nimic nu este cronometrat: ia-ți cât timp vrei. Termini pe locul egal cu numărul de jucători rămași când ești eliminat, deci locul 6 este primul eliminat, iar locul 1 este victoria.</string>
+    <string name="help_leave_title">Părăsirea</string>
+    <string name="help_leave">Steagul de sus încheie turneul mai devreme, iar tu termini unde ai fi terminat dacă ai fi fost eliminat acum. Închiderea aplicației nu face asta: mâna ta este salvată și te așteaptă când te întorci. Nu există anulare, pentru că după fiecare decizie vin cărți pe care nu le puteai vedea.</string>
+
+    <string name="help_hands_intro">De la cea mai puternică mână la cea mai slabă. Cele cinci cărți arătate sunt un exemplu pentru fiecare.</string>
+    <string name="help_hand_straight_flush_title">Straight flush</string>
+    <string name="help_hand_straight_flush">Cinci cărți consecutive, toate de aceeași culoare. Cea mai bună, de la zece la as, este royal flush.</string>
+    <string name="help_hand_four_title">Careu</string>
+    <string name="help_hand_four">Patru cărți de aceeași valoare.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Trei cărți de o valoare și două de alta.</string>
+    <string name="help_hand_flush_title">Culoare</string>
+    <string name="help_hand_flush">Orice cinci cărți de aceeași culoare.</string>
+    <string name="help_hand_straight_title">Straight</string>
+    <string name="help_hand_straight">Cinci cărți consecutive, de orice culori. Asul poate fi mare, de la zece la as, sau mic, de la as la cinci, dar niciodată amândouă deodată.</string>
+    <string name="help_hand_three_title">Trei de un fel</string>
+    <string name="help_hand_three">Trei cărți de aceeași valoare.</string>
+    <string name="help_hand_two_pair_title">Două perechi</string>
+    <string name="help_hand_two_pair">Două cărți de o valoare și două de alta.</string>
+    <string name="help_hand_pair_title">O pereche</string>
+    <string name="help_hand_pair">Două cărți de aceeași valoare.</string>
+    <string name="help_hand_high_card_title">Carte mare</string>
+    <string name="help_hand_high_card">Nimic din cele de mai sus: contează cea mai mare carte a ta.</string>
+    <string name="help_ties_title">Egalități</string>
+    <string name="help_ties">Dacă doi jucători au același fel de mână, câștigă cărțile mai mari. Două perechi de ași și de șapte bat două perechi de regi și de dame, iar când cărțile principale sunt egale, decide următoarea carte ca valoare. Contează doar cinci cărți, iar culorile nu departajează niciodată: mâinile egale împart potul.</string>
+
+    <string name="help_strategy_intro">Șapte idei care îl ajută pe un jucător începător. Nu vor câștiga fiecare mână, dar într-un turneu se adună.</string>
+    <string name="help_strategy_1">Joacă mai puține mâini de pe locurile timpurii. Primii care vorbesc au cei mai mulți adversari încă de venit, așa că începe acolo doar cu cărți puternice și relaxează-te pe măsură ce te apropii de buton.</string>
+    <string name="help_strategy_2">Mărește în loc să dai call. O mărire poate câștiga potul pe loc, iar când primește call ai mai des mâna mai puternică. Doar call-ul îi lasă pe alții să vadă cărți ieftin.</string>
+    <string name="help_strategy_3">Dă fold mai mult decât ți-e confortabil. Cele mai multe mâini nu merită jucate, iar o mână cu fold te costă doar ce ai pus deja.</string>
+    <string name="help_strategy_4">Cunoaște șansele potului. Dacă un call costă 25 de jetoane ca să câștigi un pot de 75, plătești un jeton pentru fiecare trei pe care le poți câștiga, deci call-ul se plătește dacă câștigi mai mult de o dată din patru. Compară asta cu șansa ta de a termina cu cea mai bună mână.</string>
+    <string name="help_strategy_5">Poziția contează. Să vorbești ultimul îți permite să vezi mai întâi ce fac ceilalți, ceea ce valorează mult. Joacă mai multe mâini de pe locurile târzii și mai puține de pe cele timpurii.</string>
+    <string name="help_strategy_6">Urmărește stilurile adversarilor. Fiecare loc are o etichetă: strâns, lejer, agresiv sau pasiv. Respectă o mărire de la un jucător strâns și crede mai încet un pariu de la unul lejer, agresiv.</string>
+    <string name="help_strategy_7">Cu un stack mic, dă all in sau fold. Când ai doar câteva big blinduri, pariurile mici și call-urile nu îți lasă loc de manevră, iar un all in dat la momentul potrivit este cea mai bună șansă de a-ți dubla jetoanele.</string>
+</resources>

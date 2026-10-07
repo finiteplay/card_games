@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Turneringer</string>
+    <string name="stat_section_finishes">Placeringer</string>
+    <string name="stat_section_hands">Hænder</string>
+
+    <string name="stat_tile_tournaments_played">Spillet</string>
+    <string name="stat_tile_tournaments_won">Vundet</string>
+    <string name="stat_tile_avg_finish">Gennemsnitlig placering</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Spillede hænder</string>
+    <string name="stat_tile_hands_won">Vundne hænder</string>
+    <string name="stat_tile_showdowns_won">Vundne showdowns</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Største pot</string>
+    <string name="stat_tile_vpip">Frivilligt med før floppet</string>
+    <string name="stat_tile_pfr">Raiset før floppet</string>
+
+    <string name="place_1">1.</string>
+    <string name="place_2">2.</string>
+    <string name="place_3">3.</string>
+    <string name="place_4">4.</string>
+    <string name="place_5">5.</string>
+    <string name="place_6">6.</string>
+    <string name="cd_finish_bar">%1$s plads: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, for eksempel %2$s</string>
+    <string name="cd_example_card">%1$s i %2$s</string>
+</resources>

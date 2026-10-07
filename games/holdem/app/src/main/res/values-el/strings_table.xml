@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Μπλαϊντ %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Χέρι %1$d · %2$,d / %3$,d σε %4$d χέρι</item>
+        <item quantity="other">Χέρι %1$d · %2$,d / %3$,d σε %4$d χέρια</item>
+    </plurals>
+    <string name="action_leave_tournament">Αποχώρηση από το τουρνουά</string>
+
+    <string name="action_fold">Πάσο</string>
+    <string name="action_check">Τσεκ</string>
+    <string name="action_call">Κολ&#10;%1$,d</string>
+    <string name="action_call_all_in">Κολ&#10;all in</string>
+    <string name="action_bet">Πόνταρε&#10;%1$,d</string>
+    <string name="action_raise">Ρέιζ σε&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Επόμενο χέρι</string>
+    <string name="action_new_tournament">Νέο τουρνουά</string>
+
+    <string name="sizing_minus_desc">Μείωση κατά %1$,d</string>
+    <string name="sizing_plus_desc">Αύξηση κατά %1$,d</string>
+    <string name="sizing_half_pot">½ ποτ</string>
+    <string name="sizing_pot">Ποτ</string>
+    <string name="sizing_bet_desc">Πόνταρε %1$,d</string>
+    <string name="sizing_raise_desc">Ρέιζ σε %1$,d</string>
+
+    <string name="pot_label">Ποτ %1$,d</string>
+    <string name="pot_count">%1$d ποτ</string>
+    <string name="banner_pot">Ποτ · %1$,d</string>
+    <string name="banner_main_pot">Κύριο ποτ · %1$,d</string>
+    <string name="banner_side_pot">Πλευρικό ποτ · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Εσύ</string>
+    <string name="your_line">Εσύ · %1$,d</string>
+    <string name="seat_out">Εκτός · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Πόνταρε %1$,d</string>
+    <string name="seat_action_raise">Ρέιζ %1$,d</string>
+    <string name="seat_action_call">Κολ</string>
+    <string name="seat_action_check">Τσεκ</string>
+    <string name="seat_action_fold">Πάσο</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">σφιχτός</string>
+    <string name="style_loose">χαλαρός</string>
+    <string name="style_aggressive">επιθετικός</string>
+    <string name="style_passive">παθητικός</string>
+    <string-array name="places">
+        <item>1η</item>
+        <item>2η</item>
+        <item>3η</item>
+        <item>4η</item>
+        <item>5η</item>
+        <item>6η</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>άσος</item>
+        <item>δυάρι</item>
+        <item>τρίο</item>
+        <item>τετράρι</item>
+        <item>πεντάρι</item>
+        <item>εξάρι</item>
+        <item>εφτάρι</item>
+        <item>οχτάρι</item>
+        <item>εννιάρι</item>
+        <item>δεκάρι</item>
+        <item>βαλές</item>
+        <item>ντάμα</item>
+        <item>ρήγας</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>άσοι</item>
+        <item>δυάρια</item>
+        <item>τρίο</item>
+        <item>τετράρια</item>
+        <item>πεντάρια</item>
+        <item>εξάρια</item>
+        <item>εφτάρια</item>
+        <item>οχτάρια</item>
+        <item>εννιάρια</item>
+        <item>δεκάρια</item>
+        <item>βαλέδες</item>
+        <item>ντάμες</item>
+        <item>ρηγάδες</item>
+    </string-array>
+    <string name="hand_royal_flush">Ρόγιαλ φλας</string>
+    <string name="hand_straight_flush">Στρέιτ φλας, ψηλό %1$s</string>
+    <string name="hand_four_of_a_kind">Καρέ, %1$s</string>
+    <string name="hand_full_house">Φουλ, %1$s και %2$s</string>
+    <string name="hand_flush">Φλας, ψηλό %1$s</string>
+    <string name="hand_straight">Στρέιτ, ψηλό %1$s</string>
+    <string name="hand_three_of_a_kind">Τρία ίδια, %1$s</string>
+    <string name="hand_two_pair">Δύο ζευγάρια, %1$s και %2$s</string>
+    <string name="hand_pair">Ζευγάρι, %1$s</string>
+    <string name="hand_high_card">Ψηλό φύλλο, %1$s</string>
+
+    <string name="mark_win">Νίκη</string>
+    <string name="mark_even">Ισοπαλία</string>
+    <string name="mark_lose">Ήττα</string>
+
+    <string name="leave_title">Αποχώρηση από αυτό το τουρνουά;</string>
+    <string name="leave_body">Θα τερματίσεις στη θέση %1$s, σαν να είχες αποκλειστεί τώρα.</string>
+    <string name="leave_confirm">Αποχώρηση</string>
+    <string name="leave_stay">Μένω</string>
+    <string name="end_title_place">Τερμάτισες στη θέση %1$s</string>
+    <string name="end_title_won">Κέρδισες το τουρνουά</string>
+    <string name="end_body_lost">Χέρια που παίχτηκαν: %1$d\nΜεγαλύτερο ποτ: %2$,d</string>
+    <string name="end_body_won">Χρειάστηκαν %1$d χέρια.\nΜεγαλύτερο ποτ: %2$,d</string>
+
+    <string name="card_spoken">%1$s, %2$s</string>
+    <string name="a11y_your_cards">Τα φύλλα σου: %1$s</string>
+    <string name="a11y_board">Board: %1$s</string>
+    <string name="a11y_board_empty">Board: χωρίς φύλλα ακόμη</string>
+    <string name="a11y_pot">Ποτ %1$,d</string>
+    <string name="a11y_pot_pots">Ποτ %1$,d, %2$d ποτ</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d μάρκες</string>
+    <string name="a11y_seat_you">Εσύ, %1$,d μάρκες</string>
+    <string name="a11y_dealer">ντίλερ</string>
+    <string name="a11y_small_blind">μικρό μπλαϊντ</string>
+    <string name="a11y_big_blind">μεγάλο μπλαϊντ</string>
+    <string name="a11y_bet">πόνταρε %1$,d</string>
+    <string name="a11y_folded">Πάσο</string>
+    <string name="a11y_out">Εκτός, τερμάτισε %1$s</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">σειρά του</string>
+    <string name="ann_fold">%1$s κάνει πάσο</string>
+    <string name="ann_check">%1$s κάνει τσεκ</string>
+    <string name="ann_call">%1$s κάνει κολ %2$,d</string>
+    <string name="ann_bet">%1$s ποντάρει %2$,d</string>
+    <string name="ann_raise">%1$s κάνει ρέιζ σε %2$,d</string>
+    <string name="ann_all_in">%1$s πάει all in με %2$,d</string>
+    <string name="ann_flop">Το φλοπ: %1$s</string>
+    <string name="ann_turn">Το τερν: %1$s</string>
+    <string name="ann_river">Το ρίβερ: %1$s</string>
+    <string name="ann_shows">%1$s δείχνει %2$s</string>
+    <string name="ann_wins">%1$s κερδίζει %2$,d</string>
+</resources>

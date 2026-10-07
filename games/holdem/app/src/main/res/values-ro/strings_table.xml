@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blinduri %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Mâna %1$d · %2$,d / %3$,d peste %4$d mână</item>
+        <item quantity="few">Mâna %1$d · %2$,d / %3$,d peste %4$d mâini</item>
+        <item quantity="other">Mâna %1$d · %2$,d / %3$,d peste %4$d de mâini</item>
+    </plurals>
+    <string name="action_leave_tournament">Părăsește turneul</string>
+
+    <string name="action_fold">Fold</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Call&#10;%1$,d</string>
+    <string name="action_call_all_in">Call&#10;all in</string>
+    <string name="action_bet">Pariază&#10;%1$,d</string>
+    <string name="action_raise">Mărește la&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Mâna următoare</string>
+    <string name="action_new_tournament">Turneu nou</string>
+
+    <string name="sizing_minus_desc">Scade cu %1$,d</string>
+    <string name="sizing_plus_desc">Crește cu %1$,d</string>
+    <string name="sizing_half_pot">½ pot</string>
+    <string name="sizing_pot">Pot</string>
+    <string name="sizing_bet_desc">Pariază %1$,d</string>
+    <string name="sizing_raise_desc">Mărește la %1$,d</string>
+
+    <string name="pot_label">Pot %1$,d</string>
+    <string name="pot_count">%1$d poturi</string>
+    <string name="banner_pot">Pot · %1$,d</string>
+    <string name="banner_main_pot">Pot principal · %1$,d</string>
+    <string name="banner_side_pot">Pot lateral · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Tu</string>
+    <string name="your_line">Tu · %1$,d</string>
+    <string name="seat_out">Eliminat · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Pariază %1$,d</string>
+    <string name="seat_action_raise">Mărește %1$,d</string>
+    <string name="seat_action_call">Call</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Fold</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">strâns</string>
+    <string name="style_loose">lejer</string>
+    <string name="style_aggressive">agresiv</string>
+    <string name="style_passive">pasiv</string>
+    <string-array name="places">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>as</item>
+        <item>doi</item>
+        <item>trei</item>
+        <item>patru</item>
+        <item>cinci</item>
+        <item>șase</item>
+        <item>șapte</item>
+        <item>opt</item>
+        <item>nouă</item>
+        <item>zece</item>
+        <item>valet</item>
+        <item>damă</item>
+        <item>rege</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>ași</item>
+        <item>doi</item>
+        <item>trei</item>
+        <item>patru</item>
+        <item>cinci</item>
+        <item>șase</item>
+        <item>șapte</item>
+        <item>opt</item>
+        <item>nouă</item>
+        <item>zece</item>
+        <item>valeți</item>
+        <item>dame</item>
+        <item>regi</item>
+    </string-array>
+    <string name="hand_royal_flush">Royal flush</string>
+    <string name="hand_straight_flush">Straight flush, %1$s mare</string>
+    <string name="hand_four_of_a_kind">Careu, %1$s</string>
+    <string name="hand_full_house">Full house, %1$s și %2$s</string>
+    <string name="hand_flush">Culoare, %1$s mare</string>
+    <string name="hand_straight">Straight, %1$s mare</string>
+    <string name="hand_three_of_a_kind">Trei de un fel, %1$s</string>
+    <string name="hand_two_pair">Două perechi, %1$s și %2$s</string>
+    <string name="hand_pair">Pereche de %1$s</string>
+    <string name="hand_high_card">Carte mare, %1$s</string>
+
+    <string name="mark_win">Câștig</string>
+    <string name="mark_even">Egal</string>
+    <string name="mark_lose">Pierdere</string>
+
+    <string name="leave_title">Părăsești acest turneu?</string>
+    <string name="leave_body">Vei termina pe locul %1$s, ca și cum ai fi fost eliminat acum.</string>
+    <string name="leave_confirm">Părăsește</string>
+    <string name="leave_stay">Rămân</string>
+    <string name="end_title_place">Ai terminat pe locul %1$s</string>
+    <string name="end_title_won">Ai câștigat turneul</string>
+    <string name="end_body_lost">Mâini jucate: %1$d\nCel mai mare pot: %2$,d</string>
+    <string name="end_body_won">A durat %1$d mâini.\nCel mai mare pot: %2$,d</string>
+
+    <string name="card_spoken">%1$s de %2$s</string>
+    <string name="a11y_your_cards">Cărțile tale: %1$s</string>
+    <string name="a11y_board">Board: %1$s</string>
+    <string name="a11y_board_empty">Board: încă nicio carte</string>
+    <string name="a11y_pot">Pot %1$,d</string>
+    <string name="a11y_pot_pots">Pot %1$,d, %2$d poturi</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d jetoane</string>
+    <string name="a11y_seat_you">Tu, %1$,d jetoane</string>
+    <string name="a11y_dealer">dealer</string>
+    <string name="a11y_small_blind">small blind</string>
+    <string name="a11y_big_blind">big blind</string>
+    <string name="a11y_bet">pariu %1$,d</string>
+    <string name="a11y_folded">Fold</string>
+    <string name="a11y_out">Eliminat, a terminat pe locul %1$s</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">la rând</string>
+    <string name="ann_fold">%1$s dă fold</string>
+    <string name="ann_check">%1$s dă check</string>
+    <string name="ann_call">%1$s dă call la %2$,d</string>
+    <string name="ann_bet">%1$s pariază %2$,d</string>
+    <string name="ann_raise">%1$s mărește la %2$,d</string>
+    <string name="ann_all_in">%1$s dă all in cu %2$,d</string>
+    <string name="ann_flop">Flopul: %1$s</string>
+    <string name="ann_turn">Turnul: %1$s</string>
+    <string name="ann_river">River-ul: %1$s</string>
+    <string name="ann_shows">%1$s arată %2$s</string>
+    <string name="ann_wins">%1$s câștigă %2$,d</string>
+</resources>

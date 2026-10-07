@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">บลายด์ %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">มือที่ %1$d · %2$,d / %3$,d ในอีก %4$d มือ</item>
+        <item quantity="other">มือที่ %1$d · %2$,d / %3$,d ในอีก %4$d มือ</item>
+    </plurals>
+    <string name="action_leave_tournament">ออกจากทัวร์นาเมนต์</string>
+    <string name="action_fold">โฟลด์</string>
+    <string name="action_check">เช็ค</string>
+    <string name="action_call">คอล&#10;%1$,d</string>
+    <string name="action_call_all_in">คอล&#10;ออลอิน</string>
+    <string name="action_bet">เบ็ท&#10;%1$,d</string>
+    <string name="action_raise">เรสเป็น&#10;%1$,d</string>
+    <string name="action_all_in">ออลอิน&#10;%1$,d</string>
+    <string name="action_next_hand">มือถัดไป</string>
+    <string name="action_new_tournament">ทัวร์นาเมนต์ใหม่</string>
+    <string name="sizing_minus_desc">ลด %1$,d</string>
+    <string name="sizing_plus_desc">เพิ่ม %1$,d</string>
+    <string name="sizing_half_pot">½ พอต</string>
+    <string name="sizing_pot">พอต</string>
+    <string name="sizing_bet_desc">เบ็ท %1$,d</string>
+    <string name="sizing_raise_desc">เรสเป็น %1$,d</string>
+    <string name="pot_label">พอต %1$,d</string>
+    <string name="pot_count">%1$d พอต</string>
+    <string name="banner_pot">พอต · %1$,d</string>
+    <string name="banner_main_pot">เมนพอต · %1$,d</string>
+    <string name="banner_side_pot">ไซด์พอต · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+    <string name="you">คุณ</string>
+    <string name="your_line">คุณ · %1$,d</string>
+    <string name="seat_out">ตกรอบ · %1$s</string>
+    <string name="seat_all_in">ออลอิน</string>
+    <string name="seat_action_bet">เบ็ท %1$,d</string>
+    <string name="seat_action_raise">เรส %1$,d</string>
+    <string name="seat_action_call">คอล</string>
+    <string name="seat_action_check">เช็ค</string>
+    <string name="seat_action_fold">โฟลด์</string>
+    <string name="seat_action_all_in">ออลอิน</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">แน่น</string>
+    <string name="style_loose">หลวม</string>
+    <string name="style_aggressive">ดุดัน</string>
+    <string name="style_passive">เฉื่อย</string>
+    <string-array name="places">
+        <item>ที่ 1</item>
+        <item>ที่ 2</item>
+        <item>ที่ 3</item>
+        <item>ที่ 4</item>
+        <item>ที่ 5</item>
+        <item>ที่ 6</item>
+    </string-array>
+    <string-array name="rank_singular">
+        <item>เอซ</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>แจ็ก</item>
+        <item>ควีน</item>
+        <item>คิง</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>เอซ</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>แจ็ก</item>
+        <item>ควีน</item>
+        <item>คิง</item>
+    </string-array>
+    <string name="hand_royal_flush">รอยัลฟลัช</string>
+    <string name="hand_straight_flush">สเตรทฟลัช สูงสุด %1$s</string>
+    <string name="hand_four_of_a_kind">โฟร์การ์ด %1$s</string>
+    <string name="hand_full_house">ฟูลเฮาส์ %1$s เต็ม %2$s</string>
+    <string name="hand_flush">ฟลัช สูงสุด %1$s</string>
+    <string name="hand_straight">สเตรท สูงสุด %1$s</string>
+    <string name="hand_three_of_a_kind">ทรีการ์ด %1$s</string>
+    <string name="hand_two_pair">สองคู่ %1$s และ %2$s</string>
+    <string name="hand_pair">หนึ่งคู่ %1$s</string>
+    <string name="hand_high_card">ไฮการ์ด %1$s</string>
+    <string name="mark_win">ชนะ</string>
+    <string name="mark_even">เสมอ</string>
+    <string name="mark_lose">แพ้</string>
+    <string name="leave_title">ออกจากทัวร์นาเมนต์นี้ไหม</string>
+    <string name="leave_body">คุณจะจบในอันดับ %1$s เหมือนตกรอบตอนนี้</string>
+    <string name="leave_confirm">ออก</string>
+    <string name="leave_stay">อยู่ต่อ</string>
+    <string name="end_title_place">คุณจบในอันดับ %1$s</string>
+    <string name="end_title_won">คุณชนะทัวร์นาเมนต์</string>
+    <string name="end_body_lost">มือที่เล่น: %1$d\nพอตที่ใหญ่ที่สุด: %2$,d</string>
+    <string name="end_body_won">ใช้ไป %1$d มือ\nพอตที่ใหญ่ที่สุด: %2$,d</string>
+    <string name="card_spoken">%1$s %2$s</string>
+    <string name="a11y_your_cards">ไพ่ของคุณ: %1$s</string>
+    <string name="a11y_board">บอร์ด: %1$s</string>
+    <string name="a11y_board_empty">บอร์ด: ยังไม่มีไพ่</string>
+    <string name="a11y_pot">พอต %1$,d</string>
+    <string name="a11y_pot_pots">พอต %1$,d, %2$d พอต</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d ชิป</string>
+    <string name="a11y_seat_you">คุณ, %1$,d ชิป</string>
+    <string name="a11y_dealer">ดีลเลอร์</string>
+    <string name="a11y_small_blind">สมอลบลายด์</string>
+    <string name="a11y_big_blind">บิ๊กบลายด์</string>
+    <string name="a11y_bet">เบ็ท %1$,d</string>
+    <string name="a11y_folded">โฟลด์แล้ว</string>
+    <string name="a11y_out">ตกรอบ จบในอันดับ %1$s</string>
+    <string name="a11y_all_in">ออลอิน</string>
+    <string name="a11y_thinking">ถึงตา</string>
+    <string name="ann_fold">%1$s โฟลด์</string>
+    <string name="ann_check">%1$s เช็ค</string>
+    <string name="ann_call">%1$s คอล %2$,d</string>
+    <string name="ann_bet">%1$s เบ็ท %2$,d</string>
+    <string name="ann_raise">%1$s เรสเป็น %2$,d</string>
+    <string name="ann_all_in">%1$s ออลอิน %2$,d</string>
+    <string name="ann_flop">ฟล็อป: %1$s</string>
+    <string name="ann_turn">เทิร์น: %1$s</string>
+    <string name="ann_river">ริเวอร์: %1$s</string>
+    <string name="ann_shows">%1$s เปิด %2$s</string>
+    <string name="ann_wins">%1$s ชนะ %2$,d</string>
+</resources>

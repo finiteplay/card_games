@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blindit %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Käsi %1$d · %2$,d / %3$,d %4$d käden päästä</item>
+        <item quantity="other">Käsi %1$d · %2$,d / %3$,d %4$d käden päästä</item>
+    </plurals>
+    <string name="action_leave_tournament">Poistu turnauksesta</string>
+
+    <string name="action_fold">Fold</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Maksa&#10;%1$,d</string>
+    <string name="action_call_all_in">Maksa&#10;all in</string>
+    <string name="action_bet">Panosta&#10;%1$,d</string>
+    <string name="action_raise">Korota&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Seuraava käsi</string>
+    <string name="action_new_tournament">Uusi turnaus</string>
+
+    <string name="sizing_minus_desc">Vähennä %1$,d</string>
+    <string name="sizing_plus_desc">Lisää %1$,d</string>
+    <string name="sizing_half_pot">½ pot</string>
+    <string name="sizing_pot">Pot</string>
+    <string name="sizing_bet_desc">Panosta %1$,d</string>
+    <string name="sizing_raise_desc">Korota summaan %1$,d</string>
+
+    <string name="pot_label">Potti %1$,d</string>
+    <string name="pot_count">%1$d pottia</string>
+    <string name="banner_pot">Potti · %1$,d</string>
+    <string name="banner_main_pot">Pääpotti · %1$,d</string>
+    <string name="banner_side_pot">Sivupotti · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Sinä</string>
+    <string name="your_line">Sinä · %1$,d</string>
+    <string name="seat_out">Ulkona · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Panos %1$,d</string>
+    <string name="seat_action_raise">Korotus %1$,d</string>
+    <string name="seat_action_call">Maksoi</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Fold</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">tight</string>
+    <string name="style_loose">loose</string>
+    <string name="style_aggressive">aggressiivinen</string>
+    <string name="style_passive">passiivinen</string>
+    <string-array name="places">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+        <item>5.</item>
+        <item>6.</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>ässä</item>
+        <item>kakkonen</item>
+        <item>kolmonen</item>
+        <item>nelonen</item>
+        <item>vitonen</item>
+        <item>kutonen</item>
+        <item>seiska</item>
+        <item>kasi</item>
+        <item>ysi</item>
+        <item>kymppi</item>
+        <item>jätkä</item>
+        <item>rouva</item>
+        <item>kuningas</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>ässiä</item>
+        <item>kakkosia</item>
+        <item>kolmosia</item>
+        <item>nelosia</item>
+        <item>vitosia</item>
+        <item>kutosia</item>
+        <item>seiskoja</item>
+        <item>kasseja</item>
+        <item>ysejä</item>
+        <item>kymppejä</item>
+        <item>jätkiä</item>
+        <item>rouvia</item>
+        <item>kuninkaita</item>
+    </string-array>
+    <string name="hand_royal_flush">Kuninkaallinen värisuora</string>
+    <string name="hand_straight_flush">Värisuora, ylin kortti %1$s</string>
+    <string name="hand_four_of_a_kind">Neloset: %1$s</string>
+    <string name="hand_full_house">Täyskäsi: %1$s ja %2$s</string>
+    <string name="hand_flush">Väri, ylin kortti %1$s</string>
+    <string name="hand_straight">Suora, ylin kortti %1$s</string>
+    <string name="hand_three_of_a_kind">Kolmoset: %1$s</string>
+    <string name="hand_two_pair">Kaksi paria: %1$s ja %2$s</string>
+    <string name="hand_pair">Pari: %1$s</string>
+    <string name="hand_high_card">Korkea kortti: %1$s</string>
+
+    <string name="mark_win">Voitto</string>
+    <string name="mark_even">Tasan</string>
+    <string name="mark_lose">Tappio</string>
+
+    <string name="leave_title">Poistutaanko turnauksesta?</string>
+    <string name="leave_body">Sijoitut sijalle %1$s, aivan kuin putoaisit nyt.</string>
+    <string name="leave_confirm">Poistu</string>
+    <string name="leave_stay">Jää</string>
+    <string name="end_title_place">Sijoituit sijalle %1$s</string>
+    <string name="end_title_won">Voitit turnauksen</string>
+    <string name="end_body_lost">Pelattuja käsiä: %1$d\nSuurin potti: %2$,d</string>
+    <string name="end_body_won">Siihen meni %1$d kättä.\nSuurin potti: %2$,d</string>
+
+    <string name="card_spoken">%2$s %1$s</string>
+    <string name="a11y_your_cards">Korttisi: %1$s</string>
+    <string name="a11y_board">Pöytä: %1$s</string>
+    <string name="a11y_board_empty">Pöytä: ei vielä kortteja</string>
+    <string name="a11y_pot">Potti %1$,d</string>
+    <string name="a11y_pot_pots">Potti %1$,d, %2$d pottia</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d pelimerkkiä</string>
+    <string name="a11y_seat_you">Sinä, %1$,d pelimerkkiä</string>
+    <string name="a11y_dealer">jakaja</string>
+    <string name="a11y_small_blind">pieni blindi</string>
+    <string name="a11y_big_blind">iso blindi</string>
+    <string name="a11y_bet">panos %1$,d</string>
+    <string name="a11y_folded">Foldannut</string>
+    <string name="a11y_out">Ulkona, sijoittui sijalle %1$s</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">vuorossa</string>
+    <string name="ann_fold">%1$s foldaa</string>
+    <string name="ann_check">%1$s checkaa</string>
+    <string name="ann_call">%1$s maksaa %2$,d</string>
+    <string name="ann_bet">%1$s panostaa %2$,d</string>
+    <string name="ann_raise">%1$s korottaa summaan %2$,d</string>
+    <string name="ann_all_in">%1$s menee all in summalla %2$,d</string>
+    <string name="ann_flop">Flop: %1$s</string>
+    <string name="ann_turn">Turn: %1$s</string>
+    <string name="ann_river">River: %1$s</string>
+    <string name="ann_shows">%1$s näyttää: %2$s</string>
+    <string name="ann_wins">%1$s voittaa %2$,d</string>
+</resources>

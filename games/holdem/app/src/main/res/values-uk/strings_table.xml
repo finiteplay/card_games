@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Блайнди %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Роздача %1$d · %2$,d / %3$,d через %4$d роздачу</item>
+        <item quantity="few">Роздача %1$d · %2$,d / %3$,d через %4$d роздачі</item>
+        <item quantity="many">Роздача %1$d · %2$,d / %3$,d через %4$d роздач</item>
+        <item quantity="other">Роздача %1$d · %2$,d / %3$,d через %4$d роздачі</item>
+    </plurals>
+    <string name="action_leave_tournament">Вийти з турніру</string>
+    <string name="action_fold">Фолд</string>
+    <string name="action_check">Чек</string>
+    <string name="action_call">Колл&#10;%1$,d</string>
+    <string name="action_call_all_in">Колл&#10;олл-ін</string>
+    <string name="action_bet">Ставка&#10;%1$,d</string>
+    <string name="action_raise">Рейз до&#10;%1$,d</string>
+    <string name="action_all_in">Олл-ін&#10;%1$,d</string>
+    <string name="action_next_hand">Наступна роздача</string>
+    <string name="action_new_tournament">Новий турнір</string>
+    <string name="sizing_minus_desc">Зменшити на %1$,d</string>
+    <string name="sizing_plus_desc">Збільшити на %1$,d</string>
+    <string name="sizing_half_pot">½ банку</string>
+    <string name="sizing_pot">Банк</string>
+    <string name="sizing_bet_desc">Ставка %1$,d</string>
+    <string name="sizing_raise_desc">Рейз до %1$,d</string>
+    <string name="pot_label">Банк %1$,d</string>
+    <string name="pot_count">Банків: %1$d</string>
+    <string name="banner_pot">Банк · %1$,d</string>
+    <string name="banner_main_pot">Основний банк · %1$,d</string>
+    <string name="banner_side_pot">Побічний банк · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+    <string name="you">Ви</string>
+    <string name="your_line">Ви · %1$,d</string>
+    <string name="seat_out">Вибув · %1$s</string>
+    <string name="seat_all_in">Олл-ін</string>
+    <string name="seat_action_bet">Ставка %1$,d</string>
+    <string name="seat_action_raise">Рейз %1$,d</string>
+    <string name="seat_action_call">Колл</string>
+    <string name="seat_action_check">Чек</string>
+    <string name="seat_action_fold">Фолд</string>
+    <string name="seat_action_all_in">Олл-ін</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">тайтовий</string>
+    <string name="style_loose">лузовий</string>
+    <string name="style_aggressive">агресивний</string>
+    <string name="style_passive">пасивний</string>
+    <string-array name="places">
+        <item>1-е місце</item>
+        <item>2-е місце</item>
+        <item>3-є місце</item>
+        <item>4-е місце</item>
+        <item>5-е місце</item>
+        <item>6-е місце</item>
+    </string-array>
+    <string-array name="rank_singular">
+        <item>туз</item>
+        <item>двійка</item>
+        <item>трійка</item>
+        <item>четвірка</item>
+        <item>п’ятірка</item>
+        <item>шістка</item>
+        <item>сімка</item>
+        <item>вісімка</item>
+        <item>дев’ятка</item>
+        <item>десятка</item>
+        <item>валет</item>
+        <item>дама</item>
+        <item>король</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>тузи</item>
+        <item>двійки</item>
+        <item>трійки</item>
+        <item>четвірки</item>
+        <item>п’ятірки</item>
+        <item>шістки</item>
+        <item>сімки</item>
+        <item>вісімки</item>
+        <item>дев’ятки</item>
+        <item>десятки</item>
+        <item>валети</item>
+        <item>дами</item>
+        <item>королі</item>
+    </string-array>
+    <string name="hand_royal_flush">Роял-флеш</string>
+    <string name="hand_straight_flush">Стріт-флеш, старша карта: %1$s</string>
+    <string name="hand_four_of_a_kind">Каре, %1$s</string>
+    <string name="hand_full_house">Фул-хаус, %1$s і %2$s</string>
+    <string name="hand_flush">Флеш, старша карта: %1$s</string>
+    <string name="hand_straight">Стріт, старша карта: %1$s</string>
+    <string name="hand_three_of_a_kind">Трійка, %1$s</string>
+    <string name="hand_two_pair">Дві пари, %1$s і %2$s</string>
+    <string name="hand_pair">Пара, %1$s</string>
+    <string name="hand_high_card">Старша карта, %1$s</string>
+    <string name="mark_win">Виграш</string>
+    <string name="mark_even">Нічия</string>
+    <string name="mark_lose">Програш</string>
+    <string name="leave_title">Вийти з цього турніру?</string>
+    <string name="leave_body">Ви посядете %1$s, ніби вибули зараз.</string>
+    <string name="leave_confirm">Вийти</string>
+    <string name="leave_stay">Лишитися</string>
+    <string name="end_title_place">Ви посіли %1$s</string>
+    <string name="end_title_won">Ви виграли турнір</string>
+    <string name="end_body_lost">Зіграно роздач: %1$d\nНайбільший банк: %2$,d</string>
+    <string name="end_body_won">Знадобилося роздач: %1$d.\nНайбільший банк: %2$,d</string>
+    <string name="card_spoken">%1$s, %2$s</string>
+    <string name="a11y_your_cards">Ваші карти: %1$s</string>
+    <string name="a11y_board">Борд: %1$s</string>
+    <string name="a11y_board_empty">Борд: карт ще немає</string>
+    <string name="a11y_pot">Банк %1$,d</string>
+    <string name="a11y_pot_pots">Банк %1$,d, банків: %2$d</string>
+    <string name="a11y_seat">%1$s, %2$s, фішок: %3$,d</string>
+    <string name="a11y_seat_you">Ви, фішок: %1$,d</string>
+    <string name="a11y_dealer">дилер</string>
+    <string name="a11y_small_blind">малий блайнд</string>
+    <string name="a11y_big_blind">великий блайнд</string>
+    <string name="a11y_bet">ставка %1$,d</string>
+    <string name="a11y_folded">Фолд</string>
+    <string name="a11y_out">Вибув, посів %1$s</string>
+    <string name="a11y_all_in">олл-ін</string>
+    <string name="a11y_thinking">його хід</string>
+    <string name="ann_fold">%1$s: фолд</string>
+    <string name="ann_check">%1$s: чек</string>
+    <string name="ann_call">%1$s: колл %2$,d</string>
+    <string name="ann_bet">%1$s: ставка %2$,d</string>
+    <string name="ann_raise">%1$s: рейз до %2$,d</string>
+    <string name="ann_all_in">%1$s йде олл-ін на %2$,d</string>
+    <string name="ann_flop">Флоп: %1$s</string>
+    <string name="ann_turn">Терн: %1$s</string>
+    <string name="ann_river">Рівер: %1$s</string>
+    <string name="ann_shows">%1$s показує %2$s</string>
+    <string name="ann_wins">%1$s виграває %2$,d</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">ブラインド %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">ハンド %1$d · %2$,d / %3$,d（あと%4$dハンド）</item>
+        <item quantity="other">ハンド %1$d · %2$,d / %3$,d（あと%4$dハンド）</item>
+    </plurals>
+    <string name="action_leave_tournament">トーナメントをやめる</string>
+    <string name="action_fold">フォールド</string>
+    <string name="action_check">チェック</string>
+    <string name="action_call">コール&#10;%1$,d</string>
+    <string name="action_call_all_in">コール&#10;オールイン</string>
+    <string name="action_bet">ベット&#10;%1$,d</string>
+    <string name="action_raise">レイズ&#10;%1$,d</string>
+    <string name="action_all_in">オールイン&#10;%1$,d</string>
+    <string name="action_next_hand">次のハンド</string>
+    <string name="action_new_tournament">新しいトーナメント</string>
+    <string name="sizing_minus_desc">%1$,d 減らす</string>
+    <string name="sizing_plus_desc">%1$,d 増やす</string>
+    <string name="sizing_half_pot">½ ポット</string>
+    <string name="sizing_pot">ポット</string>
+    <string name="sizing_bet_desc">%1$,d をベット</string>
+    <string name="sizing_raise_desc">%1$,d にレイズ</string>
+    <string name="pot_label">ポット %1$,d</string>
+    <string name="pot_count">ポット%1$d個</string>
+    <string name="banner_pot">ポット · %1$,d</string>
+    <string name="banner_main_pot">メインポット · %1$,d</string>
+    <string name="banner_side_pot">サイドポット · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+    <string name="you">あなた</string>
+    <string name="your_line">あなた · %1$,d</string>
+    <string name="seat_out">脱落 · %1$s</string>
+    <string name="seat_all_in">オールイン</string>
+    <string name="seat_action_bet">ベット %1$,d</string>
+    <string name="seat_action_raise">レイズ %1$,d</string>
+    <string name="seat_action_call">コール</string>
+    <string name="seat_action_check">チェック</string>
+    <string name="seat_action_fold">フォールド</string>
+    <string name="seat_action_all_in">オールイン</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">タイト</string>
+    <string name="style_loose">ルーズ</string>
+    <string name="style_aggressive">アグレッシブ</string>
+    <string name="style_passive">パッシブ</string>
+    <string-array name="places">
+        <item>1位</item>
+        <item>2位</item>
+        <item>3位</item>
+        <item>4位</item>
+        <item>5位</item>
+        <item>6位</item>
+    </string-array>
+    <string-array name="rank_singular">
+        <item>A</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>A</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string name="hand_royal_flush">ロイヤルフラッシュ</string>
+    <string name="hand_straight_flush">ストレートフラッシュ、%1$sハイ</string>
+    <string name="hand_four_of_a_kind">フォーカード、%1$s</string>
+    <string name="hand_full_house">フルハウス、%1$sと%2$s</string>
+    <string name="hand_flush">フラッシュ、%1$sハイ</string>
+    <string name="hand_straight">ストレート、%1$sハイ</string>
+    <string name="hand_three_of_a_kind">スリーカード、%1$s</string>
+    <string name="hand_two_pair">ツーペア、%1$sと%2$s</string>
+    <string name="hand_pair">%1$sのワンペア</string>
+    <string name="hand_high_card">ハイカード、%1$s</string>
+    <string name="mark_win">勝ち</string>
+    <string name="mark_even">引分</string>
+    <string name="mark_lose">負け</string>
+    <string name="leave_title">このトーナメントをやめますか？</string>
+    <string name="leave_body">今脱落したものとして、%1$sで終了します。</string>
+    <string name="leave_confirm">やめる</string>
+    <string name="leave_stay">続ける</string>
+    <string name="end_title_place">%1$sで終了</string>
+    <string name="end_title_won">トーナメントに優勝しました</string>
+    <string name="end_body_lost">プレイしたハンド：%1$d\n最大のポット：%2$,d</string>
+    <string name="end_body_won">%1$dハンドかかりました。\n最大のポット：%2$,d</string>
+    <string name="card_spoken">%2$sの%1$s</string>
+    <string name="a11y_your_cards">あなたのカード：%1$s</string>
+    <string name="a11y_board">ボード：%1$s</string>
+    <string name="a11y_board_empty">ボード：まだカードなし</string>
+    <string name="a11y_pot">ポット %1$,d</string>
+    <string name="a11y_pot_pots">ポット %1$,d、%2$d個のポット</string>
+    <string name="a11y_seat">%1$s、%2$s、%3$,dチップ</string>
+    <string name="a11y_seat_you">あなた、%1$,dチップ</string>
+    <string name="a11y_dealer">ディーラー</string>
+    <string name="a11y_small_blind">スモールブラインド</string>
+    <string name="a11y_big_blind">ビッグブラインド</string>
+    <string name="a11y_bet">ベット %1$,d</string>
+    <string name="a11y_folded">フォールド済み</string>
+    <string name="a11y_out">脱落、%1$sで終了</string>
+    <string name="a11y_all_in">オールイン</string>
+    <string name="a11y_thinking">行動待ち</string>
+    <string name="ann_fold">%1$sがフォールド</string>
+    <string name="ann_check">%1$sがチェック</string>
+    <string name="ann_call">%1$sが%2$,dをコール</string>
+    <string name="ann_bet">%1$sが%2$,dをベット</string>
+    <string name="ann_raise">%1$sが%2$,dにレイズ</string>
+    <string name="ann_all_in">%1$sが%2$,dでオールイン</string>
+    <string name="ann_flop">フロップ：%1$s</string>
+    <string name="ann_turn">ターン：%1$s</string>
+    <string name="ann_river">リバー：%1$s</string>
+    <string name="ann_shows">%1$sが%2$sを公開</string>
+    <string name="ann_wins">%1$sが%2$,dを獲得</string>
+</resources>

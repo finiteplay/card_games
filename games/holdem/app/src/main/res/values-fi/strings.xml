@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Pelaamisen perusteet</string>
+    <string name="help_tab_rules">Säännöt</string>
+    <string name="help_tab_hands">Kädet</string>
+    <string name="help_tab_strategy">Strategia</string>
+
+    <string name="help_goal_title">Tavoite</string>
+    <string name="help_goal">Voita kaikki pöydän pelimerkit. Pelaat turnauksen viittä vastustajaa vastaan, ja jokainen aloittaa 1 500 pelimerkillä. Kun pelaajan pelimerkit loppuvat, hän putoaa, ja viimeisenä jäljelle jäävä pelaaja voittaa.</string>
+    <string name="help_hand_title">Käsi</string>
+    <string name="help_hand_cards">Jokaisessa kädessä saat kaksi yksityistä korttia, hole cards -kortit. Viisi yhteistä korttia jaetaan avoimina keskelle, ja niitä kutsutaan pöydäksi. Kätesi on paras viiden kortin yhdistelmä kahdesta omasta kortistasi ja pöydästä: voit käyttää molempia, toista tai et kumpaakaan.</string>
+    <string name="help_hand_flop">Hole cards -korttien jälkeen on panostuskierros. Sitten pöytään jaetaan kolme korttia, flop, ja uusi panostuskierros. Neljäs kortti, turn, tuo vielä yhden kierroksen, ja viides, river, myös.</string>
+    <string name="help_actions_title">Valintasi</string>
+    <string name="help_actions_check">Check: pysy mukana panostamatta, kun kukaan ei ole panostanut ennen sinua.</string>
+    <string name="help_actions_call">Maksa (call): vastaa panokseen, jonka edessä olet.</string>
+    <string name="help_actions_bet">Panosta tai korota: lisää pelimerkkejä. Valitse summa palkin yläpuolella olevilla painikkeilla: − ja + liikkuvat big blindin askelin, ja ½ pot ja Pot asettavat summan puolestasi. Koroituksen on oltava vähintään yhtä suuri kuin edellinen panos tai korotus.</string>
+    <string name="help_actions_fold">Fold: luovuta korttisi ja jo panostamasi pelimerkit. Putoat vain tästä kädestä.</string>
+    <string name="help_actions_all_in">All in: panosta kaikki pelimerkkisi.</string>
+    <string name="help_button_title">Nappi ja blindit</string>
+    <string name="help_button">Jakajan nappi, merkitty D:llä, siirtyy yhden paikan myötäpäivään joka käsi. Kahden sitä seuraavan pelaajan on pakko panostaa ennen korttien jakoa: pieni blindi (SB) ja iso blindi (BB). Se aloittaa potin, joten pelattavaa on aina. Iso blindi määrää pienimmän panoksen.</string>
+    <string name="help_allin_title">All in ja sivupotit</string>
+    <string name="help_allin">All in -pelaajaa ei voi pakottaa pois, mutta hän voi voittaa kustakin pelaajasta vain sen verran kuin on itse pannut peliin. Sen ylittävät pelimerkit menevät sivupottiin, jota all in -pelaaja ei voi voittaa. Potit näkyvät pöydällä, ja kukin menee parhaalle kädelle niistä pelaajista, jotka ovat maksaneet siihen.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Jos viimeisen panostuskierroksen jälkeen on jäljellä kaksi tai useampi pelaaja, he paljastavat korttinsa ja paras käsi voittaa potin. Jos kaikki muut foldaavat, viimeinen pelaaja voittaa potin näyttämättä korttejaan. Tasan menevät kädet jakavat potin tasan.</string>
+    <string name="help_tournament_title">Turnaus</string>
+    <string name="help_tournament">Blindit nousevat 10 käden välein, joten pelimerkit käyvät suhteessa vähiin ja odottaminen tulee kalliiksi. Mitään ei ajasteta: käytä niin paljon aikaa kuin haluat. Sijoitut sille sijalle, joka vastaa jäljellä olevien pelaajien määrää pudotessasi, eli 6. on ensimmäisenä ulos ja 1. on voitto.</string>
+    <string name="help_leave_title">Poistuminen</string>
+    <string name="help_leave">Ylhäällä oleva lippu päättää turnauksen etuajassa, ja sijoitut sinne, mihin sijoittuisit, jos putoaisit nyt. Sovelluksen sulkeminen ei tee sitä: kätesi tallentuu ja odottaa, kun palaat. Kumoamista ei ole, koska jokaista päätöstä seuraavat kortit, joita et voinut nähdä.</string>
+
+    <string name="help_hands_intro">Vahvimmasta kädestä heikoimpaan. Näytetyt viisi korttia ovat esimerkki kustakin.</string>
+    <string name="help_hand_straight_flush_title">Värisuora</string>
+    <string name="help_hand_straight_flush">Viisi peräkkäistä korttia, kaikki samaa maata. Paras niistä, kymmenestä ässään, on kuninkaallinen värisuora.</string>
+    <string name="help_hand_four_title">Neloset</string>
+    <string name="help_hand_four">Neljä samanarvoista korttia.</string>
+    <string name="help_hand_full_house_title">Täyskäsi</string>
+    <string name="help_hand_full_house">Kolme yhtä arvoa ja kaksi toista arvoa olevaa korttia.</string>
+    <string name="help_hand_flush_title">Väri</string>
+    <string name="help_hand_flush">Mitkä tahansa viisi samaa maata olevaa korttia.</string>
+    <string name="help_hand_straight_title">Suora</string>
+    <string name="help_hand_straight">Viisi peräkkäistä korttia, mitä maata tahansa. Ässä voi olla korkea, kymmenestä ässään, tai matala, ässästä viitoseen, mutta ei koskaan molempia yhtä aikaa.</string>
+    <string name="help_hand_three_title">Kolmoset</string>
+    <string name="help_hand_three">Kolme samanarvoista korttia.</string>
+    <string name="help_hand_two_pair_title">Kaksi paria</string>
+    <string name="help_hand_two_pair">Kaksi yhtä arvoa ja kaksi toista arvoa olevaa korttia.</string>
+    <string name="help_hand_pair_title">Pari</string>
+    <string name="help_hand_pair">Kaksi samanarvoista korttia.</string>
+    <string name="help_hand_high_card_title">Korkea kortti</string>
+    <string name="help_hand_high_card">Mikään edellisistä: korkein korttisi ratkaisee.</string>
+    <string name="help_ties_title">Tasatilanteet</string>
+    <string name="help_ties">Jos kahdella pelaajalla on sama käsi, korkeammat kortit voittavat. Kaksi paria, ässät ja seiskat, voittaa kaksi paria, kuninkaat ja rouvat, ja kun pääkortit ovat samat, seuraavaksi korkein kortti ratkaisee. Vain viisi korttia lasketaan, eikä maa koskaan ratkaise: samanarvoiset kädet jakavat potin.</string>
+
+    <string name="help_strategy_intro">Seitsemän ideaa, joista on uudelle pelaajalle hyötyä. Ne eivät voita jokaista kättä, mutta turnauksen aikana ne kasaantuvat.</string>
+    <string name="help_strategy_1">Pelaa vähemmän käsiä aikaisilta paikoilta. Ensimmäisinä toimivilla on eniten vastustajia vielä toimimatta, joten aloita siellä vain vahvoilla korteilla ja pelaa vapaammin, mitä lähempänä nappia paikat ovat.</string>
+    <string name="help_strategy_2">Korota mieluummin kuin maksa. Korotus voi voittaa potin saman tien, ja kun siihen vastataan, sinulla on useammin vahvempi käsi. Pelkkä maksaminen antaa muiden nähdä kortteja halvalla.</string>
+    <string name="help_strategy_3">Fold useammin kuin tuntuu mukavalta. Useimmat kädet eivät ole pelaamisen arvoisia, ja foldattu käsi maksaa vain sen, minkä olet jo pannut peliin.</string>
+    <string name="help_strategy_4">Tunne pot odds. Jos maksaminen maksaa 25 pelimerkkiä ja potti on 75, maksat yhden pelimerkin jokaista kolmea voitettavaa kohti, joten maksaminen kannattaa, jos voitat useammin kuin kerran neljästä. Vertaa sitä todennäköisyyteesi päätyä parhaaseen käteen.</string>
+    <string name="help_strategy_5">Paikalla on väliä. Viimeisenä toimiminen antaa sinun nähdä ensin, mitä kaikki muut tekevät, ja se on paljon arvoinen. Pelaa enemmän käsiä myöhäisiltä paikoilta ja vähemmän aikaisilta.</string>
+    <string name="help_strategy_6">Seuraa vastustajien pelityylejä. Jokainen paikka on merkitty: tight, loose, aggressiivinen tai passiivinen. Kunnioita tight-pelaajan korotusta, ja älä usko loose- ja aggressiivisen pelaajan panokseen liian helposti.</string>
+    <string name="help_strategy_7">Lyhyellä stackilla mene all in tai fold. Kun pelimerkkejäsi on vain muutama iso blindi, pienet panokset ja maksut eivät jätä liikkumavaraa, ja hyvin ajoitettu all in on paras mahdollisuutesi tuplata.</string>
+</resources>

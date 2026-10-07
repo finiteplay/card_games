@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">勝率 %1$d%% · 底池賠率 %2$d%%</string>
+    <string name="hint_notice_free">勝率 %1$d%%</string>
+    <string name="hint_notice_desc">對可能的牌型，估計獲勝機會為百分之 %1$d；跟注需要底池的百分之 %2$d。</string>
+    <string name="hint_notice_free_desc">對可能的牌型，估計獲勝機會為百分之 %1$d。</string>
+    <string name="recovery_notice">無法開啟你儲存的牌局，所以已從頭重新發牌。沒有損失任何籌碼。</string>
+</resources>

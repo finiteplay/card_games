@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pot Odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Geschätzte Gewinnchance: %1$d Prozent gegen wahrscheinliche Hände; ein Call kostet %2$d Prozent des Pots.</string>
+    <string name="hint_notice_free_desc">Geschätzte Gewinnchance: %1$d Prozent gegen wahrscheinliche Hände.</string>
+    <string name="recovery_notice">Deine gespeicherte Hand konnte nicht geöffnet werden, deshalb wurde sie von vorn neu ausgeteilt. Es gingen keine Chips verloren.</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Perkiraan peluang menang %1$d persen melawan tangan yang mungkin; call menghabiskan %2$d persen dari pot.</string>
+    <string name="hint_notice_free_desc">Perkiraan peluang menang %1$d persen melawan tangan yang mungkin.</string>
+
+    <string name="recovery_notice">Tangan tersimpan Anda tidak bisa dibuka, jadi dibagikan ulang dari awal. Tidak ada chip yang hilang.</string>
+</resources>

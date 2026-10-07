@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Šanca %1$d%% · Pomer potu %2$d%%</string>
+    <string name="hint_notice_free">Šanca %1$d%%</string>
+    <string name="hint_notice_desc">Odhadovaná šanca na výhru %1$d percent proti pravdepodobným rukám; dorovnanie stojí %2$d percent potu.</string>
+    <string name="hint_notice_free_desc">Odhadovaná šanca na výhru %1$d percent proti pravdepodobným rukám.</string>
+
+    <string name="recovery_notice">Vašu uloženú ruku sa nepodarilo otvoriť, preto sa rozdala odznova. Žiadne žetóny sa nestratili.</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">איך משחקים</string>
+    <string name="help_tab_rules">חוקים</string>
+    <string name="help_tab_hands">ידיים</string>
+    <string name="help_tab_strategy">אסטרטגיה</string>
+
+    <string name="help_goal_title">המטרה</string>
+    <string name="help_goal">זכו בכל האסימונים בשולחן. משחקים טורניר מול חמישה יריבים, וכל אחד מתחיל עם 1,500 אסימונים. שחקן שנגמרים לו האסימונים יוצא, והשחקן האחרון שנשאר מנצח.</string>
+    <string name="help_hand_title">יד</string>
+    <string name="help_hand_cards">בכל יד מקבלים שני קלפים פרטיים, הקלפים הסגורים שלכם. חמישה קלפים משותפים מונחים גלויים באמצע, והם נקראים הלוח. היד שלכם היא חמשת הקלפים הטובים ביותר משני הקלפים שלכם ומהלוח, ואפשר להשתמש בשניהם, באחד או באף אחד.</string>
+    <string name="help_hand_flop">אחרי הקלפים הסגורים יש סיבוב הימורים. אחר כך נחשפים שלושה קלפים בלוח, הפלופ, ושוב יש הימורים. הקלף הרביעי, הטרן, מביא סיבוב נוסף, וכך גם החמישי, הריבר.</string>
+    <string name="help_actions_title">האפשרויות שלכם</string>
+    <string name="help_actions_check">צ\'ק: להישאר ביד בלי להמר, כשאף אחד לא הימר לפניכם.</string>
+    <string name="help_actions_call">קול: להשוות להימור שניצב מולכם.</string>
+    <string name="help_actions_bet">הימור או העלאה: להכניס עוד אסימונים. בוחרים את הסכום בכפתורים שמעל הסרגל: − ו-+ זזים בגודל הביג בליינד, ו-½ קופה וקופה קובעים אותו בשבילכם. העלאה חייבת להיות לפחות בגודל ההימור או ההעלאה האחרונים.</string>
+    <string name="help_actions_fold">פולד: לוותר על הקלפים ועל האסימונים שכבר הכנסתם. אתם יוצאים רק מהיד הזאת.</string>
+    <string name="help_actions_all_in">אול אין: להמר על כל האסימונים שיש לכם.</string>
+    <string name="help_button_title">הכפתור והבליינדים</string>
+    <string name="help_button">כפתור המחלק, שמסומן באות D, זז בכל יד מקום אחד עם כיוון השעון. שני השחקנים שאחריו חייבים להכניס הימורי חובה לפני שהקלפים מחולקים: הסמול בליינד (SB) והביג בליינד (BB). כך מתחילה הקופה, ותמיד יש על מה לשחק. הביג בליינד קובע את ההימור הקטן ביותר.</string>
+    <string name="help_allin_title">אול אין וקופות צד</string>
+    <string name="help_allin">שחקן שהוא באול אין אי אפשר להוציא, אבל הוא יכול לזכות מכל שחקן רק בכמות שהוא עצמו הכניס. אסימונים מעבר לכך נכנסים לקופת צד שהשחקן באול אין לא יכול לזכות בה. הקופות מוצגות בשולחן, וכל אחת הולכת ליד הטובה ביותר מבין השחקנים ששילמו לתוכה.</string>
+    <string name="help_showdown_title">השואודאון</string>
+    <string name="help_showdown">אם אחרי סיבוב ההימורים האחרון נשארו שני שחקנים או יותר, הם חושפים את הקלפים והיד הטובה ביותר זוכה בקופה. אם כל השאר עושים פולד, השחקן האחרון זוכה בקופה בלי להראות את הקלפים. ידיים שוות מתחלקות בקופה שווה בשווה.</string>
+    <string name="help_tournament_title">הטורניר</string>
+    <string name="help_tournament">הבליינדים עולים כל 10 ידיים, כך שהאסימונים מצטמצמים ביחס, והמתנה נעשית יקרה. שום דבר לא מוגבל בזמן: קחו כמה זמן שאתם רוצים. מסיימים במקום השווה למספר השחקנים שנשארו כשיוצאים, כך שהמקום השישי הוא הראשון שיוצא והראשון הוא הניצחון.</string>
+    <string name="help_leave_title">עזיבה</string>
+    <string name="help_leave">הדגל למעלה מסיים את הטורניר מוקדם, ואתם מסיימים במקום שבו הייתם אילו יצאתם עכשיו. סגירת האפליקציה לא מסיימת אותו: היד נשמרת וממתינה כשחוזרים. אין ביטול, כי אחרי כל החלטה באים קלפים שלא יכולתם לראות.</string>
+
+    <string name="help_hands_intro">מהיד החזקה ביותר לחלשה ביותר. חמשת הקלפים המוצגים הם דוגמה לכל יד.</string>
+    <string name="help_hand_straight_flush_title">סטרייט פלאש</string>
+    <string name="help_hand_straight_flush">חמישה קלפים ברצף, כולם מצורה אחת. הטובה שבהן, מעשר עד אס, היא רויאל פלאש.</string>
+    <string name="help_hand_four_title">רביעייה</string>
+    <string name="help_hand_four">ארבעה קלפים מאותו ערך.</string>
+    <string name="help_hand_full_house_title">פול האוס</string>
+    <string name="help_hand_full_house">שלושה קלפים מערך אחד ושניים מערך אחר.</string>
+    <string name="help_hand_flush_title">פלאש</string>
+    <string name="help_hand_flush">חמישה קלפים כלשהם מצורה אחת.</string>
+    <string name="help_hand_straight_title">סטרייט</string>
+    <string name="help_hand_straight">חמישה קלפים ברצף, מכל הצורות. אס יכול להיות גבוה, מעשר עד אס, או נמוך, מאס עד חמש, אבל אף פעם לא שניהם יחד.</string>
+    <string name="help_hand_three_title">שלישייה</string>
+    <string name="help_hand_three">שלושה קלפים מאותו ערך.</string>
+    <string name="help_hand_two_pair_title">שני זוגות</string>
+    <string name="help_hand_two_pair">שני קלפים מערך אחד ושניים מערך אחר.</string>
+    <string name="help_hand_pair_title">זוג</string>
+    <string name="help_hand_pair">שני קלפים מאותו ערך.</string>
+    <string name="help_hand_high_card_title">קלף גבוה</string>
+    <string name="help_hand_high_card">אף אחד מהאלה: הקלף הגבוה ביותר שלכם נחשב.</string>
+    <string name="help_ties_title">תיקו</string>
+    <string name="help_ties">אם לשני שחקנים אותו סוג יד, הקלפים הגבוהים מנצחים. שני זוגות של אסים ושבעות מנצחים שני זוגות של מלכים ומלכות, וכשהקלפים העיקריים זהים, הקלף הגבוה הבא מכריע. רק חמישה קלפים נחשבים, והצורות אף פעם לא שוברות שוויון: ידיים שוות מתחלקות בקופה.</string>
+
+    <string name="help_strategy_intro">שבעה רעיונות שמשרתים היטב שחקן חדש. הם לא ינצחו בכל יד, אבל לאורך טורניר הם מצטברים.</string>
+    <string name="help_strategy_1">שחקו פחות ידיים ממקומות מוקדמים. השחקנים הראשונים לפעול יש להם הכי הרבה יריבים אחריהם, אז התחילו שם רק עם קלפים חזקים, והרפו כשהמקומות מתקרבים לכפתור.</string>
+    <string name="help_strategy_2">העלו במקום לעשות קול. העלאה יכולה לזכות בקופה מיד, וכשעושים לה קול ליד שלכם חזקה יותר לעתים קרובות. קול רק נותן לאחרים לראות קלפים בזול.</string>
+    <string name="help_strategy_3">עשו פולד יותר ממה שנוח לכם. רוב הידיים לא שוות משחק, ויד שנזרקה עולה לכם רק במה שכבר הכנסתם.</string>
+    <string name="help_strategy_4">הכירו את יחס הקופה. אם קול עולה 25 אסימונים כדי לזכות בקופה של 75, אתם משלמים אסימון אחד על כל שלושה שאפשר לזכות בהם, אז הקול משתלם אם מנצחים יותר מפעם אחת מארבע. השוו זאת לסיכוי שלכם לסיים עם היד הטובה ביותר.</string>
+    <string name="help_strategy_5">המיקום חשוב. לפעול אחרון מאפשר לראות קודם מה כולם עושים, וזה שווה הרבה. שחקו יותר ידיים ממקומות מאוחרים ופחות ממוקדמים.</string>
+    <string name="help_strategy_6">שימו לב לסגנונות של היריבים. כל מקום מסומן כ-tight, loose, aggressive או passive. כבדו העלאה משחקן tight, והאמינו לאט יותר להימור של שחקן loose ו-aggressive.</string>
+    <string name="help_strategy_7">עם ערימה קצרה, לכו על אול אין או פולד. כשיש לכם רק כמה ביג בליינדים, הימורים וקולים קטנים לא משאירים לכם מרווח תמרון, ואול אין בעיתוי נכון הוא הסיכוי הטוב ביותר להכפיל.</string>
+</resources>

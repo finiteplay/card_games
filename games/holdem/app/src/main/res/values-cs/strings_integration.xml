@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Šance banky %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Odhadovaná šance na výhru je %1$d procent proti pravděpodobným kombinacím; vyrovnání stojí %2$d procent banky.</string>
+    <string name="hint_notice_free_desc">Odhadovaná šance na výhru je %1$d procent proti pravděpodobným kombinacím.</string>
+
+    <string name="recovery_notice">Uloženou hru se nepodařilo otevřít, a proto byla rozdána znovu od začátku. Žádné žetony se neztratily.</string>
+</resources>

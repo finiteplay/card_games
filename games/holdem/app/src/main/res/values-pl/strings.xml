@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Jak grać</string>
+    <string name="help_tab_rules">Zasady</string>
+    <string name="help_tab_hands">Układy</string>
+    <string name="help_tab_strategy">Strategia</string>
+
+    <string name="help_goal_title">Cel</string>
+    <string name="help_goal">Wygraj wszystkie żetony przy stole. Grasz w turnieju z pięcioma przeciwnikami, a każdy zaczyna z 1500 żetonami. Gracz, któremu skończą się żetony, odpada, a wygrywa ostatni, który zostanie.</string>
+    <string name="help_hand_title">Rozdanie</string>
+    <string name="help_hand_cards">W każdym rozdaniu dostajesz dwie prywatne karty, czyli karty własne. Pięć wspólnych kart leży odkrytych na środku i nazywa się to stołem. Twój układ to najlepsze pięć kart spośród twoich dwóch i stołu, w których możesz użyć obu swoich, jednej lub żadnej.</string>
+    <string name="help_hand_flop">Po rozdaniu kart własnych jest runda licytacji. Potem na stół trafiają trzy karty, czyli flop, i znów licytacja. Czwarta karta, turn, przynosi kolejną rundę, tak samo piąta, river.</string>
+    <string name="help_actions_title">Twoje wybory</string>
+    <string name="help_actions_check">Czekaj: zostań w grze bez stawiania, gdy nikt przed tobą nie postawił.</string>
+    <string name="help_actions_call">Wyrównaj: dorzuć tyle, ile wynosi stawka, z którą się mierzysz.</string>
+    <string name="help_actions_bet">Postaw lub Podbij: wrzuć więcej żetonów. Kwotę wybierasz przyciskami nad paskiem: − i + zmieniają ją o duży blind, a ½ puli i Pula ustawiają ją za ciebie. Podbicie musi być co najmniej tak duże jak ostatnia stawka lub podbicie.</string>
+    <string name="help_actions_fold">Pas: oddaj karty i żetony, które już wrzuciłeś. Odpadasz tylko z tego rozdania.</string>
+    <string name="help_actions_all_in">All in: postaw wszystkie swoje żetony.</string>
+    <string name="help_button_title">Przycisk i blindy</string>
+    <string name="help_button">Przycisk dealera, oznaczony literą D, co rozdanie przesuwa się o jedno miejsce zgodnie z ruchem wskazówek zegara. Dwaj gracze po nim muszą wnieść przymusowe stawki przed rozdaniem kart: małego blinda (SB) i dużego blinda (BB). To zaczyna pulę, więc zawsze jest o co grać. Duży blind wyznacza najmniejszą stawkę.</string>
+    <string name="help_allin_title">All in i pule boczne</string>
+    <string name="help_allin">Gracza, który jest all in, nie można wypchnąć z gry, ale od każdego przeciwnika może wygrać tylko tyle, ile sam wniósł. Nadwyżka trafia do puli bocznej, której gracz all in nie może wygrać. Pule widać na stole, a każda trafia do najlepszego układu wśród graczy, którzy do niej dołożyli.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Jeśli po ostatniej rundzie licytacji w grze zostaje dwóch lub więcej graczy, odkrywają karty, a najlepszy układ wygrywa pulę. Jeśli wszyscy inni spasują, ostatni gracz wygrywa pulę bez pokazywania kart. Remisujące układy dzielą pulę po równo.</string>
+    <string name="help_tournament_title">Turniej</string>
+    <string name="help_tournament">Blindy rosną co 10 rozdań, więc żetonów jest coraz mniej w stosunku do stawek, a czekanie robi się drogie. Nic nie jest mierzone czasem: graj tak długo, jak chcesz. Kończysz na miejscu równym liczbie graczy, którzy zostali, gdy odpadasz, więc 6. to pierwszy, który odpada, a 1. to wygrana.</string>
+    <string name="help_leave_title">Wyjście</string>
+    <string name="help_leave">Flaga u góry kończy turniej wcześniej, a ty kończysz tam, gdzie byś skończył, odpadając teraz. Zamknięcie aplikacji tego nie robi: rozdanie jest zapisane i czeka na ciebie po powrocie. Nie ma cofania, bo po każdej decyzji pojawiają się karty, których nie mogłeś zobaczyć.</string>
+
+    <string name="help_hands_intro">Od najsilniejszego układu do najsłabszego. Pokazane pięć kart to jeden przykład każdego z nich.</string>
+    <string name="help_hand_straight_flush_title">Poker</string>
+    <string name="help_hand_straight_flush">Pięć kolejnych kart tego samego koloru. Najlepszy z nich, od dziesiątki do asa, to poker królewski.</string>
+    <string name="help_hand_four_title">Kareta</string>
+    <string name="help_hand_four">Cztery karty tej samej wartości.</string>
+    <string name="help_hand_full_house_title">Full</string>
+    <string name="help_hand_full_house">Trzy karty jednej wartości i dwie innej.</string>
+    <string name="help_hand_flush_title">Kolor</string>
+    <string name="help_hand_flush">Dowolne pięć kart jednego koloru.</string>
+    <string name="help_hand_straight_title">Strit</string>
+    <string name="help_hand_straight">Pięć kolejnych kart w dowolnych kolorach. As może być wysoki, od dziesiątki do asa, lub niski, od asa do piątki, ale nigdy oba naraz.</string>
+    <string name="help_hand_three_title">Trójka</string>
+    <string name="help_hand_three">Trzy karty tej samej wartości.</string>
+    <string name="help_hand_two_pair_title">Dwie pary</string>
+    <string name="help_hand_two_pair">Dwie karty jednej wartości i dwie innej.</string>
+    <string name="help_hand_pair_title">Para</string>
+    <string name="help_hand_pair">Dwie karty tej samej wartości.</string>
+    <string name="help_hand_high_card_title">Wysoka karta</string>
+    <string name="help_hand_high_card">Nic z powyższych: liczy się twoja najwyższa karta.</string>
+    <string name="help_ties_title">Remisy</string>
+    <string name="help_ties">Jeśli dwóch graczy ma ten sam rodzaj układu, wygrywają wyższe karty. Dwie pary, asy i siódemki, biją dwie pary, króle i damy, a gdy główne karty są takie same, decyduje następna najwyższa. Liczy się tylko pięć kart, a kolory nigdy nie rozstrzygają remisu: równe układy dzielą pulę.</string>
+
+    <string name="help_strategy_intro">Siedem pomysłów, które dobrze służą początkującemu. Nie wygrają każdego rozdania, ale w całym turnieju się sumują.</string>
+    <string name="help_strategy_1">Graj mniej rozdań z wczesnych miejsc. Gracze, którzy decydują pierwsi, mają przed sobą najwięcej przeciwników, więc zaczynaj tam tylko z mocnymi kartami i luzuj w miarę zbliżania się do przycisku.</string>
+    <string name="help_strategy_2">Podbijaj zamiast wyrównywać. Podbicie może od razu wygrać pulę, a gdy ktoś je wyrówna, częściej masz silniejszy układ. Samo wyrównywanie pozwala innym tanio zobaczyć karty.</string>
+    <string name="help_strategy_3">Pasuj częściej, niż jest ci wygodnie. Większość układów nie jest warta gry, a spasowany układ kosztuje tylko to, co już wrzuciłeś.</string>
+    <string name="help_strategy_4">Poznaj szanse puli. Jeśli wyrównanie kosztuje 25 żetonów, by wygrać pulę 75, płacisz jeden żeton za każde trzy do wygrania, więc wyrównanie się opłaca, jeśli wygrywasz więcej niż raz na cztery. Porównaj to z szansą, że skończysz z najlepszym układem.</string>
+    <string name="help_strategy_5">Pozycja ma znaczenie. Decydowanie jako ostatni pozwala najpierw zobaczyć, co robią wszyscy inni, a to jest sporo warte. Graj więcej rozdań z późnych miejsc, a mniej z wczesnych.</string>
+    <string name="help_strategy_6">Obserwuj style przeciwników. Każde miejsce ma etykietę: ciasny, luźny, agresywny lub pasywny. Szanuj podbicie ciasnego gracza i wolniej wierz w stawkę luźnego, agresywnego.</string>
+    <string name="help_strategy_7">Z małym stosem idź all in albo pasuj. Gdy masz tylko kilka dużych blindów, małe stawki i wyrównania nie dają ci pola manewru, a dobrze wybrany all in to twoja najlepsza szansa na podwojenie.</string>
+</resources>

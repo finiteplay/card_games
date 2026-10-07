@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Kako igrati</string>
+    <string name="help_tab_rules">Pravila</string>
+    <string name="help_tab_hands">Ruke</string>
+    <string name="help_tab_strategy">Strategija</string>
+
+    <string name="help_goal_title">Cilj</string>
+    <string name="help_goal">Osvojite sve žetone za stolom. Igrate turnir protiv pet protivnika, a svatko počinje s 1.500 žetona. Igrač kojem ponestane žetona ispada, a pobjeđuje posljednji preostali igrač.</string>
+    <string name="help_hand_title">Ruka</string>
+    <string name="help_hand_cards">U svakoj ruci dobivate dvije privatne karte, svoje džepne karte. Pet zajedničkih karata ide licem prema gore na sredinu i zove se stol. Vaša ruka je najboljih pet karata od vaše dvije i stola, a možete upotrijebiti obje svoje, jednu ili nijednu.</string>
+    <string name="help_hand_flop">Nakon džepnih karata slijedi krug klađenja. Zatim se otkrivaju tri karte stola, flop, i opet slijedi klađenje. Četvrta karta, turn, donosi još jedan krug, a tako i peta, river.</string>
+    <string name="help_actions_title">Vaše mogućnosti</string>
+    <string name="help_actions_check">Čekaj (check): ostanite u igri bez uloga, kad prije vas nitko nije uložio.</string>
+    <string name="help_actions_call">Prati (call): izjednačite ulog s kojim se suočavate.</string>
+    <string name="help_actions_bet">Ulog ili Podigni: uložite još žetona. Iznos birate gumbima iznad trake: − i + mijenjaju iznos za veliki blind, a ½ pota i Pot postavljaju ga umjesto vas. Podizanje mora biti barem jednako veliko kao posljednji ulog ili podizanje.</string>
+    <string name="help_actions_fold">Odustani (fold): odbacite karte i žetone koje ste već uložili. Ispadate samo iz ove ruke.</string>
+    <string name="help_actions_all_in">All in: uložite sve žetone koje imate.</string>
+    <string name="help_button_title">Gumb i blindovi</string>
+    <string name="help_button">Gumb dilera, označen s D, svake ruke prelazi jedno mjesto u smjeru kazaljke na satu. Dva igrača nakon njega prije dijeljenja moraju uložiti obvezne uloge: mali blind (SB) i veliki blind (BB). Time se pokreće pot, pa se uvijek igra za nešto. Veliki blind određuje najmanji ulog.</string>
+    <string name="help_allin_title">All in i sporedni potovi</string>
+    <string name="help_allin">Igrača koji je all in ne može se istisnuti, ali od svakog igrača može osvojiti samo onoliko koliko je i sam uložio. Žetoni povrh toga idu u sporedni pot koji igrač u all inu ne može osvojiti. Potovi su prikazani na stolu, a svaki pripada najboljoj ruci među igračima koji su u njega uplatili.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Ako nakon posljednjeg kruga klađenja ostanu dva ili više igrača, otkrivaju karte i najbolja ruka osvaja pot. Ako svi ostali odustanu, posljednji igrač osvaja pot bez otkrivanja karata. Izjednačene ruke dijele pot na jednake dijelove.</string>
+    <string name="help_tournament_title">Turnir</string>
+    <string name="help_tournament">Blindovi rastu svakih 10 ruku, pa žetoni razmjerno postaju kraći, a čekanje skupo. Ništa nije vremenski ograničeno: razmišljajte koliko želite. Završavate na mjestu jednakom broju preostalih igrača kad ispadnete, pa je 6. prvi koji ispada, a 1. je pobjeda.</string>
+    <string name="help_leave_title">Odlazak</string>
+    <string name="help_leave">Zastavica na vrhu prerano završava turnir, a vi završavate onamo gdje biste da ste sada ispali. Zatvaranje aplikacije ne završava turnir: ruka se sprema i čeka vas kad se vratite. Poništavanja nema, jer nakon svake odluke slijede karte koje niste mogli vidjeti.</string>
+
+    <string name="help_hands_intro">Od najjače ruke do najslabije. Prikazanih pet karata primjer je svake ruke.</string>
+    <string name="help_hand_straight_flush_title">Niz u boji</string>
+    <string name="help_hand_straight_flush">Pet karata u nizu, sve iste boje. Najbolji među njima, od desetke do asa, je royal flush.</string>
+    <string name="help_hand_four_title">Četiri iste</string>
+    <string name="help_hand_four">Četiri karte iste vrijednosti.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Tri karte jedne vrijednosti i dvije druge.</string>
+    <string name="help_hand_flush_title">Boja</string>
+    <string name="help_hand_flush">Bilo kojih pet karata iste boje.</string>
+    <string name="help_hand_straight_title">Niz</string>
+    <string name="help_hand_straight">Pet karata u nizu, bilo koje boje. As može biti visok, od desetke do asa, ili nizak, od asa do petice, ali nikad oboje odjednom.</string>
+    <string name="help_hand_three_title">Tri iste</string>
+    <string name="help_hand_three">Tri karte iste vrijednosti.</string>
+    <string name="help_hand_two_pair_title">Dva para</string>
+    <string name="help_hand_two_pair">Dvije karte jedne vrijednosti i dvije druge.</string>
+    <string name="help_hand_pair_title">Jedan par</string>
+    <string name="help_hand_pair">Dvije karte iste vrijednosti.</string>
+    <string name="help_hand_high_card_title">Visoka karta</string>
+    <string name="help_hand_high_card">Ništa od navedenog: računa se vaša najviša karta.</string>
+    <string name="help_ties_title">Izjednačenja</string>
+    <string name="help_ties">Ako dva igrača imaju istu vrstu ruke, pobjeđuju više karte. Dva para asova i sedmica pobjeđuju dva para kraljeva i dama, a kad se glavne karte podudaraju, odlučuje sljedeća najviša. Računa se samo pet karata, a boje nikad ne razrješavaju izjednačenje: jednake ruke dijele pot.</string>
+
+    <string name="help_strategy_intro">Sedam ideja koje dobro služe novom igraču. Neće dobiti svaku ruku, ali tijekom turnira se zbrajaju.</string>
+    <string name="help_strategy_1">Igrajte manje ruku s ranih mjesta. Prvi igrači na potezu imaju najviše protivnika iza sebe, pa tamo krenite samo s jakim kartama, a opustite se kako se mjesta približavaju gumbu.</string>
+    <string name="help_strategy_2">Podižite radije nego pratite. Podizanje može odmah osvojiti pot, a kad ga netko prati, češće imate jaču ruku. Praćenje samo daje drugima jeftin pogled na karte.</string>
+    <string name="help_strategy_3">Odustajte češće nego što vam je ugodno. Većina ruku nije vrijedna igre, a odbačena ruka košta vas samo ono što ste već uložili.</string>
+    <string name="help_strategy_4">Poznajte odnos uloga i pota. Ako vas praćenje košta 25 žetona za pot od 75, plaćate jedan žeton za svaka tri koja možete osvojiti, pa se isplati ako pobijedite više od jednom u četiri puta. Usporedite to sa svojom šansom da završite s najboljom rukom.</string>
+    <string name="help_strategy_5">Položaj je važan. Igranje zadnji omogućuje vam da prvo vidite što rade svi ostali, a to vrijedi puno. Igrajte više ruku s kasnih mjesta, a manje s ranih.</string>
+    <string name="help_strategy_6">Pratite stilove protivnika. Svako mjesto ima oznaku: tight, loose, aggressive ili passive. Poštujte podizanje čvrstog igrača, a sporije vjerujte ulogu opuštenog, agresivnog igrača.</string>
+    <string name="help_strategy_7">S kratkim stackom idite all in ili odustanite. Kad imate samo nekoliko velikih blindova, mali ulozi i praćenja ne ostavljaju vam prostora za manevar, a dobro tempirani all in vaša je najbolja šansa za udvostručenje.</string>
+</resources>

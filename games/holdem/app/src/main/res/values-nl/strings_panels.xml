@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Toernooien</string>
+    <string name="stat_section_finishes">Eindplaatsen</string>
+    <string name="stat_section_hands">Handen</string>
+
+    <string name="stat_tile_tournaments_played">Gespeeld</string>
+    <string name="stat_tile_tournaments_won">Gewonnen</string>
+    <string name="stat_tile_avg_finish">Gemiddelde plaats</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Gespeelde handen</string>
+    <string name="stat_tile_hands_won">Gewonnen handen</string>
+    <string name="stat_tile_showdowns_won">Gewonnen showdowns</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Grootste pot</string>
+    <string name="stat_tile_vpip">Vrijwillig mee vóór de flop</string>
+    <string name="stat_tile_pfr">Geraised vóór de flop</string>
+
+    <string name="place_1">1e</string>
+    <string name="place_2">2e</string>
+    <string name="place_3">3e</string>
+    <string name="place_4">4e</string>
+    <string name="place_5">5e</string>
+    <string name="place_6">6e</string>
+    <string name="cd_finish_bar">%1$s plaats: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, bijvoorbeeld %2$s</string>
+    <string name="cd_example_card">%1$s van %2$s</string>
+</resources>

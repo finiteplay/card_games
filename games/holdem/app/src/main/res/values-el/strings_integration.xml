@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Αποδόσεις ποτ %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Εκτιμώμενη πιθανότητα νίκης %1$d τοις εκατό απέναντι σε πιθανά χέρια· ένα κολ κοστίζει το %2$d τοις εκατό του ποτ.</string>
+    <string name="hint_notice_free_desc">Εκτιμώμενη πιθανότητα νίκης %1$d τοις εκατό απέναντι σε πιθανά χέρια.</string>
+
+    <string name="recovery_notice">Το αποθηκευμένο χέρι σου δεν άνοιξε, γι\' αυτό μοιράστηκε ξανά από την αρχή. Δεν χάθηκε καμία μάρκα.</string>
+</resources>

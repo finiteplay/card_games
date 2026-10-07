@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Zo speel je</string>
+    <string name="help_tab_rules">Regels</string>
+    <string name="help_tab_hands">Handen</string>
+    <string name="help_tab_strategy">Strategie</string>
+
+    <string name="help_goal_title">Het doel</string>
+    <string name="help_goal">Win alle fiches aan tafel. Je speelt een toernooi tegen vijf tegenstanders en iedereen begint met 1.500 fiches. Wie geen fiches meer heeft, ligt eruit, en de laatste speler die overblijft wint.</string>
+    <string name="help_hand_title">Een hand</string>
+    <string name="help_hand_cards">In elke hand krijg je twee privékaarten, je holekaarten. Vijf gedeelde kaarten liggen open in het midden: het board. Je hand bestaat uit de beste vijf kaarten van je twee kaarten en het board, waarbij je beide, één of geen van je eigen kaarten gebruikt.</string>
+    <string name="help_hand_flop">Na de holekaarten volgt een inzetronde. Dan komen er drie kaarten op het board, de flop, en weer een inzetronde. De vierde kaart, de turn, brengt nog een ronde, en de vijfde, de river, ook.</string>
+    <string name="help_actions_title">Je keuzes</string>
+    <string name="help_actions_check">Check: blijf in het spel zonder in te zetten, als niemand voor jou heeft ingezet.</string>
+    <string name="help_actions_call">Call: ga mee met de inzet waar je voor staat.</string>
+    <string name="help_actions_bet">Bet of Raise: zet meer fiches in. Kies het bedrag met de knoppen boven de balk: − en + gaan in stappen van de big blind, en ½ pot en Pot stellen het voor je in. Een raise moet minstens zo groot zijn als de laatste bet of raise.</string>
+    <string name="help_actions_fold">Fold: geef je kaarten op, met de fiches die je al hebt ingezet. Je doet alleen in deze hand niet meer mee.</string>
+    <string name="help_actions_all_in">All-in: zet al je fiches in.</string>
+    <string name="help_button_title">De button en de blinds</string>
+    <string name="help_button">De dealerbutton, gemarkeerd met D, gaat elke hand één plaats met de klok mee. De twee spelers erna moeten verplichte inzetten doen voordat de kaarten worden gedeeld: de small blind (SB) en de big blind (BB). Daarmee begint de pot, dus er valt altijd iets te winnen. De big blind bepaalt de kleinste inzet.</string>
+    <string name="help_allin_title">All-in en sidepots</string>
+    <string name="help_allin">Een speler die all-in is, kan niet worden weggedrukt, maar kan van elke speler maar zoveel winnen als hij zelf heeft ingezet. De fiches daarboven gaan in een sidepot die de all-in speler niet kan winnen. De potten staan op tafel, en elke pot gaat naar de beste hand van de spelers die erin hebben bijgedragen.</string>
+    <string name="help_showdown_title">De showdown</string>
+    <string name="help_showdown">Als na de laatste inzetronde nog twee of meer spelers meedoen, draaien ze hun kaarten om en wint de beste hand de pot. Als alle anderen folden, wint de laatste speler de pot zonder zijn kaarten te tonen. Gelijke handen delen de pot gelijk.</string>
+    <string name="help_tournament_title">Het toernooi</string>
+    <string name="help_tournament">De blinds gaan elke 10 handen omhoog, dus de fiches worden naar verhouding minder waard en wachten wordt duur. Er is geen tijdslimiet: neem zoveel tijd als je wilt. Je eindigt op de plaats die gelijk is aan het aantal spelers dat nog over is als je eruit ligt, dus 6e is als eerste eruit en 1e is de winst.</string>
+    <string name="help_leave_title">Stoppen</string>
+    <string name="help_leave">De vlag bovenaan beëindigt het toernooi eerder, en je eindigt waar je zou eindigen als je nu was uitgeschakeld. De app sluiten doet dat niet: je hand wordt bewaard en wacht op je als je terugkomt. Ongedaan maken bestaat niet, want na elke beslissing volgen kaarten die je niet kon zien.</string>
+
+    <string name="help_hands_intro">Van de sterkste hand naar de zwakste. De vijf getoonde kaarten zijn een voorbeeld van elke hand.</string>
+    <string name="help_hand_straight_flush_title">Straight flush</string>
+    <string name="help_hand_straight_flush">Vijf kaarten op rij, allemaal van één soort. De beste, tien tot aas, is een royal flush.</string>
+    <string name="help_hand_four_title">Carré</string>
+    <string name="help_hand_four">Vier kaarten van dezelfde waarde.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Drie kaarten van de ene waarde en twee van een andere.</string>
+    <string name="help_hand_flush_title">Flush</string>
+    <string name="help_hand_flush">Vijf willekeurige kaarten van één soort.</string>
+    <string name="help_hand_straight_title">Straight</string>
+    <string name="help_hand_straight">Vijf kaarten op rij, van willekeurige soorten. Een aas kan hoog zijn, tien tot aas, of laag, aas tot vijf, maar nooit allebei tegelijk.</string>
+    <string name="help_hand_three_title">Drie gelijke</string>
+    <string name="help_hand_three">Drie kaarten van dezelfde waarde.</string>
+    <string name="help_hand_two_pair_title">Twee paar</string>
+    <string name="help_hand_two_pair">Twee kaarten van de ene waarde en twee van een andere.</string>
+    <string name="help_hand_pair_title">Een paar</string>
+    <string name="help_hand_pair">Twee kaarten van dezelfde waarde.</string>
+    <string name="help_hand_high_card_title">Hoogste kaart</string>
+    <string name="help_hand_high_card">Niets van het bovenstaande: je hoogste kaart telt.</string>
+    <string name="help_ties_title">Gelijkspel</string>
+    <string name="help_ties">Als twee spelers dezelfde soort hand hebben, winnen de hogere kaarten. Twee paar azen en zevens verslaat twee paar heren en vrouwen, en als de hoofdkaarten gelijk zijn, beslist de volgende hoogste kaart. Alleen vijf kaarten tellen en de soort beslist nooit: gelijke handen delen de pot.</string>
+
+    <string name="help_strategy_intro">Zeven ideeën die een beginner goed van pas komen. Ze winnen niet elke hand, maar over een toernooi tellen ze op.</string>
+    <string name="help_strategy_1">Speel minder handen vanaf vroege plaatsen. De eerste spelers die aan de beurt zijn, hebben de meeste tegenstanders nog achter zich, dus begin daar alleen met sterke kaarten en speel losser naarmate de plaatsen dichter bij de button komen.</string>
+    <string name="help_strategy_2">Raise liever dan call. Met een raise kun je de pot meteen winnen, en als er wordt meegegaan heb je vaker de sterkere hand. Alleen callen laat anderen goedkoop kaarten zien.</string>
+    <string name="help_strategy_3">Fold vaker dan prettig voelt. De meeste handen zijn het spelen niet waard, en een gefolde hand kost je alleen wat je al had ingezet.</string>
+    <string name="help_strategy_4">Ken de potodds. Als een call 25 fiches kost om een pot van 75 te winnen, betaal je één fiche voor elke drie die je kunt winnen, dus de call loont als je vaker dan één op de vier keer wint. Vergelijk dat met je kans om met de beste hand te eindigen.</string>
+    <string name="help_strategy_5">Positie telt. Als laatste aan de beurt zijn laat je eerst zien wat iedereen doet, en dat is veel waard. Speel meer handen vanaf late plaatsen en minder vanaf vroege.</string>
+    <string name="help_strategy_6">Let op de speelstijlen van je tegenstanders. Elke plaats heeft een label: tight, loose, agressief of passief. Respecteer een raise van een tight speler en geloof een inzet van een losse, agressieve speler minder snel.</string>
+    <string name="help_strategy_7">Ga met een kleine stack all-in of fold. Als je fiches maar een paar big blinds zijn, laten kleine inzetten en calls je geen ruimte, en een goed getimede all-in is je beste kans om te verdubbelen.</string>
+</resources>

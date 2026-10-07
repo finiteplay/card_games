@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">Τουρνουά</string>
+    <string name="stat_section_finishes">Τερματισμοί</string>
+    <string name="stat_section_hands">Χέρια</string>
+
+    <string name="stat_tile_tournaments_played">Παιγμένα</string>
+    <string name="stat_tile_tournaments_won">Νίκες</string>
+    <string name="stat_tile_avg_finish">Μέση θέση</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Χέρια που παίχτηκαν</string>
+    <string name="stat_tile_hands_won">Χέρια που κερδήθηκαν</string>
+    <string name="stat_tile_showdowns_won">Σόουνταουν που κερδήθηκαν</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Μεγαλύτερο ποτ</string>
+    <string name="stat_tile_vpip">Εθελοντικά στο χέρι πριν το φλοπ</string>
+    <string name="stat_tile_pfr">Ρέιζ πριν το φλοπ</string>
+
+    <string name="place_1">1η</string>
+    <string name="place_2">2η</string>
+    <string name="place_3">3η</string>
+    <string name="place_4">4η</string>
+    <string name="place_5">5η</string>
+    <string name="place_6">6η</string>
+    <string name="cd_finish_bar">Θέση %1$s: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, για παράδειγμα %2$s</string>
+    <string name="cd_example_card">%1$s, %2$s</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">토너먼트</string>
+    <string name="stat_section_finishes">순위</string>
+    <string name="stat_section_hands">핸드</string>
+    <string name="stat_tile_tournaments_played">플레이</string>
+    <string name="stat_tile_tournaments_won">우승</string>
+    <string name="stat_tile_avg_finish">평균 순위</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+    <string name="stat_tile_hands_played">플레이한 핸드</string>
+    <string name="stat_tile_hands_won">이긴 핸드</string>
+    <string name="stat_tile_showdowns_won">쇼다운 승리</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">가장 큰 팟</string>
+    <string name="stat_tile_vpip">플랍 전 자발적 참여</string>
+    <string name="stat_tile_pfr">플랍 전 레이즈</string>
+    <string name="place_1">1위</string>
+    <string name="place_2">2위</string>
+    <string name="place_3">3위</string>
+    <string name="place_4">4위</string>
+    <string name="place_5">5위</string>
+    <string name="place_6">6위</string>
+    <string name="cd_finish_bar">%1$s: %2$d</string>
+    <string name="cd_example_hand">%1$s, 예: %2$s</string>
+    <string name="cd_example_card">%2$s %1$s</string>
+</resources>

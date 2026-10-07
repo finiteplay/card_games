@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">طريقة اللعب</string>
+    <string name="help_tab_rules">القواعد</string>
+    <string name="help_tab_hands">الأيدي</string>
+    <string name="help_tab_strategy">الاستراتيجية</string>
+
+    <string name="help_goal_title">الهدف</string>
+    <string name="help_goal">اربح كل الرقائق على الطاولة. تلعب بطولة ضد خمسة خصوم، ويبدأ كل لاعب بـ 1,500 رقاقة. عندما تنفد رقائق لاعب يخرج من اللعبة، ويفوز آخر لاعب يبقى.</string>
+    <string name="help_hand_title">اليد</string>
+    <string name="help_hand_cards">في كل يد تحصل على ورقتين خاصتين بك، وهما أوراقك المغلقة. توضع خمس أوراق مشتركة مكشوفة في المنتصف وتُسمى اللوحة. يدك هي أفضل خمس أوراق من ورقتيك واللوحة، ويمكنك استخدام الورقتين أو واحدة أو لا شيء منهما.</string>
+    <string name="help_hand_flop">بعد الأوراق المغلقة تأتي جولة رهان. ثم تُكشف ثلاث أوراق على اللوحة، وهي الفلوب، وتأتي جولة رهان أخرى. الورقة الرابعة، التيرن، تأتي بجولة أخرى، وكذلك الخامسة، الريفر.</string>
+    <string name="help_actions_title">خياراتك</string>
+    <string name="help_actions_check">تمرير (Check): ابقَ في اليد دون رهان، عندما لا يكون أحد قد راهن قبلك.</string>
+    <string name="help_actions_call">مجاراة (Call): ادفع مثل الرهان الذي تواجهه.</string>
+    <string name="help_actions_bet">راهن أو ارفع: ضع المزيد من الرقائق. اختر المبلغ بالأزرار فوق الشريط: − و + تغيّران المبلغ بمقدار البلايند الكبير، و½ البوت والبوت يضبطانه عنك. يجب ألا يقل الرفع عن حجم آخر رهان أو رفع.</string>
+    <string name="help_actions_fold">انسحاب (Fold): تخلَّ عن أوراقك والرقائق التي وضعتها. تخرج من هذه اليد فقط.</string>
+    <string name="help_actions_all_in">الكل: راهن بكل الرقائق التي تملكها.</string>
+    <string name="help_button_title">الزر والبلايند</string>
+    <string name="help_button">زر الموزّع، المميّز بحرف D، ينتقل مقعدًا واحدًا مع اتجاه عقارب الساعة في كل يد. على اللاعبَين اللذين بعده وضع رهانين إجباريين قبل توزيع الأوراق: البلايند الصغير (SB) والبلايند الكبير (BB). هكذا يبدأ البوت، فيكون هناك دائمًا ما يُلعب من أجله. البلايند الكبير يحدد أصغر رهان.</string>
+    <string name="help_allin_title">الكل والبوت الجانبي</string>
+    <string name="help_allin">اللاعب الذي راهن بكل رقائقه لا يمكن إخراجه، لكنه لا يربح من كل لاعب إلا بقدر ما وضعه هو. الرقائق الزائدة تذهب إلى بوت جانبي لا يستطيع هذا اللاعب ربحه. تظهر البوتات على الطاولة، ويذهب كل منها إلى أفضل يد بين اللاعبين الذين دفعوا فيه.</string>
+    <string name="help_showdown_title">المواجهة</string>
+    <string name="help_showdown">إذا بقي لاعبان أو أكثر بعد آخر جولة رهان، يكشفون أوراقهم وتربح أفضل يد البوت. إذا انسحب الجميع، يربح آخر لاعب البوت دون كشف أوراقه. اليدان المتعادلتان تتقاسمان البوت بالتساوي.</string>
+    <string name="help_tournament_title">البطولة</string>
+    <string name="help_tournament">يرتفع البلايند كل 10 أيدٍ، فتصبح الرقائق أقصر نسبيًا وينتظر اللاعب بكلفة عالية. لا يوجد توقيت: خذ وقتك كما تشاء. تنتهي في المركز الذي يساوي عدد اللاعبين المتبقين عند خروجك، فالسادس هو أول الخارجين والأول هو الفوز.</string>
+    <string name="help_leave_title">المغادرة</string>
+    <string name="help_leave">العلم في الأعلى ينهي البطولة مبكرًا، فتنتهي في المركز الذي كنت ستنتهي فيه لو خرجت الآن. أما إغلاق التطبيق فلا ينهيها: تُحفظ يدك وتنتظرك عند عودتك. لا يوجد تراجع، لأن كل قرار تتبعه أوراق لم يكن بإمكانك رؤيتها.</string>
+
+    <string name="help_hands_intro">من أقوى يد إلى أضعفها. الأوراق الخمس المعروضة مثال على كل يد.</string>
+    <string name="help_hand_straight_flush_title">ستريت فلاش</string>
+    <string name="help_hand_straight_flush">خمس أوراق متتالية كلها من نوع واحد. أفضلها، من العشرة إلى الآس، هي الرويال فلاش.</string>
+    <string name="help_hand_four_title">رباعية</string>
+    <string name="help_hand_four">أربع أوراق من الرتبة نفسها.</string>
+    <string name="help_hand_full_house_title">فل هاوس</string>
+    <string name="help_hand_full_house">ثلاث أوراق من رتبة وورقتان من رتبة أخرى.</string>
+    <string name="help_hand_flush_title">فلاش</string>
+    <string name="help_hand_flush">أي خمس أوراق من نوع واحد.</string>
+    <string name="help_hand_straight_title">ستريت</string>
+    <string name="help_hand_straight">خمس أوراق متتالية من أي أنواع. يمكن أن يكون الآس عاليًا، من العشرة إلى الآس، أو منخفضًا، من الآس إلى الخمسة، لكن ليس الاثنين معًا.</string>
+    <string name="help_hand_three_title">ثلاثية</string>
+    <string name="help_hand_three">ثلاث أوراق من الرتبة نفسها.</string>
+    <string name="help_hand_two_pair_title">زوجان</string>
+    <string name="help_hand_two_pair">ورقتان من رتبة وورقتان من رتبة أخرى.</string>
+    <string name="help_hand_pair_title">زوج</string>
+    <string name="help_hand_pair">ورقتان من الرتبة نفسها.</string>
+    <string name="help_hand_high_card_title">أعلى ورقة</string>
+    <string name="help_hand_high_card">لا شيء مما سبق: تُحتسب أعلى ورقة لديك.</string>
+    <string name="help_ties_title">التعادل</string>
+    <string name="help_ties">إذا كان للاعبَين النوع نفسه من الأيدي، تفوز الأوراق الأعلى. زوجان من الآسات والسبعات يتفوقان على زوجين من الملوك والملكات، وعندما تتطابق الأوراق الرئيسية تحسم الورقة التالية الأعلى. تُحتسب خمس أوراق فقط، ولا تحسم الأنواع أي تعادل: الأيدي المتساوية تتقاسم البوت.</string>
+
+    <string name="help_strategy_intro">سبع أفكار تفيد اللاعب الجديد. لن تربح كل يد، لكنها تتراكم عبر البطولة.</string>
+    <string name="help_strategy_1">العب أيديًا أقل من المقاعد المبكرة. أول من يلعب لديه أكبر عدد من الخصوم بعده، لذلك ابدأ هناك بأوراق قوية فقط، ثم توسّع كلما اقتربت المقاعد من الزر.</string>
+    <string name="help_strategy_2">ارفع بدلًا من أن تجاري. الرفع قد يربح البوت فورًا، وعندما يجاريه أحد تكون يدك أقوى في أغلب الأحيان. المجاراة تتيح للآخرين رؤية أوراق رخيصة فقط.</string>
+    <string name="help_strategy_3">انسحب أكثر مما يريحك. معظم الأيدي لا تستحق اللعب، والانسحاب لا يكلفك إلا ما وضعته بالفعل.</string>
+    <string name="help_strategy_4">اعرف نسبة البوت. إذا كانت المجاراة تكلفك 25 رقاقة لربح بوت من 75، فأنت تدفع رقاقة مقابل كل ثلاث يمكنك ربحها، فتجدي المجاراة إذا ربحت أكثر من مرة من كل أربع. قارن ذلك بفرصتك في إنهاء اليد بأفضل أوراق.</string>
+    <string name="help_strategy_5">الموقع مهم. اللعب في آخر الدور يتيح لك رؤية ما يفعله الجميع أولًا، وهذا ثمين. العب أيديًا أكثر من المقاعد المتأخرة وأقل من المبكرة.</string>
+    <string name="help_strategy_6">راقب أساليب الخصوم. كل مقعد موسوم بأنه tight أو loose أو aggressive أو passive. احترم رفع اللاعب الـ tight، وكن أبطأ في تصديق رهان لاعب loose وaggressive.</string>
+    <string name="help_strategy_7">بحصة قصيرة، راهن بكل شيء أو انسحب. عندما لا تملك إلا بضعة بلايندات كبيرة، لا تترك لك الرهانات الصغيرة والمجاراة مجالًا للمناورة، والرهان بكل شيء في الوقت المناسب هو أفضل فرصة لمضاعفة رقائقك.</string>
+</resources>

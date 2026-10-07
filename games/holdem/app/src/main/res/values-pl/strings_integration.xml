@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Szanse puli %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Szacowana szansa na wygraną to %1$d procent przeciw prawdopodobnym układom; wyrównanie kosztuje %2$d procent puli.</string>
+    <string name="hint_notice_free_desc">Szacowana szansa na wygraną to %1$d procent przeciw prawdopodobnym układom.</string>
+
+    <string name="recovery_notice">Nie udało się otworzyć zapisanego rozdania, więc rozdano je od nowa. Żadne żetony nie przepadły.</string>
+</resources>

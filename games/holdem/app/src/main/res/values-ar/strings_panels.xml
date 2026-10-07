@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">البطولات</string>
+    <string name="stat_section_finishes">المراكز</string>
+    <string name="stat_section_hands">الأيدي</string>
+
+    <string name="stat_tile_tournaments_played">الملعوبة</string>
+    <string name="stat_tile_tournaments_won">الانتصارات</string>
+    <string name="stat_tile_avg_finish">متوسط المركز</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">الأيدي الملعوبة</string>
+    <string name="stat_tile_hands_won">الأيدي الرابحة</string>
+    <string name="stat_tile_showdowns_won">المواجهات الرابحة</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">أكبر بوت</string>
+    <string name="stat_tile_vpip">دخول طوعي قبل الفلوب</string>
+    <string name="stat_tile_pfr">رفع قبل الفلوب</string>
+
+    <string name="place_1">الأول</string>
+    <string name="place_2">الثاني</string>
+    <string name="place_3">الثالث</string>
+    <string name="place_4">الرابع</string>
+    <string name="place_5">الخامس</string>
+    <string name="place_6">السادس</string>
+    <string name="cd_finish_bar">المركز %1$s: %2$d</string>
+
+    <string name="cd_example_hand">%1$s، مثلًا %2$s</string>
+    <string name="cd_example_card">%1$s من %2$s</string>
+</resources>

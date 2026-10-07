@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Hogyan kell játszani</string>
+    <string name="help_tab_rules">Szabályok</string>
+    <string name="help_tab_hands">Kezek</string>
+    <string name="help_tab_strategy">Stratégia</string>
+
+    <string name="help_goal_title">A cél</string>
+    <string name="help_goal">Nyerd meg az asztal összes zsetonját. Versenyen játszol öt ellenfél ellen, és mindenki 1500 zsetonnal indul. Ha egy játékosnak elfogynak a zsetonjai, kiesik, és az nyer, aki utolsóként marad.</string>
+    <string name="help_hand_title">Egy kéz</string>
+    <string name="help_hand_cards">Minden kézben két privát lapot kapsz, ezek a zsebkártyáid. Öt közös lap kerül felfordítva középre, ezt hívják boardnak. A kezed a két lapodból és a boardból kirakható legjobb öt lap, amelyben mindkét lapodat, az egyiket vagy egyiket sem használhatod.</string>
+    <string name="help_hand_flop">A zsebkártyák után egy tétkör jön. Majd három lap kerül a boardra, ez a flop, és újabb tétkör következik. A negyedik lap, a turn, újabb kört hoz, és az ötödik, a river is.</string>
+    <string name="help_actions_title">A lehetőségeid</string>
+    <string name="help_actions_check">Passz (check): bennmaradsz tét nélkül, ha előtted senki sem tett tétet.</string>
+    <string name="help_actions_call">Megad (call): kiegyenlíted a tétet, amellyel szembenézel.</string>
+    <string name="help_actions_bet">Tét vagy Emelés: több zsetont teszel be. Az összeget a sáv feletti gombokkal választod ki: a − és a + a nagy vakkal lépked, a ½ pot és a Pot pedig beállítja helyetted. Az emelésnek legalább akkorának kell lennie, mint az utolsó tét vagy emelés.</string>
+    <string name="help_actions_fold">Eldob (fold): feladod a lapjaidat és a már betett zsetonjaidat. Csak ebből a kézből esel ki.</string>
+    <string name="help_actions_all_in">All in: feltesz minden zsetonodat.</string>
+    <string name="help_button_title">A gomb és a vakok</string>
+    <string name="help_button">A D betűvel jelölt osztógomb minden kézben egy hellyel továbbmegy az óramutató járásával megegyező irányban. A mögötte ülő két játékosnak kötelező tétet kell betennie a lapok kiosztása előtt: a kis vakot (SB) és a nagy vakot (BB). Ezzel indul a pot, így mindig van miért játszani. A nagy vak határozza meg a legkisebb tétet.</string>
+    <string name="help_allin_title">All in és mellékpotok</string>
+    <string name="help_allin">Az all in álló játékost nem lehet kiszorítani, de mindenkitől csak annyit nyerhet, amennyit ő maga betett. Az ezen felüli zsetonok mellékpotba kerülnek, amelyet az all in álló játékos nem nyerhet meg. A potok látszanak az asztalon, és mindegyik a legjobb kézhez kerül azok közül, akik fizettek bele.</string>
+    <string name="help_showdown_title">A showdown</string>
+    <string name="help_showdown">Ha az utolsó tétkör után két vagy több játékos még játékban van, felfordítják a lapjaikat, és a legjobb kéz nyeri a potot. Ha mindenki más eldobja a lapjait, az utolsó játékos úgy nyeri a potot, hogy nem mutatja meg a lapjait. Az azonos erejű kezek egyenlően osztoznak a poton.</string>
+    <string name="help_tournament_title">A verseny</string>
+    <string name="help_tournament">A vakok 10 kézenként emelkednek, így a zsetonok aránylag kevesebbek lesznek, és a várakozás drága. Semmi sincs időhöz kötve: annyi ideig gondolkodhatsz, amennyit szeretnél. Abban a helyezésben végzel, ahány játékos még játékban van, amikor kiesel, vagyis a 6. az első kiesett, az 1. pedig a győzelem.</string>
+    <string name="help_leave_title">Kilépés</string>
+    <string name="help_leave">A felső zászló korán véget vet a versenynek, és ott végzel, ahol akkor végeznél, ha most esnél ki. Az alkalmazás bezárása nem ezt teszi: a kezed elmentődik, és visszatérve vár rád. Nincs visszavonás, mert minden döntés után olyan lapok jönnek, amelyeket nem láthattál.</string>
+
+    <string name="help_hands_intro">A legerősebb kéztől a leggyengébbig. A mutatott öt lap mindegyikre egy példa.</string>
+    <string name="help_hand_straight_flush_title">Színsor</string>
+    <string name="help_hand_straight_flush">Öt egymást követő lap, mind azonos színű. A legjobb, a tíztől az ászig, a royal flush.</string>
+    <string name="help_hand_four_title">Póker</string>
+    <string name="help_hand_four">Négy azonos rangú lap.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Három lap az egyik rangból és kettő egy másikból.</string>
+    <string name="help_hand_flush_title">Szín</string>
+    <string name="help_hand_flush">Bármilyen öt azonos színű lap.</string>
+    <string name="help_hand_straight_title">Sor</string>
+    <string name="help_hand_straight">Öt egymást követő lap, bármilyen színekkel. Az ász lehet magas, a tíztől az ászig, vagy alacsony, az ásztól az ötösig, de sosem egyszerre mindkettő.</string>
+    <string name="help_hand_three_title">Drill</string>
+    <string name="help_hand_three">Három azonos rangú lap.</string>
+    <string name="help_hand_two_pair_title">Két pár</string>
+    <string name="help_hand_two_pair">Két lap az egyik rangból és kettő egy másikból.</string>
+    <string name="help_hand_pair_title">Egy pár</string>
+    <string name="help_hand_pair">Két azonos rangú lap.</string>
+    <string name="help_hand_high_card_title">Magas lap</string>
+    <string name="help_hand_high_card">A fentiek egyike sem: a legmagasabb lapod számít.</string>
+    <string name="help_ties_title">Döntetlenek</string>
+    <string name="help_ties">Ha két játékosnak azonos fajta keze van, a magasabb lapok nyernek. Az ászokból és hetesekből álló két pár megveri a királyokból és dámákból állót, és ha a fő lapok egyeznek, a következő legmagasabb lap dönt. Csak öt lap számít, és a színek sosem döntenek: az egyenlő kezek megosztják a potot.</string>
+
+    <string name="help_strategy_intro">Hét ötlet, amely jól szolgálja az új játékost. Nem nyernek meg minden kezet, de egy verseny alatt összeadódnak.</string>
+    <string name="help_strategy_1">Játssz kevesebb kezet a korai helyekről. Az elsőként döntőknek van a legtöbb ellenfele még hátra, ezért ott csak erős lapokkal indulj, és lazíts, ahogy közeledsz az osztógombhoz.</string>
+    <string name="help_strategy_2">Inkább emelj, mint hogy megadd. Egy emelés azonnal megnyerheti a potot, és ha megadják, gyakrabban neked van az erősebb kezed. A puszta megadás olcsón engedi mások számára a lapok megnézését.</string>
+    <string name="help_strategy_3">Dobj el többet, mint amennyi kényelmes. A legtöbb kezet nem éri meg játszani, és az eldobott kéz csak azt költi, amit már betettél.</string>
+    <string name="help_strategy_4">Ismerd a pot oddsot. Ha egy megadás 25 zsetonba kerül egy 75-ös pot megnyeréséhez, minden három megnyerhető zsetonért egyet fizetsz, így a megadás megéri, ha négyből több mint egyszer nyersz. Hasonlítsd ezt ahhoz, mekkora eséllyel végzel a legjobb kézzel.</string>
+    <string name="help_strategy_5">A pozíció számít. Ha utolsóként döntesz, előbb láthatod, mit tesz mindenki más, ami sokat ér. Játssz több kezet a kései helyekről, és kevesebbet a koraiakról.</string>
+    <string name="help_strategy_6">Figyeld az ellenfelek stílusát. Minden helyen van címke: szoros, laza, agresszív vagy passzív. Tiszteld a szoros játékos emelését, és lassabban higgy egy laza, agresszív játékos tétjének.</string>
+    <string name="help_strategy_7">Kis stackkel menj all in vagy dobj el. Ha csak néhány nagy vakod van, a kis tétek és a megadások nem hagynak mozgásteret, és egy jól időzített all in a legjobb esélyed a megduplázódásra.</string>
+</resources>

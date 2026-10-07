@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">トーナメント</string>
+    <string name="stat_section_finishes">順位</string>
+    <string name="stat_section_hands">ハンド</string>
+    <string name="stat_tile_tournaments_played">プレイ数</string>
+    <string name="stat_tile_tournaments_won">優勝</string>
+    <string name="stat_tile_avg_finish">平均順位</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+    <string name="stat_tile_hands_played">プレイしたハンド</string>
+    <string name="stat_tile_hands_won">勝ったハンド</string>
+    <string name="stat_tile_showdowns_won">ショーダウン勝利</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">最大のポット</string>
+    <string name="stat_tile_vpip">フロップ前に自発的に参加</string>
+    <string name="stat_tile_pfr">フロップ前にレイズ</string>
+    <string name="place_1">1位</string>
+    <string name="place_2">2位</string>
+    <string name="place_3">3位</string>
+    <string name="place_4">4位</string>
+    <string name="place_5">5位</string>
+    <string name="place_6">6位</string>
+    <string name="cd_finish_bar">%1$s：%2$d</string>
+    <string name="cd_example_hand">%1$s、例：%2$s</string>
+    <string name="cd_example_card">%2$sの%1$s</string>
+</resources>

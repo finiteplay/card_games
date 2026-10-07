@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">فرصة الفوز %1$d%% · نسبة البوت %2$d%%</string>
+    <string name="hint_notice_free">فرصة الفوز %1$d%%</string>
+    <string name="hint_notice_desc">فرصة الفوز المقدّرة %1$d بالمئة ضد الأيدي المحتملة؛ والمجاراة تكلّف %2$d بالمئة من البوت.</string>
+    <string name="hint_notice_free_desc">فرصة الفوز المقدّرة %1$d بالمئة ضد الأيدي المحتملة.</string>
+
+    <string name="recovery_notice">تعذّر فتح يدك المحفوظة، فوُزّعت من جديد من البداية. لم تضع أي رقائق.</string>
+</resources>

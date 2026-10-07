@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Sådan spiller du</string>
+    <string name="help_tab_rules">Regler</string>
+    <string name="help_tab_hands">Hænder</string>
+    <string name="help_tab_strategy">Strategi</string>
+
+    <string name="help_goal_title">Målet</string>
+    <string name="help_goal">Vind alle jetonerne ved bordet. Du spiller en turnering mod fem modstandere, og alle starter med 1.500 jetoner. Når en spiller løber tør for jetoner, er vedkommende ude, og den sidste spiller, der er tilbage, vinder.</string>
+    <string name="help_hand_title">En hånd</string>
+    <string name="help_hand_cards">I hver hånd får du to private kort, dine hole cards. Fem fælles kort lægges åbne i midten, kaldet boardet. Din hånd er de bedste fem kort af dine to og boardet, hvor du bruger begge, ét eller ingen af dine egne.</string>
+    <string name="help_hand_flop">Efter hole cards kommer en indsatsrunde. Så deles tre kort ud på boardet, floppet, og endnu en indsatsrunde følger. Det fjerde kort, turn, giver endnu en runde, og det femte, river, gør det også.</string>
+    <string name="help_actions_title">Dine valg</string>
+    <string name="help_actions_check">Check: bliv i spillet uden at satse, når ingen før dig har satset.</string>
+    <string name="help_actions_call">Call: match den indsats, du står over for.</string>
+    <string name="help_actions_bet">Bet eller Raise: læg flere jetoner ind. Vælg beløbet med knapperne over bjælken: − og + går i trin af big blind, og ½ pot og Pot sætter det for dig. Et raise skal mindst være lige så stort som den sidste indsats eller det sidste raise.</string>
+    <string name="help_actions_fold">Fold: opgiv dine kort og de jetoner, du har lagt ind. Du er kun ude af denne hånd.</string>
+    <string name="help_actions_all_in">All in: sats alle de jetoner, du har.</string>
+    <string name="help_button_title">Buttonen og blinds</string>
+    <string name="help_button">Dealerbuttonen, markeret med D, rykker ét sæde med uret hver hånd. De to spillere efter den skal lægge tvungne indsatser ind, før kortene deles ud: small blind (SB) og big blind (BB). Det starter potten, så der altid er noget at spille om. Big blind afgør den mindste indsats.</string>
+    <string name="help_allin_title">All in og sidepots</string>
+    <string name="help_allin">En spiller, der er all in, kan ikke presses ud, men kan kun vinde lige så meget af hver spiller, som vedkommende selv har lagt ind. Jetoner ud over det går i en sidepot, som all in-spilleren ikke kan vinde. Potterne vises på bordet, og hver går til den bedste hånd blandt de spillere, der har betalt ind til den.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Hvis to eller flere spillere er tilbage efter sidste indsatsrunde, vender de deres kort, og den bedste hånd vinder potten. Hvis alle andre folder, vinder den sidste spiller potten uden at vise sine kort. Ens hænder deler potten ligeligt.</string>
+    <string name="help_tournament_title">Turneringen</string>
+    <string name="help_tournament">Blinds stiger hver 10. hånd, så jetonerne bliver forholdsmæssigt færre, og det bliver dyrt at vente. Intet er tidsbegrænset: tag den tid, du vil. Du slutter på den plads, der svarer til antallet af spillere tilbage, når du bliver slået ud, så 6. er først ude, og 1. er sejren.</string>
+    <string name="help_leave_title">Forlade</string>
+    <string name="help_leave">Flaget øverst afslutter turneringen tidligt, og du slutter, hvor du ville være endt, hvis du blev slået ud nu. Det gør det ikke at lukke appen: din hånd gemmes og venter, når du kommer tilbage. Der er ingen fortryd, fordi hver beslutning efterfølges af kort, du ikke kunne se.</string>
+
+    <string name="help_hands_intro">Fra den stærkeste hånd til den svageste. De fem viste kort er ét eksempel på hver.</string>
+    <string name="help_hand_straight_flush_title">Straight flush</string>
+    <string name="help_hand_straight_flush">Fem kort i rækkefølge, alle i samme farve. Den bedste, ti til es, er en royal flush.</string>
+    <string name="help_hand_four_title">Fire ens</string>
+    <string name="help_hand_four">Fire kort af samme værdi.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Tre kort af én værdi og to af en anden.</string>
+    <string name="help_hand_flush_title">Flush</string>
+    <string name="help_hand_flush">Fem vilkårlige kort i samme farve.</string>
+    <string name="help_hand_straight_title">Straight</string>
+    <string name="help_hand_straight">Fem kort i rækkefølge, i vilkårlige farver. Et es kan være højt, ti til es, eller lavt, es til fem, men aldrig begge dele på én gang.</string>
+    <string name="help_hand_three_title">Tre ens</string>
+    <string name="help_hand_three">Tre kort af samme værdi.</string>
+    <string name="help_hand_two_pair_title">To par</string>
+    <string name="help_hand_two_pair">To kort af én værdi og to af en anden.</string>
+    <string name="help_hand_pair_title">Ét par</string>
+    <string name="help_hand_pair">To kort af samme værdi.</string>
+    <string name="help_hand_high_card_title">Højt kort</string>
+    <string name="help_hand_high_card">Ingen af ovenstående: dit højeste kort tæller.</string>
+    <string name="help_ties_title">Uafgjort</string>
+    <string name="help_ties">Hvis to spillere har samme slags hånd, vinder de højeste kort. To par esser og syvere slår to par konger og damer, og når hovedkortene er ens, afgør det næsthøjeste kort. Kun fem kort tæller, og farver afgør aldrig noget: ens hænder deler potten.</string>
+
+    <string name="help_strategy_intro">Syv idéer, der klæder en ny spiller godt på. De vinder ikke hver hånd, men over en turnering lægger de sig sammen.</string>
+    <string name="help_strategy_1">Spil færre hænder fra tidlige sæder. De første, der handler, har flest modstandere tilbage, så start kun med stærke kort dér, og spil løsere, jo tættere på buttonen sæderne er.</string>
+    <string name="help_strategy_2">Raise hellere end at calle. Et raise kan vinde potten med det samme, og når det bliver called, har du oftere den stærkeste hånd. At calle lader bare andre se kort billigt.</string>
+    <string name="help_strategy_3">Fold oftere, end det føles behageligt. De fleste hænder er ikke værd at spille, og en foldet hånd koster dig kun det, du allerede har lagt ind.</string>
+    <string name="help_strategy_4">Kend pot odds. Hvis et call koster 25 jetoner for at vinde en pot på 75, betaler du én jeton for hver tre, du kan vinde, så callet betaler sig, hvis du vinder oftere end én gang ud af fire. Sammenlign det med din chance for at ende med den bedste hånd.</string>
+    <string name="help_strategy_5">Position betyder noget. At handle sidst lader dig se, hvad alle andre gør først, og det er meget værd. Spil flere hænder fra sene sæder og færre fra tidlige.</string>
+    <string name="help_strategy_6">Hold øje med modstandernes stilarter. Hvert sæde er mærket tight, loose, aggressiv eller passiv. Respekter et raise fra en tight spiller, og vær langsommere til at tro på en indsats fra en loose, aggressiv en.</string>
+    <string name="help_strategy_7">Med en kort stack: gå all in eller fold. Når dine jetoner kun er nogle få big blinds, giver små indsatser og calls dig intet spillerum, og en godt timet all in er din bedste chance for at fordoble.</string>
+</resources>

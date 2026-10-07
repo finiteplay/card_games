@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">ทัวร์นาเมนต์</string>
+    <string name="stat_section_finishes">อันดับ</string>
+    <string name="stat_section_hands">มือ</string>
+    <string name="stat_tile_tournaments_played">เล่นแล้ว</string>
+    <string name="stat_tile_tournaments_won">ชนะ</string>
+    <string name="stat_tile_avg_finish">อันดับเฉลี่ย</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+    <string name="stat_tile_hands_played">มือที่เล่น</string>
+    <string name="stat_tile_hands_won">มือที่ชนะ</string>
+    <string name="stat_tile_showdowns_won">ชนะโชว์ดาวน์</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">พอตที่ใหญ่ที่สุด</string>
+    <string name="stat_tile_vpip">สมัครใจลงก่อนฟล็อป</string>
+    <string name="stat_tile_pfr">เรสก่อนฟล็อป</string>
+    <string name="place_1">ที่ 1</string>
+    <string name="place_2">ที่ 2</string>
+    <string name="place_3">ที่ 3</string>
+    <string name="place_4">ที่ 4</string>
+    <string name="place_5">ที่ 5</string>
+    <string name="place_6">ที่ 6</string>
+    <string name="cd_finish_bar">อันดับ %1$s: %2$d</string>
+    <string name="cd_example_hand">%1$s ตัวอย่างเช่น %2$s</string>
+    <string name="cd_example_card">%1$s %2$s</string>
+</resources>
