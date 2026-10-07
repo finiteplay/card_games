@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Hint notice (UI_SPEC.md "Hint Presentation"): estimates, said as estimates. -->
+    <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Estimated chance to win %1$d percent against likely hands; a call costs %2$d percent of the pot.</string>
+    <string name="hint_notice_free_desc">Estimated chance to win %1$d percent against likely hands.</string>
+
+    <!-- Shown once when a saved hand could not be read (UI_SPEC.md "Screens and States"). -->
+    <string name="recovery_notice">Your saved hand couldn\'t be opened, so it was dealt again from the start. No chips were lost.</string>
+</resources>

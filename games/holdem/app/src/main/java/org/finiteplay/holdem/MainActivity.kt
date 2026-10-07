@@ -11,6 +11,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.SideEffect
+import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.initializer
+import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
@@ -19,6 +24,10 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import org.finiteplay.core.storage.AppLocale
 import org.finiteplay.core.ui.theme.FinitePlayTheme
 import org.finiteplay.core.ui.theme.resolveDark
+import org.finiteplay.holdem.storage.HoldemGameStorage
+import org.finiteplay.holdem.storage.HoldemHandStore
+import org.finiteplay.holdem.storage.HoldemSettingsStore
+import org.finiteplay.holdem.storage.HoldemTournamentStore
 import org.finiteplay.holdem.ui.GameScreen
 import org.finiteplay.holdem.ui.HoldemViewModel
 
@@ -37,7 +46,7 @@ class MainActivity : ComponentActivity() {
 /** The table, behind the shared theme and system-bar styling. */
 @Composable
 fun HoldemApp() {
-    val viewModel: HoldemViewModel = viewModel()
+    val viewModel: HoldemViewModel = viewModel(factory = rememberHoldemViewModelFactory())
     val darkTheme = viewModel.settings.themeMode.resolveDark()
 
     val activity = LocalActivity.current as? ComponentActivity
@@ -64,5 +73,21 @@ fun HoldemApp() {
             onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
         }
         GameScreen(viewModel = viewModel, modifier = Modifier.fillMaxSize())
+    }
+}
+
+/** Builds [HoldemViewModel] against app-private storage (`context.filesDir`). */
+@Composable
+private fun rememberHoldemViewModelFactory(): ViewModelProvider.Factory {
+    val filesDir = LocalContext.current.applicationContext.filesDir
+    return remember(filesDir) {
+        viewModelFactory {
+            initializer {
+                HoldemViewModel(
+                    storage = HoldemGameStorage(HoldemTournamentStore(filesDir), HoldemHandStore(filesDir)),
+                    settingsStore = HoldemSettingsStore(filesDir),
+                )
+            }
+        }
     }
 }

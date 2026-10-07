@@ -17,6 +17,9 @@ data class Sizing(val row: SizingRow, val amount: Int, val raise: Boolean, val s
 
     fun stepped(direction: Int): Sizing = copy(amount = (amount + direction * step).coerceIn(row.min, row.max))
 
+    /** The hint's amount, kept inside the legal range. */
+    fun withAmount(value: Int): Sizing = copy(amount = value.coerceIn(row.min, row.max))
+
     fun preset(preset: Preset): Sizing = copy(amount = if (preset == Preset.HALF_POT) row.halfPot else row.pot)
 
     /** The bet, or the raise to the street total, the row now reads. */

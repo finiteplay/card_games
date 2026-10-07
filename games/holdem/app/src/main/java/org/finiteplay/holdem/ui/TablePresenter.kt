@@ -77,6 +77,21 @@ object TablePresenter {
         )
     }
 
+    /**
+     * The table as it stood after [log] had been played from the start of the hand [start]: what a
+     * hand restored from a save shows. Built by stepping through the same states a live hand shows,
+     * keeping only the last model, so a restored table cannot differ from the one that was lost.
+     */
+    fun restored(start: HoldemState, log: List<org.finiteplay.holdem.rules.SeatAction>): TableModel {
+        var state = start
+        var model = dealt(state)
+        for (entry in log) {
+            state = checkNotNull(org.finiteplay.holdem.rules.apply(state, entry.seat, entry.action)) { "a saved action was illegal" }
+            model = afterAction(model, state).last().model
+        }
+        return model
+    }
+
     /** The table after the player left: as it stood, with the tournament over. */
     fun left(shown: TableModel, state: HoldemState): TableModel =
         shown.copy(actor = null, thinking = false, stage = Stage.TOURNAMENT_OVER, finishingPlace = state.places[0])

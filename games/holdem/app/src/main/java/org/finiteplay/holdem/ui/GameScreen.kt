@@ -1,6 +1,14 @@
 package org.finiteplay.holdem.ui
 
 import android.content.res.Configuration
+import org.finiteplay.core.storage.AppLocale
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.material3.CircularProgressIndicator
+import android.app.Activity
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -57,11 +65,14 @@ import org.finiteplay.holdem.R
 fun GameScreen(
     viewModel: HoldemViewModel,
     modifier: Modifier = Modifier,
-    onHelp: () -> Unit = {},
-    onStatistics: () -> Unit = {},
-    onSettings: () -> Unit = {},
 ) {
     val context = LocalContext.current
+    var showHelp by rememberSaveable { mutableStateOf(false) }
+    var showStatistics by rememberSaveable { mutableStateOf(false) }
+    var showSettings by rememberSaveable { mutableStateOf(false) }
+    val onHelp = { showHelp = true }
+    val onStatistics = { showStatistics = true }
+    val onSettings = { showSettings = true }
     val androidSoundPlayer = remember { AndroidSoundPlayer(context) }
     DisposableEffect(androidSoundPlayer) { onDispose { androidSoundPlayer.release() } }
     val soundPlayer = remember(androidSoundPlayer) {
@@ -84,7 +95,13 @@ fun GameScreen(
             .testTag("app_root")
             .feltTable(base = MaterialTheme.colorScheme.background, thread = LocalAppColors.current.card.emptySlot),
     ) { padding ->
-        val bar = BarState(table.stage, viewModel.legal, sizing, viewModel.busy)
+        if (viewModel.isLoading) {
+            Box(modifier = Modifier.fillMaxSize().padding(padding).testTag("loading"), contentAlignment = Alignment.Center) {
+                CircularProgressIndicator()
+            }
+            return@Scaffold
+        }
+        val bar = BarState(table.stage, viewModel.legal, sizing, viewModel.busy, viewModel.hintShown?.suggested)
         val actionBar: @Composable (BoardOrientation) -> Unit = { orientation ->
             ActionBar(
                 orientation = orientation,
@@ -94,17 +111,20 @@ fun GameScreen(
                 onNextHand = viewModel::nextHand,
                 onNewTournament = viewModel::newTournament,
                 onSettings = onSettings,
+                onHint = viewModel::requestHint,
             )
         }
         Box(modifier = Modifier.fillMaxSize().padding(padding)) {
             Column(modifier = Modifier.fillMaxSize()) {
                 StatusRow(table = table, onHelp = onHelp, onStatistics = onStatistics, onLeave = viewModel::requestLeave)
+                if (viewModel.recoveryNoticeVisible) RecoveryNotice(onDismiss = viewModel::dismissRecoveryNotice)
                 CompositionLocalProvider(LocalAnimateCards provides animate) {
                     if (landscape) {
                         Row(modifier = Modifier.fillMaxSize()) {
                             if (mirrored) actionBar(BoardOrientation.LANDSCAPE)
                             Box(modifier = Modifier.weight(1f).fillMaxSize()) {
                                 TableView(table, viewModel.profiles, landscape = true, animate = animate)
+                                viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.BottomCenter).padding(bottom = 4.dp)) }
                             }
                             Box(modifier = Modifier.width(TableGeometry.SIZING_COLUMN_WIDTH.dp).fillMaxSize()) {
                                 if (sizing != null) {
@@ -116,6 +136,7 @@ fun GameScreen(
                     } else {
                         Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
                             TableView(table, viewModel.profiles, landscape = false, animate = animate)
+                            viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.BottomCenter).padding(bottom = 4.dp)) }
                         }
                         // Always reserved, so the table does not jump when the row appears.
                         Box(modifier = Modifier.fillMaxWidth().height(TableGeometry.SIZING_ROW.dp)) {
@@ -143,6 +164,36 @@ fun GameScreen(
     }
     viewModel.restBreakRemainingSeconds?.let { remaining ->
         RestBreakDialog(remainingSeconds = remaining, onCancel = viewModel::cancelRestBreak)
+    }
+
+    BackHandler(enabled = showHelp || showStatistics || showSettings) {
+        when {
+            showSettings -> showSettings = false
+            showHelp -> showHelp = false
+            else -> showStatistics = false
+        }
+    }
+    if (showHelp) HelpScreen(onClose = { showHelp = false })
+    if (showStatistics) {
+        StatisticsScreen(statistics = viewModel.statistics, onReset = viewModel::resetStatistics, onClose = { showStatistics = false })
+    }
+    if (showSettings) {
+        SettingsScreen(
+            settings = viewModel.settings.toStore(),
+            restReminderElapsedSeconds = viewModel.restReminderElapsedSeconds,
+            onHandednessChange = viewModel::setHandedness,
+            onAnimationsChange = viewModel::setAnimationsEnabled,
+            onSoundChange = viewModel::setSoundEnabled,
+            onThemeChange = viewModel::setThemeMode,
+            onLanguageChange = { tag ->
+                viewModel.setLanguageTag(tag)
+                // Read in attachBaseContext, so it only takes hold on a fresh Activity.
+                AppLocale.setTag(context, tag)
+                (context as? Activity)?.recreate()
+            },
+            onRestReminderChange = viewModel::setRestReminderInterval,
+            onClose = { showSettings = false },
+        )
     }
 }
 

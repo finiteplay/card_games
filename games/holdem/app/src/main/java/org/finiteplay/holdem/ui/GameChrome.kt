@@ -18,6 +18,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.BarChart
 import androidx.compose.material.icons.filled.Bolt
 import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Flag
 import androidx.compose.material.icons.filled.PlayArrow
@@ -103,12 +104,14 @@ internal data class BarState(
     val legal: LegalActions?,
     val sizing: Sizing?,
     val busy: Boolean,
+    /** The action the hint recommends, whose button is highlighted. */
+    val suggested: org.finiteplay.holdem.rules.Action? = null,
 )
 
 /**
  * The action bar for the current state (`UI_SPEC.md` "Action Bar"): Settings, and on the player's turn
  * exactly the engine's legal actions, each with its amount in the label. An illegal action is never
- * drawn rather than drawn disabled. Hint is not offered yet: it arrives with the opponents (`EXECUTION_PLAN.md` H7).
+ * drawn rather than drawn disabled. Hint is last, on the player's turn only.
  */
 @Composable
 internal fun ActionBar(
@@ -119,6 +122,7 @@ internal fun ActionBar(
     onNextHand: () -> Unit,
     onNewTournament: () -> Unit,
     onSettings: () -> Unit,
+    onHint: () -> Unit = {},
 ) {
     val accents = LocalAppColors.current.action
     val legal = bar.legal
@@ -150,7 +154,68 @@ internal fun ActionBar(
             Stage.OPPONENT_TURN, Stage.SHOWDOWN -> Unit
         }
     }
-    BoardActionBar(orientation = orientation, mirrored = mirrored, actions = actions)
+    val withHint = if (bar.stage == Stage.YOUR_TURN && legal != null) {
+        actions + action(CoreR.string.action_hint, Icons.Filled.Lightbulb, accents.hint, !bar.busy, "action_hint", onHint)
+    } else {
+        actions
+    }
+    val suggestedTag = bar.suggested?.let(::actionTag)
+    BoardActionBar(
+        orientation = orientation,
+        mirrored = mirrored,
+        actions = withHint.map { if (it.testTag == suggestedTag) it.copy(highlighted = true) else it },
+    )
+}
+
+/** The button that plays [action]: the Hint answers by highlighting it. */
+private fun actionTag(action: org.finiteplay.holdem.rules.Action): String = when (action) {
+    org.finiteplay.holdem.rules.Action.Fold -> "action_fold"
+    org.finiteplay.holdem.rules.Action.Check -> "action_check"
+    org.finiteplay.holdem.rules.Action.Call -> "action_call"
+    is org.finiteplay.holdem.rules.Action.Bet -> "action_bet"
+    is org.finiteplay.holdem.rules.Action.Raise -> "action_raise"
+    org.finiteplay.holdem.rules.Action.AllIn -> "action_all_in"
+}
+
+/** The hint's one-line notice: the hand's estimated share of the pot and what a call costs (`UI_SPEC.md` "Hint Presentation"). */
+@Composable
+internal fun HintNotice(hint: HintShown, modifier: Modifier = Modifier) {
+    val equity = Math.round(hint.equity * 100).toInt()
+    val odds = Math.round(hint.potOdds * 100).toInt()
+    val text = if (hint.nothingToCall) stringResource(R.string.hint_notice_free, equity) else stringResource(R.string.hint_notice, equity, odds)
+    val spoken = if (hint.nothingToCall) stringResource(R.string.hint_notice_free_desc, equity) else stringResource(R.string.hint_notice_desc, equity, odds)
+    Surface(
+        shape = RoundedCornerShape(16.dp),
+        color = Color.Black.copy(alpha = 0.62f),
+        modifier = modifier.testTag("hint_notice").semantics(mergeDescendants = true) { contentDescription = spoken },
+    ) {
+        Text(
+            text = text,
+            style = MaterialTheme.typography.labelLarge,
+            fontWeight = FontWeight.SemiBold,
+            color = Color.White,
+            modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
+        )
+    }
+}
+
+/** The discarded-save banner: the hand could not be read and was dealt again, costing nothing. Dismissible. */
+@Composable
+internal fun RecoveryNotice(onDismiss: () -> Unit) {
+    Surface(color = MaterialTheme.colorScheme.errorContainer, modifier = Modifier.fillMaxWidth().testTag("recovery_notice")) {
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(
+                text = stringResource(R.string.recovery_notice),
+                style = MaterialTheme.typography.labelSmall,
+                modifier = Modifier.weight(1f, fill = false),
+            )
+            androidx.compose.material3.TextButton(onClick = onDismiss) { Text(stringResource(CoreR.string.action_dismiss)) }
+        }
+    }
 }
 
 @Composable
