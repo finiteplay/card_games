@@ -37,6 +37,10 @@ games/blackjack/rules   hand values, the shoe, the order of play, legal actions,
                         settlement, the reducer (no solver, no catalog, no undo)
 games/blackjack/app     the Android application: table, ledger and round stores
 
+games/holdem/rules      planned, not created (docs/games/holdem/EXECUTION_PLAN.md H1):
+games/holdem/opponents  evaluator, deal, betting, pots, tournament, reducer; the opponents'
+games/holdem/app        policy and the hint, from a seat's view only; the Android application
+
 tools/catalog           offline deal generator (desktop only, never on an app classpath)
 ```
 

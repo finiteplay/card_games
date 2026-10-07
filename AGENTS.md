@@ -90,6 +90,16 @@ implementation (`EXECUTION_PLAN.md`'s Status table says how far).
 - `ACCEPTANCE.md` — gates run and the release evidence, with what only hardware can settle marked open
 - `TODO.md` — deferred, out of first-release scope
 
+**Texas Hold'em** (`docs/games/holdem/`) — the fifth game and the second non-solitaire, designed
+but not started (`EXECUTION_PLAN.md`'s Status table says how far); `UI_SPEC.md` and `TODO.md` are
+its first package.
+
+- `DESIGN.md` — product (a six-seat sit-and-go against five opponents), interaction, hint, the
+  opponents and the bar they must meet, statistics, architecture, persistence
+- `RULES.md` — hand rankings, the tournament and its blinds, the deal, betting, legal actions,
+  pots and showdown, leaving
+- `EXECUTION_PLAN.md` — work packages H0–H9 and their gates
+
 A game's spec never restates the platform spec. Where they disagree, `PLATFORM.md`
 governs and the game's spec is the bug.
 
@@ -103,6 +113,7 @@ Full map and the "adding a game" recipe: `docs/ARCHITECTURE.md`.
 - `:games:spider:{rules,solver,app}` — the second game; its solver certifies catalogs and powers the on-device hint
 - `:games:freecell:{rules,solver,app}` — the third game
 - `:games:blackjack:{rules,app}` — the fourth game and the first non-solitaire: no solitaire layer, no solver, ever
+- `:games:holdem:{rules,opponents,app}` — planned, not created (`docs/games/holdem/EXECUTION_PLAN.md` H1)
 - `:tools:catalog` — desktop only. A `:benchmark` module is planned (Klondike's Q2), not yet created
 
 Dependencies run one way: `games/* → solitaire/* → core/*`. Nothing under `core/` or
