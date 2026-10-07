@@ -4,4 +4,63 @@
 
     <!-- Board title: the game's traditional name, identical in every locale like the other games'. -->
     <string name="game_title" translatable="false">Texas Hold\'em</string>
+
+    <!-- Help: three tabs. Hand names are also the showdown's labels. -->
+    <string name="help_title">How to play</string>
+    <string name="help_tab_rules">Rules</string>
+    <string name="help_tab_hands">Hands</string>
+    <string name="help_tab_strategy">Strategy</string>
+
+    <string name="help_goal_title">The goal</string>
+    <string name="help_goal">Win every chip at the table. You play a tournament against five opponents, and each starts with 1,500 chips. When a player runs out of chips they are out, and the last player left wins.</string>
+    <string name="help_hand_title">A hand</string>
+    <string name="help_hand_cards">Each hand, you get two private cards, your hole cards. Five shared cards go face up in the middle, called the board. Your hand is the best five cards from your two and the board, using both, one, or neither of yours.</string>
+    <string name="help_hand_flop">After the hole cards there is a round of betting. Then three board cards are dealt, the flop, and another round of betting. The fourth card, the turn, brings another round, and so does the fifth, the river.</string>
+    <string name="help_actions_title">Your choices</string>
+    <string name="help_actions_check">Check: stay in without betting, when nobody has bet before you.</string>
+    <string name="help_actions_call">Call: match the bet you are facing.</string>
+    <string name="help_actions_bet">Bet or Raise: put in more chips. Pick the amount with the buttons above the bar: \u2212 and + step by the big blind, and \u00bd pot and Pot set it for you. A raise must be at least as big as the last bet or raise.</string>
+    <string name="help_actions_fold">Fold: give up your cards and the chips you have put in. You are out of this hand only.</string>
+    <string name="help_actions_all_in">All in: bet every chip you have.</string>
+    <string name="help_button_title">The button and the blinds</string>
+    <string name="help_button">The dealer button, marked D, moves one seat clockwise each hand. The two players after it must put in forced bets before the cards are dealt: the small blind (SB) and the big blind (BB). That starts the pot, so there is always something to play for. The big blind sets the smallest bet.</string>
+    <string name="help_allin_title">All in and side pots</string>
+    <string name="help_allin">A player who is all in cannot be forced out, but can only win as much from each player as they put in themselves. Chips beyond that go into a side pot that the all-in player cannot win. Pots are shown on the table, and each goes to the best hand among the players who paid into it.</string>
+    <string name="help_showdown_title">The showdown</string>
+    <string name="help_showdown">If two or more players are still in after the last round of betting, they turn their cards face up and the best hand wins the pot. If everyone else folds, the last player wins the pot without showing their cards. Tied hands share the pot equally.</string>
+    <string name="help_tournament_title">The tournament</string>
+    <string name="help_tournament">The blinds go up every 10 hands, so chips get shorter in proportion and waiting gets expensive. Nothing is timed: take as long as you like. You finish in the place equal to the number of players left when you are knocked out, so 6th is the first out and 1st is the win.</string>
+    <string name="help_leave_title">Leaving</string>
+    <string name="help_leave">The flag at the top ends the tournament early, and you finish where you would if you were knocked out now. Closing the app does not: your hand is saved and is waiting when you come back. There is no undo, because every decision is followed by cards you could not have seen.</string>
+
+    <string name="help_hands_intro">From the strongest hand to the weakest. The five cards shown are one example of each.</string>
+    <string name="help_hand_straight_flush_title">Straight flush</string>
+    <string name="help_hand_straight_flush">Five cards in a row, all of one suit. The best of them, ten to ace, is a royal flush.</string>
+    <string name="help_hand_four_title">Four of a kind</string>
+    <string name="help_hand_four">Four cards of the same rank.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Three cards of one rank and two of another.</string>
+    <string name="help_hand_flush_title">Flush</string>
+    <string name="help_hand_flush">Any five cards of one suit.</string>
+    <string name="help_hand_straight_title">Straight</string>
+    <string name="help_hand_straight">Five cards in a row, of any suits. An ace can be high, ten to ace, or low, ace to five, but never both at once.</string>
+    <string name="help_hand_three_title">Three of a kind</string>
+    <string name="help_hand_three">Three cards of the same rank.</string>
+    <string name="help_hand_two_pair_title">Two pair</string>
+    <string name="help_hand_two_pair">Two cards of one rank and two of another.</string>
+    <string name="help_hand_pair_title">One pair</string>
+    <string name="help_hand_pair">Two cards of the same rank.</string>
+    <string name="help_hand_high_card_title">High card</string>
+    <string name="help_hand_high_card">None of the above: your highest card counts.</string>
+    <string name="help_ties_title">Ties</string>
+    <string name="help_ties">If two players hold the same kind of hand, the higher cards win. Two pair of aces and sevens beats two pair of kings and queens, and when the main cards match, the next highest card decides. Only five cards count, and suits never break a tie: equal hands split the pot.</string>
+
+    <string name="help_strategy_intro">Seven ideas that serve a new player well. They will not win every hand, but over a tournament they add up.</string>
+    <string name="help_strategy_1">Play fewer hands from early seats. The first players to act have the most opponents still to come, so start only with strong cards there, and loosen up as the seats near the button.</string>
+    <string name="help_strategy_2">Raise rather than call. A raise can win the pot on the spot, and when it is called you have the stronger hand more often. Calling only lets others see cheap cards.</string>
+    <string name="help_strategy_3">Fold more than feels comfortable. Most hands are not worth playing, and a folded hand costs you only what you already put in.</string>
+    <string name="help_strategy_4">Know the pot odds. If a call costs 25 chips to win a pot of 75, you are paying one chip for every three you can win, so the call pays off if you win more than one time in four. Compare that to your chance of finishing with the best hand.</string>
+    <string name="help_strategy_5">Position matters. Acting last lets you see what everyone else does first, which is worth a lot. Play more hands from late seats and fewer from early ones.</string>
+    <string name="help_strategy_6">Watch the opponents\' styles. Each seat is tagged tight, loose, aggressive or passive. Respect a raise from a tight player, and be slower to believe a bet from a loose, aggressive one.</string>
+    <string name="help_strategy_7">With a short stack, go all in or fold. When your chips are only a few big blinds, small bets and calls leave you no room to maneuver, and a well-timed all in is your best chance to double up.</string>
 </resources>

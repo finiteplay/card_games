@@ -156,6 +156,15 @@ a 320 × 580 dp window gets the regular table, and a 320 × 508 dp window the co
 
 *area* is the window width less 8 dp margins on each side: 304 dp at 320, 344 dp at 360.
 
+Band heights round a card's height up to a whole dp (52 dp wide is 72.8 tall, a 73 dp band), and your
+seat is its cards plus a 20 dp line for the stack and markers (90 + 20 = 110; 73 + 20 = 93).
+
+- **Below 336 dp** the table is *squeezed*: the compact seats stay as they are, so opponents' cards
+  never drop under 22 dp, and the board's and your cards shrink together, a dp at a time, until the
+  bands and their 6 dp gaps fit: 46 dp at 320, 41 dp at 306, the 40 dp floor at 302. Under 302 dp only
+  the gaps give, to nothing at 284 dp; shorter than that the table overflows and is not supported.
+  `TableGeometryTest` holds these.
+
 - **An opponent's cards at showdown** are face up at 40 dp — the card floor, the same as Blackjack's
   — two side by side with a 70% step, 68 dp wide, inside a 96 dp box. In the compact layout they are
   taller than the backs they replace, so they cover the stack line and the bottom of the name row
