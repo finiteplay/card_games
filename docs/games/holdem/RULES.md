@@ -53,7 +53,9 @@ either, both, or neither hole card. From highest:
   No antes. Levels count hands, never time, so nothing in a tournament is timed.
 - **Elimination.** A player with no chips when a hand ends is out. Players knocked out in the same
   hand finish in order of the chips they started that hand with, more chips finishing higher; equal
-  starting stacks share the higher of the places they span.
+  starting stacks share the higher of the places they span. A place is therefore one more than the
+  number of players who finished strictly better, so places are 1 to 6 with a gap after any shared
+  place (two players sharing 3rd leave no 4th).
 - **The end.** The tournament ends when one player holds every chip; that player finishes first. If
   the player is eliminated, the tournament ends for them at that place — the remaining opponents'
   play is not simulated, since no result of it would be shown or counted.
@@ -67,7 +69,9 @@ either, both, or neither hole card. From highest:
 - The small blind is the first live seat to the button's left, and the big blind the next.
 - **Heads-up** (two players left): the button posts the small blind, acts first before the flop, and
   last on every later street.
-- A player who cannot cover a blind posts what they have and is all in.
+- A player who cannot cover a blind posts what they have and is all in. A short blind is still a bet
+  of the whole blind to match: the first to act must put in the full big blind to call, whatever
+  the big blind could post.
 - **Simplified.** The button simply moves to the next live seat; the "dead button" rule that keeps a
   player from posting the big blind twice or skipping it after an elimination is not applied. It
   needs per-seat blind history the player never sees, and its effect on a six-seat sit-and-go is a
@@ -102,14 +106,20 @@ There are four betting rounds: **preflop** after the hole cards, then the **flop
   - No maximum but the stack: a player may always go all in.
 - **A short all-in does not reopen the betting.** An all-in that raises by less than a full minimum
   raise does not let players who have already acted on this street raise again; facing it, they may
-  only call or fold. A player who has not yet acted may raise as normal.
+  only call or fold. A player who has not yet acted may raise as normal. What counts is the rise in
+  the bet since the player last acted: two short all-ins that together raise it by a full minimum
+  raise reopen the betting for those who acted before either.
 - **The big blind's option.** If preflop action reaches the big blind with no raise, the big blind
   may check or raise.
 - **A round ends** when every player who is neither folded nor all in has acted at least once and
   has put in the same amount as the largest bet, or when only one player has not folded.
 - **The uncalled part of a bet** is returned to the player who made it before any pot is awarded.
 - **No more betting** once at most one player who has not folded still has chips: the remaining
-  board cards are dealt with no betting rounds between them, and the hand goes to showdown.
+  board cards are dealt with no betting rounds between them, and the hand goes to showdown. A lone
+  player with chips who still faces a bet they have not matched — blinds the others could not
+  cover — may call or fold first. This is checked when a street begins; within a round, every
+  player who is neither folded nor all in acts as above, even against opponents who are all in,
+  and a raise nobody can answer is returned as an uncalled bet.
 
 ## Legal Actions
 
@@ -120,7 +130,10 @@ On a player's turn, with *c* the chips needed to call and *s* their stack:
 - **Check** — when *c* = 0.
 - **Call** — when *c* > 0. If *c* ≥ *s* the call puts the player all in, and it is labelled as a call
   for that amount, not as a separate action.
-- **Bet** — when no bet has been made on this street, for any amount from the minimum bet to *s*.
+- **Bet** — when no bet has been made on this street, for any amount from the minimum bet to *s*;
+  if *s* is below the minimum bet, only all in is offered. Preflop the blinds are the bet, so a
+  preflop decision is a Raise, never a Bet. Amounts name the player's total in front of them on the
+  street, not the chips added.
 - **Raise** — when a bet has been made, *s* > *c*, and the betting is open to this player (`Betting`,
   the short all-in rule): for any total from the minimum raise to all in. If *s* is below the
   minimum raise, the only raise offered is all in.
@@ -160,7 +173,7 @@ There is no Undo (`Leaving`).
 - **Leave tournament** is available at any time, with a confirmation.
 - Leaving forfeits: the player finishes in the place they would take if knocked out at that moment
   (`The Tournament`), counted as an elimination in every statistic. Chips they had in the current
-  hand are lost with it.
+  hand are lost with it. The opponents' places are not decided; the tournament is over.
 - There is no way to leave a hand and keep the tournament: folding is that.
 - A tournament that is left or finished cannot be resumed or replayed; New Tournament starts another
   from a new seed.
