@@ -151,15 +151,15 @@ Each hand settles on its own stake. Doubling and splitting change the stake, nev
   hit, a double, the next split hand's second card, the peek after insurance, the dealer's play
   after the last hand completes. The shoe is fixed for the round, so undoing any decision would let
   the player see a card and then choose differently. No subset of decisions is safe to undo.
-- **A round cannot be abandoned.** New Round is offered only once the current round has settled.
+- **A round cannot be abandoned.** Next round is offered only once the current round has settled.
   Abandoning a round after seeing a card would be the same free second look as undo, and nothing
   forces it: Stand is always legal, and a round ends within a few decisions.
-- New Round deals at the currently selected bet, which settlement has already lowered to one the
+- Next round deals at the currently selected bet, which settlement has already lowered to one the
   bankroll covers (`Betting`). There is no Replay: the seed is not repeatable,
   and a settled round has nothing left to attempt.
 - There is no timer; nothing about a round is timed (`DESIGN.md` "Scoring and statistics").
 - If the bankroll is below the table minimum once a round settles, no round can be dealt. The
-  player is offered a reset to the starting 1,000 chips in place of New Round — a way out, never a
+  player is offered a reset to the starting 1,000 chips in place of Next round — a way out, never a
   dead end. A reset changes the bankroll and sets the selected bet to the table minimum;
   statistics are kept, and the reset is counted (`DESIGN.md` "Scoring and statistics"). The bankroll
   becomes exactly 1,000: whatever few chips were left (0 to 5, never 10 or more) are not kept.

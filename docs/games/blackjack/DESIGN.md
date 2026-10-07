@@ -41,7 +41,7 @@ repo built around chance the rules deliberately preserve, rather than eliminate.
   only non-solitaire game in the repo so far.
 - **A round, not a deal, is the unit of play.** Where a solitaire deal is dealt once and is won,
   lost, or abandoned, a Blackjack round settles in under a minute and is immediately followed by
-  another against the same bankroll. "New Round" (`RULES.md` "Round Lifecycle") names the round,
+  another against the same bankroll. "Next round" (`RULES.md` "Round Lifecycle") names the round,
   not a session that spans many of them — there is no session-level win, no Replay, and no
   abandoning a round part-way.
 - **Automatic dealer play is not a convenience — it is the rule.** Klondike's automatic foundation
@@ -67,7 +67,7 @@ where a card goes. Play is a sequence of decisions offered through the action ba
 
 - **Bet** — a stepper in 10-chip steps adjusts the bet between rounds; fixed once the round starts
   (`RULES.md` "Betting").
-- **Deal** / **New Round** — starts a round at the selected bet from a freshly shuffled shoe
+- **Deal** / **Next round** — starts a round at the selected bet from a freshly shuffled shoe
   (`RULES.md` "The Shoe"). Offered only when no round is in progress; replaced by the bankroll reset
   when the bankroll is below the table minimum. No Replay.
 - **Take Insurance, Decline Insurance** — offered alone, at the insurance decision point only
@@ -192,10 +192,10 @@ are two things to save, and that a saved round must never trail what the player 
 
 `UI_SPEC.md` is the authority on the interface; this is its shape. One dealer
 hand across the top of the board, one to four player hands (a split fans them) across the bottom,
-the bankroll and current bet always visible, and the action bar in the same position and
-touch-target shape `core/ui`'s `BoardActionBar` already gives every other game. At most five
-actions are offered at once (Hit, Stand, Double, Split, Hint); `UI_SPEC.md` must confirm those fit
-the bar's equal-width portrait buttons at the platform's touch-target minimum.
+the bankroll and current bet always visible just above the action bar, and the bar in the same
+position and touch-target shape `core/ui`'s `BoardActionBar` already gives every other game. At most
+six buttons are shown at once (Settings, Hit, Stand, Double, Split, Hint), and `UI_SPEC.md` "Action
+Bar" shows they fit at the platform's touch-target minimum.
 
 ## Sound, Localization, Accessibility, Performance, Quality
 

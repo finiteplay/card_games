@@ -6,8 +6,8 @@ the first release's execution).
 ## Planned, in `EXECUTION_PLAN.md`
 
 - **Card motion, the rest** (B7): the hole card's turn as a flip animation rather than a step.
-- **Instrumented tests and release evidence** (B5, B8): they need an emulator and, for some budgets,
-  physical hardware.
+- **The hardware budgets** (B8): frame deadline, idle CPU and cold-start p95 are open until measured
+  on a physical device (`ACCEPTANCE.md`).
 
 ## Not planned
 

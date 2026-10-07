@@ -14,10 +14,10 @@ true of it:
 
 | State | Table | Action bar |
 |---|---|---|
-| **Idle** — before the first Deal, or after Reset | Empty felt with a betting circle holding the bet as a chip stack; the bet stepper | Settings, Bet −, Bet +, Deal |
+| **Idle** — before the first Deal, or after Reset | Empty felt: *Place your bet* above a betting circle holding the bet as a chip stack | Settings, Bet −10, Bet +10, Deal |
 | **Insurance** | Four cards dealt, hole face down | Settings, Insure, Decline, Hint |
 | **Playing** | The hands; the active hand marked | Settings, then each of Hit, Stand, Double, Split that is legal, then Hint |
-| **Settled** | Every card turned over; each hand's result; the round's net | Settings, Bet −, Bet +, Next round (or Reset) |
+| **Settled** | Every card turned over; the result mark (`Settlement Presentation`) | Settings, Bet −10, Bet +10, Next round — or Settings, Reset chips |
 | **Loading** | A progress indicator; nothing touchable | none |
 
 The Hint action (`DESIGN.md` "Hint") is the last button of the bar whenever a decision is on offer,
@@ -25,6 +25,10 @@ including insurance; the widest phase is therefore six buttons.
 
 Back closes an open panel or dialog first. With none open it leaves the app, and a round in progress
 is already saved, so leaving costs nothing and restores exactly (`DESIGN.md` "Persistence").
+
+When a saved round cannot be restored it is voided (`DESIGN.md` "Persistence"), and a dismissible
+banner under the status row says so: *Your saved round couldn't be opened. It was cancelled and no
+chips were lost.*
 
 ## Layout
 
@@ -42,24 +46,27 @@ when it changes; under Skip Animations both simply change. The pills are dark an
 their white figures read on the felt in either theme. The HUD is one accessibility node that reads
 as `Chips 1,000` / `Bet 100`, as the old two-line row did.
 
-**Chip stacks** are drawn, never an asset: the fewest chips of the largest denominations (10, 50,
-100, 500, 1,000), one column per denomination. They are decorative — the amount is always printed
+**Chip stacks** are drawn, never an asset: the fewest chips of the largest denominations (1, 5, 10,
+50, 100, 500, 1,000 — the small ones because a blackjack pays 3:2 and a bankroll can end on any
+figure), one column per denomination, each chip with a light rim so a dark one still reads on the
+felt and on the dark pill. They are decorative — the amount is always printed
 beside them. The bet's figure is stated **once**, in the HUD: the betting circle holds only
 the chips, and a hand states its own stake under its cards only when the round is split, since a
 split round has several stakes and the HUD shows their total.
 
 ### Table, portrait
 
-Top to bottom: the status row; the **dealer** area; the **player** area; the summary line; the
-chips HUD; the action bar.
+Top to bottom: the status row (with the recovery banner under it when shown); the **dealer**
+area; the **player** area; the chips HUD; the action bar.
 
-- The dealer area holds one hand, centred, a total badge beneath it. While the hole card is face
-  down the badge shows the up card's value alone.
+- The dealer area holds one hand, centred, labelled *Dealer* above it and a total badge beneath it.
+  While the hole card is face down the badge shows the up card's value alone.
 - The player area holds one to four hands in equal-width columns, left to right in play order. Each
-  hand has its cards, a total badge (`17`, `Soft 17`, `Bust`, `Blackjack`), its stake, and — once
-  settled — its result (`Win +100`). The **active hand** is marked by a bright underline the width
-  of its column and a stronger total badge; a hand that is complete and not yet settled is dimmed.
-- The two areas split the height remaining between the status row and the action bar, the player
+  hand has its cards and a total badge (`17`, `Soft 17`, `Bust`, `Blackjack`); in a split round it
+  also states its own stake beneath, as a small chip stack and `Bet 20`. No hand prints a result
+  figure (`Settlement Presentation`). The **active hand** is marked by a 3 dp underline the width
+  of its hand and a larger, bold total badge; a hand that is complete and not yet settled is dimmed.
+- The two areas split the height remaining between the status row and the HUD 1 : 1.3, the player
   area taking the larger share, since it is the one that grows.
 
 ### Table, landscape
@@ -68,7 +75,8 @@ The status row spans the width. Below it the dealer area takes the leading 38% o
 and the player area the other 62%, side by side; at 640 dp wide the table is about 576 dp (the rail
 takes the rest), so a four-hand split gets columns of about 85 dp, wider than portrait's 76 dp at
 320 dp. Narrower landscape windows keep the 40 dp card floor and let the fan overflow as in portrait.
-The action bar is a rail one button wide at the edge nearest the holding hand
+The chips HUD sits beneath the table, beside the rail. The action bar is a rail one button wide at
+the edge nearest the holding hand
 (`Handedness`), `core/ui`'s `BoardActionBar` in its landscape form. Handedness mirrors the bar's
 order in portrait and its side in landscape and changes nothing else.
 
@@ -85,10 +93,10 @@ accessibility services get an ordinary click.
 
 | Phase | Buttons | Count |
 |---|---|---|
-| Idle | Settings · Bet − · Bet + · Deal | 4 |
-| Insurance | Settings · Insure · Decline | 3 |
+| Idle | Settings · Bet −10 · Bet +10 · Deal | 4 |
+| Insurance | Settings · Insure · Decline · Hint | 4 |
 | Playing, widest | Settings · Hit · Stand · Double · Split · Hint | 6 |
-| Settled | Settings · Bet − · Bet + · Next round, or Settings · Reset | 4 / 2 |
+| Settled | Settings · Bet −10 · Bet +10 · Next round, or Settings · Reset chips | 4 / 2 |
 
 **The widest phase fits.** Six equal buttons at 320 dp are 53 dp each before the bar's padding —
 over the platform's 48 dp minimum (`docs/PLATFORM.md` "Accessibility"). Labels are one
@@ -98,6 +106,8 @@ their two reserved lines where a translation needs it, so a long one never widen
 The bet is changed in 10-chip steps, `Bet −10` and `Bet +10`, clamped to the table minimum and to
 what the bankroll covers (`RULES.md` "Betting"); a button at its limit is shown disabled rather than
 removed, because Idle and Settled have a fixed shape and the player is already looking at it.
+Next round is disabled until the dealer's reveal has finished and the result is shown, so it cannot
+skip past the result.
 
 ## Geometry
 
@@ -124,6 +134,8 @@ minimum card width and the exposed face-up band the platform requires of every g
   the floor lets fit, the fan simply runs past its column into the 4 dp gap and the hand's own
   neighbour covers it — drawn in play order, so the later hand is on top. The total badge, which
   does not overlap, carries the information.
+- **The dealer's cards** use the one-hand width for the dealer area, but never more than 8 dp wider
+  than the player's cards, so a four-hand split does not leave a dealer hand twice their size.
 - Text scales with the system font size; card faces scale with the card (`docs/PLATFORM.md`
   "Accessibility").
 
@@ -132,7 +144,7 @@ minimum card width and the exposed face-up band the platform requires of every g
 The table's answer is shown by **highlighting the button to press**, in the action bar itself — no
 text line: the suggested button gets a filled, ringed background and bold type, and a screen reader
 reads it as *Suggested* (`BoardAction.highlighted`, shared with every game's bar). It stays until the
-round changes, a decision is made, or Hint is pressed again. Nothing else is highlighted and nothing
+round changes or a decision is made; pressing Hint again hides it. Nothing else is highlighted and nothing
 is counted: there is no hints statistic, since the hint proves nothing (`DESIGN.md` "Hint").
 
 ## Settlement Presentation
@@ -143,7 +155,10 @@ dialog — there is no larger game that has been won.
 - **One result, stated once.** A single *result mark* sits in the middle of the table's lower half
   (in landscape, the middle of the table): a pictogram and the round's signed net, with no words —
   a trophy and `+10` for a win, a star and `+15` for a blackjack, a dissatisfied face and `−10` for
-  a loss or a bust, an equals sign and `0` for a push or an even round. The sign is always printed, so
+  a loss or a bust, an equals sign and `0` for a push or an even round. Which it is comes from the
+  round's net, not any one hand: a split round that wins one hand and loses a bigger one is a loss,
+  and a round that nets nothing without every hand pushing — one split hand won and another of the
+  same stake lost — is even. The sign is always printed, so
   colour is never the only cue. When insurance was taken a small shield with its own signed result
   sits beneath. The words ("You win!", "Bust"…) are its spoken description only. It is not modal, and
   it stays until the next round.
@@ -155,8 +170,9 @@ dialog — there is no larger game that has been won.
 - The dealer's draws are paced (**Motion**, below). The mark appears only after the dealer's last
   card has been shown; a player's bust is the exception only in that the hand's `Bust` total badge
   appears at once, since the hand is over at that card (`RULES.md` "Settlement").
-- Deal/New Round plays the shared shuffle cue. Hint, Hit, Stand, Double, and Split each have a
-  distinct short cue; dealer card reveals use the deal cue. A hand that crosses 21 plays its bust
+- Deal and Next round play the shared shuffle cue. Hit, Double, Split and Hint each have a distinct
+  short cue; Stand and Decline share a confirm cue, and Insure and each bet step a chip cue. Dealer
+  card reveals use the deal cue. A hand that crosses 21 plays its bust
   cue immediately. An ordinary positive settlement plays the shared win sound, while a natural
   blackjack has its own casino-chip celebration. A losing round plays a descending loss cue; when
   the resulting bankroll cannot cover the minimum bet, a stronger out-of-chips cue replaces it.
@@ -164,32 +180,45 @@ dialog — there is no larger game that has been won.
 
 ## The Reset Offer
 
-When a round settles with the bankroll below the table minimum, **Reset** replaces Next round in the
-action bar, and a dialog opens once: *Out of chips* — *You can't cover the minimum bet. Reset to
-1,000 chips? Your statistics are kept.* with Reset and Not now. Declining leaves the settled table in
+When a round settles with the bankroll below the table minimum, **Reset chips** replaces the bet
+stepper and Next round in the action bar, and once the result is shown a dialog opens: *Out of
+chips* — *You can't cover the minimum bet. Reset to 1,000 chips? Your statistics are kept.* with
+Reset chips and Not now. Back is Not now. Declining leaves the settled table in
 place with Reset in the bar; there is no other way forward, so it stays until used — a way out,
 never a dead end (`RULES.md` "Round Lifecycle"). Reset sets the bankroll to 1,000 and the bet to 10
 and is counted in Statistics.
 
 ## Statistics
 
-`core/ui`'s `FullScreenPanel` with the shared tile grid (`StatTileGrid`): hands played, won, lost,
-pushed, player blackjacks, bankroll, its high-water mark, lifetime net chips and resets, as one pool
-with no tabs — there is no axis to split by and no period filter, because the figures are lifetime
-and a bankroll has no "this week" (`DESIGN.md` "Scoring and statistics"). Reset requires
-confirmation and clears nothing but the statistics and bankroll history it names; the bankroll
-itself is kept.
+`core/ui`'s `FullScreenPanel` with two of the shared section cards (`StatSectionCard`, 12 dp apart
+as in the other games), each a tile grid (`StatTileGrid`):
+
+- **Hands** — hands, wins, losses, pushes, blackjacks.
+- **Chips** — bankroll, highest bankroll, net chips (signed), resets.
+
+One pool with no tabs — there is no axis to split by and no period filter, because the figures are
+lifetime and a bankroll has no "this week" (`DESIGN.md` "Scoring and statistics"). *Reset
+Statistics* below them asks first, with the shared confirmation, and clears every figure; the
+bankroll itself is kept and becomes the new highest bankroll.
 
 ## Help
 
-`FullScreenPanel`, titled *How to play*, five short sections in player-facing strings, all
-localized: the goal; a round's decisions; double and split; insurance and the dealer's rule; chips
-and what happens when they run out.
+`FullScreenPanel`, titled *How to play*, with two tabs, all in localized player-facing strings:
+
+- **Rules** — ten short sections, each decision in a paragraph of its own: the goal; card values; a
+  round; Hit; Stand; Double; Split; Insurance; the dealer's rule; chips and what happens when they
+  run out.
+- **Strategy** — a short introduction and seven plain tips for a new player. It is a summary in
+  words, not the Hint's table.
+
+The publisher's byline closes both.
 
 ## Settings
 
-Skip animations, handedness, sound, theme, language, and the rest reminder with its running total in
-a Breaks group — the same groups and shared rows as the other games — and the version label last. No
+Three groups of the shared rows, as in the other games: **Appearance** — left-handed, animations,
+sound, theme, language; **Breaks** — the rest reminder and the current session's running total;
+and **About** last (`core/ui`'s `AboutSettingsGroup`) — the version, the website, the privacy policy
+and the open-source acknowledgements. No
 automatic-moves setting (`DESIGN.md` "What Blackjack is not"). The reminder's dialogs are the shared
 ones; accepting a break blocks the board but touches no round, since a round is saved before every
 card is shown and nothing about it is timed.
@@ -202,8 +231,12 @@ card is shown and nothing about it is timed.
   discrete, never collapsed into one frame (`EXECUTION_PLAN.md` B7).
 - **The result banner and its celebration** are described in "Settlement Presentation"; they run
   only after the results are shown and respect the same Skip Animations and reduced-motion rule.
-- Card *flights* from the shoe, and the hole-card flip as an animation rather than a step, are B7's
-  and are not in the first release (`TODO.md`).
+- **Card flights.** Every card that appears flies from the shoe — a point beyond the table's trailing
+  top corner — to its place in 280 ms, in deal order, cards dealt together 140 ms apart; a card
+  already down stays put. Under Skip Animations or reduced motion a card is simply there.
+- **The bankroll** holds its figure from before the round until the result is shown, then counts to
+  the new one; showing it earlier would give the result away.
+- The hole card turns over as a step, not a flip animation (`TODO.md`).
 
 ## Accessibility
 
