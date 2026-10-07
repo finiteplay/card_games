@@ -21,4 +21,15 @@ tasks.test {
     useJUnit()
     // The seven-card evaluator test walks 133,784,560 hands; it is memory-light but slow.
     maxHeapSize = "2g"
+    filter { excludeTestsMatching("*EvaluatorExhaustiveTest") }
+}
+
+tasks.register<Test>("exhaustiveEvaluatorTest") {
+    description = "Walks all 133,784,560 seven-card hands; deliberately outside test and check."
+    group = "verification"
+    testClassesDirs = sourceSets.test.get().output.classesDirs
+    classpath = sourceSets.test.get().runtimeClasspath
+    useJUnit()
+    filter { includeTestsMatching("*EvaluatorExhaustiveTest") }
+    testLogging.showStandardStreams = true
 }
