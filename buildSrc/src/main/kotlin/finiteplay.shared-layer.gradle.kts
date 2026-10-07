@@ -9,7 +9,7 @@ val assertNoGameReferences by tasks.registering(AssertNoGameReferencesTask::clas
     ownerProjectPath.set(project.path)
     // Games that exist plus the two the restructure was aimed at, so the gate is already
     // armed when their modules land rather than needing to be remembered then.
-    forbiddenNames.set(listOf("klondike", "spider", "blackjack", "freecell"))
+    forbiddenNames.set(listOf("klondike", "spider", "blackjack", "freecell", "holdem"))
     sources.from(
         fileTree(layout.projectDirectory.dir("src")) {
             include("**/*.kt", "**/*.kts", "**/*.xml", "**/*.pro")

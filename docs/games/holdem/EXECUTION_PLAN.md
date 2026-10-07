@@ -15,7 +15,8 @@ Hold'em's docs that says what exists today.
 | Package | State |
 |---|---|
 | H0 — interface specification | Done: `UI_SPEC.md` and `TODO.md`. Its numbers wait on H3's geometry test. |
-| H1–H9 | Not started. |
+| H1 — modules and build scaffolding | Done, gate met: `games/holdem/{rules,opponents,app}`, `holdem` armed in `assertNoGameReferences`, the three `assertAppExcludes…` tasks (shown failing with `:solitaire:ui` added), `check` green, and the minified release builds. It signs only once the shared upload keystore has a `holdem-upload` alias, which is not created yet. |
+| H2–H9 | Not started. |
 
 ## Deterministic Deal Contract
 

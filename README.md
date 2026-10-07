@@ -14,6 +14,7 @@ Each game is its own app, with its own Play listing and its own rules engine.
 | Spider (one, two, or four suits) | `org.finiteplay.spider` | Playable |
 | FreeCell | `org.finiteplay.freecell` | Playable; the [execution plan](docs/games/freecell/EXECUTION_PLAN.md) says what is left |
 | Blackjack | | Planned, not started: the first game that is not a solitaire |
+| Texas Hold'em | | Designed, scaffold only: a six-seat sit-and-go (`docs/games/holdem/EXECUTION_PLAN.md`) |
 
 What every app does, and the quality bar it has to meet, is in
 [PLATFORM.md](docs/PLATFORM.md): portrait and landscape, light and dark themes, sound,

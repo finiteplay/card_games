@@ -49,5 +49,9 @@ include(":games:freecell:app")
 include(":games:blackjack:rules")
 include(":games:blackjack:app")
 
+include(":games:holdem:rules")
+include(":games:holdem:opponents")
+include(":games:holdem:app")
+
 // Desktop-only tooling; asserted never to reach an app's classpath.
 include(":tools:catalog")

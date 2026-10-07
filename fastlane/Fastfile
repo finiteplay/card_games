@@ -4,7 +4,8 @@ PACKAGE_NAMES = {
   klondike: "org.finiteplay.klondike",
   spider: "org.finiteplay.spider",
   freecell: "org.finiteplay.freecell",
-  blackjack: "org.finiteplay.blackjack"
+  blackjack: "org.finiteplay.blackjack",
+  holdem: "org.finiteplay.holdem"
 }
 
 PACKAGE_NAMES.each do |game, package_name|
