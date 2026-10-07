@@ -16,7 +16,8 @@ Hold'em's docs that says what exists today.
 |---|---|
 | H0 — interface specification | Done: `UI_SPEC.md` and `TODO.md`. Its numbers wait on H3's geometry test. |
 | H1 — modules and build scaffolding | Done, gate met: `games/holdem/{rules,opponents,app}`, `holdem` armed in `assertNoGameReferences`, the three `assertAppExcludes…` tasks (shown failing with `:solitaire:ui` added), `check` green, and the minified release builds. It signs only once the shared upload keystore has a `holdem-upload` alias, which is not created yet. |
-| H2–H9 | Not started. |
+| H2 — rules engine | Engine done and its gates met except the evaluator's exhaustive count tests, which are the evaluator's own package of work and are not part of this row: legal-action matrix, side pots, the legal-action soak (900 seeded tournaments), constructed fixtures, seed and deck vectors, the `SeatView` leak tests, and a pinned reference hand set. Opponents are not implemented. |
+| H3–H9 | Not started. |
 
 ## Deterministic Deal Contract
 
@@ -27,7 +28,10 @@ seeded tournaments that must replay identically (`docs/PLATFORM.md` "Determinist
 - Deck: `core/cards`' canonical deck order and `shuffleDeckIndices(seed, size = DECK_SIZE)`,
   unchanged.
 - Hand seed: derived from the tournament seed and the hand number by one fixed mixing function,
-  committed with reference vectors. Never the clock or a counter alone.
+  committed with reference vectors. Never the clock or a counter alone. The mix is output number
+  `n + 1` of the SplitMix64 stream seeded with the tournament seed, for hand `n` counted from 1:
+  `SplitMix64(tournamentSeed + n * 0x9E3779B97F4A7C15).nextULong()`. Hand 0 is never dealt; its
+  seed draws the first button, `SplitMix64(handSeed(0)).nextBounded(6)`.
 - Tournament seed: drawn at New Tournament from a cryptographically strong random source. Tests
   substitute fixed seeds through a seam in `src/debug` or test sources, never through a release code
   path.
@@ -36,7 +40,9 @@ seeded tournaments that must replay identically (`docs/PLATFORM.md` "Determinist
 - Opponent draws: profiles and the first button come from the tournament seed; every mixed decision
   from the hand seed, the seat and the action index (`DESIGN.md` "The policy").
 - The move log records every seat's action: `Fold`, `Check`, `Call`, `Bet(amount)`, `Raise(total)`,
-  `AllIn`, each with its seat. The alphabet is part of the contract from H4 on.
+  `AllIn`, each with its seat. The alphabet is part of the contract from H4 on. The log is per
+  hand: a hand is restored from the tournament as it stood when the hand was dealt plus its log,
+  and a tournament from its seed plus one log per hand.
 - Versions: `rulesVersion` and `shuffleVersion` start at 1; `catalogVersion` is always 0. An
   opponent policy change needs no version: the log, not the policy, is the record (`DESIGN.md`
   "Architecture").
