@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Statistics (UI_SPEC.md "Statistics") -->
+    <string name="stat_section_tournaments">Tournaments</string>
+    <string name="stat_section_finishes">Finishes</string>
+    <string name="stat_section_hands">Hands</string>
+
+    <string name="stat_tile_tournaments_played">Played</string>
+    <string name="stat_tile_tournaments_won">Won</string>
+    <string name="stat_tile_avg_finish">Average finish</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">Hands played</string>
+    <string name="stat_tile_hands_won">Hands won</string>
+    <string name="stat_tile_showdowns_won">Showdowns won</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">Largest pot</string>
+    <string name="stat_tile_vpip">Voluntarily in before the flop</string>
+    <string name="stat_tile_pfr">Raised before the flop</string>
+
+    <string name="place_1">1st</string>
+    <string name="place_2">2nd</string>
+    <string name="place_3">3rd</string>
+    <string name="place_4">4th</string>
+    <string name="place_5">5th</string>
+    <string name="place_6">6th</string>
+    <string name="cd_finish_bar">%1$s place: %2$d</string>
+
+    <!-- Help: the drawn example hands -->
+    <string name="cd_example_hand">%1$s, for example %2$s</string>
+    <string name="cd_example_card">%1$s of %2$s</string>
+</resources>
