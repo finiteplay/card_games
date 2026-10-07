@@ -190,6 +190,34 @@ one moved these:
 - **The shipped language list** (`core/ui`'s `AppLanguages`). The tags are the `values-*`
   directories `core/ui` itself ships, so no game owns that list.
 
+**Moved later still, once Hold'em's table existed (the second non-solitaire re-check).** Blackjack's
+board was read before Hold'em's was written; the second non-solitaire app is the second example for
+its table code, and these passed:
+
+- **The card row and its flights** (`core/ui`'s `CardFan`, `FanGeometry`, `LocalAnimateCards`).
+  A row of cards that each fly in from the dealer's spot; Blackjack's fan was never about blackjack.
+  It grew three optional parameters Hold'em needed (empty outlines for undealt slots, an explicit
+  step, and raised-and-dimmed cards for showdown) and a face-down card is now a null, which the
+  dealer's hole card also uses.
+- **`ChipStack` and `chipStackOf`**, which name no bet; the bankroll pills and betting circle that
+  speak of a bankroll stayed with Blackjack.
+- **The result mark's shell and the loss wash** (`ResultMark`, `LossWash`, `signed`): the pictogram,
+  the signed net, the capsule and its spring. Which pictogram a round earns stayed with each game.
+- **The status row's icon button** (`BoardStatusIcon`) and **the rest reminder's moving parts**
+  (`RestReminderController`: the window, the ticker, the break countdown), which Blackjack's view
+  model had inline and Hold'em needed unchanged. Klondike, Spider and FreeCell carry their own copies
+  and were left alone.
+- **`holdToRepeat`**, made public so a game's own stepper (Hold'em's sizing row, 52 dp tall against
+  `BoardAction`'s 76) repeats the way Blackjack's bet stepper does.
+
+**Stayed, re-checked against Hold'em.** The action bar's contents, the view model and its write
+order, `TableGeometry`, the bankroll HUD and betting circle, and the statistics ledger: Hold'em's
+bar is chosen by a betting round, its view model plays other seats and has no bankroll to save, its
+table is six seats round an oval, and its statistics are places and hands, not a bankroll. What the
+two share is the pattern (a session ahead of a displayed state, written before shown), not code. The
+presenter that steps a committed state forward (`TablePresenter`) is Hold'em's: Blackjack's dealer
+reveal is a counter, not a sequence of seats, streets and pots.
+
 **What this is confirmed against.** The apps and rules engines of Klondike, Spider and FreeCell.
 Everything under "Moved" and "Moved later" is exercised by a real second caller at the layer
 it sits in. The `ActiveGameRecordStore` `DealParameters` seam is now used by Spider and

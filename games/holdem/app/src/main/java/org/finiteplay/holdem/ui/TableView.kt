@@ -160,14 +160,14 @@ private fun PotView(table: TableModel, compactLine: Boolean = false) {
             fontWeight = FontWeight.ExtraBold,
             color = Color.White,
             maxLines = 1,
-            modifier = Modifier.clearAndSetSemantics { }.testTag("pot_amount"),
+            modifier = Modifier.testTag("pot_amount"),
         )
         if (table.potCount > 1) {
             Text(
                 text = stringResource(R.string.pot_count, table.potCount),
                 style = MaterialTheme.typography.labelMedium,
                 color = Color.White.copy(alpha = 0.85f),
-                modifier = Modifier.clearAndSetSemantics { }.testTag("pot_count"),
+                modifier = Modifier.testTag("pot_count"),
             )
         }
     }

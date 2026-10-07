@@ -38,7 +38,8 @@ dealt again from the start. No chips were lost.*
 
 The row at the top, Blackjack's shape. At the leading edge, two lines: the blinds in bold
 (`Blinds 50 / 100`) and beneath them the hand number and the next level (`Hand 23 · 75 / 150 in 7
-hands`; at the last scheduled level, the doubling it will take). In the trailing corner, as icons:
+hands`; past the last scheduled level the next level is the doubled one, which the schedule already
+gives). In the trailing corner, as icons:
 Help, Statistics, and — while a tournament is in progress — Leave (a flag).
 
 ### Seats
@@ -59,7 +60,9 @@ button (`D`), and `SB` / `BB` for the blinds of this hand.
   and reading `Out · 5th`.
 
 Your own seat, at the bottom centre, has no box: your two cards face up and large, and beneath them
-one line with your stack and your markers. Your bet pill sits above your cards.
+one line with your stack and your markers. Your bet pill sits at the leading side of your cards, in
+the free width beside them, and your last action at the trailing side. (H3: "above your cards" put
+the pill over the board's gap and a card's corner index, so it moved aside.)
 
 ### Table, portrait
 
@@ -71,7 +74,8 @@ The table is four bands:
 
 1. **Top band** — three opponent seats, left to right.
 2. **Middle band** — an opponent seat at each edge and, between them, the **pot**: `Pot 1,240` in
-   large type, and while side pots exist a second line, `3 pots`.
+   large type, and while side pots exist a second line, `3 pots`. The figure is every chip committed
+   to the hand, this street's bets in front of the seats included.
 3. **Board band** — the five board cards, centred, with empty outlines for cards not yet dealt.
 4. **Your seat.**
 
@@ -112,6 +116,9 @@ the bar's order in portrait and its side in landscape and changes nothing else.
 - **The widest state fits.** Six equal buttons across 320 dp, less the bar's 8 dp padding on each
   side, are about 50 dp each — over the platform's 48 dp minimum (`docs/PLATFORM.md`
   "Accessibility"), the same arithmetic as Blackjack's widest phase.
+- **Hint is not in the bar until H7** (`EXECUTION_PLAN.md`): the counts above are without it until the
+  opponents' policy that powers it lands. Help, Statistics and Settings are callbacks the table
+  takes; until their screens are wired the buttons do nothing visible.
 - **Next hand** is offered once the last pot has been awarded. Pressing it deals at once; otherwise
   the next hand deals by itself after the pause in `Motion`.
 
@@ -121,7 +128,9 @@ Shown above the bar whenever Bet or Raise is offered, and only then. Five equal 
 **amount** · **+** · **½ pot** · **Pot**. Across 320 dp they are about 60 dp each.
 
 - **− and +** step by the big blind and repeat while held, Blackjack's bet stepper exactly
-  (`BoardAction.repeatOnHold`). Each is disabled at its end of the legal range.
+  (the `holdToRepeat` press modifier `BoardAction.repeatOnHold` uses, made public in `core/ui` — the
+  row is 52 dp tall, which `BoardAction`'s 60 dp target is not). Each is disabled at its end of the
+  legal range.
 - **The amount** is a figure, not a text field: there is no keyboard. It is the bet, or the raise's
   total, always within the legal range (`RULES.md` "Betting"). Tapping it does nothing.
 - **½ pot** and **Pot** set the amount. For a bet, half the pot or the pot. For a raise, the call
@@ -226,7 +235,8 @@ Blackjack's, extended by what a poker hint has to say (`DESIGN.md` "Hint"):
 ### Elimination and the end
 
 - **An opponent knocked out**: its seat greys and reads `Out · 5th` as the hand ends.
-- **You are knocked out**: when the hand's results have been shown, a dialog — *You finished 4th* —
+- **You are knocked out**: when the hand's results have been shown (the mark first, then a short
+  pause), a dialog — *You finished 4th* —
   with the hands you played and your largest pot, and New tournament, Statistics and Close. Closing
   leaves the table as it ended, with New tournament in the bar.
 - **You win the tournament**: the family's win celebration and a dialog — *You won the tournament* —
@@ -286,7 +296,7 @@ Every pause is presentation only; it never changes what happens.
 | Bets gathering into the pot at a street's end | 300 ms | at once |
 | Before the next street's cards | 500 ms | 200 ms |
 | Each opponent's cards turning at showdown | 400 ms apart | 150 ms apart |
-| Each pot sliding to its winner | 600 ms, the next 300 ms after | 250 ms apart, no slide |
+| Each pot sliding to its winner | 600 ms before the first; 900 ms before each next (its slide and the 300 after) | 250 ms apart, no slide |
 | Before the next hand deals by itself | 3,000 ms after the last pot | 1,500 ms |
 
 Opponents' actions stay discrete under Skip Animations: each still appears on its own, one after

@@ -17,7 +17,8 @@ Hold'em's docs that says what exists today.
 | H0 — interface specification | Done: `UI_SPEC.md` and `TODO.md`. Its numbers wait on H3's geometry test. |
 | H1 — modules and build scaffolding | Done, gate met: `games/holdem/{rules,opponents,app}`, `holdem` armed in `assertNoGameReferences`, the three `assertAppExcludes…` tasks (shown failing with `:solitaire:ui` added), `check` green, and the minified release builds. It signs only once the shared upload keystore has a `holdem-upload` alias, which is not created yet. |
 | H2 — rules engine | Engine done and its gates met except the evaluator's exhaustive count tests, which are the evaluator's own package of work and are not part of this row: legal-action matrix, side pots, the legal-action soak (900 seeded tournaments), constructed fixtures, seed and deck vectors, the `SeatView` leak tests, and a pinned reference hand set. Opponents are not implemented. |
-| H3–H9 | Not started. |
+| H3 — playable table vertical slice | Built; gate evidence in the commit series. The table in both orientations, the action bar and sizing row, opponents' turns with the pacing, showdown and results, elimination, the tournament's end, New Tournament and Leave, all in memory, against the placeholder policy. The gate's fixed-seed hands are `games/holdem/app/src/scenarios` (seeds found by `ScenarioSearchTest`, proven by `ScenarioCatalogTest`) played by `ScenarioPlayTest` on the emulator in portrait and landscape. **Not in H3:** Hint (arrives with H7), and the Help, Statistics and Settings screens, whose buttons are callbacks that do nothing visible until wired. The second-non-solitaire re-check is recorded in `docs/ARCHITECTURE.md`. |
+| H4–H9 | Not started. |
 
 ## Deterministic Deal Contract
 
