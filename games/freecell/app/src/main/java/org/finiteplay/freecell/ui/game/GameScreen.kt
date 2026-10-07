@@ -28,7 +28,6 @@ import org.finiteplay.freecell.R
 import org.finiteplay.core.ui.layout.DealPickerDialog
 import org.finiteplay.core.ui.layout.AppLanguages
 import org.finiteplay.core.ui.layout.BoardOrientation
-import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.ui.layout.DiscardGameDialog
 import org.finiteplay.core.ui.layout.RestReminderDialog
 import org.finiteplay.core.ui.layout.RestBreakDialog
@@ -238,7 +237,7 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
 
     if (viewModel.showRestReminderDialog) {
         RestReminderDialog(
-            playedLabel = formatElapsed((viewModel.settings.restReminderInterval.minutes ?: 0) * 60),
+            playedSeconds = (viewModel.settings.restReminderInterval.minutes ?: 0) * 60,
             onTakeBreak = viewModel::startRestBreak,
             onKeepPlaying = viewModel::dismissRestReminder,
         )
@@ -246,7 +245,7 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
 
     viewModel.restBreakRemainingSeconds?.let { remaining ->
         RestBreakDialog(
-            remainingLabel = formatElapsed(remaining),
+            remainingSeconds = remaining,
             onCancel = viewModel::cancelRestBreak,
         )
     }

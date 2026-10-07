@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Træk, bedst: %1$d</string>
     <string name="deal_moves_last">Træk, sidst: %1$d</string>
     <string name="win_banner">Du vandt!</string>
+    <string name="level_up_title">Klar til næste niveau?</string>
+    <string name="level_up_body">%2$s: %1$d sejre. Vil du gå videre til %3$s?</string>
+    <string name="level_up_switch">Gå til %1$s</string>
+    <string name="level_up_stay">Ikke endnu</string>
     <string name="deal_filter_all">Alle</string>
     <string name="deal_picker_empty">Ingen spil matcher filteret.</string>
     <string name="deal_current">Nuværende</string>

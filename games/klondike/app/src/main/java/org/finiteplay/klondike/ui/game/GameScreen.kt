@@ -13,6 +13,7 @@ import org.finiteplay.core.ui.layout.boardTitleColor
 import org.finiteplay.core.ui.layout.boardTitleStyle
 import org.finiteplay.core.ui.layout.chromeScale
 import org.finiteplay.core.ui.layout.HintProgressDialog
+import org.finiteplay.core.ui.layout.LevelUpDialog
 import org.finiteplay.core.ui.layout.RestReminderDialog
 import org.finiteplay.core.ui.layout.RestBreakDialog
 import org.finiteplay.klondike.TOP_ROW_TO_TABLEAU_GAP
@@ -573,9 +574,19 @@ fun GameScreen(
         )
     }
 
+    viewModel.levelUpOffer?.let { offer ->
+        LevelUpDialog(
+            wins = offer.wins,
+            currentLevel = offer.from.label(),
+            nextLevel = offer.to.label(),
+            onSwitch = viewModel::acceptLevelUp,
+            onStay = viewModel::declineLevelUp,
+        )
+    }
+
     if (viewModel.showRestReminderDialog) {
         RestReminderDialog(
-            playedLabel = formatElapsed((viewModel.persistedRestReminderInterval.minutes ?: 0) * 60),
+            playedSeconds = (viewModel.persistedRestReminderInterval.minutes ?: 0) * 60,
             onTakeBreak = viewModel::startRestBreak,
             onKeepPlaying = viewModel::dismissRestReminder,
         )
@@ -583,7 +594,7 @@ fun GameScreen(
 
     viewModel.restBreakRemainingSeconds?.let { remaining ->
         RestBreakDialog(
-            remainingLabel = formatElapsed(remaining),
+            remainingSeconds = remaining,
             onCancel = viewModel::cancelRestBreak,
         )
     }

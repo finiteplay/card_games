@@ -126,6 +126,10 @@
     <string name="deal_moves_best">מהלכים, הטוב ביותר: %1$d</string>
     <string name="deal_moves_last">מהלכים, אחרון: %1$d</string>
     <string name="win_banner">ניצחת!</string>
+    <string name="level_up_title">מוכנים לרמה הבאה?</string>
+    <string name="level_up_body">%2$s: %1$d ניצחונות. לעבור ל: %3$s?</string>
+    <string name="level_up_switch">מעבר ל: %1$s</string>
+    <string name="level_up_stay">עדיין לא</string>
     <string name="deal_filter_all">הכול</string>
     <string name="deal_picker_empty">אין חלוקות שמתאימות למסנן.</string>
     <string name="deal_current">נוכחית</string>

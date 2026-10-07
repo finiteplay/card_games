@@ -15,12 +15,14 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.ui.R
 import org.finiteplay.core.ui.theme.LocalAppColors
 
 /**
  * The break itself, once the player has accepted [RestReminderDialog]'s offer: blocks the board
- * for [remainingLabel] (a stopwatch-formatted countdown the caller ticks down) rather than just
+ * for [remainingSeconds] (a countdown the caller ticks down; drawn as a clock face, read aloud in
+ * words) rather than just
  * showing a timer alongside play, since a break that does not stop the game is cosmetic. Not
  * dismissible by tapping outside — only [onCancel] ends it early, same restraint as
  * [HintProgressDialog]'s own cancel-only dismissal.
@@ -30,15 +32,16 @@ import org.finiteplay.core.ui.theme.LocalAppColors
  * timestamp-driven style.
  */
 @Composable
-fun RestBreakDialog(remainingLabel: String, onCancel: () -> Unit) {
+fun RestBreakDialog(remainingSeconds: Int, onCancel: () -> Unit) {
     AlertDialog(
         modifier = Modifier.testTag("rest_break_dialog"),
         onDismissRequest = {},
         title = { Text(stringResource(R.string.rest_break_title)) },
         text = {
-            // The countdown is the whole message, so it is the large element in the accent colour;
-            // "Back in 04:32" is its spoken form, kept for screen readers rather than drawn twice.
-            val spoken = stringResource(R.string.rest_break_body, remainingLabel)
+            // The countdown is the whole message, so it is the large element in the accent colour, as a
+            // clock face; "Back in 4 minutes 32 seconds" is its spoken form, kept for screen readers.
+            val remainingLabel = formatElapsed(remainingSeconds)
+            val spoken = stringResource(R.string.rest_break_body, humanDuration(remainingSeconds))
             Text(
                 text = remainingLabel,
                 style = MaterialTheme.typography.displayLarge.copy(fontFeatureSettings = "tnum"),

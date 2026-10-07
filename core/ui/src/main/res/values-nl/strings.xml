@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Zetten, beste: %1$d</string>
     <string name="deal_moves_last">Zetten, laatste: %1$d</string>
     <string name="win_banner">Gewonnen!</string>
+    <string name="level_up_title">Klaar voor het volgende niveau?</string>
+    <string name="level_up_body">%2$s: %1$d overwinningen. Wil je overstappen naar %3$s?</string>
+    <string name="level_up_switch">Naar %1$s</string>
+    <string name="level_up_stay">Nog niet</string>
     <string name="deal_filter_all">Alle</string>
     <string name="deal_picker_empty">Geen deals komen overeen met het filter.</string>
     <string name="deal_current">Huidige</string>

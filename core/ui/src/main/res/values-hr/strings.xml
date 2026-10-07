@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Potezi, najbolje: %1$d</string>
     <string name="deal_moves_last">Potezi, zadnje: %1$d</string>
     <string name="win_banner">Pobjeda!</string>
+    <string name="level_up_title">Spremni za sljedeću razinu?</string>
+    <string name="level_up_body">%2$s: %1$d pobjeda. Prijeći na: %3$s?</string>
+    <string name="level_up_switch">Prijeđi na: %1$s</string>
+    <string name="level_up_stay">Još ne</string>
     <string name="deal_filter_all">Sva</string>
     <string name="deal_picker_empty">Nijedno dijeljenje ne odgovara filtru.</string>
     <string name="deal_current">Trenutno</string>

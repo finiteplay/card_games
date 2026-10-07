@@ -12,6 +12,7 @@ The interface is fast, calm, readable, and defaults to a right-handed layout, wi
 - **Statistics:** Draw One/Draw Three tabs, Week/Month/All Time tabs within each, summary, range-graph distributions, sample size, and reset
 - **Help:** Rules, Strategy, and Levels pages behind one icon (below)
 - **Confirmation:** new game, replay, and statistics reset
+- **Level-up offer:** after the tenth win at the level being played, New Game first asks whether to move up to the next level (`docs/PLATFORM.md` "Levels"); yes switches and deals there
 - **Win:** final board, summary, and skippable celebration
 - **No moves:** notice offering undo and new game when the game is stuck
 - **Recovery:** unobtrusive notice after discarding a corrupt saved game; the game stays playable

@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Ходове, най-добро: %1$d</string>
     <string name="deal_moves_last">Ходове, последно: %1$d</string>
     <string name="win_banner">Победа!</string>
+    <string name="level_up_title">Готови ли сте за следващото ниво?</string>
+    <string name="level_up_body">%2$s: %1$d победи. Преминаване към: %3$s?</string>
+    <string name="level_up_switch">Към: %1$s</string>
+    <string name="level_up_stay">Още не</string>
     <string name="deal_filter_all">Всички</string>
     <string name="deal_picker_empty">Няма раздавания за този филтър.</string>
     <string name="deal_current">Текущо</string>

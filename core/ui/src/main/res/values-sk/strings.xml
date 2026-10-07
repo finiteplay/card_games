@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Ťahy, najlepšie: %1$d</string>
     <string name="deal_moves_last">Ťahy, posledné: %1$d</string>
     <string name="win_banner">Výhra!</string>
+    <string name="level_up_title">Pripravení na ďalšiu úroveň?</string>
+    <string name="level_up_body">%2$s: %1$d výhier. Prejsť na: %3$s?</string>
+    <string name="level_up_switch">Prejsť na: %1$s</string>
+    <string name="level_up_stay">Zatiaľ nie</string>
     <string name="deal_filter_all">Všetky</string>
     <string name="deal_picker_empty">Žiadne rozdanie nezodpovedá filtru.</string>
     <string name="deal_current">Aktuálne</string>

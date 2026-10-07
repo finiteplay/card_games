@@ -126,6 +126,10 @@
     <string name="deal_moves_best">चालें, सर्वश्रेष्ठ: %1$d</string>
     <string name="deal_moves_last">चालें, पिछली: %1$d</string>
     <string name="win_banner">आप जीते!</string>
+    <string name="level_up_title">अगले स्तर के लिए तैयार?</string>
+    <string name="level_up_body">%2$s: %1$d जीत। क्या %3$s पर जाएँ?</string>
+    <string name="level_up_switch">%1$s पर जाएँ</string>
+    <string name="level_up_stay">अभी नहीं</string>
     <string name="deal_filter_all">सभी</string>
     <string name="deal_picker_empty">इस फ़िल्टर से कोई बँटवारा मेल नहीं खाता।</string>
     <string name="deal_current">वर्तमान</string>

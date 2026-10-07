@@ -62,6 +62,8 @@ import org.finiteplay.spider.storage.SpiderSettingsStore
 import org.finiteplay.spider.storage.SpiderTraversalStore
 import org.finiteplay.spider.storage.SpiderStatistics
 import org.finiteplay.core.storage.DealProgressStore
+import org.finiteplay.core.session.LevelUpOffer
+import org.finiteplay.core.session.levelUpFor
 import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
 import org.finiteplay.core.storage.advancedBy
@@ -316,9 +318,14 @@ class SpiderViewModel(
             hintsUsed = hintsUsedThisGame,
             solutionMoveCount = solutionMoveCount,
         )
+        val wonSuits = session.state.suitCount
         viewModelScope.launch {
             store.upsert(record)
             historyRecords = store.current()
+            if (outcome == SpiderOutcome.WIN) {
+                val wins = historyRecords.count { it.outcome == SpiderOutcome.WIN && it.suitCount == wonSuits }
+                pendingLevelUp = levelUpFor(SuitCount.entries, wonSuits, wins, settings.nextSuitCount)
+            }
         }
     }
 
@@ -912,7 +919,36 @@ class SpiderViewModel(
      * same answer nearly every time. Changing it is Settings' job (`EXECUTION_PLAN.md` S3c).
      */
     fun requestNewGame() {
+        // The tenth win at a suit count asks before dealing: the question replaces this one deal, and
+        // its answer deals (`acceptLevelUp`, `declineLevelUp`).
+        val offer = pendingLevelUp
+        if (offer != null && session.state.isWon) {
+            pendingLevelUp = null
+            levelUpOffer = offer
+            return
+        }
         if (needsConfirmation()) pendingAction = DiscardingAction.NEW_GAME else newGame()
+    }
+
+    /** The question open now — move up to the next suit count? — or null; the screen shows a dialog while it is set. */
+    var levelUpOffer by mutableStateOf<LevelUpOffer<SuitCount>?>(null)
+        private set
+
+    /** An offer earned by the last win, held until the player asks for a new game. */
+    private var pendingLevelUp: LevelUpOffer<SuitCount>? = null
+
+    /** Yes: the suit count becomes the next one, and a new game is dealt at it. */
+    fun acceptLevelUp() {
+        val offer = levelUpOffer ?: return
+        levelUpOffer = null
+        setSuitCount(offer.to)
+    }
+
+    /** Not yet: a new game is dealt at the same suit count, as New Game would have. */
+    fun declineLevelUp() {
+        if (levelUpOffer == null) return
+        levelUpOffer = null
+        newGame()
     }
 
     /** Restart: the same deal again from the start, at the count it was dealt at. */

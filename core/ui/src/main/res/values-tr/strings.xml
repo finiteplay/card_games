@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Hamle, en iyi: %1$d</string>
     <string name="deal_moves_last">Hamle, son: %1$d</string>
     <string name="win_banner">Kazandın!</string>
+    <string name="level_up_title">Sonraki seviyeye hazır mısınız?</string>
+    <string name="level_up_body">%2$s: %1$d galibiyet. %3$s seviyesine geçmek ister misiniz?</string>
+    <string name="level_up_switch">%1$s seviyesine geç</string>
+    <string name="level_up_stay">Şimdi değil</string>
     <string name="deal_filter_all">Tümü</string>
     <string name="deal_picker_empty">Filtreyle eşleşen dağıtım yok.</string>
     <string name="deal_current">Geçerli</string>

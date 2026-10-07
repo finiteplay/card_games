@@ -126,6 +126,10 @@
     <string name="deal_moves_best">步数，最佳：%1$d</string>
     <string name="deal_moves_last">步数，上次：%1$d</string>
     <string name="win_banner">你赢了！</string>
+    <string name="level_up_title">准备好进入下一级别了吗？</string>
+    <string name="level_up_body">%2$s：已赢 %1$d 局。要切换到 %3$s 吗？</string>
+    <string name="level_up_switch">切换到 %1$s</string>
+    <string name="level_up_stay">暂不</string>
     <string name="deal_filter_all">全部</string>
     <string name="deal_picker_empty">没有符合筛选条件的牌局。</string>
     <string name="deal_current">当前</string>

@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Siirrot, paras: %1$d</string>
     <string name="deal_moves_last">Siirrot, viimeisin: %1$d</string>
     <string name="win_banner">Voitit!</string>
+    <string name="level_up_title">Valmis seuraavalle tasolle?</string>
+    <string name="level_up_body">%2$s: %1$d voittoa. Siirrytäänkö tasolle %3$s?</string>
+    <string name="level_up_switch">Siirry: %1$s</string>
+    <string name="level_up_stay">Ei vielä</string>
     <string name="deal_filter_all">Kaikki</string>
     <string name="deal_picker_empty">Mikään jako ei vastaa suodatinta.</string>
     <string name="deal_current">Nykyinen</string>

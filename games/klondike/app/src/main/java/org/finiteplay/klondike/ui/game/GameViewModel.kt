@@ -67,6 +67,8 @@ import org.finiteplay.klondike.storage.TraversalLoadResult
 import org.finiteplay.klondike.storage.computeStatistics
 import org.finiteplay.core.session.solutionRatioPercent
 import org.finiteplay.core.storage.DealProgressStore
+import org.finiteplay.core.session.LevelUpOffer
+import org.finiteplay.core.session.levelUpFor
 import org.finiteplay.core.storage.DealProgress
 import org.finiteplay.core.storage.DealStatus
 import org.finiteplay.core.storage.advancedBy
@@ -633,7 +635,36 @@ class GameViewModel(
      * least one successful player action... No confirmation is needed after a win.").
      */
     fun requestNewGame() {
+        // The tenth win at a level asks before dealing: the question replaces this one deal, and its
+        // answer deals (`acceptLevelUp`, `declineLevelUp`).
+        val offer = pendingLevelUp
+        if (offer != null && session.state.isWon) {
+            pendingLevelUp = null
+            levelUpOffer = offer
+            return
+        }
         if (needsConfirmation()) pendingConfirmation = PendingConfirmation.NEW_GAME else performNewGame()
+    }
+
+    /** The question open now — move up to the next level? — or null; the screen shows a dialog while it is set. */
+    var levelUpOffer by mutableStateOf<LevelUpOffer<DifficultyTier>?>(null)
+        private set
+
+    /** An offer earned by the last win, held until the player asks for a new game. */
+    private var pendingLevelUp: LevelUpOffer<DifficultyTier>? = null
+
+    /** Yes: the level becomes the next one, and a new game is dealt at it. */
+    fun acceptLevelUp() {
+        val offer = levelUpOffer ?: return
+        levelUpOffer = null
+        setDifficulty(DifficultyPreference.valueOf(offer.to.name))
+    }
+
+    /** Not yet: a new game is dealt at the same level, as New Game would have. */
+    fun declineLevelUp() {
+        if (levelUpOffer == null) return
+        levelUpOffer = null
+        performNewGame()
     }
 
     /** Replay: the same seed and versions, same confirmation rule as [requestNewGame]. */
@@ -1255,7 +1286,14 @@ class GameViewModel(
             solutionMoveCount = solutionMoveCount,
             difficulty = dealDifficulty,
         )
-        viewModelScope.launch { historyStore.upsert(record) }
+        val wonTier = dealDifficulty
+        viewModelScope.launch {
+            historyStore.upsert(record)
+            if (outcome == Outcome.WIN && wonTier != null) {
+                val wins = historyStore.all().count { it.outcome == Outcome.WIN && it.difficulty == wonTier }
+                pendingLevelUp = levelUpFor(DifficultyTier.entries, wonTier, wins, persistedDifficulty.toTier())
+            }
+        }
     }
 
     /**

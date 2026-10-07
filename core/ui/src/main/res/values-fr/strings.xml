@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Coups, meilleur : %1$d</string>
     <string name="deal_moves_last">Coups, dernier : %1$d</string>
     <string name="win_banner">Gagné !</string>
+    <string name="level_up_title">Prêt pour le niveau suivant ?</string>
+    <string name="level_up_body">Vous avez gagné %1$d parties en %2$s. Passer en %3$s ?</string>
+    <string name="level_up_switch">Passer en %1$s</string>
+    <string name="level_up_stay">Pas maintenant</string>
     <string name="deal_filter_all">Toutes</string>
     <string name="deal_picker_empty">Aucune donne ne correspond au filtre.</string>
     <string name="deal_current">En cours</string>

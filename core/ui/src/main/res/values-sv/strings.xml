@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Drag, bäst: %1$d</string>
     <string name="deal_moves_last">Drag, senast: %1$d</string>
     <string name="win_banner">Du vann!</string>
+    <string name="level_up_title">Redo för nästa nivå?</string>
+    <string name="level_up_body">%2$s: %1$d vinster. Vill du gå vidare till %3$s?</string>
+    <string name="level_up_switch">Gå till %1$s</string>
+    <string name="level_up_stay">Inte än</string>
     <string name="deal_filter_all">Alla</string>
     <string name="deal_picker_empty">Ingen giv matchar filtret.</string>
     <string name="deal_current">Aktuell</string>

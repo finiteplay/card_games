@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Züge, Bestwert: %1$d</string>
     <string name="deal_moves_last">Züge, zuletzt: %1$d</string>
     <string name="win_banner">Gewonnen!</string>
+    <string name="level_up_title">Bereit für die nächste Stufe?</string>
+    <string name="level_up_body">%2$s: %1$d Siege. Möchtest du zu %3$s wechseln?</string>
+    <string name="level_up_switch">Zu %1$s wechseln</string>
+    <string name="level_up_stay">Noch nicht</string>
     <string name="deal_filter_all">Alle</string>
     <string name="deal_picker_empty">Keine Blätter passen zum Filter.</string>
     <string name="deal_current">Aktuell</string>

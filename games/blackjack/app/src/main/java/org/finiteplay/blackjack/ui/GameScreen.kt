@@ -46,7 +46,6 @@ import org.finiteplay.blackjack.rules.Decision
 import org.finiteplay.blackjack.rules.Settlement
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.BoardOrientation
-import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.ui.layout.Handedness
 import org.finiteplay.core.ui.layout.RestBreakDialog
 import org.finiteplay.core.ui.layout.RestReminderDialog
@@ -266,13 +265,13 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
 
     if (viewModel.showRestReminderDialog) {
         RestReminderDialog(
-            playedLabel = formatElapsed((viewModel.settings.restReminderInterval.minutes ?: 0) * 60),
+            playedSeconds = (viewModel.settings.restReminderInterval.minutes ?: 0) * 60,
             onTakeBreak = viewModel::startRestBreak,
             onKeepPlaying = viewModel::dismissRestReminder,
         )
     }
     viewModel.restBreakRemainingSeconds?.let { remaining ->
-        RestBreakDialog(remainingLabel = formatElapsed(remaining), onCancel = viewModel::cancelRestBreak)
+        RestBreakDialog(remainingSeconds = remaining, onCancel = viewModel::cancelRestBreak)
     }
 
     if (showHelp) HelpScreen(onClose = { showHelp = false })

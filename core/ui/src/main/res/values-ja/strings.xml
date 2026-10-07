@@ -126,6 +126,10 @@
     <string name="deal_moves_best">手数・最少: %1$d</string>
     <string name="deal_moves_last">手数・前回: %1$d</string>
     <string name="win_banner">勝ち！</string>
+    <string name="level_up_title">次のレベルに進みますか？</string>
+    <string name="level_up_body">%2$s: %1$d 勝。%3$s に切り替えますか？</string>
+    <string name="level_up_switch">%1$s に切り替える</string>
+    <string name="level_up_stay">今はしない</string>
     <string name="deal_filter_all">すべて</string>
     <string name="deal_picker_empty">条件に合う配置がありません。</string>
     <string name="deal_current">現在</string>

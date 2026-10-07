@@ -126,6 +126,10 @@
     <string name="deal_moves_best">이동, 최고: %1$d</string>
     <string name="deal_moves_last">이동, 최근: %1$d</string>
     <string name="win_banner">승리!</string>
+    <string name="level_up_title">다음 레벨로 넘어갈까요?</string>
+    <string name="level_up_body">%2$s: %1$d승. %3$s(으)로 바꿀까요?</string>
+    <string name="level_up_switch">%1$s(으)로 전환</string>
+    <string name="level_up_stay">아직 아니요</string>
     <string name="deal_filter_all">전체</string>
     <string name="deal_picker_empty">필터에 맞는 판이 없습니다.</string>
     <string name="deal_current">현재</string>

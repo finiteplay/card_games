@@ -19,6 +19,7 @@ platform-wide and are not restated here.
 - **Help:** goal, moving cards, the stock, suit counts, and controls, in one scroll — not tabbed
   pages the way Klondike's Rules/Strategy/Levels are, since Spider has no difficulty tiers to
   give a page of their own to
+- **Level-up offer:** after the tenth win at the suit count being played, New Game first asks whether to move up to the next count (`docs/PLATFORM.md` "Levels"); yes switches and deals there
 - **Confirmation:** discarding the game in play, for New Game and Replay (the shared
   `DiscardGameDialog`, `core/ui`)
 - **Win:** the shared win dialog (`core/ui`'s `WinDialog`) — moves, elapsed time, personal bests

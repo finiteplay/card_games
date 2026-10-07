@@ -42,7 +42,6 @@ import androidx.compose.material.icons.automirrored.filled.Undo
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Replay
 import androidx.compose.material.icons.filled.Settings
-import org.finiteplay.core.session.formatElapsed
 import org.finiteplay.core.storage.AppLocale
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.AppLanguages
@@ -55,6 +54,7 @@ import org.finiteplay.core.ui.layout.SolutionComparison
 import org.finiteplay.core.ui.layout.WinDialog
 import org.finiteplay.core.ui.layout.Handedness
 import org.finiteplay.core.ui.layout.HintProgressDialog
+import org.finiteplay.core.ui.layout.LevelUpDialog
 import org.finiteplay.core.ui.layout.RestReminderDialog
 import org.finiteplay.core.ui.layout.RestBreakDialog
 import androidx.compose.ui.graphics.Color
@@ -297,9 +297,19 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
         )
     }
 
+    viewModel.levelUpOffer?.let { offer ->
+        LevelUpDialog(
+            wins = offer.wins,
+            currentLevel = stringResource(offer.from.labelRes()),
+            nextLevel = stringResource(offer.to.labelRes()),
+            onSwitch = viewModel::acceptLevelUp,
+            onStay = viewModel::declineLevelUp,
+        )
+    }
+
     if (viewModel.showRestReminderDialog) {
         RestReminderDialog(
-            playedLabel = formatElapsed((viewModel.settings.restReminderInterval.minutes ?: 0) * 60),
+            playedSeconds = (viewModel.settings.restReminderInterval.minutes ?: 0) * 60,
             onTakeBreak = viewModel::startRestBreak,
             onKeepPlaying = viewModel::dismissRestReminder,
         )
@@ -307,7 +317,7 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
 
     viewModel.restBreakRemainingSeconds?.let { remaining ->
         RestBreakDialog(
-            remainingLabel = formatElapsed(remaining),
+            remainingSeconds = remaining,
             onCancel = viewModel::cancelRestBreak,
         )
     }

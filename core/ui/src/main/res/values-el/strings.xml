@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Κινήσεις, καλύτερο: %1$d</string>
     <string name="deal_moves_last">Κινήσεις, τελευταίο: %1$d</string>
     <string name="win_banner">Κέρδισες!</string>
+    <string name="level_up_title">Έτοιμοι για το επόμενο επίπεδο;</string>
+    <string name="level_up_body">%2$s: %1$d νίκες. Θέλετε να περάσετε σε: %3$s;</string>
+    <string name="level_up_switch">Μετάβαση σε: %1$s</string>
+    <string name="level_up_stay">Όχι ακόμη</string>
     <string name="deal_filter_all">Όλες</string>
     <string name="deal_picker_empty">Καμία διανομή δεν ταιριάζει.</string>
     <string name="deal_current">Τρέχουσα</string>

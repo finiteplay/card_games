@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Lépések, legjobb: %1$d</string>
     <string name="deal_moves_last">Lépések, utolsó: %1$d</string>
     <string name="win_banner">Nyertél!</string>
+    <string name="level_up_title">Készen állsz a következő szintre?</string>
+    <string name="level_up_body">%2$s: %1$d győzelem. Átlépsz ide: %3$s?</string>
+    <string name="level_up_switch">Váltás: %1$s</string>
+    <string name="level_up_stay">Még nem</string>
     <string name="deal_filter_all">Mind</string>
     <string name="deal_picker_empty">Egy osztás sem felel meg a szűrőnek.</string>
     <string name="deal_current">Aktuális</string>

@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Ruchy, najlepszy: %1$d</string>
     <string name="deal_moves_last">Ruchy, ostatni: %1$d</string>
     <string name="win_banner">Wygrana!</string>
+    <string name="level_up_title">Gotowy na kolejny poziom?</string>
+    <string name="level_up_body">%2$s: wygranych — %1$d. Przejść do: %3$s?</string>
+    <string name="level_up_switch">Przejdź do: %1$s</string>
+    <string name="level_up_stay">Jeszcze nie</string>
     <string name="deal_filter_all">Wszystkie</string>
     <string name="deal_picker_empty">Żadne rozdanie nie pasuje do filtra.</string>
     <string name="deal_current">Bieżące</string>

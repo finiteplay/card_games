@@ -17,7 +17,7 @@ fun <L> nextLevel(levels: List<L>, current: L): L? = levels.getOrNull(levels.ind
  * level won, and only while still playing that level ([playing]): one who has already moved on, or
  * plays a mix, has nothing to be asked. There is nothing to move up to from the last level.
  */
-fun <L> levelUpOffer(levels: List<L>, won: L, winsAtLevel: Int, playing: L?): LevelUpOffer<L>? {
+fun <L> levelUpFor(levels: List<L>, won: L, winsAtLevel: Int, playing: L?): LevelUpOffer<L>? {
     if (winsAtLevel != LEVEL_UP_WINS || playing != won) return null
     val next = nextLevel(levels, won) ?: return null
     return LevelUpOffer(from = won, to = next, wins = winsAtLevel)

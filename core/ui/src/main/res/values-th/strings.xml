@@ -126,6 +126,10 @@
     <string name="deal_moves_best">การเดิน, ดีที่สุด: %1$d</string>
     <string name="deal_moves_last">การเดิน, ล่าสุด: %1$d</string>
     <string name="win_banner">คุณชนะ!</string>
+    <string name="level_up_title">พร้อมสำหรับระดับถัดไปไหม</string>
+    <string name="level_up_body">%2$s: ชนะ %1$d เกม ต้องการเปลี่ยนเป็น %3$s ไหม</string>
+    <string name="level_up_switch">เปลี่ยนเป็น %1$s</string>
+    <string name="level_up_stay">ยังไม่ต้อง</string>
     <string name="deal_filter_all">ทั้งหมด</string>
     <string name="deal_picker_empty">ไม่มีกระดานที่ตรงกับตัวกรอง</string>
     <string name="deal_current">ปัจจุบัน</string>

@@ -126,6 +126,10 @@
     <string name="deal_moves_best">Nước đi, tốt nhất: %1$d</string>
     <string name="deal_moves_last">Nước đi, gần nhất: %1$d</string>
     <string name="win_banner">Bạn thắng!</string>
+    <string name="level_up_title">Sẵn sàng lên cấp độ tiếp theo?</string>
+    <string name="level_up_body">%2$s: %1$d chiến thắng. Chuyển sang %3$s?</string>
+    <string name="level_up_switch">Chuyển sang %1$s</string>
+    <string name="level_up_stay">Chưa</string>
     <string name="deal_filter_all">Tất cả</string>
     <string name="deal_picker_empty">Không có ván nào khớp bộ lọc.</string>
     <string name="deal_current">Hiện tại</string>

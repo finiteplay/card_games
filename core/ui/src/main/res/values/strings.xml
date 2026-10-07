@@ -135,6 +135,10 @@
     <string name="deal_moves_best">Moves, best: %1$d</string>
     <string name="deal_moves_last">Moves, last: %1$d</string>
     <string name="win_banner">You win!</string>
+    <string name="level_up_title">Ready for the next level?</string>
+    <string name="level_up_body">You’ve won %1$d games at %2$s. Would you like to move up to %3$s?</string>
+    <string name="level_up_switch">Switch to %1$s</string>
+    <string name="level_up_stay">Not yet</string>
     <string name="deal_filter_all">All</string>
     <string name="deal_picker_empty">No deals match this filter.</string>
     <string name="deal_current">Current</string>

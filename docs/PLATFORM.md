@@ -152,6 +152,25 @@ games feel alike:
 - **Skip Animations and system reduced motion** leave the banner, with no spring and no confetti
   (`## Accessibility`).
 
+## Levels
+
+A game with ordered levels (Klondike's difficulty tiers, Spider's suit counts) asks once whether to
+move up (`core/session`'s `levelUpFor`, `core/ui`'s `LevelUpDialog`):
+
+- **When.** On the win that makes `LEVEL_UP_WINS` wins at that level in the game's history, and only
+  while the player is still playing that level. Someone who has moved on, plays a mix, or is at the
+  last level is not asked. The count is read from the history, so the question is asked once, not
+  again at the 11th win.
+- **After the win dialog, not over it.** Choosing New Game on a won board shows the question first.
+  **Yes** switches the level and deals a new game at it; **Not yet** (or Back) deals a new game at
+  the current level.
+
+## Time in words
+
+A length of time the player reads as a sentence — the rest reminder, the break dialog's spoken
+countdown — is written in words in the player's language ("1 hour 30 minutes"), through ICU's
+`MeasureFormat`, not as a clock reading. Only a ticking countdown or a stopwatch stays a clock face.
+
 ## Accessibility
 
 - At least 4.5:1 text contrast and 3:1 meaningful graphic contrast

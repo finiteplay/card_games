@@ -126,6 +126,10 @@
     <string name="deal_moves_best">الحركات، الأفضل: %1$d</string>
     <string name="deal_moves_last">الحركات، الأخيرة: %1$d</string>
     <string name="win_banner">فزت!</string>
+    <string name="level_up_title">هل أنت مستعد للمستوى التالي؟</string>
+    <string name="level_up_body">%2$s: %1$d انتصارات. الانتقال إلى: %3$s؟</string>
+    <string name="level_up_switch">الانتقال إلى %1$s</string>
+    <string name="level_up_stay">ليس الآن</string>
     <string name="deal_filter_all">الكل</string>
     <string name="deal_picker_empty">لا توجد توزيعات مطابقة.</string>
     <string name="deal_current">الحالية</string>
