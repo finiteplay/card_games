@@ -321,7 +321,7 @@ private fun OpponentSeat(
             color = Color.Black.copy(alpha = 0.34f),
             border = if (acting) BorderStroke(2.5.dp, ring.copy(alpha = pulse)) else BorderStroke(1.dp, Color.White.copy(alpha = 0.18f)),
         ) {}
-        Column(modifier = Modifier.fillMaxSize().padding(horizontal = 4.dp, vertical = 2.dp).clearAndSetSemantics { }) {
+        Column(modifier = Modifier.fillMaxSize().padding(horizontal = 4.dp).clearAndSetSemantics { }) {
             Row(modifier = Modifier.height(28.dp).fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                 Avatar(profile)
                 Column(modifier = Modifier.weight(1f)) {
@@ -346,7 +346,7 @@ private fun OpponentSeat(
         // The cards: two backs while in the hand, face up from showdown; taller than the compact row, they cover the stack line.
         if (model.contesting && !out) {
             val cards: List<Card?> = model.cards ?: listOf(null, null)
-            Box(modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 2.dp)) {
+            Box(modifier = Modifier.align(Alignment.BottomCenter)) {
                 key(table.handNumber) {
                     val shownWidth = if (model.cards != null) maxOf(cardWidth, TableGeometry.MIN_CARD_WIDTH.dp) else cardWidth
                     CardFan(

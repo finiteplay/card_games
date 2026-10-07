@@ -164,4 +164,20 @@ class TablePresenterTest {
         }
         return Card(suit, rank)
     }
+
+    @Test
+    fun `a dealt hand is one pot, because unequal blinds are not side pots`() {
+        val dealt = TablePresenter.dealt(startTournament(7L).state)
+        assertEquals("the small blind has less in than the big blind, which makes no second pot", 1, dealt.potCount)
+    }
+
+    @Test
+    fun `only an all-in makes a side pot`() {
+        val steps = stepsOf(Scenarios.allInWithSidePot)
+        assertTrue(steps.any { (step, _) -> step.model.potCount > 1 })
+        assertTrue("never more pots than all-in levels plus one", steps.all { (step, state) ->
+            val capped = state.contributions.indices.filter { state.allIn[it] && !state.folded[it] }.map { state.contributions[it] }.distinct().size
+            step.model.potCount <= capped + 1 || step.model.stage != Stage.OPPONENT_TURN && step.model.stage != Stage.YOUR_TURN
+        })
+    }
 }

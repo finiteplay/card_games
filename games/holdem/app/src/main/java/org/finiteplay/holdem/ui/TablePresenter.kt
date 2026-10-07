@@ -7,7 +7,6 @@ import org.finiteplay.holdem.rules.HandResult
 import org.finiteplay.holdem.rules.HistoryEntry
 import org.finiteplay.holdem.rules.HoldemState
 import org.finiteplay.holdem.rules.Phase
-import org.finiteplay.holdem.rules.sidePots
 
 /** One thing to show: wait [pause], then replace the table with [model], play [cues] and say [announce]. */
 data class Step(
@@ -174,8 +173,12 @@ object TablePresenter {
     private fun nextBoardSizes(from: Int, to: Int): List<Int> =
         listOf(3, 4, 5).filter { it > from && it <= to }
 
-    private fun potCountOf(contributions: List<Int>, seats: List<SeatModel>): Int =
-        sidePots(contributions, seats.map { it.contesting }).size
+    /** One pot, and one more for each all-in that is for less than the top bet: unmatched bets and blinds are not side pots. */
+    private fun potCountOf(contributions: List<Int>, seats: List<SeatModel>): Int {
+        val contesting = contributions.indices.filter { seats[it].contesting }
+        val top = contesting.maxOfOrNull { contributions[it] } ?: return 1
+        return contesting.filter { seats[it].allIn && contributions[it] in 1 until top }.map { contributions[it] }.distinct().size + 1
+    }
 
     // ---- the hand's end --------------------------------------------------------------------
 
