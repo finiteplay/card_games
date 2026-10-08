@@ -327,6 +327,11 @@ class HoldemViewModel(
         sizing = sizing?.stepped(direction)
     }
 
+    /** The slider: any whole amount between the smallest legal bet or raise and all in. */
+    fun setSizingAmount(value: Int) {
+        sizing = sizing?.withAmount(value)
+    }
+
     fun setSizingPreset(preset: Preset) {
         sizing = sizing?.preset(preset)
     }
@@ -415,16 +420,14 @@ class HoldemViewModel(
         endDialog = TournamentEnd(place = state.places[0] ?: return, hands = state.handNumber, largestPot = largestPot)
     }
 
-    /** Plays opponents' turns until it is the player's, or the hand is over (and the next one dealt after its pause). */
+    /** Plays opponents' turns until it is the player's, or the hand is over. */
     private suspend fun advance() {
         while (true) {
             val state = session.state
             when {
-                state.phase == Phase.TOURNAMENT_OVER || state.playerOut -> return
-                state.phase == Phase.HAND_OVER -> {
-                    delay(pacing.nextHandMs)
-                    dealNext()
-                }
+                // A finished hand waits for the player: the result stays up for as long as they want to look at
+                // it, and Next hand deals (`UI_SPEC.md` "Showdown and Results").
+                state.phase == Phase.TOURNAMENT_OVER || state.playerOut || state.phase == Phase.HAND_OVER -> return
                 state.toAct == 0 -> {
                     sizing = legalActions(state)?.let { Sizing.of(state, it) }
                     table = table.copy(actor = 0, thinking = false, stage = Stage.YOUR_TURN)

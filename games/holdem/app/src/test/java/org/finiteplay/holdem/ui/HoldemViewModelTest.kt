@@ -101,8 +101,6 @@ class HoldemViewModelTest {
         assertEquals(800, pacing.thinkMs(false))
         assertEquals(1_400, pacing.thinkMs(true))
         assertEquals(250, Pacing(false).thinkMs(true))
-        assertEquals(3_000, pacing.nextHandMs)
-        assertEquals(1_500, Pacing(false).nextHandMs)
     }
 
     @Test
@@ -122,7 +120,7 @@ class HoldemViewModelTest {
     }
 
     @Test
-    fun `a hand is played through, paid one pot at a time, and the next deals itself after the pause`() {
+    fun `a hand is played through, paid one pot at a time, and the next waits to be dealt`() {
         val scenario = Scenarios.checkDown
         val vm = viewModel(scenario, animations = false)
         val banners = ArrayList<PotBanner>()
@@ -138,12 +136,17 @@ class HoldemViewModelTest {
         assertEquals(vm.session.state.stacks, vm.table.seats.map { it.stack })
         assertTrue(banners.isNotEmpty())
         assertEquals(1, vm.table.handNumber)
-        vm.advance(1_600)
+        // However long the player looks at the result, nothing deals until they say so.
+        vm.advance(60_000)
+        assertEquals(Stage.HAND_OVER, vm.table.stage)
+        assertEquals(1, vm.table.handNumber)
+        vm.nextHand()
+        vm.advance(0)
         assertEquals(2, vm.table.handNumber)
     }
 
     @Test
-    fun `next hand pressed early deals at once`() {
+    fun `next hand deals when it is pressed`() {
         val scenario = Scenarios.checkDown
         val vm = viewModel(scenario, animations = false)
         var guard = 0

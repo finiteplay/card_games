@@ -51,3 +51,17 @@ fun handName(cards: List<Card>, value: HandValue): HandName {
         HandCategory.FLUSH, HandCategory.HIGH_CARD -> HandName(category, top)
     }
 }
+
+/**
+ * The hand the player holds right now, for the line under their cards: the best five of the hole cards
+ * and the board once there are five cards to rank, a pair when the two hole cards are one before the
+ * flop, and nothing otherwise (two unrelated cards are not yet a hand).
+ */
+fun liveHandName(hole: List<Card>, board: List<Card>): HandName? {
+    val all = hole + board
+    return when {
+        all.size >= 5 -> handName(all, evaluate(all))
+        hole.size == 2 && hole[0].rank == hole[1].rank -> HandName(HandCategory.PAIR, hole[0].rank)
+        else -> null
+    }
+}

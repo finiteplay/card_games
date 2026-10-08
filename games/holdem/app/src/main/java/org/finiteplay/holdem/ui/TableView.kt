@@ -96,10 +96,26 @@ fun TableView(
     }
 }
 
+/**
+ * The table's rim and felt, drawn behind the seats so they sit round an oval, as at a real table: the
+ * rim passes under the top row of seats and the two side seats and closes beneath the player's cards.
+ */
+@Composable
+private fun TableOval(top: Dp, bottom: Dp) {
+    androidx.compose.foundation.Canvas(modifier = Modifier.fillMaxSize().padding(top = top, bottom = bottom, start = 2.dp, end = 2.dp)) {
+        val rim = 9.dp.toPx()
+        val rimColor = Color(0xFF5D4037)
+        drawOval(Color.Black.copy(alpha = 0.18f))
+        drawOval(rimColor, style = androidx.compose.ui.graphics.drawscope.Stroke(width = rim))
+        drawOval(Color(0xFFFFD54F).copy(alpha = 0.35f), topLeft = androidx.compose.ui.geometry.Offset(rim / 2, rim / 2), size = androidx.compose.ui.geometry.Size(size.width - rim, size.height - rim), style = androidx.compose.ui.graphics.drawscope.Stroke(width = 1.5.dp.toPx()))
+    }
+}
+
 @Composable
 private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate: Boolean, width: Float, height: Float) {
     val g = TableGeometry.portrait(width, height)
     val compact = g.density != TableGeometry.Density.Regular
+    TableOval(top = (g.seatHeight * 0.5f).dp, bottom = (g.yourSeatHeight * 0.45f).dp)
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = TableGeometry.SIDE_MARGIN.dp),
         verticalArrangement = Arrangement.spacedBy(g.gap.dp),
@@ -123,6 +139,7 @@ private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate
 @Composable
 private fun Landscape(table: TableModel, profiles: List<OpponentProfile>, animate: Boolean, width: Float, height: Float) {
     val g = TableGeometry.landscape(width + TableGeometry.RAIL_WIDTH + TableGeometry.SIZING_COLUMN_WIDTH, height + TableGeometry.STATUS_ROW)
+    TableOval(top = (g.seatHeight * 0.5f).dp, bottom = (g.yourSeatHeight * 0.45f).dp)
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = TableGeometry.SIDE_MARGIN.dp),
         verticalArrangement = Arrangement.spacedBy(g.gap.dp),
@@ -154,6 +171,7 @@ private fun PotView(table: TableModel, compactLine: Boolean = false) {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.semantics(mergeDescendants = true) { contentDescription = spoken }.testTag("pot"),
     ) {
+        if (!compactLine && table.pot > 0) ChipStack(amount = table.pot, chipWidth = 18.dp, modifier = Modifier.padding(bottom = 2.dp))
         Text(
             text = stringResource(R.string.pot_label, table.pot),
             style = if (compactLine) MaterialTheme.typography.titleMedium else MaterialTheme.typography.titleLarge,
@@ -233,11 +251,13 @@ private enum class PillSide { Below, End, Start }
 
 @Composable
 private fun Avatar(profile: OpponentProfile) {
-    Box(
-        modifier = Modifier.size(22.dp).clip(CircleShape).background(Color(profile.colorArgb)),
-        contentAlignment = Alignment.Center,
-    ) {
-        Text(profile.name.take(1), fontSize = 12.sp, fontWeight = FontWeight.Bold, color = Color.Black.copy(alpha = 0.8f))
+    val background = Color(profile.colorArgb)
+    val figure = Color.Black.copy(alpha = 0.34f)
+    androidx.compose.foundation.Canvas(modifier = Modifier.size(26.dp).clip(CircleShape).background(background)) {
+        val w = size.width
+        // Shoulders below, head above: a neutral silhouette that is drawn, so the app ships no faces.
+        drawOval(figure, topLeft = androidx.compose.ui.geometry.Offset(w * 0.12f, w * 0.62f), size = androidx.compose.ui.geometry.Size(w * 0.76f, w * 0.7f))
+        drawCircle(figure, radius = w * 0.2f, center = androidx.compose.ui.geometry.Offset(w * 0.5f, w * 0.38f))
     }
 }
 
@@ -270,7 +290,7 @@ private fun BetPill(amount: Int, tag: String, modifier: Modifier = Modifier) {
         modifier = modifier.wrapContentSize(unbounded = true).clearAndSetSemantics { },
     ) {
         Row(modifier = Modifier.padding(horizontal = 6.dp, vertical = 1.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-            ChipStack(amount = amount, chipWidth = 12.dp)
+            ChipStack(amount = amount, chipWidth = 15.dp)
             Text("%,d".format(amount), style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, modifier = Modifier.testTag(tag))
         }
     }
@@ -457,9 +477,11 @@ private fun YourSeat(table: TableModel, cardWidth: Dp, seatHeight: Dp, animate: 
                 val line = if (model.allIn && model.stack == 0) stringResource(R.string.you) + " · " + stringResource(R.string.seat_all_in) else stringResource(R.string.your_line, model.stack)
                 Text(line, style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, modifier = Modifier.testTag("seat_0_stack"))
                 Markers(table, 0)
-                val value = model.handValue
-                if (value != null && model.cards != null) {
-                    Text(handNameText(handName(model.cards + table.board, value)), style = MaterialTheme.typography.labelMedium, color = ring, maxLines = 1, modifier = Modifier.testTag("seat_0_hand"))
+                // The hand held right now, as the poker apps show it: "Pair of kings" from the flop on, and a
+                // pocket pair before it. Once showdown names it, it is the same name.
+                val name = if (model.folded) null else model.cards?.let { liveHandName(it, table.board) }
+                if (name != null) {
+                    Text(handNameText(name), style = MaterialTheme.typography.labelMedium, color = ring, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_0_hand"))
                 }
             }
         }

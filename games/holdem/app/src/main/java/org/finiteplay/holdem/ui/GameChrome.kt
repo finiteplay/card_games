@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -182,8 +183,12 @@ internal fun ActionBar(
         orientation = orientation,
         mirrored = mirrored,
         actions = withHint.map { if (it.testTag == suggestedTag) it.copy(highlighted = true) else it },
+        slots = if (landscape) 0 else WIDEST_BAR,
     )
 }
+
+/** Settings, Fold, Call, Raise, All in, Hint: the widest the bar gets, so a shorter one leaves Settings where it is. */
+private const val WIDEST_BAR = 6
 
 /** The button that plays [action]: the Hint answers by highlighting it. */
 private fun actionTag(action: org.finiteplay.holdem.rules.Action): String = when (action) {
@@ -260,25 +265,26 @@ internal fun SizingControls(
     horizontal: Boolean,
     onStep: (Int) -> Unit,
     onPreset: (Preset) -> Unit,
+    onAmount: (Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val minus = stringResource(R.string.sizing_minus_desc, sizing.step)
     val plus = stringResource(R.string.sizing_plus_desc, sizing.step)
     val amountDesc = if (sizing.raise) stringResource(R.string.sizing_raise_desc, sizing.amount) else stringResource(R.string.sizing_bet_desc, sizing.amount)
-    val controls: List<@Composable (Modifier) -> Unit> = listOf(
-        { m -> SizingButton(m, "sizing_minus", minus, sizing.canStepDown, repeat = true, onClick = { onStep(-1) }) { Icon(Icons.Filled.Remove) } },
-        { m -> SizingAmount(m, sizing.amount, amountDesc) },
-        { m -> SizingButton(m, "sizing_plus", plus, sizing.canStepUp, repeat = true, onClick = { onStep(+1) }) { Icon(Icons.Filled.Add) } },
-        { m -> SizingButton(m, "sizing_half_pot", stringResource(R.string.sizing_half_pot), true, onClick = { onPreset(Preset.HALF_POT) }) { Label(stringResource(R.string.sizing_half_pot)) } },
-        { m -> SizingButton(m, "sizing_pot", stringResource(R.string.sizing_pot), true, onClick = { onPreset(Preset.POT) }) { Label(stringResource(R.string.sizing_pot)) } },
+    val controls: List<Pair<Float, @Composable (Modifier) -> Unit>> = listOf(
+        1f to { m -> SizingButton(m, "sizing_minus", minus, sizing.canStepDown, repeat = true, onClick = { onStep(-1) }) { Icon(Icons.Filled.Remove) } },
+        2.4f to { m -> SizingAmount(m, sizing, amountDesc, onAmount) },
+        1f to { m -> SizingButton(m, "sizing_plus", plus, sizing.canStepUp, repeat = true, onClick = { onStep(+1) }) { Icon(Icons.Filled.Add) } },
+        1.1f to { m -> SizingButton(m, "sizing_half_pot", stringResource(R.string.sizing_half_pot), true, onClick = { onPreset(Preset.HALF_POT) }) { Label(stringResource(R.string.sizing_half_pot)) } },
+        1f to { m -> SizingButton(m, "sizing_pot", stringResource(R.string.sizing_pot), true, onClick = { onPreset(Preset.POT) }) { Label(stringResource(R.string.sizing_pot)) } },
     )
     if (horizontal) {
         Row(modifier = modifier.fillMaxWidth().height(52.dp).padding(horizontal = 8.dp, vertical = 2.dp), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-            controls.forEach { it(Modifier.weight(1f)) }
+            controls.forEach { (weight, control) -> control(Modifier.weight(weight).fillMaxHeight()) }
         }
     } else {
         Column(modifier = modifier.padding(horizontal = 2.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            controls.forEach { it(Modifier.fillMaxWidth().height(48.dp)) }
+            controls.forEach { (weight, control) -> control(Modifier.fillMaxWidth().height(if (weight > 2f) 64.dp else 48.dp)) }
         }
     }
 }
@@ -319,25 +325,31 @@ private fun SizingButton(
     }
 }
 
-/** The amount: a figure, never a text field; tapping it does nothing. */
+/** The amount: a figure, never a text field, with the slider beneath it; the figure itself does nothing when tapped. */
 @Composable
-private fun SizingAmount(modifier: Modifier, amount: Int, description: String) {
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = modifier
-            .testTag("sizing_amount")
-            .semantics(mergeDescendants = true) {
-                contentDescription = description
-                role = Role.Button
-            },
-    ) {
+private fun SizingAmount(modifier: Modifier, sizing: Sizing, description: String, onAmount: (Int) -> Unit) {
+    Column(modifier = modifier, horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
         Text(
-            text = "%,d".format(amount),
+            text = "%,d".format(sizing.amount),
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.ExtraBold,
             color = MaterialTheme.colorScheme.onBackground,
             textAlign = TextAlign.Center,
             maxLines = 1,
+            modifier = Modifier
+                .testTag("sizing_amount")
+                .semantics(mergeDescendants = true) {
+                    contentDescription = description
+                    role = Role.Button
+                },
+        )
+        AmountSlider(
+            value = sizing.amount,
+            min = sizing.row.min,
+            max = sizing.row.max,
+            description = description,
+            onChange = onAmount,
+            modifier = Modifier.fillMaxWidth(),
         )
     }
 }

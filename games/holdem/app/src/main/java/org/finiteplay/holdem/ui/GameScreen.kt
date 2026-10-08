@@ -136,7 +136,7 @@ fun GameScreen(
                             }
                             Box(modifier = Modifier.width(TableGeometry.SIZING_COLUMN_WIDTH.dp).fillMaxSize()) {
                                 if (sizing != null) {
-                                    SizingControls(sizing, horizontal = false, onStep = viewModel::stepSizing, onPreset = viewModel::setSizingPreset)
+                                    SizingControls(sizing, horizontal = false, onStep = viewModel::stepSizing, onPreset = viewModel::setSizingPreset, onAmount = viewModel::setSizingAmount)
                                 }
                             }
                             if (!mirrored) actionBar(BoardOrientation.LANDSCAPE)
@@ -149,7 +149,7 @@ fun GameScreen(
                         // Always reserved, so the table does not jump when the row appears.
                         Box(modifier = Modifier.fillMaxWidth().height(TableGeometry.SIZING_ROW.dp)) {
                             if (sizing != null) {
-                                SizingControls(sizing, horizontal = true, onStep = viewModel::stepSizing, onPreset = viewModel::setSizingPreset)
+                                SizingControls(sizing, horizontal = true, onStep = viewModel::stepSizing, onPreset = viewModel::setSizingPreset, onAmount = viewModel::setSizingAmount)
                             }
                         }
                         actionBar(BoardOrientation.PORTRAIT)

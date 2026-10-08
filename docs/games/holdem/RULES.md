@@ -162,8 +162,8 @@ There is no Undo (`Leaving`).
   the seed, and the first hand dealt with its blinds posted. Opponents to act before the player do so
   at once; they are other players taking their turns, not automation acting for the player, so
   `AGENTS.md`'s "no automation before the first action" rule does not apply to them.
-- Each hand ends when its pots are awarded. The next is dealt automatically after a short pause,
-  showing the result first, unless the tournament has ended.
+- Each hand ends when its pots are awarded. The result stays up, and the next hand is dealt only when
+  the player presses Next hand — never by itself, however long they look at it.
 - **There is no Undo.** Every decision is followed by a card or another seat's action the player
   could not have seen before it (`DESIGN.md` "What Hold'em is not").
 - There is no timer and no clock on decisions; the player may take as long as they like.

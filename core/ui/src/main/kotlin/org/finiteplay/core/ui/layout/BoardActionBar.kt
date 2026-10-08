@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -115,9 +116,16 @@ fun BoardActionBar(
     actions: List<BoardAction>,
     modifier: Modifier = Modifier,
     mirrored: Boolean = false,
+    /**
+     * Portrait only: room for this many buttons. A bar with fewer leaves the rest empty, on the side
+     * away from the first action, so each button keeps its width and its place as the set of actions
+     * changes — a lone Settings stays at the edge instead of stretching across the bar.
+     */
+    slots: Int = 0,
 ) {
     if (orientation == BoardOrientation.PORTRAIT) {
         val ordered = if (mirrored) actions.reversed() else actions
+        val empty = (slots - actions.size).coerceAtLeast(0)
         Row(
             modifier = modifier
                 .fillMaxWidth()
@@ -128,9 +136,11 @@ fun BoardActionBar(
             // Equal shares of the row rather than content-sized buttons: a long translation
             // otherwise widens its own button and pushes every later one along, eventually off
             // the screen edge. Each button owns a fixed share and its label wraps inside it.
+            if (mirrored && empty > 0) Spacer(Modifier.weight(empty.toFloat()))
             ordered.forEach {
                 ActionButton(it, Modifier.weight(1f))
             }
+            if (!mirrored && empty > 0) Spacer(Modifier.weight(empty.toFloat()))
         }
     } else {
         Column(

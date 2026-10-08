@@ -35,9 +35,6 @@ class Pacing(private val animate: Boolean) {
         Pause.RESULT -> if (animate) 700 else 250
     }
 
-    /** Before the next hand deals by itself, after the last pot. */
-    val nextHandMs: Long get() = if (animate) 3_000 else 1_500
-
     companion object {
         /** `UI_SPEC.md`: a raise, an all-in, or a call of more than a third of the seat's stack is a large decision. */
         fun isLarge(view: SeatView, action: Action): Boolean {
