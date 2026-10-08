@@ -45,6 +45,7 @@ import org.finiteplay.blackjack.rules.Decision
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.BoardAction
 import org.finiteplay.core.ui.layout.BoardActionBar
+import org.finiteplay.core.ui.layout.BoardActionRail
 import org.finiteplay.core.ui.layout.BoardOrientation
 import org.finiteplay.core.ui.layout.boardStatusColor
 import org.finiteplay.core.ui.layout.boardStatusStyle
@@ -61,6 +62,7 @@ import org.finiteplay.core.ui.theme.LocalAppColors
 internal fun StatusRow(
     onHelp: () -> Unit,
     onStatistics: () -> Unit,
+    showIcons: Boolean = true,
 ) {
     Row(
         modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 2.dp, bottom = 2.dp),
@@ -75,9 +77,31 @@ internal fun StatusRow(
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.weight(1f).testTag("game_title"),
         )
-        StatusIcon(Icons.AutoMirrored.Filled.HelpOutline, R.string.help_title, LocalAppColors.current.action.replay, "help_button", onHelp)
-        StatusIcon(Icons.Filled.BarChart, CoreR.string.statistics_title, LocalAppColors.current.action.statistics, "statistics_button", onStatistics)
+        if (showIcons) {
+            StatusIcon(Icons.AutoMirrored.Filled.HelpOutline, R.string.help_title, LocalAppColors.current.action.replay, "help_button", onHelp)
+            StatusIcon(Icons.Filled.BarChart, CoreR.string.statistics_title, LocalAppColors.current.action.statistics, "statistics_button", onStatistics)
+        }
     }
+}
+
+/**
+ * Landscape's chrome rail (`UI_SPEC.md` "Table, landscape"): Help, Statistics and Settings stacked on
+ * the edge away from the holding hand (Settings at the bottom, the others at the top), so the rail beside the thumb holds only the round's actions.
+ */
+@Composable
+internal fun ChromeRail(
+    onHelp: () -> Unit,
+    onStatistics: () -> Unit,
+    onSettings: () -> Unit,
+) {
+    val accents = LocalAppColors.current.action
+    BoardActionRail(
+        topActions = listOf(
+            action(R.string.help_title, Icons.AutoMirrored.Filled.HelpOutline, accents.replay, true, "help_button", onHelp),
+            action(CoreR.string.statistics_title, Icons.Filled.BarChart, accents.statistics, true, "statistics_button", onStatistics),
+        ),
+        bottomActions = listOf(action(CoreR.string.action_settings, Icons.Filled.Settings, accents.settings, true, "action_settings", onSettings)),
+    )
 }
 
 @Composable
@@ -142,10 +166,12 @@ internal fun ActionBar(
     onReset: () -> Unit,
     onHint: () -> Unit,
     onSettings: () -> Unit,
+    /** False in landscape, where Settings lives in the chrome rail. */
+    includeSettings: Boolean = true,
 ) {
     val accents = LocalAppColors.current.action
     val actions = buildList {
-        add(action(CoreR.string.action_settings, Icons.Filled.Settings, accents.settings, true, "action_settings", onSettings))
+        if (includeSettings) add(action(CoreR.string.action_settings, Icons.Filled.Settings, accents.settings, true, "action_settings", onSettings))
         when (bar.table) {
             TableState.LOADING -> Unit
             TableState.INSURANCE -> {
@@ -177,7 +203,19 @@ internal fun ActionBar(
     }
     val suggestedTag = bar.suggested?.let(::decisionTag)
     val marked = withHint.map { if (it.testTag == suggestedTag) it.copy(highlighted = true) else it }
-    BoardActionBar(orientation = orientation, mirrored = mirrored, actions = marked)
+    // Landscape reads top to bottom with the always-present buttons last, anchored to the bottom, so
+    // the rarer Split and Double come and go above Stand, Hit and Hint without moving them.
+    val ordered = if (orientation == BoardOrientation.LANDSCAPE && bar.table == TableState.PLAYING) {
+        val core = listOf("action_stand", "action_hit")
+        val extras = marked.filter { it.testTag == "action_split" || it.testTag == "action_double" }
+        val hint = marked.filter { it.testTag == "action_hint" }
+        val rest = marked - extras.toSet() - hint.toSet()
+        extras.sortedBy { if (it.testTag == "action_split") 0 else 1 } +
+            rest.sortedBy { core.indexOf(it.testTag) } + hint
+    } else {
+        marked
+    }
+    BoardActionBar(orientation = orientation, mirrored = mirrored, actions = ordered, fitHeight = true)
 }
 
 /** The tag of the button that plays [decision]: the Hint answers by highlighting it. */

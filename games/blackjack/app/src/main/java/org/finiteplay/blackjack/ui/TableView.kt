@@ -296,13 +296,25 @@ fun Table(view: TableView, landscape: Boolean, modifier: Modifier = Modifier) {
     val state = view.state
     BoxWithConstraints(modifier = modifier.fillMaxSize()) {
         val total = maxWidth.value
-        val playerWidth = if (landscape) total * 0.62f else total
-        val dealerWidth = if (landscape) total * 0.38f else total
-        val playerArea = TableGeometry.areaWidth(playerWidth)
         val hands = state.hands.size
-        val playerCard = TableGeometry.cardWidth(playerArea, hands).dp
+        // Three or four hands in a table too narrow to give them a 62% share go under the dealer, as in portrait.
+        val sideBySide = landscape && !TableGeometry.stackHandsInLandscape(total, hands)
+        val playerWidth = if (sideBySide) total * 0.62f else total
+        val dealerWidth = if (sideBySide) total * 0.38f else total
+        val playerArea = TableGeometry.areaWidth(playerWidth)
+        // The areas share the height as the layout below gives it out: whole when side by side, 1 : 1.3 stacked.
+        val height = maxHeight.value
+        val dealerHeight = if (sideBySide) height else height / 2.3f
+        val playerHeight = if (sideBySide) height else height * 1.3f / 2.3f
+        val playerCard = minOf(
+            TableGeometry.cardWidth(playerArea, hands),
+            TableGeometry.cardWidthForHeight(playerHeight, TableGeometry.PLAYER_FURNITURE_HEIGHT),
+        ).dp
         val dealerArea = TableGeometry.areaWidth(dealerWidth)
-        val dealerCard = TableGeometry.cardWidth(dealerArea, 1).dp.coerceAtMost(playerCard.coerceAtLeast(40.dp) + 8.dp)
+        val dealerCard = minOf(
+            TableGeometry.cardWidth(dealerArea, 1).dp.coerceAtMost(playerCard.coerceAtLeast(40.dp) + 8.dp).value,
+            TableGeometry.cardWidthForHeight(dealerHeight, TableGeometry.DEALER_FURNITURE_HEIGHT),
+        ).dp
 
         val playerHands: @Composable () -> Unit = {
             Row(
@@ -325,7 +337,7 @@ fun Table(view: TableView, landscape: Boolean, modifier: Modifier = Modifier) {
             }
         }
 
-        if (landscape) {
+        if (sideBySide) {
             Row(modifier = Modifier.fillMaxSize(), verticalAlignment = Alignment.CenterVertically) {
                 Box(modifier = Modifier.weight(0.38f), contentAlignment = Alignment.Center) {
                     DealerView(view, dealerCard, handWidth = TableGeometry.areaWidth(dealerWidth).dp)

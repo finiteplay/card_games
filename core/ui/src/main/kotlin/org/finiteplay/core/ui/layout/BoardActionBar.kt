@@ -14,19 +14,25 @@ import androidx.compose.ui.composed
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.defaultMinSize
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -108,6 +114,11 @@ data class BoardAction(
  * holding hand ([Handedness]); it changes position only, never which action does what. In
  * landscape the caller renders this once per rail and places each itself, so mirroring there is
  * a matter of which edge it passes each group to.
+ *
+ * [fitHeight] makes a landscape rail hold a variable number of actions at a fixed place: it fills the
+ * height it is given and anchors its buttons to the bottom, so one that is always last never moves
+ * when others come and go above it. When the full buttons do not fit, they shrink to a 48 dp
+ * target with a one-line label; if even those do not fit, the rail scrolls rather than cut any off.
  */
 @Composable
 fun BoardActionBar(
@@ -115,8 +126,11 @@ fun BoardActionBar(
     actions: List<BoardAction>,
     modifier: Modifier = Modifier,
     mirrored: Boolean = false,
+    fitHeight: Boolean = false,
 ) {
-    if (orientation == BoardOrientation.PORTRAIT) {
+    if (orientation == BoardOrientation.LANDSCAPE && fitHeight) {
+        BottomAnchoredRail(actions, modifier)
+    } else if (orientation == BoardOrientation.PORTRAIT) {
         val ordered = if (mirrored) actions.reversed() else actions
         Row(
             modifier = modifier
@@ -148,10 +162,73 @@ fun BoardActionBar(
     }
 }
 
+/**
+ * A landscape rail with actions at both ends: [topActions] anchored to the top, [bottomActions] to
+ * the bottom, the space between left empty. Like [BoardActionBar]'s `fitHeight` rail, it shrinks its
+ * buttons to 48 dp targets when the full ones do not fit, so nothing is pushed off the window.
+ */
+@Composable
+fun BoardActionRail(
+    topActions: List<BoardAction>,
+    bottomActions: List<BoardAction>,
+    modifier: Modifier = Modifier,
+) {
+    BoxWithConstraints(
+        modifier = modifier
+            .width(landscapeRailWidth())
+            .fillMaxHeight()
+            .padding(horizontal = 2.dp)
+            .semantics { traversalIndex = 100f },
+    ) {
+        val count = topActions.size + bottomActions.size
+        val gaps = RAIL_GAP_DP.dp * (count - 1).coerceAtLeast(0)
+        val compact = maxHeight < (ACTION_TOUCH_TARGET_DP.dp * chromeScale() + 8.dp) * count + gaps
+        Column(
+            modifier = Modifier.align(Alignment.TopCenter),
+            verticalArrangement = Arrangement.spacedBy(RAIL_GAP_DP.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) { topActions.forEach { ActionButton(it, Modifier.fillMaxWidth(), compact) } }
+        Column(
+            modifier = Modifier.align(Alignment.BottomCenter),
+            verticalArrangement = Arrangement.spacedBy(RAIL_GAP_DP.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) { bottomActions.forEach { ActionButton(it, Modifier.fillMaxWidth(), compact) } }
+    }
+}
+
+private const val COMPACT_TARGET_DP = 48
+private const val RAIL_GAP_DP = 4
+
+@Composable
+private fun BottomAnchoredRail(actions: List<BoardAction>, modifier: Modifier) {
+    BoxWithConstraints(
+        modifier = modifier
+            .width(landscapeRailWidth())
+            .fillMaxHeight()
+            .padding(horizontal = 2.dp)
+            .semantics { traversalIndex = 100f },
+    ) {
+        val gaps = RAIL_GAP_DP.dp * (actions.size - 1).coerceAtLeast(0)
+        // The full button is its touch target plus the padding inside it.
+        val fullHeight = (ACTION_TOUCH_TARGET_DP.dp * chromeScale() + 8.dp) * actions.size + gaps
+        val compact = maxHeight < fullHeight
+        Column(
+            modifier = Modifier
+                .verticalScroll(rememberScrollState(), reverseScrolling = true)
+                .heightIn(min = maxHeight),
+            verticalArrangement = Arrangement.spacedBy(RAIL_GAP_DP.dp, Alignment.Bottom),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            actions.forEach { ActionButton(it, Modifier.fillMaxWidth(), compact) }
+        }
+    }
+}
+
 @Composable
 private fun ActionButton(
     action: BoardAction,
     modifier: Modifier = Modifier,
+    compact: Boolean = false,
 ) {
     val (label, icon, accentColor, enabled, onClick, tag, highlighted, repeatOnHold) = action
     val suggestion = LocalAppColors.current.action.hint
@@ -161,7 +238,7 @@ private fun ActionButton(
     val iconColor = if (enabled) accentColor else MaterialTheme.colorScheme.onSurfaceVariant
     Column(
         modifier = modifier
-            .defaultMinSize(minHeight = ACTION_TOUCH_TARGET_DP.dp * chromeScale())
+            .defaultMinSize(minHeight = if (compact) COMPACT_TARGET_DP.dp else ACTION_TOUCH_TARGET_DP.dp * chromeScale())
             .then(if (tag != null) Modifier.testTag(tag) else Modifier)
             .then(
                 if (highlighted) {
@@ -181,7 +258,7 @@ private fun ActionButton(
                     Modifier.clickable(enabled = enabled, onClickLabel = label, onClick = onClick)
                 },
             )
-            .padding(PaddingValues(horizontal = 2.dp, vertical = 4.dp)),
+            .padding(PaddingValues(horizontal = 2.dp, vertical = if (compact) 2.dp else 4.dp)),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
@@ -189,14 +266,15 @@ private fun ActionButton(
             imageVector = icon,
             contentDescription = null,
             tint = iconColor,
-            modifier = Modifier.size(30.dp * chromeScale()),
+            modifier = Modifier.size((if (compact) 22.dp else 30.dp) * chromeScale()),
         )
         Text(
             text = label,
-            style = MaterialTheme.typography.labelMedium.let { it.copy(fontSize = it.fontSize * chromeScale()) },
+            style = (if (compact) MaterialTheme.typography.labelSmall else MaterialTheme.typography.labelMedium)
+                .let { it.copy(fontSize = it.fontSize * chromeScale()) },
             textAlign = TextAlign.Center,
             fontWeight = if (highlighted) FontWeight.Bold else null,
-            minLines = ACTION_LABEL_LINES,
+            minLines = if (compact) 1 else ACTION_LABEL_LINES,
             maxLines = ACTION_LABEL_LINES,
             overflow = TextOverflow.Ellipsis,
             color = textColor,

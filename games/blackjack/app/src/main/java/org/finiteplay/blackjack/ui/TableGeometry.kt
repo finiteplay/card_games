@@ -41,6 +41,28 @@ object TableGeometry {
         return maxOf(MIN_CARD_WIDTH, raw)
     }
 
+    /** Landscape's side-by-side split needs this much table width for three or more hands; narrower, they stack under the dealer. */
+    const val SIDE_BY_SIDE_MIN_WIDTH = 600f
+
+    fun stackHandsInLandscape(tableWidth: Float, hands: Int): Boolean = hands >= 3 && tableWidth < SIDE_BY_SIDE_MIN_WIDTH
+
+    /** What sits under a player's cards: the underline, the total badge and a split hand's stake. */
+    const val PLAYER_FURNITURE_HEIGHT = 70f
+
+    /** What sits around the dealer's cards: the label above and the total beneath. */
+    const val DEALER_FURNITURE_HEIGHT = 46f
+
+    /** The narrowest a card is drawn when the height, not the width, is what runs short. */
+    const val MIN_SHORT_CARD_WIDTH = 24f
+
+    /**
+     * The widest card whose height, with [furniture] around it, fits in [areaHeight]. The width floor of
+     * [MIN_CARD_WIDTH] yields to this, down to [MIN_SHORT_CARD_WIDTH], so a short window shrinks the cards
+     * rather than letting them draw over what is below.
+     */
+    fun cardWidthForHeight(areaHeight: Float, furniture: Float): Float =
+        maxOf(MIN_SHORT_CARD_WIDTH, (areaHeight - furniture) * CARD_ASPECT)
+
     fun cardHeight(cardWidth: Float): Float = cardWidth / CARD_ASPECT
 
     /** The width a hand's cards may spread across: its column, less the gap a neighbour needs. */

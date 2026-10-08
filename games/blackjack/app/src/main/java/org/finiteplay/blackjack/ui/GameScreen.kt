@@ -188,6 +188,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                     viewModel.requestHint()
                 },
                 onSettings = { showSettings = true },
+                includeSettings = !landscape,
             )
         }
         val animate = viewModel.settings.animationsEnabled
@@ -214,7 +215,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
         }
         Box(modifier = Modifier.fillMaxSize().padding(padding)) {
             val heading: @Composable () -> Unit = {
-                StatusRow(onHelp = { showHelp = true }, onStatistics = { showStatistics = true })
+                StatusRow(onHelp = { showHelp = true }, onStatistics = { showStatistics = true }, showIcons = !landscape)
                 if (viewModel.recoveryNoticeVisible) RecoveryNotice(onDismiss = viewModel::dismissRecoveryNotice)
             }
             // The bankroll and the bet sit just above the action bar, within the thumb's reach.
@@ -229,12 +230,22 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
             if (landscape) {
                 Column(modifier = Modifier.fillMaxSize()) {
                     heading()
+                    // Help, Statistics and Settings take the edge away from the holding hand; the round's
+                    // actions take the edge beside it.
+                    val chromeRail: @Composable () -> Unit = {
+                        ChromeRail(
+                            onHelp = { showHelp = true },
+                            onStatistics = { showStatistics = true },
+                            onSettings = { showSettings = true },
+                        )
+                    }
                     Row(modifier = Modifier.fillMaxSize()) {
+                        if (mirrored) actionBar(BoardOrientation.LANDSCAPE) else chromeRail()
                         Column(modifier = Modifier.weight(1f).fillMaxSize()) {
                             table(Modifier.weight(1f))
                             hud()
                         }
-                        actionBar(BoardOrientation.LANDSCAPE)
+                        if (mirrored) chromeRail() else actionBar(BoardOrientation.LANDSCAPE)
                     }
                 }
             } else {
