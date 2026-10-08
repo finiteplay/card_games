@@ -30,6 +30,10 @@ threatening.
 with a small violet accent. Empty and filled cells read at a glance as the game's one
 resource — a spot to set a card aside — without drawing a whole tableau.
 
+**Texas Hold'em:** two private cards rising above a simplified oval poker table, with one violet
+dealer button. The paired cards distinguish Hold'em from Blackjack's chip and the table oval keeps
+the mark readable without turning it into a miniature card scene.
+
 ## Deliverables
 
 The Android launchers use separate vector foregrounds over the shared navy background.
