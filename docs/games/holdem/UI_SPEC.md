@@ -45,7 +45,7 @@ Help, Statistics, and — while a tournament is in progress — Leave (a flag).
 ### Seats
 
 Each opponent seat is a rounded box: an **avatar** (a drawn head and shoulders on a disc in the
-profile's colour — a neutral silhouette that is drawn, so the app ships no faces and no image assets), the **name** (one line, ellipsized), its **style** word in small
+profile's colour — a neutral silhouette that is drawn, so the app ships no faces and no image assets), the **name** (one line, ellipsized), its **style** word in small shrink-to-fit
 type (`tight`, `loose`, `aggressive`, `passive`; it and the last-action line shrink to fit, down to 7 sp, rather than being clipped), and its **stack**. Below them, while the seat is in
 the hand, two card backs. Markers sit on the box's corner nearest the table's centre: the dealer
 button (`D`), and `SB` / `BB` for the blinds of this hand.
