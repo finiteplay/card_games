@@ -150,11 +150,10 @@ internal fun ActionBar(
         when (bar.stage) {
             Stage.YOUR_TURN -> if (legal != null) {
                 val live = !bar.busy
-                if (legal.canFold) add(action(R.string.action_fold, Icons.Filled.Close, accents.undo, live, "action_fold") { onAction(org.finiteplay.holdem.rules.Action.Fold) })
-                if (legal.canCheck) add(action(R.string.action_check, Icons.Filled.Check, accents.settings, live, "action_check") { onAction(org.finiteplay.holdem.rules.Action.Check) })
-                legal.callAmount?.let { call ->
-                    val label = if (legal.toCall > legal.stack) stringResource(R.string.action_call_all_in) else stringResource(R.string.action_call, call)
-                    add(boardAction(label, Icons.Filled.TouchApp, accents.new, live, "action_call") { onAction(org.finiteplay.holdem.rules.Action.Call) })
+                // Left to right: All in, Bet or Raise, Check or Call, Fold — and Hint, last, at the edge. Fold sits
+                // beside Hint, Check beside Fold, Raise beside Check (`UI_SPEC.md` "Action Bar").
+                if (legal.allInTo != null) {
+                    add(boardAction(stringResource(R.string.action_all_in, legal.stack), Icons.Filled.Bolt, accents.hint, live, "action_all_in") { onAction(org.finiteplay.holdem.rules.Action.AllIn) })
                 }
                 if (legal.bet != null) {
                     val amount = bar.sizing?.amount ?: legal.bet!!.first
@@ -164,9 +163,12 @@ internal fun ActionBar(
                     val amount = bar.sizing?.amount ?: legal.raise!!.first
                     add(boardAction(stringResource(R.string.action_raise, amount), Icons.AutoMirrored.Filled.TrendingUp, accents.statistics, live, "action_raise") { bar.sizing?.let { onAction(it.action()) } })
                 }
-                if (legal.allInTo != null) {
-                    add(boardAction(stringResource(R.string.action_all_in, legal.stack), Icons.Filled.Bolt, accents.hint, live, "action_all_in") { onAction(org.finiteplay.holdem.rules.Action.AllIn) })
+                if (legal.canCheck) add(action(R.string.action_check, Icons.Filled.Check, accents.settings, live, "action_check") { onAction(org.finiteplay.holdem.rules.Action.Check) })
+                legal.callAmount?.let { call ->
+                    val label = if (legal.toCall > legal.stack) stringResource(R.string.action_call_all_in) else stringResource(R.string.action_call, call)
+                    add(boardAction(label, Icons.Filled.TouchApp, accents.new, live, "action_call") { onAction(org.finiteplay.holdem.rules.Action.Call) })
                 }
+                if (legal.canFold) add(action(R.string.action_fold, Icons.Filled.Close, accents.undo, live, "action_fold") { onAction(org.finiteplay.holdem.rules.Action.Fold) })
             }
             Stage.HAND_OVER -> add(action(R.string.action_next_hand, Icons.Filled.PlayArrow, accents.new, true, "action_next_hand", onNextHand))
             Stage.TOURNAMENT_OVER -> add(action(R.string.action_new_tournament, Icons.Filled.Refresh, accents.new, true, "action_new_tournament", onNewTournament))
@@ -187,7 +189,7 @@ internal fun ActionBar(
     )
 }
 
-/** Settings, Fold, Call, Raise, All in, Hint: the widest the bar gets, so a shorter one leaves Settings where it is. */
+/** Settings, Fold, Call, Raise, All in, Hint: the widest the bar gets, so a shorter one keeps Settings at the left edge and the actions at the right. */
 private const val WIDEST_BAR = 6
 
 /** The button that plays [action]: the Hint answers by highlighting it. */

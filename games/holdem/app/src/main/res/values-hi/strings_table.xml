@@ -138,4 +138,6 @@
     <string name="ann_river">रिवर: %1$s</string>
     <string name="ann_shows">%1$s %2$s दिखाता है</string>
     <string name="ann_wins">%1$s %2$,d जीतता है</string>
+    <string name="seat_won">जीत %1$s</string>
+    <string name="seat_lost">हार %1$s</string>
 </resources>

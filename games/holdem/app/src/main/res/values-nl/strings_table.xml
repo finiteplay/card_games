@@ -138,4 +138,6 @@
     <string name="ann_river">De river: %1$s</string>
     <string name="ann_shows">%1$s toont %2$s</string>
     <string name="ann_wins">%1$s wint %2$,d</string>
+    <string name="seat_won">Gewonnen %1$s</string>
+    <string name="seat_lost">Verloren %1$s</string>
 </resources>

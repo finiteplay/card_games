@@ -138,4 +138,6 @@
     <string name="ann_river">River: %1$s</string>
     <string name="ann_shows">%1$s gösterir: %2$s</string>
     <string name="ann_wins">%1$s %2$,d kazandı</string>
+    <string name="seat_won">Kazandı %1$s</string>
+    <string name="seat_lost">Kaybetti %1$s</string>
 </resources>

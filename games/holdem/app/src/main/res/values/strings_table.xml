@@ -35,6 +35,9 @@
     <string name="banner_main_pot">Main pot · %1$,d</string>
     <string name="banner_side_pot">Side pot · %1$,d</string>
     <string name="seat_award">+%1$,d</string>
+    <!-- What a seat won or lost over a hand, with its signed amount ("+150", "−60"): shown beside the seat once the hand is over. -->
+    <string name="seat_won">Won %1$s</string>
+    <string name="seat_lost">Lost %1$s</string>
 
     <!-- Seats -->
     <string name="you">You</string>

@@ -270,7 +270,9 @@ object TablePresenter {
             if (lostAllIn) add(SoundEffect.ROUND_LOSS)
             if (over) add(if (after.places[0] == 1) SoundEffect.WIN else SoundEffect.GAME_OVER)
         }
-        val seats = shown.seats.mapIndexed { seat, model -> model.copy(place = after.places[seat]) }
+        val seats = shown.seats.mapIndexed { seat, model ->
+            model.copy(place = after.places[seat], net = after.stacks[seat] - after.tournament.stacks[seat])
+        }
         return Step(
             model = shown.copy(
                 seats = seats,

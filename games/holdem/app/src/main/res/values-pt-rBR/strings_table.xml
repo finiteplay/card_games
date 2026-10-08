@@ -131,4 +131,6 @@
     <string name="ann_river">O river: %1$s</string>
     <string name="ann_shows">%1$s mostra %2$s</string>
     <string name="ann_wins">%1$s ganha %2$,d</string>
+    <string name="seat_won">Ganhou %1$s</string>
+    <string name="seat_lost">Perdeu %1$s</string>
 </resources>

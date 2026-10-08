@@ -200,7 +200,14 @@ abstract class ScenarioPlayTest(private val landscape: Boolean) {
             "splitPot" -> {
                 val award = state.result!!.awards.first { it.winners.size >= 2 && 0 in it.winners }
                 val share = award.shares[award.winners.indexOf(0)]
-                node("seat_0_award").assertTextContains("+" + money(share), substring = true)
+                assertTrue("the split share is part of what the player was paid", state.result!!.payouts[0] >= share)
+                // Once the hand is over the seat says what the player came out with, net of their own chips in.
+                val net = state.stacks[0] - state.tournament.stacks[0]
+                when {
+                    net > 0 -> node("seat_0_won").assertTextContains("+" + money(net), substring = true)
+                    net < 0 -> node("seat_0_lost").assertTextContains(money(-net), substring = true)
+                    else -> assertFalse(present("seat_0_won") || present("seat_0_lost"))
+                }
             }
             "fold" -> assertFalse(present("result_mark"))
             "checkDown" -> {

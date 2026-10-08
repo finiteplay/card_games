@@ -130,4 +130,6 @@
     <string name="ann_river">河牌：%1$s</string>
     <string name="ann_shows">%1$s亮出 %2$s</string>
     <string name="ann_wins">%1$s贏得 %2$,d</string>
+    <string name="seat_won">贏 %1$s</string>
+    <string name="seat_lost">輸 %1$s</string>
 </resources>

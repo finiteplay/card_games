@@ -35,6 +35,8 @@ data class SeatModel(
     val place: Int?,
     val award: Int,
     val handValue: HandValue?,
+    /** The chips this seat won or lost over the whole hand, known only once the hand is over (`UI_SPEC.md` "Showdown and Results"). */
+    val net: Int? = null,
 ) {
     val contesting: Boolean get() = inHand && !folded
 }

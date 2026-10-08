@@ -130,4 +130,6 @@
     <string name="ann_river">리버: %1$s</string>
     <string name="ann_shows">%1$s이(가) %2$s 공개</string>
     <string name="ann_wins">%1$s이(가) %2$,d 획득</string>
+    <string name="seat_won">승리 %1$s</string>
+    <string name="seat_lost">패배 %1$s</string>
 </resources>

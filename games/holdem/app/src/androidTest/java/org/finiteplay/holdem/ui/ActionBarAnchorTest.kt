@@ -11,11 +11,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.width
 import org.finiteplay.core.ui.layout.BoardOrientation
 import org.finiteplay.core.ui.theme.FinitePlayTheme
+import org.finiteplay.holdem.rules.LegalActions
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 
-/** Settings stays where it is as the bar's other buttons come and go (`UI_SPEC.md` "Action Bar"). */
+/** Settings stays at its edge and the actions at the other as the set of buttons changes (`UI_SPEC.md` "Action Bar"). */
 class ActionBarAnchorTest {
     @get:Rule
     val composeRule = createAndroidComposeRule<ComponentActivity>()
@@ -52,5 +53,35 @@ class ActionBarAnchorTest {
         val bounds = composeRule.onNodeWithTag("action_settings").getBoundsInRoot()
         assertTrue("at the right edge: ${bounds.right}", bounds.right > 344.dp)
         assertTrue("one sixth of the bar: ${bounds.width}", bounds.width < 70.dp)
+    }
+
+    @Test
+    fun theActionsStayAtTheRightEdgeWhateverTheirNumber() {
+        val legal = LegalActions(seat = 0, stack = 1_500, toCall = 0, canFold = false, canCheck = true, callAmount = null, bet = 20..1_500, raise = null, allInTo = 1_500)
+        composeRule.setContent {
+            FinitePlayTheme(darkTheme = true) {
+                Box(Modifier.modifierWidth(360.dp)) {
+                    ActionBar(
+                        orientation = BoardOrientation.PORTRAIT,
+                        mirrored = false,
+                        bar = BarState(Stage.YOUR_TURN, legal = legal, sizing = null, busy = false),
+                        onAction = {},
+                        onNextHand = {},
+                        onNewTournament = {},
+                        onSettings = {},
+                    )
+                }
+            }
+        }
+        val settings = composeRule.onNodeWithTag("action_settings").getBoundsInRoot()
+        val allIn = composeRule.onNodeWithTag("action_all_in").getBoundsInRoot()
+        val hint = composeRule.onNodeWithTag("action_hint").getBoundsInRoot()
+        val bet = composeRule.onNodeWithTag("action_bet").getBoundsInRoot()
+        val check = composeRule.onNodeWithTag("action_check").getBoundsInRoot()
+        assertTrue("left to right: All in, Bet, Check, then Hint", allIn.right <= bet.left + 1.dp && bet.right <= check.left + 1.dp && check.right <= hint.left + 1.dp)
+        assertTrue("Settings at the left edge: ${settings.left}", settings.left < 16.dp)
+        assertTrue("Hint at the right edge: ${hint.right}", hint.right > 344.dp)
+        assertTrue("every button the width of one of six: ${allIn.width}", allIn.width < 70.dp)
+        assertTrue("the gap is between Settings and the actions", allIn.left - settings.right > 40.dp)
     }
 }

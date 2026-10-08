@@ -142,4 +142,6 @@
     <string name="ann_river">الريفر: %1$s</string>
     <string name="ann_shows">%1$s يكشف %2$s</string>
     <string name="ann_wins">%1$s يربح %2$,d</string>
+    <string name="seat_won">ربح %1$s</string>
+    <string name="seat_lost">خسارة %1$s</string>
 </resources>

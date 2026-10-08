@@ -180,4 +180,26 @@ class TablePresenterTest {
             step.model.potCount <= capped + 1 || step.model.stage != Stage.OPPONENT_TURN && step.model.stage != Stage.YOUR_TURN
         })
     }
+
+    @Test
+    fun `the final table says what every seat won or lost, and it adds up`() {
+        for (scenario in listOf(Scenarios.checkDown, Scenarios.allInWithSidePot, Scenarios.fold)) {
+            val finals = stepsOf(scenario).filter { (step, _) -> step.model.stage == Stage.HAND_OVER || step.model.stage == Stage.TOURNAMENT_OVER }
+            assertTrue(finals.isNotEmpty())
+            for ((step, state) in finals) {
+                val nets = step.model.seats.map { checkNotNull(it.net) }
+                assertEquals("chips only move between seats", 0, nets.sum())
+                assertEquals(state.stacks[0] - state.tournament.stacks[0], nets[0])
+                assertTrue("someone won what someone lost", nets.any { it > 0 } || nets.all { it == 0 })
+            }
+        }
+    }
+
+    @Test
+    fun `no seat shows a result before the hand is over`() {
+        val steps = stepsOf(Scenarios.allInWithSidePot)
+        val during = steps.filter { (step, _) -> step.model.stage != Stage.HAND_OVER && step.model.stage != Stage.TOURNAMENT_OVER }
+        assertTrue(during.isNotEmpty())
+        assertTrue(during.all { (step, _) -> step.model.seats.all { it.net == null } })
+    }
 }

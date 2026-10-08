@@ -86,4 +86,23 @@ class TableControlsTest {
         }
         assertTrue(present("seat_0_hand"))
     }
+
+    @Test
+    fun whenTheHandIsOverEachWinnerSaysWonAndAPlayerWhoLostChipsSaysLostInRed() {
+        composeRule.waitUntil(90_000) {
+            if (vm.table.stage == Stage.YOUR_TURN) {
+                val tag = if (present("action_check")) "action_check" else "action_call"
+                composeRule.onNodeWithTag(tag).performClick()
+            }
+            vm.table.stage == Stage.HAND_OVER
+        }
+        composeRule.waitForIdle()
+        for ((seat, model) in vm.table.seats.withIndex()) {
+            val net = checkNotNull(model.net)
+            val tag = if (seat == 0) (if (net > 0) "seat_0_won" else "seat_0_lost") else "seat_${seat}_won"
+            val shown = composeRule.onAllNodesWithTag(tag, useUnmergedTree = true).fetchSemanticsNodes().isNotEmpty()
+            val expected = if (seat == 0) net != 0 else net > 0
+            assertEquals("seat $seat net $net", expected, shown)
+        }
+    }
 }

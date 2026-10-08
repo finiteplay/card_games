@@ -138,4 +138,6 @@
     <string name="ann_river">A river: %1$s</string>
     <string name="ann_shows">%1$s megmutatja: %2$s</string>
     <string name="ann_wins">%1$s nyer: %2$,d</string>
+    <string name="seat_won">Nyert %1$s</string>
+    <string name="seat_lost">Vesztett %1$s</string>
 </resources>

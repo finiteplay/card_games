@@ -117,9 +117,10 @@ fun BoardActionBar(
     modifier: Modifier = Modifier,
     mirrored: Boolean = false,
     /**
-     * Portrait only: room for this many buttons. A bar with fewer leaves the rest empty, on the side
-     * away from the first action, so each button keeps its width and its place as the set of actions
-     * changes — a lone Settings stays at the edge instead of stretching across the bar.
+     * Portrait only: room for this many buttons. A bar with fewer leaves the empty room between the
+     * first action and the rest — the first stays at the leading edge and the others at the trailing
+     * edge — so each button keeps its width and its edge as the set of actions changes: a lone Settings
+     * stays put instead of stretching across the bar, and the actions stay under the thumb.
      */
     slots: Int = 0,
 ) {
@@ -136,11 +137,13 @@ fun BoardActionBar(
             // Equal shares of the row rather than content-sized buttons: a long translation
             // otherwise widens its own button and pushes every later one along, eventually off
             // the screen edge. Each button owns a fixed share and its label wraps inside it.
-            if (mirrored && empty > 0) Spacer(Modifier.weight(empty.toFloat()))
-            ordered.forEach {
-                ActionButton(it, Modifier.weight(1f))
+            // The gap sits between the first action and the rest: after it, or before it once mirrored
+            // (where it is last, and a lone first action still has the gap beside it).
+            ordered.forEachIndexed { index, action ->
+                if (empty > 0 && mirrored && index == ordered.lastIndex) Spacer(Modifier.weight(empty.toFloat()))
+                ActionButton(action, Modifier.weight(1f))
+                if (empty > 0 && !mirrored && index == 0) Spacer(Modifier.weight(empty.toFloat()))
             }
-            if (!mirrored && empty > 0) Spacer(Modifier.weight(empty.toFloat()))
         }
     } else {
         Column(

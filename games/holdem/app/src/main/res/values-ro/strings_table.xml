@@ -139,4 +139,6 @@
     <string name="ann_river">River-ul: %1$s</string>
     <string name="ann_shows">%1$s arată %2$s</string>
     <string name="ann_wins">%1$s câștigă %2$,d</string>
+    <string name="seat_won">Câștig %1$s</string>
+    <string name="seat_lost">Pierdere %1$s</string>
 </resources>

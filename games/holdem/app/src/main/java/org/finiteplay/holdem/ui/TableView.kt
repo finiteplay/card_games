@@ -21,6 +21,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -96,26 +97,10 @@ fun TableView(
     }
 }
 
-/**
- * The table's rim and felt, drawn behind the seats so they sit round an oval, as at a real table: the
- * rim passes under the top row of seats and the two side seats and closes beneath the player's cards.
- */
-@Composable
-private fun TableOval(top: Dp, bottom: Dp) {
-    androidx.compose.foundation.Canvas(modifier = Modifier.fillMaxSize().padding(top = top, bottom = bottom, start = 2.dp, end = 2.dp)) {
-        val rim = 9.dp.toPx()
-        val rimColor = Color(0xFF5D4037)
-        drawOval(Color.Black.copy(alpha = 0.18f))
-        drawOval(rimColor, style = androidx.compose.ui.graphics.drawscope.Stroke(width = rim))
-        drawOval(Color(0xFFFFD54F).copy(alpha = 0.35f), topLeft = androidx.compose.ui.geometry.Offset(rim / 2, rim / 2), size = androidx.compose.ui.geometry.Size(size.width - rim, size.height - rim), style = androidx.compose.ui.graphics.drawscope.Stroke(width = 1.5.dp.toPx()))
-    }
-}
-
 @Composable
 private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate: Boolean, width: Float, height: Float) {
     val g = TableGeometry.portrait(width, height)
     val compact = g.density != TableGeometry.Density.Regular
-    TableOval(top = (g.seatHeight * 0.5f).dp, bottom = (g.yourSeatHeight * 0.45f).dp)
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = TableGeometry.SIDE_MARGIN.dp),
         verticalArrangement = Arrangement.spacedBy(g.gap.dp),
@@ -139,7 +124,6 @@ private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate
 @Composable
 private fun Landscape(table: TableModel, profiles: List<OpponentProfile>, animate: Boolean, width: Float, height: Float) {
     val g = TableGeometry.landscape(width + TableGeometry.RAIL_WIDTH + TableGeometry.SIZING_COLUMN_WIDTH, height + TableGeometry.STATUS_ROW)
-    TableOval(top = (g.seatHeight * 0.5f).dp, bottom = (g.yourSeatHeight * 0.45f).dp)
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = TableGeometry.SIDE_MARGIN.dp),
         verticalArrangement = Arrangement.spacedBy(g.gap.dp),
@@ -249,11 +233,18 @@ private fun BoardBand(table: TableModel, cardWidth: Dp, bandHeight: Dp, animate:
 
 private enum class PillSide { Below, End, Start }
 
+/**
+ * The seat's small second line (its style word, its last action) shrinks to fit rather than being cut
+ * mid-word: a seat is 96 dp wide, a translation or a large system font is longer than "aggressive",
+ * and a clipped word reads as a bug. It never goes below 7 sp.
+ */
+private val FitSubtitle = TextAutoSize.StepBased(minFontSize = 7.sp, maxFontSize = 10.sp, stepSize = 0.5.sp)
+
 @Composable
 private fun Avatar(profile: OpponentProfile) {
     val background = Color(profile.colorArgb)
     val figure = Color.Black.copy(alpha = 0.34f)
-    androidx.compose.foundation.Canvas(modifier = Modifier.size(26.dp).clip(CircleShape).background(background)) {
+    androidx.compose.foundation.Canvas(modifier = Modifier.size(24.dp).clip(CircleShape).background(background)) {
         val w = size.width
         // Shoulders below, head above: a neutral silhouette that is drawn, so the app ships no faces.
         drawOval(figure, topLeft = androidx.compose.ui.geometry.Offset(w * 0.12f, w * 0.62f), size = androidx.compose.ui.geometry.Size(w * 0.76f, w * 0.7f))
@@ -347,10 +338,14 @@ private fun OpponentSeat(
                 Column(modifier = Modifier.weight(1f)) {
                     Text(profile.name, style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_${seat}_name"))
                     val last = model.lastAction
-                    if (last != null && !out) {
-                        Text(lastActionText(last), fontSize = 10.sp, lineHeight = 11.sp, color = ring, maxLines = 1, modifier = Modifier.testTag("seat_${seat}_action"))
+                    val won = model.net?.takeIf { it > 0 && !out }
+                    if (won != null) {
+                        // The hand is over: what this seat won, small, where its style word was.
+                        Text(stringResource(R.string.seat_won, signed(won)), fontSize = 10.sp, lineHeight = 11.sp, fontWeight = FontWeight.ExtraBold, color = markWin, maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_won"))
+                    } else if (last != null && !out) {
+                        Text(lastActionText(last), fontSize = 10.sp, lineHeight = 11.sp, color = ring, maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_action"))
                     } else {
-                        Text(styleText(profile.style), fontSize = 10.sp, lineHeight = 11.sp, color = Color.White.copy(alpha = 0.75f), maxLines = 1)
+                        Text(styleText(profile.style), fontSize = 10.sp, lineHeight = 11.sp, color = Color.White.copy(alpha = 0.75f), maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_style"))
                     }
                 }
             }
@@ -384,6 +379,8 @@ private fun OpponentSeat(
             val value = model.handValue
             if (value != null && model.cards != null) {
                 val name = handName(model.cards + table.board, value)
+                // As wide as the seat and no wider, shrunk to fit: a long name ("Two pair, queens and jacks")
+                // must not run off the screen's edge from a seat that sits against it.
                 Text(
                     text = handNameText(name),
                     fontSize = 10.sp,
@@ -391,14 +388,15 @@ private fun OpponentSeat(
                     color = Color.White,
                     textAlign = TextAlign.Center,
                     maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier.align(Alignment.BottomCenter).offset(y = 13.dp).wrapContentSize(unbounded = true)
+                    autoSize = FitSubtitle,
+                    modifier = Modifier.align(Alignment.BottomCenter).offset(y = 22.dp).width(width)
                         .background(Color.Black.copy(alpha = 0.7f), RoundedCornerShape(4.dp)).padding(horizontal = 4.dp)
                         .testTag("seat_${seat}_hand"),
                 )
             }
         }
-        if (model.award > 0) {
+        val net = model.net
+        if (model.award > 0 && net == null) {
             Text(
                 text = stringResource(R.string.seat_award, model.award),
                 style = MaterialTheme.typography.titleSmall,
@@ -436,6 +434,7 @@ private fun seatSpoken(table: TableModel, seat: Int, profile: OpponentProfile, s
     if (table.bigBlind == seat && model.inHand) parts += stringResource(R.string.a11y_big_blind)
     if (model.bet > 0) parts += stringResource(R.string.a11y_bet, model.bet)
     model.lastAction?.let { parts += lastActionText(it) }
+    model.net?.let { if (it > 0) parts += stringResource(R.string.seat_won, signed(it)) }
     if (table.actor == seat) parts += stringResource(R.string.a11y_thinking)
     return parts.joinToString(", ")
 }
@@ -491,7 +490,22 @@ private fun YourSeat(table: TableModel, cardWidth: Dp, seatHeight: Dp, animate: 
         model.lastAction?.let {
             Text(lastActionText(it), style = MaterialTheme.typography.labelMedium, color = ring, modifier = Modifier.align(Alignment.TopEnd).offset(x = (-16).dp, y = 8.dp).testTag("seat_0_action"))
         }
-        if (model.award > 0) {
+        val net = model.net
+        if (net != null && net != 0) {
+            // The hand is over and chips moved: what the player won, or in red what they lost, beside their cards.
+            // A seat that folded and lost its blind or its bets says so too: the chips are gone either way.
+            val won = net > 0
+            Text(
+                text = stringResource(if (won) R.string.seat_won else R.string.seat_lost, signed(net)),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.ExtraBold,
+                color = if (won) markWin else markLose,
+                maxLines = 1,
+                modifier = Modifier.align(Alignment.TopEnd).offset(x = (-12).dp, y = 30.dp)
+                    .background(Color.Black.copy(alpha = 0.7f), RoundedCornerShape(8.dp)).padding(horizontal = 8.dp, vertical = 2.dp)
+                    .testTag(if (won) "seat_0_won" else "seat_0_lost"),
+            )
+        } else if (model.award > 0 && net == null) {
             Text(
                 text = stringResource(R.string.seat_award, model.award),
                 style = MaterialTheme.typography.titleSmall,

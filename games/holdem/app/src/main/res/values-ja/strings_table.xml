@@ -130,4 +130,6 @@
     <string name="ann_river">リバー：%1$s</string>
     <string name="ann_shows">%1$sが%2$sを公開</string>
     <string name="ann_wins">%1$sが%2$,dを獲得</string>
+    <string name="seat_won">勝ち %1$s</string>
+    <string name="seat_lost">負け %1$s</string>
 </resources>

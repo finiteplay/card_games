@@ -46,7 +46,7 @@ Help, Statistics, and — while a tournament is in progress — Leave (a flag).
 
 Each opponent seat is a rounded box: an **avatar** (a drawn head and shoulders on a disc in the
 profile's colour — a neutral silhouette that is drawn, so the app ships no faces and no image assets), the **name** (one line, ellipsized), its **style** word in small
-type (`tight`, `loose`, `aggressive`, `passive`), and its **stack**. Below them, while the seat is in
+type (`tight`, `loose`, `aggressive`, `passive`; it and the last-action line shrink to fit, down to 7 sp, rather than being clipped), and its **stack**. Below them, while the seat is in
 the hand, two card backs. Markers sit on the box's corner nearest the table's centre: the dealer
 button (`D`), and `SB` / `BB` for the blinds of this hand.
 
@@ -73,9 +73,8 @@ Top to bottom: the status row; the **table**; the **sizing row** when Bet or Rai
 action bar. The hint notice, when shown, is drawn over the table just above your cards, in the gap
 between the board band and your seat, so it takes no height of its own (`Hint Presentation`).
 
-The table is four bands, with an **oval rim** drawn behind them — a dark wood ring with a thin gold
-line, from the middle of the top row of seats to beneath your cards, edge to edge — so the five
-opponents sit round it and you sit at its foot:
+The table is four bands (an oval rim drawn behind the seats was tried and removed: it fought the
+cards and seat boxes for the felt):
 
 1. **Top band** — three opponent seats, left to right.
 2. **Middle band** — an opponent seat at each edge and, between them, the **pot**: `Pot 1,240` in
@@ -117,13 +116,17 @@ the bar's order in portrait and its side in landscape and changes nothing else.
 | State | Buttons | Count |
 |---|---|---|
 | Opponent's turn, Showdown | Settings | 1 |
-| Your turn, nothing to call | Settings · Check · Bet · All in · Hint | 5 |
-| Your turn, facing a bet | Settings · Fold · Call 40 · Raise · All in · Hint | 6 |
-| Facing a bet you can only call | Settings · Fold · Call 40 · Hint | 4 |
-| Facing a bet you cannot cover | Settings · Fold · Call all in · Hint | 4 |
+| Your turn, nothing to call | Settings · All in · Bet · Check · Hint | 5 |
+| Your turn, facing a bet | Settings · All in · Raise · Call 40 · Fold · Hint | 6 |
+| Facing a bet you can only call | Settings · Call 40 · Fold · Hint | 4 |
+| Facing a bet you cannot cover | Settings · Call all in · Fold · Hint | 4 |
 | Hand over | Settings · Next hand | 2 |
 | Tournament over | Settings · New tournament | 2 |
 
+- **The order, left to right:** Settings at the leading edge, then All in, Bet or Raise, Check or Call,
+  Fold, and Hint at the trailing edge — Fold beside Hint, Check or Call beside Fold, Raise beside Check.
+  The table above lists each state's buttons in the order they are drawn. (Landscape's rail reads the
+  same order from the top.)
 - **Labels carry their amounts:** `Call 40`, `Bet 60`, `Raise to 120`, `All in 1,240`, so the button
   pressed is the amount committed. Bet and Raise read the sizing row's current amount. Where a label
   and its figure need both lines, the figure takes the second.
@@ -135,10 +138,12 @@ the bar's order in portrait and its side in landscape and changes nothing else.
 - **Next hand** is offered once the last pot has been awarded, and the table waits for it: the result
   stays up for as long as the player wants, and nothing deals until they press it. (The first build dealt
   by itself after three seconds.)
-- **Settings keeps its place.** The bar reserves room for its widest set of six buttons, so a shorter bar
-  does not stretch: Settings is one sixth of the width at the leading edge whether it is the only button
-  (an opponent's turn, the showdown) or one of six, and every other button keeps its width as the set
-  changes. Left-handed play mirrors the bar, so there it is at the trailing edge, consistently.
+- **Settings and the actions keep their edges.** The bar reserves room for its widest set of six
+  buttons, so a shorter bar does not stretch: Settings is one sixth of the width at the leading edge
+  whether it is the only button (an opponent's turn, the showdown) or one of six, and the actions
+  (Fold, Call, Bet or Raise, All in, Hint, Next hand) sit at the trailing edge, each one sixth wide,
+  under the thumb. The empty room is between them. Left-handed play mirrors the bar, so Settings is at
+  the trailing edge and the actions at the leading edge, consistently.
 
 ### The sizing row
 
@@ -243,6 +248,14 @@ Blackjack's, extended by what a poker hint has to say (`DESIGN.md` "Hint"):
 - **Pots are awarded one at a time**, the main pot last (`RULES.md` "Pots and Showdown"). A banner
   over the board names each — `Side pot · 600` — and the winners' seats show `+600`. A split pot
   shows each share on its own seat, the odd chip included.
+- **Won and lost, beside the seat.** When the hand is over every seat that came out ahead says
+  `Won +140` — an opponent's in small green type in the line under its name, where its style word was —
+  and the player's, larger and in green, beside their cards. A player who lost chips, folded blinds and
+  bets included, sees `Lost −200` in red in the same place; a hand that nets nothing shows neither.
+  The figure is the hand's net (chips at its end less chips at its start), so it is what the stack
+  changed by; while the pots are still being paid the seat shows each pot as `+600`. The result mark
+  in the middle of the table still celebrates or commiserates; the words beside the seat are the
+  figure the player asked for.
 - **Won without a showdown.** The last seat in shows `+` its winnings; no cards are turned.
 - **Your result mark.** Blackjack's result mark, in the middle of the board band, when you were in
   the hand at its end, from your net for the hand: the trophy and `+` the net when you came out
