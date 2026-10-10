@@ -1,6 +1,9 @@
 package org.finiteplay.blackjack.ui
 
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.getBoundsInRoot
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.assertTextEquals
@@ -254,6 +257,40 @@ class TableTest {
         waitForResults()
         // 17 against 17.
         assertEquals(Chips.STARTING_BANKROLL, viewModel.bankroll)
+    }
+
+    private fun centreX(tag: String) = composeRule.onNodeWithTag(tag).getBoundsInRoot().let { (it.left + it.right).value / 2 }
+
+    @Test
+    fun landscapeStacksHelpStatisticsAndSettingsApartFromTheActions() {
+        showTable(shoeOf("9C", "TD", "8H", "7S", "3S"), landscape = true)
+        val chrome = listOf("help_button", "statistics_button", "action_settings")
+        chrome.forEach { composeRule.onNodeWithTag(it).assertIsDisplayed() }
+        // One column, one above the next, and on the opposite edge from the Deal button.
+        assertEquals(1, chrome.map { centreX(it) }.distinct().size)
+        assertEquals(chrome, chrome.sortedBy { composeRule.onNodeWithTag(it).getBoundsInRoot().top })
+        assertEquals(true, centreX("help_button") < centreX("action_deal"))
+    }
+
+    @Test
+    fun landscapeShowsEveryActionWithSplitAboveStandHitAndHint() {
+        showTable(shoeOf("8C", "6D", "8H", "TS", "8S", "9S", "TC", "2S", "3S", "4S"), landscape = true)
+        tap("action_deal")
+        val rail = listOf("action_split", "action_double", "action_stand", "action_hit")
+        val rootBottom = composeRule.onRoot().getBoundsInRoot().bottom
+        val bounds = rail.map { composeRule.onNodeWithTag(it).getBoundsInRoot() }
+        bounds.forEach { assertEquals(true, it.top >= 0.dp && it.bottom <= rootBottom) }
+        assertEquals(bounds.sortedBy { it.top }, bounds)
+        if (present("action_hint")) {
+            assertEquals(true, composeRule.onNodeWithTag("action_hint").getBoundsInRoot().top >= bounds.last().bottom)
+        }
+    }
+
+    @Test
+    fun leftHandedLandscapeSwapsTheRails() {
+        showTable(shoeOf("9C", "TD", "8H", "7S", "3S"), landscape = true, leftHanded = true)
+        assertEquals(true, centreX("help_button") > centreX("action_deal"))
+        composeRule.onNodeWithTag("action_settings").assertIsDisplayed()
     }
 
     @Test

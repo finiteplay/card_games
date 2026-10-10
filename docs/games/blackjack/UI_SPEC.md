@@ -75,10 +75,23 @@ The status row spans the width. Below it the dealer area takes the leading 38% o
 and the player area the other 62%, side by side; at 640 dp wide the table is about 576 dp (the rail
 takes the rest), so a four-hand split gets columns of about 85 dp, wider than portrait's 76 dp at
 320 dp. Narrower landscape windows keep the 40 dp card floor and let the fan overflow as in portrait.
-The chips HUD sits beneath the table, beside the rail. The action bar is a rail one button wide at
-the edge nearest the holding hand
-(`Handedness`), `core/ui`'s `BoardActionBar` in its landscape form. Handedness mirrors the bar's
-order in portrait and its side in landscape and changes nothing else.
+With three or four hands and a table narrower than 600 dp (`TableGeometry.SIDE_BY_SIDE_MIN_WIDTH`), the
+hands go under the dealer as in portrait, because a 62% share would be too narrow for six cards each.
+Cards also shrink, down to 24 dp wide, when the height rather than the width runs short, so they are
+never drawn over the HUD or each other. A landscape window under about 320 dp tall is below what
+this guarantees: the cards stay clear of each other but a split hand's stake can sit under the HUD.
+The status row carries the title alone: **Help, Statistics and Settings** stack in a rail one button
+wide at the leading edge, Help and Statistics at the top and Settings at the bottom, and the action bar, with no Settings in it, is a second rail at the
+trailing edge, the one nearest the holding hand (`Handedness`) — `core/ui`'s `BoardActionBar` in
+its landscape form for both. A left-handed layout swaps the two rails. The chips HUD sits beneath
+the table, between them. Handedness mirrors the bar's order in portrait and swaps the rails in
+landscape and changes nothing else.
+
+The landscape action rail is **anchored to the bottom** and reads top to bottom *Split, Double, Stand,
+Hit, Hint*, so the buttons present in every round never move when Split or Double appears above
+them. When the five full buttons do not fit the height, they shrink to 48 dp targets with a
+one-line label, and if even those do not fit the rail scrolls; no action is ever cut off
+(`core/ui`'s `BoardActionBar` `fitHeight`).
 
 ## Action Bar
 

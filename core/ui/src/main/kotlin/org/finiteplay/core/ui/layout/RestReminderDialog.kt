@@ -1,12 +1,21 @@
 package org.finiteplay.core.ui.layout
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import org.finiteplay.core.ui.R
 
 /**
@@ -25,7 +34,21 @@ fun RestReminderDialog(playedSeconds: Int, onTakeBreak: () -> Unit, onKeepPlayin
         modifier = Modifier.testTag("rest_reminder_dialog"),
         onDismissRequest = onKeepPlaying,
         title = { Text(stringResource(R.string.rest_reminder_title)) },
-        text = { Text(stringResource(R.string.rest_reminder_body, humanDuration(playedSeconds))) },
+        text = {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Image(
+                    painter = painterResource(R.drawable.rest_reminder_cat),
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(112.dp)
+                        .testTag("rest_reminder_illustration"),
+                )
+                Spacer(Modifier.height(12.dp))
+                Text(stringResource(R.string.rest_reminder_body, humanDuration(playedSeconds)))
+            }
+        },
         confirmButton = {
             TextButton(onClick = onTakeBreak, modifier = Modifier.testTag("rest_reminder_take_break")) {
                 Text(stringResource(R.string.rest_reminder_take_break))

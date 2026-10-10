@@ -1,14 +1,21 @@
 package org.finiteplay.core.ui.layout
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -38,23 +45,35 @@ fun RestBreakDialog(remainingSeconds: Int, onCancel: () -> Unit) {
         onDismissRequest = {},
         title = { Text(stringResource(R.string.rest_break_title)) },
         text = {
-            // The countdown is the whole message, so it is the large element in the accent colour, as a
-            // clock face; "Back in 4 minutes 32 seconds" is its spoken form, kept for screen readers.
-            val remainingLabel = formatElapsed(remainingSeconds)
-            val spoken = stringResource(R.string.rest_break_body, humanDuration(remainingSeconds))
-            Text(
-                text = remainingLabel,
-                style = MaterialTheme.typography.displayLarge.copy(fontFeatureSettings = "tnum"),
-                fontWeight = FontWeight.Bold,
-                color = LocalAppColors.current.action.new,
-                textAlign = TextAlign.Center,
-                maxLines = 1,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(vertical = 8.dp)
-                    .semantics { contentDescription = spoken }
-                    .testTag("rest_break_countdown"),
-            )
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Image(
+                    painter = painterResource(R.drawable.rest_break_cat),
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(136.dp)
+                        .testTag("rest_break_illustration"),
+                )
+                Spacer(Modifier.height(4.dp))
+                // The countdown is the whole message, so it is the large element in the accent colour, as a
+                // clock face; "Back in 4 minutes 32 seconds" is its spoken form, kept for screen readers.
+                val remainingLabel = formatElapsed(remainingSeconds)
+                val spoken = stringResource(R.string.rest_break_body, humanDuration(remainingSeconds))
+                Text(
+                    text = remainingLabel,
+                    style = MaterialTheme.typography.displayLarge.copy(fontFeatureSettings = "tnum"),
+                    fontWeight = FontWeight.Bold,
+                    color = LocalAppColors.current.action.new,
+                    textAlign = TextAlign.Center,
+                    maxLines = 1,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 8.dp)
+                        .semantics { contentDescription = spoken }
+                        .testTag("rest_break_countdown"),
+                )
+            }
         },
         confirmButton = {
             TextButton(onClick = onCancel, modifier = Modifier.testTag("rest_break_dialog_cancel")) {
