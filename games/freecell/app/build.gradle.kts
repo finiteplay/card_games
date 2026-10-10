@@ -43,7 +43,7 @@ android {
         applicationId = "org.finiteplay.freecell"
         minSdk = 26
         targetSdk = 36
-        versionCode = 4
+        versionCode = 5
         versionName = providers.gradleProperty("finiteplay.versionName").get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

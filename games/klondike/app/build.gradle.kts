@@ -46,7 +46,7 @@ android {
         // `versionCode` is the integer Play orders builds by and must rise on every upload, so it is
         // per app. `versionName` is what a player reads (Settings, "About") and what a bug report should
         // quote; it is one value for every game, in the root `gradle.properties`.
-        versionCode = 5
+        versionCode = 6
         versionName = providers.gradleProperty("finiteplay.versionName").get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
