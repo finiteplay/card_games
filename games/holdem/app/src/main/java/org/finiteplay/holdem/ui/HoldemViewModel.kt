@@ -63,6 +63,9 @@ data class HintShown(val suggested: Action, val equity: Double, val potOdds: Dou
 /** The dialog when the tournament is over for the player: where they finished, and the two figures it states. */
 data class TournamentEnd(val place: Int, val hands: Int, val largestPot: Int)
 
+/** The blinds just went up to [small] / [big]; numbered so a second rise is a new notice. */
+data class BlindsUp(val id: Int, val small: Int, val big: Int)
+
 /** An announcement with a number, so the same words said twice are still said twice. */
 data class Announced(val id: Int, val what: Announcement)
 
@@ -125,6 +128,11 @@ class HoldemViewModel(
     var announcement: Announced? by mutableStateOf(null)
         private set
     private var announcementCount = 0
+
+    /** Set when a new hand deals at a higher blind level; the screen shows it briefly and calls [dismissBlindsUp]. */
+    var blindsUp: BlindsUp? by mutableStateOf(null)
+        private set
+    private var blindsUpCount = 0
 
     var endDialog: TournamentEnd? by mutableStateOf(null)
         private set
@@ -269,6 +277,7 @@ class HoldemViewModel(
             // Played in memory; see commit().
         }
         table = TablePresenter.dealt(session.state)
+        blindsUp = null
         soundSink(SoundEffect.SHUFFLE)
         soundSink(SoundEffect.DEAL)
         play { advance() }
@@ -317,6 +326,10 @@ class HoldemViewModel(
         stored = stored.copy(statistics = HoldemStatistics())
         statistics = stored.statistics
         viewModelScope.launch { runCatching { storage?.saveStatistics(stored, stored.statistics) } }
+    }
+
+    fun dismissBlindsUp(id: Int) {
+        if (blindsUp?.id == id) blindsUp = null
     }
 
     fun dismissRecoveryNotice() {
@@ -398,11 +411,18 @@ class HoldemViewModel(
         job.start()
     }
 
+    /** Shows [model], and says so when it deals the first hand at a higher blind level. */
+    private fun show(model: TableModel) {
+        val previousLevel = table.blinds.level
+        table = model
+        if (model.blinds.level > previousLevel) blindsUp = BlindsUp(++blindsUpCount, model.blinds.small, model.blinds.big)
+    }
+
     private suspend fun present(steps: List<Step>) {
         for (step in steps) {
             val wait = pacing.ms(step.pause)
             if (wait > 0) delay(wait)
-            table = step.model
+            show(step.model)
             step.cues.forEach(soundSink)
             step.announce?.let { announcement = Announced(++announcementCount, it) }
             if (step.model.stage == Stage.HAND_OVER || step.model.stage == Stage.TOURNAMENT_OVER) handEnded()
@@ -465,7 +485,7 @@ class HoldemViewModel(
         } catch (e: Exception) {
             // Played in memory; see commit().
         }
-        table = TablePresenter.dealt(session.state)
+        show(TablePresenter.dealt(session.state))
         soundSink(SoundEffect.SHUFFLE)
         soundSink(SoundEffect.DEAL)
     }

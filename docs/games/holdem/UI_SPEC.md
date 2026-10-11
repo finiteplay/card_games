@@ -42,6 +42,15 @@ hands`; past the last scheduled level the next level is the doubled one, which t
 gives). In the trailing corner, as icons:
 Help, Statistics, and — while a tournament is in progress — Leave (a flag).
 
+### Blinds notice
+
+When a hand deals at a higher blind level than the one before, a small pill with a gold outline — a
+triangle and the new blinds in the status row's own words (`▲ Blinds 15 / 30`) — appears for three
+seconds and goes without a tap. In portrait it sits in the empty band between the two rows of seats
+(about a sixth of the way down the table), so it covers no seat and no card; in landscape, in the free
+middle of the status row. It is a polite live region, spoken as the new blinds. It does not appear for
+the first level, nor when a saved game is restored, nor when a new tournament starts.
+
 ### Seats
 
 Each opponent seat is a rounded box: an **avatar** (the profile's animal, drawn as a face on a disc in the

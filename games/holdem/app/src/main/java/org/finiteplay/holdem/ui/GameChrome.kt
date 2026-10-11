@@ -40,7 +40,9 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.SpanStyle
@@ -233,6 +235,33 @@ internal fun HintNotice(hint: HintShown, modifier: Modifier = Modifier) {
             fontWeight = FontWeight.SemiBold,
             color = Color.White,
             modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
+        )
+    }
+}
+
+/**
+ * The blinds just went up (`UI_SPEC.md` "Blinds notice"): a small gold pill, a triangle and the new
+ * blinds in the words the status row already uses, so it needs no string of its own. Spoken as
+ * the new blinds through a polite live region.
+ */
+@Composable
+internal fun BlindsUpNotice(notice: BlindsUp, modifier: Modifier = Modifier) {
+    val blinds = stringResource(R.string.status_blinds, notice.small, notice.big)
+    Surface(
+        shape = RoundedCornerShape(16.dp),
+        color = Color.Black.copy(alpha = 0.72f),
+        border = BorderStroke(1.5.dp, Color(0xFFFFD54F)),
+        modifier = modifier.testTag("blinds_up_notice").semantics(mergeDescendants = true) {
+            contentDescription = blinds
+            liveRegion = LiveRegionMode.Polite
+        },
+    ) {
+        Text(
+            text = "▲  $blinds",
+            style = MaterialTheme.typography.titleSmall,
+            fontWeight = FontWeight.Bold,
+            color = Color(0xFFFFD54F),
+            modifier = Modifier.padding(horizontal = 14.dp, vertical = 6.dp),
         )
     }
 }

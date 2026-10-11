@@ -11,6 +11,7 @@ import android.app.Activity
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -28,6 +29,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -56,6 +58,7 @@ import org.finiteplay.core.ui.sound.GatedSoundPlayer
 import org.finiteplay.core.ui.table.feltTable
 import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.holdem.R
+import kotlinx.coroutines.delay
 
 /**
  * The table, the bar and the dialogs. Everything shown is derived from [HoldemViewModel.table], which
@@ -159,6 +162,21 @@ fun GameScreen(
                     }
                 }
             }
+            viewModel.blindsUp?.let { notice ->
+                LaunchedEffect(notice.id) {
+                    delay(BLINDS_NOTICE_MS)
+                    viewModel.dismissBlindsUp(notice.id)
+                }
+                // Landscape: the free middle of the status row. Portrait: the empty band between the two rows of seats,
+                // about a sixth of the way down the table, so it covers no seat and no card.
+                if (landscape) {
+                    BlindsUpNotice(notice, Modifier.align(Alignment.TopCenter).padding(top = 4.dp))
+                } else {
+                    BoxWithConstraints(modifier = Modifier.fillMaxSize().padding(top = TableGeometry.STATUS_ROW.dp + TableGeometry.STATUS_GAP.dp)) {
+                        BlindsUpNotice(notice, Modifier.align(Alignment.TopCenter).padding(top = (maxHeight * 0.16f)))
+                    }
+                }
+            }
             AnnouncementRegion(viewModel)
         }
     }
@@ -209,6 +227,9 @@ fun GameScreen(
 }
 
 /** Every action, street and pot said aloud as it happens, through a polite live region (`UI_SPEC.md` "Accessibility"). */
+/** How long the blinds-up pill stays: long enough to read, short enough to need no tap. */
+private const val BLINDS_NOTICE_MS = 3_000L
+
 @Composable
 private fun AnnouncementRegion(viewModel: HoldemViewModel) {
     val announced = viewModel.announcement ?: return

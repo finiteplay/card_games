@@ -6,6 +6,34 @@ What was run against `EXECUTION_PLAN.md` H3, H4, H6, H7 and H9 and what it showe
 
 ## Gates
 
+### Alpha build 2 verification (2026-10-11)
+
+The playable table was merged into `master`. Version code 2, version name 0.3.0:
+
+- `:games:holdem:{rules,opponents,app}:check` passed (the three tasks were invoked explicitly).
+- `connectedDebugAndroidTest` passed on the Pixel 9 Pro XL API 37 emulator:
+  26 tests, zero failures, errors, or skips, including both scenario orientations,
+  action-bar anchors, and table controls. Stale dex inputs referencing the former
+  `Solitaire` path initially prevented the build; cleaning the affected generated
+  module outputs and rebuilding without caches resolved that build failure.
+- `assembleRelease` and `bundleRelease` passed using the configured upload key,
+  not the debug key. APK signature verified as FinitePlay LLC; SHA-256 certificate
+  `e057f26f0e697aeacdae33a4d38ab661d3e8ccf49d0f15cc4ff480f1bebd5c34`.
+- The signed release APK installed on the emulator and cold-launched in 889 ms.
+  The live table and betting controls were present, and Settings opened.
+- Release permissions contain only the app's AndroidX dynamic-receiver permission;
+  there is no network or advertising-ID permission.
+- Play committed version code 2 to `alpha` with status `draft`. A completed
+  rollout was rejected because the Play app is still a draft. The Console shows
+  the committed draft and zero active countries; it is not tester-accessible yet.
+- The simulated-gambling content-rating questionnaire was saved with user approval.
+  South Korea requires GRAC review. Other setup declarations, store listing,
+  countries, testers, and review submission remain incomplete.
+
+The evidence below records the earlier implementation gate run. Its debug-signing
+blocker is historical and no longer applies. Hardware budgets and uncovered
+acceptance cases remain open; this is Alpha evidence, not a production sign-off.
+
 | Gate | Result |
 |---|---|
 | `check` (unit tests, lint, the layering gates, locale completeness in 30 locales) | Green |

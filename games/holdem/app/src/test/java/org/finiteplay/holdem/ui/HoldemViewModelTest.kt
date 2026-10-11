@@ -146,6 +146,31 @@ class HoldemViewModelTest {
     }
 
     @Test
+    fun `a rise in the blinds is announced once, when the first hand at the new level deals`() {
+        val vm = HoldemViewModel(seedSource = { 7L }, initialSettings = TableSettings(animationsEnabled = false))
+        val seen = ArrayList<BlindsUp>()
+        var guard = 0
+        while (vm.table.handNumber <= Contract.HANDS_PER_LEVEL && vm.table.stage != Stage.TOURNAMENT_OVER && guard++ < 20_000) {
+            vm.advance(20)
+            vm.blindsUp?.let { if (seen.lastOrNull() != it) seen += it }
+            when (vm.table.stage) {
+                Stage.YOUR_TURN -> vm.act(Action.Fold)
+                Stage.HAND_OVER -> vm.nextHand()
+                else -> Unit
+            }
+        }
+        if (vm.table.stage == Stage.TOURNAMENT_OVER) return // knocked out before level 2: nothing to announce
+        vm.advance(20)
+        vm.blindsUp?.let { if (seen.lastOrNull() != it) seen += it }
+        assertEquals("hand ${vm.table.handNumber} stage ${vm.table.stage} level ${vm.table.blinds.level}", 1, seen.size)
+        assertEquals(vm.table.blinds.small, seen[0].small)
+        assertEquals(vm.table.blinds.big, seen[0].big)
+        assertEquals(2, vm.table.blinds.level)
+        vm.dismissBlindsUp(seen[0].id)
+        assertNull(vm.blindsUp)
+    }
+
+    @Test
     fun `next hand deals when it is pressed`() {
         val scenario = Scenarios.checkDown
         val vm = viewModel(scenario, animations = false)
