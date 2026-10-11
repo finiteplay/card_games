@@ -175,8 +175,7 @@ class PolicyTest {
             assertTrue(table.count { it.profile in Profiles.exploitablePool } >= 2)
             names += table.map { it.name }
         }
-        assertTrue(names.size >= 20)
-        assertTrue(OPPONENT_NAMES.size >= 20)
-        assertEquals(OPPONENT_NAMES.size, OPPONENT_NAMES.toSet().size)
+        assertEquals(Profiles.all.map { it.animal.displayName }.toSet(), names)
+        assertEquals(Profiles.all.size, Profiles.all.map { it.animal }.toSet().size)
     }
 }

@@ -1,7 +1,8 @@
 package org.finiteplay.holdem.opponents
 
+import org.finiteplay.cards.Animal
+import org.finiteplay.cards.PlayStyle
 import org.finiteplay.cards.SplitMix64
-import org.finiteplay.holdem.rules.Contract
 
 /**
  * The word shown at an opponent's seat (`DESIGN.md` "Profiles"). An enum rather than a string: the
@@ -17,21 +18,26 @@ enum class Style { TIGHT, LOOSE, AGGRESSIVE, PASSIVE }
  */
 data class Profile(
     val id: String,
+    val animal: Animal,
     val style: Style,
     val looseness: Double,
     val aggression: Double,
     val bluff: Double,
     val foldToPressure: Double,
-)
+) {
+    init {
+        require(animal.style == PlayStyle.valueOf(style.name)) { "$animal plays ${animal.style}, not $style" }
+    }
+}
 
 object Profiles {
-    val tag = Profile("tag", Style.TIGHT, 0.95, 0.70, 0.20, 0.35)
-    val rock = Profile("rock", Style.TIGHT, 0.70, 0.30, 0.04, 0.70)
-    val station = Profile("station", Style.LOOSE, 1.60, 0.12, 0.03, 0.10)
-    val regular = Profile("regular", Style.LOOSE, 1.25, 0.55, 0.18, 0.30)
-    val lag = Profile("lag", Style.AGGRESSIVE, 1.20, 0.90, 0.35, 0.20)
-    val maniac = Profile("maniac", Style.AGGRESSIVE, 1.50, 0.95, 0.50, 0.10)
-    val caller = Profile("caller", Style.PASSIVE, 1.05, 0.10, 0.03, 0.45)
+    val tag = Profile("tag", Animal.OWL, Style.TIGHT, 0.95, 0.70, 0.20, 0.35)
+    val rock = Profile("rock", Animal.TORTOISE, Style.TIGHT, 0.70, 0.30, 0.04, 0.70)
+    val station = Profile("station", Animal.PANDA, Style.LOOSE, 1.60, 0.12, 0.03, 0.10)
+    val regular = Profile("regular", Animal.GECKO, Style.LOOSE, 1.25, 0.55, 0.18, 0.30)
+    val lag = Profile("lag", Animal.FOX, Style.AGGRESSIVE, 1.20, 0.90, 0.35, 0.20)
+    val maniac = Profile("maniac", Animal.HONEY_BADGER, Style.AGGRESSIVE, 1.50, 0.95, 0.50, 0.10)
+    val caller = Profile("caller", Animal.CAPYBARA, Style.PASSIVE, 1.05, 0.10, 0.03, 0.45)
 
     val all: List<Profile> = listOf(tag, rock, station, regular, lag, maniac, caller)
 
@@ -42,20 +48,15 @@ object Profiles {
     internal val exploitablePool = listOf(station, rock, caller, maniac)
 }
 
-/** One opponent at the table: shown by [name] and [style], playing [profile]. */
-data class Opponent(val name: String, val profile: Profile) {
+/** One opponent at the table: an animal, shown by its funny [name] and [style], playing [profile]. */
+data class Opponent(val profile: Profile) {
+    val animal: Animal get() = profile.animal
+    val name: String get() = animal.displayName
     val style: Style get() = profile.style
 }
 
-/** Plain first names, none a real person's, never translated (`DESIGN.md` "Opponents"). */
-val OPPONENT_NAMES: List<String> = listOf(
-    "Ava", "Ben", "Carla", "Dev", "Elena", "Felix", "Grace", "Hugo", "Iris", "Jonas", "Kira", "Leo",
-    "Maya", "Noah", "Olga", "Pablo", "Quinn", "Rosa", "Sam", "Tara", "Uma", "Victor", "Wendy", "Yusuf",
-    "Zoe", "Mateo", "Nadia", "Oscar",
-)
-
 /**
- * The five opponents for seats 1..5, from the tournament's seed alone: distinct names, distinct
+ * The five opponents for seats 1..5, from the tournament's seed alone: distinct animals, distinct
  * profiles, always two the field is weaker for and two it is stronger for, and one more of either,
  * shuffled across the seats.
  */
@@ -65,8 +66,7 @@ fun drawOpponents(tournamentSeed: Long): List<Opponent> {
     val weakPick = Profiles.exploitablePool.shuffledBy(rng).take(2)
     val fifth = Profiles.all.filter { it !in strongPick && it !in weakPick }.shuffledBy(rng).first()
     val profiles = (strongPick + weakPick + fifth).shuffledBy(rng)
-    val names = OPPONENT_NAMES.shuffledBy(rng).take(Contract.SEATS - 1)
-    return profiles.mapIndexed { i, profile -> Opponent(names[i], profile) }
+    return profiles.map(::Opponent)
 }
 
 private fun <T> List<T>.shuffledBy(rng: SplitMix64): List<T> {

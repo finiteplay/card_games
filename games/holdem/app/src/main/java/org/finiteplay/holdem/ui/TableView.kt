@@ -50,6 +50,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.finiteplay.cards.Card
+import org.finiteplay.core.ui.animal.AnimalAvatar
 import org.finiteplay.core.ui.card.CardFan
 import org.finiteplay.core.ui.chips.ChipStack
 import org.finiteplay.core.ui.layout.ConfettiBurst
@@ -242,14 +243,7 @@ private val FitSubtitle = TextAutoSize.StepBased(minFontSize = 7.sp, maxFontSize
 
 @Composable
 private fun Avatar(profile: OpponentProfile) {
-    val background = Color(profile.colorArgb)
-    val figure = Color.Black.copy(alpha = 0.34f)
-    androidx.compose.foundation.Canvas(modifier = Modifier.size(24.dp).clip(CircleShape).background(background)) {
-        val w = size.width
-        // Shoulders below, head above: a neutral silhouette that is drawn, so the app ships no faces.
-        drawOval(figure, topLeft = androidx.compose.ui.geometry.Offset(w * 0.12f, w * 0.62f), size = androidx.compose.ui.geometry.Size(w * 0.76f, w * 0.7f))
-        drawCircle(figure, radius = w * 0.2f, center = androidx.compose.ui.geometry.Offset(w * 0.5f, w * 0.38f))
-    }
+    AnimalAvatar(profile.animal, size = 28.dp)
 }
 
 @Composable

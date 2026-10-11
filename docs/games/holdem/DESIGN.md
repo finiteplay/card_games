@@ -103,8 +103,11 @@ solitaire hint that can walk a certified line to a win, it carries no guarantee 
 ## Opponents
 
 Five opponents per tournament, each a **profile** — a fixed set of parameters over one shared
-policy — drawn for the tournament from its seed and shown at its seat by a name and an avatar. Names
-come from a fixed list of plain first names, never a real person's, and are not translated.
+policy — drawn for the tournament from its seed and shown at its seat by an animal's name and face. Each profile
+is a fixed animal (`Animal` in `core:cards`) with a made-up name and a play style, the same in every game that seats
+opponents: Hootie the owl (tight), Shellby the tortoise (tight), Bamboozle the panda (loose), Gizmo the gecko
+(loose), Foxtrot the fox (aggressive), Badgerino the honey badger (aggressive), Chillbara the capybara (passive).
+Names are not translated.
 
 ### The policy
 
