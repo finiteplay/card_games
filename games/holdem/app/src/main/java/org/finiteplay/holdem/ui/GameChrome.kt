@@ -1,6 +1,7 @@
 package org.finiteplay.holdem.ui
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -42,7 +43,11 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -53,6 +58,7 @@ import org.finiteplay.core.ui.layout.BoardOrientation
 import org.finiteplay.core.ui.layout.BoardStatusIcon
 import org.finiteplay.core.ui.layout.boardStatusColor
 import org.finiteplay.core.ui.layout.boardStatusStyle
+import org.finiteplay.core.ui.layout.boardTitleColor
 import org.finiteplay.core.ui.layout.holdToRepeat
 import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.holdem.R
@@ -83,13 +89,18 @@ internal fun StatusRow(
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Column(modifier = Modifier.weight(1f)) {
+            // The game's name leads, as in every game here; the blinds follow on the same line.
             Text(
-                text = stringResource(R.string.status_blinds, table.blinds.small, table.blinds.big),
+                text = buildAnnotatedString {
+                    withStyle(SpanStyle(fontWeight = FontWeight.ExtraBold, color = boardTitleColor())) { append(stringResource(R.string.game_title)) }
+                    append("  ")
+                    append(stringResource(R.string.status_blinds, table.blinds.small, table.blinds.big))
+                },
                 style = boardStatusStyle(),
                 fontWeight = FontWeight.Bold,
                 color = boardStatusColor(),
                 maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
+                autoSize = TextAutoSize.StepBased(minFontSize = 9.sp, maxFontSize = 16.sp, stepSize = 0.5.sp),
                 modifier = Modifier.testTag("status_blinds"),
             )
             Text(

@@ -51,6 +51,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.finiteplay.cards.Card
 import org.finiteplay.core.ui.animal.AnimalAvatar
+import org.finiteplay.core.ui.layout.FinitePlayLogo
 import org.finiteplay.core.ui.card.CardFan
 import org.finiteplay.core.ui.chips.ChipStack
 import org.finiteplay.core.ui.layout.ConfettiBurst
@@ -89,6 +90,8 @@ fun TableView(
     modifier: Modifier = Modifier,
 ) {
     Box(modifier = modifier.fillMaxSize()) {
+        // Publisher mark on the felt, behind everything: the empty middle of the portrait table.
+        if (!landscape) FinitePlayLogo(modifier = Modifier.align(Alignment.Center), widthFraction = 0.4f)
         BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
             if (landscape) Landscape(table, profiles, animate, maxWidth.value, maxHeight.value)
             else Portrait(table, profiles, animate, maxWidth.value, maxHeight.value)
