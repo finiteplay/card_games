@@ -47,6 +47,7 @@ import org.finiteplay.blackjack.rules.Settlement
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.card.LocalAnimateCards
 import org.finiteplay.core.ui.layout.BoardOrientation
+import org.finiteplay.core.ui.layout.FinitePlayLogo
 import org.finiteplay.core.ui.layout.Handedness
 import org.finiteplay.core.ui.layout.RestBreakDialog
 import org.finiteplay.core.ui.layout.RestReminderDialog
@@ -195,6 +196,8 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
         val animate = viewModel.settings.animationsEnabled
         val table: @Composable (Modifier) -> Unit = { tableModifier ->
             Box(modifier = tableModifier) {
+                // Publisher mark on the felt, behind everything and low, clear of the bet circle and the hands.
+                FinitePlayLogo(modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 12.dp), widthFraction = if (landscape) 0.3f else 0.5f)
                 val state = round?.state
                 if (state == null) {
                     EmptyTable(bet = viewModel.selectedBet, animate = animate)
