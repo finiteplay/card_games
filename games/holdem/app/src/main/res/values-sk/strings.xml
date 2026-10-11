@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Ako hrať</string>
+    <string name="help_tab_rules">Pravidlá</string>
+    <string name="help_tab_hands">Ruky</string>
+    <string name="help_tab_strategy">Stratégia</string>
+
+    <string name="help_goal_title">Cieľ</string>
+    <string name="help_goal">Získajte všetky žetóny za stolom. Hráte turnaj proti piatim súperom a každý začína s 1 500 žetónmi. Keď hráčovi žetóny dôjdu, vypadáva a vyhráva posledný zostávajúci hráč.</string>
+    <string name="help_hand_title">Ruka</string>
+    <string name="help_hand_cards">V každej ruke dostanete dve súkromné karty, svoje vlastné karty. Päť spoločných kariet leží lícom nahor v strede a volá sa stôl. Vaša ruka je najlepších päť kariet z vašich dvoch a zo stola, pričom môžete použiť obe svoje, jednu alebo žiadnu.</string>
+    <string name="help_hand_flop">Po vlastných kartách nasleduje kolo stávok. Potom sa rozdajú tri karty stola, flop, a znova sa stavuje. Štvrtá karta, turn, prináša ďalšie kolo, rovnako ako piata, river.</string>
+    <string name="help_actions_title">Vaše možnosti</string>
+    <string name="help_actions_check">Check: zostaňte v hre bez stávky, keď pred vami nikto nestavil.</string>
+    <string name="help_actions_call">Dorovnať: vyrovnajte stávku, ktorej čelíte.</string>
+    <string name="help_actions_bet">Staviť alebo Zvýšiť: vložte ďalšie žetóny. Sumu vyberiete tlačidlami nad lištou: − a + posúvajú o veľký blind, a ½ potu a Pot ju nastavia za vás. Zvýšenie musí byť aspoň také veľké ako posledná stávka alebo zvýšenie.</string>
+    <string name="help_actions_fold">Zahodiť (fold): vzdajte sa kariet aj žetónov, ktoré ste už vložili. Vypadávate len z tejto ruky.</string>
+    <string name="help_actions_all_in">All in: vsaďte všetky žetóny, ktoré máte.</string>
+    <string name="help_button_title">Button a blindy</string>
+    <string name="help_button">Dealer button, označený D, sa každú ruku posúva o jedno miesto v smere hodinových ručičiek. Dvaja hráči za ním musia pred rozdaním vložiť povinné stávky: malý blind (SB) a veľký blind (BB). Tým sa začne pot, takže sa vždy hrá o niečo. Veľký blind určuje najmenšiu stávku.</string>
+    <string name="help_allin_title">All in a vedľajšie poty</string>
+    <string name="help_allin">Hráča, ktorý je all in, nemožno vytlačiť, ale od každého hráča môže vyhrať len toľko, koľko sám vložil. Žetóny navyše idú do vedľajšieho potu, ktorý hráč v all in nemôže vyhrať. Poty sú zobrazené na stole a každý získa najlepšia ruka spomedzi hráčov, ktorí doň prispeli.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Ak po poslednom kole stávok zostanú dvaja alebo viac hráčov, otočia karty lícom nahor a najlepšia ruka vyhráva pot. Ak ostatní zahodia, posledný hráč vyhráva pot bez ukázania kariet. Rovnaké ruky si pot rozdelia rovným dielom.</string>
+    <string name="help_tournament_title">Turnaj</string>
+    <string name="help_tournament">Blindy rastú každých 10 rúk, takže žetóny sa pomerne zmenšujú a čakanie je drahé. Nič nie je časované: rozmýšľajte, ako dlho chcete. Skončíte na mieste rovnom počtu hráčov, ktorí zostali, keď vypadnete, takže 6. je prvý, kto vypadne, a 1. je výhra.</string>
+    <string name="help_leave_title">Odchod</string>
+    <string name="help_leave">Vlajka hore predčasne ukončí turnaj a skončíte tam, kde by ste boli, keby ste práve vypadli. Zatvorenie aplikácie ho neukončí: ruka sa uloží a čaká na vás, keď sa vrátite. Vrátenie ťahu neexistuje, pretože po každom rozhodnutí prídu karty, ktoré ste nemohli vidieť.</string>
+
+    <string name="help_hands_intro">Od najsilnejšej ruky po najslabšiu. Zobrazených päť kariet je príklad každej ruky.</string>
+    <string name="help_hand_straight_flush_title">Postupka vo farbe</string>
+    <string name="help_hand_straight_flush">Päť kariet v rade, všetky rovnakej farby. Najlepšia z nich, od desiatky po eso, je royal flush.</string>
+    <string name="help_hand_four_title">Štvorica</string>
+    <string name="help_hand_four">Štyri karty rovnakej hodnoty.</string>
+    <string name="help_hand_full_house_title">Full house</string>
+    <string name="help_hand_full_house">Tri karty jednej hodnoty a dve inej.</string>
+    <string name="help_hand_flush_title">Farba</string>
+    <string name="help_hand_flush">Ľubovoľných päť kariet jednej farby.</string>
+    <string name="help_hand_straight_title">Postupka</string>
+    <string name="help_hand_straight">Päť kariet v rade, ľubovoľných farieb. Eso môže byť vysoké, od desiatky po eso, alebo nízke, od esa po päťku, ale nikdy nie oboje naraz.</string>
+    <string name="help_hand_three_title">Trojica</string>
+    <string name="help_hand_three">Tri karty rovnakej hodnoty.</string>
+    <string name="help_hand_two_pair_title">Dva páry</string>
+    <string name="help_hand_two_pair">Dve karty jednej hodnoty a dve inej.</string>
+    <string name="help_hand_pair_title">Jeden pár</string>
+    <string name="help_hand_pair">Dve karty rovnakej hodnoty.</string>
+    <string name="help_hand_high_card_title">Vysoká karta</string>
+    <string name="help_hand_high_card">Nič z uvedeného: počíta sa vaša najvyššia karta.</string>
+    <string name="help_ties_title">Remízy</string>
+    <string name="help_ties">Ak dvaja hráči majú rovnaký druh ruky, vyhrávajú vyššie karty. Dva páry es a sedmičiek porazia dva páry kráľov a dám a keď sa hlavné karty zhodujú, rozhodne ďalšia najvyššia. Počíta sa len päť kariet a farby remízu nikdy nerozhodnú: rovnaké ruky si pot rozdelia.</string>
+
+    <string name="help_strategy_intro">Sedem nápadov, ktoré novému hráčovi dobre poslúžia. Nevyhrajú každú ruku, ale v rámci turnaja sa sčítajú.</string>
+    <string name="help_strategy_1">Hrajte menej rúk z predných miest. Prví hráči na ťahu majú za sebou najviac súperov, preto tam začínajte len so silnými kartami a uvoľnite sa, keď sa miesta približujú k buttonu.</string>
+    <string name="help_strategy_2">Radšej zvyšujte, než dorovnávajte. Zvýšenie môže vyhrať pot hneď a keď ho niekto dorovná, máte častejšie silnejšiu ruku. Dorovnanie len dovolí ostatným lacno vidieť karty.</string>
+    <string name="help_strategy_3">Zahadzujte častejšie, než je vám pohodlné. Väčšina rúk nestojí za hru a zahodená ruka vás stojí len to, čo ste už vložili.</string>
+    <string name="help_strategy_4">Poznajte pomer potu. Ak vás dorovnanie stojí 25 žetónov, aby ste vyhrali pot 75, platíte jeden žetón za každé tri, ktoré môžete vyhrať, takže sa dorovnanie oplatí, ak vyhráte viac než raz zo štyroch. Porovnajte to so svojou šancou skončiť s najlepšou rukou.</string>
+    <string name="help_strategy_5">Pozícia je dôležitá. Keď hráte posledný, najprv vidíte, čo robia všetci ostatní, a to má veľkú cenu. Hrajte viac rúk z neskorých miest a menej z predných.</string>
+    <string name="help_strategy_6">Sledujte štýly súperov. Každé miesto je označené ako tight, loose, aggressive alebo passive. Rešpektujte zvýšenie od tight hráča a pomalšie verte stávke od loose, aggressive hráča.</string>
+    <string name="help_strategy_7">S malým stackom choďte all in alebo zahoďte. Keď máte len pár veľkých blindov, malé stávky a dorovnania vám nenechávajú priestor na manéver a dobre načasované all in je vaša najlepšia šanca zdvojnásobiť sa.</string>
+</resources>

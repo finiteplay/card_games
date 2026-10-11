@@ -1,12 +1,14 @@
 package org.finiteplay.blackjack.ui
 
+import org.finiteplay.core.ui.card.FanGeometry
+
 /**
  * Card size and hand fan, in dp, as `docs/games/blackjack/UI_SPEC.md` "Geometry" states them. Pure
  * numbers so a JVM test can hold the spec to them at 320 dp and 360 dp without a device.
  */
 object TableGeometry {
     /** Card width : height. */
-    const val CARD_ASPECT = 5f / 7f
+    const val CARD_ASPECT = FanGeometry.CARD_ASPECT
 
     /** The card-width floor: cards are content, not controls, so the 48 dp touch minimum does not apply. */
     const val MIN_CARD_WIDTH = 40f
@@ -17,10 +19,10 @@ object TableGeometry {
      * The widest a fan's step ever is, as a share of a card: 0.7, so two cards overlap by under a
      * third and the covered card's corner pip still reads. The fan squeezes below this to fit.
      */
-    const val MAX_STEP_FRACTION = 0.7f
+    const val MAX_STEP_FRACTION = FanGeometry.MAX_STEP_FRACTION
 
     /** The fan's step floor; below it the corner indices are unreadable and the total badge carries the hand. */
-    const val MIN_FAN_STEP = 6f
+    const val MIN_FAN_STEP = FanGeometry.MIN_FAN_STEP
 
     /** Gap between split-hand columns. */
     const val COLUMN_GAP = 4f
@@ -63,18 +65,15 @@ object TableGeometry {
     fun cardWidthForHeight(areaHeight: Float, furniture: Float): Float =
         maxOf(MIN_SHORT_CARD_WIDTH, (areaHeight - furniture) * CARD_ASPECT)
 
-    fun cardHeight(cardWidth: Float): Float = cardWidth / CARD_ASPECT
+    fun cardHeight(cardWidth: Float): Float = FanGeometry.cardHeight(cardWidth)
 
     /** The width a hand's cards may spread across: its column, less the gap a neighbour needs. */
     fun handWidth(areaWidth: Float, hands: Int): Float =
         if (hands <= 1) areaWidth else columnWidth(areaWidth, hands) - COLUMN_GAP
 
     /** Distance between neighbouring cards' left edges: [MAX_STEP_FRACTION] of a card at most, squeezed to fit, never under the floor. */
-    fun fanStep(cardWidth: Float, handWidth: Float, cards: Int): Float {
-        if (cards <= 1) return 0f
-        return maxOf(MIN_FAN_STEP, minOf(cardWidth * MAX_STEP_FRACTION, (handWidth - cardWidth) / (cards - 1)))
-    }
+    fun fanStep(cardWidth: Float, handWidth: Float, cards: Int): Float = FanGeometry.fanStep(cardWidth, handWidth, cards)
 
     /** Total width a fan occupies; may exceed [handWidth] once the step has hit its floor. */
-    fun fanWidth(cardWidth: Float, step: Float, cards: Int): Float = cardWidth + step * (cards - 1).coerceAtLeast(0)
+    fun fanWidth(cardWidth: Float, step: Float, cards: Int): Float = FanGeometry.fanWidth(cardWidth, step, cards)
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">อิควิตี้ %1$d%% · พอตออดส์ %2$d%%</string>
+    <string name="hint_notice_free">อิควิตี้ %1$d%%</string>
+    <string name="hint_notice_desc">โอกาสชนะโดยประมาณ %1$d เปอร์เซ็นต์เมื่อเทียบกับมือที่น่าจะเป็น การคอลมีราคา %2$d เปอร์เซ็นต์ของพอต</string>
+    <string name="hint_notice_free_desc">โอกาสชนะโดยประมาณ %1$d เปอร์เซ็นต์เมื่อเทียบกับมือที่น่าจะเป็น</string>
+    <string name="recovery_notice">เปิดมือที่บันทึกไว้ไม่ได้ จึงแจกใหม่ตั้งแต่ต้น ชิปไม่หายไป</string>
+</resources>

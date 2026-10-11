@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">जीत की संभावना %1$d%% · पॉट ऑड्स %2$d%%</string>
+    <string name="hint_notice_free">जीत की संभावना %1$d%%</string>
+    <string name="hint_notice_desc">संभावित हाथों के मुकाबले जीतने की अनुमानित संभावना %1$d प्रतिशत है; कॉल की कीमत पॉट का %2$d प्रतिशत है।</string>
+    <string name="hint_notice_free_desc">संभावित हाथों के मुकाबले जीतने की अनुमानित संभावना %1$d प्रतिशत है।</string>
+
+    <string name="recovery_notice">आपका सहेजा हुआ हाथ खोला नहीं जा सका, इसलिए उसे शुरू से दोबारा बाँटा गया। कोई चिप्स नहीं गए।</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Équité %1$d%% · Cote du pot %2$d%%</string>
+    <string name="hint_notice_free">Équité %1$d%%</string>
+    <string name="hint_notice_desc">Chances estimées de gagner : %1$d pour cent contre les mains probables ; suivre coûte %2$d pour cent du pot.</string>
+    <string name="hint_notice_free_desc">Chances estimées de gagner : %1$d pour cent contre les mains probables.</string>
+    <string name="recovery_notice">Votre main sauvegardée n\'a pas pu être ouverte, elle a donc été redistribuée depuis le début. Aucun jeton n\'a été perdu.</string>
+</resources>

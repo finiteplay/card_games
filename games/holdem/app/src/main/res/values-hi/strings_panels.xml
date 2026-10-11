@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">टूर्नामेंट</string>
+    <string name="stat_section_finishes">स्थान</string>
+    <string name="stat_section_hands">हाथ</string>
+
+    <string name="stat_tile_tournaments_played">खेले</string>
+    <string name="stat_tile_tournaments_won">जीते</string>
+    <string name="stat_tile_avg_finish">औसत स्थान</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">खेले गए हाथ</string>
+    <string name="stat_tile_hands_won">जीते गए हाथ</string>
+    <string name="stat_tile_showdowns_won">जीते गए शोडाउन</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">सबसे बड़ा पॉट</string>
+    <string name="stat_tile_vpip">फ़्लॉप से पहले अपनी मर्ज़ी से शामिल</string>
+    <string name="stat_tile_pfr">फ़्लॉप से पहले रेज़</string>
+
+    <string name="place_1">पहला</string>
+    <string name="place_2">दूसरा</string>
+    <string name="place_3">तीसरा</string>
+    <string name="place_4">चौथा</string>
+    <string name="place_5">पाँचवाँ</string>
+    <string name="place_6">छठा</string>
+    <string name="cd_finish_bar">%1$s स्थान: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, उदाहरण के लिए %2$s</string>
+    <string name="cd_example_card">%1$s, %2$s</string>
+</resources>

@@ -47,6 +47,7 @@ import org.finiteplay.core.ui.layout.BoardAction
 import org.finiteplay.core.ui.layout.BoardActionBar
 import org.finiteplay.core.ui.layout.BoardActionRail
 import org.finiteplay.core.ui.layout.BoardOrientation
+import org.finiteplay.core.ui.layout.BoardStatusIcon
 import org.finiteplay.core.ui.layout.boardStatusColor
 import org.finiteplay.core.ui.layout.boardStatusStyle
 import org.finiteplay.core.ui.layout.boardTitleColor
@@ -105,16 +106,8 @@ internal fun ChromeRail(
 }
 
 @Composable
-private fun StatusIcon(icon: ImageVector, contentDescriptionRes: Int, tint: Color, tag: String, onClick: () -> Unit) {
-    IconButton(onClick = onClick, modifier = Modifier.size(40.dp).testTag(tag)) {
-        Icon(
-            imageVector = icon,
-            contentDescription = stringResource(contentDescriptionRes),
-            tint = tint,
-            modifier = Modifier.size(22.dp),
-        )
-    }
-}
+private fun StatusIcon(icon: ImageVector, contentDescriptionRes: Int, tint: Color, tag: String, onClick: () -> Unit) =
+    BoardStatusIcon(icon, stringResource(contentDescriptionRes), tint, tag, onClick)
 
 /** The discarded-save banner: the round could not be read and was voided, costing nothing. Dismissible. */
 @Composable

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">البلايند %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="zero">اليد %1$d · %2$,d / %3$,d بعد %4$d يد</item>
+        <item quantity="one">اليد %1$d · %2$,d / %3$,d بعد يد واحدة</item>
+        <item quantity="two">اليد %1$d · %2$,d / %3$,d بعد يدين</item>
+        <item quantity="few">اليد %1$d · %2$,d / %3$,d بعد %4$d أيدٍ</item>
+        <item quantity="many">اليد %1$d · %2$,d / %3$,d بعد %4$d يدًا</item>
+        <item quantity="other">اليد %1$d · %2$,d / %3$,d بعد %4$d يد</item>
+    </plurals>
+    <string name="action_leave_tournament">مغادرة البطولة</string>
+
+    <string name="action_fold">انسحاب</string>
+    <string name="action_check">تمرير</string>
+    <string name="action_call">مجاراة&#10;%1$,d</string>
+    <string name="action_call_all_in">مجاراة&#10;الكل</string>
+    <string name="action_bet">رهان&#10;%1$,d</string>
+    <string name="action_raise">رفع إلى&#10;%1$,d</string>
+    <string name="action_all_in">الكل&#10;%1$,d</string>
+    <string name="action_next_hand">اليد التالية</string>
+    <string name="action_new_tournament">بطولة جديدة</string>
+
+    <string name="sizing_minus_desc">تقليل بمقدار %1$,d</string>
+    <string name="sizing_plus_desc">زيادة بمقدار %1$,d</string>
+    <string name="sizing_half_pot">½ البوت</string>
+    <string name="sizing_pot">البوت</string>
+    <string name="sizing_bet_desc">رهان %1$,d</string>
+    <string name="sizing_raise_desc">رفع إلى %1$,d</string>
+
+    <string name="pot_label">البوت %1$,d</string>
+    <string name="pot_count">عدد البوتات: %1$d</string>
+    <string name="banner_pot">البوت · %1$,d</string>
+    <string name="banner_main_pot">البوت الرئيسي · %1$,d</string>
+    <string name="banner_side_pot">البوت الجانبي · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">أنت</string>
+    <string name="your_line">أنت · %1$,d</string>
+    <string name="seat_out">خرج · %1$s</string>
+    <string name="seat_all_in">الكل</string>
+    <string name="seat_action_bet">رهان %1$,d</string>
+    <string name="seat_action_raise">رفع %1$,d</string>
+    <string name="seat_action_call">مجاراة</string>
+    <string name="seat_action_check">تمرير</string>
+    <string name="seat_action_fold">انسحاب</string>
+    <string name="seat_action_all_in">الكل</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">متحفظ</string>
+    <string name="style_loose">متساهل</string>
+    <string name="style_aggressive">عدواني</string>
+    <string name="style_passive">سلبي</string>
+    <string-array name="places">
+        <item>الأول</item>
+        <item>الثاني</item>
+        <item>الثالث</item>
+        <item>الرابع</item>
+        <item>الخامس</item>
+        <item>السادس</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>الآس</item>
+        <item>الاثنان</item>
+        <item>الثلاثة</item>
+        <item>الأربعة</item>
+        <item>الخمسة</item>
+        <item>الستة</item>
+        <item>السبعة</item>
+        <item>الثمانية</item>
+        <item>التسعة</item>
+        <item>العشرة</item>
+        <item>الولد</item>
+        <item>الملكة</item>
+        <item>الملك</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>الآسات</item>
+        <item>الاثنينات</item>
+        <item>الثلاثات</item>
+        <item>الأربعات</item>
+        <item>الخمسات</item>
+        <item>الستات</item>
+        <item>السبعات</item>
+        <item>الثمانيات</item>
+        <item>التسعات</item>
+        <item>العشرات</item>
+        <item>الأولاد</item>
+        <item>الملكات</item>
+        <item>الملوك</item>
+    </string-array>
+    <string name="hand_royal_flush">رويال فلاش</string>
+    <string name="hand_straight_flush">ستريت فلاش، الأعلى %1$s</string>
+    <string name="hand_four_of_a_kind">رباعية %1$s</string>
+    <string name="hand_full_house">فل هاوس، %1$s و%2$s</string>
+    <string name="hand_flush">فلاش، الأعلى %1$s</string>
+    <string name="hand_straight">ستريت، الأعلى %1$s</string>
+    <string name="hand_three_of_a_kind">ثلاثية %1$s</string>
+    <string name="hand_two_pair">زوجان، %1$s و%2$s</string>
+    <string name="hand_pair">زوج من %1$s</string>
+    <string name="hand_high_card">أعلى ورقة، %1$s</string>
+
+    <string name="mark_win">فوز</string>
+    <string name="mark_even">تعادل</string>
+    <string name="mark_lose">خسارة</string>
+
+    <string name="leave_title">مغادرة هذه البطولة؟</string>
+    <string name="leave_body">ستنتهي في المركز %1$s، كأنك خرجت الآن.</string>
+    <string name="leave_confirm">مغادرة</string>
+    <string name="leave_stay">البقاء</string>
+    <string name="end_title_place">أنهيت في المركز %1$s</string>
+    <string name="end_title_won">لقد فزت بالبطولة</string>
+    <string name="end_body_lost">الأيدي الملعوبة: %1$d\nأكبر بوت: %2$,d</string>
+    <string name="end_body_won">استغرق الأمر %1$d يد.\nأكبر بوت: %2$,d</string>
+
+    <string name="card_spoken">%1$s من %2$s</string>
+    <string name="a11y_your_cards">أوراقك: %1$s</string>
+    <string name="a11y_board">اللوحة: %1$s</string>
+    <string name="a11y_board_empty">اللوحة: لا أوراق بعد</string>
+    <string name="a11y_pot">البوت %1$,d</string>
+    <string name="a11y_pot_pots">البوت %1$,d، عدد البوتات %2$d</string>
+    <string name="a11y_seat">%1$s، %2$s، %3$,d رقاقة</string>
+    <string name="a11y_seat_you">أنت، %1$,d رقاقة</string>
+    <string name="a11y_dealer">الموزّع</string>
+    <string name="a11y_small_blind">البلايند الصغير</string>
+    <string name="a11y_big_blind">البلايند الكبير</string>
+    <string name="a11y_bet">رهان %1$,d</string>
+    <string name="a11y_folded">انسحب</string>
+    <string name="a11y_out">خرج، أنهى في المركز %1$s</string>
+    <string name="a11y_all_in">الكل</string>
+    <string name="a11y_thinking">دوره الآن</string>
+    <string name="ann_fold">%1$s ينسحب</string>
+    <string name="ann_check">%1$s يمرّر</string>
+    <string name="ann_call">%1$s يجاري %2$,d</string>
+    <string name="ann_bet">%1$s يراهن بـ %2$,d</string>
+    <string name="ann_raise">%1$s يرفع إلى %2$,d</string>
+    <string name="ann_all_in">%1$s يراهن بالكل: %2$,d</string>
+    <string name="ann_flop">الفلوب: %1$s</string>
+    <string name="ann_turn">التيرن: %1$s</string>
+    <string name="ann_river">الريفر: %1$s</string>
+    <string name="ann_shows">%1$s يكشف %2$s</string>
+    <string name="ann_wins">%1$s يربح %2$,d</string>
+    <string name="seat_won">ربح %1$s</string>
+    <string name="seat_lost">خسارة %1$s</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Еквити %1$d%% · Пот оддс %2$d%%</string>
+    <string name="hint_notice_free">Еквити %1$d%%</string>
+    <string name="hint_notice_desc">Приблизителен шанс за победа %1$d процента срещу вероятните ръце; колът струва %2$d процента от пота.</string>
+    <string name="hint_notice_free_desc">Приблизителен шанс за победа %1$d процента срещу вероятните ръце.</string>
+
+    <string name="recovery_notice">Запазената ти ръка не можа да се отвори, затова беше раздадена наново от самото начало. Не са загубени чипове.</string>
+</resources>

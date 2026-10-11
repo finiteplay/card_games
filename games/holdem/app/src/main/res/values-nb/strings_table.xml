@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blinds %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Hånd %1$d · %2$,d / %3$,d om %4$d hånd</item>
+        <item quantity="other">Hånd %1$d · %2$,d / %3$,d om %4$d hender</item>
+    </plurals>
+    <string name="action_leave_tournament">Forlat turneringen</string>
+
+    <string name="action_fold">Fold</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Call&#10;%1$,d</string>
+    <string name="action_call_all_in">Call&#10;all in</string>
+    <string name="action_bet">Bet&#10;%1$,d</string>
+    <string name="action_raise">Raise til&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Neste hånd</string>
+    <string name="action_new_tournament">Ny turnering</string>
+
+    <string name="sizing_minus_desc">Senk med %1$,d</string>
+    <string name="sizing_plus_desc">Øk med %1$,d</string>
+    <string name="sizing_half_pot">½ pott</string>
+    <string name="sizing_pot">Pott</string>
+    <string name="sizing_bet_desc">Bet %1$,d</string>
+    <string name="sizing_raise_desc">Raise til %1$,d</string>
+
+    <string name="pot_label">Pott %1$,d</string>
+    <string name="pot_count">%1$d potter</string>
+    <string name="banner_pot">Pott · %1$,d</string>
+    <string name="banner_main_pot">Hovedpott · %1$,d</string>
+    <string name="banner_side_pot">Sidepott · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Du</string>
+    <string name="your_line">Du · %1$,d</string>
+    <string name="seat_out">Ute · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Bet %1$,d</string>
+    <string name="seat_action_raise">Raise %1$,d</string>
+    <string name="seat_action_call">Call</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Fold</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">tight</string>
+    <string name="style_loose">loose</string>
+    <string name="style_aggressive">aggressiv</string>
+    <string name="style_passive">passiv</string>
+    <string-array name="places">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+        <item>5.</item>
+        <item>6.</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>ess</item>
+        <item>to</item>
+        <item>tre</item>
+        <item>fire</item>
+        <item>fem</item>
+        <item>seks</item>
+        <item>syv</item>
+        <item>åtte</item>
+        <item>ni</item>
+        <item>ti</item>
+        <item>knekt</item>
+        <item>dame</item>
+        <item>konge</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>ess</item>
+        <item>toere</item>
+        <item>treere</item>
+        <item>firere</item>
+        <item>femmere</item>
+        <item>seksere</item>
+        <item>syvere</item>
+        <item>åttere</item>
+        <item>nire</item>
+        <item>tiere</item>
+        <item>knekter</item>
+        <item>damer</item>
+        <item>konger</item>
+    </string-array>
+    <string name="hand_royal_flush">Royal flush</string>
+    <string name="hand_straight_flush">Straight flush, %1$s høyest</string>
+    <string name="hand_four_of_a_kind">Fire like, %1$s</string>
+    <string name="hand_full_house">Full house, %1$s og %2$s</string>
+    <string name="hand_flush">Flush, %1$s høyest</string>
+    <string name="hand_straight">Straight, %1$s høyest</string>
+    <string name="hand_three_of_a_kind">Tre like, %1$s</string>
+    <string name="hand_two_pair">To par, %1$s og %2$s</string>
+    <string name="hand_pair">Par i %1$s</string>
+    <string name="hand_high_card">Høyt kort, %1$s</string>
+
+    <string name="mark_win">Vant</string>
+    <string name="mark_even">Likt</string>
+    <string name="mark_lose">Tapte</string>
+
+    <string name="leave_title">Forlate denne turneringen?</string>
+    <string name="leave_body">Du ender på %1$s plass, som om du var slått ut nå.</string>
+    <string name="leave_confirm">Forlat</string>
+    <string name="leave_stay">Bli</string>
+    <string name="end_title_place">Du ble nummer %1$s</string>
+    <string name="end_title_won">Du vant turneringen</string>
+    <string name="end_body_lost">Spilte hender: %1$d\nStørste pott: %2$,d</string>
+    <string name="end_body_won">Det tok %1$d hender.\nStørste pott: %2$,d</string>
+
+    <string name="card_spoken">%1$s i %2$s</string>
+    <string name="a11y_your_cards">Kortene dine: %1$s</string>
+    <string name="a11y_board">Bord: %1$s</string>
+    <string name="a11y_board_empty">Bord: ingen kort ennå</string>
+    <string name="a11y_pot">Pott %1$,d</string>
+    <string name="a11y_pot_pots">Pott %1$,d, %2$d potter</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d sjetonger</string>
+    <string name="a11y_seat_you">Du, %1$,d sjetonger</string>
+    <string name="a11y_dealer">dealer</string>
+    <string name="a11y_small_blind">small blind</string>
+    <string name="a11y_big_blind">big blind</string>
+    <string name="a11y_bet">bet %1$,d</string>
+    <string name="a11y_folded">Foldet</string>
+    <string name="a11y_out">Ute, ble nummer %1$s</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">på tur</string>
+    <string name="ann_fold">%1$s folder</string>
+    <string name="ann_check">%1$s checker</string>
+    <string name="ann_call">%1$s caller %2$,d</string>
+    <string name="ann_bet">%1$s beter %2$,d</string>
+    <string name="ann_raise">%1$s raiser til %2$,d</string>
+    <string name="ann_all_in">%1$s går all in for %2$,d</string>
+    <string name="ann_flop">Floppen: %1$s</string>
+    <string name="ann_turn">Turn: %1$s</string>
+    <string name="ann_river">River: %1$s</string>
+    <string name="ann_shows">%1$s viser %2$s</string>
+    <string name="ann_wins">%1$s vinner %2$,d</string>
+    <string name="seat_won">Vant %1$s</string>
+    <string name="seat_lost">Tapte %1$s</string>
+</resources>

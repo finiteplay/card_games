@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">锦标赛</string>
+    <string name="stat_section_finishes">名次</string>
+    <string name="stat_section_hands">手牌</string>
+    <string name="stat_tile_tournaments_played">已玩</string>
+    <string name="stat_tile_tournaments_won">获胜</string>
+    <string name="stat_tile_avg_finish">平均名次</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+    <string name="stat_tile_hands_played">已玩手牌</string>
+    <string name="stat_tile_hands_won">获胜手牌</string>
+    <string name="stat_tile_showdowns_won">摊牌获胜</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">最大底池</string>
+    <string name="stat_tile_vpip">翻牌前主动入池</string>
+    <string name="stat_tile_pfr">翻牌前加注</string>
+    <string name="place_1">第 1 名</string>
+    <string name="place_2">第 2 名</string>
+    <string name="place_3">第 3 名</string>
+    <string name="place_4">第 4 名</string>
+    <string name="place_5">第 5 名</string>
+    <string name="place_6">第 6 名</string>
+    <string name="cd_finish_bar">%1$s：%2$d</string>
+    <string name="cd_example_hand">%1$s，例如 %2$s</string>
+    <string name="cd_example_card">%2$s%1$s</string>
+</resources>

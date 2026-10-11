@@ -258,4 +258,5 @@ budget keeps it from ever being the pause.
 - [EXECUTION_PLAN.md](EXECUTION_PLAN.md): work packages H0–H9 and their gates
 - [UI_SPEC.md](UI_SPEC.md): screens, seats, layouts and geometry, the action bar and sizing row,
   opponents' turns, hint, showdown and results, leaving, panels, motion, accessibility
+- [ACCEPTANCE.md](ACCEPTANCE.md): gates run and the release evidence, with what only hardware can settle marked open
 - [TODO.md](TODO.md): deferred, out of first-release scope

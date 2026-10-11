@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %%%1$d · Pot odds %%%2$d</string>
+    <string name="hint_notice_free">Equity %%%1$d</string>
+    <string name="hint_notice_desc">Olası ellere karşı tahmini kazanma şansı yüzde %1$d; bir call pot\'un yüzde %2$d\'sine mal olur.</string>
+    <string name="hint_notice_free_desc">Olası ellere karşı tahmini kazanma şansı yüzde %1$d.</string>
+
+    <string name="recovery_notice">Kayıtlı elin açılamadı, bu yüzden baştan yeniden dağıtıldı. Hiç fiş kaybedilmedi.</string>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blindy %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Hra %1$d · %2$,d / %3$,d za %4$d hru</item>
+        <item quantity="few">Hra %1$d · %2$,d / %3$,d za %4$d hry</item>
+        <item quantity="many">Hra %1$d · %2$,d / %3$,d za %4$d her</item>
+        <item quantity="other">Hra %1$d · %2$,d / %3$,d za %4$d her</item>
+    </plurals>
+    <string name="action_leave_tournament">Opustit turnaj</string>
+
+    <string name="action_fold">Zahodit</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Vyrovnat&#10;%1$,d</string>
+    <string name="action_call_all_in">Vyrovnat&#10;all in</string>
+    <string name="action_bet">Vsadit&#10;%1$,d</string>
+    <string name="action_raise">Zvýšit na&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Další hra</string>
+    <string name="action_new_tournament">Nový turnaj</string>
+
+    <string name="sizing_minus_desc">Snížit o %1$,d</string>
+    <string name="sizing_plus_desc">Zvýšit o %1$,d</string>
+    <string name="sizing_half_pot">½ banku</string>
+    <string name="sizing_pot">Banka</string>
+    <string name="sizing_bet_desc">Vsadit %1$,d</string>
+    <string name="sizing_raise_desc">Zvýšit na %1$,d</string>
+
+    <string name="pot_label">Banka %1$,d</string>
+    <string name="pot_count">Banky: %1$d</string>
+    <string name="banner_pot">Banka · %1$,d</string>
+    <string name="banner_main_pot">Hlavní banka · %1$,d</string>
+    <string name="banner_side_pot">Vedlejší banka · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Ty</string>
+    <string name="your_line">Ty · %1$,d</string>
+    <string name="seat_out">Venku · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Sází %1$,d</string>
+    <string name="seat_action_raise">Zvyšuje %1$,d</string>
+    <string name="seat_action_call">Vyrovnává</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Zahazuje</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">tight</string>
+    <string name="style_loose">loose</string>
+    <string name="style_aggressive">agresivní</string>
+    <string name="style_passive">pasivní</string>
+    <string-array name="places">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+        <item>5.</item>
+        <item>6.</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>eso</item>
+        <item>dvojka</item>
+        <item>trojka</item>
+        <item>čtyřka</item>
+        <item>pětka</item>
+        <item>šestka</item>
+        <item>sedmička</item>
+        <item>osmička</item>
+        <item>devítka</item>
+        <item>desítka</item>
+        <item>kluk</item>
+        <item>dáma</item>
+        <item>král</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>esa</item>
+        <item>dvojky</item>
+        <item>trojky</item>
+        <item>čtyřky</item>
+        <item>pětky</item>
+        <item>šestky</item>
+        <item>sedmičky</item>
+        <item>osmičky</item>
+        <item>devítky</item>
+        <item>desítky</item>
+        <item>kluci</item>
+        <item>dámy</item>
+        <item>králové</item>
+    </string-array>
+    <string name="hand_royal_flush">Royal flush</string>
+    <string name="hand_straight_flush">Straight flush, nejvyšší %1$s</string>
+    <string name="hand_four_of_a_kind">Poker, %1$s</string>
+    <string name="hand_full_house">Full house, %1$s a %2$s</string>
+    <string name="hand_flush">Flush, nejvyšší %1$s</string>
+    <string name="hand_straight">Postupka, nejvyšší %1$s</string>
+    <string name="hand_three_of_a_kind">Trojice, %1$s</string>
+    <string name="hand_two_pair">Dva páry, %1$s a %2$s</string>
+    <string name="hand_pair">Pár, %1$s</string>
+    <string name="hand_high_card">Nejvyšší karta, %1$s</string>
+
+    <string name="mark_win">Výhra</string>
+    <string name="mark_even">Remíza</string>
+    <string name="mark_lose">Prohra</string>
+
+    <string name="leave_title">Opustit tento turnaj?</string>
+    <string name="leave_body">Skončíš na místě %1$s, jako bys právě vypadl.</string>
+    <string name="leave_confirm">Opustit</string>
+    <string name="leave_stay">Zůstat</string>
+    <string name="end_title_place">Skončil jsi na místě %1$s</string>
+    <string name="end_title_won">Vyhrál jsi turnaj</string>
+    <string name="end_body_lost">Odehrané hry: %1$d\nNejvětší banka: %2$,d</string>
+    <string name="end_body_won">Trvalo to %1$d her.\nNejvětší banka: %2$,d</string>
+
+    <string name="card_spoken">%1$s, %2$s</string>
+    <string name="a11y_your_cards">Tvoje karty: %1$s</string>
+    <string name="a11y_board">Stůl: %1$s</string>
+    <string name="a11y_board_empty">Stůl: zatím žádné karty</string>
+    <string name="a11y_pot">Banka %1$,d</string>
+    <string name="a11y_pot_pots">Banka %1$,d, banky: %2$d</string>
+    <string name="a11y_seat">%1$s, %2$s, žetony: %3$,d</string>
+    <string name="a11y_seat_you">Ty, žetony: %1$,d</string>
+    <string name="a11y_dealer">dealer</string>
+    <string name="a11y_small_blind">malý blind</string>
+    <string name="a11y_big_blind">velký blind</string>
+    <string name="a11y_bet">sázka %1$,d</string>
+    <string name="a11y_folded">Zahodil</string>
+    <string name="a11y_out">Venku, skončil %1$s</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">na tahu</string>
+    <string name="ann_fold">%1$s zahazuje</string>
+    <string name="ann_check">%1$s dává check</string>
+    <string name="ann_call">%1$s vyrovnává %2$,d</string>
+    <string name="ann_bet">%1$s sází %2$,d</string>
+    <string name="ann_raise">%1$s zvyšuje na %2$,d</string>
+    <string name="ann_all_in">%1$s jde all in za %2$,d</string>
+    <string name="ann_flop">Flop: %1$s</string>
+    <string name="ann_turn">Turn: %1$s</string>
+    <string name="ann_river">River: %1$s</string>
+    <string name="ann_shows">%1$s ukazuje %2$s</string>
+    <string name="ann_wins">%1$s vyhrává %2$,d</string>
+    <string name="seat_won">Výhra %1$s</string>
+    <string name="seat_lost">Prohra %1$s</string>
+</resources>

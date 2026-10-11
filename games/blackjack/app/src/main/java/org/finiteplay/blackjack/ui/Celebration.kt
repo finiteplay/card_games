@@ -49,6 +49,9 @@ import org.finiteplay.blackjack.R
 import org.finiteplay.blackjack.rules.HandOutcome
 import org.finiteplay.blackjack.rules.Settlement
 import org.finiteplay.core.ui.layout.ConfettiBurst
+import org.finiteplay.core.ui.layout.LossWash
+import org.finiteplay.core.ui.layout.ResultMark as CoreResultMark
+import org.finiteplay.core.ui.layout.signed
 
 /** What a settled round is called on the big banner. */
 enum class ResultKind { BLACKJACK, WIN, PUSH, EVEN, BUST, LOSE }
@@ -140,62 +143,19 @@ private const val MARK_BIAS = 0.62f
 /** The pictogram, the signed net and — when insurance was taken — a shield with its own signed result. */
 @Composable
 private fun ResultMark(kind: ResultKind, net: Int, insuranceDelta: Int, animate: Boolean) {
-    val scale = remember { Animatable(if (animate) 0.3f else 1f) }
-    val alpha = remember { Animatable(if (animate) 0f else 1f) }
-    LaunchedEffect(kind, net) {
-        if (!animate) return@LaunchedEffect
-        launch { alpha.animateTo(1f, tween(110)) }
-        launch { scale.animateTo(1f, spring(dampingRatio = 0.42f, stiffness = 260f)) }
-    }
     val spoken = spokenResult(kind) + " " + signed(net)
-    Surface(
-        shape = RoundedCornerShape(36.dp),
-        color = Color.Black.copy(alpha = 0.62f),
-        border = BorderStroke(3.dp, kind.tint()),
-        modifier = Modifier
-            .scale(scale.value)
-            .alpha(alpha.value)
-            .semantics(mergeDescendants = true) {
-                contentDescription = spoken
-                liveRegion = LiveRegionMode.Polite
-            }
-            .testTag("result_mark"),
-    ) {
-        Column(
-            modifier = Modifier.padding(horizontal = 24.dp, vertical = 8.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(kind.icon(), contentDescription = null, tint = kind.tint(), modifier = Modifier.size(52.dp).testTag("result_mark_icon"))
+    CoreResultMark(kind.icon(), kind.tint(), net, spoken, animate) {
+        if (insuranceDelta != 0) {
+            Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.testTag("result_mark_insurance")) {
+                Icon(Icons.Filled.Shield, contentDescription = null, tint = Color(0xFFB0BEC5), modifier = Modifier.size(20.dp))
                 Text(
-                    text = signed(net),
-                    style = MaterialTheme.typography.displaySmall,
-                    fontWeight = FontWeight.ExtraBold,
-                    color = Color.White,
-                    maxLines = 1,
-                    modifier = Modifier.padding(start = 12.dp).testTag("result_mark_amount"),
+                    text = signed(insuranceDelta),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = if (insuranceDelta > 0) Color(0xFF7CE08F) else Color(0xFFFF8A80),
+                    modifier = Modifier.padding(start = 4.dp),
                 )
-            }
-            if (insuranceDelta != 0) {
-                Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.testTag("result_mark_insurance")) {
-                    Icon(Icons.Filled.Shield, contentDescription = null, tint = Color(0xFFB0BEC5), modifier = Modifier.size(20.dp))
-                    Text(
-                        text = signed(insuranceDelta),
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.Bold,
-                        color = if (insuranceDelta > 0) Color(0xFF7CE08F) else Color(0xFFFF8A80),
-                        modifier = Modifier.padding(start = 4.dp),
-                    )
-                }
             }
         }
     }
-}
-
-/** A short red wash across the table after a loss, fading out. */
-@Composable
-private fun LossWash() {
-    val wash = remember { Animatable(0.26f) }
-    LaunchedEffect(Unit) { wash.animateTo(0f, tween(700)) }
-    Box(modifier = Modifier.fillMaxSize().background(Color(0xFFB02F26).copy(alpha = wash.value)))
 }

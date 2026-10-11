@@ -38,14 +38,15 @@ dealt again from the start. No chips were lost.*
 
 The row at the top, Blackjack's shape. At the leading edge, two lines: the blinds in bold
 (`Blinds 50 / 100`) and beneath them the hand number and the next level (`Hand 23 · 75 / 150 in 7
-hands`; at the last scheduled level, the doubling it will take). In the trailing corner, as icons:
+hands`; past the last scheduled level the next level is the doubled one, which the schedule already
+gives). In the trailing corner, as icons:
 Help, Statistics, and — while a tournament is in progress — Leave (a flag).
 
 ### Seats
 
-Each opponent seat is a rounded box: an **avatar** (a drawn circle in the profile's colour with the
-name's initial — never an asset), the **name** (one line, ellipsized), its **style** word in small
-type (`tight`, `loose`, `aggressive`, `passive`), and its **stack**. Below them, while the seat is in
+Each opponent seat is a rounded box: an **avatar** (a drawn head and shoulders on a disc in the
+profile's colour — a neutral silhouette that is drawn, so the app ships no faces and no image assets), the **name** (one line, ellipsized), its **style** word in small
+type (`tight`, `loose`, `aggressive`, `passive`; it and the last-action line shrink to fit, down to 7 sp, rather than being clipped), and its **stack**. Below them, while the seat is in
 the hand, two card backs. Markers sit on the box's corner nearest the table's centre: the dealer
 button (`D`), and `SB` / `BB` for the blinds of this hand.
 
@@ -59,7 +60,12 @@ button (`D`), and `SB` / `BB` for the blinds of this hand.
   and reading `Out · 5th`.
 
 Your own seat, at the bottom centre, has no box: your two cards face up and large, and beneath them
-one line with your stack and your markers. Your bet pill sits above your cards.
+one line with your stack, your markers and **the hand you hold right now** — `Pair of kings`, `Two
+pair, aces and sevens` — from the flop on, and a pocket pair before it; two unrelated cards are not
+yet a hand and show nothing. It is the best five of your cards and the board, so at showdown it is the
+name the showdown gives, and it is hidden once you fold. Your bet pill sits at the leading side of your cards, in
+the free width beside them, and your last action at the trailing side. (H3: "above your cards" put
+the pill over the board's gap and a card's corner index, so it moved aside.)
 
 ### Table, portrait
 
@@ -67,11 +73,14 @@ Top to bottom: the status row; the **table**; the **sizing row** when Bet or Rai
 action bar. The hint notice, when shown, is drawn over the table just above your cards, in the gap
 between the board band and your seat, so it takes no height of its own (`Hint Presentation`).
 
-The table is four bands:
+The table is four bands (an oval rim drawn behind the seats was tried and removed: it fought the
+cards and seat boxes for the felt):
 
 1. **Top band** — three opponent seats, left to right.
 2. **Middle band** — an opponent seat at each edge and, between them, the **pot**: `Pot 1,240` in
-   large type, and while side pots exist a second line, `3 pots`.
+   large type with the pot as a stack of chips above it (portrait only: landscape's one-line pot has no
+   room for it), and while side pots exist a second line, `3 pots`. The figure is every chip committed
+   to the hand, this street's bets in front of the seats included.
 3. **Board band** — the five board cards, centred, with empty outlines for cards not yet dealt.
 4. **Your seat.**
 
@@ -86,6 +95,14 @@ offered, then the action bar as a rail one button wide at the edge nearest the h
 (`core/ui`'s `BoardActionBar` in its landscape form). The sizing column is the sizing row's five
 controls stacked, the rail's width.
 
+**The rail holds only the round's actions.** A labelled rail button is about 77 dp tall at a phone's
+chrome scale, so five of them (Fold, Call, Raise, All in and Hint, with Settings besides) overrun a
+phone's height, as the first emulator run showed. In landscape Settings and Hint therefore move into
+the status row's trailing icons — Hint only on the player's turn, ahead of Settings, Help, Statistics
+and Leave — and the rail keeps at most four buttons (Fold, Call, Raise, All in), 308 dp tall, which
+fits the 316 dp a 360 dp window leaves under the status row. The test tags stay `action_settings` and
+`action_hint` wherever the control is. Portrait is unchanged.
+
 The table is three bands: the top band of three seats; a middle band with an opponent seat at each
 edge and the board between them, the pot line under the board; and your seat. Handedness mirrors
 the bar's order in portrait and its side in landscape and changes nothing else.
@@ -99,31 +116,53 @@ the bar's order in portrait and its side in landscape and changes nothing else.
 | State | Buttons | Count |
 |---|---|---|
 | Opponent's turn, Showdown | Settings | 1 |
-| Your turn, nothing to call | Settings · Check · Bet · All in · Hint | 5 |
-| Your turn, facing a bet | Settings · Fold · Call 40 · Raise · All in · Hint | 6 |
-| Facing a bet you can only call | Settings · Fold · Call 40 · Hint | 4 |
-| Facing a bet you cannot cover | Settings · Fold · Call all in · Hint | 4 |
+| Your turn, nothing to call | Settings · All in · Bet · Check · Hint | 5 |
+| Your turn, facing a bet | Settings · All in · Raise · Call 40 · Fold · Hint | 6 |
+| Facing a bet you can only call | Settings · Call 40 · Fold · Hint | 4 |
+| Facing a bet you cannot cover | Settings · Call all in · Fold · Hint | 4 |
 | Hand over | Settings · Next hand | 2 |
 | Tournament over | Settings · New tournament | 2 |
 
+- **The order, left to right:** Settings at the leading edge, then All in, Bet or Raise, Check or Call,
+  Fold, and Hint at the trailing edge — Fold beside Hint, Check or Call beside Fold, Raise beside Check.
+  The table above lists each state's buttons in the order they are drawn. (Landscape's rail reads the
+  same order from the top.)
 - **Labels carry their amounts:** `Call 40`, `Bet 60`, `Raise to 120`, `All in 1,240`, so the button
   pressed is the amount committed. Bet and Raise read the sizing row's current amount. Where a label
   and its figure need both lines, the figure takes the second.
 - **The widest state fits.** Six equal buttons across 320 dp, less the bar's 8 dp padding on each
   side, are about 50 dp each — over the platform's 48 dp minimum (`docs/PLATFORM.md`
   "Accessibility"), the same arithmetic as Blackjack's widest phase.
-- **Next hand** is offered once the last pot has been awarded. Pressing it deals at once; otherwise
-  the next hand deals by itself after the pause in `Motion`.
+- **Hint** is the last button of the bar on the player's turn (portrait; landscape's status row carries it),
+  and Help, Statistics and Settings open their screens.
+- **Next hand** is offered once the last pot has been awarded, and the table waits for it: the result
+  stays up for as long as the player wants, and nothing deals until they press it. (The first build dealt
+  by itself after three seconds.)
+- **Settings and the actions keep their edges.** The bar reserves room for its widest set of six
+  buttons, so a shorter bar does not stretch: Settings is one sixth of the width at the leading edge
+  whether it is the only button (an opponent's turn, the showdown) or one of six, and the actions
+  (Fold, Call, Bet or Raise, All in, Hint, Next hand) sit at the trailing edge, each one sixth wide,
+  under the thumb. The empty room is between them. Left-handed play mirrors the bar, so Settings is at
+  the trailing edge and the actions at the leading edge, consistently.
 
 ### The sizing row
 
-Shown above the bar whenever Bet or Raise is offered, and only then. Five equal controls: **−** · the
-**amount** · **+** · **½ pot** · **Pot**. Across 320 dp they are about 60 dp each.
+Shown above the bar whenever Bet or Raise is offered, and only then. Five controls, each 48 dp tall
+in the 52 dp row: **−** · the **amount with its slider** · **+** · **½ pot** · **Pot**, in the widths
+1 : 2.4 : 1 : 1.1 : 1 — across 320 dp about 44 dp for the buttons and 106 dp for the slider. (The
+first build left the buttons at their 24 dp content height; they now fill the row.)
 
 - **− and +** step by the big blind and repeat while held, Blackjack's bet stepper exactly
-  (`BoardAction.repeatOnHold`). Each is disabled at its end of the legal range.
+  (the `holdToRepeat` press modifier `BoardAction.repeatOnHold` uses, made public in `core/ui` — the
+  row is 52 dp tall, which `BoardAction`'s 60 dp target is not). Each is disabled at its end of the
+  legal range.
 - **The amount** is a figure, not a text field: there is no keyboard. It is the bet, or the raise's
   total, always within the legal range (`RULES.md` "Betting"). Tapping it does nothing.
+- **The slider** sits under the figure: drag or tap anywhere along it to set the amount, from the
+  smallest legal bet or raise at its left to all in at its right, in whole chips. It is drawn by hand
+  (a 28 dp track and a 16 dp thumb) because the platform slider insists on a 48 dp height; a screen
+  reader adjusts it as a slider, reading `Raise to 120`. When only all in is possible it does not move.
+  Landscape's stacked column gives the amount cell 64 dp for it.
 - **½ pot** and **Pot** set the amount. For a bet, half the pot or the pot. For a raise, the call
   plus half of — or all of — the pot once the call is in it, so `Pot` is the standard pot-sized raise.
   Each is rounded down to a whole chip and clamped to the legal range, and a preset that clamps to
@@ -209,6 +248,14 @@ Blackjack's, extended by what a poker hint has to say (`DESIGN.md` "Hint"):
 - **Pots are awarded one at a time**, the main pot last (`RULES.md` "Pots and Showdown"). A banner
   over the board names each — `Side pot · 600` — and the winners' seats show `+600`. A split pot
   shows each share on its own seat, the odd chip included.
+- **Won and lost, beside the seat.** When the hand is over every seat that came out ahead says
+  `Won +140` — an opponent's in small green type in the line under its name, where its style word was —
+  and the player's, larger and in green, beside their cards. A player who lost chips, folded blinds and
+  bets included, sees `Lost −200` in red in the same place; a hand that nets nothing shows neither.
+  The figure is the hand's net (chips at its end less chips at its start), so it is what the stack
+  changed by; while the pots are still being paid the seat shows each pot as `+600`. The result mark
+  in the middle of the table still celebrates or commiserates; the words beside the seat are the
+  figure the player asked for.
 - **Won without a showdown.** The last seat in shows `+` its winnings; no cards are turned.
 - **Your result mark.** Blackjack's result mark, in the middle of the board band, when you were in
   the hand at its end, from your net for the hand: the trophy and `+` the net when you came out
@@ -226,7 +273,8 @@ Blackjack's, extended by what a poker hint has to say (`DESIGN.md` "Hint"):
 ### Elimination and the end
 
 - **An opponent knocked out**: its seat greys and reads `Out · 5th` as the hand ends.
-- **You are knocked out**: when the hand's results have been shown, a dialog — *You finished 4th* —
+- **You are knocked out**: when the hand's results have been shown (the mark first, then a short
+  pause), a dialog — *You finished 4th* —
   with the hands you played and your largest pot, and New tournament, Statistics and Close. Closing
   leaves the table as it ended, with New tournament in the bar.
 - **You win the tournament**: the family's win celebration and a dialog — *You won the tournament* —
@@ -286,8 +334,7 @@ Every pause is presentation only; it never changes what happens.
 | Bets gathering into the pot at a street's end | 300 ms | at once |
 | Before the next street's cards | 500 ms | 200 ms |
 | Each opponent's cards turning at showdown | 400 ms apart | 150 ms apart |
-| Each pot sliding to its winner | 600 ms, the next 300 ms after | 250 ms apart, no slide |
-| Before the next hand deals by itself | 3,000 ms after the last pot | 1,500 ms |
+| Each pot sliding to its winner | 600 ms before the first; 900 ms before each next (its slide and the 300 after) | 250 ms apart, no slide |
 
 Opponents' actions stay discrete under Skip Animations: each still appears on its own, one after
 another, never collapsed into one frame. The deal's flights, the gathering of bets, and the pots'

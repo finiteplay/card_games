@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">סיכוי %1$d%% · יחס קופה %2$d%%</string>
+    <string name="hint_notice_free">סיכוי %1$d%%</string>
+    <string name="hint_notice_desc">הסיכוי המוערך לנצח הוא %1$d אחוז מול ידיים סבירות; קול עולה %2$d אחוז מהקופה.</string>
+    <string name="hint_notice_free_desc">הסיכוי המוערך לנצח הוא %1$d אחוז מול ידיים סבירות.</string>
+
+    <string name="recovery_notice">לא הצלחנו לפתוח את היד השמורה שלכם, ולכן היא חולקה מחדש מההתחלה. לא אבדו אסימונים.</string>
+</resources>

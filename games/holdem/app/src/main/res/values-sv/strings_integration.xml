@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pottodds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Uppskattad vinstchans på %1$d procent mot sannolika händer; en call kostar %2$d procent av potten.</string>
+    <string name="hint_notice_free_desc">Uppskattad vinstchans på %1$d procent mot sannolika händer.</string>
+
+    <string name="recovery_notice">Din sparade hand gick inte att öppna, så den delades ut på nytt från början. Inga marker gick förlorade.</string>
+</resources>

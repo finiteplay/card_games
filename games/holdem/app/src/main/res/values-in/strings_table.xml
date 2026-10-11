@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blind %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="other">Tangan %1$d · %2$,d / %3$,d dalam %4$d tangan</item>
+    </plurals>
+    <string name="action_leave_tournament">Keluar dari turnamen</string>
+
+    <string name="action_fold">Fold</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Call&#10;%1$,d</string>
+    <string name="action_call_all_in">Call&#10;all in</string>
+    <string name="action_bet">Bet&#10;%1$,d</string>
+    <string name="action_raise">Raise ke&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Tangan berikutnya</string>
+    <string name="action_new_tournament">Turnamen baru</string>
+
+    <string name="sizing_minus_desc">Kurangi %1$,d</string>
+    <string name="sizing_plus_desc">Tambah %1$,d</string>
+    <string name="sizing_half_pot">½ pot</string>
+    <string name="sizing_pot">Pot</string>
+    <string name="sizing_bet_desc">Bet %1$,d</string>
+    <string name="sizing_raise_desc">Raise ke %1$,d</string>
+
+    <string name="pot_label">Pot %1$,d</string>
+    <string name="pot_count">%1$d pot</string>
+    <string name="banner_pot">Pot · %1$,d</string>
+    <string name="banner_main_pot">Pot utama · %1$,d</string>
+    <string name="banner_side_pot">Side pot · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Anda</string>
+    <string name="your_line">Anda · %1$,d</string>
+    <string name="seat_out">Keluar · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Bet %1$,d</string>
+    <string name="seat_action_raise">Raise %1$,d</string>
+    <string name="seat_action_call">Call</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Fold</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">tight</string>
+    <string name="style_loose">loose</string>
+    <string name="style_aggressive">aggressive</string>
+    <string name="style_passive">passive</string>
+    <string-array name="places">
+        <item>ke-1</item>
+        <item>ke-2</item>
+        <item>ke-3</item>
+        <item>ke-4</item>
+        <item>ke-5</item>
+        <item>ke-6</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>as</item>
+        <item>dua</item>
+        <item>tiga</item>
+        <item>empat</item>
+        <item>lima</item>
+        <item>enam</item>
+        <item>tujuh</item>
+        <item>delapan</item>
+        <item>sembilan</item>
+        <item>sepuluh</item>
+        <item>jack</item>
+        <item>queen</item>
+        <item>king</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>as</item>
+        <item>dua</item>
+        <item>tiga</item>
+        <item>empat</item>
+        <item>lima</item>
+        <item>enam</item>
+        <item>tujuh</item>
+        <item>delapan</item>
+        <item>sembilan</item>
+        <item>sepuluh</item>
+        <item>jack</item>
+        <item>queen</item>
+        <item>king</item>
+    </string-array>
+    <string name="hand_royal_flush">Royal flush</string>
+    <string name="hand_straight_flush">Straight flush, tertinggi %1$s</string>
+    <string name="hand_four_of_a_kind">Four of a kind, %1$s</string>
+    <string name="hand_full_house">Full house, %1$s penuh dengan %2$s</string>
+    <string name="hand_flush">Flush, tertinggi %1$s</string>
+    <string name="hand_straight">Straight, tertinggi %1$s</string>
+    <string name="hand_three_of_a_kind">Three of a kind, %1$s</string>
+    <string name="hand_two_pair">Dua pasang, %1$s dan %2$s</string>
+    <string name="hand_pair">Sepasang %1$s</string>
+    <string name="hand_high_card">Kartu tertinggi, %1$s</string>
+
+    <string name="mark_win">Menang</string>
+    <string name="mark_even">Seri</string>
+    <string name="mark_lose">Kalah</string>
+
+    <string name="leave_title">Keluar dari turnamen ini?</string>
+    <string name="leave_body">Anda akan finis di posisi %1$s, seolah tersingkir sekarang.</string>
+    <string name="leave_confirm">Keluar</string>
+    <string name="leave_stay">Tetap main</string>
+    <string name="end_title_place">Anda finis di posisi %1$s</string>
+    <string name="end_title_won">Anda memenangkan turnamen</string>
+    <string name="end_body_lost">Tangan dimainkan: %1$d\nPot terbesar: %2$,d</string>
+    <string name="end_body_won">Butuh %1$d tangan.\nPot terbesar: %2$,d</string>
+
+    <string name="card_spoken">%1$s %2$s</string>
+    <string name="a11y_your_cards">Kartu Anda: %1$s</string>
+    <string name="a11y_board">Board: %1$s</string>
+    <string name="a11y_board_empty">Board: belum ada kartu</string>
+    <string name="a11y_pot">Pot %1$,d</string>
+    <string name="a11y_pot_pots">Pot %1$,d, %2$d pot</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d chip</string>
+    <string name="a11y_seat_you">Anda, %1$,d chip</string>
+    <string name="a11y_dealer">bandar</string>
+    <string name="a11y_small_blind">small blind</string>
+    <string name="a11y_big_blind">big blind</string>
+    <string name="a11y_bet">bet %1$,d</string>
+    <string name="a11y_folded">Fold</string>
+    <string name="a11y_out">Keluar, finis di posisi %1$s</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">giliran bermain</string>
+    <string name="ann_fold">%1$s fold</string>
+    <string name="ann_check">%1$s check</string>
+    <string name="ann_call">%1$s call %2$,d</string>
+    <string name="ann_bet">%1$s bet %2$,d</string>
+    <string name="ann_raise">%1$s raise ke %2$,d</string>
+    <string name="ann_all_in">%1$s all in sebesar %2$,d</string>
+    <string name="ann_flop">Flop: %1$s</string>
+    <string name="ann_turn">Turn: %1$s</string>
+    <string name="ann_river">River: %1$s</string>
+    <string name="ann_shows">%1$s menunjukkan %2$s</string>
+    <string name="ann_wins">%1$s memenangkan %2$,d</string>
+    <string name="seat_won">Menang %1$s</string>
+    <string name="seat_lost">Kalah %1$s</string>
+</resources>

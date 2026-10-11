@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">Så spelar du</string>
+    <string name="help_tab_rules">Regler</string>
+    <string name="help_tab_hands">Händer</string>
+    <string name="help_tab_strategy">Strategi</string>
+
+    <string name="help_goal_title">Målet</string>
+    <string name="help_goal">Vinn alla marker vid bordet. Du spelar en turnering mot fem motståndare, och alla börjar med 1 500 marker. När en spelare får slut på marker åker hen ut, och den sista spelaren kvar vinner.</string>
+    <string name="help_hand_title">En hand</string>
+    <string name="help_hand_cards">I varje hand får du två privata kort, dina hålkort. Fem gemensamma kort läggs öppet i mitten, kallade bordet. Din hand är de bästa fem korten av dina två och bordet, där du använder båda, ett eller inget av dina egna.</string>
+    <string name="help_hand_flop">Efter hålkorten kommer en bettingrunda. Sedan delas tre kort ut på bordet, floppen, och en ny bettingrunda följer. Det fjärde kortet, turn, ger ytterligare en runda, och det femte, river, likaså.</string>
+    <string name="help_actions_title">Dina val</string>
+    <string name="help_actions_check">Check: stanna kvar utan att satsa, när ingen före dig har satsat.</string>
+    <string name="help_actions_call">Call: lägg lika mycket som den satsning du står inför.</string>
+    <string name="help_actions_bet">Bet eller Höj: lägg in fler marker. Välj summan med knapparna ovanför fältet: − och + stegar med stora blinden, och ½ pott och Pott ställer in den åt dig. En höjning måste vara minst lika stor som den senaste satsningen eller höjningen.</string>
+    <string name="help_actions_fold">Fold: ge upp dina kort och de marker du har lagt in. Du är bara ute ur den här handen.</string>
+    <string name="help_actions_all_in">All in: satsa alla marker du har.</string>
+    <string name="help_button_title">Knappen och blindsen</string>
+    <string name="help_button">Dealerknappen, markerad med D, flyttas en plats medurs varje hand. De två spelarna efter den måste lägga tvingade insatser innan korten delas ut: lilla blinden (SB) och stora blinden (BB). Det startar potten, så det finns alltid något att spela om. Stora blinden avgör den minsta satsningen.</string>
+    <string name="help_allin_title">All in och sidopottar</string>
+    <string name="help_allin">En spelare som är all in kan inte tvingas ut, men kan bara vinna lika mycket av varje spelare som hen själv har lagt in. Marker utöver det går till en sidopott som den all in-spelaren inte kan vinna. Pottarna visas på bordet, och var och en går till den bästa handen bland de spelare som har betalat in till den.</string>
+    <string name="help_showdown_title">Showdown</string>
+    <string name="help_showdown">Om två eller fler spelare är kvar efter sista bettingrundan vänder de upp sina kort och den bästa handen vinner potten. Om alla andra foldar vinner den sista spelaren potten utan att visa sina kort. Lika händer delar potten lika.</string>
+    <string name="help_tournament_title">Turneringen</string>
+    <string name="help_tournament">Blindsen höjs var 10:e hand, så markerna blir relativt sett färre och att vänta blir dyrt. Inget är tidsbegränsat: ta så lång tid du vill. Du slutar på den plats som motsvarar antalet spelare kvar när du åker ut, så 6:a är först ut och 1:a är segern.</string>
+    <string name="help_leave_title">Lämna</string>
+    <string name="help_leave">Flaggan högst upp avslutar turneringen i förtid, och du slutar där du skulle ha gjort om du åkt ut nu. Att stänga appen gör inte det: din hand sparas och väntar när du kommer tillbaka. Det finns ingen ångra, eftersom varje beslut följs av kort du inte kunde se.</string>
+
+    <string name="help_hands_intro">Från den starkaste handen till den svagaste. De fem korten som visas är ett exempel på varje.</string>
+    <string name="help_hand_straight_flush_title">Straight flush</string>
+    <string name="help_hand_straight_flush">Fem kort i följd, alla i samma färg. Den bästa, tio till ess, är en royal flush.</string>
+    <string name="help_hand_four_title">Fyrtal</string>
+    <string name="help_hand_four">Fyra kort av samma valör.</string>
+    <string name="help_hand_full_house_title">Kåk</string>
+    <string name="help_hand_full_house">Tre kort av en valör och två av en annan.</string>
+    <string name="help_hand_flush_title">Färg</string>
+    <string name="help_hand_flush">Fem valfria kort i samma färg.</string>
+    <string name="help_hand_straight_title">Stege</string>
+    <string name="help_hand_straight">Fem kort i följd, i valfria färger. Ett ess kan vara högt, tio till ess, eller lågt, ess till fem, men aldrig båda på en gång.</string>
+    <string name="help_hand_three_title">Triss</string>
+    <string name="help_hand_three">Tre kort av samma valör.</string>
+    <string name="help_hand_two_pair_title">Två par</string>
+    <string name="help_hand_two_pair">Två kort av en valör och två av en annan.</string>
+    <string name="help_hand_pair_title">Ett par</string>
+    <string name="help_hand_pair">Två kort av samma valör.</string>
+    <string name="help_hand_high_card_title">Högt kort</string>
+    <string name="help_hand_high_card">Inget av ovanstående: ditt högsta kort räknas.</string>
+    <string name="help_ties_title">Lika händer</string>
+    <string name="help_ties">Om två spelare har samma sorts hand vinner de högre korten. Två par ess och sjuor slår två par kungar och damer, och när huvudkorten är lika avgör nästa högsta kort. Bara fem kort räknas, och färg avgör aldrig: lika händer delar potten.</string>
+
+    <string name="help_strategy_intro">Sju idéer som hjälper en ny spelare långt. De vinner inte varje hand, men över en turnering summerar de sig.</string>
+    <string name="help_strategy_1">Spela färre händer från tidiga platser. De första som agerar har flest motståndare kvar att komma, så börja bara med starka kort där, och spela lösare ju närmare knappen platserna ligger.</string>
+    <string name="help_strategy_2">Höj hellre än att göra call. En höjning kan vinna potten på stört, och när den blir syn har du oftare den starkare handen. Att bara göra call låter andra se kort billigt.</string>
+    <string name="help_strategy_3">Folda oftare än vad som känns bekvämt. De flesta händer är inte värda att spela, och en foldad hand kostar bara det du redan lagt in.</string>
+    <string name="help_strategy_4">Lär dig pottodds. Om en call kostar 25 marker för att vinna en pott på 75 betalar du en mark för var tredje du kan vinna, så callen lönar sig om du vinner oftare än en gång av fyra. Jämför det med din chans att sluta med den bästa handen.</string>
+    <string name="help_strategy_5">Position spelar roll. Att agera sist låter dig se vad alla andra gör först, vilket är värt mycket. Spela fler händer från sena platser och färre från tidiga.</string>
+    <string name="help_strategy_6">Titta på motståndarnas stilar. Varje plats är märkt tight, loose, aggressiv eller passiv. Respektera en höjning från en tight spelare, och var långsammare med att tro på en satsning från en loose, aggressiv.</string>
+    <string name="help_strategy_7">Med en kort stack: gå all in eller folda. När dina marker bara är några stora blinds ger små satsningar och calls dig inget utrymme, och en välplacerad all in är din bästa chans att dubbla.</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Arvioitu voittotodennäköisyys %1$d prosenttia todennäköisiä käsiä vastaan; maksaminen maksaa %2$d prosenttia potista.</string>
+    <string name="hint_notice_free_desc">Arvioitu voittotodennäköisyys %1$d prosenttia todennäköisiä käsiä vastaan.</string>
+
+    <string name="recovery_notice">Tallennettua kättäsi ei voitu avata, joten se jaettiin uudelleen alusta. Pelimerkkejä ei menetetty.</string>
+</resources>

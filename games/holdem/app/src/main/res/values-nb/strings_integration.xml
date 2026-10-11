@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Anslått vinnersjanse på %1$d prosent mot sannsynlige hender; en call koster %2$d prosent av potten.</string>
+    <string name="hint_notice_free_desc">Anslått vinnersjanse på %1$d prosent mot sannsynlige hender.</string>
+
+    <string name="recovery_notice">Den lagrede hånden din kunne ikke åpnes, så den ble delt ut på nytt fra begynnelsen. Ingen sjetonger gikk tapt.</string>
+</resources>

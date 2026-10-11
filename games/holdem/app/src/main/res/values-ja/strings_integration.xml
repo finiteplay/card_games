@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">エクイティ %1$d%% · ポットオッズ %2$d%%</string>
+    <string name="hint_notice_free">エクイティ %1$d%%</string>
+    <string name="hint_notice_desc">ありそうな手に対する推定勝率は%1$dパーセント。コールの費用はポットの%2$dパーセントです。</string>
+    <string name="hint_notice_free_desc">ありそうな手に対する推定勝率は%1$dパーセントです。</string>
+    <string name="recovery_notice">保存したハンドを開けなかったため、最初から配り直しました。チップは失われていません。</string>
+</resources>

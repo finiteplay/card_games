@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">בליינדים %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">יד %1$d · %2$,d / %3$,d בעוד %4$d יד</item>
+        <item quantity="two">יד %1$d · %2$,d / %3$,d בעוד %4$d ידיים</item>
+        <item quantity="other">יד %1$d · %2$,d / %3$,d בעוד %4$d ידיים</item>
+    </plurals>
+    <string name="action_leave_tournament">עזיבת הטורניר</string>
+
+    <string name="action_fold">פולד</string>
+    <string name="action_check">צ\'ק</string>
+    <string name="action_call">קול&#10;%1$,d</string>
+    <string name="action_call_all_in">קול&#10;אול אין</string>
+    <string name="action_bet">הימור&#10;%1$,d</string>
+    <string name="action_raise">העלאה ל-&#10;%1$,d</string>
+    <string name="action_all_in">אול אין&#10;%1$,d</string>
+    <string name="action_next_hand">היד הבאה</string>
+    <string name="action_new_tournament">טורניר חדש</string>
+
+    <string name="sizing_minus_desc">הורדה ב-%1$,d</string>
+    <string name="sizing_plus_desc">הוספה של %1$,d</string>
+    <string name="sizing_half_pot">½ קופה</string>
+    <string name="sizing_pot">קופה</string>
+    <string name="sizing_bet_desc">הימור %1$,d</string>
+    <string name="sizing_raise_desc">העלאה ל-%1$,d</string>
+
+    <string name="pot_label">קופה %1$,d</string>
+    <string name="pot_count">%1$d קופות</string>
+    <string name="banner_pot">קופה · %1$,d</string>
+    <string name="banner_main_pot">קופה ראשית · %1$,d</string>
+    <string name="banner_side_pot">קופת צד · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">אתם</string>
+    <string name="your_line">אתם · %1$,d</string>
+    <string name="seat_out">יצא · %1$s</string>
+    <string name="seat_all_in">אול אין</string>
+    <string name="seat_action_bet">הימור %1$,d</string>
+    <string name="seat_action_raise">העלאה %1$,d</string>
+    <string name="seat_action_call">קול</string>
+    <string name="seat_action_check">צ\'ק</string>
+    <string name="seat_action_fold">פולד</string>
+    <string name="seat_action_all_in">אול אין</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">הדוק</string>
+    <string name="style_loose">משוחרר</string>
+    <string name="style_aggressive">תוקפני</string>
+    <string name="style_passive">פסיבי</string>
+    <string-array name="places">
+        <item>ראשון</item>
+        <item>שני</item>
+        <item>שלישי</item>
+        <item>רביעי</item>
+        <item>חמישי</item>
+        <item>שישי</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>אס</item>
+        <item>שתיים</item>
+        <item>שלוש</item>
+        <item>ארבע</item>
+        <item>חמש</item>
+        <item>שש</item>
+        <item>שבע</item>
+        <item>שמונה</item>
+        <item>תשע</item>
+        <item>עשר</item>
+        <item>נסיך</item>
+        <item>מלכה</item>
+        <item>מלך</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>אסים</item>
+        <item>שתיות</item>
+        <item>שלשות</item>
+        <item>ארבעות</item>
+        <item>חמישות</item>
+        <item>שישיות</item>
+        <item>שביעיות</item>
+        <item>שמיניות</item>
+        <item>תשיעיות</item>
+        <item>עשיריות</item>
+        <item>נסיכים</item>
+        <item>מלכות</item>
+        <item>מלכים</item>
+    </string-array>
+    <string name="hand_royal_flush">רויאל פלאש</string>
+    <string name="hand_straight_flush">סטרייט פלאש עד %1$s</string>
+    <string name="hand_four_of_a_kind">רביעייה, %1$s</string>
+    <string name="hand_full_house">פול האוס, %1$s ו-%2$s</string>
+    <string name="hand_flush">פלאש, הקלף הגבוה: %1$s</string>
+    <string name="hand_straight">סטרייט עד %1$s</string>
+    <string name="hand_three_of_a_kind">שלישייה, %1$s</string>
+    <string name="hand_two_pair">שני זוגות, %1$s ו-%2$s</string>
+    <string name="hand_pair">זוג %1$s</string>
+    <string name="hand_high_card">קלף גבוה, %1$s</string>
+
+    <string name="mark_win">ניצחון</string>
+    <string name="mark_even">תיקו</string>
+    <string name="mark_lose">הפסד</string>
+
+    <string name="leave_title">לעזוב את הטורניר?</string>
+    <string name="leave_body">תסיימו במקום %1$s, כאילו יצאתם עכשיו.</string>
+    <string name="leave_confirm">עזיבה</string>
+    <string name="leave_stay">להישאר</string>
+    <string name="end_title_place">סיימתם במקום %1$s</string>
+    <string name="end_title_won">ניצחתם בטורניר</string>
+    <string name="end_body_lost">ידיים ששוחקו: %1$d\nהקופה הגדולה ביותר: %2$,d</string>
+    <string name="end_body_won">זה לקח %1$d ידיים.\nהקופה הגדולה ביותר: %2$,d</string>
+
+    <string name="card_spoken">%1$s %2$s</string>
+    <string name="a11y_your_cards">הקלפים שלכם: %1$s</string>
+    <string name="a11y_board">הלוח: %1$s</string>
+    <string name="a11y_board_empty">הלוח: עדיין אין קלפים</string>
+    <string name="a11y_pot">קופה %1$,d</string>
+    <string name="a11y_pot_pots">קופה %1$,d, %2$d קופות</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d אסימונים</string>
+    <string name="a11y_seat_you">אתם, %1$,d אסימונים</string>
+    <string name="a11y_dealer">מחלק</string>
+    <string name="a11y_small_blind">סמול בליינד</string>
+    <string name="a11y_big_blind">ביג בליינד</string>
+    <string name="a11y_bet">הימור %1$,d</string>
+    <string name="a11y_folded">עשה פולד</string>
+    <string name="a11y_out">יצא, סיים במקום %1$s</string>
+    <string name="a11y_all_in">אול אין</string>
+    <string name="a11y_thinking">התור שלו</string>
+    <string name="ann_fold">%1$s עושה פולד</string>
+    <string name="ann_check">%1$s עושה צ\'ק</string>
+    <string name="ann_call">%1$s עושה קול %2$,d</string>
+    <string name="ann_bet">%1$s מהמר %2$,d</string>
+    <string name="ann_raise">%1$s מעלה ל-%2$,d</string>
+    <string name="ann_all_in">%1$s באול אין על %2$,d</string>
+    <string name="ann_flop">הפלופ: %1$s</string>
+    <string name="ann_turn">הטרן: %1$s</string>
+    <string name="ann_river">הריבר: %1$s</string>
+    <string name="ann_shows">%1$s מראה %2$s</string>
+    <string name="ann_wins">%1$s זוכה ב-%2$,d</string>
+    <string name="seat_won">רווח %1$s</string>
+    <string name="seat_lost">הפסד %1$s</string>
+</resources>

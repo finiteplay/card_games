@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">블라인드 %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">핸드 %1$d · %2$,d / %3$,d (%4$d핸드 후)</item>
+        <item quantity="other">핸드 %1$d · %2$,d / %3$,d (%4$d핸드 후)</item>
+    </plurals>
+    <string name="action_leave_tournament">토너먼트 나가기</string>
+    <string name="action_fold">폴드</string>
+    <string name="action_check">체크</string>
+    <string name="action_call">콜&#10;%1$,d</string>
+    <string name="action_call_all_in">콜&#10;올인</string>
+    <string name="action_bet">베팅&#10;%1$,d</string>
+    <string name="action_raise">레이즈&#10;%1$,d</string>
+    <string name="action_all_in">올인&#10;%1$,d</string>
+    <string name="action_next_hand">다음 핸드</string>
+    <string name="action_new_tournament">새 토너먼트</string>
+    <string name="sizing_minus_desc">%1$,d 줄이기</string>
+    <string name="sizing_plus_desc">%1$,d 늘리기</string>
+    <string name="sizing_half_pot">½ 팟</string>
+    <string name="sizing_pot">팟</string>
+    <string name="sizing_bet_desc">%1$,d 베팅</string>
+    <string name="sizing_raise_desc">%1$,d로 레이즈</string>
+    <string name="pot_label">팟 %1$,d</string>
+    <string name="pot_count">팟 %1$d개</string>
+    <string name="banner_pot">팟 · %1$,d</string>
+    <string name="banner_main_pot">메인 팟 · %1$,d</string>
+    <string name="banner_side_pot">사이드 팟 · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+    <string name="you">나</string>
+    <string name="your_line">나 · %1$,d</string>
+    <string name="seat_out">탈락 · %1$s</string>
+    <string name="seat_all_in">올인</string>
+    <string name="seat_action_bet">베팅 %1$,d</string>
+    <string name="seat_action_raise">레이즈 %1$,d</string>
+    <string name="seat_action_call">콜</string>
+    <string name="seat_action_check">체크</string>
+    <string name="seat_action_fold">폴드</string>
+    <string name="seat_action_all_in">올인</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">타이트</string>
+    <string name="style_loose">루즈</string>
+    <string name="style_aggressive">어그레시브</string>
+    <string name="style_passive">패시브</string>
+    <string-array name="places">
+        <item>1위</item>
+        <item>2위</item>
+        <item>3위</item>
+        <item>4위</item>
+        <item>5위</item>
+        <item>6위</item>
+    </string-array>
+    <string-array name="rank_singular">
+        <item>A</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>A</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string name="hand_royal_flush">로열 플러시</string>
+    <string name="hand_straight_flush">스트레이트 플러시, %1$s 하이</string>
+    <string name="hand_four_of_a_kind">포카드, %1$s</string>
+    <string name="hand_full_house">풀하우스, %1$s 풀 오브 %2$s</string>
+    <string name="hand_flush">플러시, %1$s 하이</string>
+    <string name="hand_straight">스트레이트, %1$s 하이</string>
+    <string name="hand_three_of_a_kind">트리플, %1$s</string>
+    <string name="hand_two_pair">투 페어, %1$s와 %2$s</string>
+    <string name="hand_pair">%1$s 원 페어</string>
+    <string name="hand_high_card">하이 카드, %1$s</string>
+    <string name="mark_win">승</string>
+    <string name="mark_even">무</string>
+    <string name="mark_lose">패</string>
+    <string name="leave_title">이 토너먼트에서 나갈까요?</string>
+    <string name="leave_body">지금 탈락한 것처럼 %1$s로 마칩니다.</string>
+    <string name="leave_confirm">나가기</string>
+    <string name="leave_stay">계속하기</string>
+    <string name="end_title_place">%1$s로 마쳤습니다</string>
+    <string name="end_title_won">토너먼트에서 우승했습니다</string>
+    <string name="end_body_lost">플레이한 핸드: %1$d\n가장 큰 팟: %2$,d</string>
+    <string name="end_body_won">%1$d핸드가 걸렸습니다.\n가장 큰 팟: %2$,d</string>
+    <string name="card_spoken">%2$s %1$s</string>
+    <string name="a11y_your_cards">내 카드: %1$s</string>
+    <string name="a11y_board">보드: %1$s</string>
+    <string name="a11y_board_empty">보드: 아직 카드 없음</string>
+    <string name="a11y_pot">팟 %1$,d</string>
+    <string name="a11y_pot_pots">팟 %1$,d, 팟 %2$d개</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d칩</string>
+    <string name="a11y_seat_you">나, %1$,d칩</string>
+    <string name="a11y_dealer">딜러</string>
+    <string name="a11y_small_blind">스몰 블라인드</string>
+    <string name="a11y_big_blind">빅 블라인드</string>
+    <string name="a11y_bet">베팅 %1$,d</string>
+    <string name="a11y_folded">폴드함</string>
+    <string name="a11y_out">탈락, %1$s로 마침</string>
+    <string name="a11y_all_in">올인</string>
+    <string name="a11y_thinking">차례</string>
+    <string name="ann_fold">%1$s 폴드</string>
+    <string name="ann_check">%1$s 체크</string>
+    <string name="ann_call">%1$s %2$,d 콜</string>
+    <string name="ann_bet">%1$s %2$,d 베팅</string>
+    <string name="ann_raise">%1$s %2$,d로 레이즈</string>
+    <string name="ann_all_in">%1$s %2$,d 올인</string>
+    <string name="ann_flop">플랍: %1$s</string>
+    <string name="ann_turn">턴: %1$s</string>
+    <string name="ann_river">리버: %1$s</string>
+    <string name="ann_shows">%1$s이(가) %2$s 공개</string>
+    <string name="ann_wins">%1$s이(가) %2$,d 획득</string>
+    <string name="seat_won">승리 %1$s</string>
+    <string name="seat_lost">패배 %1$s</string>
+</resources>

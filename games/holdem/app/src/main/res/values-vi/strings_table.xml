@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blind %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Ván %1$d · %2$,d / %3$,d sau %4$d ván</item>
+        <item quantity="other">Ván %1$d · %2$,d / %3$,d sau %4$d ván</item>
+    </plurals>
+    <string name="action_leave_tournament">Rời giải đấu</string>
+    <string name="action_fold">Bỏ bài</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Theo&#10;%1$,d</string>
+    <string name="action_call_all_in">Theo&#10;all-in</string>
+    <string name="action_bet">Cược&#10;%1$,d</string>
+    <string name="action_raise">Tố lên&#10;%1$,d</string>
+    <string name="action_all_in">All-in&#10;%1$,d</string>
+    <string name="action_next_hand">Ván tiếp</string>
+    <string name="action_new_tournament">Giải đấu mới</string>
+    <string name="sizing_minus_desc">Giảm %1$,d</string>
+    <string name="sizing_plus_desc">Tăng %1$,d</string>
+    <string name="sizing_half_pot">½ pot</string>
+    <string name="sizing_pot">Pot</string>
+    <string name="sizing_bet_desc">Cược %1$,d</string>
+    <string name="sizing_raise_desc">Tố lên %1$,d</string>
+    <string name="pot_label">Pot %1$,d</string>
+    <string name="pot_count">%1$d pot</string>
+    <string name="banner_pot">Pot · %1$,d</string>
+    <string name="banner_main_pot">Pot chính · %1$,d</string>
+    <string name="banner_side_pot">Side pot · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+    <string name="you">Bạn</string>
+    <string name="your_line">Bạn · %1$,d</string>
+    <string name="seat_out">Bị loại · %1$s</string>
+    <string name="seat_all_in">All-in</string>
+    <string name="seat_action_bet">Cược %1$,d</string>
+    <string name="seat_action_raise">Tố %1$,d</string>
+    <string name="seat_action_call">Theo</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Bỏ bài</string>
+    <string name="seat_action_all_in">All-in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">chặt</string>
+    <string name="style_loose">lỏng</string>
+    <string name="style_aggressive">hung hăng</string>
+    <string name="style_passive">thụ động</string>
+    <string-array name="places">
+        <item>Nhất</item>
+        <item>Nhì</item>
+        <item>Ba</item>
+        <item>Tư</item>
+        <item>Năm</item>
+        <item>Sáu</item>
+    </string-array>
+    <string-array name="rank_singular">
+        <item>át</item>
+        <item>hai</item>
+        <item>ba</item>
+        <item>bốn</item>
+        <item>năm</item>
+        <item>sáu</item>
+        <item>bảy</item>
+        <item>tám</item>
+        <item>chín</item>
+        <item>mười</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>át</item>
+        <item>hai</item>
+        <item>ba</item>
+        <item>bốn</item>
+        <item>năm</item>
+        <item>sáu</item>
+        <item>bảy</item>
+        <item>tám</item>
+        <item>chín</item>
+        <item>mười</item>
+        <item>J</item>
+        <item>Q</item>
+        <item>K</item>
+    </string-array>
+    <string name="hand_royal_flush">Thùng phá sảnh lớn</string>
+    <string name="hand_straight_flush">Thùng phá sảnh, %1$s cao nhất</string>
+    <string name="hand_four_of_a_kind">Tứ quý %1$s</string>
+    <string name="hand_full_house">Cù lũ, %1$s ba và %2$s đôi</string>
+    <string name="hand_flush">Thùng, %1$s cao nhất</string>
+    <string name="hand_straight">Sảnh, %1$s cao nhất</string>
+    <string name="hand_three_of_a_kind">Sám cô %1$s</string>
+    <string name="hand_two_pair">Hai đôi, %1$s và %2$s</string>
+    <string name="hand_pair">Đôi %1$s</string>
+    <string name="hand_high_card">Mậu thầu, %1$s</string>
+    <string name="mark_win">Thắng</string>
+    <string name="mark_even">Hòa</string>
+    <string name="mark_lose">Thua</string>
+    <string name="leave_title">Rời giải đấu này?</string>
+    <string name="leave_body">Bạn sẽ về hạng %1$s, như thể bạn bị loại ngay bây giờ.</string>
+    <string name="leave_confirm">Rời</string>
+    <string name="leave_stay">Ở lại</string>
+    <string name="end_title_place">Bạn về hạng %1$s</string>
+    <string name="end_title_won">Bạn đã thắng giải đấu</string>
+    <string name="end_body_lost">Số ván đã chơi: %1$d\nPot lớn nhất: %2$,d</string>
+    <string name="end_body_won">Mất %1$d ván.\nPot lớn nhất: %2$,d</string>
+    <string name="card_spoken">%1$s %2$s</string>
+    <string name="a11y_your_cards">Bài của bạn: %1$s</string>
+    <string name="a11y_board">Bài chung: %1$s</string>
+    <string name="a11y_board_empty">Bài chung: chưa có lá nào</string>
+    <string name="a11y_pot">Pot %1$,d</string>
+    <string name="a11y_pot_pots">Pot %1$,d, %2$d pot</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d chip</string>
+    <string name="a11y_seat_you">Bạn, %1$,d chip</string>
+    <string name="a11y_dealer">người chia bài</string>
+    <string name="a11y_small_blind">small blind</string>
+    <string name="a11y_big_blind">big blind</string>
+    <string name="a11y_bet">cược %1$,d</string>
+    <string name="a11y_folded">Đã bỏ bài</string>
+    <string name="a11y_out">Bị loại, về hạng %1$s</string>
+    <string name="a11y_all_in">all-in</string>
+    <string name="a11y_thinking">đến lượt</string>
+    <string name="ann_fold">%1$s bỏ bài</string>
+    <string name="ann_check">%1$s check</string>
+    <string name="ann_call">%1$s theo %2$,d</string>
+    <string name="ann_bet">%1$s cược %2$,d</string>
+    <string name="ann_raise">%1$s tố lên %2$,d</string>
+    <string name="ann_all_in">%1$s all-in %2$,d</string>
+    <string name="ann_flop">Flop: %1$s</string>
+    <string name="ann_turn">Turn: %1$s</string>
+    <string name="ann_river">River: %1$s</string>
+    <string name="ann_shows">%1$s lật %2$s</string>
+    <string name="ann_wins">%1$s thắng %2$,d</string>
+    <string name="seat_won">Thắng %1$s</string>
+    <string name="seat_lost">Thua %1$s</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Блайндове %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">Ръка %1$d · %2$,d / %3$,d след %4$d ръка</item>
+        <item quantity="other">Ръка %1$d · %2$,d / %3$,d след %4$d ръце</item>
+    </plurals>
+    <string name="action_leave_tournament">Напусни турнира</string>
+
+    <string name="action_fold">Фолд</string>
+    <string name="action_check">Чек</string>
+    <string name="action_call">Кол&#10;%1$,d</string>
+    <string name="action_call_all_in">Кол&#10;ол ин</string>
+    <string name="action_bet">Залог&#10;%1$,d</string>
+    <string name="action_raise">Вдигни до&#10;%1$,d</string>
+    <string name="action_all_in">Ол ин&#10;%1$,d</string>
+    <string name="action_next_hand">Следваща ръка</string>
+    <string name="action_new_tournament">Нов турнир</string>
+
+    <string name="sizing_minus_desc">Намали с %1$,d</string>
+    <string name="sizing_plus_desc">Увеличи с %1$,d</string>
+    <string name="sizing_half_pot">½ пот</string>
+    <string name="sizing_pot">Пот</string>
+    <string name="sizing_bet_desc">Залог %1$,d</string>
+    <string name="sizing_raise_desc">Вдигни до %1$,d</string>
+
+    <string name="pot_label">Пот %1$,d</string>
+    <string name="pot_count">%1$d пота</string>
+    <string name="banner_pot">Пот · %1$,d</string>
+    <string name="banner_main_pot">Основен пот · %1$,d</string>
+    <string name="banner_side_pot">Страничен пот · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Ти</string>
+    <string name="your_line">Ти · %1$,d</string>
+    <string name="seat_out">Отпаднал · %1$s</string>
+    <string name="seat_all_in">Ол ин</string>
+    <string name="seat_action_bet">Залог %1$,d</string>
+    <string name="seat_action_raise">Вдига %1$,d</string>
+    <string name="seat_action_call">Кол</string>
+    <string name="seat_action_check">Чек</string>
+    <string name="seat_action_fold">Фолд</string>
+    <string name="seat_action_all_in">Ол ин</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">стегнат</string>
+    <string name="style_loose">хлабав</string>
+    <string name="style_aggressive">агресивен</string>
+    <string name="style_passive">пасивен</string>
+    <string-array name="places">
+        <item>1-во</item>
+        <item>2-ро</item>
+        <item>3-то</item>
+        <item>4-то</item>
+        <item>5-то</item>
+        <item>6-то</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>асо</item>
+        <item>двойка</item>
+        <item>тройка</item>
+        <item>четворка</item>
+        <item>петица</item>
+        <item>шестица</item>
+        <item>седмица</item>
+        <item>осмица</item>
+        <item>деветка</item>
+        <item>десетка</item>
+        <item>вале</item>
+        <item>дама</item>
+        <item>поп</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>аса</item>
+        <item>двойки</item>
+        <item>тройки</item>
+        <item>четворки</item>
+        <item>петици</item>
+        <item>шестици</item>
+        <item>седмици</item>
+        <item>осмици</item>
+        <item>деветки</item>
+        <item>десетки</item>
+        <item>валета</item>
+        <item>дами</item>
+        <item>попове</item>
+    </string-array>
+    <string name="hand_royal_flush">Роял флъш</string>
+    <string name="hand_straight_flush">Стрийт флъш, висока %1$s</string>
+    <string name="hand_four_of_a_kind">Каре, %1$s</string>
+    <string name="hand_full_house">Фул хаус, %1$s и %2$s</string>
+    <string name="hand_flush">Флъш, висока %1$s</string>
+    <string name="hand_straight">Стрийт, висока %1$s</string>
+    <string name="hand_three_of_a_kind">Тройка, %1$s</string>
+    <string name="hand_two_pair">Два чифта, %1$s и %2$s</string>
+    <string name="hand_pair">Чифт, %1$s</string>
+    <string name="hand_high_card">Висока карта, %1$s</string>
+
+    <string name="mark_win">Победа</string>
+    <string name="mark_even">Равно</string>
+    <string name="mark_lose">Загуба</string>
+
+    <string name="leave_title">Да напуснеш ли този турнир?</string>
+    <string name="leave_body">Ще завършиш на %1$s място, сякаш си отпаднал сега.</string>
+    <string name="leave_confirm">Напусни</string>
+    <string name="leave_stay">Остани</string>
+    <string name="end_title_place">Завърши на %1$s място</string>
+    <string name="end_title_won">Спечели турнира</string>
+    <string name="end_body_lost">Изиграни ръце: %1$d\nНай-голям пот: %2$,d</string>
+    <string name="end_body_won">Отне %1$d ръце.\nНай-голям пот: %2$,d</string>
+
+    <string name="card_spoken">%1$s, %2$s</string>
+    <string name="a11y_your_cards">Твоите карти: %1$s</string>
+    <string name="a11y_board">Борд: %1$s</string>
+    <string name="a11y_board_empty">Борд: още няма карти</string>
+    <string name="a11y_pot">Пот %1$,d</string>
+    <string name="a11y_pot_pots">Пот %1$,d, %2$d пота</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d чипа</string>
+    <string name="a11y_seat_you">Ти, %1$,d чипа</string>
+    <string name="a11y_dealer">дилър</string>
+    <string name="a11y_small_blind">малък блайнд</string>
+    <string name="a11y_big_blind">голям блайнд</string>
+    <string name="a11y_bet">залог %1$,d</string>
+    <string name="a11y_folded">Фолд</string>
+    <string name="a11y_out">Отпаднал, завърши на %1$s място</string>
+    <string name="a11y_all_in">ол ин</string>
+    <string name="a11y_thinking">на ход</string>
+    <string name="ann_fold">%1$s дава фолд</string>
+    <string name="ann_check">%1$s дава чек</string>
+    <string name="ann_call">%1$s дава кол %2$,d</string>
+    <string name="ann_bet">%1$s залага %2$,d</string>
+    <string name="ann_raise">%1$s вдига до %2$,d</string>
+    <string name="ann_all_in">%1$s отива ол ин с %2$,d</string>
+    <string name="ann_flop">Флопът: %1$s</string>
+    <string name="ann_turn">Търнът: %1$s</string>
+    <string name="ann_river">Ривърът: %1$s</string>
+    <string name="ann_shows">%1$s показва %2$s</string>
+    <string name="ann_wins">%1$s печели %2$,d</string>
+    <string name="seat_won">Печалба %1$s</string>
+    <string name="seat_lost">Загуба %1$s</string>
+</resources>

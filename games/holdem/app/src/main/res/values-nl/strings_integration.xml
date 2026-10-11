@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Potodds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Geschatte winkans van %1$d procent tegen waarschijnlijke handen; een call kost %2$d procent van de pot.</string>
+    <string name="hint_notice_free_desc">Geschatte winkans van %1$d procent tegen waarschijnlijke handen.</string>
+
+    <string name="recovery_notice">Je bewaarde hand kon niet worden geopend, dus hij is opnieuw vanaf het begin gedeeld. Er zijn geen fiches verloren gegaan.</string>
+</resources>

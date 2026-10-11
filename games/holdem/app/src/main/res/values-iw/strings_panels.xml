@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stat_section_tournaments">טורנירים</string>
+    <string name="stat_section_finishes">מקומות</string>
+    <string name="stat_section_hands">ידיים</string>
+
+    <string name="stat_tile_tournaments_played">ששוחקו</string>
+    <string name="stat_tile_tournaments_won">ניצחונות</string>
+    <string name="stat_tile_avg_finish">מקום ממוצע</string>
+    <string name="stat_average_finish_value">%1$.1f</string>
+
+    <string name="stat_tile_hands_played">ידיים ששוחקו</string>
+    <string name="stat_tile_hands_won">ידיים שניצחו</string>
+    <string name="stat_tile_showdowns_won">שואודאונים שניצחו</string>
+    <string name="stat_showdowns_value">%1$d / %2$d</string>
+    <string name="stat_tile_largest_pot">הקופה הגדולה ביותר</string>
+    <string name="stat_tile_vpip">כניסה מרצון לפני הפלופ</string>
+    <string name="stat_tile_pfr">העלאה לפני הפלופ</string>
+
+    <string name="place_1">ראשון</string>
+    <string name="place_2">שני</string>
+    <string name="place_3">שלישי</string>
+    <string name="place_4">רביעי</string>
+    <string name="place_5">חמישי</string>
+    <string name="place_6">שישי</string>
+    <string name="cd_finish_bar">מקום %1$s: %2$d</string>
+
+    <string name="cd_example_hand">%1$s, למשל %2$s</string>
+    <string name="cd_example_card">%1$s %2$s</string>
+</resources>

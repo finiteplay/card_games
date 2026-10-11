@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">ब्लाइंड्स %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">हाथ %1$d · %2$,d / %3$,d, %4$d हाथ में</item>
+        <item quantity="other">हाथ %1$d · %2$,d / %3$,d, %4$d हाथ में</item>
+    </plurals>
+    <string name="action_leave_tournament">टूर्नामेंट छोड़ें</string>
+
+    <string name="action_fold">फ़ोल्ड</string>
+    <string name="action_check">चेक</string>
+    <string name="action_call">कॉल&#10;%1$,d</string>
+    <string name="action_call_all_in">कॉल&#10;ऑल इन</string>
+    <string name="action_bet">बेट&#10;%1$,d</string>
+    <string name="action_raise">रेज़ तक&#10;%1$,d</string>
+    <string name="action_all_in">ऑल इन&#10;%1$,d</string>
+    <string name="action_next_hand">अगला हाथ</string>
+    <string name="action_new_tournament">नया टूर्नामेंट</string>
+
+    <string name="sizing_minus_desc">%1$,d घटाएँ</string>
+    <string name="sizing_plus_desc">%1$,d बढ़ाएँ</string>
+    <string name="sizing_half_pot">½ पॉट</string>
+    <string name="sizing_pot">पॉट</string>
+    <string name="sizing_bet_desc">बेट %1$,d</string>
+    <string name="sizing_raise_desc">%1$,d तक रेज़</string>
+
+    <string name="pot_label">पॉट %1$,d</string>
+    <string name="pot_count">%1$d पॉट</string>
+    <string name="banner_pot">पॉट · %1$,d</string>
+    <string name="banner_main_pot">मुख्य पॉट · %1$,d</string>
+    <string name="banner_side_pot">साइड पॉट · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">आप</string>
+    <string name="your_line">आप · %1$,d</string>
+    <string name="seat_out">बाहर · %1$s</string>
+    <string name="seat_all_in">ऑल इन</string>
+    <string name="seat_action_bet">बेट %1$,d</string>
+    <string name="seat_action_raise">रेज़ %1$,d</string>
+    <string name="seat_action_call">कॉल</string>
+    <string name="seat_action_check">चेक</string>
+    <string name="seat_action_fold">फ़ोल्ड</string>
+    <string name="seat_action_all_in">ऑल इन</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">सतर्क</string>
+    <string name="style_loose">ढीला</string>
+    <string name="style_aggressive">आक्रामक</string>
+    <string name="style_passive">निष्क्रिय</string>
+    <string-array name="places">
+        <item>पहला</item>
+        <item>दूसरा</item>
+        <item>तीसरा</item>
+        <item>चौथा</item>
+        <item>पाँचवाँ</item>
+        <item>छठा</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>इक्का</item>
+        <item>दुग्गी</item>
+        <item>तिग्गी</item>
+        <item>चौका</item>
+        <item>पंजा</item>
+        <item>छक्का</item>
+        <item>सत्ता</item>
+        <item>अट्ठा</item>
+        <item>नहला</item>
+        <item>दहला</item>
+        <item>गुलाम</item>
+        <item>बेगम</item>
+        <item>बादशाह</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>इक्के</item>
+        <item>दुग्गियाँ</item>
+        <item>तिग्गियाँ</item>
+        <item>चौके</item>
+        <item>पंजे</item>
+        <item>छक्के</item>
+        <item>सत्ते</item>
+        <item>अट्ठे</item>
+        <item>नहले</item>
+        <item>दहले</item>
+        <item>गुलाम</item>
+        <item>बेगमें</item>
+        <item>बादशाह</item>
+    </string-array>
+    <string name="hand_royal_flush">रॉयल फ़्लश</string>
+    <string name="hand_straight_flush">स्ट्रेट फ़्लश, सबसे ऊँचा %1$s</string>
+    <string name="hand_four_of_a_kind">चार एक जैसे, %1$s</string>
+    <string name="hand_full_house">फुल हाउस, %1$s और %2$s</string>
+    <string name="hand_flush">फ़्लश, सबसे ऊँचा %1$s</string>
+    <string name="hand_straight">स्ट्रेट, सबसे ऊँचा %1$s</string>
+    <string name="hand_three_of_a_kind">तीन एक जैसे, %1$s</string>
+    <string name="hand_two_pair">दो जोड़ी, %1$s और %2$s</string>
+    <string name="hand_pair">जोड़ी: %1$s</string>
+    <string name="hand_high_card">सबसे ऊँचा पत्ता, %1$s</string>
+
+    <string name="mark_win">जीत</string>
+    <string name="mark_even">बराबर</string>
+    <string name="mark_lose">हार</string>
+
+    <string name="leave_title">यह टूर्नामेंट छोड़ें?</string>
+    <string name="leave_body">आप %1$s स्थान पर रहेंगे, जैसे अभी बाहर हुए हों।</string>
+    <string name="leave_confirm">छोड़ें</string>
+    <string name="leave_stay">रुकें</string>
+    <string name="end_title_place">आप %1$s स्थान पर रहे</string>
+    <string name="end_title_won">आपने टूर्नामेंट जीत लिया</string>
+    <string name="end_body_lost">खेले गए हाथ: %1$d\nसबसे बड़ा पॉट: %2$,d</string>
+    <string name="end_body_won">इसमें %1$d हाथ लगे।\nसबसे बड़ा पॉट: %2$,d</string>
+
+    <string name="card_spoken">%1$s, %2$s</string>
+    <string name="a11y_your_cards">आपके पत्ते: %1$s</string>
+    <string name="a11y_board">बोर्ड: %1$s</string>
+    <string name="a11y_board_empty">बोर्ड: अभी कोई पत्ता नहीं</string>
+    <string name="a11y_pot">पॉट %1$,d</string>
+    <string name="a11y_pot_pots">पॉट %1$,d, %2$d पॉट</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d चिप्स</string>
+    <string name="a11y_seat_you">आप, %1$,d चिप्स</string>
+    <string name="a11y_dealer">डीलर</string>
+    <string name="a11y_small_blind">स्मॉल ब्लाइंड</string>
+    <string name="a11y_big_blind">बिग ब्लाइंड</string>
+    <string name="a11y_bet">बेट %1$,d</string>
+    <string name="a11y_folded">फ़ोल्ड किया</string>
+    <string name="a11y_out">बाहर, %1$s स्थान पर रहे</string>
+    <string name="a11y_all_in">ऑल इन</string>
+    <string name="a11y_thinking">बारी है</string>
+    <string name="ann_fold">%1$s फ़ोल्ड करता है</string>
+    <string name="ann_check">%1$s चेक करता है</string>
+    <string name="ann_call">%1$s %2$,d कॉल करता है</string>
+    <string name="ann_bet">%1$s %2$,d का बेट लगाता है</string>
+    <string name="ann_raise">%1$s %2$,d तक रेज़ करता है</string>
+    <string name="ann_all_in">%1$s %2$,d के साथ ऑल इन है</string>
+    <string name="ann_flop">फ़्लॉप: %1$s</string>
+    <string name="ann_turn">टर्न: %1$s</string>
+    <string name="ann_river">रिवर: %1$s</string>
+    <string name="ann_shows">%1$s %2$s दिखाता है</string>
+    <string name="ann_wins">%1$s %2$,d जीतता है</string>
+    <string name="seat_won">जीत %1$s</string>
+    <string name="seat_lost">हार %1$s</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_blinds">Blindlar %1$,d / %2$,d</string>
+    <plurals name="status_hand_next">
+        <item quantity="one">El %1$d · %4$d el sonra %2$,d / %3$,d</item>
+        <item quantity="other">El %1$d · %4$d el sonra %2$,d / %3$,d</item>
+    </plurals>
+    <string name="action_leave_tournament">Turnuvadan ayrıl</string>
+
+    <string name="action_fold">Pas</string>
+    <string name="action_check">Check</string>
+    <string name="action_call">Call&#10;%1$,d</string>
+    <string name="action_call_all_in">Call&#10;all in</string>
+    <string name="action_bet">Bet&#10;%1$,d</string>
+    <string name="action_raise">Raise&#10;%1$,d</string>
+    <string name="action_all_in">All in&#10;%1$,d</string>
+    <string name="action_next_hand">Sonraki el</string>
+    <string name="action_new_tournament">Yeni turnuva</string>
+
+    <string name="sizing_minus_desc">%1$,d azalt</string>
+    <string name="sizing_plus_desc">%1$,d artır</string>
+    <string name="sizing_half_pot">½ pot</string>
+    <string name="sizing_pot">Pot</string>
+    <string name="sizing_bet_desc">Bet %1$,d</string>
+    <string name="sizing_raise_desc">Raise: %1$,d</string>
+
+    <string name="pot_label">Pot %1$,d</string>
+    <string name="pot_count">%1$d pot</string>
+    <string name="banner_pot">Pot · %1$,d</string>
+    <string name="banner_main_pot">Ana pot · %1$,d</string>
+    <string name="banner_side_pot">Yan pot · %1$,d</string>
+    <string name="seat_award">+%1$,d</string>
+
+    <string name="you">Sen</string>
+    <string name="your_line">Sen · %1$,d</string>
+    <string name="seat_out">Elendi · %1$s</string>
+    <string name="seat_all_in">All in</string>
+    <string name="seat_action_bet">Bet %1$,d</string>
+    <string name="seat_action_raise">Raise %1$,d</string>
+    <string name="seat_action_call">Call</string>
+    <string name="seat_action_check">Check</string>
+    <string name="seat_action_fold">Pas</string>
+    <string name="seat_action_all_in">All in</string>
+    <string name="marker_dealer">D</string>
+    <string name="marker_small_blind">SB</string>
+    <string name="marker_big_blind">BB</string>
+    <string name="style_tight">tight</string>
+    <string name="style_loose">loose</string>
+    <string name="style_aggressive">agresif</string>
+    <string name="style_passive">pasif</string>
+    <string-array name="places">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+        <item>5.</item>
+        <item>6.</item>
+    </string-array>
+
+    <string-array name="rank_singular">
+        <item>as</item>
+        <item>ikili</item>
+        <item>üçlü</item>
+        <item>dörtlü</item>
+        <item>beşli</item>
+        <item>altılı</item>
+        <item>yedili</item>
+        <item>sekizli</item>
+        <item>dokuzlu</item>
+        <item>onlu</item>
+        <item>vale</item>
+        <item>kız</item>
+        <item>papaz</item>
+    </string-array>
+    <string-array name="rank_plural">
+        <item>aslar</item>
+        <item>ikililer</item>
+        <item>üçlüler</item>
+        <item>dörtlüler</item>
+        <item>beşliler</item>
+        <item>altılılar</item>
+        <item>yedililer</item>
+        <item>sekizliler</item>
+        <item>dokuzlular</item>
+        <item>onlular</item>
+        <item>valeler</item>
+        <item>kızlar</item>
+        <item>papazlar</item>
+    </string-array>
+    <string name="hand_royal_flush">Royal flush</string>
+    <string name="hand_straight_flush">Straight flush, en yüksek %1$s</string>
+    <string name="hand_four_of_a_kind">Kare: %1$s</string>
+    <string name="hand_full_house">Full house: %1$s ve %2$s</string>
+    <string name="hand_flush">Flush, en yüksek %1$s</string>
+    <string name="hand_straight">Kent, en yüksek %1$s</string>
+    <string name="hand_three_of_a_kind">Üçlü: %1$s</string>
+    <string name="hand_two_pair">İki çift: %1$s ve %2$s</string>
+    <string name="hand_pair">Çift: %1$s</string>
+    <string name="hand_high_card">Yüksek kart: %1$s</string>
+
+    <string name="mark_win">Kazandı</string>
+    <string name="mark_even">Berabere</string>
+    <string name="mark_lose">Kaybetti</string>
+
+    <string name="leave_title">Bu turnuvadan ayrılınsın mı?</string>
+    <string name="leave_body">Şimdi elenmiş gibi %1$s sırada bitireceksin.</string>
+    <string name="leave_confirm">Ayrıl</string>
+    <string name="leave_stay">Kal</string>
+    <string name="end_title_place">%1$s sırada bitirdin</string>
+    <string name="end_title_won">Turnuvayı kazandın</string>
+    <string name="end_body_lost">Oynanan eller: %1$d\nEn büyük pot: %2$,d</string>
+    <string name="end_body_won">%1$d el sürdü.\nEn büyük pot: %2$,d</string>
+
+    <string name="card_spoken">%2$s %1$s</string>
+    <string name="a11y_your_cards">Kartların: %1$s</string>
+    <string name="a11y_board">Board: %1$s</string>
+    <string name="a11y_board_empty">Board: henüz kart yok</string>
+    <string name="a11y_pot">Pot %1$,d</string>
+    <string name="a11y_pot_pots">Pot %1$,d, %2$d pot</string>
+    <string name="a11y_seat">%1$s, %2$s, %3$,d fiş</string>
+    <string name="a11y_seat_you">Sen, %1$,d fiş</string>
+    <string name="a11y_dealer">dealer</string>
+    <string name="a11y_small_blind">small blind</string>
+    <string name="a11y_big_blind">big blind</string>
+    <string name="a11y_bet">bet %1$,d</string>
+    <string name="a11y_folded">Pas geçti</string>
+    <string name="a11y_out">Elendi, %1$s sırada bitirdi</string>
+    <string name="a11y_all_in">all in</string>
+    <string name="a11y_thinking">sırada</string>
+    <string name="ann_fold">%1$s pas geçti</string>
+    <string name="ann_check">%1$s check yaptı</string>
+    <string name="ann_call">%1$s %2$,d call yaptı</string>
+    <string name="ann_bet">%1$s %2$,d bet yaptı</string>
+    <string name="ann_raise">%1$s raise yaptı: %2$,d</string>
+    <string name="ann_all_in">%1$s %2$,d ile all in gitti</string>
+    <string name="ann_flop">Flop: %1$s</string>
+    <string name="ann_turn">Turn: %1$s</string>
+    <string name="ann_river">River: %1$s</string>
+    <string name="ann_shows">%1$s gösterir: %2$s</string>
+    <string name="ann_wins">%1$s %2$,d kazandı</string>
+    <string name="seat_won">Kazandı %1$s</string>
+    <string name="seat_lost">Kaybetti %1$s</string>
+</resources>

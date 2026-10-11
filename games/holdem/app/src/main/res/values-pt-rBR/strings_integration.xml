@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
+    <string name="hint_notice_free">Equity %1$d%%</string>
+    <string name="hint_notice_desc">Chance estimada de ganhar: %1$d por cento contra mãos prováveis; pagar custa %2$d por cento do pote.</string>
+    <string name="hint_notice_free_desc">Chance estimada de ganhar: %1$d por cento contra mãos prováveis.</string>
+    <string name="recovery_notice">Sua mão salva não pôde ser aberta, então foi distribuída de novo desde o início. Nenhuma ficha foi perdida.</string>
+</resources>

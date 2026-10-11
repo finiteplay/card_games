@@ -22,6 +22,7 @@ import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -126,12 +127,20 @@ fun BoardActionBar(
     actions: List<BoardAction>,
     modifier: Modifier = Modifier,
     mirrored: Boolean = false,
+    /**
+     * Portrait only: room for this many buttons. A bar with fewer leaves the empty room between the
+     * first action and the rest — the first stays at the leading edge and the others at the trailing
+     * edge — so each button keeps its width and its edge as the set of actions changes: a lone Settings
+     * stays put instead of stretching across the bar, and the actions stay under the thumb.
+     */
+    slots: Int = 0,
     fitHeight: Boolean = false,
 ) {
     if (orientation == BoardOrientation.LANDSCAPE && fitHeight) {
         BottomAnchoredRail(actions, modifier)
     } else if (orientation == BoardOrientation.PORTRAIT) {
         val ordered = if (mirrored) actions.reversed() else actions
+        val empty = (slots - actions.size).coerceAtLeast(0)
         Row(
             modifier = modifier
                 .fillMaxWidth()
@@ -142,8 +151,12 @@ fun BoardActionBar(
             // Equal shares of the row rather than content-sized buttons: a long translation
             // otherwise widens its own button and pushes every later one along, eventually off
             // the screen edge. Each button owns a fixed share and its label wraps inside it.
-            ordered.forEach {
-                ActionButton(it, Modifier.weight(1f))
+            // The gap sits between the first action and the rest: after it, or before it once mirrored
+            // (where it is last, and a lone first action still has the gap beside it).
+            ordered.forEachIndexed { index, action ->
+                if (empty > 0 && mirrored && index == ordered.lastIndex) Spacer(Modifier.weight(empty.toFloat()))
+                ActionButton(action, Modifier.weight(1f))
+                if (empty > 0 && !mirrored && index == 0) Spacer(Modifier.weight(empty.toFloat()))
             }
         }
     } else {
@@ -292,7 +305,7 @@ private const val HOLD_FASTEST_MS = 45L
  * easy to land and a long run is quick. Exposes an ordinary click to accessibility services, which
  * have no "hold".
  */
-private fun Modifier.holdToRepeat(label: String, onClick: () -> Unit): Modifier = composed {
+fun Modifier.holdToRepeat(label: String, onClick: () -> Unit): Modifier = composed {
     val current = rememberUpdatedState(onClick)
     this
         .pointerInput(Unit) {
