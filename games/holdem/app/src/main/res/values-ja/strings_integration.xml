@@ -27,4 +27,24 @@
     <string name="hint_reason_fold_bad_price">コールするには足りません。必要なのは%2$d%%で、あなたは約%1$d%%です。</string>
     <string name="hint_reason_free_card">チェックは無料で、ハンドは弱めです。コストなしで次のカードを見ましょう。</string>
     <string name="hint_reason_pot_control">中程度のハンドです。チェックしてポットを小さく保ち、次のカードを見ましょう。</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">すでに相手がより強い手を持っている確率：%1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">可能性の高い、より強い手：%1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">ヒントを振り返る</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">ヒントに従って勝ちました。勝率は約%1$d%%でした。</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">ヒントに従いましたが負けました。こういうこともあります。約%1$d%%なら、%2$d%%は負けます。結果ではなく判断を評価しましょう。</string>
+    <string name="review_followed_fold">ヒントどおりにフォールドして、より良い場面のためにチップを残しました。</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">勝ちましたが、ヒントは%1$sを勧めていました。理由：%2$s アドバイスに逆らっての勝ちは運であって、作戦ではありません。</string>
+    <string name="review_ignored_lost">ヒントは%1$sを勧めていましたが、別の選択をして負けました。理由：%2$s</string>
+    <string name="review_ignored_fold">フォールドしましたが、ヒントは%1$sを勧めていました。理由：%2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">%1$sに負けました。ヒントではその確率を約%2$d%%と見ていました。</string>
 </resources>

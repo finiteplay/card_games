@@ -23,6 +23,9 @@ import org.finiteplay.holdem.opponents.OpponentPolicy
 import org.finiteplay.holdem.opponents.ProfilePolicy
 import org.finiteplay.holdem.opponents.drawOpponents
 import org.finiteplay.holdem.opponents.HintReason
+import org.finiteplay.holdem.opponents.Threats
+import org.finiteplay.holdem.rules.HandCategory
+import org.finiteplay.holdem.rules.categoryOf
 import org.finiteplay.holdem.opponents.hint
 import org.finiteplay.holdem.rules.Action
 import org.finiteplay.holdem.rules.HoldemSession
@@ -67,7 +70,49 @@ data class HintShown(
     val reason: HintReason = HintReason.POT_CONTROL,
     val outs: Int = 0,
     val stackBb: Int = 0,
+    val threats: Threats? = null,
 )
+
+/** How a hand played after a Hint turned out against what the Hint said (`UI_SPEC.md` "Hint Review"). */
+enum class ReviewKind { FOLLOWED_WON, FOLLOWED_LOST, FOLLOWED_FOLD, IGNORED_WON, IGNORED_LOST, IGNORED_FOLD }
+
+/** The look back at a hand: [kind], the [hint] it is about, and the hand that beat the player at showdown, with the chance the Hint gave it. */
+data class HandReview(val kind: ReviewKind, val hint: HintShown, val beatenBy: HandCategory? = null, val beatenPercent: Int? = null)
+
+/** The last decision the player took with a Hint on screen: whether they did as it said, and whether it was their final action of the hand. */
+internal data class HintUse(val hint: HintShown, val followed: Boolean, val lastActionHinted: Boolean)
+
+private fun kindOf(action: Action): Int = when (action) {
+    Action.Fold -> 0
+    Action.Check -> 1
+    Action.Call -> 2
+    else -> 3
+}
+
+/** True when [taken] is the kind of action [suggested] was (any raise is a raise); amounts are the player's to size. */
+internal fun followedHint(taken: Action, suggested: Action): Boolean = kindOf(taken) == kindOf(suggested)
+
+/**
+ * The review of a finished hand, or null when there is nothing fair to say: no Hint, a split pot, or a
+ * fold that was not the hinted decision. [net] is the player's chips won or lost over the hand,
+ * [folded] whether they folded, and [bestOpponent] the best hand an opponent showed down, if any.
+ */
+internal fun reviewOf(use: HintUse?, net: Int, folded: Boolean, bestOpponent: HandCategory?): HandReview? {
+    use ?: return null
+    val hint = use.hint
+    val kind = when {
+        folded -> if (!use.lastActionHinted) return null else if (use.followed) ReviewKind.FOLLOWED_FOLD else ReviewKind.IGNORED_FOLD
+        net > 0 -> if (use.followed) ReviewKind.FOLLOWED_WON else ReviewKind.IGNORED_WON
+        net < 0 -> if (use.followed) ReviewKind.FOLLOWED_LOST else ReviewKind.IGNORED_LOST
+        else -> return null
+    }
+    val warned = if (kind == ReviewKind.FOLLOWED_LOST || kind == ReviewKind.IGNORED_LOST) {
+        bestOpponent?.let { cat -> hint.threats?.best?.firstOrNull { it.first == Threats.bucket(cat) }?.let { cat to Math.round(it.second * 100).toInt() } }
+    } else {
+        null
+    }
+    return HandReview(kind, hint, warned?.first, warned?.second)
+}
 
 /** The dialog when the tournament is over for the player: where they finished, and the two figures it states. */
 data class TournamentEnd(val place: Int, val hands: Int, val largestPot: Int)
@@ -159,6 +204,20 @@ class HoldemViewModel(
 
     var hintShown: HintShown? by mutableStateOf(null)
         private set
+
+    /** The look back at the hand just finished, when a Hint was used in it; cleared when the next hand deals. */
+    var handReview: HandReview? by mutableStateOf(null)
+        private set
+
+    /** The hint shown at the current decision (kept when it is hidden again), and the last decision taken with one. */
+    private var pendingHint: HintShown? = null
+    private var hintUse: HintUse? = null
+
+    private fun resetHandHints() {
+        pendingHint = null
+        hintUse = null
+        handReview = null
+    }
 
     /** The tournament as it stood when the current hand was dealt, and every statistic. */
     private var stored = StoredTournament()
@@ -275,6 +334,7 @@ class HoldemViewModel(
         largestPot = 0
         sizing = null
         hintShown = null
+        resetHandHints()
         stored = stored.started(seed)
         try {
             storage?.beginTournament(stored)
@@ -301,6 +361,9 @@ class HoldemViewModel(
         session = next
         sizing = null
         hintShown = null
+        pendingHint?.let { hintUse = HintUse(it, followedHint(action, it.suggested), lastActionHinted = true) }
+            ?: run { hintUse = hintUse?.copy(lastActionHinted = false) }
+        pendingHint = null
         play {
             commit(next)
             present(TablePresenter.afterAction(table, next.state))
@@ -318,7 +381,8 @@ class HoldemViewModel(
         val state = session.state
         val result = hint(state.seatView(0))
         val legal = legalActions(state)
-        hintShown = HintShown(result.suggested, result.equity, result.potOdds, nothingToCall = legal?.canCheck == true, reason = result.reason, outs = result.outs, stackBb = result.stackBb)
+        hintShown = HintShown(result.suggested, result.equity, result.potOdds, nothingToCall = legal?.canCheck == true, reason = result.reason, outs = result.outs, stackBb = result.stackBb, threats = result.threats)
+        pendingHint = hintShown
         when (val suggested = result.suggested) {
             is Action.Bet -> sizing = sizing?.withAmount(suggested.amount)
             is Action.Raise -> sizing = sizing?.withAmount(suggested.total)
@@ -441,6 +505,9 @@ class HoldemViewModel(
     private fun handEnded() {
         val state = session.state
         largestPot = maxOf(largestPot, state.result?.payouts?.get(0) ?: 0)
+        val me = table.seats[0]
+        val bestOpponent = table.seats.drop(1).filter { it.contesting }.mapNotNull { it.handValue }.maxOrNull()?.let(::categoryOf)
+        handReview = me.net?.let { reviewOf(hintUse, it, me.folded, bestOpponent) }
         if (table.stage == Stage.TOURNAMENT_OVER) showEnd()
     }
 
@@ -494,6 +561,7 @@ class HoldemViewModel(
         } catch (e: Exception) {
             // Played in memory; see commit().
         }
+        resetHandHints()
         show(TablePresenter.dealt(session.state))
         soundSink(SoundEffect.SHUFFLE)
         soundSink(SoundEffect.DEAL)

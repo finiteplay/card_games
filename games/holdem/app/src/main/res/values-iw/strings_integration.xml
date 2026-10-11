@@ -25,4 +25,17 @@
     <string name="hint_reason_fold_bad_price">לא מספיק לקול: המחיר דורש %2$d%% ויש לכם בערך %1$d%%.</string>
     <string name="hint_reason_free_card">צ\'ק הוא בחינם והיד חלשה: קחו את הקלף הבא בלי לשלם.</string>
     <string name="hint_reason_pot_control">יד בינונית: עשו צ\'ק כדי לשמור על קופה קטנה וראו את הקלף הבא.</string>
+
+    <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
+    <string name="hint_threat_beat">הסיכוי שליריב כבר יש יד טובה יותר: %1$d%%</string>
+    <string name="hint_threat_list">הידיים הטובות יותר הסבירות ביותר: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">מבט לאחור על הרמז</string>
+    <string name="review_followed_won">עשיתם כמו שהרמז ייעץ וניצחתם: היה לכם בערך %1$d%% סיכוי לנצח.</string>
+    <string name="review_followed_lost">עשיתם כמו שהרמז ייעץ והפסדתם, זה קורה: עם בערך %1$d%% מפסידים ב-%2$d%% מהמקרים. שפטו את ההחלטה, לא את התוצאה.</string>
+    <string name="review_followed_fold">עשיתם פולד כמו שהרמז ייעץ ושמרתם אסימונים למצב טוב יותר.</string>
+    <string name="review_ignored_won">ניצחתם, אבל הרמז הציע: %1$s. הסיבה: %2$s ניצחון נגד העצה הוא מזל, לא תוכנית.</string>
+    <string name="review_ignored_lost">הרמז הציע: %1$s, אבל בחרתם אחרת והפסדתם. הסיבה: %2$s</string>
+    <string name="review_ignored_fold">עשיתם פולד, אבל הרמז הציע: %1$s. הסיבה: %2$s</string>
+    <string name="review_beaten_by">הפסדתם מול %1$s. הרמז העריך את זה בערך ב-%2$d%%.</string>
 </resources>

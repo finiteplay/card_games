@@ -25,4 +25,17 @@
     <string name="hint_reason_fold_bad_price">Tidak cukup untuk call: harganya butuh %2$d%% dan kamu punya sekitar %1$d%%.</string>
     <string name="hint_reason_free_card">Check gratis dan tanganmu lemah: ambil kartu berikutnya tanpa biaya.</string>
     <string name="hint_reason_pot_control">Tangan menengah: check agar pot tetap kecil dan lihat kartu berikutnya.</string>
+
+    <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
+    <string name="hint_threat_beat">Peluang lawan sudah punya tangan lebih baik: %1$d%%</string>
+    <string name="hint_threat_list">Tangan yang lebih baik dan paling mungkin: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Menengok kembali Hint</string>
+    <string name="review_followed_won">Kamu mengikuti Hint dan menang: peluang menangmu sekitar %1$d%%.</string>
+    <string name="review_followed_lost">Kamu mengikuti Hint dan kalah, itu wajar: dengan sekitar %1$d%% kamu kalah %2$d%% dari waktu. Nilai keputusannya, bukan hasilnya.</string>
+    <string name="review_followed_fold">Kamu fold sesuai saran Hint dan menyimpan chip untuk situasi yang lebih baik.</string>
+    <string name="review_ignored_won">Kamu menang, tapi Hint menyarankan %1$s. Alasannya: %2$s Menang melawan saran itu keberuntungan, bukan rencana.</string>
+    <string name="review_ignored_lost">Hint menyarankan %1$s, tapi kamu memilih lain dan kalah. Alasannya: %2$s</string>
+    <string name="review_ignored_fold">Kamu fold, tapi Hint menyarankan %1$s. Alasannya: %2$s</string>
+    <string name="review_beaten_by">Kamu kalah dari %1$s. Hint memperkirakannya sekitar %2$d%%.</string>
 </resources>

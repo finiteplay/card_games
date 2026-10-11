@@ -27,4 +27,17 @@
     <string name="hint_reason_fold_bad_price">No basta para igualar: el precio exige un %2$d%% y tienes alrededor del %1$d%%.</string>
     <string name="hint_reason_free_card">Pasar es gratis y tu mano es débil: toma la siguiente carta sin coste.</string>
     <string name="hint_reason_pot_control">Una mano mediana: pasa para mantener el bote pequeño y ver la siguiente carta.</string>
+
+    <!-- Hint threat and review strings. %N$d are numbers, %N$s are texts (hand names, advice, reason). -->
+    <string name="hint_threat_beat">Probabilidad de que un rival ya tenga una mano mejor: %1$d%%</string>
+    <string name="hint_threat_list">Manos mejores más probables: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Repaso de la pista</string>
+    <string name="review_followed_won">Seguiste la pista y ganaste: tenías cerca de un %1$d%% de ganar.</string>
+    <string name="review_followed_lost">Seguiste la pista y perdiste, algo que pasa: con cerca de un %1$d%% pierdes el %2$d%% de las veces. Juzga la decisión, no el resultado.</string>
+    <string name="review_followed_fold">Te retiraste como aconsejaba la pista y guardaste tus fichas para un mejor momento.</string>
+    <string name="review_ignored_won">Ganaste, pero la pista sugería %1$s. Su motivo: %2$s Ganar contra el consejo es suerte, no un plan.</string>
+    <string name="review_ignored_lost">La pista sugería %1$s, pero elegiste otra cosa y perdiste. Su motivo: %2$s</string>
+    <string name="review_ignored_fold">Te retiraste, pero la pista sugería %1$s. Su motivo: %2$s</string>
+    <string name="review_beaten_by">Perdiste contra %1$s. La pista lo había estimado en cerca de un %2$d%%.</string>
 </resources>

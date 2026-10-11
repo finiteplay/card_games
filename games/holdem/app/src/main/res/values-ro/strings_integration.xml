@@ -28,4 +28,24 @@
     <string name="hint_reason_fold_bad_price">Nu ajunge pentru call: prețul cere %2$d%%, iar tu ai cam %1$d%%.</string>
     <string name="hint_reason_free_card">Check-ul e gratuit, iar mâna ta e slabă: vezi următoarea carte fără cost.</string>
     <string name="hint_reason_pot_control">O mână de mijloc: dă check ca să ții potul mic și să vezi următoarea carte.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Șansa ca un adversar să aibă deja o mână mai bună: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. Flush 7% · Straight 3% -->
+    <string name="hint_threat_list">Cele mai probabile mâini mai bune: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Privire înapoi la Indiciu</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Ai urmat Indiciul și ai câștigat: aveai cam %1$d%% șanse să câștigi.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Ai urmat Indiciul și ai pierdut, se întâmplă: cu cam %1$d%% pierzi în %2$d%% din cazuri. Judecă decizia, nu rezultatul.</string>
+    <string name="review_followed_fold">Ai dat fold cum a sfătuit Indiciul și ți-ai păstrat jetoanele pentru un moment mai bun.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Ai câștigat, dar Indiciul a sugerat: %1$s. Motivul: %2$s Să câștigi împotriva sfatului e noroc, nu plan.</string>
+    <string name="review_ignored_lost">Indiciul a sugerat: %1$s, dar ai ales altceva și ai pierdut. Motivul: %2$s</string>
+    <string name="review_ignored_fold">Ai dat fold, dar Indiciul a sugerat: %1$s. Motivul: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Ai pierdut în fața mâinii: %1$s. Indiciul o estimase la cam %2$d%%.</string>
 </resources>

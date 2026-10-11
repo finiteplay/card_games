@@ -259,6 +259,31 @@ Blackjack's, extended by what a poker hint has to say (`DESIGN.md` "Hint"):
 - It stays until you act or the street changes; pressing Hint again hides it.
 - Each Hint shown is counted (`Statistics`).
 
+### Odds against you
+
+Postflop, under the figures, the hint states what the opponents may already hold, in two small lines in
+amber: `Chance an opponent already has a better hand: 30%` and `Most likely better hands: Flush 7% · Straight 3%`
+(at most two; each at least 2%; only hands better than yours; a full house or better counts as one).
+The estimate samples the live opponents' hands from the same range model as the equity, so a seat
+that kept betting is weighed as strong. Nothing is said before the flop, when nothing shows.
+
+### Hint Review
+
+When a hand ends and the player used a Hint in it, a card in the Hint's place says how the hand
+turned out against what the Hint said, under the title *Looking back at the Hint*, and stays until
+the next hand deals:
+
+- **Followed it and won / lost.** A good decision can lose: `You followed the Hint and lost, which
+  happens: with about 62% you lose 38% of the time. Judge the decision, not the result.`
+- **Folded as advised.** `You folded as the Hint advised and kept your chips for a better spot.`
+- **Went against it** — whether it won, lost or folded: what the Hint suggested and its reason.
+  `Winning against advice is luck, not a plan.`
+- **Lost at showdown to a hand the Hint warned about:** `You lost to Flush. The Hint had put that at
+  about 7%.`
+
+Nothing is said for a split pot, or for a fold that was not the hinted decision. The review is
+about the player's last hinted decision in the hand (`HandReview`).
+
 ## Showdown and Results
 
 - **Showdown.** Every live opponent's cards turn face up, one seat at a time clockwise from the last

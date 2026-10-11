@@ -28,4 +28,17 @@
     <string name="hint_reason_fold_bad_price">Niet genoeg om te callen: de prijs vraagt %2$d%% en jij hebt ongeveer %1$d%%.</string>
     <string name="hint_reason_free_card">Checken is gratis en je hand is zwak: pak de volgende kaart zonder kosten.</string>
     <string name="hint_reason_pot_control">Een middelmatige hand: check om de pot klein te houden en de volgende kaart te zien.</string>
+
+    <!-- Hint threat and review strings. %N$d are numbers, %N$s are texts (hand names, advice, reason). -->
+    <string name="hint_threat_beat">Kans dat een tegenstander al een betere hand heeft: %1$d%%</string>
+    <string name="hint_threat_list">Meest waarschijnlijke betere handen: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Terugblik op de hint</string>
+    <string name="review_followed_won">Je volgde de hint en won: je had ongeveer %1$d%% kans om te winnen.</string>
+    <string name="review_followed_lost">Je volgde de hint en verloor, dat gebeurt: met ongeveer %1$d%% verlies je %2$d%% van de tijd. Beoordeel de beslissing, niet de uitkomst.</string>
+    <string name="review_followed_fold">Je foldde zoals de hint adviseerde en hield je fiches voor een betere spot.</string>
+    <string name="review_ignored_won">Je won, maar de hint stelde voor: %1$s. De reden: %2$s Winnen tegen het advies in is geluk, geen plan.</string>
+    <string name="review_ignored_lost">De hint stelde voor: %1$s, maar je koos anders en verloor. De reden: %2$s</string>
+    <string name="review_ignored_fold">Je foldde, maar de hint stelde voor: %1$s. De reden: %2$s</string>
+    <string name="review_beaten_by">Je verloor van %1$s. De hint had dat op ongeveer %2$d%% geschat.</string>
 </resources>

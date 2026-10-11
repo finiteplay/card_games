@@ -227,16 +227,18 @@ internal fun HintNotice(hint: HintShown, modifier: Modifier = Modifier) {
     val odds = Math.round(hint.potOdds * 100).toInt()
     val figures = if (hint.nothingToCall) stringResource(R.string.hint_notice_free, equity) else stringResource(R.string.hint_notice, equity, odds)
     val reason = hintReasonText(hint.reason, equity, odds, hint.outs, hint.stackBb)
-    val spoken = reason + " " + if (hint.nothingToCall) stringResource(R.string.hint_notice_free_desc, equity) else stringResource(R.string.hint_notice_desc, equity, odds)
+    val threats = hint.threats?.let { threatLines(it) }.orEmpty()
+    val spoken = reason + " " + (if (hint.nothingToCall) stringResource(R.string.hint_notice_free_desc, equity) else stringResource(R.string.hint_notice_desc, equity, odds)) +
+        threats.joinToString(" ", prefix = " ")
     Surface(
         shape = RoundedCornerShape(16.dp),
         color = Color.Black.copy(alpha = 0.72f),
         modifier = modifier.padding(horizontal = 12.dp).testTag("hint_notice").semantics(mergeDescendants = true) { contentDescription = spoken },
     ) {
-        Column(modifier = Modifier.padding(horizontal = 14.dp, vertical = 8.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
                 text = reason,
-                style = MaterialTheme.typography.bodyMedium,
+                style = MaterialTheme.typography.bodySmall,
                 fontWeight = FontWeight.SemiBold,
                 color = Color.White,
                 textAlign = TextAlign.Center,
@@ -244,11 +246,57 @@ internal fun HintNotice(hint: HintShown, modifier: Modifier = Modifier) {
             )
             Text(
                 text = figures,
-                style = MaterialTheme.typography.labelMedium,
+                style = MaterialTheme.typography.labelSmall,
                 color = Color.White.copy(alpha = 0.7f),
                 textAlign = TextAlign.Center,
-                modifier = Modifier.padding(top = 2.dp),
+                modifier = Modifier.padding(top = 1.dp),
             )
+            for (line in threats) {
+                Text(
+                    text = line,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = Color(0xFFFFCC80),
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(top = 1.dp).testTag("hint_threat"),
+                )
+            }
+        }
+    }
+}
+
+/**
+ * The look back at a hand played after a Hint (`UI_SPEC.md` "Hint Review"): drawn where the hint was,
+ * until the next hand deals. It separates the decision from the result: a good decision can lose.
+ */
+@Composable
+internal fun HandReviewNotice(review: HandReview, modifier: Modifier = Modifier) {
+    val lines = reviewLines(review)
+    val title = stringResource(R.string.review_title)
+    Surface(
+        shape = RoundedCornerShape(16.dp),
+        color = Color.Black.copy(alpha = 0.78f),
+        border = BorderStroke(1.dp, Color(0xFFFFD54F).copy(alpha = 0.6f)),
+        modifier = modifier.padding(horizontal = 12.dp).testTag("hand_review").semantics(mergeDescendants = true) {
+            contentDescription = title + ". " + lines.joinToString(" ")
+        },
+    ) {
+        Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.labelSmall,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFFFFD54F),
+            )
+            for ((i, line) in lines.withIndex()) {
+                Text(
+                    text = line,
+                    style = if (i == 0) MaterialTheme.typography.bodySmall else MaterialTheme.typography.labelSmall,
+                    fontWeight = if (i == 0) FontWeight.SemiBold else FontWeight.Normal,
+                    color = Color.White.copy(alpha = if (i == 0) 1f else 0.8f),
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(top = 1.dp).testTag("review_line_$i"),
+                )
+            }
         }
     }
 }

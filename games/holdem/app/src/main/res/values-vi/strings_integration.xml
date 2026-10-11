@@ -27,4 +27,24 @@
     <string name="hint_reason_fold_bad_price">Chưa đủ để theo: giá cần %2$d%% mà bạn chỉ có khoảng %1$d%%.</string>
     <string name="hint_reason_free_card">Check là miễn phí và bài bạn yếu: xem lá tiếp theo không mất gì.</string>
     <string name="hint_reason_pot_control">Bài trung bình: check để giữ pot nhỏ và xem lá tiếp theo.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Khả năng đối thủ đã có bài mạnh hơn: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">Các bài mạnh hơn có khả năng nhất: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Nhìn lại Gợi ý</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Bạn làm theo Gợi ý và thắng: bạn có khoảng %1$d%% khả năng thắng.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Bạn làm theo Gợi ý và thua, chuyện này vẫn xảy ra: với khoảng %1$d%% thì bạn thua %2$d%% số lần. Hãy đánh giá quyết định, đừng đánh giá kết quả.</string>
+    <string name="review_followed_fold">Bạn bỏ bài đúng như Gợi ý và giữ chip cho tình huống tốt hơn.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Bạn thắng, nhưng Gợi ý đề xuất %1$s. Lý do: %2$s Thắng khi đi ngược lời khuyên là may mắn, không phải kế hoạch.</string>
+    <string name="review_ignored_lost">Gợi ý đề xuất %1$s, nhưng bạn chọn khác và thua. Lý do: %2$s</string>
+    <string name="review_ignored_fold">Bạn bỏ bài, nhưng Gợi ý đề xuất %1$s. Lý do: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Bạn thua %1$s. Gợi ý đã ước tính khả năng đó khoảng %2$d%%.</string>
 </resources>

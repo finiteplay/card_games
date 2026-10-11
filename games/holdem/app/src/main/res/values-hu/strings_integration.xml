@@ -28,4 +28,24 @@
     <string name="hint_reason_fold_bad_price">Nem elég a megadáshoz: az ár %2$d%%-ot kíván, neked pedig kb. %1$d%% van.</string>
     <string name="hint_reason_free_card">A passz (check) ingyenes, a kezed pedig gyenge: nézd meg a következő lapot ingyen.</string>
     <string name="hint_reason_pot_control">Közepes kéz: passzolj (check), hogy a pot kicsi maradjon, és lásd a következő lapot.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Esély, hogy egy ellenfélnek már jobb keze van: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. Flush 7% · Straight 3% -->
+    <string name="hint_threat_list">Legvalószínűbb jobb kezek: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Visszatekintés a tippre</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Követted a tippet, és nyertél: kb. %1$d%% esélyed volt a nyerésre.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Követted a tippet, és vesztettél, ez megesik: kb. %1$d%%-kal az esetek %2$d%%-ában veszítesz. A döntést ítéld meg, ne az eredményt.</string>
+    <string name="review_followed_fold">Eldobtad a lapjaidat, ahogy a tipp javasolta, és megtartottad a zsetonjaidat egy jobb helyzetre.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Nyertél, de a tipp ezt javasolta: %1$s. Az indok: %2$s A tanács ellenére nyerni szerencse, nem terv.</string>
+    <string name="review_ignored_lost">A tipp ezt javasolta: %1$s, de te máshogy döntöttél, és vesztettél. Az indok: %2$s</string>
+    <string name="review_ignored_fold">Eldobtad a lapjaidat, de a tipp ezt javasolta: %1$s. Az indok: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Ellene vesztettél: %1$s. A tipp ezt kb. %2$d%%-ra becsülte.</string>
 </resources>

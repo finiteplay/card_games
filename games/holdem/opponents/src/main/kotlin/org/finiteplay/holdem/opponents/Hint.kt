@@ -69,7 +69,8 @@ enum class HintReason {
  * average against the hands the actions so far make likely), the [potOdds] (what a call costs against
  * what the pot would then hold, 0 when nothing is owed), and the [suggested] action, which is always
  * legal for the view. [reason] is the lesson of the spot; [outs] counts the cards that complete a
- * flush or straight draw (0 off the flop and turn) and [stackBb] is the effective stack in big blinds.
+ * flush or straight draw (0 off the flop and turn), [stackBb] is the effective stack in big blinds,
+ * and [threats] what the opponents may already hold against the player (null before the flop).
  */
 data class HintResult(
     val equity: Double,
@@ -78,6 +79,7 @@ data class HintResult(
     val reason: HintReason = HintReason.POT_CONTROL,
     val outs: Int = 0,
     val stackBb: Int = 0,
+    val threats: Threats? = null,
 )
 
 /**
@@ -104,7 +106,8 @@ fun hint(view: SeatView): HintResult {
     val outs = if (view.street == Street.PREFLOP) 0 else drawOuts(view.holeCards[0].id, view.holeCards[1].id, board, board.size)
     val action = if (view.street == Street.PREFLOP) decision.action else coach(view, legal, decision.action, equity, potOdds)
     val reason = if (view.street == Street.PREFLOP) preflopReason(view, sit, action, stackBb) else postflopReason(view, action, equity, potOdds, outs)
-    return HintResult(equity, potOdds, action, reason, outs, stackBb)
+    val threats = threatsOf(sit, Threats.SAMPLES, SplitMix64(mix(seed, 0x7448L)))
+    return HintResult(equity, potOdds, action, reason, outs, stackBb, threats)
 }
 
 /** Equity above the price by this much makes a call profitable enough that folding would be a mistake. */

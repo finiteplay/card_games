@@ -28,6 +28,27 @@
     <string name="hint_reason_free_card">Checking is free and your hand is weak: take the next card at no cost.</string>
     <string name="hint_reason_pot_control">A middling hand: check to keep the pot small and see the next card.</string>
 
+    <!-- What the opponents may already hold, under the hint's figures (UI_SPEC.md "Hint Presentation"). %1$d = percent. -->
+    <string name="hint_threat_beat">Chance an opponent already has a better hand: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">Most likely better hands: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+
+    <!-- Looking back at a hand played after a Hint (UI_SPEC.md "Hint Review"). -->
+    <string name="review_title">Looking back at the Hint</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">You followed the Hint and won: you were about %1$d%% to win.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">You followed the Hint and lost, which happens: with about %1$d%% you lose %2$d%% of the time. Judge the decision, not the result.</string>
+    <string name="review_followed_fold">You folded as the Hint advised and kept your chips for a better spot.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">You won, but the Hint suggested %1$s. Its reason: %2$s Winning against advice is luck, not a plan.</string>
+    <string name="review_ignored_lost">The Hint suggested %1$s, but you chose differently and lost. Its reason: %2$s</string>
+    <string name="review_ignored_fold">You folded, but the Hint suggested %1$s. Its reason: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">You lost to %1$s. The Hint had put that at about %2$d%%.</string>
+
     <!-- Shown once when a saved hand could not be read (UI_SPEC.md "Screens and States"). -->
     <string name="recovery_notice">Your saved hand couldn\'t be opened, so it was dealt again from the start. No chips were lost.</string>
 </resources>

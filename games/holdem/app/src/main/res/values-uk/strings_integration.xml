@@ -26,4 +26,23 @@
     <string name="hint_reason_fold_bad_price">Для колу замало: ціна потребує %2$d%%, а у вас приблизно %1$d%%.</string>
     <string name="hint_reason_free_card">Чек безкоштовний, а рука слабка: візьміть наступну карту без витрат.</string>
     <string name="hint_reason_pot_control">Середня рука: чекайте, щоб банк лишився малим, і побачте наступну карту.</string>
+    <!-- What the opponents may already hold, under the hint figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Імовірність, що в суперника вже краща комбінація: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">Найімовірніші кращі комбінації: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Погляд назад на підказку</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Ви послухали підказку й виграли: ваші шанси на перемогу були близько %1$d%%.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Ви послухали підказку й програли, таке буває: маючи близько %1$d%%, ви програєте в %2$d%% випадків. Оцінюйте рішення, а не результат.</string>
+    <string name="review_followed_fold">Ви зробили фолд, як радила підказка, і зберегли фішки для кращої ситуації.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Ви виграли, але підказка радила: %1$s. Її причина: %2$s Перемога всупереч пораді це везіння, а не план.</string>
+    <string name="review_ignored_lost">Підказка радила: %1$s, але ви вчинили інакше й програли. Її причина: %2$s</string>
+    <string name="review_ignored_fold">Ви зробили фолд, але підказка радила: %1$s. Її причина: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Ви програли: %1$s. Підказка оцінювала це приблизно в %2$d%%.</string>
 </resources>

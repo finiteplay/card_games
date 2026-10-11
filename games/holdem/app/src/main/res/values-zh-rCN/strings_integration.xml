@@ -27,4 +27,24 @@
     <string name="hint_reason_fold_bad_price">不够跟注：价格需要 %2$d%%，而你只有约 %1$d%%。</string>
     <string name="hint_reason_free_card">过牌免费，而你的牌很弱：免费看下一张牌。</string>
     <string name="hint_reason_pot_control">中等牌力：过牌，把底池保持在较小规模并看下一张牌。</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">对手已经拿到更好牌的概率：%1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">最可能的更好牌型：%1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">回顾提示</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">你照提示做并赢了：你当时约有 %1$d%% 的胜率。</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">你照提示做却输了，这是正常的：约 %1$d%% 的胜率，有 %2$d%% 的几率会输。要评判决策，而不是结果。</string>
+    <string name="review_followed_fold">你按提示弃牌，把筹码留给了更好的机会。</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">你赢了，但提示建议的是%1$s。理由：%2$s 违背建议而赢是运气，不是计划。</string>
+    <string name="review_ignored_lost">提示建议的是%1$s，但你选了别的并输了。理由：%2$s</string>
+    <string name="review_ignored_fold">你弃牌了，但提示建议的是%1$s。理由：%2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">你输给了%1$s。提示当时估计这种可能约为 %2$d%%。</string>
 </resources>

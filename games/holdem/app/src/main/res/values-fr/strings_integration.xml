@@ -27,4 +27,17 @@
     <string name="hint_reason_fold_bad_price">Pas assez pour suivre : le prix demande %2$d%% et vous avez environ %1$d%%.</string>
     <string name="hint_reason_free_card">Checker est gratuit et votre main est faible : prenez la carte suivante sans frais.</string>
     <string name="hint_reason_pot_control">Une main moyenne : checkez pour garder un petit pot et voir la carte suivante.</string>
+
+    <!-- Hint threat and review strings. %N$d are numbers, %N$s are texts (hand names, advice, reason). -->
+    <string name="hint_threat_beat">Chance qu\'un adversaire ait déjà une meilleure main : %1$d%%</string>
+    <string name="hint_threat_list">Meilleures mains les plus probables : %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Retour sur l\'indice</string>
+    <string name="review_followed_won">Vous avez suivi l\'indice et gagné : vous aviez environ %1$d%% de chances de gagner.</string>
+    <string name="review_followed_lost">Vous avez suivi l\'indice et perdu, cela arrive : avec environ %1$d%%, vous perdez %2$d%% du temps. Jugez la décision, pas le résultat.</string>
+    <string name="review_followed_fold">Vous vous êtes couché comme l\'indice le conseillait et avez gardé vos jetons pour une meilleure occasion.</string>
+    <string name="review_ignored_won">Vous avez gagné, mais l\'indice suggérait : %1$s. Sa raison : %2$s Gagner contre le conseil, c\'est de la chance, pas un plan.</string>
+    <string name="review_ignored_lost">L\'indice suggérait : %1$s, mais vous avez choisi autre chose et perdu. Sa raison : %2$s</string>
+    <string name="review_ignored_fold">Vous vous êtes couché, mais l\'indice suggérait : %1$s. Sa raison : %2$s</string>
+    <string name="review_beaten_by">Vous avez perdu face à %1$s. L\'indice l\'avait estimé à environ %2$d%%.</string>
 </resources>

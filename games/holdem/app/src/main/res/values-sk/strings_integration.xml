@@ -25,4 +25,17 @@
     <string name="hint_reason_fold_bad_price">Na dorovnanie to nestačí: cena vyžaduje %2$d%% a ty máš asi %1$d%%.</string>
     <string name="hint_reason_free_card">Check je zadarmo a ruka je slabá: vezmi si ďalšiu kartu bez nákladov.</string>
     <string name="hint_reason_pot_control">Priemerná ruka: urob check, aby pot zostal malý, a pozri si ďalšiu kartu.</string>
+
+    <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
+    <string name="hint_threat_beat">Šanca, že súper už má lepšiu ruku: %1$d%%</string>
+    <string name="hint_threat_list">Najpravdepodobnejšie lepšie ruky: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Spätný pohľad na radu</string>
+    <string name="review_followed_won">Riadil si sa radou a vyhral si: mal si asi %1$d%% šancu na výhru.</string>
+    <string name="review_followed_lost">Riadil si sa radou a prehral si, čo sa stáva: s asi %1$d%% prehráš v %2$d%% prípadov. Posudzuj rozhodnutie, nie výsledok.</string>
+    <string name="review_followed_fold">Zahodil si, ako rada odporúčala, a ušetril si žetóny na lepšiu príležitosť.</string>
+    <string name="review_ignored_won">Vyhral si, ale rada navrhovala: %1$s. Dôvod: %2$s Výhra proti rade je šťastie, nie plán.</string>
+    <string name="review_ignored_lost">Rada navrhovala: %1$s, ale rozhodol si sa inak a prehral si. Dôvod: %2$s</string>
+    <string name="review_ignored_fold">Zahodil si, ale rada navrhovala: %1$s. Dôvod: %2$s</string>
+    <string name="review_beaten_by">Prehral si s kombináciou: %1$s. Rada ju odhadla asi na %2$d%%.</string>
 </resources>

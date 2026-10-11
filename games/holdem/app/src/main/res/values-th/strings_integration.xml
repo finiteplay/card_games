@@ -27,4 +27,24 @@
     <string name="hint_reason_fold_bad_price">ยังไม่พอจะคอล: ราคาต้องการ %2$d%% แต่คุณมีประมาณ %1$d%%</string>
     <string name="hint_reason_free_card">เช็คฟรีและมือคุณอ่อน: ดูไพ่ใบถัดไปโดยไม่เสียอะไร</string>
     <string name="hint_reason_pot_control">มือกลาง ๆ: เช็คเพื่อคุมพอตให้เล็กและดูไพ่ใบถัดไป</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">โอกาสที่คู่ต่อสู้มีมือที่ดีกว่าอยู่แล้ว: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">มือที่ดีกว่าและน่าจะเป็นไปได้มากที่สุด: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">ย้อนดูคำแนะนำ</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">คุณทำตามคำแนะนำและชนะ: คุณมีโอกาสชนะประมาณ %1$d%%</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">คุณทำตามคำแนะนำแล้วแพ้ ซึ่งเกิดขึ้นได้: เมื่อมีโอกาสประมาณ %1$d%% คุณจะแพ้ %2$d%% ของครั้ง ให้ตัดสินที่การตัดสินใจ ไม่ใช่ผลลัพธ์</string>
+    <string name="review_followed_fold">คุณโฟลด์ตามที่คำแนะนำบอก และเก็บชิปไว้สำหรับจังหวะที่ดีกว่า</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">คุณชนะ แต่คำแนะนำบอกให้ %1$s เหตุผล: %2$s การชนะทั้งที่ฝืนคำแนะนำคือโชค ไม่ใช่แผน</string>
+    <string name="review_ignored_lost">คำแนะนำบอกให้ %1$s แต่คุณเลือกอย่างอื่นและแพ้ เหตุผล: %2$s</string>
+    <string name="review_ignored_fold">คุณโฟลด์ แต่คำแนะนำบอกให้ %1$s เหตุผล: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">คุณแพ้ให้กับ %1$s คำแนะนำประเมินไว้ว่าประมาณ %2$d%%</string>
 </resources>

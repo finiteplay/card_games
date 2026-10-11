@@ -27,4 +27,17 @@
     <string name="hint_reason_fold_bad_price">Não é o bastante para pagar: o preço exige %2$d%% e você tem cerca de %1$d%%.</string>
     <string name="hint_reason_free_card">O check é grátis e sua mão é fraca: pegue a próxima carta sem custo.</string>
     <string name="hint_reason_pot_control">Uma mão mediana: dê check para manter o pote pequeno e ver a próxima carta.</string>
+
+    <!-- Hint threat and review strings. %N$d are numbers, %N$s are texts (hand names, advice, reason). -->
+    <string name="hint_threat_beat">Chance de um oponente já ter uma mão melhor: %1$d%%</string>
+    <string name="hint_threat_list">Mãos melhores mais prováveis: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Revendo a dica</string>
+    <string name="review_followed_won">Você seguiu a dica e ganhou: tinha cerca de %1$d%% de chance de ganhar.</string>
+    <string name="review_followed_lost">Você seguiu a dica e perdeu, o que acontece: com cerca de %1$d%%, você perde %2$d%% das vezes. Julgue a decisão, não o resultado.</string>
+    <string name="review_followed_fold">Você deu fold como a dica aconselhou e guardou suas fichas para uma situação melhor.</string>
+    <string name="review_ignored_won">Você ganhou, mas a dica sugeria: %1$s. O motivo: %2$s Ganhar contra o conselho é sorte, não um plano.</string>
+    <string name="review_ignored_lost">A dica sugeria: %1$s, mas você escolheu outra coisa e perdeu. O motivo: %2$s</string>
+    <string name="review_ignored_fold">Você deu fold, mas a dica sugeria: %1$s. O motivo: %2$s</string>
+    <string name="review_beaten_by">Você perdeu para %1$s. A dica tinha estimado isso em cerca de %2$d%%.</string>
 </resources>

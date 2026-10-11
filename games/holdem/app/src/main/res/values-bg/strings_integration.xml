@@ -28,4 +28,24 @@
     <string name="hint_reason_fold_bad_price">Не стига за кол: цената изисква %2$d%%, а ти имаш около %1$d%%.</string>
     <string name="hint_reason_free_card">Чекът е безплатен, а ръката ти е слаба: виж следващата карта безплатно.</string>
     <string name="hint_reason_pot_control">Средна ръка: направи чек, за да държиш пота малък и да видиш следващата карта.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Шанс противник вече да има по-добра ръка: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. Flush 7% · Straight 3% -->
+    <string name="hint_threat_list">Най-вероятни по-добри ръце: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Поглед назад към подсказката</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Последва подсказката и спечели: имаше около %1$d%% шанс за победа.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Последва подсказката и загуби, случва се: с около %1$d%% губиш в %2$d%% от случаите. Оценявай решението, не резултата.</string>
+    <string name="review_followed_fold">Даде фолд, както съветваше подсказката, и запази чиповете си за по-добър момент.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Спечели, но подсказката предлагаше: %1$s. Причината: %2$s Победата срещу съвета е късмет, не план.</string>
+    <string name="review_ignored_lost">Подсказката предлагаше: %1$s, но ти избра друго и загуби. Причината: %2$s</string>
+    <string name="review_ignored_fold">Даде фолд, но подсказката предлагаше: %1$s. Причината: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Загуби от: %1$s. Подсказката го оценяваше на около %2$d%%.</string>
 </resources>

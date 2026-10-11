@@ -28,4 +28,24 @@
     <string name="hint_reason_fold_bad_price">Call için yetmez: fiyat %%%2$d gerektiriyor, sende yaklaşık %%%1$d var.</string>
     <string name="hint_reason_free_card">Check bedava ve elin zayıf: sıradaki kartı ücretsiz gör.</string>
     <string name="hint_reason_pot_control">Orta kalitede bir el: pot\'u küçük tutmak ve sıradaki kartı görmek için check yap.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Bir rakibin zaten daha iyi bir eli olma ihtimali: %%%1$d</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. Flush 7% · Straight 3% -->
+    <string name="hint_threat_list">En olası daha iyi eller: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %%%2$d</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">İpucuna geri bakış</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">İpucuna uydun ve kazandın: kazanma şansın yaklaşık %%%1$d idi.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">İpucuna uydun ve kaybettin, bu olur: yaklaşık %%%1$d ile zamanın %%%2$d\'inde kaybedersin. Sonuca değil, karara bak.</string>
+    <string name="review_followed_fold">İpucunun önerdiği gibi fold ettin ve fişlerini daha iyi bir an için sakladın.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Kazandın ama İpucu şunu önermişti: %1$s. Gerekçesi: %2$s Tavsiyeye karşı kazanmak şanstır, plan değil.</string>
+    <string name="review_ignored_lost">İpucu %1$s önermişti, ama sen farklı seçip kaybettin. Gerekçesi: %2$s</string>
+    <string name="review_ignored_fold">Fold ettin, ama İpucu şunu önermişti: %1$s. Gerekçesi: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">%1$s karşısında kaybettin. İpucu bunu yaklaşık %%%2$d olarak görmüştü.</string>
 </resources>

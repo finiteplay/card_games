@@ -27,4 +27,23 @@
     <string name="hint_reason_fold_bad_price">Ikke nok til at calle: prisen kræver %2$d%%, og du har omkring %1$d%%.</string>
     <string name="hint_reason_free_card">Check er gratis, og din hånd er svag: se næste kort uden omkostning.</string>
     <string name="hint_reason_pot_control">En middelhånd: check for at holde potten lille og se næste kort.</string>
+    <!-- What the opponents may already hold, under the hint figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Chance for at en modspiller allerede har en bedre hånd: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">Mest sandsynlige bedre hænder: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Tilbageblik på Hint</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Du fulgte Hint og vandt: du havde omkring %1$d%% chance for at vinde.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Du fulgte Hint og tabte, det sker: med omkring %1$d%% taber du %2$d%% af gangene. Vurder beslutningen, ikke resultatet.</string>
+    <string name="review_followed_fold">Du foldede, som Hint rådede, og beholdt dine jetoner til en bedre situation.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Du vandt, men Hint foreslog: %1$s. Begrundelsen: %2$s At vinde mod rådet er held, ikke en plan.</string>
+    <string name="review_ignored_lost">Hint foreslog: %1$s, men du valgte anderledes og tabte. Begrundelsen: %2$s</string>
+    <string name="review_ignored_fold">Du foldede, men Hint foreslog: %1$s. Begrundelsen: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Du tabte til %1$s. Hint havde vurderet det til omkring %2$d%%.</string>
 </resources>

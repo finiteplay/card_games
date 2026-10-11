@@ -27,4 +27,23 @@
     <string name="hint_reason_fold_bad_price">Ei tarpeeksi maksamiseen: hinta vaatii %2$d%%, ja sinulla on noin %1$d%%.</string>
     <string name="hint_reason_free_card">Check on ilmainen ja kätesi on heikko: ota seuraava kortti ilmaiseksi.</string>
     <string name="hint_reason_pot_control">Keskinkertainen käsi: check pitää potin pienenä ja näet seuraavan kortin.</string>
+    <!-- What the opponents may already hold, under the hint figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Todennäköisyys, että vastustajalla on jo parempi käsi: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">Todennäköisimmät paremmat kädet: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Katsaus vihjeeseen</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Noudatit vihjettä ja voitit: voittomahdollisuutesi oli noin %1$d%%.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Noudatit vihjettä ja hävisit, niin käy: noin %1$d%% todennäköisyydellä häviät %2$d%% kerroista. Arvioi päätöstä, älä tulosta.</string>
+    <string name="review_followed_fold">Foldasit vihjeen mukaan ja säästit pelimerkkisi parempaan tilanteeseen.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Voitit, mutta vihje ehdotti: %1$s. Sen perustelu: %2$s Neuvoa vastaan voittaminen on tuuria, ei suunnitelma.</string>
+    <string name="review_ignored_lost">Vihje ehdotti: %1$s, mutta valitsit toisin ja hävisit. Sen perustelu: %2$s</string>
+    <string name="review_ignored_fold">Foldasit, mutta vihje ehdotti: %1$s. Sen perustelu: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Hävisit kädelle %1$s. Vihje oli arvioinut sen noin %2$d%% todennäköiseksi.</string>
 </resources>

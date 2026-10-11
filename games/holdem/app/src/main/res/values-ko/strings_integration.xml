@@ -27,4 +27,24 @@
     <string name="hint_reason_fold_bad_price">콜하기엔 부족합니다. 필요한 확률은 %2$d%%인데 내 확률은 약 %1$d%%입니다.</string>
     <string name="hint_reason_free_card">체크는 무료이고 핸드는 약합니다. 비용 없이 다음 카드를 보세요.</string>
     <string name="hint_reason_pot_control">애매한 핸드입니다. 체크해서 팟을 작게 유지하고 다음 카드를 보세요.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">상대가 이미 더 좋은 핸드를 가졌을 확률: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">가능성이 높은 더 좋은 핸드: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">힌트 돌아보기</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">힌트를 따라 이겼습니다. 승률은 약 %1$d%%였습니다.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">힌트를 따랐지만 졌습니다. 그럴 수 있습니다. 약 %1$d%%라면 %2$d%%는 집니다. 결과가 아니라 결정을 평가하세요.</string>
+    <string name="review_followed_fold">힌트대로 폴드해서 더 좋은 기회를 위해 칩을 지켰습니다.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">이겼지만 힌트는 %1$s을(를) 권했습니다. 이유: %2$s 조언을 거스르고 이기는 것은 운이지 계획이 아닙니다.</string>
+    <string name="review_ignored_lost">힌트는 %1$s을(를) 권했지만 다른 선택을 해서 졌습니다. 이유: %2$s</string>
+    <string name="review_ignored_fold">폴드했지만 힌트는 %1$s을(를) 권했습니다. 이유: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">%1$s에 졌습니다. 힌트는 그 확률을 약 %2$d%%로 봤습니다.</string>
 </resources>

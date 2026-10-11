@@ -25,4 +25,17 @@
     <string name="hint_reason_fold_bad_price">कॉल के लिए काफ़ी नहीं: कीमत को %2$d%% चाहिए और आपके पास लगभग %1$d%% है।</string>
     <string name="hint_reason_free_card">चेक मुफ़्त है और आपका हाथ कमज़ोर है: बिना खर्च के अगला कार्ड लें।</string>
     <string name="hint_reason_pot_control">औसत हाथ: पॉट छोटा रखने के लिए चेक करें और अगला कार्ड देखें।</string>
+
+    <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
+    <string name="hint_threat_beat">किसी विरोधी के पास पहले से बेहतर हाथ होने की संभावना: %1$d%%</string>
+    <string name="hint_threat_list">सबसे संभावित बेहतर हाथ: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">हिंट पर एक नज़र</string>
+    <string name="review_followed_won">आपने हिंट माना और जीत गए: जीतने की आपकी संभावना लगभग %1$d%% थी।</string>
+    <string name="review_followed_lost">आपने हिंट माना और हार गए, ऐसा होता है: लगभग %1$d%% पर आप %2$d%% बार हारते हैं। फ़ैसले को परखें, नतीजे को नहीं।</string>
+    <string name="review_followed_fold">आपने हिंट के कहे अनुसार फ़ोल्ड किया और बेहतर मौके के लिए चिप्स बचा लिए।</string>
+    <string name="review_ignored_won">आप जीते, पर हिंट ने सुझाया था: %1$s। उसकी वजह: %2$s सलाह के खिलाफ़ जीतना किस्मत है, योजना नहीं।</string>
+    <string name="review_ignored_lost">हिंट ने सुझाया था: %1$s, पर आपने कुछ और चुना और हार गए। उसकी वजह: %2$s</string>
+    <string name="review_ignored_fold">आपने फ़ोल्ड किया, पर हिंट ने सुझाया था: %1$s। उसकी वजह: %2$s</string>
+    <string name="review_beaten_by">आप %1$s से हार गए। हिंट ने इसकी संभावना लगभग %2$d%% बताई थी।</string>
 </resources>

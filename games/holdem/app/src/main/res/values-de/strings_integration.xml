@@ -27,4 +27,17 @@
     <string name="hint_reason_fold_bad_price">Zu wenig für einen Call: Der Preis verlangt %2$d%% und du hast etwa %1$d%%.</string>
     <string name="hint_reason_free_card">Check ist kostenlos und deine Hand ist schwach: Nimm die nächste Karte gratis mit.</string>
     <string name="hint_reason_pot_control">Eine mittelmäßige Hand: Check, um den Pot klein zu halten und die nächste Karte zu sehen.</string>
+
+    <!-- Hint threat and review strings. %N$d are numbers, %N$s are texts (hand names, advice, reason). -->
+    <string name="hint_threat_beat">Chance, dass ein Gegner schon eine bessere Hand hat: %1$d%%</string>
+    <string name="hint_threat_list">Wahrscheinlichste bessere Hände: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Rückblick auf den Hinweis</string>
+    <string name="review_followed_won">Du bist dem Hinweis gefolgt und hast gewonnen: Du hattest etwa %1$d%% Gewinnchance.</string>
+    <string name="review_followed_lost">Du bist dem Hinweis gefolgt und hast verloren, das passiert: Mit etwa %1$d%% verlierst du in %2$d%% der Fälle. Beurteile die Entscheidung, nicht das Ergebnis.</string>
+    <string name="review_followed_fold">Du hast wie vom Hinweis geraten gefoldet und deine Chips für einen besseren Spot behalten.</string>
+    <string name="review_ignored_won">Du hast gewonnen, aber der Hinweis empfahl: %1$s. Seine Begründung: %2$s Gegen den Rat zu gewinnen ist Glück, kein Plan.</string>
+    <string name="review_ignored_lost">Der Hinweis empfahl: %1$s, aber du hast anders entschieden und verloren. Seine Begründung: %2$s</string>
+    <string name="review_ignored_fold">Du hast gefoldet, aber der Hinweis empfahl: %1$s. Seine Begründung: %2$s</string>
+    <string name="review_beaten_by">Du hast gegen %1$s verloren. Der Hinweis hatte das auf etwa %2$d%% geschätzt.</string>
 </resources>

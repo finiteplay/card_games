@@ -9,6 +9,7 @@ import org.finiteplay.core.ui.card.rankSpokenLabel
 import org.finiteplay.core.ui.card.suitSpokenLabel
 import org.finiteplay.holdem.R
 import org.finiteplay.holdem.opponents.HintReason
+import org.finiteplay.holdem.opponents.Threats
 import org.finiteplay.holdem.rules.Action
 import org.finiteplay.holdem.rules.HandCategory
 import org.finiteplay.holdem.rules.HistoryEntry
@@ -125,4 +126,63 @@ fun hintReasonText(reason: HintReason, equity: Int, needed: Int, outs: Int, stac
     HintReason.FOLD_BAD_PRICE -> stringResource(R.string.hint_reason_fold_bad_price, equity, needed)
     HintReason.FREE_CARD -> stringResource(R.string.hint_reason_free_card)
     HintReason.POT_CONTROL -> stringResource(R.string.hint_reason_pot_control)
+}
+
+/** A hand category's plain name, the one the Help page's ranking uses. */
+@Composable
+fun categoryNounText(category: HandCategory): String = stringResource(
+    when (category) {
+        HandCategory.HIGH_CARD -> R.string.help_hand_high_card_title
+        HandCategory.PAIR -> R.string.help_hand_pair_title
+        HandCategory.TWO_PAIR -> R.string.help_hand_two_pair_title
+        HandCategory.THREE_OF_A_KIND -> R.string.help_hand_three_title
+        HandCategory.STRAIGHT -> R.string.help_hand_straight_title
+        HandCategory.FLUSH -> R.string.help_hand_flush_title
+        HandCategory.FULL_HOUSE -> R.string.help_hand_full_house_title
+        HandCategory.FOUR_OF_A_KIND -> R.string.help_hand_four_title
+        HandCategory.STRAIGHT_FLUSH -> R.string.help_hand_straight_flush_title
+    },
+)
+
+/** An action in the words a seat's last action uses: `Fold`, `Call`, `Raise 120`. */
+@Composable
+fun adviceText(action: Action): String = when (action) {
+    Action.Fold -> stringResource(R.string.seat_action_fold)
+    Action.Check -> stringResource(R.string.seat_action_check)
+    Action.Call -> stringResource(R.string.seat_action_call)
+    Action.AllIn -> stringResource(R.string.seat_action_all_in)
+    is Action.Bet -> stringResource(R.string.seat_action_bet, action.amount)
+    is Action.Raise -> stringResource(R.string.seat_action_raise, action.total)
+}
+
+/** The hint's lines about what the opponents may hold: the chance one already beats the player, and the likeliest better hands. */
+@Composable
+fun threatLines(threats: Threats): List<String> {
+    val lines = ArrayList<String>(2)
+    lines += stringResource(R.string.hint_threat_beat, Math.round(threats.beatsYou * 100).toInt())
+    if (threats.best.isNotEmpty()) {
+        val items = threats.best.map { (category, p) -> stringResource(R.string.hint_threat_item, categoryNounText(category), Math.round(p * 100).toInt()) }
+        lines += stringResource(R.string.hint_threat_list, items.joinToString(" \u00B7 "))
+    }
+    return lines
+}
+
+/** The look back at a hand: what the Hint said, what the player did, and how it came out (`UI_SPEC.md` "Hint Review"). */
+@Composable
+fun reviewLines(review: HandReview): List<String> {
+    val hint = review.hint
+    val equity = Math.round(hint.equity * 100).toInt()
+    val needed = Math.round(hint.potOdds * 100).toInt()
+    val advice = adviceText(hint.suggested)
+    val reason = hintReasonText(hint.reason, equity, needed, hint.outs, hint.stackBb)
+    val main = when (review.kind) {
+        ReviewKind.FOLLOWED_WON -> stringResource(R.string.review_followed_won, equity)
+        ReviewKind.FOLLOWED_LOST -> stringResource(R.string.review_followed_lost, equity, 100 - equity)
+        ReviewKind.FOLLOWED_FOLD -> stringResource(R.string.review_followed_fold)
+        ReviewKind.IGNORED_WON -> stringResource(R.string.review_ignored_won, advice, reason)
+        ReviewKind.IGNORED_LOST -> stringResource(R.string.review_ignored_lost, advice, reason)
+        ReviewKind.IGNORED_FOLD -> stringResource(R.string.review_ignored_fold, advice, reason)
+    }
+    val beaten = review.beatenBy?.let { cat -> review.beatenPercent?.let { stringResource(R.string.review_beaten_by, categoryNounText(cat), it) } }
+    return listOfNotNull(main, beaten)
 }

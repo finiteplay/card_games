@@ -25,4 +25,17 @@
     <string name="hint_reason_fold_bad_price">Nedovoljno za praćenje: cijena traži %2$d%%, a ti imaš oko %1$d%%.</string>
     <string name="hint_reason_free_card">Čekanje je besplatno, a ruka ti je slaba: uzmi sljedeću kartu bez troška.</string>
     <string name="hint_reason_pot_control">Osrednja ruka: čekaj da pot ostane mali i vidi sljedeću kartu.</string>
+
+    <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
+    <string name="hint_threat_beat">Šansa da protivnik već ima bolju ruku: %1$d%%</string>
+    <string name="hint_threat_list">Najvjerojatnije bolje ruke: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">Osvrt na savjet</string>
+    <string name="review_followed_won">Slijedio si savjet i pobijedio: imao si oko %1$d%% šanse za pobjedu.</string>
+    <string name="review_followed_lost">Slijedio si savjet i izgubio, što se događa: s oko %1$d%% gubiš u %2$d%% slučajeva. Procjenjuj odluku, ne ishod.</string>
+    <string name="review_followed_fold">Odustao si kako je savjet preporučio i sačuvao žetone za bolju priliku.</string>
+    <string name="review_ignored_won">Pobijedio si, ali savjet je predložio: %1$s. Razlog: %2$s Pobjeda protiv savjeta je sreća, a ne plan.</string>
+    <string name="review_ignored_lost">Savjet je predložio: %1$s, ali si odabrao drugačije i izgubio. Razlog: %2$s</string>
+    <string name="review_ignored_fold">Odustao si, ali savjet je predložio: %1$s. Razlog: %2$s</string>
+    <string name="review_beaten_by">Izgubio si od: %1$s. Savjet je to procijenio na oko %2$d%%.</string>
 </resources>

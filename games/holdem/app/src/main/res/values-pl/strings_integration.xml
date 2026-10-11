@@ -27,4 +27,23 @@
     <string name="hint_reason_fold_bad_price">Za mało na wyrównanie: cena wymaga %2$d%%, a ty masz około %1$d%%.</string>
     <string name="hint_reason_free_card">Czekanie jest za darmo, a ręka słaba: zobacz kolejną kartę bez kosztów.</string>
     <string name="hint_reason_pot_control">Przeciętna ręka: czekaj, by pula została mała, i zobacz kolejną kartę.</string>
+    <!-- What the opponents may already hold, under the hint figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Szansa, że przeciwnik ma już lepszą rękę: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. "Flush 7% · Straight 3%" -->
+    <string name="hint_threat_list">Najbardziej prawdopodobne lepsze układy: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Spojrzenie wstecz na podpowiedź</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Zastosowałeś się do podpowiedzi i wygrałeś: miałeś około %1$d%% szans na wygraną.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Zastosowałeś się do podpowiedzi i przegrałeś, tak bywa: przy około %1$d%% przegrywasz w %2$d%% przypadków. Oceniaj decyzję, nie wynik.</string>
+    <string name="review_followed_fold">Spasowałeś zgodnie z podpowiedzią i zachowałeś żetony na lepszą okazję.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Wygrałeś, ale podpowiedź sugerowała: %1$s. Jej powód: %2$s Wygrana wbrew radzie to szczęście, nie plan.</string>
+    <string name="review_ignored_lost">Podpowiedź sugerowała: %1$s, ale wybrałeś inaczej i przegrałeś. Jej powód: %2$s</string>
+    <string name="review_ignored_fold">Spasowałeś, ale podpowiedź sugerowała: %1$s. Jej powód: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Przegrałeś z układem: %1$s. Podpowiedź oceniała to na około %2$d%%.</string>
 </resources>

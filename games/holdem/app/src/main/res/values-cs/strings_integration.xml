@@ -28,4 +28,24 @@
     <string name="hint_reason_fold_bad_price">Na vyrovnání to nestačí: cena vyžaduje %2$d%% a ty máš asi %1$d%%.</string>
     <string name="hint_reason_free_card">Check je zdarma a ruka je slabá: podívej se na další kartu zadarmo.</string>
     <string name="hint_reason_pot_control">Průměrná ruka: dej check, ať udržíš banku malou a uvidíš další kartu.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Šance, že soupeř už má lepší ruku: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. Flush 7% · Straight 3% -->
+    <string name="hint_threat_list">Nejpravděpodobnější lepší ruce: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Ohlédnutí za nápovědou</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Řídil ses nápovědou a vyhrál jsi: měl jsi asi %1$d%% na výhru.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Řídil ses nápovědou a prohrál jsi, to se stává: s asi %1$d%% prohraješ v %2$d%% případů. Posuzuj rozhodnutí, ne výsledek.</string>
+    <string name="review_followed_fold">Zahodil jsi, jak nápověda radila, a šetřil jsi žetony na lepší chvíli.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Vyhrál jsi, ale nápověda navrhovala: %1$s. Důvod: %2$s Výhra proti radě je štěstí, ne plán.</string>
+    <string name="review_ignored_lost">Nápověda navrhovala: %1$s, ale ty ses rozhodl jinak a prohrál jsi. Důvod: %2$s</string>
+    <string name="review_ignored_fold">Zahodil jsi, ale nápověda navrhovala: %1$s. Důvod: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Prohrál jsi s kombinací: %1$s. Nápověda ji odhadovala asi na %2$d%%.</string>
 </resources>

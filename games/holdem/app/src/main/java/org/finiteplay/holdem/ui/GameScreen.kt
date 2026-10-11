@@ -142,6 +142,9 @@ fun GameScreen(
                                 viewModel.hintShown?.let {
                                     HintNotice(it, Modifier.align(Alignment.BottomEnd).widthIn(max = maxWidth * 0.42f).padding(bottom = 4.dp))
                                 }
+                                viewModel.handReview?.let {
+                                    HandReviewNotice(it, Modifier.align(Alignment.BottomEnd).widthIn(max = maxWidth * 0.42f).padding(bottom = 4.dp))
+                                }
                             }
                             Box(modifier = Modifier.width(TableGeometry.SIZING_COLUMN_WIDTH.dp).fillMaxSize()) {
                                 if (sizing != null) {
@@ -154,7 +157,8 @@ fun GameScreen(
                         BoxWithConstraints(modifier = Modifier.weight(1f).fillMaxWidth()) {
                             TableView(table, viewModel.profiles, landscape = false, animate = animate)
                             // The hint sits in the empty band between the two rows of seats, so it hides neither a card nor a seat.
-                            viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.TopCenter).padding(top = maxHeight * 0.165f)) }
+                            viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.TopCenter).padding(top = maxHeight * 0.165f - 14.dp)) }
+                            viewModel.handReview?.let { HandReviewNotice(it, Modifier.align(Alignment.TopCenter).padding(top = maxHeight * 0.165f + 4.dp)) }
                         }
                         Spacer(modifier = Modifier.height(TableGeometry.CONTROLS_GAP.dp))
                         // Always reserved, so the table does not jump when the row appears.

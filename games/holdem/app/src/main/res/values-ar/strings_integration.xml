@@ -25,4 +25,17 @@
     <string name="hint_reason_fold_bad_price">لا يكفي للمجاراة: السعر يتطلب %2$d%% وأنت لديك نحو %1$d%%.</string>
     <string name="hint_reason_free_card">التمرير مجاني ويدك ضعيفة: خذ الورقة التالية دون تكلفة.</string>
     <string name="hint_reason_pot_control">يد متوسطة: مرّر لإبقاء البوت صغيرًا وشاهد الورقة التالية.</string>
+
+    <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
+    <string name="hint_threat_beat">احتمال أن يملك خصم يدًا أفضل بالفعل: %1$d%%</string>
+    <string name="hint_threat_list">أكثر الأيدي الأفضل احتمالًا: %1$s</string>
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <string name="review_title">نظرة إلى الوراء على التلميح</string>
+    <string name="review_followed_won">اتبعت التلميح وفزت: كانت فرصتك في الفوز نحو %1$d%%.</string>
+    <string name="review_followed_lost">اتبعت التلميح وخسرت، وهذا يحدث: بفرصة نحو %1$d%% تخسر في %2$d%% من المرات. قيّم القرار لا النتيجة.</string>
+    <string name="review_followed_fold">انسحبت كما نصح التلميح وحافظت على رقائقك لموقف أفضل.</string>
+    <string name="review_ignored_won">فزت، لكن التلميح اقترح: %1$s. سببه: %2$s الفوز ضد النصيحة حظ وليس خطة.</string>
+    <string name="review_ignored_lost">اقترح التلميح: %1$s، لكنك اخترت غير ذلك وخسرت. سببه: %2$s</string>
+    <string name="review_ignored_fold">انسحبت، لكن التلميح اقترح: %1$s. سببه: %2$s</string>
+    <string name="review_beaten_by">خسرت أمام %1$s. كان التلميح قد قدّر ذلك بنحو %2$d%%.</string>
 </resources>

@@ -28,4 +28,24 @@
     <string name="hint_reason_fold_bad_price">Δεν φτάνει για κολ: η τιμή απαιτεί %2$d%% και εσύ έχεις περίπου %1$d%%.</string>
     <string name="hint_reason_free_card">Το τσεκ είναι δωρεάν και το χέρι σου αδύναμο: δες το επόμενο φύλλο χωρίς κόστος.</string>
     <string name="hint_reason_pot_control">Μέτριο χέρι: κάνε τσεκ για να κρατήσεις το ποτ μικρό και να δεις το επόμενο φύλλο.</string>
+
+    <!-- What the opponents may already hold, under the hint's figures. %1$d = percent. -->
+    <string name="hint_threat_beat">Πιθανότητα να έχει ήδη ένας αντίπαλος καλύτερο χέρι: %1$d%%</string>
+    <!-- %1$s = a list of hand names with their chances, e.g. Flush 7% · Straight 3% -->
+    <string name="hint_threat_list">Πιθανότερα καλύτερα χέρια: %1$s</string>
+    <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
+    <string name="hint_threat_item">%1$s %2$d%%</string>
+    <!-- Looking back at a hand played after a Hint. -->
+    <string name="review_title">Ματιά πίσω στην Υπόδειξη</string>
+    <!-- %1$d = your chance to win at that moment, in percent -->
+    <string name="review_followed_won">Ακολούθησες την Υπόδειξη και κέρδισες: είχες περίπου %1$d%% πιθανότητα νίκης.</string>
+    <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
+    <string name="review_followed_lost">Ακολούθησες την Υπόδειξη και έχασες, συμβαίνει: με περίπου %1$d%% χάνεις το %2$d%% των φορών. Κρίνε την απόφαση, όχι το αποτέλεσμα.</string>
+    <string name="review_followed_fold">Έκανες πάσο όπως συμβούλευε η Υπόδειξη και κράτησες τις μάρκες σου για καλύτερη στιγμή.</string>
+    <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Κέρδισες, αλλά η Υπόδειξη πρότεινε: %1$s. Ο λόγος: %2$s Η νίκη ενάντια στη συμβουλή είναι τύχη, όχι σχέδιο.</string>
+    <string name="review_ignored_lost">Η Υπόδειξη πρότεινε: %1$s, αλλά διάλεξες διαφορετικά και έχασες. Ο λόγος: %2$s</string>
+    <string name="review_ignored_fold">Έκανες πάσο, αλλά η Υπόδειξη πρότεινε: %1$s. Ο λόγος: %2$s</string>
+    <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
+    <string name="review_beaten_by">Έχασες από %1$s. Η Υπόδειξη το είχε υπολογίσει περίπου στο %2$d%%.</string>
 </resources>
