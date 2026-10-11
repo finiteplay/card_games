@@ -11,8 +11,8 @@ class TableGeometryTest {
 
     @Test
     fun `table height is the screen less the status row, sizing row and bar`() {
-        assertEquals(408f, TableGeometry.tableHeight(580f), 0f)
-        assertEquals(336f, TableGeometry.tableHeight(508f), 0f)
+        assertEquals(408f, TableGeometry.tableHeight(596f), 0f)
+        assertEquals(336f, TableGeometry.tableHeight(524f), 0f)
     }
 
     @Test
@@ -37,9 +37,9 @@ class TableGeometryTest {
     }
 
     @Test
-    fun `regular table at 580 dp`() {
+    fun `regular table at 596 dp`() {
         for (screen in widths) {
-            val t = TableGeometry.portrait(screen, TableGeometry.tableHeight(580f))
+            val t = TableGeometry.portrait(screen, TableGeometry.tableHeight(596f))
             assertEquals(Density.Regular, t.density)
             assertEquals(100f, t.seatHeight, 0f)
             assertEquals(40f, t.opponentCardWidth, 0f)
@@ -62,9 +62,9 @@ class TableGeometryTest {
     }
 
     @Test
-    fun `compact table at 508 dp totals 336 with 6 dp gaps`() {
+    fun `compact table at 524 dp totals 336 with 6 dp gaps`() {
         for (screen in widths) {
-            val t = TableGeometry.portrait(screen, TableGeometry.tableHeight(508f))
+            val t = TableGeometry.portrait(screen, TableGeometry.tableHeight(524f))
             assertEquals(Density.Compact, t.density)
             assertEquals(76f, t.seatHeight, 0f)
             assertEquals(22f, t.opponentCardWidth, 0f)

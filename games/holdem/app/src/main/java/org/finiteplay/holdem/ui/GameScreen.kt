@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -123,6 +124,7 @@ fun GameScreen(
                     onStatistics = onStatistics,
                     onLeave = viewModel::requestLeave,
                     onSettings = if (landscape) onSettings else null,
+                    bottomGap = if (landscape) 0.dp else TableGeometry.STATUS_GAP.dp,
                     onHint = if (landscape && table.stage == Stage.YOUR_TURN && viewModel.legal != null && !viewModel.busy) viewModel::requestHint else null,
                 )
                 if (viewModel.recoveryNoticeVisible) RecoveryNotice(onDismiss = viewModel::dismissRecoveryNotice)
@@ -146,6 +148,7 @@ fun GameScreen(
                             TableView(table, viewModel.profiles, landscape = false, animate = animate)
                             viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.BottomCenter).padding(bottom = 4.dp)) }
                         }
+                        Spacer(modifier = Modifier.height(TableGeometry.CONTROLS_GAP.dp))
                         // Always reserved, so the table does not jump when the row appears.
                         Box(modifier = Modifier.fillMaxWidth().height(TableGeometry.SIZING_ROW.dp)) {
                             if (sizing != null) {

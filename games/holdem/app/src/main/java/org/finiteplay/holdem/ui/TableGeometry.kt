@@ -13,6 +13,10 @@ object TableGeometry {
     const val SIDE_MARGIN = 8f
 
     const val STATUS_ROW = 44f
+
+    /** Portrait only: air under the status row before the first seats, and between your cards and the sizing row. */
+    const val STATUS_GAP = 8f
+    const val CONTROLS_GAP = 8f
     const val SIZING_ROW = 52f
     const val ACTION_BAR = 76f
 
@@ -60,7 +64,7 @@ object TableGeometry {
     fun areaWidth(screenWidth: Float): Float = screenWidth - 2 * SIDE_MARGIN
 
     /** Portrait table height: the screen less the status row, the always-reserved sizing row and the bar. */
-    fun tableHeight(screenHeight: Float): Float = screenHeight - STATUS_ROW - SIZING_ROW - ACTION_BAR
+    fun tableHeight(screenHeight: Float): Float = screenHeight - STATUS_ROW - STATUS_GAP - CONTROLS_GAP - SIZING_ROW - ACTION_BAR
 
     /** An opponent seat box's width: `min(112, (area − 16) ÷ 3)`. */
     fun seatWidth(areaWidth: Float): Float = min(MAX_SEAT_WIDTH, (areaWidth - 16f) / 3f)

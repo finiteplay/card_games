@@ -50,6 +50,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.BoardAction
@@ -80,12 +81,13 @@ internal fun StatusRow(
     onLeave: () -> Unit,
     onSettings: (() -> Unit)? = null,
     onHint: (() -> Unit)? = null,
+    bottomGap: Dp = 0.dp,
 ) {
     val level = table.blinds.level
     val next = BlindSchedule.blinds(level + 1)
     val handsLeft = BlindSchedule.handsLeftAtLevel(table.handNumber)
     Row(
-        modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 2.dp, bottom = 2.dp),
+        modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 2.dp, bottom = 2.dp + bottomGap),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Column(modifier = Modifier.weight(1f)) {

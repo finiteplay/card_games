@@ -179,9 +179,9 @@ Every face-up card's corner index is fully visible — Hold'em never fans more t
 there is no fan-step floor.
 
 The **regular** layout needs a table at least 408 dp tall in portrait; below that the **compact**
-layout applies, down to 336 dp. Heights are after the status row (44 dp), the sizing row (52 dp)
+layout applies, down to 336 dp. Heights are after the status row (44 dp, plus 8 dp of air beneath it), the sizing row (52 dp, with 8 dp above it)
 and the bar (76 dp), with the sizing row always reserved so the table does not jump when it appears:
-a 320 × 580 dp window gets the regular table, and a 320 × 508 dp window the compact one.
+a 320 × 596 dp window gets the regular table, and a 320 × 524 dp window the compact one.
 
 | | Regular | Compact |
 |---|---|---|
