@@ -122,19 +122,28 @@ internal fun ResultCelebration(
     animate: Boolean,
     landscape: Boolean,
     modifier: Modifier = Modifier,
+    showMark: Boolean = true,
 ) {
     Box(modifier = modifier.fillMaxSize()) {
         if (animate && (kind == ResultKind.BUST || kind == ResultKind.LOSE)) LossWash()
         if (animate && (kind == ResultKind.WIN || kind == ResultKind.BLACKJACK)) ConfettiBurst(seed, if (kind == ResultKind.BLACKJACK) 84 else 44)
-        // The middle of the lower half in portrait, below the player's hands; the middle of the table
-        // in landscape, where the hands sit side by side.
-        Box(
-            modifier = Modifier.align(BiasAlignment(0f, if (landscape) 0f else MARK_BIAS)),
-            contentAlignment = Alignment.Center,
-        ) {
-            ResultMark(kind, net, insuranceDelta, animate)
+        // In landscape, the middle of the table, where the hands sit side by side. In portrait the mark
+        // is drawn by the table itself, between the dealer and the player's hands ([ResultMarkBlock]).
+        if (showMark) {
+            Box(
+                modifier = Modifier.align(BiasAlignment(0f, if (landscape) 0f else MARK_BIAS)),
+                contentAlignment = Alignment.Center,
+            ) {
+                ResultMark(kind, net, insuranceDelta, animate)
+            }
         }
     }
+}
+
+/** The result mark on its own, to be laid out in the flow of the table. */
+@Composable
+internal fun ResultMarkBlock(kind: ResultKind, net: Int, insuranceDelta: Int, animate: Boolean) {
+    ResultMark(kind, net, insuranceDelta, animate)
 }
 
 /** Where the mark sits vertically in portrait: -1 is the top of the table, 1 the bottom. */

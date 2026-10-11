@@ -199,9 +199,15 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                 // Publisher mark on the felt, behind everything and low, clear of the bet circle and the hands.
                 FinitePlayLogo(modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 12.dp), widthFraction = if (landscape) 0.3f else 0.5f)
                 val state = round?.state
-                // The coach, at the top of the felt where nothing is dealt: the hint while deciding, the look back once settled.
-                viewModel.advice?.let { HintNotice(it, Modifier.align(Alignment.TopCenter).padding(top = 4.dp)) }
-                viewModel.review?.let { if (resultsShown) RoundReviewNotice(it, Modifier.align(Alignment.TopCenter).padding(top = 4.dp)) }
+                val result = settledState?.settlement
+                // The coach: the hint while deciding, the look back once settled. In portrait it is laid out in the
+                // flow of the table, just above the player's hands; otherwise it floats at the top of the felt.
+                val coach: @Composable (Modifier) -> Unit = { coachModifier ->
+                    viewModel.advice?.let { HintNotice(it, coachModifier) }
+                    viewModel.review?.let { if (resultsShown) RoundReviewNotice(it, coachModifier) }
+                }
+                val inline = !landscape && state != null
+                if (!inline) coach(Modifier.align(Alignment.TopCenter).padding(top = 4.dp))
                 if (state == null) {
                     EmptyTable(bet = viewModel.selectedBet, animate = animate)
                 } else {
@@ -209,14 +215,24 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                         Table(
                             view = TableView(state, dealerFaceUp = dealerFaceUp, resultsShown = resultsShown || !state.isSettled),
                             landscape = landscape,
+                            middle = {
+                                if (inline) {
+                                    // The result between the dealer and the player's hands, the coach just above them.
+                                    if (resultsShown && result != null) {
+                                        Box(modifier = Modifier.padding(vertical = 6.dp)) {
+                                            ResultMarkBlock(resultKindOf(result), result.total, result.insuranceDelta, animate)
+                                        }
+                                    }
+                                    coach(Modifier.padding(bottom = 6.dp))
+                                }
+                            },
                         )
                     }
                 }
-                val result = settledState?.settlement
                 // The one place the result is stated: shown once the dealer's reveal has finished, and kept
                 // until the next round starts.
                 if (resultsShown && result != null) {
-                    ResultCelebration(resultKindOf(result), result.total, result.insuranceDelta, seed ?: 0L, animate, landscape)
+                    ResultCelebration(resultKindOf(result), result.total, result.insuranceDelta, seed ?: 0L, animate, landscape, showMark = !inline)
                 }
             }
         }

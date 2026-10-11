@@ -185,7 +185,7 @@ fun DealerView(view: TableView, cardWidth: Dp, handWidth: Dp) {
  * landscape. Card sizes come from [TableGeometry] against the width each area actually has.
  */
 @Composable
-fun Table(view: TableView, landscape: Boolean, modifier: Modifier = Modifier) {
+fun Table(view: TableView, landscape: Boolean, modifier: Modifier = Modifier, middle: @Composable () -> Unit = {}) {
     val state = view.state
     BoxWithConstraints(modifier = modifier.fillMaxSize()) {
         val total = maxWidth.value
@@ -242,7 +242,13 @@ fun Table(view: TableView, landscape: Boolean, modifier: Modifier = Modifier) {
                 Box(modifier = Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
                     DealerView(view, dealerCard, handWidth = TableGeometry.areaWidth(dealerWidth).dp)
                 }
-                Box(modifier = Modifier.weight(1.3f).fillMaxWidth(), contentAlignment = Alignment.TopCenter) { playerHands() }
+                // [middle] (the result, the coach) sits just above the player's hands, between them and the dealer.
+                Box(modifier = Modifier.weight(1.3f).fillMaxWidth(), contentAlignment = Alignment.TopCenter) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        middle()
+                        playerHands()
+                    }
+                }
             }
         }
     }

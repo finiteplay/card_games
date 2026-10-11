@@ -160,7 +160,8 @@ suggested button gets a filled, ringed background and bold type, and a screen re
 changes or a decision is made; pressing Hint again hides it. Nothing is counted: there is no hints
 statistic, since the hint proves nothing (`DESIGN.md` "Hint").
 
-**A coach's notice** explains it, at the top of the felt where nothing is dealt: a sentence saying
+**A coach's notice** explains it, in portrait laid out in the flow of the table just above the player's
+hands (below the result mark, once settled; in landscape it floats at the top of the felt): a sentence saying
 *why* (`BlackjackHintReason`; ten lessons, from "stand and let the dealer take the risk" to "insurance
 loses chips over time") in the numbers of this spot, and beneath it, in amber, the odds behind it:
 `Dealer busts 37% · A hit busts you 31%` (the second only when a hit can bust you). The odds come
@@ -192,8 +193,8 @@ Hint has no review.
 Settlement is a transaction (`RULES.md` "Round Lifecycle") and is presented as a result, not a win
 dialog — there is no larger game that has been won.
 
-- **One result, stated once.** A single *result mark* sits in the middle of the table's lower half
-  (in landscape, the middle of the table): a pictogram and the round's signed net, with no words —
+- **One result, stated once.** A single *result mark* sits between the dealer and the player's
+  hands (in landscape, the middle of the table): a pictogram and the round's signed net, with no words —
   a trophy and `+10` for a win, a star and `+15` for a blackjack, a dissatisfied face and `−10` for
   a loss or a bust, an equals sign and `0` for a push or an even round. Which it is comes from the
   round's net, not any one hand: a split round that wins one hand and loses a bigger one is a loss,
