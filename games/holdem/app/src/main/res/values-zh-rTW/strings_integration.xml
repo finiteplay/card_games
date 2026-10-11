@@ -47,4 +47,11 @@
     <string name="review_ignored_fold">你棄牌了，但提示建議的是%1$s。理由：%2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">你輸給了%1$s。提示當時估計這種可能約為 %2$d%%。</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">這手牌你本來會贏，但做決定時你的勝率只有約 %1$d%%。要評判決策，而不是結果。</string>
+    <string name="review_hindsight_fold_lost">這手牌你本來會輸：做決定時你的勝率約為 %1$d%%。</string>
+    <string name="review_chance_at_decision">做決定時，你的勝率約為 %1$d%%。</string>
+    <string name="review_chance_slim_win">你贏了，但做決定時勝率很低：約 %1$d%%。</string>
+    <string name="review_followed_won_slim">你照提示做並贏了，但勝率很低：約 %1$d%%。好的決策不一定總有好運。</string>
 </resources>

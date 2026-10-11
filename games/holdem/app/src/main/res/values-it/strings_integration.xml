@@ -40,4 +40,11 @@
     <string name="review_ignored_lost">Il suggerimento consigliava: %1$s, ma hai scelto altro e hai perso. Il motivo: %2$s</string>
     <string name="review_ignored_fold">Hai fatto fold, ma il suggerimento consigliava: %1$s. Il motivo: %2$s</string>
     <string name="review_beaten_by">Hai perso contro %1$s. Il suggerimento lo aveva stimato al %2$d%% circa.</string>
+
+    <!-- With hindsight. %1$d = your chance to win when you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Avresti vinto questa mano, ma quando hai deciso la tua probabilità era solo del %1$d%% circa. Giudica la decisione, non il risultato.</string>
+    <string name="review_hindsight_fold_lost">Avresti perso questa mano: la tua probabilità era del %1$d%% circa quando hai deciso.</string>
+    <string name="review_chance_at_decision">Quando hai deciso, la tua probabilità era del %1$d%% circa.</string>
+    <string name="review_chance_slim_win">Hai vinto, ma la tua probabilità era scarsa quando hai deciso: circa il %1$d%%.</string>
+    <string name="review_followed_won_slim">Hai seguito il suggerimento e hai vinto, ma la tua probabilità era scarsa: circa il %1$d%%. Le buone decisioni non sono sempre fortunate.</string>
 </resources>

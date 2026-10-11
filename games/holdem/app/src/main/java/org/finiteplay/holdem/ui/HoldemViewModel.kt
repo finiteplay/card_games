@@ -26,6 +26,7 @@ import org.finiteplay.holdem.opponents.HintReason
 import org.finiteplay.holdem.opponents.Threats
 import org.finiteplay.holdem.rules.HandCategory
 import org.finiteplay.holdem.rules.categoryOf
+import org.finiteplay.holdem.rules.wouldHaveWon
 import org.finiteplay.holdem.opponents.hint
 import org.finiteplay.holdem.rules.Action
 import org.finiteplay.holdem.rules.HoldemSession
@@ -77,7 +78,14 @@ data class HintShown(
 enum class ReviewKind { FOLLOWED_WON, FOLLOWED_LOST, FOLLOWED_FOLD, IGNORED_WON, IGNORED_LOST, IGNORED_FOLD }
 
 /** The look back at a hand: [kind], the [hint] it is about, and the hand that beat the player at showdown, with the chance the Hint gave it. */
-data class HandReview(val kind: ReviewKind, val hint: HintShown, val beatenBy: HandCategory? = null, val beatenPercent: Int? = null)
+data class HandReview(
+    val kind: ReviewKind,
+    val hint: HintShown,
+    val beatenBy: HandCategory? = null,
+    val beatenPercent: Int? = null,
+    /** For a fold: whether the folded hand, run out to the river, would have beaten everyone still in at the end. */
+    val wouldHaveWon: Boolean? = null,
+)
 
 /** The last decision the player took with a Hint on screen: whether they did as it said, and whether it was their final action of the hand. */
 internal data class HintUse(val hint: HintShown, val followed: Boolean, val lastActionHinted: Boolean)
@@ -97,7 +105,7 @@ internal fun followedHint(taken: Action, suggested: Action): Boolean = kindOf(ta
  * fold that was not the hinted decision. [net] is the player's chips won or lost over the hand,
  * [folded] whether they folded, and [bestOpponent] the best hand an opponent showed down, if any.
  */
-internal fun reviewOf(use: HintUse?, net: Int, folded: Boolean, bestOpponent: HandCategory?): HandReview? {
+internal fun reviewOf(use: HintUse?, net: Int, folded: Boolean, bestOpponent: HandCategory?, wouldHaveWon: Boolean? = null): HandReview? {
     use ?: return null
     val hint = use.hint
     val kind = when {
@@ -111,7 +119,7 @@ internal fun reviewOf(use: HintUse?, net: Int, folded: Boolean, bestOpponent: Ha
     } else {
         null
     }
-    return HandReview(kind, hint, warned?.first, warned?.second)
+    return HandReview(kind, hint, warned?.first, warned?.second, wouldHaveWon.takeIf { folded })
 }
 
 /** The dialog when the tournament is over for the player: where they finished, and the two figures it states. */
@@ -507,7 +515,8 @@ class HoldemViewModel(
         largestPot = maxOf(largestPot, state.result?.payouts?.get(0) ?: 0)
         val me = table.seats[0]
         val bestOpponent = table.seats.drop(1).filter { it.contesting }.mapNotNull { it.handValue }.maxOrNull()?.let(::categoryOf)
-        handReview = me.net?.let { reviewOf(hintUse, it, me.folded, bestOpponent) }
+        val hindsight = if (me.folded) state.wouldHaveWon(0) else null
+        handReview = me.net?.let { reviewOf(hintUse, it, me.folded, bestOpponent, hindsight) }
         if (table.stage == Stage.TOURNAMENT_OVER) showEnd()
     }
 

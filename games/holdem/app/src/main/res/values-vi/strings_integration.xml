@@ -47,4 +47,11 @@
     <string name="review_ignored_fold">Bạn bỏ bài, nhưng Gợi ý đề xuất %1$s. Lý do: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">Bạn thua %1$s. Gợi ý đã ước tính khả năng đó khoảng %2$d%%.</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Nếu không bỏ bài, bạn đã thắng ván này, nhưng lúc quyết định khả năng thắng của bạn chỉ khoảng %1$d%%. Hãy đánh giá quyết định, đừng đánh giá kết quả.</string>
+    <string name="review_hindsight_fold_lost">Nếu không bỏ bài, bạn đã thua ván này: lúc quyết định, khả năng thắng của bạn khoảng %1$d%%.</string>
+    <string name="review_chance_at_decision">Lúc quyết định, khả năng thắng của bạn khoảng %1$d%%.</string>
+    <string name="review_chance_slim_win">Bạn thắng, nhưng lúc quyết định khả năng thắng khá mong manh: khoảng %1$d%%.</string>
+    <string name="review_followed_won_slim">Bạn làm theo Gợi ý và thắng, nhưng khả năng thắng khá mong manh: khoảng %1$d%%. Quyết định đúng không phải lúc nào cũng may mắn.</string>
 </resources>

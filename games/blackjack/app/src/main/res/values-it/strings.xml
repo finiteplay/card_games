@@ -91,4 +91,8 @@
     <string name="review_dealer_busted">Il banco ha sballato.</string>
     <string name="review_dealer_blackjack">Il banco aveva blackjack.</string>
     <string name="review_you_busted">Hai sballato con %1$d.</string>
+
+    <!-- With hindsight. %1$s = card a hit would have drawn, %2$d = total; stand chances in percent. -->
+    <string name="review_would_have_drawn">Chiedere carta avrebbe dato %1$s, per un totale di %2$d.</string>
+    <string name="review_stand_chances">Quando hai deciso, stare con %1$d vinceva circa il %2$d%% delle volte, pareggiava il %3$d%% e perdeva il %4$d%%.</string>
 </resources>

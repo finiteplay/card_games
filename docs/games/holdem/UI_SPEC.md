@@ -281,6 +281,16 @@ the next hand deals:
 - **Lost at showdown to a hand the Hint warned about:** `You lost to Flush. The Hint had put that at
   about 7%.`
 
+With hindsight, setting the odds the player had when deciding beside what then happened:
+
+- **A fold** says whether the folded hand, run out to the river, would have beaten everyone still in at
+  the end (`HoldemState.wouldHaveWon`): `You would have won this hand, but when you decided your chance
+  was only about 26%. Judge the decision, not the result.` or `You would have lost this hand: your
+  chance was about 19% when you decided.` It judges the cards only: had the player stayed, the
+  others might have bet differently.
+- **A win against the odds** says so: `You won, but your chance was slim when you decided: about 12%.`
+  (under 40%); going against the Hint adds `When you decided, your chance was about 35%.`
+
 Nothing is said for a split pot, or for a fold that was not the hinted decision. The review is
 about the player's last hinted decision in the hand (`HandReview`).
 

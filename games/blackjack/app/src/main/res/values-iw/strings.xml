@@ -91,4 +91,8 @@
     <string name="review_dealer_busted">המחלק חרג.</string>
     <string name="review_dealer_blackjack">למחלק היה בלאק ג\'ק.</string>
     <string name="review_you_busted">חריגה שלכם עם %1$d.</string>
+
+    <!-- With hindsight: %1$s = card a hit would draw, %2$d = total; stand chances %1$d total, %2$d/%3$d/%4$d win/tie/lose percent. -->
+    <string name="review_would_have_drawn">לקיחת קלף הייתה מביאה %1$s, ומגיעה ל-%2$d.</string>
+    <string name="review_stand_chances">כשהחלטתם, עצירה על %1$d ניצחה בערך ב-%2$d%% מהמקרים, הסתיימה בתיקו ב-%3$d%% והפסידה ב-%4$d%%.</string>
 </resources>

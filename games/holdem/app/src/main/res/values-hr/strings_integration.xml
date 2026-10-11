@@ -38,4 +38,11 @@
     <string name="review_ignored_lost">Savjet je predložio: %1$s, ali si odabrao drugačije i izgubio. Razlog: %2$s</string>
     <string name="review_ignored_fold">Odustao si, ali savjet je predložio: %1$s. Razlog: %2$s</string>
     <string name="review_beaten_by">Izgubio si od: %1$s. Savjet je to procijenio na oko %2$d%%.</string>
+
+    <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Dobio bi ovu ruku, ali kad si odlučivao, šansa ti je bila samo oko %1$d%%. Procjenjuj odluku, ne ishod.</string>
+    <string name="review_hindsight_fold_lost">Izgubio bi ovu ruku: šansa ti je bila oko %1$d%% kad si odlučivao.</string>
+    <string name="review_chance_at_decision">Kad si odlučivao, šansa ti je bila oko %1$d%%.</string>
+    <string name="review_chance_slim_win">Pobijedio si, ali šansa ti je bila slaba kad si odlučivao: oko %1$d%%.</string>
+    <string name="review_followed_won_slim">Slijedio si savjet i pobijedio, ali šansa ti je bila slaba: oko %1$d%%. Dobre odluke nisu uvijek sretne.</string>
 </resources>

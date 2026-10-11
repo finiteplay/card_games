@@ -48,4 +48,11 @@
     <string name="review_ignored_fold">Даде фолд, но подсказката предлагаше: %1$s. Причината: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">Загуби от: %1$s. Подсказката го оценяваше на около %2$d%%.</string>
+
+    <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Щеше да спечелиш тази ръка, но когато решаваше, шансът ти беше само около %1$d%%. Оценявай решението, не резултата.</string>
+    <string name="review_hindsight_fold_lost">Щеше да загубиш тази ръка: шансът ти беше около %1$d%%, когато реши.</string>
+    <string name="review_chance_at_decision">Когато реши, шансът ти беше около %1$d%%.</string>
+    <string name="review_chance_slim_win">Спечели, но шансът ти беше малък, когато решаваше: около %1$d%%.</string>
+    <string name="review_followed_won_slim">Последва подсказката и спечели, но шансът ти беше малък: около %1$d%%. Добрите решения не винаги имат късмет.</string>
 </resources>

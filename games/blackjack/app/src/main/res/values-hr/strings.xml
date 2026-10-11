@@ -91,4 +91,8 @@
     <string name="review_dealer_busted">Djelitelj je otišao preko 21.</string>
     <string name="review_dealer_blackjack">Djelitelj je imao blackjack.</string>
     <string name="review_you_busted">Otišao si preko 21 s %1$d.</string>
+
+    <!-- With hindsight: %1$s = card a hit would draw, %2$d = total; stand chances %1$d total, %2$d/%3$d/%4$d win/tie/lose percent. -->
+    <string name="review_would_have_drawn">Vučenje karte donijelo bi %1$s, što daje %2$d.</string>
+    <string name="review_stand_chances">Kad si odlučivao, stajanje na %1$d pobjeđivalo je u oko %2$d%% slučajeva, neriješeno u %3$d%%, a gubilo u %4$d%%.</string>
 </resources>

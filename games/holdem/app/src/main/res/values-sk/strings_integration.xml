@@ -38,4 +38,11 @@
     <string name="review_ignored_lost">Rada navrhovala: %1$s, ale rozhodol si sa inak a prehral si. Dôvod: %2$s</string>
     <string name="review_ignored_fold">Zahodil si, ale rada navrhovala: %1$s. Dôvod: %2$s</string>
     <string name="review_beaten_by">Prehral si s kombináciou: %1$s. Rada ju odhadla asi na %2$d%%.</string>
+
+    <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Túto ruku by si vyhral, ale keď si sa rozhodoval, mal si šancu len asi %1$d%%. Posudzuj rozhodnutie, nie výsledok.</string>
+    <string name="review_hindsight_fold_lost">Túto ruku by si prehral: keď si sa rozhodoval, mal si šancu asi %1$d%%.</string>
+    <string name="review_chance_at_decision">Keď si sa rozhodoval, mal si šancu asi %1$d%%.</string>
+    <string name="review_chance_slim_win">Vyhral si, ale šanca bola pri rozhodovaní slabá: asi %1$d%%.</string>
+    <string name="review_followed_won_slim">Riadil si sa radou a vyhral si, ale šanca bola slabá: asi %1$d%%. Dobré rozhodnutia nemajú vždy šťastie.</string>
 </resources>

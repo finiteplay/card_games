@@ -97,4 +97,9 @@
     <string name="review_dealer_busted">莊家爆牌了。</string>
     <string name="review_dealer_blackjack">莊家拿到黑傑克。</string>
     <string name="review_you_busted">你以 %1$d 點爆牌。</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">如果要牌，會拿到 %1$s，湊成 %2$d 點。</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">做決定時，%1$d 點停牌約有 %2$d%% 的機率贏，%3$d%% 平手，%4$d%% 輸。</string>
 </resources>

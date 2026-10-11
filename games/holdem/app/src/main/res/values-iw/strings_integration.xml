@@ -38,4 +38,11 @@
     <string name="review_ignored_lost">הרמז הציע: %1$s, אבל בחרתם אחרת והפסדתם. הסיבה: %2$s</string>
     <string name="review_ignored_fold">עשיתם פולד, אבל הרמז הציע: %1$s. הסיבה: %2$s</string>
     <string name="review_beaten_by">הפסדתם מול %1$s. הרמז העריך את זה בערך ב-%2$d%%.</string>
+
+    <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">הייתם מנצחים ביד הזאת, אבל כשהחלטתם היה לכם רק בערך %1$d%% סיכוי. שפטו את ההחלטה, לא את התוצאה.</string>
+    <string name="review_hindsight_fold_lost">הייתם מפסידים ביד הזאת: הסיכוי שלכם היה בערך %1$d%% כשהחלטתם.</string>
+    <string name="review_chance_at_decision">כשהחלטתם, הסיכוי שלכם היה בערך %1$d%%.</string>
+    <string name="review_chance_slim_win">ניצחתם, אבל הסיכוי היה קלוש כשהחלטתם: בערך %1$d%%.</string>
+    <string name="review_followed_won_slim">עשיתם כמו שהרמז ייעץ וניצחתם, אבל הסיכוי היה קלוש: בערך %1$d%%. החלטות טובות לא תמיד מתמזלות.</string>
 </resources>

@@ -91,4 +91,8 @@
     <string name="review_dealer_busted">Le croupier s\'est brûlé.</string>
     <string name="review_dealer_blackjack">Le croupier avait un blackjack.</string>
     <string name="review_you_busted">Vous vous êtes brûlé avec %1$d.</string>
+
+    <!-- With hindsight. %1$s = card a hit would have drawn, %2$d = total; stand chances in percent. -->
+    <string name="review_would_have_drawn">Tirer une carte aurait donné %1$s, pour un total de %2$d.</string>
+    <string name="review_stand_chances">Quand vous avez décidé, rester sur %1$d gagnait environ %2$d%% du temps, faisait égalité %3$d%% et perdait %4$d%%.</string>
 </resources>

@@ -41,4 +41,11 @@
     <string name="review_ignored_lost">De hint stelde voor: %1$s, maar je koos anders en verloor. De reden: %2$s</string>
     <string name="review_ignored_fold">Je foldde, maar de hint stelde voor: %1$s. De reden: %2$s</string>
     <string name="review_beaten_by">Je verloor van %1$s. De hint had dat op ongeveer %2$d%% geschat.</string>
+
+    <!-- With hindsight. %1$d = your chance to win when you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Je zou deze hand gewonnen hebben, maar toen je besliste was je kans maar ongeveer %1$d%%. Beoordeel de beslissing, niet de uitkomst.</string>
+    <string name="review_hindsight_fold_lost">Je zou deze hand verloren hebben: je kans was ongeveer %1$d%% toen je besliste.</string>
+    <string name="review_chance_at_decision">Toen je besliste, was je kans ongeveer %1$d%%.</string>
+    <string name="review_chance_slim_win">Je won, maar je kans was klein toen je besliste: ongeveer %1$d%%.</string>
+    <string name="review_followed_won_slim">Je volgde de hint en won, maar je kans was klein: ongeveer %1$d%%. Goede beslissingen hebben niet altijd geluk.</string>
 </resources>

@@ -178,6 +178,9 @@ round deals:
   dealer's cards decide the round. Judge the decision, not the result.`
 - **Went against it**, whatever the result — what the Hint suggested and its reason, and for a win
   `Winning against the odds is luck, not a plan.`
+- - **Hindsight.** Standing against a hit or a double says what the next card would have been:
+  `Taking a card would have drawn King, making 19.` A stand states the odds it had at the time:
+  `When you decided, standing on 17 won about 24% of the time, tied 0% and lost 76%.`
 - A line on how it ended: `The dealer finished with 19.`, `The dealer busted.`, `The dealer had
   blackjack.`, `You busted with 22.`
 

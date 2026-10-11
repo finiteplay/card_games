@@ -91,4 +91,8 @@
     <string name="review_dealer_busted">De deler ging bust.</string>
     <string name="review_dealer_blackjack">De deler had blackjack.</string>
     <string name="review_you_busted">Je ging bust met %1$d.</string>
+
+    <!-- With hindsight. %1$s = card a hit would have drawn, %2$d = total; stand chances in percent. -->
+    <string name="review_would_have_drawn">Een kaart nemen had %1$s opgeleverd, dus %2$d.</string>
+    <string name="review_stand_chances">Toen je besliste, won blijven op %1$d ongeveer %2$d%% van de tijd, was het %3$d%% een push en verloor het %4$d%%.</string>
 </resources>

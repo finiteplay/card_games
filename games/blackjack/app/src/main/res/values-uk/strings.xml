@@ -96,4 +96,8 @@
     <string name="review_dealer_busted">Дилер отримав перебір.</string>
     <string name="review_dealer_blackjack">У дилера був блекджек.</string>
     <string name="review_you_busted">У вас перебір: %1$d.</string>
+    <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">Якби ви взяли карту, вона була б %1$s, і вийшло б %2$d.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">На момент рішення зі стопом на %1$d ви вигравали приблизно в %2$d%% випадків, грали внічию в %3$d%% і програвали в %4$d%%.</string>
 </resources>

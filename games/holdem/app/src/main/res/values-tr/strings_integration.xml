@@ -48,4 +48,11 @@
     <string name="review_ignored_fold">Fold ettin, ama İpucu şunu önermişti: %1$s. Gerekçesi: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">%1$s karşısında kaybettin. İpucu bunu yaklaşık %%%2$d olarak görmüştü.</string>
+
+    <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Bu eli kazanacaktın, ama karar verdiğinde şansın yalnızca yaklaşık %%%1$d idi. Sonuca değil, karara bak.</string>
+    <string name="review_hindsight_fold_lost">Bu eli kaybedecektin: karar verdiğinde şansın yaklaşık %%%1$d idi.</string>
+    <string name="review_chance_at_decision">Karar verdiğinde şansın yaklaşık %%%1$d idi.</string>
+    <string name="review_chance_slim_win">Kazandın, ama karar verdiğinde şansın düşüktü: yaklaşık %%%1$d.</string>
+    <string name="review_followed_won_slim">İpucuna uydun ve kazandın, ama şansın düşüktü: yaklaşık %%%1$d. İyi kararlar her zaman şanslı olmaz.</string>
 </resources>

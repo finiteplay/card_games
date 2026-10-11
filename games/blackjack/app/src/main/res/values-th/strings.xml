@@ -97,4 +97,9 @@
     <string name="review_dealer_busted">เจ้ามือเกิน</string>
     <string name="review_dealer_blackjack">เจ้ามือได้แบล็คแจ็ค</string>
     <string name="review_you_busted">คุณเกินที่ %1$d</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">ถ้าขอไพ่ คุณจะได้ %1$s รวมเป็น %2$d</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">ตอนตัดสินใจ การหยุดที่ %1$d ชนะประมาณ %2$d%% ของครั้ง เสมอ %3$d%% และแพ้ %4$d%%</string>
 </resources>

@@ -38,4 +38,11 @@
     <string name="review_ignored_lost">اقترح التلميح: %1$s، لكنك اخترت غير ذلك وخسرت. سببه: %2$s</string>
     <string name="review_ignored_fold">انسحبت، لكن التلميح اقترح: %1$s. سببه: %2$s</string>
     <string name="review_beaten_by">خسرت أمام %1$s. كان التلميح قد قدّر ذلك بنحو %2$d%%.</string>
+
+    <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">كنت ستفوز بهذه اليد، لكن فرصتك عندما قررت كانت نحو %1$d%% فقط. قيّم القرار لا النتيجة.</string>
+    <string name="review_hindsight_fold_lost">كنت ستخسر هذه اليد: كانت فرصتك نحو %1$d%% عندما قررت.</string>
+    <string name="review_chance_at_decision">عندما قررت، كانت فرصتك نحو %1$d%%.</string>
+    <string name="review_chance_slim_win">فزت، لكن فرصتك كانت ضئيلة عندما قررت: نحو %1$d%%.</string>
+    <string name="review_followed_won_slim">اتبعت التلميح وفزت، لكن فرصتك كانت ضئيلة: نحو %1$d%%. القرارات الجيدة ليست دائمًا محظوظة.</string>
 </resources>

@@ -47,4 +47,11 @@
     <string name="review_ignored_fold">フォールドしましたが、ヒントは%1$sを勧めていました。理由：%2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">%1$sに負けました。ヒントではその確率を約%2$d%%と見ていました。</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">このハンドは勝てていましたが、決めた時点の勝率は約%1$d%%でした。結果ではなく判断を評価しましょう。</string>
+    <string name="review_hindsight_fold_lost">このハンドは負けていました。決めた時点の勝率は約%1$d%%でした。</string>
+    <string name="review_chance_at_decision">決めた時点の勝率は約%1$d%%でした。</string>
+    <string name="review_chance_slim_win">勝ちましたが、決めた時点の勝率は低く、約%1$d%%でした。</string>
+    <string name="review_followed_won_slim">ヒントに従って勝ちましたが、勝率は低く、約%1$d%%でした。良い判断が運に恵まれるとは限りません。</string>
 </resources>

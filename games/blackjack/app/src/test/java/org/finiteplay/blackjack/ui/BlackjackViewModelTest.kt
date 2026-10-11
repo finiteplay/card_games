@@ -445,7 +445,7 @@ class BlackjackViewModelTest {
         vm.decide(Decision.STAND)
         val review = vm.review!!
         assertEquals(ReviewKind.FOLLOWED_WON, review.kind)
-        assertEquals(listOf<ReviewDetail>(ReviewDetail.DealerBusted), review.details)
+        assertEquals(listOf<ReviewDetail>(ReviewDetail.DealerBusted), review.details.filterNot { it is ReviewDetail.StandChances })
     }
 
     @Test
@@ -456,7 +456,7 @@ class BlackjackViewModelTest {
         vm.decide(Decision.STAND)
         val review = vm.review!!
         assertEquals(ReviewKind.FOLLOWED_LOST, review.kind)
-        assertEquals(listOf<ReviewDetail>(ReviewDetail.DealerFinished(20)), review.details)
+        assertEquals(listOf<ReviewDetail>(ReviewDetail.DealerFinished(20)), review.details.filterNot { it is ReviewDetail.StandChances })
     }
 
     @Test
@@ -486,5 +486,30 @@ class BlackjackViewModelTest {
         assertNotNull(hinted.review)
         hinted.deal()
         assertNull("a new round clears the look back", hinted.review)
+    }
+
+    @Test
+    fun `standing against a hit says what the card would have been`() {
+        // 4 + 5 = 9 against a three: the hint doubles. Stand against it; the next card is a king.
+        val vm = newViewModel(shoeOf("4C", "3D", "5H", "9S", "KH"))
+        vm.deal()
+        vm.requestHint()
+        assertEquals(Decision.DOUBLE, vm.hint)
+        vm.decide(Decision.STAND)
+        val drew = vm.review!!.details.filterIsInstance<ReviewDetail.WouldHaveDrawn>().single()
+        assertEquals(org.finiteplay.cards.Rank.KING, drew.rank)
+        assertEquals(19, drew.total)
+    }
+
+    @Test
+    fun `standing on the hint says the odds the stand had`() {
+        val vm = newViewModel(shoeOf("9C", "TD", "8H", "TS"))
+        vm.deal()
+        vm.requestHint()
+        vm.decide(Decision.STAND)
+        val chances = vm.review!!.details.filterIsInstance<ReviewDetail.StandChances>().single()
+        assertEquals(17, chances.total)
+        assertEquals(100, chances.win + chances.push + chances.lose)
+        assertTrue("17 against a ten wins about a quarter of the time: ${chances.win}", chances.win in 15..35)
     }
 }

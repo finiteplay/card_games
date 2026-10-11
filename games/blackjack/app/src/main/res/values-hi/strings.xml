@@ -91,4 +91,8 @@
     <string name="review_dealer_busted">डीलर बस्ट हो गया।</string>
     <string name="review_dealer_blackjack">डीलर के पास ब्लैकजैक था।</string>
     <string name="review_you_busted">आप %1$d के साथ बस्ट हो गए।</string>
+
+    <!-- With hindsight: %1$s = card a hit would draw, %2$d = total; stand chances %1$d total, %2$d/%3$d/%4$d win/tie/lose percent. -->
+    <string name="review_would_have_drawn">कार्ड लेने पर %1$s आता, और कुल %2$d बनता।</string>
+    <string name="review_stand_chances">फ़ैसले के समय %1$d पर रुकने से लगभग %2$d%% बार जीत मिलती, %3$d%% बार बराबरी होती और %4$d%% बार हार।</string>
 </resources>

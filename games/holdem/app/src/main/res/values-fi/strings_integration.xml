@@ -46,4 +46,10 @@
     <string name="review_ignored_fold">Foldasit, mutta vihje ehdotti: %1$s. Sen perustelu: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">Hävisit kädelle %1$s. Vihje oli arvioinut sen noin %2$d%% todennäköiseksi.</string>
+    <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Olisit voittanut tämän käden, mutta päättäessäsi mahdollisuutesi oli vain noin %1$d%%. Arvioi päätöstä, älä tulosta.</string>
+    <string name="review_hindsight_fold_lost">Olisit hävinnyt tämän käden: mahdollisuutesi oli noin %1$d%% päättäessäsi.</string>
+    <string name="review_chance_at_decision">Päättäessäsi mahdollisuutesi oli noin %1$d%%.</string>
+    <string name="review_chance_slim_win">Voitit, mutta mahdollisuutesi oli pieni päättäessäsi: noin %1$d%%.</string>
+    <string name="review_followed_won_slim">Noudatit vihjettä ja voitit, mutta mahdollisuutesi oli pieni: noin %1$d%%. Hyvillä päätöksillä ei aina ole onnea.</string>
 </resources>

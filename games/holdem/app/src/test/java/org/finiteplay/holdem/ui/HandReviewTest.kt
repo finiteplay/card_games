@@ -66,4 +66,14 @@ class HandReviewTest {
         val h = hint.copy(threats = t)
         assertEquals(4, reviewOf(HintUse(h, true, true), -1, false, HandCategory.FOUR_OF_A_KIND)!!.beatenPercent)
     }
+
+    @Test
+    fun `a fold carries what the folded hand would have done, and only a fold does`() {
+        val folded = reviewOf(use(true), -50, true, null, wouldHaveWon = true)!!
+        assertEquals(true, folded.wouldHaveWon)
+        assertEquals(false, reviewOf(use(true), -50, true, null, wouldHaveWon = false)!!.wouldHaveWon)
+        assertNull(reviewOf(use(true), -50, true, null)!!.wouldHaveWon)
+        // A hand that was played to the end has nothing to look back on: the cards were shown.
+        assertNull(reviewOf(use(true), 400, false, null, wouldHaveWon = true)!!.wouldHaveWon)
+    }
 }

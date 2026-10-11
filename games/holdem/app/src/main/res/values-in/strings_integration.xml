@@ -38,4 +38,11 @@
     <string name="review_ignored_lost">Hint menyarankan %1$s, tapi kamu memilih lain dan kalah. Alasannya: %2$s</string>
     <string name="review_ignored_fold">Kamu fold, tapi Hint menyarankan %1$s. Alasannya: %2$s</string>
     <string name="review_beaten_by">Kamu kalah dari %1$s. Hint memperkirakannya sekitar %2$d%%.</string>
+
+    <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Kamu akan menang di tangan ini, tapi saat memutuskan peluangmu hanya sekitar %1$d%%. Nilai keputusannya, bukan hasilnya.</string>
+    <string name="review_hindsight_fold_lost">Kamu akan kalah di tangan ini: peluangmu sekitar %1$d%% saat memutuskan.</string>
+    <string name="review_chance_at_decision">Saat memutuskan, peluangmu sekitar %1$d%%.</string>
+    <string name="review_chance_slim_win">Kamu menang, tapi peluangmu tipis saat memutuskan: sekitar %1$d%%.</string>
+    <string name="review_followed_won_slim">Kamu mengikuti Hint dan menang, tapi peluangmu tipis: sekitar %1$d%%. Keputusan bagus tidak selalu beruntung.</string>
 </resources>

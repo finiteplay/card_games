@@ -49,6 +49,13 @@
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">You lost to %1$s. The Hint had put that at about %2$d%%.</string>
 
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">You would have won this hand, but when you decided your chance was only about %1$d%%. Judge the decision, not the result.</string>
+    <string name="review_hindsight_fold_lost">You would have lost this hand: your chance was about %1$d%% when you decided.</string>
+    <string name="review_chance_at_decision">When you decided, your chance was about %1$d%%.</string>
+    <string name="review_chance_slim_win">You won, but your chance was slim when you decided: about %1$d%%.</string>
+    <string name="review_followed_won_slim">You followed the Hint and won, but your chance was slim: about %1$d%%. Good decisions are not always lucky.</string>
+
     <!-- Shown once when a saved hand could not be read (UI_SPEC.md "Screens and States"). -->
     <string name="recovery_notice">Your saved hand couldn\'t be opened, so it was dealt again from the start. No chips were lost.</string>
 </resources>

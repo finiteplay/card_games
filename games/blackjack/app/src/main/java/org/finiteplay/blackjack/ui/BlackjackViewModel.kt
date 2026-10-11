@@ -12,6 +12,8 @@ import org.finiteplay.blackjack.rules.BasicStrategy
 import org.finiteplay.blackjack.rules.BlackjackAdvice
 import org.finiteplay.blackjack.rules.BlackjackState
 import org.finiteplay.blackjack.rules.HandOutcome
+import org.finiteplay.blackjack.rules.handValue
+import org.finiteplay.cards.Rank
 import org.finiteplay.blackjack.rules.advise
 import org.finiteplay.blackjack.rules.BlackjackSession
 import org.finiteplay.blackjack.rules.Chips
@@ -107,11 +109,13 @@ class BlackjackViewModel(
 
     /** The advice shown at the current decision (kept when it is hidden again), and the last decision taken with one. */
     private var pendingAdvice: BlackjackAdvice? = null
+    private var pendingDraw: Pair<Rank, Int>? = null
     private var adviceUse: AdviceUse? = null
 
     private fun resetAdvice() {
         advice = null
         pendingAdvice = null
+        pendingDraw = null
         adviceUse = null
         review = null
     }
@@ -124,7 +128,11 @@ class BlackjackViewModel(
         if (!canHint) return
         val current = session ?: return
         advice = if (advice != null) null else BasicStrategy.advise(current.state, ledger.bankroll)
-        pendingAdvice = advice ?: pendingAdvice
+        if (advice != null) {
+            pendingAdvice = advice
+            val st = current.state
+            pendingDraw = st.shoe.getOrNull(st.shoePosition)?.let { it.rank to handValue(st.hands[st.activeHand].cards + it).total }
+        }
     }
 
     val bankroll: Int get() = ledger.bankroll
@@ -226,8 +234,9 @@ class BlackjackViewModel(
         if (busy || isLoading) return
         val current = session ?: return
         val next = current.decide(decision, ledger.bankroll) ?: return
-        pendingAdvice?.let { adviceUse = AdviceUse(it, followed = decision == it.decision) }
+        pendingAdvice?.let { adviceUse = AdviceUse(it, followed = decision == it.decision, taken = decision, wouldDraw = pendingDraw) }
         pendingAdvice = null
+        pendingDraw = null
         publish(next)
     }
 
@@ -358,13 +367,27 @@ sealed interface ReviewDetail {
     data object DealerBusted : ReviewDetail
     data object DealerBlackjack : ReviewDetail
     data class YouBusted(val total: Int) : ReviewDetail
+
+    /** Hindsight: the card a hit would have drawn, and the total it would have made. */
+    data class WouldHaveDrawn(val rank: Rank, val total: Int) : ReviewDetail
+
+    /** The odds a stand had at the moment of the decision, in percent. */
+    data class StandChances(val total: Int, val win: Int, val push: Int, val lose: Int) : ReviewDetail
 }
 
 /** The look back at a round: [kind], the [advice] it is about, and how the round ended. */
 data class RoundReview(val kind: ReviewKind, val advice: BlackjackAdvice, val details: List<ReviewDetail>)
 
-/** The last decision the player took with a Hint on screen, and whether they did as it said. */
-internal data class AdviceUse(val advice: BlackjackAdvice, val followed: Boolean)
+/**
+ * The last decision the player took with a Hint on screen: whether they did as it said, what they
+ * did, and (hidden at the time) the card a hit would have drawn and the total it would have made.
+ */
+internal data class AdviceUse(
+    val advice: BlackjackAdvice,
+    val followed: Boolean,
+    val taken: Decision,
+    val wouldDraw: Pair<Rank, Int>? = null,
+)
 
 /**
  * The review of a settled round, or null with no Hint used. [net] is the bankroll's change over
@@ -379,7 +402,14 @@ internal fun reviewOf(use: AdviceUse?, state: BlackjackState): RoundReview? {
         net < 0 -> if (use.followed) ReviewKind.FOLLOWED_LOST else ReviewKind.IGNORED_LOST
         else -> if (use.followed) ReviewKind.FOLLOWED_PUSH else ReviewKind.IGNORED_PUSH
     }
-    val details = ArrayList<ReviewDetail>(2)
+    val details = ArrayList<ReviewDetail>(3)
+    val advised = use.advice.decision
+    if (use.taken == Decision.STAND && (advised == Decision.HIT || advised == Decision.DOUBLE) && use.wouldDraw != null) {
+        details += ReviewDetail.WouldHaveDrawn(use.wouldDraw.first, use.wouldDraw.second)
+    } else if (use.taken == Decision.STAND && use.advice.total <= 21) {
+        val o = use.advice.odds
+        details += ReviewDetail.StandChances(use.advice.total, Math.round(o.standWin * 100).toInt(), Math.round(o.standPush * 100).toInt(), Math.round(o.standLose * 100).toInt())
+    }
     val busted = settlement.hands.withIndex().firstOrNull { it.value.outcome == HandOutcome.BUST }
     busted?.let { details += ReviewDetail.YouBusted(state.hands[it.index].value.total) }
     val allBust = settlement.hands.all { it.outcome == HandOutcome.BUST }

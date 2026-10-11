@@ -95,4 +95,9 @@
     <string name="review_dealer_busted">Дилърът се прехвърли.</string>
     <string name="review_dealer_blackjack">Дилърът имаше блекджек.</string>
     <string name="review_you_busted">Прехвърлихте се с %1$d.</string>
+
+    <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">Ако бяхте взели карта, щеше да дойде %1$s и щяхте да имате %2$d.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">Когато решихте, спирането с %1$d печелеше около %2$d%% от случаите, равенство в %3$d%% и губеше в %4$d%%.</string>
 </resources>

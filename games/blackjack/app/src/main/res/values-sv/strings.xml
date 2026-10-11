@@ -96,4 +96,8 @@
     <string name="review_dealer_busted">Givaren gick över.</string>
     <string name="review_dealer_blackjack">Givaren hade blackjack.</string>
     <string name="review_you_busted">Du gick över med %1$d.</string>
+    <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">Om du hade tagit kort hade du fått %1$s, vilket gör %2$d.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">När du bestämde dig vann Stanna på %1$d i ungefär %2$d%% av gångerna, blev oavgjort i %3$d%% och förlorade i %4$d%%.</string>
 </resources>

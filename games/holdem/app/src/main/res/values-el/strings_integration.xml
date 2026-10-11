@@ -48,4 +48,11 @@
     <string name="review_ignored_fold">Έκανες πάσο, αλλά η Υπόδειξη πρότεινε: %1$s. Ο λόγος: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">Έχασες από %1$s. Η Υπόδειξη το είχε υπολογίσει περίπου στο %2$d%%.</string>
+
+    <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Θα κέρδιζες αυτό το χέρι, αλλά τη στιγμή που αποφάσισες η πιθανότητά σου ήταν μόνο περίπου %1$d%%. Κρίνε την απόφαση, όχι το αποτέλεσμα.</string>
+    <string name="review_hindsight_fold_lost">Θα έχανες αυτό το χέρι: η πιθανότητά σου ήταν περίπου %1$d%% όταν αποφάσισες.</string>
+    <string name="review_chance_at_decision">Όταν αποφάσισες, η πιθανότητά σου ήταν περίπου %1$d%%.</string>
+    <string name="review_chance_slim_win">Κέρδισες, αλλά η πιθανότητά σου ήταν μικρή όταν αποφάσισες: περίπου %1$d%%.</string>
+    <string name="review_followed_won_slim">Ακολούθησες την Υπόδειξη και κέρδισες, αλλά η πιθανότητά σου ήταν μικρή: περίπου %1$d%%. Οι καλές αποφάσεις δεν έχουν πάντα τύχη.</string>
 </resources>

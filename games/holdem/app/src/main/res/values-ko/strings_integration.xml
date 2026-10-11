@@ -47,4 +47,11 @@
     <string name="review_ignored_fold">폴드했지만 힌트는 %1$s을(를) 권했습니다. 이유: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">%1$s에 졌습니다. 힌트는 그 확률을 약 %2$d%%로 봤습니다.</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">이 핸드는 이겼을 것입니다. 하지만 결정할 때의 승률은 약 %1$d%%뿐이었습니다. 결과가 아니라 결정을 평가하세요.</string>
+    <string name="review_hindsight_fold_lost">이 핸드는 졌을 것입니다. 결정할 때의 승률은 약 %1$d%%였습니다.</string>
+    <string name="review_chance_at_decision">결정할 때의 승률은 약 %1$d%%였습니다.</string>
+    <string name="review_chance_slim_win">이겼지만 결정할 때의 승률은 약 %1$d%%로 낮았습니다.</string>
+    <string name="review_followed_won_slim">힌트를 따라 이겼지만 승률은 약 %1$d%%로 낮았습니다. 좋은 결정이 항상 운이 따르는 것은 아닙니다.</string>
 </resources>

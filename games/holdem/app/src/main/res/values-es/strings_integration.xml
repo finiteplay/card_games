@@ -40,4 +40,11 @@
     <string name="review_ignored_lost">La pista sugería %1$s, pero elegiste otra cosa y perdiste. Su motivo: %2$s</string>
     <string name="review_ignored_fold">Te retiraste, pero la pista sugería %1$s. Su motivo: %2$s</string>
     <string name="review_beaten_by">Perdiste contra %1$s. La pista lo había estimado en cerca de un %2$d%%.</string>
+
+    <!-- With hindsight. %1$d = your chance to win when you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Habrías ganado esta mano, pero cuando decidiste tu probabilidad era de solo un %1$d%%. Juzga la decisión, no el resultado.</string>
+    <string name="review_hindsight_fold_lost">Habrías perdido esta mano: tu probabilidad era de cerca de un %1$d%% cuando decidiste.</string>
+    <string name="review_chance_at_decision">Cuando decidiste, tu probabilidad era de cerca de un %1$d%%.</string>
+    <string name="review_chance_slim_win">Ganaste, pero tu probabilidad era escasa cuando decidiste: cerca de un %1$d%%.</string>
+    <string name="review_followed_won_slim">Seguiste la pista y ganaste, pero tu probabilidad era escasa: cerca de un %1$d%%. Las buenas decisiones no siempre tienen suerte.</string>
 </resources>

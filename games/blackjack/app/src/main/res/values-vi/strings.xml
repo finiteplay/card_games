@@ -97,4 +97,9 @@
     <string name="review_dealer_busted">Nhà cái quá 21.</string>
     <string name="review_dealer_blackjack">Nhà cái có Blackjack.</string>
     <string name="review_you_busted">Bạn quá 21 với %1$d.</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">Nếu rút, bạn sẽ được %1$s, thành %2$d.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">Lúc quyết định, dừng với %1$d thắng khoảng %2$d%% số lần, hòa %3$d%% và thua %4$d%%.</string>
 </resources>

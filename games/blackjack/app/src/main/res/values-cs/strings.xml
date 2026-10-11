@@ -95,4 +95,9 @@
     <string name="review_dealer_busted">Krupiér přetáhl.</string>
     <string name="review_dealer_blackjack">Krupiér měl blackjack.</string>
     <string name="review_you_busted">Přetáhl jsi s %1$d.</string>
+
+    <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">Kdybys lízl, přišlo by %1$s a měl bys %2$d.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">Když ses rozhodoval, stání na %1$d vyhrálo asi v %2$d%% případů, v %3$d%% byla remíza a v %4$d%% prohra.</string>
 </resources>

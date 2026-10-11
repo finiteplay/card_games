@@ -91,4 +91,8 @@
     <string name="review_dealer_busted">Der Geber hat sich überkauft.</string>
     <string name="review_dealer_blackjack">Der Geber hatte Blackjack.</string>
     <string name="review_you_busted">Du hast dich mit %1$d überkauft.</string>
+
+    <!-- With hindsight. %1$s = card a hit would have drawn, %2$d = total; stand chances in percent. -->
+    <string name="review_would_have_drawn">Eine Karte hätte %1$s gebracht, also %2$d.</string>
+    <string name="review_stand_chances">Als du entschieden hast, gewann Halten mit %1$d in etwa %2$d%% der Fälle, endete in %3$d%% mit einem Push und verlor in %4$d%%.</string>
 </resources>

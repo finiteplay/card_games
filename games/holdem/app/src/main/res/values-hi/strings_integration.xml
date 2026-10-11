@@ -38,4 +38,11 @@
     <string name="review_ignored_lost">हिंट ने सुझाया था: %1$s, पर आपने कुछ और चुना और हार गए। उसकी वजह: %2$s</string>
     <string name="review_ignored_fold">आपने फ़ोल्ड किया, पर हिंट ने सुझाया था: %1$s। उसकी वजह: %2$s</string>
     <string name="review_beaten_by">आप %1$s से हार गए। हिंट ने इसकी संभावना लगभग %2$d%% बताई थी।</string>
+
+    <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">आप यह हाथ जीत जाते, पर फ़ैसले के समय आपकी संभावना सिर्फ़ लगभग %1$d%% थी। फ़ैसले को परखें, नतीजे को नहीं।</string>
+    <string name="review_hindsight_fold_lost">आप यह हाथ हार जाते: फ़ैसले के समय आपकी संभावना लगभग %1$d%% थी।</string>
+    <string name="review_chance_at_decision">फ़ैसले के समय आपकी संभावना लगभग %1$d%% थी।</string>
+    <string name="review_chance_slim_win">आप जीते, पर फ़ैसले के समय संभावना कम थी: लगभग %1$d%%।</string>
+    <string name="review_followed_won_slim">आपने हिंट माना और जीत गए, पर संभावना कम थी: लगभग %1$d%%। अच्छे फ़ैसलों को हमेशा किस्मत का साथ नहीं मिलता।</string>
 </resources>

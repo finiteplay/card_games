@@ -95,4 +95,9 @@
     <string name="review_dealer_busted">Ο κράτης έκανε υπέρβαση.</string>
     <string name="review_dealer_blackjack">Ο κράτης είχε μπλάκτζακ.</string>
     <string name="review_you_busted">Κάνατε υπέρβαση με %1$d.</string>
+
+    <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">Αν παίρνατε κάρτα, θα ερχόταν %1$s και το σύνολο θα γινόταν %2$d.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">Όταν αποφασίσατε, η στάση με %1$d κέρδιζε περίπου το %2$d%% των φορών, έφερνε ισοπαλία το %3$d%% και έχανε το %4$d%%.</string>
 </resources>

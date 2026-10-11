@@ -175,8 +175,11 @@ fun reviewLines(review: HandReview): List<String> {
     val needed = Math.round(hint.potOdds * 100).toInt()
     val advice = adviceText(hint.suggested)
     val reason = hintReasonText(hint.reason, equity, needed, hint.outs, hint.stackBb)
+    // The odds the player had at the moment of the decision, set beside what then happened.
+    val slim = equity < SLIM_PERCENT
     val main = when (review.kind) {
-        ReviewKind.FOLLOWED_WON -> stringResource(R.string.review_followed_won, equity)
+        ReviewKind.FOLLOWED_WON ->
+            if (slim) stringResource(R.string.review_followed_won_slim, equity) else stringResource(R.string.review_followed_won, equity)
         ReviewKind.FOLLOWED_LOST -> stringResource(R.string.review_followed_lost, equity, 100 - equity)
         ReviewKind.FOLLOWED_FOLD -> stringResource(R.string.review_followed_fold)
         ReviewKind.IGNORED_WON -> stringResource(R.string.review_ignored_won, advice, reason)
@@ -184,5 +187,18 @@ fun reviewLines(review: HandReview): List<String> {
         ReviewKind.IGNORED_FOLD -> stringResource(R.string.review_ignored_fold, advice, reason)
     }
     val beaten = review.beatenBy?.let { cat -> review.beatenPercent?.let { stringResource(R.string.review_beaten_by, categoryNounText(cat), it) } }
-    return listOfNotNull(main, beaten)
+    val chance = when {
+        review.kind == ReviewKind.FOLLOWED_FOLD || review.kind == ReviewKind.IGNORED_FOLD -> when (review.wouldHaveWon) {
+            true -> stringResource(R.string.review_hindsight_fold_won, equity)
+            false -> stringResource(R.string.review_hindsight_fold_lost, equity)
+            null -> if (review.kind == ReviewKind.IGNORED_FOLD) stringResource(R.string.review_chance_at_decision, equity) else null
+        }
+        review.kind == ReviewKind.IGNORED_WON -> stringResource(if (slim) R.string.review_chance_slim_win else R.string.review_chance_at_decision, equity)
+        review.kind == ReviewKind.IGNORED_LOST -> stringResource(R.string.review_chance_at_decision, equity)
+        else -> null
+    }
+    return listOfNotNull(main, chance, beaten)
 }
+
+/** Below this chance to win, in percent, a win was a long shot and is said to be one. */
+private const val SLIM_PERCENT = 40

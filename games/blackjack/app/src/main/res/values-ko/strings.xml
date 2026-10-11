@@ -97,4 +97,9 @@
     <string name="review_dealer_busted">딜러가 버스트했습니다.</string>
     <string name="review_dealer_blackjack">딜러가 블랙잭이었습니다.</string>
     <string name="review_you_busted">버스트했습니다. 합계: %1$d.</string>
+
+    <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">히트했다면 나왔을 카드: %1$s, 합계 %2$d.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">결정할 때 %1$d에서 스탠드하면 약 %2$d%% 이기고, %3$d%% 푸시, %4$d%% 졌습니다.</string>
 </resources>

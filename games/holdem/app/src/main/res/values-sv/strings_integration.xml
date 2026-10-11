@@ -46,4 +46,10 @@
     <string name="review_ignored_fold">Du foldade, men Hint föreslog: %1$s. Dess skäl: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">Du förlorade mot %1$s. Hint hade bedömt det till ungefär %2$d%%.</string>
+    <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Du hade vunnit den här handen, men när du bestämde dig var din chans bara ungefär %1$d%%. Bedöm beslutet, inte resultatet.</string>
+    <string name="review_hindsight_fold_lost">Du hade förlorat den här handen: din chans var ungefär %1$d%% när du bestämde dig.</string>
+    <string name="review_chance_at_decision">När du bestämde dig var din chans ungefär %1$d%%.</string>
+    <string name="review_chance_slim_win">Du vann, men din chans var liten när du bestämde dig: ungefär %1$d%%.</string>
+    <string name="review_followed_won_slim">Du följde Hint och vann, men din chans var liten: ungefär %1$d%%. Bra beslut har inte alltid tur.</string>
 </resources>

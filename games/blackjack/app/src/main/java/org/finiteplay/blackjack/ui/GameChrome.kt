@@ -353,6 +353,8 @@ internal fun RoundReviewNotice(review: RoundReview, modifier: Modifier = Modifie
             ReviewDetail.DealerBusted -> stringResource(R.string.review_dealer_busted)
             ReviewDetail.DealerBlackjack -> stringResource(R.string.review_dealer_blackjack)
             is ReviewDetail.YouBusted -> stringResource(R.string.review_you_busted, it.total)
+            is ReviewDetail.WouldHaveDrawn -> stringResource(R.string.review_would_have_drawn, rankSpokenLabel(it.rank), it.total)
+            is ReviewDetail.StandChances -> stringResource(R.string.review_stand_chances, it.total, it.win, it.push, it.lose)
         }
     }
     val title = stringResource(R.string.review_title)

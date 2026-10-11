@@ -95,4 +95,9 @@
     <string name="review_dealer_busted">Az osztó bukott.</string>
     <string name="review_dealer_blackjack">Az osztónak blackjackje volt.</string>
     <string name="review_you_busted">%1$d ponttal buktál.</string>
+
+    <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
+    <string name="review_would_have_drawn">Ha lapot kértél volna, %1$s jött volna, és %2$d lett volna.</string>
+    <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
+    <string name="review_stand_chances">Amikor döntöttél, a megállás %1$d ponttal az esetek kb. %2$d%%-ában nyert, %3$d%%-ában döntetlen lett, és %4$d%%-ában veszített.</string>
 </resources>

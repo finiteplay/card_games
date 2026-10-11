@@ -46,4 +46,10 @@
     <string name="review_ignored_fold">Spasowałeś, ale podpowiedź sugerowała: %1$s. Jej powód: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
     <string name="review_beaten_by">Przegrałeś z układem: %1$s. Podpowiedź oceniała to na około %2$d%%.</string>
+    <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
+    <string name="review_hindsight_fold_won">Wygrałbyś to rozdanie, ale gdy decydowałeś, miałeś tylko około %1$d%% szans. Oceniaj decyzję, nie wynik.</string>
+    <string name="review_hindsight_fold_lost">Przegrałbyś to rozdanie: gdy decydowałeś, miałeś około %1$d%% szans.</string>
+    <string name="review_chance_at_decision">Gdy decydowałeś, miałeś około %1$d%% szans.</string>
+    <string name="review_chance_slim_win">Wygrałeś, ale gdy decydowałeś, szanse były małe: około %1$d%%.</string>
+    <string name="review_followed_won_slim">Zastosowałeś się do podpowiedzi i wygrałeś, ale szanse były małe: około %1$d%%. Dobre decyzje nie zawsze mają szczęście.</string>
 </resources>
