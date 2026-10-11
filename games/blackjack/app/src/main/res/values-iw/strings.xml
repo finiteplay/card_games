@@ -66,4 +66,29 @@
     <string name="help_strategy_5">עם אס שנחשב 11 (יד רכה), קחו קלף עד 17 רך ועצרו מ-19 רך ומעלה.</string>
     <string name="help_strategy_6">לעולם אל תיקחו ביטוח. לאורך זמן הוא עולה יותר ממה שהוא מחזיר.</string>
     <string name="help_strategy_7">האסטרטגיה מקטינה את יתרון הבית אך לא מבטיחה ניצחון: הקלף הנסתר של המחלק עדיין מכריע סיבובים רבים.</string>
+
+    <!-- Hint: %1$s = dealer up card, %2$d = your total, %3$d/%4$d/%5$d = percents. Review: %1$s = suggested action label, %2$s = reason sentence. -->
+    <string name="hint_reason_stand_strong">%2$d היא יד חזקה: בקלף נוסף מסתכנים בחריגה בשביל רווח קטן.</string>
+    <string name="hint_reason_stand_dealer_weak">המחלק מראה %1$s וחורג בערך ב-%3$d%% מהמקרים, ואתם הייתם חורגים ב-%4$d%% אם תיקחו קלף: עצרו ותנו למחלק לקחת את הסיכון.</string>
+    <string name="hint_reason_hit_dealer_strong">המחלק מראה %1$s ולעיתים קרובות מגיע ליד טובה, כך ש-%2$d מנצח רק ב-%5$d%% מהמקרים אם תעצרו: קחו קלף למרות סיכון חריגה של %4$d%%.</string>
+    <string name="hint_reason_hit_cannot_bust">אי אפשר לחרוג עם %2$d: קחו קלף כדי לשפר את היד.</string>
+    <string name="hint_reason_hit_soft">%2$d רך לא יכול לחרוג בקלף הבא, אז לקיחת קלף לא עולה לכם כלום: שפרו את היד.</string>
+    <string name="hint_reason_double">מצב חזק: %2$d מול %1$s של המחלק. הכפילו את ההימור, קחו קלף אחד ותפיקו ממנו את המקסימום.</string>
+    <string name="hint_reason_split_aces">שני אסים הם הזוג הכי טוב לפיצול: כל אחד יכול להפוך ל-21, ואילו A-A יחד הוא רק 12 רך חלש.</string>
+    <string name="hint_reason_split_eights">שתי שמונות הן 16, היד הגרועה ביותר: פצלו אותן כדי להתחיל שתי ידיים טובות יותר.</string>
+    <string name="hint_reason_split_pair">מול %1$s של המחלק, פיצול נותן לכם שתי ידיים טובות במקום יד חלשה אחת.</string>
+    <string name="hint_reason_decline_insurance">ביטוח מפסיד אסימונים לאורך זמן: הקלף הנסתר הוא עשר בפחות מפעם אחת מתוך שלוש, וזה מה שנדרש כדי לצאת באפס.</string>
+    <string name="hint_figures">המחלק חורג %1$d%% · קלף נוסף מחריג אתכם %2$d%%</string>
+    <string name="hint_figures_dealer_only">המחלק חורג %1$d%%</string>
+    <string name="review_title">מבט לאחור על הרמז</string>
+    <string name="review_followed_won">עשיתם כמו שהרמז ייעץ וניצחתם.</string>
+    <string name="review_followed_lost">עשיתם כמו שהרמז ייעץ והפסדתם, זה קורה: הקלפים של המחלק מכריעים את הסיבוב. שפטו את ההחלטה, לא את התוצאה.</string>
+    <string name="review_followed_push">עשיתם כמו שהרמז ייעץ וסיימתם בתיקו: שמרתם על האסימונים.</string>
+    <string name="review_ignored_won">ניצחתם, אבל הרמז הציע: %1$s. הסיבה: %2$s ניצחון נגד הסיכויים הוא מזל, לא תוכנית.</string>
+    <string name="review_ignored_lost">הרמז הציע: %1$s, אבל בחרתם אחרת והפסדתם. הסיבה: %2$s</string>
+    <string name="review_ignored_push">הרמז הציע: %1$s ובחרתם אחרת. הסיבה: %2$s</string>
+    <string name="review_dealer_finished">המחלק סיים עם %1$d.</string>
+    <string name="review_dealer_busted">המחלק חרג.</string>
+    <string name="review_dealer_blackjack">למחלק היה בלאק ג\'ק.</string>
+    <string name="review_you_busted">חריגה שלכם עם %1$d.</string>
 </resources>

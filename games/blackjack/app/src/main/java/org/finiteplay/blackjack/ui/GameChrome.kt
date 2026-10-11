@@ -1,5 +1,8 @@
 package org.finiteplay.blackjack.ui
 
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -37,11 +40,16 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import org.finiteplay.blackjack.R
 import org.finiteplay.blackjack.rules.Decision
+import org.finiteplay.core.ui.card.rankSpokenLabel
+import org.finiteplay.blackjack.rules.BlackjackHintReason
+import org.finiteplay.blackjack.rules.BlackjackAdvice
 import org.finiteplay.core.ui.R as CoreR
 import org.finiteplay.core.ui.layout.BoardAction
 import org.finiteplay.core.ui.layout.BoardActionBar
@@ -242,3 +250,139 @@ private fun actionWithArg(label: Int, arg: Int, icon: ImageVector, color: Color,
     onClick = onClick,
     testTag = tag,
 )
+
+/** A decision in the words of its button. */
+@Composable
+private fun decisionLabel(decision: Decision): String = stringResource(
+    when (decision) {
+        Decision.HIT -> R.string.action_hit
+        Decision.STAND -> R.string.action_stand
+        Decision.DOUBLE -> R.string.action_double
+        Decision.SPLIT -> R.string.action_split
+        Decision.TAKE_INSURANCE -> R.string.action_insure
+        Decision.DECLINE_INSURANCE -> R.string.action_decline
+    },
+)
+
+private fun percent(p: Double): Int = Math.round(p * 100).toInt()
+
+/** The coach's sentence for a recommendation: why, in the numbers of this spot (`UI_SPEC.md` "Hint Presentation"). */
+@Composable
+internal fun adviceReasonText(advice: BlackjackAdvice): String {
+    // A number card reads as its number ("the dealer's 3"); an Ace or a face card by name.
+    val up = if (advice.dealerUp.value in 2..10) advice.dealerUp.value.toString() else rankSpokenLabel(advice.dealerUp)
+    val total = advice.total
+    val dealerBust = percent(advice.odds.dealerBust)
+    val yourBust = percent(advice.odds.yourBust)
+    val standWin = percent(advice.odds.standWin)
+    return when (advice.reason) {
+        BlackjackHintReason.STAND_STRONG -> stringResource(R.string.hint_reason_stand_strong, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.STAND_DEALER_WEAK -> stringResource(R.string.hint_reason_stand_dealer_weak, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.HIT_DEALER_STRONG -> stringResource(R.string.hint_reason_hit_dealer_strong, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.HIT_CANNOT_BUST -> stringResource(R.string.hint_reason_hit_cannot_bust, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.HIT_SOFT -> stringResource(R.string.hint_reason_hit_soft, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.DOUBLE -> stringResource(R.string.hint_reason_double, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.SPLIT_ACES -> stringResource(R.string.hint_reason_split_aces, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.SPLIT_EIGHTS -> stringResource(R.string.hint_reason_split_eights, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.SPLIT_PAIR -> stringResource(R.string.hint_reason_split_pair, up, total, dealerBust, yourBust, standWin)
+        BlackjackHintReason.DECLINE_INSURANCE -> stringResource(R.string.hint_reason_decline_insurance, up, total, dealerBust, yourBust, standWin)
+    }
+}
+
+/**
+ * The Hint's notice (`UI_SPEC.md` "Hint Presentation"): why the highlighted button is the one, in a
+ * sentence, then the odds behind it.
+ */
+@Composable
+internal fun HintNotice(advice: BlackjackAdvice, modifier: Modifier = Modifier) {
+    val reason = adviceReasonText(advice)
+    val figures = when {
+        advice.reason == BlackjackHintReason.DECLINE_INSURANCE -> null
+        advice.odds.yourBust > 0.0 -> stringResource(R.string.hint_figures, percent(advice.odds.dealerBust), percent(advice.odds.yourBust))
+        else -> stringResource(R.string.hint_figures_dealer_only, percent(advice.odds.dealerBust))
+    }
+    Surface(
+        shape = RoundedCornerShape(16.dp),
+        color = Color.Black.copy(alpha = 0.72f),
+        modifier = modifier.padding(horizontal = 12.dp).testTag("hint_notice").semantics(mergeDescendants = true) {
+            contentDescription = listOfNotNull(reason, figures).joinToString(" ")
+        },
+    ) {
+        Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                text = reason,
+                style = MaterialTheme.typography.bodySmall,
+                fontWeight = FontWeight.SemiBold,
+                color = Color.White,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.testTag("hint_reason"),
+            )
+            if (figures != null) {
+                Text(
+                    text = figures,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = Color(0xFFFFCC80),
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(top = 1.dp).testTag("hint_figures"),
+                )
+            }
+        }
+    }
+}
+
+/**
+ * The look back at a round played after a Hint (`UI_SPEC.md` "Hint Review"): drawn until the next
+ * round deals, it separates the decision from the result, since a good decision can lose.
+ */
+@Composable
+internal fun RoundReviewNotice(review: RoundReview, modifier: Modifier = Modifier) {
+    val advice = review.advice
+    val suggested = decisionLabel(advice.decision)
+    val reason = adviceReasonText(advice)
+    val main = when (review.kind) {
+        ReviewKind.FOLLOWED_WON -> stringResource(R.string.review_followed_won)
+        ReviewKind.FOLLOWED_LOST -> stringResource(R.string.review_followed_lost)
+        ReviewKind.FOLLOWED_PUSH -> stringResource(R.string.review_followed_push)
+        ReviewKind.IGNORED_WON -> stringResource(R.string.review_ignored_won, suggested, reason)
+        ReviewKind.IGNORED_LOST -> stringResource(R.string.review_ignored_lost, suggested, reason)
+        ReviewKind.IGNORED_PUSH -> stringResource(R.string.review_ignored_push, suggested, reason)
+    }
+    val details = review.details.map {
+        when (it) {
+            is ReviewDetail.DealerFinished -> stringResource(R.string.review_dealer_finished, it.total)
+            ReviewDetail.DealerBusted -> stringResource(R.string.review_dealer_busted)
+            ReviewDetail.DealerBlackjack -> stringResource(R.string.review_dealer_blackjack)
+            is ReviewDetail.YouBusted -> stringResource(R.string.review_you_busted, it.total)
+        }
+    }
+    val title = stringResource(R.string.review_title)
+    Surface(
+        shape = RoundedCornerShape(16.dp),
+        color = Color.Black.copy(alpha = 0.78f),
+        border = BorderStroke(1.dp, Color(0xFFFFD54F).copy(alpha = 0.6f)),
+        modifier = modifier.padding(horizontal = 12.dp).testTag("round_review").semantics(mergeDescendants = true) {
+            contentDescription = title + ". " + main + " " + details.joinToString(" ")
+        },
+    ) {
+        Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(text = title, style = MaterialTheme.typography.labelSmall, fontWeight = FontWeight.Bold, color = Color(0xFFFFD54F))
+            Text(
+                text = main,
+                style = MaterialTheme.typography.bodySmall,
+                fontWeight = FontWeight.SemiBold,
+                color = Color.White,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.padding(top = 2.dp).testTag("review_main"),
+            )
+            for (line in details) {
+                Text(
+                    text = line,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = Color.White.copy(alpha = 0.8f),
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(top = 1.dp),
+                )
+            }
+        }
+    }
+}

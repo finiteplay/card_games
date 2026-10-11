@@ -66,4 +66,34 @@
     <string name="help_strategy_5">Med et ess som teller 11 (myk hånd), trekk opp til myk 17 og stå på myk 19 eller mer.</string>
     <string name="help_strategy_6">Ta aldri forsikring. Over tid koster den mer enn den betaler tilbake.</string>
     <string name="help_strategy_7">Strategi reduserer husets fordel, men lover ingen gevinst: dealerens skjulte kort avgjør fortsatt mange runder.</string>
+    <!-- The Hint's reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d er en sterk hånd: å trekke risikerer bust for liten gevinst.</string>
+    <string name="hint_reason_stand_dealer_weak">Dealeren viser %1$s og går bust i omtrent %3$d%% av gangene, mens du går bust i %4$d%% hvis du trekker: stå og la dealeren ta risikoen.</string>
+    <string name="hint_reason_hit_dealer_strong">Dealeren viser %1$s og får ofte en god hånd, så %2$d vinner bare %5$d%% av gangene hvis du står: trekk et kort til tross for %4$d%% risiko for bust.</string>
+    <string name="hint_reason_hit_cannot_bust">Du kan ikke gå bust med %2$d: trekk et kort for å forbedre hånden.</string>
+    <string name="hint_reason_hit_soft">En myk %2$d kan ikke gå bust på neste kort, så å trekke koster ingenting: forbedre hånden.</string>
+    <string name="hint_reason_double">Et sterkt spill: %2$d mot dealerens %1$s. Doble innsatsen, ta ett kort og få mest mulig ut av det.</string>
+    <string name="hint_reason_split_aces">To ess er det beste paret å splitte: hvert kan bli 21, mens A-A sammen bare er en svak myk 12.</string>
+    <string name="hint_reason_split_eights">To åttere blir 16, den verste hånden: splitt dem for å starte to bedre hender.</string>
+    <string name="hint_reason_split_pair">Mot dealerens %1$s gir splitt deg to gode hender i stedet for én svak.</string>
+    <string name="hint_reason_decline_insurance">Forsikring taper sjetonger over tid: dealerens skjulte kort er en ti sjeldnere enn én av tre, og det er det som skal til for å gå i null.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Dealeren går bust %1$d%% · Trekk gir bust for deg %2$d%%</string>
+    <string name="hint_figures_dealer_only">Dealeren går bust %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Tilbakeblikk på Hint</string>
+    <string name="review_followed_won">Du fulgte Hint og vant.</string>
+    <string name="review_followed_lost">Du fulgte Hint og tapte, det skjer: dealerens kort avgjør runden. Vurder beslutningen, ikke resultatet.</string>
+    <string name="review_followed_push">Du fulgte Hint og det ble uavgjort: du beholdt sjetongene.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Du vant, men Hint foreslo: %1$s. Begrunnelsen: %2$s Å vinne mot oddsen er flaks, ikke en plan.</string>
+    <string name="review_ignored_lost">Hint foreslo: %1$s, men du valgte annerledes og tapte. Begrunnelsen: %2$s</string>
+    <string name="review_ignored_push">Hint foreslo: %1$s, og du valgte annerledes. Begrunnelsen: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Dealeren endte på %1$d.</string>
+    <string name="review_dealer_busted">Dealeren gikk bust.</string>
+    <string name="review_dealer_blackjack">Dealeren hadde blackjack.</string>
+    <string name="review_you_busted">Du gikk bust med %1$d.</string>
 </resources>

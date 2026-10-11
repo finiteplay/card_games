@@ -199,6 +199,9 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
                 // Publisher mark on the felt, behind everything and low, clear of the bet circle and the hands.
                 FinitePlayLogo(modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 12.dp), widthFraction = if (landscape) 0.3f else 0.5f)
                 val state = round?.state
+                // The coach, at the top of the felt where nothing is dealt: the hint while deciding, the look back once settled.
+                viewModel.advice?.let { HintNotice(it, Modifier.align(Alignment.TopCenter).padding(top = 4.dp)) }
+                viewModel.review?.let { if (resultsShown) RoundReviewNotice(it, Modifier.align(Alignment.TopCenter).padding(top = 4.dp)) }
                 if (state == null) {
                     EmptyTable(bet = viewModel.selectedBet, animate = animate)
                 } else {

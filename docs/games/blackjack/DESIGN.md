@@ -105,6 +105,10 @@ independent design surface.
   - A pair whose Split is not offered — three splits already made, or the available bankroll cannot
     cover another bet — is looked up as its total instead: A–A as soft 12, any other pair as its hard
     total.
+- **It explains itself.** The lookup's answer arrives with a reason and the odds behind it
+  (`BasicStrategy.advise`, `DealerOdds`): the dealer's chance to bust, the player's chance to bust on a
+  hit, and how a stand would end now, from an endless deck under the table rules. `HintAdviceTest`
+  holds each lesson to the decision it explains.
 - **Insurance** is always declined. It pays only when the hole card is a ten-value card, which with
   a fresh six-deck shoe and three cards seen is always less likely than the one in three at which it
   would break even, whatever the player's hand.

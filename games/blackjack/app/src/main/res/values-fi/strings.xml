@@ -66,4 +66,34 @@
     <string name="help_strategy_5">Kun ässä lasketaan 11:ksi (pehmeä käsi), ota kortti pehmeään 17:ään asti ja jää pehmeästä 19:stä alkaen.</string>
     <string name="help_strategy_6">Älä koskaan ota vakuutusta. Pitkällä aikavälillä se maksaa enemmän kuin tuottaa.</string>
     <string name="help_strategy_7">Strategia pienentää talon etua, mutta ei lupaa voittoa: jakajan piilokortti ratkaisee yhä monta kierrosta.</string>
+    <!-- The Hint's reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d on vahva käsi: kortin ottaminen riskeeraa yli menon pienellä hyödyllä.</string>
+    <string name="hint_reason_stand_dealer_weak">Jakajalla näkyy %1$s ja hän menee yli noin %3$d%% kerroista, mutta sinä menet yli %4$d%% kerroista kortilla: jää ja anna jakajan ottaa riski.</string>
+    <string name="hint_reason_hit_dealer_strong">Jakajalla näkyy %1$s ja hän saa usein hyvän käden, joten %2$d voittaa vain %5$d%% kerroista, jos jäät: ota kortti %4$d%% yli menon riskistä huolimatta.</string>
+    <string name="hint_reason_hit_cannot_bust">%2$d:llä et voi mennä yli: ota kortti parantaaksesi kättäsi.</string>
+    <string name="hint_reason_hit_soft">Pehmeä %2$d ei voi mennä yli seuraavalla kortilla, joten kortin ottaminen ei maksa mitään: paranna kättäsi.</string>
+    <string name="hint_reason_double">Vahva tilanne: %2$d jakajan %1$s vastaan. Tuplaa panoksesi, ota yksi kortti ja hyödynnä se.</string>
+    <string name="hint_reason_split_aces">Kaksi ässää on paras jaettava pari: kumpikin voi tulla 21:ksi, kun taas A-A yhdessä on vain heikko pehmeä 12.</string>
+    <string name="hint_reason_split_eights">Kaksi kahdeksikkoa tekee 16, huonoimman käden: jaa ne aloittaaksesi kaksi parempaa kättä.</string>
+    <string name="hint_reason_split_pair">Jakajan %1$s vastaan jakaminen antaa kaksi hyvää kättä yhden heikon sijaan.</string>
+    <string name="hint_reason_decline_insurance">Vakuutus hävittää pelimerkkejä ajan myötä: jakajan piilokortti on kymppi harvemmin kuin kerran kolmesta, ja juuri sitä tarvittaisiin tasoihin pääsyyn.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Jakaja menee yli %1$d%% · Kortti vie sinut yli %2$d%%</string>
+    <string name="hint_figures_dealer_only">Jakaja menee yli %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Katsaus vihjeeseen</string>
+    <string name="review_followed_won">Noudatit vihjettä ja voitit.</string>
+    <string name="review_followed_lost">Noudatit vihjettä ja hävisit, niin käy: jakajan kortit ratkaisevat kierroksen. Arvioi päätöstä, älä tulosta.</string>
+    <string name="review_followed_push">Noudatit vihjettä ja tuli tasapeli: pelimerkkisi säilyivät.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Voitit, mutta vihje ehdotti: %1$s. Sen perustelu: %2$s Todennäköisyyksiä vastaan voittaminen on tuuria, ei suunnitelma.</string>
+    <string name="review_ignored_lost">Vihje ehdotti: %1$s, mutta valitsit toisin ja hävisit. Sen perustelu: %2$s</string>
+    <string name="review_ignored_push">Vihje ehdotti: %1$s, ja valitsit toisin. Sen perustelu: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Jakaja päätti käteen %1$d.</string>
+    <string name="review_dealer_busted">Jakaja meni yli.</string>
+    <string name="review_dealer_blackjack">Jakajalla oli blackjack.</string>
+    <string name="review_you_busted">Menit yli: %1$d.</string>
 </resources>

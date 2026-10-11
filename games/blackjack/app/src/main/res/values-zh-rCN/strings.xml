@@ -66,4 +66,35 @@
     <string name="help_strategy_5">A 算 11 的软牌：软 17 及以下要牌，软 19 及以上停牌。</string>
     <string name="help_strategy_6">永远不要买保险。长期来看，它花的钱比赔回来的多。</string>
     <string name="help_strategy_7">策略能降低庄家优势，但不能保证获胜：庄家的暗牌仍然决定许多局的结果。</string>
+
+    <!-- The Hint's reasons (UI_SPEC.md "Hint Presentation"). %1$s = the dealer's up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer's chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d 点是强牌：再要牌容易爆牌，收益却很小。</string>
+    <string name="hint_reason_stand_dealer_weak">庄家亮出 %1$s，约有 %3$d%% 的几率爆牌，而你要牌会有 %4$d%% 的几率爆牌：停牌，让庄家去冒险。</string>
+    <string name="hint_reason_hit_dealer_strong">庄家亮出 %1$s，常常能做成好牌，所以 %2$d 点停牌只有 %5$d%% 的胜率：尽管有 %4$d%% 的爆牌风险，也要牌。</string>
+    <string name="hint_reason_hit_cannot_bust">%2$d 点不会爆牌：要一张牌来改善手牌。</string>
+    <string name="hint_reason_hit_soft">软 %2$d 点下一张牌不会爆牌，所以要牌没有损失：改善你的手牌。</string>
+    <string name="hint_reason_double">好机会：你的 %2$d 点对庄家的 %1$s。加倍下注，拿一张牌，充分利用它。</string>
+    <string name="hint_reason_split_aces">一对 A 是最适合分牌的对子：每张都可能变成 21 点，而 A-A 合在一起只是弱势的软 12。</string>
+    <string name="hint_reason_split_eights">一对 8 是 16 点，最差的牌：分牌，开始两手更好的牌。</string>
+    <string name="hint_reason_split_pair">面对庄家的 %1$s，分牌能让你有两手好牌，而不是一手弱牌。</string>
+    <string name="hint_reason_decline_insurance">保险长期来看会输筹码：暗牌是十点的概率不到三分之一，而要保本需要达到这个比例。</string>
+    <!-- The figures under the reason. %1$d = the dealer's chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">庄家爆牌 %1$d%% · 要牌爆牌 %2$d%%</string>
+    <string name="hint_figures_dealer_only">庄家爆牌 %1$d%%</string>
+    <!-- Looking back at a round played after a Hint (UI_SPEC.md "Hint Review"). -->
+    <string name="review_title">回顾提示</string>
+    <string name="review_followed_won">你照提示做并赢了。</string>
+    <string name="review_followed_lost">你照提示做却输了，这是正常的：庄家的牌决定了这一局。要评判决策，而不是结果。</string>
+    <string name="review_followed_push">你照提示做并打成平局：保住了筹码。</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">你赢了，但提示建议的是“%1$s”。理由：%2$s 逆着概率赢是运气，不是计划。</string>
+    <string name="review_ignored_lost">提示建议的是“%1$s”，但你选了别的并输了。理由：%2$s</string>
+    <string name="review_ignored_push">提示建议的是“%1$s”，而你选了别的。理由：%2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">庄家最终 %1$d 点。</string>
+    <string name="review_dealer_busted">庄家爆牌了。</string>
+    <string name="review_dealer_blackjack">庄家拿到黑杰克。</string>
+    <string name="review_you_busted">你以 %1$d 点爆牌。</string>
 </resources>

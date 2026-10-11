@@ -66,4 +66,29 @@
     <string name="help_strategy_5">Avec un as qui compte 11 (main souple), tirez jusqu\'à 17 souple et restez à partir de 19 souple.</string>
     <string name="help_strategy_6">Ne prenez jamais l\'assurance. À la longue, elle coûte plus qu\'elle ne rapporte.</string>
     <string name="help_strategy_7">La stratégie réduit l\'avantage de la maison mais ne promet pas de gagner : la carte cachée du croupier décide encore de nombreuses manches.</string>
+
+    <!-- Hint reasons, figures and review. %N$s are texts, %N$d are numbers or percents (same as the English file). -->
+    <string name="hint_reason_stand_strong">%2$d est une main forte : tirer risque de vous brûler pour un gain minime.</string>
+    <string name="hint_reason_stand_dealer_weak">Le croupier montre %1$s et se brûle environ %3$d%% du temps, alors qu\'une carte vous brûlerait %4$d%% du temps : restez et laissez le croupier prendre le risque.</string>
+    <string name="hint_reason_hit_dealer_strong">Le croupier montre %1$s et fait souvent une bonne main, donc %2$d ne gagne que %5$d%% du temps si vous restez : tirez malgré le risque de %4$d%% de vous brûler.</string>
+    <string name="hint_reason_hit_cannot_bust">Vous ne pouvez pas vous brûler avec %2$d : tirez une carte pour améliorer votre main.</string>
+    <string name="hint_reason_hit_soft">Un %2$d souple ne peut pas se brûler à la carte suivante, donc tirer ne vous coûte rien : améliorez votre main.</string>
+    <string name="hint_reason_double">Une situation favorable : %2$d contre le %1$s du croupier. Doublez votre mise, prenez une seule carte et profitez-en.</string>
+    <string name="hint_reason_split_aces">Deux as forment la meilleure paire à séparer : chacun peut devenir 21, alors que A-A ensemble ne fait qu\'un faible 12 souple.</string>
+    <string name="hint_reason_split_eights">Deux huit font 16, la pire main : séparez-les pour commencer deux meilleures mains.</string>
+    <string name="hint_reason_split_pair">Face au %1$s du croupier, séparer vous donne deux bonnes mains au lieu d\'une faible.</string>
+    <string name="hint_reason_decline_insurance">L\'assurance fait perdre des jetons à la longue : la carte cachée est un dix moins d\'une fois sur trois, ce qu\'il faudrait pour être à l\'équilibre.</string>
+    <string name="hint_figures">Le croupier se brûle %1$d%% · Tirer vous brûle %2$d%%</string>
+    <string name="hint_figures_dealer_only">Le croupier se brûle %1$d%%</string>
+    <string name="review_title">Retour sur l\'indice</string>
+    <string name="review_followed_won">Vous avez suivi l\'indice et gagné.</string>
+    <string name="review_followed_lost">Vous avez suivi l\'indice et perdu, cela arrive : les cartes du croupier décident la manche. Jugez la décision, pas le résultat.</string>
+    <string name="review_followed_push">Vous avez suivi l\'indice et fait égalité : vous avez gardé vos jetons.</string>
+    <string name="review_ignored_won">Vous avez gagné, mais l\'indice suggérait : %1$s. Sa raison : %2$s Gagner contre les probabilités, c\'est de la chance, pas un plan.</string>
+    <string name="review_ignored_lost">L\'indice suggérait : %1$s, mais vous avez choisi autre chose et perdu. Sa raison : %2$s</string>
+    <string name="review_ignored_push">L\'indice suggérait : %1$s et vous avez choisi autre chose. Sa raison : %2$s</string>
+    <string name="review_dealer_finished">Le croupier a fini avec %1$d.</string>
+    <string name="review_dealer_busted">Le croupier s\'est brûlé.</string>
+    <string name="review_dealer_blackjack">Le croupier avait un blackjack.</string>
+    <string name="review_you_busted">Vous vous êtes brûlé avec %1$d.</string>
 </resources>

@@ -434,4 +434,57 @@ class BlackjackViewModelTest {
         vm.requestHint()
         assertEquals(Decision.DECLINE_INSURANCE, vm.hint)
     }
+
+    @Test
+    fun `following the hint and winning is reviewed as such, with how the dealer ended`() {
+        // 9 + 8 = 17 against a ten with a six in the hole: the dealer must hit and takes a king.
+        val vm = newViewModel(shoeOf("9C", "TD", "8H", "6S", "KH"))
+        vm.deal()
+        vm.requestHint()
+        assertEquals(Decision.STAND, vm.hint)
+        vm.decide(Decision.STAND)
+        val review = vm.review!!
+        assertEquals(ReviewKind.FOLLOWED_WON, review.kind)
+        assertEquals(listOf<ReviewDetail>(ReviewDetail.DealerBusted), review.details)
+    }
+
+    @Test
+    fun `following the hint and losing says the dealer decides the round`() {
+        val vm = newViewModel(shoeOf("9C", "TD", "8H", "TS"))
+        vm.deal()
+        vm.requestHint()
+        vm.decide(Decision.STAND)
+        val review = vm.review!!
+        assertEquals(ReviewKind.FOLLOWED_LOST, review.kind)
+        assertEquals(listOf<ReviewDetail>(ReviewDetail.DealerFinished(20)), review.details)
+    }
+
+    @Test
+    fun `going against the hint and busting is called out with the total`() {
+        val vm = newViewModel(shoeOf("9C", "TD", "8H", "TS", "5H"))
+        vm.deal()
+        vm.requestHint()
+        assertEquals(Decision.STAND, vm.hint)
+        vm.decide(Decision.HIT)
+        val review = vm.review!!
+        assertEquals(ReviewKind.IGNORED_LOST, review.kind)
+        assertEquals(Decision.STAND, review.advice.decision)
+        assertEquals(listOf<ReviewDetail>(ReviewDetail.YouBusted(22)), review.details)
+    }
+
+    @Test
+    fun `a round played without the hint has no review, and the next deal clears one`() {
+        val vm = newViewModel(shoeOf("9C", "TD", "8H", "TS"), plain)
+        vm.deal()
+        vm.decide(Decision.STAND)
+        assertNull(vm.review)
+
+        val hinted = newViewModel(shoeOf("9C", "TD", "8H", "TS"), plain)
+        hinted.deal()
+        hinted.requestHint()
+        hinted.decide(Decision.STAND)
+        assertNotNull(hinted.review)
+        hinted.deal()
+        assertNull("a new round clears the look back", hinted.review)
+    }
 }

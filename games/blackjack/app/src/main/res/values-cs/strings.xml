@@ -66,4 +66,33 @@
     <string name="help_strategy_5">S esem počítaným jako 11 (měkká ruka) lízejte do měkké 17 a stůjte od měkké 19.</string>
     <string name="help_strategy_6">Pojištění nikdy neberte. V dlouhodobém součtu stojí víc, než vrátí.</string>
     <string name="help_strategy_7">Strategie snižuje výhodu kasina, ale nezaručuje výhru: skrytá karta krupiéra stále rozhoduje mnoho kol.</string>
+
+    <!-- The Hint reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total, %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent, %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d je silná ruka: líznutí riskuje přetažení za malý zisk.</string>
+    <string name="hint_reason_stand_dealer_weak">Krupiér ukazuje %1$s a přetáhne asi v %3$d%% případů, zatímco ty bys při líznutí přetáhl v %4$d%%: stůj a nech riziko na krupiérovi.</string>
+    <string name="hint_reason_hit_dealer_strong">Krupiér ukazuje %1$s a často udělá dobrou ruku, takže %2$d vyhraje při stání jen v %5$d%% případů: lízni si navzdory riziku přetažení %4$d%%.</string>
+    <string name="hint_reason_hit_cannot_bust">S %2$d nemůžeš přetáhnout: lízni si kartu a zlepši ruku.</string>
+    <string name="hint_reason_hit_soft">Měkká %2$d nemůže na další kartě přetáhnout, takže líznutí nic nestojí: zlepši ruku.</string>
+    <string name="hint_reason_double">Silná situace: %2$d proti krupiérovu %1$s. Zdvojnásob sázku, vezmi jednu kartu a využij ji naplno.</string>
+    <string name="hint_reason_split_aces">Dvě esa jsou nejlepší pár k rozdělení: každé se může stát 21, zatímco A-A dohromady je jen slabá měkká 12.</string>
+    <string name="hint_reason_split_eights">Dvě osmičky dají 16, nejhorší ruku: rozděl je a začni dvě lepší ruce.</string>
+    <string name="hint_reason_split_pair">Proti krupiérovu %1$s ti rozdělení dá dvě dobré ruce místo jedné slabé.</string>
+    <string name="hint_reason_decline_insurance">Pojištění časem ztrácí žetony: skrytá karta je desítka méně než jednou ze tří, což by bylo potřeba, aby vyšlo nastejno.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Krupiér přetáhne %1$d%% · Líznutí tě přetáhne %2$d%%</string>
+    <string name="hint_figures_dealer_only">Krupiér přetáhne %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Ohlédnutí za nápovědou</string>
+    <string name="review_followed_won">Řídil ses nápovědou a vyhrál jsi.</string>
+    <string name="review_followed_lost">Řídil ses nápovědou a prohrál jsi, to se stává: o kolu rozhodují krupiérovy karty. Posuzuj rozhodnutí, ne výsledek.</string>
+    <string name="review_followed_push">Řídil ses nápovědou a skončilo to remízou: žetony sis nechal.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Vyhrál jsi, ale nápověda navrhovala: %1$s. Důvod: %2$s Výhra proti pravděpodobnosti je štěstí, ne plán.</string>
+    <string name="review_ignored_lost">Nápověda navrhovala: %1$s, ale ty ses rozhodl jinak a prohrál jsi. Důvod: %2$s</string>
+    <string name="review_ignored_push">Nápověda navrhovala: %1$s a ty ses rozhodl jinak. Důvod: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Krupiér skončil s %1$d.</string>
+    <string name="review_dealer_busted">Krupiér přetáhl.</string>
+    <string name="review_dealer_blackjack">Krupiér měl blackjack.</string>
+    <string name="review_you_busted">Přetáhl jsi s %1$d.</string>
 </resources>

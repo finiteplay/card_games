@@ -66,4 +66,33 @@
     <string name="help_strategy_5">As 11 sayıldığında (yumuşak el), yumuşak 17\'ye kadar çekin, yumuşak 19 ve üzerinde durun.</string>
     <string name="help_strategy_6">Asla sigorta yaptırmayın. Uzun vadede geri ödediğinden fazlaya mal olur.</string>
     <string name="help_strategy_7">Strateji evin avantajını azaltır ama kazanmayı vaat etmez: krupiyenin kapalı kartı hâlâ birçok eli belirler.</string>
+
+    <!-- The Hint reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total, %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent, %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d güçlü bir el: kart çekmek az kazanç için batma riski taşır.</string>
+    <string name="hint_reason_stand_dealer_weak">Krupiye %1$s gösteriyor ve yaklaşık %%%3$d ihtimalle batıyor; kart çekersen %%%4$d ihtimalle batarsın: dur ve riski krupiyeye bırak.</string>
+    <string name="hint_reason_hit_dealer_strong">Krupiye %1$s gösteriyor ve çoğu zaman iyi bir el yapar; durursan %2$d yalnızca %%%5$d kazanır: %%%4$d batma riskine rağmen kart çek.</string>
+    <string name="hint_reason_hit_cannot_bust">%2$d ile batamazsın: elini düzeltmek için kart çek.</string>
+    <string name="hint_reason_hit_soft">Yumuşak %2$d bir sonraki kartta batmaz, yani kart çekmek sana hiçbir şeye mal olmaz: elini düzelt.</string>
+    <string name="hint_reason_double">Güçlü bir durum: krupiyenin %1$s karşısında %2$d. Bahsini ikiye katla, tek kart al ve en iyi şekilde değerlendir.</string>
+    <string name="hint_reason_split_aces">İki as bölünecek en iyi çifttir: her biri 21 olabilir, A-A birlikte ise yalnızca zayıf bir yumuşak 12.</string>
+    <string name="hint_reason_split_eights">İki sekizli 16 eder, en kötü el: ikisini böl, daha iyi iki el başlat.</string>
+    <string name="hint_reason_split_pair">Krupiyenin %1$s karşısında bölmek sana tek zayıf el yerine iki iyi el verir.</string>
+    <string name="hint_reason_decline_insurance">Sigorta zamanla fiş kaybettirir: kapalı kart üçte birden azında ona gelir, başa baş olmak için gereken de budur.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Krupiye %%%1$d batar · Kart çeksen %%%2$d batarsın</string>
+    <string name="hint_figures_dealer_only">Krupiye %%%1$d batar</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">İpucuna geri bakış</string>
+    <string name="review_followed_won">İpucuna uydun ve kazandın.</string>
+    <string name="review_followed_lost">İpucuna uydun ve kaybettin, bu olur: eli krupiyenin kartları belirler. Sonuca değil, karara bak.</string>
+    <string name="review_followed_push">İpucuna uydun ve berabere kaldın: fişlerini korudun.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Kazandın ama İpucu şunu önermişti: %1$s. Gerekçesi: %2$s Şansa karşı kazanmak şanstır, plan değil.</string>
+    <string name="review_ignored_lost">İpucu şunu önermişti: %1$s, ama sen farklı seçip kaybettin. Gerekçesi: %2$s</string>
+    <string name="review_ignored_push">İpucu şunu önermişti: %1$s, sen ise farklı seçtin. Gerekçesi: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Krupiye %1$d ile bitirdi.</string>
+    <string name="review_dealer_busted">Krupiye battı.</string>
+    <string name="review_dealer_blackjack">Krupiyede Blackjack vardı.</string>
+    <string name="review_you_busted">%1$d ile battın.</string>
 </resources>

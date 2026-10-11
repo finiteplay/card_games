@@ -66,4 +66,34 @@
     <string name="help_strategy_5">Z asem liczonym jako 11 (ręka miękka) dobieraj do miękkich 17 i pasuj od miękkich 19.</string>
     <string name="help_strategy_6">Nigdy nie bierz ubezpieczenia. W dłuższej perspektywie kosztuje więcej, niż zwraca.</string>
     <string name="help_strategy_7">Strategia zmniejsza przewagę kasyna, ale nie obiecuje wygranej: zakryta karta krupiera wciąż rozstrzyga wiele rund.</string>
+    <!-- The Hint's reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d to mocna ręka: dobieranie grozi przegraną, a zysk jest mały.</string>
+    <string name="hint_reason_stand_dealer_weak">Krupier pokazuje %1$s i przegrywa mniej więcej w %3$d%% przypadków, a ty po dobraniu przegrasz w %4$d%%: pasuj i niech ryzykuje krupier.</string>
+    <string name="hint_reason_hit_dealer_strong">Krupier pokazuje %1$s i często ma dobrą rękę, więc %2$d wygrywa tylko w %5$d%% przypadków przy pasie: dobierz kartę mimo %4$d%% ryzyka przegranej.</string>
+    <string name="hint_reason_hit_cannot_bust">Z %2$d nie możesz przegrać dobraniem: dobierz kartę, by poprawić rękę.</string>
+    <string name="hint_reason_hit_soft">Miękka %2$d nie przegra na następnej karcie, więc dobranie nic nie kosztuje: popraw rękę.</string>
+    <string name="hint_reason_double">Mocna sytuacja: %2$d przeciw %1$s krupiera. Podwój stawkę, weź jedną kartę i wykorzystaj to.</string>
+    <string name="hint_reason_split_aces">Dwa asy to najlepsza para do rozdzielenia: każdy może dać 21, a razem A-A to tylko słaba miękka 12.</string>
+    <string name="hint_reason_split_eights">Dwie ósemki dają 16, najgorszą rękę: rozdziel je, by zacząć dwie lepsze ręce.</string>
+    <string name="hint_reason_split_pair">Przeciw %1$s krupiera rozdzielenie daje dwie dobre ręce zamiast jednej słabej.</string>
+    <string name="hint_reason_decline_insurance">Ubezpieczenie z czasem traci żetony: zakryta karta krupiera jest dziesiątką rzadziej niż raz na trzy, a tyle trzeba, by wyjść na zero.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Krupier przegrywa w %1$d%% · Dobranie przegrywa u ciebie w %2$d%%</string>
+    <string name="hint_figures_dealer_only">Krupier przegrywa w %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Spojrzenie wstecz na podpowiedź</string>
+    <string name="review_followed_won">Zastosowałeś się do podpowiedzi i wygrałeś.</string>
+    <string name="review_followed_lost">Zastosowałeś się do podpowiedzi i przegrałeś, tak bywa: o rundzie decydują karty krupiera. Oceniaj decyzję, nie wynik.</string>
+    <string name="review_followed_push">Zastosowałeś się do podpowiedzi i był remis: zachowałeś swoje żetony.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Wygrałeś, ale podpowiedź sugerowała: %1$s. Jej powód: %2$s Wygrana wbrew szansom to szczęście, nie plan.</string>
+    <string name="review_ignored_lost">Podpowiedź sugerowała: %1$s, ale wybrałeś inaczej i przegrałeś. Jej powód: %2$s</string>
+    <string name="review_ignored_push">Podpowiedź sugerowała: %1$s, a ty wybrałeś inaczej. Jej powód: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Krupier skończył z %1$d.</string>
+    <string name="review_dealer_busted">Krupier przegrał, przekraczając 21.</string>
+    <string name="review_dealer_blackjack">Krupier miał blackjacka.</string>
+    <string name="review_you_busted">Przegrałeś, przekraczając 21: masz %1$d.</string>
 </resources>

@@ -66,4 +66,33 @@
     <string name="help_strategy_5">Με άσο που μετρά 11 (μαλακό χέρι), πάρτε κάρτα έως μαλακό 17 και σταματήστε από μαλακό 19.</string>
     <string name="help_strategy_6">Μην παίρνετε ποτέ ασφάλιση. Με τον καιρό κοστίζει περισσότερο από όσα επιστρέφει.</string>
     <string name="help_strategy_7">Η στρατηγική μειώνει το πλεονέκτημα του καζίνο αλλά δεν υπόσχεται νίκη: η κρυφή κάρτα του κράτη αποφασίζει ακόμη πολλούς γύρους.</string>
+
+    <!-- The Hint reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total, %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent, %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">Το %2$d είναι δυνατό χέρι: με νέα κάρτα ρισκάρετε υπέρβαση για μικρό κέρδος.</string>
+    <string name="hint_reason_stand_dealer_weak">Ο κράτης δείχνει %1$s και κάνει υπέρβαση περίπου το %3$d%% των φορών, ενώ εσείς θα κάνατε υπέρβαση το %4$d%% με νέα κάρτα: μείνετε και αφήστε τον κράτη να ρισκάρει.</string>
+    <string name="hint_reason_hit_dealer_strong">Ο κράτης δείχνει %1$s και συχνά φτιάχνει καλό χέρι, οπότε το %2$d κερδίζει μόνο το %5$d%% των φορών αν μείνετε: πάρτε κάρτα παρά τον κίνδυνο υπέρβασης %4$d%%.</string>
+    <string name="hint_reason_hit_cannot_bust">Δεν μπορείτε να κάνετε υπέρβαση με %2$d: πάρτε κάρτα για να βελτιώσετε το χέρι.</string>
+    <string name="hint_reason_hit_soft">Το μαλακό %2$d δεν κάνει υπέρβαση στην επόμενη κάρτα, άρα δεν χάνετε τίποτα: βελτιώστε το χέρι σας.</string>
+    <string name="hint_reason_double">Εξαιρετική περίπτωση: %2$d απέναντι στο %1$s του κράτη. Διπλασιάστε το ποντάρισμα, πάρτε μία κάρτα και αξιοποιήστε την.</string>
+    <string name="hint_reason_split_aces">Δύο άσοι είναι το καλύτερο ζευγάρι για διαχωρισμό: ο καθένας μπορεί να γίνει 21, ενώ το Α-Α μαζί είναι μόνο ένα αδύναμο μαλακό 12.</string>
+    <string name="hint_reason_split_eights">Δύο οκτάρια κάνουν 16, το χειρότερο χέρι: διαχωρίστε τα για να ξεκινήσετε δύο καλύτερα χέρια.</string>
+    <string name="hint_reason_split_pair">Απέναντι στο %1$s του κράτη, ο διαχωρισμός σας δίνει δύο καλά χέρια αντί για ένα αδύναμο.</string>
+    <string name="hint_reason_decline_insurance">Η ασφάλιση χάνει μάρκες με τον καιρό: η κλειστή κάρτα είναι δεκάρι λιγότερες από μία στις τρεις φορές, ενώ για ισοσκελισμό θα έπρεπε να είναι.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Ο κράτης κάνει υπέρβαση %1$d%% · Με νέα κάρτα εσείς %2$d%%</string>
+    <string name="hint_figures_dealer_only">Ο κράτης κάνει υπέρβαση %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Ματιά πίσω στην Υπόδειξη</string>
+    <string name="review_followed_won">Ακολουθήσατε την Υπόδειξη και κερδίσατε.</string>
+    <string name="review_followed_lost">Ακολουθήσατε την Υπόδειξη και χάσατε, συμβαίνει: τα φύλλα του κράτη κρίνουν τον γύρο. Κρίνετε την απόφαση, όχι το αποτέλεσμα.</string>
+    <string name="review_followed_push">Ακολουθήσατε την Υπόδειξη και έγινε ισοπαλία: κρατήσατε τις μάρκες σας.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Κερδίσατε, αλλά η Υπόδειξη πρότεινε: %1$s. Ο λόγος: %2$s Η νίκη ενάντια στις πιθανότητες είναι τύχη, όχι σχέδιο.</string>
+    <string name="review_ignored_lost">Η Υπόδειξη πρότεινε: %1$s, αλλά διαλέξατε διαφορετικά και χάσατε. Ο λόγος: %2$s</string>
+    <string name="review_ignored_push">Η Υπόδειξη πρότεινε: %1$s και εσείς διαλέξατε διαφορετικά. Ο λόγος: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Ο κράτης τελείωσε με %1$d.</string>
+    <string name="review_dealer_busted">Ο κράτης έκανε υπέρβαση.</string>
+    <string name="review_dealer_blackjack">Ο κράτης είχε μπλάκτζακ.</string>
+    <string name="review_you_busted">Κάνατε υπέρβαση με %1$d.</string>
 </resources>

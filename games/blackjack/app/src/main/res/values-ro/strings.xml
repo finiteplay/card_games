@@ -66,4 +66,33 @@
     <string name="help_strategy_5">Cu un as care contează 11 (mână moale), trage până la 17 moale și stai de la 19 moale în sus.</string>
     <string name="help_strategy_6">Nu lua niciodată asigurare. În timp costă mai mult decât returnează.</string>
     <string name="help_strategy_7">Strategia reduce avantajul casei, dar nu promite câștig: cartea ascunsă a dealerului încă decide multe runde.</string>
+
+    <!-- The Hint reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total, %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent, %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d e o mână puternică: o carte în plus riscă să depășești 21 pentru câștig mic.</string>
+    <string name="hint_reason_stand_dealer_weak">Dealerul arată %1$s și depășește cam în %3$d%% din cazuri, în timp ce tu ai depăși în %4$d%%: stai și lasă riscul dealerului.</string>
+    <string name="hint_reason_hit_dealer_strong">Dealerul arată %1$s și face des o mână bună, așa că %2$d câștigă doar în %5$d%% din cazuri dacă stai: ia o carte în ciuda riscului de %4$d%% de a depăși.</string>
+    <string name="hint_reason_hit_cannot_bust">Nu poți depăși cu %2$d: ia o carte ca să-ți îmbunătățești mâna.</string>
+    <string name="hint_reason_hit_soft">Un %2$d moale nu poate depăși la următoarea carte, deci să iei carte nu te costă nimic: îmbunătățește-ți mâna.</string>
+    <string name="hint_reason_double">Un moment puternic: %2$d împotriva lui %1$s al dealerului. Dublează pariul, ia o carte și profită la maximum.</string>
+    <string name="hint_reason_split_aces">Doi ași sunt cea mai bună pereche de împărțit: fiecare poate deveni 21, în timp ce A-A împreună e doar un 12 moale slab.</string>
+    <string name="hint_reason_split_eights">Doi de opt fac 16, cea mai proastă mână: împarte-i ca să pornești două mâini mai bune.</string>
+    <string name="hint_reason_split_pair">Împotriva lui %1$s al dealerului, împărțirea îți dă două mâini bune în loc de una slabă.</string>
+    <string name="hint_reason_decline_insurance">Asigurarea pierde jetoane în timp: cartea ascunsă e un zece mai rar de o dată din trei, cât ar trebui ca să ieși pe zero.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Dealerul depășește %1$d%% · O carte te face să depășești %2$d%%</string>
+    <string name="hint_figures_dealer_only">Dealerul depășește %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Privire înapoi la Indiciu</string>
+    <string name="review_followed_won">Ai urmat Indiciul și ai câștigat.</string>
+    <string name="review_followed_lost">Ai urmat Indiciul și ai pierdut, se întâmplă: cărțile dealerului decid runda. Judecă decizia, nu rezultatul.</string>
+    <string name="review_followed_push">Ai urmat Indiciul și ai făcut egalitate: ți-ai păstrat jetoanele.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Ai câștigat, dar Indiciul a sugerat: %1$s. Motivul: %2$s Să câștigi împotriva șanselor e noroc, nu plan.</string>
+    <string name="review_ignored_lost">Indiciul a sugerat: %1$s, dar ai ales altceva și ai pierdut. Motivul: %2$s</string>
+    <string name="review_ignored_push">Indiciul a sugerat: %1$s, iar tu ai ales altceva. Motivul: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Dealerul a terminat cu %1$d.</string>
+    <string name="review_dealer_busted">Dealerul a depășit.</string>
+    <string name="review_dealer_blackjack">Dealerul a avut blackjack.</string>
+    <string name="review_you_busted">Ai depășit cu %1$d.</string>
 </resources>

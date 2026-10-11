@@ -66,4 +66,33 @@
     <string name="help_strategy_5">С ас, броен за 11 (мека ръка), теглете до мека 17 и спирайте при мека 19 или повече.</string>
     <string name="help_strategy_6">Никога не вземайте застраховка. С времето струва повече, отколкото връща.</string>
     <string name="help_strategy_7">Стратегията намалява предимството на казиното, но не обещава победа: скритата карта на дилъра още решава много рундове.</string>
+
+    <!-- The Hint reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total, %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent, %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d е силна ръка: теглене на карта рискува прехвърляне за малка полза.</string>
+    <string name="hint_reason_stand_dealer_weak">Дилърът показва %1$s и се прехвърля около %3$d%% от случаите, а вие бихте се прехвърлили в %4$d%% при теглене: спрете и оставете риска на дилъра.</string>
+    <string name="hint_reason_hit_dealer_strong">Дилърът показва %1$s и често прави добра ръка, затова %2$d печели само в %5$d%% от случаите, ако спрете: вземете карта въпреки риска от %4$d%% за прехвърляне.</string>
+    <string name="hint_reason_hit_cannot_bust">С %2$d не можете да се прехвърлите: вземете карта, за да подобрите ръката си.</string>
+    <string name="hint_reason_hit_soft">Мека %2$d не може да се прехвърли със следващата карта, така че тегленето не ви струва нищо: подобрете ръката си.</string>
+    <string name="hint_reason_double">Силна ситуация: %2$d срещу %1$s на дилъра. Удвоете залога, вземете една карта и извлечете максимума.</string>
+    <string name="hint_reason_split_aces">Два аса са най-добрата двойка за разделяне: всеки може да стане 21, а А-А заедно е само слаба мека 12.</string>
+    <string name="hint_reason_split_eights">Две осмици правят 16, най-лошата ръка: разделете ги, за да започнете две по-добри ръце.</string>
+    <string name="hint_reason_split_pair">Срещу %1$s на дилъра разделянето ви дава две добри ръце вместо една слаба.</string>
+    <string name="hint_reason_decline_insurance">Застраховката губи чипове с времето: скритата карта е десетка по-рядко от един път от три, а за равновесие трябва точно това.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Дилърът се прехвърля %1$d%% · Картата ви прехвърля %2$d%%</string>
+    <string name="hint_figures_dealer_only">Дилърът се прехвърля %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Поглед назад към подсказката</string>
+    <string name="review_followed_won">Последвахте подсказката и спечелихте.</string>
+    <string name="review_followed_lost">Последвахте подсказката и загубихте, случва се: картите на дилъра решават рунда. Оценявайте решението, не резултата.</string>
+    <string name="review_followed_push">Последвахте подсказката и стана равенство: запазихте чиповете си.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Спечелихте, но подсказката предлагаше: %1$s. Причината: %2$s Победата срещу шансовете е късмет, не план.</string>
+    <string name="review_ignored_lost">Подсказката предлагаше: %1$s, но избрахте друго и загубихте. Причината: %2$s</string>
+    <string name="review_ignored_push">Подсказката предлагаше: %1$s, а вие избрахте друго. Причината: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Дилърът приключи с %1$d.</string>
+    <string name="review_dealer_busted">Дилърът се прехвърли.</string>
+    <string name="review_dealer_blackjack">Дилърът имаше блекджек.</string>
+    <string name="review_you_busted">Прехвърлихте се с %1$d.</string>
 </resources>

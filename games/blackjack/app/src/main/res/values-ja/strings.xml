@@ -66,4 +66,35 @@
     <string name="help_strategy_5">エースを11と数える手(ソフトハンド)は、ソフト17までヒット、ソフト19以上でスタンドします。</string>
     <string name="help_strategy_6">保険は決してかけません。長い目で見ると、戻ってくる額より費用のほうが大きくなります。</string>
     <string name="help_strategy_7">戦略はハウスの有利を減らしますが、勝利を約束はしません。ディーラーの伏せカードが多くのラウンドを左右します。</string>
+
+    <!-- The Hint's reasons (UI_SPEC.md "Hint Presentation"). %1$s = the dealer's up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer's chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$dは強いハンドです。ヒットするとバストの危険があり、得るものは少ないです。</string>
+    <string name="hint_reason_stand_dealer_weak">ディーラーのアップカードは%1$sで、約%3$d%%の確率でバストします。ヒットするとあなたは%4$d%%でバスト。スタンドしてディーラーにリスクを負わせましょう。</string>
+    <string name="hint_reason_hit_dealer_strong">ディーラーのアップカードは%1$sで、強い手になりやすいため、スタンドでの%2$dの勝率は%5$d%%だけです。%4$d%%のバストリスクがあってもヒットしましょう。</string>
+    <string name="hint_reason_hit_cannot_bust">%2$dならバストしません。カードを引いてハンドを良くしましょう。</string>
+    <string name="hint_reason_hit_soft">ソフト%2$dは次のカードでバストしないので、ヒットしても損はありません。ハンドを強くしましょう。</string>
+    <string name="hint_reason_double">絶好の場面です。ディーラーの%1$sに対して%2$d。ダブルでベットを2倍にし、1枚引いて活かしましょう。</string>
+    <string name="hint_reason_split_aces">エースのペアはスプリットに最適です。それぞれが21になれる一方、A-Aのままではソフト12で弱い手です。</string>
+    <string name="hint_reason_split_eights">8のペアは16で、最悪のハンドです。スプリットして、より良い2つのハンドを始めましょう。</string>
+    <string name="hint_reason_split_pair">ディーラーの%1$sに対しては、スプリットすれば弱い1手ではなく良い2手になります。</string>
+    <string name="hint_reason_decline_insurance">保険は長い目で見ると損です。伏せカードが10である確率は3回に1回未満で、損益なしになるにはそれが必要です。</string>
+    <!-- The figures under the reason. %1$d = the dealer's chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">ディーラーのバスト%1$d%% · ヒットでのバスト%2$d%%</string>
+    <string name="hint_figures_dealer_only">ディーラーのバスト%1$d%%</string>
+    <!-- Looking back at a round played after a Hint (UI_SPEC.md "Hint Review"). -->
+    <string name="review_title">ヒントを振り返る</string>
+    <string name="review_followed_won">ヒントに従って勝ちました。</string>
+    <string name="review_followed_lost">ヒントに従いましたが負けました。こういうこともあります。ラウンドはディーラーのカード次第です。結果ではなく判断を評価しましょう。</string>
+    <string name="review_followed_push">ヒントに従ってプッシュでした。チップは守れました。</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">勝ちましたが、ヒントは「%1$s」を勧めていました。理由：%2$s 確率に逆らっての勝ちは運であって、作戦ではありません。</string>
+    <string name="review_ignored_lost">ヒントは「%1$s」を勧めていましたが、別の選択をして負けました。理由：%2$s</string>
+    <string name="review_ignored_push">ヒントは「%1$s」を勧めていましたが、別の選択をしました。理由：%2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">ディーラーは%1$dで終えました。</string>
+    <string name="review_dealer_busted">ディーラーはバストしました。</string>
+    <string name="review_dealer_blackjack">ディーラーはブラックジャックでした。</string>
+    <string name="review_you_busted">あなたは%1$dでバストしました。</string>
 </resources>

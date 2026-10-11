@@ -66,4 +66,35 @@
     <string name="help_strategy_5">에이스를 11로 세는 소프트 핸드는 소프트 17까지 히트하고 소프트 19 이상에서 스탠드하세요.</string>
     <string name="help_strategy_6">보험은 절대 들지 마세요. 장기적으로 돌려받는 것보다 비용이 더 큽니다.</string>
     <string name="help_strategy_7">전략은 하우스의 우위를 줄이지만 승리를 약속하지는 않습니다. 딜러의 뒤집힌 카드가 여전히 많은 라운드를 좌우합니다.</string>
+
+    <!-- The Hint's reasons (UI_SPEC.md "Hint Presentation"). %1$s = the dealer's up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer's chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">강한 핸드(%2$d)입니다. 히트하면 버스트 위험만 크고 얻는 것은 적습니다.</string>
+    <string name="hint_reason_stand_dealer_weak">딜러 오픈 카드: %1$s. 딜러는 약 %3$d%% 확률로 버스트하고, 히트하면 내가 %4$d%% 확률로 버스트합니다. 스탠드하고 딜러가 위험을 지게 하세요.</string>
+    <string name="hint_reason_hit_dealer_strong">딜러 오픈 카드: %1$s. 좋은 핸드를 만들 때가 많아서 스탠드하면 %2$d의 승률은 %5$d%%뿐입니다. 버스트 위험이 %4$d%%라도 히트하세요.</string>
+    <string name="hint_reason_hit_cannot_bust">핸드 %2$d: 버스트할 수 없습니다. 카드를 받아 핸드를 키우세요.</string>
+    <string name="hint_reason_hit_soft">소프트 %2$d: 다음 카드로 버스트하지 않으니 히트해도 잃을 게 없습니다. 핸드를 키우세요.</string>
+    <string name="hint_reason_double">좋은 기회입니다. 딜러의 %1$s 상대로 내 핸드는 %2$d. 더블로 베팅을 두 배로 하고 카드 한 장을 받아 최대한 살리세요.</string>
+    <string name="hint_reason_split_aces">에이스 한 쌍은 스플릿하기 가장 좋은 쌍입니다. 각각 21이 될 수 있지만, A-A 그대로는 약한 소프트 12일 뿐입니다.</string>
+    <string name="hint_reason_split_eights">8 한 쌍은 16으로 최악의 핸드입니다. 스플릿해서 더 나은 두 핸드로 시작하세요.</string>
+    <string name="hint_reason_split_pair">딜러의 %1$s 상대로는 스플릿하면 약한 핸드 하나 대신 좋은 핸드 둘을 얻습니다.</string>
+    <string name="hint_reason_decline_insurance">보험은 장기적으로 칩을 잃습니다. 딜러의 뒤집힌 카드가 10일 확률은 3번 중 1번도 안 되는데, 본전이 되려면 그 정도는 되어야 합니다.</string>
+    <!-- The figures under the reason. %1$d = the dealer's chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">딜러 버스트 %1$d%% · 히트 시 내 버스트 %2$d%%</string>
+    <string name="hint_figures_dealer_only">딜러 버스트 %1$d%%</string>
+    <!-- Looking back at a round played after a Hint (UI_SPEC.md "Hint Review"). -->
+    <string name="review_title">힌트 돌아보기</string>
+    <string name="review_followed_won">힌트를 따라 이겼습니다.</string>
+    <string name="review_followed_lost">힌트를 따랐지만 졌습니다. 그럴 수 있습니다. 라운드는 딜러의 카드가 결정합니다. 결과가 아니라 결정을 평가하세요.</string>
+    <string name="review_followed_push">힌트를 따라 푸시했습니다. 칩을 지켰습니다.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">이겼지만 힌트가 권한 행동은 「%1$s」였습니다. 이유: %2$s 확률을 거스르고 이기는 것은 운이지 계획이 아닙니다.</string>
+    <string name="review_ignored_lost">힌트가 권한 행동은 「%1$s」였지만, 다른 선택을 해서 졌습니다. 이유: %2$s</string>
+    <string name="review_ignored_push">힌트가 권한 행동은 「%1$s」였지만, 다른 선택을 했습니다. 이유: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">딜러의 최종 합계: %1$d.</string>
+    <string name="review_dealer_busted">딜러가 버스트했습니다.</string>
+    <string name="review_dealer_blackjack">딜러가 블랙잭이었습니다.</string>
+    <string name="review_you_busted">버스트했습니다. 합계: %1$d.</string>
 </resources>

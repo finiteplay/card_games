@@ -66,4 +66,35 @@
     <string name="help_strategy_5">Với Át tính 11 (bài mềm), rút đến 17 mềm và dừng từ 19 mềm trở lên.</string>
     <string name="help_strategy_6">Đừng bao giờ mua bảo hiểm. Về lâu dài nó tốn nhiều hơn số nhận lại.</string>
     <string name="help_strategy_7">Chiến thuật giảm lợi thế của nhà cái nhưng không hứa chắc thắng: lá bài úp của nhà cái vẫn quyết định nhiều ván.</string>
+
+    <!-- The Hint's reasons (UI_SPEC.md "Hint Presentation"). %1$s = the dealer's up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer's chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d là bài mạnh: rút thêm dễ quá 21 mà lợi ít.</string>
+    <string name="hint_reason_stand_dealer_weak">Nhà cái lộ %1$s và quá 21 khoảng %3$d%% số lần, còn nếu rút bạn quá 21 %4$d%% số lần: hãy dừng và để nhà cái chịu rủi ro.</string>
+    <string name="hint_reason_hit_dealer_strong">Nhà cái lộ %1$s và thường ra bài tốt, nên %2$d chỉ thắng %5$d%% số lần nếu dừng: hãy rút dù có %4$d%% nguy cơ quá 21.</string>
+    <string name="hint_reason_hit_cannot_bust">Bạn không thể quá 21 với %2$d: hãy rút thêm để bài tốt hơn.</string>
+    <string name="hint_reason_hit_soft">%2$d mềm không thể quá 21 ở lá tiếp theo, nên rút không mất gì: hãy cải thiện bài.</string>
+    <string name="hint_reason_double">Tình huống mạnh: %2$d đấu với %1$s của nhà cái. Hãy gấp đôi, lấy một lá và tận dụng nó.</string>
+    <string name="hint_reason_split_aces">Hai lá Át là cặp tốt nhất để tách: mỗi lá có thể thành 21, còn A-A gộp lại chỉ là 12 mềm yếu.</string>
+    <string name="hint_reason_split_eights">Hai lá tám thành 16, bài tệ nhất: hãy tách để bắt đầu hai bài tốt hơn.</string>
+    <string name="hint_reason_split_pair">Trước %1$s của nhà cái, tách cho bạn hai bài tốt thay vì một bài yếu.</string>
+    <string name="hint_reason_decline_insurance">Bảo hiểm làm bạn mất chip về lâu dài: lá bài úp là con mười chưa đến một lần trong ba, trong khi cần như vậy mới hòa vốn.</string>
+    <!-- The figures under the reason. %1$d = the dealer's chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Nhà cái quá 21 %1$d%% · Rút thì bạn quá 21 %2$d%%</string>
+    <string name="hint_figures_dealer_only">Nhà cái quá 21 %1$d%%</string>
+    <!-- Looking back at a round played after a Hint (UI_SPEC.md "Hint Review"). -->
+    <string name="review_title">Nhìn lại Gợi ý</string>
+    <string name="review_followed_won">Bạn làm theo Gợi ý và thắng.</string>
+    <string name="review_followed_lost">Bạn làm theo Gợi ý và thua, chuyện này vẫn xảy ra: bài của nhà cái quyết định ván. Hãy đánh giá quyết định, đừng đánh giá kết quả.</string>
+    <string name="review_followed_push">Bạn làm theo Gợi ý và hòa: bạn giữ được chip.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">Bạn thắng, nhưng Gợi ý đề xuất %1$s. Lý do: %2$s Thắng khi đi ngược xác suất là may mắn, không phải kế hoạch.</string>
+    <string name="review_ignored_lost">Gợi ý đề xuất %1$s, nhưng bạn chọn khác và thua. Lý do: %2$s</string>
+    <string name="review_ignored_push">Gợi ý đề xuất %1$s và bạn chọn khác. Lý do: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Nhà cái kết thúc với %1$d.</string>
+    <string name="review_dealer_busted">Nhà cái quá 21.</string>
+    <string name="review_dealer_blackjack">Nhà cái có Blackjack.</string>
+    <string name="review_you_busted">Bạn quá 21 với %1$d.</string>
 </resources>

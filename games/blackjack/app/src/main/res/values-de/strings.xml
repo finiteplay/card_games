@@ -66,4 +66,29 @@
     <string name="help_strategy_5">Mit einem Ass als 11 (weiche Hand) ziehe bis weich 17 und halte ab weich 19.</string>
     <string name="help_strategy_6">Nimm nie eine Versicherung. Auf Dauer kostet sie mehr, als sie zurückzahlt.</string>
     <string name="help_strategy_7">Strategie senkt den Vorteil des Hauses, verspricht aber keinen Gewinn: Die verdeckte Karte des Gebers entscheidet weiterhin viele Runden.</string>
+
+    <!-- Hint reasons, figures and review. %N$s are texts, %N$d are numbers or percents (same as the English file). -->
+    <string name="hint_reason_stand_strong">%2$d ist eine starke Hand: Eine Karte riskiert das Überkaufen für wenig Gewinn.</string>
+    <string name="hint_reason_stand_dealer_weak">Der Geber zeigt %1$s und kauft sich in etwa %3$d%% der Fälle über, während dich eine Karte in %4$d%% der Fälle überkauft: Bleib stehen und lass den Geber das Risiko tragen.</string>
+    <string name="hint_reason_hit_dealer_strong">Der Geber zeigt %1$s und macht oft eine gute Hand, daher gewinnt %2$d beim Halten nur in %5$d%% der Fälle: Nimm trotz %4$d%% Risiko, dich zu überkaufen, eine Karte.</string>
+    <string name="hint_reason_hit_cannot_bust">Mit %2$d kannst du dich nicht überkaufen: Nimm eine Karte, um deine Hand zu verbessern.</string>
+    <string name="hint_reason_hit_soft">Eine weiche %2$d kann sich mit der nächsten Karte nicht überkaufen, eine Karte kostet dich also nichts: Verbessere deine Hand.</string>
+    <string name="hint_reason_double">Eine starke Lage: %2$d gegen die %1$s des Gebers. Verdopple deinen Einsatz, nimm eine Karte und mach das Beste daraus.</string>
+    <string name="hint_reason_split_aces">Zwei Asse sind das beste Paar zum Teilen: Jedes kann zur 21 werden, während A-A zusammen nur eine schwache weiche 12 ist.</string>
+    <string name="hint_reason_split_eights">Zwei Achten ergeben 16, die schlechteste Hand: Teile sie, um zwei bessere Hände zu bekommen.</string>
+    <string name="hint_reason_split_pair">Gegen die %1$s des Gebers gibt dir Teilen zwei gute Hände statt einer schwachen.</string>
+    <string name="hint_reason_decline_insurance">Eine Versicherung verliert auf Dauer Chips: Die verdeckte Karte ist seltener als jedes dritte Mal eine Zehn, aber genau das wäre nötig, um break-even zu sein.</string>
+    <string name="hint_figures">Geber überkauft %1$d%% · Eine Karte überkauft dich %2$d%%</string>
+    <string name="hint_figures_dealer_only">Geber überkauft %1$d%%</string>
+    <string name="review_title">Rückblick auf den Hinweis</string>
+    <string name="review_followed_won">Du bist dem Hinweis gefolgt und hast gewonnen.</string>
+    <string name="review_followed_lost">Du bist dem Hinweis gefolgt und hast verloren, das passiert: Die Karten des Gebers entscheiden die Runde. Beurteile die Entscheidung, nicht das Ergebnis.</string>
+    <string name="review_followed_push">Du bist dem Hinweis gefolgt und hattest einen Push: Du hast deine Chips behalten.</string>
+    <string name="review_ignored_won">Du hast gewonnen, aber der Hinweis empfahl: %1$s. Seine Begründung: %2$s Gegen die Wahrscheinlichkeit zu gewinnen ist Glück, kein Plan.</string>
+    <string name="review_ignored_lost">Der Hinweis empfahl: %1$s, aber du hast anders entschieden und verloren. Seine Begründung: %2$s</string>
+    <string name="review_ignored_push">Der Hinweis empfahl: %1$s, und du hast anders entschieden. Seine Begründung: %2$s</string>
+    <string name="review_dealer_finished">Der Geber endete mit %1$d.</string>
+    <string name="review_dealer_busted">Der Geber hat sich überkauft.</string>
+    <string name="review_dealer_blackjack">Der Geber hatte Blackjack.</string>
+    <string name="review_you_busted">Du hast dich mit %1$d überkauft.</string>
 </resources>

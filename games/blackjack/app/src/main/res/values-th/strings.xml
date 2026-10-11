@@ -66,4 +66,35 @@
     <string name="help_strategy_5">เมื่อนับเอซเป็น 11 (มือซอฟต์) ให้ขอไพ่ถึงซอฟต์ 17 และหยุดที่ซอฟต์ 19 ขึ้นไป</string>
     <string name="help_strategy_6">อย่าซื้อประกัน เพราะในระยะยาวเสียมากกว่าที่ได้คืน</string>
     <string name="help_strategy_7">กลยุทธ์ลดความได้เปรียบของเจ้ามือ แต่ไม่รับประกันว่าชนะ ไพ่ที่คว่ำของเจ้ามือยังตัดสินหลายรอบ</string>
+
+    <!-- The Hint's reasons (UI_SPEC.md "Hint Presentation"). %1$s = the dealer's up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer's chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d เป็นมือแกร่ง: ขอไพ่เสี่ยงเกินแต่ได้น้อย</string>
+    <string name="hint_reason_stand_dealer_weak">เจ้ามือเปิด %1$s และเกินประมาณ %3$d%% ของครั้ง ส่วนถ้าคุณขอไพ่จะเกิน %4$d%% ของครั้ง: หยุดแล้วให้เจ้ามือรับความเสี่ยง</string>
+    <string name="hint_reason_hit_dealer_strong">เจ้ามือเปิด %1$s และมักได้มือดี ดังนั้น %2$d ชนะแค่ %5$d%% ของครั้งถ้าหยุด: ขอไพ่เถอะ แม้เสี่ยงเกิน %4$d%%</string>
+    <string name="hint_reason_hit_cannot_bust">คุณไม่มีทางเกินเมื่อมี %2$d: ขอไพ่เพื่อให้มือดีขึ้น</string>
+    <string name="hint_reason_hit_soft">ซอฟต์ %2$d ไม่เกินในใบถัดไป ขอไพ่จึงไม่เสียอะไร: ทำให้มือดีขึ้น</string>
+    <string name="hint_reason_double">จังหวะดี: %2$d เจอ %1$s ของเจ้ามือ เพิ่มเดิมพันเท่าตัว รับไพ่หนึ่งใบแล้วใช้ให้คุ้มที่สุด</string>
+    <string name="hint_reason_split_aces">เอซสองใบคือคู่ที่แยกได้ดีที่สุด: แต่ละใบเป็น 21 ได้ ขณะที่ A-A รวมกันเป็นซอฟต์ 12 ที่อ่อน</string>
+    <string name="hint_reason_split_eights">แปดสองใบรวมเป็น 16 ซึ่งเป็นมือที่แย่ที่สุด: แยกไพ่เพื่อเริ่มสองมือที่ดีกว่า</string>
+    <string name="hint_reason_split_pair">เมื่อเจอ %1$s ของเจ้ามือ การแยกไพ่ให้คุณสองมือที่ดีแทนมือที่อ่อนมือเดียว</string>
+    <string name="hint_reason_decline_insurance">ประกันทำให้เสียชิปในระยะยาว: ไพ่ที่คว่ำเป็นสิบไม่ถึงหนึ่งในสามครั้ง ทั้งที่ต้องเป็นอย่างนั้นถึงจะเสมอตัว</string>
+    <!-- The figures under the reason. %1$d = the dealer's chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">เจ้ามือเกิน %1$d%% · ขอไพ่แล้วคุณเกิน %2$d%%</string>
+    <string name="hint_figures_dealer_only">เจ้ามือเกิน %1$d%%</string>
+    <!-- Looking back at a round played after a Hint (UI_SPEC.md "Hint Review"). -->
+    <string name="review_title">ย้อนดูคำแนะนำ</string>
+    <string name="review_followed_won">คุณทำตามคำแนะนำและชนะ</string>
+    <string name="review_followed_lost">คุณทำตามคำแนะนำแล้วแพ้ ซึ่งเกิดขึ้นได้: ไพ่ของเจ้ามือเป็นตัวตัดสินรอบ ให้ตัดสินที่การตัดสินใจ ไม่ใช่ผลลัพธ์</string>
+    <string name="review_followed_push">คุณทำตามคำแนะนำและเสมอ: ชิปของคุณไม่หาย</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">คุณชนะ แต่คำแนะนำบอกให้ใช้ %1$s เหตุผล: %2$s การชนะทั้งที่สวนทางกับความน่าจะเป็นคือโชค ไม่ใช่แผน</string>
+    <string name="review_ignored_lost">คำแนะนำบอกให้ใช้ %1$s แต่คุณเลือกอย่างอื่นและแพ้ เหตุผล: %2$s</string>
+    <string name="review_ignored_push">คำแนะนำบอกให้ใช้ %1$s แต่คุณเลือกอย่างอื่น เหตุผล: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">เจ้ามือจบที่ %1$d</string>
+    <string name="review_dealer_busted">เจ้ามือเกิน</string>
+    <string name="review_dealer_blackjack">เจ้ามือได้แบล็คแจ็ค</string>
+    <string name="review_you_busted">คุณเกินที่ %1$d</string>
 </resources>

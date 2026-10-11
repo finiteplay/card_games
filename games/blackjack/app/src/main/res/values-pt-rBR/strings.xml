@@ -66,4 +66,29 @@
     <string name="help_strategy_5">Com um Ás contando 11 (mão mole), peça até 17 mole e pare a partir de 19 mole.</string>
     <string name="help_strategy_6">Nunca faça seguro. Com o tempo, ele custa mais do que devolve.</string>
     <string name="help_strategy_7">A estratégia reduz a vantagem da casa, mas não promete vitória: a carta oculta do dealer ainda decide muitas rodadas.</string>
+
+    <!-- Hint reasons, figures and review. %N$s are texts, %N$d are numbers or percents (same as the English file). -->
+    <string name="hint_reason_stand_strong">%2$d é uma mão forte: pedir carta arrisca estourar por pouco ganho.</string>
+    <string name="hint_reason_stand_dealer_weak">O dealer mostra %1$s e estoura cerca de %3$d%% das vezes, enquanto uma carta estouraria você em %4$d%% das vezes: pare e deixe o dealer correr o risco.</string>
+    <string name="hint_reason_hit_dealer_strong">O dealer mostra %1$s e muitas vezes faz uma boa mão, então %2$d ganha só %5$d%% das vezes se você parar: peça carta apesar do risco de %4$d%% de estourar.</string>
+    <string name="hint_reason_hit_cannot_bust">Você não pode estourar com %2$d: peça uma carta para melhorar sua mão.</string>
+    <string name="hint_reason_hit_soft">Um %2$d mole não estoura com a próxima carta, então pedir não custa nada: melhore sua mão.</string>
+    <string name="hint_reason_double">Uma boa situação: %2$d contra o %1$s do dealer. Dobre sua aposta, pegue uma carta e aproveite.</string>
+    <string name="hint_reason_split_aces">Dois Ases são o melhor par para dividir: cada um pode virar 21, enquanto A-A juntos é só um 12 mole fraco.</string>
+    <string name="hint_reason_split_eights">Dois oitos somam 16, a pior mão: divida-os para começar duas mãos melhores.</string>
+    <string name="hint_reason_split_pair">Contra o %1$s do dealer, dividir dá duas boas mãos em vez de uma fraca.</string>
+    <string name="hint_reason_decline_insurance">O seguro perde fichas com o tempo: a carta virada é um dez menos de uma vez em três, que é o necessário para empatar no resultado.</string>
+    <string name="hint_figures">Dealer estoura %1$d%% · Pedir estoura você %2$d%%</string>
+    <string name="hint_figures_dealer_only">Dealer estoura %1$d%%</string>
+    <string name="review_title">Revendo a dica</string>
+    <string name="review_followed_won">Você seguiu a dica e ganhou.</string>
+    <string name="review_followed_lost">Você seguiu a dica e perdeu, o que acontece: as cartas do dealer decidem a rodada. Julgue a decisão, não o resultado.</string>
+    <string name="review_followed_push">Você seguiu a dica e empatou: manteve suas fichas.</string>
+    <string name="review_ignored_won">Você ganhou, mas a dica sugeria: %1$s. O motivo: %2$s Ganhar contra as probabilidades é sorte, não um plano.</string>
+    <string name="review_ignored_lost">A dica sugeria: %1$s, mas você escolheu outra coisa e perdeu. O motivo: %2$s</string>
+    <string name="review_ignored_push">A dica sugeria: %1$s e você escolheu outra coisa. O motivo: %2$s</string>
+    <string name="review_dealer_finished">O dealer terminou com %1$d.</string>
+    <string name="review_dealer_busted">O dealer estourou.</string>
+    <string name="review_dealer_blackjack">O dealer tinha blackjack.</string>
+    <string name="review_you_busted">Você estourou com %1$d.</string>
 </resources>

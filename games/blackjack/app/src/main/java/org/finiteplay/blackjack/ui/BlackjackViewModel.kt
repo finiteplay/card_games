@@ -9,6 +9,10 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import org.finiteplay.blackjack.rules.BasicStrategy
+import org.finiteplay.blackjack.rules.BlackjackAdvice
+import org.finiteplay.blackjack.rules.BlackjackState
+import org.finiteplay.blackjack.rules.HandOutcome
+import org.finiteplay.blackjack.rules.advise
 import org.finiteplay.blackjack.rules.BlackjackSession
 import org.finiteplay.blackjack.rules.Chips
 import org.finiteplay.blackjack.rules.Decision
@@ -91,8 +95,26 @@ class BlackjackViewModel(
      * otherwise. Always one of the offered decisions, never a promise: the dealer's hidden cards
      * decide the round. Cleared by any change to the round.
      */
-    var hint by mutableStateOf<Decision?>(null)
+    var advice by mutableStateOf<BlackjackAdvice?>(null)
         private set
+
+    /** The decision the hint recommends, whose button is highlighted. */
+    val hint: Decision? get() = advice?.decision
+
+    /** The look back at the round just settled, when a Hint was used in it; cleared when the next round deals. */
+    var review by mutableStateOf<RoundReview?>(null)
+        private set
+
+    /** The advice shown at the current decision (kept when it is hidden again), and the last decision taken with one. */
+    private var pendingAdvice: BlackjackAdvice? = null
+    private var adviceUse: AdviceUse? = null
+
+    private fun resetAdvice() {
+        advice = null
+        pendingAdvice = null
+        adviceUse = null
+        review = null
+    }
 
     /** Whether Hint can be asked: a decision is on offer and nothing is mid-save. */
     val canHint: Boolean get() = !busy && (tableState == TableState.PLAYING || tableState == TableState.INSURANCE)
@@ -101,7 +123,8 @@ class BlackjackViewModel(
     fun requestHint() {
         if (!canHint) return
         val current = session ?: return
-        hint = if (hint != null) null else BasicStrategy.recommend(current.state, ledger.bankroll)
+        advice = if (advice != null) null else BasicStrategy.advise(current.state, ledger.bankroll)
+        pendingAdvice = advice ?: pendingAdvice
     }
 
     val bankroll: Int get() = ledger.bankroll
@@ -195,6 +218,7 @@ class BlackjackViewModel(
         val round = runCatching { startRound(seed, selectedBet, ledger.bankroll, shoeOverride?.invoke(seed) ?: shoeFor(seed)) }
             .getOrNull() ?: return
         gameId = UUID.randomUUID().toString()
+        resetAdvice()
         publish(round)
     }
 
@@ -202,6 +226,8 @@ class BlackjackViewModel(
         if (busy || isLoading) return
         val current = session ?: return
         val next = current.decide(decision, ledger.bankroll) ?: return
+        pendingAdvice?.let { adviceUse = AdviceUse(it, followed = decision == it.decision) }
+        pendingAdvice = null
         publish(next)
     }
 
@@ -224,7 +250,8 @@ class BlackjackViewModel(
                     roundStore.save(SavedRound(gameId, state.seed, state.bet, next.log))
                 }
                 session = next
-                hint = null
+                advice = null
+                if (state.isSettled) review = reviewOf(adviceUse, state)
             } catch (e: CancellationException) {
                 throw e
             } catch (e: Exception) {
@@ -248,7 +275,7 @@ class BlackjackViewModel(
                 ledgerStore.save(fresh)
                 ledger = fresh
                 session = null
-                hint = null
+                resetAdvice()
                 resetOfferVisible = false
             } catch (e: CancellationException) {
                 throw e
@@ -320,4 +347,48 @@ class BlackjackViewModel(
     fun dismissRestReminder() = restReminder.dismissReminder()
 
     fun cancelRestBreak() = restReminder.cancelBreak()
+}
+
+/** How a round played after a Hint turned out against what the Hint said (`UI_SPEC.md` "Hint Review"). */
+enum class ReviewKind { FOLLOWED_WON, FOLLOWED_LOST, FOLLOWED_PUSH, IGNORED_WON, IGNORED_LOST, IGNORED_PUSH }
+
+/** How the round ended, the way the review tells it. */
+sealed interface ReviewDetail {
+    data class DealerFinished(val total: Int) : ReviewDetail
+    data object DealerBusted : ReviewDetail
+    data object DealerBlackjack : ReviewDetail
+    data class YouBusted(val total: Int) : ReviewDetail
+}
+
+/** The look back at a round: [kind], the [advice] it is about, and how the round ended. */
+data class RoundReview(val kind: ReviewKind, val advice: BlackjackAdvice, val details: List<ReviewDetail>)
+
+/** The last decision the player took with a Hint on screen, and whether they did as it said. */
+internal data class AdviceUse(val advice: BlackjackAdvice, val followed: Boolean)
+
+/**
+ * The review of a settled round, or null with no Hint used. [net] is the bankroll's change over
+ * the round, so a win and a loss are told by its sign and a push by zero.
+ */
+internal fun reviewOf(use: AdviceUse?, state: BlackjackState): RoundReview? {
+    use ?: return null
+    val settlement = state.settlement ?: return null
+    val net = settlement.total
+    val kind = when {
+        net > 0 -> if (use.followed) ReviewKind.FOLLOWED_WON else ReviewKind.IGNORED_WON
+        net < 0 -> if (use.followed) ReviewKind.FOLLOWED_LOST else ReviewKind.IGNORED_LOST
+        else -> if (use.followed) ReviewKind.FOLLOWED_PUSH else ReviewKind.IGNORED_PUSH
+    }
+    val details = ArrayList<ReviewDetail>(2)
+    val busted = settlement.hands.withIndex().firstOrNull { it.value.outcome == HandOutcome.BUST }
+    busted?.let { details += ReviewDetail.YouBusted(state.hands[it.index].value.total) }
+    val allBust = settlement.hands.all { it.outcome == HandOutcome.BUST }
+    if (!allBust) {
+        when {
+            settlement.dealerBlackjack -> details += ReviewDetail.DealerBlackjack
+            state.dealerValue.busted -> details += ReviewDetail.DealerBusted
+            else -> details += ReviewDetail.DealerFinished(state.dealerValue.total)
+        }
+    }
+    return RoundReview(kind, use.advice, details)
 }

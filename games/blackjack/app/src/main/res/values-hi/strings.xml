@@ -66,4 +66,29 @@
     <string name="help_strategy_5">जब इक्का 11 गिना जाए (सॉफ़्ट हाथ), सॉफ़्ट 17 तक कार्ड लें और सॉफ़्ट 19 या अधिक पर रुकें।</string>
     <string name="help_strategy_6">बीमा कभी न लें। लंबे समय में यह जितना लौटाता है उससे ज़्यादा खर्च कराता है।</string>
     <string name="help_strategy_7">रणनीति कैसीनो का फ़ायदा घटाती है, पर जीत का वादा नहीं करती: डीलर का छिपा पत्ता अब भी कई राउंड तय करता है।</string>
+
+    <!-- Hint: %1$s = dealer up card, %2$d = your total, %3$d/%4$d/%5$d = percents. Review: %1$s = suggested action label, %2$s = reason sentence. -->
+    <string name="hint_reason_stand_strong">%2$d मज़बूत हाथ है: कार्ड लेने पर थोड़े फ़ायदे के लिए बस्ट का जोखिम है।</string>
+    <string name="hint_reason_stand_dealer_weak">डीलर %1$s दिखा रहा है और लगभग %3$d%% बार बस्ट होता है, जबकि कार्ड लेने पर आप %4$d%% बार बस्ट होंगे: रुकें और जोखिम डीलर को लेने दें।</string>
+    <string name="hint_reason_hit_dealer_strong">डीलर %1$s दिखा रहा है और अक्सर अच्छा हाथ बना लेता है, इसलिए रुकने पर %2$d सिर्फ़ %5$d%% बार जीतता है: %4$d%% बस्ट के जोखिम के बावजूद कार्ड लें।</string>
+    <string name="hint_reason_hit_cannot_bust">%2$d पर आप बस्ट नहीं हो सकते: हाथ सुधारने के लिए कार्ड लें।</string>
+    <string name="hint_reason_hit_soft">सॉफ़्ट %2$d अगले कार्ड पर बस्ट नहीं हो सकता, इसलिए कार्ड लेने में कुछ नहीं जाता: हाथ सुधारें।</string>
+    <string name="hint_reason_double">बढ़िया मौका: डीलर के %1$s के सामने %2$d। दाँव दोगुना करें, एक कार्ड लें और उसका पूरा फ़ायदा उठाएँ।</string>
+    <string name="hint_reason_split_aces">दो इक्के स्प्लिट करने की सबसे अच्छी जोड़ी हैं: हर एक 21 बन सकता है, जबकि A-A साथ में सिर्फ़ कमज़ोर सॉफ़्ट 12 है।</string>
+    <string name="hint_reason_split_eights">दो अट्ठे मिलकर 16 बनाते हैं, जो सबसे खराब हाथ है: स्प्लिट करके दो बेहतर हाथ शुरू करें।</string>
+    <string name="hint_reason_split_pair">डीलर के %1$s के सामने स्प्लिट करने से एक कमज़ोर हाथ की जगह दो अच्छे हाथ मिलते हैं।</string>
+    <string name="hint_reason_decline_insurance">बीमा लंबे समय में चिप्स गँवाता है: छिपा पत्ता तीन में से एक बार से कम दहला होता है, जबकि बराबरी के लिए इतना चाहिए।</string>
+    <string name="hint_figures">डीलर बस्ट %1$d%% · कार्ड लेने पर आप बस्ट %2$d%%</string>
+    <string name="hint_figures_dealer_only">डीलर बस्ट %1$d%%</string>
+    <string name="review_title">हिंट पर एक नज़र</string>
+    <string name="review_followed_won">आपने हिंट माना और जीत गए।</string>
+    <string name="review_followed_lost">आपने हिंट माना और हार गए, ऐसा होता है: राउंड डीलर के पत्ते तय करते हैं। फ़ैसले को परखें, नतीजे को नहीं।</string>
+    <string name="review_followed_push">आपने हिंट माना और बराबरी रही: आपके चिप्स बचे रहे।</string>
+    <string name="review_ignored_won">आप जीते, पर हिंट ने सुझाया था: %1$s। उसकी वजह: %2$s संभावनाओं के खिलाफ़ जीतना किस्मत है, योजना नहीं।</string>
+    <string name="review_ignored_lost">हिंट ने सुझाया था: %1$s, पर आपने कुछ और चुना और हार गए। उसकी वजह: %2$s</string>
+    <string name="review_ignored_push">हिंट ने सुझाया था: %1$s और आपने कुछ और चुना। उसकी वजह: %2$s</string>
+    <string name="review_dealer_finished">डीलर %1$d पर खत्म हुआ।</string>
+    <string name="review_dealer_busted">डीलर बस्ट हो गया।</string>
+    <string name="review_dealer_blackjack">डीलर के पास ब्लैकजैक था।</string>
+    <string name="review_you_busted">आप %1$d के साथ बस्ट हो गए।</string>
 </resources>

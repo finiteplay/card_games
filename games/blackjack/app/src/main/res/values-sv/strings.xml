@@ -66,4 +66,34 @@
     <string name="help_strategy_5">Med ett ess som räknas som 11 (mjuk hand), ta kort upp till mjuk 17 och stanna på mjuk 19 eller mer.</string>
     <string name="help_strategy_6">Ta aldrig försäkring. På sikt kostar den mer än den betalar tillbaka.</string>
     <string name="help_strategy_7">Strategi minskar husets fördel men lovar ingen vinst: givarens dolda kort avgör fortfarande många rundor.</string>
+    <!-- The Hint's reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d är en stark hand: att ta kort riskerar att gå över för liten vinst.</string>
+    <string name="hint_reason_stand_dealer_weak">Givaren visar %1$s och går över i ungefär %3$d%% av gångerna, medan du går över i %4$d%% om du tar kort: stanna och låt givaren ta risken.</string>
+    <string name="hint_reason_hit_dealer_strong">Givaren visar %1$s och får ofta en bra hand, så %2$d vinner bara %5$d%% av gångerna om du stannar: ta kort trots %4$d%% risk att gå över.</string>
+    <string name="hint_reason_hit_cannot_bust">Du kan inte gå över med %2$d: ta kort för att förbättra din hand.</string>
+    <string name="hint_reason_hit_soft">En mjuk %2$d kan inte gå över på nästa kort, så att ta kort kostar inget: förbättra din hand.</string>
+    <string name="hint_reason_double">Ett starkt läge: %2$d mot givarens %1$s. Dubbla din insats, ta ett kort och gör det bästa av det.</string>
+    <string name="hint_reason_split_aces">Två ess är det bästa paret att dela: varje kan bli 21, medan A-A tillsammans bara är en svag mjuk 12.</string>
+    <string name="hint_reason_split_eights">Två åttor blir 16, den sämsta handen: dela dem för att starta två bättre händer.</string>
+    <string name="hint_reason_split_pair">Mot givarens %1$s ger en delning dig två bra händer i stället för en svag.</string>
+    <string name="hint_reason_decline_insurance">Försäkring förlorar marker över tid: givarens dolda kort är en tia mindre än en gång av tre, vilket krävs för att gå jämnt upp.</string>
+    <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Givaren går över %1$d%% · Att ta kort gör att du går över %2$d%%</string>
+    <string name="hint_figures_dealer_only">Givaren går över %1$d%%</string>
+    <!-- Looking back at a round played after a Hint. -->
+    <string name="review_title">Tillbakablick på Hint</string>
+    <string name="review_followed_won">Du följde Hint och vann.</string>
+    <string name="review_followed_lost">Du följde Hint och förlorade, det händer: givarens kort avgör rundan. Bedöm beslutet, inte resultatet.</string>
+    <string name="review_followed_push">Du följde Hint och det blev oavgjort: du behöll dina marker.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
+    <string name="review_ignored_won">Du vann, men Hint föreslog: %1$s. Dess skäl: %2$s Att vinna mot oddsen är tur, inte en plan.</string>
+    <string name="review_ignored_lost">Hint föreslog: %1$s, men du valde annorlunda och förlorade. Dess skäl: %2$s</string>
+    <string name="review_ignored_push">Hint föreslog: %1$s och du valde annorlunda. Dess skäl: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">Givaren slutade på %1$d.</string>
+    <string name="review_dealer_busted">Givaren gick över.</string>
+    <string name="review_dealer_blackjack">Givaren hade blackjack.</string>
+    <string name="review_you_busted">Du gick över med %1$d.</string>
 </resources>

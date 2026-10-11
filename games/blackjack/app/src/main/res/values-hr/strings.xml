@@ -66,4 +66,29 @@
     <string name="help_strategy_5">S asom koji vrijedi 11 (meka ruka), vucite do mekih 17 i stanite od mekih 19.</string>
     <string name="help_strategy_6">Nikad ne uzimajte osiguranje. Dugoročno košta više nego što vraća.</string>
     <string name="help_strategy_7">Strategija smanjuje prednost kuće, ali ne obećava dobitak: djeliteljeva skrivena karta i dalje odlučuje mnoge runde.</string>
+
+    <!-- Hint: %1$s = dealer up card, %2$d = your total, %3$d/%4$d/%5$d = percents. Review: %1$s = suggested action label, %2$s = reason sentence. -->
+    <string name="hint_reason_stand_strong">%2$d je jaka ruka: vučenje riskira da odeš preko 21 za malu dobit.</string>
+    <string name="hint_reason_stand_dealer_weak">Djelitelj pokazuje %1$s i ode preko 21 u oko %3$d%% slučajeva, a ti bi vučenjem otišao preko u %4$d%% slučajeva: stani i pusti da djelitelj riskira.</string>
+    <string name="hint_reason_hit_dealer_strong">Djelitelj pokazuje %1$s i često složi dobru ruku, pa %2$d pobjeđuje samo u %5$d%% slučajeva ako staneš: vuci kartu unatoč riziku od %4$d%% da odeš preko.</string>
+    <string name="hint_reason_hit_cannot_bust">S %2$d ne možeš otići preko 21: vuci kartu da poboljšaš ruku.</string>
+    <string name="hint_reason_hit_soft">Meki %2$d ne može otići preko 21 na sljedećoj karti, pa te vučenje ništa ne košta: poboljšaj ruku.</string>
+    <string name="hint_reason_double">Odlična prilika: %2$d protiv djeliteljeve karte %1$s. Udvostruči ulog, uzmi jednu kartu i iskoristi je.</string>
+    <string name="hint_reason_split_aces">Dva asa su najbolji par za dijeljenje: svaki može postati 21, a A-A zajedno je samo slabi meki 12.</string>
+    <string name="hint_reason_split_eights">Dvije osmice daju 16, najgoru ruku: podijeli ih da dobiješ dvije bolje ruke.</string>
+    <string name="hint_reason_split_pair">Protiv djeliteljeve karte %1$s dijeljenje ti daje dvije dobre ruke umjesto jedne slabe.</string>
+    <string name="hint_reason_decline_insurance">Osiguranje dugoročno gubi žetone: skrivena karta je desetka manje od jednom u tri puta, a toliko bi bilo potrebno da ostaneš na nuli.</string>
+    <string name="hint_figures">Djelitelj ode preko %1$d%% · Vučenje te vodi preko %2$d%%</string>
+    <string name="hint_figures_dealer_only">Djelitelj ode preko %1$d%%</string>
+    <string name="review_title">Osvrt na savjet</string>
+    <string name="review_followed_won">Slijedio si savjet i pobijedio.</string>
+    <string name="review_followed_lost">Slijedio si savjet i izgubio, što se događa: o rundi odlučuju djeliteljeve karte. Procjenjuj odluku, ne ishod.</string>
+    <string name="review_followed_push">Slijedio si savjet i dobio neriješeno: zadržao si žetone.</string>
+    <string name="review_ignored_won">Pobijedio si, ali savjet je predložio: %1$s. Razlog: %2$s Pobjeda protiv izgleda je sreća, a ne plan.</string>
+    <string name="review_ignored_lost">Savjet je predložio: %1$s, ali si odabrao drugačije i izgubio. Razlog: %2$s</string>
+    <string name="review_ignored_push">Savjet je predložio: %1$s, a ti si odabrao drugačije. Razlog: %2$s</string>
+    <string name="review_dealer_finished">Djelitelj je završio s %1$d.</string>
+    <string name="review_dealer_busted">Djelitelj je otišao preko 21.</string>
+    <string name="review_dealer_blackjack">Djelitelj je imao blackjack.</string>
+    <string name="review_you_busted">Otišao si preko 21 s %1$d.</string>
 </resources>

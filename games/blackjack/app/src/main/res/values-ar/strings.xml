@@ -66,4 +66,29 @@
     <string name="help_strategy_5">مع آس يُحتسب 11 (يد ناعمة)، اطلب حتى 17 الناعمة وابقَ عند 19 الناعمة أو أكثر.</string>
     <string name="help_strategy_6">لا تأخذ التأمين أبدًا. على المدى الطويل يكلّف أكثر مما يعيد.</string>
     <string name="help_strategy_7">الاستراتيجية تقلّل أفضلية الكازينو لكنها لا تضمن الفوز: ورقة الموزّع المخفية ما زالت تحسم كثيرًا من الجولات.</string>
+
+    <!-- Hint: %1$s = dealer up card, %2$d = your total, %3$d/%4$d/%5$d = percents. Review: %1$s = suggested action label, %2$s = reason sentence. -->
+    <string name="hint_reason_stand_strong">%2$d يد قوية: الطلب يعرّضك لتجاوز 21 مقابل مكسب ضئيل.</string>
+    <string name="hint_reason_stand_dealer_weak">يُظهر الموزّع %1$s ويتجاوز 21 في نحو %3$d%% من المرات، بينما الطلب سيجعلك تتجاوز في %4$d%% من المرات: ابقَ ودع الموزّع يتحمّل المخاطرة.</string>
+    <string name="hint_reason_hit_dealer_strong">يُظهر الموزّع %1$s وغالبًا ما يكوّن يدًا جيدة، فـ%2$d تفوز في %5$d%% من المرات فقط إذا بقيت: اطلب ورقة رغم خطر التجاوز البالغ %4$d%%.</string>
+    <string name="hint_reason_hit_cannot_bust">لا يمكنك تجاوز 21 مع %2$d: اطلب ورقة لتحسين يدك.</string>
+    <string name="hint_reason_hit_soft">%2$d الناعمة لا تتجاوز 21 مع الورقة التالية، فالطلب لا يكلّفك شيئًا: حسّن يدك.</string>
+    <string name="hint_reason_double">فرصة قوية: %2$d أمام %1$s الموزّع. ضاعف رهانك، واطلب ورقة واحدة واستفد منها.</string>
+    <string name="hint_reason_split_aces">آسان هما أفضل زوج للتقسيم: كل منهما قد يصبح 21، بينما A-A معًا مجرد 12 ناعمة ضعيفة.</string>
+    <string name="hint_reason_split_eights">ثمانيتان تساويان 16، وهي أسوأ يد: قسّمهما لتبدأ يدين أفضل.</string>
+    <string name="hint_reason_split_pair">أمام %1$s الموزّع، يمنحك التقسيم يدين جيدتين بدل يد ضعيفة واحدة.</string>
+    <string name="hint_reason_decline_insurance">التأمين يخسّرك الرقائق على المدى الطويل: الورقة المخفية تكون عشرة أقل من مرة واحدة من كل ثلاث، وهذا ما يلزم للتعادل.</string>
+    <string name="hint_figures">الموزّع يتجاوز %1$d%% · الطلب يجعلك تتجاوز %2$d%%</string>
+    <string name="hint_figures_dealer_only">الموزّع يتجاوز %1$d%%</string>
+    <string name="review_title">نظرة إلى الوراء على التلميح</string>
+    <string name="review_followed_won">اتبعت التلميح وفزت.</string>
+    <string name="review_followed_lost">اتبعت التلميح وخسرت، وهذا يحدث: أوراق الموزّع هي التي تحسم الجولة. قيّم القرار لا النتيجة.</string>
+    <string name="review_followed_push">اتبعت التلميح وانتهت بتعادل: حافظت على رقائقك.</string>
+    <string name="review_ignored_won">فزت، لكن التلميح اقترح: %1$s. سببه: %2$s الفوز ضد الاحتمالات حظ وليس خطة.</string>
+    <string name="review_ignored_lost">اقترح التلميح: %1$s، لكنك اخترت غير ذلك وخسرت. سببه: %2$s</string>
+    <string name="review_ignored_push">اقترح التلميح: %1$s واخترت غير ذلك. سببه: %2$s</string>
+    <string name="review_dealer_finished">أنهى الموزّع بـ%1$d.</string>
+    <string name="review_dealer_busted">تجاوز الموزّع 21.</string>
+    <string name="review_dealer_blackjack">كان مع الموزّع بلاك جاك.</string>
+    <string name="review_you_busted">تجاوزت 21 بـ%1$d.</string>
 </resources>

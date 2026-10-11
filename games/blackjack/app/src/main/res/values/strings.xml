@@ -91,4 +91,37 @@
     <string name="help_strategy_5">With an Ace counting as 11 (a soft hand), hit up to soft 17 and stand on soft 19 or more.</string>
     <string name="help_strategy_6">Never take insurance. Over time it costs more than it pays back.</string>
     <string name="help_strategy_7">Strategy lowers the house\'s edge but cannot promise a win: the dealer\'s hidden card still decides many rounds.</string>
+
+    <!-- The Hint's reasons (UI_SPEC.md "Hint Presentation"). %1$s = the dealer's up card (Ace, 6, King...), %2$d = your total,
+         %3$d = the dealer's chance to bust in percent, %4$d = your chance to bust on a hit in percent,
+         %5$d = your chance to win if you stand in percent. -->
+    <string name="hint_reason_stand_strong">%2$d is a strong hand: hitting risks a bust for little gain.</string>
+    <string name="hint_reason_stand_dealer_weak">The dealer shows %1$s and busts about %3$d%% of the time, while a hit would bust you %4$d%% of the time: stand and let the dealer take the risk.</string>
+    <string name="hint_reason_hit_dealer_strong">The dealer shows %1$s and often makes a good hand, so %2$d wins only %5$d%% of the time if you stand: take a card despite the %4$d%% bust risk.</string>
+    <string name="hint_reason_hit_cannot_bust">You cannot bust with %2$d: take a card to improve your hand.</string>
+    <string name="hint_reason_hit_soft">A soft %2$d cannot bust on the next card, so hitting costs you nothing: improve your hand.</string>
+    <string name="hint_reason_double">A strong spot: %2$d against the dealer\'s %1$s. Double your bet, take one card and make the most of it.</string>
+    <string name="hint_reason_split_aces">Two aces are the best pair to split: each one can become 21, while A-A together is only a weak soft 12.</string>
+    <string name="hint_reason_split_eights">Two eights make 16, the worst hand: split them to start two better hands.</string>
+    <string name="hint_reason_split_pair">Against the dealer\'s %1$s, splitting gives you two good hands instead of one weak one.</string>
+    <string name="hint_reason_decline_insurance">Insurance loses chips over time: the hole card is a ten less than one time in three, which is what it would take to break even.</string>
+    <!-- The figures under the reason. %1$d = the dealer's chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
+    <string name="hint_figures">Dealer busts %1$d%% · A hit busts you %2$d%%</string>
+    <string name="hint_figures_dealer_only">Dealer busts %1$d%%</string>
+
+    <!-- Looking back at a round played after a Hint (UI_SPEC.md "Hint Review"). -->
+    <string name="review_title">Looking back at the Hint</string>
+    <string name="review_followed_won">You followed the Hint and won.</string>
+    <string name="review_followed_lost">You followed the Hint and lost, which happens: the dealer\'s cards decide the round. Judge the decision, not the result.</string>
+    <string name="review_followed_push">You followed the Hint and pushed: you kept your chips.</string>
+    <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint's reason, a full sentence -->
+    <string name="review_ignored_won">You won, but the Hint suggested %1$s. Its reason: %2$s Winning against the odds is luck, not a plan.</string>
+    <string name="review_ignored_lost">The Hint suggested %1$s, but you chose differently and lost. Its reason: %2$s</string>
+    <string name="review_ignored_push">The Hint suggested %1$s and you chose differently. Its reason: %2$s</string>
+    <!-- How the round ended. %1$d = a hand total. -->
+    <string name="review_dealer_finished">The dealer finished with %1$d.</string>
+    <string name="review_dealer_busted">The dealer busted.</string>
+    <string name="review_dealer_blackjack">The dealer had blackjack.</string>
+    <string name="review_you_busted">You busted with %1$d.</string>
+
 </resources>

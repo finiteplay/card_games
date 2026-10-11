@@ -154,11 +154,35 @@ minimum card width and the exposed face-up band the platform requires of every g
 
 ## Hint Presentation
 
-The table's answer is shown by **highlighting the button to press**, in the action bar itself — no
-text line: the suggested button gets a filled, ringed background and bold type, and a screen reader
-reads it as *Suggested* (`BoardAction.highlighted`, shared with every game's bar). It stays until the
-round changes or a decision is made; pressing Hint again hides it. Nothing else is highlighted and nothing
-is counted: there is no hints statistic, since the hint proves nothing (`DESIGN.md` "Hint").
+The table's answer is shown by **highlighting the button to press**, in the action bar itself: the
+suggested button gets a filled, ringed background and bold type, and a screen reader reads it as
+*Suggested* (`BoardAction.highlighted`, shared with every game's bar). It stays until the round
+changes or a decision is made; pressing Hint again hides it. Nothing is counted: there is no hints
+statistic, since the hint proves nothing (`DESIGN.md` "Hint").
+
+**A coach's notice** explains it, at the top of the felt where nothing is dealt: a sentence saying
+*why* (`BlackjackHintReason`; ten lessons, from "stand and let the dealer take the risk" to "insurance
+loses chips over time") in the numbers of this spot, and beneath it, in amber, the odds behind it:
+`Dealer busts 37% · A hit busts you 31%` (the second only when a hit can bust you). The odds come
+from `DealerOdds`: the dealer's outcome chances for an endless deck under the table rules, with the
+peek conditioned in, so they are close, not exact, for six decks. Its spoken description reads the
+sentence and the figures.
+
+### Hint Review
+
+When a round settles and the player used a Hint in it, a card in the same place, titled *Looking
+back at the Hint*, tells how the round went against what the Hint said, and stays until the next
+round deals:
+
+- **Followed it and won / lost / pushed** — `You followed the Hint and lost, which happens: the
+  dealer's cards decide the round. Judge the decision, not the result.`
+- **Went against it**, whatever the result — what the Hint suggested and its reason, and for a win
+  `Winning against the odds is luck, not a plan.`
+- A line on how it ended: `The dealer finished with 19.`, `The dealer busted.`, `The dealer had
+  blackjack.`, `You busted with 22.`
+
+It is about the player's last hinted decision in the round (`RoundReview`); a round played without a
+Hint has no review.
 
 ## Settlement Presentation
 

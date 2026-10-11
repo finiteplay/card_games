@@ -66,4 +66,29 @@
     <string name="help_strategy_5">Con un asso che vale 11 (mano morbida), prendi carta fino a 17 morbido e stai da 19 morbido in su.</string>
     <string name="help_strategy_6">Non prendere mai l\'assicurazione. Alla lunga costa più di quanto restituisce.</string>
     <string name="help_strategy_7">La strategia riduce il vantaggio del banco ma non promette vittorie: la carta coperta del banco decide ancora molte mani.</string>
+
+    <!-- Hint reasons, figures and review. %N$s are texts, %N$d are numbers or percents (same as the English file). -->
+    <string name="hint_reason_stand_strong">%2$d è una mano forte: chiedere carta rischia di sballare per poco guadagno.</string>
+    <string name="hint_reason_stand_dealer_weak">Il banco mostra %1$s e sballa circa il %3$d%% delle volte, mentre con una carta sballeresti il %4$d%%: stai e lascia che sia il banco a rischiare.</string>
+    <string name="hint_reason_hit_dealer_strong">Il banco mostra %1$s e spesso fa una buona mano, quindi %2$d vince solo il %5$d%% delle volte se stai: prendi una carta nonostante il rischio del %4$d%% di sballare.</string>
+    <string name="hint_reason_hit_cannot_bust">Non puoi sballare con %2$d: prendi una carta per migliorare la tua mano.</string>
+    <string name="hint_reason_hit_soft">Un %2$d morbido non può sballare con la carta successiva, quindi chiedere carta non ti costa nulla: migliora la tua mano.</string>
+    <string name="hint_reason_double">Una situazione forte: %2$d contro il %1$s del banco. Raddoppia la puntata, prendi una sola carta e sfruttala al meglio.</string>
+    <string name="hint_reason_split_aces">Due assi sono la coppia migliore da dividere: ognuno può diventare 21, mentre A-A insieme è solo un debole 12 morbido.</string>
+    <string name="hint_reason_split_eights">Due otto fanno 16, la mano peggiore: dividili per iniziare due mani migliori.</string>
+    <string name="hint_reason_split_pair">Contro il %1$s del banco, dividere ti dà due buone mani invece di una debole.</string>
+    <string name="hint_reason_decline_insurance">L\'assicurazione fa perdere fiches nel tempo: la carta coperta è un dieci meno di una volta su tre, che è ciò che servirebbe per andare in pari.</string>
+    <string name="hint_figures">Il banco sballa %1$d%% · Una carta ti fa sballare %2$d%%</string>
+    <string name="hint_figures_dealer_only">Il banco sballa %1$d%%</string>
+    <string name="review_title">Uno sguardo al suggerimento</string>
+    <string name="review_followed_won">Hai seguito il suggerimento e hai vinto.</string>
+    <string name="review_followed_lost">Hai seguito il suggerimento e hai perso, capita: le carte del banco decidono la mano. Giudica la decisione, non il risultato.</string>
+    <string name="review_followed_push">Hai seguito il suggerimento e hai pareggiato: hai tenuto le tue fiches.</string>
+    <string name="review_ignored_won">Hai vinto, ma il suggerimento consigliava: %1$s. Il motivo: %2$s Vincere contro le probabilità è fortuna, non un piano.</string>
+    <string name="review_ignored_lost">Il suggerimento consigliava: %1$s, ma hai scelto altro e hai perso. Il motivo: %2$s</string>
+    <string name="review_ignored_push">Il suggerimento consigliava: %1$s e tu hai scelto altro. Il motivo: %2$s</string>
+    <string name="review_dealer_finished">Il banco ha chiuso con %1$d.</string>
+    <string name="review_dealer_busted">Il banco ha sballato.</string>
+    <string name="review_dealer_blackjack">Il banco aveva blackjack.</string>
+    <string name="review_you_busted">Hai sballato con %1$d.</string>
 </resources>

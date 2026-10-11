@@ -66,4 +66,29 @@
     <string name="help_strategy_5">Con un as que cuenta 11 (mano blanda), pide hasta 17 blando y plántate desde 19 blando.</string>
     <string name="help_strategy_6">Nunca tomes el seguro. A la larga cuesta más de lo que devuelve.</string>
     <string name="help_strategy_7">La estrategia reduce la ventaja de la casa pero no promete ganar: la carta oculta del crupier sigue decidiendo muchas rondas.</string>
+
+    <!-- Hint reasons, figures and review. %N$s are texts, %N$d are numbers or percents (same as the English file). -->
+    <string name="hint_reason_stand_strong">%2$d es una mano fuerte: pedir carta arriesga pasarse para ganar poco.</string>
+    <string name="hint_reason_stand_dealer_weak">El crupier muestra %1$s y se pasa cerca del %3$d%% de las veces, mientras que pedir te pasaría el %4$d%%: plántate y deja que el crupier corra el riesgo.</string>
+    <string name="hint_reason_hit_dealer_strong">El crupier muestra %1$s y suele hacer buena mano, así que %2$d gana solo el %5$d%% de las veces si te plantas: pide carta pese al %4$d%% de riesgo de pasarte.</string>
+    <string name="hint_reason_hit_cannot_bust">No puedes pasarte con %2$d: pide carta para mejorar tu mano.</string>
+    <string name="hint_reason_hit_soft">Un %2$d blando no puede pasarse con la siguiente carta, así que pedir no te cuesta nada: mejora tu mano.</string>
+    <string name="hint_reason_double">Buen momento: %2$d contra el %1$s del crupier. Dobla tu apuesta, toma una carta y aprovéchala.</string>
+    <string name="hint_reason_split_aces">Dos ases son el mejor par para dividir: cada uno puede llegar a 21, mientras que A-A juntos es solo un 12 blando débil.</string>
+    <string name="hint_reason_split_eights">Dos ochos suman 16, la peor mano: divídelos para empezar dos manos mejores.</string>
+    <string name="hint_reason_split_pair">Contra el %1$s del crupier, dividir te da dos buenas manos en lugar de una débil.</string>
+    <string name="hint_reason_decline_insurance">El seguro hace perder fichas con el tiempo: la carta oculta es un diez menos de una vez de cada tres, que es lo que haría falta para salir en tablas.</string>
+    <string name="hint_figures">El crupier se pasa %1$d%% · Pedir te pasa %2$d%%</string>
+    <string name="hint_figures_dealer_only">El crupier se pasa %1$d%%</string>
+    <string name="review_title">Repaso de la pista</string>
+    <string name="review_followed_won">Seguiste la pista y ganaste.</string>
+    <string name="review_followed_lost">Seguiste la pista y perdiste, algo que pasa: las cartas del crupier deciden la ronda. Juzga la decisión, no el resultado.</string>
+    <string name="review_followed_push">Seguiste la pista y empataste: conservaste tus fichas.</string>
+    <string name="review_ignored_won">Ganaste, pero la pista sugería: %1$s. Su motivo: %2$s Ganar contra las probabilidades es suerte, no un plan.</string>
+    <string name="review_ignored_lost">La pista sugería: %1$s, pero elegiste otra cosa y perdiste. Su motivo: %2$s</string>
+    <string name="review_ignored_push">La pista sugería: %1$s y elegiste otra cosa. Su motivo: %2$s</string>
+    <string name="review_dealer_finished">El crupier terminó con %1$d.</string>
+    <string name="review_dealer_busted">El crupier se pasó.</string>
+    <string name="review_dealer_blackjack">El crupier tenía blackjack.</string>
+    <string name="review_you_busted">Te pasaste con %1$d.</string>
 </resources>
