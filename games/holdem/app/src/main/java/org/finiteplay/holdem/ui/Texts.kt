@@ -8,6 +8,7 @@ import org.finiteplay.cards.Rank
 import org.finiteplay.core.ui.card.rankSpokenLabel
 import org.finiteplay.core.ui.card.suitSpokenLabel
 import org.finiteplay.holdem.R
+import org.finiteplay.holdem.opponents.HintReason
 import org.finiteplay.holdem.rules.Action
 import org.finiteplay.holdem.rules.HandCategory
 import org.finiteplay.holdem.rules.HistoryEntry
@@ -98,4 +99,30 @@ fun announcementText(announcement: Announcement, nameOf: @Composable (Int) -> St
         for (seat in announcement.seats) names += nameOf(seat)
         stringResource(R.string.ann_wins, names.joinToString(" & "), announcement.amount)
     }
+}
+
+/**
+ * The coach's sentence for a hint (`UI_SPEC.md` "Hint Presentation"). The numbers are whole percents
+ * for [equity] and [needed], the count of [outs], and the stack in big blinds; each sentence uses
+ * the ones it needs.
+ */
+@Composable
+fun hintReasonText(reason: HintReason, equity: Int, needed: Int, outs: Int, stackBb: Int): String = when (reason) {
+    HintReason.PREMIUM_RAISE -> stringResource(R.string.hint_reason_premium_raise)
+    HintReason.LATE_POSITION_RAISE -> stringResource(R.string.hint_reason_late_position_raise)
+    HintReason.PLAYABLE_RAISE -> stringResource(R.string.hint_reason_playable_raise)
+    HintReason.CALL_TO_SEE_FLOP -> stringResource(R.string.hint_reason_call_to_see_flop)
+    HintReason.FREE_FLOP -> stringResource(R.string.hint_reason_free_flop)
+    HintReason.FOLD_WEAK -> stringResource(R.string.hint_reason_fold_weak)
+    HintReason.FOLD_TO_RAISE -> stringResource(R.string.hint_reason_fold_to_raise)
+    HintReason.PUSH_SHORT_STACK -> stringResource(R.string.hint_reason_push_short_stack, stackBb)
+    HintReason.FOLD_SHORT_STACK -> stringResource(R.string.hint_reason_fold_short_stack, stackBb)
+    HintReason.VALUE_BET -> stringResource(R.string.hint_reason_value_bet)
+    HintReason.VALUE_RAISE -> stringResource(R.string.hint_reason_value_raise)
+    HintReason.SEMI_BLUFF -> stringResource(R.string.hint_reason_semi_bluff, outs)
+    HintReason.CALL_GOOD_PRICE -> stringResource(R.string.hint_reason_call_good_price, equity, needed)
+    HintReason.CALL_DRAW -> stringResource(R.string.hint_reason_call_draw, outs)
+    HintReason.FOLD_BAD_PRICE -> stringResource(R.string.hint_reason_fold_bad_price, equity, needed)
+    HintReason.FREE_CARD -> stringResource(R.string.hint_reason_free_card)
+    HintReason.POT_CONTROL -> stringResource(R.string.hint_reason_pot_control)
 }

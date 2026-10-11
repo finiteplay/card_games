@@ -6,4 +6,26 @@
     <string name="hint_notice_free_desc">Εκτιμώμενη πιθανότητα νίκης %1$d τοις εκατό απέναντι σε πιθανά χέρια.</string>
 
     <string name="recovery_notice">Το αποθηκευμένο χέρι σου δεν άνοιξε, γι\' αυτό μοιράστηκε ξανά από την αρχή. Δεν χάθηκε καμία μάρκα.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Πρώτης τάξεως χέρι: κάνε ρέιζ για να μεγαλώσεις το ποτ όσο πιθανότατα προηγείσαι.</string>
+    <string name="hint_reason_late_position_raise">Όψιμη θέση, άρα παίζεις μετά από τους περισσότερους: ένα ρέιζ μπορεί να κερδίσει τα μπλαϊντ αμέσως.</string>
+    <string name="hint_reason_playable_raise">Καλό χέρι για αυτή τη στιγμή: με ρέιζ παίρνεις το προβάδισμα στο πόνταρισμα.</string>
+    <string name="hint_reason_call_to_see_flop">Αξίζει να δεις φλοπ σε αυτή την τιμή, αλλά δεν είναι αρκετά δυνατό για ρέιζ.</string>
+    <string name="hint_reason_free_flop">Κανείς δεν έκανε ρέιζ και το τσεκ είναι δωρεάν: δες το φλοπ χωρίς κόστος.</string>
+    <string name="hint_reason_fold_weak">Αδύναμο χέρι: το πάσο δεν κοστίζει τίποτα και κρατά μάρκες για καλύτερες στιγμές.</string>
+    <string name="hint_reason_fold_to_raise">Κάποιος έκανε ρέιζ και το χέρι σου δεν είναι αρκετά δυνατό για να το πληρώσεις: το πάσο είναι φθηνότερο.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Έμειναν μόνο %1$d μεγάλα μπλαϊντ: το καλύτερο είναι all in ή πάσο, και αυτό το χέρι είναι αρκετά δυνατό για all in.</string>
+    <string name="hint_reason_fold_short_stack">Έμειναν μόνο %1$d μεγάλα μπλαϊντ: αυτό το χέρι είναι πολύ αδύναμο για να ρισκάρεις τα πάντα.</string>
+    <string name="hint_reason_value_bet">Πιθανότατα προηγείσαι: πόνταρε ώστε τα πιο αδύναμα χέρια να πληρώσουν για να δουν κι άλλα φύλλα.</string>
+    <string name="hint_reason_value_raise">Δυνατό χέρι απέναντι σε πόνταρισμα: κάνε ρέιζ για να βάλεις περισσότερες μάρκες όσο προηγείσαι.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Δυνατό draw (%1$d outs): το πόνταρισμα μπορεί να κερδίσει αμέσως και μπορείς ακόμα να βελτιωθείς.</string>
+    <string name="hint_reason_call_draw">Χέρι με draw (%1$d outs): το ποτ είναι αρκετά μεγάλο για να κυνηγήσεις το draw.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Το κολ αξίζει: κερδίζεις περίπου το %1$d%% των φορών και η τιμή απαιτεί μόνο %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Δεν φτάνει για κολ: η τιμή απαιτεί %2$d%% και εσύ έχεις περίπου %1$d%%.</string>
+    <string name="hint_reason_free_card">Το τσεκ είναι δωρεάν και το χέρι σου αδύναμο: δες το επόμενο φύλλο χωρίς κόστος.</string>
+    <string name="hint_reason_pot_control">Μέτριο χέρι: κάνε τσεκ για να κρατήσεις το ποτ μικρό και να δεις το επόμενο φύλλο.</string>
 </resources>

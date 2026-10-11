@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Kend pot odds. Hvis et call koster 25 jetoner for at vinde en pot på 75, betaler du én jeton for hver tre, du kan vinde, så callet betaler sig, hvis du vinder oftere end én gang ud af fire. Sammenlign det med din chance for at ende med den bedste hånd.</string>
     <string name="help_strategy_5">Position betyder noget. At handle sidst lader dig se, hvad alle andre gør først, og det er meget værd. Spil flere hænder fra sene sæder og færre fra tidlige.</string>
     <string name="help_strategy_6">Hold øje med modstandernes stilarter. Hvert sæde er mærket tight, loose, aggressiv eller passiv. Respekter et raise fra en tight spiller, og vær langsommere til at tro på en indsats fra en loose, aggressiv en.</string>
+    <string name="help_hint_note">Om Hint: den viser din equity, din estimerede chance for at vinde potten, ved siden af pot odds, den andel af potten, et call koster. Når din equity er højere end pot odds, betaler et call sig. Sætningen over dem forklarer tanken bag rådet. Det er en god vejviser, ikke en sikkerhed, fordi den ikke kan se andres kort.</string>
     <string name="help_strategy_7">Med en kort stack: gå all in eller fold. Når dine jetoner kun er nogle få big blinds, giver små indsatser og calls dig intet spillerum, og en godt timet all in er din bedste chance for at fordoble.</string>
 </resources>

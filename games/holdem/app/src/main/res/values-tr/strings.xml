@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Pot odds\'u bil. 75\'lik bir pot\'u kazanmak için call 25 fişe mal oluyorsa, kazanabileceğin her üç fiş için bir fiş ödersin; yani dört seferde bir\'den fazla kazanırsan call kârlıdır. Bunu, eli en iyi bitirme şansınla karşılaştır.</string>
     <string name="help_strategy_5">Pozisyon önemlidir. Son hareket etmek, önce herkesin ne yaptığını görmeni sağlar ve bunun değeri büyüktür. Geç koltuklardan daha çok, erken koltuklardan daha az el oyna.</string>
     <string name="help_strategy_6">Rakiplerin tarzlarına dikkat et. Her koltuk tight, loose, agresif veya pasif olarak etiketlenir. Tight bir oyuncunun raise\'ine saygı göster, loose ve agresif birinin bahsine inanmakta daha yavaş ol.</string>
+    <string name="help_hint_note">İpucu hakkında: equity\'yi, yani potu kazanma tahmini şansını, pot odds\'un, yani bir call\'ın pot\'tan alacağı payın yanında gösterir. Equity pot odds\'tan yüksekse call yapmak kazandırır. Üstlerindeki cümle tavsiyenin arkasındaki fikri açıklar. Kesin değil, iyi bir rehberdir; çünkü kimsenin kartlarını göremez.</string>
     <string name="help_strategy_7">Kısa stack ile all in git ya da fold et. Fişlerin yalnızca birkaç big blind ise küçük bahisler ve call\'lar sana manevra alanı bırakmaz; iyi zamanlanmış bir all in, ikiye katlamak için en iyi şansındır.</string>
 </resources>

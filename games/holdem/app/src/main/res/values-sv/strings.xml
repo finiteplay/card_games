@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Lär dig pottodds. Om en call kostar 25 marker för att vinna en pott på 75 betalar du en mark för var tredje du kan vinna, så callen lönar sig om du vinner oftare än en gång av fyra. Jämför det med din chans att sluta med den bästa handen.</string>
     <string name="help_strategy_5">Position spelar roll. Att agera sist låter dig se vad alla andra gör först, vilket är värt mycket. Spela fler händer från sena platser och färre från tidiga.</string>
     <string name="help_strategy_6">Titta på motståndarnas stilar. Varje plats är märkt tight, loose, aggressiv eller passiv. Respektera en höjning från en tight spelare, och var långsammare med att tro på en satsning från en loose, aggressiv.</string>
+    <string name="help_hint_note">Om Hint: den visar din equity, din uppskattade chans att vinna potten, bredvid pottodds, andelen av potten som en call kostar. När din equity är högre än pottodds lönar sig en call. Meningen ovanför förklarar tanken bakom rådet. Det är en bra vägledning, inte en säkerhet, eftersom den inte ser någons kort.</string>
     <string name="help_strategy_7">Med en kort stack: gå all in eller folda. När dina marker bara är några stora blinds ger små satsningar och calls dig inget utrymme, och en välplacerad all in är din bästa chans att dubbla.</string>
 </resources>

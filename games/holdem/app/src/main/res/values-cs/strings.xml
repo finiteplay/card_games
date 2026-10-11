@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Znej šance banky. Pokud vyrovnání stojí 25 žetonů a vyhraješ banku 75, platíš jeden žeton za každé tři, které můžeš vyhrát, takže se vyrovnání vyplatí, když vyhraješ víc než jednou ze čtyř. Porovnej to se šancí, že skončíš s nejlepší kombinací.</string>
     <string name="help_strategy_5">Pozice záleží. Jednat jako poslední ti dovolí nejdřív vidět, co dělají ostatní, což je hodně cenné. Hraj víc her z pozdních míst a méně z raných.</string>
     <string name="help_strategy_6">Sleduj styly soupeřů. Každé místo má štítek: tight, loose, agresivní nebo pasivní. Respektuj zvýšení od tight hráče a věř pomaleji sázce od loose, agresivního.</string>
+    <string name="help_hint_note">O nápovědě: ukazuje tvé equity, odhadovanou šanci vyhrát banku, vedle šance banky, tedy podílu banky, který stojí vyrovnání. Když je equity vyšší než šance banky, vyrovnání se vyplatí. Věta nad nimi vysvětluje myšlenku za radou. Je to dobrý průvodce, ne jistota, protože nevidí nikomu do karet.</string>
     <string name="help_strategy_7">S malým stackem jdi all in, nebo zahoď. Když máš jen pár velkých blindů, malé sázky a vyrovnání ti nenechají prostor k manévrování a dobře načasovaný all in je tvá nejlepší šance zdvojnásobit se.</string>
 </resources>

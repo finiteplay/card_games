@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">对可能的牌型，估计获胜机会为百分之 %1$d；跟注需要底池的百分之 %2$d。</string>
     <string name="hint_notice_free_desc">对可能的牌型，估计获胜机会为百分之 %1$d。</string>
     <string name="recovery_notice">无法打开你保存的牌局，所以已从头重新发牌。没有损失任何筹码。</string>
+
+    <!-- Hint reasons (UI_SPEC.md "Hint Presentation"): one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">顶级好牌：加注来做大底池，你很可能领先。</string>
+    <string name="hint_reason_late_position_raise">后位，你在大多数玩家之后行动：现在加注可能直接赢下盲注。</string>
+    <string name="hint_reason_playable_raise">这个位置的好牌：加注可以在下注中占据主动。</string>
+    <string name="hint_reason_call_to_see_flop">这个价格值得看翻牌，但还不够强，不足以加注。</string>
+    <string name="hint_reason_free_flop">没人加注，过牌免费：不花一分钱看翻牌。</string>
+    <string name="hint_reason_fold_weak">牌很弱：弃牌不花钱，还能把筹码留给更好的机会。</string>
+    <string name="hint_reason_fold_to_raise">有人加注，而你的牌不够强，不值得跟：弃牌更划算。</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">只剩 %1$d 个大盲注：全下或弃牌最合适，这手牌足够强，可以全下。</string>
+    <string name="hint_reason_fold_short_stack">只剩 %1$d 个大盲注：这手牌太弱，不值得押上全部。</string>
+    <string name="hint_reason_value_bet">你很可能领先：下注，让较弱的牌付费才能看更多牌。</string>
+    <string name="hint_reason_value_raise">强牌面对下注：加注，趁领先多投入筹码。</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">强听牌（%1$d 个 outs）：下注可能当场赢下底池，你还能继续改善牌型。</string>
+    <string name="hint_reason_call_draw">听牌（%1$d 个 outs）：底池够大，值得追牌。</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">跟注划算：你大约有 %1$d%% 的胜率，而价格只需要 %2$d%%。</string>
+    <string name="hint_reason_fold_bad_price">不够跟注：价格需要 %2$d%%，而你只有约 %1$d%%。</string>
+    <string name="hint_reason_free_card">过牌免费，而你的牌很弱：免费看下一张牌。</string>
+    <string name="hint_reason_pot_control">中等牌力：过牌，把底池保持在较小规模并看下一张牌。</string>
 </resources>

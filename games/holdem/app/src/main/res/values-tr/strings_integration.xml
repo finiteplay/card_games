@@ -6,4 +6,26 @@
     <string name="hint_notice_free_desc">Olası ellere karşı tahmini kazanma şansı yüzde %1$d.</string>
 
     <string name="recovery_notice">Kayıtlı elin açılamadı, bu yüzden baştan yeniden dağıtıldı. Hiç fiş kaybedilmedi.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Premium el: büyük ihtimalle öndesin, pot\'u büyütmek için raise yap.</string>
+    <string name="hint_reason_late_position_raise">Geç pozisyondasın, yani çoğu oyuncudan sonra oynuyorsun: raise yapmak blindları hemen kazandırabilir.</string>
+    <string name="hint_reason_playable_raise">Bu durum için iyi bir el: raise yapmak bahis turunda inisiyatifi sana verir.</string>
+    <string name="hint_reason_call_to_see_flop">Bu fiyata flop görmeye değer, ama raise için yeterince güçlü değil.</string>
+    <string name="hint_reason_free_flop">Kimse raise yapmadı ve check bedava: flop\'u ücretsiz gör.</string>
+    <string name="hint_reason_fold_weak">Zayıf bir el: fold etmek hiçbir şeye mal olmaz, fişlerini daha iyi anlara saklar.</string>
+    <string name="hint_reason_fold_to_raise">Biri raise yaptı ve elin bunu ödemeye yetecek kadar güçlü değil: fold etmek daha ucuz.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Yalnızca %1$d big blind kaldı: all in ya da fold en iyisi ve bu el all in gitmeye yetecek kadar güçlü.</string>
+    <string name="hint_reason_fold_short_stack">Yalnızca %1$d big blind kaldı: bu el her şeyi riske atmak için fazla zayıf.</string>
+    <string name="hint_reason_value_bet">Büyük ihtimalle öndesin: bet yap ki zayıf eller daha fazla kart görmek için ödesin.</string>
+    <string name="hint_reason_value_raise">Bahse karşı güçlü bir el: öndeyken pota daha fazla fiş koymak için raise yap.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Güçlü bir draw (%1$d out): bet yapmak hemen kazandırabilir ve elin hâlâ gelişebilir.</string>
+    <string name="hint_reason_call_draw">Draw bekleyen bir el (%1$d out): pot, draw\'un peşinden gitmeye değecek kadar büyük.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Call yapmak kazandırır: zamanın yaklaşık %%%1$d\'ini kazanıyorsun, fiyat ise yalnızca %%%2$d gerektiriyor.</string>
+    <string name="hint_reason_fold_bad_price">Call için yetmez: fiyat %%%2$d gerektiriyor, sende yaklaşık %%%1$d var.</string>
+    <string name="hint_reason_free_card">Check bedava ve elin zayıf: sıradaki kartı ücretsiz gör.</string>
+    <string name="hint_reason_pot_control">Orta kalitede bir el: pot\'u küçük tutmak ve sıradaki kartı görmek için check yap.</string>
 </resources>

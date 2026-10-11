@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">Chances estimées de gagner : %1$d pour cent contre les mains probables ; suivre coûte %2$d pour cent du pot.</string>
     <string name="hint_notice_free_desc">Chances estimées de gagner : %1$d pour cent contre les mains probables.</string>
     <string name="recovery_notice">Votre main sauvegardée n\'a pas pu être ouverte, elle a donc été redistribuée depuis le début. Aucun jeton n\'a été perdu.</string>
+
+    <!-- Hint reasons: one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Main premium : relancez pour grossir le pot alors que vous êtes probablement devant.</string>
+    <string name="hint_reason_late_position_raise">Position tardive, vous parlez après la plupart des joueurs : relancer peut remporter les blindes tout de suite.</string>
+    <string name="hint_reason_playable_raise">Une bonne main pour cette situation : relancer vous donne la main dans les mises.</string>
+    <string name="hint_reason_call_to_see_flop">Cela vaut la peine de voir le flop à ce prix, mais la main n\'est pas assez forte pour relancer.</string>
+    <string name="hint_reason_free_flop">Personne n\'a relancé et checker est gratuit : voyez le flop sans frais.</string>
+    <string name="hint_reason_fold_weak">Une main faible : se coucher ne coûte rien et garde des jetons pour de meilleures occasions.</string>
+    <string name="hint_reason_fold_to_raise">Quelqu\'un a relancé et votre main n\'est pas assez forte pour payer : se coucher coûte moins cher.</string>
+    <!-- %1$d = votre tapis en grosses blindes -->
+    <string name="hint_reason_push_short_stack">Il ne vous reste que %1$d grosses blindes : tapis ou coucher est le meilleur choix, et cette main est assez forte pour jouer tapis.</string>
+    <string name="hint_reason_fold_short_stack">Il ne vous reste que %1$d grosses blindes : cette main est trop faible pour tout risquer.</string>
+    <string name="hint_reason_value_bet">Vous êtes probablement devant : misez pour que les mains plus faibles paient pour voir d\'autres cartes.</string>
+    <string name="hint_reason_value_raise">Main forte face à une mise : relancez pour mettre plus de jetons tant que vous êtes devant.</string>
+    <!-- %1$d = nombre d'outs (cartes qui complètent votre tirage) -->
+    <string name="hint_reason_semi_bluff">Gros tirage (%1$d outs) : miser peut gagner tout de suite, et vous pouvez encore progresser.</string>
+    <string name="hint_reason_call_draw">Un tirage (%1$d outs) : le pot est assez gros pour courir après le tirage.</string>
+    <!-- %1$d = vos chances de gagner en pourcentage, %2$d = la part du pot que coûte le suivi, en pourcentage -->
+    <string name="hint_reason_call_good_price">Suivre est rentable : vous gagnez environ %1$d%% du temps et le prix n\'en demande que %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Pas assez pour suivre : le prix demande %2$d%% et vous avez environ %1$d%%.</string>
+    <string name="hint_reason_free_card">Checker est gratuit et votre main est faible : prenez la carte suivante sans frais.</string>
+    <string name="hint_reason_pot_control">Une main moyenne : checkez pour garder un petit pot et voir la carte suivante.</string>
 </resources>

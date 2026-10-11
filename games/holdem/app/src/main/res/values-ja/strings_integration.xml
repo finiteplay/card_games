@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">ありそうな手に対する推定勝率は%1$dパーセント。コールの費用はポットの%2$dパーセントです。</string>
     <string name="hint_notice_free_desc">ありそうな手に対する推定勝率は%1$dパーセントです。</string>
     <string name="recovery_notice">保存したハンドを開けなかったため、最初から配り直しました。チップは失われていません。</string>
+
+    <!-- Hint reasons (UI_SPEC.md "Hint Presentation"): one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">プレミアムハンド：おそらくリードしているので、レイズしてポットを育てましょう。</string>
+    <string name="hint_reason_late_position_raise">レイトポジションで、ほとんどのプレイヤーの後に行動できます。今レイズすればブラインドを獲得できるかもしれません。</string>
+    <string name="hint_reason_playable_raise">この状況では良いハンドです。レイズしてベッティングの主導権を握りましょう。</string>
+    <string name="hint_reason_call_to_see_flop">この価格ならフロップを見る価値はありますが、レイズするほど強くはありません。</string>
+    <string name="hint_reason_free_flop">誰もレイズしておらず、チェックは無料です。コストなしでフロップを見ましょう。</string>
+    <string name="hint_reason_fold_weak">弱いハンドです。フォールドは無料で、より良い場面のためにチップを残せます。</string>
+    <string name="hint_reason_fold_to_raise">誰かがレイズし、あなたのハンドは払うほど強くありません。フォールドの方が安く済みます。</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">残り%1$dビッグブラインド：オールインかフォールドが最善で、このハンドはオールインできる強さです。</string>
+    <string name="hint_reason_fold_short_stack">残り%1$dビッグブラインド：このハンドはすべてを賭けるには弱すぎます。</string>
+    <string name="hint_reason_value_bet">おそらくリードしています。ベットして、弱いハンドにカードを見るためのコストを払わせましょう。</string>
+    <string name="hint_reason_value_raise">ベットに対して強いハンドです。リードしているうちにレイズしてチップを増やしましょう。</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">強いドロー（%1$dアウツ）：ベットでその場で勝てる可能性があり、まだ改善もできます。</string>
+    <string name="hint_reason_call_draw">ドローハンド（%1$dアウツ）：ポットが十分大きいので、ドローを追う価値があります。</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">コールは得です。勝率は約%1$d%%で、必要なのは%2$d%%だけです。</string>
+    <string name="hint_reason_fold_bad_price">コールするには足りません。必要なのは%2$d%%で、あなたは約%1$d%%です。</string>
+    <string name="hint_reason_free_card">チェックは無料で、ハンドは弱めです。コストなしで次のカードを見ましょう。</string>
+    <string name="hint_reason_pot_control">中程度のハンドです。チェックしてポットを小さく保ち、次のカードを見ましょう。</string>
 </resources>

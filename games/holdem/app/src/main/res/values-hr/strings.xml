@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Poznajte odnos uloga i pota. Ako vas praćenje košta 25 žetona za pot od 75, plaćate jedan žeton za svaka tri koja možete osvojiti, pa se isplati ako pobijedite više od jednom u četiri puta. Usporedite to sa svojom šansom da završite s najboljom rukom.</string>
     <string name="help_strategy_5">Položaj je važan. Igranje zadnji omogućuje vam da prvo vidite što rade svi ostali, a to vrijedi puno. Igrajte više ruku s kasnih mjesta, a manje s ranih.</string>
     <string name="help_strategy_6">Pratite stilove protivnika. Svako mjesto ima oznaku: tight, loose, aggressive ili passive. Poštujte podizanje čvrstog igrača, a sporije vjerujte ulogu opuštenog, agresivnog igrača.</string>
+    <string name="help_hint_note">O savjetu: prikazuje tvoju šansu, procijenjenu vjerojatnost da osvojiš pot, uz odnos pota, udio pota koji košta praćenje. Kad je tvoja šansa veća od odnosa pota, praćenje se isplati. Rečenica iznad njih objašnjava ideju iza savjeta. To je dobar vodič, ali ne i sigurnost, jer ne vidi ničije karte.</string>
     <string name="help_strategy_7">S kratkim stackom idite all in ili odustanite. Kad imate samo nekoliko velikih blindova, mali ulozi i praćenja ne ostavljaju vam prostora za manevar, a dobro tempirani all in vaša je najbolja šansa za udvostručenje.</string>
 </resources>

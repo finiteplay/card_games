@@ -6,4 +6,26 @@
     <string name="hint_notice_free_desc">Șansa estimată de câștig este de %1$d la sută împotriva mâinilor probabile.</string>
 
     <string name="recovery_notice">Mâna ta salvată nu a putut fi deschisă, așa că a fost împărțită din nou de la început. Nu s-a pierdut niciun jeton.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Mână premium: mărește ca să umfli potul cât timp ești probabil în față.</string>
+    <string name="hint_reason_late_position_raise">Poziție târzie, deci joci după majoritatea jucătorilor: o mărire poate câștiga blindurile pe loc.</string>
+    <string name="hint_reason_playable_raise">O mână bună pentru situația asta: mărirea îți dă inițiativa în pariuri.</string>
+    <string name="hint_reason_call_to_see_flop">Merită să vezi flopul la prețul ăsta, dar nu e destul de puternică pentru mărire.</string>
+    <string name="hint_reason_free_flop">Nimeni nu a mărit, iar check-ul e gratuit: vezi flopul fără niciun cost.</string>
+    <string name="hint_reason_fold_weak">O mână slabă: fold-ul nu costă nimic și păstrează jetoane pentru momente mai bune.</string>
+    <string name="hint_reason_fold_to_raise">Cineva a mărit, iar mâna ta nu e destul de puternică să plătească: fold-ul e mai ieftin.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Au rămas doar %1$d big blinduri: all in sau fold e cel mai bun, iar mâna asta e destul de puternică pentru all in.</string>
+    <string name="hint_reason_fold_short_stack">Au rămas doar %1$d big blinduri: mâna asta e prea slabă ca să riști totul.</string>
+    <string name="hint_reason_value_bet">Probabil ești în față: pariază ca mâinile mai slabe să plătească pentru mai multe cărți.</string>
+    <string name="hint_reason_value_raise">Mână puternică în fața unui pariu: mărește ca să pui mai multe jetoane cât timp ești în față.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Draw puternic (%1$d outs): un pariu poate câștiga pe loc, iar tu te poți încă îmbunătăți.</string>
+    <string name="hint_reason_call_draw">O mână de draw (%1$d outs): potul e destul de mare ca să urmărești draw-ul.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Call-ul se plătește: câștigi cam în %1$d%% din cazuri, iar prețul cere doar %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Nu ajunge pentru call: prețul cere %2$d%%, iar tu ai cam %1$d%%.</string>
+    <string name="hint_reason_free_card">Check-ul e gratuit, iar mâna ta e slabă: vezi următoarea carte fără cost.</string>
+    <string name="hint_reason_pot_control">O mână de mijloc: dă check ca să ții potul mic și să vezi următoarea carte.</string>
 </resources>

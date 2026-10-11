@@ -5,4 +5,25 @@
     <string name="hint_notice_desc">Оціночний шанс виграти: %1$d відсотків проти ймовірних комбінацій; колл коштує %2$d відсотків банку.</string>
     <string name="hint_notice_free_desc">Оціночний шанс виграти: %1$d відсотків проти ймовірних комбінацій.</string>
     <string name="recovery_notice">Вашу збережену роздачу не вдалося відкрити, тому її роздали заново з початку. Жодної фішки не втрачено.</string>
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Сильна рука: рейзьте, щоб збільшити банк, поки ви, імовірно, попереду.</string>
+    <string name="hint_reason_late_position_raise">Пізня позиція, ви ходите після більшості гравців: рейз може забрати блайнди просто зараз.</string>
+    <string name="hint_reason_playable_raise">Добра рука для цієї ситуації: рейз дає вам ініціативу в торгах.</string>
+    <string name="hint_reason_call_to_see_flop">Варто побачити флоп за таку ціну, але рука не досить сильна для рейзу.</string>
+    <string name="hint_reason_free_flop">Ніхто не підвищив, а чек безкоштовний: побачте флоп без витрат.</string>
+    <string name="hint_reason_fold_weak">Слабка рука: фолд нічого не коштує й зберігає фішки для кращих ситуацій.</string>
+    <string name="hint_reason_fold_to_raise">Хтось підвищив, а ваша рука не досить сильна, щоб за це платити: фолд дешевший.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Лишилося лише %1$d великих блайндів: найкраще олл-ін або фолд, і ця рука досить сильна для олл-іну.</string>
+    <string name="hint_reason_fold_short_stack">Лишилося лише %1$d великих блайндів: ця рука надто слабка, щоб ризикувати всім.</string>
+    <string name="hint_reason_value_bet">Ви, імовірно, попереду: ставте, щоб слабші руки платили за наступні карти.</string>
+    <string name="hint_reason_value_raise">Сильна рука проти ставки: рейзьте, щоб вкласти більше фішок, поки ви попереду.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Сильний дро (%1$d аутів): ставка може виграти одразу, а рука ще може покращитися.</string>
+    <string name="hint_reason_call_draw">Рука з дро (%1$d аутів): банк достатньо великий, щоб іти за дро.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Колл виправданий: ви вигравате приблизно в %1$d%% випадків, а ціна потребує лише %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Для колу замало: ціна потребує %2$d%%, а у вас приблизно %1$d%%.</string>
+    <string name="hint_reason_free_card">Чек безкоштовний, а рука слабка: візьміть наступну карту без витрат.</string>
+    <string name="hint_reason_pot_control">Середня рука: чекайте, щоб банк лишився малим, і побачте наступну карту.</string>
 </resources>

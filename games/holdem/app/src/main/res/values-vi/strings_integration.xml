@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">Khả năng thắng ước tính là %1$d phần trăm so với các bài có khả năng; theo tốn %2$d phần trăm pot.</string>
     <string name="hint_notice_free_desc">Khả năng thắng ước tính là %1$d phần trăm so với các bài có khả năng.</string>
     <string name="recovery_notice">Không mở được ván đã lưu của bạn nên đã chia lại từ đầu. Không mất chip nào.</string>
+
+    <!-- Hint reasons (UI_SPEC.md "Hint Presentation"): one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Bài mạnh: hãy tố để tăng pot khi bạn có khả năng đang dẫn trước.</string>
+    <string name="hint_reason_late_position_raise">Vị trí muộn, bạn hành động sau hầu hết người chơi: tố lúc này có thể thắng blind.</string>
+    <string name="hint_reason_playable_raise">Bài tốt cho tình huống này: tố để nắm quyền chủ động trong vòng cược.</string>
+    <string name="hint_reason_call_to_see_flop">Đáng để xem flop với mức giá này, nhưng chưa đủ mạnh để tố.</string>
+    <string name="hint_reason_free_flop">Chưa ai tố và check là miễn phí: xem flop không mất gì.</string>
+    <string name="hint_reason_fold_weak">Bài yếu: bỏ bài không tốn gì và giữ chip cho tình huống tốt hơn.</string>
+    <string name="hint_reason_fold_to_raise">Có người đã tố và bài của bạn chưa đủ mạnh để theo: bỏ bài sẽ rẻ hơn.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Chỉ còn %1$d big blind: all-in hoặc bỏ bài là tốt nhất, và bài này đủ mạnh để all-in.</string>
+    <string name="hint_reason_fold_short_stack">Chỉ còn %1$d big blind: bài này quá yếu để đặt cược tất cả.</string>
+    <string name="hint_reason_value_bet">Bạn có khả năng đang dẫn trước: hãy cược để bài yếu hơn phải trả tiền xem thêm bài.</string>
+    <string name="hint_reason_value_raise">Bài mạnh khi đối mặt với một cú cược: tố để bỏ thêm chip khi bạn đang dẫn.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Bài chờ mạnh (%1$d outs): cược có thể thắng ngay, và bạn vẫn có thể cải thiện.</string>
+    <string name="hint_reason_call_draw">Bài chờ (%1$d outs): pot đủ lớn để đuổi theo bài chờ.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Theo là có lời: bạn thắng khoảng %1$d%% số lần và giá chỉ cần %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Chưa đủ để theo: giá cần %2$d%% mà bạn chỉ có khoảng %1$d%%.</string>
+    <string name="hint_reason_free_card">Check là miễn phí và bài bạn yếu: xem lá tiếp theo không mất gì.</string>
+    <string name="hint_reason_pot_control">Bài trung bình: check để giữ pot nhỏ và xem lá tiếp theo.</string>
 </resources>

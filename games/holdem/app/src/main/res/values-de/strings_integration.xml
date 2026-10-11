@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">Geschätzte Gewinnchance: %1$d Prozent gegen wahrscheinliche Hände; ein Call kostet %2$d Prozent des Pots.</string>
     <string name="hint_notice_free_desc">Geschätzte Gewinnchance: %1$d Prozent gegen wahrscheinliche Hände.</string>
     <string name="recovery_notice">Deine gespeicherte Hand konnte nicht geöffnet werden, deshalb wurde sie von vorn neu ausgeteilt. Es gingen keine Chips verloren.</string>
+
+    <!-- Hint reasons: one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Premium-Hand: Raise, um den Pot zu vergrößern, solange du wahrscheinlich vorn liegst.</string>
+    <string name="hint_reason_late_position_raise">Späte Position, du bist nach den meisten Spielern dran: Ein Raise kann jetzt die Blinds gewinnen.</string>
+    <string name="hint_reason_playable_raise">Eine gute Hand für diese Lage: Mit einem Raise übernimmst du die Führung in der Setzrunde.</string>
+    <string name="hint_reason_call_to_see_flop">Einen Flop zu diesem Preis zu sehen lohnt sich, aber für einen Raise reicht die Hand nicht.</string>
+    <string name="hint_reason_free_flop">Niemand hat geraist und Check ist kostenlos: Sieh dir den Flop gratis an.</string>
+    <string name="hint_reason_fold_weak">Eine schwache Hand: Fold kostet nichts und spart Chips für bessere Spots.</string>
+    <string name="hint_reason_fold_to_raise">Jemand hat geraist und deine Hand ist nicht stark genug, um zu bezahlen: Fold ist günstiger.</string>
+    <!-- %1$d = dein Stack in Big Blinds -->
+    <string name="hint_reason_push_short_stack">Nur noch %1$d Big Blinds: All-in oder Fold ist am besten, und diese Hand ist stark genug für All-in.</string>
+    <string name="hint_reason_fold_short_stack">Nur noch %1$d Big Blinds: Diese Hand ist zu schwach, um alles zu riskieren.</string>
+    <string name="hint_reason_value_bet">Du liegst wahrscheinlich vorn: Bet, damit schwächere Hände zahlen müssen, um mehr Karten zu sehen.</string>
+    <string name="hint_reason_value_raise">Starke Hand gegen einen Bet: Raise, um mehr Chips in den Pot zu bringen, solange du vorn liegst.</string>
+    <!-- %1$d = Anzahl der Outs (Karten, die dein Draw vervollständigen) -->
+    <string name="hint_reason_semi_bluff">Starker Draw (%1$d Outs): Ein Bet kann sofort gewinnen, und du kannst dich noch verbessern.</string>
+    <string name="hint_reason_call_draw">Eine Draw-Hand (%1$d Outs): Der Pot ist groß genug, um dem Draw nachzujagen.</string>
+    <!-- %1$d = deine Gewinnchance in Prozent, %2$d = der Anteil des Pots, den der Call kostet, in Prozent -->
+    <string name="hint_reason_call_good_price">Ein Call lohnt sich: Du gewinnst etwa %1$d%% der Zeit und der Preis verlangt nur %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Zu wenig für einen Call: Der Preis verlangt %2$d%% und du hast etwa %1$d%%.</string>
+    <string name="hint_reason_free_card">Check ist kostenlos und deine Hand ist schwach: Nimm die nächste Karte gratis mit.</string>
+    <string name="hint_reason_pot_control">Eine mittelmäßige Hand: Check, um den Pot klein zu halten und die nächste Karte zu sehen.</string>
 </resources>

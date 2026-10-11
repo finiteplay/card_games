@@ -53,5 +53,6 @@
     <string name="help_strategy_4">Hiểu pot odds. Nếu theo tốn 25 chip để thắng pot 75, bạn trả một chip cho mỗi ba chip có thể thắng, nên theo có lời nếu bạn thắng hơn một lần trong bốn. Hãy so sánh với khả năng kết thúc với bài tốt nhất.</string>
     <string name="help_strategy_5">Vị trí rất quan trọng. Hành động sau cùng cho phép bạn thấy mọi người làm gì trước, điều này rất có giá trị. Chơi nhiều ván hơn từ các vị trí cuối và ít hơn từ các vị trí đầu.</string>
     <string name="help_strategy_6">Quan sát phong cách của đối thủ. Mỗi chỗ ngồi được gắn nhãn chặt, lỏng, hung hăng hoặc thụ động. Hãy tôn trọng lần tố của người chơi chặt, và đừng vội tin lần cược của người chơi lỏng và hung hăng.</string>
+    <string name="help_hint_note">Về Gợi ý: nó hiển thị equity, tức khả năng thắng pot ước tính của bạn, bên cạnh pot odds, tức phần pot mà một lần theo phải trả. Khi equity cao hơn pot odds, theo là có lời. Câu phía trên giải thích ý tưởng đằng sau lời khuyên. Đây là một chỉ dẫn tốt chứ không chắc chắn, vì nó không nhìn thấy bài của ai.</string>
     <string name="help_strategy_7">Khi còn ít chip, hãy all-in hoặc bỏ bài. Khi chip của bạn chỉ còn vài big blind, các lần cược và theo nhỏ không để bạn xoay xở, và một lần all-in đúng lúc là cơ hội tốt nhất để nhân đôi.</string>
 </resources>

@@ -217,25 +217,39 @@ private fun actionTag(action: org.finiteplay.holdem.rules.Action): String = when
     org.finiteplay.holdem.rules.Action.AllIn -> "action_all_in"
 }
 
-/** The hint's one-line notice: the hand's estimated share of the pot and what a call costs (`UI_SPEC.md` "Hint Presentation"). */
+/**
+ * The hint's notice (`UI_SPEC.md` "Hint Presentation"): the coach's reason for the suggestion first, in a
+ * sentence, then the two figures behind it, the hand's estimated share of the pot and what a call costs.
+ */
 @Composable
 internal fun HintNotice(hint: HintShown, modifier: Modifier = Modifier) {
     val equity = Math.round(hint.equity * 100).toInt()
     val odds = Math.round(hint.potOdds * 100).toInt()
-    val text = if (hint.nothingToCall) stringResource(R.string.hint_notice_free, equity) else stringResource(R.string.hint_notice, equity, odds)
-    val spoken = if (hint.nothingToCall) stringResource(R.string.hint_notice_free_desc, equity) else stringResource(R.string.hint_notice_desc, equity, odds)
+    val figures = if (hint.nothingToCall) stringResource(R.string.hint_notice_free, equity) else stringResource(R.string.hint_notice, equity, odds)
+    val reason = hintReasonText(hint.reason, equity, odds, hint.outs, hint.stackBb)
+    val spoken = reason + " " + if (hint.nothingToCall) stringResource(R.string.hint_notice_free_desc, equity) else stringResource(R.string.hint_notice_desc, equity, odds)
     Surface(
         shape = RoundedCornerShape(16.dp),
-        color = Color.Black.copy(alpha = 0.62f),
-        modifier = modifier.testTag("hint_notice").semantics(mergeDescendants = true) { contentDescription = spoken },
+        color = Color.Black.copy(alpha = 0.72f),
+        modifier = modifier.padding(horizontal = 12.dp).testTag("hint_notice").semantics(mergeDescendants = true) { contentDescription = spoken },
     ) {
-        Text(
-            text = text,
-            style = MaterialTheme.typography.labelLarge,
-            fontWeight = FontWeight.SemiBold,
-            color = Color.White,
-            modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
-        )
+        Column(modifier = Modifier.padding(horizontal = 14.dp, vertical = 8.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                text = reason,
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = Color.White,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.testTag("hint_reason"),
+            )
+            Text(
+                text = figures,
+                style = MaterialTheme.typography.labelMedium,
+                color = Color.White.copy(alpha = 0.7f),
+                textAlign = TextAlign.Center,
+                modifier = Modifier.padding(top = 2.dp),
+            )
+        }
     }
 }
 

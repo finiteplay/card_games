@@ -6,6 +6,28 @@
     <string name="hint_notice_desc">Estimated chance to win %1$d percent against likely hands; a call costs %2$d percent of the pot.</string>
     <string name="hint_notice_free_desc">Estimated chance to win %1$d percent against likely hands.</string>
 
+    <!-- Hint reasons (UI_SPEC.md "Hint Presentation"): one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Premium hand: raise to build the pot while you are probably ahead.</string>
+    <string name="hint_reason_late_position_raise">Late position, so you act after most players: raising can win the blinds right now.</string>
+    <string name="hint_reason_playable_raise">A good hand for this spot: raising takes the lead in the betting.</string>
+    <string name="hint_reason_call_to_see_flop">Worth seeing a flop at this price, but not strong enough to raise.</string>
+    <string name="hint_reason_free_flop">Nobody raised and checking is free: see the flop at no cost.</string>
+    <string name="hint_reason_fold_weak">A weak hand: folding costs nothing and saves chips for better spots.</string>
+    <string name="hint_reason_fold_to_raise">Someone raised and your hand is not strong enough to pay for it: folding is cheaper.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Only %1$d big blinds left: all-in or fold is best, and this hand is strong enough to go all in.</string>
+    <string name="hint_reason_fold_short_stack">Only %1$d big blinds left: this hand is too weak to risk everything on.</string>
+    <string name="hint_reason_value_bet">You are probably ahead: bet so weaker hands have to pay to see more cards.</string>
+    <string name="hint_reason_value_raise">Strong hand facing a bet: raise to get more chips in while you are ahead.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Strong draw (%1$d outs): betting can win right now, and you can still improve.</string>
+    <string name="hint_reason_call_draw">A drawing hand (%1$d outs): the pot is big enough to chase the draw.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Calling pays off: you win about %1$d%% of the time and the price needs only %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Not enough to call: the price needs %2$d%% and you have about %1$d%%.</string>
+    <string name="hint_reason_free_card">Checking is free and your hand is weak: take the next card at no cost.</string>
+    <string name="hint_reason_pot_control">A middling hand: check to keep the pot small and see the next card.</string>
+
     <!-- Shown once when a saved hand could not be read (UI_SPEC.md "Screens and States"). -->
     <string name="recovery_notice">Your saved hand couldn\'t be opened, so it was dealt again from the start. No chips were lost.</string>
 </resources>

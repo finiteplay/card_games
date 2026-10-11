@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Poznaj szanse puli. Jeśli wyrównanie kosztuje 25 żetonów, by wygrać pulę 75, płacisz jeden żeton za każde trzy do wygrania, więc wyrównanie się opłaca, jeśli wygrywasz więcej niż raz na cztery. Porównaj to z szansą, że skończysz z najlepszym układem.</string>
     <string name="help_strategy_5">Pozycja ma znaczenie. Decydowanie jako ostatni pozwala najpierw zobaczyć, co robią wszyscy inni, a to jest sporo warte. Graj więcej rozdań z późnych miejsc, a mniej z wczesnych.</string>
     <string name="help_strategy_6">Obserwuj style przeciwników. Każde miejsce ma etykietę: ciasny, luźny, agresywny lub pasywny. Szanuj podbicie ciasnego gracza i wolniej wierz w stawkę luźnego, agresywnego.</string>
+    <string name="help_hint_note">O podpowiedzi: pokazuje twoje equity, czyli szacowaną szansę na wygranie puli, obok szans puli, czyli części puli, którą kosztuje wyrównanie. Gdy twoje equity jest wyższe niż szanse puli, wyrównanie się opłaca. Zdanie nad nimi wyjaśnia ideę porady. To dobra wskazówka, ale nie pewność, bo nie widzi cudzych kart.</string>
     <string name="help_strategy_7">Z małym stosem idź all in albo pasuj. Gdy masz tylko kilka dużych blindów, małe stawki i wyrównania nie dają ci pola manewru, a dobrze wybrany all in to twoja najlepsza szansa na podwojenie.</string>
 </resources>

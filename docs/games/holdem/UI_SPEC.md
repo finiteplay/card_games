@@ -79,8 +79,8 @@ the pill over the board's gap and a card's corner index, so it moved aside.)
 ### Table, portrait
 
 Top to bottom: the status row; the **table**; the **sizing row** when Bet or Raise is offered; the
-action bar. The hint notice, when shown, is drawn over the table just above your cards, in the gap
-between the board band and your seat, so it takes no height of its own (`Hint Presentation`).
+action bar. The hint notice, when shown, is drawn over the table in the empty band between the two rows of
+seats, so it hides no card and no seat and takes no height of its own (`Hint Presentation`).
 
 The table is four bands (an oval rim drawn behind the seats was tried and removed: it fought the
 cards and seat boxes for the felt):
@@ -242,9 +242,20 @@ Blackjack's, extended by what a poker hint has to say (`DESIGN.md` "Hint"):
 
 - **The suggested button is highlighted** in the bar (`BoardAction.highlighted`; read as
   *Suggested*). When the suggestion is a bet or a raise, the sizing row is set to its amount.
-- **A one-line notice** over the table, just above your cards, reads `Equity 42% · Pot odds 25%`: the hand's estimated
-  share of the pot and the share of the pot a call would be. With nothing to call it reads the equity
-  alone. The words *estimated* and *vs. likely hands* are in its spoken description.
+- **A coach's notice** over the table: a sentence saying *why* — `Calling pays off: you win about 41% of the
+  time and the price needs only 25%.`, `Strong draw (9 outs): betting can win right now, and you can
+  still improve.` — and beneath it the figures, `Equity 42% · Pot odds 25%`: the hand's estimated share
+  of the pot and the share of the pot a call would be (with nothing to call, the equity alone). The
+  words *estimated* and *vs. likely hands* are in its spoken description, which also reads the
+  sentence. In portrait it sits in the empty band between the two rows of seats; in landscape, in the
+  corner of the felt beside your cards. The sentence is one of sixteen (`HintReason`), each a lesson a
+  spot teaches: raise a premium hand, use late position, fold weak hands, push or fold with a short
+  stack, bet for value, semi-bluff a strong draw, call when the price is right, fold when it is not,
+  take free cards, keep the pot small with a middling hand.
+- **The advice agrees with the figures.** Held to a coach's rules over the engine's choice: the hint
+  never folds when checking is free, never folds a call that wins more often than its price
+  requires, bets a strong hand rather than hiding it, and raises a monster that faces a bet
+  (`HintQualityTest`). The Help page's strategy tab ends with a note explaining equity and pot odds.
 - It stays until you act or the street changes; pressing Hint again hides it.
 - Each Hint shown is counted (`Statistics`).
 

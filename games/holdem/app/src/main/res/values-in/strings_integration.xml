@@ -6,4 +6,23 @@
     <string name="hint_notice_free_desc">Perkiraan peluang menang %1$d persen melawan tangan yang mungkin.</string>
 
     <string name="recovery_notice">Tangan tersimpan Anda tidak bisa dibuka, jadi dibagikan ulang dari awal. Tidak ada chip yang hilang.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d / %2$d are numbers: stack in big blinds (push/fold), outs (draws), or win chance % and pot cost % (price). -->
+    <string name="hint_reason_premium_raise">Tangan premium: raise untuk membesarkan pot selagi kamu kemungkinan unggul.</string>
+    <string name="hint_reason_late_position_raise">Posisi akhir, jadi kamu bertindak setelah kebanyakan pemain: raise bisa langsung memenangkan blind.</string>
+    <string name="hint_reason_playable_raise">Tangan bagus untuk situasi ini: raise membuatmu memimpin taruhan.</string>
+    <string name="hint_reason_call_to_see_flop">Layak melihat flop dengan harga ini, tapi belum cukup kuat untuk raise.</string>
+    <string name="hint_reason_free_flop">Tidak ada yang raise dan check gratis: lihat flop tanpa biaya.</string>
+    <string name="hint_reason_fold_weak">Tangan lemah: fold tidak memakan biaya dan menyimpan chip untuk situasi yang lebih baik.</string>
+    <string name="hint_reason_fold_to_raise">Ada yang raise dan tanganmu tidak cukup kuat untuk membayarnya: fold lebih murah.</string>
+    <string name="hint_reason_push_short_stack">Tersisa hanya %1$d big blind: all in atau fold paling tepat, dan tangan ini cukup kuat untuk all in.</string>
+    <string name="hint_reason_fold_short_stack">Tersisa hanya %1$d big blind: tangan ini terlalu lemah untuk mempertaruhkan semuanya.</string>
+    <string name="hint_reason_value_bet">Kamu kemungkinan unggul: bet agar tangan yang lebih lemah harus membayar untuk melihat kartu lagi.</string>
+    <string name="hint_reason_value_raise">Tangan kuat menghadapi bet: raise untuk memasukkan lebih banyak chip selagi kamu unggul.</string>
+    <string name="hint_reason_semi_bluff">Draw kuat (%1$d outs): bet bisa langsung menang, dan kamu masih bisa membaik.</string>
+    <string name="hint_reason_call_draw">Tangan draw (%1$d outs): pot cukup besar untuk mengejar draw.</string>
+    <string name="hint_reason_call_good_price">Call menguntungkan: kamu menang sekitar %1$d%% dari waktu dan harganya hanya butuh %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Tidak cukup untuk call: harganya butuh %2$d%% dan kamu punya sekitar %1$d%%.</string>
+    <string name="hint_reason_free_card">Check gratis dan tanganmu lemah: ambil kartu berikutnya tanpa biaya.</string>
+    <string name="hint_reason_pot_control">Tangan menengah: check agar pot tetap kecil dan lihat kartu berikutnya.</string>
 </resources>

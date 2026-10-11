@@ -22,6 +22,7 @@ import org.finiteplay.core.ui.theme.ThemeMode
 import org.finiteplay.holdem.opponents.OpponentPolicy
 import org.finiteplay.holdem.opponents.ProfilePolicy
 import org.finiteplay.holdem.opponents.drawOpponents
+import org.finiteplay.holdem.opponents.HintReason
 import org.finiteplay.holdem.opponents.hint
 import org.finiteplay.holdem.rules.Action
 import org.finiteplay.holdem.rules.HoldemSession
@@ -58,7 +59,15 @@ data class TableSettings(
 private fun HoldemSettings.toTable() = TableSettings(animationsEnabled, soundEnabled, handedness, themeMode, restReminderInterval, languageTag)
 
 /** What Hint says: the suggested action and the two figures the notice states (`UI_SPEC.md` "Hint Presentation"). */
-data class HintShown(val suggested: Action, val equity: Double, val potOdds: Double, val nothingToCall: Boolean)
+data class HintShown(
+    val suggested: Action,
+    val equity: Double,
+    val potOdds: Double,
+    val nothingToCall: Boolean,
+    val reason: HintReason = HintReason.POT_CONTROL,
+    val outs: Int = 0,
+    val stackBb: Int = 0,
+)
 
 /** The dialog when the tournament is over for the player: where they finished, and the two figures it states. */
 data class TournamentEnd(val place: Int, val hands: Int, val largestPot: Int)
@@ -309,7 +318,7 @@ class HoldemViewModel(
         val state = session.state
         val result = hint(state.seatView(0))
         val legal = legalActions(state)
-        hintShown = HintShown(result.suggested, result.equity, result.potOdds, nothingToCall = legal?.canCheck == true)
+        hintShown = HintShown(result.suggested, result.equity, result.potOdds, nothingToCall = legal?.canCheck == true, reason = result.reason, outs = result.outs, stackBb = result.stackBb)
         when (val suggested = result.suggested) {
             is Action.Bet -> sizing = sizing?.withAmount(suggested.amount)
             is Action.Raise -> sizing = sizing?.withAmount(suggested.total)

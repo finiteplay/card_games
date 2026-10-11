@@ -6,4 +6,23 @@
     <string name="hint_notice_free_desc">Procijenjena šansa za pobjedu od %1$d posto protiv vjerojatnih ruku.</string>
 
     <string name="recovery_notice">Vaša spremljena ruka nije se mogla otvoriti pa je podijeljena ispočetka. Nijedan žeton nije izgubljen.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d / %2$d are numbers: stack in big blinds (push/fold), outs (draws), or win chance % and pot cost % (price). -->
+    <string name="hint_reason_premium_raise">Premium ruka: podigni da povećaš pot dok si vjerojatno ispred.</string>
+    <string name="hint_reason_late_position_raise">Kasna pozicija, pa igraš nakon većine igrača: podizanjem odmah možeš osvojiti blindove.</string>
+    <string name="hint_reason_playable_raise">Dobra ruka za ovu situaciju: podizanjem preuzimaš vodstvo u klađenju.</string>
+    <string name="hint_reason_call_to_see_flop">Isplati se vidjeti flop po ovoj cijeni, ali ruka nije dovoljno jaka za podizanje.</string>
+    <string name="hint_reason_free_flop">Nitko nije podigao, a čekanje je besplatno: vidi flop bez troška.</string>
+    <string name="hint_reason_fold_weak">Slaba ruka: odustajanje ne košta ništa i čuva žetone za bolje prilike.</string>
+    <string name="hint_reason_fold_to_raise">Netko je podigao, a tvoja ruka nije dovoljno jaka da to plati: odustajanje je jeftinije.</string>
+    <string name="hint_reason_push_short_stack">Ostalo je samo %1$d velikih blindova: najbolje je all in ili odustani, a ova ruka je dovoljno jaka za all in.</string>
+    <string name="hint_reason_fold_short_stack">Ostalo je samo %1$d velikih blindova: ova ruka je preslaba da bi se zbog nje riskiralo sve.</string>
+    <string name="hint_reason_value_bet">Vjerojatno si ispred: uloži da slabije ruke moraju platiti da vide još karata.</string>
+    <string name="hint_reason_value_raise">Jaka ruka protiv uloga: podigni da uložiš više žetona dok si ispred.</string>
+    <string name="hint_reason_semi_bluff">Jak draw (%1$d outsa): ulog može odmah osvojiti pot, a još se možeš poboljšati.</string>
+    <string name="hint_reason_call_draw">Ruka s drawom (%1$d outsa): pot je dovoljno velik da se isplati juriti draw.</string>
+    <string name="hint_reason_call_good_price">Praćenje se isplati: pobjeđuješ oko %1$d%% puta, a cijena traži samo %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Nedovoljno za praćenje: cijena traži %2$d%%, a ti imaš oko %1$d%%.</string>
+    <string name="hint_reason_free_card">Čekanje je besplatno, a ruka ti je slaba: uzmi sljedeću kartu bez troška.</string>
+    <string name="hint_reason_pot_control">Osrednja ruka: čekaj da pot ostane mali i vidi sljedeću kartu.</string>
 </resources>

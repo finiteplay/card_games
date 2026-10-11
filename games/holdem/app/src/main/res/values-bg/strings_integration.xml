@@ -6,4 +6,26 @@
     <string name="hint_notice_free_desc">Приблизителен шанс за победа %1$d процента срещу вероятните ръце.</string>
 
     <string name="recovery_notice">Запазената ти ръка не можа да се отвори, затова беше раздадена наново от самото начало. Не са загубени чипове.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Премиум ръка: вдигни, за да раздуеш пота, докато вероятно си напред.</string>
+    <string name="hint_reason_late_position_raise">Късна позиция, т.е. играеш след повечето играчи: вдигането може да спечели блайндовете веднага.</string>
+    <string name="hint_reason_playable_raise">Добра ръка за случая: с вдигане поемаш водачеството в залозите.</string>
+    <string name="hint_reason_call_to_see_flop">Струва си да видиш флопа на тази цена, но не е достатъчно силна за вдигане.</string>
+    <string name="hint_reason_free_flop">Никой не вдигна и чекът е безплатен: виж флопа без пари.</string>
+    <string name="hint_reason_fold_weak">Слаба ръка: фолдът не струва нищо и пази чипове за по-добри моменти.</string>
+    <string name="hint_reason_fold_to_raise">Някой вдигна, а ръката ти не е достатъчно силна да плати: фолдът е по-евтин.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Остават само %1$d големи блайнда: най-добре е ол ин или фолд, а тази ръка е достатъчно силна за ол ин.</string>
+    <string name="hint_reason_fold_short_stack">Остават само %1$d големи блайнда: тази ръка е твърде слаба, за да рискуваш всичко.</string>
+    <string name="hint_reason_value_bet">Вероятно си напред: заложи, за да плащат по-слабите ръце, за да видят още карти.</string>
+    <string name="hint_reason_value_raise">Силна ръка срещу залог: вдигни, за да вкараш повече чипове, докато си напред.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Силен дроу (%1$d аута): залогът може да спечели веднага, а ти още можеш да подобриш.</string>
+    <string name="hint_reason_call_draw">Ръка с дроу (%1$d аута): потът е достатъчно голям, за да гониш дроуто.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Колът се отплаща: печелиш около %1$d%% от случаите, а цената изисква само %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Не стига за кол: цената изисква %2$d%%, а ти имаш около %1$d%%.</string>
+    <string name="hint_reason_free_card">Чекът е безплатен, а ръката ти е слаба: виж следващата карта безплатно.</string>
+    <string name="hint_reason_pot_control">Средна ръка: направи чек, за да държиш пота малък и да видиш следващата карта.</string>
 </resources>

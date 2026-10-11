@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Ismerd a pot oddsot. Ha egy megadás 25 zsetonba kerül egy 75-ös pot megnyeréséhez, minden három megnyerhető zsetonért egyet fizetsz, így a megadás megéri, ha négyből több mint egyszer nyersz. Hasonlítsd ezt ahhoz, mekkora eséllyel végzel a legjobb kézzel.</string>
     <string name="help_strategy_5">A pozíció számít. Ha utolsóként döntesz, előbb láthatod, mit tesz mindenki más, ami sokat ér. Játssz több kezet a kései helyekről, és kevesebbet a koraiakról.</string>
     <string name="help_strategy_6">Figyeld az ellenfelek stílusát. Minden helyen van címke: szoros, laza, agresszív vagy passzív. Tiszteld a szoros játékos emelését, és lassabban higgy egy laza, agresszív játékos tétjének.</string>
+    <string name="help_hint_note">A tippről: megmutatja az equityd, vagyis a pot megnyerésének becsült esélyét, a pot odds mellett, ami azt mutatja, a pot mekkora részébe kerül egy megadás. Ha az equity magasabb a pot oddsnál, a megadás kifizetődik. A fölöttük lévő mondat a tanács mögötti gondolatot magyarázza. Jó útmutató, de nem biztos, mert senki lapjait nem látja.</string>
     <string name="help_strategy_7">Kis stackkel menj all in vagy dobj el. Ha csak néhány nagy vakod van, a kis tétek és a megadások nem hagynak mozgásteret, és egy jól időzített all in a legjobb esélyed a megduplázódásra.</string>
 </resources>

@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Poznajte pomer potu. Ak vás dorovnanie stojí 25 žetónov, aby ste vyhrali pot 75, platíte jeden žetón za každé tri, ktoré môžete vyhrať, takže sa dorovnanie oplatí, ak vyhráte viac než raz zo štyroch. Porovnajte to so svojou šancou skončiť s najlepšou rukou.</string>
     <string name="help_strategy_5">Pozícia je dôležitá. Keď hráte posledný, najprv vidíte, čo robia všetci ostatní, a to má veľkú cenu. Hrajte viac rúk z neskorých miest a menej z predných.</string>
     <string name="help_strategy_6">Sledujte štýly súperov. Každé miesto je označené ako tight, loose, aggressive alebo passive. Rešpektujte zvýšenie od tight hráča a pomalšie verte stávke od loose, aggressive hráča.</string>
+    <string name="help_hint_note">O rade: ukazuje tvoju šancu, odhadovanú pravdepodobnosť, že vyhráš pot, popri pomere potu, teda podiele potu, koľko stojí dorovnanie. Keď je tvoja šanca vyššia ako pomer potu, dorovnanie sa oplatí. Veta nad nimi vysvetľuje myšlienku za radou. Je to dobrý sprievodca, nie istota, pretože nevidí ničie karty.</string>
     <string name="help_strategy_7">S malým stackom choďte all in alebo zahoďte. Keď máte len pár veľkých blindov, malé stávky a dorovnania vám nenechávajú priestor na manéver a dobre načasované all in je vaša najlepšia šanca zdvojnásobiť sa.</string>
 </resources>

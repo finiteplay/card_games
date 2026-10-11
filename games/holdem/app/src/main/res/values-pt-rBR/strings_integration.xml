@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">Chance estimada de ganhar: %1$d por cento contra mãos prováveis; pagar custa %2$d por cento do pote.</string>
     <string name="hint_notice_free_desc">Chance estimada de ganhar: %1$d por cento contra mãos prováveis.</string>
     <string name="recovery_notice">Sua mão salva não pôde ser aberta, então foi distribuída de novo desde o início. Nenhuma ficha foi perdida.</string>
+
+    <!-- Hint reasons: one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Mão premium: aumente para formar o pote enquanto você provavelmente está na frente.</string>
+    <string name="hint_reason_late_position_raise">Posição final, então você age depois da maioria: aumentar pode ganhar os blinds agora.</string>
+    <string name="hint_reason_playable_raise">Uma boa mão para esta situação: aumentar toma a liderança nas apostas.</string>
+    <string name="hint_reason_call_to_see_flop">Vale ver o flop por esse preço, mas a mão não é forte o bastante para aumentar.</string>
+    <string name="hint_reason_free_flop">Ninguém aumentou e o check é grátis: veja o flop sem custo.</string>
+    <string name="hint_reason_fold_weak">Uma mão fraca: dar fold não custa nada e poupa fichas para situações melhores.</string>
+    <string name="hint_reason_fold_to_raise">Alguém aumentou e sua mão não é forte o bastante para pagar: dar fold sai mais barato.</string>
+    <!-- %1$d = seu stack em big blinds -->
+    <string name="hint_reason_push_short_stack">Restam só %1$d big blinds: all in ou fold é o melhor, e esta mão é forte o bastante para ir all in.</string>
+    <string name="hint_reason_fold_short_stack">Restam só %1$d big blinds: esta mão é fraca demais para arriscar tudo.</string>
+    <string name="hint_reason_value_bet">Você provavelmente está na frente: aposte para que mãos mais fracas paguem para ver mais cartas.</string>
+    <string name="hint_reason_value_raise">Mão forte diante de uma aposta: aumente para colocar mais fichas enquanto você está na frente.</string>
+    <!-- %1$d = número de outs (cartas que completam seu draw) -->
+    <string name="hint_reason_semi_bluff">Draw forte (%1$d outs): apostar pode ganhar agora, e você ainda pode melhorar.</string>
+    <string name="hint_reason_call_draw">Uma mão de draw (%1$d outs): o pote é grande o bastante para perseguir o draw.</string>
+    <!-- %1$d = sua chance de ganhar em porcentagem, %2$d = a parte do pote que o pagamento custa, em porcentagem -->
+    <string name="hint_reason_call_good_price">Pagar compensa: você ganha cerca de %1$d%% das vezes e o preço exige apenas %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Não é o bastante para pagar: o preço exige %2$d%% e você tem cerca de %1$d%%.</string>
+    <string name="hint_reason_free_card">O check é grátis e sua mão é fraca: pegue a próxima carta sem custo.</string>
+    <string name="hint_reason_pot_control">Uma mão mediana: dê check para manter o pote pequeno e ver a próxima carta.</string>
 </resources>

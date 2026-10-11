@@ -53,5 +53,6 @@
     <string name="help_strategy_4">Conheça as pot odds. Se pagar custa 25 fichas para ganhar um pote de 75, você paga uma ficha para cada três que pode ganhar, então pagar compensa se você ganhar mais de uma vez em quatro. Compare isso com sua chance de terminar com a melhor mão.</string>
     <string name="help_strategy_5">A posição importa. Agir por último permite ver primeiro o que todos os outros fazem, o que vale muito. Jogue mais mãos nas posições finais e menos nas iniciais.</string>
     <string name="help_strategy_6">Observe o estilo dos adversários. Cada lugar é marcado como tight, loose, agressivo ou passivo. Respeite um aumento de um jogador tight e demore mais para acreditar na aposta de um loose e agressivo.</string>
+    <string name="help_hint_note">Sobre a dica: ela mostra sua equity, sua chance estimada de ganhar o pote, ao lado das pot odds, a parte do pote que um pagamento custa. Quando sua equity é maior que as pot odds, pagar compensa. A frase acima explica a ideia por trás do conselho. É um bom guia, não uma certeza, porque ela não consegue ver as cartas de ninguém.</string>
     <string name="help_strategy_7">Com poucas fichas, vá all in ou dê fold. Quando você tem só alguns big blinds, apostas e pagamentos pequenos não deixam espaço de manobra, e um all in bem escolhido é sua melhor chance de dobrar as fichas.</string>
 </resources>

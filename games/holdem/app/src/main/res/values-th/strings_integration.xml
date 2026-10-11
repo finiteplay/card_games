@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">โอกาสชนะโดยประมาณ %1$d เปอร์เซ็นต์เมื่อเทียบกับมือที่น่าจะเป็น การคอลมีราคา %2$d เปอร์เซ็นต์ของพอต</string>
     <string name="hint_notice_free_desc">โอกาสชนะโดยประมาณ %1$d เปอร์เซ็นต์เมื่อเทียบกับมือที่น่าจะเป็น</string>
     <string name="recovery_notice">เปิดมือที่บันทึกไว้ไม่ได้ จึงแจกใหม่ตั้งแต่ต้น ชิปไม่หายไป</string>
+
+    <!-- Hint reasons (UI_SPEC.md "Hint Presentation"): one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">มือพรีเมียม: เรสเพื่อเพิ่มพอตขณะที่คุณน่าจะนำอยู่</string>
+    <string name="hint_reason_late_position_raise">ตำแหน่งท้าย คุณได้เล่นหลังผู้เล่นส่วนใหญ่: เรสตอนนี้อาจชนะบลายด์ได้เลย</string>
+    <string name="hint_reason_playable_raise">มือที่ดีสำหรับสถานการณ์นี้: เรสเพื่อขึ้นนำในการเดิมพัน</string>
+    <string name="hint_reason_call_to_see_flop">คุ้มที่จะดูฟล็อปในราคานี้ แต่ยังไม่แกร่งพอที่จะเรส</string>
+    <string name="hint_reason_free_flop">ยังไม่มีใครเรสและเช็คฟรี: ดูฟล็อปโดยไม่เสียอะไร</string>
+    <string name="hint_reason_fold_weak">มือแย่: โฟลด์ไม่เสียอะไรและเก็บชิปไว้สำหรับจังหวะที่ดีกว่า</string>
+    <string name="hint_reason_fold_to_raise">มีคนเรสและมือของคุณไม่แกร่งพอจะจ่าย: โฟลด์ถูกกว่า</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">เหลือเพียง %1$d บิ๊กบลายด์: ออลอินหรือโฟลด์ดีที่สุด และมือนี้แกร่งพอจะออลอิน</string>
+    <string name="hint_reason_fold_short_stack">เหลือเพียง %1$d บิ๊กบลายด์: มือนี้อ่อนเกินกว่าจะเสี่ยงทั้งหมด</string>
+    <string name="hint_reason_value_bet">คุณน่าจะนำอยู่: เบ็ทเพื่อให้มือที่อ่อนกว่าต้องจ่ายถ้าอยากดูไพ่เพิ่ม</string>
+    <string name="hint_reason_value_raise">มือแกร่งเจอเบ็ท: เรสเพื่อใส่ชิปเพิ่มขณะที่คุณนำอยู่</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">ดรอว์แกร่ง (%1$d เอาท์): เบ็ทอาจชนะได้ทันที และคุณยังพัฒนามือได้อีก</string>
+    <string name="hint_reason_call_draw">มือดรอว์ (%1$d เอาท์): พอตใหญ่พอที่จะตามดรอว์</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">คอลคุ้ม: คุณชนะประมาณ %1$d%% ของครั้ง และราคาต้องการแค่ %2$d%%</string>
+    <string name="hint_reason_fold_bad_price">ยังไม่พอจะคอล: ราคาต้องการ %2$d%% แต่คุณมีประมาณ %1$d%%</string>
+    <string name="hint_reason_free_card">เช็คฟรีและมือคุณอ่อน: ดูไพ่ใบถัดไปโดยไม่เสียอะไร</string>
+    <string name="hint_reason_pot_control">มือกลาง ๆ: เช็คเพื่อคุมพอตให้เล็กและดูไพ่ใบถัดไป</string>
 </resources>

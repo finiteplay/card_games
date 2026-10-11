@@ -6,4 +6,23 @@
     <string name="hint_notice_free_desc">Odhadovaná šanca na výhru %1$d percent proti pravdepodobným rukám.</string>
 
     <string name="recovery_notice">Vašu uloženú ruku sa nepodarilo otvoriť, preto sa rozdala odznova. Žiadne žetóny sa nestratili.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d / %2$d are numbers: stack in big blinds (push/fold), outs (draws), or win chance % and pot cost % (price). -->
+    <string name="hint_reason_premium_raise">Prémiová ruka: zvýš, aby si zväčšil pot, kým si pravdepodobne vpredu.</string>
+    <string name="hint_reason_late_position_raise">Neskorá pozícia, takže hráš po väčšine hráčov: zvýšením môžeš hneď vyhrať blindy.</string>
+    <string name="hint_reason_playable_raise">Dobrá ruka pre túto situáciu: zvýšením prevezmeš vedenie v stávkovaní.</string>
+    <string name="hint_reason_call_to_see_flop">Oplatí sa vidieť flop za túto cenu, ale ruka nie je dosť silná na zvýšenie.</string>
+    <string name="hint_reason_free_flop">Nikto nezvýšil a check je zadarmo: pozri si flop bez nákladov.</string>
+    <string name="hint_reason_fold_weak">Slabá ruka: zahodenie nič nestojí a šetrí žetóny na lepšie situácie.</string>
+    <string name="hint_reason_fold_to_raise">Niekto zvýšil a tvoja ruka nie je dosť silná na to, aby si to zaplatil: zahodenie je lacnejšie.</string>
+    <string name="hint_reason_push_short_stack">Zostáva len %1$d veľkých blindov: najlepšie je all in alebo zahodiť a táto ruka je dosť silná na all in.</string>
+    <string name="hint_reason_fold_short_stack">Zostáva len %1$d veľkých blindov: táto ruka je príliš slabá na to, aby si pre ňu riskoval všetko.</string>
+    <string name="hint_reason_value_bet">Pravdepodobne si vpredu: staviaj, aby slabšie ruky museli platiť za ďalšie karty.</string>
+    <string name="hint_reason_value_raise">Silná ruka proti stávke: zvýš, aby si dal do hry viac žetónov, kým si vpredu.</string>
+    <string name="hint_reason_semi_bluff">Silný draw (%1$d outov): stávka môže hneď vyhrať a stále sa môžeš zlepšiť.</string>
+    <string name="hint_reason_call_draw">Ruka s drawom (%1$d outov): pot je dosť veľký na to, aby sa draw oplatilo naháňať.</string>
+    <string name="hint_reason_call_good_price">Dorovnanie sa oplatí: vyhrávaš asi v %1$d%% prípadov a cena vyžaduje len %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Na dorovnanie to nestačí: cena vyžaduje %2$d%% a ty máš asi %1$d%%.</string>
+    <string name="hint_reason_free_card">Check je zadarmo a ruka je slabá: vezmi si ďalšiu kartu bez nákladov.</string>
+    <string name="hint_reason_pot_control">Priemerná ruka: urob check, aby pot zostal malý, a pozri si ďalšiu kartu.</string>
 </resources>

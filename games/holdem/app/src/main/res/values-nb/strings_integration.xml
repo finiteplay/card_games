@@ -6,4 +6,25 @@
     <string name="hint_notice_free_desc">Anslått vinnersjanse på %1$d prosent mot sannsynlige hender.</string>
 
     <string name="recovery_notice">Den lagrede hånden din kunne ikke åpnes, så den ble delt ut på nytt fra begynnelsen. Ingen sjetonger gikk tapt.</string>
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Premiumhånd: raise for å bygge potten mens du sannsynligvis ligger foran.</string>
+    <string name="hint_reason_late_position_raise">Sen posisjon, så du handler etter de fleste: en raise kan vinne blindene med en gang.</string>
+    <string name="hint_reason_playable_raise">En god hånd for dette spillet: en raise gir deg initiativet i bettingen.</string>
+    <string name="hint_reason_call_to_see_flop">Verdt å se en flop til denne prisen, men ikke sterk nok til å raise.</string>
+    <string name="hint_reason_free_flop">Ingen raiset og check er gratis: se floppen uten kostnad.</string>
+    <string name="hint_reason_fold_weak">En svak hånd: fold koster ingenting og sparer sjetonger til bedre spill.</string>
+    <string name="hint_reason_fold_to_raise">Noen raiset og hånden din er ikke sterk nok til å betale for det: fold er billigere.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Bare %1$d big blinds igjen: all in eller fold er best, og denne hånden er sterk nok til all in.</string>
+    <string name="hint_reason_fold_short_stack">Bare %1$d big blinds igjen: denne hånden er for svak til å risikere alt.</string>
+    <string name="hint_reason_value_bet">Du ligger sannsynligvis foran: bet slik at svakere hender må betale for flere kort.</string>
+    <string name="hint_reason_value_raise">Sterk hånd mot en bet: raise for å få inn flere sjetonger mens du ligger foran.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Sterk draw (%1$d outs): en bet kan vinne med en gang, og du kan fortsatt forbedre deg.</string>
+    <string name="hint_reason_call_draw">En drawhånd (%1$d outs): potten er stor nok til å jage draw.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Call lønner seg: du vinner omtrent %1$d%% av gangene, og prisen krever bare %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Ikke nok til å calle: prisen krever %2$d%%, og du har omtrent %1$d%%.</string>
+    <string name="hint_reason_free_card">Check er gratis og hånden din er svak: se neste kort uten kostnad.</string>
+    <string name="hint_reason_pot_control">En middels hånd: check for å holde potten liten og se neste kort.</string>
 </resources>

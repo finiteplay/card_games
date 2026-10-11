@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">Probabilità stimata di vincere: %1$d per cento contro le mani probabili; una chiamata costa il %2$d per cento del piatto.</string>
     <string name="hint_notice_free_desc">Probabilità stimata di vincere: %1$d per cento contro le mani probabili.</string>
     <string name="recovery_notice">Non è stato possibile aprire la tua mano salvata, quindi è stata distribuita di nuovo dall\'inizio. Nessuna fiche è andata persa.</string>
+
+    <!-- Hint reasons: one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Mano premium: rilancia per far crescere il piatto mentre sei probabilmente avanti.</string>
+    <string name="hint_reason_late_position_raise">Posizione tarda, quindi agisci dopo la maggior parte dei giocatori: rilanciare può vincere i blind subito.</string>
+    <string name="hint_reason_playable_raise">Una buona mano per questa situazione: rilanciare ti dà l\'iniziativa nelle puntate.</string>
+    <string name="hint_reason_call_to_see_flop">Vale la pena vedere il flop a questo prezzo, ma non è abbastanza forte per rilanciare.</string>
+    <string name="hint_reason_free_flop">Nessuno ha rilanciato e il check è gratis: vedi il flop senza spendere.</string>
+    <string name="hint_reason_fold_weak">Una mano debole: fare fold non costa nulla e risparmia fiches per occasioni migliori.</string>
+    <string name="hint_reason_fold_to_raise">Qualcuno ha rilanciato e la tua mano non è abbastanza forte per pagare: il fold costa meno.</string>
+    <!-- %1$d = il tuo stack in big blind -->
+    <string name="hint_reason_push_short_stack">Restano solo %1$d big blind: all in o fold è la scelta migliore, e questa mano è abbastanza forte per andare all in.</string>
+    <string name="hint_reason_fold_short_stack">Restano solo %1$d big blind: questa mano è troppo debole per rischiare tutto.</string>
+    <string name="hint_reason_value_bet">Sei probabilmente avanti: punta, così le mani più deboli devono pagare per vedere altre carte.</string>
+    <string name="hint_reason_value_raise">Mano forte di fronte a una puntata: rilancia per mettere più fiches mentre sei avanti.</string>
+    <!-- %1$d = numero di out (carte che completano il tuo progetto) -->
+    <string name="hint_reason_semi_bluff">Progetto forte (%1$d out): puntare può vincere subito, e puoi ancora migliorare.</string>
+    <string name="hint_reason_call_draw">Una mano a progetto (%1$d out): il piatto è abbastanza grande per inseguire il progetto.</string>
+    <!-- %1$d = la tua probabilità di vincere in percentuale, %2$d = la quota del piatto che costa il call, in percentuale -->
+    <string name="hint_reason_call_good_price">Il call conviene: vinci circa il %1$d%% delle volte e il prezzo richiede solo il %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Non basta per il call: il prezzo richiede il %2$d%% e tu hai circa il %1$d%%.</string>
+    <string name="hint_reason_free_card">Il check è gratis e la tua mano è debole: prendi la carta successiva senza spendere.</string>
+    <string name="hint_reason_pot_control">Una mano mediocre: fai check per tenere il piatto piccolo e vedere la carta successiva.</string>
 </resources>

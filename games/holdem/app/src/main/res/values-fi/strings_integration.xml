@@ -6,4 +6,25 @@
     <string name="hint_notice_free_desc">Arvioitu voittotodennäköisyys %1$d prosenttia todennäköisiä käsiä vastaan.</string>
 
     <string name="recovery_notice">Tallennettua kättäsi ei voitu avata, joten se jaettiin uudelleen alusta. Pelimerkkejä ei menetetty.</string>
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Huippukäsi: korota kasvattaaksesi pottia, kun todennäköisesti johdat.</string>
+    <string name="hint_reason_late_position_raise">Myöhäinen positio, joten toimit useimpien jälkeen: korotus voi voittaa blindit heti.</string>
+    <string name="hint_reason_playable_raise">Hyvä käsi tähän tilanteeseen: korotus antaa sinulle aloitteen panostuksessa.</string>
+    <string name="hint_reason_call_to_see_flop">Floppi kannattaa nähdä tähän hintaan, mutta käsi ei ole tarpeeksi vahva korotukseen.</string>
+    <string name="hint_reason_free_flop">Kukaan ei korottanut ja check on ilmainen: näe floppi ilmaiseksi.</string>
+    <string name="hint_reason_fold_weak">Heikko käsi: fold ei maksa mitään ja säästää pelimerkkejä parempiin tilanteisiin.</string>
+    <string name="hint_reason_fold_to_raise">Joku korotti, eikä kätesi ole tarpeeksi vahva maksamaan siitä: fold on halvempi.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Vain %1$d big blindiä jäljellä: all in tai fold on paras, ja tämä käsi on tarpeeksi vahva all iniin.</string>
+    <string name="hint_reason_fold_short_stack">Vain %1$d big blindiä jäljellä: tämä käsi on liian heikko, jotta kaikkea kannattaisi riskeerata.</string>
+    <string name="hint_reason_value_bet">Johdat todennäköisesti: panosta, jotta heikommat kädet joutuvat maksamaan lisäkorteista.</string>
+    <string name="hint_reason_value_raise">Vahva käsi panosta vastaan: korota saadaksesi lisää pelimerkkejä pottiin, kun johdat.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Vahva draw (%1$d outsia): panostus voi voittaa heti, ja käsi voi vielä parantua.</string>
+    <string name="hint_reason_call_draw">Draw-käsi (%1$d outsia): potti on tarpeeksi suuri drawn tavoitteluun.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Maksaminen kannattaa: voitat noin %1$d%% kerroista ja hinta vaatii vain %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Ei tarpeeksi maksamiseen: hinta vaatii %2$d%%, ja sinulla on noin %1$d%%.</string>
+    <string name="hint_reason_free_card">Check on ilmainen ja kätesi on heikko: ota seuraava kortti ilmaiseksi.</string>
+    <string name="hint_reason_pot_control">Keskinkertainen käsi: check pitää potin pienenä ja näet seuraavan kortin.</string>
 </resources>

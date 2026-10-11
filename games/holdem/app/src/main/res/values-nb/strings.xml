@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Kjenn pot odds. Hvis en call koster 25 sjetonger for å vinne en pott på 75, betaler du én sjetong for hver tredje du kan vinne, så callen lønner seg hvis du vinner oftere enn én gang av fire. Sammenlign det med sjansen din for å ende med den beste hånden.</string>
     <string name="help_strategy_5">Posisjon betyr noe. Å handle sist lar deg se hva alle andre gjør først, og det er verdt mye. Spill flere hender fra sene seter og færre fra tidlige.</string>
     <string name="help_strategy_6">Følg med på motstandernes stiler. Hvert sete er merket tight, loose, aggressiv eller passiv. Respekter en raise fra en tight spiller, og vær tregere med å tro på en innsats fra en loose, aggressiv en.</string>
+    <string name="help_hint_note">Om Hint: den viser equity-en din, den estimerte sjansen din til å vinne potten, ved siden av pot odds, andelen av potten en call koster. Når equity er høyere enn pot odds, lønner en call seg. Setningen over forklarer tanken bak rådet. Det er en god veiviser, ikke en sikkerhet, fordi den ikke ser noens kort.</string>
     <string name="help_strategy_7">Med en kort stack: gå all in eller fold. Når sjetongene dine bare er noen få big blinds, gir små innsatser og calls deg ingen handlingsrom, og en godt timet all in er din beste sjanse til å doble opp.</string>
 </resources>

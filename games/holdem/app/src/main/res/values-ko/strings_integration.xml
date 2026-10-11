@@ -5,4 +5,26 @@
     <string name="hint_notice_desc">가능성 높은 핸드를 상대로 한 예상 승률은 %1$d퍼센트이며, 콜 비용은 팟의 %2$d퍼센트입니다.</string>
     <string name="hint_notice_free_desc">가능성 높은 핸드를 상대로 한 예상 승률은 %1$d퍼센트입니다.</string>
     <string name="recovery_notice">저장된 핸드를 열 수 없어 처음부터 다시 나눴습니다. 잃은 칩은 없습니다.</string>
+
+    <!-- Hint reasons (UI_SPEC.md "Hint Presentation"): one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">프리미엄 핸드: 아마 앞서 있으니 레이즈해서 팟을 키우세요.</string>
+    <string name="hint_reason_late_position_raise">레이트 포지션이라 대부분의 플레이어 뒤에 행동합니다. 지금 레이즈하면 블라인드를 가져올 수 있습니다.</string>
+    <string name="hint_reason_playable_raise">이 상황에 좋은 핸드입니다. 레이즈로 베팅의 주도권을 잡으세요.</string>
+    <string name="hint_reason_call_to_see_flop">이 가격이면 플랍을 볼 만하지만, 레이즈할 만큼 강하지는 않습니다.</string>
+    <string name="hint_reason_free_flop">아무도 레이즈하지 않았고 체크는 무료입니다. 비용 없이 플랍을 보세요.</string>
+    <string name="hint_reason_fold_weak">약한 핸드입니다. 폴드는 비용이 없고, 더 좋은 기회를 위해 칩을 아낄 수 있습니다.</string>
+    <string name="hint_reason_fold_to_raise">누군가 레이즈했고 내 핸드는 그 값을 낼 만큼 강하지 않습니다. 폴드가 더 저렴합니다.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">빅 블라인드가 %1$d개만 남았습니다. 올인 아니면 폴드가 최선이고, 이 핸드는 올인할 만큼 강합니다.</string>
+    <string name="hint_reason_fold_short_stack">빅 블라인드가 %1$d개만 남았습니다. 이 핸드는 전부를 걸기에는 너무 약합니다.</string>
+    <string name="hint_reason_value_bet">아마 앞서 있습니다. 베팅해서 약한 핸드가 카드를 더 보려면 값을 치르게 하세요.</string>
+    <string name="hint_reason_value_raise">베팅을 받았지만 강한 핸드입니다. 앞서 있을 때 레이즈해서 칩을 더 넣으세요.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">강한 드로(아웃 %1$d장): 베팅으로 바로 이길 수 있고, 아직 핸드를 보강할 수도 있습니다.</string>
+    <string name="hint_reason_call_draw">드로 핸드(아웃 %1$d장): 팟이 충분히 커서 드로를 노려 볼 만합니다.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">콜이 이득입니다. 약 %1$d%% 확률로 이기는데 필요한 건 %2$d%%뿐입니다.</string>
+    <string name="hint_reason_fold_bad_price">콜하기엔 부족합니다. 필요한 확률은 %2$d%%인데 내 확률은 약 %1$d%%입니다.</string>
+    <string name="hint_reason_free_card">체크는 무료이고 핸드는 약합니다. 비용 없이 다음 카드를 보세요.</string>
+    <string name="hint_reason_pot_control">애매한 핸드입니다. 체크해서 팟을 작게 유지하고 다음 카드를 보세요.</string>
 </resources>

@@ -21,6 +21,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -135,9 +136,12 @@ fun GameScreen(
                     if (landscape) {
                         Row(modifier = Modifier.fillMaxSize()) {
                             if (mirrored) actionBar(BoardOrientation.LANDSCAPE)
-                            Box(modifier = Modifier.weight(1f).fillMaxSize()) {
+                            BoxWithConstraints(modifier = Modifier.weight(1f).fillMaxSize()) {
                                 TableView(table, viewModel.profiles, landscape = true, animate = animate)
-                                viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.BottomCenter).padding(bottom = 4.dp)) }
+                                // Beside your cards, in the empty corner of the felt, so the hint hides neither them nor a seat.
+                                viewModel.hintShown?.let {
+                                    HintNotice(it, Modifier.align(Alignment.BottomEnd).widthIn(max = maxWidth * 0.42f).padding(bottom = 4.dp))
+                                }
                             }
                             Box(modifier = Modifier.width(TableGeometry.SIZING_COLUMN_WIDTH.dp).fillMaxSize()) {
                                 if (sizing != null) {
@@ -147,9 +151,10 @@ fun GameScreen(
                             if (!mirrored) actionBar(BoardOrientation.LANDSCAPE)
                         }
                     } else {
-                        Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
+                        BoxWithConstraints(modifier = Modifier.weight(1f).fillMaxWidth()) {
                             TableView(table, viewModel.profiles, landscape = false, animate = animate)
-                            viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.BottomCenter).padding(bottom = 4.dp)) }
+                            // The hint sits in the empty band between the two rows of seats, so it hides neither a card nor a seat.
+                            viewModel.hintShown?.let { HintNotice(it, Modifier.align(Alignment.TopCenter).padding(top = maxHeight * 0.165f)) }
                         }
                         Spacer(modifier = Modifier.height(TableGeometry.CONTROLS_GAP.dp))
                         // Always reserved, so the table does not jump when the row appears.

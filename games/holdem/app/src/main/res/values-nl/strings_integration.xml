@@ -6,4 +6,26 @@
     <string name="hint_notice_free_desc">Geschatte winkans van %1$d procent tegen waarschijnlijke handen.</string>
 
     <string name="recovery_notice">Je bewaarde hand kon niet worden geopend, dus hij is opnieuw vanaf het begin gedeeld. Er zijn geen fiches verloren gegaan.</string>
+
+    <!-- Hint reasons: one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Premiumhand: raise om de pot op te bouwen terwijl je waarschijnlijk voorstaat.</string>
+    <string name="hint_reason_late_position_raise">Late positie, dus je speelt na de meeste spelers: met een raise kun je nu de blinds winnen.</string>
+    <string name="hint_reason_playable_raise">Een goede hand voor deze situatie: met een raise neem je de leiding in de inzetronde.</string>
+    <string name="hint_reason_call_to_see_flop">Een flop zien voor deze prijs is het waard, maar de hand is niet sterk genoeg voor een raise.</string>
+    <string name="hint_reason_free_flop">Niemand heeft geraised en checken is gratis: zie de flop zonder kosten.</string>
+    <string name="hint_reason_fold_weak">Een zwakke hand: folden kost niets en spaart fiches voor betere spots.</string>
+    <string name="hint_reason_fold_to_raise">Iemand heeft geraised en je hand is niet sterk genoeg om te betalen: folden is goedkoper.</string>
+    <!-- %1$d = jouw stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Nog maar %1$d big blinds: all-in of fold is het best, en deze hand is sterk genoeg voor all-in.</string>
+    <string name="hint_reason_fold_short_stack">Nog maar %1$d big blinds: deze hand is te zwak om alles op te riskeren.</string>
+    <string name="hint_reason_value_bet">Je staat waarschijnlijk voor: bet, zodat zwakkere handen moeten betalen voor meer kaarten.</string>
+    <string name="hint_reason_value_raise">Sterke hand tegenover een bet: raise om meer fiches in de pot te krijgen terwijl je voorstaat.</string>
+    <!-- %1$d = aantal outs (kaarten die je draw voltooien) -->
+    <string name="hint_reason_semi_bluff">Sterke draw (%1$d outs): een bet kan nu winnen, en je kunt nog verbeteren.</string>
+    <string name="hint_reason_call_draw">Een draw-hand (%1$d outs): de pot is groot genoeg om de draw na te jagen.</string>
+    <!-- %1$d = jouw winkans in procenten, %2$d = het deel van de pot dat de call kost, in procenten -->
+    <string name="hint_reason_call_good_price">Callen loont: je wint ongeveer %1$d%% van de tijd en de prijs vraagt maar %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Niet genoeg om te callen: de prijs vraagt %2$d%% en jij hebt ongeveer %1$d%%.</string>
+    <string name="hint_reason_free_card">Checken is gratis en je hand is zwak: pak de volgende kaart zonder kosten.</string>
+    <string name="hint_reason_pot_control">Een middelmatige hand: check om de pot klein te houden en de volgende kaart te zien.</string>
 </resources>

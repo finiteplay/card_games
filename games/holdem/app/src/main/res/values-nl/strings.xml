@@ -56,5 +56,6 @@
     <string name="help_strategy_4">Ken de potodds. Als een call 25 fiches kost om een pot van 75 te winnen, betaal je één fiche voor elke drie die je kunt winnen, dus de call loont als je vaker dan één op de vier keer wint. Vergelijk dat met je kans om met de beste hand te eindigen.</string>
     <string name="help_strategy_5">Positie telt. Als laatste aan de beurt zijn laat je eerst zien wat iedereen doet, en dat is veel waard. Speel meer handen vanaf late plaatsen en minder vanaf vroege.</string>
     <string name="help_strategy_6">Let op de speelstijlen van je tegenstanders. Elke plaats heeft een label: tight, loose, agressief of passief. Respecteer een raise van een tight speler en geloof een inzet van een losse, agressieve speler minder snel.</string>
+    <string name="help_hint_note">Over de hint: die toont je equity, je geschatte kans om de pot te winnen, naast de potodds, het deel van de pot dat een call kost. Als je equity hoger is dan de potodds, loont callen. De zin erboven legt het idee achter het advies uit. Het is een goede leidraad, geen zekerheid, want hij kan niemands kaarten zien.</string>
     <string name="help_strategy_7">Ga met een kleine stack all-in of fold. Als je fiches maar een paar big blinds zijn, laten kleine inzetten en calls je geen ruimte, en een goed getimede all-in is je beste kans om te verdubbelen.</string>
 </resources>

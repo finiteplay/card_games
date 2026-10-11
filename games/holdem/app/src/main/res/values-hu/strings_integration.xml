@@ -6,4 +6,26 @@
     <string name="hint_notice_free_desc">Becsült nyerési esély %1$d százalék a valószínű kezek ellen.</string>
 
     <string name="recovery_notice">A mentett kezedet nem sikerült megnyitni, ezért elölről osztottuk újra. Nem veszett el zseton.</string>
+
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Prémium kéz: emelj, hogy növeld a potot, amíg valószínűleg előnyben vagy.</string>
+    <string name="hint_reason_late_position_raise">Kései pozíció, vagyis a legtöbb játékos után döntesz: egy emeléssel azonnal megnyerheted a vakokat.</string>
+    <string name="hint_reason_playable_raise">Jó kéz ehhez a helyzethez: az emeléssel átveszed a vezetést a tétkörben.</string>
+    <string name="hint_reason_call_to_see_flop">Ezen az áron megéri látni a flopot, de emeléshez nem elég erős.</string>
+    <string name="hint_reason_free_flop">Senki sem emelt, és a passz (check) ingyenes: nézd meg a flopot ingyen.</string>
+    <string name="hint_reason_fold_weak">Gyenge kéz: az eldobás (fold) semmibe sem kerül, és zsetont tart meg jobb helyzetekre.</string>
+    <string name="hint_reason_fold_to_raise">Valaki emelt, és a kezed nem elég erős, hogy kifizesd: az eldobás olcsóbb.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Már csak %1$d nagy vakod maradt: az all in vagy eldobás a legjobb, és ez a kéz elég erős az all inhez.</string>
+    <string name="hint_reason_fold_short_stack">Már csak %1$d nagy vakod maradt: ez a kéz túl gyenge ahhoz, hogy mindent kockára tegyél.</string>
+    <string name="hint_reason_value_bet">Valószínűleg előnyben vagy: tegyél tétet, hogy a gyengébb kezeknek fizetniük kelljen a további lapokért.</string>
+    <string name="hint_reason_value_raise">Erős kéz tét ellen: emelj, hogy több zsetont tegyél be, amíg előnyben vagy.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Erős draw (%1$d out): a tét azonnal nyerhet, és még javulhatsz is.</string>
+    <string name="hint_reason_call_draw">Draw-kéz (%1$d out): a pot elég nagy ahhoz, hogy megérje üldözni a draw-t.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">A megadás kifizetődik: az esetek kb. %1$d%%-ában nyersz, az ár pedig csak %2$d%%-ot kíván.</string>
+    <string name="hint_reason_fold_bad_price">Nem elég a megadáshoz: az ár %2$d%%-ot kíván, neked pedig kb. %1$d%% van.</string>
+    <string name="hint_reason_free_card">A passz (check) ingyenes, a kezed pedig gyenge: nézd meg a következő lapot ingyen.</string>
+    <string name="hint_reason_pot_control">Közepes kéz: passzolj (check), hogy a pot kicsi maradjon, és lásd a következő lapot.</string>
 </resources>

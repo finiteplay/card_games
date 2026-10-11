@@ -62,5 +62,6 @@
     <string name="help_strategy_4">Know the pot odds. If a call costs 25 chips to win a pot of 75, you are paying one chip for every three you can win, so the call pays off if you win more than one time in four. Compare that to your chance of finishing with the best hand.</string>
     <string name="help_strategy_5">Position matters. Acting last lets you see what everyone else does first, which is worth a lot. Play more hands from late seats and fewer from early ones.</string>
     <string name="help_strategy_6">Watch the opponents\' styles. Each seat is tagged tight, loose, aggressive or passive. Respect a raise from a tight player, and be slower to believe a bet from a loose, aggressive one.</string>
+    <string name="help_hint_note">About the Hint: it shows your equity, your estimated chance to win the pot, beside the pot odds, the share of the pot a call costs. When your equity is higher than the pot odds, calling pays off. The sentence above them explains the idea behind the advice. It is a good guide, not a certainty, because it cannot see anyone\'s cards.</string>
     <string name="help_strategy_7">With a short stack, go all in or fold. When your chips are only a few big blinds, small bets and calls leave you no room to maneuver, and a well-timed all in is your best chance to double up.</string>
 </resources>

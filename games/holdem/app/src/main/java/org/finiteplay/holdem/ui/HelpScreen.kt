@@ -158,6 +158,12 @@ fun HelpScreen(onClose: () -> Unit) {
                             modifier = Modifier.padding(top = 12.dp),
                         )
                     }
+                    Text(
+                        text = stringResource(R.string.help_hint_note),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(top = 20.dp),
+                    )
                 }
             }
             Text(

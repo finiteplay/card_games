@@ -6,4 +6,25 @@
     <string name="hint_notice_free_desc">Szacowana szansa na wygraną to %1$d procent przeciw prawdopodobnym układom.</string>
 
     <string name="recovery_notice">Nie udało się otworzyć zapisanego rozdania, więc rozdano je od nowa. Żadne żetony nie przepadły.</string>
+    <!-- Hint reasons: one coach sentence per spot. %1$d and %2$d are numbers (see each). -->
+    <string name="hint_reason_premium_raise">Mocna ręka: podbij, by powiększyć pulę, gdy prawdopodobnie jesteś z przodu.</string>
+    <string name="hint_reason_late_position_raise">Późna pozycja, więc grasz po większości graczy: podbicie może od razu zdobyć blindy.</string>
+    <string name="hint_reason_playable_raise">Dobra ręka na tę sytuację: podbicie daje ci inicjatywę w licytacji.</string>
+    <string name="hint_reason_call_to_see_flop">Warto zobaczyć flopa za tę cenę, ale ręka jest za słaba na podbicie.</string>
+    <string name="hint_reason_free_flop">Nikt nie podbił, a czekanie jest za darmo: zobacz flopa bez kosztów.</string>
+    <string name="hint_reason_fold_weak">Słaba ręka: pas nic nie kosztuje i oszczędza żetony na lepsze okazje.</string>
+    <string name="hint_reason_fold_to_raise">Ktoś podbił, a twoja ręka jest za słaba, by za to płacić: pas jest tańszy.</string>
+    <!-- %1$d = your stack in big blinds -->
+    <string name="hint_reason_push_short_stack">Zostało tylko %1$d dużych blindów: najlepiej all in albo pas, a ta ręka jest dość mocna na all in.</string>
+    <string name="hint_reason_fold_short_stack">Zostało tylko %1$d dużych blindów: ta ręka jest za słaba, by ryzykować wszystko.</string>
+    <string name="hint_reason_value_bet">Prawdopodobnie jesteś z przodu: postaw, by słabsze ręce płaciły za kolejne karty.</string>
+    <string name="hint_reason_value_raise">Mocna ręka wobec zakładu: podbij, by wrzucić więcej żetonów, gdy jesteś z przodu.</string>
+    <!-- %1$d = number of outs (cards that complete your draw) -->
+    <string name="hint_reason_semi_bluff">Mocne draw (%1$d outów): zakład może od razu wygrać, a ręka wciąż może się poprawić.</string>
+    <string name="hint_reason_call_draw">Ręka na draw (%1$d outów): pula jest dość duża, by gonić draw.</string>
+    <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
+    <string name="hint_reason_call_good_price">Wyrównanie się opłaca: wygrywasz w około %1$d%% przypadków, a cena wymaga tylko %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Za mało na wyrównanie: cena wymaga %2$d%%, a ty masz około %1$d%%.</string>
+    <string name="hint_reason_free_card">Czekanie jest za darmo, a ręka słaba: zobacz kolejną kartę bez kosztów.</string>
+    <string name="hint_reason_pot_control">Przeciętna ręka: czekaj, by pula została mała, i zobacz kolejną kartę.</string>
 </resources>
