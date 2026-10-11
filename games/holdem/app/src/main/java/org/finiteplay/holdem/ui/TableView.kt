@@ -239,11 +239,13 @@ private enum class PillSide { Below, End, Start }
  * mid-word: a seat is 96 dp wide, a translation or a large system font is longer than "aggressive",
  * and a clipped word reads as a bug. It never goes below 7 sp.
  */
+/** A name shrinks to fit too, never below 8 sp: "Bamboozle" is long at a large system font. */
+private val FitName = TextAutoSize.StepBased(minFontSize = 8.sp, maxFontSize = 12.sp, stepSize = 0.5.sp)
 private val FitSubtitle = TextAutoSize.StepBased(minFontSize = 7.sp, maxFontSize = 10.sp, stepSize = 0.5.sp)
 
 @Composable
 private fun Avatar(profile: OpponentProfile) {
-    AnimalAvatar(profile.animal, size = 28.dp)
+    AnimalAvatar(profile.animal, size = 24.dp)
 }
 
 @Composable
@@ -330,7 +332,7 @@ private fun OpponentSeat(
             Row(modifier = Modifier.height(28.dp).fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                 Avatar(profile)
                 Column(modifier = Modifier.weight(1f)) {
-                    Text(profile.name, style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_${seat}_name"))
+                    Text(profile.name, style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, autoSize = FitName, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_${seat}_name"))
                     val last = model.lastAction
                     val won = model.net?.takeIf { it > 0 && !out }
                     if (won != null) {
