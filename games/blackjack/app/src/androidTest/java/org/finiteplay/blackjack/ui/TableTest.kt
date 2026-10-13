@@ -426,9 +426,11 @@ class TableTest {
         // 17 against a ten: Stand is the suggestion, and only Stand is marked — by a state a screen reader reads.
         assertEquals("Suggested", handState("action_stand"))
         assertEquals(null, handState("action_hit"))
-        assertEquals(false, present("hint_notice"))
+        // The coach says why, in a notice laid out just above the player's hands, and it goes with the decision.
+        assertEquals(true, present("hint_notice"))
         tap("action_stand")
         assertEquals(null, handState("action_stand"))
+        assertEquals(false, present("hint_notice"))
     }
 
     private fun handState(tag: String): String? =
