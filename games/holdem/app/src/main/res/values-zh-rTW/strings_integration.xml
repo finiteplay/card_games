@@ -9,7 +9,7 @@
     <!-- Hint reasons (UI_SPEC.md "Hint Presentation"): one coach's sentence per spot. %1$d and %2$d are numbers (see each). -->
     <string name="hint_reason_premium_raise">頂級好牌：加注來做大底池，你很可能領先。</string>
     <string name="hint_reason_late_position_raise">後位，你在大多數玩家之後行動：現在加注可能直接贏下盲注。</string>
-    <string name="hint_reason_playable_raise">這個位置的好牌：加注可以在下注中佔據主動。</string>
+    <string name="hint_reason_playable_raise">這種局面下的好牌：加注可以在下注中佔據主動。</string>
     <string name="hint_reason_call_to_see_flop">這個價格值得看翻牌，但還不夠強，不足以加注。</string>
     <string name="hint_reason_free_flop">沒人加注，過牌免費：不花一分錢看翻牌。</string>
     <string name="hint_reason_fold_weak">牌很弱：棄牌不花錢，還能把籌碼留給更好的機會。</string>
@@ -23,8 +23,8 @@
     <string name="hint_reason_semi_bluff">強聽牌（%1$d 個 outs）：下注可能當場贏下底池，你還能繼續改善牌型。</string>
     <string name="hint_reason_call_draw">聽牌（%1$d 個 outs）：底池夠大，值得追牌。</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
-    <string name="hint_reason_call_good_price">跟注划算：你大約有 %1$d%% 的勝率，而價格只需要 %2$d%%。</string>
-    <string name="hint_reason_fold_bad_price">不夠跟注：價格需要 %2$d%%，而你只有約 %1$d%%。</string>
+    <string name="hint_reason_call_good_price">跟注划算：你大約有 %1$d%% 的勝率，而跟注只需 %2$d%%。</string>
+    <string name="hint_reason_fold_bad_price">不夠跟注：跟注需要 %2$d%% 的勝率，而你只有約 %1$d%%。</string>
     <string name="hint_reason_free_card">過牌免費，而你的牌很弱：免費看下一張牌。</string>
     <string name="hint_reason_pot_control">中等牌力：過牌，把底池保持在較小規模並看下一張牌。</string>
 

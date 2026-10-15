@@ -35,23 +35,23 @@
     <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
     <string name="hint_threat_item">%1$s %2$d%%</string>
     <!-- Looking back at a hand played after a Hint. -->
-    <string name="review_title">ย้อนดูคำแนะนำ</string>
+    <string name="review_title">ย้อนดูคำใบ้</string>
     <!-- %1$d = your chance to win at that moment, in percent -->
-    <string name="review_followed_won">คุณทำตามคำแนะนำและชนะ: คุณมีโอกาสชนะประมาณ %1$d%%</string>
+    <string name="review_followed_won">คุณทำตามคำใบ้และชนะ: คุณมีโอกาสชนะประมาณ %1$d%%</string>
     <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
-    <string name="review_followed_lost">คุณทำตามคำแนะนำแล้วแพ้ ซึ่งเกิดขึ้นได้: เมื่อมีโอกาสประมาณ %1$d%% คุณจะแพ้ %2$d%% ของครั้ง ให้ตัดสินที่การตัดสินใจ ไม่ใช่ผลลัพธ์</string>
-    <string name="review_followed_fold">คุณโฟลด์ตามที่คำแนะนำบอก และเก็บชิปไว้สำหรับจังหวะที่ดีกว่า</string>
+    <string name="review_followed_lost">คุณทำตามคำใบ้แล้วแพ้ ซึ่งเกิดขึ้นได้: เมื่อมีโอกาสประมาณ %1$d%% คุณจะแพ้ %2$d%% ของครั้ง ให้ตัดสินที่การตัดสินใจ ไม่ใช่ผลลัพธ์</string>
+    <string name="review_followed_fold">คุณโฟลด์ตามที่คำใบ้บอก และเก็บชิปไว้สำหรับจังหวะที่ดีกว่า</string>
     <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
-    <string name="review_ignored_won">คุณชนะ แต่คำแนะนำบอกให้ %1$s เหตุผล: %2$s การชนะทั้งที่ฝืนคำแนะนำคือโชค ไม่ใช่แผน</string>
-    <string name="review_ignored_lost">คำแนะนำบอกให้ %1$s แต่คุณเลือกอย่างอื่นและแพ้ เหตุผล: %2$s</string>
-    <string name="review_ignored_fold">คุณโฟลด์ แต่คำแนะนำบอกให้ %1$s เหตุผล: %2$s</string>
+    <string name="review_ignored_won">คุณชนะ แต่คำใบ้บอกให้ %1$s เหตุผล: %2$s การชนะทั้งที่ฝืนคำแนะนำคือโชค ไม่ใช่แผน</string>
+    <string name="review_ignored_lost">คำใบ้บอกให้ %1$s แต่คุณเลือกอย่างอื่นและแพ้ เหตุผล: %2$s</string>
+    <string name="review_ignored_fold">คุณโฟลด์ แต่คำใบ้บอกให้ %1$s เหตุผล: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
-    <string name="review_beaten_by">คุณแพ้ให้กับ %1$s คำแนะนำประเมินไว้ว่าประมาณ %2$d%%</string>
+    <string name="review_beaten_by">คุณแพ้ให้กับ %1$s คำใบ้ประเมินไว้ว่าประมาณ %2$d%%</string>
 
     <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$d = your chance to win at the moment you decided, in percent. -->
-    <string name="review_hindsight_fold_won">คุณจะชนะมือนี้ แต่ตอนตัดสินใจ โอกาสชนะของคุณมีเพียงประมาณ %1$d%% ให้ตัดสินที่การตัดสินใจ ไม่ใช่ผลลัพธ์</string>
-    <string name="review_hindsight_fold_lost">คุณจะแพ้มือนี้: ตอนตัดสินใจ โอกาสชนะของคุณประมาณ %1$d%%</string>
+    <string name="review_hindsight_fold_won">ถ้าไม่โฟลด์ คุณจะชนะมือนี้ แต่ตอนตัดสินใจ โอกาสชนะของคุณมีเพียงประมาณ %1$d%% ให้ตัดสินที่การตัดสินใจ ไม่ใช่ผลลัพธ์</string>
+    <string name="review_hindsight_fold_lost">ถ้าไม่โฟลด์ คุณจะแพ้มือนี้:ตอนตัดสินใจ โอกาสชนะของคุณประมาณ %1$d%%</string>
     <string name="review_chance_at_decision">ตอนตัดสินใจ โอกาสชนะของคุณประมาณ %1$d%%</string>
     <string name="review_chance_slim_win">คุณชนะ แต่ตอนตัดสินใจ โอกาสชนะค่อนข้างริบหรี่: ประมาณ %1$d%%</string>
-    <string name="review_followed_won_slim">คุณทำตามคำแนะนำและชนะ แต่โอกาสชนะค่อนข้างริบหรี่: ประมาณ %1$d%% การตัดสินใจที่ดีไม่ได้โชคดีเสมอไป</string>
+    <string name="review_followed_won_slim">คุณทำตามคำใบ้และชนะ แต่โอกาสชนะค่อนข้างริบหรี่: ประมาณ %1$d%% การตัดสินใจที่ดีไม่ได้โชคดีเสมอไป</string>
 </resources>

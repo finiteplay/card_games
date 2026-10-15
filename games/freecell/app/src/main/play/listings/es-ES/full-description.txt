@@ -1,0 +1,19 @@
+Planifica tus movimientos en el solitario FreeCell clásico, con todas las cartas visibles, cuatro celdas libres y pistas avanzadas cuando quieras orientación.
+
+La promesa de FinitePlay: totalmente gratis, sin anuncios, compras dentro de la aplicación ni suscripciones. Todo el juego funciona en tu dispositivo: sin cuentas, rastreo, recopilación o intercambio de datos, clasificaciones ni funciones en línea. Tu progreso y tus estadísticas son privados y locales.
+
+Cada reparto incluido comienza con una solución verificada. Usa las celdas libres y las columnas vacías para mover secuencias y llegar a las bases. Deshaz movimientos o repite el reparto para probar otro enfoque.
+
+Las pistas buscan una ruta hasta la solución desde tu tablero actual. Un reparto inicial resoluble puede acabar en una posición sin salida. Si la búsqueda no puede demostrar una solución dentro de su límite, lo indica.
+
+Funciones:
+• Repartos iniciales resolubles
+• Controles de tocar o arrastrar y movimientos legales de varias cartas
+• Deshacer, repetir reparto y finalización automática
+• Pistas opcionales y movimientos automáticos a las bases
+• Temas claros y oscuros, controles de sonido y animación
+• Estadísticas locales
+
+Juega a tu ritmo. Los recordatorios de descanso configurables te invitan a hacer una pausa tras jugar durante un tiempo prolongado. No hay bonos urgentes ni recompensas diarias con límite de tiempo. Las estadísticas locales te ayudan a reflexionar sobre tu juego, sin presión competitiva para seguir jugando.
+
+FinitePlay crea juegos de cartas que respetan tu tiempo, tu privacidad y tu atención.

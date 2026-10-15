@@ -22,7 +22,7 @@
     <string name="banner_win">Du vant!</string>
     <string name="banner_lose">Du tapte</string>
     <string name="summary_even">Likt</string>
-    <string name="reset_offer_title">tom for sjetonger</string>
+    <string name="reset_offer_title">Tom for sjetonger</string>
     <string name="reset_offer_body">Du kan ikke dekke minsteinnsatsen. Nullstille til %1$d sjetonger? Statistikken din beholdes.</string>
     <string name="reset_offer_not_now">Ikke nå</string>
     <string name="recovery_notice">Den lagrede runden kunne ikke åpnes. Den ble avbrutt, og ingen sjetonger gikk tapt.</string>
@@ -45,7 +45,7 @@
     <string name="help_values_title">Kortverdier</string>
     <string name="help_values">Tallkort teller tallet sitt. Knekt, dame og konge teller 10. Et ess teller 1 eller 11, det som er best for hånden. Et ess og et kort med verdi ti på de to første kortene er blackjack og betaler 3 til 2.</string>
     <string name="help_round_title">En runde</string>
-    <string name="help_round">Legg inn innsatsen og trykk Del ut. Du og dealeren får to kort hver, og ett av dealerens ligger med forsiden ned. Så tar du valgene dine, én hånd om gangen, og når du er ferdig spiller dealeren. Hver runde deles ut fra en nystokket kortstokk, og det finnes ingen angre.</string>
+    <string name="help_round">Legg inn innsatsen og trykk Del ut. Du og dealeren får to kort hver, og ett av dealerens ligger med forsiden ned. Så tar du valgene dine, én hånd om gangen, og når du er ferdig spiller dealeren. Hver runde deles ut fra en nystokket kortstokk, og det går ikke an å angre.</string>
     <string name="help_hit_title">Trekk</string>
     <string name="help_hit">Ta ett kort til. Du kan fortsette så lenge hånden din er under 21.</string>
     <string name="help_stand_title">Stå</string>
@@ -57,7 +57,7 @@
     <string name="help_insurance_title">Forsikring</string>
     <string name="help_insurance">Når dealeren viser et ess, kan du forsikre for halve innsatsen. Den betaler 2 til 1 hvis dealeren har blackjack, og er tapt ellers.</string>
     <string name="help_dealer_title">Dealeren</string>
-    <string name="help_dealer">Dealeren tar ingen valg: de trekker kort til de har 17 eller mer, og står på alle 17, også myk 17 der esset teller 11.</string>
+    <string name="help_dealer">Dealeren tar ingen valg: hen trekker kort til hen har 17 eller mer, og står på alle 17, også myk 17 der esset teller 11.</string>
     <string name="help_strategy_intro">En enkel plan som gir deg gode odds. Hint-knappen følger samme strategi i detalj.</string>
     <string name="help_strategy_1">Trekk alltid på 8 eller mindre, og stå alltid på hard 17 eller mer.</string>
     <string name="help_strategy_2">Med 12 til 16, stå hvis dealeren viser 2 til 6, for da går dealeren trolig bust. Trekk hvis dealeren viser 7 eller mer.</string>
@@ -75,12 +75,12 @@
     <string name="hint_reason_hit_cannot_bust">Du kan ikke gå bust med %2$d: trekk et kort for å forbedre hånden.</string>
     <string name="hint_reason_hit_soft">En myk %2$d kan ikke gå bust på neste kort, så å trekke koster ingenting: forbedre hånden.</string>
     <string name="hint_reason_double">Et sterkt spill: %2$d mot dealerens %1$s. Doble innsatsen, ta ett kort og få mest mulig ut av det.</string>
-    <string name="hint_reason_split_aces">To ess er det beste paret å splitte: hvert kan bli 21, mens A-A sammen bare er en svak myk 12.</string>
+    <string name="hint_reason_split_aces">To ess er det beste paret å splitte: hvert av dem kan bli 21, mens A-A sammen bare er en svak myk 12.</string>
     <string name="hint_reason_split_eights">To åttere blir 16, den verste hånden: splitt dem for å starte to bedre hender.</string>
     <string name="hint_reason_split_pair">Mot dealerens %1$s gir splitt deg to gode hender i stedet for én svak.</string>
     <string name="hint_reason_decline_insurance">Forsikring taper sjetonger over tid: dealerens skjulte kort er en ti sjeldnere enn én av tre, og det er det som skal til for å gå i null.</string>
     <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
-    <string name="hint_figures">Dealeren går bust %1$d%% · Trekk gir bust for deg %2$d%%</string>
+    <string name="hint_figures">Dealeren går bust %1$d%% · Du går bust ved trekk %2$d%%</string>
     <string name="hint_figures_dealer_only">Dealeren går bust %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
     <string name="review_title">Tilbakeblikk på Hint</string>

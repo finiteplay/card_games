@@ -55,7 +55,7 @@
     <string name="help_split_title">Jaa</string>
     <string name="help_split">Kun kahdella ensimmäisellä kortilla on sama arvo, jaa ne kahdeksi käsiksi, joilla kummallakin on alkuperäinen panos. Käsiä voi olla enintään neljä. Jaetut ässät saavat yhden kortin kukin, eikä niille voi ottaa lisää.</string>
     <string name="help_insurance_title">Vakuutus</string>
-    <string name="help_insurance">Kun jakajalla näkyy ässä, voit vakuuttaa puolella panoksesta. Se maksaa 2 vastaan 1, jos jakajalla on blackjack, ja muuten menetetään.</string>
+    <string name="help_insurance">Kun jakajalla näkyy ässä, voit vakuuttaa puolella panoksesta. Vakuutus maksaa 2 vastaan 1, jos jakajalla on blackjack, ja muuten se menetetään.</string>
     <string name="help_dealer_title">Jakaja</string>
     <string name="help_dealer">Jakaja ei tee valintoja: hän ottaa kortteja, kunnes hänellä on 17 tai enemmän, ja jää jokaiseen 17:ään, myös pehmeään 17:ään, jossa ässä lasketaan 11:ksi.</string>
     <string name="help_strategy_intro">Yksinkertainen suunnitelma, joka antaa hyvät mahdollisuudet. Vihje-painike noudattaa samaa strategiaa tarkemmin.</string>
@@ -74,10 +74,10 @@
     <string name="hint_reason_hit_dealer_strong">Jakajalla näkyy %1$s ja hän saa usein hyvän käden, joten %2$d voittaa vain %5$d%% kerroista, jos jäät: ota kortti %4$d%% yli menon riskistä huolimatta.</string>
     <string name="hint_reason_hit_cannot_bust">%2$d:llä et voi mennä yli: ota kortti parantaaksesi kättäsi.</string>
     <string name="hint_reason_hit_soft">Pehmeä %2$d ei voi mennä yli seuraavalla kortilla, joten kortin ottaminen ei maksa mitään: paranna kättäsi.</string>
-    <string name="hint_reason_double">Vahva tilanne: %2$d jakajan %1$s vastaan. Tuplaa panoksesi, ota yksi kortti ja hyödynnä se.</string>
+    <string name="hint_reason_double">Vahva tilanne: sinulla on %2$d, ja jakajalla näkyy %1$s. Tuplaa panoksesi, ota yksi kortti ja hyödynnä se.</string>
     <string name="hint_reason_split_aces">Kaksi ässää on paras jaettava pari: kumpikin voi tulla 21:ksi, kun taas A-A yhdessä on vain heikko pehmeä 12.</string>
     <string name="hint_reason_split_eights">Kaksi kahdeksikkoa tekee 16, huonoimman käden: jaa ne aloittaaksesi kaksi parempaa kättä.</string>
-    <string name="hint_reason_split_pair">Jakajan %1$s vastaan jakaminen antaa kaksi hyvää kättä yhden heikon sijaan.</string>
+    <string name="hint_reason_split_pair">Kun jakajalla näkyy %1$s, jakaminen antaa kaksi hyvää kättä yhden heikon sijaan.</string>
     <string name="hint_reason_decline_insurance">Vakuutus hävittää pelimerkkejä ajan myötä: jakajan piilokortti on kymppi harvemmin kuin kerran kolmesta, ja juuri sitä tarvittaisiin tasoihin pääsyyn.</string>
     <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
     <string name="hint_figures">Jakaja menee yli %1$d%% · Kortti vie sinut yli %2$d%%</string>
@@ -92,12 +92,12 @@
     <string name="review_ignored_lost">Vihje ehdotti: %1$s, mutta valitsit toisin ja hävisit. Sen perustelu: %2$s</string>
     <string name="review_ignored_push">Vihje ehdotti: %1$s, ja valitsit toisin. Sen perustelu: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
-    <string name="review_dealer_finished">Jakaja päätti käteen %1$d.</string>
+    <string name="review_dealer_finished">Jakajan loppusumma: %1$d.</string>
     <string name="review_dealer_busted">Jakaja meni yli.</string>
     <string name="review_dealer_blackjack">Jakajalla oli blackjack.</string>
     <string name="review_you_busted">Menit yli: %1$d.</string>
     <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
-    <string name="review_would_have_drawn">Jos olisit ottanut kortin, olisit saanut %1$s, jolloin summa olisi %2$d.</string>
+    <string name="review_would_have_drawn">Jos olisit ottanut kortin, se olisi ollut %1$s, jolloin summa olisi %2$d.</string>
     <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
     <string name="review_stand_chances">Päättäessäsi jääminen summalla %1$d voitti noin %2$d%% kerroista, päättyi tasapeliin %3$d%% ja hävisi %4$d%%.</string>
 </resources>

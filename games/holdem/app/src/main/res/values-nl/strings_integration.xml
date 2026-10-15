@@ -12,7 +12,7 @@
     <string name="hint_reason_late_position_raise">Late positie, dus je speelt na de meeste spelers: met een raise kun je nu de blinds winnen.</string>
     <string name="hint_reason_playable_raise">Een goede hand voor deze situatie: met een raise neem je de leiding in de inzetronde.</string>
     <string name="hint_reason_call_to_see_flop">Een flop zien voor deze prijs is het waard, maar de hand is niet sterk genoeg voor een raise.</string>
-    <string name="hint_reason_free_flop">Niemand heeft geraised en checken is gratis: zie de flop zonder kosten.</string>
+    <string name="hint_reason_free_flop">Niemand heeft geraised en checken is gratis: bekijk de flop gratis.</string>
     <string name="hint_reason_fold_weak">Een zwakke hand: folden kost niets en spaart fiches voor betere spots.</string>
     <string name="hint_reason_fold_to_raise">Iemand heeft geraised en je hand is niet sterk genoeg om te betalen: folden is goedkoper.</string>
     <!-- %1$d = jouw stack in big blinds -->

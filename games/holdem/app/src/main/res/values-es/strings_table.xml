@@ -84,11 +84,11 @@
         <item>reyes</item>
     </string-array>
     <string name="hand_royal_flush">Escalera real</string>
-    <string name="hand_straight_flush">Escalera de color, %1$s alto</string>
+    <string name="hand_straight_flush">Escalera de color, carta alta %1$s</string>
     <string name="hand_four_of_a_kind">Póker de %1$s</string>
     <string name="hand_full_house">Full, %1$s y %2$s</string>
-    <string name="hand_flush">Color, %1$s alto</string>
-    <string name="hand_straight">Escalera, %1$s alto</string>
+    <string name="hand_flush">Color, carta alta %1$s</string>
+    <string name="hand_straight">Escalera, carta alta %1$s</string>
     <string name="hand_three_of_a_kind">Trío de %1$s</string>
     <string name="hand_two_pair">Doble pareja, %1$s y %2$s</string>
     <string name="hand_pair">Pareja de %1$s</string>

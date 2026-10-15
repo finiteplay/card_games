@@ -17,8 +17,8 @@
     <string name="action_next_hand">Következő kéz</string>
     <string name="action_new_tournament">Új verseny</string>
 
-    <string name="sizing_minus_desc">Csökkentés %1$,d-vel</string>
-    <string name="sizing_plus_desc">Növelés %1$,d-vel</string>
+    <string name="sizing_minus_desc">Csökkentés ennyivel: %1$,d</string>
+    <string name="sizing_plus_desc">Növelés ennyivel: %1$,d</string>
     <string name="sizing_half_pot">½ pot</string>
     <string name="sizing_pot">Pot</string>
     <string name="sizing_bet_desc">Tét: %1$,d</string>
@@ -127,7 +127,7 @@
     <string name="a11y_out">Kiesett, %1$s helyen végzett</string>
     <string name="a11y_all_in">all in</string>
     <string name="a11y_thinking">következik</string>
-    <string name="ann_fold">%1$s eldobja</string>
+    <string name="ann_fold">%1$s eldobja a lapjait</string>
     <string name="ann_check">%1$s passzol</string>
     <string name="ann_call">%1$s megad: %2$,d</string>
     <string name="ann_bet">%1$s tétet tesz: %2$,d</string>

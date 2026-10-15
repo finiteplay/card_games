@@ -47,7 +47,7 @@
     <string name="review_ignored_lost">A tipp ezt javasolta: %1$s, de te máshogy döntöttél, és vesztettél. Az indok: %2$s</string>
     <string name="review_ignored_fold">Eldobtad a lapjaidat, de a tipp ezt javasolta: %1$s. Az indok: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
-    <string name="review_beaten_by">Ellene vesztettél: %1$s. A tipp ezt kb. %2$d%%-ra becsülte.</string>
+    <string name="review_beaten_by">Ez a kéz vert meg: %1$s. A tipp ezt kb. %2$d%%-ra becsülte.</string>
 
     <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">Ezt a kezet megnyerted volna, de amikor döntöttél, az esélyed csak kb. %1$d%% volt. A döntést ítéld meg, ne az eredményt.</string>

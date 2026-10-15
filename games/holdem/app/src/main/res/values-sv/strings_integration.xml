@@ -34,22 +34,22 @@
     <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
     <string name="hint_threat_item">%1$s %2$d%%</string>
     <!-- Looking back at a hand played after a Hint. -->
-    <string name="review_title">Tillbakablick på Hint</string>
+    <string name="review_title">Tillbakablick på tipset</string>
     <!-- %1$d = your chance to win at that moment, in percent -->
-    <string name="review_followed_won">Du följde Hint och vann: du hade ungefär %1$d%% chans att vinna.</string>
+    <string name="review_followed_won">Du följde tipset och vann: du hade ungefär %1$d%% chans att vinna.</string>
     <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
-    <string name="review_followed_lost">Du följde Hint och förlorade, det händer: med ungefär %1$d%% förlorar du %2$d%% av gångerna. Bedöm beslutet, inte resultatet.</string>
-    <string name="review_followed_fold">Du foldade som Hint rådde och sparade dina marker till ett bättre läge.</string>
+    <string name="review_followed_lost">Du följde tipset och förlorade, det händer: med ungefär %1$d%% förlorar du %2$d%% av gångerna. Bedöm beslutet, inte resultatet.</string>
+    <string name="review_followed_fold">Du foldade som tipset rådde och sparade dina marker till ett bättre läge.</string>
     <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Du vann, men Hint föreslog: %1$s. Dess skäl: %2$s Att vinna mot råd är tur, inte en plan.</string>
-    <string name="review_ignored_lost">Hint föreslog: %1$s, men du valde annorlunda och förlorade. Dess skäl: %2$s</string>
-    <string name="review_ignored_fold">Du foldade, men Hint föreslog: %1$s. Dess skäl: %2$s</string>
+    <string name="review_ignored_won">Du vann, men tipset föreslog: %1$s. Dess skäl: %2$s Att vinna mot råd är tur, inte en plan.</string>
+    <string name="review_ignored_lost">Tipset föreslog: %1$s, men du valde annorlunda och förlorade. Dess skäl: %2$s</string>
+    <string name="review_ignored_fold">Du foldade, men tipset föreslog: %1$s. Dess skäl: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
-    <string name="review_beaten_by">Du förlorade mot %1$s. Hint hade bedömt det till ungefär %2$d%%.</string>
+    <string name="review_beaten_by">Du förlorade mot %1$s. Tipset hade bedömt det till ungefär %2$d%%.</string>
     <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">Du hade vunnit den här handen, men när du bestämde dig var din chans bara ungefär %1$d%%. Bedöm beslutet, inte resultatet.</string>
     <string name="review_hindsight_fold_lost">Du hade förlorat den här handen: din chans var ungefär %1$d%% när du bestämde dig.</string>
     <string name="review_chance_at_decision">När du bestämde dig var din chans ungefär %1$d%%.</string>
     <string name="review_chance_slim_win">Du vann, men din chans var liten när du bestämde dig: ungefär %1$d%%.</string>
-    <string name="review_followed_won_slim">Du följde Hint och vann, men din chans var liten: ungefär %1$d%%. Bra beslut har inte alltid tur.</string>
+    <string name="review_followed_won_slim">Du följde tipset och vann, men din chans var liten: ungefär %1$d%%. Bra beslut har inte alltid tur.</string>
 </resources>

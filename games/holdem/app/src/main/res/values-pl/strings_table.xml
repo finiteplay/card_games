@@ -111,7 +111,7 @@
     <string name="end_title_place">Twoje miejsce: %1$s</string>
     <string name="end_title_won">Wygrałeś turniej</string>
     <string name="end_body_lost">Rozegrane rozdania: %1$d\nNajwiększa pula: %2$,d</string>
-    <string name="end_body_won">Zajęło to %1$d rozdań.\nNajwiększa pula: %2$,d</string>
+    <string name="end_body_won">Zwycięstwo po %1$d rozdaniach.\nNajwiększa pula: %2$,d</string>
 
     <string name="card_spoken">%1$s, %2$s</string>
     <string name="a11y_your_cards">Twoje karty: %1$s</string>

@@ -84,11 +84,11 @@
         <item>re</item>
     </string-array>
     <string name="hand_royal_flush">Scala reale</string>
-    <string name="hand_straight_flush">Scala colore, %1$s alto</string>
+    <string name="hand_straight_flush">Scala colore, carta alta %1$s</string>
     <string name="hand_four_of_a_kind">Poker di %1$s</string>
     <string name="hand_full_house">Full, %1$s e %2$s</string>
-    <string name="hand_flush">Colore, %1$s alto</string>
-    <string name="hand_straight">Scala, %1$s alto</string>
+    <string name="hand_flush">Colore, carta alta %1$s</string>
+    <string name="hand_straight">Scala, carta alta %1$s</string>
     <string name="hand_three_of_a_kind">Tris di %1$s</string>
     <string name="hand_two_pair">Doppia coppia, %1$s e %2$s</string>
     <string name="hand_pair">Coppia di %1$s</string>

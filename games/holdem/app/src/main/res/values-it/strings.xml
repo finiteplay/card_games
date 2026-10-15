@@ -20,11 +20,11 @@
     <string name="help_allin_title">All in e piatti laterali</string>
     <string name="help_allin">Un giocatore che è all in non può essere costretto a uscire, ma può vincere da ogni giocatore solo quanto ha messo lui stesso. Le fiches in più vanno in un piatto laterale che il giocatore all in non può vincere. I piatti sono mostrati sul tavolo, e ognuno va alla mano migliore tra i giocatori che vi hanno contribuito.</string>
     <string name="help_showdown_title">Lo showdown</string>
-    <string name="help_showdown">Se due o più giocatori sono ancora in gioco dopo l\'ultimo giro di puntate, scoprono le carte e la mano migliore vince il piatto. Se tutti gli altri passano, l\'ultimo giocatore vince il piatto senza mostrare le carte. Le mani pari si dividono il piatto in parti uguali.</string>
+    <string name="help_showdown">Se due o più giocatori sono ancora in gioco dopo l\'ultimo giro di puntate, scoprono le carte e la mano migliore vince il piatto. Se tutti gli altri fanno fold, l\'ultimo giocatore vince il piatto senza mostrare le carte. Le mani pari si dividono il piatto in parti uguali.</string>
     <string name="help_tournament_title">Il torneo</string>
     <string name="help_tournament">I blind aumentano ogni 10 mani, quindi le fiches diventano proporzionalmente poche e aspettare costa caro. Niente è a tempo: prenditi quanto vuoi. Finisci al posto pari al numero di giocatori rimasti quando vieni eliminato, quindi il 6º è il primo a uscire e il 1º è la vittoria.</string>
     <string name="help_leave_title">Uscire</string>
-    <string name="help_leave">La bandiera in alto termina il torneo in anticipo, e finisci dove saresti se fossi eliminato adesso. Chiudere l\'app non lo fa: la tua mano viene salvata e ti aspetta al ritorno. Non c\'è annulla, perché ogni decisione è seguita da carte che non potevi vedere.</string>
+    <string name="help_leave">La bandiera in alto termina il torneo in anticipo, e finisci dove saresti se fossi eliminato adesso. Chiudere l\'app non lo fa: la tua mano viene salvata e ti aspetta al ritorno. Non si può annullare, perché ogni decisione è seguita da carte che non potevi vedere.</string>
     <string name="help_hands_intro">Dalla mano più forte alla più debole. Le cinque carte mostrate sono un esempio per ciascuna.</string>
     <string name="help_hand_straight_flush_title">Scala colore</string>
     <string name="help_hand_straight_flush">Cinque carte consecutive, tutte dello stesso seme. La migliore, dal dieci all\'asso, è una scala reale.</string>
@@ -52,7 +52,7 @@
     <string name="help_strategy_3">Fai fold più di quanto ti sembri comodo. La maggior parte delle mani non vale la pena di essere giocata, e una mano scartata ti costa solo ciò che hai già messo.</string>
     <string name="help_strategy_4">Conosci le pot odds. Se chiamare costa 25 fiches per vincere un piatto di 75, paghi una fiche ogni tre che puoi vincere, quindi la chiamata rende se vinci più di una volta su quattro. Confrontalo con la tua probabilità di finire con la mano migliore.</string>
     <string name="help_strategy_5">La posizione conta. Agire per ultimo ti permette di vedere prima cosa fanno tutti gli altri, e vale molto. Gioca più mani dalle posizioni tarde e meno da quelle iniziali.</string>
-    <string name="help_strategy_6">Osserva lo stile degli avversari. Ogni posto è etichettato tight, loose, aggressivo o passivo. Rispetta un rilancio di un giocatore tight, e fidati meno in fretta della puntata di uno loose e aggressivo.</string>
+    <string name="help_strategy_6">Osserva lo stile degli avversari. Ogni posto è etichettato tight, loose, aggressivo o passivo. Rispetta un rilancio di un giocatore tight, e credi meno facilmente alla puntata di uno loose e aggressivo.</string>
     <string name="help_hint_note">Sul suggerimento: mostra la tua equity, la tua probabilità stimata di vincere il piatto, accanto alle pot odds, la quota del piatto che costa un call. Quando la tua equity è maggiore delle pot odds, il call conviene. La frase sopra spiega l\'idea dietro il consiglio. È una buona guida, non una certezza, perché non può vedere le carte di nessuno.</string>
     <string name="help_strategy_7">Con poche fiches, vai all in o fai fold. Quando hai solo pochi big blind, puntate e chiamate piccole non ti lasciano margine di manovra, e un all in al momento giusto è la tua migliore occasione per raddoppiare.</string>
 </resources>

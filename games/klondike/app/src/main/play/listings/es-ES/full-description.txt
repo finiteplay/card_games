@@ -1,0 +1,19 @@
+Disfruta del solitario Klondike clásico sin conexión. Elige robar una o tres cartas, selecciona la dificultad y pide una pista cuando necesites ayuda.
+
+La promesa de FinitePlay: totalmente gratis, sin anuncios, compras dentro de la aplicación ni suscripciones. Todo el juego funciona en tu dispositivo: sin cuentas, rastreo, recopilación o intercambio de datos, clasificaciones ni funciones en línea. Tu progreso y tus estadísticas son privados y locales.
+
+Los repartos de Trivial a Experto comienzan con una solución verificada. El nivel Insano es una excepción: sus repartos no están certificados. Un reparto resoluble puede acabar en un callejón sin salida según tus decisiones.
+
+Las pistas avanzadas buscan una ruta hasta la solución desde el tablero actual. Si la búsqueda no puede demostrarla dentro de su límite, lo indica sin garantizar una jugada ganadora.
+
+Funciones:
+• Robo de una o tres cartas y seis niveles de dificultad
+• Controles de tocar o arrastrar, deshacer y repetir reparto
+• Pistas basadas en el tablero actual
+• Finalización automática y movimientos opcionales a las bases
+• Temas claros y oscuros, controles de sonido y animación
+• Estadísticas locales
+
+Juega a tu ritmo. Los recordatorios de descanso configurables te invitan a hacer una pausa tras jugar durante un tiempo prolongado. No hay bonos urgentes ni recompensas diarias con límite de tiempo. Las estadísticas locales te ayudan a reflexionar sobre tu juego, sin presión competitiva para seguir jugando.
+
+FinitePlay crea juegos de cartas que respetan tu tiempo, tu privacidad y tu atención.

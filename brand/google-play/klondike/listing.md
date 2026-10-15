@@ -2,23 +2,27 @@
 
 ## Main store listing (en-US)
 
-**Title (22/30):** Klondike by FinitePlay
+**Title:** Klondike Solitaire: FinitePlay
 
-**Short description (59/80):** Offline Klondike with certified deals and board-aware hints
+**Short description:** Classic solitaire with solvable deals, draw 1 or 3, and offline hints
 
 **Full description:**
 
-Quality card games should not need a catch. Klondike by FinitePlay is completely free. There are
-no ads, in-app purchases, subscriptions, user tracking, or account. The full game works offline
-and never needs an internet connection. Your progress and statistics stay on your device.
+Play familiar Klondike Solitaire offline, with draw-one and draw-three modes, a choice of
+difficulty, and advanced hints when you want help.
+
+The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions.
+Play stays completely on your device: no accounts, tracking, data collection or sharing,
+leaderboards, or online features. Your progress and statistics stay private and local.
 
 Deals from Trivial through Expert are provably solvable: each comes from a catalog validated
 offline with a winning path. Hint searches the board you are actually playing and guides you one
 move at a time. If it cannot prove a path within its search limit, it says so plainly instead of
 pretending. The deliberately extreme Insane level is clearly identified as uncertified.
 
-This is full-featured Klondike, free without compromise. Choose draw one or draw three, select a
-difficulty, and play at your own pace.
+Play at your own pace. Configurable rest reminders invite you to pause after extended play.
+There are no urgency bonuses or timed daily rewards. Local scores and statistics help you
+reflect on your play, without competitive leaderboards or pressure to keep going.
 
 Features:
 • Six difficulty levels, with certified-solvable deals from Trivial through Expert
@@ -36,6 +40,7 @@ FinitePlay makes quality games that respect your time, privacy, and attention.
 
 - App or game: Game
 - Category: Card
+- Developer contact email: contact@finiteplay.org
 - Suggested tags: Solitaire, Card, Offline, Single player
 - Developer contact website: https://finiteplay.org
 - Privacy policy: https://finiteplay.org/privacy
@@ -44,6 +49,7 @@ FinitePlay makes quality games that respect your time, privacy, and attention.
 
 - App icon: Three pale cards in a fan with a cyan spade on a midnight-blue background.
 - Feature graphic: A cyan spade above a fan of cards on a calm midnight-blue card-table pattern.
-- Screenshot 1: A fresh portrait Klondike deal with seven tableau columns, stock, waste, and foundations.
-- Screenshot 2: A Klondike game in progress with cards moved between the tableau and foundations.
-- Screenshot 3: Klondike settings for draw mode, difficulty, themes, sound, and accessibility options.
+- Leading screenshot: A certified Trivial deal in progress, with tableau, foundations, and waste visible.
+- Additional gameplay: Existing fresh and in-progress Klondike captures.
+- Final screenshot: Klondike settings for draw mode, difficulty, themes, sound, and accessibility options.
+- Exact display order: `screenshot-order.txt`.

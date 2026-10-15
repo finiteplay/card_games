@@ -13,7 +13,7 @@
     <string name="help_actions_title">Valintasi</string>
     <string name="help_actions_check">Check: pysy mukana panostamatta, kun kukaan ei ole panostanut ennen sinua.</string>
     <string name="help_actions_call">Maksa (call): vastaa panokseen, jonka edessä olet.</string>
-    <string name="help_actions_bet">Panosta tai korota: lisää pelimerkkejä. Valitse summa palkin yläpuolella olevilla painikkeilla: − ja + liikkuvat big blindin askelin, ja ½ pot ja Pot asettavat summan puolestasi. Koroituksen on oltava vähintään yhtä suuri kuin edellinen panos tai korotus.</string>
+    <string name="help_actions_bet">Panosta tai korota: lisää pelimerkkejä. Valitse summa palkin yläpuolella olevilla painikkeilla: − ja + liikkuvat ison blindin askelin, ja ½ potti ja Potti asettavat summan puolestasi. Korotuksen on oltava vähintään yhtä suuri kuin edellinen panos tai korotus.</string>
     <string name="help_actions_fold">Fold: luovuta korttisi ja jo panostamasi pelimerkit. Putoat vain tästä kädestä.</string>
     <string name="help_actions_all_in">All in: panosta kaikki pelimerkkisi.</string>
     <string name="help_button_title">Nappi ja blindit</string>
@@ -52,10 +52,10 @@
     <string name="help_strategy_intro">Seitsemän ideaa, joista on uudelle pelaajalle hyötyä. Ne eivät voita jokaista kättä, mutta turnauksen aikana ne kasaantuvat.</string>
     <string name="help_strategy_1">Pelaa vähemmän käsiä aikaisilta paikoilta. Ensimmäisinä toimivilla on eniten vastustajia vielä toimimatta, joten aloita siellä vain vahvoilla korteilla ja pelaa vapaammin, mitä lähempänä nappia paikat ovat.</string>
     <string name="help_strategy_2">Korota mieluummin kuin maksa. Korotus voi voittaa potin saman tien, ja kun siihen vastataan, sinulla on useammin vahvempi käsi. Pelkkä maksaminen antaa muiden nähdä kortteja halvalla.</string>
-    <string name="help_strategy_3">Fold useammin kuin tuntuu mukavalta. Useimmat kädet eivät ole pelaamisen arvoisia, ja foldattu käsi maksaa vain sen, minkä olet jo pannut peliin.</string>
-    <string name="help_strategy_4">Tunne pot odds. Jos maksaminen maksaa 25 pelimerkkiä ja potti on 75, maksat yhden pelimerkin jokaista kolmea voitettavaa kohti, joten maksaminen kannattaa, jos voitat useammin kuin kerran neljästä. Vertaa sitä todennäköisyyteesi päätyä parhaaseen käteen.</string>
+    <string name="help_strategy_3">Foldaa useammin kuin tuntuu mukavalta. Useimmat kädet eivät ole pelaamisen arvoisia, ja foldattu käsi maksaa vain sen, minkä olet jo pannut peliin.</string>
+    <string name="help_strategy_4">Tunne pot odds. Jos maksaminen vaatii 25 pelimerkkiä ja potti on 75, maksat yhden pelimerkin jokaista kolmea voitettavaa kohti, joten maksaminen kannattaa, jos voitat useammin kuin kerran neljästä. Vertaa sitä todennäköisyyteesi päätyä parhaaseen käteen.</string>
     <string name="help_strategy_5">Paikalla on väliä. Viimeisenä toimiminen antaa sinun nähdä ensin, mitä kaikki muut tekevät, ja se on paljon arvoinen. Pelaa enemmän käsiä myöhäisiltä paikoilta ja vähemmän aikaisilta.</string>
     <string name="help_strategy_6">Seuraa vastustajien pelityylejä. Jokainen paikka on merkitty: tight, loose, aggressiivinen tai passiivinen. Kunnioita tight-pelaajan korotusta, ja älä usko loose- ja aggressiivisen pelaajan panokseen liian helposti.</string>
-    <string name="help_hint_note">Tietoa vihjeestä: se näyttää equitysi, arvioidun mahdollisuutesi voittaa potti, pot oddsien rinnalla, eli sen osuuden potista, jonka maksaminen maksaa. Kun equitysi on pot oddsia korkeampi, maksaminen kannattaa. Niiden yläpuolella oleva lause selittää neuvon ajatuksen. Se on hyvä ohje mutta ei varmuus, koska se ei näe kenenkään kortteja.</string>
-    <string name="help_strategy_7">Lyhyellä stackilla mene all in tai fold. Kun pelimerkkejäsi on vain muutama iso blindi, pienet panokset ja maksut eivät jätä liikkumavaraa, ja hyvin ajoitettu all in on paras mahdollisuutesi tuplata.</string>
+    <string name="help_hint_note">Tietoa vihjeestä: se näyttää equitysi, arvioidun mahdollisuutesi voittaa potti, pot oddsien rinnalla, eli sen osuuden potista, jonka maksaminen vaatii. Kun equitysi on pot oddsia korkeampi, maksaminen kannattaa. Niiden yläpuolella oleva lause selittää neuvon ajatuksen. Se on hyvä ohje mutta ei varmuus, koska se ei näe kenenkään kortteja.</string>
+    <string name="help_strategy_7">Lyhyellä stackilla mene all in tai foldaa. Kun pelimerkkejäsi on vain muutama iso blindi, pienet panokset ja maksut eivät jätä liikkumavaraa, ja hyvin ajoitettu all in on paras mahdollisuutesi tuplata.</string>
 </resources>

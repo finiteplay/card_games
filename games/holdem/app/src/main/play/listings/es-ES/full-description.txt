@@ -1,0 +1,20 @@
+Juega un torneo de póquer Texas Hold'em de seis plazas sin conexión contra cinco rivales controlados por el ordenador. Las fichas son virtuales y las pistas explican tus opciones. Nunca se usa dinero real: no hay apuestas con dinero real, depósitos, compra de fichas, retiradas ni premios; las fichas no tienen valor monetario.
+
+La promesa de FinitePlay: totalmente gratis, sin anuncios, compras dentro de la aplicación ni suscripciones. Todo el juego funciona en tu dispositivo: sin cuentas, rastreo, recopilación o intercambio de datos, clasificaciones ni funciones en línea. Tu progreso y tus estadísticas son privados y locales.
+
+Todos empiezan con la misma cantidad de fichas. A medida que suben las ciegas, decide cuándo retirarte, igualar, subir o ir con todo. Guarda el torneo y vuelve más tarde.
+
+Las pistas explican la idea de la acción sugerida y ayudan a entender la fuerza de la mano, la posición, la equidad estimada y las probabilidades del bote. No ven las cartas ocultas de tus rivales ni garantizan ganar.
+
+Funciones:
+• Texas Hold'em sin límite contra cinco estilos de juego del ordenador
+• Controles de apuesta, botes secundarios e ir con todo
+• Pistas con explicaciones, equidad y probabilidades del bote
+• Torneos guardados, estadísticas y ayuda con reglas y manos
+• Orientación vertical y horizontal
+
+No hay partidas contra personas reales. Diseñado para mayores de 18 años.
+
+Juega a tu ritmo. Los recordatorios de descanso configurables te invitan a hacer una pausa tras jugar durante un tiempo prolongado. No hay bonos urgentes ni recompensas diarias con límite de tiempo. Las estadísticas locales te ayudan a reflexionar sobre tu juego, sin presión competitiva para seguir jugando.
+
+FinitePlay crea juegos de cartas que respetan tu tiempo, tu privacidad y tu atención.

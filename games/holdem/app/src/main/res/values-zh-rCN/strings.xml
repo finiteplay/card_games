@@ -47,7 +47,7 @@
     <string name="help_ties_title">平局</string>
     <string name="help_ties">两名玩家牌型种类相同，则牌大的赢。A 和 7 的两对胜过 K 和 Q 的两对；主要的牌相同时，由下一张最大的牌决定。只计五张牌，花色永远不能分胜负：牌型相同就平分底池。</string>
     <string name="help_strategy_intro">对新手有用的七个想法。它们不会让你每手都赢，但整场锦标赛下来会积少成多。</string>
-    <string name="help_strategy_1">前面的位置少玩几手。最先行动的玩家后面还有最多的对手，所以那里只用强牌开局，座位越靠近庄家按钮再越放宽。</string>
+    <string name="help_strategy_1">前面的位置少玩几手。最先行动的玩家后面还有最多的对手，所以那里只用强牌开局，座位越靠近庄家按钮就越放宽。</string>
     <string name="help_strategy_2">多加注，少跟注。加注可能当场赢下底池，被跟注时你手里的牌也往往更强。只跟注只会让别人便宜地看到后面的牌。</string>
     <string name="help_strategy_3">弃牌要比你觉得舒服的多一些。大多数牌不值得玩，弃牌只会损失你已投入的筹码。</string>
     <string name="help_strategy_4">了解底池赔率。如果跟注要 25 筹码来赢 75 的底池，你每付 1 筹码可以赢 3 筹码，所以只要你赢的次数超过四分之一，跟注就划算。再拿它和你最终拿到最好牌型的机会比较。</string>

@@ -6,7 +6,7 @@
     <string name="help_tab_strategy">Strategie</string>
 
     <string name="help_goal_title">Scopul</string>
-    <string name="help_goal">Câștigă toți jetoanele de la masă. Joci un turneu împotriva a cinci adversari, iar fiecare începe cu 1.500 de jetoane. Când unui jucător i se termină jetoanele, este eliminat, iar ultimul rămas câștigă.</string>
+    <string name="help_goal">Câștigă toate jetoanele de la masă. Joci un turneu împotriva a cinci adversari, iar fiecare începe cu 1.500 de jetoane. Când unui jucător i se termină jetoanele, este eliminat, iar ultimul rămas câștigă.</string>
     <string name="help_hand_title">O mână</string>
     <string name="help_hand_cards">În fiecare mână primești două cărți private, cărțile tale (hole cards). Cinci cărți comune se pun cu fața în sus la mijloc și se numesc board. Mâna ta este cele mai bune cinci cărți din cele două ale tale și din board, folosind amândouă cărțile tale, una sau niciuna.</string>
     <string name="help_hand_flop">După cărțile private urmează o rundă de pariuri. Apoi se dau trei cărți pe board, flopul, și încă o rundă de pariuri. A patra carte, turn, aduce o nouă rundă, la fel și a cincea, river.</string>
@@ -17,7 +17,7 @@
     <string name="help_actions_fold">Fold: renunți la cărți și la jetoanele pe care le-ai pus deja. Ieși doar din această mână.</string>
     <string name="help_actions_all_in">All in: pariezi toate jetoanele pe care le ai.</string>
     <string name="help_button_title">Butonul și blindurile</string>
-    <string name="help_button">Butonul dealerului, marcat cu D, se mută un loc spre dreapta la fiecare mână. Cei doi jucători de după el trebuie să pună pariuri forțate înainte de împărțirea cărților: small blind (SB) și big blind (BB). Asta pornește potul, așa că există mereu ceva de câștigat. Big blindul stabilește cel mai mic pariu.</string>
+    <string name="help_button">Butonul dealerului, marcat cu D, se mută un loc în sensul acelor de ceasornic la fiecare mână. Cei doi jucători de după el trebuie să pună pariuri forțate înainte de împărțirea cărților: small blind (SB) și big blind (BB). Asta pornește potul, așa că există mereu ceva de câștigat. Big blindul stabilește cel mai mic pariu.</string>
     <string name="help_allin_title">All in și poturi laterale</string>
     <string name="help_allin">Un jucător care este all in nu poate fi scos din joc, dar poate câștiga de la fiecare jucător doar cât a pus el însuși. Jetoanele peste această sumă merg într-un pot lateral pe care jucătorul all in nu îl poate câștiga. Poturile se văd pe masă, iar fiecare merge la cea mai bună mână dintre jucătorii care au pus în el.</string>
     <string name="help_showdown_title">Showdown</string>
@@ -55,7 +55,7 @@
     <string name="help_strategy_3">Dă fold mai mult decât ți-e confortabil. Cele mai multe mâini nu merită jucate, iar o mână cu fold te costă doar ce ai pus deja.</string>
     <string name="help_strategy_4">Cunoaște șansele potului. Dacă un call costă 25 de jetoane ca să câștigi un pot de 75, plătești un jeton pentru fiecare trei pe care le poți câștiga, deci call-ul se plătește dacă câștigi mai mult de o dată din patru. Compară asta cu șansa ta de a termina cu cea mai bună mână.</string>
     <string name="help_strategy_5">Poziția contează. Să vorbești ultimul îți permite să vezi mai întâi ce fac ceilalți, ceea ce valorează mult. Joacă mai multe mâini de pe locurile târzii și mai puține de pe cele timpurii.</string>
-    <string name="help_strategy_6">Urmărește stilurile adversarilor. Fiecare loc are o etichetă: strâns, lejer, agresiv sau pasiv. Respectă o mărire de la un jucător strâns și crede mai încet un pariu de la unul lejer, agresiv.</string>
+    <string name="help_strategy_6">Urmărește stilurile adversarilor. Fiecare loc are o etichetă: strâns, lejer, agresiv sau pasiv. Respectă o mărire de la un jucător strâns și fii mai sceptic față de un pariu de la unul lejer, agresiv.</string>
     <string name="help_hint_note">Despre Indiciu: arată equity-ul tău, șansa estimată de a câștiga potul, lângă șansele potului, partea din pot pe care o costă un call. Când equity-ul e mai mare decât șansele potului, call-ul se plătește. Propoziția de deasupra explică ideea din spatele sfatului. E un ghid bun, nu o certitudine, pentru că nu vede cărțile nimănui.</string>
     <string name="help_strategy_7">Cu un stack mic, dă all in sau fold. Când ai doar câteva big blinduri, pariurile mici și call-urile nu îți lasă loc de manevră, iar un all in dat la momentul potrivit este cea mai bună șansă de a-ți dubla jetoanele.</string>
 </resources>

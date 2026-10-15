@@ -85,7 +85,7 @@
     <string name="hand_royal_flush">Thùng phá sảnh lớn</string>
     <string name="hand_straight_flush">Thùng phá sảnh, %1$s cao nhất</string>
     <string name="hand_four_of_a_kind">Tứ quý %1$s</string>
-    <string name="hand_full_house">Cù lũ, %1$s ba và %2$s đôi</string>
+    <string name="hand_full_house">Cù lũ, ba lá %1$s và đôi %2$s</string>
     <string name="hand_flush">Thùng, %1$s cao nhất</string>
     <string name="hand_straight">Sảnh, %1$s cao nhất</string>
     <string name="hand_three_of_a_kind">Sám cô %1$s</string>
@@ -102,7 +102,7 @@
     <string name="end_title_place">Bạn về hạng %1$s</string>
     <string name="end_title_won">Bạn đã thắng giải đấu</string>
     <string name="end_body_lost">Số ván đã chơi: %1$d\nPot lớn nhất: %2$,d</string>
-    <string name="end_body_won">Mất %1$d ván.\nPot lớn nhất: %2$,d</string>
+    <string name="end_body_won">Sau %1$d ván.\nPot lớn nhất: %2$,d</string>
     <string name="card_spoken">%1$s %2$s</string>
     <string name="a11y_your_cards">Bài của bạn: %1$s</string>
     <string name="a11y_board">Bài chung: %1$s</string>

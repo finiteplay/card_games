@@ -85,7 +85,7 @@
     <string name="hand_royal_flush">รอยัลฟลัช</string>
     <string name="hand_straight_flush">สเตรทฟลัช สูงสุด %1$s</string>
     <string name="hand_four_of_a_kind">โฟร์การ์ด %1$s</string>
-    <string name="hand_full_house">ฟูลเฮาส์ %1$s เต็ม %2$s</string>
+    <string name="hand_full_house">ฟูลเฮาส์ ตอง %1$s คู่ %2$s</string>
     <string name="hand_flush">ฟลัช สูงสุด %1$s</string>
     <string name="hand_straight">สเตรท สูงสุด %1$s</string>
     <string name="hand_three_of_a_kind">ทรีการ์ด %1$s</string>

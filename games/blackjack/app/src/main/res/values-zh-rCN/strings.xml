@@ -53,7 +53,7 @@
     <string name="help_double_title">加倍</string>
     <string name="help_double">在头两张牌时，下注翻倍并且只再拿一张牌，之后你的回合结束。适合手牌很强但还未完成的时候。</string>
     <string name="help_split_title">分牌</string>
-    <string name="help_split">当头两张牌点数相同，可以分成两手，每手各有原来的赌注，最多共四手。分开的 A 各只拿一张牌，不能再要牌。</string>
+    <string name="help_split">当头两张牌是对子时，可以分成两手，每手各有原来的赌注，最多共四手。分开的 A 各只拿一张牌，不能再要牌。</string>
     <string name="help_insurance_title">保险</string>
     <string name="help_insurance">庄家亮出 A 时，你可以用一半赌注买保险。若庄家有黑杰克，按 2 比 1 赔付，否则损失保险金。</string>
     <string name="help_dealer_title">庄家</string>
@@ -72,7 +72,7 @@
          %5$d = your chance to win if you stand in percent. -->
     <string name="hint_reason_stand_strong">%2$d 点是强牌：再要牌容易爆牌，收益却很小。</string>
     <string name="hint_reason_stand_dealer_weak">庄家亮出 %1$s，约有 %3$d%% 的几率爆牌，而你要牌会有 %4$d%% 的几率爆牌：停牌，让庄家去冒险。</string>
-    <string name="hint_reason_hit_dealer_strong">庄家亮出 %1$s，常常能做成好牌，所以 %2$d 点停牌只有 %5$d%% 的胜率：尽管有 %4$d%% 的爆牌风险，也要牌。</string>
+    <string name="hint_reason_hit_dealer_strong">庄家亮出 %1$s，常常能做成好牌，所以 %2$d 点停牌只有 %5$d%% 的胜率：尽管有 %4$d%% 的爆牌风险，也应要牌。</string>
     <string name="hint_reason_hit_cannot_bust">%2$d 点不会爆牌：要一张牌来改善手牌。</string>
     <string name="hint_reason_hit_soft">软 %2$d 点下一张牌不会爆牌，所以要牌没有损失：改善你的手牌。</string>
     <string name="hint_reason_double">好机会：你的 %2$d 点对庄家的 %1$s。加倍下注，拿一张牌，充分利用它。</string>

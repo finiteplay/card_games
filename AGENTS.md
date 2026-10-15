@@ -136,6 +136,12 @@ board, gesture, chrome, or statistics code for a game, read what the other one a
 `docs/ARCHITECTURE.md` "Moved later" exists because a working gesture handler was re-derived
 from scratch — wrongly, twice — while the correct one sat in the other game's board.
 
+## Store listings and publishing
+
+Before creating or changing a game's Google Play listing, declarations, targeting, or release,
+read `brand/google-play/AGENTS.md`. It records the family listing pattern and the publishing
+checks; copy the structure of existing games, never unsupported game-specific claims.
+
 ## Build
 
 Windows, checked-in wrapper, JDK 17 toolchain.

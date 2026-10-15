@@ -32,19 +32,19 @@
     <string name="hint_threat_beat">Chance, dass ein Gegner schon eine bessere Hand hat: %1$d%%</string>
     <string name="hint_threat_list">Wahrscheinlichste bessere Hände: %1$s</string>
     <string name="hint_threat_item">%1$s %2$d%%</string>
-    <string name="review_title">Rückblick auf den Hinweis</string>
-    <string name="review_followed_won">Du bist dem Hinweis gefolgt und hast gewonnen: Du hattest etwa %1$d%% Gewinnchance.</string>
-    <string name="review_followed_lost">Du bist dem Hinweis gefolgt und hast verloren, das passiert: Mit etwa %1$d%% verlierst du in %2$d%% der Fälle. Beurteile die Entscheidung, nicht das Ergebnis.</string>
-    <string name="review_followed_fold">Du hast wie vom Hinweis geraten gefoldet und deine Chips für einen besseren Spot behalten.</string>
-    <string name="review_ignored_won">Du hast gewonnen, aber der Hinweis empfahl: %1$s. Seine Begründung: %2$s Gegen den Rat zu gewinnen ist Glück, kein Plan.</string>
-    <string name="review_ignored_lost">Der Hinweis empfahl: %1$s, aber du hast anders entschieden und verloren. Seine Begründung: %2$s</string>
-    <string name="review_ignored_fold">Du hast gefoldet, aber der Hinweis empfahl: %1$s. Seine Begründung: %2$s</string>
-    <string name="review_beaten_by">Du hast gegen %1$s verloren. Der Hinweis hatte das auf etwa %2$d%% geschätzt.</string>
+    <string name="review_title">Rückblick auf den Tipp</string>
+    <string name="review_followed_won">Du bist dem Tipp gefolgt und hast gewonnen: Du hattest etwa %1$d%% Gewinnchance.</string>
+    <string name="review_followed_lost">Du bist dem Tipp gefolgt und hast verloren, das passiert: Mit etwa %1$d%% verlierst du in %2$d%% der Fälle. Beurteile die Entscheidung, nicht das Ergebnis.</string>
+    <string name="review_followed_fold">Du hast wie vom Tipp geraten gefoldet und deine Chips für einen besseren Spot behalten.</string>
+    <string name="review_ignored_won">Du hast gewonnen, aber der Tipp empfahl: %1$s. Seine Begründung: %2$s Gegen den Rat zu gewinnen ist Glück, kein Plan.</string>
+    <string name="review_ignored_lost">Der Tipp empfahl: %1$s, aber du hast anders entschieden und verloren. Seine Begründung: %2$s</string>
+    <string name="review_ignored_fold">Du hast gefoldet, aber der Tipp empfahl: %1$s. Seine Begründung: %2$s</string>
+    <string name="review_beaten_by">Du hast gegen %1$s verloren. Der Tipp hatte das auf etwa %2$d%% geschätzt.</string>
 
     <!-- With hindsight. %1$d = your chance to win when you decided, in percent. -->
     <string name="review_hindsight_fold_won">Du hättest diese Hand gewonnen, aber als du entschieden hast, lag deine Chance nur bei etwa %1$d%%. Beurteile die Entscheidung, nicht das Ergebnis.</string>
     <string name="review_hindsight_fold_lost">Du hättest diese Hand verloren: Deine Chance lag bei etwa %1$d%%, als du entschieden hast.</string>
     <string name="review_chance_at_decision">Als du entschieden hast, lag deine Chance bei etwa %1$d%%.</string>
     <string name="review_chance_slim_win">Du hast gewonnen, aber deine Chance war beim Entscheiden gering: etwa %1$d%%.</string>
-    <string name="review_followed_won_slim">Du bist dem Hinweis gefolgt und hast gewonnen, aber deine Chance war gering: etwa %1$d%%. Gute Entscheidungen haben nicht immer Glück.</string>
+    <string name="review_followed_won_slim">Du bist dem Tipp gefolgt und hast gewonnen, aber deine Chance war gering: etwa %1$d%%. Gute Entscheidungen haben nicht immer Glück.</string>
 </resources>

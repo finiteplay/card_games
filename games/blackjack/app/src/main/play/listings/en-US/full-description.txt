@@ -1,1 +1,22 @@
-Play classic blackjack offline with clear rules, fair dealing, and no ads. Blackjack by FinitePlay includes standard casino-style play with hit, stand, double, split, insurance, dealer peek, and 3:2 blackjack payouts. Practice decisions with optional basic-strategy hints, track your bankroll and statistics, and start a fresh round whenever you like. The game works entirely offline. It has no real-money gambling, purchases, accounts, online play, or advertising. Chips are virtual and have no monetary value. FinitePlay makes focused card games designed for calm, private play.
+Play blackjack offline against a computer dealer, with virtual chips and helpful explanations
+for beginners. Never real money: chips have no monetary value, and there are no real-money
+bets, deposits, chip purchases, cash-outs, or prizes.
+
+The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions.
+Play stays completely on your device: no accounts, tracking, data collection or sharing,
+leaderboards, online features, or matches against real people. Your progress and statistics
+stay private and local.
+
+Play classic blackjack with clear rules, fair dealing, and optional basic-strategy guidance.
+Blackjack by FinitePlay includes hit, stand, double, split, insurance, dealer peek, and 3:2
+blackjack payouts.
+
+Practice decisions with optional basic-strategy hints that explain why to hit, stand, double,
+or split. Learn from the dealer's up card, your hand, and bust-risk explanations, then track
+your virtual bankroll and statistics. Hints help you understand choices; they do not guarantee wins.
+
+Play at your own pace. Configurable rest reminders invite you to pause after extended play.
+There are no urgency bonuses or timed daily rewards, and no competitive leaderboards or
+pressure to keep going. Designed for adults aged 18 and over.
+
+FinitePlay makes card games that respect your time, privacy, and attention.

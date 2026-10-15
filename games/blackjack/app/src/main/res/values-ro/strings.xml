@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_hit">Cartă</string>
+    <string name="action_hit">Carte</string>
     <string name="action_stand">Stai</string>
     <string name="action_double">Dublează</string>
     <string name="action_split">Împarte</string>
-    <string name="action_deal">Împarte cărțile</string>
+    <string name="action_deal">Dă cărțile</string>
     <string name="action_next_round">Runda următoare</string>
     <string name="action_bet_up">Pariu +%1$d</string>
     <string name="action_bet_down">Pariu −%1$d</string>
     <string name="action_insure">Asigurare</string>
-    <string name="action_decline">Refuz</string>
+    <string name="action_decline">Refuză</string>
     <string name="action_reset_chips">Resetează jetoanele</string>
     <string name="status_chips">Jetoane %1$d</string>
     <string name="status_bet">Pariu %1$d</string>
     <string name="label_dealer">Dealer</string>
     <string name="label_place_bet">Plasează pariul</string>
-    <string name="hand_total_soft">Moale %1$d</string>
+    <string name="hand_total_soft">%1$d moale</string>
     <string name="hand_bust">Depășit</string>
     <string name="hand_blackjack">Blackjack</string>
     <string name="outcome_push">Egalitate</string>
@@ -45,8 +45,8 @@
     <string name="help_values_title">Valoarea cărților</string>
     <string name="help_values">Cărțile cu numere valorează numărul lor. Valetul, dama și regele valorează 10. Asul valorează 1 sau 11, cum e mai bine pentru mână. Un as și o carte cu valoarea zece în primele două cărți este blackjack și plătește 3 la 2.</string>
     <string name="help_round_title">O rundă</string>
-    <string name="help_round">Plasează pariul și apasă Împarte. Tu și dealerul primiți câte două cărți, iar una dintre ale dealerului rămâne cu fața în jos. Apoi iei deciziile, mână cu mână, iar când termini joacă dealerul. Fiecare rundă se împarte dintr-un pachet amestecat din nou și nu există anulare.</string>
-    <string name="help_hit_title">Cartă</string>
+    <string name="help_round">Plasează pariul și apasă Dă cărțile. Tu și dealerul primiți câte două cărți, iar una dintre ale dealerului rămâne cu fața în jos. Apoi iei deciziile, mână cu mână, iar când termini joacă dealerul. Fiecare rundă se împarte dintr-un pachet amestecat din nou și nu există anulare.</string>
+    <string name="help_hit_title">Carte</string>
     <string name="help_hit">Ia încă o carte. Poți continua cât timp mâna ta e sub 21.</string>
     <string name="help_stand_title">Stai</string>
     <string name="help_stand">Păstrează mâna așa cum e și încheie tura.</string>
@@ -62,7 +62,7 @@
     <string name="help_strategy_1">Trage mereu la 8 sau mai puțin și stai mereu la 17 tare sau mai mult.</string>
     <string name="help_strategy_2">Cu 12 până la 16, stai dacă dealerul arată 2–6, pentru că probabil depășește. Trage dacă arată 7 sau mai mult.</string>
     <string name="help_strategy_3">Dublează la 11 și la 10 când dealerul arată 9 sau mai puțin. Dacă nu poți dubla, trage.</string>
-    <string name="help_strategy_4">Împarte mereu asii și optarii. Nu împărți niciodată cincii sau zecii; joacă-i ca 10 și 20.</string>
+    <string name="help_strategy_4">Împarte mereu perechile de ași și de 8. Nu împărți niciodată perechile de 5 sau de 10; joacă-le ca 10 și 20.</string>
     <string name="help_strategy_5">Cu un as care contează 11 (mână moale), trage până la 17 moale și stai de la 19 moale în sus.</string>
     <string name="help_strategy_6">Nu lua niciodată asigurare. În timp costă mai mult decât returnează.</string>
     <string name="help_strategy_7">Strategia reduce avantajul casei, dar nu promite câștig: cartea ascunsă a dealerului încă decide multe runde.</string>

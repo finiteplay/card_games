@@ -8,41 +8,41 @@
     <string name="recovery_notice">Vaša spremljena ruka nije se mogla otvoriti pa je podijeljena ispočetka. Nijedan žeton nije izgubljen.</string>
 
     <!-- Hint reasons: one coach sentence per spot. %1$d / %2$d are numbers: stack in big blinds (push/fold), outs (draws), or win chance % and pot cost % (price). -->
-    <string name="hint_reason_premium_raise">Premium ruka: podigni da povećaš pot dok si vjerojatno ispred.</string>
-    <string name="hint_reason_late_position_raise">Kasna pozicija, pa igraš nakon većine igrača: podizanjem odmah možeš osvojiti blindove.</string>
-    <string name="hint_reason_playable_raise">Dobra ruka za ovu situaciju: podizanjem preuzimaš vodstvo u klađenju.</string>
+    <string name="hint_reason_premium_raise">Premium ruka: podignite da povećate pot dok ste vjerojatno ispred.</string>
+    <string name="hint_reason_late_position_raise">Kasna pozicija, pa igrate nakon većine igrača: podizanjem odmah možete osvojiti blindove.</string>
+    <string name="hint_reason_playable_raise">Dobra ruka za ovu situaciju: podizanjem preuzimate vodstvo u klađenju.</string>
     <string name="hint_reason_call_to_see_flop">Isplati se vidjeti flop po ovoj cijeni, ali ruka nije dovoljno jaka za podizanje.</string>
-    <string name="hint_reason_free_flop">Nitko nije podigao, a čekanje je besplatno: vidi flop bez troška.</string>
+    <string name="hint_reason_free_flop">Nitko nije podigao, a čekanje je besplatno: pogledajte flop bez troška.</string>
     <string name="hint_reason_fold_weak">Slaba ruka: odustajanje ne košta ništa i čuva žetone za bolje prilike.</string>
-    <string name="hint_reason_fold_to_raise">Netko je podigao, a tvoja ruka nije dovoljno jaka da to plati: odustajanje je jeftinije.</string>
-    <string name="hint_reason_push_short_stack">Ostalo je samo %1$d velikih blindova: najbolje je all in ili odustani, a ova ruka je dovoljno jaka za all in.</string>
-    <string name="hint_reason_fold_short_stack">Ostalo je samo %1$d velikih blindova: ova ruka je preslaba da bi se zbog nje riskiralo sve.</string>
-    <string name="hint_reason_value_bet">Vjerojatno si ispred: uloži da slabije ruke moraju platiti da vide još karata.</string>
-    <string name="hint_reason_value_raise">Jaka ruka protiv uloga: podigni da uložiš više žetona dok si ispred.</string>
-    <string name="hint_reason_semi_bluff">Jak draw (%1$d outsa): ulog može odmah osvojiti pot, a još se možeš poboljšati.</string>
-    <string name="hint_reason_call_draw">Ruka s drawom (%1$d outsa): pot je dovoljno velik da se isplati juriti draw.</string>
-    <string name="hint_reason_call_good_price">Praćenje se isplati: pobjeđuješ oko %1$d%% puta, a cijena traži samo %2$d%%.</string>
-    <string name="hint_reason_fold_bad_price">Nedovoljno za praćenje: cijena traži %2$d%%, a ti imaš oko %1$d%%.</string>
-    <string name="hint_reason_free_card">Čekanje je besplatno, a ruka ti je slaba: uzmi sljedeću kartu bez troška.</string>
-    <string name="hint_reason_pot_control">Osrednja ruka: čekaj da pot ostane mali i vidi sljedeću kartu.</string>
+    <string name="hint_reason_fold_to_raise">Netko je podigao, a vaša ruka nije dovoljno jaka da to plati: odustajanje je jeftinije.</string>
+    <string name="hint_reason_push_short_stack">Ostalo vam je samo %1$d BB: najbolje je all in ili odustajanje, a ova ruka je dovoljno jaka za all in.</string>
+    <string name="hint_reason_fold_short_stack">Ostalo vam je samo %1$d BB: ova ruka je preslaba da biste zbog nje riskirali sve.</string>
+    <string name="hint_reason_value_bet">Vjerojatno ste ispred: uložite da slabije ruke moraju platiti da vide još karata.</string>
+    <string name="hint_reason_value_raise">Jaka ruka protiv uloga: podignite da uložite više žetona dok ste ispred.</string>
+    <string name="hint_reason_semi_bluff">Jak draw (outovi: %1$d): ulog može odmah osvojiti pot, a još se možete poboljšati.</string>
+    <string name="hint_reason_call_draw">Ruka s drawom (outovi: %1$d): pot je dovoljno velik da se isplati juriti draw.</string>
+    <string name="hint_reason_call_good_price">Praćenje se isplati: pobjeđujete u oko %1$d%% slučajeva, a cijena traži samo %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Nedovoljno za praćenje: cijena traži %2$d%%, a vi imate oko %1$d%%.</string>
+    <string name="hint_reason_free_card">Čekanje je besplatno, a ruka vam je slaba: uzmite sljedeću kartu bez troška.</string>
+    <string name="hint_reason_pot_control">Osrednja ruka: čekajte da pot ostane mali i pogledajte sljedeću kartu.</string>
 
     <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
     <string name="hint_threat_beat">Šansa da protivnik već ima bolju ruku: %1$d%%</string>
     <string name="hint_threat_list">Najvjerojatnije bolje ruke: %1$s</string>
     <string name="hint_threat_item">%1$s %2$d%%</string>
     <string name="review_title">Osvrt na savjet</string>
-    <string name="review_followed_won">Slijedio si savjet i pobijedio: imao si oko %1$d%% šanse za pobjedu.</string>
-    <string name="review_followed_lost">Slijedio si savjet i izgubio, što se događa: s oko %1$d%% gubiš u %2$d%% slučajeva. Procjenjuj odluku, ne ishod.</string>
-    <string name="review_followed_fold">Odustao si kako je savjet preporučio i sačuvao žetone za bolju priliku.</string>
-    <string name="review_ignored_won">Pobijedio si, ali savjet je predložio: %1$s. Razlog: %2$s Pobjeda protiv savjeta je sreća, a ne plan.</string>
-    <string name="review_ignored_lost">Savjet je predložio: %1$s, ali si odabrao drugačije i izgubio. Razlog: %2$s</string>
-    <string name="review_ignored_fold">Odustao si, ali savjet je predložio: %1$s. Razlog: %2$s</string>
-    <string name="review_beaten_by">Izgubio si od: %1$s. Savjet je to procijenio na oko %2$d%%.</string>
+    <string name="review_followed_won">Slijedili ste savjet i pobijedili: imali ste oko %1$d%% šanse za pobjedu.</string>
+    <string name="review_followed_lost">Slijedili ste savjet i izgubili, što se događa: s oko %1$d%% gubite u %2$d%% slučajeva. Procjenjujte odluku, ne ishod.</string>
+    <string name="review_followed_fold">Odustali ste kako je savjet preporučio i sačuvali žetone za bolju priliku.</string>
+    <string name="review_ignored_won">Pobijedili ste, ali savjet je predložio: %1$s. Razlog: %2$s Pobjeda protiv savjeta je sreća, a ne plan.</string>
+    <string name="review_ignored_lost">Savjet je predložio: %1$s, ali ste odabrali drugačije i izgubili. Razlog: %2$s</string>
+    <string name="review_ignored_fold">Odustali ste, ali savjet je predložio: %1$s. Razlog: %2$s</string>
+    <string name="review_beaten_by">Izgubili ste od: %1$s. Savjet je to procijenio na oko %2$d%%.</string>
 
     <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
-    <string name="review_hindsight_fold_won">Dobio bi ovu ruku, ali kad si odlučivao, šansa ti je bila samo oko %1$d%%. Procjenjuj odluku, ne ishod.</string>
-    <string name="review_hindsight_fold_lost">Izgubio bi ovu ruku: šansa ti je bila oko %1$d%% kad si odlučivao.</string>
-    <string name="review_chance_at_decision">Kad si odlučivao, šansa ti je bila oko %1$d%%.</string>
-    <string name="review_chance_slim_win">Pobijedio si, ali šansa ti je bila slaba kad si odlučivao: oko %1$d%%.</string>
-    <string name="review_followed_won_slim">Slijedio si savjet i pobijedio, ali šansa ti je bila slaba: oko %1$d%%. Dobre odluke nisu uvijek sretne.</string>
+    <string name="review_hindsight_fold_won">Dobili biste ovu ruku, ali kad ste odlučivali, šansa vam je bila samo oko %1$d%%. Procjenjujte odluku, ne ishod.</string>
+    <string name="review_hindsight_fold_lost">Izgubili biste ovu ruku: šansa vam je bila oko %1$d%% kad ste odlučivali.</string>
+    <string name="review_chance_at_decision">Kad ste odlučivali, šansa vam je bila oko %1$d%%.</string>
+    <string name="review_chance_slim_win">Pobijedili ste, ali šansa vam je bila slaba kad ste odlučivali: oko %1$d%%.</string>
+    <string name="review_followed_won_slim">Slijedili ste savjet i pobijedili, ali šansa vam je bila slaba: oko %1$d%%. Dobre odluke nisu uvijek sretne.</string>
 </resources>

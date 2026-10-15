@@ -7,7 +7,7 @@
     </plurals>
     <string name="action_leave_tournament">Turnuvadan ayrıl</string>
 
-    <string name="action_fold">Pas</string>
+    <string name="action_fold">Fold</string>
     <string name="action_check">Check</string>
     <string name="action_call">Call&#10;%1$,d</string>
     <string name="action_call_all_in">Call&#10;all in</string>
@@ -39,7 +39,7 @@
     <string name="seat_action_raise">Raise %1$,d</string>
     <string name="seat_action_call">Call</string>
     <string name="seat_action_check">Check</string>
-    <string name="seat_action_fold">Pas</string>
+    <string name="seat_action_fold">Fold</string>
     <string name="seat_action_all_in">All in</string>
     <string name="marker_dealer">D</string>
     <string name="marker_small_blind">SB</string>
@@ -102,7 +102,7 @@
     <string name="mark_even">Berabere</string>
     <string name="mark_lose">Kaybetti</string>
 
-    <string name="leave_title">Bu turnuvadan ayrılınsın mı?</string>
+    <string name="leave_title">Turnuvadan ayrılmak istiyor musun?</string>
     <string name="leave_body">Şimdi elenmiş gibi %1$s sırada bitireceksin.</string>
     <string name="leave_confirm">Ayrıl</string>
     <string name="leave_stay">Kal</string>
@@ -123,11 +123,11 @@
     <string name="a11y_small_blind">small blind</string>
     <string name="a11y_big_blind">big blind</string>
     <string name="a11y_bet">bet %1$,d</string>
-    <string name="a11y_folded">Pas geçti</string>
+    <string name="a11y_folded">Fold etti</string>
     <string name="a11y_out">Elendi, %1$s sırada bitirdi</string>
     <string name="a11y_all_in">all in</string>
     <string name="a11y_thinking">sırada</string>
-    <string name="ann_fold">%1$s pas geçti</string>
+    <string name="ann_fold">%1$s fold etti</string>
     <string name="ann_check">%1$s check yaptı</string>
     <string name="ann_call">%1$s %2$,d call yaptı</string>
     <string name="ann_bet">%1$s %2$,d bet yaptı</string>
@@ -136,7 +136,7 @@
     <string name="ann_flop">Flop: %1$s</string>
     <string name="ann_turn">Turn: %1$s</string>
     <string name="ann_river">River: %1$s</string>
-    <string name="ann_shows">%1$s gösterir: %2$s</string>
+    <string name="ann_shows">%1$s gösterdi: %2$s</string>
     <string name="ann_wins">%1$s %2$,d kazandı</string>
     <string name="seat_won">Kazandı %1$s</string>
     <string name="seat_lost">Kaybetti %1$s</string>

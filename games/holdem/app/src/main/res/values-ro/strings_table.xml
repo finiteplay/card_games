@@ -110,7 +110,7 @@
     <string name="end_title_place">Ai terminat pe locul %1$s</string>
     <string name="end_title_won">Ai câștigat turneul</string>
     <string name="end_body_lost">Mâini jucate: %1$d\nCel mai mare pot: %2$,d</string>
-    <string name="end_body_won">A durat %1$d mâini.\nCel mai mare pot: %2$,d</string>
+    <string name="end_body_won">Număr de mâini: %1$d.\nCel mai mare pot: %2$,d</string>
 
     <string name="card_spoken">%1$s de %2$s</string>
     <string name="a11y_your_cards">Cărțile tale: %1$s</string>
@@ -118,8 +118,8 @@
     <string name="a11y_board_empty">Board: încă nicio carte</string>
     <string name="a11y_pot">Pot %1$,d</string>
     <string name="a11y_pot_pots">Pot %1$,d, %2$d poturi</string>
-    <string name="a11y_seat">%1$s, %2$s, %3$,d jetoane</string>
-    <string name="a11y_seat_you">Tu, %1$,d jetoane</string>
+    <string name="a11y_seat">%1$s, %2$s, jetoane: %3$,d</string>
+    <string name="a11y_seat_you">Tu, jetoane: %1$,d</string>
     <string name="a11y_dealer">dealer</string>
     <string name="a11y_small_blind">small blind</string>
     <string name="a11y_big_blind">big blind</string>
@@ -135,7 +135,7 @@
     <string name="ann_raise">%1$s mărește la %2$,d</string>
     <string name="ann_all_in">%1$s dă all in cu %2$,d</string>
     <string name="ann_flop">Flopul: %1$s</string>
-    <string name="ann_turn">Turnul: %1$s</string>
+    <string name="ann_turn">Turn-ul: %1$s</string>
     <string name="ann_river">River-ul: %1$s</string>
     <string name="ann_shows">%1$s arată %2$s</string>
     <string name="ann_wins">%1$s câștigă %2$,d</string>

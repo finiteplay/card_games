@@ -13,7 +13,7 @@
     <string name="help_actions_check">Check : rester dans la main sans miser, quand personne n\'a misé avant vous.</string>
     <string name="help_actions_call">Suivre (Call) : égaler la mise à laquelle vous faites face.</string>
     <string name="help_actions_bet">Miser ou Relancer : mettre plus de jetons. Choisissez le montant avec les boutons au-dessus de la barre : − et + avancent par pas d\'une grosse blinde, et ½ pot et Pot le règlent pour vous. Une relance doit être au moins aussi grosse que la dernière mise ou relance.</string>
-    <string name="help_actions_fold">Se coucher (Fold) : abandonner vos cartes et les jetons déjà misés. Vous n\'êtes éliminé que de cette main.</string>
+    <string name="help_actions_fold">Se coucher (Fold) : abandonner vos cartes et les jetons déjà misés. Vous ne sortez que de cette main.</string>
     <string name="help_actions_all_in">Tapis (All in) : miser tous vos jetons.</string>
     <string name="help_button_title">Le bouton et les blindes</string>
     <string name="help_button">Le bouton du donneur, marqué D, avance d\'un siège dans le sens des aiguilles d\'une montre à chaque main. Les deux joueurs suivants doivent poser des mises forcées avant la distribution : la petite blinde (SB) et la grosse blinde (BB). Cela lance le pot, il y a donc toujours quelque chose à gagner. La grosse blinde fixe la mise minimale.</string>
@@ -46,7 +46,7 @@
     <string name="help_hand_high_card">Aucune des précédentes : votre carte la plus haute compte.</string>
     <string name="help_ties_title">Égalités</string>
     <string name="help_ties">Si deux joueurs ont le même type de main, les cartes les plus hautes l\'emportent. Une double paire d\'as et de sept bat une double paire de rois et de dames, et quand les cartes principales sont identiques, la carte suivante la plus haute départage. Seules cinq cartes comptent, et les couleurs ne départagent jamais : les mains égales se partagent le pot.</string>
-    <string name="help_strategy_intro">Sept idées utiles à un nouveau joueur. Elles ne feront pas gagner chaque main, mais sur un tournoi, elles s\'additionnent.</string>
+    <string name="help_strategy_intro">Sept idées utiles à un nouveau joueur. Elles ne vous feront pas gagner chaque main, mais sur un tournoi, elles s\'additionnent.</string>
     <string name="help_strategy_1">Jouez moins de mains depuis les premières positions. Les premiers à parler ont le plus d\'adversaires derrière eux : n\'y jouez que de fortes cartes, puis élargissez à mesure que les sièges se rapprochent du bouton.</string>
     <string name="help_strategy_2">Relancez plutôt que de suivre. Une relance peut gagner le pot sur-le-champ, et quand elle est suivie, vous avez plus souvent la meilleure main. Suivre ne fait que laisser les autres voir des cartes à bas prix.</string>
     <string name="help_strategy_3">Couchez-vous plus que ce qui vous semble confortable. La plupart des mains ne valent pas la peine d\'être jouées, et une main couchée ne vous coûte que ce que vous avez déjà misé.</string>
@@ -54,5 +54,5 @@
     <string name="help_strategy_5">La position compte. Parler en dernier vous permet de voir d\'abord ce que font tous les autres, ce qui vaut beaucoup. Jouez plus de mains depuis les dernières positions et moins depuis les premières.</string>
     <string name="help_strategy_6">Observez le style des adversaires. Chaque siège est étiqueté serré, large, agressif ou passif. Respectez une relance d\'un joueur serré, et croyez moins vite la mise d\'un joueur large et agressif.</string>
     <string name="help_hint_note">À propos de l\'indice : il affiche votre équité, votre chance estimée de remporter le pot, à côté de la cote du pot, la part du pot que coûte un suivi. Quand votre équité dépasse la cote du pot, suivre est rentable. La phrase au-dessus explique l\'idée derrière le conseil. C\'est un bon repère, pas une certitude, car il ne peut voir les cartes de personne.</string>
-    <string name="help_strategy_7">Avec un petit tapis, jouez tapis ou couchez-vous. Quand vous n\'avez que quelques grosses blindes, les petites mises et relances ne vous laissent aucune marge de manœuvre, et un tapis bien placé est votre meilleure chance de doubler.</string>
+    <string name="help_strategy_7">Avec un petit tapis, jouez tapis ou couchez-vous. Quand vous n\'avez que quelques grosses blindes, les petites mises et les suivis ne vous laissent aucune marge de manœuvre, et un tapis bien placé est votre meilleure chance de doubler.</string>
 </resources>

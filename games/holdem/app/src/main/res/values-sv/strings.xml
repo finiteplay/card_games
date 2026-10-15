@@ -25,7 +25,7 @@
     <string name="help_tournament_title">Turneringen</string>
     <string name="help_tournament">Blindsen höjs var 10:e hand, så markerna blir relativt sett färre och att vänta blir dyrt. Inget är tidsbegränsat: ta så lång tid du vill. Du slutar på den plats som motsvarar antalet spelare kvar när du åker ut, så 6:a är först ut och 1:a är segern.</string>
     <string name="help_leave_title">Lämna</string>
-    <string name="help_leave">Flaggan högst upp avslutar turneringen i förtid, och du slutar där du skulle ha gjort om du åkt ut nu. Att stänga appen gör inte det: din hand sparas och väntar när du kommer tillbaka. Det finns ingen ångra, eftersom varje beslut följs av kort du inte kunde se.</string>
+    <string name="help_leave">Flaggan högst upp avslutar turneringen i förtid, och du slutar där du skulle ha gjort om du åkt ut nu. Att stänga appen gör inte det: din hand sparas och väntar när du kommer tillbaka. Det går inte att ångra, eftersom varje beslut följs av kort du inte kunde se.</string>
 
     <string name="help_hands_intro">Från den starkaste handen till den svagaste. De fem korten som visas är ett exempel på varje.</string>
     <string name="help_hand_straight_flush_title">Straight flush</string>
@@ -51,11 +51,11 @@
 
     <string name="help_strategy_intro">Sju idéer som hjälper en ny spelare långt. De vinner inte varje hand, men över en turnering summerar de sig.</string>
     <string name="help_strategy_1">Spela färre händer från tidiga platser. De första som agerar har flest motståndare kvar att komma, så börja bara med starka kort där, och spela lösare ju närmare knappen platserna ligger.</string>
-    <string name="help_strategy_2">Höj hellre än att göra call. En höjning kan vinna potten på stört, och när den blir syn har du oftare den starkare handen. Att bara göra call låter andra se kort billigt.</string>
+    <string name="help_strategy_2">Höj hellre än att göra call. En höjning kan vinna potten på stört, och när den blir synad har du oftare den starkare handen. Att bara göra call låter andra se kort billigt.</string>
     <string name="help_strategy_3">Folda oftare än vad som känns bekvämt. De flesta händer är inte värda att spela, och en foldad hand kostar bara det du redan lagt in.</string>
-    <string name="help_strategy_4">Lär dig pottodds. Om en call kostar 25 marker för att vinna en pott på 75 betalar du en mark för var tredje du kan vinna, så callen lönar sig om du vinner oftare än en gång av fyra. Jämför det med din chans att sluta med den bästa handen.</string>
+    <string name="help_strategy_4">Lär dig pottodds. Om en call kostar 25 marker för att vinna en pott på 75 betalar du en marker för var tredje du kan vinna, så callen lönar sig om du vinner oftare än en gång av fyra. Jämför det med din chans att sluta med den bästa handen.</string>
     <string name="help_strategy_5">Position spelar roll. Att agera sist låter dig se vad alla andra gör först, vilket är värt mycket. Spela fler händer från sena platser och färre från tidiga.</string>
     <string name="help_strategy_6">Titta på motståndarnas stilar. Varje plats är märkt tight, loose, aggressiv eller passiv. Respektera en höjning från en tight spelare, och var långsammare med att tro på en satsning från en loose, aggressiv.</string>
-    <string name="help_hint_note">Om Hint: den visar din equity, din uppskattade chans att vinna potten, bredvid pottodds, andelen av potten som en call kostar. När din equity är högre än pottodds lönar sig en call. Meningen ovanför förklarar tanken bakom rådet. Det är en bra vägledning, inte en säkerhet, eftersom den inte ser någons kort.</string>
+    <string name="help_hint_note">Om tipset: det visar din equity, din uppskattade chans att vinna potten, bredvid pottodds, andelen av potten som en call kostar. När din equity är högre än pottodds lönar sig en call. Meningen ovanför förklarar tanken bakom rådet. Det är en bra vägledning, inte en säkerhet, eftersom tipset inte ser någons kort.</string>
     <string name="help_strategy_7">Med en kort stack: gå all in eller folda. När dina marker bara är några stora blinds ger små satsningar och calls dig inget utrymme, och en välplacerad all in är din bästa chans att dubbla.</string>
 </resources>

@@ -19,8 +19,8 @@
 
     <string name="sizing_minus_desc">Vähennä %1$,d</string>
     <string name="sizing_plus_desc">Lisää %1$,d</string>
-    <string name="sizing_half_pot">½ pot</string>
-    <string name="sizing_pot">Pot</string>
+    <string name="sizing_half_pot">½ potti</string>
+    <string name="sizing_pot">Potti</string>
     <string name="sizing_bet_desc">Panosta %1$,d</string>
     <string name="sizing_raise_desc">Korota summaan %1$,d</string>
 

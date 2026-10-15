@@ -1,0 +1,19 @@
+Plane deine Züge in klassischem FreeCell-Solitär: Alle Karten sind sichtbar, vier freie Zellen schaffen Platz, und fortgeschrittene Tipps helfen bei Bedarf.
+
+Das FinitePlay-Versprechen: vollständig kostenlos, ohne Werbung, In-App-Käufe oder Abonnements. Das gesamte Spiel läuft auf deinem Gerät: ohne Konten, Tracking, Datenerhebung oder Datenweitergabe, Ranglisten oder Online-Funktionen. Dein Fortschritt und deine Statistiken bleiben privat und lokal.
+
+Jedes enthaltene Spiel beginnt mit einer überprüften Lösung. Nutze freie Zellen und leere Spalten, um Folgen zu verschieben und die Karten abzulegen. Mache Züge rückgängig oder wiederhole ein Spiel, um einen anderen Weg zu versuchen.
+
+Tipps suchen vom aktuellen Spielfeld aus nach einer Lösung. Ein lösbarer Anfang kann trotzdem in eine Sackgasse führen. Kann die Suche innerhalb ihres Limits keinen Weg nachweisen, meldet sie das.
+
+Funktionen:
+• Lösbare Ausgangsspiele
+• Tippen oder Ziehen und legale Züge mit mehreren Karten
+• Rückgängig, Wiederholen und automatischer Abschluss
+• Optionale Tipps und automatische Ablage
+• Helle und dunkle Designs sowie Ton- und Animationsoptionen
+• Lokale Statistiken
+
+Spiele in deinem eigenen Tempo. Einstellbare Pausenerinnerungen laden dich nach längerer Spielzeit zu einer Pause ein. Es gibt keine zeitlich dringenden Boni und keine befristeten täglichen Belohnungen. Lokale Statistiken helfen dir, dein Spiel zu überdenken, ohne Wettbewerbsdruck zum Weiterspielen.
+
+FinitePlay entwickelt Kartenspiele, die deine Zeit, deine Privatsphäre und deine Aufmerksamkeit respektieren.

@@ -7,8 +7,8 @@
     <string name="help_goal_title">Mục tiêu</string>
     <string name="help_goal">Thắng hết chip trên bàn. Bạn chơi một giải đấu với năm đối thủ, mỗi người bắt đầu với 1.500 chip. Ai hết chip sẽ bị loại, và người cuối cùng còn lại là người thắng.</string>
     <string name="help_hand_title">Một ván</string>
-    <string name="help_hand_cards">Mỗi ván, bạn nhận hai lá bài kín, gọi là bài chủ (hole cards). Năm lá bài chung được lật ngửa ở giữa bàn, gọi là bài chung (board). Bài của bạn là năm lá tốt nhất trong hai lá của bạn và các lá bài chung, dùng cả hai, một hoặc không lá nào của bạn.</string>
-    <string name="help_hand_flop">Sau khi chia bài chủ có một vòng cược. Tiếp theo ba lá bài chung được chia, gọi là flop, rồi lại một vòng cược. Lá thứ tư, turn, mở thêm một vòng cược, và lá thứ năm, river, cũng vậy.</string>
+    <string name="help_hand_cards">Mỗi ván, bạn nhận hai lá bài kín, gọi là bài tẩy (hole cards). Năm lá bài chung được lật ngửa ở giữa bàn, gọi là bài chung (board). Bài của bạn là năm lá tốt nhất trong hai lá của bạn và các lá bài chung, dùng cả hai, một hoặc không lá nào của bạn.</string>
+    <string name="help_hand_flop">Sau khi chia bài tẩy có một vòng cược. Tiếp theo ba lá bài chung được chia, gọi là flop, rồi lại một vòng cược. Lá thứ tư, turn, mở thêm một vòng cược, và lá thứ năm, river, cũng vậy.</string>
     <string name="help_actions_title">Lựa chọn của bạn</string>
     <string name="help_actions_check">Check: ở lại mà không cược, khi chưa ai cược trước bạn.</string>
     <string name="help_actions_call">Theo (Call): đặt bằng mức cược bạn đang phải đối mặt.</string>

@@ -15,7 +15,7 @@
     <string name="help_actions_call">Megad (call): kiegyenlíted a tétet, amellyel szembenézel.</string>
     <string name="help_actions_bet">Tét vagy Emelés: több zsetont teszel be. Az összeget a sáv feletti gombokkal választod ki: a − és a + a nagy vakkal lépked, a ½ pot és a Pot pedig beállítja helyetted. Az emelésnek legalább akkorának kell lennie, mint az utolsó tét vagy emelés.</string>
     <string name="help_actions_fold">Eldob (fold): feladod a lapjaidat és a már betett zsetonjaidat. Csak ebből a kézből esel ki.</string>
-    <string name="help_actions_all_in">All in: feltesz minden zsetonodat.</string>
+    <string name="help_actions_all_in">All in: felteszed az összes zsetonodat.</string>
     <string name="help_button_title">A gomb és a vakok</string>
     <string name="help_button">A D betűvel jelölt osztógomb minden kézben egy hellyel továbbmegy az óramutató járásával megegyező irányban. A mögötte ülő két játékosnak kötelező tétet kell betennie a lapok kiosztása előtt: a kis vakot (SB) és a nagy vakot (BB). Ezzel indul a pot, így mindig van miért játszani. A nagy vak határozza meg a legkisebb tétet.</string>
     <string name="help_allin_title">All in és mellékpotok</string>
@@ -52,10 +52,10 @@
     <string name="help_strategy_intro">Hét ötlet, amely jól szolgálja az új játékost. Nem nyernek meg minden kezet, de egy verseny alatt összeadódnak.</string>
     <string name="help_strategy_1">Játssz kevesebb kezet a korai helyekről. Az elsőként döntőknek van a legtöbb ellenfele még hátra, ezért ott csak erős lapokkal indulj, és lazíts, ahogy közeledsz az osztógombhoz.</string>
     <string name="help_strategy_2">Inkább emelj, mint hogy megadd. Egy emelés azonnal megnyerheti a potot, és ha megadják, gyakrabban neked van az erősebb kezed. A puszta megadás olcsón engedi mások számára a lapok megnézését.</string>
-    <string name="help_strategy_3">Dobj el többet, mint amennyi kényelmes. A legtöbb kezet nem éri meg játszani, és az eldobott kéz csak azt költi, amit már betettél.</string>
+    <string name="help_strategy_3">Dobj el többet, mint amennyi kényelmes. A legtöbb kezet nem éri meg játszani, és az eldobott kéz csak annyiba kerül, amennyit már betettél.</string>
     <string name="help_strategy_4">Ismerd a pot oddsot. Ha egy megadás 25 zsetonba kerül egy 75-ös pot megnyeréséhez, minden három megnyerhető zsetonért egyet fizetsz, így a megadás megéri, ha négyből több mint egyszer nyersz. Hasonlítsd ezt ahhoz, mekkora eséllyel végzel a legjobb kézzel.</string>
     <string name="help_strategy_5">A pozíció számít. Ha utolsóként döntesz, előbb láthatod, mit tesz mindenki más, ami sokat ér. Játssz több kezet a kései helyekről, és kevesebbet a koraiakról.</string>
-    <string name="help_strategy_6">Figyeld az ellenfelek stílusát. Minden helyen van címke: szoros, laza, agresszív vagy passzív. Tiszteld a szoros játékos emelését, és lassabban higgy egy laza, agresszív játékos tétjének.</string>
-    <string name="help_hint_note">A tippről: megmutatja az equityd, vagyis a pot megnyerésének becsült esélyét, a pot odds mellett, ami azt mutatja, a pot mekkora részébe kerül egy megadás. Ha az equity magasabb a pot oddsnál, a megadás kifizetődik. A fölöttük lévő mondat a tanács mögötti gondolatot magyarázza. Jó útmutató, de nem biztos, mert senki lapjait nem látja.</string>
-    <string name="help_strategy_7">Kis stackkel menj all in vagy dobj el. Ha csak néhány nagy vakod van, a kis tétek és a megadások nem hagynak mozgásteret, és egy jól időzített all in a legjobb esélyed a megduplázódásra.</string>
+    <string name="help_strategy_6">Figyeld az ellenfelek stílusát. Minden helyen van címke: szoros, laza, agresszív vagy passzív. Tiszteld a szoros játékos emelését, és kevésbé higgy egy laza, agresszív játékos tétjének.</string>
+    <string name="help_hint_note">A tippről: megmutatja az equitydet, vagyis a pot megnyerésének becsült esélyét, a pot odds mellett, ami azt mutatja, a pot mekkora részébe kerül egy megadás. Ha az equity magasabb a pot oddsnál, a megadás kifizetődik. A fölöttük lévő mondat a tanács mögötti gondolatot magyarázza. Jó útmutató, de nem biztos, mert senki lapjait nem látja.</string>
+    <string name="help_strategy_7">Kis stackkel menj all in vagy dobj el. Ha csak néhány nagy vakod van, a kis tétek és a megadások nem hagynak mozgásteret, és egy jól időzített all in a legjobb esélyed a zsetonjaid megduplázására.</string>
 </resources>

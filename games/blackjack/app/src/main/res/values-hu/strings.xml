@@ -3,7 +3,7 @@
     <string name="action_hit">Lapot kér</string>
     <string name="action_stand">Megáll</string>
     <string name="action_double">Duplázás</string>
-    <string name="action_split">Osztás</string>
+    <string name="action_split">Felosztás</string>
     <string name="action_deal">Osztás</string>
     <string name="action_next_round">Következő kör</string>
     <string name="action_bet_up">Tét +%1$d</string>
@@ -14,7 +14,7 @@
     <string name="status_chips">Zsetonok %1$d</string>
     <string name="status_bet">Tét %1$d</string>
     <string name="label_dealer">Osztó</string>
-    <string name="label_place_bet">Tegye meg a tétjét</string>
+    <string name="label_place_bet">Tedd meg a tétedet</string>
     <string name="hand_total_soft">Lágy %1$d</string>
     <string name="hand_bust">Bukott</string>
     <string name="hand_blackjack">Blackjack</string>
@@ -23,7 +23,7 @@
     <string name="banner_lose">Vesztettél</string>
     <string name="summary_even">Egyenlő</string>
     <string name="reset_offer_title">Elfogytak a zsetonok</string>
-    <string name="reset_offer_body">Nem tudja fedezni a minimális tétet. Visszaállítja %1$d zsetonra? A statisztikák megmaradnak.</string>
+    <string name="reset_offer_body">Nem tudod fedezni a minimális tétet. Visszaállítod %1$d zsetonra? A statisztikák megmaradnak.</string>
     <string name="reset_offer_not_now">Most nem</string>
     <string name="recovery_notice">A mentett kört nem sikerült megnyitni. Megszakadt, és nem veszett el zseton.</string>
     <string name="stat_section_hands">Kezek</string>
@@ -39,7 +39,7 @@
     <string name="help_goal_title">A cél</string>
     <string name="help_goal">Érj el az osztóénál értékesebb kezet anélkül, hogy túllépnéd a 21-et. Ha túllépsz, azonnal veszítesz.</string>
     <string name="help_chips_title">Zsetonok</string>
-    <string name="help_chips">1000 zsetonnal indulsz. A zsetonok csak játékra valók, nem vásárolhatók és nem váltható be őket. A tétek 10-es lépésekben mennek, 10-től 500-ig. Ha elfogynak a zsetonjaid, visszaállíthatod 1000-re, és a statisztikáid megmaradnak.</string>
+    <string name="help_chips">1000 zsetonnal indulsz. A zsetonok csak játékra valók, nem vásárolhatók meg és nem válthatók be. A tétek 10-es lépésekben mennek, 10-től 500-ig. Ha elfogynak a zsetonjaid, visszaállíthatod 1000-re, és a statisztikáid megmaradnak.</string>
     <string name="help_tab_rules">Szabályok</string>
     <string name="help_tab_strategy">Stratégia</string>
     <string name="help_values_title">A lapok értéke</string>
@@ -52,8 +52,8 @@
     <string name="help_stand">Tartsd meg a kezedet úgy, ahogy van, és fejezd be a körödet.</string>
     <string name="help_double_title">Duplázás</string>
     <string name="help_double">Az első két lapon duplázd meg a tétet, és húzz pontosan egy lapot. A köröd ezután véget ér. Akkor használd, ha a kezed erős, de még nem kész.</string>
-    <string name="help_split_title">Osztás</string>
-    <string name="help_split">Ha az első két lapod értéke azonos, oszd két kézre, mindkettőn az eredeti téttel. Összesen legfeljebb négy kezed lehet. Az osztott ászok egy-egy lapot kapnak, és nem húzhatnak többet.</string>
+    <string name="help_split_title">Felosztás</string>
+    <string name="help_split">Ha az első két lapod értéke azonos, oszd fel két kézre, mindkettőn az eredeti téttel. Összesen legfeljebb négy kezed lehet. A felosztott ászok egy-egy lapot kapnak, és nem húzhatnak többet.</string>
     <string name="help_insurance_title">Biztosítás</string>
     <string name="help_insurance">Ha az osztó ászt mutat, a tét felére biztosíthatsz. 2:1-et fizet, ha az osztónak blackjackje van, különben elvész.</string>
     <string name="help_dealer_title">Az osztó</string>
@@ -62,7 +62,7 @@
     <string name="help_strategy_1">8 vagy kevesebb esetén mindig húzz, kemény 17 vagy több esetén mindig állj meg.</string>
     <string name="help_strategy_2">12 és 16 között állj meg, ha az osztó 2-6-ot mutat, mert valószínűleg túllép. Húzz, ha 7-et vagy többet mutat.</string>
     <string name="help_strategy_3">Duplázz 11-nél, és 10-nél, ha az osztó 9-et vagy kevesebbet mutat. Ha nem duplázhatsz, húzz.</string>
-    <string name="help_strategy_4">Az ászokat és a nyolcasokat mindig oszd. Ötösöket és tízeseket soha; játszd őket 10-nek és 20-nak.</string>
+    <string name="help_strategy_4">Az ászokat és a nyolcasokat mindig oszd fel. Az ötösöket és a tízeseket soha ne oszd fel; játszd őket 10-nek és 20-nak.</string>
     <string name="help_strategy_5">Ha az ász 11-et ér (lágy kéz), lágy 17-ig húzz, és lágy 19-től állj meg.</string>
     <string name="help_strategy_6">Soha ne köss biztosítást. Hosszú távon többe kerül, mint amennyit visszafizet.</string>
     <string name="help_strategy_7">A stratégia csökkenti a ház előnyét, de nem ígér nyereményt: az osztó rejtett lapja még mindig sok kört eldönt.</string>
@@ -74,9 +74,9 @@
     <string name="hint_reason_hit_cannot_bust">%2$d mellett nem buksz: kérj lapot, hogy javítsd a kezed.</string>
     <string name="hint_reason_hit_soft">A lágy %2$d a következő lapnál nem bukhat, így a lapkérés semmibe sem kerül: javítsd a kezed.</string>
     <string name="hint_reason_double">Erős helyzet: %2$d az osztó %1$s lapja ellen. Duplázd a tétet, kérj egy lapot, és hozd ki belőle a legtöbbet.</string>
-    <string name="hint_reason_split_aces">Két ász a legjobb pár az osztáshoz: mindkettő lehet 21, míg az A-A együtt csak egy gyenge lágy 12.</string>
-    <string name="hint_reason_split_eights">Két nyolcas 16, a legrosszabb kéz: oszd meg őket, és indíts két jobb kezet.</string>
-    <string name="hint_reason_split_pair">Az osztó %1$s lapja ellen az osztás két jó kezet ad egy gyenge helyett.</string>
+    <string name="hint_reason_split_aces">Két ász a legjobb pár a felosztáshoz: mindkettő lehet 21, míg az A-A együtt csak egy gyenge lágy 12.</string>
+    <string name="hint_reason_split_eights">Két nyolcas 16, a legrosszabb kéz: oszd fel őket, és indíts két jobb kezet.</string>
+    <string name="hint_reason_split_pair">Az osztó %1$s lapja ellen a felosztás két jó kezet ad egy gyenge helyett.</string>
     <string name="hint_reason_decline_insurance">A biztosítás idővel zsetont veszít: a rejtett lap háromból kevesebb mint egyszer tízes, pedig a nullszaldóhoz ennyi kellene.</string>
     <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
     <string name="hint_figures">Az osztó bukik %1$d%% · Lapkéréssel te %2$d%%</string>

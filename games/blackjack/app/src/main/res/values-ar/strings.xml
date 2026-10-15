@@ -15,7 +15,7 @@
     <string name="status_bet">الرهان %1$d</string>
     <string name="label_dealer">الموزّع</string>
     <string name="label_place_bet">ضع رهانك</string>
-    <string name="hand_total_soft">ناعمة %1$d</string>
+    <string name="hand_total_soft">%1$d ناعمة</string>
     <string name="hand_bust">تجاوز</string>
     <string name="hand_blackjack">بلاك جاك</string>
     <string name="outcome_push">تعادل</string>
@@ -62,7 +62,7 @@
     <string name="help_strategy_1">اطلب دائمًا عند مجموع 8 أو أقل، وابقَ دائمًا عند 17 الصلبة أو أكثر.</string>
     <string name="help_strategy_2">مع 12 إلى 16، ابقَ إذا أظهر الموزّع من 2 إلى 6 لأنه على الأرجح سيتجاوز 21. اطلب إذا أظهر 7 أو أكثر.</string>
     <string name="help_strategy_3">ضاعف عند 11، وعند 10 إذا أظهر الموزّع 9 أو أقل. إذا لم تستطع المضاعفة فاطلب.</string>
-    <string name="help_strategy_4">قسّم الآسات والثمانيات دائمًا. لا تقسّم الخمسات أو العشرات أبدًا؛ العبها كـ 10 و 20.</string>
+    <string name="help_strategy_4">قسّم الآسات والثمانيات دائمًا. لا تقسّم الخمسات أو العشرات أبدًا؛ العبها كـ10 و20.</string>
     <string name="help_strategy_5">مع آس يُحتسب 11 (يد ناعمة)، اطلب حتى 17 الناعمة وابقَ عند 19 الناعمة أو أكثر.</string>
     <string name="help_strategy_6">لا تأخذ التأمين أبدًا. على المدى الطويل يكلّف أكثر مما يعيد.</string>
     <string name="help_strategy_7">الاستراتيجية تقلّل أفضلية الكازينو لكنها لا تضمن الفوز: ورقة الموزّع المخفية ما زالت تحسم كثيرًا من الجولات.</string>

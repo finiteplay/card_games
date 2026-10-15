@@ -60,7 +60,7 @@
     <string-array name="rank_singular">
         <item>άσος</item>
         <item>δυάρι</item>
-        <item>τρίο</item>
+        <item>τριάρι</item>
         <item>τετράρι</item>
         <item>πεντάρι</item>
         <item>εξάρι</item>
@@ -75,7 +75,7 @@
     <string-array name="rank_plural">
         <item>άσοι</item>
         <item>δυάρια</item>
-        <item>τρίο</item>
+        <item>τριάρια</item>
         <item>τετράρια</item>
         <item>πεντάρια</item>
         <item>εξάρια</item>
@@ -88,11 +88,11 @@
         <item>ρηγάδες</item>
     </string-array>
     <string name="hand_royal_flush">Ρόγιαλ φλας</string>
-    <string name="hand_straight_flush">Στρέιτ φλας, ψηλό %1$s</string>
+    <string name="hand_straight_flush">Στρέιτ φλας, %1$s ψηλά</string>
     <string name="hand_four_of_a_kind">Καρέ, %1$s</string>
     <string name="hand_full_house">Φουλ, %1$s και %2$s</string>
-    <string name="hand_flush">Φλας, ψηλό %1$s</string>
-    <string name="hand_straight">Στρέιτ, ψηλό %1$s</string>
+    <string name="hand_flush">Φλας, %1$s ψηλά</string>
+    <string name="hand_straight">Στρέιτ, %1$s ψηλά</string>
     <string name="hand_three_of_a_kind">Τρία ίδια, %1$s</string>
     <string name="hand_two_pair">Δύο ζευγάρια, %1$s και %2$s</string>
     <string name="hand_pair">Ζευγάρι, %1$s</string>

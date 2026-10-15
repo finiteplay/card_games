@@ -15,12 +15,12 @@
     <string name="status_bet">Taruhan %1$d</string>
     <string name="label_dealer">Bandar</string>
     <string name="label_place_bet">Pasang taruhan</string>
-    <string name="hand_total_soft">Lunak %1$d</string>
+    <string name="hand_total_soft">%1$d lunak</string>
     <string name="hand_bust">Bust</string>
     <string name="hand_blackjack">Blackjack</string>
     <string name="outcome_push">Seri</string>
-    <string name="banner_win">Kamu menang!</string>
-    <string name="banner_lose">Kamu kalah</string>
+    <string name="banner_win">Anda menang!</string>
+    <string name="banner_lose">Anda kalah</string>
     <string name="summary_even">Impas</string>
     <string name="reset_offer_title">Chip habis</string>
     <string name="reset_offer_body">Anda tidak bisa menutup taruhan minimum. Atur ulang ke %1$d chip? Statistik Anda tetap tersimpan.</string>
@@ -45,7 +45,7 @@
     <string name="help_values_title">Nilai kartu</string>
     <string name="help_values">Kartu angka bernilai angkanya. Jack, Queen, dan King bernilai 10. As bernilai 1 atau 11, mana yang lebih baik untuk tangan. As dan kartu bernilai sepuluh pada dua kartu pertama adalah Blackjack dan dibayar 3 banding 2.</string>
     <string name="help_round_title">Satu ronde</string>
-    <string name="help_round">Pasang taruhan lalu tekan Bagikan. Anda dan bandar masing-masing mendapat dua kartu, dan satu kartu bandar tetap tertutup. Lalu Anda mengambil keputusan, satu tangan demi satu tangan, dan setelah selesai bandar bermain. Setiap ronde dibagikan dari kocokan baru, dan tidak ada batalkan.</string>
+    <string name="help_round">Pasang taruhan lalu tekan Bagikan. Anda dan bandar masing-masing mendapat dua kartu, dan satu kartu bandar tetap tertutup. Lalu Anda mengambil keputusan, satu tangan demi satu tangan, dan setelah selesai bandar bermain. Setiap ronde dibagikan dari kocokan baru, dan langkah tidak bisa dibatalkan.</string>
     <string name="help_hit_title">Ambil</string>
     <string name="help_hit">Ambil satu kartu lagi. Anda boleh terus mengambil selama tangan Anda di bawah 21.</string>
     <string name="help_stand_title">Tahan</string>
@@ -69,30 +69,30 @@
 
     <!-- Hint: %1$s = dealer up card, %2$d = your total, %3$d/%4$d/%5$d = percents. Review: %1$s = suggested action label, %2$s = reason sentence. -->
     <string name="hint_reason_stand_strong">%2$d adalah tangan kuat: mengambil kartu berisiko bust dengan keuntungan kecil.</string>
-    <string name="hint_reason_stand_dealer_weak">Bandar menunjukkan %1$s dan bust sekitar %3$d%% dari waktu, sedangkan jika kamu ambil kartu, kamu bust %4$d%% dari waktu: tahan dan biarkan bandar menanggung risiko.</string>
-    <string name="hint_reason_hit_dealer_strong">Bandar menunjukkan %1$s dan sering membuat tangan bagus, jadi %2$d hanya menang %5$d%% dari waktu jika kamu tahan: ambil kartu meski ada risiko bust %4$d%%.</string>
-    <string name="hint_reason_hit_cannot_bust">Kamu tidak bisa bust dengan %2$d: ambil kartu untuk memperbaiki tangan.</string>
-    <string name="hint_reason_hit_soft">%2$d lunak tidak bisa bust di kartu berikutnya, jadi mengambil kartu tidak merugikan: perbaiki tanganmu.</string>
+    <string name="hint_reason_stand_dealer_weak">Bandar menunjukkan %1$s dan bust dalam sekitar %3$d%% kasus, sedangkan jika Anda mengambil kartu, Anda bust dalam %4$d%% kasus: tahan dan biarkan bandar menanggung risiko.</string>
+    <string name="hint_reason_hit_dealer_strong">Bandar menunjukkan %1$s dan sering membuat tangan bagus, jadi %2$d hanya menang dalam %5$d%% kasus jika Anda tahan: ambil kartu meski ada risiko bust %4$d%%.</string>
+    <string name="hint_reason_hit_cannot_bust">Anda tidak bisa bust dengan %2$d: ambil kartu untuk memperbaiki tangan.</string>
+    <string name="hint_reason_hit_soft">%2$d lunak tidak bisa bust di kartu berikutnya, jadi mengambil kartu tidak merugikan: perbaiki tangan Anda.</string>
     <string name="hint_reason_double">Situasi kuat: %2$d melawan %1$s milik bandar. Gandakan taruhan, ambil satu kartu dan manfaatkan sebaik mungkin.</string>
     <string name="hint_reason_split_aces">Dua As adalah pasangan terbaik untuk dipisah: masing-masing bisa jadi 21, sedangkan A-A bersama hanya 12 lunak yang lemah.</string>
     <string name="hint_reason_split_eights">Dua delapan menjadi 16, tangan terburuk: pisahkan untuk memulai dua tangan yang lebih baik.</string>
-    <string name="hint_reason_split_pair">Melawan %1$s milik bandar, memisah memberimu dua tangan bagus, bukan satu tangan lemah.</string>
+    <string name="hint_reason_split_pair">Melawan %1$s milik bandar, memisah memberi Anda dua tangan bagus, bukan satu tangan lemah.</string>
     <string name="hint_reason_decline_insurance">Asuransi merugikan chip dalam jangka panjang: kartu tersembunyi bernilai sepuluh kurang dari satu dari tiga kali, padahal itulah syarat impas.</string>
-    <string name="hint_figures">Bandar bust %1$d%% · Ambil kartu, kamu bust %2$d%%</string>
+    <string name="hint_figures">Bandar bust %1$d%% · Ambil kartu: Anda bust %2$d%%</string>
     <string name="hint_figures_dealer_only">Bandar bust %1$d%%</string>
-    <string name="review_title">Menengok kembali Hint</string>
-    <string name="review_followed_won">Kamu mengikuti Hint dan menang.</string>
-    <string name="review_followed_lost">Kamu mengikuti Hint dan kalah, itu wajar: kartu bandar yang menentukan ronde. Nilai keputusannya, bukan hasilnya.</string>
-    <string name="review_followed_push">Kamu mengikuti Hint dan seri: chip-mu tetap aman.</string>
-    <string name="review_ignored_won">Kamu menang, tapi Hint menyarankan %1$s. Alasannya: %2$s Menang melawan peluang itu keberuntungan, bukan rencana.</string>
-    <string name="review_ignored_lost">Hint menyarankan %1$s, tapi kamu memilih lain dan kalah. Alasannya: %2$s</string>
-    <string name="review_ignored_push">Hint menyarankan %1$s dan kamu memilih lain. Alasannya: %2$s</string>
+    <string name="review_title">Menengok kembali Petunjuk</string>
+    <string name="review_followed_won">Anda mengikuti Petunjuk dan menang.</string>
+    <string name="review_followed_lost">Anda mengikuti Petunjuk dan kalah, itu wajar: kartu bandar yang menentukan ronde. Nilai keputusannya, bukan hasilnya.</string>
+    <string name="review_followed_push">Anda mengikuti Petunjuk dan seri: chip Anda tetap aman.</string>
+    <string name="review_ignored_won">Anda menang, tapi Petunjuk menyarankan %1$s. Alasannya: %2$s Menang melawan peluang itu keberuntungan, bukan rencana.</string>
+    <string name="review_ignored_lost">Petunjuk menyarankan %1$s, tapi Anda memilih lain dan kalah. Alasannya: %2$s</string>
+    <string name="review_ignored_push">Petunjuk menyarankan %1$s dan Anda memilih lain. Alasannya: %2$s</string>
     <string name="review_dealer_finished">Bandar selesai dengan %1$d.</string>
     <string name="review_dealer_busted">Bandar bust.</string>
     <string name="review_dealer_blackjack">Bandar punya Blackjack.</string>
-    <string name="review_you_busted">Kamu bust dengan %1$d.</string>
+    <string name="review_you_busted">Anda bust dengan %1$d.</string>
 
     <!-- With hindsight: %1$s = card a hit would draw, %2$d = total; stand chances %1$d total, %2$d/%3$d/%4$d win/tie/lose percent. -->
-    <string name="review_would_have_drawn">Jika mengambil kartu, kamu akan mendapat %1$s, sehingga totalnya %2$d.</string>
-    <string name="review_stand_chances">Saat memutuskan, tahan di %1$d menang sekitar %2$d%% dari waktu, seri %3$d%% dan kalah %4$d%%.</string>
+    <string name="review_would_have_drawn">Jika mengambil kartu, Anda akan mendapat %1$s, sehingga totalnya %2$d.</string>
+    <string name="review_stand_chances">Saat Anda memutuskan, tahan di %1$d menang dalam sekitar %2$d%% kasus, seri %3$d%% dan kalah %4$d%%.</string>
 </resources>

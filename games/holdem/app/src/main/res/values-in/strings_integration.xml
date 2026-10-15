@@ -8,41 +8,41 @@
     <string name="recovery_notice">Tangan tersimpan Anda tidak bisa dibuka, jadi dibagikan ulang dari awal. Tidak ada chip yang hilang.</string>
 
     <!-- Hint reasons: one coach sentence per spot. %1$d / %2$d are numbers: stack in big blinds (push/fold), outs (draws), or win chance % and pot cost % (price). -->
-    <string name="hint_reason_premium_raise">Tangan premium: raise untuk membesarkan pot selagi kamu kemungkinan unggul.</string>
-    <string name="hint_reason_late_position_raise">Posisi akhir, jadi kamu bertindak setelah kebanyakan pemain: raise bisa langsung memenangkan blind.</string>
-    <string name="hint_reason_playable_raise">Tangan bagus untuk situasi ini: raise membuatmu memimpin taruhan.</string>
+    <string name="hint_reason_premium_raise">Tangan premium: raise untuk membesarkan pot selagi Anda kemungkinan unggul.</string>
+    <string name="hint_reason_late_position_raise">Posisi akhir, jadi Anda bertindak setelah kebanyakan pemain: raise bisa langsung memenangkan blind.</string>
+    <string name="hint_reason_playable_raise">Tangan bagus untuk situasi ini: raise membuat Anda memimpin taruhan.</string>
     <string name="hint_reason_call_to_see_flop">Layak melihat flop dengan harga ini, tapi belum cukup kuat untuk raise.</string>
     <string name="hint_reason_free_flop">Tidak ada yang raise dan check gratis: lihat flop tanpa biaya.</string>
     <string name="hint_reason_fold_weak">Tangan lemah: fold tidak memakan biaya dan menyimpan chip untuk situasi yang lebih baik.</string>
-    <string name="hint_reason_fold_to_raise">Ada yang raise dan tanganmu tidak cukup kuat untuk membayarnya: fold lebih murah.</string>
+    <string name="hint_reason_fold_to_raise">Ada yang raise dan tangan Anda tidak cukup kuat untuk membayarnya: fold lebih murah.</string>
     <string name="hint_reason_push_short_stack">Tersisa hanya %1$d big blind: all in atau fold paling tepat, dan tangan ini cukup kuat untuk all in.</string>
     <string name="hint_reason_fold_short_stack">Tersisa hanya %1$d big blind: tangan ini terlalu lemah untuk mempertaruhkan semuanya.</string>
-    <string name="hint_reason_value_bet">Kamu kemungkinan unggul: bet agar tangan yang lebih lemah harus membayar untuk melihat kartu lagi.</string>
-    <string name="hint_reason_value_raise">Tangan kuat menghadapi bet: raise untuk memasukkan lebih banyak chip selagi kamu unggul.</string>
-    <string name="hint_reason_semi_bluff">Draw kuat (%1$d outs): bet bisa langsung menang, dan kamu masih bisa membaik.</string>
+    <string name="hint_reason_value_bet">Anda kemungkinan unggul: bet agar tangan yang lebih lemah harus membayar untuk melihat kartu lagi.</string>
+    <string name="hint_reason_value_raise">Tangan kuat menghadapi bet: raise untuk memasukkan lebih banyak chip selagi Anda unggul.</string>
+    <string name="hint_reason_semi_bluff">Draw kuat (%1$d outs): bet bisa langsung menang, dan tangan Anda masih bisa membaik.</string>
     <string name="hint_reason_call_draw">Tangan draw (%1$d outs): pot cukup besar untuk mengejar draw.</string>
-    <string name="hint_reason_call_good_price">Call menguntungkan: kamu menang sekitar %1$d%% dari waktu dan harganya hanya butuh %2$d%%.</string>
-    <string name="hint_reason_fold_bad_price">Tidak cukup untuk call: harganya butuh %2$d%% dan kamu punya sekitar %1$d%%.</string>
-    <string name="hint_reason_free_card">Check gratis dan tanganmu lemah: ambil kartu berikutnya tanpa biaya.</string>
+    <string name="hint_reason_call_good_price">Call menguntungkan: Anda menang dalam sekitar %1$d%% kasus dan harganya hanya butuh %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Tidak cukup untuk call: harganya butuh %2$d%% dan Anda punya sekitar %1$d%%.</string>
+    <string name="hint_reason_free_card">Check gratis dan tangan Anda lemah: ambil kartu berikutnya tanpa biaya.</string>
     <string name="hint_reason_pot_control">Tangan menengah: check agar pot tetap kecil dan lihat kartu berikutnya.</string>
 
     <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
     <string name="hint_threat_beat">Peluang lawan sudah punya tangan lebih baik: %1$d%%</string>
     <string name="hint_threat_list">Tangan yang lebih baik dan paling mungkin: %1$s</string>
     <string name="hint_threat_item">%1$s %2$d%%</string>
-    <string name="review_title">Menengok kembali Hint</string>
-    <string name="review_followed_won">Kamu mengikuti Hint dan menang: peluang menangmu sekitar %1$d%%.</string>
-    <string name="review_followed_lost">Kamu mengikuti Hint dan kalah, itu wajar: dengan sekitar %1$d%% kamu kalah %2$d%% dari waktu. Nilai keputusannya, bukan hasilnya.</string>
-    <string name="review_followed_fold">Kamu fold sesuai saran Hint dan menyimpan chip untuk situasi yang lebih baik.</string>
-    <string name="review_ignored_won">Kamu menang, tapi Hint menyarankan %1$s. Alasannya: %2$s Menang melawan saran itu keberuntungan, bukan rencana.</string>
-    <string name="review_ignored_lost">Hint menyarankan %1$s, tapi kamu memilih lain dan kalah. Alasannya: %2$s</string>
-    <string name="review_ignored_fold">Kamu fold, tapi Hint menyarankan %1$s. Alasannya: %2$s</string>
-    <string name="review_beaten_by">Kamu kalah dari %1$s. Hint memperkirakannya sekitar %2$d%%.</string>
+    <string name="review_title">Menengok kembali Petunjuk</string>
+    <string name="review_followed_won">Anda mengikuti Petunjuk dan menang: peluang menang Anda sekitar %1$d%%.</string>
+    <string name="review_followed_lost">Anda mengikuti Petunjuk dan kalah, itu wajar: dengan sekitar %1$d%% Anda kalah dalam %2$d%% kasus. Nilai keputusannya, bukan hasilnya.</string>
+    <string name="review_followed_fold">Anda fold sesuai saran Petunjuk dan menyimpan chip untuk situasi yang lebih baik.</string>
+    <string name="review_ignored_won">Anda menang, tapi Petunjuk menyarankan %1$s. Alasannya: %2$s Menang melawan saran itu keberuntungan, bukan rencana.</string>
+    <string name="review_ignored_lost">Petunjuk menyarankan %1$s, tapi Anda memilih lain dan kalah. Alasannya: %2$s</string>
+    <string name="review_ignored_fold">Anda fold, tapi Petunjuk menyarankan %1$s. Alasannya: %2$s</string>
+    <string name="review_beaten_by">Anda kalah dari %1$s. Petunjuk memperkirakannya sekitar %2$d%%.</string>
 
     <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
-    <string name="review_hindsight_fold_won">Kamu akan menang di tangan ini, tapi saat memutuskan peluangmu hanya sekitar %1$d%%. Nilai keputusannya, bukan hasilnya.</string>
-    <string name="review_hindsight_fold_lost">Kamu akan kalah di tangan ini: peluangmu sekitar %1$d%% saat memutuskan.</string>
-    <string name="review_chance_at_decision">Saat memutuskan, peluangmu sekitar %1$d%%.</string>
-    <string name="review_chance_slim_win">Kamu menang, tapi peluangmu tipis saat memutuskan: sekitar %1$d%%.</string>
-    <string name="review_followed_won_slim">Kamu mengikuti Hint dan menang, tapi peluangmu tipis: sekitar %1$d%%. Keputusan bagus tidak selalu beruntung.</string>
+    <string name="review_hindsight_fold_won">Anda akan menang di tangan ini, tapi saat memutuskan peluang Anda hanya sekitar %1$d%%. Nilai keputusannya, bukan hasilnya.</string>
+    <string name="review_hindsight_fold_lost">Anda akan kalah di tangan ini: peluang Anda sekitar %1$d%% saat memutuskan.</string>
+    <string name="review_chance_at_decision">Saat memutuskan, peluang Anda sekitar %1$d%%.</string>
+    <string name="review_chance_slim_win">Anda menang, tapi peluang Anda tipis saat memutuskan: sekitar %1$d%%.</string>
+    <string name="review_followed_won_slim">Anda mengikuti Petunjuk dan menang, tapi peluang Anda tipis: sekitar %1$d%%. Keputusan bagus tidak selalu beruntung.</string>
 </resources>

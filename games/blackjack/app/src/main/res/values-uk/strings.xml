@@ -21,7 +21,7 @@
     <string name="outcome_push">Нічия</string>
     <string name="banner_win">Перемога!</string>
     <string name="banner_lose">Програш</string>
-    <string name="summary_even">Рівно</string>
+    <string name="summary_even">Без змін</string>
     <string name="reset_offer_title">Фішки закінчилися</string>
     <string name="reset_offer_body">Ви не можете покрити мінімальну ставку. Скинути до %1$d фішок? Статистика збережеться.</string>
     <string name="reset_offer_not_now">Не зараз</string>
@@ -37,7 +37,7 @@
     <string name="stat_tile_resets">Скидання</string>
     <string name="help_title">Як грати</string>
     <string name="help_goal_title">Мета</string>
-    <string name="help_goal">Зберіть руку, що вартує більше за руку дилера, не перебравши 21. Якщо перебрали, ви одразу програєте.</string>
+    <string name="help_goal">Зберіть руку, що має більше очок, ніж рука дилера, не перебравши 21. Якщо перебрали, ви одразу програєте.</string>
     <string name="help_chips_title">Фішки</string>
     <string name="help_chips">Ви починаєте з 1 000 фішок. Фішки лише для гри, їх не можна купити чи обміняти. Ставки ростуть кроками по 10, від 10 до 500. Якщо фішки закінчаться, можна скинути до 1 000, а статистика збережеться.</string>
     <string name="help_tab_rules">Правила</string>
@@ -63,32 +63,32 @@
     <string name="help_strategy_2">При 12–16 зупиняйтеся, якщо дилер показує 2–6, бо він, імовірно, перебере. Беріть, якщо він показує 7 і більше.</string>
     <string name="help_strategy_3">Подвоюйте на 11, а на 10 — коли дилер показує 9 або менше. Якщо подвоїти не можна, беріть карту.</string>
     <string name="help_strategy_4">Тузи й вісімки завжди розділяйте. П’ятірки та десятки ніколи не розділяйте; грайте їх як 10 і 20.</string>
-    <string name="help_strategy_5">З тузом, що рахується як 11 (м’яка рука), беріть до м’яких 17 і зупиняйтеся з м’яких 19.</string>
+    <string name="help_strategy_5">З тузом, що рахується як 11 (м’яка рука), беріть до м’яких 17 і зупиняйтеся на м’яких 19 і більше.</string>
     <string name="help_strategy_6">Ніколи не беріть страхування. З часом воно коштує більше, ніж повертає.</string>
     <string name="help_strategy_7">Стратегія зменшує перевагу казино, але не обіцяє виграшу: прихована карта дилера й досі вирішує багато раундів.</string>
     <!-- The Hint's reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total,
          %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent,
          %5$d = your chance to win if you stand in percent. -->
-    <string name="hint_reason_stand_strong">%2$d це сильна рука: брати карту ризиковано, а вигоди мало.</string>
-    <string name="hint_reason_stand_dealer_weak">Дилер показує %1$s і програє перебором приблизно в %3$d%% випадків, а ви після карти програєте перебором у %4$d%%: зупиніться і нехай ризикує дилер.</string>
-    <string name="hint_reason_hit_dealer_strong">Дилер показує %1$s і часто збирає добру руку, тож %2$d виграє лише у %5$d%% випадків, якщо зупинитися: візьміть карту попри %4$d%% ризику перебору.</string>
+    <string name="hint_reason_stand_strong">%2$d — це сильна рука: брати карту ризиковано, а вигоди мало.</string>
+    <string name="hint_reason_stand_dealer_weak">Відкрита карта дилера — %1$s, і він програє перебором приблизно в %3$d%% випадків, а ви після карти програєте перебором у %4$d%%: зупиніться і нехай ризикує дилер.</string>
+    <string name="hint_reason_hit_dealer_strong">Відкрита карта дилера — %1$s, і він часто збирає добру руку, тож %2$d виграє лише в %5$d%% випадків, якщо зупинитися: візьміть карту попри %4$d%% ризику перебору.</string>
     <string name="hint_reason_hit_cannot_bust">З %2$d перебору бути не може: візьміть карту, щоб покращити руку.</string>
     <string name="hint_reason_hit_soft">М’яка %2$d не дає перебору на наступній карті, тож взяти карту нічого не коштує: покращуйте руку.</string>
-    <string name="hint_reason_double">Сильна ситуація: %2$d проти %1$s дилера. Подвойте ставку, візьміть одну карту й використайте шанс повною мірою.</string>
-    <string name="hint_reason_split_aces">Два тузи це найкраща пара для розділення: кожен може стати 21, а разом A-A це лише слабка м’яка 12.</string>
+    <string name="hint_reason_double">Сильна ситуація: у вас %2$d, а відкрита карта дилера — %1$s. Подвойте ставку, візьміть одну карту й використайте шанс повною мірою.</string>
+    <string name="hint_reason_split_aces">Два тузи — це найкраща пара для розділення: кожен може стати 21, а разом A-A — це лише слабка м’яка 12.</string>
     <string name="hint_reason_split_eights">Дві вісімки дають 16, найгіршу руку: розділіть їх, щоб почати дві кращі руки.</string>
-    <string name="hint_reason_split_pair">Проти %1$s дилера розділення дає дві хороші руки замість однієї слабкої.</string>
+    <string name="hint_reason_split_pair">Коли відкрита карта дилера — %1$s, розділення дає дві хороші руки замість однієї слабкої.</string>
     <string name="hint_reason_decline_insurance">Страхування з часом програшне: прихована карта дилера є десяткою менше ніж раз на три, а для виходу в нуль потрібно саме це.</string>
     <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
-    <string name="hint_figures">Дилер перебирає в %1$d%% · Карта перебирає вас у %2$d%%</string>
-    <string name="hint_figures_dealer_only">Дилер перебирає в %1$d%%</string>
+    <string name="hint_figures">Перебір дилера %1$d%% · Ваш перебір після карти %2$d%%</string>
+    <string name="hint_figures_dealer_only">Перебір дилера %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
     <string name="review_title">Погляд назад на підказку</string>
     <string name="review_followed_won">Ви послухали підказку й виграли.</string>
     <string name="review_followed_lost">Ви послухали підказку й програли, таке буває: раунд вирішують карти дилера. Оцінюйте рішення, а не результат.</string>
     <string name="review_followed_push">Ви послухали підказку й зіграли внічию: ваші фішки лишилися при вас.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Ви виграли, але підказка радила: %1$s. Її причина: %2$s Перемога всупереч шансам це везіння, а не план.</string>
+    <string name="review_ignored_won">Ви виграли, але підказка радила: %1$s. Її причина: %2$s Перемога всупереч шансам — це везіння, а не план.</string>
     <string name="review_ignored_lost">Підказка радила: %1$s, але ви вчинили інакше й програли. Її причина: %2$s</string>
     <string name="review_ignored_push">Підказка радила: %1$s, а ви вчинили інакше. Її причина: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->

@@ -16,8 +16,8 @@
     <string name="hint_reason_fold_weak">O mână slabă: fold-ul nu costă nimic și păstrează jetoane pentru momente mai bune.</string>
     <string name="hint_reason_fold_to_raise">Cineva a mărit, iar mâna ta nu e destul de puternică să plătească: fold-ul e mai ieftin.</string>
     <!-- %1$d = your stack in big blinds -->
-    <string name="hint_reason_push_short_stack">Au rămas doar %1$d big blinduri: all in sau fold e cel mai bun, iar mâna asta e destul de puternică pentru all in.</string>
-    <string name="hint_reason_fold_short_stack">Au rămas doar %1$d big blinduri: mâna asta e prea slabă ca să riști totul.</string>
+    <string name="hint_reason_push_short_stack">Mai ai doar %1$d BB: all in sau fold e cel mai bun, iar mâna asta e destul de puternică pentru all in.</string>
+    <string name="hint_reason_fold_short_stack">Mai ai doar %1$d BB: mâna asta e prea slabă ca să riști totul.</string>
     <string name="hint_reason_value_bet">Probabil ești în față: pariază ca mâinile mai slabe să plătească pentru mai multe cărți.</string>
     <string name="hint_reason_value_raise">Mână puternică în fața unui pariu: mărește ca să pui mai multe jetoane cât timp ești în față.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->

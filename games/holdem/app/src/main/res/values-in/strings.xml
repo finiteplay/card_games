@@ -25,7 +25,7 @@
     <string name="help_tournament_title">Turnamen</string>
     <string name="help_tournament">Blind naik setiap 10 tangan, sehingga chip makin terasa sedikit dan menunggu jadi mahal. Tidak ada batas waktu: pikirkan selama yang Anda mau. Anda finis di posisi sebanyak pemain yang tersisa saat Anda tersingkir, jadi posisi ke-6 adalah yang pertama keluar dan ke-1 adalah kemenangan.</string>
     <string name="help_leave_title">Keluar</string>
-    <string name="help_leave">Bendera di atas mengakhiri turnamen lebih awal, dan Anda finis di posisi yang akan Anda dapat jika tersingkir sekarang. Menutup aplikasi tidak mengakhirinya: tangan Anda tersimpan dan menunggu saat Anda kembali. Tidak ada batalkan, karena setiap keputusan diikuti kartu yang tidak mungkin Anda lihat.</string>
+    <string name="help_leave">Bendera di atas mengakhiri turnamen lebih awal, dan Anda finis di posisi yang akan Anda dapat jika tersingkir sekarang. Menutup aplikasi tidak mengakhirinya: tangan Anda tersimpan dan menunggu saat Anda kembali. Langkah tidak bisa dibatalkan, karena setiap keputusan diikuti kartu yang tidak mungkin Anda lihat.</string>
 
     <string name="help_hands_intro">Dari tangan terkuat sampai terlemah. Lima kartu yang ditampilkan adalah satu contoh untuk tiap tangan.</string>
     <string name="help_hand_straight_flush_title">Straight flush</string>
@@ -45,7 +45,7 @@
     <string name="help_hand_pair_title">Satu pasang</string>
     <string name="help_hand_pair">Dua kartu dengan nilai yang sama.</string>
     <string name="help_hand_high_card_title">Kartu tertinggi</string>
-    <string name="help_hand_high_card">Tidak ada yang di atas: kartu tertinggi Anda yang dihitung.</string>
+    <string name="help_hand_high_card">Tidak satu pun dari yang di atas: kartu tertinggi Anda yang dihitung.</string>
     <string name="help_ties_title">Seri</string>
     <string name="help_ties">Jika dua pemain memiliki jenis tangan yang sama, kartu yang lebih tinggi menang. Dua pasang As dan tujuh mengalahkan dua pasang King dan Queen, dan jika kartu utamanya sama, kartu tertinggi berikutnya yang menentukan. Hanya lima kartu yang dihitung, dan jenis kartu tidak pernah memutus seri: tangan yang setara membagi pot.</string>
 
@@ -55,7 +55,7 @@
     <string name="help_strategy_3">Fold lebih sering daripada yang nyaman bagi Anda. Kebanyakan tangan tidak layak dimainkan, dan tangan yang di-fold hanya merugikan Anda sebesar yang sudah Anda pasang.</string>
     <string name="help_strategy_4">Pahami pot odds. Jika call membutuhkan 25 chip untuk memenangkan pot 75, Anda membayar satu chip untuk tiap tiga yang bisa dimenangkan, jadi call menguntungkan jika Anda menang lebih dari sekali dalam empat kali. Bandingkan dengan peluang Anda mengakhiri dengan tangan terbaik.</string>
     <string name="help_strategy_5">Posisi itu penting. Bertindak terakhir memungkinkan Anda melihat apa yang dilakukan semua orang lebih dulu, dan itu sangat berharga. Mainkan lebih banyak tangan dari kursi belakang dan lebih sedikit dari kursi depan.</string>
-    <string name="help_strategy_6">Perhatikan gaya lawan. Setiap kursi diberi label tight, loose, aggressive, atau passive. Hormati raise dari pemain tight, dan jangan terlalu cepat percaya pada taruhan pemain loose dan aggressive.</string>
-    <string name="help_hint_note">Tentang Hint: menampilkan equity kamu, perkiraan peluang menang pot, di samping pot odds, bagian pot yang dibutuhkan untuk call. Saat equity lebih tinggi dari pot odds, call menguntungkan. Kalimat di atasnya menjelaskan alasan di balik saran. Ini panduan yang baik, bukan kepastian, karena tidak bisa melihat kartu siapa pun.</string>
+    <string name="help_strategy_6">Perhatikan gaya lawan. Setiap kursi diberi label tight, loose, agresif, atau pasif. Hormati raise dari pemain tight, dan jangan terlalu cepat percaya pada taruhan pemain yang loose dan agresif.</string>
+    <string name="help_hint_note">Tentang Petunjuk: menampilkan equity Anda, perkiraan peluang menang pot, di samping pot odds, bagian pot yang dibutuhkan untuk call. Saat equity lebih tinggi dari pot odds, call menguntungkan. Kalimat di atasnya menjelaskan alasan di balik saran. Ini panduan yang baik, bukan kepastian, karena tidak bisa melihat kartu siapa pun.</string>
     <string name="help_strategy_7">Dengan stack pendek, all in atau fold. Saat chip Anda hanya beberapa big blind, taruhan dan call kecil tidak menyisakan ruang gerak, dan all in yang tepat waktu adalah peluang terbaik untuk menggandakan chip.</string>
 </resources>

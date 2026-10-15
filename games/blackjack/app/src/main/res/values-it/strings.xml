@@ -45,7 +45,7 @@
     <string name="help_values_title">Valore delle carte</string>
     <string name="help_values">Le carte numeriche valgono il loro numero. Fante, donna e re valgono 10. L\'asso vale 1 o 11, quello che conviene alla mano. Un asso e una carta da dieci nelle prime due carte è un blackjack e paga 3 a 2.</string>
     <string name="help_round_title">Una mano di gioco</string>
-    <string name="help_round">Fai la tua puntata e premi Distribuisci. Tu e il banco ricevete due carte ciascuno, e una del banco resta coperta. Poi prendi le tue decisioni, una mano alla volta, e quando hai finito gioca il banco. Ogni mano è distribuita da un mazzo appena mescolato e non c\'è annulla.</string>
+    <string name="help_round">Fai la tua puntata e premi Distribuisci. Tu e il banco ricevete due carte ciascuno, e una del banco resta coperta. Poi prendi le tue decisioni, una mano alla volta, e quando hai finito gioca il banco. Ogni mano è distribuita da un mazzo appena mescolato e non si può annullare.</string>
     <string name="help_hit_title">Carta</string>
     <string name="help_hit">Prendi un\'altra carta. Puoi continuare finché la tua mano è sotto 21.</string>
     <string name="help_stand_title">Stai</string>
@@ -73,10 +73,10 @@
     <string name="hint_reason_hit_dealer_strong">Il banco mostra %1$s e spesso fa una buona mano, quindi %2$d vince solo il %5$d%% delle volte se stai: prendi una carta nonostante il rischio del %4$d%% di sballare.</string>
     <string name="hint_reason_hit_cannot_bust">Non puoi sballare con %2$d: prendi una carta per migliorare la tua mano.</string>
     <string name="hint_reason_hit_soft">Un %2$d morbido non può sballare con la carta successiva, quindi chiedere carta non ti costa nulla: migliora la tua mano.</string>
-    <string name="hint_reason_double">Una situazione forte: %2$d contro il %1$s del banco. Raddoppia la puntata, prendi una sola carta e sfruttala al meglio.</string>
+    <string name="hint_reason_double">Una situazione favorevole: hai %2$d e il banco mostra %1$s. Raddoppia la puntata, prendi una sola carta e sfruttala al meglio.</string>
     <string name="hint_reason_split_aces">Due assi sono la coppia migliore da dividere: ognuno può diventare 21, mentre A-A insieme è solo un debole 12 morbido.</string>
     <string name="hint_reason_split_eights">Due otto fanno 16, la mano peggiore: dividili per iniziare due mani migliori.</string>
-    <string name="hint_reason_split_pair">Contro il %1$s del banco, dividere ti dà due buone mani invece di una debole.</string>
+    <string name="hint_reason_split_pair">Se il banco mostra %1$s, dividere ti dà due buone mani invece di una debole.</string>
     <string name="hint_reason_decline_insurance">L\'assicurazione fa perdere fiches nel tempo: la carta coperta è un dieci meno di una volta su tre, che è ciò che servirebbe per andare in pari.</string>
     <string name="hint_figures">Il banco sballa %1$d%% · Una carta ti fa sballare %2$d%%</string>
     <string name="hint_figures_dealer_only">Il banco sballa %1$d%%</string>

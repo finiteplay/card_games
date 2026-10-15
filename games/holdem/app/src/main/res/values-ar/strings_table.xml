@@ -113,7 +113,7 @@
     <string name="end_title_place">أنهيت في المركز %1$s</string>
     <string name="end_title_won">لقد فزت بالبطولة</string>
     <string name="end_body_lost">الأيدي الملعوبة: %1$d\nأكبر بوت: %2$,d</string>
-    <string name="end_body_won">استغرق الأمر %1$d يد.\nأكبر بوت: %2$,d</string>
+    <string name="end_body_won">عدد الأيدي: %1$d.\nأكبر بوت: %2$,d</string>
 
     <string name="card_spoken">%1$s من %2$s</string>
     <string name="a11y_your_cards">أوراقك: %1$s</string>
@@ -121,8 +121,8 @@
     <string name="a11y_board_empty">اللوحة: لا أوراق بعد</string>
     <string name="a11y_pot">البوت %1$,d</string>
     <string name="a11y_pot_pots">البوت %1$,d، عدد البوتات %2$d</string>
-    <string name="a11y_seat">%1$s، %2$s، %3$,d رقاقة</string>
-    <string name="a11y_seat_you">أنت، %1$,d رقاقة</string>
+    <string name="a11y_seat">%1$s، %2$s، الرقائق: %3$,d</string>
+    <string name="a11y_seat_you">أنت، الرقائق: %1$,d</string>
     <string name="a11y_dealer">الموزّع</string>
     <string name="a11y_small_blind">البلايند الصغير</string>
     <string name="a11y_big_blind">البلايند الكبير</string>

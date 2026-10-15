@@ -9,7 +9,7 @@
 
     <!-- Hint reasons: one coach sentence per spot. %1$d / %2$d are numbers: stack in big blinds (push/fold), outs (draws), or win chance % and pot cost % (price). -->
     <string name="hint_reason_premium_raise">يد ممتازة: ارفع لتكبّر البوت وأنت على الأرجح في المقدمة.</string>
-    <string name="hint_reason_late_position_raise">مركز متأخر، فأنت تلعب بعد معظم اللاعبين: الرفع قد يكسبك البلايند الآن.</string>
+    <string name="hint_reason_late_position_raise">موقع متأخر، فأنت تلعب بعد معظم اللاعبين: الرفع قد يكسبك البلايند الآن.</string>
     <string name="hint_reason_playable_raise">يد جيدة لهذا الموقف: الرفع يمنحك زمام المبادرة في الرهان.</string>
     <string name="hint_reason_call_to_see_flop">تستحق رؤية الفلوب بهذا السعر، لكنها ليست قوية بما يكفي للرفع.</string>
     <string name="hint_reason_free_flop">لم يرفع أحد والتمرير مجاني: شاهد الفلوب دون أي تكلفة.</string>
@@ -19,9 +19,9 @@
     <string name="hint_reason_fold_short_stack">تبقّى لديك %1$d بلايند كبير فقط: يدك أضعف من أن تخاطر بكل شيء من أجلها.</string>
     <string name="hint_reason_value_bet">على الأرجح أنت في المقدمة: راهن ليدفع أصحاب الأيدي الأضعف ثمن رؤية المزيد من الأوراق.</string>
     <string name="hint_reason_value_raise">يد قوية في مواجهة رهان: ارفع لتضع المزيد من الرقائق وأنت في المقدمة.</string>
-    <string name="hint_reason_semi_bluff">سحب قوي (%1$d أوراق مكمّلة): الرهان قد يكسب الآن، وما زال بإمكانك التحسّن.</string>
-    <string name="hint_reason_call_draw">يد سحب (%1$d أوراق مكمّلة): البوت كبير بما يكفي لمطاردة السحب.</string>
-    <string name="hint_reason_call_good_price">المجاراة تستحق: تفوز نحو %1$d%% من المرات والسعر يتطلب %2$d%% فقط.</string>
+    <string name="hint_reason_semi_bluff">سحب قوي (الأوراق المكمّلة: %1$d): الرهان قد يكسب الآن، وما زال بإمكانك التحسّن.</string>
+    <string name="hint_reason_call_draw">يد سحب (الأوراق المكمّلة: %1$d): البوت كبير بما يكفي لمطاردة السحب.</string>
+    <string name="hint_reason_call_good_price">المجاراة مجدية: تفوز نحو %1$d%% من المرات والسعر يتطلب %2$d%% فقط.</string>
     <string name="hint_reason_fold_bad_price">لا يكفي للمجاراة: السعر يتطلب %2$d%% وأنت لديك نحو %1$d%%.</string>
     <string name="hint_reason_free_card">التمرير مجاني ويدك ضعيفة: خذ الورقة التالية دون تكلفة.</string>
     <string name="hint_reason_pot_control">يد متوسطة: مرّر لإبقاء البوت صغيرًا وشاهد الورقة التالية.</string>

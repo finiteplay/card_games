@@ -45,7 +45,7 @@
     <string name="help_values_title">Kortvärden</string>
     <string name="help_values">Sifferkort räknas som sitt tal. Knekt, dam och kung räknas som 10. Ett ess räknas som 1 eller 11, det som passar handen bäst. Ett ess och ett kort värt tio på de två första korten är blackjack och betalar 3 mot 2.</string>
     <string name="help_round_title">En runda</string>
-    <string name="help_round">Lägg din insats och tryck på Dela ut. Du och givaren får två kort var, och ett av givarens ligger med framsidan ner. Sedan fattar du dina beslut, en hand i taget, och när du är klar spelar givaren. Varje runda delas ut från en nyblandad kortlek och det finns ingen ångra.</string>
+    <string name="help_round">Lägg din insats och tryck på Dela ut. Du och givaren får två kort var, och ett av givarens ligger med framsidan ner. Sedan fattar du dina beslut, en hand i taget, och när du är klar spelar givaren. Varje runda delas ut från en nyblandad kortlek och det går inte att ångra.</string>
     <string name="help_hit_title">Ta kort</string>
     <string name="help_hit">Ta ett kort till. Du kan fortsätta så länge din hand är under 21.</string>
     <string name="help_stand_title">Stanna</string>
@@ -57,7 +57,7 @@
     <string name="help_insurance_title">Försäkring</string>
     <string name="help_insurance">När givaren visar ett ess kan du försäkra för halva insatsen. Den betalar 2 mot 1 om givaren har blackjack, annars förloras den.</string>
     <string name="help_dealer_title">Givaren</string>
-    <string name="help_dealer">Givaren gör inga val: de tar kort tills de har 17 eller mer, och stannar på alla 17, även mjuk 17 där esset räknas som 11.</string>
+    <string name="help_dealer">Givaren gör inga val: hen tar kort tills hen har 17 eller mer, och stannar på alla 17, även mjuk 17 där esset räknas som 11.</string>
     <string name="help_strategy_intro">En enkel plan som ger dig bra odds. Tipsknappen följer samma strategi i detalj.</string>
     <string name="help_strategy_1">Ta alltid kort på 8 eller mindre och stanna alltid på hård 17 eller mer.</string>
     <string name="help_strategy_2">Med 12 till 16, stanna om givaren visar 2 till 6, eftersom givaren troligen går över. Ta kort om givaren visar 7 eller mer.</string>
@@ -75,29 +75,29 @@
     <string name="hint_reason_hit_cannot_bust">Du kan inte gå över med %2$d: ta kort för att förbättra din hand.</string>
     <string name="hint_reason_hit_soft">En mjuk %2$d kan inte gå över på nästa kort, så att ta kort kostar inget: förbättra din hand.</string>
     <string name="hint_reason_double">Ett starkt läge: %2$d mot givarens %1$s. Dubbla din insats, ta ett kort och gör det bästa av det.</string>
-    <string name="hint_reason_split_aces">Två ess är det bästa paret att dela: varje kan bli 21, medan A-A tillsammans bara är en svag mjuk 12.</string>
+    <string name="hint_reason_split_aces">Två ess är det bästa paret att dela: vart och ett kan bli 21, medan A-A tillsammans bara är en svag mjuk 12.</string>
     <string name="hint_reason_split_eights">Två åttor blir 16, den sämsta handen: dela dem för att starta två bättre händer.</string>
     <string name="hint_reason_split_pair">Mot givarens %1$s ger en delning dig två bra händer i stället för en svag.</string>
     <string name="hint_reason_decline_insurance">Försäkring förlorar marker över tid: givarens dolda kort är en tia mindre än en gång av tre, vilket krävs för att gå jämnt upp.</string>
     <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
-    <string name="hint_figures">Givaren går över %1$d%% · Att ta kort gör att du går över %2$d%%</string>
+    <string name="hint_figures">Givaren går över %1$d%% · Du går över på nytt kort %2$d%%</string>
     <string name="hint_figures_dealer_only">Givaren går över %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
-    <string name="review_title">Tillbakablick på Hint</string>
-    <string name="review_followed_won">Du följde Hint och vann.</string>
-    <string name="review_followed_lost">Du följde Hint och förlorade, det händer: givarens kort avgör rundan. Bedöm beslutet, inte resultatet.</string>
-    <string name="review_followed_push">Du följde Hint och det blev oavgjort: du behöll dina marker.</string>
+    <string name="review_title">Tillbakablick på tipset</string>
+    <string name="review_followed_won">Du följde tipset och vann.</string>
+    <string name="review_followed_lost">Du följde tipset och förlorade, det händer: givarens kort avgör rundan. Bedöm beslutet, inte resultatet.</string>
+    <string name="review_followed_push">Du följde tipset och det blev oavgjort: du behöll dina marker.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Du vann, men Hint föreslog: %1$s. Dess skäl: %2$s Att vinna mot oddsen är tur, inte en plan.</string>
-    <string name="review_ignored_lost">Hint föreslog: %1$s, men du valde annorlunda och förlorade. Dess skäl: %2$s</string>
-    <string name="review_ignored_push">Hint föreslog: %1$s och du valde annorlunda. Dess skäl: %2$s</string>
+    <string name="review_ignored_won">Du vann, men tipset föreslog: %1$s. Dess skäl: %2$s Att vinna mot oddsen är tur, inte en plan.</string>
+    <string name="review_ignored_lost">Tipset föreslog: %1$s, men du valde annorlunda och förlorade. Dess skäl: %2$s</string>
+    <string name="review_ignored_push">Tipset föreslog: %1$s, och du valde annorlunda. Dess skäl: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
     <string name="review_dealer_finished">Givaren slutade på %1$d.</string>
     <string name="review_dealer_busted">Givaren gick över.</string>
     <string name="review_dealer_blackjack">Givaren hade blackjack.</string>
     <string name="review_you_busted">Du gick över med %1$d.</string>
     <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
-    <string name="review_would_have_drawn">Om du hade tagit kort hade du fått %1$s, vilket gör %2$d.</string>
+    <string name="review_would_have_drawn">Om du hade tagit kort hade du fått %1$s, vilket hade gett %2$d.</string>
     <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
-    <string name="review_stand_chances">När du bestämde dig vann Stanna på %1$d i ungefär %2$d%% av gångerna, blev oavgjort i %3$d%% och förlorade i %4$d%%.</string>
+    <string name="review_stand_chances">När du bestämde dig vann att stanna på %1$d i ungefär %2$d%% av gångerna, blev oavgjort i %3$d%% och förlorade i %4$d%%.</string>
 </resources>

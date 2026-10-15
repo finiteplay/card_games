@@ -20,7 +20,7 @@
     <string name="place_4">4e</string>
     <string name="place_5">5e</string>
     <string name="place_6">6e</string>
-    <string name="cd_finish_bar">Place %1$s : %2$d</string>
+    <string name="cd_finish_bar">%1$s place : %2$d</string>
     <string name="cd_example_hand">%1$s, par exemple %2$s</string>
     <string name="cd_example_card">%1$s de %2$s</string>
 </resources>

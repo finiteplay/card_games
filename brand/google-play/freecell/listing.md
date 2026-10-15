@@ -2,23 +2,30 @@
 
 ## Main store listing (en-US)
 
-**Title (22/30):** FreeCell by FinitePlay
+**Title:** FreeCell Solitaire: FinitePlay
 
-**Short description (63/80):** Every hand proven solvable, with offline play and winning hints
+**Short description:** Plan each move with solvable deals, offline hints, undo and replay
 
 **Full description:**
 
-Quality card games should not need a catch. FreeCell by FinitePlay is completely free. There are
-no ads, in-app purchases, subscriptions, user tracking, or account. The full game works offline
-and never needs an internet connection. Your progress and statistics stay on your device.
+Plan your moves in classic FreeCell Solitaire, with every card visible, four free cells,
+and advanced hints when you want guidance.
+
+The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions.
+Play stays completely on your device: no accounts, tracking, data collection or sharing,
+leaderboards, or online features. Your progress and statistics stay private and local.
 
 Every included hand is provably solvable. Each was validated offline with a winning path before
 it entered the game. Hint searches the board you are actually playing and guides you through a
 winning plan one move at a time. If it cannot prove a path within its search limit, it says so
 plainly instead of pretending.
 
-This is full-featured FreeCell, free without compromise. Free cells and empty columns make
-multi-card supermoves possible, and the game works out the legal capacity for you.
+Free cells and empty columns make multi-card supermoves possible, and the game works out
+the legal capacity for you. A solvable starting deal can still be played into a dead end.
+
+Play at your own pace. Configurable rest reminders invite you to pause after extended play.
+There are no urgency bonuses or timed daily rewards. Local scores and statistics help you
+reflect on your play, without competitive leaderboards or pressure to keep going.
 
 Features:
 • 2,000 certified-solvable hands
@@ -36,6 +43,7 @@ FinitePlay makes quality games that respect your time, privacy, and attention.
 
 - App or game: Game
 - Category: Card
+- Developer contact email: contact@finiteplay.org
 - Suggested tags: Solitaire, Card, Offline, Single player
 - Developer contact website: https://finiteplay.org
 - Privacy policy: https://finiteplay.org/privacy

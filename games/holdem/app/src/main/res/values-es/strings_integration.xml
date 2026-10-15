@@ -15,7 +15,7 @@
     <string name="hint_reason_fold_weak">Una mano débil: retirarse no cuesta nada y guarda fichas para mejores momentos.</string>
     <string name="hint_reason_fold_to_raise">Alguien ha subido y tu mano no es lo bastante fuerte para pagarlo: retirarse sale más barato.</string>
     <!-- %1$d = tu stack en ciegas grandes -->
-    <string name="hint_reason_push_short_stack">Solo te quedan %1$d ciegas grandes: lo mejor es all in o retirarse, y esta mano es lo bastante fuerte para ir all in.</string>
+    <string name="hint_reason_push_short_stack">Solo te quedan %1$d ciegas grandes: lo mejor es ir all in o retirarse, y esta mano es lo bastante fuerte para ir all in.</string>
     <string name="hint_reason_fold_short_stack">Solo te quedan %1$d ciegas grandes: esta mano es demasiado débil para arriesgarlo todo.</string>
     <string name="hint_reason_value_bet">Probablemente vas por delante: apuesta para que las manos más débiles paguen por ver más cartas.</string>
     <string name="hint_reason_value_raise">Mano fuerte ante una apuesta: sube para meter más fichas mientras vas por delante.</string>
@@ -36,9 +36,9 @@
     <string name="review_followed_won">Seguiste la pista y ganaste: tenías cerca de un %1$d%% de ganar.</string>
     <string name="review_followed_lost">Seguiste la pista y perdiste, algo que pasa: con cerca de un %1$d%% pierdes el %2$d%% de las veces. Juzga la decisión, no el resultado.</string>
     <string name="review_followed_fold">Te retiraste como aconsejaba la pista y guardaste tus fichas para un mejor momento.</string>
-    <string name="review_ignored_won">Ganaste, pero la pista sugería %1$s. Su motivo: %2$s Ganar contra el consejo es suerte, no un plan.</string>
-    <string name="review_ignored_lost">La pista sugería %1$s, pero elegiste otra cosa y perdiste. Su motivo: %2$s</string>
-    <string name="review_ignored_fold">Te retiraste, pero la pista sugería %1$s. Su motivo: %2$s</string>
+    <string name="review_ignored_won">Ganaste, pero la pista sugería: %1$s. Su motivo: %2$s Ganar contra el consejo es suerte, no un plan.</string>
+    <string name="review_ignored_lost">La pista sugería: %1$s, pero elegiste otra cosa y perdiste. Su motivo: %2$s</string>
+    <string name="review_ignored_fold">Te retiraste, pero la pista sugería: %1$s. Su motivo: %2$s</string>
     <string name="review_beaten_by">Perdiste contra %1$s. La pista lo había estimado en cerca de un %2$d%%.</string>
 
     <!-- With hindsight. %1$d = your chance to win when you decided, in percent. -->

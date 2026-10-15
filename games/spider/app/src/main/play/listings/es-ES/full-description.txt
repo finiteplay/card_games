@@ -1,0 +1,17 @@
+Forma secuencias completas del rey al as en el solitario Spider. Elige uno, dos o cuatro palos para distintos niveles de desafío y usa pistas avanzadas cuando quieras orientación.
+
+La promesa de FinitePlay: totalmente gratis, sin anuncios, compras dentro de la aplicación ni suscripciones. Todo el juego funciona en tu dispositivo: sin cuentas, rastreo, recopilación o intercambio de datos, clasificaciones ni funciones en línea. Tu progreso y tus estadísticas son privados y locales.
+
+Todos los repartos incluidos comienzan con una solución verificada, con uno, dos o cuatro palos. Las pistas guiadas pueden mostrarte una solución paso a paso. Si tomas otro camino, buscar una nueva solución está sujeto a límites: no todas las posiciones posteriores son resolubles.
+
+Funciones:
+• Partidas de uno, dos o cuatro palos
+• Toca cartas o arrastra secuencias del mismo palo
+• Deshaz movimientos y repite repartos
+• Resaltado de movimientos legales y pistas opcionales
+• Temas claros y oscuros, controles de sonido y animación
+• Estadísticas locales
+
+Juega a tu ritmo. Los recordatorios de descanso configurables te invitan a hacer una pausa tras jugar durante un tiempo prolongado. No hay bonos urgentes ni recompensas diarias con límite de tiempo. Las estadísticas locales te ayudan a reflexionar sobre tu juego, sin presión competitiva para seguir jugando.
+
+FinitePlay crea juegos de cartas que respetan tu tiempo, tu privacidad y tu atención.

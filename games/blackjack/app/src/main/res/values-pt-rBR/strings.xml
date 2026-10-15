@@ -45,13 +45,13 @@
     <string name="help_values_title">Valor das cartas</string>
     <string name="help_values">Cartas numéricas valem seu número. Valete, Dama e Rei valem 10. O Ás vale 1 ou 11, o que for melhor para a mão. Um Ás e uma carta de valor dez nas duas primeiras cartas é blackjack e paga 3 para 2.</string>
     <string name="help_round_title">Uma rodada</string>
-    <string name="help_round">Faça sua aposta e toque em Distribuir. Você e o dealer recebem duas cartas cada, e uma do dealer fica virada para baixo. Depois você toma suas decisões, uma mão por vez, e quando terminar o dealer joga. Cada rodada é distribuída de um baralho recém-embaralhado e não há desfazer.</string>
+    <string name="help_round">Faça sua aposta e toque em Distribuir. Você e o dealer recebem duas cartas cada, e uma do dealer fica virada para baixo. Depois você toma suas decisões, uma mão por vez, e quando terminar o dealer joga. Cada rodada é distribuída de um baralho recém-embaralhado e não é possível desfazer.</string>
     <string name="help_hit_title">Pedir</string>
     <string name="help_hit">Pegue mais uma carta. Você pode continuar pedindo enquanto sua mão estiver abaixo de 21.</string>
     <string name="help_stand_title">Parar</string>
     <string name="help_stand">Mantenha sua mão como está e encerre sua vez.</string>
     <string name="help_double_title">Dobrar</string>
-    <string name="help_double">Nas duas primeiras cartas, dobre sua aposta e pegue exatamente mais uma carta. Sua vez então termina. Use quando a mão é forte, mas ainda não está pronta.</string>
+    <string name="help_double">Nas duas primeiras cartas, dobre sua aposta e pegue exatamente mais uma carta. Sua vez então termina. Use quando a mão estiver forte, mas ainda não estiver pronta.</string>
     <string name="help_split_title">Dividir</string>
     <string name="help_split">Quando as duas primeiras cartas têm o mesmo valor, divida-as em duas mãos, cada uma com a aposta original. Você pode ter até quatro mãos no total. Ases divididos recebem uma carta cada e não podem pedir mais.</string>
     <string name="help_insurance_title">Seguro</string>
@@ -73,7 +73,7 @@
     <string name="hint_reason_hit_dealer_strong">O dealer mostra %1$s e muitas vezes faz uma boa mão, então %2$d ganha só %5$d%% das vezes se você parar: peça carta apesar do risco de %4$d%% de estourar.</string>
     <string name="hint_reason_hit_cannot_bust">Você não pode estourar com %2$d: peça uma carta para melhorar sua mão.</string>
     <string name="hint_reason_hit_soft">Um %2$d mole não estoura com a próxima carta, então pedir não custa nada: melhore sua mão.</string>
-    <string name="hint_reason_double">Uma boa situação: %2$d contra o %1$s do dealer. Dobre sua aposta, pegue uma carta e aproveite.</string>
+    <string name="hint_reason_double">Uma boa situação: você tem %2$d e o dealer mostra %1$s. Dobre sua aposta, pegue uma carta e aproveite.</string>
     <string name="hint_reason_split_aces">Dois Ases são o melhor par para dividir: cada um pode virar 21, enquanto A-A juntos é só um 12 mole fraco.</string>
     <string name="hint_reason_split_eights">Dois oitos somam 16, a pior mão: divida-os para começar duas mãos melhores.</string>
     <string name="hint_reason_split_pair">Contra o %1$s do dealer, dividir dá duas boas mãos em vez de uma fraca.</string>

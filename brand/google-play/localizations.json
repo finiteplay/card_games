@@ -1,0 +1,76 @@
+{
+  "es-ES": {
+    "promise": "La promesa de FinitePlay: totalmente gratis, sin anuncios, compras dentro de la aplicación ni suscripciones. Todo el juego funciona en tu dispositivo: sin cuentas, rastreo, recopilación o intercambio de datos, clasificaciones ni funciones en línea. Tu progreso y tus estadísticas son privados y locales.",
+    "rest": "Juega a tu ritmo. Los recordatorios de descanso configurables te invitan a hacer una pausa tras jugar durante un tiempo prolongado. No hay bonos urgentes ni recompensas diarias con límite de tiempo. Las estadísticas locales te ayudan a reflexionar sobre tu juego, sin presión competitiva para seguir jugando.",
+    "footer": "FinitePlay crea juegos de cartas que respetan tu tiempo, tu privacidad y tu atención.",
+    "games": {
+      "klondike": {
+        "title": "Solitario Klondike: FinitePlay",
+        "shortDescription": "Solitario sin conexión con repartos resolubles, robo de 1 o 3 y pistas",
+        "intro": "Disfruta del solitario Klondike clásico sin conexión. Elige robar una o tres cartas, selecciona la dificultad y pide una pista cuando necesites ayuda.",
+        "body": "Los repartos de Trivial a Experto comienzan con una solución verificada. El nivel Insano es una excepción: sus repartos no están certificados. Un reparto resoluble puede acabar en un callejón sin salida según tus decisiones.\n\nLas pistas avanzadas buscan una ruta hasta la solución desde el tablero actual. Si la búsqueda no puede demostrarla dentro de su límite, lo indica sin garantizar una jugada ganadora.\n\nFunciones:\n• Robo de una o tres cartas y seis niveles de dificultad\n• Controles de tocar o arrastrar, deshacer y repetir reparto\n• Pistas basadas en el tablero actual\n• Finalización automática y movimientos opcionales a las bases\n• Temas claros y oscuros, controles de sonido y animación\n• Estadísticas locales"
+      },
+      "spider": {
+        "title": "Solitario Spider: FinitePlay",
+        "shortDescription": "Juega con 1, 2 o 4 palos sin conexión, repartos resolubles y pistas opcionales",
+        "intro": "Forma secuencias completas del rey al as en el solitario Spider. Elige uno, dos o cuatro palos para distintos niveles de desafío y usa pistas avanzadas cuando quieras orientación.",
+        "body": "Todos los repartos incluidos comienzan con una solución verificada, con uno, dos o cuatro palos. Las pistas guiadas pueden mostrarte una solución paso a paso. Si tomas otro camino, buscar una nueva solución está sujeto a límites: no todas las posiciones posteriores son resolubles.\n\nFunciones:\n• Partidas de uno, dos o cuatro palos\n• Toca cartas o arrastra secuencias del mismo palo\n• Deshaz movimientos y repite repartos\n• Resaltado de movimientos legales y pistas opcionales\n• Temas claros y oscuros, controles de sonido y animación\n• Estadísticas locales"
+      },
+      "freecell": {
+        "title": "Solitario FreeCell: FinitePlay",
+        "shortDescription": "Planifica tus jugadas con repartos resolubles, pistas sin conexión y deshacer",
+        "intro": "Planifica tus movimientos en el solitario FreeCell clásico, con todas las cartas visibles, cuatro celdas libres y pistas avanzadas cuando quieras orientación.",
+        "body": "Cada reparto incluido comienza con una solución verificada. Usa las celdas libres y las columnas vacías para mover secuencias y llegar a las bases. Deshaz movimientos o repite el reparto para probar otro enfoque.\n\nLas pistas buscan una ruta hasta la solución desde tu tablero actual. Un reparto inicial resoluble puede acabar en una posición sin salida. Si la búsqueda no puede demostrar una solución dentro de su límite, lo indica.\n\nFunciones:\n• Repartos iniciales resolubles\n• Controles de tocar o arrastrar y movimientos legales de varias cartas\n• Deshacer, repetir reparto y finalización automática\n• Pistas opcionales y movimientos automáticos a las bases\n• Temas claros y oscuros, controles de sonido y animación\n• Estadísticas locales"
+      },
+      "blackjack": {
+        "title": "Blackjack 21: FinitePlay",
+        "shortDescription": "Blackjack sin conexión con fichas virtuales y pistas que explican tus opciones",
+        "intro": "Juega al blackjack sin conexión contra un crupier controlado por el ordenador, con fichas virtuales y explicaciones para principiantes. Nunca se usa dinero real: las fichas no tienen valor monetario. No hay apuestas con dinero real, depósitos, compra de fichas, retiradas ni premios.",
+        "body": "Las pistas opcionales de estrategia básica explican por qué pedir carta, plantarse, doblar o dividir. Aprende a partir de la carta visible del crupier, tu mano y el riesgo de pasarte. Las pistas ayudan a comprender decisiones; no garantizan ganar.\n\nFunciones:\n• Pedir carta, plantarse, doblar y dividir\n• Seguro, comprobación de blackjack del crupier y pago de blackjack de 3:2\n• Pistas con explicaciones y probabilidades de pasarse\n• Saldo de fichas virtuales y estadísticas locales\n\nSolo juegas contra el crupier del ordenador: no hay partidas contra personas reales. Diseñado para mayores de 18 años."
+      },
+      "holdem": {
+        "title": "Texas Holdem Poker: FinitePlay",
+        "shortDescription": "Torneos de Texas Hold'em sin conexión con fichas virtuales y cinco rivales",
+        "intro": "Juega un torneo de póquer Texas Hold'em de seis plazas sin conexión contra cinco rivales controlados por el ordenador. Las fichas son virtuales y las pistas explican tus opciones. Nunca se usa dinero real: no hay apuestas con dinero real, depósitos, compra de fichas, retiradas ni premios; las fichas no tienen valor monetario.",
+        "body": "Todos empiezan con la misma cantidad de fichas. A medida que suben las ciegas, decide cuándo retirarte, igualar, subir o ir con todo. Guarda el torneo y vuelve más tarde.\n\nLas pistas explican la idea de la acción sugerida y ayudan a entender la fuerza de la mano, la posición, la equidad estimada y las probabilidades del bote. No ven las cartas ocultas de tus rivales ni garantizan ganar.\n\nFunciones:\n• Texas Hold'em sin límite contra cinco estilos de juego del ordenador\n• Controles de apuesta, botes secundarios e ir con todo\n• Pistas con explicaciones, equidad y probabilidades del bote\n• Torneos guardados, estadísticas y ayuda con reglas y manos\n• Orientación vertical y horizontal\n\nNo hay partidas contra personas reales. Diseñado para mayores de 18 años."
+      }
+    }
+  },
+  "de-DE": {
+    "promise": "Das FinitePlay-Versprechen: vollständig kostenlos, ohne Werbung, In-App-Käufe oder Abonnements. Das gesamte Spiel läuft auf deinem Gerät: ohne Konten, Tracking, Datenerhebung oder Datenweitergabe, Ranglisten oder Online-Funktionen. Dein Fortschritt und deine Statistiken bleiben privat und lokal.",
+    "rest": "Spiele in deinem eigenen Tempo. Einstellbare Pausenerinnerungen laden dich nach längerer Spielzeit zu einer Pause ein. Es gibt keine zeitlich dringenden Boni und keine befristeten täglichen Belohnungen. Lokale Statistiken helfen dir, dein Spiel zu überdenken, ohne Wettbewerbsdruck zum Weiterspielen.",
+    "footer": "FinitePlay entwickelt Kartenspiele, die deine Zeit, deine Privatsphäre und deine Aufmerksamkeit respektieren.",
+    "games": {
+      "klondike": {
+        "title": "Klondike Solitär: FinitePlay",
+        "shortDescription": "Klassisches Solitär offline mit lösbaren Spielen, 1 oder 3 Karten und Tipps",
+        "intro": "Spiele klassisches Klondike-Solitär offline. Ziehe eine oder drei Karten, wähle einen Schwierigkeitsgrad und nutze fortgeschrittene Tipps, wenn du Hilfe möchtest.",
+        "body": "Die Spiele von Trivial bis Experte beginnen mit einer überprüften Lösung. Der separate Insane-Modus ist eine Ausnahme: Seine Spiele sind nicht zertifiziert. Ein lösbarer Anfang kann durch deine Entscheidungen in eine Sackgasse führen.\n\nDie Tipps suchen vom aktuellen Spielfeld aus nach einem Weg zur Lösung. Kann die Suche innerhalb ihres Limits keinen solchen Weg nachweisen, meldet sie das, statt einen Gewinn zu garantieren.\n\nFunktionen:\n• Eine oder drei Karten ziehen und sechs Schwierigkeitsgrade\n• Tippen oder Ziehen, Rückgängig und Spiel wiederholen\n• Tipps für das aktuelle Spielfeld\n• Automatischer Abschluss und optionale automatische Ablage\n• Helle und dunkle Designs sowie Ton- und Animationsoptionen\n• Lokale Statistiken"
+      },
+      "spider": {
+        "title": "Spider Solitär: FinitePlay",
+        "shortDescription": "Spiele offline mit 1, 2 oder 4 Farben, lösbaren Spielen und optionalen Tipps",
+        "intro": "Bilde in Spider-Solitär vollständige Folgen vom König bis zum Ass. Wähle eine, zwei oder vier Farben für unterschiedliche Herausforderungen und nutze fortgeschrittene Tipps, wenn du Hilfe möchtest.",
+        "body": "Jedes enthaltene Spiel beginnt mit einer überprüften Lösung, bei einer, zwei und vier Farben. Geführte Tipps können dich Schritt für Schritt durch eine Lösung begleiten. Nach eigenen Abweichungen ist die Suche nach einem neuen Weg begrenzt: Nicht jede spätere Stellung bleibt lösbar.\n\nFunktionen:\n• Spiele mit einer, zwei oder vier Farben\n• Karten antippen oder gleichfarbige Folgen ziehen\n• Züge rückgängig machen und Spiele wiederholen\n• Markierung legaler Züge und optionale Tipps\n• Helle und dunkle Designs sowie Ton- und Animationsoptionen\n• Lokale Statistiken"
+      },
+      "freecell": {
+        "title": "FreeCell Solitär: FinitePlay",
+        "shortDescription": "Plane deine Züge mit lösbaren Spielen, Offline-Tipps und Rückgängig",
+        "intro": "Plane deine Züge in klassischem FreeCell-Solitär: Alle Karten sind sichtbar, vier freie Zellen schaffen Platz, und fortgeschrittene Tipps helfen bei Bedarf.",
+        "body": "Jedes enthaltene Spiel beginnt mit einer überprüften Lösung. Nutze freie Zellen und leere Spalten, um Folgen zu verschieben und die Karten abzulegen. Mache Züge rückgängig oder wiederhole ein Spiel, um einen anderen Weg zu versuchen.\n\nTipps suchen vom aktuellen Spielfeld aus nach einer Lösung. Ein lösbarer Anfang kann trotzdem in eine Sackgasse führen. Kann die Suche innerhalb ihres Limits keinen Weg nachweisen, meldet sie das.\n\nFunktionen:\n• Lösbare Ausgangsspiele\n• Tippen oder Ziehen und legale Züge mit mehreren Karten\n• Rückgängig, Wiederholen und automatischer Abschluss\n• Optionale Tipps und automatische Ablage\n• Helle und dunkle Designs sowie Ton- und Animationsoptionen\n• Lokale Statistiken"
+      },
+      "blackjack": {
+        "title": "Blackjack 21: FinitePlay",
+        "shortDescription": "Blackjack offline mit virtuellen Chips und Tipps, die Entscheidungen erklären",
+        "intro": "Spiele Blackjack offline gegen einen Computer-Dealer, mit virtuellen Chips und verständlichen Erklärungen für Einsteiger. Niemals echtes Geld: Chips haben keinen Geldwert. Es gibt keine Echtgeld-Einsätze, Einzahlungen, Chipkäufe, Auszahlungen oder Preise.",
+        "body": "Optionale Tipps zur Basisstrategie erklären, warum du ziehen, halten, verdoppeln oder teilen solltest. Lerne anhand der offenen Dealerkarte, deiner Hand und des Risikos, dich zu überkaufen. Tipps helfen beim Verstehen, garantieren aber keinen Gewinn.\n\nFunktionen:\n• Ziehen, Halten, Verdoppeln und Teilen\n• Versicherung, Dealer-Prüfung auf Blackjack und Blackjack-Auszahlung von 3:2\n• Tipps mit Erklärungen und Überkaufwahrscheinlichkeiten\n• Virtuelles Chipguthaben und lokale Statistiken\n\nDu spielst nur gegen den Computer-Dealer, nicht gegen echte Menschen. Für Erwachsene ab 18 Jahren."
+      },
+      "holdem": {
+        "title": "Texas Holdem Poker: FinitePlay",
+        "shortDescription": "Texas-Hold'em-Turniere offline mit virtuellen Chips und fünf Computergegnern",
+        "intro": "Spiele ein Texas-Hold'em-Pokerturnier mit sechs Plätzen offline gegen fünf Computergegner. Nutze virtuelle Chips und Tipps, die Entscheidungen erklären. Niemals echtes Geld: Chips haben keinen Geldwert. Es gibt keine Echtgeld-Einsätze, Einzahlungen, Chipkäufe, Auszahlungen oder Preise.",
+        "body": "Alle beginnen mit demselben Chipstapel. Während die Blinds steigen, entscheidest du, wann du aussteigst, mitgehst, erhöhst oder all-in gehst. Speichere das Turnier und setze es später fort.\n\nTipps erklären die Idee hinter der vorgeschlagenen Aktion und helfen beim Verständnis von Handstärke, Position, geschätzter Equity und Pot Odds. Sie sehen keine verdeckten Gegnerkarten und garantieren keinen Gewinn.\n\nFunktionen:\n• No-Limit Texas Hold'em gegen fünf Computer-Spielstile\n• Einsatzsteuerung, Nebenpots und All-in\n• Erklärende Tipps mit Equity und Pot Odds\n• Gespeicherte Turniere, Statistiken und Hilfe zu Regeln und Händen\n• Hoch- und Querformat\n\nKeine Partien gegen echte Menschen. Für Erwachsene ab 18 Jahren."
+      }
+    }
+  }
+}

@@ -31,8 +31,8 @@
     <string name="banner_side_pot">Sidepot · %1$,d</string>
     <string name="seat_award">+%1$,d</string>
 
-    <string name="you">Dig</string>
-    <string name="your_line">Dig · %1$,d</string>
+    <string name="you">Du</string>
+    <string name="your_line">Du · %1$,d</string>
     <string name="seat_out">Ude · %1$s</string>
     <string name="seat_all_in">All in</string>
     <string name="seat_action_bet">Bet %1$,d</string>
@@ -118,7 +118,7 @@
     <string name="a11y_pot">Pot %1$,d</string>
     <string name="a11y_pot_pots">Pot %1$,d, %2$d potter</string>
     <string name="a11y_seat">%1$s, %2$s, %3$,d jetoner</string>
-    <string name="a11y_seat_you">Dig, %1$,d jetoner</string>
+    <string name="a11y_seat_you">Du, %1$,d jetoner</string>
     <string name="a11y_dealer">dealer</string>
     <string name="a11y_small_blind">small blind</string>
     <string name="a11y_big_blind">big blind</string>

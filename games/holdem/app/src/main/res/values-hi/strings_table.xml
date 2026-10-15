@@ -12,7 +12,7 @@
     <string name="action_call">कॉल&#10;%1$,d</string>
     <string name="action_call_all_in">कॉल&#10;ऑल इन</string>
     <string name="action_bet">बेट&#10;%1$,d</string>
-    <string name="action_raise">रेज़ तक&#10;%1$,d</string>
+    <string name="action_raise">रेज़&#10;%1$,d तक</string>
     <string name="action_all_in">ऑल इन&#10;%1$,d</string>
     <string name="action_next_hand">अगला हाथ</string>
     <string name="action_new_tournament">नया टूर्नामेंट</string>
@@ -103,10 +103,10 @@
     <string name="mark_lose">हार</string>
 
     <string name="leave_title">यह टूर्नामेंट छोड़ें?</string>
-    <string name="leave_body">आप %1$s स्थान पर रहेंगे, जैसे अभी बाहर हुए हों।</string>
+    <string name="leave_body">आपका स्थान %1$s रहेगा, जैसे आप अभी बाहर हुए हों।</string>
     <string name="leave_confirm">छोड़ें</string>
     <string name="leave_stay">रुकें</string>
-    <string name="end_title_place">आप %1$s स्थान पर रहे</string>
+    <string name="end_title_place">आपका स्थान: %1$s</string>
     <string name="end_title_won">आपने टूर्नामेंट जीत लिया</string>
     <string name="end_body_lost">खेले गए हाथ: %1$d\nसबसे बड़ा पॉट: %2$,d</string>
     <string name="end_body_won">इसमें %1$d हाथ लगे।\nसबसे बड़ा पॉट: %2$,d</string>
@@ -124,7 +124,7 @@
     <string name="a11y_big_blind">बिग ब्लाइंड</string>
     <string name="a11y_bet">बेट %1$,d</string>
     <string name="a11y_folded">फ़ोल्ड किया</string>
-    <string name="a11y_out">बाहर, %1$s स्थान पर रहे</string>
+    <string name="a11y_out">बाहर, स्थान: %1$s</string>
     <string name="a11y_all_in">ऑल इन</string>
     <string name="a11y_thinking">बारी है</string>
     <string name="ann_fold">%1$s फ़ोल्ड करता है</string>

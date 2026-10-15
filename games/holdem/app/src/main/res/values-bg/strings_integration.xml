@@ -16,12 +16,12 @@
     <string name="hint_reason_fold_weak">Слаба ръка: фолдът не струва нищо и пази чипове за по-добри моменти.</string>
     <string name="hint_reason_fold_to_raise">Някой вдигна, а ръката ти не е достатъчно силна да плати: фолдът е по-евтин.</string>
     <!-- %1$d = your stack in big blinds -->
-    <string name="hint_reason_push_short_stack">Остават само %1$d големи блайнда: най-добре е ол ин или фолд, а тази ръка е достатъчно силна за ол ин.</string>
-    <string name="hint_reason_fold_short_stack">Остават само %1$d големи блайнда: тази ръка е твърде слаба, за да рискуваш всичко.</string>
-    <string name="hint_reason_value_bet">Вероятно си напред: заложи, за да плащат по-слабите ръце, за да видят още карти.</string>
+    <string name="hint_reason_push_short_stack">Имаш само %1$d BB: най-добре е ол ин или фолд, а тази ръка е достатъчно силна за ол ин.</string>
+    <string name="hint_reason_fold_short_stack">Имаш само %1$d BB: тази ръка е твърде слаба, за да рискуваш всичко.</string>
+    <string name="hint_reason_value_bet">Вероятно си напред: заложи, така че по-слабите ръце да плащат, за да видят още карти.</string>
     <string name="hint_reason_value_raise">Силна ръка срещу залог: вдигни, за да вкараш повече чипове, докато си напред.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Силен дроу (%1$d аута): залогът може да спечели веднага, а ти още можеш да подобриш.</string>
+    <string name="hint_reason_semi_bluff">Силен дроу (%1$d аута): залогът може да спечели веднага, а ти още можеш да подобриш ръката си.</string>
     <string name="hint_reason_call_draw">Ръка с дроу (%1$d аута): потът е достатъчно голям, за да гониш дроуто.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Колът се отплаща: печелиш около %1$d%% от случаите, а цената изисква само %2$d%%.</string>

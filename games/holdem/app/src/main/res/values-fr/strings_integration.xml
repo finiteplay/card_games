@@ -15,12 +15,12 @@
     <string name="hint_reason_fold_weak">Une main faible : se coucher ne coûte rien et garde des jetons pour de meilleures occasions.</string>
     <string name="hint_reason_fold_to_raise">Quelqu\'un a relancé et votre main n\'est pas assez forte pour payer : se coucher coûte moins cher.</string>
     <!-- %1$d = votre tapis en grosses blindes -->
-    <string name="hint_reason_push_short_stack">Il ne vous reste que %1$d grosses blindes : tapis ou coucher est le meilleur choix, et cette main est assez forte pour jouer tapis.</string>
+    <string name="hint_reason_push_short_stack">Il ne vous reste que %1$d grosses blindes : jouer tapis ou se coucher est le meilleur choix, et cette main est assez forte pour jouer tapis.</string>
     <string name="hint_reason_fold_short_stack">Il ne vous reste que %1$d grosses blindes : cette main est trop faible pour tout risquer.</string>
     <string name="hint_reason_value_bet">Vous êtes probablement devant : misez pour que les mains plus faibles paient pour voir d\'autres cartes.</string>
     <string name="hint_reason_value_raise">Main forte face à une mise : relancez pour mettre plus de jetons tant que vous êtes devant.</string>
     <!-- %1$d = nombre d'outs (cartes qui complètent votre tirage) -->
-    <string name="hint_reason_semi_bluff">Gros tirage (%1$d outs) : miser peut gagner tout de suite, et vous pouvez encore progresser.</string>
+    <string name="hint_reason_semi_bluff">Gros tirage (%1$d outs) : miser peut gagner tout de suite, et votre main peut encore s\'améliorer.</string>
     <string name="hint_reason_call_draw">Un tirage (%1$d outs) : le pot est assez gros pour courir après le tirage.</string>
     <!-- %1$d = vos chances de gagner en pourcentage, %2$d = la part du pot que coûte le suivi, en pourcentage -->
     <string name="hint_reason_call_good_price">Suivre est rentable : vous gagnez environ %1$d%% du temps et le prix n\'en demande que %2$d%%.</string>

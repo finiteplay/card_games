@@ -19,13 +19,13 @@
     <string name="help_button_title">Knappen og blindene</string>
     <string name="help_button">Dealerknappen, merket D, flytter seg ett sete med klokken hver hånd. De to spillerne etter den må legge inn tvungne innsatser før kortene deles ut: small blind (SB) og big blind (BB). Det starter potten, så det er alltid noe å spille om. Big blind bestemmer den minste innsatsen.</string>
     <string name="help_allin_title">All in og sidepotter</string>
-    <string name="help_allin">En spiller som er all in, kan ikke presses ut, men kan bare vinne like mye av hver spiller som hen har lagt inn selv. Sjetongene utover det går i en sidepott som all in-spilleren ikke kan vinne. Potene vises på bordet, og hver går til den beste hånden blant spillerne som har betalt inn til den.</string>
+    <string name="help_allin">En spiller som er all in, kan ikke presses ut, men kan bare vinne like mye av hver spiller som hen har lagt inn selv. Sjetongene utover det går i en sidepott som all in-spilleren ikke kan vinne. Pottene vises på bordet, og hver går til den beste hånden blant spillerne som har betalt inn til den.</string>
     <string name="help_showdown_title">Showdown</string>
     <string name="help_showdown">Hvis to eller flere spillere er igjen etter siste bettingrunde, snur de kortene sine, og den beste hånden vinner potten. Hvis alle andre folder, vinner den siste spilleren potten uten å vise kortene sine. Like hender deler potten likt.</string>
     <string name="help_tournament_title">Turneringen</string>
     <string name="help_tournament">Blindene går opp hver 10. hånd, så sjetongene blir forholdsmessig færre og det blir dyrt å vente. Ingenting er tidsbegrenset: bruk så lang tid du vil. Du ender på den plassen som tilsvarer antall spillere igjen når du går ut, så 6. er først ut og 1. er seieren.</string>
     <string name="help_leave_title">Forlate</string>
-    <string name="help_leave">Flagget øverst avslutter turneringen tidlig, og du ender der du ville endt om du var slått ut nå. Å lukke appen gjør ikke det: hånden din lagres og venter når du kommer tilbake. Det finnes ingen angre, fordi hver avgjørelse følges av kort du ikke kunne se.</string>
+    <string name="help_leave">Flagget øverst avslutter turneringen tidlig, og du ender der du ville endt om du var slått ut nå. Å lukke appen gjør ikke det: hånden din lagres og venter når du kommer tilbake. Det går ikke an å angre, fordi hver avgjørelse følges av kort du ikke kunne se.</string>
 
     <string name="help_hands_intro">Fra den sterkeste hånden til den svakeste. De fem kortene som vises, er ett eksempel på hver.</string>
     <string name="help_hand_straight_flush_title">Straight flush</string>

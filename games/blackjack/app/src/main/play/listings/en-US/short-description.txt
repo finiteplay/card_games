@@ -1,1 +1,1 @@
-Classic offline blackjack with fair dealing and basic-strategy guidance.
+Play blackjack offline with virtual chips and optional basic-strategy hints

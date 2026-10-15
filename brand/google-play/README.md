@@ -1,8 +1,11 @@
 # Google Play publishing resources
 
 This directory contains the English (United States) main-store-listing package for each
-released FinitePlay solitaire app. PNG files are upload-ready; SVG files are the editable
+FinitePlay game with a local listing package. PNG files are upload-ready; SVG files are the editable
 masters for feature graphics.
+
+Agents creating future listings or working in Play Console must read `AGENTS.md` in this
+directory first. It defines the family copy pattern, verified-claim rules, and publishing checks.
 
 ## Package contents
 
@@ -12,6 +15,22 @@ Each game directory contains:
 - `app-icon.png`: 512 x 512, 32-bit PNG, no baked-in corner mask.
 - `feature-graphic.png`: 1024 x 500, opaque PNG.
 - `screenshots/`: portrait captures of the real app at 1080 x 1920.
+- `screenshot-order.txt`: explicit phone screenshot upload order; gameplay and hints first,
+  settings last. Filenames alone do not determine display order.
+
+`localizations.json` contains the Spanish (Spain) and German listing pilot for all five games.
+These are an initial localization pilot, not a claim that current acquisition data identifies
+these as the highest-demand markets. Keep game limitations in every translation.
+
+`tools/publishing/listings.rb inspect [game ...]` reads current Publisher listings and image
+hashes. `update [game ...]` saves canonical English copy, translations, and screenshot order
+using the existing publishing account. It does not upload bundles or change tracks. Google
+currently requires automatic review submission for these API edits; this is an external write,
+not a local export. Hold'em currently requires the Console because this account gets 403.
+Use `export [game ...]` to mechanically synchronize Gradle Play Publisher text files under
+`games/<game>/app/src/main/play/listings/` from the reviewed Markdown and localization JSON.
+Export does not contact Google or load credentials. These text files are generated outputs;
+edit the canonical Markdown/JSON, then export again.
 
 ## Current Play requirements checked 2026-09-20
 

@@ -73,7 +73,7 @@
     <string name="hint_reason_hit_dealer_strong">Le croupier montre %1$s et fait souvent une bonne main, donc %2$d ne gagne que %5$d%% du temps si vous restez : tirez malgré le risque de %4$d%% de vous brûler.</string>
     <string name="hint_reason_hit_cannot_bust">Vous ne pouvez pas vous brûler avec %2$d : tirez une carte pour améliorer votre main.</string>
     <string name="hint_reason_hit_soft">Un %2$d souple ne peut pas se brûler à la carte suivante, donc tirer ne vous coûte rien : améliorez votre main.</string>
-    <string name="hint_reason_double">Une situation favorable : %2$d contre le %1$s du croupier. Doublez votre mise, prenez une seule carte et profitez-en.</string>
+    <string name="hint_reason_double">Une situation favorable : vous avez %2$d et le croupier montre %1$s. Doublez votre mise, prenez une seule carte et profitez-en.</string>
     <string name="hint_reason_split_aces">Deux as forment la meilleure paire à séparer : chacun peut devenir 21, alors que A-A ensemble ne fait qu\'un faible 12 souple.</string>
     <string name="hint_reason_split_eights">Deux huit font 16, la pire main : séparez-les pour commencer deux meilleures mains.</string>
     <string name="hint_reason_split_pair">Face au %1$s du croupier, séparer vous donne deux bonnes mains au lieu d\'une faible.</string>

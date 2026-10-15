@@ -10,8 +10,8 @@
     <string name="stat_average_finish_value">%1$.1f</string>
 
     <string name="stat_tile_hands_played">Χέρια που παίχτηκαν</string>
-    <string name="stat_tile_hands_won">Χέρια που κερδήθηκαν</string>
-    <string name="stat_tile_showdowns_won">Σόουνταουν που κερδήθηκαν</string>
+    <string name="stat_tile_hands_won">Κερδισμένα χέρια</string>
+    <string name="stat_tile_showdowns_won">Κερδισμένα σόουνταουν</string>
     <string name="stat_showdowns_value">%1$d / %2$d</string>
     <string name="stat_tile_largest_pot">Μεγαλύτερο ποτ</string>
     <string name="stat_tile_vpip">Εθελοντικά στο χέρι πριν το φλοπ</string>

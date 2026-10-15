@@ -60,7 +60,7 @@
     <string name="help_dealer">딜러는 선택하지 않습니다. 17 이상이 될 때까지 카드를 받고, 에이스를 11로 세는 소프트 17을 포함해 모든 17에서 멈춥니다.</string>
     <string name="help_strategy_intro">좋은 승산을 주는 간단한 계획입니다. 힌트 버튼도 같은 전략을 더 자세히 따릅니다.</string>
     <string name="help_strategy_1">합계가 8 이하면 항상 히트하고, 하드 17 이상이면 항상 스탠드하세요.</string>
-    <string name="help_strategy_2">12에서 16일 때는 딜러가 2~6이면 스탠드하세요. 딜러가 버스트할 가능성이 높습니다. 7 이상이면 히트하세요.</string>
+    <string name="help_strategy_2">12에서 16일 때는 딜러가 2~6이면 스탠드하세요. 딜러가 버스트할 가능성이 높기 때문입니다. 7 이상이면 히트하세요.</string>
     <string name="help_strategy_3">11에서는 더블하고, 10에서는 딜러가 9 이하일 때 더블하세요. 더블할 수 없으면 히트하세요.</string>
     <string name="help_strategy_4">에이스와 8은 항상 스플릿하세요. 5와 10은 절대 스플릿하지 말고 10과 20으로 플레이하세요.</string>
     <string name="help_strategy_5">에이스를 11로 세는 소프트 핸드는 소프트 17까지 히트하고 소프트 19 이상에서 스탠드하세요.</string>
@@ -89,9 +89,9 @@
     <string name="review_followed_lost">힌트를 따랐지만 졌습니다. 그럴 수 있습니다. 라운드는 딜러의 카드가 결정합니다. 결과가 아니라 결정을 평가하세요.</string>
     <string name="review_followed_push">힌트를 따라 푸시했습니다. 칩을 지켰습니다.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint's reason, a full sentence -->
-    <string name="review_ignored_won">이겼지만 힌트가 권한 행동은 「%1$s」였습니다. 이유: %2$s 확률을 거스르고 이기는 것은 운이지 계획이 아닙니다.</string>
-    <string name="review_ignored_lost">힌트가 권한 행동은 「%1$s」였지만, 다른 선택을 해서 졌습니다. 이유: %2$s</string>
-    <string name="review_ignored_push">힌트가 권한 행동은 「%1$s」였지만, 다른 선택을 했습니다. 이유: %2$s</string>
+    <string name="review_ignored_won">이겼지만 힌트가 권한 행동(%1$s)과 다르게 선택했습니다. 이유: %2$s 확률을 거스르고 이기는 것은 운이지 계획이 아닙니다.</string>
+    <string name="review_ignored_lost">힌트가 권한 행동(%1$s)과 다르게 선택해서 졌습니다. 이유: %2$s</string>
+    <string name="review_ignored_push">힌트가 권한 행동(%1$s)과 다르게 선택했습니다. 이유: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
     <string name="review_dealer_finished">딜러의 최종 합계: %1$d.</string>
     <string name="review_dealer_busted">딜러가 버스트했습니다.</string>
@@ -101,5 +101,5 @@
     <!-- With hindsight (UI_SPEC.md "Hint Review"). %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
     <string name="review_would_have_drawn">히트했다면 나왔을 카드: %1$s, 합계 %2$d.</string>
     <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
-    <string name="review_stand_chances">결정할 때 %1$d에서 스탠드하면 약 %2$d%% 이기고, %3$d%% 푸시, %4$d%% 졌습니다.</string>
+    <string name="review_stand_chances">결정할 때 %1$d에서 스탠드하면 승리 약 %2$d%%, 푸시 %3$d%%, 패배 %4$d%%였습니다.</string>
 </resources>

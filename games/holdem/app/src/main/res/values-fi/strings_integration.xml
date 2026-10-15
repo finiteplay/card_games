@@ -2,7 +2,7 @@
 <resources>
     <string name="hint_notice">Equity %1$d%% · Pot odds %2$d%%</string>
     <string name="hint_notice_free">Equity %1$d%%</string>
-    <string name="hint_notice_desc">Arvioitu voittotodennäköisyys %1$d prosenttia todennäköisiä käsiä vastaan; maksaminen maksaa %2$d prosenttia potista.</string>
+    <string name="hint_notice_desc">Arvioitu voittotodennäköisyys %1$d prosenttia todennäköisiä käsiä vastaan; maksaminen vaatii %2$d prosenttia potista.</string>
     <string name="hint_notice_free_desc">Arvioitu voittotodennäköisyys %1$d prosenttia todennäköisiä käsiä vastaan.</string>
 
     <string name="recovery_notice">Tallennettua kättäsi ei voitu avata, joten se jaettiin uudelleen alusta. Pelimerkkejä ei menetetty.</string>
@@ -15,8 +15,8 @@
     <string name="hint_reason_fold_weak">Heikko käsi: fold ei maksa mitään ja säästää pelimerkkejä parempiin tilanteisiin.</string>
     <string name="hint_reason_fold_to_raise">Joku korotti, eikä kätesi ole tarpeeksi vahva maksamaan siitä: fold on halvempi.</string>
     <!-- %1$d = your stack in big blinds -->
-    <string name="hint_reason_push_short_stack">Vain %1$d big blindiä jäljellä: all in tai fold on paras, ja tämä käsi on tarpeeksi vahva all iniin.</string>
-    <string name="hint_reason_fold_short_stack">Vain %1$d big blindiä jäljellä: tämä käsi on liian heikko, jotta kaikkea kannattaisi riskeerata.</string>
+    <string name="hint_reason_push_short_stack">Vain %1$d isoa blindiä jäljellä: all in tai fold on paras, ja tämä käsi on tarpeeksi vahva all in -siirtoon.</string>
+    <string name="hint_reason_fold_short_stack">Vain %1$d isoa blindiä jäljellä: tämä käsi on liian heikko, jotta kaikkea kannattaisi riskeerata.</string>
     <string name="hint_reason_value_bet">Johdat todennäköisesti: panosta, jotta heikommat kädet joutuvat maksamaan lisäkorteista.</string>
     <string name="hint_reason_value_raise">Vahva käsi panosta vastaan: korota saadaksesi lisää pelimerkkejä pottiin, kun johdat.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->

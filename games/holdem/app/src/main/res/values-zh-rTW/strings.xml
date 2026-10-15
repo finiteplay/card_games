@@ -47,7 +47,7 @@
     <string name="help_ties_title">平手</string>
     <string name="help_ties">兩名玩家牌型種類相同，則牌大的贏。A 和 7 的兩對勝過 K 和 Q 的兩對；主要的牌相同時，由下一張最大的牌決定。只計五張牌，花色永遠不能分勝負：牌型相同就平分底池。</string>
     <string name="help_strategy_intro">對新手有用的七個想法。它們不會讓你每手都贏，但整場錦標賽下來會積少成多。</string>
-    <string name="help_strategy_1">前面的位置少玩幾手。最先行動的玩家後面還有最多的對手，所以那裡只用強牌開局，座位越靠近莊家按鈕再越放寬。</string>
+    <string name="help_strategy_1">前面的位置少玩幾手。最先行動的玩家後面還有最多的對手，所以那裡只用強牌開局，座位越靠近莊家按鈕就越放寬。</string>
     <string name="help_strategy_2">多加注，少跟注。加注可能當場贏下底池，被跟注時你手裡的牌也往往更強。只跟注只會讓別人便宜地看到後面的牌。</string>
     <string name="help_strategy_3">棄牌要比你覺得舒服的多一些。大多數牌不值得玩，棄牌只會損失你已投入的籌碼。</string>
     <string name="help_strategy_4">了解底池賠率。如果跟注要 25 籌碼來贏 75 的底池，你每付 1 籌碼可以贏 3 籌碼，所以只要你贏的次數超過四分之一，跟注就划算。再拿它和你最終拿到最好牌型的機會比較。</string>

@@ -16,8 +16,8 @@
     <string name="hint_reason_fold_weak">Slabá ruka: zahození nic nestojí a šetří žetony na lepší chvíle.</string>
     <string name="hint_reason_fold_to_raise">Někdo zvýšil a tvá ruka není dost silná, aby to zaplatila: zahodit je levnější.</string>
     <!-- %1$d = your stack in big blinds -->
-    <string name="hint_reason_push_short_stack">Zbývá jen %1$d velkých blindů: nejlepší je all in nebo zahodit a tahle ruka je na all in dost silná.</string>
-    <string name="hint_reason_fold_short_stack">Zbývá jen %1$d velkých blindů: tahle ruka je příliš slabá, než abys na ni riskoval všechno.</string>
+    <string name="hint_reason_push_short_stack">Máš už jen %1$d BB: nejlepší je all in nebo zahodit a tahle ruka je na all in dost silná.</string>
+    <string name="hint_reason_fold_short_stack">Máš už jen %1$d BB: tahle ruka je příliš slabá, než abys na ni riskoval všechno.</string>
     <string name="hint_reason_value_bet">Jsi pravděpodobně vpředu: vsaď, ať slabší ruce musí platit za další karty.</string>
     <string name="hint_reason_value_raise">Silná ruka proti sázce: zvyš a dostaň do banku víc žetonů, dokud jsi vpředu.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
@@ -41,7 +41,7 @@
     <string name="review_followed_won">Řídil ses nápovědou a vyhrál jsi: měl jsi asi %1$d%% na výhru.</string>
     <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
     <string name="review_followed_lost">Řídil ses nápovědou a prohrál jsi, to se stává: s asi %1$d%% prohraješ v %2$d%% případů. Posuzuj rozhodnutí, ne výsledek.</string>
-    <string name="review_followed_fold">Zahodil jsi, jak nápověda radila, a šetřil jsi žetony na lepší chvíli.</string>
+    <string name="review_followed_fold">Zahodil jsi, jak nápověda radila, a ušetřil sis žetony na lepší chvíli.</string>
     <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
     <string name="review_ignored_won">Vyhrál jsi, ale nápověda navrhovala: %1$s. Důvod: %2$s Výhra proti radě je štěstí, ne plán.</string>
     <string name="review_ignored_lost">Nápověda navrhovala: %1$s, ale ty ses rozhodl jinak a prohrál jsi. Důvod: %2$s</string>

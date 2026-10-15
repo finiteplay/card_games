@@ -53,7 +53,7 @@
     <string name="help_double_title">Gấp đôi</string>
     <string name="help_double">Với hai lá đầu, nhân đôi tiền cược và lấy đúng một lá nữa. Lượt của bạn sau đó kết thúc. Dùng khi bài mạnh nhưng chưa hoàn chỉnh.</string>
     <string name="help_split_title">Tách</string>
-    <string name="help_split">Khi hai lá đầu cùng giá trị, tách thành hai bài, mỗi bài mang mức cược ban đầu. Bạn có thể có tối đa bốn bài. Mỗi lá Át được tách chỉ nhận một lá và không rút thêm được.</string>
+    <string name="help_split">Khi hai lá đầu là một đôi, tách thành hai bài, mỗi bài mang mức cược ban đầu. Bạn có thể có tối đa bốn bài. Mỗi lá Át được tách chỉ nhận một lá và không rút thêm được.</string>
     <string name="help_insurance_title">Bảo hiểm</string>
     <string name="help_insurance">Khi nhà cái lật lá Át, bạn có thể mua bảo hiểm bằng nửa tiền cược. Trả 2 ăn 1 nếu nhà cái có Blackjack, nếu không thì mất.</string>
     <string name="help_dealer_title">Nhà cái</string>

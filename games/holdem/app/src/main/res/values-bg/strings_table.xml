@@ -36,7 +36,7 @@
     <string name="seat_out">Отпаднал · %1$s</string>
     <string name="seat_all_in">Ол ин</string>
     <string name="seat_action_bet">Залог %1$,d</string>
-    <string name="seat_action_raise">Вдига %1$,d</string>
+    <string name="seat_action_raise">Вдигане %1$,d</string>
     <string name="seat_action_call">Кол</string>
     <string name="seat_action_check">Чек</string>
     <string name="seat_action_fold">Фолд</string>
@@ -88,11 +88,11 @@
         <item>попове</item>
     </string-array>
     <string name="hand_royal_flush">Роял флъш</string>
-    <string name="hand_straight_flush">Стрийт флъш, висока %1$s</string>
+    <string name="hand_straight_flush">Стрийт флъш до %1$s</string>
     <string name="hand_four_of_a_kind">Каре, %1$s</string>
     <string name="hand_full_house">Фул хаус, %1$s и %2$s</string>
-    <string name="hand_flush">Флъш, висока %1$s</string>
-    <string name="hand_straight">Стрийт, висока %1$s</string>
+    <string name="hand_flush">Флъш с %1$s</string>
+    <string name="hand_straight">Стрийт до %1$s</string>
     <string name="hand_three_of_a_kind">Тройка, %1$s</string>
     <string name="hand_two_pair">Два чифта, %1$s и %2$s</string>
     <string name="hand_pair">Чифт, %1$s</string>

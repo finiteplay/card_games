@@ -25,7 +25,7 @@
     <string name="help_tournament_title">Turneringen</string>
     <string name="help_tournament">Blinds stiger hver 10. hånd, så jetonerne bliver forholdsmæssigt færre, og det bliver dyrt at vente. Intet er tidsbegrænset: tag den tid, du vil. Du slutter på den plads, der svarer til antallet af spillere tilbage, når du bliver slået ud, så 6. er først ude, og 1. er sejren.</string>
     <string name="help_leave_title">Forlade</string>
-    <string name="help_leave">Flaget øverst afslutter turneringen tidligt, og du slutter, hvor du ville være endt, hvis du blev slået ud nu. Det gør det ikke at lukke appen: din hånd gemmes og venter, når du kommer tilbage. Der er ingen fortryd, fordi hver beslutning efterfølges af kort, du ikke kunne se.</string>
+    <string name="help_leave">Flaget øverst afslutter turneringen tidligt, og du slutter, hvor du ville være endt, hvis du blev slået ud nu. At lukke appen gør ikke det: din hånd gemmes og venter, når du kommer tilbage. Du kan ikke fortryde, fordi hver beslutning efterfølges af kort, du ikke kunne se.</string>
 
     <string name="help_hands_intro">Fra den stærkeste hånd til den svageste. De fem viste kort er ét eksempel på hver.</string>
     <string name="help_hand_straight_flush_title">Straight flush</string>
@@ -51,7 +51,7 @@
 
     <string name="help_strategy_intro">Syv idéer, der klæder en ny spiller godt på. De vinder ikke hver hånd, men over en turnering lægger de sig sammen.</string>
     <string name="help_strategy_1">Spil færre hænder fra tidlige sæder. De første, der handler, har flest modstandere tilbage, så start kun med stærke kort dér, og spil løsere, jo tættere på buttonen sæderne er.</string>
-    <string name="help_strategy_2">Raise hellere end at calle. Et raise kan vinde potten med det samme, og når det bliver called, har du oftere den stærkeste hånd. At calle lader bare andre se kort billigt.</string>
+    <string name="help_strategy_2">Raise hellere end at calle. Et raise kan vinde potten med det samme, og når det bliver callet, har du oftere den stærkeste hånd. At calle lader bare andre se kort billigt.</string>
     <string name="help_strategy_3">Fold oftere, end det føles behageligt. De fleste hænder er ikke værd at spille, og en foldet hånd koster dig kun det, du allerede har lagt ind.</string>
     <string name="help_strategy_4">Kend pot odds. Hvis et call koster 25 jetoner for at vinde en pot på 75, betaler du én jeton for hver tre, du kan vinde, så callet betaler sig, hvis du vinder oftere end én gang ud af fire. Sammenlign det med din chance for at ende med den bedste hånd.</string>
     <string name="help_strategy_5">Position betyder noget. At handle sidst lader dig se, hvad alle andre gør først, og det er meget værd. Spil flere hænder fra sene sæder og færre fra tidlige.</string>

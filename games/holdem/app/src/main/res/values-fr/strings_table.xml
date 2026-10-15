@@ -7,7 +7,7 @@
         <item quantity="other">Main %1$d · %2$,d / %3$,d dans %4$d mains</item>
     </plurals>
     <string name="action_leave_tournament">Quitter le tournoi</string>
-    <string name="action_fold">Coucher</string>
+    <string name="action_fold">Se coucher</string>
     <string name="action_check">Check</string>
     <string name="action_call">Suivre&#10;%1$,d</string>
     <string name="action_call_all_in">Suivre&#10;tapis</string>
@@ -97,7 +97,7 @@
     <string name="mark_even">Égalité</string>
     <string name="mark_lose">Perdue</string>
     <string name="leave_title">Quitter ce tournoi ?</string>
-    <string name="leave_body">Vous finirez à la place %1$s, comme si vous étiez éliminé maintenant.</string>
+    <string name="leave_body">Vous finirez %1$s, comme si vous étiez éliminé maintenant.</string>
     <string name="leave_confirm">Quitter</string>
     <string name="leave_stay">Rester</string>
     <string name="end_title_place">Vous avez fini %1$s</string>

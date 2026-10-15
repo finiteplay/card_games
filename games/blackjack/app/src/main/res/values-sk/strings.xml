@@ -16,7 +16,7 @@
     <string name="label_dealer">Krupiér</string>
     <string name="label_place_bet">Vsaďte</string>
     <string name="hand_total_soft">Mäkká %1$d</string>
-    <string name="hand_bust">Cez</string>
+    <string name="hand_bust">Cez 21</string>
     <string name="hand_blackjack">Blackjack</string>
     <string name="outcome_push">Remíza</string>
     <string name="banner_win">Výhra!</string>
@@ -60,7 +60,7 @@
     <string name="help_dealer">Krupiér sa nerozhoduje: berie karty, kým nemá 17 alebo viac, a stojí na každej 17, vrátane mäkkej 17, kde sa eso počíta ako 11.</string>
     <string name="help_strategy_intro">Jednoduchý plán, ktorý vám dá dobré šance. Tlačidlo Nápoveda sa riadi rovnakou stratégiou, len podrobnejšie.</string>
     <string name="help_strategy_1">Pri 8 alebo menej vždy ťahajte a pri tvrdej 17 alebo viac vždy stojte.</string>
-    <string name="help_strategy_2">Pri 12 až 16 stojte, ak krupiér ukazuje 2 až 6, lebo pravdepodobne prelezie. Ťahajte, ak ukazuje 7 a viac.</string>
+    <string name="help_strategy_2">Pri 12 až 16 stojte, ak krupiér ukazuje 2 až 6, lebo pravdepodobne prekročí 21. Ťahajte, ak ukazuje 7 a viac.</string>
     <string name="help_strategy_3">Zdvojte pri 11 a pri 10, keď krupiér ukazuje 9 alebo menej. Ak nemôžete zdvojiť, ťahajte.</string>
     <string name="help_strategy_4">Esá a osmičky vždy delte. Päťky a desiatky nikdy nedeľte; hrajte ich ako 10 a 20.</string>
     <string name="help_strategy_5">S esom počítaným ako 11 (mäkká ruka) ťahajte do mäkkej 17 a stojte od mäkkej 19.</string>
@@ -68,31 +68,31 @@
     <string name="help_strategy_7">Stratégia znižuje výhodu kasína, ale nesľubuje výhru: skrytá karta krupiéra stále rozhoduje mnoho kôl.</string>
 
     <!-- Hint: %1$s = dealer up card, %2$d = your total, %3$d/%4$d/%5$d = percents. Review: %1$s = suggested action label, %2$s = reason sentence. -->
-    <string name="hint_reason_stand_strong">%2$d je silná ruka: ťahaním riskuješ, že pôjdeš cez 21, za malý zisk.</string>
-    <string name="hint_reason_stand_dealer_weak">Krupiér ukazuje %1$s a ide cez 21 asi v %3$d%% prípadov, kým ty by si ťahaním išiel cez v %4$d%% prípadov: stoj a nechaj riziko na krupiéra.</string>
-    <string name="hint_reason_hit_dealer_strong">Krupiér ukazuje %1$s a často urobí dobrú ruku, takže %2$d vyhráva len v %5$d%% prípadov, ak staneš: ťahaj kartu napriek riziku %4$d%%, že pôjdeš cez.</string>
-    <string name="hint_reason_hit_cannot_bust">S %2$d nemôžeš ísť cez 21: ťahaj kartu a zlepši ruku.</string>
-    <string name="hint_reason_hit_soft">Mäkká %2$d nemôže ísť cez 21 na ďalšej karte, takže ťahanie nič nestojí: zlepši ruku.</string>
-    <string name="hint_reason_double">Silná situácia: %2$d proti krupiérovej %1$s. Zdvoj stávku, vezmi jednu kartu a využi ju.</string>
+    <string name="hint_reason_stand_strong">%2$d je silná ruka: ťahaním riskujete, že pôjdete cez 21, za malý zisk.</string>
+    <string name="hint_reason_stand_dealer_weak">Krupiér ukazuje %1$s a ide cez 21 asi v %3$d%% prípadov, kým vy by ste ťahaním išli cez v %4$d%% prípadov: stojte a nechajte riziko na krupiéra.</string>
+    <string name="hint_reason_hit_dealer_strong">Krupiér ukazuje %1$s a často urobí dobrú ruku, takže %2$d vyhráva len v %5$d%% prípadov, ak zostanete stáť: ťahajte kartu napriek riziku %4$d%%, že pôjdete cez.</string>
+    <string name="hint_reason_hit_cannot_bust">S %2$d nemôžete ísť cez 21: ťahajte kartu a zlepšite ruku.</string>
+    <string name="hint_reason_hit_soft">Mäkká %2$d nemôže ísť cez 21 na ďalšej karte, takže ťahanie nič nestojí: zlepšite ruku.</string>
+    <string name="hint_reason_double">Silná situácia: %2$d proti krupiérovej karte %1$s. Zdvojte stávku, vezmite jednu kartu a využite ju.</string>
     <string name="hint_reason_split_aces">Dve esá sú najlepší pár na rozdelenie: každé môže byť 21, kým A-A spolu je len slabých mäkkých 12.</string>
-    <string name="hint_reason_split_eights">Dve osmičky dávajú 16, najhoršiu ruku: rozdeľ ich a začni dve lepšie ruky.</string>
-    <string name="hint_reason_split_pair">Proti krupiérovej %1$s ti rozdelenie dá dve dobré ruky namiesto jednej slabej.</string>
-    <string name="hint_reason_decline_insurance">Poistenie z dlhodobého hľadiska stráca žetóny: skrytá karta je desiatka menej ako raz z troch, no práve toľko by bolo treba, aby si vyšiel na nule.</string>
-    <string name="hint_figures">Krupiér ide cez %1$d%% · Ťahanie ťa vedie cez %2$d%%</string>
+    <string name="hint_reason_split_eights">Dve osmičky dávajú 16, najhoršiu ruku: rozdeľte ich a začnite dve lepšie ruky.</string>
+    <string name="hint_reason_split_pair">Proti krupiérovej karte %1$s vám rozdelenie dá dve dobré ruky namiesto jednej slabej.</string>
+    <string name="hint_reason_decline_insurance">Poistenie z dlhodobého hľadiska stráca žetóny: skrytá karta je desiatka menej ako raz z troch, no práve toľko by bolo treba, aby ste vyšli na nule.</string>
+    <string name="hint_figures">Krupiér ide cez %1$d%% · Ťahanie vás vedie cez %2$d%%</string>
     <string name="hint_figures_dealer_only">Krupiér ide cez %1$d%%</string>
-    <string name="review_title">Spätný pohľad na radu</string>
-    <string name="review_followed_won">Riadil si sa radou a vyhral si.</string>
-    <string name="review_followed_lost">Riadil si sa radou a prehral si, čo sa stáva: o kole rozhodujú krupiérove karty. Posudzuj rozhodnutie, nie výsledok.</string>
-    <string name="review_followed_push">Riadil si sa radou a skončilo to remízou: žetóny ti zostali.</string>
-    <string name="review_ignored_won">Vyhral si, ale rada navrhovala: %1$s. Dôvod: %2$s Výhra proti pravdepodobnosti je šťastie, nie plán.</string>
-    <string name="review_ignored_lost">Rada navrhovala: %1$s, ale rozhodol si sa inak a prehral si. Dôvod: %2$s</string>
-    <string name="review_ignored_push">Rada navrhovala: %1$s a ty si sa rozhodol inak. Dôvod: %2$s</string>
+    <string name="review_title">Spätný pohľad na nápovedu</string>
+    <string name="review_followed_won">Riadili ste sa nápovedou a vyhrali ste.</string>
+    <string name="review_followed_lost">Riadili ste sa nápovedou a prehrali ste, čo sa stáva: o kole rozhodujú krupiérove karty. Posudzujte rozhodnutie, nie výsledok.</string>
+    <string name="review_followed_push">Riadili ste sa nápovedou a skončilo to remízou: žetóny vám zostali.</string>
+    <string name="review_ignored_won">Vyhrali ste, ale nápoveda navrhovala: %1$s. Dôvod: %2$s Výhra proti pravdepodobnosti je šťastie, nie plán.</string>
+    <string name="review_ignored_lost">Nápoveda navrhovala: %1$s, ale rozhodli ste sa inak a prehrali ste. Dôvod: %2$s</string>
+    <string name="review_ignored_push">Nápoveda navrhovala: %1$s a vy ste sa rozhodli inak. Dôvod: %2$s</string>
     <string name="review_dealer_finished">Krupiér skončil s %1$d.</string>
     <string name="review_dealer_busted">Krupiér šiel cez 21.</string>
     <string name="review_dealer_blackjack">Krupiér mal blackjack.</string>
-    <string name="review_you_busted">Išiel si cez 21 s %1$d.</string>
+    <string name="review_you_busted">Išli ste cez 21 s %1$d.</string>
 
     <!-- With hindsight: %1$s = card a hit would draw, %2$d = total; stand chances %1$d total, %2$d/%3$d/%4$d win/tie/lose percent. -->
-    <string name="review_would_have_drawn">Ťahanie karty by prinieslo %1$s, čo dáva %2$d.</string>
-    <string name="review_stand_chances">Keď si sa rozhodoval, státie na %1$d vyhrávalo asi v %2$d%% prípadov, remíza bola v %3$d%% a prehra v %4$d%%.</string>
+    <string name="review_would_have_drawn">Keby ste ťahali, ďalšia karta by bola %1$s a mali by ste %2$d.</string>
+    <string name="review_stand_chances">Keď ste sa rozhodovali, státie na %1$d vyhrávalo asi v %2$d%% prípadov, remíza bola v %3$d%% a prehra v %4$d%%.</string>
 </resources>

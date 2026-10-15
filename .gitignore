@@ -5,6 +5,10 @@ build/
 local.properties
 captures/
 screenshots/
+!brand/google-play/*/screenshots/
+!brand/google-play/*/screenshots/*.png
+brand/google-play/*/screenshots/*-raw.png
+brand/google-play/*/screenshots/emulator-current.png
 .externalNativeBuild/
 .cxx/
 app/build/

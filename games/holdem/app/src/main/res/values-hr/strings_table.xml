@@ -47,8 +47,8 @@
     <string name="marker_big_blind">BB</string>
     <string name="style_tight">tight</string>
     <string name="style_loose">loose</string>
-    <string name="style_aggressive">aggressive</string>
-    <string name="style_passive">passive</string>
+    <string name="style_aggressive">agresivan</string>
+    <string name="style_passive">pasivan</string>
     <string-array name="places">
         <item>1.</item>
         <item>2.</item>
@@ -110,7 +110,7 @@
     <string name="end_title_place">Završili ste na %1$s mjestu</string>
     <string name="end_title_won">Pobijedili ste na turniru</string>
     <string name="end_body_lost">Odigrane ruke: %1$d\nNajveći pot: %2$,d</string>
-    <string name="end_body_won">Trebalo je %1$d ruku.\nNajveći pot: %2$,d</string>
+    <string name="end_body_won">Broj odigranih ruku: %1$d.\nNajveći pot: %2$,d</string>
 
     <string name="card_spoken">%1$s, %2$s</string>
     <string name="a11y_your_cards">Vaše karte: %1$s</string>

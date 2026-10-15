@@ -14,7 +14,7 @@
     <string name="status_chips">Чипове %1$d</string>
     <string name="status_bet">Залог %1$d</string>
     <string name="label_dealer">Дилър</string>
-    <string name="label_place_bet">Заложете</string>
+    <string name="label_place_bet">Заложи</string>
     <string name="hand_total_soft">Мека %1$d</string>
     <string name="hand_bust">Прехвърляне</string>
     <string name="hand_blackjack">Блекджек</string>
@@ -23,7 +23,7 @@
     <string name="banner_lose">Загуба</string>
     <string name="summary_even">Наравно</string>
     <string name="reset_offer_title">Без чипове</string>
-    <string name="reset_offer_body">Не можете да покриете минималния залог. Да нулираме ли до %1$d чипа? Статистиката се запазва.</string>
+    <string name="reset_offer_body">Не можеш да покриеш минималния залог. Да нулираме ли до %1$d чипа? Статистиката се запазва.</string>
     <string name="reset_offer_not_now">Не сега</string>
     <string name="recovery_notice">Запазеният рунд не можа да се отвори. Той беше отменен и не са загубени чипове.</string>
     <string name="stat_section_hands">Ръце</string>
@@ -37,67 +37,67 @@
     <string name="stat_tile_resets">Нулирания</string>
     <string name="help_title">Как се играе</string>
     <string name="help_goal_title">Целта</string>
-    <string name="help_goal">Вземете ръка с по-висока стойност от тази на дилъра, без да надвишите 21. Ако надвишите, губите веднага.</string>
+    <string name="help_goal">Вземи ръка с по-висока стойност от тази на дилъра, без да надвишиш 21. Ако надвишиш, губиш веднага.</string>
     <string name="help_chips_title">Чипове</string>
-    <string name="help_chips">Започвате с 1 000 чипа. Чиповете са само за игра и не могат да се купуват или изплащат. Залозите са на стъпки от 10, от 10 до 500. Ако чиповете ви свършат, можете да ги нулирате до 1 000, а статистиката се запазва.</string>
+    <string name="help_chips">Започваш с 1 000 чипа. Чиповете са само за игра и не могат да се купуват или изплащат. Залозите са на стъпки от 10, от 10 до 500. Ако чиповете ти свършат, можеш да ги нулираш до 1 000, а статистиката се запазва.</string>
     <string name="help_tab_rules">Правила</string>
     <string name="help_tab_strategy">Стратегия</string>
     <string name="help_values_title">Стойности на картите</string>
     <string name="help_values">Картите с числа носят своето число. Вале, дама и поп носят 10. Асът е 1 или 11, което е по-добре за ръката. Ас и карта със стойност десет в първите две карти е блекджек и се плаща 3 към 2.</string>
     <string name="help_round_title">Рундът</string>
-    <string name="help_round">Заложете и натиснете „Раздай“. Вие и дилърът получавате по две карти, като една от тези на дилъра остава обърната. След това взимате решенията си, една ръка след друга, а когато приключите, играе дилърът. Всеки рунд се раздава от ново разбъркване и няма връщане.</string>
+    <string name="help_round">Заложи и натисни „Раздай“. Ти и дилърът получавате по две карти, като една от тези на дилъра остава обърната. След това взимаш решенията си, една ръка след друга, а когато приключиш, играе дилърът. Всеки рунд се раздава от ново разбъркване и няма връщане.</string>
     <string name="help_hit_title">Карта</string>
-    <string name="help_hit">Вземете още една карта. Можете да продължавате, докато ръката ви е под 21.</string>
+    <string name="help_hit">Вземи още една карта. Можеш да продължаваш, докато ръката ти е под 21.</string>
     <string name="help_stand_title">Стоп</string>
-    <string name="help_stand">Запазете ръката си и приключете хода си.</string>
+    <string name="help_stand">Запази ръката си и приключи хода си.</string>
     <string name="help_double_title">Удвояване</string>
-    <string name="help_double">При първите две карти удвоете залога и вземете точно една карта. Ходът ви приключва. Използвайте го, когато ръката е силна, но още не е завършена.</string>
+    <string name="help_double">При първите две карти удвои залога и вземи точно една карта. Ходът ти приключва. Използвай го, когато ръката е силна, но още не е завършена.</string>
     <string name="help_split_title">Разделяне</string>
-    <string name="help_split">Когато първите две карти са с еднакъв ранг, разделете ги на две ръце, всяка със започналия залог. Общо можете да имате до четири ръце. Разделените асове получават по една карта и не могат да вземат повече.</string>
+    <string name="help_split">Когато първите две карти са с еднакъв ранг, раздели ги на две ръце, всяка с първоначалния залог. Общо можеш да имаш до четири ръце. Разделените асове получават по една карта и не могат да вземат повече.</string>
     <string name="help_insurance_title">Застраховка</string>
-    <string name="help_insurance">Когато дилърът показва ас, можете да се застраховате за половината от залога. Плаща 2 към 1, ако дилърът има блекджек, и се губи в противен случай.</string>
+    <string name="help_insurance">Когато дилърът показва ас, можеш да се застраховаш за половината от залога. Плаща 2 към 1, ако дилърът има блекджек, и се губи в противен случай.</string>
     <string name="help_dealer_title">Дилърът</string>
     <string name="help_dealer">Дилърът не взема решения: тегли карти, докато стигне 17 или повече, и спира на всяко 17, включително мека 17, в която асът се брои за 11.</string>
-    <string name="help_strategy_intro">Прост план, който ви дава добри шансове. Бутонът за подсказка следва същата стратегия в пълни подробности.</string>
-    <string name="help_strategy_1">Винаги теглете при 8 или по-малко и винаги спирайте при твърда 17 или повече.</string>
-    <string name="help_strategy_2">При 12 до 16 спрете, ако дилърът показва от 2 до 6, защото вероятно ще надвиши. Теглете, ако показва 7 или повече.</string>
-    <string name="help_strategy_3">Удвоявайте при 11 и при 10, когато дилърът показва 9 или по-малко. Ако не можете да удвоите, теглете.</string>
-    <string name="help_strategy_4">Винаги разделяйте асове и осмици. Никога не разделяйте петици и десетки; играйте ги като 10 и 20.</string>
-    <string name="help_strategy_5">С ас, броен за 11 (мека ръка), теглете до мека 17 и спирайте при мека 19 или повече.</string>
-    <string name="help_strategy_6">Никога не вземайте застраховка. С времето струва повече, отколкото връща.</string>
+    <string name="help_strategy_intro">Прост план, който ти дава добри шансове. Бутонът за подсказка следва същата стратегия в пълни подробности.</string>
+    <string name="help_strategy_1">Винаги теглѝ при 8 или по-малко и винаги спирай при твърда 17 или повече.</string>
+    <string name="help_strategy_2">При 12 до 16 спри, ако дилърът показва от 2 до 6, защото вероятно ще прехвърли. Теглѝ, ако показва 7 или повече.</string>
+    <string name="help_strategy_3">Удвоявай при 11 и при 10, когато дилърът показва 9 или по-малко. Ако не можеш да удвоиш, теглѝ.</string>
+    <string name="help_strategy_4">Винаги разделяй асове и осмици. Никога не разделяй петици и десетки; играй ги като 10 и 20.</string>
+    <string name="help_strategy_5">С ас, броен за 11 (мека ръка), теглѝ до мека 17 и спирай при мека 19 или повече.</string>
+    <string name="help_strategy_6">Никога не взимай застраховка. С времето струва повече, отколкото връща.</string>
     <string name="help_strategy_7">Стратегията намалява предимството на казиното, но не обещава победа: скритата карта на дилъра още решава много рундове.</string>
 
     <!-- The Hint reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total, %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent, %5$d = your chance to win if you stand in percent. -->
     <string name="hint_reason_stand_strong">%2$d е силна ръка: теглене на карта рискува прехвърляне за малка полза.</string>
-    <string name="hint_reason_stand_dealer_weak">Дилърът показва %1$s и се прехвърля около %3$d%% от случаите, а вие бихте се прехвърлили в %4$d%% при теглене: спрете и оставете риска на дилъра.</string>
-    <string name="hint_reason_hit_dealer_strong">Дилърът показва %1$s и често прави добра ръка, затова %2$d печели само в %5$d%% от случаите, ако спрете: вземете карта въпреки риска от %4$d%% за прехвърляне.</string>
-    <string name="hint_reason_hit_cannot_bust">С %2$d не можете да се прехвърлите: вземете карта, за да подобрите ръката си.</string>
-    <string name="hint_reason_hit_soft">Мека %2$d не може да се прехвърли със следващата карта, така че тегленето не ви струва нищо: подобрете ръката си.</string>
-    <string name="hint_reason_double">Силна ситуация: %2$d срещу %1$s на дилъра. Удвоете залога, вземете една карта и извлечете максимума.</string>
+    <string name="hint_reason_stand_dealer_weak">Дилърът показва %1$s и се прехвърля около %3$d%% от случаите, а ти би се прехвърлил в %4$d%% при теглене: спри и остави риска на дилъра.</string>
+    <string name="hint_reason_hit_dealer_strong">Дилърът показва %1$s и често прави добра ръка, затова %2$d печели само в %5$d%% от случаите, ако спреш: вземи карта въпреки риска от %4$d%% за прехвърляне.</string>
+    <string name="hint_reason_hit_cannot_bust">С %2$d не можеш да се прехвърлиш: вземи карта, за да подобриш ръката си.</string>
+    <string name="hint_reason_hit_soft">Мека %2$d не може да се прехвърли със следващата карта, така че тегленето не ти струва нищо: подобри ръката си.</string>
+    <string name="hint_reason_double">Силна ситуация: %2$d срещу %1$s на дилъра. Удвои залога, вземи една карта и извлечи максимума.</string>
     <string name="hint_reason_split_aces">Два аса са най-добрата двойка за разделяне: всеки може да стане 21, а А-А заедно е само слаба мека 12.</string>
-    <string name="hint_reason_split_eights">Две осмици правят 16, най-лошата ръка: разделете ги, за да започнете две по-добри ръце.</string>
-    <string name="hint_reason_split_pair">Срещу %1$s на дилъра разделянето ви дава две добри ръце вместо една слаба.</string>
-    <string name="hint_reason_decline_insurance">Застраховката губи чипове с времето: скритата карта е десетка по-рядко от един път от три, а за равновесие трябва точно това.</string>
+    <string name="hint_reason_split_eights">Две осмици правят 16, най-лошата ръка: раздели ги, за да започнеш две по-добри ръце.</string>
+    <string name="hint_reason_split_pair">Срещу %1$s на дилъра разделянето ти дава две добри ръце вместо една слаба.</string>
+    <string name="hint_reason_decline_insurance">Застраховката губи чипове с времето: скритата карта е със стойност десет по-рядко от веднъж на три пъти, а за да излезеш на нула, трябва да е поне толкова често.</string>
     <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
-    <string name="hint_figures">Дилърът се прехвърля %1$d%% · Картата ви прехвърля %2$d%%</string>
+    <string name="hint_figures">Дилърът се прехвърля %1$d%% · Картата те прехвърля %2$d%%</string>
     <string name="hint_figures_dealer_only">Дилърът се прехвърля %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
     <string name="review_title">Поглед назад към подсказката</string>
-    <string name="review_followed_won">Последвахте подсказката и спечелихте.</string>
-    <string name="review_followed_lost">Последвахте подсказката и загубихте, случва се: картите на дилъра решават рунда. Оценявайте решението, не резултата.</string>
-    <string name="review_followed_push">Последвахте подсказката и стана равенство: запазихте чиповете си.</string>
+    <string name="review_followed_won">Последва подсказката и спечели.</string>
+    <string name="review_followed_lost">Последва подсказката и загуби, случва се: картите на дилъра решават рунда. Оценявай решението, не резултата.</string>
+    <string name="review_followed_push">Последва подсказката и стана равенство: запази чиповете си.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Спечелихте, но подсказката предлагаше: %1$s. Причината: %2$s Победата срещу шансовете е късмет, не план.</string>
-    <string name="review_ignored_lost">Подсказката предлагаше: %1$s, но избрахте друго и загубихте. Причината: %2$s</string>
-    <string name="review_ignored_push">Подсказката предлагаше: %1$s, а вие избрахте друго. Причината: %2$s</string>
+    <string name="review_ignored_won">Спечели, но подсказката предлагаше: %1$s. Причината: %2$s Победата срещу шансовете е късмет, не план.</string>
+    <string name="review_ignored_lost">Подсказката предлагаше: %1$s, но ти избра друго и загуби. Причината: %2$s</string>
+    <string name="review_ignored_push">Подсказката предлагаше: %1$s, а ти избра друго. Причината: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
     <string name="review_dealer_finished">Дилърът приключи с %1$d.</string>
     <string name="review_dealer_busted">Дилърът се прехвърли.</string>
     <string name="review_dealer_blackjack">Дилърът имаше блекджек.</string>
-    <string name="review_you_busted">Прехвърлихте се с %1$d.</string>
+    <string name="review_you_busted">Прехвърли се с %1$d.</string>
 
     <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
-    <string name="review_would_have_drawn">Ако бяхте взели карта, щеше да дойде %1$s и щяхте да имате %2$d.</string>
+    <string name="review_would_have_drawn">Ако беше взел карта, щеше да дойде %1$s и щеше да имаш %2$d.</string>
     <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
-    <string name="review_stand_chances">Когато решихте, спирането с %1$d печелеше около %2$d%% от случаите, равенство в %3$d%% и губеше в %4$d%%.</string>
+    <string name="review_stand_chances">Когато реши, спирането с %1$d печелеше около %2$d%% от случаите, завършваше наравно в %3$d%% и губеше в %4$d%%.</string>
 </resources>

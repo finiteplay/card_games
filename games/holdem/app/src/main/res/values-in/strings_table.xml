@@ -45,8 +45,8 @@
     <string name="marker_big_blind">BB</string>
     <string name="style_tight">tight</string>
     <string name="style_loose">loose</string>
-    <string name="style_aggressive">aggressive</string>
-    <string name="style_passive">passive</string>
+    <string name="style_aggressive">agresif</string>
+    <string name="style_passive">pasif</string>
     <string-array name="places">
         <item>ke-1</item>
         <item>ke-2</item>
@@ -89,7 +89,7 @@
     <string name="hand_royal_flush">Royal flush</string>
     <string name="hand_straight_flush">Straight flush, tertinggi %1$s</string>
     <string name="hand_four_of_a_kind">Four of a kind, %1$s</string>
-    <string name="hand_full_house">Full house, %1$s penuh dengan %2$s</string>
+    <string name="hand_full_house">Full house, %1$s dan %2$s</string>
     <string name="hand_flush">Flush, tertinggi %1$s</string>
     <string name="hand_straight">Straight, tertinggi %1$s</string>
     <string name="hand_three_of_a_kind">Three of a kind, %1$s</string>

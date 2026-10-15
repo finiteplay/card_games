@@ -37,11 +37,11 @@
     <string name="your_line">Ty · %1$,d</string>
     <string name="seat_out">Venku · %1$s</string>
     <string name="seat_all_in">All in</string>
-    <string name="seat_action_bet">Sází %1$,d</string>
-    <string name="seat_action_raise">Zvyšuje %1$,d</string>
-    <string name="seat_action_call">Vyrovnává</string>
+    <string name="seat_action_bet">Sázka %1$,d</string>
+    <string name="seat_action_raise">Zvýšení %1$,d</string>
+    <string name="seat_action_call">Vyrovnání</string>
     <string name="seat_action_check">Check</string>
-    <string name="seat_action_fold">Zahazuje</string>
+    <string name="seat_action_fold">Zahození</string>
     <string name="seat_action_all_in">All in</string>
     <string name="marker_dealer">D</string>
     <string name="marker_small_blind">SB</string>
@@ -111,7 +111,7 @@
     <string name="end_title_place">Skončil jsi na místě %1$s</string>
     <string name="end_title_won">Vyhrál jsi turnaj</string>
     <string name="end_body_lost">Odehrané hry: %1$d\nNejvětší banka: %2$,d</string>
-    <string name="end_body_won">Trvalo to %1$d her.\nNejvětší banka: %2$,d</string>
+    <string name="end_body_won">Počet her: %1$d.\nNejvětší banka: %2$,d</string>
 
     <string name="card_spoken">%1$s, %2$s</string>
     <string name="a11y_your_cards">Tvoje karty: %1$s</string>

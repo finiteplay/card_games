@@ -69,7 +69,7 @@
 
     <!-- Hint reasons, figures and review. %N$s are texts, %N$d are numbers or percents (same as the English file). -->
     <string name="hint_reason_stand_strong">%2$d is een sterke hand: een kaart riskeert een bust voor weinig winst.</string>
-    <string name="hint_reason_stand_dealer_weak">De deler toont %1$s en gaat bust in ongeveer %3$d%% van de gevallen, terwijl een kaart jou in %4$d%% bust zou zetten: blijf en laat de deler het risico nemen.</string>
+    <string name="hint_reason_stand_dealer_weak">De deler toont %1$s en gaat bust in ongeveer %3$d%% van de gevallen, terwijl jij met een kaart in %4$d%% van de gevallen bust zou gaan: blijf en laat de deler het risico nemen.</string>
     <string name="hint_reason_hit_dealer_strong">De deler toont %1$s en maakt vaak een goede hand, dus %2$d wint maar %5$d%% van de tijd als je blijft: neem een kaart ondanks de %4$d%% kans op een bust.</string>
     <string name="hint_reason_hit_cannot_bust">Met %2$d kun je niet bust gaan: neem een kaart om je hand te verbeteren.</string>
     <string name="hint_reason_hit_soft">Een zachte %2$d kan met de volgende kaart niet bust gaan, dus een kaart kost niets: verbeter je hand.</string>
@@ -77,7 +77,7 @@
     <string name="hint_reason_split_aces">Twee azen zijn het beste paar om te splitsen: elk kan 21 worden, terwijl A-A samen maar een zwakke zachte 12 is.</string>
     <string name="hint_reason_split_eights">Twee achten maken 16, de slechtste hand: splits ze om twee betere handen te starten.</string>
     <string name="hint_reason_split_pair">Tegen de %1$s van de deler geeft splitsen je twee goede handen in plaats van één zwakke.</string>
-    <string name="hint_reason_decline_insurance">Verzekeren kost op den duur fiches: de dichte kaart is minder dan één op drie keer een tien, en dat is wat nodig is om quitte te spelen.</string>
+    <string name="hint_reason_decline_insurance">Verzekeren kost op den duur fiches: de gedekte kaart is minder dan één op drie keer een tien, en dat is wat nodig is om quitte te spelen.</string>
     <string name="hint_figures">Deler bust %1$d%% · Een kaart bust jou %2$d%%</string>
     <string name="hint_figures_dealer_only">Deler bust %1$d%%</string>
     <string name="review_title">Terugblik op de hint</string>

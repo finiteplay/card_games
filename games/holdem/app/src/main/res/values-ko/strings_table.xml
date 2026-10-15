@@ -89,7 +89,7 @@
     <string name="hand_flush">플러시, %1$s 하이</string>
     <string name="hand_straight">스트레이트, %1$s 하이</string>
     <string name="hand_three_of_a_kind">트리플, %1$s</string>
-    <string name="hand_two_pair">투 페어, %1$s와 %2$s</string>
+    <string name="hand_two_pair">투 페어, %1$s·%2$s</string>
     <string name="hand_pair">%1$s 원 페어</string>
     <string name="hand_high_card">하이 카드, %1$s</string>
     <string name="mark_win">승</string>

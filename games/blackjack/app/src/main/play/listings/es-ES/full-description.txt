@@ -1,0 +1,17 @@
+Juega al blackjack sin conexión contra un crupier controlado por el ordenador, con fichas virtuales y explicaciones para principiantes. Nunca se usa dinero real: las fichas no tienen valor monetario. No hay apuestas con dinero real, depósitos, compra de fichas, retiradas ni premios.
+
+La promesa de FinitePlay: totalmente gratis, sin anuncios, compras dentro de la aplicación ni suscripciones. Todo el juego funciona en tu dispositivo: sin cuentas, rastreo, recopilación o intercambio de datos, clasificaciones ni funciones en línea. Tu progreso y tus estadísticas son privados y locales.
+
+Las pistas opcionales de estrategia básica explican por qué pedir carta, plantarse, doblar o dividir. Aprende a partir de la carta visible del crupier, tu mano y el riesgo de pasarte. Las pistas ayudan a comprender decisiones; no garantizan ganar.
+
+Funciones:
+• Pedir carta, plantarse, doblar y dividir
+• Seguro, comprobación de blackjack del crupier y pago de blackjack de 3:2
+• Pistas con explicaciones y probabilidades de pasarse
+• Saldo de fichas virtuales y estadísticas locales
+
+Solo juegas contra el crupier del ordenador: no hay partidas contra personas reales. Diseñado para mayores de 18 años.
+
+Juega a tu ritmo. Los recordatorios de descanso configurables te invitan a hacer una pausa tras jugar durante un tiempo prolongado. No hay bonos urgentes ni recompensas diarias con límite de tiempo. Las estadísticas locales te ayudan a reflexionar sobre tu juego, sin presión competitiva para seguir jugando.
+
+FinitePlay crea juegos de cartas que respetan tu tiempo, tu privacidad y tu atención.

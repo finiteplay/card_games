@@ -14,7 +14,7 @@
     <string name="status_chips">Žetony %1$d</string>
     <string name="status_bet">Sázka %1$d</string>
     <string name="label_dealer">Krupiér</string>
-    <string name="label_place_bet">Vsaďte</string>
+    <string name="label_place_bet">Vsaď</string>
     <string name="hand_total_soft">Měkká %1$d</string>
     <string name="hand_bust">Přes</string>
     <string name="hand_blackjack">Blackjack</string>
@@ -23,7 +23,7 @@
     <string name="banner_lose">Prohra</string>
     <string name="summary_even">Vyrovnáno</string>
     <string name="reset_offer_title">Došly žetony</string>
-    <string name="reset_offer_body">Nemůžete pokrýt minimální sázku. Obnovit na %1$d žetonů? Statistiky zůstanou.</string>
+    <string name="reset_offer_body">Nemůžeš pokrýt minimální sázku. Obnovit na %1$d žetonů? Statistiky zůstanou.</string>
     <string name="reset_offer_not_now">Teď ne</string>
     <string name="recovery_notice">Uložené kolo se nepodařilo otevřít. Bylo zrušeno a žádné žetony se neztratily.</string>
     <string name="stat_section_hands">Ruce</string>
@@ -37,34 +37,34 @@
     <string name="stat_tile_resets">Obnovení</string>
     <string name="help_title">Jak hrát</string>
     <string name="help_goal_title">Cíl</string>
-    <string name="help_goal">Získejte ruku s vyšší hodnotou než krupiér, aniž byste překročili 21. Pokud ji překročíte, hned prohráváte.</string>
+    <string name="help_goal">Získej ruku s vyšší hodnotou než krupiér, aniž bys překročil 21. Pokud ji překročíš, hned prohráváš.</string>
     <string name="help_chips_title">Žetony</string>
-    <string name="help_chips">Začínáte s 1 000 žetony. Žetony slouží jen ke hře a nelze je koupit ani vyplatit. Sázky jdou po 10, od 10 do 500. Dojdou-li vám žetony, můžete je obnovit na 1 000 a statistiky zůstanou.</string>
+    <string name="help_chips">Začínáš s 1 000 žetony. Žetony slouží jen ke hře a nelze je koupit ani vyplatit. Sázky jdou po 10, od 10 do 500. Dojdou-li ti žetony, můžeš je obnovit na 1 000 a statistiky zůstanou.</string>
     <string name="help_tab_rules">Pravidla</string>
     <string name="help_tab_strategy">Strategie</string>
     <string name="help_values_title">Hodnoty karet</string>
-    <string name="help_values">Karty s čísly mají svou hodnotu. Spodek, dáma a král mají 10. Eso je 1 nebo 11, podle toho, co je pro ruku lepší. Eso a karta s hodnotou deset v prvních dvou kartách je blackjack a vyplácí se 3 ku 2.</string>
+    <string name="help_values">Karty s čísly mají svou hodnotu. Kluk, dáma a král mají 10. Eso je 1 nebo 11, podle toho, co je pro ruku lepší. Eso a karta s hodnotou deset v prvních dvou kartách je blackjack a vyplácí se 3 ku 2.</string>
     <string name="help_round_title">Kolo</string>
-    <string name="help_round">Vsaďte a stiskněte Rozdat. Vy i krupiér dostanete dvě karty, jedna krupiérova zůstane lícem dolů. Poté se rozhodujete, ruku po ruce, a až skončíte, hraje krupiér. Každé kolo se rozdává z nově zamíchaného balíčku a vrácení tahu neexistuje.</string>
+    <string name="help_round">Vsaď a stiskni Rozdat. Ty i krupiér dostanete dvě karty, jedna krupiérova zůstane lícem dolů. Poté se rozhoduješ, ruku po ruce, a až skončíš, hraje krupiér. Každé kolo se rozdává z nově zamíchaného balíčku a vrácení tahu neexistuje.</string>
     <string name="help_hit_title">Líznout</string>
-    <string name="help_hit">Vezměte další kartu. Můžete lízat, dokud je vaše ruka pod 21.</string>
+    <string name="help_hit">Vezmi si další kartu. Můžeš lízat, dokud je tvoje ruka pod 21.</string>
     <string name="help_stand_title">Stát</string>
-    <string name="help_stand">Ponechte ruku, jak je, a ukončete svůj tah.</string>
+    <string name="help_stand">Ponech si ruku, jak je, a ukonči svůj tah.</string>
     <string name="help_double_title">Zdvojit</string>
-    <string name="help_double">Na prvních dvou kartách zdvojnásobte sázku a vezměte přesně jednu kartu. Váš tah pak končí. Použijte to, když je ruka silná, ale ještě není dokončená.</string>
+    <string name="help_double">Na prvních dvou kartách zdvojnásob sázku a vezmi si přesně jednu kartu. Tvůj tah pak končí. Použij to, když je ruka silná, ale ještě není dokončená.</string>
     <string name="help_split_title">Rozdělit</string>
-    <string name="help_split">Mají-li první dvě karty stejnou hodnotu, rozdělte je na dvě ruce, každou s původní sázkou. Celkem můžete mít až čtyři ruce. Rozdělená esa dostanou po jedné kartě a už se k nim nelíze.</string>
+    <string name="help_split">Mají-li první dvě karty stejnou hodnotu, rozděl je na dvě ruce, každou s původní sázkou. Celkem můžeš mít až čtyři ruce. Rozdělená esa dostanou po jedné kartě a už se k nim nelíže.</string>
     <string name="help_insurance_title">Pojištění</string>
-    <string name="help_insurance">Když krupiér ukazuje eso, můžete se pojistit za polovinu sázky. Vyplácí se 2 ku 1, má-li krupiér blackjack, jinak propadne.</string>
+    <string name="help_insurance">Když krupiér ukazuje eso, můžeš se pojistit za polovinu sázky. Vyplácí se 2 ku 1, má-li krupiér blackjack, jinak propadne.</string>
     <string name="help_dealer_title">Krupiér</string>
     <string name="help_dealer">Krupiér se nerozhoduje: bere karty, dokud nemá 17 nebo více, a stojí na každé 17, včetně měkké 17, kde se eso počítá jako 11.</string>
-    <string name="help_strategy_intro">Jednoduchý plán, který vám dá dobré šance. Tlačítko Nápověda se řídí stejnou strategií, jen podrobněji.</string>
-    <string name="help_strategy_1">Při 8 nebo méně vždy lízejte a při tvrdé 17 nebo více vždy stůjte.</string>
-    <string name="help_strategy_2">Při 12 až 16 stůjte, ukazuje-li krupiér 2 až 6, protože pravděpodobně přeleze. Lízejte, ukazuje-li 7 a více.</string>
-    <string name="help_strategy_3">Zdvojte při 11 a při 10, ukazuje-li krupiér 9 nebo méně. Nemůžete-li zdvojit, lízejte.</string>
-    <string name="help_strategy_4">Esa a osmičky vždy dělte. Pětky a desítky nikdy nedělte; hrajte je jako 10 a 20.</string>
-    <string name="help_strategy_5">S esem počítaným jako 11 (měkká ruka) lízejte do měkké 17 a stůjte od měkké 19.</string>
-    <string name="help_strategy_6">Pojištění nikdy neberte. V dlouhodobém součtu stojí víc, než vrátí.</string>
+    <string name="help_strategy_intro">Jednoduchý plán, který ti dá dobré šance. Tlačítko Nápověda se řídí stejnou strategií, jen podrobněji.</string>
+    <string name="help_strategy_1">Při 8 nebo méně vždy lízej a při tvrdé 17 nebo více vždy stůj.</string>
+    <string name="help_strategy_2">Při 12 až 16 stůj, ukazuje-li krupiér 2 až 6, protože pravděpodobně přetáhne. Lízej, ukazuje-li 7 a více.</string>
+    <string name="help_strategy_3">Zdvoj při 11 a při 10, ukazuje-li krupiér 9 nebo méně. Nemůžeš-li zdvojit, lízej.</string>
+    <string name="help_strategy_4">Esa a osmičky vždy rozděl. Pětky a desítky nikdy neděl; hraj je jako 10 a 20.</string>
+    <string name="help_strategy_5">S esem počítaným jako 11 (měkká ruka) lízej do měkké 17 a stůj od měkké 19 výš.</string>
+    <string name="help_strategy_6">Pojištění nikdy neber. V dlouhodobém součtu stojí víc, než vrátí.</string>
     <string name="help_strategy_7">Strategie snižuje výhodu kasina, ale nezaručuje výhru: skrytá karta krupiéra stále rozhoduje mnoho kol.</string>
 
     <!-- The Hint reasons. %1$s = the dealer up card (Ace, 6, King...), %2$d = your total, %3$d = the dealer chance to bust in percent, %4$d = your chance to bust on a hit in percent, %5$d = your chance to win if you stand in percent. -->
@@ -73,11 +73,11 @@
     <string name="hint_reason_hit_dealer_strong">Krupiér ukazuje %1$s a často udělá dobrou ruku, takže %2$d vyhraje při stání jen v %5$d%% případů: lízni si navzdory riziku přetažení %4$d%%.</string>
     <string name="hint_reason_hit_cannot_bust">S %2$d nemůžeš přetáhnout: lízni si kartu a zlepši ruku.</string>
     <string name="hint_reason_hit_soft">Měkká %2$d nemůže na další kartě přetáhnout, takže líznutí nic nestojí: zlepši ruku.</string>
-    <string name="hint_reason_double">Silná situace: %2$d proti krupiérovu %1$s. Zdvojnásob sázku, vezmi jednu kartu a využij ji naplno.</string>
+    <string name="hint_reason_double">Silná situace: máš %2$d a krupiér ukazuje %1$s. Zdvojnásob sázku, vezmi jednu kartu a využij ji naplno.</string>
     <string name="hint_reason_split_aces">Dvě esa jsou nejlepší pár k rozdělení: každé se může stát 21, zatímco A-A dohromady je jen slabá měkká 12.</string>
     <string name="hint_reason_split_eights">Dvě osmičky dají 16, nejhorší ruku: rozděl je a začni dvě lepší ruce.</string>
-    <string name="hint_reason_split_pair">Proti krupiérovu %1$s ti rozdělení dá dvě dobré ruce místo jedné slabé.</string>
-    <string name="hint_reason_decline_insurance">Pojištění časem ztrácí žetony: skrytá karta je desítka méně než jednou ze tří, což by bylo potřeba, aby vyšlo nastejno.</string>
+    <string name="hint_reason_split_pair">Když krupiér ukazuje %1$s, rozdělení ti dá dvě dobré ruce místo jedné slabé.</string>
+    <string name="hint_reason_decline_insurance">Pojištění časem ztrácí žetony: skrytá karta má hodnotu deset méně než jednou ze tří, a přitom by to muselo být aspoň jednou ze tří, aby to vyšlo nastejno.</string>
     <!-- The figures under the reason. %1$d = the dealer chance to bust, %2$d = your chance to bust on a hit, both in percent. -->
     <string name="hint_figures">Krupiér přetáhne %1$d%% · Líznutí tě přetáhne %2$d%%</string>
     <string name="hint_figures_dealer_only">Krupiér přetáhne %1$d%%</string>
@@ -97,7 +97,7 @@
     <string name="review_you_busted">Přetáhl jsi s %1$d.</string>
 
     <!-- With hindsight. %1$s = the card a hit would have drawn (Ace, 5, King...), %2$d = the total it would have made. -->
-    <string name="review_would_have_drawn">Kdybys lízl, přišlo by %1$s a měl bys %2$d.</string>
+    <string name="review_would_have_drawn">Kdybys lízl, přišla by karta %1$s a měl bys %2$d.</string>
     <!-- %1$d = your total, %2$d / %3$d / %4$d = the chance a stand wins / ties / loses, in percent, at the moment you decided. -->
     <string name="review_stand_chances">Když ses rozhodoval, stání na %1$d vyhrálo asi v %2$d%% případů, v %3$d%% byla remíza a v %4$d%% prohra.</string>
 </resources>

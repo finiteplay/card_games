@@ -23,7 +23,7 @@
     <string name="help_showdown_title">Showdown</string>
     <string name="help_showdown">Ak po poslednom kole stávok zostanú dvaja alebo viac hráčov, otočia karty lícom nahor a najlepšia ruka vyhráva pot. Ak ostatní zahodia, posledný hráč vyhráva pot bez ukázania kariet. Rovnaké ruky si pot rozdelia rovným dielom.</string>
     <string name="help_tournament_title">Turnaj</string>
-    <string name="help_tournament">Blindy rastú každých 10 rúk, takže žetóny sa pomerne zmenšujú a čakanie je drahé. Nič nie je časované: rozmýšľajte, ako dlho chcete. Skončíte na mieste rovnom počtu hráčov, ktorí zostali, keď vypadnete, takže 6. je prvý, kto vypadne, a 1. je výhra.</string>
+    <string name="help_tournament">Blindy rastú každých 10 rúk, takže hodnota vašich žetónov relatívne klesá a čakanie je drahé. Nič nie je časované: rozmýšľajte, ako dlho chcete. Skončíte na mieste rovnom počtu hráčov, ktorí zostali, keď vypadnete, takže 6. je prvý, kto vypadne, a 1. je výhra.</string>
     <string name="help_leave_title">Odchod</string>
     <string name="help_leave">Vlajka hore predčasne ukončí turnaj a skončíte tam, kde by ste boli, keby ste práve vypadli. Zatvorenie aplikácie ho neukončí: ruka sa uloží a čaká na vás, keď sa vrátite. Vrátenie ťahu neexistuje, pretože po každom rozhodnutí prídu karty, ktoré ste nemohli vidieť.</string>
 
@@ -50,12 +50,12 @@
     <string name="help_ties">Ak dvaja hráči majú rovnaký druh ruky, vyhrávajú vyššie karty. Dva páry es a sedmičiek porazia dva páry kráľov a dám a keď sa hlavné karty zhodujú, rozhodne ďalšia najvyššia. Počíta sa len päť kariet a farby remízu nikdy nerozhodnú: rovnaké ruky si pot rozdelia.</string>
 
     <string name="help_strategy_intro">Sedem nápadov, ktoré novému hráčovi dobre poslúžia. Nevyhrajú každú ruku, ale v rámci turnaja sa sčítajú.</string>
-    <string name="help_strategy_1">Hrajte menej rúk z predných miest. Prví hráči na ťahu majú za sebou najviac súperov, preto tam začínajte len so silnými kartami a uvoľnite sa, keď sa miesta približujú k buttonu.</string>
+    <string name="help_strategy_1">Hrajte menej rúk z predných miest. Prví hráči na ťahu majú za sebou najviac súperov, preto tam začínajte len so silnými kartami a hrajte viac rúk, keď sa miesta približujú k buttonu.</string>
     <string name="help_strategy_2">Radšej zvyšujte, než dorovnávajte. Zvýšenie môže vyhrať pot hneď a keď ho niekto dorovná, máte častejšie silnejšiu ruku. Dorovnanie len dovolí ostatným lacno vidieť karty.</string>
     <string name="help_strategy_3">Zahadzujte častejšie, než je vám pohodlné. Väčšina rúk nestojí za hru a zahodená ruka vás stojí len to, čo ste už vložili.</string>
     <string name="help_strategy_4">Poznajte pomer potu. Ak vás dorovnanie stojí 25 žetónov, aby ste vyhrali pot 75, platíte jeden žetón za každé tri, ktoré môžete vyhrať, takže sa dorovnanie oplatí, ak vyhráte viac než raz zo štyroch. Porovnajte to so svojou šancou skončiť s najlepšou rukou.</string>
     <string name="help_strategy_5">Pozícia je dôležitá. Keď hráte posledný, najprv vidíte, čo robia všetci ostatní, a to má veľkú cenu. Hrajte viac rúk z neskorých miest a menej z predných.</string>
-    <string name="help_strategy_6">Sledujte štýly súperov. Každé miesto je označené ako tight, loose, aggressive alebo passive. Rešpektujte zvýšenie od tight hráča a pomalšie verte stávke od loose, aggressive hráča.</string>
-    <string name="help_hint_note">O rade: ukazuje tvoju šancu, odhadovanú pravdepodobnosť, že vyhráš pot, popri pomere potu, teda podiele potu, koľko stojí dorovnanie. Keď je tvoja šanca vyššia ako pomer potu, dorovnanie sa oplatí. Veta nad nimi vysvetľuje myšlienku za radou. Je to dobrý sprievodca, nie istota, pretože nevidí ničie karty.</string>
-    <string name="help_strategy_7">S malým stackom choďte all in alebo zahoďte. Keď máte len pár veľkých blindov, malé stávky a dorovnania vám nenechávajú priestor na manéver a dobre načasované all in je vaša najlepšia šanca zdvojnásobiť sa.</string>
+    <string name="help_strategy_6">Sledujte štýly súperov. Každé miesto je označené ako tight, loose, agresívny alebo pasívny. Rešpektujte zvýšenie od tight hráča a pomalšie verte stávke od hráča, ktorý je loose a agresívny.</string>
+    <string name="help_hint_note">O nápovede: ukazuje vašu šancu, odhadovanú pravdepodobnosť, že vyhráte pot, popri pomere potu, teda podiele potu, koľko stojí dorovnanie. Keď je vaša šanca vyššia ako pomer potu, dorovnanie sa oplatí. Veta nad nimi vysvetľuje myšlienku za radou. Je to dobrý sprievodca, nie istota, pretože nevidí ničie karty.</string>
+    <string name="help_strategy_7">S malým stackom choďte all in alebo zahoďte. Keď máte len pár veľkých blindov, malé stávky a dorovnania vám nenechávajú priestor na manéver a dobre načasované all in je vaša najlepšia šanca zdvojnásobiť žetóny.</string>
 </resources>

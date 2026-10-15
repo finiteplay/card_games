@@ -17,7 +17,7 @@
     <string name="hint_reason_fold_to_raise">किसी ने रेज़ किया है और आपका हाथ उसे चुकाने लायक मज़बूत नहीं है: फ़ोल्ड करना सस्ता है।</string>
     <string name="hint_reason_push_short_stack">सिर्फ़ %1$d बिग ब्लाइंड बचे हैं: ऑल इन या फ़ोल्ड सबसे अच्छा है, और यह हाथ ऑल इन के लिए काफ़ी मज़बूत है।</string>
     <string name="hint_reason_fold_short_stack">सिर्फ़ %1$d बिग ब्लाइंड बचे हैं: यह हाथ सब कुछ दाँव पर लगाने के लिए बहुत कमज़ोर है।</string>
-    <string name="hint_reason_value_bet">आप शायद आगे हैं: बेट करें ताकि कमज़ोर हाथों को और कार्ड देखने के लिए पैसे देने पड़ें।</string>
+    <string name="hint_reason_value_bet">आप शायद आगे हैं: बेट करें ताकि कमज़ोर हाथों को और कार्ड देखने के लिए कीमत चुकानी पड़े।</string>
     <string name="hint_reason_value_raise">बेट के सामने मज़बूत हाथ: रेज़ करें और आगे रहते हुए ज़्यादा चिप्स लगाएँ।</string>
     <string name="hint_reason_semi_bluff">मज़बूत ड्रॉ (%1$d आउट्स): बेट अभी जीत सकती है, और आप सुधार भी कर सकते हैं।</string>
     <string name="hint_reason_call_draw">ड्रॉ वाला हाथ (%1$d आउट्स): ड्रॉ का पीछा करने के लिए पॉट काफ़ी बड़ा है।</string>
@@ -30,19 +30,19 @@
     <string name="hint_threat_beat">किसी विरोधी के पास पहले से बेहतर हाथ होने की संभावना: %1$d%%</string>
     <string name="hint_threat_list">सबसे संभावित बेहतर हाथ: %1$s</string>
     <string name="hint_threat_item">%1$s %2$d%%</string>
-    <string name="review_title">हिंट पर एक नज़र</string>
-    <string name="review_followed_won">आपने हिंट माना और जीत गए: जीतने की आपकी संभावना लगभग %1$d%% थी।</string>
-    <string name="review_followed_lost">आपने हिंट माना और हार गए, ऐसा होता है: लगभग %1$d%% पर आप %2$d%% बार हारते हैं। फ़ैसले को परखें, नतीजे को नहीं।</string>
-    <string name="review_followed_fold">आपने हिंट के कहे अनुसार फ़ोल्ड किया और बेहतर मौके के लिए चिप्स बचा लिए।</string>
-    <string name="review_ignored_won">आप जीते, पर हिंट ने सुझाया था: %1$s। उसकी वजह: %2$s सलाह के खिलाफ़ जीतना किस्मत है, योजना नहीं।</string>
-    <string name="review_ignored_lost">हिंट ने सुझाया था: %1$s, पर आपने कुछ और चुना और हार गए। उसकी वजह: %2$s</string>
-    <string name="review_ignored_fold">आपने फ़ोल्ड किया, पर हिंट ने सुझाया था: %1$s। उसकी वजह: %2$s</string>
-    <string name="review_beaten_by">आप %1$s से हार गए। हिंट ने इसकी संभावना लगभग %2$d%% बताई थी।</string>
+    <string name="review_title">संकेत पर एक नज़र</string>
+    <string name="review_followed_won">आपने संकेत माना और जीत गए: जीतने की आपकी संभावना लगभग %1$d%% थी।</string>
+    <string name="review_followed_lost">आपने संकेत माना और हार गए, ऐसा होता है: लगभग %1$d%% पर आप %2$d%% बार हारते हैं। फ़ैसले को परखें, नतीजे को नहीं।</string>
+    <string name="review_followed_fold">आपने संकेत के कहे अनुसार फ़ोल्ड किया और बेहतर मौके के लिए चिप्स बचा लिए।</string>
+    <string name="review_ignored_won">आप जीते, पर संकेत ने सुझाया था: %1$s। उसकी वजह: %2$s सलाह के खिलाफ़ जीतना किस्मत है, योजना नहीं।</string>
+    <string name="review_ignored_lost">संकेत ने सुझाया था: %1$s, पर आपने कुछ और चुना और हार गए। उसकी वजह: %2$s</string>
+    <string name="review_ignored_fold">आपने फ़ोल्ड किया, पर संकेत ने सुझाया था: %1$s। उसकी वजह: %2$s</string>
+    <string name="review_beaten_by">आप %1$s से हार गए। संकेत ने इसकी संभावना लगभग %2$d%% बताई थी।</string>
 
     <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">आप यह हाथ जीत जाते, पर फ़ैसले के समय आपकी संभावना सिर्फ़ लगभग %1$d%% थी। फ़ैसले को परखें, नतीजे को नहीं।</string>
     <string name="review_hindsight_fold_lost">आप यह हाथ हार जाते: फ़ैसले के समय आपकी संभावना लगभग %1$d%% थी।</string>
     <string name="review_chance_at_decision">फ़ैसले के समय आपकी संभावना लगभग %1$d%% थी।</string>
     <string name="review_chance_slim_win">आप जीते, पर फ़ैसले के समय संभावना कम थी: लगभग %1$d%%।</string>
-    <string name="review_followed_won_slim">आपने हिंट माना और जीत गए, पर संभावना कम थी: लगभग %1$d%%। अच्छे फ़ैसलों को हमेशा किस्मत का साथ नहीं मिलता।</string>
+    <string name="review_followed_won_slim">आपने संकेत माना और जीत गए, पर संभावना कम थी: लगभग %1$d%%। अच्छे फ़ैसलों को हमेशा किस्मत का साथ नहीं मिलता।</string>
 </resources>

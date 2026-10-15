@@ -2,22 +2,27 @@
 
 ## Main store listing (en-US)
 
-**Title (20/30):** Spider by FinitePlay
+**Title:** Spider Solitaire: FinitePlay
 
-**Short description (61/80):** Every Spider deal proven solvable, with offline winning hints
+**Short description:** Play 1, 2 or 4 suits offline with solvable deals and optional hints
 
 **Full description:**
 
-Quality card games should not need a catch. Spider by FinitePlay is completely free. There are
-no ads, in-app purchases, subscriptions, user tracking, or account. The full game works offline and
-never needs an internet connection. Your progress and statistics stay on your device.
+Build complete King-to-Ace runs in Spider Solitaire. Choose one, two, or four suits for
+different levels of challenge, with advanced hints available when you want guidance.
+
+The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions.
+Play stays completely on your device: no accounts, tracking, data collection or sharing,
+leaderboards, or online features. Your progress and statistics stay private and local.
 
 Every included deal is provably solvable, whether you play with one, two, or four suits. Each
-comes from a certified catalog validated offline with a winning path. Enable winning-move hints
-to get guidance through the deal one move at a time.
+comes from a certified catalog validated offline with a winning path. Guided hints can lead
+you through a solution one move at a time. After you take a different path, finding a new
+solution is subject to search limits; a solvable start does not make every later position winnable.
 
-This is full-featured Spider, free without compromise. Build complete King-to-Ace runs in one,
-two, or four suits and play at your own pace.
+Play at your own pace. Configurable rest reminders invite you to pause after extended play.
+There are no urgency bonuses or timed daily rewards. Local statistics help you reflect on
+your play, without competitive leaderboards or pressure to keep going.
 
 Features:
 • One-, two-, and four-suit Spider
@@ -36,6 +41,7 @@ FinitePlay makes quality games that respect your time, privacy, and attention.
 
 - App or game: Game
 - Category: Card
+- Developer contact email: contact@finiteplay.org
 - Suggested tags: Solitaire, Card, Offline, Single player
 - Developer contact website: https://finiteplay.org
 - Privacy policy: https://finiteplay.org/privacy

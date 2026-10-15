@@ -18,13 +18,13 @@
     <string name="hint_reason_push_short_stack">残り%1$dビッグブラインド：オールインかフォールドが最善で、このハンドはオールインできる強さです。</string>
     <string name="hint_reason_fold_short_stack">残り%1$dビッグブラインド：このハンドはすべてを賭けるには弱すぎます。</string>
     <string name="hint_reason_value_bet">おそらくリードしています。ベットして、弱いハンドにカードを見るためのコストを払わせましょう。</string>
-    <string name="hint_reason_value_raise">ベットに対して強いハンドです。リードしているうちにレイズしてチップを増やしましょう。</string>
+    <string name="hint_reason_value_raise">ベットに対して強いハンドです。リードしているうちにレイズして、ポットにもっとチップを入れましょう。</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
     <string name="hint_reason_semi_bluff">強いドロー（%1$dアウツ）：ベットでその場で勝てる可能性があり、まだ改善もできます。</string>
     <string name="hint_reason_call_draw">ドローハンド（%1$dアウツ）：ポットが十分大きいので、ドローを追う価値があります。</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">コールは得です。勝率は約%1$d%%で、必要なのは%2$d%%だけです。</string>
-    <string name="hint_reason_fold_bad_price">コールするには足りません。必要なのは%2$d%%で、あなたは約%1$d%%です。</string>
+    <string name="hint_reason_fold_bad_price">コールするには足りません。必要なのは%2$d%%で、あなたの勝率は約%1$d%%です。</string>
     <string name="hint_reason_free_card">チェックは無料で、ハンドは弱めです。コストなしで次のカードを見ましょう。</string>
     <string name="hint_reason_pot_control">中程度のハンドです。チェックしてポットを小さく保ち、次のカードを見ましょう。</string>
 
@@ -39,7 +39,7 @@
     <!-- %1$d = your chance to win at that moment, in percent -->
     <string name="review_followed_won">ヒントに従って勝ちました。勝率は約%1$d%%でした。</string>
     <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
-    <string name="review_followed_lost">ヒントに従いましたが負けました。こういうこともあります。約%1$d%%なら、%2$d%%は負けます。結果ではなく判断を評価しましょう。</string>
+    <string name="review_followed_lost">ヒントに従いましたが負けました。こういうこともあります。勝率約%1$d%%でも、%2$d%%の確率で負けます。結果ではなく判断を評価しましょう。</string>
     <string name="review_followed_fold">ヒントどおりにフォールドして、より良い場面のためにチップを残しました。</string>
     <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
     <string name="review_ignored_won">勝ちましたが、ヒントは%1$sを勧めていました。理由：%2$s アドバイスに逆らっての勝ちは運であって、作戦ではありません。</string>

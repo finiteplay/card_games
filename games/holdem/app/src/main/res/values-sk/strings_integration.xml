@@ -8,41 +8,41 @@
     <string name="recovery_notice">Vašu uloženú ruku sa nepodarilo otvoriť, preto sa rozdala odznova. Žiadne žetóny sa nestratili.</string>
 
     <!-- Hint reasons: one coach sentence per spot. %1$d / %2$d are numbers: stack in big blinds (push/fold), outs (draws), or win chance % and pot cost % (price). -->
-    <string name="hint_reason_premium_raise">Prémiová ruka: zvýš, aby si zväčšil pot, kým si pravdepodobne vpredu.</string>
-    <string name="hint_reason_late_position_raise">Neskorá pozícia, takže hráš po väčšine hráčov: zvýšením môžeš hneď vyhrať blindy.</string>
-    <string name="hint_reason_playable_raise">Dobrá ruka pre túto situáciu: zvýšením prevezmeš vedenie v stávkovaní.</string>
+    <string name="hint_reason_premium_raise">Prémiová ruka: zvýšte, aby ste zväčšili pot, kým ste pravdepodobne vpredu.</string>
+    <string name="hint_reason_late_position_raise">Neskorá pozícia, takže hráte po väčšine hráčov: zvýšením môžete hneď vyhrať blindy.</string>
+    <string name="hint_reason_playable_raise">Dobrá ruka pre túto situáciu: zvýšením prevezmete vedenie v stávkovaní.</string>
     <string name="hint_reason_call_to_see_flop">Oplatí sa vidieť flop za túto cenu, ale ruka nie je dosť silná na zvýšenie.</string>
-    <string name="hint_reason_free_flop">Nikto nezvýšil a check je zadarmo: pozri si flop bez nákladov.</string>
+    <string name="hint_reason_free_flop">Nikto nezvýšil a check je zadarmo: pozrite si flop bez nákladov.</string>
     <string name="hint_reason_fold_weak">Slabá ruka: zahodenie nič nestojí a šetrí žetóny na lepšie situácie.</string>
-    <string name="hint_reason_fold_to_raise">Niekto zvýšil a tvoja ruka nie je dosť silná na to, aby si to zaplatil: zahodenie je lacnejšie.</string>
-    <string name="hint_reason_push_short_stack">Zostáva len %1$d veľkých blindov: najlepšie je all in alebo zahodiť a táto ruka je dosť silná na all in.</string>
-    <string name="hint_reason_fold_short_stack">Zostáva len %1$d veľkých blindov: táto ruka je príliš slabá na to, aby si pre ňu riskoval všetko.</string>
-    <string name="hint_reason_value_bet">Pravdepodobne si vpredu: staviaj, aby slabšie ruky museli platiť za ďalšie karty.</string>
-    <string name="hint_reason_value_raise">Silná ruka proti stávke: zvýš, aby si dal do hry viac žetónov, kým si vpredu.</string>
-    <string name="hint_reason_semi_bluff">Silný draw (%1$d outov): stávka môže hneď vyhrať a stále sa môžeš zlepšiť.</string>
-    <string name="hint_reason_call_draw">Ruka s drawom (%1$d outov): pot je dosť veľký na to, aby sa draw oplatilo naháňať.</string>
-    <string name="hint_reason_call_good_price">Dorovnanie sa oplatí: vyhrávaš asi v %1$d%% prípadov a cena vyžaduje len %2$d%%.</string>
-    <string name="hint_reason_fold_bad_price">Na dorovnanie to nestačí: cena vyžaduje %2$d%% a ty máš asi %1$d%%.</string>
-    <string name="hint_reason_free_card">Check je zadarmo a ruka je slabá: vezmi si ďalšiu kartu bez nákladov.</string>
-    <string name="hint_reason_pot_control">Priemerná ruka: urob check, aby pot zostal malý, a pozri si ďalšiu kartu.</string>
+    <string name="hint_reason_fold_to_raise">Niekto zvýšil a vaša ruka nie je dosť silná na to, aby ste to zaplatili: zahodenie je lacnejšie.</string>
+    <string name="hint_reason_push_short_stack">Máte už len %1$d BB: najlepšie je all in alebo zahodiť a táto ruka je dosť silná na all in.</string>
+    <string name="hint_reason_fold_short_stack">Máte už len %1$d BB: táto ruka je príliš slabá na to, aby ste pre ňu riskovali všetko.</string>
+    <string name="hint_reason_value_bet">Pravdepodobne ste vpredu: stavte, aby slabšie ruky museli platiť za ďalšie karty.</string>
+    <string name="hint_reason_value_raise">Silná ruka proti stávke: zvýšte, aby ste dali do hry viac žetónov, kým ste vpredu.</string>
+    <string name="hint_reason_semi_bluff">Silný draw (outy: %1$d): stávka môže hneď vyhrať a stále sa môžete zlepšiť.</string>
+    <string name="hint_reason_call_draw">Ruka s drawom (outy: %1$d): pot je dosť veľký na to, aby sa draw oplatilo naháňať.</string>
+    <string name="hint_reason_call_good_price">Dorovnanie sa oplatí: vyhrávate asi v %1$d%% prípadov a cena vyžaduje len %2$d%%.</string>
+    <string name="hint_reason_fold_bad_price">Na dorovnanie to nestačí: cena vyžaduje %2$d%% a vy máte asi %1$d%%.</string>
+    <string name="hint_reason_free_card">Check je zadarmo a ruka je slabá: vezmite si ďalšiu kartu bez nákladov.</string>
+    <string name="hint_reason_pot_control">Priemerná ruka: dajte check, aby pot zostal malý, a pozrite si ďalšiu kartu.</string>
 
     <!-- Hint threats and review: %1$d / %2$d are percents; %1$s / %2$s are hand names, the suggested action, or the Hint's reason sentence. -->
     <string name="hint_threat_beat">Šanca, že súper už má lepšiu ruku: %1$d%%</string>
     <string name="hint_threat_list">Najpravdepodobnejšie lepšie ruky: %1$s</string>
     <string name="hint_threat_item">%1$s %2$d%%</string>
-    <string name="review_title">Spätný pohľad na radu</string>
-    <string name="review_followed_won">Riadil si sa radou a vyhral si: mal si asi %1$d%% šancu na výhru.</string>
-    <string name="review_followed_lost">Riadil si sa radou a prehral si, čo sa stáva: s asi %1$d%% prehráš v %2$d%% prípadov. Posudzuj rozhodnutie, nie výsledok.</string>
-    <string name="review_followed_fold">Zahodil si, ako rada odporúčala, a ušetril si žetóny na lepšiu príležitosť.</string>
-    <string name="review_ignored_won">Vyhral si, ale rada navrhovala: %1$s. Dôvod: %2$s Výhra proti rade je šťastie, nie plán.</string>
-    <string name="review_ignored_lost">Rada navrhovala: %1$s, ale rozhodol si sa inak a prehral si. Dôvod: %2$s</string>
-    <string name="review_ignored_fold">Zahodil si, ale rada navrhovala: %1$s. Dôvod: %2$s</string>
-    <string name="review_beaten_by">Prehral si s kombináciou: %1$s. Rada ju odhadla asi na %2$d%%.</string>
+    <string name="review_title">Spätný pohľad na nápovedu</string>
+    <string name="review_followed_won">Riadili ste sa nápovedou a vyhrali ste: mali ste asi %1$d%% šancu na výhru.</string>
+    <string name="review_followed_lost">Riadili ste sa nápovedou a prehrali ste, čo sa stáva: s približne %1$d%% prehráte v %2$d%% prípadov. Posudzujte rozhodnutie, nie výsledok.</string>
+    <string name="review_followed_fold">Zahodili ste, ako nápoveda odporúčala, a ušetrili ste žetóny na lepšiu príležitosť.</string>
+    <string name="review_ignored_won">Vyhrali ste, ale nápoveda navrhovala: %1$s. Dôvod: %2$s Výhra proti rade je šťastie, nie plán.</string>
+    <string name="review_ignored_lost">Nápoveda navrhovala: %1$s, ale rozhodli ste sa inak a prehrali ste. Dôvod: %2$s</string>
+    <string name="review_ignored_fold">Zahodili ste, ale nápoveda navrhovala: %1$s. Dôvod: %2$s</string>
+    <string name="review_beaten_by">Prehrali ste s kombináciou: %1$s. Nápoveda ju odhadla asi na %2$d%%.</string>
 
     <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
-    <string name="review_hindsight_fold_won">Túto ruku by si vyhral, ale keď si sa rozhodoval, mal si šancu len asi %1$d%%. Posudzuj rozhodnutie, nie výsledok.</string>
-    <string name="review_hindsight_fold_lost">Túto ruku by si prehral: keď si sa rozhodoval, mal si šancu asi %1$d%%.</string>
-    <string name="review_chance_at_decision">Keď si sa rozhodoval, mal si šancu asi %1$d%%.</string>
-    <string name="review_chance_slim_win">Vyhral si, ale šanca bola pri rozhodovaní slabá: asi %1$d%%.</string>
-    <string name="review_followed_won_slim">Riadil si sa radou a vyhral si, ale šanca bola slabá: asi %1$d%%. Dobré rozhodnutia nemajú vždy šťastie.</string>
+    <string name="review_hindsight_fold_won">Túto ruku by ste vyhrali, ale keď ste sa rozhodovali, mali ste šancu len asi %1$d%%. Posudzujte rozhodnutie, nie výsledok.</string>
+    <string name="review_hindsight_fold_lost">Túto ruku by ste prehrali: keď ste sa rozhodovali, mali ste šancu asi %1$d%%.</string>
+    <string name="review_chance_at_decision">Keď ste sa rozhodovali, mali ste šancu asi %1$d%%.</string>
+    <string name="review_chance_slim_win">Vyhrali ste, ale šanca bola pri rozhodovaní slabá: asi %1$d%%.</string>
+    <string name="review_followed_won_slim">Riadili ste sa nápovedou a vyhrali ste, ale šanca bola slabá: asi %1$d%%. Dobré rozhodnutia nemajú vždy šťastie.</string>
 </resources>

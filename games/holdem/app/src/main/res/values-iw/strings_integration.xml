@@ -31,9 +31,9 @@
     <string name="hint_threat_list">הידיים הטובות יותר הסבירות ביותר: %1$s</string>
     <string name="hint_threat_item">%1$s %2$d%%</string>
     <string name="review_title">מבט לאחור על הרמז</string>
-    <string name="review_followed_won">עשיתם כמו שהרמז ייעץ וניצחתם: היה לכם בערך %1$d%% סיכוי לנצח.</string>
-    <string name="review_followed_lost">עשיתם כמו שהרמז ייעץ והפסדתם, זה קורה: עם בערך %1$d%% מפסידים ב-%2$d%% מהמקרים. שפטו את ההחלטה, לא את התוצאה.</string>
-    <string name="review_followed_fold">עשיתם פולד כמו שהרמז ייעץ ושמרתם אסימונים למצב טוב יותר.</string>
+    <string name="review_followed_won">פעלתם לפי הרמז וניצחתם: היה לכם בערך %1$d%% סיכוי לנצח.</string>
+    <string name="review_followed_lost">פעלתם לפי הרמז והפסדתם, זה קורה: עם בערך %1$d%% מפסידים ב-%2$d%% מהמקרים. שפטו את ההחלטה, לא את התוצאה.</string>
+    <string name="review_followed_fold">עשיתם פולד כמו שהרמז יעץ ושמרתם אסימונים למצב טוב יותר.</string>
     <string name="review_ignored_won">ניצחתם, אבל הרמז הציע: %1$s. הסיבה: %2$s ניצחון נגד העצה הוא מזל, לא תוכנית.</string>
     <string name="review_ignored_lost">הרמז הציע: %1$s, אבל בחרתם אחרת והפסדתם. הסיבה: %2$s</string>
     <string name="review_ignored_fold">עשיתם פולד, אבל הרמז הציע: %1$s. הסיבה: %2$s</string>
@@ -44,5 +44,5 @@
     <string name="review_hindsight_fold_lost">הייתם מפסידים ביד הזאת: הסיכוי שלכם היה בערך %1$d%% כשהחלטתם.</string>
     <string name="review_chance_at_decision">כשהחלטתם, הסיכוי שלכם היה בערך %1$d%%.</string>
     <string name="review_chance_slim_win">ניצחתם, אבל הסיכוי היה קלוש כשהחלטתם: בערך %1$d%%.</string>
-    <string name="review_followed_won_slim">עשיתם כמו שהרמז ייעץ וניצחתם, אבל הסיכוי היה קלוש: בערך %1$d%%. החלטות טובות לא תמיד מתמזלות.</string>
+    <string name="review_followed_won_slim">פעלתם לפי הרמז וניצחתם, אבל הסיכוי היה קלוש: בערך %1$d%%. החלטות טובות לא תמיד מתמזלות.</string>
 </resources>

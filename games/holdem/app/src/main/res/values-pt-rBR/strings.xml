@@ -24,7 +24,7 @@
     <string name="help_tournament_title">O torneio</string>
     <string name="help_tournament">Os blinds sobem a cada 10 mãos, então as fichas ficam proporcionalmente mais escassas e esperar sai caro. Nada tem tempo limite: leve o tempo que quiser. Você termina na posição igual ao número de jogadores que restam quando é eliminado, então o 6º é o primeiro a sair e o 1º é a vitória.</string>
     <string name="help_leave_title">Sair</string>
-    <string name="help_leave">A bandeira no topo encerra o torneio antes do fim, e você termina onde estaria se fosse eliminado agora. Fechar o app não faz isso: sua mão é salva e espera por você quando voltar. Não há desfazer, porque cada decisão é seguida de cartas que você não poderia ter visto.</string>
+    <string name="help_leave">A bandeira no topo encerra o torneio antes do fim, e você termina onde estaria se fosse eliminado agora. Fechar o app não faz isso: sua mão é salva e espera por você quando voltar. Não é possível desfazer, porque cada decisão é seguida de cartas que você não poderia ter visto.</string>
     <string name="help_hands_intro">Da mão mais forte à mais fraca. As cinco cartas mostradas são um exemplo de cada uma.</string>
     <string name="help_hand_straight_flush_title">Straight flush</string>
     <string name="help_hand_straight_flush">Cinco cartas em sequência, todas do mesmo naipe. A melhor delas, do dez ao ás, é um royal flush.</string>

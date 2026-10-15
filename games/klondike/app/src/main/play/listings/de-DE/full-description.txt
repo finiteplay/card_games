@@ -1,0 +1,19 @@
+Spiele klassisches Klondike-Solitär offline. Ziehe eine oder drei Karten, wähle einen Schwierigkeitsgrad und nutze fortgeschrittene Tipps, wenn du Hilfe möchtest.
+
+Das FinitePlay-Versprechen: vollständig kostenlos, ohne Werbung, In-App-Käufe oder Abonnements. Das gesamte Spiel läuft auf deinem Gerät: ohne Konten, Tracking, Datenerhebung oder Datenweitergabe, Ranglisten oder Online-Funktionen. Dein Fortschritt und deine Statistiken bleiben privat und lokal.
+
+Die Spiele von Trivial bis Experte beginnen mit einer überprüften Lösung. Der separate Insane-Modus ist eine Ausnahme: Seine Spiele sind nicht zertifiziert. Ein lösbarer Anfang kann durch deine Entscheidungen in eine Sackgasse führen.
+
+Die Tipps suchen vom aktuellen Spielfeld aus nach einem Weg zur Lösung. Kann die Suche innerhalb ihres Limits keinen solchen Weg nachweisen, meldet sie das, statt einen Gewinn zu garantieren.
+
+Funktionen:
+• Eine oder drei Karten ziehen und sechs Schwierigkeitsgrade
+• Tippen oder Ziehen, Rückgängig und Spiel wiederholen
+• Tipps für das aktuelle Spielfeld
+• Automatischer Abschluss und optionale automatische Ablage
+• Helle und dunkle Designs sowie Ton- und Animationsoptionen
+• Lokale Statistiken
+
+Spiele in deinem eigenen Tempo. Einstellbare Pausenerinnerungen laden dich nach längerer Spielzeit zu einer Pause ein. Es gibt keine zeitlich dringenden Boni und keine befristeten täglichen Belohnungen. Lokale Statistiken helfen dir, dein Spiel zu überdenken, ohne Wettbewerbsdruck zum Weiterspielen.
+
+FinitePlay entwickelt Kartenspiele, die deine Zeit, deine Privatsphäre und deine Aufmerksamkeit respektieren.
