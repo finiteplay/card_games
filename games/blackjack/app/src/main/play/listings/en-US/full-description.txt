@@ -7,13 +7,10 @@ Play stays completely on your device: no accounts, tracking, data collection or 
 leaderboards, online features, or matches against real people. Your progress and statistics
 stay private and local.
 
-Play classic blackjack with clear rules, fair dealing, and optional basic-strategy guidance.
-Blackjack by FinitePlay includes hit, stand, double, split, insurance, dealer peek, and 3:2
-blackjack payouts.
-
-Practice decisions with optional basic-strategy hints that explain why to hit, stand, double,
-or split. Learn from the dealer's up card, your hand, and bust-risk explanations, then track
-your virtual bankroll and statistics. Hints help you understand choices; they do not guarantee wins.
+Practice hit, stand, double, and split decisions with optional basic-strategy hints that explain
+the reasoning and bust risk. The fixed rules use six decks, shuffled fresh each round; the dealer
+stands on soft 17, blackjack pays 3:2, and insurance and dealer peek are included. Hints help you
+understand choices; they do not guarantee wins.
 
 Play at your own pace. Configurable rest reminders invite you to pause after extended play.
 There are no urgency bonuses or timed daily rewards, and no competitive leaderboards or

@@ -1,14 +1,13 @@
-Build complete King-to-Ace runs in Spider Solitaire. Choose one, two, or four suits for
-different levels of challenge, with advanced hints available when you want guidance.
+Build complete King-to-Ace runs in Spider Solitaire. Start with 1 suit or take on 2 or 4 suits,
+with undo, replay, and optional hints when you want help.
 
 The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions.
 Play stays completely on your device: no accounts, tracking, data collection or sharing,
 leaderboards, or online features. Your progress and statistics stay private and local.
 
-Every included deal is provably solvable, whether you play with one, two, or four suits. Each
-comes from a certified catalog validated offline with a winning path. Guided hints can lead
-you through a solution one move at a time. After you take a different path, finding a new
-solution is subject to search limits; a solvable start does not make every later position winnable.
+Every included starting deal has a verified solution. Your choices still matter: a later position
+may no longer be winnable. Guided hints can follow a known solution; after you choose another
+path, finding a new solution is subject to search limits.
 
 Play at your own pace. Configurable rest reminders invite you to pause after extended play.
 There are no urgency bonuses or timed daily rewards. Local statistics help you reflect on
@@ -18,7 +17,7 @@ Features:
 • One-, two-, and four-suit Spider
 • 23,675 certified-solvable deals across all three suit counts
 • Tap or drag complete same-suit sequences
-• Helpful move highlighting and optional winning-move hints
+• Move highlighting and optional guided hints
 • Undo, Replay, and animated row deals and card moves
 • Optional sound and animation controls
 • Light, dark, and time-based themes

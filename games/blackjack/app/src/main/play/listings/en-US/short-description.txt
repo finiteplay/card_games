@@ -1,1 +1,1 @@
-Play blackjack offline with virtual chips and optional basic-strategy hints
+Simple, battery-conscious offline Blackjack: virtual chips, hints, no ads

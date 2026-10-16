@@ -4,7 +4,7 @@
 
 **Title:** Texas Holdem Poker: FinitePlay
 
-**Short description:** Offline Texas Hold’em tournaments with virtual chips and five computer opponents
+**Short description:** Simple, battery-conscious offline poker: virtual chips, 5 opponents, no ads
 
 **Full description:**
 

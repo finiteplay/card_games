@@ -1,17 +1,15 @@
-Plan your moves in classic FreeCell Solitaire, with every card visible, four free cells,
-and advanced hints when you want guidance.
+See every card and plan your next move in classic FreeCell. Use four free cells and empty columns
+to make space, move card sequences, and explore different approaches with undo and replay.
 
 The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions.
 Play stays completely on your device: no accounts, tracking, data collection or sharing,
 leaderboards, or online features. Your progress and statistics stay private and local.
 
-Every included hand is provably solvable. Each was validated offline with a winning path before
-it entered the game. Hint searches the board you are actually playing and guides you through a
-winning plan one move at a time. If it cannot prove a path within its search limit, it says so
-plainly instead of pretending.
+Every included deal starts with a verified solution. A later board can still reach a dead end,
+and hints have search limits; when a hint cannot establish a path, it says so plainly.
 
-Free cells and empty columns make multi-card supermoves possible, and the game works out
-the legal capacity for you. A solvable starting deal can still be played into a dead end.
+Free cells and empty columns let you move card sequences when there is enough space; the game
+works out the legal capacity for you.
 
 Play at your own pace. Configurable rest reminders invite you to pause after extended play.
 There are no urgency bonuses or timed daily rewards. Local scores and statistics help you
@@ -19,8 +17,8 @@ reflect on your play, without competitive leaderboards or pressure to keep going
 
 Features:
 • 2,000 certified-solvable hands
-• Board-aware winning hints that guide you through the current hand
-• Tap or drag controls, including multi-card supermoves
+• Optional hints that search your current board
+• Tap or drag controls, including multi-card moves
 • Undo, Replay, and automatic finish
 • Optional automatic foundation moves, sound, and card animations
 • Light, dark, and time-based themes

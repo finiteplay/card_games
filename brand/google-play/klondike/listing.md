@@ -4,21 +4,20 @@
 
 **Title:** Klondike Solitaire: FinitePlay
 
-**Short description:** Classic solitaire with solvable deals, draw 1 or 3, and offline hints
+**Short description:** Simple, battery-conscious offline Klondike: draw 1/3, hints, no ads
 
 **Full description:**
 
-Play familiar Klondike Solitaire offline, with draw-one and draw-three modes, a choice of
-difficulty, and advanced hints when you want help.
+Play classic Klondike Solitaire offline. Choose draw 1 or draw 3, pick a comfortable challenge,
+and use undo, replay, or an optional hint when you want another approach.
 
 The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions.
 Play stays completely on your device: no accounts, tracking, data collection or sharing,
 leaderboards, or online features. Your progress and statistics stay private and local.
 
-Deals from Trivial through Expert are provably solvable: each comes from a catalog validated
-offline with a winning path. Hint searches the board you are actually playing and guides you one
-move at a time. If it cannot prove a path within its search limit, it says so plainly instead of
-pretending. The deliberately extreme Insane level is clearly identified as uncertified.
+Deals from Trivial through Expert start with a verified solution. The separate Insane level
+contains uncertified deals. A solvable starting deal can still lead to a dead end. Hints search
+your current board and report when they cannot establish a winning path within their limit.
 
 Play at your own pace. Configurable rest reminders invite you to pause after extended play.
 There are no urgency bonuses or timed daily rewards. Local scores and statistics help you
@@ -27,7 +26,7 @@ reflect on your play, without competitive leaderboards or pressure to keep going
 Features:
 • Six difficulty levels, with certified-solvable deals from Trivial through Expert
 • Draw-one and draw-three rules
-• Board-aware hints that guide you through the current deal
+• Optional hints that search your current board
 • Tap or drag controls, Undo, Replay, and automatic finish
 • Optional automatic foundation moves, sound, and card animations
 • Light, dark, and time-based themes

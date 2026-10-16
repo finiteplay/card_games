@@ -1,1 +1,1 @@
-Plan each move with solvable deals, offline hints, undo and replay
+Simple, battery-conscious offline FreeCell: solvable deals, hints, no ads
