@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Joc nr. %1$d</string>
     <string name="recovery_notice">Jocul salvat nu a putut fi deschis, așa că a fost împărțit unul nou.</string>
     <string name="setting_automatic_moves">Mutări automate în fundație</string>

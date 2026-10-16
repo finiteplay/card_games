@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Rozdanie #%1$d</string>
     <string name="recovery_notice">Nie udało się otworzyć zapisanej gry, więc rozdano nową.</string>
     <string name="setting_automatic_moves">Automatyczne przenoszenie na stosy</string>

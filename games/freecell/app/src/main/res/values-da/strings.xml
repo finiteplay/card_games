@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Spil nr. %1$d</string>
     <string name="recovery_notice">Dit gemte spil kunne ikke åbnes, så et nyt blev givet.</string>
     <string name="setting_automatic_moves">Automatiske træk til hjemmebunkerne</string>

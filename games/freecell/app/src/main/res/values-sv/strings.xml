@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Parti #%1$d</string>
     <string name="recovery_notice">Ditt sparade spel kunde inte öppnas, så ett nytt delades ut.</string>
     <string name="setting_automatic_moves">Automatiska flyttar till hemhögarna</string>

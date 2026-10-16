@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">تكساس هولدم</string>
     <string name="help_title">طريقة اللعب</string>
     <string name="help_tab_rules">القواعد</string>
     <string name="help_tab_hands">الأيدي</string>

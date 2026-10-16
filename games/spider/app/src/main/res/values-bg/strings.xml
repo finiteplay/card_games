@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Spider</string>
     <string name="suit_count_one">Един цвят</string>
     <string name="suit_count_two">Два цвята</string>
     <string name="suit_count_four">Четири цвята</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Роздача №%1$d</string>
     <string name="recovery_notice">Збережену гру не вдалося відкрити, тому роздано нову.</string>
     <string name="setting_automatic_moves">Автоматичні ходи у фундацію</string>

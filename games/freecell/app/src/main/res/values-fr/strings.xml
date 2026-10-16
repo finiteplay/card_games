@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Donne n° %1$d</string>
     <string name="recovery_notice">Votre partie sauvegardée n\'a pas pu être ouverte, une nouvelle partie a donc été distribuée.</string>
     <string name="setting_automatic_moves">Déplacements automatiques vers les fondations</string>

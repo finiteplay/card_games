@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name" translatable="false">Blackjack by FinitePlay</string>
 
-    <!-- Board title: the game's traditional name, identical in every locale like the other games'. -->
-    <string name="game_title" translatable="false">Blackjack</string>
+    <!-- Board title is localized for each supported UI language. -->
+    <string name="game_title">Blackjack</string>
 
     <!-- Action bar (UI_SPEC.md "Action Bar"). One word where a word exists; a label may wrap inside its two reserved lines. -->
     <string name="action_hit">Hit</string>

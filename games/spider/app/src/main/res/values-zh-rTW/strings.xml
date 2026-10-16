@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">蜘蛛接龍</string>
     <string name="suit_count_one">單一花色</string>
     <string name="suit_count_two">兩種花色</string>
     <string name="suit_count_four">四種花色</string>

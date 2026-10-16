@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Spindelharpan</string>
     <string name="suit_count_one">En färg</string>
     <string name="suit_count_two">Två färger</string>
     <string name="suit_count_four">Fyra färger</string>

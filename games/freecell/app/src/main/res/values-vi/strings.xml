@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Ván #%1$d</string>
     <string name="recovery_notice">Không thể mở ván đã lưu của bạn, vì vậy một ván mới đã được chia.</string>
     <string name="setting_automatic_moves">Tự động chuyển bài vào nền</string>

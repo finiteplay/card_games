@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Texas Hold’em</string>
     <string name="help_title">Kako igrati</string>
     <string name="help_tab_rules">Pravila</string>
     <string name="help_tab_hands">Ruke</string>

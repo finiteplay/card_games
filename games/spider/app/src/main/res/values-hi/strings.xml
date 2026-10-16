@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">स्पाइडर</string>
     <string name="suit_count_one">एक सूट</string>
     <string name="suit_count_two">दो सूट</string>
     <string name="suit_count_four">चार सूट</string>

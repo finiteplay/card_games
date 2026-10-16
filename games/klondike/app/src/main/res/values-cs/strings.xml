@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Klondike</string>
     <string name="cd_foundation_top_card">%1$s %2$s, základ %2$s</string>
     <string name="cd_foundation_empty">Základ %1$s, prázdný</string>
     <string name="cd_move_to_tableau">Přesunout na hrací plochu</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Texas Hold’em</string>
     <string name="help_title">Cum se joacă</string>
     <string name="help_tab_rules">Reguli</string>
     <string name="help_tab_hands">Combinații</string>

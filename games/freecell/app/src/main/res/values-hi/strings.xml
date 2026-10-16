@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">फ्रीसेल</string>
     <string name="status_hand_number">हाथ #%1$d</string>
     <string name="recovery_notice">आपका सेव किया गया गेम खोला नहीं जा सका, इसलिए एक नया गेम बाँटा गया।</string>
     <string name="setting_automatic_moves">आधार पर स्वचालित चालें</string>

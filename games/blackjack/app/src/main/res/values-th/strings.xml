@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">แบล็คแจ็ค</string>
     <string name="action_hit">ขอไพ่</string>
     <string name="action_stand">หยุด</string>
     <string name="action_double">เพิ่มเดิมพันเท่าตัว</string>

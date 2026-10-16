@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Αράχνη</string>
     <string name="suit_count_one">Ένα χρώμα</string>
     <string name="suit_count_two">Δύο χρώματα</string>
     <string name="suit_count_four">Τέσσερα χρώματα</string>

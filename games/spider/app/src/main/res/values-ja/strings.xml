@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">スパイダー</string>
     <string name="suit_count_one">1スート</string>
     <string name="suit_count_two">2スート</string>
     <string name="suit_count_four">4スート</string>

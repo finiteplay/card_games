@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name" translatable="false">Texas Hold\'em by FinitePlay</string>
 
-    <!-- Board title: the game's traditional name, identical in every locale like the other games'. -->
-    <string name="game_title" translatable="false">Texas Hold\'em</string>
+    <!-- Board title is localized for each supported UI language. -->
+    <string name="game_title">Texas Hold\'em</string>
 
     <!-- Help: three tabs. Hand names are also the showdown's labels. -->
     <string name="help_title">How to play</string>

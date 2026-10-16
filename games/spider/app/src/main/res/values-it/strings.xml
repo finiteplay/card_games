@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Spider</string>
     <string name="suit_count_one">Un seme</string>
     <string name="suit_count_two">Due semi</string>
     <string name="suit_count_four">Quattro semi</string>

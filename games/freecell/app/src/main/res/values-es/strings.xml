@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Partida n.º %1$d</string>
     <string name="recovery_notice">No se pudo abrir tu partida guardada, así que se repartió una nueva.</string>
     <string name="setting_automatic_moves">Movimientos automáticos a la fundación</string>

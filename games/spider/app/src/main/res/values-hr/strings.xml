@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Pauk</string>
     <string name="suit_count_one">Jedna boja</string>
     <string name="suit_count_two">Dvije boje</string>
     <string name="suit_count_four">Četiri boje</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">เท็กซัสโฮลเด็ม</string>
     <string name="help_title">วิธีเล่น</string>
     <string name="help_tab_rules">กฎ</string>
     <string name="help_tab_hands">มือไพ่</string>

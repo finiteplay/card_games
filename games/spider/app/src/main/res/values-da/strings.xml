@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Edderkop</string>
     <string name="suit_count_one">Én farve</string>
     <string name="suit_count_two">To farver</string>
     <string name="suit_count_four">Fire farver</string>

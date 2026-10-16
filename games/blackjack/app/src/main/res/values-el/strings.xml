@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Μπλακτζάκ</string>
     <string name="action_hit">Κάρτα</string>
     <string name="action_stand">Στάση</string>
     <string name="action_double">Διπλασιασμός</string>

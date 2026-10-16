@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Kör #%1$d</string>
     <string name="recovery_notice">A mentett játékot nem sikerült megnyitni, ezért új osztás készült.</string>
     <string name="setting_automatic_moves">Automatikus lépések az alapba</string>

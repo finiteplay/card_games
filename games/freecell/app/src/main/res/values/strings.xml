@@ -2,9 +2,8 @@
 <resources>
     <string name="app_name" translatable="false">FreeCell by FinitePlay</string>
 
-    <!-- Board title. "FreeCell" is a proper noun (the game's traditional name) and is
-         intentionally identical in every locale, matching Klondike's and Spider's game_title. -->
-    <string name="game_title" translatable="false">FreeCell</string>
+    <!-- Board title is localized for each supported UI language. -->
+    <string name="game_title">FreeCell</string>
 
     <!-- Status row: the active seed's stable position in the certified catalog
          (FreeCellViewModel.dealNumber), the same shape as Klondike's "%1$s #%2$d" and Spider's

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Pavouk</string>
     <string name="suit_count_one">Jedna barva</string>
     <string name="suit_count_two">Dvě barvy</string>
     <string name="suit_count_four">Čtyři barvy</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">فري سيل</string>
     <string name="status_hand_number">اليد رقم %1$d</string>
     <string name="recovery_notice">تعذّر فتح اللعبة المحفوظة، لذا تم توزيع لعبة جديدة.</string>
     <string name="setting_automatic_moves">النقل التلقائي إلى الأساسات</string>

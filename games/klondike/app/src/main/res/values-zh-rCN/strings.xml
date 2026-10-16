@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">克朗代克</string>
     <string name="cd_foundation_top_card">%2$s%1$s，%2$s基础牌堆</string>
     <string name="cd_foundation_empty">%1$s基础牌堆，空</string>
     <string name="cd_move_to_tableau">移动到接龙牌堆</string>

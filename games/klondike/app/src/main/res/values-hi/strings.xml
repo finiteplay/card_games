@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">क्लोंडाइक</string>
     <string name="cd_foundation_top_card">%2$s का %1$s, %2$s आधार</string>
     <string name="cd_foundation_empty">%1$s आधार, खाली</string>
     <string name="cd_move_to_tableau">स्तंभ में ले जाएँ</string>

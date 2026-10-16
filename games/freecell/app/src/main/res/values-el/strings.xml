@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Παρτίδα #%1$d</string>
     <string name="recovery_notice">Το αποθηκευμένο παιχνίδι σας δεν ήταν δυνατό να ανοιχτεί, οπότε μοιράστηκε ένα νέο.</string>
     <string name="setting_automatic_moves">Αυτόματες κινήσεις βάσης</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Klondike</string>
     <string name="cd_foundation_top_card">%1$s de %2$s, fondation %2$s</string>
     <string name="cd_foundation_empty">Fondation %1$s, vide</string>
     <string name="cd_move_to_tableau">Déplacer vers le tableau</string>

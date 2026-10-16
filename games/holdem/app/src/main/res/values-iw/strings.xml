@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">טקסס הולדם</string>
     <string name="help_title">איך משחקים</string>
     <string name="help_tab_rules">חוקים</string>
     <string name="help_tab_hands">ידיים</string>

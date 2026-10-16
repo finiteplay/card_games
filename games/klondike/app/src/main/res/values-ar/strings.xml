@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">كلوندايك</string>
     <string name="cd_foundation_top_card">%1$s من %2$s، أساس %2$s</string>
     <string name="cd_foundation_empty">أساس %1$s، فارغ</string>
     <string name="cd_move_to_tableau">نقل إلى العمود</string>

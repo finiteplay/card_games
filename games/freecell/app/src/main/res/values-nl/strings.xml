@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Spel #%1$d</string>
     <string name="recovery_notice">Je opgeslagen spel kon niet worden geopend, dus er is een nieuw spel gedeeld.</string>
     <string name="setting_automatic_moves">Automatisch naar de stapels verplaatsen</string>

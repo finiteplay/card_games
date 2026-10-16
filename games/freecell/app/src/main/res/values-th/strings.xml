@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">ฟรีเซลล์</string>
     <string name="status_hand_number">เกมที่ #%1$d</string>
     <string name="recovery_notice">ไม่สามารถเปิดเกมที่บันทึกไว้ได้ จึงแจกเกมใหม่แทน</string>
     <string name="setting_automatic_moves">ย้ายไพ่ไปกองสะสมอัตโนมัติ</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">קלונדייק</string>
     <string name="cd_foundation_top_card">%1$s של %2$s, יסוד %2$s</string>
     <string name="cd_foundation_empty">יסוד %1$s, ריק</string>
     <string name="cd_move_to_tableau">הזז לעמודה</string>

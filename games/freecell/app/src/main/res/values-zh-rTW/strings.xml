@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">第 %1$d 局</string>
     <string name="recovery_notice">無法開啟已儲存的遊戲，因此發了一局新的。</string>
     <string name="setting_automatic_moves">自動移動到基礎牌組</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">프리셀</string>
     <string name="status_hand_number">게임 #%1$d</string>
     <string name="recovery_notice">저장된 게임을 열 수 없어 새 게임이 배분되었습니다.</string>
     <string name="setting_automatic_moves">파운데이션 자동 이동</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Pók</string>
     <string name="suit_count_one">Egy szín</string>
     <string name="suit_count_two">Két szín</string>
     <string name="suit_count_four">Négy szín</string>

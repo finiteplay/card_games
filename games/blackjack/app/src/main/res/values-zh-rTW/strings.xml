@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">21點</string>
     <string name="action_hit">要牌</string>
     <string name="action_stand">停牌</string>
     <string name="action_double">加倍</string>

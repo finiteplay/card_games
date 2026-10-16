@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">ब्लैकजैक</string>
     <string name="action_hit">कार्ड लें</string>
     <string name="action_stand">रुकें</string>
     <string name="action_double">दोगुना</string>

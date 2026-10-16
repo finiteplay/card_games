@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Ръка №%1$d</string>
     <string name="recovery_notice">Запазената ви игра не можа да се отвори, затова беше раздадена нова.</string>
     <string name="setting_automatic_moves">Автоматични ходове към основите</string>

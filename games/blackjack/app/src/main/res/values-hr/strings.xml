@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Blackjack</string>
     <string name="action_hit">Vuci</string>
     <string name="action_stand">Stani</string>
     <string name="action_double">Udvostruči</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">クロンダイク</string>
     <string name="cd_foundation_top_card">%2$sの%1$s、%2$sの組み札</string>
     <string name="cd_foundation_empty">%1$sの組み札、空</string>
     <string name="cd_move_to_tableau">場札に移動</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">텍사스 홀덤</string>
     <string name="help_title">게임 방법</string>
     <string name="help_tab_rules">규칙</string>
     <string name="help_tab_hands">족보</string>

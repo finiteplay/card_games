@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">空当接龙</string>
     <string name="status_hand_number">第 %1$d 局</string>
     <string name="recovery_notice">无法打开已保存的游戏，因此发了一局新的。</string>
     <string name="setting_automatic_moves">自动移动到基础牌堆</string>

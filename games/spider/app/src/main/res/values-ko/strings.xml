@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">스파이더</string>
     <string name="suit_count_one">한 가지 무늬</string>
     <string name="suit_count_two">두 가지 무늬</string>
     <string name="suit_count_four">네 가지 무늬</string>

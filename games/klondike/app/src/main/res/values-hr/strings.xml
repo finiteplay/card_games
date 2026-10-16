@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Klondike</string>
     <string name="cd_foundation_top_card">%1$s od %2$s, temelj %2$s</string>
     <string name="cd_foundation_empty">temelj %1$s, prazno</string>
     <string name="cd_move_to_tableau">Premjesti na stup</string>

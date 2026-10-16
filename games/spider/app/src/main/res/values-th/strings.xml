@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">สไปเดอร์</string>
     <string name="suit_count_one">หนึ่งดอก</string>
     <string name="suit_count_two">สองดอก</string>
     <string name="suit_count_four">สี่ดอก</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">德州撲克</string>
     <string name="help_title">玩法</string>
     <string name="help_tab_rules">規則</string>
     <string name="help_tab_hands">牌型</string>

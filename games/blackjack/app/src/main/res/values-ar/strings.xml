@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">بلاك جاك</string>
     <string name="action_hit">اطلب</string>
     <string name="action_stand">ابقَ</string>
     <string name="action_double">ضاعف</string>

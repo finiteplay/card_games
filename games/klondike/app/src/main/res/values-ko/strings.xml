@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">클론다이크</string>
     <string name="cd_foundation_top_card">%2$s %1$s, %2$s 기초 더미</string>
     <string name="cd_foundation_empty">%1$s 기초 더미, 비어 있음</string>
     <string name="cd_move_to_tableau">테이블로 이동</string>

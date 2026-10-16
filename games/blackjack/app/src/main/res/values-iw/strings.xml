@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">בלאק ג׳ק</string>
     <string name="action_hit">קלף</string>
     <string name="action_stand">עצור</string>
     <string name="action_double">הכפל</string>

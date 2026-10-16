@@ -6,9 +6,8 @@
          language and is translated. -->
     <string name="app_name" translatable="false">Klondike by FinitePlay</string>
 
-    <!-- Board title. "Klondike" is a proper noun (the game's traditional name) and is
-         intentionally identical in every locale. -->
-    <string name="game_title" translatable="false">Klondike</string>
+    <!-- Board title is localized for each supported UI language. -->
+    <string name="game_title">Klondike</string>
 
     <!-- Action bar (docs/games/klondike/UI_SPEC.md "Action Bar") -->
 

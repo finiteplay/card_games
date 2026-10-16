@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Käsi #%1$d</string>
     <string name="recovery_notice">Tallennettua peliä ei voitu avata, joten uusi jaettiin.</string>
     <string name="setting_automatic_moves">Automaattiset siirrot pinoihin</string>

@@ -2,9 +2,8 @@
 <resources>
     <string name="app_name" translatable="false">Spider by FinitePlay</string>
 
-    <!-- Board title. "Spider" is a proper noun (the game's traditional name) and is
-         intentionally identical in every locale, matching Klondike's game_title. -->
-    <string name="game_title" translatable="false">Spider</string>
+    <!-- Board title is localized for each supported UI language. -->
+    <string name="game_title">Spider</string>
 
     <!-- Suit-count picker (docs/games/spider/EXECUTION_PLAN.md S3a). "Spades" and "Spades and
          Hearts" name what a level deals, not a difficulty word, so they stay plain nouns. -->

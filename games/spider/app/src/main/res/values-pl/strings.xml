@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Pająk</string>
     <string name="suit_count_one">Jeden kolor</string>
     <string name="suit_count_two">Dwa kolory</string>
     <string name="suit_count_four">Cztery kolory</string>

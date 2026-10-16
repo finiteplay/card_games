@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">フリーセル</string>
     <string name="status_hand_number">第%1$d局</string>
     <string name="recovery_notice">保存されたゲームを開けなかったため、新しいゲームが配られました。</string>
     <string name="setting_automatic_moves">組み札への自動移動</string>

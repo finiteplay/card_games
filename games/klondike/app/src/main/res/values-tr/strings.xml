@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Klondike</string>
     <string name="cd_foundation_top_card">%2$s %1$s, %2$s temeli</string>
     <string name="cd_foundation_empty">%1$s temeli, boş</string>
     <string name="cd_move_to_tableau">Oyun alanına taşı</string>

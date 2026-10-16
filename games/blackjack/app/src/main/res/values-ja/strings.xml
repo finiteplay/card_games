@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">ブラックジャック</string>
     <string name="action_hit">ヒット</string>
     <string name="action_stand">スタンド</string>
     <string name="action_double">ダブル</string>

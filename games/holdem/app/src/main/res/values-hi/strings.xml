@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">टेक्सास होल्डम</string>
     <string name="help_title">कैसे खेलें</string>
     <string name="help_tab_rules">नियम</string>
     <string name="help_tab_hands">हाथ</string>

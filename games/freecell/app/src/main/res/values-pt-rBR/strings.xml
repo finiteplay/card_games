@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Jogo nº %1$d</string>
     <string name="recovery_notice">Não foi possível abrir seu jogo salvo, então um novo foi distribuído.</string>
     <string name="setting_automatic_moves">Movimentos automáticos para a fundação</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">テキサスホールデム</string>
     <string name="help_title">遊び方</string>
     <string name="help_tab_rules">ルール</string>
     <string name="help_tab_hands">役</string>

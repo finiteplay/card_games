@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">Blackjack</string>
     <string name="action_hit">Rút</string>
     <string name="action_stand">Dừng</string>
     <string name="action_double">Gấp đôi</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Blatt Nr. %1$d</string>
     <string name="recovery_notice">Dein gespeichertes Spiel konnte nicht geöffnet werden, daher wurde ein neues ausgeteilt.</string>
     <string name="setting_automatic_moves">Automatische Ablage-Züge</string>

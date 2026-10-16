@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_title">FreeCell</string>
     <string name="status_hand_number">Hra č. %1$d</string>
     <string name="recovery_notice">Uloženou hru se nepodařilo otevřít, proto byla rozdána nová.</string>
     <string name="setting_automatic_moves">Automatické přesuny do sbírek</string>
