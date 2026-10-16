@@ -140,12 +140,16 @@ dependencies {
 
     testImplementation(testFixtures(project(":core:storage")))
     testImplementation(libs.junit4)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.compose.ui.test.junit4)
+    testImplementation(testFixtures(project(":core:ui")))
     testImplementation(libs.kotlinx.coroutines.test)
 
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.compose.ui.test.junit4)
+    androidTestImplementation(testFixtures(project(":core:ui")))
     androidTestImplementation(testFixtures(project(":games:blackjack:rules")))
     androidTestUtil(libs.androidx.test.orchestrator)
 }

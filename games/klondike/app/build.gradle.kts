@@ -148,12 +148,16 @@ dependencies {
 
     testImplementation(testFixtures(project(":core:storage")))
     testImplementation(libs.junit4)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.compose.ui.test.junit4)
+    testImplementation(testFixtures(project(":core:ui")))
     testImplementation(libs.kotlinx.coroutines.test)
 
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.compose.ui.test.junit4)
+    androidTestImplementation(testFixtures(project(":core:ui")))
     androidTestImplementation(testFixtures(project(":core:cards")))
     androidTestImplementation(testFixtures(project(":games:klondike:rules")))
     androidTestImplementation(project(":games:klondike:solver"))

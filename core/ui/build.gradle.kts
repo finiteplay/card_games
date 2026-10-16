@@ -26,6 +26,12 @@ android {
         buildConfig = false
     }
 
+    // Publishes TextFitAudit to every game's instrumented tests: the one detector for clipped or
+    // mid-word-broken labels, so each game's locale sweep asks the same question.
+    testFixtures {
+        enable = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -54,4 +60,8 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
 
     testImplementation(libs.junit4)
+
+    testFixturesImplementation(composeBom)
+    testFixturesImplementation(libs.compose.ui)
+    testFixturesImplementation(libs.compose.ui.test.junit4)
 }
