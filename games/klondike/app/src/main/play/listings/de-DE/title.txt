@@ -1,1 +1,1 @@
-Klondike Solitär: FinitePlay
+Klondike-Solitär: FinitePlay

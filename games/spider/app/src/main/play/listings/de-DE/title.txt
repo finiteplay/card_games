@@ -1,1 +1,1 @@
-Spider Solitär: FinitePlay
+Spider-Solitär: FinitePlay

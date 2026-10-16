@@ -1,1 +1,1 @@
-FreeCell Solitär: FinitePlay
+FreeCell-Solitär: FinitePlay
