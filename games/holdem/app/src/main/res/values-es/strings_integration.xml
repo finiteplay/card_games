@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Probablemente vas por delante: apuesta para que las manos más débiles paguen por ver más cartas.</string>
     <string name="hint_reason_value_raise">Mano fuerte ante una apuesta: sube para meter más fichas mientras vas por delante.</string>
     <!-- %1$d = número de outs (cartas que completan tu proyecto) -->
-    <string name="hint_reason_semi_bluff">Proyecto fuerte (%1$d outs): apostar puede ganar ahora mismo, y aún puedes mejorar.</string>
-    <string name="hint_reason_call_draw">Una mano de proyecto (%1$d outs): el bote es lo bastante grande para perseguirlo.</string>
+    <string name="hint_reason_semi_bluff">Proyecto fuerte (%1$d outs): puede que vayas por detrás ahora mismo, pero apostar puede ganar ahora mismo y aún puedes mejorar.</string>
+    <string name="hint_reason_call_draw">Una mano de proyecto (%1$d outs): puede que vayas por detrás ahora mismo, pero el bote es lo bastante grande para perseguirlo.</string>
     <!-- %1$d = tu probabilidad de ganar en porcentaje, %2$d = la parte del bote que cuesta igualar, en porcentaje -->
     <string name="hint_reason_call_good_price">Igualar compensa: ganas alrededor del %1$d%% de las veces y el precio solo exige un %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">No basta para igualar: el precio exige un %2$d%% y tienes alrededor del %1$d%%.</string>

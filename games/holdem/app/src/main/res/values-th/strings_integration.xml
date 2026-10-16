@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">คุณน่าจะนำอยู่: เบ็ทเพื่อให้มือที่อ่อนกว่าต้องจ่ายถ้าอยากดูไพ่เพิ่ม</string>
     <string name="hint_reason_value_raise">มือแกร่งเจอเบ็ท: เรสเพื่อใส่ชิปเพิ่มขณะที่คุณนำอยู่</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">ดรอว์แกร่ง (%1$d เอาท์): เบ็ทอาจชนะได้ทันที และคุณยังพัฒนามือได้อีก</string>
-    <string name="hint_reason_call_draw">มือดรอว์ (%1$d เอาท์): พอตใหญ่พอที่จะตามดรอว์</string>
+    <string name="hint_reason_semi_bluff">ดรอว์แกร่ง (%1$d เอาท์): ตอนนี้คุณอาจตามอยู่ แต่เบ็ทอาจชนะพอตได้ทันที และเอาท์ยังทำให้คุณได้มือที่ดีที่สุดได้</string>
+    <string name="hint_reason_call_draw">มือดรอว์ (%1$d เอาท์): ตอนนี้คุณอาจตามอยู่ แต่พอตใหญ่พอที่จะตามดรอว์</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">คอลคุ้ม: คุณชนะประมาณ %1$d%% ของครั้ง และราคาต้องการแค่ %2$d%%</string>
     <string name="hint_reason_fold_bad_price">ยังไม่พอจะคอล: ราคาต้องการ %2$d%% แต่คุณมีประมาณ %1$d%%</string>

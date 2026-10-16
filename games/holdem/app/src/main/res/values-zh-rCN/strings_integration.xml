@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">你很可能领先：下注，让较弱的牌付费才能看更多牌。</string>
     <string name="hint_reason_value_raise">强牌面对下注：加注，趁领先多投入筹码。</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">强听牌（%1$d 个 outs）：下注可能当场赢下底池，你还能继续改善牌型。</string>
-    <string name="hint_reason_call_draw">听牌（%1$d 个 outs）：底池够大，值得追牌。</string>
+    <string name="hint_reason_semi_bluff">强听牌（%1$d 个 outs）：你现在可能落后，但下注可能当场赢下底池，你的 outs 还能让你成为最大牌。</string>
+    <string name="hint_reason_call_draw">听牌（%1$d 个 outs）：你现在可能落后，但底池够大，值得追牌。</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">跟注划算：你大约有 %1$d%% 的胜率，而跟注只需 %2$d%%。</string>
     <string name="hint_reason_fold_bad_price">不够跟注：跟注需要 %2$d%% 的胜率，而你只有约 %1$d%%。</string>

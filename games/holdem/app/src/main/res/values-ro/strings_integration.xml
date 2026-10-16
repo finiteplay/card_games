@@ -21,8 +21,8 @@
     <string name="hint_reason_value_bet">Probabil ești în față: pariază ca mâinile mai slabe să plătească pentru mai multe cărți.</string>
     <string name="hint_reason_value_raise">Mână puternică în fața unui pariu: mărește ca să pui mai multe jetoane cât timp ești în față.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Draw puternic (%1$d outs): un pariu poate câștiga pe loc, iar tu te poți încă îmbunătăți.</string>
-    <string name="hint_reason_call_draw">O mână de draw (%1$d outs): potul e destul de mare ca să urmărești draw-ul.</string>
+    <string name="hint_reason_semi_bluff">Draw puternic (%1$d outs): acum poți fi în urmă, dar un pariu poate câștiga pe loc, iar tu te poți încă îmbunătăți.</string>
+    <string name="hint_reason_call_draw">O mână de draw (%1$d outs): acum poți fi în urmă, dar potul e destul de mare ca să urmărești draw-ul.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Call-ul se plătește: câștigi cam în %1$d%% din cazuri, iar prețul cere doar %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Nu ajunge pentru call: prețul cere %2$d%%, iar tu ai cam %1$d%%.</string>

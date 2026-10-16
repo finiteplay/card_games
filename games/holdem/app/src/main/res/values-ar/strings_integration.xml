@@ -19,8 +19,8 @@
     <string name="hint_reason_fold_short_stack">تبقّى لديك %1$d بلايند كبير فقط: يدك أضعف من أن تخاطر بكل شيء من أجلها.</string>
     <string name="hint_reason_value_bet">على الأرجح أنت في المقدمة: راهن ليدفع أصحاب الأيدي الأضعف ثمن رؤية المزيد من الأوراق.</string>
     <string name="hint_reason_value_raise">يد قوية في مواجهة رهان: ارفع لتضع المزيد من الرقائق وأنت في المقدمة.</string>
-    <string name="hint_reason_semi_bluff">سحب قوي (الأوراق المكمّلة: %1$d): الرهان قد يكسب الآن، وما زال بإمكانك التحسّن.</string>
-    <string name="hint_reason_call_draw">يد سحب (الأوراق المكمّلة: %1$d): البوت كبير بما يكفي لمطاردة السحب.</string>
+    <string name="hint_reason_semi_bluff">سحب قوي (الأوراق المكمّلة: %1$d): قد تكون متأخرًا الآن، لكن الرهان قد يكسب البوت فورًا، وما زالت أوراقك المكمّلة قادرة على جعل يدك الأفضل.</string>
+    <string name="hint_reason_call_draw">يد سحب (الأوراق المكمّلة: %1$d): قد تكون متأخرًا الآن، لكن البوت كبير بما يكفي لمطاردة السحب.</string>
     <string name="hint_reason_call_good_price">المجاراة مجدية: تفوز نحو %1$d%% من المرات والسعر يتطلب %2$d%% فقط.</string>
     <string name="hint_reason_fold_bad_price">لا يكفي للمجاراة: السعر يتطلب %2$d%% وأنت لديك نحو %1$d%%.</string>
     <string name="hint_reason_free_card">التمرير مجاني ويدك ضعيفة: خذ الورقة التالية دون تكلفة.</string>

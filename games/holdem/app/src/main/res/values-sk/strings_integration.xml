@@ -19,8 +19,8 @@
     <string name="hint_reason_fold_short_stack">Máte už len %1$d BB: táto ruka je príliš slabá na to, aby ste pre ňu riskovali všetko.</string>
     <string name="hint_reason_value_bet">Pravdepodobne ste vpredu: stavte, aby slabšie ruky museli platiť za ďalšie karty.</string>
     <string name="hint_reason_value_raise">Silná ruka proti stávke: zvýšte, aby ste dali do hry viac žetónov, kým ste vpredu.</string>
-    <string name="hint_reason_semi_bluff">Silný draw (outy: %1$d): stávka môže hneď vyhrať a stále sa môžete zlepšiť.</string>
-    <string name="hint_reason_call_draw">Ruka s drawom (outy: %1$d): pot je dosť veľký na to, aby sa draw oplatilo naháňať.</string>
+    <string name="hint_reason_semi_bluff">Silný draw (outy: %1$d): možno práve zaostávate, ale stávka môže hneď vyhrať a vaše outy z vás ešte môžu urobiť najlepšiu ruku.</string>
+    <string name="hint_reason_call_draw">Ruka s drawom (outy: %1$d): možno práve zaostávate, ale pot je dosť veľký na to, aby sa draw oplatilo naháňať.</string>
     <string name="hint_reason_call_good_price">Dorovnanie sa oplatí: vyhrávate asi v %1$d%% prípadov a cena vyžaduje len %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Na dorovnanie to nestačí: cena vyžaduje %2$d%% a vy máte asi %1$d%%.</string>
     <string name="hint_reason_free_card">Check je zadarmo a ruka je slabá: vezmite si ďalšiu kartu bez nákladov.</string>

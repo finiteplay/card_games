@@ -21,8 +21,8 @@
     <string name="hint_reason_value_bet">Valószínűleg előnyben vagy: tegyél tétet, hogy a gyengébb kezeknek fizetniük kelljen a további lapokért.</string>
     <string name="hint_reason_value_raise">Erős kéz tét ellen: emelj, hogy több zsetont tegyél be, amíg előnyben vagy.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Erős draw (%1$d out): a tét azonnal nyerhet, és még javulhatsz is.</string>
-    <string name="hint_reason_call_draw">Draw-kéz (%1$d out): a pot elég nagy ahhoz, hogy megérje üldözni a draw-t.</string>
+    <string name="hint_reason_semi_bluff">Erős draw (%1$d out): lehet, hogy most hátrébb vagy, de a tét azonnal nyerhet, és még javulhatsz is.</string>
+    <string name="hint_reason_call_draw">Draw-kéz (%1$d out): lehet, hogy most hátrébb vagy, de a pot elég nagy ahhoz, hogy megérje üldözni a draw-t.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">A megadás kifizetődik: az esetek kb. %1$d%%-ában nyersz, az ár pedig csak %2$d%%-ot kíván.</string>
     <string name="hint_reason_fold_bad_price">Nem elég a megadáshoz: az ár %2$d%%-ot kíván, neked pedig kb. %1$d%% van.</string>

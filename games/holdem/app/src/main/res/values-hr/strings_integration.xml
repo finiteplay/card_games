@@ -19,8 +19,8 @@
     <string name="hint_reason_fold_short_stack">Ostalo vam je samo %1$d BB: ova ruka je preslaba da biste zbog nje riskirali sve.</string>
     <string name="hint_reason_value_bet">Vjerojatno ste ispred: uložite da slabije ruke moraju platiti da vide još karata.</string>
     <string name="hint_reason_value_raise">Jaka ruka protiv uloga: podignite da uložite više žetona dok ste ispred.</string>
-    <string name="hint_reason_semi_bluff">Jak draw (outovi: %1$d): ulog može odmah osvojiti pot, a još se možete poboljšati.</string>
-    <string name="hint_reason_call_draw">Ruka s drawom (outovi: %1$d): pot je dovoljno velik da se isplati juriti draw.</string>
+    <string name="hint_reason_semi_bluff">Jak draw (outovi: %1$d): možda trenutno zaostajete, ali ulog može odmah osvojiti pot, a vaši outovi još mogu postati najbolja ruka.</string>
+    <string name="hint_reason_call_draw">Ruka s drawom (outovi: %1$d): možda trenutno zaostajete, ali pot je dovoljno velik da se isplati juriti draw.</string>
     <string name="hint_reason_call_good_price">Praćenje se isplati: pobjeđujete u oko %1$d%% slučajeva, a cijena traži samo %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Nedovoljno za praćenje: cijena traži %2$d%%, a vi imate oko %1$d%%.</string>
     <string name="hint_reason_free_card">Čekanje je besplatno, a ruka vam je slaba: uzmite sljedeću kartu bez troška.</string>

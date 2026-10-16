@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Johdat todennäköisesti: panosta, jotta heikommat kädet joutuvat maksamaan lisäkorteista.</string>
     <string name="hint_reason_value_raise">Vahva käsi panosta vastaan: korota saadaksesi lisää pelimerkkejä pottiin, kun johdat.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Vahva draw (%1$d outsia): panostus voi voittaa heti, ja käsi voi vielä parantua.</string>
-    <string name="hint_reason_call_draw">Draw-käsi (%1$d outsia): potti on tarpeeksi suuri drawn tavoitteluun.</string>
+    <string name="hint_reason_semi_bluff">Vahva draw (%1$d outsia): saatat olla nyt jäljessä, mutta panostus voi voittaa potin heti, ja outsisi voivat vielä tehdä kädestäsi parhaan.</string>
+    <string name="hint_reason_call_draw">Draw-käsi (%1$d outsia): saatat olla nyt jäljessä, mutta potti on tarpeeksi suuri drawn tavoitteluun.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Maksaminen kannattaa: voitat noin %1$d%% kerroista ja hinta vaatii vain %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Ei tarpeeksi maksamiseen: hinta vaatii %2$d%%, ja sinulla on noin %1$d%%.</string>

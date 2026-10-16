@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">おそらくリードしています。ベットして、弱いハンドにカードを見るためのコストを払わせましょう。</string>
     <string name="hint_reason_value_raise">ベットに対して強いハンドです。リードしているうちにレイズして、ポットにもっとチップを入れましょう。</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">強いドロー（%1$dアウツ）：ベットでその場で勝てる可能性があり、まだ改善もできます。</string>
-    <string name="hint_reason_call_draw">ドローハンド（%1$dアウツ）：ポットが十分大きいので、ドローを追う価値があります。</string>
+    <string name="hint_reason_semi_bluff">強いドロー（%1$dアウツ）：今は負けているかもしれませんが、ベットでその場でポットを獲得できる可能性があり、アウツで最強のハンドになることもできます。</string>
+    <string name="hint_reason_call_draw">ドローハンド（%1$dアウツ）：今は負けているかもしれませんが、ポットが十分大きいので、ドローを追う価値があります。</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">コールは得です。勝率は約%1$d%%で、必要なのは%2$d%%だけです。</string>
     <string name="hint_reason_fold_bad_price">コールするには足りません。必要なのは%2$d%%で、あなたの勝率は約%1$d%%です。</string>

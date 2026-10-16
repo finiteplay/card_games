@@ -21,8 +21,8 @@
     <string name="hint_reason_value_bet">Вероятно си напред: заложи, така че по-слабите ръце да плащат, за да видят още карти.</string>
     <string name="hint_reason_value_raise">Силна ръка срещу залог: вдигни, за да вкараш повече чипове, докато си напред.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Силен дроу (%1$d аута): залогът може да спечели веднага, а ти още можеш да подобриш ръката си.</string>
-    <string name="hint_reason_call_draw">Ръка с дроу (%1$d аута): потът е достатъчно голям, за да гониш дроуто.</string>
+    <string name="hint_reason_semi_bluff">Силен дроу (%1$d аута): в момента може да си назад, но залогът може да спечели веднага, а ти още можеш да подобриш ръката си.</string>
+    <string name="hint_reason_call_draw">Ръка с дроу (%1$d аута): в момента може да си назад, но потът е достатъчно голям, за да гониш дроуто.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Колът се отплаща: печелиш около %1$d%% от случаите, а цената изисква само %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Не стига за кол: цената изисква %2$d%%, а ти имаш около %1$d%%.</string>

@@ -261,6 +261,15 @@ Blackjack's, extended by what a poker hint has to say (`DESIGN.md` "Hint"):
 
 ### Odds against you
 
+The two figures answer different questions and the card keeps them apart: *Equity* counts the cards
+still to come, while *an opponent already has a better hand* is about the cards showing now. With a
+big draw they differ a lot (98% behind now, 45% to win by showdown). So whenever the player holds a
+draw and is probably behind, the reason is the semi-bluff sentence, which says so (`you may be behind
+right now, but …`), never "you are probably ahead". The hint also never advises a bet, raise or all-in
+without the equity for it: at least 30% with a draw to come, 40% without. With no draw to come (the river,
+or a flop or turn with no flush or straight draw) a bet, raise or all-in is a value play, so it is advised
+only when an opponent is *not* more than 50% likely to hold the better hand (`HintQualityTest`).
+
 Postflop, under the figures, the hint states what the opponents may already hold, in two small lines in
 amber: `Chance an opponent already has a better hand: 30%` and `Most likely better hands: Flush 7% · Straight 3%`
 (at most two; each at least 2%; only hands better than yours; a full house or better counts as one).

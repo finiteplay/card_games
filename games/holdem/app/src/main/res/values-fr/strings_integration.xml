@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Vous êtes probablement devant : misez pour que les mains plus faibles paient pour voir d\'autres cartes.</string>
     <string name="hint_reason_value_raise">Main forte face à une mise : relancez pour mettre plus de jetons tant que vous êtes devant.</string>
     <!-- %1$d = nombre d'outs (cartes qui complètent votre tirage) -->
-    <string name="hint_reason_semi_bluff">Gros tirage (%1$d outs) : miser peut gagner tout de suite, et votre main peut encore s\'améliorer.</string>
-    <string name="hint_reason_call_draw">Un tirage (%1$d outs) : le pot est assez gros pour courir après le tirage.</string>
+    <string name="hint_reason_semi_bluff">Gros tirage (%1$d outs) : vous êtes peut-être derrière pour l\'instant, mais miser peut gagner tout de suite, et votre main peut encore s\'améliorer.</string>
+    <string name="hint_reason_call_draw">Un tirage (%1$d outs) : vous êtes peut-être derrière pour l\'instant, mais le pot est assez gros pour courir après le tirage.</string>
     <!-- %1$d = vos chances de gagner en pourcentage, %2$d = la part du pot que coûte le suivi, en pourcentage -->
     <string name="hint_reason_call_good_price">Suivre est rentable : vous gagnez environ %1$d%% du temps et le prix n\'en demande que %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Pas assez pour suivre : le prix demande %2$d%% et vous avez environ %1$d%%.</string>

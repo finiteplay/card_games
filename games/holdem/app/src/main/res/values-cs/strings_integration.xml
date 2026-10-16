@@ -21,8 +21,8 @@
     <string name="hint_reason_value_bet">Jsi pravděpodobně vpředu: vsaď, ať slabší ruce musí platit za další karty.</string>
     <string name="hint_reason_value_raise">Silná ruka proti sázce: zvyš a dostaň do banku víc žetonů, dokud jsi vpředu.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Silný draw (%1$d outs): sázka může vyhrát hned a stále se můžeš zlepšit.</string>
-    <string name="hint_reason_call_draw">Ruka s drawem (%1$d outs): banka je dost velká, aby se draw vyplatilo honit.</string>
+    <string name="hint_reason_semi_bluff">Silný draw (%1$d outs): teď můžeš být pozadu, ale sázka může vyhrát hned a stále se můžeš zlepšit.</string>
+    <string name="hint_reason_call_draw">Ruka s drawem (%1$d outs): teď můžeš být pozadu, ale banka je dost velká, aby se draw vyplatilo honit.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Vyrovnání se vyplatí: vyhraješ asi v %1$d%% případů a cena vyžaduje jen %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Na vyrovnání to nestačí: cena vyžaduje %2$d%% a ty máš asi %1$d%%.</string>

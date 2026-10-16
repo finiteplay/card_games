@@ -19,8 +19,8 @@
     <string name="hint_reason_value_bet">Ви, імовірно, попереду: ставте, щоб слабші руки платили за наступні карти.</string>
     <string name="hint_reason_value_raise">Сильна рука проти ставки: рейзьте, щоб вкласти більше фішок, поки ви попереду.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Сильний дро (аутів: %1$d): ставка може виграти одразу, а рука ще може покращитися.</string>
-    <string name="hint_reason_call_draw">Рука з дро (аутів: %1$d): банк достатньо великий, щоб іти за дро.</string>
+    <string name="hint_reason_semi_bluff">Сильний дро (аутів: %1$d): можливо, ви зараз позаду, але ставка може одразу виграти банк, а ваші аути ще можуть зробити руку найкращою.</string>
+    <string name="hint_reason_call_draw">Рука з дро (аутів: %1$d): можливо, ви зараз позаду, але банк достатньо великий, щоб іти за дро.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Колл виправданий: ви виграєте приблизно в %1$d%% випадків, а ціна потребує лише %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Для коллу замало: ціна потребує %2$d%%, а у вас приблизно %1$d%%.</string>

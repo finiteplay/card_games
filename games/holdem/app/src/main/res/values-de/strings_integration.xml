@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Du liegst wahrscheinlich vorn: Bet, damit schwächere Hände zahlen müssen, um mehr Karten zu sehen.</string>
     <string name="hint_reason_value_raise">Starke Hand gegen einen Bet: Raise, um mehr Chips in den Pot zu bringen, solange du vorn liegst.</string>
     <!-- %1$d = Anzahl der Outs (Karten, die dein Draw vervollständigen) -->
-    <string name="hint_reason_semi_bluff">Starker Draw (%1$d Outs): Ein Bet kann sofort gewinnen, und du kannst dich noch verbessern.</string>
-    <string name="hint_reason_call_draw">Eine Draw-Hand (%1$d Outs): Der Pot ist groß genug, um dem Draw nachzujagen.</string>
+    <string name="hint_reason_semi_bluff">Starker Draw (%1$d Outs): Du liegst vielleicht gerade hinten, aber ein Bet kann sofort gewinnen, und du kannst dich noch verbessern.</string>
+    <string name="hint_reason_call_draw">Eine Draw-Hand (%1$d Outs): Du liegst vielleicht gerade hinten, aber der Pot ist groß genug, um dem Draw nachzujagen.</string>
     <!-- %1$d = deine Gewinnchance in Prozent, %2$d = der Anteil des Pots, den der Call kostet, in Prozent -->
     <string name="hint_reason_call_good_price">Ein Call lohnt sich: Du gewinnst etwa %1$d%% der Zeit und der Preis verlangt nur %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Zu wenig für einen Call: Der Preis verlangt %2$d%% und du hast etwa %1$d%%.</string>

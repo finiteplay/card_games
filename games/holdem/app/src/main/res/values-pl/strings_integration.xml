@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Prawdopodobnie jesteś z przodu: postaw, by słabsze ręce płaciły za kolejne karty.</string>
     <string name="hint_reason_value_raise">Mocna ręka wobec stawki: podbij, by wrzucić więcej żetonów, gdy jesteś z przodu.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Mocne draw (outy: %1$d): stawka może od razu wygrać, a ręka wciąż może się poprawić.</string>
-    <string name="hint_reason_call_draw">Ręka na draw (outy: %1$d): pula jest dość duża, by gonić draw.</string>
+    <string name="hint_reason_semi_bluff">Mocne draw (outy: %1$d): możesz teraz być z tyłu, ale stawka może od razu wygrać pulę, a twoje outy wciąż mogą dać ci najlepszą rękę.</string>
+    <string name="hint_reason_call_draw">Ręka na draw (outy: %1$d): możesz teraz być z tyłu, ale pula jest dość duża, by gonić draw.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Wyrównanie się opłaca: wygrywasz w około %1$d%% przypadków, a cena wymaga tylko %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Za mało na wyrównanie: cena wymaga %2$d%%, a ty masz około %1$d%%.</string>

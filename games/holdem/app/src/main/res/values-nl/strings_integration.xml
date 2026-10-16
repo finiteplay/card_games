@@ -21,8 +21,8 @@
     <string name="hint_reason_value_bet">Je staat waarschijnlijk voor: bet, zodat zwakkere handen moeten betalen voor meer kaarten.</string>
     <string name="hint_reason_value_raise">Sterke hand tegenover een bet: raise om meer fiches in de pot te krijgen terwijl je voorstaat.</string>
     <!-- %1$d = aantal outs (kaarten die je draw voltooien) -->
-    <string name="hint_reason_semi_bluff">Sterke draw (%1$d outs): een bet kan nu winnen, en je kunt nog verbeteren.</string>
-    <string name="hint_reason_call_draw">Een draw-hand (%1$d outs): de pot is groot genoeg om de draw na te jagen.</string>
+    <string name="hint_reason_semi_bluff">Sterke draw (%1$d outs): je staat misschien nu achter, maar een bet kan nu winnen, en je kunt nog verbeteren.</string>
+    <string name="hint_reason_call_draw">Een draw-hand (%1$d outs): je staat misschien nu achter, maar de pot is groot genoeg om de draw na te jagen.</string>
     <!-- %1$d = jouw winkans in procenten, %2$d = het deel van de pot dat de call kost, in procenten -->
     <string name="hint_reason_call_good_price">Callen loont: je wint ongeveer %1$d%% van de tijd en de prijs vraagt maar %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Niet genoeg om te callen: de prijs vraagt %2$d%% en jij hebt ongeveer %1$d%%.</string>

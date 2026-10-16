@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">You are probably ahead: bet so weaker hands have to pay to see more cards.</string>
     <string name="hint_reason_value_raise">Strong hand facing a bet: raise to get more chips in while you are ahead.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Strong draw (%1$d outs): betting can win right now, and you can still improve.</string>
-    <string name="hint_reason_call_draw">A drawing hand (%1$d outs): the pot is big enough to chase the draw.</string>
+    <string name="hint_reason_semi_bluff">Strong draw (%1$d outs): you may be behind right now, but betting can win the pot at once and your outs can still make you the best hand.</string>
+    <string name="hint_reason_call_draw">A drawing hand (%1$d outs): you may be behind right now, but the pot is big enough to chase the draw.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Calling pays off: you win about %1$d%% of the time and the price needs only %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Not enough to call: the price needs %2$d%% and you have about %1$d%%.</string>

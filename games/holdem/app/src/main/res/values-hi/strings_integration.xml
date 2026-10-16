@@ -19,8 +19,8 @@
     <string name="hint_reason_fold_short_stack">सिर्फ़ %1$d बिग ब्लाइंड बचे हैं: यह हाथ सब कुछ दाँव पर लगाने के लिए बहुत कमज़ोर है।</string>
     <string name="hint_reason_value_bet">आप शायद आगे हैं: बेट करें ताकि कमज़ोर हाथों को और कार्ड देखने के लिए कीमत चुकानी पड़े।</string>
     <string name="hint_reason_value_raise">बेट के सामने मज़बूत हाथ: रेज़ करें और आगे रहते हुए ज़्यादा चिप्स लगाएँ।</string>
-    <string name="hint_reason_semi_bluff">मज़बूत ड्रॉ (%1$d आउट्स): बेट अभी जीत सकती है, और आप सुधार भी कर सकते हैं।</string>
-    <string name="hint_reason_call_draw">ड्रॉ वाला हाथ (%1$d आउट्स): ड्रॉ का पीछा करने के लिए पॉट काफ़ी बड़ा है।</string>
+    <string name="hint_reason_semi_bluff">मज़बूत ड्रॉ (%1$d आउट्स): हो सकता है आप अभी पीछे हों, पर बेट अभी पॉट जीत सकती है, और आपके आउट्स आपके हाथ को सबसे अच्छा बना सकते हैं।</string>
+    <string name="hint_reason_call_draw">ड्रॉ वाला हाथ (%1$d आउट्स): हो सकता है आप अभी पीछे हों, पर ड्रॉ का पीछा करने के लिए पॉट काफ़ी बड़ा है।</string>
     <string name="hint_reason_call_good_price">कॉल फ़ायदेमंद है: आप लगभग %1$d%% बार जीतते हैं और कीमत को सिर्फ़ %2$d%% चाहिए।</string>
     <string name="hint_reason_fold_bad_price">कॉल के लिए काफ़ी नहीं: कीमत को %2$d%% चाहिए और आपके पास लगभग %1$d%% है।</string>
     <string name="hint_reason_free_card">चेक मुफ़्त है और आपका हाथ कमज़ोर है: बिना खर्च के अगला कार्ड लें।</string>

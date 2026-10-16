@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Du fører sandsynligvis: bet, så svagere hænder må betale for flere kort.</string>
     <string name="hint_reason_value_raise">Stærk hånd mod et bet: raise for at få flere jetoner ind, mens du fører.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Stærkt draw (%1$d outs): et bet kan vinde med det samme, og du kan stadig forbedre dig.</string>
-    <string name="hint_reason_call_draw">En drawhånd (%1$d outs): potten er stor nok til at jagte draw.</string>
+    <string name="hint_reason_semi_bluff">Stærkt draw (%1$d outs): du kan ligge bagud lige nu, men et bet kan vinde potten med det samme, og dine outs kan stadig give dig den bedste hånd.</string>
+    <string name="hint_reason_call_draw">En drawhånd (%1$d outs): du kan ligge bagud lige nu, men potten er stor nok til at jagte draw.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Call betaler sig: du vinder omkring %1$d%% af gangene, og prisen kræver kun %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Ikke nok til at calle: prisen kræver %2$d%%, og du har omkring %1$d%%.</string>

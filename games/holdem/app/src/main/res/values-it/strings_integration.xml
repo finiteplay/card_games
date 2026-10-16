@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Sei probabilmente avanti: punta, così le mani più deboli devono pagare per vedere altre carte.</string>
     <string name="hint_reason_value_raise">Mano forte di fronte a una puntata: rilancia per mettere più fiches mentre sei avanti.</string>
     <!-- %1$d = numero di out (carte che completano il tuo progetto) -->
-    <string name="hint_reason_semi_bluff">Progetto forte (%1$d out): puntare può vincere subito, e puoi ancora migliorare.</string>
-    <string name="hint_reason_call_draw">Una mano a progetto (%1$d out): il piatto è abbastanza grande per inseguire il progetto.</string>
+    <string name="hint_reason_semi_bluff">Progetto forte (%1$d out): potresti essere indietro adesso, ma puntare può vincere subito, e puoi ancora migliorare.</string>
+    <string name="hint_reason_call_draw">Una mano a progetto (%1$d out): potresti essere indietro adesso, ma il piatto è abbastanza grande per inseguire il progetto.</string>
     <!-- %1$d = la tua probabilità di vincere in percentuale, %2$d = la quota del piatto che costa il call, in percentuale -->
     <string name="hint_reason_call_good_price">Il call conviene: vinci circa il %1$d%% delle volte e il prezzo richiede solo il %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Non basta per il call: il prezzo richiede il %2$d%% e tu hai circa il %1$d%%.</string>

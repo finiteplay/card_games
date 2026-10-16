@@ -21,8 +21,8 @@
     <string name="hint_reason_value_bet">Πιθανότατα προηγείσαι: πόνταρε ώστε τα πιο αδύναμα χέρια να πληρώσουν για να δουν κι άλλα φύλλα.</string>
     <string name="hint_reason_value_raise">Δυνατό χέρι απέναντι σε ποντάρισμα: κάνε ρέιζ για να βάλεις περισσότερες μάρκες όσο προηγείσαι.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Δυνατό draw (%1$d outs): το ποντάρισμα μπορεί να κερδίσει αμέσως και μπορείς ακόμα να βελτιωθείς.</string>
-    <string name="hint_reason_call_draw">Χέρι με draw (%1$d outs): το ποτ είναι αρκετά μεγάλο για να κυνηγήσεις το draw.</string>
+    <string name="hint_reason_semi_bluff">Δυνατό draw (%1$d outs): μπορεί να είσαι πίσω αυτή τη στιγμή, αλλά το ποντάρισμα μπορεί να κερδίσει αμέσως και μπορείς ακόμα να βελτιωθείς.</string>
+    <string name="hint_reason_call_draw">Χέρι με draw (%1$d outs): μπορεί να είσαι πίσω αυτή τη στιγμή, αλλά το ποτ είναι αρκετά μεγάλο για να κυνηγήσεις το draw.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Το κολ αξίζει: κερδίζεις περίπου το %1$d%% των φορών και η τιμή απαιτεί μόνο %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Δεν φτάνει για κολ: η τιμή απαιτεί %2$d%% και εσύ έχεις περίπου %1$d%%.</string>

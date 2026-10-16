@@ -19,8 +19,8 @@
     <string name="hint_reason_fold_short_stack">Tersisa hanya %1$d big blind: tangan ini terlalu lemah untuk mempertaruhkan semuanya.</string>
     <string name="hint_reason_value_bet">Anda kemungkinan unggul: bet agar tangan yang lebih lemah harus membayar untuk melihat kartu lagi.</string>
     <string name="hint_reason_value_raise">Tangan kuat menghadapi bet: raise untuk memasukkan lebih banyak chip selagi Anda unggul.</string>
-    <string name="hint_reason_semi_bluff">Draw kuat (%1$d outs): bet bisa langsung menang, dan tangan Anda masih bisa membaik.</string>
-    <string name="hint_reason_call_draw">Tangan draw (%1$d outs): pot cukup besar untuk mengejar draw.</string>
+    <string name="hint_reason_semi_bluff">Draw kuat (%1$d outs): mungkin Anda sedang tertinggal sekarang, tetapi bet bisa langsung memenangkan pot, dan outs Anda masih bisa menjadikan tangan Anda yang terbaik.</string>
+    <string name="hint_reason_call_draw">Tangan draw (%1$d outs): mungkin Anda sedang tertinggal sekarang, tetapi pot cukup besar untuk mengejar draw.</string>
     <string name="hint_reason_call_good_price">Call menguntungkan: Anda menang dalam sekitar %1$d%% kasus dan harganya hanya butuh %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Tidak cukup untuk call: harganya butuh %2$d%% dan Anda punya sekitar %1$d%%.</string>
     <string name="hint_reason_free_card">Check gratis dan tangan Anda lemah: ambil kartu berikutnya tanpa biaya.</string>

@@ -19,8 +19,8 @@
     <string name="hint_reason_fold_short_stack">נשארו רק %1$d ביג בליינדים: היד הזאת חלשה מדי כדי לסכן בשבילה הכול.</string>
     <string name="hint_reason_value_bet">אתם כנראה מובילים: הימרו כדי שידיים חלשות יותר ישלמו כדי לראות עוד קלפים.</string>
     <string name="hint_reason_value_raise">יד חזקה מול הימור: העלו כדי להכניס יותר אסימונים בזמן שאתם מובילים.</string>
-    <string name="hint_reason_semi_bluff">דרו חזק (%1$d אאוטים): הימור יכול לנצח כבר עכשיו, ועדיין אפשר להשתפר.</string>
-    <string name="hint_reason_call_draw">יד דרו (%1$d אאוטים): הקופה גדולה מספיק כדי לרדוף אחרי הדרו.</string>
+    <string name="hint_reason_semi_bluff">דרו חזק (%1$d אאוטים): ייתכן שאתם מפגרים כרגע, אבל הימור יכול לזכות בקופה מיד, והאאוטים עדיין יכולים להפוך את היד שלכם לטובה ביותר.</string>
+    <string name="hint_reason_call_draw">יד דרו (%1$d אאוטים): ייתכן שאתם מפגרים כרגע, אבל הקופה גדולה מספיק כדי לרדוף אחרי הדרו.</string>
     <string name="hint_reason_call_good_price">קול משתלם: אתם מנצחים בערך ב-%1$d%% מהמקרים והמחיר דורש רק %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">לא מספיק לקול: המחיר דורש %2$d%% ויש לכם בערך %1$d%%.</string>
     <string name="hint_reason_free_card">צ\'ק הוא בחינם והיד חלשה: קחו את הקלף הבא בלי לשלם.</string>

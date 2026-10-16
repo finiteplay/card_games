@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Du ligger sannsynligvis foran: bet slik at svakere hender må betale for flere kort.</string>
     <string name="hint_reason_value_raise">Sterk hånd mot en bet: raise for å få inn flere sjetonger mens du ligger foran.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">Sterk draw (%1$d outs): en bet kan vinne med en gang, og du kan fortsatt forbedre deg.</string>
-    <string name="hint_reason_call_draw">En drawhånd (%1$d outs): potten er stor nok til å jage draw.</string>
+    <string name="hint_reason_semi_bluff">Sterk draw (%1$d outs): du kan ligge bak akkurat nå, men en bet kan vinne potten med en gang, og outsene dine kan fortsatt gi deg den beste hånden.</string>
+    <string name="hint_reason_call_draw">En drawhånd (%1$d outs): du kan ligge bak akkurat nå, men potten er stor nok til å jage draw.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">Call lønner seg: du vinner omtrent %1$d%% av gangene, og prisen krever bare %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Ikke nok til å calle: prisen krever %2$d%%, og du har omtrent %1$d%%.</string>

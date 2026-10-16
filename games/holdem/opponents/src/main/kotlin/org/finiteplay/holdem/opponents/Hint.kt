@@ -104,9 +104,11 @@ fun hint(view: SeatView): HintResult {
     val stackBb = sit.effectiveBb(sit.me).toInt()
     val board = IntArray(view.board.size) { view.board[it].id }
     val outs = if (view.street == Street.PREFLOP) 0 else drawOuts(view.holeCards[0].id, view.holeCards[1].id, board, board.size)
-    val action = if (view.street == Street.PREFLOP) decision.action else coach(view, legal, decision.action, equity, potOdds)
-    val reason = if (view.street == Street.PREFLOP) preflopReason(view, sit, action, stackBb) else postflopReason(view, action, equity, potOdds, outs)
     val threats = threatsOf(sit, Threats.SAMPLES, SplitMix64(mix(seed, 0x7448L)))
+    val action = if (view.street == Street.PREFLOP) decision.action else coach(view, legal, decision.action, equity, potOdds, outs, threats?.beatsYou ?: 0.0)
+    // Behind right now, but with cards to come: the advice has to say so, never "you are probably ahead".
+    val behindNow = threats != null && threats.beatsYou > BEHIND_NOW && outs > 0
+    val reason = if (view.street == Street.PREFLOP) preflopReason(view, sit, action, stackBb) else postflopReason(view, action, equity, potOdds, outs, behindNow)
     return HintResult(equity, potOdds, action, reason, outs, stackBb, threats)
 }
 
@@ -119,10 +121,24 @@ private const val MONSTER_EQUITY = 0.80
 private const val STRONG_EQUITY = 0.60
 private const val MIDDLING_EQUITY = 0.45
 
+/** The least equity at which a bet, raise or all-in is advised: with a draw to come, and without one. */
+private const val MIN_DRAW_EQUITY = 0.30
+private const val MIN_VALUE_EQUITY = 0.40
+
 /** The top of the starting-hand ranking: about the best 4% of the 1,326 combinations, in basis points. */
 private const val PREMIUM_BP = 450
 
-private fun coach(view: SeatView, legal: LegalActions, base: Action, equity: Double, potOdds: Double): Action {
+/** More likely than not that an opponent already holds the better hand, on the cards showing. */
+private const val BEHIND_NOW = 0.5
+
+private fun coach(view: SeatView, legal: LegalActions, base: Action, equity: Double, potOdds: Double, outs: Int, beatsYou: Double): Action {
+    // A hint never tells a learner to bluff: a bet or raise needs a hand, or a draw with real chances.
+    val floor = if (outs > 0) MIN_DRAW_EQUITY else MIN_VALUE_EQUITY
+    // With no draw to come, a bet or raise is a value bet: it needs you to be more likely ahead than behind.
+    val probablyBehind = outs == 0 && beatsYou > BEHIND_NOW
+    if (isAggressive(base) && (equity < floor || probablyBehind)) {
+        return if (view.toCall == 0) Action.Check else if (legal.canCall && equity >= potOdds + CALL_MARGIN) Action.Call else Action.Fold
+    }
     if (view.toCall > 0) {
         if (base == Action.Fold && legal.canCall && equity >= potOdds + CALL_MARGIN) return Action.Call
         if (base == Action.Call && equity >= MONSTER_EQUITY) valueRaise(view, legal)?.let { return it }
@@ -170,8 +186,9 @@ private fun preflopReason(view: SeatView, sit: Situation, action: Action, stackB
     }
 }
 
-private fun postflopReason(view: SeatView, action: Action, equity: Double, potOdds: Double, outs: Int): HintReason = when {
+private fun postflopReason(view: SeatView, action: Action, equity: Double, potOdds: Double, outs: Int, behindNow: Boolean): HintReason = when {
     isAggressive(action) -> when {
+        behindNow -> HintReason.SEMI_BLUFF
         equity >= STRONG_EQUITY -> if (view.toCall > 0) HintReason.VALUE_RAISE else HintReason.VALUE_BET
         outs > 0 -> HintReason.SEMI_BLUFF
         else -> if (view.toCall > 0) HintReason.VALUE_RAISE else HintReason.VALUE_BET

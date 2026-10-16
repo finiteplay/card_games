@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">아마 앞서 있습니다. 베팅해서 약한 핸드가 카드를 더 보려면 값을 치르게 하세요.</string>
     <string name="hint_reason_value_raise">베팅을 받았지만 강한 핸드입니다. 앞서 있을 때 레이즈해서 칩을 더 넣으세요.</string>
     <!-- %1$d = number of outs (cards that complete your draw) -->
-    <string name="hint_reason_semi_bluff">강한 드로(아웃 %1$d장): 베팅으로 바로 이길 수 있고, 아직 핸드를 보강할 수도 있습니다.</string>
-    <string name="hint_reason_call_draw">드로 핸드(아웃 %1$d장): 팟이 충분히 커서 드로를 노려 볼 만합니다.</string>
+    <string name="hint_reason_semi_bluff">강한 드로(아웃 %1$d장): 지금은 뒤처져 있을 수 있지만, 베팅으로 팟을 바로 가져올 수 있고, 아웃으로 가장 좋은 핸드가 될 수도 있습니다.</string>
+    <string name="hint_reason_call_draw">드로 핸드(아웃 %1$d장): 지금은 뒤처져 있을 수 있지만, 팟이 충분히 커서 드로를 노려 볼 만합니다.</string>
     <!-- %1$d = your chance to win in percent, %2$d = the share of the pot the call costs, in percent -->
     <string name="hint_reason_call_good_price">콜이 이득입니다. 약 %1$d%% 확률로 이기는데 필요한 건 %2$d%%뿐입니다.</string>
     <string name="hint_reason_fold_bad_price">콜하기엔 부족합니다. 필요한 확률은 %2$d%%인데 내 확률은 약 %1$d%%입니다.</string>

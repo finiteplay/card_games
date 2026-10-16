@@ -20,8 +20,8 @@
     <string name="hint_reason_value_bet">Você provavelmente está na frente: aposte para que mãos mais fracas paguem para ver mais cartas.</string>
     <string name="hint_reason_value_raise">Mão forte diante de uma aposta: aumente para colocar mais fichas enquanto você está na frente.</string>
     <!-- %1$d = número de outs (cartas que completam seu draw) -->
-    <string name="hint_reason_semi_bluff">Draw forte (%1$d outs): apostar pode ganhar agora, e você ainda pode melhorar.</string>
-    <string name="hint_reason_call_draw">Uma mão de draw (%1$d outs): o pote é grande o bastante para perseguir o draw.</string>
+    <string name="hint_reason_semi_bluff">Draw forte (%1$d outs): você pode estar atrás agora, mas apostar pode ganhar agora, e você ainda pode melhorar.</string>
+    <string name="hint_reason_call_draw">Uma mão de draw (%1$d outs): você pode estar atrás agora, mas o pote é grande o bastante para perseguir o draw.</string>
     <!-- %1$d = sua chance de ganhar em porcentagem, %2$d = a parte do pote que o pagamento custa, em porcentagem -->
     <string name="hint_reason_call_good_price">Pagar compensa: você ganha cerca de %1$d%% das vezes e o preço exige apenas %2$d%%.</string>
     <string name="hint_reason_fold_bad_price">Não é o bastante para pagar: o preço exige %2$d%% e você tem cerca de %1$d%%.</string>

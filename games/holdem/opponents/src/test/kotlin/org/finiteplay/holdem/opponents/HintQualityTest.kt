@@ -42,6 +42,12 @@ class HintQualityTest {
         if (h.reason == HintReason.CALL_DRAW && (h.equity >= h.potOdds || h.outs == 0)) fail("claims a draw it does not have", view, h)
         if (h.reason == HintReason.SEMI_BLUFF && (h.outs == 0 || !aggressive)) fail("claims a semi-bluff without a draw", view, h)
         if ((h.reason == HintReason.VALUE_BET || h.reason == HintReason.VALUE_RAISE) && !aggressive) fail("claims value but does not bet", view, h)
+        val floor = if (h.outs > 0) 0.30 else 0.40
+        if (aggressive && h.equity < floor) fail("recommends aggression without the equity for it", view, h)
+        // Never "you are probably ahead" beside a high chance that someone already beats you on the cards showing.
+        val behind = (h.threats?.beatsYou ?: 0.0) > 0.5
+        if (aggressive && behind && h.outs > 0 && h.reason != HintReason.SEMI_BLUFF) fail("calls a draw a value bet", view, h)
+        if (aggressive && behind && h.outs == 0) fail("aggressive while probably behind with no draw to come", view, h)
     }
 
     @Test
