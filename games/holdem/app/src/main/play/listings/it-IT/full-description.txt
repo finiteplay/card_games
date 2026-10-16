@@ -1,0 +1,24 @@
+Gioca offline un torneo di Texas Hold'em a sei posti contro cinque avversari gestiti dal computer, con fiches virtuali e suggerimenti che spiegano le scelte. Mai denaro reale: le fiches non hanno alcun valore monetario e non ci sono puntate in denaro reale, depositi, acquisti di fiches, prelievi o premi.
+
+La promessa di FinitePlay: completamente gratis, senza pubblicità, acquisti in-app o abbonamenti. Tutto resta sul tuo dispositivo: nessun account, tracciamento, raccolta o condivisione di dati, nessuna classifica o funzione online. I tuoi progressi e le tue statistiche restano privati e locali.
+
+I suggerimenti facoltativi spiegano l'idea dietro un'azione consigliata e aiutano chi inizia a capire la forza della mano, la posizione, l'equity stimata e le pot odds. I consigli usano le informazioni visibili; non possono vedere le carte coperte degli avversari e non garantiscono una mano vincente.
+
+Ogni posto parte con lo stesso stack di fiches virtuali. Affronta blind in aumento, prendi le tue decisioni di puntata e cerca di essere l'ultimo giocatore al tavolo. Salva il torneo e riprendilo più tardi.
+
+Funzionalità:
+• Cinque avversari gestiti dal computer con stili di gioco diversi
+• Fold, check, call, puntata, rilancio e all in
+• Controlli per la dimensione della puntata e gestione dei piatti laterali
+• Suggerimenti con equity stimata e pot odds
+• Tornei salvati e statistiche sul dispositivo
+• Regole, gerarchia delle mani e aiuto sulla strategia
+• Layout verticale e orizzontale
+• Impostazioni di tema, suoni, animazioni e lingua
+• 30 lingue dell'interfaccia
+
+Giochi solo contro avversari gestiti dal computer: non ci sono partite contro persone reali. Pensato per adulti dai 18 anni in su.
+
+Gioca con i tuoi tempi. I promemoria di pausa configurabili ti invitano a fermarti dopo una lunga sessione di gioco. Non ci sono bonus a tempo né ricompense giornaliere a scadenza. Punteggi e statistiche locali ti aiutano a riflettere sul tuo gioco, senza classifiche competitive né pressione a continuare.
+
+FinitePlay crea giochi di carte che rispettano il tuo tempo, la tua privacy e la tua attenzione.

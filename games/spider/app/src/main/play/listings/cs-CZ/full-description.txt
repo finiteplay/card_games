@@ -1,0 +1,20 @@
+Skládej úplné řady od krále po eso ve Spider Solitaire. Začni s 1 barvou, nebo se pusť do 2 či 4 barev, se Zpět, Přehrát znovu a nepovinnou nápovědou, když chceš pomoct.
+
+Slib FinitePlay: úplně zdarma, bez reklam, nákupů v aplikaci a předplatného. Hra zůstává celá ve tvém zařízení: žádné účty, sledování, sběr ani sdílení dat, žebříčky či online funkce. Tvůj postup a statistiky zůstávají soukromé a místní.
+
+Každé zahrnuté úvodní rozdání má ověřené řešení. Na tvých rozhodnutích ale pořád záleží: pozdější pozice už nemusí vést k výhře. Vedené nápovědy mohou sledovat známé řešení; po zvolení jiné cesty podléhá hledání nového řešení limitům prohledávání.
+
+Funkce:
+• Spider s jednou, dvěma a čtyřmi barvami
+• 23 675 certifikovaně řešitelných rozdání napříč všemi třemi počty barev
+• Klepnutím nebo tažením přesouvej celé řady jedné barvy
+• Zvýraznění tahů a nepovinné vedené nápovědy
+• Zpět, Přehrát znovu a animované rozdávání řad i přesuny karet
+• Nepovinné ovládání zvuku a animací
+• Světlý, tmavý a časově řízený motiv
+• Statistiky v zařízení
+• 30 jazyků rozhraní
+
+Hraj vlastním tempem. Nastavitelná připomenutí přestávky tě po delším hraní vyzvou k pauze. Žádné bonusy, které by tě popoháněly, ani časově omezené denní odměny. Místní skóre a statistiky ti pomáhají zamyslet se nad vlastní hrou, bez soutěžních žebříčků a bez tlaku pokračovat.
+
+FinitePlay vytváří karetní hry, které respektují tvůj čas, soukromí i pozornost.

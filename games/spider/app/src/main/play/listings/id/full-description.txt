@@ -1,0 +1,20 @@
+Susun urutan lengkap dari Raja hingga As di Spider Solitaire. Mulai dengan 1 jenis kartu atau tantang diri dengan 2 atau 4 jenis, lengkap dengan urungkan, ulangi, dan petunjuk opsional saat Anda butuh bantuan.
+
+Janji FinitePlay: sepenuhnya gratis, tanpa iklan, pembelian dalam aplikasi, atau langganan. Permainan berjalan sepenuhnya di perangkat Anda: tanpa akun, pelacakan, pengumpulan atau berbagi data, papan peringkat, maupun fitur online. Progres dan statistik Anda tetap pribadi dan tersimpan lokal.
+
+Setiap pembagian awal yang disertakan memiliki solusi yang terverifikasi. Pilihan Anda tetap berpengaruh: posisi berikutnya bisa saja tidak lagi dapat dimenangkan. Petunjuk terpandu dapat mengikuti solusi yang sudah diketahui; setelah Anda memilih jalur lain, pencarian solusi baru tunduk pada batas pencarian.
+
+Fitur:
+• Spider dengan satu, dua, dan empat jenis kartu
+• 23.675 pembagian kartu yang tersertifikasi dapat diselesaikan di ketiga jumlah jenis kartu
+• Ketuk atau seret urutan lengkap dengan jenis yang sama
+• Penyorotan langkah dan petunjuk terpandu opsional
+• Urungkan, Ulangi, serta animasi pembagian baris dan pemindahan kartu
+• Pengaturan suara dan animasi opsional
+• Tema terang, gelap, dan berdasarkan waktu
+• Statistik di perangkat
+• 30 bahasa antarmuka
+
+Bermainlah sesuai ritme Anda. Pengingat istirahat yang dapat diatur mengajak Anda berhenti sejenak setelah bermain lama. Tidak ada bonus yang mendesak atau hadiah harian dengan batas waktu. Skor dan statistik lokal membantu Anda meninjau cara bermain, tanpa papan peringkat kompetitif atau tekanan untuk terus bermain.
+
+FinitePlay membuat permainan kartu yang menghargai waktu, privasi, dan perhatian Anda.

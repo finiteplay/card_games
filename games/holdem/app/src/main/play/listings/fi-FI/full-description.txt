@@ -1,0 +1,24 @@
+Pelaa kuuden paikan Texas Hold'em -pokeriturnaus offline-tilassa viittä tietokonevastustajaa vastaan virtuaalisilla pelimerkeillä ja valintoja selittävillä vihjeillä. Ei koskaan oikeaa rahaa: pelimerkeillä ei ole rahallista arvoa, eikä oikean rahan panoksia, talletuksia, pelimerkkien ostoja, nostoja tai palkintoja ole.
+
+FinitePlayn lupaus: täysin ilmainen, ei mainoksia, sovelluksensisäisiä ostoksia eikä tilauksia. Peli toimii kokonaan laitteellasi: ei tilejä, seurantaa, tietojen keräämistä tai jakamista, ei tulostaulukoita eikä verkko-ominaisuuksia. Edistymisesi ja tilastosi pysyvät yksityisinä ja paikallisina.
+
+Valinnaiset vihjeet selittävät ehdotetun toiminnon ajatuksen ja auttavat aloittelijoita ymmärtämään käden vahvuutta, positiota, arvioitua equityä ja pot oddseja. Neuvo perustuu näkyvään tietoon; se ei näe vastustajien piilotettuja kortteja eikä takaa voittavaa kättä.
+
+Jokainen paikka aloittaa samalla pinolla virtuaalisia pelimerkkejä. Pelaa nousevien blindien läpi, tee panostuspäätöksesi ja tähtää siihen, että olet viimeinen pelaaja pöydässä. Tallenna turnaus ja palaa siihen myöhemmin.
+
+Ominaisuudet:
+• Viisi tietokonevastustajaa erilaisilla pelityyleillä
+• Fold, check, maksu, panostus, korotus ja all in
+• Panoksen koon säätimet ja sivupottien jako
+• Vihjeet arvioidulla equityllä ja pot oddseilla
+• Tallennetut turnaukset ja laitteella säilytettävät tilastot
+• Säännöt, käsien järjestys ja strategiaohje
+• Pysty- ja vaakasuuntaiset näkymät
+• Teeman, äänen, animaatioiden ja kielen asetukset
+• 30 käyttöliittymäkieltä
+
+Pelaat vain tietokonevastustajia vastaan: pelejä oikeita ihmisiä vastaan ei ole. Suunniteltu 18 vuotta täyttäneille aikuisille.
+
+Pelaa omaan tahtiisi. Säädettävät taukomuistutukset kehottavat pitämään tauon pitkän pelaamisen jälkeen. Kiireellisiä bonuksia tai aikarajallisia päivittäisiä palkintoja ei ole. Paikalliset pisteet ja tilastot auttavat tarkastelemaan omaa pelaamistasi ilman tulostaulukoita tai painetta jatkaa.
+
+FinitePlay tekee korttipelejä, jotka kunnioittavat aikaasi, yksityisyyttäsi ja huomiotasi.

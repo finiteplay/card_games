@@ -1,0 +1,21 @@
+Veja todas as cartas e planeje sua próxima jogada no clássico FreeCell. Use as quatro células livres e as colunas vazias para abrir espaço, mova sequências de cartas e explore abordagens diferentes com Desfazer e Repetir.
+
+A promessa da FinitePlay: totalmente gratuito, sem anúncios, compras no app ou assinaturas. Tudo fica no seu dispositivo: sem contas, rastreamento, coleta ou compartilhamento de dados, sem rankings nem recursos online. Seu progresso e suas estatísticas ficam privados e locais.
+
+Toda partida incluída começa com uma solução verificada. Uma posição posterior ainda pode chegar a um beco sem saída, e as dicas têm limites de busca; quando uma dica não consegue estabelecer um caminho, ela diz isso com clareza.
+
+As células livres e as colunas vazias permitem mover sequências de cartas quando há espaço suficiente; o jogo calcula a capacidade permitida para você.
+
+Recursos:
+• 2.000 partidas certificadas como solucionáveis
+• Dicas opcionais que analisam o seu jogo atual
+• Toque ou arraste, inclusive para várias cartas de uma vez
+• Desfazer, Repetir e conclusão automática
+• Movimentos automáticos para as fundações, som e animações das cartas opcionais
+• Temas claro, escuro e conforme o horário
+• Estatísticas no dispositivo e comparação com seus recordes pessoais
+• 30 idiomas de interface
+
+Jogue no seu ritmo. Lembretes de pausa configuráveis convidam você a descansar depois de uma longa sessão. Não há bônus de urgência nem recompensas diárias com prazo. Pontuações e estatísticas locais ajudam você a refletir sobre seu jogo, sem rankings competitivos nem pressão para continuar.
+
+A FinitePlay cria jogos de cartas que respeitam seu tempo, sua privacidade e sua atenção.

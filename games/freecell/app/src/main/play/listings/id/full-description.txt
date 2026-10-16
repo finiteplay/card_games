@@ -1,0 +1,21 @@
+Lihat setiap kartu dan rencanakan langkah berikutnya di FreeCell klasik. Gunakan empat sel bebas dan kolom kosong untuk menciptakan ruang, pindahkan urutan kartu, dan jelajahi berbagai pendekatan dengan urungkan dan ulangi.
+
+Janji FinitePlay: sepenuhnya gratis, tanpa iklan, pembelian dalam aplikasi, atau langganan. Permainan berjalan sepenuhnya di perangkat Anda: tanpa akun, pelacakan, pengumpulan atau berbagi data, papan peringkat, maupun fitur online. Progres dan statistik Anda tetap pribadi dan tersimpan lokal.
+
+Setiap pembagian yang disertakan dimulai dengan solusi yang terverifikasi. Papan berikutnya tetap bisa berujung buntu, dan petunjuk memiliki batas pencarian; bila petunjuk tidak dapat menemukan jalan, ia akan mengatakannya dengan jelas.
+
+Sel bebas dan kolom kosong memungkinkan Anda memindahkan urutan kartu bila ruangnya cukup; permainan menghitung kapasitas yang sah untuk Anda.
+
+Fitur:
+• 2.000 pembagian kartu yang tersertifikasi dapat diselesaikan
+• Petunjuk opsional yang mencari di papan Anda saat ini
+• Kontrol ketuk atau seret, termasuk memindahkan beberapa kartu sekaligus
+• Urungkan, Ulangi, dan selesai otomatis
+• Langkah otomatis ke fondasi, suara, dan animasi kartu yang opsional
+• Tema terang, gelap, dan berdasarkan waktu
+• Statistik di perangkat dan perbandingan rekor pribadi
+• 30 bahasa antarmuka
+
+Bermainlah sesuai ritme Anda. Pengingat istirahat yang dapat diatur mengajak Anda berhenti sejenak setelah bermain lama. Tidak ada bonus yang mendesak atau hadiah harian dengan batas waktu. Skor dan statistik lokal membantu Anda meninjau cara bermain, tanpa papan peringkat kompetitif atau tekanan untuk terus bermain.
+
+FinitePlay membuat permainan kartu yang menghargai waktu, privasi, dan perhatian Anda.

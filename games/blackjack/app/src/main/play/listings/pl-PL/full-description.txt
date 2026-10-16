@@ -1,0 +1,11 @@
+Graj w blackjacka offline przeciwko krupierowi komputerowemu, z wirtualnymi żetonami i pomocnymi wyjaśnieniami dla początkujących. Nigdy za prawdziwe pieniądze: żetony nie mają wartości pieniężnej, a zakładów o prawdziwe pieniądze, wpłat, zakupu żetonów, wypłat ani nagród nie ma.
+
+Obietnica FinitePlay: całkowicie za darmo, bez reklam, zakupów w aplikacji i subskrypcji. Gra działa wyłącznie na Twoim urządzeniu: bez kont, śledzenia, zbierania i udostępniania danych, rankingów i funkcji online. Twoje postępy i statystyki pozostają prywatne i lokalne.
+
+Ćwicz decyzje: dobierz, pas, podwój i rozdziel, z opcjonalnymi podpowiedziami opartymi na strategii podstawowej, które wyjaśniają uzasadnienie i ryzyko przekroczenia 21. Stałe zasady: sześć talii tasowanych od nowa w każdej rundzie; krupier staje na miękkiej 17, blackjack płaci 3:2, dostępne są ubezpieczenie i sprawdzenie zakrytej karty przez krupiera. Podpowiedzi pomagają zrozumieć wybory; nie gwarantują wygranej.
+
+Grasz wyłącznie przeciwko krupierowi komputerowemu: nie ma rozgrywek z prawdziwymi ludźmi. Dla dorosłych w wieku 18 lat i więcej.
+
+Graj we własnym tempie. Konfigurowalne przypomnienia o przerwie zachęcają do odpoczynku po dłuższej grze. Nie ma bonusów wywierających presję czasu ani dziennych nagród z limitem czasu. Lokalne wyniki i statystyki pomagają ocenić własną grę, bez rankingów i presji, by grać dalej.
+
+FinitePlay tworzy gry karciane, które szanują Twój czas, prywatność i uwagę.

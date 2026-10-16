@@ -1,0 +1,1 @@
+Egyszerű, akkura figyelő offline póker: virtuális zsetonok, reklámmentes

@@ -1,0 +1,19 @@
+Spill klassisk Klondike-kabal offline. Velg å trekke ett eller tre kort, velg en passende vanskelighetsgrad, og bruk Angre, Spill om igjen eller et valgfritt hint når du vil prøve en annen tilnærming.
+
+FinitePlay-løftet: helt gratis, uten reklame, kjøp i appen eller abonnementer. Spillet foregår helt på enheten din: ingen kontoer, ingen sporing, ingen innsamling eller deling av data, ingen rangeringslister og ingen nettfunksjoner. Fremgangen og statistikken din forblir private og lokale.
+
+Giv fra Triviell til Ekspert starter med en verifisert løsning. Det separate nivået Vanvittig inneholder usertifiserte giv. Et løsbart startgiv kan likevel ende i en blindvei. Hint søker gjennom brettet slik det står nå, og melder fra når de ikke kan fastslå en vinnende vei innenfor grensen sin.
+
+Funksjoner:
+• Seks vanskelighetsgrader, med sertifisert løsbare giv fra Triviell til Ekspert
+• Regler for å trekke ett eller tre kort
+• Valgfrie hint som søker gjennom brettet slik det står nå
+• Styring med trykk eller dra, Angre, Spill om igjen og automatisk ferdigstilling
+• Valgfrie automatiske trekk til grunnbunkene, lyd og kortanimasjoner
+• Lyst, mørkt og tidsstyrt tema
+• Statistikk på enheten og sammenligning med personlige rekorder
+• 30 grensesnittspråk
+
+Spill i ditt eget tempo. Konfigurerbare pausepåminnelser oppfordrer deg til å ta en pause etter lengre spilling. Det finnes ingen hastebonuser og ingen daglige belønninger med tidsfrist. Lokale poeng og statistikk hjelper deg å reflektere over spillingen din, uten rangeringslister eller press om å fortsette.
+
+FinitePlay lager kortspill som respekterer tiden din, personvernet ditt og oppmerksomheten din.

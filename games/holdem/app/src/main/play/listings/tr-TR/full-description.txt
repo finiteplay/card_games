@@ -1,0 +1,24 @@
+Altı kişilik bir Texas Hold'em poker turnuvasını çevrimdışı, beş bilgisayar rakibe karşı, sanal fişlerle ve seçimleri açıklayan ipuçlarıyla oyna. Asla gerçek para yok: fişlerin parasal değeri yoktur; gerçek para bahsi, para yatırma, fiş satın alma, para çekme ya da ödül de yoktur.
+
+FinitePlay sözü: tamamen ücretsiz; reklam, uygulama içi satın alma ve abonelik yok. Oyun tamamen cihazında kalır: hesap, izleme, veri toplama veya paylaşma, liderlik tablosu ya da çevrimiçi özellik yok. İlerlemen ve istatistiklerin gizli ve yerel kalır.
+
+İsteğe bağlı ipuçları, önerilen hamlenin ardındaki fikri açıklar; yeni başlayanların el gücünü, pozisyonu, tahmini equity'yi ve pot odds'u anlamasına yardımcı olur. Öneri görünen bilgilere dayanır; rakiplerin gizli kartlarını göremez ve kazanan bir eli garanti etmez.
+
+Her koltuk aynı miktarda sanal fişle başlar. Yükselen blindlar boyunca oyna, bahis kararlarını ver ve masada kalan son oyuncu olmayı hedefle. Turnuvanı kaydedip daha sonra devam edebilirsin.
+
+Özellikler:
+• Farklı oyun tarzlarına sahip beş bilgisayar rakibi
+• Fold, check, call, bet, raise ve all-in
+• Bahis miktarı kontrolleri ve yan pot (side pot) paylaşımı
+• Tahmini equity ve pot odds içeren ipuçları
+• Kayıtlı turnuvalar ve cihazda tutulan istatistikler
+• Kurallar, el sıralaması ve strateji yardımı
+• Dikey ve yatay düzen
+• Tema, ses, animasyon ve dil ayarları
+• 30 arayüz dili
+
+Yalnızca bilgisayar rakiplere karşı oynarsın: gerçek kişilere karşı maç yoktur. 18 yaş ve üzeri yetişkinler için tasarlanmıştır.
+
+Kendi temposunda oyna. Ayarlanabilir dinlenme hatırlatıcıları, uzun süre oynadıktan sonra seni ara vermeye davet eder. Seni acele ettiren bonuslar ya da süreli günlük ödüller yoktur. Yerel skorlar ve istatistikler oyununu gözden geçirmene yardımcı olur; rekabetçi liderlik tabloları ya da oynamaya devam etme baskısı yoktur.
+
+FinitePlay, zamanına, gizliliğine ve dikkatine saygı duyan kart oyunları yapar.

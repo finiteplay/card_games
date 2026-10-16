@@ -1,0 +1,20 @@
+Construiește secvențe complete de la Rege la As în Spider Solitaire. Începe cu 1 culoare sau treci la 2 ori 4 culori, cu Înapoi, Reluare și indicii opționale când vrei ajutor.
+
+Promisiunea FinitePlay: complet gratuit, fără reclame, achiziții în aplicație sau abonamente. Jocul rămâne în întregime pe dispozitivul tău: fără conturi, urmărire, colectare sau partajare de date, clasamente ori funcții online. Progresul și statisticile tale rămân private și locale.
+
+Fiecare mână de start inclusă are o soluție verificată. Alegerile tale contează totuși: o poziție ulterioară poate să nu mai fie câștigătoare. Indiciile ghidate pot urma o soluție cunoscută; după ce alegi altă cale, găsirea unei noi soluții este supusă limitelor de căutare.
+
+Funcții:
+• Spider cu una, două și patru culori
+• 23.675 de jocuri certificat rezolvabile, pentru toate cele trei numere de culori
+• Atinge sau trage secvențe complete de aceeași culoare
+• Evidențierea mutărilor și indicii ghidate opționale
+• Înapoi, Reluare și distribuiri animate de rânduri și mutări de cărți
+• Controale opționale pentru sunet și animații
+• Teme luminoasă, întunecată și în funcție de oră
+• Statistici pe dispozitiv
+• 30 de limbi de interfață
+
+Joacă în ritmul tău. Mementourile de pauză, configurabile, te invită să faci o pauză după un timp mai lung de joc. Nu există bonusuri care să te grăbească sau recompense zilnice cronometrate. Scorurile și statisticile locale te ajută să-ți reevaluezi jocul, fără clasamente competitive sau presiunea de a continua.
+
+FinitePlay creează jocuri de cărți care îți respectă timpul, confidențialitatea și atenția.

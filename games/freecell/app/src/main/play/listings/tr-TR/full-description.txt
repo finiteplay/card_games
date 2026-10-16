@@ -1,0 +1,21 @@
+Klasik FreeCell'de tüm kartları gör ve bir sonraki hamleni planla. Dört boş hücreyi ve boş sütunları yer açmak için kullan, kart dizilerini taşı; Geri Al ve Tekrar Oyna ile farklı yolları dene.
+
+FinitePlay sözü: tamamen ücretsiz; reklam, uygulama içi satın alma ve abonelik yok. Oyun tamamen cihazında kalır: hesap, izleme, veri toplama veya paylaşma, liderlik tablosu ya da çevrimiçi özellik yok. İlerlemen ve istatistiklerin gizli ve yerel kalır.
+
+Pakete dahil her dağıtım doğrulanmış bir çözümle başlar. Sonraki bir tahta yine de çıkmaza girebilir ve ipuçlarının arama sınırları vardır; bir ipucu yol bulamadığında bunu açıkça söyler.
+
+Boş hücreler ve boş sütunlar, yeterli yer olduğunda kart dizilerini taşımana izin verir; kurallara göre kaç kart taşıyabileceğini oyun senin için hesaplar.
+
+Özellikler:
+• 2.000 çözülebilirliği sertifikalı el
+• Mevcut masayı tarayan isteğe bağlı ipuçları
+• Çok kartlı hamleler dahil dokunarak veya sürükleyerek oynama
+• Geri Al, Tekrar Oyna ve otomatik bitirme
+• İsteğe bağlı otomatik temel yığın hamleleri, ses ve kart animasyonları
+• Açık, koyu ve saate göre değişen temalar
+• Cihazda tutulan istatistikler ve kişisel rekor karşılaştırmaları
+• 30 arayüz dili
+
+Kendi temposunda oyna. Ayarlanabilir dinlenme hatırlatıcıları, uzun süre oynadıktan sonra seni ara vermeye davet eder. Seni acele ettiren bonuslar ya da süreli günlük ödüller yoktur. Yerel skorlar ve istatistikler oyununu gözden geçirmene yardımcı olur; rekabetçi liderlik tabloları ya da oynamaya devam etme baskısı yoktur.
+
+FinitePlay, zamanına, gizliliğine ve dikkatine saygı duyan kart oyunları yapar.

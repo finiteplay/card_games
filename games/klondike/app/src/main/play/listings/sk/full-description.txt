@@ -1,0 +1,19 @@
+Hrajte klasický Klondike Solitaire offline. Vyberte si ťahanie jednej alebo troch kariet, zvoľte si pohodlnú náročnosť a použite Späť, Prehrať znova alebo nepovinnú nápovedu, keď chcete skúsiť iný postup.
+
+Sľub FinitePlay: úplne zadarmo, bez reklám, nákupov v aplikácii a predplatného. Hra beží výhradne vo vašom zariadení: bez účtov, sledovania, zhromažďovania alebo zdieľania údajov, rebríčkov a online funkcií. Váš postup a štatistiky zostávajú súkromné a lokálne.
+
+Rozdania na úrovniach Triviálna až Expertná začínajú s overeným riešením. Samostatná úroveň Šialená obsahuje neoverené rozdania. Riešiteľné úvodné rozdanie môže stále skončiť slepou uličkou. Nápovedy prehľadávajú vašu aktuálnu hru a oznámia, keď v rámci svojho limitu nedokážu nájsť cestu k výhre.
+
+Funkcie:
+• Šesť úrovní obtiažnosti, s overene riešiteľnými rozdaniami na úrovniach Triviálna až Expertná
+• Pravidlá ťahania jednej a troch kariet
+• Nepovinné nápovedy, ktoré prehľadávajú vašu aktuálnu hru
+• Ovládanie ťuknutím alebo presunutím, Späť, Prehrať znova a automatické dokončenie
+• Nepovinné automatické presuny na základy, zvuk a animácie kariet
+• Svetlý, tmavý a časovo riadený motív
+• Štatistiky v zariadení a porovnanie s osobnými rekordmi
+• 30 jazykov rozhrania
+
+Hrajte vlastným tempom. Nastaviteľné pripomienky prestávky vás po dlhšej hre vyzvú oddýchnuť si. Nie sú tu žiadne nátlakové bonusy ani časovo obmedzené denné odmeny. Lokálne skóre a štatistiky vám pomáhajú zamyslieť sa nad vlastnou hrou, bez súťažných rebríčkov a tlaku pokračovať.
+
+FinitePlay vytvára kartové hry, ktoré rešpektujú váš čas, súkromie a pozornosť.

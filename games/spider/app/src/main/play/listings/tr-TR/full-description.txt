@@ -1,0 +1,20 @@
+Spider Solitaire'de Papaz'dan As'a tam diziler oluştur. 1 renkle başla ya da 2 veya 4 renge geç; yardım istediğinde Geri Al, Tekrar Oyna ve isteğe bağlı ipuçları yanında.
+
+FinitePlay sözü: tamamen ücretsiz; reklam, uygulama içi satın alma ve abonelik yok. Oyun tamamen cihazında kalır: hesap, izleme, veri toplama veya paylaşma, liderlik tablosu ya da çevrimiçi özellik yok. İlerlemen ve istatistiklerin gizli ve yerel kalır.
+
+Pakete dahil her başlangıç dağıtımının doğrulanmış bir çözümü vardır. Seçimlerin yine de önemlidir: sonraki bir konum artık kazanılamaz hale gelebilir. Rehberli ipuçları bilinen bir çözümü izleyebilir; başka bir yol seçtikten sonra yeni bir çözüm bulmak arama sınırlarına tabidir.
+
+Özellikler:
+• Bir, iki ve dört renkli Spider
+• Üç renk seçeneğinin tamamında 23.675 çözülebilirliği sertifikalı dağıtım
+• Aynı renkli tam dizileri dokunarak veya sürükleyerek taşı
+• Hamle vurgulama ve isteğe bağlı rehberli ipuçları
+• Geri Al, Tekrar Oyna; animasyonlu sıra dağıtımı ve kart hareketleri
+• İsteğe bağlı ses ve animasyon ayarları
+• Açık, koyu ve saate göre değişen temalar
+• Cihazda tutulan istatistikler
+• 30 arayüz dili
+
+Kendi temposunda oyna. Ayarlanabilir dinlenme hatırlatıcıları, uzun süre oynadıktan sonra seni ara vermeye davet eder. Seni acele ettiren bonuslar ya da süreli günlük ödüller yoktur. Yerel skorlar ve istatistikler oyununu gözden geçirmene yardımcı olur; rekabetçi liderlik tabloları ya da oynamaya devam etme baskısı yoktur.
+
+FinitePlay, zamanına, gizliliğine ve dikkatine saygı duyan kart oyunları yapar.

@@ -1,0 +1,21 @@
+Widzisz każdą kartę i planujesz kolejny ruch w klasycznym FreeCellu. Wykorzystaj cztery wolne komórki i puste kolumny, by zrobić miejsce, przenoś sekwencje kart i sprawdzaj różne podejścia dzięki cofaniu i powtórce.
+
+Obietnica FinitePlay: całkowicie za darmo, bez reklam, zakupów w aplikacji i subskrypcji. Gra działa wyłącznie na Twoim urządzeniu: bez kont, śledzenia, zbierania i udostępniania danych, rankingów i funkcji online. Twoje postępy i statystyki pozostają prywatne i lokalne.
+
+Każde dostępne w grze rozdanie zaczyna się ze zweryfikowanym rozwiązaniem. Późniejszy układ nadal może prowadzić do ślepego zaułka, a podpowiedzi mają limity wyszukiwania; gdy podpowiedź nie może ustalić drogi, mówi o tym wprost.
+
+Wolne komórki i puste kolumny pozwalają przenosić sekwencje kart, gdy jest dość miejsca; gra sama wylicza dozwoloną liczbę kart.
+
+Funkcje:
+• 2000 certyfikowanych rozwiązywalnych rozdań
+• Opcjonalne podpowiedzi przeszukujące bieżący układ kart
+• Sterowanie dotknięciem lub przeciąganiem, także przy ruchach wieloma kartami
+• Cofanie, powtórka i automatyczne kończenie
+• Opcjonalne automatyczne ruchy na stosy końcowe, dźwięk i animacje kart
+• Motywy jasny, ciemny i zależny od pory dnia
+• Statystyki na urządzeniu i porównania z osobistymi rekordami
+• 30 języków interfejsu
+
+Graj we własnym tempie. Konfigurowalne przypomnienia o przerwie zachęcają do odpoczynku po dłuższej grze. Nie ma bonusów wywierających presję czasu ani dziennych nagród z limitem czasu. Lokalne wyniki i statystyki pomagają ocenić własną grę, bez rankingów i presji, by grać dalej.
+
+FinitePlay tworzy gry karciane, które szanują Twój czas, prywatność i uwagę.

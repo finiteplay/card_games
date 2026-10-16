@@ -1,0 +1,19 @@
+Graj w klasycznego pasjansa Klondike offline. Wybierz dobieranie po jednej lub po trzy karty, ustaw wygodny poziom trudności i korzystaj z cofania, powtórki lub opcjonalnej podpowiedzi, gdy chcesz spróbować innego podejścia.
+
+Obietnica FinitePlay: całkowicie za darmo, bez reklam, zakupów w aplikacji i subskrypcji. Gra działa wyłącznie na Twoim urządzeniu: bez kont, śledzenia, zbierania i udostępniania danych, rankingów i funkcji online. Twoje postępy i statystyki pozostają prywatne i lokalne.
+
+Rozdania od poziomu Trywialnego do Eksperta zaczynają się ze zweryfikowanym rozwiązaniem. Osobny poziom Szalony zawiera rozdania niecertyfikowane. Rozwiązywalne rozdanie początkowe nadal może prowadzić do ślepego zaułka. Podpowiedzi przeszukują bieżący układ kart i informują, gdy w swoim limicie nie mogą ustalić drogi do wygranej.
+
+Funkcje:
+• Sześć poziomów trudności, z certyfikowanymi rozwiązywalnymi rozdaniami od Trywialnego do Eksperta
+• Zasady dobierania po jednej i po trzy karty
+• Opcjonalne podpowiedzi przeszukujące bieżący układ kart
+• Sterowanie dotknięciem lub przeciąganiem, cofanie, powtórka i automatyczne kończenie
+• Opcjonalne automatyczne ruchy na stosy końcowe, dźwięk i animacje kart
+• Motywy jasny, ciemny i zależny od pory dnia
+• Statystyki na urządzeniu i porównania z osobistymi rekordami
+• 30 języków interfejsu
+
+Graj we własnym tempie. Konfigurowalne przypomnienia o przerwie zachęcają do odpoczynku po dłuższej grze. Nie ma bonusów wywierających presję czasu ani dziennych nagród z limitem czasu. Lokalne wyniki i statystyki pomagają ocenić własną grę, bez rankingów i presji, by grać dalej.
+
+FinitePlay tworzy gry karciane, które szanują Twój czas, prywatność i uwagę.

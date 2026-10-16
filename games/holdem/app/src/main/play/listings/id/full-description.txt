@@ -1,0 +1,24 @@
+Mainkan turnamen poker Texas Hold'em enam kursi secara offline melawan lima lawan komputer, dengan chip virtual dan petunjuk yang menjelaskan pilihan. Tidak pernah memakai uang sungguhan: chip tidak bernilai uang, dan tidak ada taruhan uang sungguhan, setoran, pembelian chip, penarikan tunai, atau hadiah.
+
+Janji FinitePlay: sepenuhnya gratis, tanpa iklan, pembelian dalam aplikasi, atau langganan. Permainan berjalan sepenuhnya di perangkat Anda: tanpa akun, pelacakan, pengumpulan atau berbagi data, papan peringkat, maupun fitur online. Progres dan statistik Anda tetap pribadi dan tersimpan lokal.
+
+Petunjuk opsional menjelaskan gagasan di balik tindakan yang disarankan, membantu pemula memahami kekuatan tangan, posisi, perkiraan equity, dan pot odds. Saran ini memakai informasi yang terlihat; ia tidak dapat melihat kartu tersembunyi lawan dan tidak menjamin tangan yang menang.
+
+Setiap kursi memulai dengan jumlah chip virtual yang sama. Mainkan melewati blind yang terus naik, ambil keputusan taruhan Anda, dan berusahalah menjadi pemain terakhir di meja. Simpan turnamen Anda dan lanjutkan nanti.
+
+Fitur:
+• Lima lawan komputer dengan gaya bermain yang berbeda
+• Fold, Check, Call, Bet, Raise, dan All in
+• Kontrol ukuran taruhan dan penyelesaian side pot
+• Petunjuk dengan perkiraan equity dan pot odds
+• Turnamen tersimpan dan statistik di perangkat
+• Aturan, peringkat tangan, dan bantuan strategi
+• Tata letak potret dan lanskap
+• Pengaturan tema, suara, animasi, dan bahasa
+• 30 bahasa antarmuka
+
+Anda hanya bermain melawan lawan komputer: tidak ada pertandingan melawan orang sungguhan. Dirancang untuk orang dewasa berusia 18 tahun ke atas.
+
+Bermainlah sesuai ritme Anda. Pengingat istirahat yang dapat diatur mengajak Anda berhenti sejenak setelah bermain lama. Tidak ada bonus yang mendesak atau hadiah harian dengan batas waktu. Skor dan statistik lokal membantu Anda meninjau cara bermain, tanpa papan peringkat kompetitif atau tekanan untuk terus bermain.
+
+FinitePlay membuat permainan kartu yang menghargai waktu, privasi, dan perhatian Anda.

@@ -1,0 +1,21 @@
+Voyez toutes les cartes et planifiez votre prochain coup dans le FreeCell classique. Utilisez les quatre cases libres et les colonnes vides pour faire de la place, déplacez des suites de cartes et testez différentes approches avec Annuler et Rejouer.
+
+La promesse FinitePlay : entièrement gratuit, sans publicité, sans achats intégrés ni abonnements. Tout se passe sur votre appareil : pas de compte, ni suivi, ni collecte ou partage de données, ni classements, ni fonctions en ligne. Votre progression et vos statistiques restent privées et locales.
+
+Chaque donne incluse commence avec une solution vérifiée. Un plateau ultérieur peut tout de même aboutir à une impasse, et les indices ont des limites de recherche ; quand un indice ne peut pas établir de chemin, il le dit clairement.
+
+Les cases libres et les colonnes vides permettent de déplacer des suites de cartes quand il y a assez de place ; le jeu calcule pour vous la capacité autorisée.
+
+Fonctionnalités :
+• 2 000 donnes certifiées solubles
+• Indices facultatifs qui analysent votre plateau actuel
+• Commandes par toucher ou glisser, y compris pour plusieurs cartes à la fois
+• Annuler, Rejouer et fin automatique
+• Déplacements automatiques vers les fondations, sons et animations des cartes en option
+• Thèmes clair, sombre et selon l'heure
+• Statistiques sur l'appareil et comparaison avec vos meilleurs résultats
+• 30 langues d'interface
+
+Jouez à votre rythme. Des rappels de pause configurables vous invitent à vous arrêter après une longue session. Il n'y a ni bonus d'urgence ni récompenses quotidiennes limitées dans le temps. Les scores et statistiques locaux vous aident à analyser votre jeu, sans classements compétitifs ni pression pour continuer.
+
+FinitePlay crée des jeux de cartes qui respectent votre temps, votre vie privée et votre attention.

@@ -1,0 +1,21 @@
+Näe jokainen kortti ja suunnittele seuraava siirtosi klassisessa FreeCellissä. Tee tilaa neljällä vapaalla solulla ja tyhjillä sarakkeilla, siirrä korttisarjoja ja kokeile erilaisia lähestymistapoja Kumoa- ja Toista-toiminnoilla.
+
+FinitePlayn lupaus: täysin ilmainen, ei mainoksia, sovelluksensisäisiä ostoksia eikä tilauksia. Peli toimii kokonaan laitteellasi: ei tilejä, seurantaa, tietojen keräämistä tai jakamista, ei tulostaulukoita eikä verkko-ominaisuuksia. Edistymisesi ja tilastosi pysyvät yksityisinä ja paikallisina.
+
+Jokainen mukana tuleva jako alkaa vahvistetulla ratkaisulla. Myöhempi tilanne voi silti päätyä umpikujaan, ja vihjeillä on hakurajat; kun vihje ei pysty osoittamaan polkua, se kertoo siitä selvästi.
+
+Vapaat solut ja tyhjät sarakkeet mahdollistavat korttisarjojen siirtämisen, kun tilaa on tarpeeksi; peli laskee sallitun kapasiteetin puolestasi.
+
+Ominaisuudet:
+• 2 000 sertifioidusti ratkaistavaa jakoa
+• Valinnaiset vihjeet, jotka hakevat ratkaisua nykyisestä pöytätilanteesta
+• Ohjaus napauttamalla tai vetämällä, myös usean kortin siirrot
+• Kumoa, Toista ja automaattinen lopetus
+• Valinnaiset automaattiset siirrot perustoihin, äänet ja korttianimaatiot
+• Vaalea, tumma ja ajan mukaan vaihtuva teema
+• Laitteella säilytettävät tilastot ja henkilökohtaisten ennätysten vertailu
+• 30 käyttöliittymäkieltä
+
+Pelaa omaan tahtiisi. Säädettävät taukomuistutukset kehottavat pitämään tauon pitkän pelaamisen jälkeen. Kiireellisiä bonuksia tai aikarajallisia päivittäisiä palkintoja ei ole. Paikalliset pisteet ja tilastot auttavat tarkastelemaan omaa pelaamistasi ilman tulostaulukoita tai painetta jatkaa.
+
+FinitePlay tekee korttipelejä, jotka kunnioittavat aikaasi, yksityisyyttäsi ja huomiotasi.

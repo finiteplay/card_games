@@ -1,0 +1,21 @@
+Se hvert kort, og planlæg dit næste træk i klassisk FreeCell. Brug de fire fritceller og tomme kolonner til at skabe plads, flyt kortrækker, og udforsk forskellige tilgange med Fortryd og Spil igen.
+
+FinitePlay-løftet: helt gratis, uden reklamer, køb i appen eller abonnementer. Spillet foregår udelukkende på din enhed: ingen konti, ingen sporing, ingen indsamling eller deling af data, ingen ranglister og ingen onlinefunktioner. Dine fremskridt og din statistik forbliver private og lokale.
+
+Hvert medfølgende giv starter med en verificeret løsning. Et senere bræt kan stadig ende i en blindgyde, og hint har søgegrænser; når et hint ikke kan fastslå en vej, siger det det klart og tydeligt.
+
+Fritceller og tomme kolonner lader dig flytte kortrækker, når der er plads nok; spillet regner den lovlige kapacitet ud for dig.
+
+Funktioner:
+• 2.000 certificeret løsbare giv
+• Valgfrie hint, der søger i brættet, som det ser ud lige nu
+• Styring med tryk eller træk, også med flere kort ad gangen
+• Fortryd, Spil igen og automatisk afslutning
+• Valgfrie automatiske træk til hjemmebunkerne, lyd og kortanimationer
+• Lyst, mørkt og tidsstyret tema
+• Statistik på enheden og sammenligning med personlige rekorder
+• 30 grænsefladesprog
+
+Spil i dit eget tempo. Indstillelige pauseminder opfordrer dig til at holde pause efter længere tids spil. Der er ingen hastebonusser og ingen daglige belønninger med tidsfrist. Lokale point og statistik hjælper dig med at reflektere over dit spil, uden ranglister eller pres for at blive ved.
+
+FinitePlay laver kortspil, der respekterer din tid, dit privatliv og din opmærksomhed.

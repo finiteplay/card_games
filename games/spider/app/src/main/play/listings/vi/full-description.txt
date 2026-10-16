@@ -1,0 +1,20 @@
+Xếp các chuỗi hoàn chỉnh từ Già về Át trong Spider Solitaire. Bắt đầu với 1 chất hoặc thử sức với 2 hay 4 chất, cùng hoàn tác, chơi lại và gợi ý tùy chọn khi bạn cần giúp đỡ.
+
+Lời hứa của FinitePlay: hoàn toàn miễn phí, không quảng cáo, không mua hàng trong ứng dụng, không gói đăng ký. Mọi thứ diễn ra ngay trên thiết bị của bạn: không tài khoản, không theo dõi, không thu thập hay chia sẻ dữ liệu, không bảng xếp hạng, không tính năng trực tuyến. Tiến trình và thống kê của bạn được giữ riêng tư, chỉ lưu trên thiết bị.
+
+Mọi ván chia bài có sẵn đều bắt đầu với một lời giải đã được kiểm chứng. Lựa chọn của bạn vẫn quan trọng: một thế bài về sau có thể không còn thắng được nữa. Gợi ý có hướng dẫn có thể đi theo một lời giải đã biết; sau khi bạn chọn hướng khác, việc tìm lời giải mới phụ thuộc vào giới hạn tìm kiếm.
+
+Tính năng:
+• Spider một chất, hai chất và bốn chất
+• 23.675 ván có lời giải được kiểm chứng ở cả ba chế độ số chất
+• Chạm hoặc kéo các chuỗi cùng chất hoàn chỉnh
+• Làm nổi bật nước đi và gợi ý có hướng dẫn tùy chọn
+• Hoàn tác, Chơi lại, cùng hiệu ứng chia một hàng bài và di chuyển bài
+• Điều khiển âm thanh và hiệu ứng tùy chọn
+• Giao diện sáng, tối và theo thời gian
+• Thống kê trên thiết bị
+• 30 ngôn ngữ giao diện
+
+Chơi theo nhịp của riêng bạn. Nhắc nhở nghỉ ngơi có thể tùy chỉnh sẽ gợi ý bạn tạm dừng sau khi chơi lâu. Không có phần thưởng thúc giục hay phần thưởng hằng ngày có hạn giờ. Điểm số và thống kê trên thiết bị giúp bạn nhìn lại cách chơi của mình, không có bảng xếp hạng cạnh tranh và không có áp lực phải chơi tiếp.
+
+FinitePlay làm ra những trò chơi bài tôn trọng thời gian, quyền riêng tư và sự tập trung của bạn.

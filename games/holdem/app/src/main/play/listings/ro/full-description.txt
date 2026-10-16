@@ -1,0 +1,24 @@
+Joacă offline un turneu de Texas Hold'em cu șase locuri împotriva a cinci adversari controlați de computer, cu jetoane virtuale și indicii care explică alegerile. Niciodată cu bani reali: jetoanele nu au valoare monetară și nu există pariuri cu bani reali, depuneri, achiziții de jetoane, retrageri sau premii.
+
+Promisiunea FinitePlay: complet gratuit, fără reclame, achiziții în aplicație sau abonamente. Jocul rămâne în întregime pe dispozitivul tău: fără conturi, urmărire, colectare sau partajare de date, clasamente ori funcții online. Progresul și statisticile tale rămân private și locale.
+
+Indiciile opționale explică ideea din spatele unei acțiuni sugerate și îi ajută pe începători să înțeleagă forța mâinii, poziția, equity-ul estimat și șansele potului (pot odds). Sfatul folosește informațiile vizibile; nu poate vedea cărțile ascunse ale adversarilor și nu garantează o mână câștigătoare.
+
+Fiecare loc începe cu aceeași stivă de jetoane virtuale. Joacă pe măsură ce blindurile cresc, ia-ți deciziile de pariere și țintește să fii ultimul jucător rămas la masă. Salvează-ți turneul și revino la el mai târziu.
+
+Funcții:
+• Cinci adversari controlați de computer, cu stiluri de joc distincte
+• Fold, check, call, pariază, mărește și all in
+• Controale pentru mărimea pariului și decontarea poturilor laterale
+• Indicii cu equity estimat și șansele potului
+• Turnee salvate și statistici pe dispozitiv
+• Reguli, ierarhia mâinilor și ajutor de strategie
+• Aspect vertical și orizontal
+• Setări pentru temă, sunet, animații și limbă
+• 30 de limbi de interfață
+
+Joci doar împotriva adversarilor controlați de computer: nu există meciuri cu persoane reale. Conceput pentru adulți cu vârsta de 18 ani și peste.
+
+Joacă în ritmul tău. Mementourile de pauză, configurabile, te invită să faci o pauză după un timp mai lung de joc. Nu există bonusuri care să te grăbească sau recompense zilnice cronometrate. Scorurile și statisticile locale te ajută să-ți reevaluezi jocul, fără clasamente competitive sau presiunea de a continua.
+
+FinitePlay creează jocuri de cărți care îți respectă timpul, confidențialitatea și atenția.

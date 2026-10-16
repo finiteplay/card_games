@@ -1,0 +1,19 @@
+Joacă offline clasicul Klondike Solitaire. Alege extragerea unei cărți sau a trei, stabilește o dificultate potrivită și folosește Înapoi, Reluare sau un indiciu opțional când vrei să încerci altă abordare.
+
+Promisiunea FinitePlay: complet gratuit, fără reclame, achiziții în aplicație sau abonamente. Jocul rămâne în întregime pe dispozitivul tău: fără conturi, urmărire, colectare sau partajare de date, clasamente ori funcții online. Progresul și statisticile tale rămân private și locale.
+
+Mâinile de la Trivial până la Expert pornesc cu o soluție verificată. Nivelul separat Nebunesc conține jocuri necertificate. O mână de start rezolvabilă poate totuși duce într-un impas. Indiciile caută în tabla curentă și anunță când nu pot stabili o cale spre victorie în limita lor.
+
+Funcții:
+• Șase niveluri de dificultate, cu jocuri certificat rezolvabile de la Trivial până la Expert
+• Reguli de extragere a unei cărți și a trei cărți
+• Indicii opționale care caută în tabla curentă
+• Control prin atingere sau tragere, Înapoi, Reluare și finalizare automată
+• Mutări automate opționale către fundații, sunet și animații ale cărților
+• Teme luminoasă, întunecată și în funcție de oră
+• Statistici pe dispozitiv și comparații cu recordurile personale
+• 30 de limbi de interfață
+
+Joacă în ritmul tău. Mementourile de pauză, configurabile, te invită să faci o pauză după un timp mai lung de joc. Nu există bonusuri care să te grăbească sau recompense zilnice cronometrate. Scorurile și statisticile locale te ajută să-ți reevaluezi jocul, fără clasamente competitive sau presiunea de a continua.
+
+FinitePlay creează jocuri de cărți care îți respectă timpul, confidențialitatea și atenția.

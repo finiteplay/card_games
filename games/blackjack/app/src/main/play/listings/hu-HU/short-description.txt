@@ -1,0 +1,1 @@
+Egyszerű, akkura figyelő offline Blackjack: virtuális zsetonok, reklámmentes

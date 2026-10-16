@@ -1,0 +1,19 @@
+Klasik Klondike Solitaire'i çevrimdışı oyna. 1 veya 3 kart çekmeyi seç, sana uygun zorluğu belirle; başka bir yol denemek istediğinde Geri Al, Tekrar Oyna veya isteğe bağlı ipucunu kullan.
+
+FinitePlay sözü: tamamen ücretsiz; reklam, uygulama içi satın alma ve abonelik yok. Oyun tamamen cihazında kalır: hesap, izleme, veri toplama veya paylaşma, liderlik tablosu ya da çevrimiçi özellik yok. İlerlemen ve istatistiklerin gizli ve yerel kalır.
+
+Çok kolay'dan Uzman'a kadar olan dağıtımlar doğrulanmış bir çözümle başlar. Ayrı Çılgın seviyesindeki dağıtımlar sertifikalı değildir. Çözülebilir bir başlangıç dağıtımı yine de çıkmaza yol açabilir. İpuçları mevcut masayı tarar ve sınırları içinde kazanma yolu bulamadıklarında bunu bildirir.
+
+Özellikler:
+• Altı zorluk seviyesi; Çok kolay'dan Uzman'a kadar çözülebilirliği sertifikalı dağıtımlar
+• 1 kart ve 3 kart çekme kuralları
+• Mevcut masayı tarayan isteğe bağlı ipuçları
+• Dokunarak veya sürükleyerek oynama, Geri Al, Tekrar Oyna ve otomatik bitirme
+• İsteğe bağlı otomatik temel yığın hamleleri, ses ve kart animasyonları
+• Açık, koyu ve saate göre değişen temalar
+• Cihazda tutulan istatistikler ve kişisel rekor karşılaştırmaları
+• 30 arayüz dili
+
+Kendi temposunda oyna. Ayarlanabilir dinlenme hatırlatıcıları, uzun süre oynadıktan sonra seni ara vermeye davet eder. Seni acele ettiren bonuslar ya da süreli günlük ödüller yoktur. Yerel skorlar ve istatistikler oyununu gözden geçirmene yardımcı olur; rekabetçi liderlik tabloları ya da oynamaya devam etme baskısı yoktur.
+
+FinitePlay, zamanına, gizliliğine ve dikkatine saygı duyan kart oyunları yapar.

@@ -1,0 +1,19 @@
+Pelaa klassista Klondike-pasianssia offline-tilassa. Valitse, nostetaanko yksi vai kolme korttia, valitse sopiva vaikeustaso ja käytä Kumoa- ja Toista-toimintoja tai valinnaista vihjettä, kun haluat kokeilla toista lähestymistapaa.
+
+FinitePlayn lupaus: täysin ilmainen, ei mainoksia, sovelluksensisäisiä ostoksia eikä tilauksia. Peli toimii kokonaan laitteellasi: ei tilejä, seurantaa, tietojen keräämistä tai jakamista, ei tulostaulukoita eikä verkko-ominaisuuksia. Edistymisesi ja tilastosi pysyvät yksityisinä ja paikallisina.
+
+Jaot Triviaalista Asiantuntijaan alkavat vahvistetulla ratkaisulla. Erillinen Mieletön-taso sisältää sertifioimattomia jakoja. Ratkaistavissa oleva aloitusjako voi silti johtaa umpikujaan. Vihjeet hakevat ratkaisua nykyisestä pöytätilanteesta ja kertovat, jos ne eivät rajansa puitteissa pysty osoittamaan voittavaa polkua.
+
+Ominaisuudet:
+• Kuusi vaikeustasoa, joilla sertifioidusti ratkaistavia jakoja Triviaalista Asiantuntijaan
+• Yhden ja kolmen kortin nostosäännöt
+• Valinnaiset vihjeet, jotka hakevat ratkaisua nykyisestä pöytätilanteesta
+• Ohjaus napauttamalla tai vetämällä, Kumoa, Toista ja automaattinen lopetus
+• Valinnaiset automaattiset siirrot perustoihin, äänet ja korttianimaatiot
+• Vaalea, tumma ja ajan mukaan vaihtuva teema
+• Laitteella säilytettävät tilastot ja henkilökohtaisten ennätysten vertailu
+• 30 käyttöliittymäkieltä
+
+Pelaa omaan tahtiisi. Säädettävät taukomuistutukset kehottavat pitämään tauon pitkän pelaamisen jälkeen. Kiireellisiä bonuksia tai aikarajallisia päivittäisiä palkintoja ei ole. Paikalliset pisteet ja tilastot auttavat tarkastelemaan omaa pelaamistasi ilman tulostaulukoita tai painetta jatkaa.
+
+FinitePlay tekee korttipelejä, jotka kunnioittavat aikaasi, yksityisyyttäsi ja huomiotasi.

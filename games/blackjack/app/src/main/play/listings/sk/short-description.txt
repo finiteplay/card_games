@@ -1,0 +1,1 @@
+Jednoduchý offline Blackjack, ohľaduplný k batérii: virtuálne žetóny, bez reklám

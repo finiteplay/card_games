@@ -1,0 +1,21 @@
+Vezi toate cărțile și planifică-ți următoarea mutare în clasicul FreeCell. Folosește cele patru celule libere și coloanele goale pentru a face loc, mută secvențe de cărți și încearcă abordări diferite cu Înapoi și Reluare.
+
+Promisiunea FinitePlay: complet gratuit, fără reclame, achiziții în aplicație sau abonamente. Jocul rămâne în întregime pe dispozitivul tău: fără conturi, urmărire, colectare sau partajare de date, clasamente ori funcții online. Progresul și statisticile tale rămân private și locale.
+
+Fiecare joc inclus pornește cu o soluție verificată. O tablă ulterioară poate ajunge totuși într-un impas, iar indiciile au limite de căutare; când un indiciu nu poate stabili o cale, spune asta clar.
+
+Celulele libere și coloanele goale îți permit să muți secvențe de cărți atunci când există suficient spațiu; jocul calculează pentru tine capacitatea permisă.
+
+Funcții:
+• 2.000 de mâini certificat rezolvabile
+• Indicii opționale care caută în tabla curentă
+• Control prin atingere sau tragere, inclusiv mutări cu mai multe cărți
+• Înapoi, Reluare și finalizare automată
+• Mutări automate opționale către fundații, sunet și animații ale cărților
+• Teme luminoasă, întunecată și în funcție de oră
+• Statistici pe dispozitiv și comparații cu recordurile personale
+• 30 de limbi de interfață
+
+Joacă în ritmul tău. Mementourile de pauză, configurabile, te invită să faci o pauză după un timp mai lung de joc. Nu există bonusuri care să te grăbească sau recompense zilnice cronometrate. Scorurile și statisticile locale te ajută să-ți reevaluezi jocul, fără clasamente competitive sau presiunea de a continua.
+
+FinitePlay creează jocuri de cărți care îți respectă timpul, confidențialitatea și atenția.

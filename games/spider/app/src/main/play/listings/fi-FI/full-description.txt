@@ -1,0 +1,20 @@
+Rakenna kokonaisia sarjoja kuninkaasta ässään Hämähäkkipasianssissa. Aloita 1 maalla tai ota haasteeksi 2 tai 4 maata, ja käytä Kumoa- ja Toista-toimintoja sekä valinnaisia vihjeitä, kun kaipaat apua.
+
+FinitePlayn lupaus: täysin ilmainen, ei mainoksia, sovelluksensisäisiä ostoksia eikä tilauksia. Peli toimii kokonaan laitteellasi: ei tilejä, seurantaa, tietojen keräämistä tai jakamista, ei tulostaulukoita eikä verkko-ominaisuuksia. Edistymisesi ja tilastosi pysyvät yksityisinä ja paikallisina.
+
+Jokaisella mukana tulevalla aloitusjaolla on vahvistettu ratkaisu. Valintasi silti vaikuttavat: myöhempi tilanne ei välttämättä ole enää voitettavissa. Opastavat vihjeet voivat seurata tunnettua ratkaisua; kun valitset toisen polun, uuden ratkaisun etsintää rajoittavat hakurajat.
+
+Ominaisuudet:
+• Hämähäkkipasianssi yhdellä, kahdella ja neljällä maalla
+• 23 675 sertifioidusti ratkaistavaa jakoa kaikissa kolmessa maamäärässä
+• Siirrä napauttamalla tai vetämällä kokonaisia saman maan sarjoja
+• Siirtojen korostus ja valinnaiset opastavat vihjeet
+• Kumoa, Toista sekä animoidut rivinjaot ja korttisiirrot
+• Valinnaiset ääni- ja animaatioasetukset
+• Vaalea, tumma ja ajan mukaan vaihtuva teema
+• Laitteella säilytettävät tilastot
+• 30 käyttöliittymäkieltä
+
+Pelaa omaan tahtiisi. Säädettävät taukomuistutukset kehottavat pitämään tauon pitkän pelaamisen jälkeen. Kiireellisiä bonuksia tai aikarajallisia päivittäisiä palkintoja ei ole. Paikalliset pisteet ja tilastot auttavat tarkastelemaan omaa pelaamistasi ilman tulostaulukoita tai painetta jatkaa.
+
+FinitePlay tekee korttipelejä, jotka kunnioittavat aikaasi, yksityisyyttäsi ja huomiotasi.

@@ -1,0 +1,20 @@
+Costruisci sequenze complete dal Re all'Asso nel Solitario Spider. Inizia con 1 seme o scegli la sfida con 2 o 4 semi, con Annulla, Ripeti e suggerimenti facoltativi quando vuoi un aiuto.
+
+La promessa di FinitePlay: completamente gratis, senza pubblicità, acquisti in-app o abbonamenti. Tutto resta sul tuo dispositivo: nessun account, tracciamento, raccolta o condivisione di dati, nessuna classifica o funzione online. I tuoi progressi e le tue statistiche restano privati e locali.
+
+Ogni partita iniziale inclusa ha una soluzione verificata. Le tue scelte contano comunque: una posizione successiva può non essere più vincibile. I suggerimenti guidati possono seguire una soluzione nota; dopo che scegli un'altra strada, la ricerca di una nuova soluzione è soggetta a limiti.
+
+Funzionalità:
+• Spider a uno, due e quattro semi
+• 23.675 partite certificate come risolvibili nelle tre varianti (1, 2 e 4 semi)
+• Tocca o trascina sequenze complete dello stesso seme
+• Evidenziazione delle mosse e suggerimenti guidati facoltativi
+• Annulla, Ripeti e distribuzioni delle file e movimenti delle carte animati
+• Controlli facoltativi per suono e animazioni
+• Temi chiaro, scuro e in base all'ora
+• Statistiche sul dispositivo
+• 30 lingue dell'interfaccia
+
+Gioca con i tuoi tempi. I promemoria di pausa configurabili ti invitano a fermarti dopo una lunga sessione di gioco. Non ci sono bonus a tempo né ricompense giornaliere a scadenza. Punteggi e statistiche locali ti aiutano a riflettere sul tuo gioco, senza classifiche competitive né pressione a continuare.
+
+FinitePlay crea giochi di carte che rispettano il tuo tempo, la tua privacy e la tua attenzione.

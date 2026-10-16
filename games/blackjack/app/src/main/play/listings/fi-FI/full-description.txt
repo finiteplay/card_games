@@ -1,0 +1,11 @@
+Pelaa blackjackia offline-tilassa tietokonejakajaa vastaan virtuaalisilla pelimerkeillä ja aloittelijoille hyödyllisillä selityksillä. Ei koskaan oikeaa rahaa: pelimerkeillä ei ole rahallista arvoa, eikä oikean rahan panoksia, talletuksia, pelimerkkien ostoja, nostoja tai palkintoja ole.
+
+FinitePlayn lupaus: täysin ilmainen, ei mainoksia, sovelluksensisäisiä ostoksia eikä tilauksia. Peli toimii kokonaan laitteellasi: ei tilejä, seurantaa, tietojen keräämistä tai jakamista, ei tulostaulukoita eikä verkko-ominaisuuksia. Edistymisesi ja tilastosi pysyvät yksityisinä ja paikallisina.
+
+Harjoittele päätöksiä – ota kortti, jää, tuplaa ja jaa – valinnaisten perusstrategiaan perustuvien vihjeiden avulla, jotka selittävät perustelut ja yli 21:n riskin. Kiinteissä säännöissä käytetään kuutta korttipakkaa, jotka sekoitetaan uudelleen joka kierroksella; jakaja jää pehmeään 17:ään, blackjack maksaa 3:2, ja vakuutus sekä jakajan piilokortin tarkistus kuuluvat mukaan. Vihjeet auttavat ymmärtämään valintoja; ne eivät takaa voittoa.
+
+Pelaat vain tietokonejakajaa vastaan: pelejä oikeita ihmisiä vastaan ei ole. Suunniteltu 18 vuotta täyttäneille aikuisille.
+
+Pelaa omaan tahtiisi. Säädettävät taukomuistutukset kehottavat pitämään tauon pitkän pelaamisen jälkeen. Kiireellisiä bonuksia tai aikarajallisia päivittäisiä palkintoja ei ole. Paikalliset pisteet ja tilastot auttavat tarkastelemaan omaa pelaamistasi ilman tulostaulukoita tai painetta jatkaa.
+
+FinitePlay tekee korttipelejä, jotka kunnioittavat aikaasi, yksityisyyttäsi ja huomiotasi.
