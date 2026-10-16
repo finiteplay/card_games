@@ -43,7 +43,7 @@ android {
         applicationId = "org.finiteplay.blackjack"
         minSdk = 26
         targetSdk = 36
-        versionCode = 6
+        versionCode = 7
         versionName = providers.gradleProperty("finiteplay.versionName").get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
