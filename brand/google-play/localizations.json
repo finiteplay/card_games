@@ -29,7 +29,7 @@
         "body": "Las pistas opcionales de estrategia básica explican por qué pedir carta, plantarse, doblar o dividir. Aprende a partir de la carta visible del crupier, tu mano y el riesgo de pasarte. Las pistas ayudan a comprender decisiones; no garantizan ganar.\n\nFunciones:\n• Pedir carta, plantarse, doblar y dividir\n• Seguro, comprobación de blackjack del crupier y pago de blackjack de 3:2\n• Pistas con explicaciones y probabilidades de pasarse\n• Saldo de fichas virtuales y estadísticas locales\n\nSolo juegas contra el crupier del ordenador: no hay partidas contra personas reales. Diseñado para mayores de 18 años."
       },
       "holdem": {
-        "title": "Texas Holdem Poker: FinitePlay",
+        "title": "Texas Hold'em: FinitePlay",
         "shortDescription": "Torneos de Texas Hold'em sin conexión con fichas virtuales y cinco rivales",
         "intro": "Juega un torneo de póquer Texas Hold'em de seis plazas sin conexión contra cinco rivales controlados por el ordenador. Las fichas son virtuales y las pistas explican tus opciones. Nunca se usa dinero real: no hay apuestas con dinero real, depósitos, compra de fichas, retiradas ni premios; las fichas no tienen valor monetario.",
         "body": "Todos empiezan con la misma cantidad de fichas. A medida que suben las ciegas, decide cuándo retirarte, igualar, subir o ir con todo. Guarda el torneo y vuelve más tarde.\n\nLas pistas explican la idea de la acción sugerida y ayudan a entender la fuerza de la mano, la posición, la equidad estimada y las probabilidades del bote. No ven las cartas ocultas de tus rivales ni garantizan ganar.\n\nFunciones:\n• Texas Hold'em sin límite contra cinco estilos de juego del ordenador\n• Controles de apuesta, botes secundarios e ir con todo\n• Pistas con explicaciones, equidad y probabilidades del bote\n• Torneos guardados, estadísticas y ayuda con reglas y manos\n• Orientación vertical y horizontal\n\nNo hay partidas contra personas reales. Diseñado para mayores de 18 años."
@@ -42,19 +42,19 @@
     "footer": "FinitePlay entwickelt Kartenspiele, die deine Zeit, deine Privatsphäre und deine Aufmerksamkeit respektieren.",
     "games": {
       "klondike": {
-        "title": "Klondike Solitär: FinitePlay",
+        "title": "Klondike-Solitär: FinitePlay",
         "shortDescription": "Klassisches Solitär offline mit lösbaren Spielen, 1 oder 3 Karten und Tipps",
         "intro": "Spiele klassisches Klondike-Solitär offline. Ziehe eine oder drei Karten, wähle einen Schwierigkeitsgrad und nutze fortgeschrittene Tipps, wenn du Hilfe möchtest.",
         "body": "Die Spiele von Trivial bis Experte beginnen mit einer überprüften Lösung. Der separate Insane-Modus ist eine Ausnahme: Seine Spiele sind nicht zertifiziert. Ein lösbarer Anfang kann durch deine Entscheidungen in eine Sackgasse führen.\n\nDie Tipps suchen vom aktuellen Spielfeld aus nach einem Weg zur Lösung. Kann die Suche innerhalb ihres Limits keinen solchen Weg nachweisen, meldet sie das, statt einen Gewinn zu garantieren.\n\nFunktionen:\n• Eine oder drei Karten ziehen und sechs Schwierigkeitsgrade\n• Tippen oder Ziehen, Rückgängig und Spiel wiederholen\n• Tipps für das aktuelle Spielfeld\n• Automatischer Abschluss und optionale automatische Ablage\n• Helle und dunkle Designs sowie Ton- und Animationsoptionen\n• Lokale Statistiken"
       },
       "spider": {
-        "title": "Spider Solitär: FinitePlay",
+        "title": "Spider-Solitär: FinitePlay",
         "shortDescription": "Spiele offline mit 1, 2 oder 4 Farben, lösbaren Spielen und optionalen Tipps",
         "intro": "Bilde in Spider-Solitär vollständige Folgen vom König bis zum Ass. Wähle eine, zwei oder vier Farben für unterschiedliche Herausforderungen und nutze fortgeschrittene Tipps, wenn du Hilfe möchtest.",
         "body": "Jedes enthaltene Spiel beginnt mit einer überprüften Lösung, bei einer, zwei und vier Farben. Geführte Tipps können dich Schritt für Schritt durch eine Lösung begleiten. Nach eigenen Abweichungen ist die Suche nach einem neuen Weg begrenzt: Nicht jede spätere Stellung bleibt lösbar.\n\nFunktionen:\n• Spiele mit einer, zwei oder vier Farben\n• Karten antippen oder gleichfarbige Folgen ziehen\n• Züge rückgängig machen und Spiele wiederholen\n• Markierung legaler Züge und optionale Tipps\n• Helle und dunkle Designs sowie Ton- und Animationsoptionen\n• Lokale Statistiken"
       },
       "freecell": {
-        "title": "FreeCell Solitär: FinitePlay",
+        "title": "FreeCell-Solitär: FinitePlay",
         "shortDescription": "Plane deine Züge mit lösbaren Spielen, Offline-Tipps und Rückgängig",
         "intro": "Plane deine Züge in klassischem FreeCell-Solitär: Alle Karten sind sichtbar, vier freie Zellen schaffen Platz, und fortgeschrittene Tipps helfen bei Bedarf.",
         "body": "Jedes enthaltene Spiel beginnt mit einer überprüften Lösung. Nutze freie Zellen und leere Spalten, um Folgen zu verschieben und die Karten abzulegen. Mache Züge rückgängig oder wiederhole ein Spiel, um einen anderen Weg zu versuchen.\n\nTipps suchen vom aktuellen Spielfeld aus nach einer Lösung. Ein lösbarer Anfang kann trotzdem in eine Sackgasse führen. Kann die Suche innerhalb ihres Limits keinen Weg nachweisen, meldet sie das.\n\nFunktionen:\n• Lösbare Ausgangsspiele\n• Tippen oder Ziehen und legale Züge mit mehreren Karten\n• Rückgängig, Wiederholen und automatischer Abschluss\n• Optionale Tipps und automatische Ablage\n• Helle und dunkle Designs sowie Ton- und Animationsoptionen\n• Lokale Statistiken"
@@ -70,6 +70,1042 @@
         "shortDescription": "Texas-Hold'em-Turniere offline mit virtuellen Chips und fünf Computergegnern",
         "intro": "Spiele ein Texas-Hold'em-Pokerturnier mit sechs Plätzen offline gegen fünf Computergegner. Nutze virtuelle Chips und Tipps, die Entscheidungen erklären. Niemals echtes Geld: Chips haben keinen Geldwert. Es gibt keine Echtgeld-Einsätze, Einzahlungen, Chipkäufe, Auszahlungen oder Preise.",
         "body": "Alle beginnen mit demselben Chipstapel. Während die Blinds steigen, entscheidest du, wann du aussteigst, mitgehst, erhöhst oder all-in gehst. Speichere das Turnier und setze es später fort.\n\nTipps erklären die Idee hinter der vorgeschlagenen Aktion und helfen beim Verständnis von Handstärke, Position, geschätzter Equity und Pot Odds. Sie sehen keine verdeckten Gegnerkarten und garantieren keinen Gewinn.\n\nFunktionen:\n• No-Limit Texas Hold'em gegen fünf Computer-Spielstile\n• Einsatzsteuerung, Nebenpots und All-in\n• Erklärende Tipps mit Equity und Pot Odds\n• Gespeicherte Turniere, Statistiken und Hilfe zu Regeln und Händen\n• Hoch- und Querformat\n\nKeine Partien gegen echte Menschen. Für Erwachsene ab 18 Jahren."
+      }
+    }
+  },
+  "ar": {
+    "promise": "وعد FinitePlay: مجاني تمامًا، بلا إعلانات ولا عمليات شراء داخل التطبيق ولا اشتراكات. تعمل اللعبة بالكامل على جهازك: بلا حسابات ولا تتبّع ولا جمع للبيانات أو مشاركتها، ولا لوحات متصدرين ولا ميزات عبر الإنترنت. يبقى تقدمك وإحصاءاتك خاصة ومحلية.",
+    "rest": "العب بإيقاعك الخاص. تدعوك تذكيرات الراحة القابلة للضبط إلى أخذ استراحة بعد اللعب لفترة طويلة. لا توجد مكافآت ضاغطة ولا جوائز يومية محددة بوقت. تساعدك النتائج والإحصاءات المحلية على مراجعة أسلوب لعبك، بلا لوحات متصدرين تنافسية ولا ضغط لمواصلة اللعب.",
+    "footer": "تصنع FinitePlay ألعاب ورق تحترم وقتك وخصوصيتك وانتباهك.",
+    "games": {
+      "klondike": {
+        "title": "سوليتير كلوندايك: FinitePlay",
+        "shortDescription": "كلوندايك بسيط بلا إنترنت يراعي البطارية: سحب 1/3 وتلميحات وبلا إعلانات",
+        "intro": "العب سوليتير كلوندايك الكلاسيكي بلا إنترنت. اختر سحب ورقة واحدة أو ثلاث ورقات، وحدّد مستوى التحدي المريح لك، واستخدم التراجع أو إعادة اللعب أو تلميحًا اختياريًا عندما تريد أسلوبًا آخر.",
+        "body": "تبدأ التوزيعات من مستوى «تافه» حتى «خبير» بحلّ تم التحقق منه. أما مستوى «جنوني» المنفصل فيضم توزيعات غير معتمدة. وقد يؤدي التوزيع الأولي القابل للحل إلى طريق مسدود أيضًا. تبحث التلميحات في لوحتك الحالية وتخبرك عندما لا تستطيع تحديد طريق إلى الفوز ضمن حدّها.\n\nالميزات:\n• ستة مستويات صعوبة، مع توزيعات معتمدة القابلية للحل من «تافه» حتى «خبير»\n• قواعد سحب ورقة واحدة وسحب ثلاث ورقات\n• تلميحات اختيارية تبحث في لوحتك الحالية\n• تحكم بالنقر أو السحب، والتراجع، وإعادة اللعب، والإنهاء التلقائي\n• نقل تلقائي اختياري إلى الأساسات، وصوت، ورسوم متحركة للأوراق\n• سمات فاتحة وداكنة وحسب الوقت\n• إحصاءات على الجهاز ومقارنة مع أفضل نتائجك الشخصية\n• 30 لغة للواجهة"
+      },
+      "spider": {
+        "title": "سوليتير العنكبوت: FinitePlay",
+        "shortDescription": "سبايدر بسيط بلا إنترنت يراعي البطارية: 1/2/4 ألوان وتلميحات وبلا إعلانات",
+        "intro": "كوّن تسلسلات كاملة من الملك إلى الآس في سوليتير العنكبوت. ابدأ بلون واحد أو خض تحدي لونين أو أربعة ألوان، مع التراجع وإعادة اللعب وتلميحات اختيارية عندما تحتاج إلى مساعدة.",
+        "body": "لكل توزيع أولي مرفق حلّ تم التحقق منه. ومع ذلك تبقى قراراتك مؤثرة: فقد لا يعود الموقف اللاحق قابلًا للفوز. يمكن للتلميحات الموجَّهة اتباع حلّ معروف؛ وبعد أن تختار مسارًا آخر يخضع إيجاد حلّ جديد لحدود البحث.\n\nالميزات:\n• سوليتير العنكبوت بلون واحد ولونين وأربعة ألوان\n• 23,675 توزيعًا معتمد القابلية للحل عبر أعداد الألوان الثلاثة\n• انقر أو اسحب التسلسلات الكاملة من اللون نفسه\n• إبراز الحركات وتلميحات موجَّهة اختيارية\n• التراجع وإعادة اللعب، وتوزيع الصفوف ونقل الأوراق برسوم متحركة\n• إعدادات اختيارية للصوت والرسوم المتحركة\n• سمات فاتحة وداكنة وحسب الوقت\n• إحصاءات على الجهاز\n• 30 لغة للواجهة"
+      },
+      "freecell": {
+        "title": "فري سيل: FinitePlay",
+        "shortDescription": "فري سيل بسيط بلا إنترنت يراعي البطارية: توزيعات قابلة للحل وتلميحات وبلا إعلانات",
+        "intro": "شاهد كل ورقة وخطط لحركتك التالية في فري سيل الكلاسيكي. استخدم الخلايا الحرة الأربع والأعمدة الفارغة لإفساح المجال، وانقل تسلسلات الأوراق، وجرّب أساليب مختلفة مع التراجع وإعادة اللعب.",
+        "body": "كل توزيع مرفق يبدأ بحلّ تم التحقق منه. وقد تنتهي اللوحة اللاحقة بطريق مسدود، وللتلميحات حدود بحث؛ وعندما لا يستطيع التلميح تحديد طريق فإنه يقول ذلك بوضوح.\n\nتتيح الخلايا الحرة والأعمدة الفارغة نقل تسلسلات الأوراق عند توفر مساحة كافية؛ وتحسب اللعبة السعة المسموح بها نيابةً عنك.\n\nالميزات:\n• 2,000 توزيع معتمد القابلية للحل\n• تلميحات اختيارية تبحث في لوحتك الحالية\n• تحكم بالنقر أو السحب، بما في ذلك نقل عدة أوراق معًا\n• التراجع وإعادة اللعب والإنهاء التلقائي\n• نقل تلقائي اختياري إلى الأساسات، وصوت، ورسوم متحركة للأوراق\n• سمات فاتحة وداكنة وحسب الوقت\n• إحصاءات على الجهاز ومقارنة مع أفضل نتائجك الشخصية\n• 30 لغة للواجهة"
+      },
+      "blackjack": {
+        "title": "بلاك جاك: FinitePlay",
+        "shortDescription": "بلاك جاك بسيط بلا إنترنت يراعي البطارية: رقائق افتراضية وتلميحات وبلا إعلانات",
+        "intro": "العب البلاك جاك بلا إنترنت ضد موزّع يديره الحاسوب، برقائق افتراضية وشروحات مفيدة للمبتدئين. ليس بأموال حقيقية أبدًا: الرقائق بلا قيمة نقدية، ولا توجد رهانات بأموال حقيقية ولا إيداعات ولا شراء رقائق ولا سحب نقدي ولا جوائز.",
+        "body": "تدرّب على قرارات اطلب وابقَ وضاعف وقسّم مع تلميحات اختيارية للاستراتيجية الأساسية تشرح السبب وخطر تجاوز 21. القواعد ثابتة: ست مجموعات ورق تُخلط من جديد في كل جولة؛ يتوقف الموزّع عند 17 الناعمة، ويدفع البلاك جاك 3:2، ويشمل ذلك التأمين وفحص الموزّع لورقته المخفية. تساعدك التلميحات على فهم الخيارات؛ ولا تضمن الفوز.\n\nأنت تلعب ضد الموزّع الحاسوبي فقط: لا توجد مباريات ضد أشخاص حقيقيين. مصمم للبالغين من عمر 18 عامًا فأكثر."
+      },
+      "holdem": {
+        "title": "تكساس هولدم: FinitePlay",
+        "shortDescription": "بوكر بسيط بلا إنترنت يراعي البطارية: رقائق افتراضية و5 خصوم وبلا إعلانات",
+        "intro": "العب بطولة بوكر تكساس هولدم بست مقاعد بلا إنترنت ضد خمسة خصوم يديرهم الحاسوب، برقائق افتراضية وتلميحات تشرح الخيارات. ليس بأموال حقيقية أبدًا: الرقائق بلا قيمة نقدية، ولا توجد رهانات بأموال حقيقية ولا إيداعات ولا شراء رقائق ولا سحب نقدي ولا جوائز.",
+        "body": "تشرح التلميحات الاختيارية الفكرة وراء الإجراء المقترح، وتساعد المبتدئين على فهم قوة اليد والموقع وفرصة الفوز التقديرية (equity) ونسبة البوت (pot odds). يعتمد النصح على المعلومات الظاهرة؛ فهو لا يرى أوراق الخصوم المخفية ولا يضمن يدًا رابحة.\n\nيبدأ كل مقعد بالكومة نفسها من الرقائق الافتراضية. العب عبر بلايندز متصاعدة، واتخذ قرارات الرهان، واسعَ لتكون آخر لاعب على الطاولة. احفظ بطولتك وعُد إليها لاحقًا.\n\nالميزات:\n• خمسة خصوم يديرهم الحاسوب بأساليب لعب مختلفة\n• انسحاب، تمرير، مجاراة، رهان، رفع، والكل (All in)\n• تحكم بحجم الرهان وتسوية البوتات الجانبية\n• تلميحات مع فرصة الفوز التقديرية ونسبة البوت\n• بطولات محفوظة وإحصاءات على الجهاز\n• القواعد وترتيب الأيدي ومساعدة في الاستراتيجية\n• تخطيط عمودي وأفقي\n• إعدادات السمة والصوت والرسوم المتحركة واللغة\n• 30 لغة للواجهة\n\nأنت تلعب ضد خصوم يديرهم الحاسوب فقط: لا توجد مباريات ضد أشخاص حقيقيين. مصمم للبالغين من عمر 18 عامًا فأكثر."
+      }
+    }
+  },
+  "bg": {
+    "promise": "Обещанието на FinitePlay: напълно безплатно, без реклами, покупки в приложението или абонаменти. Играта остава изцяло на вашето устройство: без акаунти, проследяване, събиране или споделяне на данни, класации или онлайн функции. Вашият напредък и статистики остават лични и локални.",
+    "rest": "Играйте със собствено темпо. Настройваемите напомняния за почивка ви канят да направите пауза след продължителна игра. Няма бонуси, създаващи усещане за бързане, нито времево ограничени дневни награди. Локалните резултати и статистики ви помагат да осмислите играта си, без състезателни класации или натиск да продължавате.",
+    "footer": "FinitePlay създава игри с карти, които уважават вашето време, поверителност и внимание.",
+    "games": {
+      "klondike": {
+        "title": "Пасианс Клондайк: FinitePlay",
+        "shortDescription": "Семпъл офлайн Клондайк, съобразен с батерията: 1/3 карти, подсказки, без реклами",
+        "intro": "Играйте класическия пасианс Клондайк офлайн. Изберете тегляне по една или по три карти, задайте удобно ниво на трудност и използвайте Отмяна, Повторение или по желание подсказка, когато искате да опитате друг подход.",
+        "body": "Раздаванията от Тривиална до Експертно започват с проверено решение. Отделното ниво Безумна съдържа несертифицирани раздавания. Решимо начално раздаване все пак може да доведе до задънена улица. Подсказките търсят в текущата маса и съобщават, когато не могат да установят победен път в рамките на своя лимит.\n\nФункции:\n• Шест нива на трудност, със сертифицирано решими раздавания от Тривиална до Експертно\n• Правила за тегляне по една и по три карти\n• Подсказки по желание, които търсят в текущата маса\n• Управление с докосване или плъзгане, Отмяна, Повторение и автоматично довършване\n• Автоматични ходове към основите по желание, звук и анимации на картите\n• Светла, тъмна и сменяща се по часа тема\n• Статистики на устройството и сравнения с личните рекорди\n• 30 езика на интерфейса"
+      },
+      "spider": {
+        "title": "Пасианс Паяк: FinitePlay",
+        "shortDescription": "Семпъл офлайн Spider, съобразен с батерията: 1/2/4 цвята, подсказки, без реклами",
+        "intro": "Изграждайте пълни редици от поп до асо в пасианса Spider. Започнете с 1 цвят или се хвърлете в 2 или 4 цвята, с Отмяна, Повторение и подсказки по желание, когато искате помощ.",
+        "body": "Всяко включено начално раздаване има проверено решение. Изборите ви все пак имат значение: по-късна позиция може вече да не е печеливша. Водените подсказки могат да следват известно решение; след като изберете друг път, намирането на ново решение е ограничено от лимити на търсенето.\n\nФункции:\n• Spider с един, два и четири цвята\n• 23 675 сертифицирано решими раздавания за трите варианта по брой цветове\n• Докосване или плъзгане на пълни редици от един цвят\n• Открояване на ходовете и водени подсказки по желание\n• Отмяна, Повторение и анимирано раздаване на редове и преместване на карти\n• Настройки за звук и анимации по желание\n• Светла, тъмна и сменяща се по часа тема\n• Статистики на устройството\n• 30 езика на интерфейса"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Семпъл офлайн FreeCell, съобразен с батерията: подсказки, без реклами",
+        "intro": "Вижте всички карти и планирайте следващия си ход в класическия FreeCell. Използвайте четирите свободни клетки и празните колони, за да направите място, местете редици от карти и пробвайте различни подходи с Отмяна и Повторение.",
+        "body": "Всяко включено раздаване започва с проверено решение. По-късна позиция все пак може да стигне до задънена улица, а подсказките имат лимити на търсенето; когато подсказка не може да установи път, тя го казва ясно.\n\nСвободните клетки и празните колони ви позволяват да местите редици от карти, когато има достатъчно място; играта изчислява допустимия капацитет вместо вас.\n\nФункции:\n• 2 000 сертифицирано решими раздавания\n• Подсказки по желание, които търсят в текущата маса\n• Управление с докосване или плъзгане, включително преместване на няколко карти\n• Отмяна, Повторение и автоматично довършване\n• Автоматични ходове към основите по желание, звук и анимации на картите\n• Светла, тъмна и сменяща се по часа тема\n• Статистики на устройството и сравнения с личните рекорди\n• 30 езика на интерфейса"
+      },
+      "blackjack": {
+        "title": "Блекджек: FinitePlay",
+        "shortDescription": "Семпъл офлайн блекджек, съобразен с батерията: виртуални чипове, без реклами",
+        "intro": "Играйте блекджек офлайн срещу компютърен дилър, с виртуални чипове и полезни обяснения за начинаещи. Никога с реални пари: чиповете нямат парична стойност и няма залози с реални пари, депозити, покупки на чипове, тегления или награди.",
+        "body": "Упражнявайте решенията Карта, Стоп, Удвояване и Разделяне с подсказки по желание според основната стратегия, които обясняват логиката и риска от надхвърляне на 21. Фиксираните правила използват шест тестета, разбърквани наново във всеки рунд; дилърът спира на мек 17, блекджекът плаща 3:2, а застраховката и проверката на дилъра за блекджек са включени. Подсказките помагат да разберете избора си; те не гарантират печалби.\n\nИграете само срещу компютърния дилър: няма игри срещу реални хора. Създадено за възрастни на 18 и повече години."
+      },
+      "holdem": {
+        "title": "Тексас холдем: FinitePlay",
+        "shortDescription": "Семпъл офлайн покер, съобразен с батерията: виртуални чипове, без реклами",
+        "intro": "Играйте офлайн турнир по Texas Hold'em покер с шест места срещу петима компютърни опоненти, с виртуални чипове и подсказки, които обясняват избора. Никога с реални пари: чиповете нямат парична стойност и няма залози с реални пари, депозити, покупки на чипове, тегления или награди.",
+        "body": "Подсказките по желание обясняват идеята зад предложеното действие и помагат на начинаещите да разберат силата на ръката, позицията, прогнозното еквити и пот оддс. Съветът използва видимата информация; той не вижда скритите карти на опонентите и не гарантира печеливша ръка.\n\nВсяко място започва със същия стек виртуални чипове. Играйте при растящи блайндове, вземайте решенията си за залозите и се стремете да останете последният играч на масата. Запазете турнира си и се върнете към него по-късно.\n\nФункции:\n• Петима компютърни опоненти с различни стилове на игра\n• Фолд, чек, кол, залог, вдигане и ол ин\n• Управление на размера на залога и разпределяне на странични потове\n• Подсказки с прогнозно еквити и пот оддс\n• Запазени турнири и статистики на устройството\n• Правила, ранг на комбинациите и помощ за стратегия\n• Портретна и пейзажна подредба\n• Настройки за тема, звук, анимации и език\n• 30 езика на интерфейса\n\nИграете само срещу компютърни опоненти: няма игри срещу реални хора. Създадено за възрастни на 18 и повече години."
+      }
+    }
+  },
+  "cs-CZ": {
+    "promise": "Slib FinitePlay: úplně zdarma, bez reklam, nákupů v aplikaci a předplatného. Hra zůstává celá ve tvém zařízení: žádné účty, sledování, sběr ani sdílení dat, žebříčky či online funkce. Tvůj postup a statistiky zůstávají soukromé a místní.",
+    "rest": "Hraj vlastním tempem. Nastavitelná připomenutí přestávky tě po delším hraní vyzvou k pauze. Žádné bonusy, které by tě popoháněly, ani časově omezené denní odměny. Místní skóre a statistiky ti pomáhají zamyslet se nad vlastní hrou, bez soutěžních žebříčků a bez tlaku pokračovat.",
+    "footer": "FinitePlay vytváří karetní hry, které respektují tvůj čas, soukromí i pozornost.",
+    "games": {
+      "klondike": {
+        "title": "Pasiáns Klondike: FinitePlay",
+        "shortDescription": "Jednoduchý offline Klondike ohleduplný k baterii: líznutí 1/3, bez reklam",
+        "intro": "Hraj klasický Klondike Solitaire offline. Vyber si líznutí jedné nebo tří karet, zvol vhodnou obtížnost a když chceš zkusit jiný postup, použij Zpět, Přehrát znovu nebo nepovinnou nápovědu.",
+        "body": "Rozdání od úrovně Triviální po Expertní začínají ověřeným řešením. Samostatná úroveň Šílená obsahuje necertifikovaná rozdání. Řešitelné úvodní rozdání může přesto skončit slepou uličkou. Nápovědy prohledávají aktuální hrací plochu a oznámí, když v rámci svého limitu nedokážou najít cestu k výhře.\n\nFunkce:\n• Šest úrovní obtížnosti, s certifikovaně řešitelnými rozdáními od Triviální po Expertní\n• Pravidla líznutí jedné i tří karet\n• Nepovinné nápovědy, které prohledávají aktuální hrací plochu\n• Ovládání klepnutím nebo tažením, Zpět, Přehrát znovu a automatické dokončení\n• Nepovinné automatické přesuny do sbírek, zvuk a animace karet\n• Světlý, tmavý a časově řízený motiv\n• Statistiky v zařízení a porovnání s osobními rekordy\n• 30 jazyků rozhraní"
+      },
+      "spider": {
+        "title": "Pasiáns Pavouk: FinitePlay",
+        "shortDescription": "Jednoduchý offline Spider ohleduplný k baterii: 1/2/4 barvy, bez reklam",
+        "intro": "Skládej úplné řady od krále po eso ve Spider Solitaire. Začni s 1 barvou, nebo se pusť do 2 či 4 barev, se Zpět, Přehrát znovu a nepovinnou nápovědou, když chceš pomoct.",
+        "body": "Každé zahrnuté úvodní rozdání má ověřené řešení. Na tvých rozhodnutích ale pořád záleží: pozdější pozice už nemusí vést k výhře. Vedené nápovědy mohou sledovat známé řešení; po zvolení jiné cesty podléhá hledání nového řešení limitům prohledávání.\n\nFunkce:\n• Spider s jednou, dvěma a čtyřmi barvami\n• 23 675 certifikovaně řešitelných rozdání napříč všemi třemi počty barev\n• Klepnutím nebo tažením přesouvej celé řady jedné barvy\n• Zvýraznění tahů a nepovinné vedené nápovědy\n• Zpět, Přehrát znovu a animované rozdávání řad i přesuny karet\n• Nepovinné ovládání zvuku a animací\n• Světlý, tmavý a časově řízený motiv\n• Statistiky v zařízení\n• 30 jazyků rozhraní"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Jednoduchý offline FreeCell ohleduplný k baterii: nápověda, bez reklam",
+        "intro": "Vidíš všechny karty a plánuješ další tah v klasickém FreeCellu. Využij čtyři volné buňky a prázdné sloupce k uvolnění místa, přesouvej řady karet a zkoušej různé postupy pomocí Zpět a Přehrát znovu.",
+        "body": "Každé zahrnuté rozdání začíná ověřeným řešením. Pozdější pozice může přesto skončit slepou uličkou a nápovědy mají limity prohledávání; když nápověda nedokáže najít cestu, řekne to jasně.\n\nVolné buňky a prázdné sloupce umožňují přesouvat řady karet, když je dost místa; hra za tebe spočítá, kolik karet smíš přesunout.\n\nFunkce:\n• 2 000 certifikovaně řešitelných rozdání\n• Nepovinné nápovědy, které prohledávají aktuální hrací plochu\n• Ovládání klepnutím nebo tažením, včetně přesunů více karet\n• Zpět, Přehrát znovu a automatické dokončení\n• Nepovinné automatické přesuny do sbírek, zvuk a animace karet\n• Světlý, tmavý a časově řízený motiv\n• Statistiky v zařízení a porovnání s osobními rekordy\n• 30 jazyků rozhraní"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Jednoduchý offline Blackjack ohleduplný k baterii: virtuální žetony, bez reklam",
+        "intro": "Hraj blackjack offline proti počítačovému krupiérovi, s virtuálními žetony a srozumitelným vysvětlením pro začátečníky. Nikdy o skutečné peníze: žetony nemají žádnou peněžní hodnotu a nejsou zde žádné sázky o skutečné peníze, vklady, nákupy žetonů, výběry ani ceny.",
+        "body": "Procvičuj rozhodnutí líznout, stát, zdvojit a rozdělit s nepovinnými nápovědami podle základní strategie, které vysvětlují důvody i riziko přetáhnutí. Pevná pravidla: šest balíčků, v každém kole znovu zamíchaných; krupiér stojí na měkkých 17, blackjack se vyplácí 3:2 a součástí jsou pojištění a kontrola krupiéra na blackjack. Nápovědy ti pomáhají porozumět volbám; nezaručují výhru.\n\nHraješ jen proti počítačovému krupiérovi: žádné zápasy proti skutečným lidem. Určeno dospělým od 18 let."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Jednoduchý offline poker ohleduplný k baterii: virtuální žetony, bez reklam",
+        "intro": "Hraj offline turnaj Texas Hold'em pokeru o šesti místech proti pěti počítačovým soupeřům, s virtuálními žetony a nápovědami, které vysvětlují volby. Nikdy o skutečné peníze: žetony nemají žádnou peněžní hodnotu a nejsou zde žádné sázky o skutečné peníze, vklady, nákupy žetonů, výběry ani ceny.",
+        "body": "Nepovinné nápovědy vysvětlují myšlenku doporučené akce a pomáhají začátečníkům pochopit sílu ruky, pozici, odhadnutou equity a šance banky (pot odds). Rada vychází z viditelných informací; nevidí skryté karty soupeřů a nezaručuje vítěznou ruku.\n\nKaždé místo začíná se stejným množstvím virtuálních žetonů. Hraj se stoupajícími blindy, rozhoduj se o sázkách a usiluj o to být posledním hráčem u stolu. Turnaj si ulož a vrať se k němu později.\n\nFunkce:\n• Pět počítačových soupeřů s odlišnými styly hry\n• Zahodit, check, vyrovnat, vsadit, zvýšit a all-in\n• Ovládání výše sázky a vypořádání vedlejších bank\n• Nápovědy s odhadnutou equity a šancemi banky\n• Uložené turnaje a statistiky v zařízení\n• Pravidla, pořadí kombinací a nápověda ke strategii\n• Rozvržení na výšku i na šířku\n• Nastavení motivu, zvuku, animací a jazyka\n• 30 jazyků rozhraní\n\nHraješ jen proti počítačovým soupeřům: žádné zápasy proti skutečným lidem. Určeno dospělým od 18 let."
+      }
+    }
+  },
+  "da-DK": {
+    "promise": "FinitePlay-løftet: helt gratis, uden reklamer, køb i appen eller abonnementer. Spillet foregår udelukkende på din enhed: ingen konti, ingen sporing, ingen indsamling eller deling af data, ingen ranglister og ingen onlinefunktioner. Dine fremskridt og din statistik forbliver private og lokale.",
+    "rest": "Spil i dit eget tempo. Indstillelige pauseminder opfordrer dig til at holde pause efter længere tids spil. Der er ingen hastebonusser og ingen daglige belønninger med tidsfrist. Lokale point og statistik hjælper dig med at reflektere over dit spil, uden ranglister eller pres for at blive ved.",
+    "footer": "FinitePlay laver kortspil, der respekterer din tid, dit privatliv og din opmærksomhed.",
+    "games": {
+      "klondike": {
+        "title": "7-kabale: FinitePlay",
+        "shortDescription": "Enkel, batteribevidst offline Klondike: træk 1/3, hint, uden reklamer",
+        "intro": "Spil klassisk Klondike-kabale offline. Vælg at trække ét eller tre kort, vælg en passende sværhedsgrad, og brug Fortryd, Spil igen eller et valgfrit hint, når du vil prøve en anden tilgang.",
+        "body": "Giv fra Triviel til Ekspert starter med en verificeret løsning. Det separate niveau Vanvittig indeholder ucertificerede giv. Et løsbart startgiv kan stadig ende i en blindgyde. Hint søger i brættet, som det ser ud lige nu, og melder fra, når de ikke kan fastslå en vindende vej inden for deres grænse.\n\nFunktioner:\n• Seks sværhedsgrader, med certificeret løsbare giv fra Triviel til Ekspert\n• Regler for at trække ét eller tre kort\n• Valgfrie hint, der søger i brættet, som det ser ud lige nu\n• Styring med tryk eller træk, Fortryd, Spil igen og automatisk afslutning\n• Valgfrie automatiske træk til hjemmebunkerne, lyd og kortanimationer\n• Lyst, mørkt og tidsstyret tema\n• Statistik på enheden og sammenligning med personlige rekorder\n• 30 grænsefladesprog"
+      },
+      "spider": {
+        "title": "Edderkop kabale: FinitePlay",
+        "shortDescription": "Enkel, batteribevidst offline Spider: 1/2/4 farver, hint, uden reklamer",
+        "intro": "Byg komplette rækker fra konge til es i Spider-kabale. Begynd med 1 farve, eller tag fat på 2 eller 4 farver, med Fortryd, Spil igen og valgfrie hint, når du vil have hjælp.",
+        "body": "Hvert medfølgende startgiv har en verificeret løsning. Dine valg har stadig betydning: en senere stilling kan måske ikke længere vindes. Vejledende hint kan følge en kendt løsning; når du har valgt en anden vej, er det at finde en ny løsning underlagt søgegrænser.\n\nFunktioner:\n• Spider med én, to og fire farver\n• 23.675 certificeret løsbare giv på tværs af alle tre farveantal\n• Tryk eller træk komplette rækker i samme farve\n• Fremhævning af træk og valgfrie vejledende hint\n• Fortryd, Spil igen samt animerede rækkegiv og kortflytninger\n• Valgfrie lyd- og animationsindstillinger\n• Lyst, mørkt og tidsstyret tema\n• Statistik på enheden\n• 30 grænsefladesprog"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Enkel, batteribevidst offline FreeCell: løsbare giv, hint, uden reklamer",
+        "intro": "Se hvert kort, og planlæg dit næste træk i klassisk FreeCell. Brug de fire fritceller og tomme kolonner til at skabe plads, flyt kortrækker, og udforsk forskellige tilgange med Fortryd og Spil igen.",
+        "body": "Hvert medfølgende giv starter med en verificeret løsning. Et senere bræt kan stadig ende i en blindgyde, og hint har søgegrænser; når et hint ikke kan fastslå en vej, siger det det klart og tydeligt.\n\nFritceller og tomme kolonner lader dig flytte kortrækker, når der er plads nok; spillet regner den lovlige kapacitet ud for dig.\n\nFunktioner:\n• 2.000 certificeret løsbare giv\n• Valgfrie hint, der søger i brættet, som det ser ud lige nu\n• Styring med tryk eller træk, også med flere kort ad gangen\n• Fortryd, Spil igen og automatisk afslutning\n• Valgfrie automatiske træk til hjemmebunkerne, lyd og kortanimationer\n• Lyst, mørkt og tidsstyret tema\n• Statistik på enheden og sammenligning med personlige rekorder\n• 30 grænsefladesprog"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Enkel, batteribevidst offline Blackjack: virtuelle jetoner, hint, uden reklamer",
+        "intro": "Spil blackjack offline mod en computerstyret dealer, med virtuelle jetoner og hjælpsomme forklaringer til begyndere. Aldrig rigtige penge: jetonerne har ingen pengeværdi, og der er ingen indsatser med rigtige penge, indbetalinger, køb af jetoner, udbetalinger eller præmier.",
+        "body": "Øv beslutningerne træk, stå, fordobl og split med valgfrie hint baseret på grundstrategi, som forklarer begrundelsen og risikoen for at gå over 21. De faste regler bruger seks kortspil, der blandes forfra hver runde; dealeren står på blød 17, blackjack betaler 3:2, og forsikring og dealerens tjek af det skjulte kort er med. Hint hjælper dig med at forstå valgene; de garanterer ikke sejr.\n\nDu spiller kun mod den computerstyrede dealer: der er ingen partier mod rigtige mennesker. Lavet til voksne fra 18 år."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Enkel, batteribevidst offlinepoker: virtuelle jetoner, 5 rivaler, uden reklamer",
+        "intro": "Spil en Texas Hold'em-pokerturnering med seks pladser offline mod fem computerstyrede modstandere, med virtuelle jetoner og hint, der forklarer valgene. Aldrig rigtige penge: jetonerne har ingen pengeværdi, og der er ingen indsatser med rigtige penge, indbetalinger, køb af jetoner, udbetalinger eller præmier.",
+        "body": "Valgfrie hint forklarer tanken bag en foreslået handling og hjælper begyndere med at forstå håndstyrke, position, estimeret equity og pot odds. Rådet bruger synlig information; det kan ikke se modstandernes skjulte kort og garanterer ingen vindende hånd.\n\nHver plads starter med samme stak virtuelle jetoner. Spil dig gennem stigende blinds, tag dine beslutninger om at satse, og sigt efter at blive den sidste spiller ved bordet. Gem din turnering, og vend tilbage til den senere.\n\nFunktioner:\n• Fem computerstyrede modstandere med forskellige spillestile\n• Fold, check, call, bet, raise og all in\n• Kontrol over indsatsstørrelse og afregning af sidepots\n• Hint med estimeret equity og pot odds\n• Gemte turneringer og statistik på enheden\n• Regler, håndrangering og strategihjælp\n• Stående og liggende layout\n• Indstillinger for tema, lyd, animation og sprog\n• 30 grænsefladesprog\n\nDu spiller kun mod computerstyrede modstandere: der er ingen partier mod rigtige mennesker. Lavet til voksne fra 18 år."
+      }
+    }
+  },
+  "el-GR": {
+    "promise": "Η υπόσχεση της FinitePlay: εντελώς δωρεάν, χωρίς διαφημίσεις, αγορές εντός εφαρμογής ή συνδρομές. Το παιχνίδι μένει εξ ολοκλήρου στη συσκευή σας: χωρίς λογαριασμούς, παρακολούθηση, συλλογή ή κοινοποίηση δεδομένων, πίνακες κατάταξης ή διαδικτυακές λειτουργίες. Η πρόοδος και τα στατιστικά σας παραμένουν ιδιωτικά και τοπικά.",
+    "rest": "Παίξτε με τον δικό σας ρυθμό. Οι ρυθμιζόμενες υπενθυμίσεις διαλείμματος σάς προσκαλούν να κάνετε παύση μετά από παρατεταμένο παιχνίδι. Δεν υπάρχουν μπόνους που σας πιέζουν χρονικά ούτε χρονομετρημένες καθημερινές ανταμοιβές. Τα τοπικά σκορ και στατιστικά σάς βοηθούν να αναστοχαστείτε το παιχνίδι σας, χωρίς ανταγωνιστικούς πίνακες κατάταξης ή πίεση να συνεχίσετε.",
+    "footer": "Η FinitePlay φτιάχνει παιχνίδια με κάρτες που σέβονται τον χρόνο, την ιδιωτικότητα και την προσοχή σας.",
+    "games": {
+      "klondike": {
+        "title": "Πασιέντζα Klondike: FinitePlay",
+        "shortDescription": "Απλό offline Klondike με σεβασμό στην μπαταρία: 1/3 κάρτες, χωρίς διαφημίσεις",
+        "intro": "Παίξτε το κλασικό Klondike Solitaire χωρίς σύνδεση. Επιλέξτε τράβηγμα μίας ή τριών καρτών, διαλέξτε άνετη δυσκολία και χρησιμοποιήστε Αναίρεση, Επανάληψη ή προαιρετική υπόδειξη όταν θέλετε να δοκιμάσετε άλλη προσέγγιση.",
+        "body": "Οι διανομές από Ασήμαντο έως Έμπειρο ξεκινούν με επαληθευμένη λύση. Το ξεχωριστό επίπεδο Παράλογο περιέχει διανομές χωρίς πιστοποίηση. Μια επιλύσιμη αρχική διανομή μπορεί και πάλι να καταλήξει σε αδιέξοδο. Οι υποδείξεις αναζητούν λύση στο τρέχον ταμπλό και αναφέρουν όταν δεν μπορούν να εντοπίσουν νικηφόρα διαδρομή μέσα στο όριό τους.\n\nΧαρακτηριστικά:\n• Έξι επίπεδα δυσκολίας, με πιστοποιημένα επιλύσιμες διανομές από Ασήμαντο έως Έμπειρο\n• Κανόνες τραβήγματος μίας και τριών καρτών\n• Προαιρετικές υποδείξεις που αναζητούν λύση στο τρέχον ταμπλό\n• Έλεγχος με πάτημα ή σύρσιμο, Αναίρεση, Επανάληψη και αυτόματη ολοκλήρωση\n• Προαιρετικές αυτόματες κινήσεις στις βάσεις, ήχος και κινούμενες κάρτες\n• Ανοιχτά, σκούρα και χρονικά εναλλασσόμενα θέματα\n• Στατιστικά στη συσκευή και συγκρίσεις με τα προσωπικά ρεκόρ\n• 30 γλώσσες διεπαφής"
+      },
+      "spider": {
+        "title": "Spider: FinitePlay",
+        "shortDescription": "Απλό offline Spider με σεβασμό στην μπαταρία: 1/2/4 χρώματα, χωρίς διαφημίσεις",
+        "intro": "Φτιάξτε πλήρεις ακολουθίες από τον Ρήγα ως τον Άσο στο Spider Solitaire. Ξεκινήστε με 1 χρώμα ή δοκιμαστείτε με 2 ή 4, με Αναίρεση, Επανάληψη και προαιρετικές υποδείξεις όταν θέλετε βοήθεια.",
+        "body": "Κάθε συμπεριλαμβανόμενη αρχική διανομή έχει επαληθευμένη λύση. Οι επιλογές σας εξακολουθούν να μετράνε: μια μεταγενέστερη θέση μπορεί να μην οδηγεί πια σε νίκη. Οι καθοδηγούμενες υποδείξεις μπορούν να ακολουθήσουν μια γνωστή λύση· αφού επιλέξετε άλλη διαδρομή, η εύρεση νέας λύσης υπόκειται σε όρια αναζήτησης.\n\nΧαρακτηριστικά:\n• Spider με ένα, δύο και τέσσερα χρώματα\n• 23.675 πιστοποιημένα επιλύσιμες διανομές στους τρεις αριθμούς χρωμάτων\n• Πάτημα ή σύρσιμο ολόκληρων ακολουθιών ίδιου χρώματος\n• Επισήμανση κινήσεων και προαιρετικές καθοδηγούμενες υποδείξεις\n• Αναίρεση, Επανάληψη και κινούμενες διανομές σειράς και μετακινήσεις καρτών\n• Προαιρετικός έλεγχος ήχου και κινούμενων εικόνων\n• Ανοιχτά, σκούρα και χρονικά εναλλασσόμενα θέματα\n• Στατιστικά στη συσκευή\n• 30 γλώσσες διεπαφής"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Απλό offline FreeCell με σεβασμό στην μπαταρία: υποδείξεις, χωρίς διαφημίσεις",
+        "intro": "Δείτε κάθε κάρτα και σχεδιάστε την επόμενη κίνηση στο κλασικό FreeCell. Χρησιμοποιήστε τέσσερα ελεύθερα κελιά και κενές στήλες για χώρο, μετακινήστε ακολουθίες καρτών και δοκιμάστε διαφορετικές προσεγγίσεις με Αναίρεση και Επανάληψη.",
+        "body": "Κάθε συμπεριλαμβανόμενη διανομή ξεκινά με επαληθευμένη λύση. Ένα μεταγενέστερο ταμπλό μπορεί και πάλι να φτάσει σε αδιέξοδο, και οι υποδείξεις έχουν όρια αναζήτησης· όταν μια υπόδειξη δεν μπορεί να εντοπίσει διαδρομή, το λέει ξεκάθαρα.\n\nΤα ελεύθερα κελιά και οι κενές στήλες σάς επιτρέπουν να μετακινείτε ακολουθίες καρτών όταν υπάρχει αρκετός χώρος· το παιχνίδι υπολογίζει για εσάς πόσες κάρτες επιτρέπεται να μετακινήσετε.\n\nΧαρακτηριστικά:\n• 2.000 πιστοποιημένα επιλύσιμες διανομές\n• Προαιρετικές υποδείξεις που αναζητούν λύση στο τρέχον ταμπλό\n• Έλεγχος με πάτημα ή σύρσιμο, με μετακίνηση πολλών καρτών\n• Αναίρεση, Επανάληψη και αυτόματη ολοκλήρωση\n• Προαιρετικές αυτόματες κινήσεις στις βάσεις, ήχος και κινούμενες κάρτες\n• Ανοιχτά, σκούρα και χρονικά εναλλασσόμενα θέματα\n• Στατιστικά στη συσκευή και συγκρίσεις με τα προσωπικά ρεκόρ\n• 30 γλώσσες διεπαφής"
+      },
+      "blackjack": {
+        "title": "Μπλακτζάκ: FinitePlay",
+        "shortDescription": "Απλό offline Blackjack, σέβεται την μπαταρία: εικονικές μάρκες, χωρίς διαφήμιση",
+        "intro": "Παίξτε Blackjack χωρίς σύνδεση απέναντι στον υπολογιστή στον ρόλο του κράτη, με εικονικές μάρκες και χρήσιμες εξηγήσεις για αρχάριους. Ποτέ με πραγματικά χρήματα: οι μάρκες δεν έχουν χρηματική αξία και δεν υπάρχουν στοιχήματα με πραγματικά χρήματα, καταθέσεις, αγορές μαρκών, αναλήψεις ή έπαθλα.",
+        "body": "Εξασκηθείτε στις αποφάσεις Κάρτα, Στάση, Διπλασιασμός και Διαχωρισμός με προαιρετικές υποδείξεις βασικής στρατηγικής που εξηγούν τη συλλογιστική και τον κίνδυνο υπέρβασης. Οι σταθεροί κανόνες χρησιμοποιούν έξι τράπουλες, ανακατεμένες από την αρχή σε κάθε γύρο· ο κράτης μένει στο μαλακό 17, το blackjack πληρώνεται 3:2 και περιλαμβάνονται ασφάλιση και έλεγχος του κράτη για blackjack. Οι υποδείξεις βοηθούν να κατανοήσετε τις επιλογές· δεν εγγυώνται νίκες.\n\nΠαίζετε μόνο απέναντι στον υπολογιστή στον ρόλο του κράτη: δεν υπάρχουν αγώνες με πραγματικούς ανθρώπους. Σχεδιασμένο για ενήλικες 18 ετών και άνω."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Απλό offline πόκερ με σεβασμό στην μπαταρία: εικονικές μάρκες, χωρίς διαφημίσεις",
+        "intro": "Παίξτε ένα τουρνουά Texas Hold'em πόκερ έξι θέσεων χωρίς σύνδεση, απέναντι σε πέντε αντιπάλους υπολογιστή, με εικονικές μάρκες και υποδείξεις που εξηγούν τις επιλογές. Ποτέ με πραγματικά χρήματα: οι μάρκες δεν έχουν χρηματική αξία και δεν υπάρχουν στοιχήματα με πραγματικά χρήματα, καταθέσεις, αγορές μαρκών, αναλήψεις ή έπαθλα.",
+        "body": "Οι προαιρετικές υποδείξεις εξηγούν την ιδέα πίσω από μια προτεινόμενη ενέργεια και βοηθούν τους αρχάριους να κατανοήσουν τη δύναμη του χεριού, τη θέση, το εκτιμώμενο equity και τις αποδόσεις ποτ. Η συμβουλή βασίζεται σε ορατές πληροφορίες· δεν μπορεί να δει τα κρυφά φύλλα των αντιπάλων και δεν εγγυάται νικητήριο χέρι.\n\nΚάθε θέση ξεκινά με το ίδιο ποσό εικονικών μάρκων. Παίξτε με αυξανόμενα μπλαϊντ, πάρτε τις αποφάσεις πονταρίσματος και στοχεύστε να μείνετε ο τελευταίος παίκτης στο τραπέζι. Αποθηκεύστε το τουρνουά σας και επιστρέψτε αργότερα.\n\nΧαρακτηριστικά:\n• Πέντε αντίπαλοι υπολογιστή με διαφορετικά στιλ παιχνιδιού\n• Πάσο, τσεκ, κολ, ποντάρισμα, ρέιζ και all in\n• Έλεγχος μεγέθους πονταρίσματος και διευθέτηση πλευρικών ποτ\n• Υποδείξεις με εκτιμώμενο equity και αποδόσεις ποτ\n• Αποθηκευμένα τουρνουά και στατιστικά στη συσκευή\n• Κανόνες, κατάταξη συνδυασμών και βοήθεια στρατηγικής\n• Κατακόρυφη και οριζόντια διάταξη\n• Ρυθμίσεις θέματος, ήχου, κινούμενων εικόνων και γλώσσας\n• 30 γλώσσες διεπαφής\n\nΠαίζετε μόνο απέναντι σε αντιπάλους υπολογιστή: δεν υπάρχουν αγώνες με πραγματικούς ανθρώπους. Σχεδιασμένο για ενήλικες 18 ετών και άνω."
+      }
+    }
+  },
+  "fi-FI": {
+    "promise": "FinitePlayn lupaus: täysin ilmainen, ei mainoksia, sovelluksensisäisiä ostoksia eikä tilauksia. Peli toimii kokonaan laitteellasi: ei tilejä, seurantaa, tietojen keräämistä tai jakamista, ei tulostaulukoita eikä verkko-ominaisuuksia. Edistymisesi ja tilastosi pysyvät yksityisinä ja paikallisina.",
+    "rest": "Pelaa omaan tahtiisi. Säädettävät taukomuistutukset kehottavat pitämään tauon pitkän pelaamisen jälkeen. Kiireellisiä bonuksia tai aikarajallisia päivittäisiä palkintoja ei ole. Paikalliset pisteet ja tilastot auttavat tarkastelemaan omaa pelaamistasi ilman tulostaulukoita tai painetta jatkaa.",
+    "footer": "FinitePlay tekee korttipelejä, jotka kunnioittavat aikaasi, yksityisyyttäsi ja huomiotasi.",
+    "games": {
+      "klondike": {
+        "title": "Klondike-pasianssi: FinitePlay",
+        "shortDescription": "Selkeä, akkua huomioiva offline-Klondike: nosta 1/3, vihjeet, ei mainoksia",
+        "intro": "Pelaa klassista Klondike-pasianssia offline-tilassa. Valitse, nostetaanko yksi vai kolme korttia, valitse sopiva vaikeustaso ja käytä Kumoa- ja Toista-toimintoja tai valinnaista vihjettä, kun haluat kokeilla toista lähestymistapaa.",
+        "body": "Jaot Triviaalista Asiantuntijaan alkavat vahvistetulla ratkaisulla. Erillinen Mieletön-taso sisältää sertifioimattomia jakoja. Ratkaistavissa oleva aloitusjako voi silti johtaa umpikujaan. Vihjeet hakevat ratkaisua nykyisestä pöytätilanteesta ja kertovat, jos ne eivät rajansa puitteissa pysty osoittamaan voittavaa polkua.\n\nOminaisuudet:\n• Kuusi vaikeustasoa, joilla sertifioidusti ratkaistavia jakoja Triviaalista Asiantuntijaan\n• Yhden ja kolmen kortin nostosäännöt\n• Valinnaiset vihjeet, jotka hakevat ratkaisua nykyisestä pöytätilanteesta\n• Ohjaus napauttamalla tai vetämällä, Kumoa, Toista ja automaattinen lopetus\n• Valinnaiset automaattiset siirrot perustoihin, äänet ja korttianimaatiot\n• Vaalea, tumma ja ajan mukaan vaihtuva teema\n• Laitteella säilytettävät tilastot ja henkilökohtaisten ennätysten vertailu\n• 30 käyttöliittymäkieltä"
+      },
+      "spider": {
+        "title": "Spider-pasianssi: FinitePlay",
+        "shortDescription": "Selkeä, akkua huomioiva offline-Spider: 1/2/4 maata, vihjeet, ei mainoksia",
+        "intro": "Rakenna kokonaisia sarjoja kuninkaasta ässään Hämähäkkipasianssissa. Aloita 1 maalla tai ota haasteeksi 2 tai 4 maata, ja käytä Kumoa- ja Toista-toimintoja sekä valinnaisia vihjeitä, kun kaipaat apua.",
+        "body": "Jokaisella mukana tulevalla aloitusjaolla on vahvistettu ratkaisu. Valintasi silti vaikuttavat: myöhempi tilanne ei välttämättä ole enää voitettavissa. Opastavat vihjeet voivat seurata tunnettua ratkaisua; kun valitset toisen polun, uuden ratkaisun etsintää rajoittavat hakurajat.\n\nOminaisuudet:\n• Hämähäkkipasianssi yhdellä, kahdella ja neljällä maalla\n• 23 675 sertifioidusti ratkaistavaa jakoa kaikissa kolmessa maamäärässä\n• Siirrä napauttamalla tai vetämällä kokonaisia saman maan sarjoja\n• Siirtojen korostus ja valinnaiset opastavat vihjeet\n• Kumoa, Toista sekä animoidut rivinjaot ja korttisiirrot\n• Valinnaiset ääni- ja animaatioasetukset\n• Vaalea, tumma ja ajan mukaan vaihtuva teema\n• Laitteella säilytettävät tilastot\n• 30 käyttöliittymäkieltä"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Selkeä, akkua huomioiva offline-FreeCell: ratkeavat jaot, vihjeet, ei mainoksia",
+        "intro": "Näe jokainen kortti ja suunnittele seuraava siirtosi klassisessa FreeCellissä. Tee tilaa neljällä vapaalla solulla ja tyhjillä sarakkeilla, siirrä korttisarjoja ja kokeile erilaisia lähestymistapoja Kumoa- ja Toista-toiminnoilla.",
+        "body": "Jokainen mukana tuleva jako alkaa vahvistetulla ratkaisulla. Myöhempi tilanne voi silti päätyä umpikujaan, ja vihjeillä on hakurajat; kun vihje ei pysty osoittamaan polkua, se kertoo siitä selvästi.\n\nVapaat solut ja tyhjät sarakkeet mahdollistavat korttisarjojen siirtämisen, kun tilaa on tarpeeksi; peli laskee sallitun kapasiteetin puolestasi.\n\nOminaisuudet:\n• 2 000 sertifioidusti ratkaistavaa jakoa\n• Valinnaiset vihjeet, jotka hakevat ratkaisua nykyisestä pöytätilanteesta\n• Ohjaus napauttamalla tai vetämällä, myös usean kortin siirrot\n• Kumoa, Toista ja automaattinen lopetus\n• Valinnaiset automaattiset siirrot perustoihin, äänet ja korttianimaatiot\n• Vaalea, tumma ja ajan mukaan vaihtuva teema\n• Laitteella säilytettävät tilastot ja henkilökohtaisten ennätysten vertailu\n• 30 käyttöliittymäkieltä"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Selkeä, akkua huomioiva offline-Blackjack: virtuaalimerkit, ei mainoksia",
+        "intro": "Pelaa blackjackia offline-tilassa tietokonejakajaa vastaan virtuaalisilla pelimerkeillä ja aloittelijoille hyödyllisillä selityksillä. Ei koskaan oikeaa rahaa: pelimerkeillä ei ole rahallista arvoa, eikä oikean rahan panoksia, talletuksia, pelimerkkien ostoja, nostoja tai palkintoja ole.",
+        "body": "Harjoittele päätöksiä – ota kortti, jää, tuplaa ja jaa – valinnaisten perusstrategiaan perustuvien vihjeiden avulla, jotka selittävät perustelut ja yli 21:n riskin. Kiinteissä säännöissä käytetään kuutta korttipakkaa, jotka sekoitetaan uudelleen joka kierroksella; jakaja jää pehmeään 17:ään, blackjack maksaa 3:2, ja vakuutus sekä jakajan piilokortin tarkistus kuuluvat mukaan. Vihjeet auttavat ymmärtämään valintoja; ne eivät takaa voittoa.\n\nPelaat vain tietokonejakajaa vastaan: pelejä oikeita ihmisiä vastaan ei ole. Suunniteltu 18 vuotta täyttäneille aikuisille."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Selkeä, akkua huomioiva offline-pokeri: virtuaalimerkit, ei mainoksia",
+        "intro": "Pelaa kuuden paikan Texas Hold'em -pokeriturnaus offline-tilassa viittä tietokonevastustajaa vastaan virtuaalisilla pelimerkeillä ja valintoja selittävillä vihjeillä. Ei koskaan oikeaa rahaa: pelimerkeillä ei ole rahallista arvoa, eikä oikean rahan panoksia, talletuksia, pelimerkkien ostoja, nostoja tai palkintoja ole.",
+        "body": "Valinnaiset vihjeet selittävät ehdotetun toiminnon ajatuksen ja auttavat aloittelijoita ymmärtämään käden vahvuutta, positiota, arvioitua equityä ja pot oddseja. Neuvo perustuu näkyvään tietoon; se ei näe vastustajien piilotettuja kortteja eikä takaa voittavaa kättä.\n\nJokainen paikka aloittaa samalla pinolla virtuaalisia pelimerkkejä. Pelaa nousevien blindien läpi, tee panostuspäätöksesi ja tähtää siihen, että olet viimeinen pelaaja pöydässä. Tallenna turnaus ja palaa siihen myöhemmin.\n\nOminaisuudet:\n• Viisi tietokonevastustajaa erilaisilla pelityyleillä\n• Fold, check, maksu, panostus, korotus ja all in\n• Panoksen koon säätimet ja sivupottien jako\n• Vihjeet arvioidulla equityllä ja pot oddseilla\n• Tallennetut turnaukset ja laitteella säilytettävät tilastot\n• Säännöt, käsien järjestys ja strategiaohje\n• Pysty- ja vaakasuuntaiset näkymät\n• Teeman, äänen, animaatioiden ja kielen asetukset\n• 30 käyttöliittymäkieltä\n\nPelaat vain tietokonevastustajia vastaan: pelejä oikeita ihmisiä vastaan ei ole. Suunniteltu 18 vuotta täyttäneille aikuisille."
+      }
+    }
+  },
+  "fr-FR": {
+    "promise": "La promesse FinitePlay : entièrement gratuit, sans publicité, sans achats intégrés ni abonnements. Tout se passe sur votre appareil : pas de compte, ni suivi, ni collecte ou partage de données, ni classements, ni fonctions en ligne. Votre progression et vos statistiques restent privées et locales.",
+    "rest": "Jouez à votre rythme. Des rappels de pause configurables vous invitent à vous arrêter après une longue session. Il n'y a ni bonus d'urgence ni récompenses quotidiennes limitées dans le temps. Les scores et statistiques locaux vous aident à analyser votre jeu, sans classements compétitifs ni pression pour continuer.",
+    "footer": "FinitePlay crée des jeux de cartes qui respectent votre temps, votre vie privée et votre attention.",
+    "games": {
+      "klondike": {
+        "title": "Solitaire Klondike: FinitePlay",
+        "shortDescription": "Klondike simple, hors ligne, soucieux de la batterie : pioche 1/3, sans pub",
+        "intro": "Jouez au Solitaire Klondike classique hors ligne. Piochez une ou trois cartes, choisissez un défi à votre mesure et utilisez Annuler, Rejouer ou un indice facultatif quand vous voulez essayer une autre approche.",
+        "body": "Les donnes de Trivial à Expert commencent avec une solution vérifiée. Le niveau Démentiel, distinct, contient des donnes non certifiées. Une donne de départ soluble peut quand même mener à une impasse. Les indices analysent votre plateau actuel et signalent quand ils ne peuvent pas établir de chemin vers la victoire dans leur limite de recherche.\n\nFonctionnalités :\n• Six niveaux de difficulté, avec des donnes certifiées solubles de Trivial à Expert\n• Règles de pioche d'une ou de trois cartes\n• Indices facultatifs qui analysent votre plateau actuel\n• Commandes par toucher ou glisser, Annuler, Rejouer et fin automatique\n• Déplacements automatiques vers les fondations, sons et animations des cartes en option\n• Thèmes clair, sombre et selon l'heure\n• Statistiques sur l'appareil et comparaison avec vos meilleurs résultats\n• 30 langues d'interface"
+      },
+      "spider": {
+        "title": "Solitaire Spider: FinitePlay",
+        "shortDescription": "Spider simple, hors ligne, soucieux de la batterie : 1/2/4 couleurs, sans pub",
+        "intro": "Formez des suites complètes du Roi à l'As au Spider Solitaire. Commencez avec 1 couleur ou relevez le défi avec 2 ou 4 couleurs, avec Annuler, Rejouer et des indices facultatifs quand vous voulez de l'aide.",
+        "body": "Chaque donne de départ incluse a une solution vérifiée. Vos choix comptent pourtant : une position ultérieure peut ne plus être gagnable. Les indices guidés peuvent suivre une solution connue ; une fois que vous avez pris un autre chemin, la recherche d'une nouvelle solution est soumise à des limites.\n\nFonctionnalités :\n• Spider à une, deux et quatre couleurs\n• 23 675 donnes certifiées résolubles pour les trois variantes (1, 2 et 4 couleurs)\n• Touchez ou glissez des suites complètes de la même couleur\n• Mise en évidence des coups et indices guidés facultatifs\n• Annuler, Rejouer, et distribution des rangées et déplacements de cartes animés\n• Commandes de son et d'animation facultatives\n• Thèmes clair, sombre et selon l'heure\n• Statistiques sur l'appareil\n• 30 langues d'interface"
+      },
+      "freecell": {
+        "title": "Solitaire FreeCell: FinitePlay",
+        "shortDescription": "FreeCell simple, hors ligne, soucieux de la batterie, donnes solubles, sans pub",
+        "intro": "Voyez toutes les cartes et planifiez votre prochain coup dans le FreeCell classique. Utilisez les quatre cases libres et les colonnes vides pour faire de la place, déplacez des suites de cartes et testez différentes approches avec Annuler et Rejouer.",
+        "body": "Chaque donne incluse commence avec une solution vérifiée. Un plateau ultérieur peut tout de même aboutir à une impasse, et les indices ont des limites de recherche ; quand un indice ne peut pas établir de chemin, il le dit clairement.\n\nLes cases libres et les colonnes vides permettent de déplacer des suites de cartes quand il y a assez de place ; le jeu calcule pour vous la capacité autorisée.\n\nFonctionnalités :\n• 2 000 donnes certifiées solubles\n• Indices facultatifs qui analysent votre plateau actuel\n• Commandes par toucher ou glisser, y compris pour plusieurs cartes à la fois\n• Annuler, Rejouer et fin automatique\n• Déplacements automatiques vers les fondations, sons et animations des cartes en option\n• Thèmes clair, sombre et selon l'heure\n• Statistiques sur l'appareil et comparaison avec vos meilleurs résultats\n• 30 langues d'interface"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Blackjack simple, hors ligne, soucieux de la batterie, jetons virtuels, sans pub",
+        "intro": "Jouez au blackjack hors ligne contre un croupier géré par l'ordinateur, avec des jetons virtuels et des explications utiles pour les débutants. Jamais d'argent réel : les jetons n'ont aucune valeur monétaire, et il n'y a ni mises en argent réel, ni dépôts, ni achats de jetons, ni retraits, ni lots à gagner.",
+        "body": "Entraînez-vous à décider de tirer, rester, doubler ou séparer grâce à des indices facultatifs de stratégie de base qui expliquent le raisonnement et le risque de se brûler. Les règles fixes utilisent six jeux de cartes, rebattus à chaque manche ; le croupier reste sur un 17 souple, le blackjack paie 3:2, et l'assurance ainsi que la vérification du blackjack par le croupier sont incluses. Les indices aident à comprendre les choix ; ils ne garantissent aucun gain.\n\nVous jouez uniquement contre le croupier géré par l'ordinateur : il n'y a aucune partie contre de vraies personnes. Conçu pour les adultes de 18 ans et plus."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Poker simple, hors ligne, soucieux de la batterie : jetons virtuels, sans pub",
+        "intro": "Participez hors ligne à un tournoi de Texas Hold'em à six places contre cinq adversaires gérés par l'ordinateur, avec des jetons virtuels et des indices qui expliquent les choix. Jamais d'argent réel : les jetons n'ont aucune valeur monétaire, et il n'y a ni mises en argent réel, ni dépôts, ni achats de jetons, ni retraits, ni lots à gagner.",
+        "body": "Des indices facultatifs expliquent l'idée derrière une action suggérée et aident les débutants à comprendre la force de la main, la position, l'équité estimée et la cote du pot. Les conseils reposent sur les informations visibles ; ils ne voient pas les cartes cachées des adversaires et ne garantissent pas une main gagnante.\n\nChaque place commence avec la même pile de jetons virtuels. Jouez avec des blindes croissantes, prenez vos décisions de mise et visez à être le dernier joueur à la table. Sauvegardez votre tournoi et reprenez-le plus tard.\n\nFonctionnalités :\n• Cinq adversaires gérés par l'ordinateur aux styles de jeu distincts\n• Se coucher, checker, suivre, miser, relancer et jouer tapis\n• Réglage de la mise et répartition des pots secondaires\n• Indices avec équité estimée et cote du pot\n• Tournois sauvegardés et statistiques sur l'appareil\n• Règles, classement des mains et aide stratégique\n• Dispositions portrait et paysage\n• Réglages du thème, du son, des animations et de la langue\n• 30 langues d'interface\n\nVous jouez uniquement contre des adversaires gérés par l'ordinateur : il n'y a aucune partie contre de vraies personnes. Conçu pour les adultes de 18 ans et plus."
+      }
+    }
+  },
+  "hi-IN": {
+    "promise": "FinitePlay का वादा: पूरी तरह मुफ़्त, बिना विज्ञापन, ऐप में खरीदारी या सब्सक्रिप्शन के। गेम पूरी तरह आपके डिवाइस पर चलता है: न कोई खाता, न ट्रैकिंग, न डेटा संग्रह या साझा करना, न लीडरबोर्ड और न ऑनलाइन सुविधाएँ। आपकी प्रगति और आँकड़े निजी और स्थानीय रहते हैं।",
+    "rest": "अपनी रफ़्तार से खेलें। बदले जा सकने वाले आराम के रिमाइंडर लंबे समय तक खेलने के बाद आपको ठहरने के लिए आमंत्रित करते हैं। यहाँ न जल्दबाज़ी वाले बोनस हैं और न समय-सीमा वाले रोज़ के इनाम। स्थानीय स्कोर और आँकड़े अपने खेल को परखने में मदद करते हैं, बिना प्रतिस्पर्धी लीडरबोर्ड या खेलते रहने के दबाव के।",
+    "footer": "FinitePlay ऐसे ताश के खेल बनाता है जो आपके समय, निजता और ध्यान का सम्मान करते हैं।",
+    "games": {
+      "klondike": {
+        "title": "क्लोंडाइक सॉलिटेयर: FinitePlay",
+        "shortDescription": "सरल, बैटरी का ध्यान रखने वाला ऑफ़लाइन क्लोंडाइक: 1/3 पत्ते, संकेत, बिना विज्ञापन",
+        "intro": "क्लासिक क्लोंडाइक सॉलिटेयर ऑफ़लाइन खेलें। एक या तीन पत्ते खींचने का नियम चुनें, अपनी पसंद का चुनौती स्तर तय करें, और जब कोई दूसरा तरीका आज़माना चाहें तो पूर्ववत करें, फिर से खेलें या वैकल्पिक संकेत का उपयोग करें।",
+        "body": "\"साधारण\" से \"विशेषज्ञ\" तक के स्तरों की बाँट एक सत्यापित हल के साथ शुरू होती है। अलग \"अत्यधिक\" स्तर में असत्यापित बाँट हैं। हल हो सकने वाली शुरुआती बाँट भी आगे चलकर बंद गली में पहुँच सकती है। संकेत आपके मौजूदा बोर्ड में खोज करते हैं और, अपनी सीमा के भीतर जीत का रास्ता न मिलने पर, यह बता देते हैं।\n\nविशेषताएँ:\n• छह कठिनाई स्तर, जिनमें \"साधारण\" से \"विशेषज्ञ\" तक प्रमाणित रूप से हल हो सकने वाली बाँट\n• एक पत्ता और तीन पत्ते खींचने के नियम\n• वैकल्पिक संकेत जो आपके मौजूदा बोर्ड में खोज करते हैं\n• टैप या ड्रैग नियंत्रण, पूर्ववत करें, फिर से खेलें और अपने-आप पूरा करना\n• आधार पर वैकल्पिक स्वचालित चालें, ध्वनि और कार्ड एनिमेशन\n• लाइट, डार्क और समय के अनुसार थीम\n• डिवाइस पर आँकड़े और निजी रिकॉर्ड से तुलना\n• 30 इंटरफ़ेस भाषाएँ"
+      },
+      "spider": {
+        "title": "स्पाइडर सॉलिटेयर: FinitePlay",
+        "shortDescription": "सरल, बैटरी का ध्यान रखने वाला ऑफ़लाइन स्पाइडर: 1/2/4 सूट, संकेत, बिना विज्ञापन",
+        "intro": "स्पाइडर सॉलिटेयर में बादशाह से इक्के तक की पूरी कतारें बनाएँ। 1 सूट से शुरू करें या 2 या 4 सूट की चुनौती लें; साथ में पूर्ववत करें, फिर से खेलें और मदद चाहिए तो वैकल्पिक संकेत भी हैं।",
+        "body": "शामिल हर शुरुआती बाँट का एक सत्यापित हल है। फिर भी आपकी चालें मायने रखती हैं: आगे की कोई स्थिति शायद अब जीतने लायक न रहे। निर्देशित संकेत किसी ज्ञात हल का अनुसरण कर सकते हैं; आपके दूसरा रास्ता चुनने के बाद नया हल खोजना खोज की सीमाओं के अधीन है।\n\nविशेषताएँ:\n• एक, दो और चार सूट वाला स्पाइडर\n• तीनों सूट विकल्पों में 23,675 प्रमाणित रूप से हल हो सकने वाली बाँट\n• एक ही सूट की पूरी कतारों को टैप या ड्रैग करें\n• चालों की हाइलाइटिंग और वैकल्पिक निर्देशित संकेत\n• पूर्ववत करें, फिर से खेलें, और पंक्तियों की एनिमेटेड बाँट व कार्ड की चालें\n• वैकल्पिक ध्वनि और एनिमेशन नियंत्रण\n• लाइट, डार्क और समय के अनुसार थीम\n• डिवाइस पर आँकड़े\n• 30 इंटरफ़ेस भाषाएँ"
+      },
+      "freecell": {
+        "title": "फ्रीसेल सॉलिटेयर: FinitePlay",
+        "shortDescription": "सरल, बैटरी का ध्यान रखने वाला ऑफ़लाइन फ्रीसेल: हल योग्य बाँट, बिना विज्ञापन",
+        "intro": "क्लासिक फ्रीसेल में हर कार्ड देखें और अपनी अगली चाल की योजना बनाएँ। जगह बनाने के लिए चार मुक्त सेल और खाली कॉलम का उपयोग करें, कार्डों की कतारें चलाएँ, और पूर्ववत करें व फिर से खेलें के साथ अलग-अलग तरीके आज़माएँ।",
+        "body": "शामिल हर बाँट एक सत्यापित हल के साथ शुरू होती है। आगे का बोर्ड फिर भी बंद गली में पहुँच सकता है, और संकेतों की खोज की सीमाएँ हैं; जब कोई संकेत रास्ता नहीं ढूँढ पाता, तो वह साफ़ बता देता है।\n\nमुक्त सेल और खाली कॉलम पर्याप्त जगह होने पर कार्डों की कतारें चलाने देते हैं; वैध क्षमता का हिसाब गेम आपके लिए लगा देता है।\n\nविशेषताएँ:\n• 2,000 प्रमाणित रूप से हल हो सकने वाली बाँट\n• वैकल्पिक संकेत जो आपके मौजूदा बोर्ड में खोज करते हैं\n• टैप या ड्रैग नियंत्रण, एक साथ कई कार्ड चलाने सहित\n• पूर्ववत करें, फिर से खेलें और अपने-आप पूरा करना\n• आधार पर वैकल्पिक स्वचालित चालें, ध्वनि और कार्ड एनिमेशन\n• लाइट, डार्क और समय के अनुसार थीम\n• डिवाइस पर आँकड़े और निजी रिकॉर्ड से तुलना\n• 30 इंटरफ़ेस भाषाएँ"
+      },
+      "blackjack": {
+        "title": "ब्लैकजैक: FinitePlay",
+        "shortDescription": "सरल, बैटरी का ध्यान रखने वाला ऑफ़लाइन ब्लैकजैक: वर्चुअल चिप्स, बिना विज्ञापन",
+        "intro": "कंप्यूटर डीलर के खिलाफ़ ऑफ़लाइन ब्लैकजैक खेलें, वर्चुअल चिप्स और शुरुआती खिलाड़ियों के लिए मददगार व्याख्याओं के साथ। असली पैसा कभी नहीं: चिप्स का कोई मौद्रिक मूल्य नहीं है, और असली पैसे के दाँव, जमा, चिप्स की खरीद, नकद निकासी या इनाम नहीं हैं।",
+        "body": "कार्ड लें, रुकें, दोगुना और स्प्लिट के फ़ैसलों का अभ्यास करें, वैकल्पिक बेसिक-स्ट्रैटेजी संकेतों के साथ जो कारण और बस्ट के जोखिम को समझाते हैं। नियम तय हैं: छह डेक, जो हर राउंड में नए सिरे से फेंटे जाते हैं; डीलर सॉफ़्ट 17 पर रुकता है, ब्लैकजैक पर 3:2 का भुगतान मिलता है, और बीमा व डीलर द्वारा छिपे कार्ड की जाँच शामिल हैं। संकेत विकल्पों को समझने में मदद करते हैं; वे जीत की गारंटी नहीं देते।\n\nआप केवल कंप्यूटर डीलर के खिलाफ़ खेलते हैं: असली लोगों के खिलाफ़ कोई मुकाबला नहीं है। 18 वर्ष और उससे अधिक उम्र के वयस्कों के लिए बनाया गया।"
+      },
+      "holdem": {
+        "title": "टेक्सास होल्डम: FinitePlay",
+        "shortDescription": "सरल, बैटरी का ध्यान रखने वाला ऑफ़लाइन पोकर: वर्चुअल चिप्स, बिना विज्ञापन",
+        "intro": "पाँच कंप्यूटर विरोधियों के खिलाफ़ छह सीटों वाला टेक्सास होल्डम पोकर टूर्नामेंट ऑफ़लाइन खेलें, वर्चुअल चिप्स और फ़ैसले समझाने वाले संकेतों के साथ। असली पैसा कभी नहीं: चिप्स का कोई मौद्रिक मूल्य नहीं है, और असली पैसे के दाँव, जमा, चिप्स की खरीद, नकद निकासी या इनाम नहीं हैं।",
+        "body": "वैकल्पिक संकेत सुझाई गई चाल के पीछे का विचार समझाते हैं और शुरुआती खिलाड़ियों को हाथ की ताक़त, पोज़िशन, जीत की अनुमानित संभावना (इक्विटी) और पॉट ऑड्स समझने में मदद करते हैं। सलाह दिखाई देने वाली जानकारी पर आधारित होती है; वह विरोधियों के छिपे कार्ड नहीं देख सकती और जीतने वाले हाथ की गारंटी नहीं देती।\n\nहर सीट वर्चुअल चिप्स के बराबर स्टैक के साथ शुरू होती है। बढ़ते ब्लाइंड्स के बीच खेलें, अपने बेटिंग फ़ैसले लें, और मेज़ पर आख़िरी खिलाड़ी बनने का लक्ष्य रखें। अपना टूर्नामेंट सहेजें और बाद में वहीं से जारी रखें।\n\nविशेषताएँ:\n• अलग-अलग खेल शैलियों वाले पाँच कंप्यूटर विरोधी\n• फ़ोल्ड, चेक, कॉल, बेट, रेज़ और ऑल इन\n• बेट के आकार के नियंत्रण और साइड-पॉट का निपटान\n• जीत की अनुमानित संभावना और पॉट ऑड्स वाले संकेत\n• सहेजे गए टूर्नामेंट और डिवाइस पर आँकड़े\n• नियम, हाथों की रैंकिंग और रणनीति सहायता\n• पोर्ट्रेट और लैंडस्केप लेआउट\n• थीम, ध्वनि, एनिमेशन और भाषा की सेटिंग\n• 30 इंटरफ़ेस भाषाएँ\n\nआप केवल कंप्यूटर विरोधियों के खिलाफ़ खेलते हैं: असली लोगों के खिलाफ़ कोई मुकाबला नहीं है। 18 वर्ष और उससे अधिक उम्र के वयस्कों के लिए बनाया गया।"
+      }
+    }
+  },
+  "hr": {
+    "promise": "FinitePlay obećanje: potpuno besplatno, bez oglasa, kupnji unutar aplikacije i pretplata. Igra u cijelosti ostaje na vašem uređaju: bez računa, praćenja, prikupljanja ili dijeljenja podataka, ljestvica poretka i online značajki. Vaš napredak i statistika ostaju privatni i lokalni.",
+    "rest": "Igrajte vlastitim tempom. Podesivi podsjetnici za odmor pozivaju vas na stanku nakon duljeg igranja. Nema bonusa koji vas požuruju ni vremenski ograničenih dnevnih nagrada. Lokalni rezultati i statistika pomažu vam promisliti o vlastitoj igri, bez natjecateljskih ljestvica i pritiska da nastavite.",
+    "footer": "FinitePlay izrađuje kartaške igre koje poštuju vaše vrijeme, privatnost i pažnju.",
+    "games": {
+      "klondike": {
+        "title": "Pasijans Klondike: FinitePlay",
+        "shortDescription": "Jednostavan offline Klondike, blag prema bateriji: 1/3, savjeti, bez oglasa",
+        "intro": "Igrajte klasični Klondike pasijans offline. Odaberite izvlačenje jedne ili tri karte, odaberite ugodnu razinu izazova i koristite poništavanje, ponavljanje ili neobvezni savjet kad želite drugačiji pristup.",
+        "body": "Partije od razine Trivijalno do razine Stručno počinju s provjerenim rješenjem. Zasebna razina Ludo sadrži neprovjerene partije. Rješiva početna partija i dalje može završiti u slijepoj ulici. Savjeti pretražuju vaš trenutačni raspored i javljaju kad unutar svojih granica ne mogu utvrditi put do pobjede.\n\nZnačajke:\n• Šest razina težine, s provjereno rješivim partijama od razine Trivijalno do razine Stručno\n• Izvlačenje jedne i tri karte\n• Neobvezni savjeti koji pretražuju vaš trenutačni raspored\n• Dodir ili povlačenje, Poništi, Ponovi i automatski završetak\n• Neobvezni automatski potezi na temelje, zvuk i animacije karata\n• Svijetla, tamna i vremenski ovisna tema\n• Statistika na uređaju i usporedba s osobnim rekordima\n• 30 jezika sučelja"
+      },
+      "spider": {
+        "title": "Pauk pasijans: FinitePlay",
+        "shortDescription": "Jednostavan offline Spider, blag prema bateriji: 1/2/4 boje, savjeti, bez oglasa",
+        "intro": "Složite potpune nizove od kralja do asa u Spider pasijansu. Počnite s 1 bojom ili se okušajte s 2 ili 4 boje, uz poništavanje, ponavljanje i neobvezne savjete kad poželite pomoć.",
+        "body": "Svaka uključena početna partija ima provjereno rješenje. Vaši potezi ipak su važni: kasnija pozicija možda više neće biti rješiva. Vođeni savjeti mogu pratiti poznato rješenje; nakon što odaberete drugi put, pronalaženje novog rješenja podliježe ograničenjima pretraživanja.\n\nZnačajke:\n• Spider s jednom, dvije i četiri boje\n• 23.675 provjereno rješivih partija u sva tri broja boja\n• Dodir ili povlačenje cijelih nizova iste boje\n• Isticanje poteza i neobvezni vođeni savjeti\n• Poništi, Ponovi te animirano dijeljenje redova i pomicanje karata\n• Neobvezne postavke zvuka i animacija\n• Svijetla, tamna i vremenski ovisna tema\n• Statistika na uređaju\n• 30 jezika sučelja"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Jednostavan offline FreeCell, blag prema bateriji: rješive partije, bez oglasa",
+        "intro": "Vidite svaku kartu i planirajte sljedeći potez u klasičnom FreeCellu. Četiri slobodne ćelije i prazni stupci daju vam prostor za premještanje nizova karata, a poništavanjem i ponavljanjem isprobavate različite pristupe.",
+        "body": "Svaka uključena partija počinje s provjerenim rješenjem. Kasniji raspored i dalje može završiti u slijepoj ulici, a savjeti imaju granice pretraživanja; kad savjet ne može utvrditi put, to jasno kaže.\n\nSlobodne ćelije i prazni stupci omogućuju premještanje nizova karata kad ima dovoljno mjesta; igra sama izračunava dopušteni kapacitet.\n\nZnačajke:\n• 2.000 provjereno rješivih partija\n• Neobvezni savjeti koji pretražuju vaš trenutačni raspored\n• Dodir ili povlačenje, uključujući premještanje više karata\n• Poništi, Ponovi i automatski završetak\n• Neobvezni automatski potezi na temelje, zvuk i animacije karata\n• Svijetla, tamna i vremenski ovisna tema\n• Statistika na uređaju i usporedba s osobnim rekordima\n• 30 jezika sučelja"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Jednostavan offline Blackjack, blag prema bateriji: virtualni žetoni, bez oglasa",
+        "intro": "Igrajte blackjack offline protiv računalnog djelitelja, s virtualnim žetonima i korisnim objašnjenjima za početnike. Nikad pravi novac: žetoni nemaju novčanu vrijednost, a nema oklada pravim novcem, uplata, kupnje žetona, isplata ni nagrada.",
+        "body": "Vježbajte odluke Vuci, Stani, Udvostruči i Podijeli uz neobvezne savjete prema osnovnoj strategiji koji objašnjavaju razlog i rizik od prelaska preko 21. Pravila su fiksna: šest špilova, svaki krug miješaju se iznova; djelitelj staje na mekom 17, blackjack se isplaćuje 3:2, a uključeni su osiguranje i provjera djeliteljeve skrivene karte. Savjeti pomažu razumjeti odluke; ne jamče pobjedu.\n\nIgrate samo protiv računalnog djelitelja: nema partija protiv stvarnih ljudi. Namijenjeno odraslima od 18 godina."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Jednostavan offline poker, blag prema bateriji: virtualni žetoni, bez oglasa",
+        "intro": "Igrajte pokerski turnir Texas Hold'em za šest mjesta offline protiv pet računalnih protivnika, s virtualnim žetonima i savjetima koji objašnjavaju odluke. Nikad pravi novac: žetoni nemaju novčanu vrijednost, a nema oklada pravim novcem, uplata, kupnje žetona, isplata ni nagrada.",
+        "body": "Neobvezni savjeti objašnjavaju ideju iza predložene radnje i pomažu početnicima razumjeti snagu ruke, poziciju, procijenjenu šansu za pobjedu (equity) i odnos pota (pot odds). Savjet se temelji na vidljivim informacijama; ne vidi skrivene karte protivnika i ne jamči pobjedničku ruku.\n\nSvako mjesto počinje s istom količinom virtualnih žetona. Igrajte kroz rastuće blindove, donosite odluke o klađenju i nastojte ostati posljednji igrač za stolom. Spremite turnir i vratite mu se kasnije.\n\nZnačajke:\n• Pet računalnih protivnika s različitim stilovima igre\n• Odustani, Čekaj, Prati, Ulog, Podigni i All in\n• Kontrole veličine uloga i obračun sporednih potova\n• Savjeti s procijenjenom šansom i odnosom pota\n• Spremljeni turniri i statistika na uređaju\n• Pravila, poredak ruku i pomoć za strategiju\n• Okomiti i vodoravni prikaz\n• Postavke teme, zvuka, animacija i jezika\n• 30 jezika sučelja\n\nIgrate samo protiv računalnih protivnika: nema partija protiv stvarnih ljudi. Namijenjeno odraslima od 18 godina."
+      }
+    }
+  },
+  "hu-HU": {
+    "promise": "A FinitePlay ígérete: teljesen ingyenes, hirdetések, alkalmazáson belüli vásárlások és előfizetések nélkül. A játék teljes egészében az eszközödön marad: nincs fiók, nyomkövetés, adatgyűjtés vagy -megosztás, ranglista vagy online funkció. Az előrehaladásod és a statisztikáid privátak maradnak, és helyben tárolódnak.",
+    "rest": "Játssz a saját tempódban. A beállítható pihenési emlékeztetők hosszabb játék után szünetre hívnak. Nincsenek sürgetést kiváltó bónuszok vagy időzített napi jutalmak. A helyi pontszámok és statisztikák segítenek átgondolni a játékodat, versenyre ösztönző ranglisták és a folytatásra késztető nyomás nélkül.",
+    "footer": "A FinitePlay olyan kártyajátékokat készít, amelyek tiszteletben tartják az idődet, a magánszférádat és a figyelmedet.",
+    "games": {
+      "klondike": {
+        "title": "Klondike pasziánsz: FinitePlay",
+        "shortDescription": "Egyszerű, akkura figyelő offline Klondike: 1/3 lap, tippek, reklámmentes",
+        "intro": "Játszd offline a klasszikus Klondike pasziánszot. Válaszd az egy- vagy a háromlapos húzást, állítsd be a neked megfelelő nehézséget, és ha másik megközelítést próbálnál, használd a Visszavonást, az Újrajátszást vagy az opcionális tippet.",
+        "body": "A Triviálistól a Szakértőig tartó leosztások ellenőrzött megoldással indulnak. A különálló Őrült szint minősítés nélküli leosztásokat tartalmaz. Egy megoldható kezdő leosztás is zsákutcába vezethet. A tippek az aktuális táblát vizsgálják, és jelzik, ha a korlátjukon belül nem találnak nyerő utat.\n\nFunkciók:\n• Hat nehézségi szint, a Triviálistól a Szakértőig minősítetten megoldható leosztásokkal\n• Egylapos és háromlapos húzás szabályai\n• Opcionális tippek, amelyek az aktuális táblát vizsgálják\n• Koppintásos vagy húzásos irányítás, Visszavonás, Újrajátszás és automatikus befejezés\n• Opcionális automatikus lépések az alapba, hang és kártyaanimációk\n• Világos, sötét és idő szerint váltó témák\n• Eszközön tárolt statisztikák és személyes rekordokkal való összevetés\n• 30 felületi nyelv"
+      },
+      "spider": {
+        "title": "Pók pasziánsz: FinitePlay",
+        "shortDescription": "Egyszerű, akkura figyelő offline Spider: 1/2/4 szín, tippek, reklámmentes",
+        "intro": "Építs teljes sorokat a királytól az ászig a Spider pasziánszban. Kezdj 1 színnel, vagy vágj bele 2 vagy 4 színbe, Visszavonással, Újrajátszással és opcionális tippekkel, ha segítség kell.",
+        "body": "Minden mellékelt kezdő leosztásnak van ellenőrzött megoldása. A döntéseid azonban számítanak: egy későbbi állás már nem biztos, hogy megnyerhető. A vezetett tippek követhetnek egy ismert megoldást; ha másik utat választasz, az új megoldás keresését keresési korlátok szabják meg.\n\nFunkciók:\n• Egy-, két- és négyszínű Spider\n• 23 675 minősítetten megoldható leosztás mindhárom színszámhoz\n• Koppintsd vagy húzd a teljes, azonos színű sorokat\n• Lépéskiemelés és opcionális vezetett tippek\n• Visszavonás, Újrajátszás, animált sorosztás és kártyamozgatás\n• Opcionális hang- és animációbeállítások\n• Világos, sötét és idő szerint váltó témák\n• Eszközön tárolt statisztikák\n• 30 felületi nyelv"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Egyszerű, akkura figyelő offline FreeCell: tippek, reklámmentes",
+        "intro": "Lásd az összes lapot, és tervezd meg a következő lépésed a klasszikus FreeCellben. Négy szabad mezővel és üres oszlopokkal csinálj helyet, mozgass lapsorokat, és próbálj ki más megközelítéseket a Visszavonással és az Újrajátszással.",
+        "body": "Minden mellékelt leosztás ellenőrzött megoldással indul. Egy későbbi állás zsákutcába futhat, a tippeknek pedig keresési korlátaik vannak; ha egy tipp nem talál utat, azt egyértelműen jelzi.\n\nA szabad mezők és az üres oszlopok lehetővé teszik lapsorok mozgatását, ha elég a hely; a megengedett kapacitást a játék számolja ki helyetted.\n\nFunkciók:\n• 2 000 minősítetten megoldható leosztás\n• Opcionális tippek, amelyek az aktuális táblát vizsgálják\n• Koppintásos vagy húzásos irányítás, többlapos lépésekkel\n• Visszavonás, Újrajátszás és automatikus befejezés\n• Opcionális automatikus lépések az alapba, hang és kártyaanimációk\n• Világos, sötét és idő szerint váltó témák\n• Eszközön tárolt statisztikák és személyes rekordokkal való összevetés\n• 30 felületi nyelv"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Egyszerű, akkura figyelő offline Blackjack: virtuális zsetonok, reklámmentes",
+        "intro": "Játssz offline blackjacket számítógépes osztó ellen, virtuális zsetonokkal és kezdőknek szóló hasznos magyarázatokkal. Soha nem valódi pénzzel: a zsetonoknak nincs pénzbeli értékük, és nincsenek valódi pénzes tétek, befizetések, zsetonvásárlások, kifizetések vagy nyeremények.",
+        "body": "Gyakorold a lapkérés, a megállás, a duplázás és a felosztás közötti döntéseket opcionális alapstratégiai tippekkel, amelyek elmagyarázzák az indoklást és a túllépés kockázatát. A rögzített szabályok: hat pakli, minden körben újrakeverve; az osztó a lágy 17-nél megáll, a blackjack 3:2-t fizet, és a biztosítás, valamint az osztó blackjack-ellenőrzése is benne van. A tippek segítenek megérteni a döntéseket; nem garantálnak nyerést.\n\nCsak a számítógépes osztó ellen játszol: nincsenek valódi emberek elleni meccsek. Felnőtteknek, 18 éves kortól."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Egyszerű, akkura figyelő offline póker: virtuális zsetonok, reklámmentes",
+        "intro": "Játssz offline egy hatfős Texas Hold'em pókerversenyt öt számítógépes ellenfél ellen, virtuális zsetonokkal és a döntéseket elmagyarázó tippekkel. Soha nem valódi pénzzel: a zsetonoknak nincs pénzbeli értékük, és nincsenek valódi pénzes tétek, befizetések, zsetonvásárlások, kifizetések vagy nyeremények.",
+        "body": "Az opcionális tippek elmagyarázzák a javasolt lépés mögötti gondolatot, és segítenek a kezdőknek megérteni a kéz erejét, a pozíciót, a becsült equityt és a pot oddsot. A tanács látható információkra épül; nem látja az ellenfelek rejtett lapjait, és nem garantál nyerő kezet.\n\nMinden játékos ugyanakkora virtuális zsetonkészlettel indul. Játssz az emelkedő vakokkal, hozd meg a fogadási döntéseidet, és próbálj utolsóként az asztalnál maradni. Mentsd el a versenyt, és térj vissza hozzá később.\n\nFunkciók:\n• Öt számítógépes ellenfél eltérő játékstílussal\n• Eldob, passz, megad, tét, emel és all in\n• Tétméret-beállítás és mellékpotok elszámolása\n• Tippek becsült equityvel és pot oddsszal\n• Mentett versenyek és eszközön tárolt statisztikák\n• Szabályok, kézrangsor és stratégiai súgó\n• Álló és fekvő elrendezés\n• Téma-, hang-, animáció- és nyelvi beállítások\n• 30 felületi nyelv\n\nCsak számítógépes ellenfelek ellen játszol: nincsenek valódi emberek elleni meccsek. Felnőtteknek, 18 éves kortól."
+      }
+    }
+  },
+  "id": {
+    "promise": "Janji FinitePlay: sepenuhnya gratis, tanpa iklan, pembelian dalam aplikasi, atau langganan. Permainan berjalan sepenuhnya di perangkat Anda: tanpa akun, pelacakan, pengumpulan atau berbagi data, papan peringkat, maupun fitur online. Progres dan statistik Anda tetap pribadi dan tersimpan lokal.",
+    "rest": "Bermainlah sesuai ritme Anda. Pengingat istirahat yang dapat diatur mengajak Anda berhenti sejenak setelah bermain lama. Tidak ada bonus yang mendesak atau hadiah harian dengan batas waktu. Skor dan statistik lokal membantu Anda meninjau cara bermain, tanpa papan peringkat kompetitif atau tekanan untuk terus bermain.",
+    "footer": "FinitePlay membuat permainan kartu yang menghargai waktu, privasi, dan perhatian Anda.",
+    "games": {
+      "klondike": {
+        "title": "Solitaire Klondike: FinitePlay",
+        "shortDescription": "Klondike offline sederhana yang peduli baterai: ambil 1/3, petunjuk, tanpa iklan",
+        "intro": "Mainkan Klondike Solitaire klasik secara offline. Pilih mode Ambil Satu atau Ambil Tiga, tentukan tingkat tantangan yang nyaman, dan gunakan urungkan, ulangi, atau petunjuk opsional saat Anda ingin mencoba cara lain.",
+        "body": "Pembagian kartu dari tingkat Sepele hingga Ahli dimulai dengan solusi yang terverifikasi. Tingkat Gila yang terpisah berisi pembagian kartu yang tidak tersertifikasi. Pembagian awal yang bisa diselesaikan tetap dapat berujung buntu. Petunjuk mencari di papan Anda saat ini dan memberi tahu bila tidak dapat menemukan jalan menuju kemenangan dalam batas pencariannya.\n\nFitur:\n• Enam tingkat kesulitan, dengan pembagian kartu yang tersertifikasi dapat diselesaikan dari Sepele hingga Ahli\n• Aturan Ambil Satu dan Ambil Tiga\n• Petunjuk opsional yang mencari di papan Anda saat ini\n• Kontrol ketuk atau seret, Urungkan, Ulangi, dan selesai otomatis\n• Langkah otomatis ke fondasi, suara, dan animasi kartu yang opsional\n• Tema terang, gelap, dan berdasarkan waktu\n• Statistik di perangkat dan perbandingan rekor pribadi\n• 30 bahasa antarmuka"
+      },
+      "spider": {
+        "title": "Spider Solitaire: FinitePlay",
+        "shortDescription": "Spider offline sederhana yang peduli baterai: 1/2/4 jenis, petunjuk, tanpa iklan",
+        "intro": "Susun urutan lengkap dari Raja hingga As di Spider Solitaire. Mulai dengan 1 jenis kartu atau tantang diri dengan 2 atau 4 jenis, lengkap dengan urungkan, ulangi, dan petunjuk opsional saat Anda butuh bantuan.",
+        "body": "Setiap pembagian awal yang disertakan memiliki solusi yang terverifikasi. Pilihan Anda tetap berpengaruh: posisi berikutnya bisa saja tidak lagi dapat dimenangkan. Petunjuk terpandu dapat mengikuti solusi yang sudah diketahui; setelah Anda memilih jalur lain, pencarian solusi baru tunduk pada batas pencarian.\n\nFitur:\n• Spider dengan satu, dua, dan empat jenis kartu\n• 23.675 pembagian kartu yang tersertifikasi dapat diselesaikan di ketiga jumlah jenis kartu\n• Ketuk atau seret urutan lengkap dengan jenis yang sama\n• Penyorotan langkah dan petunjuk terpandu opsional\n• Urungkan, Ulangi, serta animasi pembagian baris dan pemindahan kartu\n• Pengaturan suara dan animasi opsional\n• Tema terang, gelap, dan berdasarkan waktu\n• Statistik di perangkat\n• 30 bahasa antarmuka"
+      },
+      "freecell": {
+        "title": "FreeCell Solitaire: FinitePlay",
+        "shortDescription": "FreeCell offline sederhana yang peduli baterai: bisa diselesaikan, tanpa iklan",
+        "intro": "Lihat setiap kartu dan rencanakan langkah berikutnya di FreeCell klasik. Gunakan empat sel bebas dan kolom kosong untuk menciptakan ruang, pindahkan urutan kartu, dan jelajahi berbagai pendekatan dengan urungkan dan ulangi.",
+        "body": "Setiap pembagian yang disertakan dimulai dengan solusi yang terverifikasi. Papan berikutnya tetap bisa berujung buntu, dan petunjuk memiliki batas pencarian; bila petunjuk tidak dapat menemukan jalan, ia akan mengatakannya dengan jelas.\n\nSel bebas dan kolom kosong memungkinkan Anda memindahkan urutan kartu bila ruangnya cukup; permainan menghitung kapasitas yang sah untuk Anda.\n\nFitur:\n• 2.000 pembagian kartu yang tersertifikasi dapat diselesaikan\n• Petunjuk opsional yang mencari di papan Anda saat ini\n• Kontrol ketuk atau seret, termasuk memindahkan beberapa kartu sekaligus\n• Urungkan, Ulangi, dan selesai otomatis\n• Langkah otomatis ke fondasi, suara, dan animasi kartu yang opsional\n• Tema terang, gelap, dan berdasarkan waktu\n• Statistik di perangkat dan perbandingan rekor pribadi\n• 30 bahasa antarmuka"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Blackjack offline sederhana yang peduli baterai: chip virtual, tanpa iklan",
+        "intro": "Mainkan blackjack offline melawan bandar komputer, dengan chip virtual dan penjelasan yang membantu pemula. Tidak pernah memakai uang sungguhan: chip tidak bernilai uang, dan tidak ada taruhan uang sungguhan, setoran, pembelian chip, penarikan tunai, atau hadiah.",
+        "body": "Latih keputusan Ambil, Tahan, Gandakan, dan Pisah dengan petunjuk strategi dasar opsional yang menjelaskan alasan dan risiko bust. Aturannya tetap: enam dek, diacak ulang setiap ronde; bandar berhenti pada 17 lunak, blackjack dibayar 3:2, dan asuransi serta pengecekan kartu tersembunyi oleh bandar sudah termasuk. Petunjuk membantu Anda memahami pilihan; petunjuk tidak menjamin kemenangan.\n\nAnda hanya bermain melawan bandar komputer: tidak ada pertandingan melawan orang sungguhan. Dirancang untuk orang dewasa berusia 18 tahun ke atas."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Poker offline sederhana yang peduli baterai: chip virtual, 5 lawan, tanpa iklan",
+        "intro": "Mainkan turnamen poker Texas Hold'em enam kursi secara offline melawan lima lawan komputer, dengan chip virtual dan petunjuk yang menjelaskan pilihan. Tidak pernah memakai uang sungguhan: chip tidak bernilai uang, dan tidak ada taruhan uang sungguhan, setoran, pembelian chip, penarikan tunai, atau hadiah.",
+        "body": "Petunjuk opsional menjelaskan gagasan di balik tindakan yang disarankan, membantu pemula memahami kekuatan tangan, posisi, perkiraan equity, dan pot odds. Saran ini memakai informasi yang terlihat; ia tidak dapat melihat kartu tersembunyi lawan dan tidak menjamin tangan yang menang.\n\nSetiap kursi memulai dengan jumlah chip virtual yang sama. Mainkan melewati blind yang terus naik, ambil keputusan taruhan Anda, dan berusahalah menjadi pemain terakhir di meja. Simpan turnamen Anda dan lanjutkan nanti.\n\nFitur:\n• Lima lawan komputer dengan gaya bermain yang berbeda\n• Fold, Check, Call, Bet, Raise, dan All in\n• Kontrol ukuran taruhan dan penyelesaian side pot\n• Petunjuk dengan perkiraan equity dan pot odds\n• Turnamen tersimpan dan statistik di perangkat\n• Aturan, peringkat tangan, dan bantuan strategi\n• Tata letak potret dan lanskap\n• Pengaturan tema, suara, animasi, dan bahasa\n• 30 bahasa antarmuka\n\nAnda hanya bermain melawan lawan komputer: tidak ada pertandingan melawan orang sungguhan. Dirancang untuk orang dewasa berusia 18 tahun ke atas."
+      }
+    }
+  },
+  "it-IT": {
+    "promise": "La promessa di FinitePlay: completamente gratis, senza pubblicità, acquisti in-app o abbonamenti. Tutto resta sul tuo dispositivo: nessun account, tracciamento, raccolta o condivisione di dati, nessuna classifica o funzione online. I tuoi progressi e le tue statistiche restano privati e locali.",
+    "rest": "Gioca con i tuoi tempi. I promemoria di pausa configurabili ti invitano a fermarti dopo una lunga sessione di gioco. Non ci sono bonus a tempo né ricompense giornaliere a scadenza. Punteggi e statistiche locali ti aiutano a riflettere sul tuo gioco, senza classifiche competitive né pressione a continuare.",
+    "footer": "FinitePlay crea giochi di carte che rispettano il tuo tempo, la tua privacy e la tua attenzione.",
+    "games": {
+      "klondike": {
+        "title": "Solitario Klondike: FinitePlay",
+        "shortDescription": "Klondike semplice, offline, attento alla batteria: pesca 1/3, senza pubblicità",
+        "intro": "Gioca offline al classico Solitario Klondike. Scegli se pescare una o tre carte, trova una sfida a tua misura e usa Annulla, Ripeti o un suggerimento facoltativo quando vuoi provare un altro approccio.",
+        "body": "Le partite da Banale a Esperto iniziano con una soluzione verificata. Il livello Folle, separato, contiene partite non certificate. Una partita risolvibile all'inizio può comunque finire in un vicolo cieco. I suggerimenti analizzano la tua situazione attuale e segnalano quando non riescono a stabilire una strada verso la vittoria entro il loro limite di ricerca.\n\nFunzionalità:\n• Sei livelli di difficoltà, con partite certificate come risolvibili da Banale a Esperto\n• Regole di pesca di una o tre carte\n• Suggerimenti facoltativi che analizzano la tua situazione attuale\n• Comandi con tocco o trascinamento, Annulla, Ripeti e completamento automatico\n• Mosse automatiche sulle fondazioni, suoni e animazioni delle carte facoltativi\n• Temi chiaro, scuro e in base all'ora\n• Statistiche sul dispositivo e confronto con i tuoi record personali\n• 30 lingue dell'interfaccia"
+      },
+      "spider": {
+        "title": "Solitario Spider: FinitePlay",
+        "shortDescription": "Spider semplice, offline, attento alla batteria: 1/2/4 semi, senza pubblicità",
+        "intro": "Costruisci sequenze complete dal Re all'Asso nel Solitario Spider. Inizia con 1 seme o scegli la sfida con 2 o 4 semi, con Annulla, Ripeti e suggerimenti facoltativi quando vuoi un aiuto.",
+        "body": "Ogni partita iniziale inclusa ha una soluzione verificata. Le tue scelte contano comunque: una posizione successiva può non essere più vincibile. I suggerimenti guidati possono seguire una soluzione nota; dopo che scegli un'altra strada, la ricerca di una nuova soluzione è soggetta a limiti.\n\nFunzionalità:\n• Spider a uno, due e quattro semi\n• 23.675 partite certificate come risolvibili nelle tre varianti (1, 2 e 4 semi)\n• Tocca o trascina sequenze complete dello stesso seme\n• Evidenziazione delle mosse e suggerimenti guidati facoltativi\n• Annulla, Ripeti e distribuzioni delle file e movimenti delle carte animati\n• Controlli facoltativi per suono e animazioni\n• Temi chiaro, scuro e in base all'ora\n• Statistiche sul dispositivo\n• 30 lingue dell'interfaccia"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "FreeCell offline, attento alla batteria: partite risolvibili, senza pubblicità",
+        "intro": "Vedi tutte le carte e pianifica la mossa successiva nel classico FreeCell. Usa le quattro celle libere e le colonne vuote per fare spazio, sposta sequenze di carte e prova approcci diversi con Annulla e Ripeti.",
+        "body": "Ogni partita inclusa inizia con una soluzione verificata. Una situazione successiva può comunque finire in un vicolo cieco, e i suggerimenti hanno limiti di ricerca; quando un suggerimento non riesce a stabilire una strada, lo dice chiaramente.\n\nLe celle libere e le colonne vuote permettono di spostare sequenze di carte quando c'è abbastanza spazio; il gioco calcola per te la capacità consentita.\n\nFunzionalità:\n• 2.000 partite certificate come risolvibili\n• Suggerimenti facoltativi che analizzano la tua situazione attuale\n• Comandi con tocco o trascinamento, anche per più carte insieme\n• Annulla, Ripeti e completamento automatico\n• Mosse automatiche sulle fondazioni, suoni e animazioni delle carte facoltativi\n• Temi chiaro, scuro e in base all'ora\n• Statistiche sul dispositivo e confronto con i tuoi record personali\n• 30 lingue dell'interfaccia"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Blackjack offline, attento alla batteria: fiches virtuali, senza pubblicità",
+        "intro": "Gioca a blackjack offline contro un banco gestito dal computer, con fiches virtuali e spiegazioni utili per chi inizia. Mai denaro reale: le fiches non hanno alcun valore monetario e non ci sono puntate in denaro reale, depositi, acquisti di fiches, prelievi o premi.",
+        "body": "Allenati a decidere se chiedere carta, stare, raddoppiare o dividere con suggerimenti facoltativi di strategia di base che spiegano il ragionamento e il rischio di sballare. Le regole fisse usano sei mazzi, rimescolati a ogni mano; il banco sta sul 17 morbido, il blackjack paga 3:2 e sono inclusi l'assicurazione e il controllo del blackjack da parte del banco. I suggerimenti aiutano a capire le scelte, ma non garantiscono vittorie.\n\nGiochi solo contro il banco gestito dal computer: non ci sono partite contro persone reali. Pensato per adulti dai 18 anni in su."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Poker offline semplice, attento alla batteria: fiches virtuali, senza pubblicità",
+        "intro": "Gioca offline un torneo di Texas Hold'em a sei posti contro cinque avversari gestiti dal computer, con fiches virtuali e suggerimenti che spiegano le scelte. Mai denaro reale: le fiches non hanno alcun valore monetario e non ci sono puntate in denaro reale, depositi, acquisti di fiches, prelievi o premi.",
+        "body": "I suggerimenti facoltativi spiegano l'idea dietro un'azione consigliata e aiutano chi inizia a capire la forza della mano, la posizione, l'equity stimata e le pot odds. I consigli usano le informazioni visibili; non possono vedere le carte coperte degli avversari e non garantiscono una mano vincente.\n\nOgni posto parte con lo stesso stack di fiches virtuali. Affronta blind in aumento, prendi le tue decisioni di puntata e cerca di essere l'ultimo giocatore al tavolo. Salva il torneo e riprendilo più tardi.\n\nFunzionalità:\n• Cinque avversari gestiti dal computer con stili di gioco diversi\n• Fold, check, call, puntata, rilancio e all in\n• Controlli per la dimensione della puntata e gestione dei piatti laterali\n• Suggerimenti con equity stimata e pot odds\n• Tornei salvati e statistiche sul dispositivo\n• Regole, gerarchia delle mani e aiuto sulla strategia\n• Layout verticale e orizzontale\n• Impostazioni di tema, suoni, animazioni e lingua\n• 30 lingue dell'interfaccia\n\nGiochi solo contro avversari gestiti dal computer: non ci sono partite contro persone reali. Pensato per adulti dai 18 anni in su."
+      }
+    }
+  },
+  "iw-IL": {
+    "promise": "ההבטחה של FinitePlay: חינם לגמרי, בלי פרסומות, רכישות בתוך האפליקציה או מנויים. המשחק פועל כולו במכשיר שלכם: בלי חשבונות, מעקב, איסוף או שיתוף נתונים, טבלאות מובילים או תכונות מקוונות. ההתקדמות והסטטיסטיקות שלכם נשארות פרטיות ומקומיות.",
+    "rest": "שחקו בקצב שלכם. תזכורות מנוחה הניתנות להגדרה מזמינות אתכם לקחת הפסקה אחרי משחק ממושך. אין בונוסים לוחצים ואין פרסים יומיים מוגבלים בזמן. ניקוד וסטטיסטיקות מקומיים עוזרים לכם להתבונן במשחק שלכם, בלי טבלאות מובילים תחרותיות ובלי לחץ להמשיך.",
+    "footer": "FinitePlay יוצרת משחקי קלפים שמכבדים את הזמן, את הפרטיות ואת תשומת הלב שלכם.",
+    "games": {
+      "klondike": {
+        "title": "סוליטר קלונדייק: FinitePlay",
+        "shortDescription": "קלונדייק פשוט ללא אינטרנט, מתחשב בסוללה: משיכת 1/3, רמזים, בלי פרסומות",
+        "intro": "שחקו סוליטר קלונדייק קלאסי ללא אינטרנט. בחרו משיכת קלף אחד או שלושה קלפים, קבעו רמת אתגר נוחה והשתמשו בביטול, בשחק שוב או ברמז אופציונלי כשבא לכם לנסות גישה אחרת.",
+        "body": "חלוקות מהרמה \"טריוויאלי\" ועד \"מומחה\" מתחילות עם פתרון מאומת. הרמה הנפרדת \"מטורף\" כוללת חלוקות לא מאומתות. חלוקת פתיחה שניתן לפתור עדיין עלולה להסתיים בדרך ללא מוצא. הרמזים סורקים את הלוח הנוכחי שלכם ומדווחים כשהם לא מצליחים לקבוע בתוך המגבלה שלהם אם יש דרך לניצחון.\n\nתכונות:\n• שש רמות קושי, עם חלוקות מאושרות כניתנות לפתרון מהרמה \"טריוויאלי\" ועד \"מומחה\"\n• חוקי משיכת קלף אחד ומשיכת שלושה קלפים\n• רמזים אופציונליים שסורקים את הלוח הנוכחי שלכם\n• שליטה בהקשה או בגרירה, ביטול, שחק שוב וסיום אוטומטי\n• מהלכים אוטומטיים אופציונליים ליסודות, צליל ואנימציות קלפים\n• ערכות נושא בהירה, כהה ולפי שעות היום\n• סטטיסטיקות במכשיר והשוואה לשיאים אישיים\n• 30 שפות ממשק"
+      },
+      "spider": {
+        "title": "סוליטר עכביש: FinitePlay",
+        "shortDescription": "ספיידר פשוט ללא אינטרנט, מתחשב בסוללה: 1/2/4 צבעים, רמזים, בלי פרסומות",
+        "intro": "בנו רצפים שלמים מהמלך ועד האס בספיידר סוליטר. התחילו עם צבע אחד או התמודדו עם שניים או ארבעה צבעים, עם ביטול, שחק שוב ורמזים אופציונליים כשצריך עזרה.",
+        "body": "לכל חלוקת פתיחה שכלולה במשחק יש פתרון מאומת. ההחלטות שלכם עדיין חשובות: עמדה מאוחרת יותר עלולה כבר לא להיות ניתנת לניצחון. רמזים מודרכים יכולים ללכת לפי פתרון מוכר; אחרי שבחרתם דרך אחרת, מציאת פתרון חדש כפופה למגבלות החיפוש.\n\nתכונות:\n• ספיידר עם צבע אחד, שני צבעים וארבעה צבעים\n• 23,675 חלוקות מאושרות כניתנות לפתרון בשלושת מספרי הצבעים\n• הקשה או גרירה של רצפים שלמים בצבע אחד\n• הדגשת מהלכים ורמזים מודרכים אופציונליים\n• ביטול, שחק שוב, וחלוקת שורות והזזת קלפים עם אנימציה\n• בקרות אופציונליות לצליל ולאנימציה\n• ערכות נושא בהירה, כהה ולפי שעות היום\n• סטטיסטיקות במכשיר\n• 30 שפות ממשק"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "פריסל פשוט ללא אינטרנט, מתחשב בסוללה: חלוקות פתירות, רמזים, בלי פרסומות",
+        "intro": "ראו כל קלף ותכננו את המהלך הבא בפריסל הקלאסי. השתמשו בארבעה תאים חופשיים ובעמודות ריקות כדי לפנות מקום, הזיזו רצפי קלפים וחקרו גישות שונות בעזרת ביטול ושחק שוב.",
+        "body": "כל חלוקה שכלולה במשחק מתחילה עם פתרון מאומת. לוח מאוחר יותר עדיין עלול להגיע לדרך ללא מוצא, ולרמזים יש מגבלות חיפוש; כשרמז לא מצליח לקבוע דרך, הוא אומר זאת בבירור.\n\nתאים חופשיים ועמודות ריקות מאפשרים להזיז רצפי קלפים כשיש מספיק מקום; המשחק מחשב בשבילכם את הקיבולת החוקית.\n\nתכונות:\n• 2,000 חלוקות מאושרות כניתנות לפתרון\n• רמזים אופציונליים שסורקים את הלוח הנוכחי שלכם\n• שליטה בהקשה או בגרירה, כולל הזזת כמה קלפים יחד\n• ביטול, שחק שוב וסיום אוטומטי\n• מהלכים אוטומטיים אופציונליים ליסודות, צליל ואנימציות קלפים\n• ערכות נושא בהירה, כהה ולפי שעות היום\n• סטטיסטיקות במכשיר והשוואה לשיאים אישיים\n• 30 שפות ממשק"
+      },
+      "blackjack": {
+        "title": "בלאק ג׳ק: FinitePlay",
+        "shortDescription": "בלאק ג'ק פשוט ללא אינטרנט, מתחשב בסוללה: אסימונים וירטואליים, רמזים, בלי פרסומות",
+        "intro": "שחקו בלאק ג'ק ללא אינטרנט נגד מחלק ממוחשב, עם אסימונים וירטואליים והסברים מועילים למתחילים. אף פעם לא בכסף אמיתי: לאסימונים אין ערך כספי, ואין הימורים בכסף אמיתי, הפקדות, רכישת אסימונים, משיכת מזומנים או פרסים.",
+        "body": "תרגלו החלטות של קלף, עצור, הכפל ופצל עם רמזים אופציונליים לפי אסטרטגיית יסוד, שמסבירים את הנימוק ואת הסיכון לחרוג מ-21. החוקים קבועים: שש חפיסות שנערבבות מחדש בכל סיבוב; המחלק עוצר ב-17 רך, בלאק ג'ק משלם 3:2, וכלולים ביטוח ובדיקת הקלף הסמוי של המחלק. הרמזים עוזרים להבין בחירות; הם לא מבטיחים ניצחון.\n\nאתם משחקים רק נגד המחלק הממוחשב: אין משחקים נגד אנשים אמיתיים. מיועד למבוגרים בני 18 ומעלה."
+      },
+      "holdem": {
+        "title": "טקסס הולדם: FinitePlay",
+        "shortDescription": "פוקר פשוט ללא אינטרנט, מתחשב בסוללה: אסימונים וירטואליים, 5 יריבים, בלי פרסומות",
+        "intro": "שחקו טורניר פוקר טקסס הולדם לשישה מושבים ללא אינטרנט נגד חמישה יריבים ממוחשבים, עם אסימונים וירטואליים ורמזים שמסבירים את הבחירות. אף פעם לא בכסף אמיתי: לאסימונים אין ערך כספי, ואין הימורים בכסף אמיתי, הפקדות, רכישת אסימונים, משיכת מזומנים או פרסים.",
+        "body": "רמזים אופציונליים מסבירים את הרעיון שמאחורי הפעולה המוצעת ועוזרים למתחילים להבין עוצמת יד, מיקום, סיכוי משוער (equity) ויחס קופה (pot odds). העצה מבוססת על מידע גלוי; היא לא רואה את הקלפים הסמויים של היריבים ולא מבטיחה יד מנצחת.\n\nכל מושב מתחיל עם אותה ערימה של אסימונים וירטואליים. שחקו דרך בליינדים עולים, קבלו את החלטות ההימור שלכם וחתרו להיות השחקן האחרון ליד השולחן. שמרו את הטורניר וחזרו אליו מאוחר יותר.\n\nתכונות:\n• חמישה יריבים ממוחשבים עם סגנונות משחק שונים\n• פולד, צ'ק, קול, הימור, העלאה ואול אין\n• שליטה בגודל ההימור וחלוקת קופות צד\n• רמזים עם סיכוי משוער ויחס קופה\n• טורנירים שמורים וסטטיסטיקות במכשיר\n• חוקים, דירוג ידיים ועזרה באסטרטגיה\n• פריסה לאורך ולרוחב\n• הגדרות ערכת נושא, צליל, אנימציה ושפה\n• 30 שפות ממשק\n\nאתם משחקים רק נגד יריבים ממוחשבים: אין משחקים נגד אנשים אמיתיים. מיועד למבוגרים בני 18 ומעלה."
+      }
+    }
+  },
+  "ja-JP": {
+    "promise": "FinitePlayの約束：完全無料で、広告、アプリ内課金、サブスクリプションはありません。プレイはすべて端末内で完結し、アカウント、トラッキング、データの収集・共有、ランキング、オンライン機能もありません。進行状況と統計はプライベートに、端末内だけに保存されます。",
+    "rest": "自分のペースで楽しめます。設定できる休憩のお知らせが、長くプレイしたあとの一息をうながします。急かすボーナスや時間限定のデイリー報酬はありません。端末内のスコアと統計は自分のプレイを振り返るためのもので、競争的なランキングや「続けなければ」というプレッシャーはありません。",
+    "footer": "FinitePlayは、あなたの時間、プライバシー、集中力を大切にするカードゲームをつくっています。",
+    "games": {
+      "klondike": {
+        "title": "クロンダイクソリティア: FinitePlay",
+        "shortDescription": "シンプルでバッテリーに配慮したオフラインのクロンダイク：1/3枚引き、ヒント、広告なし",
+        "intro": "定番のクロンダイク・ソリティアをオフラインで。1枚引きか3枚引きを選び、無理のない難易度を選んで、別の手を試したいときは「元に戻す」「リプレイ」や、お好みでヒントを使えます。",
+        "body": "「非常に簡単」から「上級」までの配置は、解ける手順が確認済みの状態で始まります。別枠の「無謀」レベルには、未認証の配置が含まれます。解ける状態で始まっても、途中で行き詰まることはあります。ヒントは現在の盤面を探索し、制限内で勝てる手順を確認できなかったときはそのことをお知らせします。\n\n特長：\n• 6つの難易度。「非常に簡単」から「上級」までは、解けることが認証された配置\n• 1枚引きと3枚引きのルール\n• 現在の盤面を探索する、お好みで使えるヒント\n• タップまたはドラッグ操作、元に戻す、リプレイ、自動完了\n• 組み札への自動移動、サウンド、カードアニメーション（いずれも任意）\n• ライト、ダーク、時間帯連動のテーマ\n• 端末内の統計と自己ベストとの比較\n• 30のインターフェース言語"
+      },
+      "spider": {
+        "title": "スパイダーソリティア: FinitePlay",
+        "shortDescription": "シンプルでバッテリーに配慮したオフラインのスパイダー：1/2/4スート、ヒント、広告なし",
+        "intro": "スパイダー・ソリティアで、キングからエースまでそろった列を完成させましょう。1スートで始めることも、2スートや4スートに挑戦することもでき、助けがほしいときは「元に戻す」「リプレイ」や、お好みでヒントを使えます。",
+        "body": "収録されている配置はすべて、解ける手順が確認済みの状態で始まります。それでも選択は重要で、途中の局面では勝てなくなっていることがあります。ガイド付きヒントは既知の解に沿って進められますが、別の手を選んだあとの新しい解の探索には、探索の制限があります。\n\n特長：\n• 1スート、2スート、4スートのスパイダー\n• 3種類すべてのスート数で、解けることが認証された配置が合計23,675個\n• 同じスートでそろった列をタップまたはドラッグで移動\n• 手のハイライトと、お好みで使えるガイド付きヒント\n• 元に戻す、リプレイ、1列を配るときとカードを動かすときのアニメーション\n• サウンドとアニメーションの設定（任意）\n• ライト、ダーク、時間帯連動のテーマ\n• 端末内の統計\n• 30のインターフェース言語"
+      },
+      "freecell": {
+        "title": "フリーセル: FinitePlay",
+        "shortDescription": "シンプルでバッテリーに配慮したオフラインのフリーセル：解ける配置、ヒント、広告なし",
+        "intro": "すべてのカードが見える定番のフリーセルで、次の一手をじっくり考えましょう。4つのフリーセルと空の列でスペースをつくり、カードの列を動かし、「元に戻す」や「リプレイ」でいろいろな手を試せます。",
+        "body": "収録されている配置はすべて、解ける手順が確認済みの状態で始まります。途中の盤面では行き詰まることもあり、ヒントには探索の制限があります。ヒントが道筋を確認できないときは、その旨をはっきりお伝えします。\n\nフリーセルと空の列があれば、スペースが足りる範囲でカードの列をまとめて動かせます。動かせる枚数のルール上の上限は、ゲームが計算します。\n\n特長：\n• 解けることが認証された配置2,000個\n• 現在の盤面を探索する、お好みで使えるヒント\n• タップまたはドラッグ操作（複数枚の移動にも対応）\n• 元に戻す、リプレイ、自動完了\n• 組み札への自動移動、サウンド、カードアニメーション（いずれも任意）\n• ライト、ダーク、時間帯連動のテーマ\n• 端末内の統計と自己ベストとの比較\n• 30のインターフェース言語"
+      },
+      "blackjack": {
+        "title": "ブラックジャック: FinitePlay",
+        "shortDescription": "シンプルでバッテリーに配慮したオフラインのブラックジャック：仮想チップ、ヒント、広告なし",
+        "intro": "コンピューターのディーラーを相手に、オフラインでブラックジャックを。仮想チップを使い、初心者にも分かりやすい解説つきです。実際のお金は一切使いません。チップに金銭的価値はなく、現金のベット、入金、チップの購入、換金、賞品はありません。",
+        "body": "ヒット、スタンド、ダブル、スプリットの判断を練習できます。お好みで使える基本戦略のヒントが、理由とバストの危険を説明します。ルールは固定で、6デッキを毎ラウンド新たにシャッフルし、ディーラーはソフト17でスタンド、ブラックジャックの配当は3:2、保険と、ディーラーが伏せカードを確認するピークがあります。ヒントは選択肢の理解を助けるもので、勝利を保証するものではありません。\n\n対戦相手はコンピューターのディーラーのみで、実在の人との対戦はありません。18歳以上の成人向けに作られています。"
+      },
+      "holdem": {
+        "title": "テキサスホールデム: FinitePlay",
+        "shortDescription": "シンプルでバッテリーに配慮したオフラインのポーカー：仮想チップ、相手5人、広告なし",
+        "intro": "6席のテキサスホールデム・ポーカー トーナメントを、コンピューター相手5人とオフラインで。仮想チップを使い、選択の理由を説明するヒントつきです。実際のお金は一切使いません。チップに金銭的価値はなく、現金のベット、入金、チップの購入、換金、賞品はありません。",
+        "body": "お好みで使えるヒントが、おすすめのアクションの考え方を説明し、初心者がハンドの強さ、ポジション、推定エクイティ、ポットオッズを理解する助けになります。アドバイスは見えている情報をもとにしており、相手の伏せられたカードは見えず、勝てるハンドを保証するものではありません。\n\nどの席も同じ量の仮想チップで始まります。上がっていくブラインドの中でベットを判断し、最後までテーブルに残ることを目指します。トーナメントは保存して、あとで再開できます。\n\n特長：\n• 異なるプレイスタイルの、コンピューター相手5人\n• フォールド、チェック、コール、ベット、レイズ、オールイン\n• ベット額の調整とサイドポットの精算\n• 推定エクイティとポットオッズ付きのヒント\n• 保存できるトーナメントと端末内の統計\n• ルール、役の一覧、戦略ヘルプ\n• 縦向きと横向きのレイアウト\n• テーマ、サウンド、アニメーション、言語の設定\n• 30のインターフェース言語\n\n対戦相手はコンピューターのみで、実在の人との対戦はありません。18歳以上の成人向けに作られています。"
+      }
+    }
+  },
+  "ko-KR": {
+    "promise": "FinitePlay의 약속: 완전 무료이며 광고, 인앱 결제, 구독이 없습니다. 모든 플레이는 기기 안에서만 이루어지며 계정, 추적, 데이터 수집 및 공유, 리더보드, 온라인 기능이 없습니다. 진행 상황과 통계는 비공개로 기기에만 저장됩니다.",
+    "rest": "내 속도에 맞춰 즐기세요. 설정할 수 있는 휴식 알림이 오래 플레이한 뒤 잠시 쉬어 가도록 권합니다. 재촉하는 보너스나 시간제 일일 보상은 없습니다. 기기에 저장되는 점수와 통계는 내 플레이를 돌아보는 용도이며, 경쟁적인 리더보드도, 계속해야 한다는 압박도 없습니다.",
+    "footer": "FinitePlay는 여러분의 시간, 개인정보, 집중력을 존중하는 카드 게임을 만듭니다.",
+    "games": {
+      "klondike": {
+        "title": "클론다이크 솔리테어: FinitePlay",
+        "shortDescription": "깔끔하고 배터리를 고려한 오프라인 클론다이크: 1/3장 뽑기, 힌트, 광고 없음",
+        "intro": "클래식 클론다이크 솔리테어를 오프라인으로 즐기세요. 1장 뽑기 또는 3장 뽑기를 고르고, 편안한 난이도를 선택하고, 다른 방법을 시도하고 싶을 때는 실행 취소, 다시 하기, 선택 사항인 힌트를 사용하세요.",
+        "body": "'매우 쉬움'부터 '전문가'까지의 판은 검증된 해답이 있는 상태로 시작합니다. 별도의 '미친' 레벨에는 인증되지 않은 판이 포함되어 있습니다. 풀 수 있는 상태로 시작해도 막다른 길에 이를 수 있습니다. 힌트는 현재 판을 탐색하며, 제한 범위 안에서 이기는 길을 확인하지 못하면 그렇다고 알려 줍니다.\n\n주요 기능:\n• 여섯 가지 난이도, '매우 쉬움'부터 '전문가'까지는 풀 수 있음이 인증된 판\n• 1장 뽑기와 3장 뽑기 규칙\n• 현재 판을 탐색하는 선택 사항 힌트\n• 탭 또는 드래그 조작, 실행 취소, 다시 하기, 자동 마무리\n• 파운데이션 자동 이동, 사운드, 카드 애니메이션(선택 사항)\n• 라이트, 다크, 시간대별 테마\n• 기기 내 통계와 개인 최고 기록 비교\n• 30개 인터페이스 언어"
+      },
+      "spider": {
+        "title": "스파이더 솔리테어: FinitePlay",
+        "shortDescription": "깔끔하고 배터리를 고려한 오프라인 스파이더: 1/2/4가지 무늬, 힌트, 광고 없음",
+        "intro": "스파이더 솔리테어에서 킹부터 에이스까지 완성된 줄을 만들어 보세요. 한 가지 무늬로 시작하거나 두 가지, 네 가지 무늬에 도전할 수 있으며, 도움이 필요할 때는 실행 취소, 다시 하기, 선택 사항인 힌트를 쓸 수 있습니다.",
+        "body": "포함된 모든 시작 판에는 검증된 해답이 있습니다. 그래도 선택은 중요합니다. 이후의 상황은 더 이상 이길 수 없을 수도 있습니다. 안내 힌트는 알려진 해답을 따라갈 수 있지만, 다른 길을 선택한 뒤에 새 해답을 찾는 일에는 탐색 제한이 적용됩니다.\n\n주요 기능:\n• 한 가지, 두 가지, 네 가지 무늬 스파이더\n• 세 가지 무늬 수 전체에서 풀 수 있음이 인증된 판 23,675개\n• 같은 무늬로 완성된 카드 묶음을 탭 또는 드래그\n• 이동 강조 표시와 선택 사항인 안내 힌트\n• 실행 취소, 다시 하기, 한 줄 나눠주기와 카드 이동 애니메이션\n• 선택 사항인 사운드 및 애니메이션 설정\n• 라이트, 다크, 시간대별 테마\n• 기기 내 통계\n• 30개 인터페이스 언어"
+      },
+      "freecell": {
+        "title": "프리셀: FinitePlay",
+        "shortDescription": "깔끔하고 배터리를 고려한 오프라인 프리셀: 풀 수 있는 판, 힌트, 광고 없음",
+        "intro": "모든 카드가 보이는 클래식 프리셀에서 다음 수를 계획해 보세요. 네 개의 프리셀과 빈 열로 공간을 만들고, 카드 묶음을 옮기고, 실행 취소와 다시 하기로 다양한 방법을 시도할 수 있습니다.",
+        "body": "포함된 모든 판에는 검증된 해답이 있습니다. 이후의 판은 막다른 길에 이를 수 있고 힌트에는 탐색 제한이 있습니다. 힌트가 길을 확인하지 못하면 솔직하게 그렇다고 알려 줍니다.\n\n프리셀과 빈 열 덕분에 공간이 충분할 때 카드 묶음을 옮길 수 있으며, 규칙상 옮길 수 있는 장수는 게임이 대신 계산해 줍니다.\n\n주요 기능:\n• 풀 수 있음이 인증된 판 2,000개\n• 현재 판을 탐색하는 선택 사항 힌트\n• 여러 장 이동을 포함한 탭 또는 드래그 조작\n• 실행 취소, 다시 하기, 자동 마무리\n• 파운데이션 자동 이동, 사운드, 카드 애니메이션(선택 사항)\n• 라이트, 다크, 시간대별 테마\n• 기기 내 통계와 개인 최고 기록 비교\n• 30개 인터페이스 언어"
+      },
+      "blackjack": {
+        "title": "블랙잭: FinitePlay",
+        "shortDescription": "깔끔하고 배터리를 고려한 오프라인 블랙잭: 가상 칩, 힌트, 광고 없음",
+        "intro": "컴퓨터 딜러를 상대로 오프라인 블랙잭을 즐겨 보세요. 가상 칩을 사용하며 초보자를 위한 친절한 설명이 함께합니다. 실제 돈은 절대 쓰지 않습니다. 칩에는 금전적 가치가 없으며, 실제 돈 베팅, 입금, 칩 구매, 현금화, 상품이 없습니다.",
+        "body": "히트, 스탠드, 더블, 스플릿 결정을 연습해 보세요. 선택 사항인 기본 전략 힌트가 이유와 버스트 위험을 설명해 줍니다. 규칙은 고정되어 있으며 매 라운드 6덱을 새로 섞고, 딜러는 소프트 17에서 멈추고, 블랙잭은 3:2로 지급되며, 보험과 딜러의 뒤집힌 카드 확인(피크)이 포함됩니다. 힌트는 선택을 이해하도록 돕는 것이며 승리를 보장하지 않습니다.\n\n상대는 컴퓨터 딜러뿐이며 실제 사람과의 대결은 없습니다. 만 18세 이상 성인을 위해 만들어졌습니다."
+      },
+      "holdem": {
+        "title": "텍사스 홀덤: FinitePlay",
+        "shortDescription": "깔끔하고 배터리를 고려한 오프라인 포커: 가상 칩, 상대 5명, 광고 없음",
+        "intro": "6인 텍사스 홀덤 포커 토너먼트를 컴퓨터 상대 다섯 명과 오프라인으로 즐기세요. 가상 칩을 사용하며 선택의 이유를 설명하는 힌트가 있습니다. 실제 돈은 절대 쓰지 않습니다. 칩에는 금전적 가치가 없으며, 실제 돈 베팅, 입금, 칩 구매, 현금화, 상품이 없습니다.",
+        "body": "선택 사항인 힌트가 추천 행동의 바탕이 되는 생각을 설명해 주어, 초보자가 핸드 강도, 포지션, 예상 에퀴티, 팟 오즈를 이해하도록 돕습니다. 조언은 눈에 보이는 정보를 바탕으로 하며, 상대의 숨겨진 카드는 볼 수 없고 이기는 핸드를 보장하지 않습니다.\n\n모든 자리가 같은 양의 가상 칩으로 시작합니다. 오르는 블라인드 속에서 베팅을 결정하고, 테이블에 마지막까지 남는 것을 목표로 하세요. 토너먼트를 저장하고 나중에 이어서 할 수 있습니다.\n\n주요 기능:\n• 서로 다른 플레이 스타일의 컴퓨터 상대 다섯 명\n• 폴드, 체크, 콜, 베팅, 레이즈, 올인\n• 베팅 금액 조절과 사이드 팟 정산\n• 예상 에퀴티와 팟 오즈를 보여 주는 힌트\n• 저장된 토너먼트와 기기 내 통계\n• 규칙, 족보, 전략 도움말\n• 세로 및 가로 화면 레이아웃\n• 테마, 사운드, 애니메이션, 언어 설정\n• 30개 인터페이스 언어\n\n상대는 컴퓨터뿐이며 실제 사람과의 대결은 없습니다. 만 18세 이상 성인을 위해 만들어졌습니다."
+      }
+    }
+  },
+  "nl-NL": {
+    "promise": "De FinitePlay-belofte: volledig gratis, zonder advertenties, in-app-aankopen of abonnementen. Alles blijft op je apparaat: geen accounts, tracking, verzameling of delen van gegevens, geen ranglijsten of onlinefuncties. Je voortgang en statistieken blijven privé en lokaal.",
+    "rest": "Speel in je eigen tempo. Instelbare pauzeherinneringen nodigen je uit om na langdurig spelen even te pauzeren. Er zijn geen urgentiebonussen en geen tijdgebonden dagelijkse beloningen. Lokale scores en statistieken helpen je terug te kijken op je spel, zonder competitieve ranglijsten of druk om door te spelen.",
+    "footer": "FinitePlay maakt kaartspellen die je tijd, je privacy en je aandacht respecteren.",
+    "games": {
+      "klondike": {
+        "title": "Klondike patience: FinitePlay",
+        "shortDescription": "Eenvoudige, batterijbewuste offline Klondike: 1/3 kaarten, hints, geen reclame",
+        "intro": "Speel offline het klassieke Klondike Solitaire. Kies of je één of drie kaarten trekt, kies een uitdaging die bij je past en gebruik Ongedaan maken, Opnieuw spelen of een optionele hint als je een andere aanpak wilt proberen.",
+        "body": "Giften van Triviaal tot Expert beginnen met een gecontroleerde oplossing. Het aparte niveau Waanzinnig bevat niet-gecertificeerde giften. Een oplosbare startgift kan toch op een dood punt eindigen. Hints doorzoeken je huidige spelbord en melden het als ze binnen hun zoeklimiet geen weg naar de winst kunnen vaststellen.\n\nFuncties:\n• Zes moeilijkheidsniveaus, met gecertificeerd oplosbare giften van Triviaal tot Expert\n• Spelregels voor één of drie kaarten trekken\n• Optionele hints die je huidige spelbord doorzoeken\n• Tikken of slepen, Ongedaan maken, Opnieuw spelen en automatisch afmaken\n• Optioneel automatisch verplaatsen naar de stapels, geluid en kaartanimaties\n• Lichte, donkere en tijdgebonden thema's\n• Statistieken op het apparaat en vergelijking met je persoonlijke records\n• 30 interfacetalen"
+      },
+      "spider": {
+        "title": "Spider patience: FinitePlay",
+        "shortDescription": "Eenvoudige, batterijbewuste offline Spider: 1/2/4 kleuren, hints, geen reclame",
+        "intro": "Bouw complete reeksen van Heer tot Aas in Spider Solitaire. Begin met 1 kleur of waag je aan 2 of 4 kleuren, met Ongedaan maken, Opnieuw spelen en optionele hints als je hulp wilt.",
+        "body": "Elke meegeleverde beginstand heeft een gecontroleerde oplossing. Je keuzes blijven wel belangrijk: een latere stand is misschien niet meer te winnen. Begeleide hints kunnen een bekende oplossing volgen; nadat je een andere weg hebt gekozen, is het vinden van een nieuwe oplossing aan zoeklimieten gebonden.\n\nFuncties:\n• Spider met één, twee en vier kleuren\n• 23.675 gecertificeerd oplosbare spellen met één, twee en vier kleuren\n• Tik op of sleep complete reeksen van dezelfde kleur\n• Zetten markeren en optionele begeleide hints\n• Ongedaan maken, Opnieuw spelen en geanimeerd rijen delen en kaarten verplaatsen\n• Optionele geluids- en animatie-instellingen\n• Lichte, donkere en tijdgebonden thema's\n• Statistieken op het apparaat\n• 30 interfacetalen"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Eenvoudige, batterijbewuste offline FreeCell: oplosbare spellen, geen reclame",
+        "intro": "Bekijk alle kaarten en plan je volgende zet in het klassieke FreeCell. Gebruik de vier vrije vakken en lege kolommen om ruimte te maken, verplaats reeksen kaarten en probeer verschillende aanpakken met Ongedaan maken en Opnieuw spelen.",
+        "body": "Elk meegeleverd spel begint met een gecontroleerde oplossing. Een latere stand kan toch op een dood punt eindigen, en hints hebben zoeklimieten; als een hint geen weg kan vaststellen, zegt hij dat duidelijk.\n\nVrije vakken en lege kolommen laten je reeksen kaarten verplaatsen als er genoeg ruimte is; het spel berekent voor je hoeveel er volgens de regels mag.\n\nFuncties:\n• 2.000 gecertificeerd oplosbare spellen\n• Optionele hints die je huidige spelbord doorzoeken\n• Bediening door tikken of slepen, ook voor meerdere kaarten tegelijk\n• Ongedaan maken, Opnieuw spelen en automatisch afmaken\n• Optioneel automatisch verplaatsen naar de stapels, geluid en kaartanimaties\n• Lichte, donkere en tijdgebonden thema's\n• Statistieken op het apparaat en vergelijking met je persoonlijke records\n• 30 interfacetalen"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Eenvoudige, batterijbewuste offline Blackjack: virtuele fiches, geen reclame",
+        "intro": "Speel offline blackjack tegen een computerdeler, met virtuele fiches en nuttige uitleg voor beginners. Nooit echt geld: fiches hebben geen geldwaarde, en er zijn geen inzetten met echt geld, stortingen, aankopen van fiches, opnames of prijzen.",
+        "body": "Oefen beslissingen over kaart nemen, blijven, verdubbelen en splitsen met optionele basisstrategiehints die de redenering en het bustrisico uitleggen. De vaste regels gebruiken zes decks, elke ronde opnieuw geschud; de deler blijft staan op een zachte 17, blackjack betaalt 3:2, en verzekering en het controleren op blackjack door de deler zijn inbegrepen. Hints helpen je de keuzes te begrijpen; ze garanderen geen winst.\n\nJe speelt alleen tegen de computerdeler: er zijn geen potjes tegen echte mensen. Bedoeld voor volwassenen van 18 jaar en ouder."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Eenvoudige, batterijbewuste offline poker: virtuele fiches, geen reclame",
+        "intro": "Speel offline een Texas Hold'em-pokertoernooi met zes plaatsen tegen vijf computertegenstanders, met virtuele fiches en hints die de keuzes uitleggen. Nooit echt geld: fiches hebben geen geldwaarde, en er zijn geen inzetten met echt geld, stortingen, aankopen van fiches, opnames of prijzen.",
+        "body": "Optionele hints leggen het idee achter een voorgestelde actie uit en helpen beginners handsterkte, positie, geschatte equity en potodds te begrijpen. Het advies gebruikt zichtbare informatie; het kan de verborgen kaarten van tegenstanders niet zien en garandeert geen winnende hand.\n\nElke plaats begint met dezelfde stapel virtuele fiches. Speel door stijgende blinds, neem je inzetbeslissingen en probeer als laatste speler aan tafel over te blijven. Sla je toernooi op en ga er later mee verder.\n\nFuncties:\n• Vijf computertegenstanders met verschillende speelstijlen\n• Fold, check, call, bet, raise en all-in\n• Instelbare inzetgrootte en afhandeling van sidepots\n• Hints met geschatte equity en potodds\n• Opgeslagen toernooien en statistieken op het apparaat\n• Regels, handrangschikking en strategiehulp\n• Staande en liggende weergave\n• Instellingen voor thema, geluid, animaties en taal\n• 30 interfacetalen\n\nJe speelt alleen tegen computertegenstanders: er zijn geen potjes tegen echte mensen. Bedoeld voor volwassenen van 18 jaar en ouder."
+      }
+    }
+  },
+  "no-NO": {
+    "promise": "FinitePlay-løftet: helt gratis, uten reklame, kjøp i appen eller abonnementer. Spillet foregår helt på enheten din: ingen kontoer, ingen sporing, ingen innsamling eller deling av data, ingen rangeringslister og ingen nettfunksjoner. Fremgangen og statistikken din forblir private og lokale.",
+    "rest": "Spill i ditt eget tempo. Konfigurerbare pausepåminnelser oppfordrer deg til å ta en pause etter lengre spilling. Det finnes ingen hastebonuser og ingen daglige belønninger med tidsfrist. Lokale poeng og statistikk hjelper deg å reflektere over spillingen din, uten rangeringslister eller press om å fortsette.",
+    "footer": "FinitePlay lager kortspill som respekterer tiden din, personvernet ditt og oppmerksomheten din.",
+    "games": {
+      "klondike": {
+        "title": "Klondike kabal: FinitePlay",
+        "shortDescription": "Enkel, batteribevisst offline Klondike: trekk 1/3, hint, uten reklame",
+        "intro": "Spill klassisk Klondike-kabal offline. Velg å trekke ett eller tre kort, velg en passende vanskelighetsgrad, og bruk Angre, Spill om igjen eller et valgfritt hint når du vil prøve en annen tilnærming.",
+        "body": "Giv fra Triviell til Ekspert starter med en verifisert løsning. Det separate nivået Vanvittig inneholder usertifiserte giv. Et løsbart startgiv kan likevel ende i en blindvei. Hint søker gjennom brettet slik det står nå, og melder fra når de ikke kan fastslå en vinnende vei innenfor grensen sin.\n\nFunksjoner:\n• Seks vanskelighetsgrader, med sertifisert løsbare giv fra Triviell til Ekspert\n• Regler for å trekke ett eller tre kort\n• Valgfrie hint som søker gjennom brettet slik det står nå\n• Styring med trykk eller dra, Angre, Spill om igjen og automatisk ferdigstilling\n• Valgfrie automatiske trekk til grunnbunkene, lyd og kortanimasjoner\n• Lyst, mørkt og tidsstyrt tema\n• Statistikk på enheten og sammenligning med personlige rekorder\n• 30 grensesnittspråk"
+      },
+      "spider": {
+        "title": "Edderkopp kabal: FinitePlay",
+        "shortDescription": "Enkel, batteribevisst offline Spider: 1/2/4 farger, hint, uten reklame",
+        "intro": "Bygg komplette rekker fra konge til ess i Spider-kabal. Begynn med 1 farge eller ta fatt på 2 eller 4 farger, med Angre, Spill om igjen og valgfrie hint når du vil ha hjelp.",
+        "body": "Hvert medfølgende startgiv har en verifisert løsning. Valgene dine har likevel betydning: en senere stilling er kanskje ikke lenger mulig å vinne. Veiledende hint kan følge en kjent løsning; når du har valgt en annen vei, er det å finne en ny løsning underlagt søkegrenser.\n\nFunksjoner:\n• Spider med én, to og fire farger\n• 23 675 sertifisert løsbare giv på tvers av alle tre fargeantallene\n• Trykk eller dra komplette rekker i samme farge\n• Utheving av trekk og valgfrie veiledende hint\n• Angre, Spill om igjen og animerte radutdelinger og kortflyttinger\n• Valgfrie lyd- og animasjonsinnstillinger\n• Lyst, mørkt og tidsstyrt tema\n• Statistikk på enheten\n• 30 grensesnittspråk"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Enkel, batteribevisst offline FreeCell: løsbare giv, hint, uten reklame",
+        "intro": "Se hvert kort og planlegg neste trekk i klassisk FreeCell. Bruk de fire fricellene og tomme kolonner til å skape plass, flytt kortrekker og utforsk ulike tilnærminger med Angre og Spill om igjen.",
+        "body": "Hvert medfølgende giv starter med en verifisert løsning. Et senere brett kan likevel ende i en blindvei, og hint har søkegrenser; når et hint ikke kan fastslå en vei, sier det det tydelig.\n\nFriceller og tomme kolonner lar deg flytte kortrekker når det er nok plass; spillet regner ut den lovlige kapasiteten for deg.\n\nFunksjoner:\n• 2 000 sertifisert løsbare giv\n• Valgfrie hint som søker gjennom brettet slik det står nå\n• Styring med trykk eller dra, også med flere kort om gangen\n• Angre, Spill om igjen og automatisk ferdigstilling\n• Valgfrie automatiske trekk til grunnbunkene, lyd og kortanimasjoner\n• Lyst, mørkt og tidsstyrt tema\n• Statistikk på enheten og sammenligning med personlige rekorder\n• 30 grensesnittspråk"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Enkel, batteribevisst offline Blackjack: virtuelle sjetonger, hint, uten reklame",
+        "intro": "Spill blackjack offline mot en datastyrt dealer, med virtuelle sjetonger og hjelpsomme forklaringer for nybegynnere. Aldri ekte penger: sjetongene har ingen pengeverdi, og det finnes ingen innsatser med ekte penger, innskudd, kjøp av sjetonger, uttak eller premier.",
+        "body": "Øv på beslutningene trekk, stå, doble og splitt med valgfrie hint basert på grunnstrategi, som forklarer begrunnelsen og risikoen for å gå over 21. De faste reglene bruker seks kortstokker som stokkes på nytt hver runde; dealeren står på myk 17, blackjack betaler 3:2, og forsikring og dealerens sjekk av det skjulte kortet er med. Hint hjelper deg å forstå valgene; de garanterer ikke seier.\n\nDu spiller bare mot den datastyrte dealeren: det finnes ingen partier mot ekte mennesker. Laget for voksne fra 18 år."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Enkel, batteribevisst offlinepoker: virtuelle sjetonger, 5 rivaler, uten reklame",
+        "intro": "Spill en Texas Hold'em-pokerturnering med seks plasser offline mot fem datastyrte motstandere, med virtuelle sjetonger og hint som forklarer valgene. Aldri ekte penger: sjetongene har ingen pengeverdi, og det finnes ingen innsatser med ekte penger, innskudd, kjøp av sjetonger, uttak eller premier.",
+        "body": "Valgfrie hint forklarer tanken bak en foreslått handling og hjelper nybegynnere å forstå håndstyrke, posisjon, estimert equity og pot odds. Rådet bruker synlig informasjon; det kan ikke se motstandernes skjulte kort og garanterer ingen vinnende hånd.\n\nHver plass starter med samme stabel virtuelle sjetonger. Spill deg gjennom stigende blinds, ta dine beslutninger om satsing og sikt på å bli siste spiller ved bordet. Lagre turneringen og fortsett senere.\n\nFunksjoner:\n• Fem datastyrte motstandere med ulike spillestiler\n• Fold, check, call, bet, raise og all in\n• Kontroller for innsatsstørrelse og oppgjør av sidepotter\n• Hint med estimert equity og pot odds\n• Lagrede turneringer og statistikk på enheten\n• Regler, håndrangering og strategihjelp\n• Stående og liggende layout\n• Innstillinger for tema, lyd, animasjon og språk\n• 30 grensesnittspråk\n\nDu spiller bare mot datastyrte motstandere: det finnes ingen partier mot ekte mennesker. Laget for voksne fra 18 år."
+      }
+    }
+  },
+  "pl-PL": {
+    "promise": "Obietnica FinitePlay: całkowicie za darmo, bez reklam, zakupów w aplikacji i subskrypcji. Gra działa wyłącznie na Twoim urządzeniu: bez kont, śledzenia, zbierania i udostępniania danych, rankingów i funkcji online. Twoje postępy i statystyki pozostają prywatne i lokalne.",
+    "rest": "Graj we własnym tempie. Konfigurowalne przypomnienia o przerwie zachęcają do odpoczynku po dłuższej grze. Nie ma bonusów wywierających presję czasu ani dziennych nagród z limitem czasu. Lokalne wyniki i statystyki pomagają ocenić własną grę, bez rankingów i presji, by grać dalej.",
+    "footer": "FinitePlay tworzy gry karciane, które szanują Twój czas, prywatność i uwagę.",
+    "games": {
+      "klondike": {
+        "title": "Pasjans Klondike: FinitePlay",
+        "shortDescription": "Prosty Klondike offline z myślą o baterii: 1/3 karty, podpowiedzi, bez reklam",
+        "intro": "Graj w klasycznego pasjansa Klondike offline. Wybierz dobieranie po jednej lub po trzy karty, ustaw wygodny poziom trudności i korzystaj z cofania, powtórki lub opcjonalnej podpowiedzi, gdy chcesz spróbować innego podejścia.",
+        "body": "Rozdania od poziomu Trywialnego do Eksperta zaczynają się ze zweryfikowanym rozwiązaniem. Osobny poziom Szalony zawiera rozdania niecertyfikowane. Rozwiązywalne rozdanie początkowe nadal może prowadzić do ślepego zaułka. Podpowiedzi przeszukują bieżący układ kart i informują, gdy w swoim limicie nie mogą ustalić drogi do wygranej.\n\nFunkcje:\n• Sześć poziomów trudności, z certyfikowanymi rozwiązywalnymi rozdaniami od Trywialnego do Eksperta\n• Zasady dobierania po jednej i po trzy karty\n• Opcjonalne podpowiedzi przeszukujące bieżący układ kart\n• Sterowanie dotknięciem lub przeciąganiem, cofanie, powtórka i automatyczne kończenie\n• Opcjonalne automatyczne ruchy na stosy końcowe, dźwięk i animacje kart\n• Motywy jasny, ciemny i zależny od pory dnia\n• Statystyki na urządzeniu i porównania z osobistymi rekordami\n• 30 języków interfejsu"
+      },
+      "spider": {
+        "title": "Pasjans Pająk: FinitePlay",
+        "shortDescription": "Prosty Pająk offline z myślą o baterii: 1/2/4 kolory, podpowiedzi, bez reklam",
+        "intro": "Układaj pełne sekwencje od króla do asa w pasjansie Pająk. Zacznij od 1 koloru albo zmierz się z 2 lub 4 kolorami, z cofaniem, powtórką i opcjonalnymi podpowiedziami, gdy potrzebujesz pomocy.",
+        "body": "Każde dostępne w grze rozdanie początkowe ma zweryfikowane rozwiązanie. Twoje decyzje wciąż mają znaczenie: późniejszej pozycji może już nie dać się wygrać. Prowadzące podpowiedzi mogą podążać za znanym rozwiązaniem; gdy wybierzesz inną drogę, znalezienie nowego rozwiązania podlega limitom wyszukiwania.\n\nFunkcje:\n• Pająk z jednym, dwoma i czterema kolorami\n• 23 675 certyfikowanych rozwiązywalnych rozdań dla wszystkich trzech wariantów liczby kolorów\n• Przenoszenie dotknięciem lub przeciąganiem kompletnych sekwencji w jednym kolorze\n• Podświetlanie ruchów i opcjonalne prowadzące podpowiedzi\n• Cofanie, powtórka oraz animowane rozdawanie rzędów i przenoszenie kart\n• Opcjonalne ustawienia dźwięku i animacji\n• Motywy jasny, ciemny i zależny od pory dnia\n• Statystyki na urządzeniu\n• 30 języków interfejsu"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Prosty FreeCell offline z myślą o baterii: rozwiązywalne rozdania, bez reklam",
+        "intro": "Widzisz każdą kartę i planujesz kolejny ruch w klasycznym FreeCellu. Wykorzystaj cztery wolne komórki i puste kolumny, by zrobić miejsce, przenoś sekwencje kart i sprawdzaj różne podejścia dzięki cofaniu i powtórce.",
+        "body": "Każde dostępne w grze rozdanie zaczyna się ze zweryfikowanym rozwiązaniem. Późniejszy układ nadal może prowadzić do ślepego zaułka, a podpowiedzi mają limity wyszukiwania; gdy podpowiedź nie może ustalić drogi, mówi o tym wprost.\n\nWolne komórki i puste kolumny pozwalają przenosić sekwencje kart, gdy jest dość miejsca; gra sama wylicza dozwoloną liczbę kart.\n\nFunkcje:\n• 2000 certyfikowanych rozwiązywalnych rozdań\n• Opcjonalne podpowiedzi przeszukujące bieżący układ kart\n• Sterowanie dotknięciem lub przeciąganiem, także przy ruchach wieloma kartami\n• Cofanie, powtórka i automatyczne kończenie\n• Opcjonalne automatyczne ruchy na stosy końcowe, dźwięk i animacje kart\n• Motywy jasny, ciemny i zależny od pory dnia\n• Statystyki na urządzeniu i porównania z osobistymi rekordami\n• 30 języków interfejsu"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Prosty Blackjack offline z myślą o baterii: wirtualne żetony, bez reklam",
+        "intro": "Graj w blackjacka offline przeciwko krupierowi komputerowemu, z wirtualnymi żetonami i pomocnymi wyjaśnieniami dla początkujących. Nigdy za prawdziwe pieniądze: żetony nie mają wartości pieniężnej, a zakładów o prawdziwe pieniądze, wpłat, zakupu żetonów, wypłat ani nagród nie ma.",
+        "body": "Ćwicz decyzje: dobierz, pas, podwój i rozdziel, z opcjonalnymi podpowiedziami opartymi na strategii podstawowej, które wyjaśniają uzasadnienie i ryzyko przekroczenia 21. Stałe zasady: sześć talii tasowanych od nowa w każdej rundzie; krupier staje na miękkiej 17, blackjack płaci 3:2, dostępne są ubezpieczenie i sprawdzenie zakrytej karty przez krupiera. Podpowiedzi pomagają zrozumieć wybory; nie gwarantują wygranej.\n\nGrasz wyłącznie przeciwko krupierowi komputerowemu: nie ma rozgrywek z prawdziwymi ludźmi. Dla dorosłych w wieku 18 lat i więcej."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Prosty poker offline z myślą o baterii: wirtualne żetony, 5 rywali, bez reklam",
+        "intro": "Zagraj offline w turniej Texas Hold'em przy stole na sześć miejsc przeciwko pięciu przeciwnikom komputerowym, z wirtualnymi żetonami i podpowiedziami wyjaśniającymi wybory. Nigdy za prawdziwe pieniądze: żetony nie mają wartości pieniężnej, a zakładów o prawdziwe pieniądze, wpłat, zakupu żetonów, wypłat ani nagród nie ma.",
+        "body": "Opcjonalne podpowiedzi wyjaśniają ideę proponowanego ruchu i pomagają początkującym zrozumieć siłę ręki, pozycję, szacowane equity i szanse puli. Porada opiera się na widocznych informacjach; nie widzi ukrytych kart przeciwników i nie gwarantuje wygrywającej ręki.\n\nKażde miejsce zaczyna z takim samym stosem wirtualnych żetonów. Przejdź przez rosnące blindy, podejmuj decyzje o stawkach i staraj się zostać ostatnim graczem przy stole. Zapisz turniej i wróć do niego później.\n\nFunkcje:\n• Pięciu przeciwników komputerowych o różnych stylach gry\n• Pas, czekanie (check), wyrównanie (call), stawka (bet), podbicie (raise) i all in\n• Regulacja wysokości stawki i rozliczanie pul bocznych\n• Podpowiedzi z szacowanym equity i szansami puli\n• Zapisane turnieje i statystyki na urządzeniu\n• Zasady, hierarchia układów i pomoc strategiczna\n• Układy pionowy i poziomy\n• Ustawienia motywu, dźwięku, animacji i języka\n• 30 języków interfejsu\n\nGrasz wyłącznie przeciwko przeciwnikom komputerowym: nie ma rozgrywek z prawdziwymi ludźmi. Dla dorosłych w wieku 18 lat i więcej."
+      }
+    }
+  },
+  "pt-BR": {
+    "promise": "A promessa da FinitePlay: totalmente gratuito, sem anúncios, compras no app ou assinaturas. Tudo fica no seu dispositivo: sem contas, rastreamento, coleta ou compartilhamento de dados, sem rankings nem recursos online. Seu progresso e suas estatísticas ficam privados e locais.",
+    "rest": "Jogue no seu ritmo. Lembretes de pausa configuráveis convidam você a descansar depois de uma longa sessão. Não há bônus de urgência nem recompensas diárias com prazo. Pontuações e estatísticas locais ajudam você a refletir sobre seu jogo, sem rankings competitivos nem pressão para continuar.",
+    "footer": "A FinitePlay cria jogos de cartas que respeitam seu tempo, sua privacidade e sua atenção.",
+    "games": {
+      "klondike": {
+        "title": "Paciência Klondike: FinitePlay",
+        "shortDescription": "Klondike simples, offline, atento à bateria: comprar 1/3, dicas, sem anúncios",
+        "intro": "Jogue offline a clássica Paciência Klondike. Escolha comprar uma ou três cartas e um desafio confortável, e use Desfazer, Repetir ou uma dica opcional quando quiser tentar outro caminho.",
+        "body": "As partidas de Trivial a Especialista começam com uma solução verificada. O nível Insano, separado, tem partidas não certificadas. Uma partida solucionável no início ainda pode acabar em um beco sem saída. As dicas analisam o seu jogo atual e avisam quando não conseguem estabelecer um caminho para a vitória dentro do limite de busca.\n\nRecursos:\n• Seis níveis de dificuldade, com partidas certificadas como solucionáveis de Trivial a Especialista\n• Regras de compra de uma ou três cartas\n• Dicas opcionais que analisam o seu jogo atual\n• Toque ou arraste, Desfazer, Repetir e conclusão automática\n• Movimentos automáticos para as fundações, som e animações das cartas opcionais\n• Temas claro, escuro e conforme o horário\n• Estatísticas no dispositivo e comparação com seus recordes pessoais\n• 30 idiomas de interface"
+      },
+      "spider": {
+        "title": "Paciência Spider: FinitePlay",
+        "shortDescription": "Spider simples, offline, atento à bateria: 1/2/4 naipes, dicas, sem anúncios",
+        "intro": "Monte sequências completas do Rei ao Ás na Paciência Spider. Comece com 1 naipe ou encare 2 ou 4 naipes, com Desfazer, Repetir e dicas opcionais quando quiser ajuda.",
+        "body": "Toda partida inicial incluída tem uma solução verificada. Suas escolhas ainda importam: uma posição posterior pode deixar de ser vencível. As dicas guiadas podem seguir uma solução conhecida; depois que você escolhe outro caminho, encontrar uma nova solução está sujeito a limites de busca.\n\nRecursos:\n• Spider de um, dois e quatro naipes\n• 23.675 partidas certificadas como solucionáveis nas três modalidades (1, 2 e 4 naipes)\n• Toque ou arraste sequências completas do mesmo naipe\n• Destaque de jogadas e dicas guiadas opcionais\n• Desfazer, Repetir e distribuição de fileiras e movimentos de cartas animados\n• Controles opcionais de som e animação\n• Temas claro, escuro e conforme o horário\n• Estatísticas no dispositivo\n• 30 idiomas de interface"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "FreeCell simples, offline, atento à bateria: jogos solucionáveis, sem anúncios",
+        "intro": "Veja todas as cartas e planeje sua próxima jogada no clássico FreeCell. Use as quatro células livres e as colunas vazias para abrir espaço, mova sequências de cartas e explore abordagens diferentes com Desfazer e Repetir.",
+        "body": "Toda partida incluída começa com uma solução verificada. Uma posição posterior ainda pode chegar a um beco sem saída, e as dicas têm limites de busca; quando uma dica não consegue estabelecer um caminho, ela diz isso com clareza.\n\nAs células livres e as colunas vazias permitem mover sequências de cartas quando há espaço suficiente; o jogo calcula a capacidade permitida para você.\n\nRecursos:\n• 2.000 partidas certificadas como solucionáveis\n• Dicas opcionais que analisam o seu jogo atual\n• Toque ou arraste, inclusive para várias cartas de uma vez\n• Desfazer, Repetir e conclusão automática\n• Movimentos automáticos para as fundações, som e animações das cartas opcionais\n• Temas claro, escuro e conforme o horário\n• Estatísticas no dispositivo e comparação com seus recordes pessoais\n• 30 idiomas de interface"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Blackjack simples, offline, atento à bateria: fichas virtuais, sem anúncios",
+        "intro": "Jogue blackjack offline contra um dealer controlado pelo computador, com fichas virtuais e explicações úteis para iniciantes. Nunca com dinheiro real: as fichas não têm valor monetário, e não há apostas com dinheiro real, depósitos, compra de fichas, saques ou prêmios.",
+        "body": "Pratique decisões de pedir carta, parar, dobrar e dividir com dicas opcionais de estratégia básica que explicam o raciocínio e o risco de estourar. As regras fixas usam seis baralhos, embaralhados de novo a cada rodada; o dealer para no 17 mole, o blackjack paga 3:2, e o seguro e a verificação do blackjack pelo dealer estão incluídos. As dicas ajudam a entender as escolhas; elas não garantem vitórias.\n\nVocê joga apenas contra o dealer controlado pelo computador: não há partidas contra pessoas reais. Feito para adultos com 18 anos ou mais."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Poker simples, offline, atento à bateria: fichas virtuais, sem anúncios",
+        "intro": "Jogue offline um torneio de Texas Hold'em com seis lugares contra cinco adversários controlados pelo computador, com fichas virtuais e dicas que explicam as escolhas. Nunca com dinheiro real: as fichas não têm valor monetário, e não há apostas com dinheiro real, depósitos, compra de fichas, saques ou prêmios.",
+        "body": "As dicas opcionais explicam a ideia por trás de uma ação sugerida e ajudam iniciantes a entender a força da mão, a posição, a equity estimada e as pot odds. Os conselhos usam informações visíveis; eles não enxergam as cartas ocultas dos adversários e não garantem uma mão vencedora.\n\nCada lugar começa com a mesma pilha de fichas virtuais. Jogue com blinds crescentes, tome suas decisões de aposta e tente ser o último jogador na mesa. Salve seu torneio e volte a ele depois.\n\nRecursos:\n• Cinco adversários controlados pelo computador com estilos de jogo distintos\n• Fold, check, pagar, apostar, aumentar e all in\n• Controles de tamanho da aposta e divisão de potes laterais\n• Dicas com equity estimada e pot odds\n• Torneios salvos e estatísticas no dispositivo\n• Regras, hierarquia das mãos e ajuda de estratégia\n• Layouts retrato e paisagem\n• Configurações de tema, som, animação e idioma\n• 30 idiomas de interface\n\nVocê joga apenas contra adversários controlados pelo computador: não há partidas contra pessoas reais. Feito para adultos com 18 anos ou mais."
+      }
+    }
+  },
+  "ro": {
+    "promise": "Promisiunea FinitePlay: complet gratuit, fără reclame, achiziții în aplicație sau abonamente. Jocul rămâne în întregime pe dispozitivul tău: fără conturi, urmărire, colectare sau partajare de date, clasamente ori funcții online. Progresul și statisticile tale rămân private și locale.",
+    "rest": "Joacă în ritmul tău. Mementourile de pauză, configurabile, te invită să faci o pauză după un timp mai lung de joc. Nu există bonusuri care să te grăbească sau recompense zilnice cronometrate. Scorurile și statisticile locale te ajută să-ți reevaluezi jocul, fără clasamente competitive sau presiunea de a continua.",
+    "footer": "FinitePlay creează jocuri de cărți care îți respectă timpul, confidențialitatea și atenția.",
+    "games": {
+      "klondike": {
+        "title": "Solitaire Klondike: FinitePlay",
+        "shortDescription": "Klondike offline simplu, atent la baterie: extragere 1/3, indicii, fără reclame",
+        "intro": "Joacă offline clasicul Klondike Solitaire. Alege extragerea unei cărți sau a trei, stabilește o dificultate potrivită și folosește Înapoi, Reluare sau un indiciu opțional când vrei să încerci altă abordare.",
+        "body": "Mâinile de la Trivial până la Expert pornesc cu o soluție verificată. Nivelul separat Nebunesc conține jocuri necertificate. O mână de start rezolvabilă poate totuși duce într-un impas. Indiciile caută în tabla curentă și anunță când nu pot stabili o cale spre victorie în limita lor.\n\nFuncții:\n• Șase niveluri de dificultate, cu jocuri certificat rezolvabile de la Trivial până la Expert\n• Reguli de extragere a unei cărți și a trei cărți\n• Indicii opționale care caută în tabla curentă\n• Control prin atingere sau tragere, Înapoi, Reluare și finalizare automată\n• Mutări automate opționale către fundații, sunet și animații ale cărților\n• Teme luminoasă, întunecată și în funcție de oră\n• Statistici pe dispozitiv și comparații cu recordurile personale\n• 30 de limbi de interfață"
+      },
+      "spider": {
+        "title": "Spider Solitaire: FinitePlay",
+        "shortDescription": "Spider offline simplu, atent la baterie: 1/2/4 culori, indicii, fără reclame",
+        "intro": "Construiește secvențe complete de la Rege la As în Spider Solitaire. Începe cu 1 culoare sau treci la 2 ori 4 culori, cu Înapoi, Reluare și indicii opționale când vrei ajutor.",
+        "body": "Fiecare mână de start inclusă are o soluție verificată. Alegerile tale contează totuși: o poziție ulterioară poate să nu mai fie câștigătoare. Indiciile ghidate pot urma o soluție cunoscută; după ce alegi altă cale, găsirea unei noi soluții este supusă limitelor de căutare.\n\nFuncții:\n• Spider cu una, două și patru culori\n• 23.675 de jocuri certificat rezolvabile, pentru toate cele trei numere de culori\n• Atinge sau trage secvențe complete de aceeași culoare\n• Evidențierea mutărilor și indicii ghidate opționale\n• Înapoi, Reluare și distribuiri animate de rânduri și mutări de cărți\n• Controale opționale pentru sunet și animații\n• Teme luminoasă, întunecată și în funcție de oră\n• Statistici pe dispozitiv\n• 30 de limbi de interfață"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "FreeCell offline simplu, atent la baterie: jocuri rezolvabile, fără reclame",
+        "intro": "Vezi toate cărțile și planifică-ți următoarea mutare în clasicul FreeCell. Folosește cele patru celule libere și coloanele goale pentru a face loc, mută secvențe de cărți și încearcă abordări diferite cu Înapoi și Reluare.",
+        "body": "Fiecare joc inclus pornește cu o soluție verificată. O tablă ulterioară poate ajunge totuși într-un impas, iar indiciile au limite de căutare; când un indiciu nu poate stabili o cale, spune asta clar.\n\nCelulele libere și coloanele goale îți permit să muți secvențe de cărți atunci când există suficient spațiu; jocul calculează pentru tine capacitatea permisă.\n\nFuncții:\n• 2.000 de mâini certificat rezolvabile\n• Indicii opționale care caută în tabla curentă\n• Control prin atingere sau tragere, inclusiv mutări cu mai multe cărți\n• Înapoi, Reluare și finalizare automată\n• Mutări automate opționale către fundații, sunet și animații ale cărților\n• Teme luminoasă, întunecată și în funcție de oră\n• Statistici pe dispozitiv și comparații cu recordurile personale\n• 30 de limbi de interfață"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Blackjack offline simplu, atent la baterie: jetoane virtuale, fără reclame",
+        "intro": "Joacă blackjack offline împotriva unui dealer controlat de computer, cu jetoane virtuale și explicații utile pentru începători. Niciodată cu bani reali: jetoanele nu au valoare monetară și nu există pariuri cu bani reali, depuneri, achiziții de jetoane, retrageri sau premii.",
+        "body": "Exersează deciziile Carte, Stai, Dublează și Împarte cu indicii opționale de strategie de bază, care explică raționamentul și riscul de a depăși 21. Regulile fixe folosesc șase pachete, amestecate din nou la fiecare rundă; dealerul stă la 17 moale, blackjack-ul plătește 3:2, iar asigurarea și verificarea blackjack-ului de către dealer sunt incluse. Indiciile te ajută să înțelegi alegerile; nu garantează câștiguri.\n\nJoci doar împotriva dealerului controlat de computer: nu există meciuri cu persoane reale. Conceput pentru adulți cu vârsta de 18 ani și peste."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Poker offline simplu, atent la baterie: jetoane virtuale, 5 rivali, fără reclame",
+        "intro": "Joacă offline un turneu de Texas Hold'em cu șase locuri împotriva a cinci adversari controlați de computer, cu jetoane virtuale și indicii care explică alegerile. Niciodată cu bani reali: jetoanele nu au valoare monetară și nu există pariuri cu bani reali, depuneri, achiziții de jetoane, retrageri sau premii.",
+        "body": "Indiciile opționale explică ideea din spatele unei acțiuni sugerate și îi ajută pe începători să înțeleagă forța mâinii, poziția, equity-ul estimat și șansele potului (pot odds). Sfatul folosește informațiile vizibile; nu poate vedea cărțile ascunse ale adversarilor și nu garantează o mână câștigătoare.\n\nFiecare loc începe cu aceeași stivă de jetoane virtuale. Joacă pe măsură ce blindurile cresc, ia-ți deciziile de pariere și țintește să fii ultimul jucător rămas la masă. Salvează-ți turneul și revino la el mai târziu.\n\nFuncții:\n• Cinci adversari controlați de computer, cu stiluri de joc distincte\n• Fold, check, call, pariază, mărește și all in\n• Controale pentru mărimea pariului și decontarea poturilor laterale\n• Indicii cu equity estimat și șansele potului\n• Turnee salvate și statistici pe dispozitiv\n• Reguli, ierarhia mâinilor și ajutor de strategie\n• Aspect vertical și orizontal\n• Setări pentru temă, sunet, animații și limbă\n• 30 de limbi de interfață\n\nJoci doar împotriva adversarilor controlați de computer: nu există meciuri cu persoane reale. Conceput pentru adulți cu vârsta de 18 ani și peste."
+      }
+    }
+  },
+  "sk": {
+    "promise": "Sľub FinitePlay: úplne zadarmo, bez reklám, nákupov v aplikácii a predplatného. Hra beží výhradne vo vašom zariadení: bez účtov, sledovania, zhromažďovania alebo zdieľania údajov, rebríčkov a online funkcií. Váš postup a štatistiky zostávajú súkromné a lokálne.",
+    "rest": "Hrajte vlastným tempom. Nastaviteľné pripomienky prestávky vás po dlhšej hre vyzvú oddýchnuť si. Nie sú tu žiadne nátlakové bonusy ani časovo obmedzené denné odmeny. Lokálne skóre a štatistiky vám pomáhajú zamyslieť sa nad vlastnou hrou, bez súťažných rebríčkov a tlaku pokračovať.",
+    "footer": "FinitePlay vytvára kartové hry, ktoré rešpektujú váš čas, súkromie a pozornosť.",
+    "games": {
+      "klondike": {
+        "title": "Klondike pasiáns: FinitePlay",
+        "shortDescription": "Jednoduchý offline Klondike, ohľaduplný k batérii: 1/3, nápovedy, bez reklám",
+        "intro": "Hrajte klasický Klondike Solitaire offline. Vyberte si ťahanie jednej alebo troch kariet, zvoľte si pohodlnú náročnosť a použite Späť, Prehrať znova alebo nepovinnú nápovedu, keď chcete skúsiť iný postup.",
+        "body": "Rozdania na úrovniach Triviálna až Expertná začínajú s overeným riešením. Samostatná úroveň Šialená obsahuje neoverené rozdania. Riešiteľné úvodné rozdanie môže stále skončiť slepou uličkou. Nápovedy prehľadávajú vašu aktuálnu hru a oznámia, keď v rámci svojho limitu nedokážu nájsť cestu k výhre.\n\nFunkcie:\n• Šesť úrovní obtiažnosti, s overene riešiteľnými rozdaniami na úrovniach Triviálna až Expertná\n• Pravidlá ťahania jednej a troch kariet\n• Nepovinné nápovedy, ktoré prehľadávajú vašu aktuálnu hru\n• Ovládanie ťuknutím alebo presunutím, Späť, Prehrať znova a automatické dokončenie\n• Nepovinné automatické presuny na základy, zvuk a animácie kariet\n• Svetlý, tmavý a časovo riadený motív\n• Štatistiky v zariadení a porovnanie s osobnými rekordmi\n• 30 jazykov rozhrania"
+      },
+      "spider": {
+        "title": "Pavúk pasiáns: FinitePlay",
+        "shortDescription": "Jednoduchý offline Spider, ohľaduplný k batérii: 1/2/4 farby, bez reklám",
+        "intro": "Skladajte kompletné rady od kráľa po eso v hre Spider Solitaire. Začnite s 1 farbou alebo sa pustite do 2 či 4 farieb, s funkciami Späť a Prehrať znova a s nepovinnými nápovedami, keď chcete pomoc.",
+        "body": "Každé priložené úvodné rozdanie má overené riešenie. Vaše rozhodnutia však stále rozhodujú: neskoršia pozícia už nemusí byť vyhrateľná. Vedené nápovedy môžu nasledovať známe riešenie; keď zvolíte inú cestu, hľadanie nového riešenia podlieha limitom vyhľadávania.\n\nFunkcie:\n• Spider s jednou, dvoma a štyrmi farbami\n• 23 675 overene riešiteľných rozdaní vo všetkých troch počtoch farieb\n• Ťuknutím alebo presunutím premiestňujte kompletné rady rovnakej farby\n• Zvýrazňovanie ťahov a nepovinné vedené nápovedy\n• Späť, Prehrať znova a animované rozdávanie radov a presuny kariet\n• Nepovinné nastavenia zvuku a animácií\n• Svetlý, tmavý a časovo riadený motív\n• Štatistiky v zariadení\n• 30 jazykov rozhrania"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Jednoduchý offline FreeCell, ohľaduplný k batérii: riešiteľné hry, bez reklám",
+        "intro": "Vidíte každú kartu a plánujete ďalší ťah v klasickom FreeCelli. Štyri voľné bunky a prázdne stĺpce vám dajú priestor na presúvanie radov kariet a s funkciami Späť a Prehrať znova skúšate rôzne postupy.",
+        "body": "Každé priložené rozdanie začína s overeným riešením. Neskoršia pozícia môže stále skončiť slepou uličkou a nápovedy majú limity vyhľadávania; keď nápoveda nedokáže nájsť cestu, jasne to povie.\n\nVoľné bunky a prázdne stĺpce umožňujú presúvať rady kariet, keď je dosť miesta; hra za vás vypočíta povolenú kapacitu.\n\nFunkcie:\n• 2 000 overene riešiteľných rozdaní\n• Nepovinné nápovedy, ktoré prehľadávajú vašu aktuálnu hru\n• Ovládanie ťuknutím alebo presunutím vrátane presunu viacerých kariet\n• Späť, Prehrať znova a automatické dokončenie\n• Nepovinné automatické presuny na základy, zvuk a animácie kariet\n• Svetlý, tmavý a časovo riadený motív\n• Štatistiky v zariadení a porovnanie s osobnými rekordmi\n• 30 jazykov rozhrania"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Jednoduchý offline Blackjack, ohľaduplný k batérii: virtuálne žetóny, bez reklám",
+        "intro": "Hrajte blackjack offline proti počítačovému krupiérovi, s virtuálnymi žetónmi a užitočnými vysvetleniami pre začiatočníkov. Nikdy nie so skutočnými peniazmi: žetóny nemajú peňažnú hodnotu a nie sú tu žiadne stávky so skutočnými peniazmi, vklady, nákupy žetónov, výplaty ani ceny.",
+        "body": "Trénujte rozhodnutia Ťahať, Stáť, Zdvojiť a Rozdeliť s nepovinnými nápovedami podľa základnej stratégie, ktoré vysvetľujú dôvod aj riziko prekročenia 21. Pravidlá sú pevné: šesť balíčkov, ktoré sa každé kolo premiešajú nanovo; krupiér stojí na mäkkej 17, blackjack sa vypláca 3:2 a súčasťou je poistenie aj kontrola skrytej karty krupiéra. Nápovedy pomáhajú pochopiť rozhodnutia; výhru nezaručujú.\n\nHráte iba proti počítačovému krupiérovi: žiadne zápasy proti skutočným ľuďom. Určené dospelým od 18 rokov."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Jednoduchý offline poker, ohľaduplný k batérii: virtuálne žetóny, bez reklám",
+        "intro": "Hrajte offline pokerový turnaj Texas Hold'em pre šesť miest proti piatim počítačovým súperom, s virtuálnymi žetónmi a nápovedami, ktoré vysvetľujú rozhodnutia. Nikdy nie so skutočnými peniazmi: žetóny nemajú peňažnú hodnotu a nie sú tu žiadne stávky so skutočnými peniazmi, vklady, nákupy žetónov, výplaty ani ceny.",
+        "body": "Nepovinné nápovedy vysvetľujú myšlienku navrhovanej akcie a pomáhajú začiatočníkom pochopiť silu ruky, pozíciu, odhadovanú šancu na výhru (equity) a pomer potu (pot odds). Rada vychádza z viditeľných informácií; nevidí skryté karty súperov a nezaručuje víťaznú ruku.\n\nKaždé miesto začína s rovnakým počtom virtuálnych žetónov. Hrajte cez rastúce blindy, rozhodujte sa o stávkach a snažte sa zostať posledným hráčom pri stole. Turnaj si môžete uložiť a vrátiť sa k nemu neskôr.\n\nFunkcie:\n• Piati počítačoví súperi s odlišnými štýlmi hry\n• Zahodiť, Check, Dorovnať, Staviť, Zvýšiť a All in\n• Ovládanie výšky stávky a vyrovnanie vedľajších potov\n• Nápovedy s odhadovanou šancou a pomerom potu\n• Uložené turnaje a štatistiky v zariadení\n• Pravidlá, poradie rúk a pomoc so stratégiou\n• Zobrazenie na výšku aj na šírku\n• Nastavenia motívu, zvuku, animácií a jazyka\n• 30 jazykov rozhrania\n\nHráte iba proti počítačovým súperom: žiadne zápasy proti skutočným ľuďom. Určené dospelým od 18 rokov."
+      }
+    }
+  },
+  "sv-SE": {
+    "promise": "FinitePlay-löftet: helt gratis, utan annonser, köp i appen eller prenumerationer. Spelet finns helt på din enhet: inga konton, ingen spårning, ingen insamling eller delning av data, inga topplistor och inga onlinefunktioner. Dina framsteg och din statistik förblir privata och lokala.",
+    "rest": "Spela i din egen takt. Inställbara vilopåminnelser uppmanar dig att ta en paus efter längre spelande. Det finns inga brådskande bonusar och inga dagliga belöningar med tidsgräns. Lokala poäng och statistik hjälper dig att reflektera över ditt spelande, utan topplistor eller press att fortsätta.",
+    "footer": "FinitePlay gör kortspel som respekterar din tid, din integritet och din uppmärksamhet.",
+    "games": {
+      "klondike": {
+        "title": "Klondike patiens: FinitePlay",
+        "shortDescription": "Enkel, batterimedveten offline-Klondike: dra 1/3, tips, inga annonser",
+        "intro": "Spela klassisk Klondike-patiens offline. Välj att dra ett eller tre kort, välj en bekväm svårighetsgrad och använd Ångra, Spela igen eller ett valfritt tips när du vill pröva ett annat angreppssätt.",
+        "body": "Givar från Trivial till Expert börjar med en verifierad lösning. Den separata nivån Vansinnig innehåller ocertifierade givar. En lösbar startgiv kan ändå leda till en återvändsgränd. Tips söker igenom ditt nuvarande bord och meddelar när de inte kan fastställa en vinnande väg inom sin gräns.\n\nFunktioner:\n• Sex svårighetsgrader, med certifierat lösbara givar från Trivial till Expert\n• Regler för att dra ett eller tre kort\n• Valfria tips som söker igenom ditt nuvarande bord\n• Tryck- eller dragstyrning, Ångra, Spela igen och automatisk avslutning\n• Valfria automatiska drag till hemhögarna, ljud och kortanimationer\n• Ljust, mörkt och tidsstyrt tema\n• Statistik på enheten och jämförelser med personliga rekord\n• 30 gränssnittsspråk"
+      },
+      "spider": {
+        "title": "Spindelharpan: FinitePlay",
+        "shortDescription": "Enkel, batterimedveten offline-Spider: 1/2/4 färger, tips, inga annonser",
+        "intro": "Bygg kompletta sviter från kung till ess i Spindelpatiens. Börja med 1 färg eller ta dig an 2 eller 4 färger, med Ångra, Spela igen och valfria tips när du vill ha hjälp.",
+        "body": "Varje medföljande startgiv har en verifierad lösning. Dina val spelar ändå roll: en senare position kanske inte längre går att vinna. Vägledande tips kan följa en känd lösning; när du har valt en annan väg gäller sökgränser för att hitta en ny lösning.\n\nFunktioner:\n• Spindelpatiens med en, två och fyra färger\n• 23 675 certifierat lösbara givar för alla tre färgantal\n• Tryck eller dra kompletta sviter i samma färg\n• Markering av drag och valfria vägledande tips\n• Ångra, Spela igen samt animerade radgivar och kortflyttar\n• Valfria ljud- och animationsinställningar\n• Ljust, mörkt och tidsstyrt tema\n• Statistik på enheten\n• 30 gränssnittsspråk"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Enkel, batterimedveten offline-FreeCell: lösbara givar, tips, inga annonser",
+        "intro": "Se varje kort och planera nästa drag i klassisk FreeCell. Använd de fyra frizonerna och tomma kolumner för att skapa utrymme, flytta kortsviter och utforska olika angreppssätt med Ångra och Spela igen.",
+        "body": "Varje medföljande giv börjar med en verifierad lösning. Ett senare bord kan ändå nå en återvändsgränd, och tips har sökgränser; när ett tips inte kan fastställa en väg säger det det tydligt.\n\nFrizoner och tomma kolumner låter dig flytta kortsviter när det finns tillräckligt med plats; spelet räknar ut den tillåtna kapaciteten åt dig.\n\nFunktioner:\n• 2 000 certifierat lösbara givar\n• Valfria tips som söker igenom ditt nuvarande bord\n• Tryck- eller dragstyrning, även för flera kort i taget\n• Ångra, Spela igen och automatisk avslutning\n• Valfria automatiska drag till hemhögarna, ljud och kortanimationer\n• Ljust, mörkt och tidsstyrt tema\n• Statistik på enheten och jämförelser med personliga rekord\n• 30 gränssnittsspråk"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Enkel, batterimedveten offline-Blackjack: virtuella marker, tips, inga annonser",
+        "intro": "Spela blackjack offline mot en datorstyrd givare, med virtuella marker och hjälpsamma förklaringar för nybörjare. Aldrig riktiga pengar: markerna har inget penningvärde, och det finns inga insatser med riktiga pengar, insättningar, markinköp, uttag eller vinster.",
+        "body": "Öva på besluten ta kort, stanna, dubbla och dela med valfria tips baserade på grundstrategi, som förklarar resonemanget och risken att gå över 21. De fasta reglerna använder sex kortlekar som blandas om inför varje runda; givaren stannar på mjuk 17, blackjack betalar 3:2, och försäkring och givarens kontroll av det dolda kortet ingår. Tips hjälper dig att förstå valen; de garanterar inte vinst.\n\nDu spelar bara mot den datorstyrda givaren: det finns inga partier mot riktiga människor. Utformat för vuxna från 18 år."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Enkel, batterimedveten offline-poker: virtuella marker, 5 rivaler, inga annonser",
+        "intro": "Spela en Texas Hold'em-pokerturnering med sex platser offline mot fem datorstyrda motståndare, med virtuella marker och tips som förklarar valen. Aldrig riktiga pengar: markerna har inget penningvärde, och det finns inga insatser med riktiga pengar, insättningar, markinköp, uttag eller vinster.",
+        "body": "Valfria tips förklarar idén bakom en föreslagen handling och hjälper nybörjare att förstå handstyrka, position, uppskattad equity och pottodds. Rådet bygger på synlig information; det kan inte se motståndarnas dolda kort och garanterar ingen vinnande hand.\n\nVarje plats börjar med samma hög virtuella marker. Spela genom stigande blinds, fatta dina beslut om satsningar och sikta på att bli sista spelaren vid bordet. Spara din turnering och återvänd till den senare.\n\nFunktioner:\n• Fem datorstyrda motståndare med olika spelstilar\n• Fold, check, call, bet, höj och all in\n• Reglage för insatsstorlek och uppgörelse av sidopottar\n• Tips med uppskattad equity och pottodds\n• Sparade turneringar och statistik på enheten\n• Regler, handrankning och strategihjälp\n• Stående och liggande layout\n• Inställningar för tema, ljud, animation och språk\n• 30 gränssnittsspråk\n\nDu spelar bara mot datorstyrda motståndare: det finns inga partier mot riktiga människor. Utformat för vuxna från 18 år."
+      }
+    }
+  },
+  "th": {
+    "promise": "คำมั่นของ FinitePlay: ฟรีทั้งหมด ไม่มีโฆษณา ไม่มีการซื้อในแอป และไม่มีการสมัครสมาชิก การเล่นทั้งหมดอยู่บนอุปกรณ์ของคุณ ไม่มีบัญชีผู้ใช้ ไม่มีการติดตาม ไม่มีการเก็บหรือแชร์ข้อมูล ไม่มีกระดานผู้นำ และไม่มีฟีเจอร์ออนไลน์ ความคืบหน้าและสถิติของคุณเป็นส่วนตัวและเก็บไว้ในเครื่องเท่านั้น",
+    "rest": "เล่นในจังหวะของคุณเอง การแจ้งเตือนพักผ่อนที่ปรับตั้งค่าได้จะชวนให้คุณพักหลังเล่นต่อเนื่องนาน ไม่มีโบนัสเร่งเร้าหรือรางวัลรายวันที่จำกัดเวลา คะแนนและสถิติในเครื่องช่วยให้คุณย้อนดูการเล่นของตัวเอง โดยไม่มีกระดานผู้นำเชิงแข่งขันและไม่มีแรงกดดันให้ต้องเล่นต่อ",
+    "footer": "FinitePlay สร้างเกมไพ่ที่เคารพเวลา ความเป็นส่วนตัว และสมาธิของคุณ",
+    "games": {
+      "klondike": {
+        "title": "คลอนไดค์โซลิแทร์: FinitePlay",
+        "shortDescription": "Klondike ออฟไลน์เรียบง่าย คำนึงถึงแบตเตอรี่: จั่ว 1/3 ใบ คำใบ้ ไม่มีโฆษณา",
+        "intro": "เล่น Klondike Solitaire แบบคลาสสิกได้ออฟไลน์ เลือกจั่วทีละ 1 ใบหรือ 3 ใบ เลือกระดับความท้าทายที่สบายใจ และใช้เลิกทำ เล่นซ้ำ หรือคำใบ้ (ไม่บังคับ) เมื่ออยากลองแนวทางอื่น",
+        "body": "ไพ่ที่แจกตั้งแต่ระดับง่ายมากถึงผู้เชี่ยวชาญเริ่มต้นด้วยวิธีแก้ที่ผ่านการตรวจสอบแล้ว ส่วนระดับโหดมากแยกต่างหากและมีไพ่ที่ยังไม่ผ่านการรับรอง ไพ่ที่เริ่มต้นแก้ได้ก็ยังอาจนำไปสู่ทางตันได้ คำใบ้จะค้นหาจากกระดานปัจจุบันของคุณ และจะแจ้งเมื่อไม่สามารถยืนยันเส้นทางสู่ชัยชนะได้ภายในขีดจำกัดของการค้นหา\n\nฟีเจอร์:\n• ความยากหกระดับ พร้อมไพ่ที่รับรองว่าแก้ได้ตั้งแต่ง่ายมากถึงผู้เชี่ยวชาญ\n• กติกาจั่วทีละใบและจั่วทีละสามใบ\n• คำใบ้แบบไม่บังคับที่ค้นหาจากกระดานปัจจุบันของคุณ\n• แตะหรือลาก เลิกทำ เล่นซ้ำ และจบเกมอัตโนมัติ\n• ย้ายไพ่ขึ้นกองสะสมอัตโนมัติ เสียง และแอนิเมชันไพ่ (ไม่บังคับ)\n• ธีมสว่าง มืด และตามช่วงเวลา\n• สถิติในเครื่องและการเทียบสถิติที่ดีที่สุดของคุณเอง\n• 30 ภาษาของส่วนติดต่อผู้ใช้"
+      },
+      "spider": {
+        "title": "สไปเดอร์โซลิแทร์: FinitePlay",
+        "shortDescription": "Spider ออฟไลน์เรียบง่าย คำนึงถึงแบตเตอรี่: 1/2/4 ดอก คำใบ้ ไม่มีโฆษณา",
+        "intro": "เรียงไพ่ให้ครบชุดจากคิงถึงเอซ ใน Spider Solitaire เริ่มจาก 1 ดอก หรือท้าทายด้วย 2 หรือ 4 ดอก พร้อมเลิกทำ เล่นซ้ำ และคำใบ้แบบไม่บังคับเมื่อต้องการความช่วยเหลือ",
+        "body": "ทุกกระดานเริ่มต้นที่รวมไว้มีวิธีแก้ที่ผ่านการตรวจสอบแล้ว แต่การตัดสินใจของคุณยังสำคัญ สถานการณ์ในภายหลังอาจไม่สามารถชนะได้อีกต่อไป คำใบ้แบบนำทางสามารถเดินตามวิธีแก้ที่รู้อยู่แล้ว แต่หลังจากที่คุณเลือกเส้นทางอื่น การหาวิธีแก้ใหม่จะอยู่ภายใต้ขีดจำกัดของการค้นหา\n\nฟีเจอร์:\n• Spider แบบหนึ่งดอก สองดอก และสี่ดอก\n• 23,675 กระดานที่รับรองว่าแก้ได้ ครอบคลุมทั้งสามแบบจำนวนดอก\n• แตะหรือลากลำดับไพ่ดอกเดียวกันที่ครบชุด\n• ไฮไลต์การเดินและคำใบ้แบบนำทาง (ไม่บังคับ)\n• เลิกทำ เล่นซ้ำ และแอนิเมชันการแจกไพ่ทีละแถวและการย้ายไพ่\n• ตัวควบคุมเสียงและแอนิเมชัน (ไม่บังคับ)\n• ธีมสว่าง มืด และตามช่วงเวลา\n• สถิติในเครื่อง\n• 30 ภาษาของส่วนติดต่อผู้ใช้"
+      },
+      "freecell": {
+        "title": "ฟรีเซลล์: FinitePlay",
+        "shortDescription": "FreeCell ออฟไลน์เรียบง่าย คำนึงถึงแบตเตอรี่: กระดานที่แก้ได้ คำใบ้ ไม่มีโฆษณา",
+        "intro": "เห็นไพ่ทุกใบและวางแผนการเดินครั้งต่อไปใน FreeCell แบบคลาสสิก ใช้ช่องว่างสี่ช่องและคอลัมน์ที่ว่างเพื่อสร้างพื้นที่ ย้ายลำดับไพ่ และลองแนวทางต่าง ๆ ด้วยเลิกทำและเล่นซ้ำ",
+        "body": "ทุกกระดานที่รวมไว้เริ่มต้นด้วยวิธีแก้ที่ผ่านการตรวจสอบแล้ว กระดานในภายหลังยังอาจถึงทางตันได้ และคำใบ้มีขีดจำกัดการค้นหา เมื่อคำใบ้ไม่สามารถยืนยันเส้นทางได้ ก็จะบอกอย่างตรงไปตรงมา\n\nช่องว่างและคอลัมน์ที่ว่างช่วยให้คุณย้ายลำดับไพ่ได้เมื่อมีพื้นที่พอ เกมจะคำนวณจำนวนที่ย้ายได้ตามกติกาให้คุณเอง\n\nฟีเจอร์:\n• 2,000 กระดานที่รับรองว่าแก้ได้\n• คำใบ้แบบไม่บังคับที่ค้นหาจากกระดานปัจจุบันของคุณ\n• แตะหรือลาก รวมถึงการย้ายไพ่หลายใบ\n• เลิกทำ เล่นซ้ำ และจบเกมอัตโนมัติ\n• ย้ายไพ่ขึ้นกองสะสมอัตโนมัติ เสียง และแอนิเมชันไพ่ (ไม่บังคับ)\n• ธีมสว่าง มืด และตามช่วงเวลา\n• สถิติในเครื่องและการเทียบสถิติที่ดีที่สุดของคุณเอง\n• 30 ภาษาของส่วนติดต่อผู้ใช้"
+      },
+      "blackjack": {
+        "title": "แบล็คแจ็ค: FinitePlay",
+        "shortDescription": "แบล็กแจ็กออฟไลน์เรียบง่าย คำนึงถึงแบตเตอรี่: ชิปเสมือน คำใบ้ ไม่มีโฆษณา",
+        "intro": "เล่นแบล็กแจ็กแบบออฟไลน์กับเจ้ามือที่เป็นคอมพิวเตอร์ ด้วยชิปเสมือนและคำอธิบายที่เป็นประโยชน์สำหรับมือใหม่ ไม่ใช้เงินจริงเด็ดขาด ชิปไม่มีมูลค่าเป็นเงิน และไม่มีการเดิมพันด้วยเงินจริง การฝากเงิน การซื้อชิป การแลกชิปเป็นเงิน หรือรางวัล",
+        "body": "ฝึกตัดสินใจขอไพ่ หยุด เพิ่มเดิมพันเท่าตัว และแยกไพ่ ด้วยคำใบ้กลยุทธ์พื้นฐาน (ไม่บังคับ) ที่อธิบายเหตุผลและความเสี่ยงที่แต้มจะเกิน กติกาตายตัวใช้ไพ่หกสำรับ สับใหม่ทุกรอบ เจ้ามือหยุดที่ซอฟต์ 17 แบล็กแจ็กจ่าย 3:2 และมีทั้งประกันและการที่เจ้ามือตรวจดูไพ่ใบคว่ำ คำใบ้ช่วยให้คุณเข้าใจตัวเลือก แต่ไม่รับประกันว่าจะชนะ\n\nคุณเล่นกับเจ้ามือที่เป็นคอมพิวเตอร์เท่านั้น ไม่มีการเล่นกับผู้เล่นจริง ออกแบบสำหรับผู้ใหญ่อายุ 18 ปีขึ้นไป"
+      },
+      "holdem": {
+        "title": "เท็กซัสโฮลเด็ม: FinitePlay",
+        "shortDescription": "โป๊กเกอร์ออฟไลน์เรียบง่าย คำนึงถึงแบตเตอรี่: ชิปเสมือน คู่แข่ง 5 คน ไม่มีโฆษณา",
+        "intro": "เล่นทัวร์นาเมนต์เท็กซัสโฮลเดมโป๊กเกอร์ 6 ที่นั่งแบบออฟไลน์กับคู่แข่งที่เป็นคอมพิวเตอร์ห้าคน ด้วยชิปเสมือนและคำใบ้ที่อธิบายตัวเลือก ไม่ใช้เงินจริงเด็ดขาด ชิปไม่มีมูลค่าเป็นเงิน และไม่มีการเดิมพันด้วยเงินจริง การฝากเงิน การซื้อชิป การแลกชิปเป็นเงิน หรือรางวัล",
+        "body": "คำใบ้แบบไม่บังคับจะอธิบายแนวคิดเบื้องหลังการกระทำที่แนะนำ ช่วยให้มือใหม่เข้าใจความแข็งของมือ ตำแหน่ง อิควิตี้โดยประมาณ และพอตออดส์ คำแนะนำใช้ข้อมูลที่มองเห็นได้ ไม่เห็นไพ่ที่คู่แข่งคว่ำอยู่ และไม่รับประกันว่าจะได้มือที่ชนะ\n\nทุกที่นั่งเริ่มต้นด้วยชิปเสมือนจำนวนเท่ากัน เล่นผ่านบลายด์ที่เพิ่มขึ้น ตัดสินใจเดิมพันของคุณ และตั้งเป้าเป็นผู้เล่นคนสุดท้ายที่เหลืออยู่ที่โต๊ะ บันทึกทัวร์นาเมนต์และกลับมาเล่นต่อภายหลังได้\n\nฟีเจอร์:\n• คู่แข่งคอมพิวเตอร์ห้าคนที่มีสไตล์การเล่นต่างกัน\n• โฟลด์ เช็ค คอล เบ็ท เรส และออลอิน\n• ตัวควบคุมขนาดเดิมพันและการจ่ายไซด์พอต\n• คำใบ้พร้อมอิควิตี้โดยประมาณและพอตออดส์\n• ทัวร์นาเมนต์ที่บันทึกไว้และสถิติในเครื่อง\n• กติกา อันดับมือ และความช่วยเหลือด้านกลยุทธ์\n• เลย์เอาต์แนวตั้งและแนวนอน\n• การตั้งค่าธีม เสียง แอนิเมชัน และภาษา\n• 30 ภาษาของส่วนติดต่อผู้ใช้\n\nคุณเล่นกับคู่แข่งที่เป็นคอมพิวเตอร์เท่านั้น ไม่มีการเล่นกับผู้เล่นจริง ออกแบบสำหรับผู้ใหญ่อายุ 18 ปีขึ้นไป"
+      }
+    }
+  },
+  "tr-TR": {
+    "promise": "FinitePlay sözü: tamamen ücretsiz; reklam, uygulama içi satın alma ve abonelik yok. Oyun tamamen cihazında kalır: hesap, izleme, veri toplama veya paylaşma, liderlik tablosu ya da çevrimiçi özellik yok. İlerlemen ve istatistiklerin gizli ve yerel kalır.",
+    "rest": "Kendi temposunda oyna. Ayarlanabilir dinlenme hatırlatıcıları, uzun süre oynadıktan sonra seni ara vermeye davet eder. Seni acele ettiren bonuslar ya da süreli günlük ödüller yoktur. Yerel skorlar ve istatistikler oyununu gözden geçirmene yardımcı olur; rekabetçi liderlik tabloları ya da oynamaya devam etme baskısı yoktur.",
+    "footer": "FinitePlay, zamanına, gizliliğine ve dikkatine saygı duyan kart oyunları yapar.",
+    "games": {
+      "klondike": {
+        "title": "Klondike Solitaire: FinitePlay",
+        "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı Klondike: 1/3 kart, ipucu, reklamsız",
+        "intro": "Klasik Klondike Solitaire'i çevrimdışı oyna. 1 veya 3 kart çekmeyi seç, sana uygun zorluğu belirle; başka bir yol denemek istediğinde Geri Al, Tekrar Oyna veya isteğe bağlı ipucunu kullan.",
+        "body": "Çok kolay'dan Uzman'a kadar olan dağıtımlar doğrulanmış bir çözümle başlar. Ayrı Çılgın seviyesindeki dağıtımlar sertifikalı değildir. Çözülebilir bir başlangıç dağıtımı yine de çıkmaza yol açabilir. İpuçları mevcut masayı tarar ve sınırları içinde kazanma yolu bulamadıklarında bunu bildirir.\n\nÖzellikler:\n• Altı zorluk seviyesi; Çok kolay'dan Uzman'a kadar çözülebilirliği sertifikalı dağıtımlar\n• 1 kart ve 3 kart çekme kuralları\n• Mevcut masayı tarayan isteğe bağlı ipuçları\n• Dokunarak veya sürükleyerek oynama, Geri Al, Tekrar Oyna ve otomatik bitirme\n• İsteğe bağlı otomatik temel yığın hamleleri, ses ve kart animasyonları\n• Açık, koyu ve saate göre değişen temalar\n• Cihazda tutulan istatistikler ve kişisel rekor karşılaştırmaları\n• 30 arayüz dili"
+      },
+      "spider": {
+        "title": "Spider Solitaire: FinitePlay",
+        "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı Spider: 1/2/4 renk, ipucu, reklamsız",
+        "intro": "Spider Solitaire'de Papaz'dan As'a tam diziler oluştur. 1 renkle başla ya da 2 veya 4 renge geç; yardım istediğinde Geri Al, Tekrar Oyna ve isteğe bağlı ipuçları yanında.",
+        "body": "Pakete dahil her başlangıç dağıtımının doğrulanmış bir çözümü vardır. Seçimlerin yine de önemlidir: sonraki bir konum artık kazanılamaz hale gelebilir. Rehberli ipuçları bilinen bir çözümü izleyebilir; başka bir yol seçtikten sonra yeni bir çözüm bulmak arama sınırlarına tabidir.\n\nÖzellikler:\n• Bir, iki ve dört renkli Spider\n• Üç renk seçeneğinin tamamında 23.675 çözülebilirliği sertifikalı dağıtım\n• Aynı renkli tam dizileri dokunarak veya sürükleyerek taşı\n• Hamle vurgulama ve isteğe bağlı rehberli ipuçları\n• Geri Al, Tekrar Oyna; animasyonlu sıra dağıtımı ve kart hareketleri\n• İsteğe bağlı ses ve animasyon ayarları\n• Açık, koyu ve saate göre değişen temalar\n• Cihazda tutulan istatistikler\n• 30 arayüz dili"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı FreeCell: çözülebilir eller, reklamsız",
+        "intro": "Klasik FreeCell'de tüm kartları gör ve bir sonraki hamleni planla. Dört boş hücreyi ve boş sütunları yer açmak için kullan, kart dizilerini taşı; Geri Al ve Tekrar Oyna ile farklı yolları dene.",
+        "body": "Pakete dahil her dağıtım doğrulanmış bir çözümle başlar. Sonraki bir tahta yine de çıkmaza girebilir ve ipuçlarının arama sınırları vardır; bir ipucu yol bulamadığında bunu açıkça söyler.\n\nBoş hücreler ve boş sütunlar, yeterli yer olduğunda kart dizilerini taşımana izin verir; kurallara göre kaç kart taşıyabileceğini oyun senin için hesaplar.\n\nÖzellikler:\n• 2.000 çözülebilirliği sertifikalı el\n• Mevcut masayı tarayan isteğe bağlı ipuçları\n• Çok kartlı hamleler dahil dokunarak veya sürükleyerek oynama\n• Geri Al, Tekrar Oyna ve otomatik bitirme\n• İsteğe bağlı otomatik temel yığın hamleleri, ses ve kart animasyonları\n• Açık, koyu ve saate göre değişen temalar\n• Cihazda tutulan istatistikler ve kişisel rekor karşılaştırmaları\n• 30 arayüz dili"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı Blackjack: sanal fiş, ipucu, reklamsız",
+        "intro": "Blackjack'i çevrimdışı, bilgisayar krupiyeye karşı, sanal fişlerle ve yeni başlayanlara yardımcı açıklamalarla oyna. Asla gerçek para yok: fişlerin parasal değeri yoktur; gerçek para bahsi, para yatırma, fiş satın alma, para çekme ya da ödül de yoktur.",
+        "body": "Kart çek, dur, ikiye katla ve böl kararlarını, gerekçeyi ve batma riskini açıklayan isteğe bağlı temel strateji ipuçlarıyla çalış. Sabit kurallar: altı deste, her elde yeniden karılır; krupiye yumuşak 17'de durur, blackjack 3:2 öder, sigorta ve krupiyenin blackjack kontrolü dahildir. İpuçları seçimleri anlamana yardım eder; kazanmayı garanti etmez.\n\nYalnızca bilgisayar krupiyeye karşı oynarsın: gerçek kişilere karşı maç yoktur. 18 yaş ve üzeri yetişkinler için tasarlanmıştır."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı poker: sanal fiş, 5 rakip, reklamsız",
+        "intro": "Altı kişilik bir Texas Hold'em poker turnuvasını çevrimdışı, beş bilgisayar rakibe karşı, sanal fişlerle ve seçimleri açıklayan ipuçlarıyla oyna. Asla gerçek para yok: fişlerin parasal değeri yoktur; gerçek para bahsi, para yatırma, fiş satın alma, para çekme ya da ödül de yoktur.",
+        "body": "İsteğe bağlı ipuçları, önerilen hamlenin ardındaki fikri açıklar; yeni başlayanların el gücünü, pozisyonu, tahmini equity'yi ve pot odds'u anlamasına yardımcı olur. Öneri görünen bilgilere dayanır; rakiplerin gizli kartlarını göremez ve kazanan bir eli garanti etmez.\n\nHer koltuk aynı miktarda sanal fişle başlar. Yükselen blindlar boyunca oyna, bahis kararlarını ver ve masada kalan son oyuncu olmayı hedefle. Turnuvanı kaydedip daha sonra devam edebilirsin.\n\nÖzellikler:\n• Farklı oyun tarzlarına sahip beş bilgisayar rakibi\n• Fold, check, call, bet, raise ve all-in\n• Bahis miktarı kontrolleri ve yan pot (side pot) paylaşımı\n• Tahmini equity ve pot odds içeren ipuçları\n• Kayıtlı turnuvalar ve cihazda tutulan istatistikler\n• Kurallar, el sıralaması ve strateji yardımı\n• Dikey ve yatay düzen\n• Tema, ses, animasyon ve dil ayarları\n• 30 arayüz dili\n\nYalnızca bilgisayar rakiplere karşı oynarsın: gerçek kişilere karşı maç yoktur. 18 yaş ve üzeri yetişkinler için tasarlanmıştır."
+      }
+    }
+  },
+  "uk": {
+    "promise": "Обіцянка FinitePlay: повністю безкоштовно, без реклами, покупок у застосунку та підписок. Гра працює лише на вашому пристрої: без облікових записів, відстеження, збору чи передавання даних, рейтингових таблиць та онлайн-функцій. Ваш прогрес і статистика залишаються приватними й локальними.",
+    "rest": "Грайте у власному темпі. Налаштовувані нагадування про відпочинок пропонують зробити перерву після тривалої гри. Немає термінових бонусів чи щоденних нагород з обмеженням у часі. Локальні результати й статистика допомагають оцінити власну гру — без рейтингових таблиць і тиску грати далі.",
+    "footer": "FinitePlay створює карткові ігри, які поважають ваш час, приватність і увагу.",
+    "games": {
+      "klondike": {
+        "title": "Пасьянс Клондайк: FinitePlay",
+        "shortDescription": "Простий офлайн-Клондайк, дбайливий до батареї: 1/3 карти, підказки, без реклами",
+        "intro": "Грайте в класичний пасьянс Клондайк офлайн. Тягніть по одній або по три карти, обирайте комфортну складність і користуйтеся скасуванням, повтором чи необов’язковою підказкою, коли хочеться спробувати інший підхід.",
+        "body": "Роздачі від Тривіального до Експертного рівня починаються з перевіреного розв’язку. Окремий рівень «Божевільний» містить несертифіковані роздачі. Розв’язувана початкова роздача все одно може завести в глухий кут. Підказки шукають шлях на вашому поточному столі й повідомляють, якщо в межах свого ліміту не можуть знайти виграшний шлях.\n\nМожливості:\n• Шість рівнів складності, із сертифіковано розв’язуваними роздачами від Тривіального до Експертного\n• Правила «тягнути по одній» і «тягнути по три»\n• Необов’язкові підказки, що шукають шлях на вашому поточному столі\n• Керування дотиком або перетягуванням, скасування, повтор і автозавершення\n• Необов’язкові автоматичні ходи у фундації, звук і анімація карт\n• Світла, темна й залежна від часу доби теми\n• Статистика на пристрої та порівняння з особистими рекордами\n• 30 мов інтерфейсу"
+      },
+      "spider": {
+        "title": "Пасьянс Павук: FinitePlay",
+        "shortDescription": "Простий офлайн-Павук, дбайливий до батареї: 1/2/4 масті, підказки, без реклами",
+        "intro": "Складайте повні послідовності від Короля до Туза в пасьянсі Павук. Починайте з 1 масті або беріться за 2 чи 4 масті — зі скасуванням, повтором і необов’язковими підказками, коли потрібна допомога.",
+        "body": "Кожна початкова роздача в грі має перевірений розв’язок. Ваші рішення все одно мають значення: пізніша позиція може вже не бути виграшною. Покрокові підказки можуть вести за відомим розв’язком; після того як ви оберете інший шлях, пошук нового розв’язку обмежений лімітами пошуку.\n\nМожливості:\n• Павук з однією, двома та чотирма мастями\n• 23 675 сертифіковано розв’язуваних роздач для всіх трьох варіантів кількості мастей\n• Перенесення дотиком або перетягуванням повних послідовностей однієї масті\n• Підсвічування ходів і необов’язкові покрокові підказки\n• Скасування, повтор, анімовані роздачі рядів і переміщення карт\n• Необов’язкові налаштування звуку й анімації\n• Світла, темна й залежна від часу доби теми\n• Статистика на пристрої\n• 30 мов інтерфейсу"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "Простий офлайн-FreeCell, дбайливий до батареї: розв’язувані роздачі, без реклами",
+        "intro": "Усі карти відкриті: плануйте наступний хід у класичному FreeCell. Використовуйте чотири вільні комірки та порожні колонки, щоб звільнити місце, переносьте послідовності карт і пробуйте різні підходи зі скасуванням і повтором.",
+        "body": "Кожна роздача в грі починається з перевіреного розв’язку. Пізніша позиція все ж може завести в глухий кут, а підказки мають ліміти пошуку; коли підказка не може знайти шлях, вона прямо про це повідомляє.\n\nВільні комірки та порожні колонки дозволяють переносити послідовності карт, коли вистачає місця; гра сама обчислює допустиму кількість карт.\n\nМожливості:\n• 2000 сертифіковано розв’язуваних роздач\n• Необов’язкові підказки, що шукають шлях на вашому поточному столі\n• Керування дотиком або перетягуванням, зокрема перенесення кількох карт\n• Скасування, повтор і автозавершення\n• Необов’язкові автоматичні ходи у фундації, звук і анімація карт\n• Світла, темна й залежна від часу доби теми\n• Статистика на пристрої та порівняння з особистими рекордами\n• 30 мов інтерфейсу"
+      },
+      "blackjack": {
+        "title": "Блекджек: FinitePlay",
+        "shortDescription": "Простий офлайн-блекджек, дбайливий до батареї: віртуальні фішки, без реклами",
+        "intro": "Грайте в блекджек офлайн проти комп’ютерного дилера з віртуальними фішками та корисними поясненнями для початківців. Ніколи не за справжні гроші: фішки не мають грошової вартості, а ставок на справжні гроші, депозитів, купівлі фішок, виведення коштів чи призів немає.",
+        "body": "Тренуйте рішення «взяти», «стоп», «подвоїти» та «розділити» з необов’язковими підказками за базовою стратегією, які пояснюють міркування та ризик перебору. Фіксовані правила: шість колод, які перетасовуються заново в кожному раунді; дилер зупиняється на м’яких 17, блекджек виплачується 3:2, є страхування та перевірка дилером прихованої карти. Підказки допомагають зрозуміти вибір; вони не гарантують виграшу.\n\nВи граєте лише проти комп’ютерного дилера: ігор із живими людьми немає. Для дорослих віком від 18 років."
+      },
+      "holdem": {
+        "title": "Техаський холдем: FinitePlay",
+        "shortDescription": "Простий офлайн-покер, дбайливий до батареї: віртуальні фішки, без реклами",
+        "intro": "Грайте офлайн у турнір із техаського холдему на шість місць проти п’яти комп’ютерних суперників, з віртуальними фішками та підказками, що пояснюють вибір. Ніколи не за справжні гроші: фішки не мають грошової вартості, а ставок на справжні гроші, депозитів, купівлі фішок, виведення коштів чи призів немає.",
+        "body": "Необов’язкові підказки пояснюють ідею запропонованої дії та допомагають початківцям розуміти силу руки, позицію, оціночне еквіті та шанси банку. Порада спирається на видиму інформацію; вона не бачить прихованих карт суперників і не гарантує виграшної руки.\n\nКожне місце починає з однаковим стеком віртуальних фішок. Проходьте зростаючі блайнди, ухвалюйте рішення щодо ставок і прагніть залишитися останнім гравцем за столом. Зберігайте турнір і повертайтеся до нього пізніше.\n\nМожливості:\n• П’ять комп’ютерних суперників із різними стилями гри\n• Фолд, чек, колл, ставка, рейз і олл-ін\n• Керування розміром ставки та розрахунок побічних банків\n• Підказки з оціночним еквіті та шансами банку\n• Збережені турніри та статистика на пристрої\n• Правила, рейтинг комбінацій і поради зі стратегії\n• Портретна й альбомна орієнтація\n• Налаштування теми, звуку, анімації та мови\n• 30 мов інтерфейсу\n\nВи граєте лише проти комп’ютерних суперників: ігор із живими людьми немає. Для дорослих віком від 18 років."
+      }
+    }
+  },
+  "vi": {
+    "promise": "Lời hứa của FinitePlay: hoàn toàn miễn phí, không quảng cáo, không mua hàng trong ứng dụng, không gói đăng ký. Mọi thứ diễn ra ngay trên thiết bị của bạn: không tài khoản, không theo dõi, không thu thập hay chia sẻ dữ liệu, không bảng xếp hạng, không tính năng trực tuyến. Tiến trình và thống kê của bạn được giữ riêng tư, chỉ lưu trên thiết bị.",
+    "rest": "Chơi theo nhịp của riêng bạn. Nhắc nhở nghỉ ngơi có thể tùy chỉnh sẽ gợi ý bạn tạm dừng sau khi chơi lâu. Không có phần thưởng thúc giục hay phần thưởng hằng ngày có hạn giờ. Điểm số và thống kê trên thiết bị giúp bạn nhìn lại cách chơi của mình, không có bảng xếp hạng cạnh tranh và không có áp lực phải chơi tiếp.",
+    "footer": "FinitePlay làm ra những trò chơi bài tôn trọng thời gian, quyền riêng tư và sự tập trung của bạn.",
+    "games": {
+      "klondike": {
+        "title": "Klondike Solitaire: FinitePlay",
+        "shortDescription": "Klondike offline gọn gàng, thân thiện pin: rút 1/3 lá, gợi ý, không quảng cáo",
+        "intro": "Chơi Klondike Solitaire cổ điển offline. Chọn rút 1 lá hoặc rút 3 lá, chọn độ khó vừa sức, và dùng hoàn tác, chơi lại hoặc gợi ý tùy chọn khi bạn muốn thử một hướng khác.",
+        "body": "Các ván từ mức Rất dễ đến Chuyên gia đều bắt đầu với một lời giải đã được kiểm chứng. Mức Điên rồ riêng biệt chứa các ván chưa được kiểm chứng. Một ván chia bài có lời giải vẫn có thể dẫn đến bế tắc. Gợi ý tìm kiếm trên bàn bài hiện tại và cho biết khi chúng không thể xác lập được đường thắng trong giới hạn của mình.\n\nTính năng:\n• Sáu mức độ khó, với các ván có lời giải được kiểm chứng từ Rất dễ đến Chuyên gia\n• Luật rút một lá và rút ba lá\n• Gợi ý tùy chọn, tìm kiếm trên bàn bài hiện tại của bạn\n• Chạm hoặc kéo, Hoàn tác, Chơi lại và tự động hoàn thành ván\n• Tùy chọn tự động đưa bài lên nền, âm thanh và hiệu ứng bài\n• Giao diện sáng, tối và theo thời gian\n• Thống kê trên thiết bị và so sánh thành tích cá nhân tốt nhất\n• 30 ngôn ngữ giao diện"
+      },
+      "spider": {
+        "title": "Spider Solitaire: FinitePlay",
+        "shortDescription": "Spider offline gọn gàng, thân thiện pin: 1/2/4 chất, gợi ý, không quảng cáo",
+        "intro": "Xếp các chuỗi hoàn chỉnh từ Già về Át trong Spider Solitaire. Bắt đầu với 1 chất hoặc thử sức với 2 hay 4 chất, cùng hoàn tác, chơi lại và gợi ý tùy chọn khi bạn cần giúp đỡ.",
+        "body": "Mọi ván chia bài có sẵn đều bắt đầu với một lời giải đã được kiểm chứng. Lựa chọn của bạn vẫn quan trọng: một thế bài về sau có thể không còn thắng được nữa. Gợi ý có hướng dẫn có thể đi theo một lời giải đã biết; sau khi bạn chọn hướng khác, việc tìm lời giải mới phụ thuộc vào giới hạn tìm kiếm.\n\nTính năng:\n• Spider một chất, hai chất và bốn chất\n• 23.675 ván có lời giải được kiểm chứng ở cả ba chế độ số chất\n• Chạm hoặc kéo các chuỗi cùng chất hoàn chỉnh\n• Làm nổi bật nước đi và gợi ý có hướng dẫn tùy chọn\n• Hoàn tác, Chơi lại, cùng hiệu ứng chia một hàng bài và di chuyển bài\n• Điều khiển âm thanh và hiệu ứng tùy chọn\n• Giao diện sáng, tối và theo thời gian\n• Thống kê trên thiết bị\n• 30 ngôn ngữ giao diện"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "FreeCell offline gọn gàng, thân thiện pin: ván giải được, gợi ý, không quảng cáo",
+        "intro": "Nhìn thấy mọi lá bài và lên kế hoạch cho nước đi tiếp theo trong FreeCell cổ điển. Dùng bốn ô trống và các cột trống để tạo chỗ, di chuyển chuỗi bài, và thử nhiều hướng khác nhau với hoàn tác và chơi lại.",
+        "body": "Mọi ván có sẵn đều bắt đầu với một lời giải đã được kiểm chứng. Một thế bài về sau vẫn có thể rơi vào bế tắc, và gợi ý có giới hạn tìm kiếm; khi một gợi ý không thể xác lập được đường đi, nó sẽ nói rõ điều đó.\n\nÔ trống và cột trống cho phép bạn di chuyển chuỗi bài khi còn đủ chỗ; trò chơi tự tính số lá được phép di chuyển hợp lệ giúp bạn.\n\nTính năng:\n• 2.000 ván có lời giải được kiểm chứng\n• Gợi ý tùy chọn, tìm kiếm trên bàn bài hiện tại của bạn\n• Chạm hoặc kéo, kể cả di chuyển nhiều lá cùng lúc\n• Hoàn tác, Chơi lại và tự động hoàn thành ván\n• Tùy chọn tự động đưa bài lên nền, âm thanh và hiệu ứng bài\n• Giao diện sáng, tối và theo thời gian\n• Thống kê trên thiết bị và so sánh thành tích cá nhân tốt nhất\n• 30 ngôn ngữ giao diện"
+      },
+      "blackjack": {
+        "title": "Blackjack: FinitePlay",
+        "shortDescription": "Blackjack offline gọn gàng, thân thiện pin: chip ảo, gợi ý, không quảng cáo",
+        "intro": "Chơi blackjack offline với nhà cái là máy tính, dùng chip ảo và có lời giải thích hữu ích cho người mới. Không bao giờ dùng tiền thật: chip không có giá trị tiền tệ, và không có cược tiền thật, nạp tiền, mua chip, đổi chip lấy tiền hay giải thưởng.",
+        "body": "Luyện các quyết định rút, dừng, gấp đôi và tách bài với gợi ý chiến thuật cơ bản tùy chọn, giải thích lý do và nguy cơ quá 21. Luật cố định dùng sáu bộ bài, xáo lại hoàn toàn mỗi ván; nhà cái dừng ở 17 mềm, blackjack trả 3:2, và có bảo hiểm cùng việc nhà cái kiểm tra lá úp. Gợi ý giúp bạn hiểu các lựa chọn; chúng không đảm bảo chiến thắng.\n\nBạn chỉ chơi với nhà cái là máy tính: không có ván đấu với người thật. Dành cho người trưởng thành từ 18 tuổi trở lên."
+      },
+      "holdem": {
+        "title": "Texas Hold’em: FinitePlay",
+        "shortDescription": "Poker offline gọn gàng, thân thiện pin: chip ảo, 5 đối thủ, không quảng cáo",
+        "intro": "Chơi giải đấu poker Texas Hold'em sáu chỗ ngồi offline với năm đối thủ máy tính, dùng chip ảo và có gợi ý giải thích các lựa chọn. Không bao giờ dùng tiền thật: chip không có giá trị tiền tệ, và không có cược tiền thật, nạp tiền, mua chip, đổi chip lấy tiền hay giải thưởng.",
+        "body": "Gợi ý tùy chọn giải thích ý tưởng đằng sau hành động được đề xuất, giúp người mới hiểu sức mạnh bài, vị trí, equity ước tính và pot odds. Lời khuyên dựa trên thông tin nhìn thấy được; nó không thấy được bài úp của đối thủ và không đảm bảo có ván bài thắng.\n\nMỗi chỗ ngồi bắt đầu với cùng số chip ảo. Chơi qua các mức blind tăng dần, đưa ra quyết định cược của bạn và nhắm tới việc là người cuối cùng còn lại ở bàn. Lưu giải đấu và quay lại chơi tiếp sau.\n\nTính năng:\n• Năm đối thủ máy tính với phong cách chơi khác nhau\n• Bỏ bài, check, theo, cược, tố và all-in\n• Điều khiển mức cược và chia side pot\n• Gợi ý kèm equity ước tính và pot odds\n• Giải đấu đã lưu và thống kê trên thiết bị\n• Luật chơi, thứ hạng bài và hướng dẫn chiến thuật\n• Bố cục dọc và ngang\n• Cài đặt giao diện, âm thanh, hiệu ứng và ngôn ngữ\n• 30 ngôn ngữ giao diện\n\nBạn chỉ chơi với đối thủ máy tính: không có ván đấu với người thật. Dành cho người trưởng thành từ 18 tuổi trở lên."
+      }
+    }
+  },
+  "zh-CN": {
+    "promise": "FinitePlay 的承诺：完全免费，没有广告、应用内购买或订阅。所有游戏过程都在你的设备上完成：没有账号，没有跟踪，不收集也不分享数据，没有排行榜，也没有联网功能。你的进度和统计数据保持私密，只保存在本机。",
+    "rest": "按自己的节奏来玩。可设置的休息提醒会在你长时间游戏后建议你暂停一下。没有催促式的奖励，也没有限时的每日奖励。本机的得分和统计数据只是帮你回顾自己的游戏，没有竞争性的排行榜，也没有必须继续玩下去的压力。",
+    "footer": "FinitePlay 制作尊重你的时间、隐私和专注力的纸牌游戏。",
+    "games": {
+      "klondike": {
+        "title": "克朗代克纸牌: FinitePlay",
+        "shortDescription": "简洁、兼顾电量的离线克朗代克：翻1/3张牌、提示、无广告",
+        "intro": "离线玩经典的克朗代克纸牌接龙。选择每次翻 1 张或翻 3 张，挑选合适的难度；想换个思路时，可以使用撤销、重玩，或可选的提示。",
+        "body": "从“入门”到“专家”的牌局，开局时都有经过验证的解法。单独的“疯狂”级别包含未经认证的牌局。开局可解的牌局，仍有可能走进死局。提示会搜索你当前的牌面，如果在限定范围内无法确定获胜路径，会如实告诉你。\n\n功能特色：\n• 六个难度级别，从“入门”到“专家”的牌局均经认证可解\n• 翻一张和翻三张两种规则\n• 可选的提示，搜索你当前的牌面\n• 点按或拖动操作、撤销、重玩和自动完成\n• 可选的自动移牌到基础牌堆、音效和纸牌动画\n• 浅色、深色和随时间切换的主题\n• 本机统计数据和个人最佳成绩对比\n• 30 种界面语言"
+      },
+      "spider": {
+        "title": "蜘蛛纸牌: FinitePlay",
+        "shortDescription": "简洁、兼顾电量的离线蜘蛛纸牌：1/2/4种花色、提示、无广告",
+        "intro": "在蜘蛛纸牌中，把牌按 K 到 A 排成完整的序列。可以从单一花色开始，也可以挑战两种或四种花色；需要帮助时，可以使用撤销、重玩和可选的提示。",
+        "body": "收录的每一局开局都有经过验证的解法。不过你的选择依然重要：之后的局面可能已无法获胜。引导式提示可以沿着已知的解法走；你选择了另一条路之后，寻找新的解法会受到搜索限制。\n\n功能特色：\n• 单一花色、两种花色和四种花色的蜘蛛纸牌\n• 三种花色数量共计 23,675 局经认证可解的牌局\n• 点按或拖动同花色的完整序列\n• 走法高亮和可选的引导式提示\n• 撤销、重玩，以及发一行牌和移牌的动画\n• 可选的音效与动画设置\n• 浅色、深色和随时间切换的主题\n• 本机统计数据\n• 30 种界面语言"
+      },
+      "freecell": {
+        "title": "空当接龙: FinitePlay",
+        "shortDescription": "简洁、兼顾电量的离线空当接龙：可解牌局、提示、无广告",
+        "intro": "在经典的空当接龙中，所有牌都摊开可见，你可以从容规划下一步。利用四个空闲格和空列腾出空间、移动牌序，并通过撤销和重玩尝试不同的思路。",
+        "body": "收录的每一局开局都有经过验证的解法。之后的牌面仍可能走进死局，而且提示有搜索限制；当提示无法确定路径时，会坦率地告诉你。\n\n空闲格和空列让你在空间足够时移动一组牌；按规则最多能移动几张，游戏会替你计算。\n\n功能特色：\n• 2,000 局经认证可解的牌局\n• 可选的提示，搜索你当前的牌面\n• 点按或拖动操作，包括一次移动多张牌\n• 撤销、重玩和自动完成\n• 可选的自动移牌到基础牌堆、音效和纸牌动画\n• 浅色、深色和随时间切换的主题\n• 本机统计数据和个人最佳成绩对比\n• 30 种界面语言"
+      },
+      "blackjack": {
+        "title": "二十一点: FinitePlay",
+        "shortDescription": "简洁、兼顾电量的离线21点：虚拟筹码、提示、无广告",
+        "intro": "离线对战电脑庄家玩 21 点，使用虚拟筹码，并为新手提供贴心的讲解。绝不涉及真钱：筹码没有任何货币价值，没有真钱下注、充值、购买筹码、兑现或奖品。",
+        "body": "练习要牌、停牌、加倍和分牌的决策，可选的基础策略提示会解释理由和爆牌风险。规则固定：使用六副牌，每局重新洗牌；庄家在软 17 点停牌，黑杰克赔率为 3:2，并包含保险以及庄家查看暗牌。提示帮助你理解各种选择，并不保证获胜。\n\n你只与电脑庄家对战，没有与真人的对局。专为 18 岁及以上的成年人设计。"
+      },
+      "holdem": {
+        "title": "德州扑克: FinitePlay",
+        "shortDescription": "简洁、兼顾电量的离线扑克：虚拟筹码、5个电脑对手、无广告",
+        "intro": "离线参加六人桌的德州扑克锦标赛，对手是五个电脑玩家，使用虚拟筹码，并有解释各种选择的提示。绝不涉及真钱：筹码没有任何货币价值，没有真钱下注、充值、购买筹码、兑现或奖品。",
+        "body": "可选的提示会解释建议操作背后的思路，帮助新手理解牌力、位置、估计胜率和底池赔率。建议基于可见的信息；它看不到对手的暗牌，也不保证你拿到获胜的牌。\n\n每个座位都以相同数量的虚拟筹码开局。在不断上涨的盲注下做出你的下注决策，目标是成为牌桌上最后留下的玩家。你可以保存锦标赛，稍后继续。\n\n功能特色：\n• 五个风格各异的电脑对手\n• 弃牌、过牌、跟注、下注、加注和全下\n• 下注额度控制和边池结算\n• 带有估计胜率和底池赔率的提示\n• 已保存的锦标赛和本机统计数据\n• 规则、牌型大小和策略帮助\n• 竖屏和横屏布局\n• 主题、音效、动画和语言设置\n• 30 种界面语言\n\n你只与电脑对手对战，没有与真人的对局。专为 18 岁及以上的成年人设计。"
+      }
+    }
+  },
+  "zh-TW": {
+    "promise": "FinitePlay 的承諾：完全免費，沒有廣告、應用程式內購買或訂閱。所有遊玩都在你的裝置上進行：沒有帳號、沒有追蹤，不蒐集也不分享資料，沒有排行榜，也沒有連網功能。你的進度與統計資料維持私密，只儲存在裝置內。",
+    "rest": "依照自己的步調遊玩。可自訂的休息提醒會在你長時間遊玩後，邀請你暫停一下。沒有催促式的獎勵，也沒有限時的每日獎勵。裝置內的分數與統計資料只是讓你回顧自己的遊玩狀況，沒有競爭性的排行榜，也沒有非繼續玩下去不可的壓力。",
+    "footer": "FinitePlay 打造尊重你的時間、隱私與專注力的紙牌遊戲。",
+    "games": {
+      "klondike": {
+        "title": "克朗代克接龍: FinitePlay",
+        "shortDescription": "簡潔、顧及耗電的離線克朗代克：抽1/3張牌、提示、無廣告",
+        "intro": "離線遊玩經典的克朗代克紙牌接龍。選擇每次抽 1 張或抽 3 張牌，挑選合適的難度；想換個思路時，可以使用復原、重玩，或選用的提示。",
+        "body": "從「入門」到「專家」的牌局，開局時都有經過驗證的解法。另外獨立的「瘋狂」等級則包含未經認證的牌局。開局可解的牌局，仍有可能走入死路。提示會搜尋你目前的牌面，若在限定範圍內無法確認致勝路徑，會如實告訴你。\n\n功能特色：\n• 六個難度等級，從「入門」到「專家」的牌局皆經認證可解\n• 抽一張與抽三張兩種規則\n• 可選用的提示，搜尋你目前的牌面\n• 點按或拖曳操作、復原、重玩與自動完成\n• 可選用的自動移牌至基礎牌組、音效與紙牌動畫\n• 淺色、深色與依時間切換的佈景主題\n• 裝置內統計資料與個人最佳成績比較\n• 30 種介面語言"
+      },
+      "spider": {
+        "title": "蜘蛛接龍: FinitePlay",
+        "shortDescription": "簡潔、顧及耗電的離線蜘蛛紙牌：1/2/4種花色、提示、無廣告",
+        "intro": "在蜘蛛紙牌中，把牌依 K 到 A 排成完整的序列。可以從單一花色開始，也可以挑戰兩種或四種花色；需要協助時，可以使用復原、重玩與選用的提示。",
+        "body": "收錄的每一局開局都有經過驗證的解法。不過你的選擇依然重要：之後的局面可能已經無法獲勝。引導式提示可以沿著已知的解法走；你改走另一條路之後，尋找新的解法會受到搜尋限制。\n\n功能特色：\n• 單一花色、兩種花色與四種花色的蜘蛛紙牌\n• 三種花色數量共計 23,675 局經認證可解的牌局\n• 點按或拖曳同花色的完整序列\n• 走法醒目標示與選用的引導式提示\n• 復原、重玩，以及發一列牌與移牌的動畫\n• 可選用的音效與動畫設定\n• 淺色、深色與依時間切換的佈景主題\n• 裝置內統計資料\n• 30 種介面語言"
+      },
+      "freecell": {
+        "title": "FreeCell: FinitePlay",
+        "shortDescription": "簡潔、顧及耗電的離線新接龍：可解牌局、提示、無廣告",
+        "intro": "在經典的新接龍（FreeCell）中，所有牌都攤開可見，你可以從容規劃下一步。善用四個空閒格與空列騰出空間、移動牌序，並透過復原與重玩嘗試不同的思路。",
+        "body": "收錄的每一局開局都有經過驗證的解法。之後的牌面仍可能走入死路，而且提示有搜尋限制；當提示無法確認路徑時，會坦白告訴你。\n\n空閒格與空列讓你在空間足夠時移動一組牌；依規則最多能移動幾張，遊戲會替你計算。\n\n功能特色：\n• 2,000 局經認證可解的牌局\n• 可選用的提示，搜尋你目前的牌面\n• 點按或拖曳操作，包含一次移動多張牌\n• 復原、重玩與自動完成\n• 可選用的自動移牌至基礎牌組、音效與紙牌動畫\n• 淺色、深色與依時間切換的佈景主題\n• 裝置內統計資料與個人最佳成績比較\n• 30 種介面語言"
+      },
+      "blackjack": {
+        "title": "21點: FinitePlay",
+        "shortDescription": "簡潔、顧及耗電的離線二十一點：虛擬籌碼、提示、無廣告",
+        "intro": "離線對戰電腦莊家玩二十一點，使用虛擬籌碼，並為新手提供貼心的說明。絕不涉及真錢：籌碼沒有任何貨幣價值，沒有真錢下注、儲值、購買籌碼、兌現或獎品。",
+        "body": "練習要牌、停牌、加倍與分牌的決策，選用的基本策略提示會說明理由與爆牌風險。規則固定：使用六副牌，每局重新洗牌；莊家在軟 17 點停牌，黑傑克賠率為 3:2，並包含保險以及莊家查看暗牌。提示協助你理解各種選擇，並不保證獲勝。\n\n你只與電腦莊家對戰，沒有與真人的對局。專為年滿 18 歲的成年人設計。"
+      },
+      "holdem": {
+        "title": "德州撲克: FinitePlay",
+        "shortDescription": "簡潔、顧及耗電的離線撲克：虛擬籌碼、5位電腦對手、無廣告",
+        "intro": "離線參加六人桌的德州撲克錦標賽，對手是五位電腦玩家，使用虛擬籌碼，並有說明各種選擇的提示。絕不涉及真錢：籌碼沒有任何貨幣價值，沒有真錢下注、儲值、購買籌碼、兌現或獎品。",
+        "body": "選用的提示會說明建議動作背後的想法，幫助新手理解牌力、位置、估計勝率與底池賠率。建議是根據可見的資訊；它看不到對手的暗牌，也不保證你拿到致勝的牌。\n\n每個座位都以相同數量的虛擬籌碼開局。在不斷上升的盲注下做出你的下注決定，目標是成為牌桌上最後留下的玩家。你可以儲存錦標賽，稍後再繼續。\n\n功能特色：\n• 五位風格各異的電腦對手\n• 棄牌、過牌、跟注、下注、加注與全下\n• 下注額度控制與邊池結算\n• 附有估計勝率與底池賠率的提示\n• 已儲存的錦標賽與裝置內統計資料\n• 規則、牌型大小與策略說明\n• 直向與橫向版面配置\n• 佈景主題、音效、動畫與語言設定\n• 30 種介面語言\n\n你只與電腦對手對戰，沒有與真人的對局。專為年滿 18 歲的成年人設計。"
       }
     }
   }
