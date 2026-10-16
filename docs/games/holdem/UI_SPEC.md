@@ -95,7 +95,10 @@ cards and seat boxes for the felt):
 
 Seats run clockwise from you, as at a real table seen from above: middle-left, top-left, top-centre,
 top-right, middle-right. The bands keep their order at every height; spare height goes to the gaps
-between them, evenly.
+between them, evenly. The FinitePlay wordmark sits centred above the board cards when the gap between
+the middle and board bands can hold it; otherwise a smaller mark sits below the pot label. Its width
+fits the available space between the middle-band seats, and the gaps shorten to preserve the table's
+height.
 
 ### Table, landscape
 
@@ -115,6 +118,8 @@ fits the 316 dp a 360 dp window leaves under the status row. The test tags stay 
 The table is three bands: the top band of three seats; a middle band with an opponent seat at each
 edge and the board between them, the pot line under the board; and your seat. Handedness mirrors
 the bar's order in portrait and its side in landscape and changes nothing else.
+The FinitePlay wordmark uses the gap above the board cards when it fits, and sits below the pot line
+otherwise, sized to fit between the side seats.
 
 ## Action Bar
 

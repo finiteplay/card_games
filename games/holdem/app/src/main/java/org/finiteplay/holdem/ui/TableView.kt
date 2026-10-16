@@ -12,9 +12,11 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -61,6 +63,8 @@ import org.finiteplay.core.ui.layout.signed
 import org.finiteplay.holdem.R
 
 private const val RAISE_DP = 6
+private const val LOGO_CLEAR_GAP_DP = 92f
+private const val FALLBACK_LOGO_HEIGHT_DP = 36f
 
 private val markWin = Color(0xFF7CE08F)
 private val markEven = Color(0xFFB0BEC5)
@@ -90,8 +94,6 @@ fun TableView(
     modifier: Modifier = Modifier,
 ) {
     Box(modifier = modifier.fillMaxSize()) {
-        // Publisher mark on the felt, behind everything: the empty middle of the portrait table.
-        if (!landscape) FinitePlayLogo(modifier = Modifier.align(Alignment.Center), widthFraction = 0.4f)
         BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
             if (landscape) Landscape(table, profiles, animate, maxWidth.value, maxHeight.value)
             else Portrait(table, profiles, animate, maxWidth.value, maxHeight.value)
@@ -105,9 +107,12 @@ fun TableView(
 private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate: Boolean, width: Float, height: Float) {
     val g = TableGeometry.portrait(width, height)
     val compact = g.density != TableGeometry.Density.Regular
+    val logoInGap = g.gap >= LOGO_CLEAR_GAP_DP
+    val fallbackLogoHeight = if (logoInGap) 0f else minOf(FALLBACK_LOGO_HEIGHT_DP, g.gap * 3f)
+    val gap = if (logoInGap) g.gap else (g.gap - fallbackLogoHeight / 3f).coerceAtLeast(0f)
+    val potWidth = (width - 2 * TableGeometry.SIDE_MARGIN - 2 * g.seatWidth).coerceAtLeast(0f)
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = TableGeometry.SIDE_MARGIN.dp),
-        verticalArrangement = Arrangement.spacedBy(g.gap.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
@@ -115,12 +120,27 @@ private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate
                 OpponentSeat(seat, table, profiles[seat - 1], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, compact, animate, PillSide.Below)
             }
         }
+        Spacer(modifier = Modifier.height(gap.dp))
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
             OpponentSeat(1, table, profiles[0], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, compact, animate, PillSide.End)
-            Box(modifier = Modifier.weight(1f), contentAlignment = Alignment.Center) { PotView(table) }
+            Box(modifier = Modifier.weight(1f), contentAlignment = Alignment.Center) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    PotView(table)
+                    if (!logoInGap) SmallLogoBelowPot(fallbackLogoHeight, potWidth)
+                }
+            }
             OpponentSeat(5, table, profiles[4], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, compact, animate, PillSide.Start)
         }
+        if (logoInGap) {
+            Box(modifier = Modifier.fillMaxWidth().height(gap.dp), contentAlignment = Alignment.Center) {
+                FinitePlayLogo(
+                    modifier = Modifier.width((width * 0.62f).dp).heightIn(max = (gap - 8f).coerceAtLeast(1f).dp),
+                    widthFraction = 1f,
+                )
+            }
+        } else Spacer(modifier = Modifier.height(gap.dp))
         BoardBand(table, g.boardCardWidth.dp, g.boardBandHeight.dp, animate)
+        Spacer(modifier = Modifier.height(gap.dp))
         YourSeat(table, g.yourCardWidth.dp, g.yourSeatHeight.dp, animate)
     }
 }
@@ -128,9 +148,12 @@ private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate
 @Composable
 private fun Landscape(table: TableModel, profiles: List<OpponentProfile>, animate: Boolean, width: Float, height: Float) {
     val g = TableGeometry.landscape(width + TableGeometry.RAIL_WIDTH + TableGeometry.SIZING_COLUMN_WIDTH, height + TableGeometry.STATUS_ROW)
+    val logoInGap = g.gap >= LOGO_CLEAR_GAP_DP
+    val fallbackLogoHeight = if (logoInGap) 0f else minOf(FALLBACK_LOGO_HEIGHT_DP, g.gap * 2f)
+    val gap = if (logoInGap) g.gap else (g.gap - fallbackLogoHeight / 2f).coerceAtLeast(0f)
+    val potWidth = (width - 2 * TableGeometry.SIDE_MARGIN - 2 * g.seatWidth).coerceAtLeast(0f)
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = TableGeometry.SIDE_MARGIN.dp),
-        verticalArrangement = Arrangement.spacedBy(g.gap.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
@@ -138,15 +161,38 @@ private fun Landscape(table: TableModel, profiles: List<OpponentProfile>, animat
                 OpponentSeat(seat, table, profiles[seat - 1], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, false, animate, PillSide.Below)
             }
         }
+        if (logoInGap) {
+            Box(modifier = Modifier.fillMaxWidth().height(gap.dp), contentAlignment = Alignment.Center) {
+                FinitePlayLogo(
+                    modifier = Modifier.width((width * 0.52f).dp).heightIn(max = (gap - 8f).coerceAtLeast(1f).dp),
+                    widthFraction = 1f,
+                )
+            }
+        } else Spacer(modifier = Modifier.height(gap.dp))
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
             OpponentSeat(1, table, profiles[0], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, false, animate, PillSide.End)
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 BoardBand(table, g.boardCardWidth.dp, TableGeometry.cardHeight(g.boardCardWidth).let { kotlin.math.ceil(it) }.dp, animate)
                 PotView(table, compactLine = true)
+                if (!logoInGap) SmallLogoBelowPot(fallbackLogoHeight, potWidth)
             }
             OpponentSeat(5, table, profiles[4], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, false, animate, PillSide.Start)
         }
+        Spacer(modifier = Modifier.height(gap.dp))
         YourSeat(table, g.yourCardWidth.dp, g.yourSeatHeight.dp, animate)
+    }
+}
+
+@Composable
+private fun SmallLogoBelowPot(heightDp: Float, availableWidthDp: Float) {
+    Box(
+        modifier = Modifier.fillMaxWidth().height(heightDp.dp),
+        contentAlignment = Alignment.Center,
+    ) {
+        FinitePlayLogo(
+            modifier = Modifier.width(minOf(148f, availableWidthDp).dp).heightIn(max = (heightDp - 4f).coerceAtLeast(1f).dp),
+            widthFraction = 1f,
+        )
     }
 }
 
