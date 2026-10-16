@@ -1,0 +1,37 @@
+{
+  "promise": "De FinitePlay-belofte: volledig gratis, zonder advertenties, in-app-aankopen of abonnementen. Alles blijft op je apparaat: geen accounts, tracking, verzameling of delen van gegevens, geen ranglijsten of onlinefuncties. Je voortgang en statistieken blijven privé en lokaal.",
+  "rest": "Speel in je eigen tempo. Instelbare pauzeherinneringen nodigen je uit om na langdurig spelen even te pauzeren. Er zijn geen urgentiebonussen en geen tijdgebonden dagelijkse beloningen. Lokale scores en statistieken helpen je terug te kijken op je spel, zonder competitieve ranglijsten of druk om door te spelen.",
+  "footer": "FinitePlay maakt kaartspellen die je tijd, je privacy en je aandacht respecteren.",
+  "games": {
+    "klondike": {
+      "title": "Klondike patience: FinitePlay",
+      "shortDescription": "Eenvoudige, batterijbewuste offline Klondike: 1/3 kaarten, hints, geen reclame",
+      "intro": "Speel offline het klassieke Klondike Solitaire. Kies of je één of drie kaarten trekt, kies een uitdaging die bij je past en gebruik Ongedaan maken, Opnieuw spelen of een optionele hint als je een andere aanpak wilt proberen.",
+      "body": "Giften van Triviaal tot Expert beginnen met een gecontroleerde oplossing. Het aparte niveau Waanzinnig bevat niet-gecertificeerde giften. Een oplosbare startgift kan toch op een dood punt eindigen. Hints doorzoeken je huidige spelbord en melden het als ze binnen hun zoeklimiet geen weg naar de winst kunnen vaststellen.\n\nFuncties:\n• Zes moeilijkheidsniveaus, met gecertificeerd oplosbare giften van Triviaal tot Expert\n• Spelregels voor één of drie kaarten trekken\n• Optionele hints die je huidige spelbord doorzoeken\n• Tikken of slepen, Ongedaan maken, Opnieuw spelen en automatisch afmaken\n• Optioneel automatisch verplaatsen naar de stapels, geluid en kaartanimaties\n• Lichte, donkere en tijdgebonden thema's\n• Statistieken op het apparaat en vergelijking met je persoonlijke records\n• 30 interfacetalen"
+    },
+    "spider": {
+      "title": "Spider patience: FinitePlay",
+      "shortDescription": "Eenvoudige, batterijbewuste offline Spider: 1/2/4 kleuren, hints, geen reclame",
+      "intro": "Bouw complete reeksen van Heer tot Aas in Spider Solitaire. Begin met 1 kleur of waag je aan 2 of 4 kleuren, met Ongedaan maken, Opnieuw spelen en optionele hints als je hulp wilt.",
+      "body": "Elke meegeleverde beginstand heeft een gecontroleerde oplossing. Je keuzes blijven wel belangrijk: een latere stand is misschien niet meer te winnen. Begeleide hints kunnen een bekende oplossing volgen; nadat je een andere weg hebt gekozen, is het vinden van een nieuwe oplossing aan zoeklimieten gebonden.\n\nFuncties:\n• Spider met één, twee en vier kleuren\n• 23.675 gecertificeerd oplosbare spellen met één, twee en vier kleuren\n• Tik op of sleep complete reeksen van dezelfde kleur\n• Zetten markeren en optionele begeleide hints\n• Ongedaan maken, Opnieuw spelen en geanimeerd rijen delen en kaarten verplaatsen\n• Optionele geluids- en animatie-instellingen\n• Lichte, donkere en tijdgebonden thema's\n• Statistieken op het apparaat\n• 30 interfacetalen"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Eenvoudige, batterijbewuste offline FreeCell: oplosbare spellen, geen reclame",
+      "intro": "Bekijk alle kaarten en plan je volgende zet in het klassieke FreeCell. Gebruik de vier vrije vakken en lege kolommen om ruimte te maken, verplaats reeksen kaarten en probeer verschillende aanpakken met Ongedaan maken en Opnieuw spelen.",
+      "body": "Elk meegeleverd spel begint met een gecontroleerde oplossing. Een latere stand kan toch op een dood punt eindigen, en hints hebben zoeklimieten; als een hint geen weg kan vaststellen, zegt hij dat duidelijk.\n\nVrije vakken en lege kolommen laten je reeksen kaarten verplaatsen als er genoeg ruimte is; het spel berekent voor je hoeveel er volgens de regels mag.\n\nFuncties:\n• 2.000 gecertificeerd oplosbare spellen\n• Optionele hints die je huidige spelbord doorzoeken\n• Bediening door tikken of slepen, ook voor meerdere kaarten tegelijk\n• Ongedaan maken, Opnieuw spelen en automatisch afmaken\n• Optioneel automatisch verplaatsen naar de stapels, geluid en kaartanimaties\n• Lichte, donkere en tijdgebonden thema's\n• Statistieken op het apparaat en vergelijking met je persoonlijke records\n• 30 interfacetalen"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Eenvoudige, batterijbewuste offline Blackjack: virtuele fiches, geen reclame",
+      "intro": "Speel offline blackjack tegen een computerdeler, met virtuele fiches en nuttige uitleg voor beginners. Nooit echt geld: fiches hebben geen geldwaarde, en er zijn geen inzetten met echt geld, stortingen, aankopen van fiches, opnames of prijzen.",
+      "body": "Oefen beslissingen over kaart nemen, blijven, verdubbelen en splitsen met optionele basisstrategiehints die de redenering en het bustrisico uitleggen. De vaste regels gebruiken zes decks, elke ronde opnieuw geschud; de deler blijft staan op een zachte 17, blackjack betaalt 3:2, en verzekering en het controleren op blackjack door de deler zijn inbegrepen. Hints helpen je de keuzes te begrijpen; ze garanderen geen winst.\n\nJe speelt alleen tegen de computerdeler: er zijn geen potjes tegen echte mensen. Bedoeld voor volwassenen van 18 jaar en ouder."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Eenvoudige, batterijbewuste offline poker: virtuele fiches, geen reclame",
+      "intro": "Speel offline een Texas Hold'em-pokertoernooi met zes plaatsen tegen vijf computertegenstanders, met virtuele fiches en hints die de keuzes uitleggen. Nooit echt geld: fiches hebben geen geldwaarde, en er zijn geen inzetten met echt geld, stortingen, aankopen van fiches, opnames of prijzen.",
+      "body": "Optionele hints leggen het idee achter een voorgestelde actie uit en helpen beginners handsterkte, positie, geschatte equity en potodds te begrijpen. Het advies gebruikt zichtbare informatie; het kan de verborgen kaarten van tegenstanders niet zien en garandeert geen winnende hand.\n\nElke plaats begint met dezelfde stapel virtuele fiches. Speel door stijgende blinds, neem je inzetbeslissingen en probeer als laatste speler aan tafel over te blijven. Sla je toernooi op en ga er later mee verder.\n\nFuncties:\n• Vijf computertegenstanders met verschillende speelstijlen\n• Fold, check, call, bet, raise en all-in\n• Instelbare inzetgrootte en afhandeling van sidepots\n• Hints met geschatte equity en potodds\n• Opgeslagen toernooien en statistieken op het apparaat\n• Regels, handrangschikking en strategiehulp\n• Staande en liggende weergave\n• Instellingen voor thema, geluid, animaties en taal\n• 30 interfacetalen\n\nJe speelt alleen tegen computertegenstanders: er zijn geen potjes tegen echte mensen. Bedoeld voor volwassenen van 18 jaar en ouder."
+    }
+  }
+}

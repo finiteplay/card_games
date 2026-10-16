@@ -1,0 +1,37 @@
+{
+  "promise": "FinitePlay obećanje: potpuno besplatno, bez oglasa, kupnji unutar aplikacije i pretplata. Igra u cijelosti ostaje na vašem uređaju: bez računa, praćenja, prikupljanja ili dijeljenja podataka, ljestvica poretka i online značajki. Vaš napredak i statistika ostaju privatni i lokalni.",
+  "rest": "Igrajte vlastitim tempom. Podesivi podsjetnici za odmor pozivaju vas na stanku nakon duljeg igranja. Nema bonusa koji vas požuruju ni vremenski ograničenih dnevnih nagrada. Lokalni rezultati i statistika pomažu vam promisliti o vlastitoj igri, bez natjecateljskih ljestvica i pritiska da nastavite.",
+  "footer": "FinitePlay izrađuje kartaške igre koje poštuju vaše vrijeme, privatnost i pažnju.",
+  "games": {
+    "klondike": {
+      "title": "Pasijans Klondike: FinitePlay",
+      "shortDescription": "Jednostavan offline Klondike, blag prema bateriji: 1/3, savjeti, bez oglasa",
+      "intro": "Igrajte klasični Klondike pasijans offline. Odaberite izvlačenje jedne ili tri karte, odaberite ugodnu razinu izazova i koristite poništavanje, ponavljanje ili neobvezni savjet kad želite drugačiji pristup.",
+      "body": "Partije od razine Trivijalno do razine Stručno počinju s provjerenim rješenjem. Zasebna razina Ludo sadrži neprovjerene partije. Rješiva početna partija i dalje može završiti u slijepoj ulici. Savjeti pretražuju vaš trenutačni raspored i javljaju kad unutar svojih granica ne mogu utvrditi put do pobjede.\n\nZnačajke:\n• Šest razina težine, s provjereno rješivim partijama od razine Trivijalno do razine Stručno\n• Izvlačenje jedne i tri karte\n• Neobvezni savjeti koji pretražuju vaš trenutačni raspored\n• Dodir ili povlačenje, Poništi, Ponovi i automatski završetak\n• Neobvezni automatski potezi na temelje, zvuk i animacije karata\n• Svijetla, tamna i vremenski ovisna tema\n• Statistika na uređaju i usporedba s osobnim rekordima\n• 30 jezika sučelja"
+    },
+    "spider": {
+      "title": "Pauk pasijans: FinitePlay",
+      "shortDescription": "Jednostavan offline Spider, blag prema bateriji: 1/2/4 boje, savjeti, bez oglasa",
+      "intro": "Složite potpune nizove od kralja do asa u Spider pasijansu. Počnite s 1 bojom ili se okušajte s 2 ili 4 boje, uz poništavanje, ponavljanje i neobvezne savjete kad poželite pomoć.",
+      "body": "Svaka uključena početna partija ima provjereno rješenje. Vaši potezi ipak su važni: kasnija pozicija možda više neće biti rješiva. Vođeni savjeti mogu pratiti poznato rješenje; nakon što odaberete drugi put, pronalaženje novog rješenja podliježe ograničenjima pretraživanja.\n\nZnačajke:\n• Spider s jednom, dvije i četiri boje\n• 23.675 provjereno rješivih partija u sva tri broja boja\n• Dodir ili povlačenje cijelih nizova iste boje\n• Isticanje poteza i neobvezni vođeni savjeti\n• Poništi, Ponovi te animirano dijeljenje redova i pomicanje karata\n• Neobvezne postavke zvuka i animacija\n• Svijetla, tamna i vremenski ovisna tema\n• Statistika na uređaju\n• 30 jezika sučelja"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Jednostavan offline FreeCell, blag prema bateriji: rješive partije, bez oglasa",
+      "intro": "Vidite svaku kartu i planirajte sljedeći potez u klasičnom FreeCellu. Četiri slobodne ćelije i prazni stupci daju vam prostor za premještanje nizova karata, a poništavanjem i ponavljanjem isprobavate različite pristupe.",
+      "body": "Svaka uključena partija počinje s provjerenim rješenjem. Kasniji raspored i dalje može završiti u slijepoj ulici, a savjeti imaju granice pretraživanja; kad savjet ne može utvrditi put, to jasno kaže.\n\nSlobodne ćelije i prazni stupci omogućuju premještanje nizova karata kad ima dovoljno mjesta; igra sama izračunava dopušteni kapacitet.\n\nZnačajke:\n• 2.000 provjereno rješivih partija\n• Neobvezni savjeti koji pretražuju vaš trenutačni raspored\n• Dodir ili povlačenje, uključujući premještanje više karata\n• Poništi, Ponovi i automatski završetak\n• Neobvezni automatski potezi na temelje, zvuk i animacije karata\n• Svijetla, tamna i vremenski ovisna tema\n• Statistika na uređaju i usporedba s osobnim rekordima\n• 30 jezika sučelja"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Jednostavan offline Blackjack, blag prema bateriji: virtualni žetoni, bez oglasa",
+      "intro": "Igrajte blackjack offline protiv računalnog djelitelja, s virtualnim žetonima i korisnim objašnjenjima za početnike. Nikad pravi novac: žetoni nemaju novčanu vrijednost, a nema oklada pravim novcem, uplata, kupnje žetona, isplata ni nagrada.",
+      "body": "Vježbajte odluke Vuci, Stani, Udvostruči i Podijeli uz neobvezne savjete prema osnovnoj strategiji koji objašnjavaju razlog i rizik od prelaska preko 21. Pravila su fiksna: šest špilova, svaki krug miješaju se iznova; djelitelj staje na mekom 17, blackjack se isplaćuje 3:2, a uključeni su osiguranje i provjera djeliteljeve skrivene karte. Savjeti pomažu razumjeti odluke; ne jamče pobjedu.\n\nIgrate samo protiv računalnog djelitelja: nema partija protiv stvarnih ljudi. Namijenjeno odraslima od 18 godina."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Jednostavan offline poker, blag prema bateriji: virtualni žetoni, bez oglasa",
+      "intro": "Igrajte pokerski turnir Texas Hold'em za šest mjesta offline protiv pet računalnih protivnika, s virtualnim žetonima i savjetima koji objašnjavaju odluke. Nikad pravi novac: žetoni nemaju novčanu vrijednost, a nema oklada pravim novcem, uplata, kupnje žetona, isplata ni nagrada.",
+      "body": "Neobvezni savjeti objašnjavaju ideju iza predložene radnje i pomažu početnicima razumjeti snagu ruke, poziciju, procijenjenu šansu za pobjedu (equity) i odnos pota (pot odds). Savjet se temelji na vidljivim informacijama; ne vidi skrivene karte protivnika i ne jamči pobjedničku ruku.\n\nSvako mjesto počinje s istom količinom virtualnih žetona. Igrajte kroz rastuće blindove, donosite odluke o klađenju i nastojte ostati posljednji igrač za stolom. Spremite turnir i vratite mu se kasnije.\n\nZnačajke:\n• Pet računalnih protivnika s različitim stilovima igre\n• Odustani, Čekaj, Prati, Ulog, Podigni i All in\n• Kontrole veličine uloga i obračun sporednih potova\n• Savjeti s procijenjenom šansom i odnosom pota\n• Spremljeni turniri i statistika na uređaju\n• Pravila, poredak ruku i pomoć za strategiju\n• Okomiti i vodoravni prikaz\n• Postavke teme, zvuka, animacija i jezika\n• 30 jezika sučelja\n\nIgrate samo protiv računalnih protivnika: nema partija protiv stvarnih ljudi. Namijenjeno odraslima od 18 godina."
+    }
+  }
+}

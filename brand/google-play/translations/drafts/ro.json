@@ -1,0 +1,37 @@
+{
+  "promise": "Promisiunea FinitePlay: complet gratuit, fără reclame, achiziții în aplicație sau abonamente. Jocul rămâne în întregime pe dispozitivul tău: fără conturi, urmărire, colectare sau partajare de date, clasamente ori funcții online. Progresul și statisticile tale rămân private și locale.",
+  "rest": "Joacă în ritmul tău. Mementourile de pauză, configurabile, te invită să faci o pauză după un timp mai lung de joc. Nu există bonusuri care să te grăbească sau recompense zilnice cronometrate. Scorurile și statisticile locale te ajută să-ți reevaluezi jocul, fără clasamente competitive sau presiunea de a continua.",
+  "footer": "FinitePlay creează jocuri de cărți care îți respectă timpul, confidențialitatea și atenția.",
+  "games": {
+    "klondike": {
+      "title": "Solitaire Klondike: FinitePlay",
+      "shortDescription": "Klondike offline simplu, atent la baterie: extragere 1/3, indicii, fără reclame",
+      "intro": "Joacă offline clasicul Klondike Solitaire. Alege extragerea unei cărți sau a trei, stabilește o dificultate potrivită și folosește Înapoi, Reluare sau un indiciu opțional când vrei să încerci altă abordare.",
+      "body": "Mâinile de la Trivial până la Expert pornesc cu o soluție verificată. Nivelul separat Nebunesc conține jocuri necertificate. O mână de start rezolvabilă poate totuși duce într-un impas. Indiciile caută în tabla curentă și anunță când nu pot stabili o cale spre victorie în limita lor.\n\nFuncții:\n• Șase niveluri de dificultate, cu jocuri certificat rezolvabile de la Trivial până la Expert\n• Reguli de extragere a unei cărți și a trei cărți\n• Indicii opționale care caută în tabla curentă\n• Control prin atingere sau tragere, Înapoi, Reluare și finalizare automată\n• Mutări automate opționale către fundații, sunet și animații ale cărților\n• Teme luminoasă, întunecată și în funcție de oră\n• Statistici pe dispozitiv și comparații cu recordurile personale\n• 30 de limbi de interfață"
+    },
+    "spider": {
+      "title": "Spider Solitaire: FinitePlay",
+      "shortDescription": "Spider offline simplu, atent la baterie: 1/2/4 culori, indicii, fără reclame",
+      "intro": "Construiește secvențe complete de la Rege la As în Spider Solitaire. Începe cu 1 culoare sau treci la 2 ori 4 culori, cu Înapoi, Reluare și indicii opționale când vrei ajutor.",
+      "body": "Fiecare mână de start inclusă are o soluție verificată. Alegerile tale contează totuși: o poziție ulterioară poate să nu mai fie câștigătoare. Indiciile ghidate pot urma o soluție cunoscută; după ce alegi altă cale, găsirea unei noi soluții este supusă limitelor de căutare.\n\nFuncții:\n• Spider cu una, două și patru culori\n• 23.675 de jocuri certificat rezolvabile, pentru toate cele trei numere de culori\n• Atinge sau trage secvențe complete de aceeași culoare\n• Evidențierea mutărilor și indicii ghidate opționale\n• Înapoi, Reluare și distribuiri animate de rânduri și mutări de cărți\n• Controale opționale pentru sunet și animații\n• Teme luminoasă, întunecată și în funcție de oră\n• Statistici pe dispozitiv\n• 30 de limbi de interfață"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "FreeCell offline simplu, atent la baterie: jocuri rezolvabile, fără reclame",
+      "intro": "Vezi toate cărțile și planifică-ți următoarea mutare în clasicul FreeCell. Folosește cele patru celule libere și coloanele goale pentru a face loc, mută secvențe de cărți și încearcă abordări diferite cu Înapoi și Reluare.",
+      "body": "Fiecare joc inclus pornește cu o soluție verificată. O tablă ulterioară poate ajunge totuși într-un impas, iar indiciile au limite de căutare; când un indiciu nu poate stabili o cale, spune asta clar.\n\nCelulele libere și coloanele goale îți permit să muți secvențe de cărți atunci când există suficient spațiu; jocul calculează pentru tine capacitatea permisă.\n\nFuncții:\n• 2.000 de mâini certificat rezolvabile\n• Indicii opționale care caută în tabla curentă\n• Control prin atingere sau tragere, inclusiv mutări cu mai multe cărți\n• Înapoi, Reluare și finalizare automată\n• Mutări automate opționale către fundații, sunet și animații ale cărților\n• Teme luminoasă, întunecată și în funcție de oră\n• Statistici pe dispozitiv și comparații cu recordurile personale\n• 30 de limbi de interfață"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Blackjack offline simplu, atent la baterie: jetoane virtuale, fără reclame",
+      "intro": "Joacă blackjack offline împotriva unui dealer controlat de computer, cu jetoane virtuale și explicații utile pentru începători. Niciodată cu bani reali: jetoanele nu au valoare monetară și nu există pariuri cu bani reali, depuneri, achiziții de jetoane, retrageri sau premii.",
+      "body": "Exersează deciziile Carte, Stai, Dublează și Împarte cu indicii opționale de strategie de bază, care explică raționamentul și riscul de a depăși 21. Regulile fixe folosesc șase pachete, amestecate din nou la fiecare rundă; dealerul stă la 17 moale, blackjack-ul plătește 3:2, iar asigurarea și verificarea blackjack-ului de către dealer sunt incluse. Indiciile te ajută să înțelegi alegerile; nu garantează câștiguri.\n\nJoci doar împotriva dealerului controlat de computer: nu există meciuri cu persoane reale. Conceput pentru adulți cu vârsta de 18 ani și peste."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Poker offline simplu, atent la baterie: jetoane virtuale, 5 rivali, fără reclame",
+      "intro": "Joacă offline un turneu de Texas Hold'em cu șase locuri împotriva a cinci adversari controlați de computer, cu jetoane virtuale și indicii care explică alegerile. Niciodată cu bani reali: jetoanele nu au valoare monetară și nu există pariuri cu bani reali, depuneri, achiziții de jetoane, retrageri sau premii.",
+      "body": "Indiciile opționale explică ideea din spatele unei acțiuni sugerate și îi ajută pe începători să înțeleagă forța mâinii, poziția, equity-ul estimat și șansele potului (pot odds). Sfatul folosește informațiile vizibile; nu poate vedea cărțile ascunse ale adversarilor și nu garantează o mână câștigătoare.\n\nFiecare loc începe cu aceeași stivă de jetoane virtuale. Joacă pe măsură ce blindurile cresc, ia-ți deciziile de pariere și țintește să fii ultimul jucător rămas la masă. Salvează-ți turneul și revino la el mai târziu.\n\nFuncții:\n• Cinci adversari controlați de computer, cu stiluri de joc distincte\n• Fold, check, call, pariază, mărește și all in\n• Controale pentru mărimea pariului și decontarea poturilor laterale\n• Indicii cu equity estimat și șansele potului\n• Turnee salvate și statistici pe dispozitiv\n• Reguli, ierarhia mâinilor și ajutor de strategie\n• Aspect vertical și orizontal\n• Setări pentru temă, sunet, animații și limbă\n• 30 de limbi de interfață\n\nJoci doar împotriva adversarilor controlați de computer: nu există meciuri cu persoane reale. Conceput pentru adulți cu vârsta de 18 ani și peste."
+    }
+  }
+}

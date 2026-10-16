@@ -1,0 +1,37 @@
+{
+  "promise": "FinitePlayn lupaus: täysin ilmainen, ei mainoksia, sovelluksensisäisiä ostoksia eikä tilauksia. Peli toimii kokonaan laitteellasi: ei tilejä, seurantaa, tietojen keräämistä tai jakamista, ei tulostaulukoita eikä verkko-ominaisuuksia. Edistymisesi ja tilastosi pysyvät yksityisinä ja paikallisina.",
+  "rest": "Pelaa omaan tahtiisi. Säädettävät taukomuistutukset kehottavat pitämään tauon pitkän pelaamisen jälkeen. Kiireellisiä bonuksia tai aikarajallisia päivittäisiä palkintoja ei ole. Paikalliset pisteet ja tilastot auttavat tarkastelemaan omaa pelaamistasi ilman tulostaulukoita tai painetta jatkaa.",
+  "footer": "FinitePlay tekee korttipelejä, jotka kunnioittavat aikaasi, yksityisyyttäsi ja huomiotasi.",
+  "games": {
+    "klondike": {
+      "title": "Klondike-pasianssi: FinitePlay",
+      "shortDescription": "Selkeä, akkua huomioiva offline-Klondike: nosta 1/3, vihjeet, ei mainoksia",
+      "intro": "Pelaa klassista Klondike-pasianssia offline-tilassa. Valitse, nostetaanko yksi vai kolme korttia, valitse sopiva vaikeustaso ja käytä Kumoa- ja Toista-toimintoja tai valinnaista vihjettä, kun haluat kokeilla toista lähestymistapaa.",
+      "body": "Jaot Triviaalista Asiantuntijaan alkavat vahvistetulla ratkaisulla. Erillinen Mieletön-taso sisältää sertifioimattomia jakoja. Ratkaistavissa oleva aloitusjako voi silti johtaa umpikujaan. Vihjeet hakevat ratkaisua nykyisestä pöytätilanteesta ja kertovat, jos ne eivät rajansa puitteissa pysty osoittamaan voittavaa polkua.\n\nOminaisuudet:\n• Kuusi vaikeustasoa, joilla sertifioidusti ratkaistavia jakoja Triviaalista Asiantuntijaan\n• Yhden ja kolmen kortin nostosäännöt\n• Valinnaiset vihjeet, jotka hakevat ratkaisua nykyisestä pöytätilanteesta\n• Ohjaus napauttamalla tai vetämällä, Kumoa, Toista ja automaattinen lopetus\n• Valinnaiset automaattiset siirrot perustoihin, äänet ja korttianimaatiot\n• Vaalea, tumma ja ajan mukaan vaihtuva teema\n• Laitteella säilytettävät tilastot ja henkilökohtaisten ennätysten vertailu\n• 30 käyttöliittymäkieltä"
+    },
+    "spider": {
+      "title": "Spider-pasianssi: FinitePlay",
+      "shortDescription": "Selkeä, akkua huomioiva offline-Spider: 1/2/4 maata, vihjeet, ei mainoksia",
+      "intro": "Rakenna kokonaisia sarjoja kuninkaasta ässään Hämähäkkipasianssissa. Aloita 1 maalla tai ota haasteeksi 2 tai 4 maata, ja käytä Kumoa- ja Toista-toimintoja sekä valinnaisia vihjeitä, kun kaipaat apua.",
+      "body": "Jokaisella mukana tulevalla aloitusjaolla on vahvistettu ratkaisu. Valintasi silti vaikuttavat: myöhempi tilanne ei välttämättä ole enää voitettavissa. Opastavat vihjeet voivat seurata tunnettua ratkaisua; kun valitset toisen polun, uuden ratkaisun etsintää rajoittavat hakurajat.\n\nOminaisuudet:\n• Hämähäkkipasianssi yhdellä, kahdella ja neljällä maalla\n• 23 675 sertifioidusti ratkaistavaa jakoa kaikissa kolmessa maamäärässä\n• Siirrä napauttamalla tai vetämällä kokonaisia saman maan sarjoja\n• Siirtojen korostus ja valinnaiset opastavat vihjeet\n• Kumoa, Toista sekä animoidut rivinjaot ja korttisiirrot\n• Valinnaiset ääni- ja animaatioasetukset\n• Vaalea, tumma ja ajan mukaan vaihtuva teema\n• Laitteella säilytettävät tilastot\n• 30 käyttöliittymäkieltä"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Selkeä, akkua huomioiva offline-FreeCell: ratkeavat jaot, vihjeet, ei mainoksia",
+      "intro": "Näe jokainen kortti ja suunnittele seuraava siirtosi klassisessa FreeCellissä. Tee tilaa neljällä vapaalla solulla ja tyhjillä sarakkeilla, siirrä korttisarjoja ja kokeile erilaisia lähestymistapoja Kumoa- ja Toista-toiminnoilla.",
+      "body": "Jokainen mukana tuleva jako alkaa vahvistetulla ratkaisulla. Myöhempi tilanne voi silti päätyä umpikujaan, ja vihjeillä on hakurajat; kun vihje ei pysty osoittamaan polkua, se kertoo siitä selvästi.\n\nVapaat solut ja tyhjät sarakkeet mahdollistavat korttisarjojen siirtämisen, kun tilaa on tarpeeksi; peli laskee sallitun kapasiteetin puolestasi.\n\nOminaisuudet:\n• 2 000 sertifioidusti ratkaistavaa jakoa\n• Valinnaiset vihjeet, jotka hakevat ratkaisua nykyisestä pöytätilanteesta\n• Ohjaus napauttamalla tai vetämällä, myös usean kortin siirrot\n• Kumoa, Toista ja automaattinen lopetus\n• Valinnaiset automaattiset siirrot perustoihin, äänet ja korttianimaatiot\n• Vaalea, tumma ja ajan mukaan vaihtuva teema\n• Laitteella säilytettävät tilastot ja henkilökohtaisten ennätysten vertailu\n• 30 käyttöliittymäkieltä"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Selkeä, akkua huomioiva offline-Blackjack: virtuaalimerkit, ei mainoksia",
+      "intro": "Pelaa blackjackia offline-tilassa tietokonejakajaa vastaan virtuaalisilla pelimerkeillä ja aloittelijoille hyödyllisillä selityksillä. Ei koskaan oikeaa rahaa: pelimerkeillä ei ole rahallista arvoa, eikä oikean rahan panoksia, talletuksia, pelimerkkien ostoja, nostoja tai palkintoja ole.",
+      "body": "Harjoittele päätöksiä – ota kortti, jää, tuplaa ja jaa – valinnaisten perusstrategiaan perustuvien vihjeiden avulla, jotka selittävät perustelut ja yli 21:n riskin. Kiinteissä säännöissä käytetään kuutta korttipakkaa, jotka sekoitetaan uudelleen joka kierroksella; jakaja jää pehmeään 17:ään, blackjack maksaa 3:2, ja vakuutus sekä jakajan piilokortin tarkistus kuuluvat mukaan. Vihjeet auttavat ymmärtämään valintoja; ne eivät takaa voittoa.\n\nPelaat vain tietokonejakajaa vastaan: pelejä oikeita ihmisiä vastaan ei ole. Suunniteltu 18 vuotta täyttäneille aikuisille."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Selkeä, akkua huomioiva offline-pokeri: virtuaalimerkit, ei mainoksia",
+      "intro": "Pelaa kuuden paikan Texas Hold'em -pokeriturnaus offline-tilassa viittä tietokonevastustajaa vastaan virtuaalisilla pelimerkeillä ja valintoja selittävillä vihjeillä. Ei koskaan oikeaa rahaa: pelimerkeillä ei ole rahallista arvoa, eikä oikean rahan panoksia, talletuksia, pelimerkkien ostoja, nostoja tai palkintoja ole.",
+      "body": "Valinnaiset vihjeet selittävät ehdotetun toiminnon ajatuksen ja auttavat aloittelijoita ymmärtämään käden vahvuutta, positiota, arvioitua equityä ja pot oddseja. Neuvo perustuu näkyvään tietoon; se ei näe vastustajien piilotettuja kortteja eikä takaa voittavaa kättä.\n\nJokainen paikka aloittaa samalla pinolla virtuaalisia pelimerkkejä. Pelaa nousevien blindien läpi, tee panostuspäätöksesi ja tähtää siihen, että olet viimeinen pelaaja pöydässä. Tallenna turnaus ja palaa siihen myöhemmin.\n\nOminaisuudet:\n• Viisi tietokonevastustajaa erilaisilla pelityyleillä\n• Fold, check, maksu, panostus, korotus ja all in\n• Panoksen koon säätimet ja sivupottien jako\n• Vihjeet arvioidulla equityllä ja pot oddseilla\n• Tallennetut turnaukset ja laitteella säilytettävät tilastot\n• Säännöt, käsien järjestys ja strategiaohje\n• Pysty- ja vaakasuuntaiset näkymät\n• Teeman, äänen, animaatioiden ja kielen asetukset\n• 30 käyttöliittymäkieltä\n\nPelaat vain tietokonevastustajia vastaan: pelejä oikeita ihmisiä vastaan ei ole. Suunniteltu 18 vuotta täyttäneille aikuisille."
+    }
+  }
+}

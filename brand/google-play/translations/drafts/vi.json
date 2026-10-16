@@ -1,0 +1,37 @@
+{
+  "promise": "Lời hứa của FinitePlay: hoàn toàn miễn phí, không quảng cáo, không mua hàng trong ứng dụng, không gói đăng ký. Mọi thứ diễn ra ngay trên thiết bị của bạn: không tài khoản, không theo dõi, không thu thập hay chia sẻ dữ liệu, không bảng xếp hạng, không tính năng trực tuyến. Tiến trình và thống kê của bạn được giữ riêng tư, chỉ lưu trên thiết bị.",
+  "rest": "Chơi theo nhịp của riêng bạn. Nhắc nhở nghỉ ngơi có thể tùy chỉnh sẽ gợi ý bạn tạm dừng sau khi chơi lâu. Không có phần thưởng thúc giục hay phần thưởng hằng ngày có hạn giờ. Điểm số và thống kê trên thiết bị giúp bạn nhìn lại cách chơi của mình, không có bảng xếp hạng cạnh tranh và không có áp lực phải chơi tiếp.",
+  "footer": "FinitePlay làm ra những trò chơi bài tôn trọng thời gian, quyền riêng tư và sự tập trung của bạn.",
+  "games": {
+    "klondike": {
+      "title": "Klondike Solitaire: FinitePlay",
+      "shortDescription": "Klondike offline gọn gàng, thân thiện pin: rút 1/3 lá, gợi ý, không quảng cáo",
+      "intro": "Chơi Klondike Solitaire cổ điển offline. Chọn rút 1 lá hoặc rút 3 lá, chọn độ khó vừa sức, và dùng hoàn tác, chơi lại hoặc gợi ý tùy chọn khi bạn muốn thử một hướng khác.",
+      "body": "Các ván từ mức Rất dễ đến Chuyên gia đều bắt đầu với một lời giải đã được kiểm chứng. Mức Điên rồ riêng biệt chứa các ván chưa được kiểm chứng. Một ván chia bài có lời giải vẫn có thể dẫn đến bế tắc. Gợi ý tìm kiếm trên bàn bài hiện tại và cho biết khi chúng không thể xác lập được đường thắng trong giới hạn của mình.\n\nTính năng:\n• Sáu mức độ khó, với các ván có lời giải được kiểm chứng từ Rất dễ đến Chuyên gia\n• Luật rút một lá và rút ba lá\n• Gợi ý tùy chọn, tìm kiếm trên bàn bài hiện tại của bạn\n• Chạm hoặc kéo, Hoàn tác, Chơi lại và tự động hoàn thành ván\n• Tùy chọn tự động đưa bài lên nền, âm thanh và hiệu ứng bài\n• Giao diện sáng, tối và theo thời gian\n• Thống kê trên thiết bị và so sánh thành tích cá nhân tốt nhất\n• 30 ngôn ngữ giao diện"
+    },
+    "spider": {
+      "title": "Spider Solitaire: FinitePlay",
+      "shortDescription": "Spider offline gọn gàng, thân thiện pin: 1/2/4 chất, gợi ý, không quảng cáo",
+      "intro": "Xếp các chuỗi hoàn chỉnh từ Già về Át trong Spider Solitaire. Bắt đầu với 1 chất hoặc thử sức với 2 hay 4 chất, cùng hoàn tác, chơi lại và gợi ý tùy chọn khi bạn cần giúp đỡ.",
+      "body": "Mọi ván chia bài có sẵn đều bắt đầu với một lời giải đã được kiểm chứng. Lựa chọn của bạn vẫn quan trọng: một thế bài về sau có thể không còn thắng được nữa. Gợi ý có hướng dẫn có thể đi theo một lời giải đã biết; sau khi bạn chọn hướng khác, việc tìm lời giải mới phụ thuộc vào giới hạn tìm kiếm.\n\nTính năng:\n• Spider một chất, hai chất và bốn chất\n• 23.675 ván có lời giải được kiểm chứng ở cả ba chế độ số chất\n• Chạm hoặc kéo các chuỗi cùng chất hoàn chỉnh\n• Làm nổi bật nước đi và gợi ý có hướng dẫn tùy chọn\n• Hoàn tác, Chơi lại, cùng hiệu ứng chia một hàng bài và di chuyển bài\n• Điều khiển âm thanh và hiệu ứng tùy chọn\n• Giao diện sáng, tối và theo thời gian\n• Thống kê trên thiết bị\n• 30 ngôn ngữ giao diện"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "FreeCell offline gọn gàng, thân thiện pin: ván giải được, gợi ý, không quảng cáo",
+      "intro": "Nhìn thấy mọi lá bài và lên kế hoạch cho nước đi tiếp theo trong FreeCell cổ điển. Dùng bốn ô trống và các cột trống để tạo chỗ, di chuyển chuỗi bài, và thử nhiều hướng khác nhau với hoàn tác và chơi lại.",
+      "body": "Mọi ván có sẵn đều bắt đầu với một lời giải đã được kiểm chứng. Một thế bài về sau vẫn có thể rơi vào bế tắc, và gợi ý có giới hạn tìm kiếm; khi một gợi ý không thể xác lập được đường đi, nó sẽ nói rõ điều đó.\n\nÔ trống và cột trống cho phép bạn di chuyển chuỗi bài khi còn đủ chỗ; trò chơi tự tính số lá được phép di chuyển hợp lệ giúp bạn.\n\nTính năng:\n• 2.000 ván có lời giải được kiểm chứng\n• Gợi ý tùy chọn, tìm kiếm trên bàn bài hiện tại của bạn\n• Chạm hoặc kéo, kể cả di chuyển nhiều lá cùng lúc\n• Hoàn tác, Chơi lại và tự động hoàn thành ván\n• Tùy chọn tự động đưa bài lên nền, âm thanh và hiệu ứng bài\n• Giao diện sáng, tối và theo thời gian\n• Thống kê trên thiết bị và so sánh thành tích cá nhân tốt nhất\n• 30 ngôn ngữ giao diện"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Blackjack offline gọn gàng, thân thiện pin: chip ảo, gợi ý, không quảng cáo",
+      "intro": "Chơi blackjack offline với nhà cái là máy tính, dùng chip ảo và có lời giải thích hữu ích cho người mới. Không bao giờ dùng tiền thật: chip không có giá trị tiền tệ, và không có cược tiền thật, nạp tiền, mua chip, đổi chip lấy tiền hay giải thưởng.",
+      "body": "Luyện các quyết định rút, dừng, gấp đôi và tách bài với gợi ý chiến thuật cơ bản tùy chọn, giải thích lý do và nguy cơ quá 21. Luật cố định dùng sáu bộ bài, xáo lại hoàn toàn mỗi ván; nhà cái dừng ở 17 mềm, blackjack trả 3:2, và có bảo hiểm cùng việc nhà cái kiểm tra lá úp. Gợi ý giúp bạn hiểu các lựa chọn; chúng không đảm bảo chiến thắng.\n\nBạn chỉ chơi với nhà cái là máy tính: không có ván đấu với người thật. Dành cho người trưởng thành từ 18 tuổi trở lên."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Poker offline gọn gàng, thân thiện pin: chip ảo, 5 đối thủ, không quảng cáo",
+      "intro": "Chơi giải đấu poker Texas Hold'em sáu chỗ ngồi offline với năm đối thủ máy tính, dùng chip ảo và có gợi ý giải thích các lựa chọn. Không bao giờ dùng tiền thật: chip không có giá trị tiền tệ, và không có cược tiền thật, nạp tiền, mua chip, đổi chip lấy tiền hay giải thưởng.",
+      "body": "Gợi ý tùy chọn giải thích ý tưởng đằng sau hành động được đề xuất, giúp người mới hiểu sức mạnh bài, vị trí, equity ước tính và pot odds. Lời khuyên dựa trên thông tin nhìn thấy được; nó không thấy được bài úp của đối thủ và không đảm bảo có ván bài thắng.\n\nMỗi chỗ ngồi bắt đầu với cùng số chip ảo. Chơi qua các mức blind tăng dần, đưa ra quyết định cược của bạn và nhắm tới việc là người cuối cùng còn lại ở bàn. Lưu giải đấu và quay lại chơi tiếp sau.\n\nTính năng:\n• Năm đối thủ máy tính với phong cách chơi khác nhau\n• Bỏ bài, check, theo, cược, tố và all-in\n• Điều khiển mức cược và chia side pot\n• Gợi ý kèm equity ước tính và pot odds\n• Giải đấu đã lưu và thống kê trên thiết bị\n• Luật chơi, thứ hạng bài và hướng dẫn chiến thuật\n• Bố cục dọc và ngang\n• Cài đặt giao diện, âm thanh, hiệu ứng và ngôn ngữ\n• 30 ngôn ngữ giao diện\n\nBạn chỉ chơi với đối thủ máy tính: không có ván đấu với người thật. Dành cho người trưởng thành từ 18 tuổi trở lên."
+    }
+  }
+}

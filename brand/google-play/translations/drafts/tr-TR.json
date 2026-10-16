@@ -1,0 +1,37 @@
+{
+  "promise": "FinitePlay sözü: tamamen ücretsiz; reklam, uygulama içi satın alma ve abonelik yok. Oyun tamamen cihazında kalır: hesap, izleme, veri toplama veya paylaşma, liderlik tablosu ya da çevrimiçi özellik yok. İlerlemen ve istatistiklerin gizli ve yerel kalır.",
+  "rest": "Kendi temposunda oyna. Ayarlanabilir dinlenme hatırlatıcıları, uzun süre oynadıktan sonra seni ara vermeye davet eder. Seni acele ettiren bonuslar ya da süreli günlük ödüller yoktur. Yerel skorlar ve istatistikler oyununu gözden geçirmene yardımcı olur; rekabetçi liderlik tabloları ya da oynamaya devam etme baskısı yoktur.",
+  "footer": "FinitePlay, zamanına, gizliliğine ve dikkatine saygı duyan kart oyunları yapar.",
+  "games": {
+    "klondike": {
+      "title": "Klondike Solitaire: FinitePlay",
+      "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı Klondike: 1/3 kart, ipucu, reklamsız",
+      "intro": "Klasik Klondike Solitaire'i çevrimdışı oyna. 1 veya 3 kart çekmeyi seç, sana uygun zorluğu belirle; başka bir yol denemek istediğinde Geri Al, Tekrar Oyna veya isteğe bağlı ipucunu kullan.",
+      "body": "Çok kolay'dan Uzman'a kadar olan dağıtımlar doğrulanmış bir çözümle başlar. Ayrı Çılgın seviyesindeki dağıtımlar sertifikalı değildir. Çözülebilir bir başlangıç dağıtımı yine de çıkmaza yol açabilir. İpuçları mevcut masayı tarar ve sınırları içinde kazanma yolu bulamadıklarında bunu bildirir.\n\nÖzellikler:\n• Altı zorluk seviyesi; Çok kolay'dan Uzman'a kadar çözülebilirliği sertifikalı dağıtımlar\n• 1 kart ve 3 kart çekme kuralları\n• Mevcut masayı tarayan isteğe bağlı ipuçları\n• Dokunarak veya sürükleyerek oynama, Geri Al, Tekrar Oyna ve otomatik bitirme\n• İsteğe bağlı otomatik temel yığın hamleleri, ses ve kart animasyonları\n• Açık, koyu ve saate göre değişen temalar\n• Cihazda tutulan istatistikler ve kişisel rekor karşılaştırmaları\n• 30 arayüz dili"
+    },
+    "spider": {
+      "title": "Spider Solitaire: FinitePlay",
+      "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı Spider: 1/2/4 renk, ipucu, reklamsız",
+      "intro": "Spider Solitaire'de Papaz'dan As'a tam diziler oluştur. 1 renkle başla ya da 2 veya 4 renge geç; yardım istediğinde Geri Al, Tekrar Oyna ve isteğe bağlı ipuçları yanında.",
+      "body": "Pakete dahil her başlangıç dağıtımının doğrulanmış bir çözümü vardır. Seçimlerin yine de önemlidir: sonraki bir konum artık kazanılamaz hale gelebilir. Rehberli ipuçları bilinen bir çözümü izleyebilir; başka bir yol seçtikten sonra yeni bir çözüm bulmak arama sınırlarına tabidir.\n\nÖzellikler:\n• Bir, iki ve dört renkli Spider\n• Üç renk seçeneğinin tamamında 23.675 çözülebilirliği sertifikalı dağıtım\n• Aynı renkli tam dizileri dokunarak veya sürükleyerek taşı\n• Hamle vurgulama ve isteğe bağlı rehberli ipuçları\n• Geri Al, Tekrar Oyna; animasyonlu sıra dağıtımı ve kart hareketleri\n• İsteğe bağlı ses ve animasyon ayarları\n• Açık, koyu ve saate göre değişen temalar\n• Cihazda tutulan istatistikler\n• 30 arayüz dili"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı FreeCell: çözülebilir eller, reklamsız",
+      "intro": "Klasik FreeCell'de tüm kartları gör ve bir sonraki hamleni planla. Dört boş hücreyi ve boş sütunları yer açmak için kullan, kart dizilerini taşı; Geri Al ve Tekrar Oyna ile farklı yolları dene.",
+      "body": "Pakete dahil her dağıtım doğrulanmış bir çözümle başlar. Sonraki bir tahta yine de çıkmaza girebilir ve ipuçlarının arama sınırları vardır; bir ipucu yol bulamadığında bunu açıkça söyler.\n\nBoş hücreler ve boş sütunlar, yeterli yer olduğunda kart dizilerini taşımana izin verir; kurallara göre kaç kart taşıyabileceğini oyun senin için hesaplar.\n\nÖzellikler:\n• 2.000 çözülebilirliği sertifikalı el\n• Mevcut masayı tarayan isteğe bağlı ipuçları\n• Çok kartlı hamleler dahil dokunarak veya sürükleyerek oynama\n• Geri Al, Tekrar Oyna ve otomatik bitirme\n• İsteğe bağlı otomatik temel yığın hamleleri, ses ve kart animasyonları\n• Açık, koyu ve saate göre değişen temalar\n• Cihazda tutulan istatistikler ve kişisel rekor karşılaştırmaları\n• 30 arayüz dili"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı Blackjack: sanal fiş, ipucu, reklamsız",
+      "intro": "Blackjack'i çevrimdışı, bilgisayar krupiyeye karşı, sanal fişlerle ve yeni başlayanlara yardımcı açıklamalarla oyna. Asla gerçek para yok: fişlerin parasal değeri yoktur; gerçek para bahsi, para yatırma, fiş satın alma, para çekme ya da ödül de yoktur.",
+      "body": "Kart çek, dur, ikiye katla ve böl kararlarını, gerekçeyi ve batma riskini açıklayan isteğe bağlı temel strateji ipuçlarıyla çalış. Sabit kurallar: altı deste, her elde yeniden karılır; krupiye yumuşak 17'de durur, blackjack 3:2 öder, sigorta ve krupiyenin blackjack kontrolü dahildir. İpuçları seçimleri anlamana yardım eder; kazanmayı garanti etmez.\n\nYalnızca bilgisayar krupiyeye karşı oynarsın: gerçek kişilere karşı maç yoktur. 18 yaş ve üzeri yetişkinler için tasarlanmıştır."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Sade, pil kullanımını gözeten çevrimdışı poker: sanal fiş, 5 rakip, reklamsız",
+      "intro": "Altı kişilik bir Texas Hold'em poker turnuvasını çevrimdışı, beş bilgisayar rakibe karşı, sanal fişlerle ve seçimleri açıklayan ipuçlarıyla oyna. Asla gerçek para yok: fişlerin parasal değeri yoktur; gerçek para bahsi, para yatırma, fiş satın alma, para çekme ya da ödül de yoktur.",
+      "body": "İsteğe bağlı ipuçları, önerilen hamlenin ardındaki fikri açıklar; yeni başlayanların el gücünü, pozisyonu, tahmini equity'yi ve pot odds'u anlamasına yardımcı olur. Öneri görünen bilgilere dayanır; rakiplerin gizli kartlarını göremez ve kazanan bir eli garanti etmez.\n\nHer koltuk aynı miktarda sanal fişle başlar. Yükselen blindlar boyunca oyna, bahis kararlarını ver ve masada kalan son oyuncu olmayı hedefle. Turnuvanı kaydedip daha sonra devam edebilirsin.\n\nÖzellikler:\n• Farklı oyun tarzlarına sahip beş bilgisayar rakibi\n• Fold, check, call, bet, raise ve all-in\n• Bahis miktarı kontrolleri ve yan pot (side pot) paylaşımı\n• Tahmini equity ve pot odds içeren ipuçları\n• Kayıtlı turnuvalar ve cihazda tutulan istatistikler\n• Kurallar, el sıralaması ve strateji yardımı\n• Dikey ve yatay düzen\n• Tema, ses, animasyon ve dil ayarları\n• 30 arayüz dili\n\nYalnızca bilgisayar rakiplere karşı oynarsın: gerçek kişilere karşı maç yoktur. 18 yaş ve üzeri yetişkinler için tasarlanmıştır."
+    }
+  }
+}

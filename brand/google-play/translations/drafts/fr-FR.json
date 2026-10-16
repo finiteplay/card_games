@@ -1,0 +1,37 @@
+{
+  "promise": "La promesse FinitePlay : entièrement gratuit, sans publicité, sans achats intégrés ni abonnements. Tout se passe sur votre appareil : pas de compte, ni suivi, ni collecte ou partage de données, ni classements, ni fonctions en ligne. Votre progression et vos statistiques restent privées et locales.",
+  "rest": "Jouez à votre rythme. Des rappels de pause configurables vous invitent à vous arrêter après une longue session. Il n'y a ni bonus d'urgence ni récompenses quotidiennes limitées dans le temps. Les scores et statistiques locaux vous aident à analyser votre jeu, sans classements compétitifs ni pression pour continuer.",
+  "footer": "FinitePlay crée des jeux de cartes qui respectent votre temps, votre vie privée et votre attention.",
+  "games": {
+    "klondike": {
+      "title": "Solitaire Klondike: FinitePlay",
+      "shortDescription": "Klondike simple, hors ligne, soucieux de la batterie : pioche 1/3, sans pub",
+      "intro": "Jouez au Solitaire Klondike classique hors ligne. Piochez une ou trois cartes, choisissez un défi à votre mesure et utilisez Annuler, Rejouer ou un indice facultatif quand vous voulez essayer une autre approche.",
+      "body": "Les donnes de Trivial à Expert commencent avec une solution vérifiée. Le niveau Démentiel, distinct, contient des donnes non certifiées. Une donne de départ soluble peut quand même mener à une impasse. Les indices analysent votre plateau actuel et signalent quand ils ne peuvent pas établir de chemin vers la victoire dans leur limite de recherche.\n\nFonctionnalités :\n• Six niveaux de difficulté, avec des donnes certifiées solubles de Trivial à Expert\n• Règles de pioche d'une ou de trois cartes\n• Indices facultatifs qui analysent votre plateau actuel\n• Commandes par toucher ou glisser, Annuler, Rejouer et fin automatique\n• Déplacements automatiques vers les fondations, sons et animations des cartes en option\n• Thèmes clair, sombre et selon l'heure\n• Statistiques sur l'appareil et comparaison avec vos meilleurs résultats\n• 30 langues d'interface"
+    },
+    "spider": {
+      "title": "Solitaire Spider: FinitePlay",
+      "shortDescription": "Spider simple, hors ligne, soucieux de la batterie : 1/2/4 couleurs, sans pub",
+      "intro": "Formez des suites complètes du Roi à l'As au Spider Solitaire. Commencez avec 1 couleur ou relevez le défi avec 2 ou 4 couleurs, avec Annuler, Rejouer et des indices facultatifs quand vous voulez de l'aide.",
+      "body": "Chaque donne de départ incluse a une solution vérifiée. Vos choix comptent pourtant : une position ultérieure peut ne plus être gagnable. Les indices guidés peuvent suivre une solution connue ; une fois que vous avez pris un autre chemin, la recherche d'une nouvelle solution est soumise à des limites.\n\nFonctionnalités :\n• Spider à une, deux et quatre couleurs\n• 23 675 donnes certifiées résolubles pour les trois variantes (1, 2 et 4 couleurs)\n• Touchez ou glissez des suites complètes de la même couleur\n• Mise en évidence des coups et indices guidés facultatifs\n• Annuler, Rejouer, et distribution des rangées et déplacements de cartes animés\n• Commandes de son et d'animation facultatives\n• Thèmes clair, sombre et selon l'heure\n• Statistiques sur l'appareil\n• 30 langues d'interface"
+    },
+    "freecell": {
+      "title": "Solitaire FreeCell: FinitePlay",
+      "shortDescription": "FreeCell simple, hors ligne, soucieux de la batterie, donnes solubles, sans pub",
+      "intro": "Voyez toutes les cartes et planifiez votre prochain coup dans le FreeCell classique. Utilisez les quatre cases libres et les colonnes vides pour faire de la place, déplacez des suites de cartes et testez différentes approches avec Annuler et Rejouer.",
+      "body": "Chaque donne incluse commence avec une solution vérifiée. Un plateau ultérieur peut tout de même aboutir à une impasse, et les indices ont des limites de recherche ; quand un indice ne peut pas établir de chemin, il le dit clairement.\n\nLes cases libres et les colonnes vides permettent de déplacer des suites de cartes quand il y a assez de place ; le jeu calcule pour vous la capacité autorisée.\n\nFonctionnalités :\n• 2 000 donnes certifiées solubles\n• Indices facultatifs qui analysent votre plateau actuel\n• Commandes par toucher ou glisser, y compris pour plusieurs cartes à la fois\n• Annuler, Rejouer et fin automatique\n• Déplacements automatiques vers les fondations, sons et animations des cartes en option\n• Thèmes clair, sombre et selon l'heure\n• Statistiques sur l'appareil et comparaison avec vos meilleurs résultats\n• 30 langues d'interface"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Blackjack simple, hors ligne, soucieux de la batterie, jetons virtuels, sans pub",
+      "intro": "Jouez au blackjack hors ligne contre un croupier géré par l'ordinateur, avec des jetons virtuels et des explications utiles pour les débutants. Jamais d'argent réel : les jetons n'ont aucune valeur monétaire, et il n'y a ni mises en argent réel, ni dépôts, ni achats de jetons, ni retraits, ni lots à gagner.",
+      "body": "Entraînez-vous à décider de tirer, rester, doubler ou séparer grâce à des indices facultatifs de stratégie de base qui expliquent le raisonnement et le risque de se brûler. Les règles fixes utilisent six jeux de cartes, rebattus à chaque manche ; le croupier reste sur un 17 souple, le blackjack paie 3:2, et l'assurance ainsi que la vérification du blackjack par le croupier sont incluses. Les indices aident à comprendre les choix ; ils ne garantissent aucun gain.\n\nVous jouez uniquement contre le croupier géré par l'ordinateur : il n'y a aucune partie contre de vraies personnes. Conçu pour les adultes de 18 ans et plus."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Poker simple, hors ligne, soucieux de la batterie : jetons virtuels, sans pub",
+      "intro": "Participez hors ligne à un tournoi de Texas Hold'em à six places contre cinq adversaires gérés par l'ordinateur, avec des jetons virtuels et des indices qui expliquent les choix. Jamais d'argent réel : les jetons n'ont aucune valeur monétaire, et il n'y a ni mises en argent réel, ni dépôts, ni achats de jetons, ni retraits, ni lots à gagner.",
+      "body": "Des indices facultatifs expliquent l'idée derrière une action suggérée et aident les débutants à comprendre la force de la main, la position, l'équité estimée et la cote du pot. Les conseils reposent sur les informations visibles ; ils ne voient pas les cartes cachées des adversaires et ne garantissent pas une main gagnante.\n\nChaque place commence avec la même pile de jetons virtuels. Jouez avec des blindes croissantes, prenez vos décisions de mise et visez à être le dernier joueur à la table. Sauvegardez votre tournoi et reprenez-le plus tard.\n\nFonctionnalités :\n• Cinq adversaires gérés par l'ordinateur aux styles de jeu distincts\n• Se coucher, checker, suivre, miser, relancer et jouer tapis\n• Réglage de la mise et répartition des pots secondaires\n• Indices avec équité estimée et cote du pot\n• Tournois sauvegardés et statistiques sur l'appareil\n• Règles, classement des mains et aide stratégique\n• Dispositions portrait et paysage\n• Réglages du thème, du son, des animations et de la langue\n• 30 langues d'interface\n\nVous jouez uniquement contre des adversaires gérés par l'ordinateur : il n'y a aucune partie contre de vraies personnes. Conçu pour les adultes de 18 ans et plus."
+    }
+  }
+}

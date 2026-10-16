@@ -1,0 +1,37 @@
+{
+  "promise": "Slib FinitePlay: úplně zdarma, bez reklam, nákupů v aplikaci a předplatného. Hra zůstává celá ve tvém zařízení: žádné účty, sledování, sběr ani sdílení dat, žebříčky či online funkce. Tvůj postup a statistiky zůstávají soukromé a místní.",
+  "rest": "Hraj vlastním tempem. Nastavitelná připomenutí přestávky tě po delším hraní vyzvou k pauze. Žádné bonusy, které by tě popoháněly, ani časově omezené denní odměny. Místní skóre a statistiky ti pomáhají zamyslet se nad vlastní hrou, bez soutěžních žebříčků a bez tlaku pokračovat.",
+  "footer": "FinitePlay vytváří karetní hry, které respektují tvůj čas, soukromí i pozornost.",
+  "games": {
+    "klondike": {
+      "title": "Pasiáns Klondike: FinitePlay",
+      "shortDescription": "Jednoduchý offline Klondike ohleduplný k baterii: líznutí 1/3, bez reklam",
+      "intro": "Hraj klasický Klondike Solitaire offline. Vyber si líznutí jedné nebo tří karet, zvol vhodnou obtížnost a když chceš zkusit jiný postup, použij Zpět, Přehrát znovu nebo nepovinnou nápovědu.",
+      "body": "Rozdání od úrovně Triviální po Expertní začínají ověřeným řešením. Samostatná úroveň Šílená obsahuje necertifikovaná rozdání. Řešitelné úvodní rozdání může přesto skončit slepou uličkou. Nápovědy prohledávají aktuální hrací plochu a oznámí, když v rámci svého limitu nedokážou najít cestu k výhře.\n\nFunkce:\n• Šest úrovní obtížnosti, s certifikovaně řešitelnými rozdáními od Triviální po Expertní\n• Pravidla líznutí jedné i tří karet\n• Nepovinné nápovědy, které prohledávají aktuální hrací plochu\n• Ovládání klepnutím nebo tažením, Zpět, Přehrát znovu a automatické dokončení\n• Nepovinné automatické přesuny do sbírek, zvuk a animace karet\n• Světlý, tmavý a časově řízený motiv\n• Statistiky v zařízení a porovnání s osobními rekordy\n• 30 jazyků rozhraní"
+    },
+    "spider": {
+      "title": "Pasiáns Pavouk: FinitePlay",
+      "shortDescription": "Jednoduchý offline Spider ohleduplný k baterii: 1/2/4 barvy, bez reklam",
+      "intro": "Skládej úplné řady od krále po eso ve Spider Solitaire. Začni s 1 barvou, nebo se pusť do 2 či 4 barev, se Zpět, Přehrát znovu a nepovinnou nápovědou, když chceš pomoct.",
+      "body": "Každé zahrnuté úvodní rozdání má ověřené řešení. Na tvých rozhodnutích ale pořád záleží: pozdější pozice už nemusí vést k výhře. Vedené nápovědy mohou sledovat známé řešení; po zvolení jiné cesty podléhá hledání nového řešení limitům prohledávání.\n\nFunkce:\n• Spider s jednou, dvěma a čtyřmi barvami\n• 23 675 certifikovaně řešitelných rozdání napříč všemi třemi počty barev\n• Klepnutím nebo tažením přesouvej celé řady jedné barvy\n• Zvýraznění tahů a nepovinné vedené nápovědy\n• Zpět, Přehrát znovu a animované rozdávání řad i přesuny karet\n• Nepovinné ovládání zvuku a animací\n• Světlý, tmavý a časově řízený motiv\n• Statistiky v zařízení\n• 30 jazyků rozhraní"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Jednoduchý offline FreeCell ohleduplný k baterii: nápověda, bez reklam",
+      "intro": "Vidíš všechny karty a plánuješ další tah v klasickém FreeCellu. Využij čtyři volné buňky a prázdné sloupce k uvolnění místa, přesouvej řady karet a zkoušej různé postupy pomocí Zpět a Přehrát znovu.",
+      "body": "Každé zahrnuté rozdání začíná ověřeným řešením. Pozdější pozice může přesto skončit slepou uličkou a nápovědy mají limity prohledávání; když nápověda nedokáže najít cestu, řekne to jasně.\n\nVolné buňky a prázdné sloupce umožňují přesouvat řady karet, když je dost místa; hra za tebe spočítá, kolik karet smíš přesunout.\n\nFunkce:\n• 2 000 certifikovaně řešitelných rozdání\n• Nepovinné nápovědy, které prohledávají aktuální hrací plochu\n• Ovládání klepnutím nebo tažením, včetně přesunů více karet\n• Zpět, Přehrát znovu a automatické dokončení\n• Nepovinné automatické přesuny do sbírek, zvuk a animace karet\n• Světlý, tmavý a časově řízený motiv\n• Statistiky v zařízení a porovnání s osobními rekordy\n• 30 jazyků rozhraní"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Jednoduchý offline Blackjack ohleduplný k baterii: virtuální žetony, bez reklam",
+      "intro": "Hraj blackjack offline proti počítačovému krupiérovi, s virtuálními žetony a srozumitelným vysvětlením pro začátečníky. Nikdy o skutečné peníze: žetony nemají žádnou peněžní hodnotu a nejsou zde žádné sázky o skutečné peníze, vklady, nákupy žetonů, výběry ani ceny.",
+      "body": "Procvičuj rozhodnutí líznout, stát, zdvojit a rozdělit s nepovinnými nápovědami podle základní strategie, které vysvětlují důvody i riziko přetáhnutí. Pevná pravidla: šest balíčků, v každém kole znovu zamíchaných; krupiér stojí na měkkých 17, blackjack se vyplácí 3:2 a součástí jsou pojištění a kontrola krupiéra na blackjack. Nápovědy ti pomáhají porozumět volbám; nezaručují výhru.\n\nHraješ jen proti počítačovému krupiérovi: žádné zápasy proti skutečným lidem. Určeno dospělým od 18 let."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Jednoduchý offline poker ohleduplný k baterii: virtuální žetony, bez reklam",
+      "intro": "Hraj offline turnaj Texas Hold'em pokeru o šesti místech proti pěti počítačovým soupeřům, s virtuálními žetony a nápovědami, které vysvětlují volby. Nikdy o skutečné peníze: žetony nemají žádnou peněžní hodnotu a nejsou zde žádné sázky o skutečné peníze, vklady, nákupy žetonů, výběry ani ceny.",
+      "body": "Nepovinné nápovědy vysvětlují myšlenku doporučené akce a pomáhají začátečníkům pochopit sílu ruky, pozici, odhadnutou equity a šance banky (pot odds). Rada vychází z viditelných informací; nevidí skryté karty soupeřů a nezaručuje vítěznou ruku.\n\nKaždé místo začíná se stejným množstvím virtuálních žetonů. Hraj se stoupajícími blindy, rozhoduj se o sázkách a usiluj o to být posledním hráčem u stolu. Turnaj si ulož a vrať se k němu později.\n\nFunkce:\n• Pět počítačových soupeřů s odlišnými styly hry\n• Zahodit, check, vyrovnat, vsadit, zvýšit a all-in\n• Ovládání výše sázky a vypořádání vedlejších bank\n• Nápovědy s odhadnutou equity a šancemi banky\n• Uložené turnaje a statistiky v zařízení\n• Pravidla, pořadí kombinací a nápověda ke strategii\n• Rozvržení na výšku i na šířku\n• Nastavení motivu, zvuku, animací a jazyka\n• 30 jazyků rozhraní\n\nHraješ jen proti počítačovým soupeřům: žádné zápasy proti skutečným lidem. Určeno dospělým od 18 let."
+    }
+  }
+}

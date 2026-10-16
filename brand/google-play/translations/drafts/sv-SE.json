@@ -1,0 +1,37 @@
+{
+  "promise": "FinitePlay-löftet: helt gratis, utan annonser, köp i appen eller prenumerationer. Spelet finns helt på din enhet: inga konton, ingen spårning, ingen insamling eller delning av data, inga topplistor och inga onlinefunktioner. Dina framsteg och din statistik förblir privata och lokala.",
+  "rest": "Spela i din egen takt. Inställbara vilopåminnelser uppmanar dig att ta en paus efter längre spelande. Det finns inga brådskande bonusar och inga dagliga belöningar med tidsgräns. Lokala poäng och statistik hjälper dig att reflektera över ditt spelande, utan topplistor eller press att fortsätta.",
+  "footer": "FinitePlay gör kortspel som respekterar din tid, din integritet och din uppmärksamhet.",
+  "games": {
+    "klondike": {
+      "title": "Klondike patiens: FinitePlay",
+      "shortDescription": "Enkel, batterimedveten offline-Klondike: dra 1/3, tips, inga annonser",
+      "intro": "Spela klassisk Klondike-patiens offline. Välj att dra ett eller tre kort, välj en bekväm svårighetsgrad och använd Ångra, Spela igen eller ett valfritt tips när du vill pröva ett annat angreppssätt.",
+      "body": "Givar från Trivial till Expert börjar med en verifierad lösning. Den separata nivån Vansinnig innehåller ocertifierade givar. En lösbar startgiv kan ändå leda till en återvändsgränd. Tips söker igenom ditt nuvarande bord och meddelar när de inte kan fastställa en vinnande väg inom sin gräns.\n\nFunktioner:\n• Sex svårighetsgrader, med certifierat lösbara givar från Trivial till Expert\n• Regler för att dra ett eller tre kort\n• Valfria tips som söker igenom ditt nuvarande bord\n• Tryck- eller dragstyrning, Ångra, Spela igen och automatisk avslutning\n• Valfria automatiska drag till hemhögarna, ljud och kortanimationer\n• Ljust, mörkt och tidsstyrt tema\n• Statistik på enheten och jämförelser med personliga rekord\n• 30 gränssnittsspråk"
+    },
+    "spider": {
+      "title": "Spindelharpan: FinitePlay",
+      "shortDescription": "Enkel, batterimedveten offline-Spider: 1/2/4 färger, tips, inga annonser",
+      "intro": "Bygg kompletta sviter från kung till ess i Spindelpatiens. Börja med 1 färg eller ta dig an 2 eller 4 färger, med Ångra, Spela igen och valfria tips när du vill ha hjälp.",
+      "body": "Varje medföljande startgiv har en verifierad lösning. Dina val spelar ändå roll: en senare position kanske inte längre går att vinna. Vägledande tips kan följa en känd lösning; när du har valt en annan väg gäller sökgränser för att hitta en ny lösning.\n\nFunktioner:\n• Spindelpatiens med en, två och fyra färger\n• 23 675 certifierat lösbara givar för alla tre färgantal\n• Tryck eller dra kompletta sviter i samma färg\n• Markering av drag och valfria vägledande tips\n• Ångra, Spela igen samt animerade radgivar och kortflyttar\n• Valfria ljud- och animationsinställningar\n• Ljust, mörkt och tidsstyrt tema\n• Statistik på enheten\n• 30 gränssnittsspråk"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Enkel, batterimedveten offline-FreeCell: lösbara givar, tips, inga annonser",
+      "intro": "Se varje kort och planera nästa drag i klassisk FreeCell. Använd de fyra frizonerna och tomma kolumner för att skapa utrymme, flytta kortsviter och utforska olika angreppssätt med Ångra och Spela igen.",
+      "body": "Varje medföljande giv börjar med en verifierad lösning. Ett senare bord kan ändå nå en återvändsgränd, och tips har sökgränser; när ett tips inte kan fastställa en väg säger det det tydligt.\n\nFrizoner och tomma kolumner låter dig flytta kortsviter när det finns tillräckligt med plats; spelet räknar ut den tillåtna kapaciteten åt dig.\n\nFunktioner:\n• 2 000 certifierat lösbara givar\n• Valfria tips som söker igenom ditt nuvarande bord\n• Tryck- eller dragstyrning, även för flera kort i taget\n• Ångra, Spela igen och automatisk avslutning\n• Valfria automatiska drag till hemhögarna, ljud och kortanimationer\n• Ljust, mörkt och tidsstyrt tema\n• Statistik på enheten och jämförelser med personliga rekord\n• 30 gränssnittsspråk"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Enkel, batterimedveten offline-Blackjack: virtuella marker, tips, inga annonser",
+      "intro": "Spela blackjack offline mot en datorstyrd givare, med virtuella marker och hjälpsamma förklaringar för nybörjare. Aldrig riktiga pengar: markerna har inget penningvärde, och det finns inga insatser med riktiga pengar, insättningar, markinköp, uttag eller vinster.",
+      "body": "Öva på besluten ta kort, stanna, dubbla och dela med valfria tips baserade på grundstrategi, som förklarar resonemanget och risken att gå över 21. De fasta reglerna använder sex kortlekar som blandas om inför varje runda; givaren stannar på mjuk 17, blackjack betalar 3:2, och försäkring och givarens kontroll av det dolda kortet ingår. Tips hjälper dig att förstå valen; de garanterar inte vinst.\n\nDu spelar bara mot den datorstyrda givaren: det finns inga partier mot riktiga människor. Utformat för vuxna från 18 år."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Enkel, batterimedveten offline-poker: virtuella marker, 5 rivaler, inga annonser",
+      "intro": "Spela en Texas Hold'em-pokerturnering med sex platser offline mot fem datorstyrda motståndare, med virtuella marker och tips som förklarar valen. Aldrig riktiga pengar: markerna har inget penningvärde, och det finns inga insatser med riktiga pengar, insättningar, markinköp, uttag eller vinster.",
+      "body": "Valfria tips förklarar idén bakom en föreslagen handling och hjälper nybörjare att förstå handstyrka, position, uppskattad equity och pottodds. Rådet bygger på synlig information; det kan inte se motståndarnas dolda kort och garanterar ingen vinnande hand.\n\nVarje plats börjar med samma hög virtuella marker. Spela genom stigande blinds, fatta dina beslut om satsningar och sikta på att bli sista spelaren vid bordet. Spara din turnering och återvänd till den senare.\n\nFunktioner:\n• Fem datorstyrda motståndare med olika spelstilar\n• Fold, check, call, bet, höj och all in\n• Reglage för insatsstorlek och uppgörelse av sidopottar\n• Tips med uppskattad equity och pottodds\n• Sparade turneringar och statistik på enheten\n• Regler, handrankning och strategihjälp\n• Stående och liggande layout\n• Inställningar för tema, ljud, animation och språk\n• 30 gränssnittsspråk\n\nDu spelar bara mot datorstyrda motståndare: det finns inga partier mot riktiga människor. Utformat för vuxna från 18 år."
+    }
+  }
+}

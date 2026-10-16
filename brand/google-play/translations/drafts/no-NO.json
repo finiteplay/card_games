@@ -1,0 +1,37 @@
+{
+  "promise": "FinitePlay-løftet: helt gratis, uten reklame, kjøp i appen eller abonnementer. Spillet foregår helt på enheten din: ingen kontoer, ingen sporing, ingen innsamling eller deling av data, ingen rangeringslister og ingen nettfunksjoner. Fremgangen og statistikken din forblir private og lokale.",
+  "rest": "Spill i ditt eget tempo. Konfigurerbare pausepåminnelser oppfordrer deg til å ta en pause etter lengre spilling. Det finnes ingen hastebonuser og ingen daglige belønninger med tidsfrist. Lokale poeng og statistikk hjelper deg å reflektere over spillingen din, uten rangeringslister eller press om å fortsette.",
+  "footer": "FinitePlay lager kortspill som respekterer tiden din, personvernet ditt og oppmerksomheten din.",
+  "games": {
+    "klondike": {
+      "title": "Klondike kabal: FinitePlay",
+      "shortDescription": "Enkel, batteribevisst offline Klondike: trekk 1/3, hint, uten reklame",
+      "intro": "Spill klassisk Klondike-kabal offline. Velg å trekke ett eller tre kort, velg en passende vanskelighetsgrad, og bruk Angre, Spill om igjen eller et valgfritt hint når du vil prøve en annen tilnærming.",
+      "body": "Giv fra Triviell til Ekspert starter med en verifisert løsning. Det separate nivået Vanvittig inneholder usertifiserte giv. Et løsbart startgiv kan likevel ende i en blindvei. Hint søker gjennom brettet slik det står nå, og melder fra når de ikke kan fastslå en vinnende vei innenfor grensen sin.\n\nFunksjoner:\n• Seks vanskelighetsgrader, med sertifisert løsbare giv fra Triviell til Ekspert\n• Regler for å trekke ett eller tre kort\n• Valgfrie hint som søker gjennom brettet slik det står nå\n• Styring med trykk eller dra, Angre, Spill om igjen og automatisk ferdigstilling\n• Valgfrie automatiske trekk til grunnbunkene, lyd og kortanimasjoner\n• Lyst, mørkt og tidsstyrt tema\n• Statistikk på enheten og sammenligning med personlige rekorder\n• 30 grensesnittspråk"
+    },
+    "spider": {
+      "title": "Edderkopp kabal: FinitePlay",
+      "shortDescription": "Enkel, batteribevisst offline Spider: 1/2/4 farger, hint, uten reklame",
+      "intro": "Bygg komplette rekker fra konge til ess i Spider-kabal. Begynn med 1 farge eller ta fatt på 2 eller 4 farger, med Angre, Spill om igjen og valgfrie hint når du vil ha hjelp.",
+      "body": "Hvert medfølgende startgiv har en verifisert løsning. Valgene dine har likevel betydning: en senere stilling er kanskje ikke lenger mulig å vinne. Veiledende hint kan følge en kjent løsning; når du har valgt en annen vei, er det å finne en ny løsning underlagt søkegrenser.\n\nFunksjoner:\n• Spider med én, to og fire farger\n• 23 675 sertifisert løsbare giv på tvers av alle tre fargeantallene\n• Trykk eller dra komplette rekker i samme farge\n• Utheving av trekk og valgfrie veiledende hint\n• Angre, Spill om igjen og animerte radutdelinger og kortflyttinger\n• Valgfrie lyd- og animasjonsinnstillinger\n• Lyst, mørkt og tidsstyrt tema\n• Statistikk på enheten\n• 30 grensesnittspråk"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Enkel, batteribevisst offline FreeCell: løsbare giv, hint, uten reklame",
+      "intro": "Se hvert kort og planlegg neste trekk i klassisk FreeCell. Bruk de fire fricellene og tomme kolonner til å skape plass, flytt kortrekker og utforsk ulike tilnærminger med Angre og Spill om igjen.",
+      "body": "Hvert medfølgende giv starter med en verifisert løsning. Et senere brett kan likevel ende i en blindvei, og hint har søkegrenser; når et hint ikke kan fastslå en vei, sier det det tydelig.\n\nFriceller og tomme kolonner lar deg flytte kortrekker når det er nok plass; spillet regner ut den lovlige kapasiteten for deg.\n\nFunksjoner:\n• 2 000 sertifisert løsbare giv\n• Valgfrie hint som søker gjennom brettet slik det står nå\n• Styring med trykk eller dra, også med flere kort om gangen\n• Angre, Spill om igjen og automatisk ferdigstilling\n• Valgfrie automatiske trekk til grunnbunkene, lyd og kortanimasjoner\n• Lyst, mørkt og tidsstyrt tema\n• Statistikk på enheten og sammenligning med personlige rekorder\n• 30 grensesnittspråk"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Enkel, batteribevisst offline Blackjack: virtuelle sjetonger, hint, uten reklame",
+      "intro": "Spill blackjack offline mot en datastyrt dealer, med virtuelle sjetonger og hjelpsomme forklaringer for nybegynnere. Aldri ekte penger: sjetongene har ingen pengeverdi, og det finnes ingen innsatser med ekte penger, innskudd, kjøp av sjetonger, uttak eller premier.",
+      "body": "Øv på beslutningene trekk, stå, doble og splitt med valgfrie hint basert på grunnstrategi, som forklarer begrunnelsen og risikoen for å gå over 21. De faste reglene bruker seks kortstokker som stokkes på nytt hver runde; dealeren står på myk 17, blackjack betaler 3:2, og forsikring og dealerens sjekk av det skjulte kortet er med. Hint hjelper deg å forstå valgene; de garanterer ikke seier.\n\nDu spiller bare mot den datastyrte dealeren: det finnes ingen partier mot ekte mennesker. Laget for voksne fra 18 år."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Enkel, batteribevisst offlinepoker: virtuelle sjetonger, 5 rivaler, uten reklame",
+      "intro": "Spill en Texas Hold'em-pokerturnering med seks plasser offline mot fem datastyrte motstandere, med virtuelle sjetonger og hint som forklarer valgene. Aldri ekte penger: sjetongene har ingen pengeverdi, og det finnes ingen innsatser med ekte penger, innskudd, kjøp av sjetonger, uttak eller premier.",
+      "body": "Valgfrie hint forklarer tanken bak en foreslått handling og hjelper nybegynnere å forstå håndstyrke, posisjon, estimert equity og pot odds. Rådet bruker synlig informasjon; det kan ikke se motstandernes skjulte kort og garanterer ingen vinnende hånd.\n\nHver plass starter med samme stabel virtuelle sjetonger. Spill deg gjennom stigende blinds, ta dine beslutninger om satsing og sikt på å bli siste spiller ved bordet. Lagre turneringen og fortsett senere.\n\nFunksjoner:\n• Fem datastyrte motstandere med ulike spillestiler\n• Fold, check, call, bet, raise og all in\n• Kontroller for innsatsstørrelse og oppgjør av sidepotter\n• Hint med estimert equity og pot odds\n• Lagrede turneringer og statistikk på enheten\n• Regler, håndrangering og strategihjelp\n• Stående og liggende layout\n• Innstillinger for tema, lyd, animasjon og språk\n• 30 grensesnittspråk\n\nDu spiller bare mot datastyrte motstandere: det finnes ingen partier mot ekte mennesker. Laget for voksne fra 18 år."
+    }
+  }
+}

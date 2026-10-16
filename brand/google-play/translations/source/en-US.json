@@ -1,0 +1,37 @@
+{
+  "promise": "The FinitePlay promise: completely free, with no ads, in-app purchases, or subscriptions. Play stays completely on your device: no accounts, tracking, data collection or sharing, leaderboards, or online features. Your progress and statistics stay private and local.",
+  "rest": "Play at your own pace. Configurable rest reminders invite you to pause after extended play. There are no urgency bonuses or timed daily rewards. Local scores and statistics help you reflect on your play, without competitive leaderboards or pressure to keep going.",
+  "footer": "FinitePlay makes card games that respect your time, privacy, and attention.",
+  "games": {
+    "klondike": {
+      "title": "Klondike Solitaire: FinitePlay",
+      "shortDescription": "Simple, battery-conscious offline Klondike: draw 1/3, hints, no ads",
+      "intro": "Play classic Klondike Solitaire offline. Choose draw 1 or draw 3, pick a comfortable challenge, and use undo, replay, or an optional hint when you want another approach.",
+      "body": "Deals from Trivial through Expert start with a verified solution. The separate Insane level contains uncertified deals. A solvable starting deal can still lead to a dead end. Hints search your current board and report when they cannot establish a winning path within their limit.\n\nFeatures:\n• Six difficulty levels, with certified-solvable deals from Trivial through Expert\n• Draw-one and draw-three rules\n• Optional hints that search your current board\n• Tap or drag controls, Undo, Replay, and automatic finish\n• Optional automatic foundation moves, sound, and card animations\n• Light, dark, and time-based themes\n• On-device statistics and personal-best comparisons\n• 30 interface languages"
+    },
+    "spider": {
+      "title": "Spider Solitaire: FinitePlay",
+      "shortDescription": "Simple, battery-conscious offline Spider: 1/2/4 suits, hints, no ads",
+      "intro": "Build complete King-to-Ace runs in Spider Solitaire. Start with 1 suit or take on 2 or 4 suits, with undo, replay, and optional hints when you want help.",
+      "body": "Every included starting deal has a verified solution. Your choices still matter: a later position may no longer be winnable. Guided hints can follow a known solution; after you choose another path, finding a new solution is subject to search limits.\n\nFeatures:\n• One-, two-, and four-suit Spider\n• 23,675 certified-solvable deals across all three suit counts\n• Tap or drag complete same-suit sequences\n• Move highlighting and optional guided hints\n• Undo, Replay, and animated row deals and card moves\n• Optional sound and animation controls\n• Light, dark, and time-based themes\n• On-device statistics\n• 30 interface languages"
+    },
+    "freecell": {
+      "title": "FreeCell Solitaire: FinitePlay",
+      "shortDescription": "Simple, battery-conscious offline FreeCell: solvable deals, hints, no ads",
+      "intro": "See every card and plan your next move in classic FreeCell. Use four free cells and empty columns to make space, move card sequences, and explore different approaches with undo and replay.",
+      "body": "Every included deal starts with a verified solution. A later board can still reach a dead end, and hints have search limits; when a hint cannot establish a path, it says so plainly.\n\nFree cells and empty columns let you move card sequences when there is enough space; the game works out the legal capacity for you.\n\nFeatures:\n• 2,000 certified-solvable hands\n• Optional hints that search your current board\n• Tap or drag controls, including multi-card moves\n• Undo, Replay, and automatic finish\n• Optional automatic foundation moves, sound, and card animations\n• Light, dark, and time-based themes\n• On-device statistics and personal-best comparisons\n• 30 interface languages"
+    },
+    "blackjack": {
+      "title": "Blackjack 21: FinitePlay",
+      "shortDescription": "Simple, battery-conscious offline Blackjack: virtual chips, hints, no ads",
+      "intro": "Play blackjack offline against a computer dealer, with virtual chips and helpful explanations for beginners. Never real money: chips have no monetary value, and there are no real-money bets, deposits, chip purchases, cash-outs, or prizes.",
+      "body": "Practice hit, stand, double, and split decisions with optional basic-strategy hints that explain the reasoning and bust risk. The fixed rules use six decks, shuffled fresh each round; the dealer stands on soft 17, blackjack pays 3:2, and insurance and dealer peek are included. Hints help you understand choices; they do not guarantee wins.\n\nYou only play against the computer dealer: there are no matches against real people. Designed for adults aged 18 and over."
+    },
+    "holdem": {
+      "title": "Texas Holdem Poker: FinitePlay",
+      "shortDescription": "Simple, battery-conscious offline poker: virtual chips, 5 opponents, no ads",
+      "intro": "Play a six-seat Texas Hold'em poker tournament offline against five computer opponents, with virtual chips and hints that explain the choices. Never real money: chips have no monetary value, and there are no real-money bets, deposits, chip purchases, cash-outs, or prizes.",
+      "body": "Optional hints explain the idea behind a suggested action, helping beginners understand hand strength, position, estimated equity, and pot odds. The advice uses visible information; it cannot see opponents' hidden cards and does not guarantee a winning hand.\n\nEvery seat starts with the same stack of virtual chips. Play through rising blinds, make your betting decisions, and aim to be the last player at the table. Save your tournament and return to it later.\n\nFeatures:\n• Five computer opponents with distinct playing styles\n• Fold, check, call, bet, raise, and go all-in\n• Bet-sizing controls and side-pot settlement\n• Hints with estimated equity and pot odds\n• Saved tournaments and on-device statistics\n• Rules, hand rankings, and strategy help\n• Portrait and landscape layouts\n• Theme, sound, animation, and language settings\n• 30 interface languages\n\nYou only play against computer opponents: there are no matches against real people. Designed for adults aged 18 and over."
+    }
+  }
+}

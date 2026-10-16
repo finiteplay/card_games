@@ -1,0 +1,37 @@
+{
+  "promise": "La promessa di FinitePlay: completamente gratis, senza pubblicità, acquisti in-app o abbonamenti. Tutto resta sul tuo dispositivo: nessun account, tracciamento, raccolta o condivisione di dati, nessuna classifica o funzione online. I tuoi progressi e le tue statistiche restano privati e locali.",
+  "rest": "Gioca con i tuoi tempi. I promemoria di pausa configurabili ti invitano a fermarti dopo una lunga sessione di gioco. Non ci sono bonus a tempo né ricompense giornaliere a scadenza. Punteggi e statistiche locali ti aiutano a riflettere sul tuo gioco, senza classifiche competitive né pressione a continuare.",
+  "footer": "FinitePlay crea giochi di carte che rispettano il tuo tempo, la tua privacy e la tua attenzione.",
+  "games": {
+    "klondike": {
+      "title": "Solitario Klondike: FinitePlay",
+      "shortDescription": "Klondike semplice, offline, attento alla batteria: pesca 1/3, senza pubblicità",
+      "intro": "Gioca offline al classico Solitario Klondike. Scegli se pescare una o tre carte, trova una sfida a tua misura e usa Annulla, Ripeti o un suggerimento facoltativo quando vuoi provare un altro approccio.",
+      "body": "Le partite da Banale a Esperto iniziano con una soluzione verificata. Il livello Folle, separato, contiene partite non certificate. Una partita risolvibile all'inizio può comunque finire in un vicolo cieco. I suggerimenti analizzano la tua situazione attuale e segnalano quando non riescono a stabilire una strada verso la vittoria entro il loro limite di ricerca.\n\nFunzionalità:\n• Sei livelli di difficoltà, con partite certificate come risolvibili da Banale a Esperto\n• Regole di pesca di una o tre carte\n• Suggerimenti facoltativi che analizzano la tua situazione attuale\n• Comandi con tocco o trascinamento, Annulla, Ripeti e completamento automatico\n• Mosse automatiche sulle fondazioni, suoni e animazioni delle carte facoltativi\n• Temi chiaro, scuro e in base all'ora\n• Statistiche sul dispositivo e confronto con i tuoi record personali\n• 30 lingue dell'interfaccia"
+    },
+    "spider": {
+      "title": "Solitario Spider: FinitePlay",
+      "shortDescription": "Spider semplice, offline, attento alla batteria: 1/2/4 semi, senza pubblicità",
+      "intro": "Costruisci sequenze complete dal Re all'Asso nel Solitario Spider. Inizia con 1 seme o scegli la sfida con 2 o 4 semi, con Annulla, Ripeti e suggerimenti facoltativi quando vuoi un aiuto.",
+      "body": "Ogni partita iniziale inclusa ha una soluzione verificata. Le tue scelte contano comunque: una posizione successiva può non essere più vincibile. I suggerimenti guidati possono seguire una soluzione nota; dopo che scegli un'altra strada, la ricerca di una nuova soluzione è soggetta a limiti.\n\nFunzionalità:\n• Spider a uno, due e quattro semi\n• 23.675 partite certificate come risolvibili nelle tre varianti (1, 2 e 4 semi)\n• Tocca o trascina sequenze complete dello stesso seme\n• Evidenziazione delle mosse e suggerimenti guidati facoltativi\n• Annulla, Ripeti e distribuzioni delle file e movimenti delle carte animati\n• Controlli facoltativi per suono e animazioni\n• Temi chiaro, scuro e in base all'ora\n• Statistiche sul dispositivo\n• 30 lingue dell'interfaccia"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "FreeCell offline, attento alla batteria: partite risolvibili, senza pubblicità",
+      "intro": "Vedi tutte le carte e pianifica la mossa successiva nel classico FreeCell. Usa le quattro celle libere e le colonne vuote per fare spazio, sposta sequenze di carte e prova approcci diversi con Annulla e Ripeti.",
+      "body": "Ogni partita inclusa inizia con una soluzione verificata. Una situazione successiva può comunque finire in un vicolo cieco, e i suggerimenti hanno limiti di ricerca; quando un suggerimento non riesce a stabilire una strada, lo dice chiaramente.\n\nLe celle libere e le colonne vuote permettono di spostare sequenze di carte quando c'è abbastanza spazio; il gioco calcola per te la capacità consentita.\n\nFunzionalità:\n• 2.000 partite certificate come risolvibili\n• Suggerimenti facoltativi che analizzano la tua situazione attuale\n• Comandi con tocco o trascinamento, anche per più carte insieme\n• Annulla, Ripeti e completamento automatico\n• Mosse automatiche sulle fondazioni, suoni e animazioni delle carte facoltativi\n• Temi chiaro, scuro e in base all'ora\n• Statistiche sul dispositivo e confronto con i tuoi record personali\n• 30 lingue dell'interfaccia"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Blackjack offline, attento alla batteria: fiches virtuali, senza pubblicità",
+      "intro": "Gioca a blackjack offline contro un banco gestito dal computer, con fiches virtuali e spiegazioni utili per chi inizia. Mai denaro reale: le fiches non hanno alcun valore monetario e non ci sono puntate in denaro reale, depositi, acquisti di fiches, prelievi o premi.",
+      "body": "Allenati a decidere se chiedere carta, stare, raddoppiare o dividere con suggerimenti facoltativi di strategia di base che spiegano il ragionamento e il rischio di sballare. Le regole fisse usano sei mazzi, rimescolati a ogni mano; il banco sta sul 17 morbido, il blackjack paga 3:2 e sono inclusi l'assicurazione e il controllo del blackjack da parte del banco. I suggerimenti aiutano a capire le scelte, ma non garantiscono vittorie.\n\nGiochi solo contro il banco gestito dal computer: non ci sono partite contro persone reali. Pensato per adulti dai 18 anni in su."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Poker offline semplice, attento alla batteria: fiches virtuali, senza pubblicità",
+      "intro": "Gioca offline un torneo di Texas Hold'em a sei posti contro cinque avversari gestiti dal computer, con fiches virtuali e suggerimenti che spiegano le scelte. Mai denaro reale: le fiches non hanno alcun valore monetario e non ci sono puntate in denaro reale, depositi, acquisti di fiches, prelievi o premi.",
+      "body": "I suggerimenti facoltativi spiegano l'idea dietro un'azione consigliata e aiutano chi inizia a capire la forza della mano, la posizione, l'equity stimata e le pot odds. I consigli usano le informazioni visibili; non possono vedere le carte coperte degli avversari e non garantiscono una mano vincente.\n\nOgni posto parte con lo stesso stack di fiches virtuali. Affronta blind in aumento, prendi le tue decisioni di puntata e cerca di essere l'ultimo giocatore al tavolo. Salva il torneo e riprendilo più tardi.\n\nFunzionalità:\n• Cinque avversari gestiti dal computer con stili di gioco diversi\n• Fold, check, call, puntata, rilancio e all in\n• Controlli per la dimensione della puntata e gestione dei piatti laterali\n• Suggerimenti con equity stimata e pot odds\n• Tornei salvati e statistiche sul dispositivo\n• Regole, gerarchia delle mani e aiuto sulla strategia\n• Layout verticale e orizzontale\n• Impostazioni di tema, suoni, animazioni e lingua\n• 30 lingue dell'interfaccia\n\nGiochi solo contro avversari gestiti dal computer: non ci sono partite contro persone reali. Pensato per adulti dai 18 anni in su."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "promise": "FinitePlay-løftet: helt gratis, uden reklamer, køb i appen eller abonnementer. Spillet foregår udelukkende på din enhed: ingen konti, ingen sporing, ingen indsamling eller deling af data, ingen ranglister og ingen onlinefunktioner. Dine fremskridt og din statistik forbliver private og lokale.",
+  "rest": "Spil i dit eget tempo. Indstillelige pauseminder opfordrer dig til at holde pause efter længere tids spil. Der er ingen hastebonusser og ingen daglige belønninger med tidsfrist. Lokale point og statistik hjælper dig med at reflektere over dit spil, uden ranglister eller pres for at blive ved.",
+  "footer": "FinitePlay laver kortspil, der respekterer din tid, dit privatliv og din opmærksomhed.",
+  "games": {
+    "klondike": {
+      "title": "7-kabale: FinitePlay",
+      "shortDescription": "Enkel, batteribevidst offline Klondike: træk 1/3, hint, uden reklamer",
+      "intro": "Spil klassisk Klondike-kabale offline. Vælg at trække ét eller tre kort, vælg en passende sværhedsgrad, og brug Fortryd, Spil igen eller et valgfrit hint, når du vil prøve en anden tilgang.",
+      "body": "Giv fra Triviel til Ekspert starter med en verificeret løsning. Det separate niveau Vanvittig indeholder ucertificerede giv. Et løsbart startgiv kan stadig ende i en blindgyde. Hint søger i brættet, som det ser ud lige nu, og melder fra, når de ikke kan fastslå en vindende vej inden for deres grænse.\n\nFunktioner:\n• Seks sværhedsgrader, med certificeret løsbare giv fra Triviel til Ekspert\n• Regler for at trække ét eller tre kort\n• Valgfrie hint, der søger i brættet, som det ser ud lige nu\n• Styring med tryk eller træk, Fortryd, Spil igen og automatisk afslutning\n• Valgfrie automatiske træk til hjemmebunkerne, lyd og kortanimationer\n• Lyst, mørkt og tidsstyret tema\n• Statistik på enheden og sammenligning med personlige rekorder\n• 30 grænsefladesprog"
+    },
+    "spider": {
+      "title": "Edderkop kabale: FinitePlay",
+      "shortDescription": "Enkel, batteribevidst offline Spider: 1/2/4 farver, hint, uden reklamer",
+      "intro": "Byg komplette rækker fra konge til es i Spider-kabale. Begynd med 1 farve, eller tag fat på 2 eller 4 farver, med Fortryd, Spil igen og valgfrie hint, når du vil have hjælp.",
+      "body": "Hvert medfølgende startgiv har en verificeret løsning. Dine valg har stadig betydning: en senere stilling kan måske ikke længere vindes. Vejledende hint kan følge en kendt løsning; når du har valgt en anden vej, er det at finde en ny løsning underlagt søgegrænser.\n\nFunktioner:\n• Spider med én, to og fire farver\n• 23.675 certificeret løsbare giv på tværs af alle tre farveantal\n• Tryk eller træk komplette rækker i samme farve\n• Fremhævning af træk og valgfrie vejledende hint\n• Fortryd, Spil igen samt animerede rækkegiv og kortflytninger\n• Valgfrie lyd- og animationsindstillinger\n• Lyst, mørkt og tidsstyret tema\n• Statistik på enheden\n• 30 grænsefladesprog"
+    },
+    "freecell": {
+      "title": "FreeCell: FinitePlay",
+      "shortDescription": "Enkel, batteribevidst offline FreeCell: løsbare giv, hint, uden reklamer",
+      "intro": "Se hvert kort, og planlæg dit næste træk i klassisk FreeCell. Brug de fire fritceller og tomme kolonner til at skabe plads, flyt kortrækker, og udforsk forskellige tilgange med Fortryd og Spil igen.",
+      "body": "Hvert medfølgende giv starter med en verificeret løsning. Et senere bræt kan stadig ende i en blindgyde, og hint har søgegrænser; når et hint ikke kan fastslå en vej, siger det det klart og tydeligt.\n\nFritceller og tomme kolonner lader dig flytte kortrækker, når der er plads nok; spillet regner den lovlige kapacitet ud for dig.\n\nFunktioner:\n• 2.000 certificeret løsbare giv\n• Valgfrie hint, der søger i brættet, som det ser ud lige nu\n• Styring med tryk eller træk, også med flere kort ad gangen\n• Fortryd, Spil igen og automatisk afslutning\n• Valgfrie automatiske træk til hjemmebunkerne, lyd og kortanimationer\n• Lyst, mørkt og tidsstyret tema\n• Statistik på enheden og sammenligning med personlige rekorder\n• 30 grænsefladesprog"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Enkel, batteribevidst offline Blackjack: virtuelle jetoner, hint, uden reklamer",
+      "intro": "Spil blackjack offline mod en computerstyret dealer, med virtuelle jetoner og hjælpsomme forklaringer til begyndere. Aldrig rigtige penge: jetonerne har ingen pengeværdi, og der er ingen indsatser med rigtige penge, indbetalinger, køb af jetoner, udbetalinger eller præmier.",
+      "body": "Øv beslutningerne træk, stå, fordobl og split med valgfrie hint baseret på grundstrategi, som forklarer begrundelsen og risikoen for at gå over 21. De faste regler bruger seks kortspil, der blandes forfra hver runde; dealeren står på blød 17, blackjack betaler 3:2, og forsikring og dealerens tjek af det skjulte kort er med. Hint hjælper dig med at forstå valgene; de garanterer ikke sejr.\n\nDu spiller kun mod den computerstyrede dealer: der er ingen partier mod rigtige mennesker. Lavet til voksne fra 18 år."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Enkel, batteribevidst offlinepoker: virtuelle jetoner, 5 rivaler, uden reklamer",
+      "intro": "Spil en Texas Hold'em-pokerturnering med seks pladser offline mod fem computerstyrede modstandere, med virtuelle jetoner og hint, der forklarer valgene. Aldrig rigtige penge: jetonerne har ingen pengeværdi, og der er ingen indsatser med rigtige penge, indbetalinger, køb af jetoner, udbetalinger eller præmier.",
+      "body": "Valgfrie hint forklarer tanken bag en foreslået handling og hjælper begyndere med at forstå håndstyrke, position, estimeret equity og pot odds. Rådet bruger synlig information; det kan ikke se modstandernes skjulte kort og garanterer ingen vindende hånd.\n\nHver plads starter med samme stak virtuelle jetoner. Spil dig gennem stigende blinds, tag dine beslutninger om at satse, og sigt efter at blive den sidste spiller ved bordet. Gem din turnering, og vend tilbage til den senere.\n\nFunktioner:\n• Fem computerstyrede modstandere med forskellige spillestile\n• Fold, check, call, bet, raise og all in\n• Kontrol over indsatsstørrelse og afregning af sidepots\n• Hint med estimeret equity og pot odds\n• Gemte turneringer og statistik på enheden\n• Regler, håndrangering og strategihjælp\n• Stående og liggende layout\n• Indstillinger for tema, lyd, animation og sprog\n• 30 grænsefladesprog\n\nDu spiller kun mod computerstyrede modstandere: der er ingen partier mod rigtige mennesker. Lavet til voksne fra 18 år."
+    }
+  }
+}

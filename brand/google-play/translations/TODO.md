@@ -1,28 +1,20 @@
 # Translations: open work
 
-Covers Blackjack and Texas Hold'em, 30 languages. Detail for every item is in the per-group
-reports in `review/` (`strings-g1..g5.md` for in-app strings, `listings-g1..g5.md` for store
-listings). Groups: g1 es fr de it pt-BR nl · g2 uk pl sv nb da fi · g3 tr el cs ro hu bg ·
-g4 hr sk ar iw hi in · g5 vi th ja ko zh-CN zh-TW.
+This checklist tracks in-app strings for Blackjack and Texas Hold'em. Store listings for all five
+games are maintained in `../localizations.json` and `../<game>/listing.md`; generated Play files are
+under each app's `src/main/play/listings/`. The 30 localized listings were machine-translated,
+model-reviewed and checked against Play character limits. No native-speaker review is planned; the
+owner accepts that residual language-quality risk. `review/listings-v2-g1.md` through `g5.md` record
+the listing QA and remaining uncertainties. This is not native-speaker validation.
 
-How this was made: Sonnet drafted, Opus reviewed and corrected. No native speaker has seen any of it.
+The listing exporter validated 155 game-locale entries with title <= 30, short description <= 80,
+and full description <= 4,000 characters. Re-run `ruby tools/publishing/listings.rb export` after
+changing the English source or localized listing data.
 
-## Blocking: before any translated listing is used
+## In-app strings
 
-- [ ] **Re-translate the store listings from the final English.** The English listing is being
-      changed in `games/blackjack/app/src/main/play/listings/en-US/` (new title "Blackjack 21:
-      FinitePlay", new short and full description) and Hold'em's is still uncommitted. The 60 drafts
-      here were written from `source/*.en-US.md`, which no longer matches. Update `source/`, then
-      re-run the Sonnet draft and Opus review.
-- [ ] Re-run `scratchpad/listing_limits.py` equivalent after any listing change: title <= 30,
-      short <= 80, full <= 4000 characters. Last run: 60 of 60 within limits.
-- [ ] Decide the **short-description compromise**. About 20 of 60 short lines cannot say "no
-      multiplayer / online players" in 80 characters and keep offline, virtual chips, no ads, no
-      purchases, no real money instead (full text keeps every claim). Lists are in each
-      `listings-gN.md` under "SHORT compromises". Known: no-NO and fi-FI Blackjack, el cs ro hu bg
-      Blackjack, hr sk Blackjack, es/fr/it/nl/pt Blackjack and Hold'em, ar uses "online play".
-- [ ] Get approval for the final copy before anything is saved in Play Console
-      (`brand/google-play/AGENTS.md`).
+How these strings were made: Sonnet drafted, Opus reviewed and corrected. No native speaker has
+seen them. The items below apply to app UI translations, not the store listing workflow.
 
 ## Native-speaker review, in-app strings (highest first)
 

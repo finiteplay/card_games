@@ -1,0 +1,37 @@
+{
+  "promise": "Janji FinitePlay: sepenuhnya gratis, tanpa iklan, pembelian dalam aplikasi, atau langganan. Permainan berjalan sepenuhnya di perangkat Anda: tanpa akun, pelacakan, pengumpulan atau berbagi data, papan peringkat, maupun fitur online. Progres dan statistik Anda tetap pribadi dan tersimpan lokal.",
+  "rest": "Bermainlah sesuai ritme Anda. Pengingat istirahat yang dapat diatur mengajak Anda berhenti sejenak setelah bermain lama. Tidak ada bonus yang mendesak atau hadiah harian dengan batas waktu. Skor dan statistik lokal membantu Anda meninjau cara bermain, tanpa papan peringkat kompetitif atau tekanan untuk terus bermain.",
+  "footer": "FinitePlay membuat permainan kartu yang menghargai waktu, privasi, dan perhatian Anda.",
+  "games": {
+    "klondike": {
+      "title": "Solitaire Klondike: FinitePlay",
+      "shortDescription": "Klondike offline sederhana yang peduli baterai: ambil 1/3, petunjuk, tanpa iklan",
+      "intro": "Mainkan Klondike Solitaire klasik secara offline. Pilih mode Ambil Satu atau Ambil Tiga, tentukan tingkat tantangan yang nyaman, dan gunakan urungkan, ulangi, atau petunjuk opsional saat Anda ingin mencoba cara lain.",
+      "body": "Pembagian kartu dari tingkat Sepele hingga Ahli dimulai dengan solusi yang terverifikasi. Tingkat Gila yang terpisah berisi pembagian kartu yang tidak tersertifikasi. Pembagian awal yang bisa diselesaikan tetap dapat berujung buntu. Petunjuk mencari di papan Anda saat ini dan memberi tahu bila tidak dapat menemukan jalan menuju kemenangan dalam batas pencariannya.\n\nFitur:\n• Enam tingkat kesulitan, dengan pembagian kartu yang tersertifikasi dapat diselesaikan dari Sepele hingga Ahli\n• Aturan Ambil Satu dan Ambil Tiga\n• Petunjuk opsional yang mencari di papan Anda saat ini\n• Kontrol ketuk atau seret, Urungkan, Ulangi, dan selesai otomatis\n• Langkah otomatis ke fondasi, suara, dan animasi kartu yang opsional\n• Tema terang, gelap, dan berdasarkan waktu\n• Statistik di perangkat dan perbandingan rekor pribadi\n• 30 bahasa antarmuka"
+    },
+    "spider": {
+      "title": "Spider Solitaire: FinitePlay",
+      "shortDescription": "Spider offline sederhana yang peduli baterai: 1/2/4 jenis, petunjuk, tanpa iklan",
+      "intro": "Susun urutan lengkap dari Raja hingga As di Spider Solitaire. Mulai dengan 1 jenis kartu atau tantang diri dengan 2 atau 4 jenis, lengkap dengan urungkan, ulangi, dan petunjuk opsional saat Anda butuh bantuan.",
+      "body": "Setiap pembagian awal yang disertakan memiliki solusi yang terverifikasi. Pilihan Anda tetap berpengaruh: posisi berikutnya bisa saja tidak lagi dapat dimenangkan. Petunjuk terpandu dapat mengikuti solusi yang sudah diketahui; setelah Anda memilih jalur lain, pencarian solusi baru tunduk pada batas pencarian.\n\nFitur:\n• Spider dengan satu, dua, dan empat jenis kartu\n• 23.675 pembagian kartu yang tersertifikasi dapat diselesaikan di ketiga jumlah jenis kartu\n• Ketuk atau seret urutan lengkap dengan jenis yang sama\n• Penyorotan langkah dan petunjuk terpandu opsional\n• Urungkan, Ulangi, serta animasi pembagian baris dan pemindahan kartu\n• Pengaturan suara dan animasi opsional\n• Tema terang, gelap, dan berdasarkan waktu\n• Statistik di perangkat\n• 30 bahasa antarmuka"
+    },
+    "freecell": {
+      "title": "FreeCell Solitaire: FinitePlay",
+      "shortDescription": "FreeCell offline sederhana yang peduli baterai: bisa diselesaikan, tanpa iklan",
+      "intro": "Lihat setiap kartu dan rencanakan langkah berikutnya di FreeCell klasik. Gunakan empat sel bebas dan kolom kosong untuk menciptakan ruang, pindahkan urutan kartu, dan jelajahi berbagai pendekatan dengan urungkan dan ulangi.",
+      "body": "Setiap pembagian yang disertakan dimulai dengan solusi yang terverifikasi. Papan berikutnya tetap bisa berujung buntu, dan petunjuk memiliki batas pencarian; bila petunjuk tidak dapat menemukan jalan, ia akan mengatakannya dengan jelas.\n\nSel bebas dan kolom kosong memungkinkan Anda memindahkan urutan kartu bila ruangnya cukup; permainan menghitung kapasitas yang sah untuk Anda.\n\nFitur:\n• 2.000 pembagian kartu yang tersertifikasi dapat diselesaikan\n• Petunjuk opsional yang mencari di papan Anda saat ini\n• Kontrol ketuk atau seret, termasuk memindahkan beberapa kartu sekaligus\n• Urungkan, Ulangi, dan selesai otomatis\n• Langkah otomatis ke fondasi, suara, dan animasi kartu yang opsional\n• Tema terang, gelap, dan berdasarkan waktu\n• Statistik di perangkat dan perbandingan rekor pribadi\n• 30 bahasa antarmuka"
+    },
+    "blackjack": {
+      "title": "Blackjack: FinitePlay",
+      "shortDescription": "Blackjack offline sederhana yang peduli baterai: chip virtual, tanpa iklan",
+      "intro": "Mainkan blackjack offline melawan bandar komputer, dengan chip virtual dan penjelasan yang membantu pemula. Tidak pernah memakai uang sungguhan: chip tidak bernilai uang, dan tidak ada taruhan uang sungguhan, setoran, pembelian chip, penarikan tunai, atau hadiah.",
+      "body": "Latih keputusan Ambil, Tahan, Gandakan, dan Pisah dengan petunjuk strategi dasar opsional yang menjelaskan alasan dan risiko bust. Aturannya tetap: enam dek, diacak ulang setiap ronde; bandar berhenti pada 17 lunak, blackjack dibayar 3:2, dan asuransi serta pengecekan kartu tersembunyi oleh bandar sudah termasuk. Petunjuk membantu Anda memahami pilihan; petunjuk tidak menjamin kemenangan.\n\nAnda hanya bermain melawan bandar komputer: tidak ada pertandingan melawan orang sungguhan. Dirancang untuk orang dewasa berusia 18 tahun ke atas."
+    },
+    "holdem": {
+      "title": "Texas Hold’em: FinitePlay",
+      "shortDescription": "Poker offline sederhana yang peduli baterai: chip virtual, 5 lawan, tanpa iklan",
+      "intro": "Mainkan turnamen poker Texas Hold'em enam kursi secara offline melawan lima lawan komputer, dengan chip virtual dan petunjuk yang menjelaskan pilihan. Tidak pernah memakai uang sungguhan: chip tidak bernilai uang, dan tidak ada taruhan uang sungguhan, setoran, pembelian chip, penarikan tunai, atau hadiah.",
+      "body": "Petunjuk opsional menjelaskan gagasan di balik tindakan yang disarankan, membantu pemula memahami kekuatan tangan, posisi, perkiraan equity, dan pot odds. Saran ini memakai informasi yang terlihat; ia tidak dapat melihat kartu tersembunyi lawan dan tidak menjamin tangan yang menang.\n\nSetiap kursi memulai dengan jumlah chip virtual yang sama. Mainkan melewati blind yang terus naik, ambil keputusan taruhan Anda, dan berusahalah menjadi pemain terakhir di meja. Simpan turnamen Anda dan lanjutkan nanti.\n\nFitur:\n• Lima lawan komputer dengan gaya bermain yang berbeda\n• Fold, Check, Call, Bet, Raise, dan All in\n• Kontrol ukuran taruhan dan penyelesaian side pot\n• Petunjuk dengan perkiraan equity dan pot odds\n• Turnamen tersimpan dan statistik di perangkat\n• Aturan, peringkat tangan, dan bantuan strategi\n• Tata letak potret dan lanskap\n• Pengaturan tema, suara, animasi, dan bahasa\n• 30 bahasa antarmuka\n\nAnda hanya bermain melawan lawan komputer: tidak ada pertandingan melawan orang sungguhan. Dirancang untuk orang dewasa berusia 18 tahun ke atas."
+    }
+  }
+}
