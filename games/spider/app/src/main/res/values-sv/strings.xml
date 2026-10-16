@@ -28,7 +28,7 @@
     <string name="help_stock_title">Dela ut en rad</string>
     <string name="help_stock">Att trycka på talongen delar ut ett vänt kort på varje kolumn samtidigt — det finns ingen avlagd hög och man drar inte ett kort i taget. Det avvisas medan en kolumn är tom, så fyll luckan innan du delar ut.</string>
     <string name="help_suits_title">Färger</string>
-    <string name="help_suits">En färg är det mildaste spelet, fyra det svåraste; två ligger mitt emellan och är standardinställningen. Antalet fastställs när ett spel delas ut — ändra det i Inställningar så gäller det nästa nya spel.</string>
+    <string name="help_suits">En färg är det mildaste spelet, fyra det svåraste; två ligger mitt emellan och är standardinställningen. Antalet fastställs när ett spel delas ut — ändra det i Alternativ så gäller det nästa nya spel.</string>
     <string name="help_controls_title">Tryck, dra och tips</string>
     <string name="help_controls">Tryck på ett kort för att skicka det till nästa tillåtna kolumn till höger, med återgång till början vid behov; tryck igen för att fortsätta flytta det. Dra för att själv välja kolumn. Tipset lyser upp det översta kortet i varje svit som har någonstans att ta vägen. När bara den sista sviten återstår avslutar spelet den åt dig.</string>
 

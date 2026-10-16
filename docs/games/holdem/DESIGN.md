@@ -107,7 +107,7 @@ policy — drawn for the tournament from its seed and shown at its seat by an an
 is a fixed animal (`Animal` in `core:cards`) with a made-up name and a play style, the same in every game that seats
 opponents: Hootie the owl (tight), Shellby the tortoise (tight), Bamboozle the panda (loose), Gizmo the gecko
 (loose), Foxtrot the fox (aggressive), Badgerino the honey badger (aggressive), Chillbara the capybara (passive).
-Names are not translated.
+Names are localized: each language has its own pun on the animal or its personality (`animal_*` strings in `core:ui`, draft and rationale in `OPPONENT_NAMES_REVIEW.md`); the English names above are the originals.
 
 ### The policy
 

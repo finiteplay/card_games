@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Rejouer cette donne</string>
     <string name="pending_body">Partie en cours : %1$d coups, %2$s. Cette partie sera perdue.</string>
     <string name="status_moves_time">Coups : %1$d  Temps : %2$s</string>
+    <string name="status_moves_label">Coups :</string>
+    <string name="status_time_label">Temps :</string>
     <string name="status_won">Gagnée</string>
     <string name="stat_section_efficiency">Efficacité par rapport à la solution certifiée</string>
     <string name="stat_section_hints">Indices</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Politique de confidentialité</string>
     <string name="about_acknowledgements">Remerciements</string>
     <string name="acknowledgements_intro">Cette application inclut des logiciels open source :</string>
+
+    <string name="animal_owl">Hibouquin</string>
+    <string name="animal_tortoise">Cachecoque</string>
+    <string name="animal_panda">Bambouille</string>
+    <string name="animal_gecko">Touchatout</string>
+    <string name="animal_fox">Renarnaque</string>
+    <string name="animal_honey_badger">Bagarmiel</string>
+    <string name="animal_capybara">Capépère</string>
 </resources>

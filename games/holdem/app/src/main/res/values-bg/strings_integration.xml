@@ -36,23 +36,23 @@
     <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
     <string name="hint_threat_item">%1$s %2$d%%</string>
     <!-- Looking back at a hand played after a Hint. -->
-    <string name="review_title">Поглед назад към подсказката</string>
+    <string name="review_title">Поглед назад към съвета</string>
     <!-- %1$d = your chance to win at that moment, in percent -->
-    <string name="review_followed_won">Последва подсказката и спечели: имаше около %1$d%% шанс за победа.</string>
+    <string name="review_followed_won">Последва съвета и спечели: имаше около %1$d%% шанс за победа.</string>
     <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
-    <string name="review_followed_lost">Последва подсказката и загуби, случва се: с около %1$d%% губиш в %2$d%% от случаите. Оценявай решението, не резултата.</string>
-    <string name="review_followed_fold">Даде фолд, както съветваше подсказката, и запази чиповете си за по-добър момент.</string>
+    <string name="review_followed_lost">Последва съвета и загуби, случва се: с около %1$d%% губиш в %2$d%% от случаите. Оценявай решението, не резултата.</string>
+    <string name="review_followed_fold">Даде фолд по съвета и запази чиповете си за по-добър момент.</string>
     <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
-    <string name="review_ignored_won">Спечели, но подсказката предлагаше: %1$s. Причината: %2$s Победата срещу съвета е късмет, не план.</string>
-    <string name="review_ignored_lost">Подсказката предлагаше: %1$s, но ти избра друго и загуби. Причината: %2$s</string>
-    <string name="review_ignored_fold">Даде фолд, но подсказката предлагаше: %1$s. Причината: %2$s</string>
+    <string name="review_ignored_won">Спечели, но съветът предлагаше: %1$s. Причината: %2$s Победата срещу съвета е късмет, не план.</string>
+    <string name="review_ignored_lost">Съветът предлагаше: %1$s, но ти избра друго и загуби. Причината: %2$s</string>
+    <string name="review_ignored_fold">Даде фолд, но съветът предлагаше: %1$s. Причината: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
-    <string name="review_beaten_by">Загуби от: %1$s. Подсказката го оценяваше на около %2$d%%.</string>
+    <string name="review_beaten_by">Загуби от: %1$s. Съветът го оценяваше на около %2$d%%.</string>
 
     <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">Щеше да спечелиш тази ръка, но когато решаваше, шансът ти беше само около %1$d%%. Оценявай решението, не резултата.</string>
     <string name="review_hindsight_fold_lost">Щеше да загубиш тази ръка: шансът ти беше около %1$d%%, когато реши.</string>
     <string name="review_chance_at_decision">Когато реши, шансът ти беше около %1$d%%.</string>
     <string name="review_chance_slim_win">Спечели, но шансът ти беше малък, когато решаваше: около %1$d%%.</string>
-    <string name="review_followed_won_slim">Последва подсказката и спечели, но шансът ти беше малък: около %1$d%%. Добрите решения не винаги имат късмет.</string>
+    <string name="review_followed_won_slim">Последва съвета и спечели, но шансът ти беше малък: около %1$d%%. Добрите решения не винаги имат късмет.</string>
 </resources>

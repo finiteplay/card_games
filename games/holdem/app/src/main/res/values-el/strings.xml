@@ -3,8 +3,8 @@
     <string name="game_title">Texas Hold’em</string>
     <string name="help_title">Πώς παίζεται</string>
     <string name="help_tab_rules">Κανόνες</string>
-    <string name="help_tab_hands">Συνδυασμοί</string>
-    <string name="help_tab_strategy">Στρατηγική</string>
+    <string name="help_tab_hands">Χέρια</string>
+    <string name="help_tab_strategy">Τακτική</string>
 
     <string name="help_goal_title">Ο στόχος</string>
     <string name="help_goal">Κέρδισε όλες τις μάρκες του τραπεζιού. Παίζεις σε τουρνουά απέναντι σε πέντε αντιπάλους και ο καθένας ξεκινά με 1.500 μάρκες. Όταν ένας παίκτης μείνει από μάρκες, αποκλείεται, και κερδίζει ο τελευταίος που θα μείνει.</string>

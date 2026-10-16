@@ -102,6 +102,8 @@
     <string name="pending_replay_action">重玩這局</string>
     <string name="pending_body">目前遊戲：%1$d 步，%2$s。這局遊戲將會遺失。</string>
     <string name="status_moves_time">步數：%1$d  時間：%2$s</string>
+    <string name="status_moves_label">步數：</string>
+    <string name="status_time_label">時間：</string>
     <string name="status_won">獲勝</string>
     <string name="stat_section_efficiency">與認證解法的效率比較</string>
     <string name="stat_section_hints">提示</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">隱私權政策</string>
     <string name="about_acknowledgements">致謝</string>
     <string name="acknowledgements_intro">本應用程式包含開放原始碼軟體：</string>
+
+    <string name="animal_owl">鷹老師</string>
+    <string name="animal_tortoise">龜毛毛</string>
+    <string name="animal_panda">跟跟熊</string>
+    <string name="animal_gecko">黏黏虎</string>
+    <string name="animal_fox">嘻嘻狐</string>
+    <string name="animal_honey_badger">敢衝獾</string>
+    <string name="animal_capybara">悠哉豚</string>
 </resources>

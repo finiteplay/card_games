@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Postavke</string>
+    <string name="action_settings">Opcije</string>
     <string name="action_statistics">Statistika</string>
     <string name="action_replay">Ponovi</string>
     <string name="action_new">Novo</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Karo</string>
     <string name="suit_hearts">Herc</string>
     <string name="suit_spades">Pik</string>
-    <string name="settings_title">Postavke</string>
+    <string name="settings_title">Opcije</string>
     <string name="setting_enable_animations">Omogući animacije</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Ponovi ovu igru</string>
     <string name="pending_body">Trenutna igra: %1$d poteza, %2$s. Ova će igra biti izgubljena.</string>
     <string name="status_moves_time">Potezi: %1$d  Vrijeme: %2$s</string>
+    <string name="status_moves_label">Potezi:</string>
+    <string name="status_time_label">Vrijeme:</string>
     <string name="status_won">Pobjeda</string>
     <string name="stat_section_efficiency">Učinkovitost u odnosu na certificirano rješenje</string>
     <string name="stat_section_hints">Savjeti</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Pravila privatnosti</string>
     <string name="about_acknowledgements">Zahvale</string>
     <string name="acknowledgements_intro">Ova aplikacija uključuje softver otvorenog koda:</string>
+
+    <string name="animal_owl">Huhić</string>
+    <string name="animal_tortoise">Oklopko</string>
+    <string name="animal_panda">Bambusko</string>
+    <string name="animal_gecko">Gekoslav</string>
+    <string name="animal_fox">Lukavko</string>
+    <string name="animal_honey_badger">Medoboj</string>
+    <string name="animal_capybara">Ležibara</string>
 </resources>

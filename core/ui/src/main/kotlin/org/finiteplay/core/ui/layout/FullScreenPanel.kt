@@ -70,7 +70,7 @@ fun FullScreenPanel(
                 )
                 Row {
                     actions()
-                    IconButton(onClick = onClose) {
+                    IconButton(onClick = onClose, modifier = Modifier.testTag("panel_close")) {
                         Icon(
                             Icons.Filled.Close,
                             contentDescription = stringResource(R.string.action_close),

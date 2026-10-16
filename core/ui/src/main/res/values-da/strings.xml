@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="company_byline">af FinitePlay LLC</string>
-    <string name="action_settings">Indstillinger</string>
+    <string name="action_settings">Valg</string>
     <string name="action_statistics">Statistik</string>
     <string name="action_replay">Spil igen</string>
     <string name="action_new">Ny</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Ruder</string>
     <string name="suit_hearts">Hjerter</string>
     <string name="suit_spades">Spar</string>
-    <string name="settings_title">Indstillinger</string>
+    <string name="settings_title">Valg</string>
     <string name="setting_enable_animations">Aktivér animation</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Spil dette spil igen</string>
     <string name="pending_body">Nuværende spil: %1$d træk, %2$s. Dette spil går tabt.</string>
     <string name="status_moves_time">Træk: %1$d  Tid: %2$s</string>
+    <string name="status_moves_label">Træk:</string>
+    <string name="status_time_label">Tid:</string>
     <string name="status_won">Vundet</string>
     <string name="stat_section_efficiency">Effektivitet i forhold til den certificerede løsning</string>
     <string name="stat_section_hints">Hints</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Privatlivspolitik</string>
     <string name="about_acknowledgements">Anerkendelser</string>
     <string name="acknowledgements_intro">Denne app indeholder open source-software:</string>
+
+    <string name="animal_owl">Huhugle</string>
+    <string name="animal_tortoise">Skjulius</string>
+    <string name="animal_panda">Pandekage</string>
+    <string name="animal_gecko">Klistrup</string>
+    <string name="animal_fox">Rævestreg</string>
+    <string name="animal_honey_badger">Kækling</string>
+    <string name="animal_capybara">Hyggebara</string>
 </resources>

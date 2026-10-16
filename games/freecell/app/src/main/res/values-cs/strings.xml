@@ -19,6 +19,6 @@
     <string name="help_free_cells">Čtyři volné buňky pojmou každá jednu kartu libovolné hodnoty nebo barvy, odloženou stranou, dokud ji znovu nepotřebuješ. Prázdný sloupec funguje stejně, ale pojme celou posloupnost místo jedné karty.</string>
     <string name="help_moving_title">Skládání a přesouvání</string>
     <string name="help_moving">Kartu lze položit na kartu o jednu hodnotu vyšší a opačné barvy. Do prázdného sloupce může vstoupit jakákoli jednotlivá karta. Několik karet se přesune najednou jako jeden superzáznam, pokud to umožní dostatek volných buněk a prázdných sloupců — hra to za tebe spočítá.</string>
-    <string name="help_controls_title">Klepnutí, tažení a nápověda</string>
-    <string name="help_controls">Klepnutím na kartu ji pošleš do nejbližšího platného sloupce vpravo, poté do bezpečné sbírky, poté do nejbližšího sloupce vlevo, a nebezpečná sbírka nebo prázdná volná buňka přijde na řadu až jako poslední možnost. Tažením si cíl zvolíš sám, včetně volné buňky. Nápověda dokáže, že tah existuje, a ukáže ti ho, nebo ti čestně řekne, že to nejde.</string>
+    <string name="help_controls_title">Klepnutí, tažení a rada</string>
+    <string name="help_controls">Klepnutím na kartu ji pošleš do nejbližšího platného sloupce vpravo, poté do bezpečné sbírky, poté do nejbližšího sloupce vlevo, a nebezpečná sbírka nebo prázdná volná buňka přijde na řadu až jako poslední možnost. Tažením si cíl zvolíš sám, včetně volné buňky. Rada dokáže, že tah existuje, a ukáže ti ho, nebo ti čestně řekne, že to nejde.</string>
 </resources>

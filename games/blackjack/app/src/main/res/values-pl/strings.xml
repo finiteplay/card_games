@@ -59,7 +59,7 @@
     <string name="help_insurance">Gdy krupier pokazuje asa, możesz się ubezpieczyć na połowę stawki. Wypłaca 2 do 1, jeśli krupier ma blackjacka, a w przeciwnym razie przepada.</string>
     <string name="help_dealer_title">Krupier</string>
     <string name="help_dealer">Krupier nie podejmuje decyzji: dobiera karty, aż ma 17 lub więcej, i staje na każdej 17, także miękkiej, w której as liczy się jako 11.</string>
-    <string name="help_strategy_intro">Prosty plan, który daje dobre szanse. Przycisk Podpowiedź stosuje tę samą strategię, tylko dokładniej.</string>
+    <string name="help_strategy_intro">Prosty plan, który daje dobre szanse. Przycisk Rada stosuje tę samą strategię, tylko dokładniej.</string>
     <string name="help_strategy_1">Zawsze dobieraj przy 8 lub mniej i zawsze pasuj przy twardych 17 lub więcej.</string>
     <string name="help_strategy_2">Przy 12–16 pasuj, jeśli krupier pokazuje 2–6, bo prawdopodobnie przekroczy. Dobieraj, jeśli pokazuje 7 lub więcej.</string>
     <string name="help_strategy_3">Podwajaj na 11, a na 10, gdy krupier pokazuje 9 lub mniej. Jeśli nie możesz podwoić, dobierz.</string>
@@ -84,14 +84,14 @@
     <string name="hint_figures">Krupier przekracza 21: %1$d%% · Ty po dobraniu: %2$d%%</string>
     <string name="hint_figures_dealer_only">Krupier przekracza 21: %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
-    <string name="review_title">Spojrzenie wstecz na podpowiedź</string>
-    <string name="review_followed_won">Zastosowałeś się do podpowiedzi i wygrałeś.</string>
-    <string name="review_followed_lost">Zastosowałeś się do podpowiedzi i przegrałeś, tak bywa: o rundzie decydują karty krupiera. Oceniaj decyzję, nie wynik.</string>
-    <string name="review_followed_push">Zastosowałeś się do podpowiedzi i był remis: zachowałeś swoje żetony.</string>
+    <string name="review_title">Spojrzenie wstecz na radę</string>
+    <string name="review_followed_won">Zastosowałeś się do rady i wygrałeś.</string>
+    <string name="review_followed_lost">Zastosowałeś się do rady i przegrałeś, tak bywa: o rundzie decydują karty krupiera. Oceniaj decyzję, nie wynik.</string>
+    <string name="review_followed_push">Zastosowałeś się do rady i był remis: zachowałeś swoje żetony.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Wygrałeś, ale podpowiedź sugerowała: %1$s. Jej powód: %2$s Wygrana wbrew szansom to szczęście, nie plan.</string>
-    <string name="review_ignored_lost">Podpowiedź sugerowała: %1$s, ale wybrałeś inaczej i przegrałeś. Jej powód: %2$s</string>
-    <string name="review_ignored_push">Podpowiedź sugerowała: %1$s, a ty wybrałeś inaczej. Jej powód: %2$s</string>
+    <string name="review_ignored_won">Wygrałeś, ale rada sugerowała: %1$s. Jej powód: %2$s Wygrana wbrew szansom to szczęście, nie plan.</string>
+    <string name="review_ignored_lost">Rada sugerowała: %1$s, ale wybrałeś inaczej i przegrałeś. Jej powód: %2$s</string>
+    <string name="review_ignored_push">Rada sugerowała: %1$s, a ty wybrałeś inaczej. Jej powód: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
     <string name="review_dealer_finished">Krupier skończył z %1$d.</string>
     <string name="review_dealer_busted">Krupier przegrał, przekraczając 21.</string>

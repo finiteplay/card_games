@@ -14,7 +14,7 @@
     <string name="help_actions_check">Pasar (Check): sigues en la mano sin apostar, cuando nadie ha apostado antes que tú.</string>
     <string name="help_actions_call">Igualar (Call): pones lo mismo que la apuesta a la que te enfrentas.</string>
     <string name="help_actions_bet">Apostar o Subir: pones más fichas. Elige la cantidad con los botones sobre la barra: − y + avanzan de ciega grande en ciega grande, y ½ bote y Bote la fijan por ti. Una subida debe ser al menos tan grande como la última apuesta o subida.</string>
-    <string name="help_actions_fold">Retirarse (Fold): abandonas tus cartas y las fichas que ya pusiste. Solo quedas fuera de esta mano.</string>
+    <string name="help_actions_fold">No ir (Fold): abandonas tus cartas y las fichas que ya pusiste. Solo quedas fuera de esta mano.</string>
     <string name="help_actions_all_in">All in: apuestas todas tus fichas.</string>
     <string name="help_button_title">El botón y las ciegas</string>
     <string name="help_button">El botón del repartidor, marcado con D, avanza un asiento en sentido horario cada mano. Los dos jugadores siguientes deben poner apuestas obligatorias antes de repartir: la ciega pequeña (SB) y la ciega grande (BB). Así empieza el bote, de modo que siempre hay algo por lo que jugar. La ciega grande fija la apuesta mínima.</string>

@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Koji su potezi dopušteni</string>
     <string name="help_rules_moves">U stupovima karta ide na kartu za jedan rang višu i suprotne boje: crvena 8 na crnu 9. Niz koji već leži u tom redoslijedu premješta se cijeli. U prazan stup smije samo Kralj. Otkrivena karta uvijek može na svoj temelj, a gornju kartu s temelja možeš vratiti dolje ako ti zatreba.</string>
     <string name="help_rules_help_title">Što aplikacija radi umjesto tebe</string>
-    <string name="help_rules_help">Dodirni kartu i otići će na najbolje dopušteno mjesto, ili je povuci kamo želiš. Asovi i sigurne karte same odlaze na temelje, osim ako to ne isključiš u Postavkama. Poništavanje poteza je neograničeno, a Savjet ti uvijek pokaže potez koji ostavlja pobjedu mogućom.</string>
+    <string name="help_rules_help">Dodirni kartu i otići će na najbolje dopušteno mjesto, ili je povuci kamo želiš. Asovi i sigurne karte same odlaze na temelje, osim ako to ne isključiš u Opcijama. Poništavanje poteza je neograničeno, a Savjet ti uvijek pokaže potez koji ostavlja pobjedu mogućom.</string>
 
     <string name="help_strategy_intro">Ovo su dobro poznata načela igre Klondike. Nijedno nije tajna i nijedno nije jamstvo - to je jednostavno ono što obično djeluje.</string>
     <string name="help_strategy_1_title">Prvo otkrivaj karte</string>

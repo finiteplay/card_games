@@ -113,6 +113,8 @@ internal fun StatusRow(
                 color = boardStatusColor(),
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
+                // Shrinks before it cuts: the line is the one the longest languages ("in 10 hands") overrun.
+                autoSize = TextAutoSize.StepBased(minFontSize = 9.sp, maxFontSize = boardStatusStyle().fontSize, stepSize = 0.5.sp),
                 modifier = Modifier.testTag("status_hand"),
             )
         }

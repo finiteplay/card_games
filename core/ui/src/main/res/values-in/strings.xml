@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Pengaturan</string>
+    <string name="action_settings">Setelan</string>
     <string name="action_statistics">Statistik</string>
     <string name="action_replay">Ulangi</string>
     <string name="action_new">Baru</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Wajik</string>
     <string name="suit_hearts">Hati</string>
     <string name="suit_spades">Sekop</string>
-    <string name="settings_title">Pengaturan</string>
+    <string name="settings_title">Setelan</string>
     <string name="setting_enable_animations">Aktifkan animasi</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -58,7 +58,7 @@
     <string name="statistics_title">Statistik</string>
     <string name="period_week">Minggu</string>
     <string name="period_month">Bulan</string>
-    <string name="period_all_time">Sepanjang Waktu</string>
+    <string name="period_all_time">Semua</string>
     <string name="stat_wins">Menang: %1$d</string>
     <string name="stat_losses">Kalah: %1$d</string>
     <string name="stat_games_played">Permainan dimainkan: %1$d</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Ulangi permainan ini</string>
     <string name="pending_body">Permainan saat ini: %1$d langkah, %2$s. Permainan ini akan hilang.</string>
     <string name="status_moves_time">Langkah: %1$d  Waktu: %2$s</string>
+    <string name="status_moves_label">Langkah:</string>
+    <string name="status_time_label">Waktu:</string>
     <string name="status_won">Menang</string>
     <string name="stat_section_efficiency">Efisiensi dibanding solusi tersertifikasi</string>
     <string name="stat_section_hints">Petunjuk</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Kebijakan privasi</string>
     <string name="about_acknowledgements">Ucapan terima kasih</string>
     <string name="acknowledgements_intro">Aplikasi ini menyertakan perangkat lunak sumber terbuka:</string>
+
+    <string name="animal_owl">Bijakus</string>
+    <string name="animal_tortoise">Kurahemat</string>
+    <string name="animal_panda">Bambingung</string>
+    <string name="animal_gecko">Cicakrobat</string>
+    <string name="animal_fox">Rubahaha</string>
+    <string name="animal_honey_badger">Madunekat</string>
+    <string name="animal_capybara">Santaibara</string>
 </resources>

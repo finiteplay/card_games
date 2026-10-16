@@ -49,11 +49,11 @@
     <string name="setting_left_handed">פריסה לשמאליים</string>
     <string name="setting_sound">צליל</string>
     <string name="setting_language">שפה</string>
-    <string name="language_system">ברירת מחדל של המערכת</string>
+    <string name="language_system">לפי המערכת</string>
     <string name="setting_theme">ערכת נושא</string>
     <string name="theme_light">בהיר</string>
     <string name="theme_dark">כהה</string>
-    <string name="theme_system">ברירת מחדל של המערכת</string>
+    <string name="theme_system">לפי המערכת</string>
     <string name="theme_auto">אוטומטי</string>
     <string name="statistics_title">סטטיסטיקה</string>
     <string name="period_week">שבוע</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">שחק שוב את החלוקה הזו</string>
     <string name="pending_body">משחק נוכחי: %1$d מהלכים, %2$s. משחק זה יאבד.</string>
     <string name="status_moves_time">מהלכים: %1$d  זמן: %2$s</string>
+    <string name="status_moves_label">מהלכים:</string>
+    <string name="status_time_label">זמן:</string>
     <string name="status_won">ניצחון</string>
     <string name="stat_section_efficiency">יעילות לעומת הפתרון המאושר</string>
     <string name="stat_section_hints">רמזים</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">מדיניות פרטיות</string>
     <string name="about_acknowledgements">הערות תודה</string>
     <string name="acknowledgements_intro">האפליקציה כוללת תוכנה בקוד פתוח:</string>
+
+    <string name="animal_owl">ינשופון</string>
+    <string name="animal_tortoise">שריוני</string>
+    <string name="animal_panda">במבוקי</string>
+    <string name="animal_gecko">שממיתוש</string>
+    <string name="animal_fox">שועליק</string>
+    <string name="animal_honey_badger">גיבורון</string>
+    <string name="animal_capybara">סבבארה</string>
 </resources>

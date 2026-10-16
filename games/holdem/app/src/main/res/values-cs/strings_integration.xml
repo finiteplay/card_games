@@ -36,23 +36,23 @@
     <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
     <string name="hint_threat_item">%1$s %2$d%%</string>
     <!-- Looking back at a hand played after a Hint. -->
-    <string name="review_title">Ohlédnutí za nápovědou</string>
+    <string name="review_title">Ohlédnutí za radou</string>
     <!-- %1$d = your chance to win at that moment, in percent -->
-    <string name="review_followed_won">Řídil ses nápovědou a vyhrál jsi: měl jsi asi %1$d%% na výhru.</string>
+    <string name="review_followed_won">Řídil ses radou a vyhrál jsi: měl jsi asi %1$d%% na výhru.</string>
     <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
-    <string name="review_followed_lost">Řídil ses nápovědou a prohrál jsi, to se stává: s asi %1$d%% prohraješ v %2$d%% případů. Posuzuj rozhodnutí, ne výsledek.</string>
-    <string name="review_followed_fold">Zahodil jsi, jak nápověda radila, a ušetřil sis žetony na lepší chvíli.</string>
+    <string name="review_followed_lost">Řídil ses radou a prohrál jsi, to se stává: s asi %1$d%% prohraješ v %2$d%% případů. Posuzuj rozhodnutí, ne výsledek.</string>
+    <string name="review_followed_fold">Zahodil jsi podle rady a ušetřil sis žetony na lepší chvíli.</string>
     <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint's reason, a full sentence -->
-    <string name="review_ignored_won">Vyhrál jsi, ale nápověda navrhovala: %1$s. Důvod: %2$s Výhra proti radě je štěstí, ne plán.</string>
-    <string name="review_ignored_lost">Nápověda navrhovala: %1$s, ale ty ses rozhodl jinak a prohrál jsi. Důvod: %2$s</string>
-    <string name="review_ignored_fold">Zahodil jsi, ale nápověda navrhovala: %1$s. Důvod: %2$s</string>
+    <string name="review_ignored_won">Vyhrál jsi, ale rada navrhovala: %1$s. Důvod: %2$s Výhra proti radě je štěstí, ne plán.</string>
+    <string name="review_ignored_lost">Rada navrhovala: %1$s, ale ty ses rozhodl jinak a prohrál jsi. Důvod: %2$s</string>
+    <string name="review_ignored_fold">Zahodil jsi, ale rada navrhovala: %1$s. Důvod: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
-    <string name="review_beaten_by">Prohrál jsi s kombinací: %1$s. Nápověda ji odhadovala asi na %2$d%%.</string>
+    <string name="review_beaten_by">Prohrál jsi s kombinací: %1$s. Rada ji odhadovala asi na %2$d%%.</string>
 
     <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">Tuhle ruku bys vyhrál, ale když ses rozhodoval, měl jsi jen asi %1$d%%. Posuzuj rozhodnutí, ne výsledek.</string>
     <string name="review_hindsight_fold_lost">Tuhle ruku bys prohrál: když ses rozhodoval, měl jsi asi %1$d%%.</string>
     <string name="review_chance_at_decision">Když ses rozhodoval, měl jsi asi %1$d%%.</string>
     <string name="review_chance_slim_win">Vyhrál jsi, ale když ses rozhodoval, měl jsi malou šanci: asi %1$d%%.</string>
-    <string name="review_followed_won_slim">Řídil ses nápovědou a vyhrál jsi, ale šance byla malá: asi %1$d%%. Dobrá rozhodnutí nemusí mít vždy štěstí.</string>
+    <string name="review_followed_won_slim">Řídil ses radou a vyhrál jsi, ale šance byla malá: asi %1$d%%. Dobrá rozhodnutí nemusí mít vždy štěstí.</string>
 </resources>

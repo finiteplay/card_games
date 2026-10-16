@@ -59,7 +59,7 @@
     <string name="help_insurance">Když krupiér ukazuje eso, můžeš se pojistit za polovinu sázky. Vyplácí se 2 ku 1, má-li krupiér blackjack, jinak propadne.</string>
     <string name="help_dealer_title">Krupiér</string>
     <string name="help_dealer">Krupiér se nerozhoduje: bere karty, dokud nemá 17 nebo více, a stojí na každé 17, včetně měkké 17, kde se eso počítá jako 11.</string>
-    <string name="help_strategy_intro">Jednoduchý plán, který ti dá dobré šance. Tlačítko Nápověda se řídí stejnou strategií, jen podrobněji.</string>
+    <string name="help_strategy_intro">Jednoduchý plán, který ti dá dobré šance. Tlačítko Rada se řídí stejnou strategií, jen podrobněji.</string>
     <string name="help_strategy_1">Při 8 nebo méně vždy lízej a při tvrdé 17 nebo více vždy stůj.</string>
     <string name="help_strategy_2">Při 12 až 16 stůj, ukazuje-li krupiér 2 až 6, protože pravděpodobně přetáhne. Lízej, ukazuje-li 7 a více.</string>
     <string name="help_strategy_3">Zdvoj při 11 a při 10, ukazuje-li krupiér 9 nebo méně. Nemůžeš-li zdvojit, lízej.</string>
@@ -83,14 +83,14 @@
     <string name="hint_figures">Krupiér přetáhne %1$d%% · Líznutí tě přetáhne %2$d%%</string>
     <string name="hint_figures_dealer_only">Krupiér přetáhne %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
-    <string name="review_title">Ohlédnutí za nápovědou</string>
-    <string name="review_followed_won">Řídil ses nápovědou a vyhrál jsi.</string>
-    <string name="review_followed_lost">Řídil ses nápovědou a prohrál jsi, to se stává: o kolu rozhodují krupiérovy karty. Posuzuj rozhodnutí, ne výsledek.</string>
-    <string name="review_followed_push">Řídil ses nápovědou a skončilo to remízou: žetony sis nechal.</string>
+    <string name="review_title">Ohlédnutí za radou</string>
+    <string name="review_followed_won">Řídil ses radou a vyhrál jsi.</string>
+    <string name="review_followed_lost">Řídil ses radou a prohrál jsi, to se stává: o kolu rozhodují krupiérovy karty. Posuzuj rozhodnutí, ne výsledek.</string>
+    <string name="review_followed_push">Řídil ses radou a skončilo to remízou: žetony sis nechal.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Vyhrál jsi, ale nápověda navrhovala: %1$s. Důvod: %2$s Výhra proti pravděpodobnosti je štěstí, ne plán.</string>
-    <string name="review_ignored_lost">Nápověda navrhovala: %1$s, ale ty ses rozhodl jinak a prohrál jsi. Důvod: %2$s</string>
-    <string name="review_ignored_push">Nápověda navrhovala: %1$s a ty ses rozhodl jinak. Důvod: %2$s</string>
+    <string name="review_ignored_won">Vyhrál jsi, ale rada navrhovala: %1$s. Důvod: %2$s Výhra proti pravděpodobnosti je štěstí, ne plán.</string>
+    <string name="review_ignored_lost">Rada navrhovala: %1$s, ale ty ses rozhodl jinak a prohrál jsi. Důvod: %2$s</string>
+    <string name="review_ignored_push">Rada navrhovala: %1$s a ty ses rozhodl jinak. Důvod: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
     <string name="review_dealer_finished">Krupiér skončil s %1$d.</string>
     <string name="review_dealer_busted">Krupiér přetáhl.</string>

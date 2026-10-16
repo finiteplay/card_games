@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Welche Züge erlaubt sind</string>
     <string name="help_rules_moves">Im Tableau kommt eine Karte auf eine Karte, die einen Rang höher und von der Gegenfarbe ist: eine rote 8 auf eine schwarze 9. Jede Folge, die bereits in dieser Reihenfolge liegt, wandert als Ganzes. Nur ein König darf in eine leere Spalte. Eine freiliegende Karte darf jederzeit auf ihr Fundament, und die oberste Fundamentkarte darfst du wieder herunterholen, wenn du sie brauchst.</string>
     <string name="help_rules_help_title">Was die App für dich erledigt</string>
-    <string name="help_rules_help">Tippe eine Karte an, und sie geht an den besten erlaubten Platz, oder zieh sie dorthin, wo du sie haben willst. Asse und sichere Karten wandern von selbst auf die Fundamente, sofern du das nicht in den Einstellungen abschaltest. Rückgängig ist unbegrenzt, und Tipp zeigt dir immer einen Zug, der einen Sieg möglich lässt.</string>
+    <string name="help_rules_help">Tippe eine Karte an, und sie geht an den besten erlaubten Platz, oder zieh sie dorthin, wo du sie haben willst. Asse und sichere Karten wandern von selbst auf die Fundamente, sofern du das nicht in den Optionen abschaltest. Rückgängig ist unbegrenzt, und Tipp zeigt dir immer einen Zug, der einen Sieg möglich lässt.</string>
 
     <string name="help_strategy_intro">Das sind die allgemein bekannten Grundsätze von Klondike. Keiner davon ist ein Geheimnis und keiner eine Garantie - sie sind einfach das, was meistens funktioniert.</string>
     <string name="help_strategy_1_title">Deck zuerst Karten auf</string>

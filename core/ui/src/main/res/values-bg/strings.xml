@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Настройки</string>
+    <string name="action_settings">Опции</string>
     <string name="action_statistics">Статистика</string>
-    <string name="action_replay">Повторение</string>
+    <string name="action_replay">Отново</string>
     <string name="action_new">Нова</string>
-    <string name="action_hint">Подсказка</string>
+    <string name="action_hint">Съвет</string>
     <string name="action_suggested">Препоръчано</string>
     <string name="action_undo">Отмяна</string>
     <string name="action_close">Затвори</string>
@@ -29,12 +29,12 @@
     <string name="suit_diamonds">Каро</string>
     <string name="suit_hearts">Купа</string>
     <string name="suit_spades">Пика</string>
-    <string name="settings_title">Настройки</string>
+    <string name="settings_title">Опции</string>
     <string name="setting_enable_animations">Активиране на анимациите</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
-    <string name="setting_hint_shows_winning_move">Интелигентна подсказка</string>
-    <string name="setting_hint_timeout">Време за изчакване на подсказка</string>
+    <string name="setting_hint_shows_winning_move">Интелигентен съвет</string>
+    <string name="setting_hint_timeout">Време за изчакване на съвет</string>
     <string name="hint_timeout_seconds_value">%1$d секунди</string>
     <string name="setting_rest_reminder">Напомняния за почивка</string>
     <string name="rest_reminder_never">Никога</string>
@@ -49,7 +49,7 @@
     <string name="setting_left_handed">Разположение за левичари</string>
     <string name="setting_sound">Звук</string>
     <string name="setting_language">Език</string>
-    <string name="language_system">Системен по подразбиране</string>
+    <string name="language_system">Системен език</string>
     <string name="setting_theme">Тема</string>
     <string name="theme_light">Светла</string>
     <string name="theme_dark">Тъмна</string>
@@ -66,7 +66,7 @@
     <string name="stat_win_rate_value">%1$.0f%%</string>
     <string name="stat_current_streak">Текуща серия: %1$d</string>
     <string name="stat_longest_streak">Най-дълга серия: %1$d</string>
-    <string name="stat_hints_used">Подсказки: %1$d</string>
+    <string name="stat_hints_used">Съвети: %1$d</string>
     <string name="stat_best">Най-добро: %1$s, %2$s</string>
     <string name="stat_best_moves">%1$d хода</string>
     <string name="stat_no_completed_games">Все още няма завършени игри</string>
@@ -88,8 +88,8 @@
     <string name="stat_tile_played">Изиграни игри</string>
     <string name="stat_tile_streak">Текуща серия</string>
     <string name="stat_tile_longest_streak">Най-дълга серия</string>
-    <string name="stat_tile_hints">Подсказки</string>
-    <string name="stat_tile_hint_free_wins">Победи без подсказки</string>
+    <string name="stat_tile_hints">Съвети</string>
+    <string name="stat_tile_hint_free_wins">Победи без съвети</string>
     <string name="stat_vs_solution_title">Ходове спрямо сертифицираното решение</string>
     <string name="stat_percent_value">%1$d%%</string>
     <string name="stat_section_summary">Обобщение</string>
@@ -102,9 +102,11 @@
     <string name="pending_replay_action">Повторение на тази игра</string>
     <string name="pending_body">Текуща игра: %1$d хода, %2$s. Тази игра ще бъде загубена.</string>
     <string name="status_moves_time">Ходове: %1$d  Време: %2$s</string>
+    <string name="status_moves_label">Ходове:</string>
+    <string name="status_time_label">Време:</string>
     <string name="status_won">Печелите</string>
     <string name="stat_section_efficiency">Ефективност спрямо сертифицираното решение</string>
-    <string name="stat_section_hints">Подсказки</string>
+    <string name="stat_section_hints">Съвети</string>
     <string name="stat_section_by_level">Процент победи по ниво</string>
     <string name="stat_level_label">%1$s · %2$d от %3$d победи</string>
     <string name="stat_tile_loss_streak">Най-дълга серия загуби</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Политика за поверителност</string>
     <string name="about_acknowledgements">Благодарности</string>
     <string name="acknowledgements_intro">Това приложение включва софтуер с отворен код:</string>
+
+    <string name="animal_owl">Бухчо</string>
+    <string name="animal_tortoise">Черупко</string>
+    <string name="animal_panda">Бамбучо</string>
+    <string name="animal_gecko">Пъргавко</string>
+    <string name="animal_fox">Лисотрот</string>
+    <string name="animal_honey_badger">Язовчино</string>
+    <string name="animal_capybara">Кефибара</string>
 </resources>

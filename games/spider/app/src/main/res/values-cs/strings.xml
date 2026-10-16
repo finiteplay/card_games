@@ -28,9 +28,9 @@
     <string name="help_stock_title">Rozdání řady</string>
     <string name="help_stock">Klepnutím na balíček se rozdá jedna karta lícem nahoru na každý sloupec najednou — neexistuje odkládací balíček a karty se netáhnou jednotlivě. Rozdání odmítne, dokud je nějaký sloupec prázdný, proto mezeru nejprve zaplňte.</string>
     <string name="help_suits_title">Barvy</string>
-    <string name="help_suits">Jedna barva je nejmírnější hra, čtyři nejtěžší; dvě jsou mezi tím a jsou výchozím nastavením. Počet se stanoví při rozdání hry — změňte jej v Nastavení a projeví se u příští nové hry.</string>
-    <string name="help_controls_title">Klepnutí, tažení a nápověda</string>
-    <string name="help_controls">Klepnutím na kartu ji pošlete do nejbližšího povoleného sloupce napravo, v případě potřeby s návratem na začátek; dalším klepnutím ji posunete dál. Přetažením zvolíte sloupec sami. Nápověda rozsvítí horní kartu každé posloupnosti, která má kam jít. Když zbývá jen poslední posloupnost, hra ji dokončí za vás.</string>
+    <string name="help_suits">Jedna barva je nejmírnější hra, čtyři nejtěžší; dvě jsou mezi tím a jsou výchozím nastavením. Počet se stanoví při rozdání hry — změňte jej ve Volbách a projeví se u příští nové hry.</string>
+    <string name="help_controls_title">Klepnutí, tažení a rada</string>
+    <string name="help_controls">Klepnutím na kartu ji pošlete do nejbližšího povoleného sloupce napravo, v případě potřeby s návratem na začátek; dalším klepnutím ji posunete dál. Přetažením zvolíte sloupec sami. Rada rozsvítí horní kartu každé posloupnosti, která má kam jít. Když zbývá jen poslední posloupnost, hra ji dokončí za vás.</string>
 
     <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
          Klondike's and FreeCell's own text. -->

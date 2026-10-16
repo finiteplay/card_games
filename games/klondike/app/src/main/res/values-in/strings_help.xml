@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Langkah mana yang sah</string>
     <string name="help_rules_moves">Di area permainan, sebuah kartu diletakkan di atas kartu yang satu tingkat lebih tinggi dan berwarna berlawanan: 8 merah di atas 9 hitam. Rangkaian yang sudah tersusun dalam urutan itu berpindah sekaligus. Hanya Raja yang boleh masuk ke kolom kosong. Kartu yang terbuka selalu boleh naik ke fondasinya, dan kartu teratas sebuah fondasi boleh Anda turunkan lagi jika dibutuhkan.</string>
     <string name="help_rules_help_title">Yang dikerjakan aplikasi untuk Anda</string>
-    <string name="help_rules_help">Ketuk sebuah kartu dan kartu itu akan menuju tempat sah yang terbaik, atau seret ke mana pun Anda mau. As dan kartu yang aman naik sendiri ke fondasi, kecuali Anda mematikannya di Pengaturan. Urungkan tidak terbatas, dan Petunjuk selalu menunjukkan langkah yang menjaga kemenangan tetap mungkin.</string>
+    <string name="help_rules_help">Ketuk sebuah kartu dan kartu itu akan menuju tempat sah yang terbaik, atau seret ke mana pun Anda mau. As dan kartu yang aman naik sendiri ke fondasi, kecuali Anda mematikannya di Setelan. Urungkan tidak terbatas, dan Petunjuk selalu menunjukkan langkah yang menjaga kemenangan tetap mungkin.</string>
 
     <string name="help_strategy_intro">Ini adalah prinsip-prinsip Klondike yang sudah umum diketahui. Tidak ada yang rahasia dan tidak ada yang menjamin apa pun - semuanya sekadar hal yang biasanya berhasil.</string>
     <string name="help_strategy_1_title">Buka kartu lebih dulu</string>

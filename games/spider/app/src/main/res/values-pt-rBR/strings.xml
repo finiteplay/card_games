@@ -28,7 +28,7 @@
     <string name="help_stock_title">Distribuindo uma fileira</string>
     <string name="help_stock">Tocar no monte distribui uma carta virada para cima em cada coluna de uma vez — não há pilha de descarte nem se compra uma carta por vez. Ele recusa enquanto houver uma coluna vazia, então preencha o espaço antes de distribuir.</string>
     <string name="help_suits_title">Naipes</string>
-    <string name="help_suits">Um naipe é o jogo mais tranquilo, quatro o mais difícil; dois fica entre os dois e é o padrão. A quantidade é fixada quando o jogo é distribuído — altere-a em Configurações e ela se aplicará ao próximo novo jogo.</string>
+    <string name="help_suits">Um naipe é o jogo mais tranquilo, quatro o mais difícil; dois fica entre os dois e é o padrão. A quantidade é fixada quando o jogo é distribuído — altere-a em Ajustes e ela se aplicará ao próximo novo jogo.</string>
     <string name="help_controls_title">Tocar, arrastar e dica</string>
     <string name="help_controls">Toque em uma carta para enviá-la à próxima coluna válida à direita, voltando ao início se necessário; toque novamente para continuar movendo-a. Arraste para escolher você mesmo a coluna. A dica acende a carta do topo de cada sequência que tem para onde ir. Quando resta apenas a última sequência, o jogo a termina para você.</string>
 

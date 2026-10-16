@@ -61,6 +61,7 @@ import org.finiteplay.core.ui.layout.LossWash
 import org.finiteplay.core.ui.layout.ResultMark
 import org.finiteplay.core.ui.layout.signed
 import org.finiteplay.holdem.R
+import org.finiteplay.core.ui.animal.localizedName
 
 private const val RAISE_DP = 6
 private const val LOGO_CLEAR_GAP_DP = 92f
@@ -79,7 +80,7 @@ private fun indicesIn(cards: List<Card?>, highlight: Set<Card>?): Set<Int>? =
 
 @Composable
 private fun nameOf(seat: Int, profiles: List<OpponentProfile>): String =
-    if (seat == 0) stringResource(R.string.you) else profiles.getOrNull(seat - 1)?.name ?: ""
+    if (seat == 0) stringResource(R.string.you) else profiles.getOrNull(seat - 1)?.animal?.localizedName() ?: ""
 
 /**
  * The felt: six seats round the oval, the board and the pot, per `UI_SPEC.md` "Layout". Card sizes
@@ -381,7 +382,7 @@ private fun OpponentSeat(
             Row(modifier = Modifier.height(28.dp).fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                 Avatar(profile)
                 Column(modifier = Modifier.weight(1f)) {
-                    Text(profile.name, style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, autoSize = FitName, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_${seat}_name"))
+                    Text(profile.animal.localizedName(), style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, autoSize = FitName, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_${seat}_name"))
                     val last = model.lastAction
                     val won = model.net?.takeIf { it > 0 && !out }
                     if (won != null) {
@@ -472,7 +473,7 @@ private fun seatSpoken(table: TableModel, seat: Int, profile: OpponentProfile, s
     val parts = ArrayList<String>()
     if (model.place != null) parts += stringResource(R.string.a11y_out, placeText(model.place))
     else if (model.folded) parts += stringResource(R.string.a11y_folded)
-    parts += stringResource(R.string.a11y_seat, profile.name, styleText(profile.style), model.stack)
+    parts += stringResource(R.string.a11y_seat, profile.animal.localizedName(), styleText(profile.style), model.stack)
     if (model.allIn && model.stack == 0) parts += stringResource(R.string.a11y_all_in)
     if (table.button == seat) parts += stringResource(R.string.a11y_dealer)
     if (table.smallBlind == seat && model.inHand) parts += stringResource(R.string.a11y_small_blind)

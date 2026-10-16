@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Hvilke træk der er lovlige</string>
     <string name="help_rules_moves">På spillebordet lægges et kort på et kort, der er én værdi højere og har modsat farve: en rød 8 på en sort 9. En sekvens, der allerede ligger i den rækkefølge, flyttes samlet. Kun en Konge må lægges i en tom kolonne. Et frilagt kort må altid ryge op på sin hjemmebunke, og det øverste kort i en hjemmebunke må du hente ned igen, hvis du får brug for det.</string>
     <string name="help_rules_help_title">Hvad appen gør for dig</string>
-    <string name="help_rules_help">Tryk på et kort, så ryger det hen på den bedste lovlige plads, eller træk det derhen, hvor du vil have det. Esser og sikre kort ryger op på hjemmebunkerne af sig selv, medmindre du slår det fra i Indstillinger. Fortryd er ubegrænset, og Hint viser dig altid et træk, der holder sejren mulig.</string>
+    <string name="help_rules_help">Tryk på et kort, så ryger det hen på den bedste lovlige plads, eller træk det derhen, hvor du vil have det. Esser og sikre kort ryger op på hjemmebunkerne af sig selv, medmindre du slår det fra i Valg. Fortryd er ubegrænset, og Hint viser dig altid et træk, der holder sejren mulig.</string>
 
     <string name="help_strategy_intro">Det er de velkendte principper i Klondike. Ingen af dem er en hemmelighed, og ingen er en garanti - de er ganske enkelt det, der plejer at virke.</string>
     <string name="help_strategy_1_title">Vend kort først</string>

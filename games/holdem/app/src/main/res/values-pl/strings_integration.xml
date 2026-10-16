@@ -34,22 +34,22 @@
     <!-- %1$s = a hand name (Flush, Straight, ...), %2$d = percent -->
     <string name="hint_threat_item">%1$s %2$d%%</string>
     <!-- Looking back at a hand played after a Hint. -->
-    <string name="review_title">Spojrzenie wstecz na podpowiedź</string>
+    <string name="review_title">Spojrzenie wstecz na radę</string>
     <!-- %1$d = your chance to win at that moment, in percent -->
-    <string name="review_followed_won">Zastosowałeś się do podpowiedzi i wygrałeś: miałeś około %1$d%% szans na wygraną.</string>
+    <string name="review_followed_won">Zastosowałeś się do rady i wygrałeś: miałeś około %1$d%% szans na wygraną.</string>
     <!-- %1$d = your chance to win, %2$d = the chance to lose, both in percent -->
-    <string name="review_followed_lost">Zastosowałeś się do podpowiedzi i przegrałeś, tak bywa: przy około %1$d%% przegrywasz w %2$d%% przypadków. Oceniaj decyzję, nie wynik.</string>
-    <string name="review_followed_fold">Spasowałeś zgodnie z podpowiedzią i zachowałeś żetony na lepszą okazję.</string>
+    <string name="review_followed_lost">Zastosowałeś się do rady i przegrałeś, tak bywa: przy około %1$d%% przegrywasz w %2$d%% przypadków. Oceniaj decyzję, nie wynik.</string>
+    <string name="review_followed_fold">Spasowałeś zgodnie z radą i zachowałeś żetony na lepszą okazję.</string>
     <!-- %1$s = what the Hint suggested (Fold, Call, Raise 120, ...), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Wygrałeś, ale podpowiedź sugerowała: %1$s. Jej powód: %2$s Wygrana wbrew radzie to szczęście, nie plan.</string>
-    <string name="review_ignored_lost">Podpowiedź sugerowała: %1$s, ale wybrałeś inaczej i przegrałeś. Jej powód: %2$s</string>
-    <string name="review_ignored_fold">Spasowałeś, ale podpowiedź sugerowała: %1$s. Jej powód: %2$s</string>
+    <string name="review_ignored_won">Wygrałeś, ale rada sugerowała: %1$s. Jej powód: %2$s Wygrana wbrew radzie to szczęście, nie plan.</string>
+    <string name="review_ignored_lost">Rada sugerowała: %1$s, ale wybrałeś inaczej i przegrałeś. Jej powód: %2$s</string>
+    <string name="review_ignored_fold">Spasowałeś, ale rada sugerowała: %1$s. Jej powód: %2$s</string>
     <!-- %1$s = the hand that beat you (Flush, Straight, ...), %2$d = how likely the Hint said that was, in percent -->
-    <string name="review_beaten_by">Przegrałeś z układem: %1$s. Podpowiedź oceniała to na około %2$d%%.</string>
+    <string name="review_beaten_by">Przegrałeś z układem: %1$s. Rada oceniała to na około %2$d%%.</string>
     <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">Wygrałbyś to rozdanie, ale gdy decydowałeś, miałeś tylko około %1$d%% szans. Oceniaj decyzję, nie wynik.</string>
     <string name="review_hindsight_fold_lost">Przegrałbyś to rozdanie: gdy decydowałeś, miałeś około %1$d%% szans.</string>
     <string name="review_chance_at_decision">Gdy decydowałeś, miałeś około %1$d%% szans.</string>
     <string name="review_chance_slim_win">Wygrałeś, ale gdy decydowałeś, szanse były małe: około %1$d%%.</string>
-    <string name="review_followed_won_slim">Zastosowałeś się do podpowiedzi i wygrałeś, ale szanse były małe: około %1$d%%. Dobre decyzje nie zawsze mają szczęście.</string>
+    <string name="review_followed_won_slim">Zastosowałeś się do rady i wygrałeś, ale szanse były małe: około %1$d%%. Dobre decyzje nie zawsze mają szczęście.</string>
 </resources>

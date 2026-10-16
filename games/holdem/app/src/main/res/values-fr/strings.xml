@@ -13,7 +13,7 @@
     <string name="help_actions_title">Vos choix</string>
     <string name="help_actions_check">Check : rester dans la main sans miser, quand personne n\'a misé avant vous.</string>
     <string name="help_actions_call">Suivre (Call) : égaler la mise à laquelle vous faites face.</string>
-    <string name="help_actions_bet">Miser ou Relancer : mettre plus de jetons. Choisissez le montant avec les boutons au-dessus de la barre : − et + avancent par pas d\'une grosse blinde, et ½ pot et Pot le règlent pour vous. Une relance doit être au moins aussi grosse que la dernière mise ou relance.</string>
+    <string name="help_actions_bet">Miser ou Relance : mettre plus de jetons. Choisissez le montant avec les boutons au-dessus de la barre : − et + avancent par pas d\'une grosse blinde, et ½ pot et Pot le règlent pour vous. Une relance doit être au moins aussi grosse que la dernière mise ou relance.</string>
     <string name="help_actions_fold">Se coucher (Fold) : abandonner vos cartes et les jetons déjà misés. Vous ne sortez que de cette main.</string>
     <string name="help_actions_all_in">Tapis (All in) : miser tous vos jetons.</string>
     <string name="help_button_title">Le bouton et les blindes</string>

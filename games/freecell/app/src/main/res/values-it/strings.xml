@@ -19,6 +19,6 @@
     <string name="help_free_cells">Ciascuna delle quattro celle libere contiene una carta di qualsiasi valore o seme, messa da parte finché non ti serve di nuovo. Una colonna vuota funziona allo stesso modo, ma contiene un\'intera sequenza invece di una sola carta.</string>
     <string name="help_moving_title">Costruire e spostare</string>
     <string name="help_moving">Una carta può essere posata su una carta di un valore superiore e di colore opposto. Qualsiasi carta singola può entrare in una colonna vuota. Più carte si spostano insieme come una sola supermossa quando abbastanza celle libere e colonne vuote rendono possibile il tragitto — il gioco lo calcola per te.</string>
-    <string name="help_controls_title">Tocco, trascinamento e suggerimento</string>
-    <string name="help_controls">Tocca una carta per inviarla alla colonna legale più vicina a destra, poi a una fondazione sicura, poi alla colonna più vicina a sinistra, e a una fondazione rischiosa o a una cella libera vuota solo come ultima risorsa. Trascina per scegliere tu stesso la destinazione, inclusa una cella libera. Il suggerimento dimostra che esiste una mossa e te la mostra, oppure ti dice onestamente quando non ce n\'è una.</string>
+    <string name="help_controls_title">Tocco, trascinamento e consiglio</string>
+    <string name="help_controls">Tocca una carta per inviarla alla colonna legale più vicina a destra, poi a una fondazione sicura, poi alla colonna più vicina a sinistra, e a una fondazione rischiosa o a una cella libera vuota solo come ultima risorsa. Trascina per scegliere tu stesso la destinazione, inclusa una cella libera. Il consiglio dimostra che esiste una mossa e te la mostra, oppure ti dice onestamente quando non ce n\'è una.</string>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="company_byline">av FinitePlay LLC</string>
-    <string name="action_settings">Innstillinger</string>
+    <string name="action_settings">Valg</string>
     <string name="action_statistics">Statistikk</string>
     <string name="action_replay">Spill om igjen</string>
     <string name="action_new">Ny</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Ruter</string>
     <string name="suit_hearts">Hjerter</string>
     <string name="suit_spades">Spar</string>
-    <string name="settings_title">Innstillinger</string>
+    <string name="settings_title">Valg</string>
     <string name="setting_enable_animations">Aktiver animasjon</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Spill dette spillet om igjen</string>
     <string name="pending_body">Nåværende spill: %1$d trekk, %2$s. Dette spillet blir tapt.</string>
     <string name="status_moves_time">Trekk: %1$d  Tid: %2$s</string>
+    <string name="status_moves_label">Trekk:</string>
+    <string name="status_time_label">Tid:</string>
     <string name="status_won">Vunnet</string>
     <string name="stat_section_efficiency">Effektivitet mot den sertifiserte løsningen</string>
     <string name="stat_section_hints">Hint</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Personvernerklæring</string>
     <string name="about_acknowledgements">Anerkjennelser</string>
     <string name="acknowledgements_intro">Denne appen inneholder åpen kildekode-programvare:</string>
+
+    <string name="animal_owl">Ugleklok</string>
+    <string name="animal_tortoise">Gjemmis</string>
+    <string name="animal_panda">Bambusen</string>
+    <string name="animal_gecko">Klissen</string>
+    <string name="animal_fox">Revlender</string>
+    <string name="animal_honey_badger">Røffling</string>
+    <string name="animal_capybara">Rolibara</string>
 </resources>

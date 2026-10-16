@@ -28,7 +28,7 @@
     <string name="help_stock_title">Sor osztása</string>
     <string name="help_stock">A húzópakli megérintése minden oszlopra egyszerre oszt egy felfelé fordított lapot — nincs dobott kupac, és nem egyesével húzol lapot. Az osztás megtagadva, amíg egy oszlop üres, ezért előbb töltsd ki a rést.</string>
     <string name="help_suits_title">Színek</string>
-    <string name="help_suits">Egy szín a legenyhébb játék, négy a legnehezebb; kettő középen van, és ez az alapértelmezett. A szám az osztáskor rögzül — a Beállításokban módosítható, és a következő új játékra lép érvénybe.</string>
+    <string name="help_suits">Egy szín a legenyhébb játék, négy a legnehezebb; kettő középen van, és ez az alapértelmezett. A szám az osztáskor rögzül — az Opciókban módosítható, és a következő új játékra lép érvénybe.</string>
     <string name="help_controls_title">Érintés, húzás és tipp</string>
     <string name="help_controls">Érints meg egy lapot, hogy a jobbra eső következő megfelelő oszlopba küldd, szükség esetén az elejére visszafordulva; érints rá újra, hogy tovább mozgasd. Húzással magad választhatod ki az oszlopot. A tipp megvilágítja minden olyan sorozat felső lapját, amelynek van hova mennie. Amikor már csak az utolsó sorozat marad, a játék befejezi helyetted.</string>
 

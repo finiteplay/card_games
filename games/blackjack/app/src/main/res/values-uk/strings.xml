@@ -46,7 +46,7 @@
     <string name="help_values_title">Вартість карт</string>
     <string name="help_values">Карти з числами коштують свій номінал. Валет, дама й король — по 10. Туз — 1 або 11, як вигідніше для руки. Туз і карта вартістю десять у перших двох картах — це блекджек, що виплачується 3 до 2.</string>
     <string name="help_round_title">Раунд</string>
-    <string name="help_round">Зробіть ставку й натисніть «Роздати». Ви та дилер отримуєте по дві карти, одна з карт дилера лишається долілиць. Потім ви ухвалюєте рішення, руку за рукою, а коли закінчите, грає дилер. Кожен раунд роздається з нової колоди, і скасування немає.</string>
+    <string name="help_round">Зробіть ставку й натисніть «Роздати». Ви та дилер отримуєте по дві карти, одна з карт дилера лишається долілиць. Потім ви ухвалюєте рішення, руку за рукою, а коли закінчите, грає дилер. Кожен раунд роздається з нової колоди, і повернути хід назад не можна.</string>
     <string name="help_hit_title">Взяти</string>
     <string name="help_hit">Візьміть ще одну карту. Можна брати, поки рука менша за 21.</string>
     <string name="help_stand_title">Стоп</string>
@@ -59,7 +59,7 @@
     <string name="help_insurance">Коли дилер показує туза, можна застрахуватися на половину ставки. Воно виплачує 2 до 1, якщо в дилера блекджек, інакше втрачається.</string>
     <string name="help_dealer_title">Дилер</string>
     <string name="help_dealer">Дилер нічого не вибирає: бере карти, доки не матиме 17 або більше, і зупиняється на кожних 17, зокрема на м’яких 17, де туз рахується як 11.</string>
-    <string name="help_strategy_intro">Простий план, що дає добрі шанси. Кнопка «Підказка» дотримується тієї самої стратегії докладніше.</string>
+    <string name="help_strategy_intro">Простий план, що дає добрі шанси. Кнопка «Порада» дотримується тієї самої стратегії докладніше.</string>
     <string name="help_strategy_1">Завжди беріть карту при 8 або менше й завжди зупиняйтеся на твердих 17 або більше.</string>
     <string name="help_strategy_2">При 12–16 зупиняйтеся, якщо дилер показує 2–6, бо він, імовірно, перебере. Беріть, якщо він показує 7 і більше.</string>
     <string name="help_strategy_3">Подвоюйте на 11, а на 10 — коли дилер показує 9 або менше. Якщо подвоїти не можна, беріть карту.</string>
@@ -84,14 +84,14 @@
     <string name="hint_figures">Перебір дилера %1$d%% · Ваш перебір після карти %2$d%%</string>
     <string name="hint_figures_dealer_only">Перебір дилера %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
-    <string name="review_title">Погляд назад на підказку</string>
-    <string name="review_followed_won">Ви послухали підказку й виграли.</string>
-    <string name="review_followed_lost">Ви послухали підказку й програли, таке буває: раунд вирішують карти дилера. Оцінюйте рішення, а не результат.</string>
-    <string name="review_followed_push">Ви послухали підказку й зіграли внічию: ваші фішки лишилися при вас.</string>
+    <string name="review_title">Погляд назад на пораду</string>
+    <string name="review_followed_won">Ви послухали пораду й виграли.</string>
+    <string name="review_followed_lost">Ви послухали пораду й програли, таке буває: раунд вирішують карти дилера. Оцінюйте рішення, а не результат.</string>
+    <string name="review_followed_push">Ви послухали пораду й зіграли внічию: ваші фішки лишилися при вас.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Ви виграли, але підказка радила: %1$s. Її причина: %2$s Перемога всупереч шансам — це везіння, а не план.</string>
-    <string name="review_ignored_lost">Підказка радила: %1$s, але ви вчинили інакше й програли. Її причина: %2$s</string>
-    <string name="review_ignored_push">Підказка радила: %1$s, а ви вчинили інакше. Її причина: %2$s</string>
+    <string name="review_ignored_won">Ви виграли, але порада пропонувала: %1$s. Її причина: %2$s Перемога всупереч шансам — це везіння, а не план.</string>
+    <string name="review_ignored_lost">Порада пропонувала: %1$s, але ви вчинили інакше й програли. Її причина: %2$s</string>
+    <string name="review_ignored_push">Порада пропонувала: %1$s, а ви вчинили інакше. Її причина: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
     <string name="review_dealer_finished">Дилер завершив із %1$d.</string>
     <string name="review_dealer_busted">Дилер отримав перебір.</string>

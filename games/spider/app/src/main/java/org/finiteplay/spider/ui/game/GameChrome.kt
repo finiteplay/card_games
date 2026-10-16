@@ -58,6 +58,8 @@ import org.finiteplay.core.ui.theme.CardColors
 import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.spider.R
 import org.finiteplay.spider.layout.SuitCount
+import org.finiteplay.core.ui.layout.appendCounters
+import org.finiteplay.core.ui.layout.counterIcons
 
 /**
  * The status row's accent for a suit count, borrowing three stops off Klondike's own
@@ -129,11 +131,8 @@ internal fun StatusRow(
             modifier = Modifier.weight(1f).heightIn(min = reservedHeight).padding(horizontal = 8.dp),
             contentAlignment = Alignment.Center,
         ) {
-            val counters = if (won) {
-                stringResource(CoreR.string.status_won)
-            } else {
-                stringResource(CoreR.string.status_moves_time, moves, formatElapsed(elapsedSeconds))
-            }
+            val wonText = if (won) stringResource(CoreR.string.status_won) else null
+            val elapsed = formatElapsed(elapsedSeconds)
             val separator = if (singleLine) "  " else "\n"
             // The suit count is a link, not merely coloured text, mirroring Klondike's own level
             // span (`GameScreen.kt`'s `StatusRow`): it is the shortest route to changing it, and
@@ -153,10 +152,11 @@ internal fun StatusRow(
                 append(" ")
                 withLink(dealLink) { append(stringResource(CoreR.string.deal_number, dealNumber)) }
                 append(separator)
-                append(counters)
+                if (wonText != null) append(wonText) else appendCounters(moves, elapsed)
             }
             Text(
                 text = status,
+                inlineContent = counterIcons(statusStyle, boardStatusColor()),
                 style = statusStyle,
                 color = boardStatusColor(),
                 textAlign = TextAlign.Center,

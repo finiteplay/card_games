@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Quali mosse sono valide</string>
     <string name="help_rules_moves">Nel tableau una carta va su una carta di un rango più alto e di colore opposto: un 8 rosso su un 9 nero. Qualsiasi sequenza già in quest\'ordine si sposta tutta insieme. Solo un Re può entrare in una colonna vuota. Una carta scoperta può sempre salire sulla sua fondazione, e puoi far scendere di nuovo la carta in cima a una fondazione se ti serve.</string>
     <string name="help_rules_help_title">Cosa fa l\'app per te</string>
-    <string name="help_rules_help">Tocca una carta e andrà nel miglior posto consentito, oppure trascinala dove vuoi. Assi e carte sicure salgono da sole sulle fondazioni, a meno che tu non lo disattivi nelle Impostazioni. Annulla è illimitato, e Suggerimento ti mostrerà sempre una mossa che lascia la vittoria possibile.</string>
+    <string name="help_rules_help">Tocca una carta e andrà nel miglior posto consentito, oppure trascinala dove vuoi. Assi e carte sicure salgono da sole sulle fondazioni, a meno che tu non lo disattivi nelle Opzioni. Annulla è illimitato, e Consiglio ti mostrerà sempre una mossa che lascia la vittoria possibile.</string>
 
     <string name="help_strategy_intro">Questi sono i principi noti del Klondike. Nessuno è un segreto e nessuno è una garanzia: sono semplicemente quelli che di solito funzionano.</string>
     <string name="help_strategy_1_title">Prima scopri le carte</string>

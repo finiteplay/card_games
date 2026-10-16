@@ -28,7 +28,7 @@
     <string name="help_stock_title">Een rij delen</string>
     <string name="help_stock">Tikken op de stok deelt één open kaart tegelijk op elke kolom — er is geen aflegstapel en je trekt niet één kaart tegelijk. Delen wordt geweigerd zolang een kolom leeg is, dus vul het gat eerst op.</string>
     <string name="help_suits_title">Kleuren</string>
-    <string name="help_suits">Eén kleur is het mildste spel, vier het moeilijkste; twee zit ertussenin en is de standaardinstelling. Het aantal ligt vast zodra een spel is gedeeld — wijzig het in Instellingen en het geldt voor het volgende nieuwe spel.</string>
+    <string name="help_suits">Eén kleur is het mildste spel, vier het moeilijkste; twee zit ertussenin en is de standaardinstelling. Het aantal ligt vast zodra een spel is gedeeld — wijzig het in Opties en het geldt voor het volgende nieuwe spel.</string>
     <string name="help_controls_title">Tikken, slepen en hint</string>
     <string name="help_controls">Tik op een kaart om hem naar de eerstvolgende geldige kolom rechts te sturen, met terugkeer naar het begin indien nodig; tik nogmaals om hem verder te laten gaan. Sleep om zelf een kolom te kiezen. De hint laat de bovenste kaart oplichten van elke reeks die ergens naartoe kan. Blijft alleen de laatste reeks over, dan maakt het spel die voor je af.</string>
 

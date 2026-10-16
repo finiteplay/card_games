@@ -3,7 +3,7 @@
     <string name="game_title">Blackjack</string>
     <string name="action_hit">Karte</string>
     <string name="action_stand">Halten</string>
-    <string name="action_double">Verdoppeln</string>
+    <string name="action_double">Doppeln</string>
     <string name="action_split">Teilen</string>
     <string name="action_deal">Geben</string>
     <string name="action_next_round">Nächste Runde</string>
@@ -51,7 +51,7 @@
     <string name="help_hit">Nimm eine weitere Karte. Du kannst so lange weiter ziehen, wie deine Hand unter 21 liegt.</string>
     <string name="help_stand_title">Halten</string>
     <string name="help_stand">Behalte deine Hand, wie sie ist, und beende deinen Zug.</string>
-    <string name="help_double_title">Verdoppeln</string>
+    <string name="help_double_title">Doppeln</string>
     <string name="help_double">Mit deinen ersten zwei Karten verdoppelst du deinen Einsatz und nimmst genau eine weitere Karte. Danach endet dein Zug. Nutze es, wenn deine Hand stark, aber noch nicht fertig ist.</string>
     <string name="help_split_title">Teilen</string>
     <string name="help_split">Haben deine ersten zwei Karten denselben Wert, teile sie in zwei Hände mit je dem ursprünglichen Einsatz. Insgesamt sind bis zu vier Hände möglich. Geteilte Asse bekommen je nur eine Karte, danach kannst du nicht weiter ziehen.</string>

@@ -102,6 +102,8 @@
     <string name="pending_replay_action">เล่นเกมนี้ซ้ำ</string>
     <string name="pending_body">เกมปัจจุบัน: %1$d การเดิน, %2$s เกมนี้จะสูญหาย</string>
     <string name="status_moves_time">เดิน: %1$d  เวลา: %2$s</string>
+    <string name="status_moves_label">เดิน:</string>
+    <string name="status_time_label">เวลา:</string>
     <string name="status_won">ชนะ</string>
     <string name="stat_section_efficiency">ประสิทธิภาพเทียบกับเฉลยที่รับรอง</string>
     <string name="stat_section_hints">คำแนะนำ</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">นโยบายความเป็นส่วนตัว</string>
     <string name="about_acknowledgements">การรับทราบ</string>
     <string name="acknowledgements_intro">แอปนี้มีซอฟต์แวร์โอเพนซอร์ส:</string>
+
+    <string name="animal_owl">ฮูกขรึม</string>
+    <string name="animal_tortoise">เต่าเหนียว</string>
+    <string name="animal_panda">หมีลุ้น</string>
+    <string name="animal_gecko">ตุ๊กซน</string>
+    <string name="animal_fox">จิ้งจอกแสบ</string>
+    <string name="animal_honey_badger">แบดใจถึง</string>
+    <string name="animal_capybara">คาปิชิล</string>
 </resources>

@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Mitkä siirrot ovat sallittuja</string>
     <string name="help_rules_moves">Pelialueella kortti asettuu yhtä arvoa korkeamman ja vastakkaisen värisen kortin päälle: punainen 8 mustan 9:n päälle. Jono, joka on jo tuossa järjestyksessä, siirtyy kokonaisena. Tyhjään sarakkeeseen käy vain Kuningas. Vapaana oleva kortti pääsee aina omaan pinoonsa, ja pinon päällimmäisen kortin voi ottaa takaisin alas, jos sitä tarvitsee.</string>
     <string name="help_rules_help_title">Mitä sovellus tekee puolestasi</string>
-    <string name="help_rules_help">Napauta korttia, niin se menee parhaaseen sallittuun paikkaan, tai vedä se minne haluat. Ässät ja turvalliset kortit siirtyvät pinoihin itsestään, ellet kytke sitä pois Asetuksista. Kumoaminen on rajatonta, ja Vihje näyttää aina siirron, joka pitää voiton mahdollisena.</string>
+    <string name="help_rules_help">Napauta korttia, niin se menee parhaaseen sallittuun paikkaan, tai vedä se minne haluat. Ässät ja turvalliset kortit siirtyvät pinoihin itsestään, ellet kytke sitä pois Valinnoista. Kumoaminen on rajatonta, ja Vihje näyttää aina siirron, joka pitää voiton mahdollisena.</string>
 
     <string name="help_strategy_intro">Nämä ovat Klondiken yleisesti tunnetut periaatteet. Yksikään niistä ei ole salaisuus eikä yksikään ole takuu - ne ovat yksinkertaisesti sitä, mikä yleensä toimii.</string>
     <string name="help_strategy_1_title">Käännä kortteja ensin</string>

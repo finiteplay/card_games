@@ -28,7 +28,7 @@
     <string name="help_stock_title">Rivin jakaminen</string>
     <string name="help_stock">Pakkaa napauttamalla jaetaan yksi avoin kortti jokaiseen sarakkeeseen kerralla — poisheittopinoa ei ole, eikä kortteja noste yksi kerrallaan. Jako evätään, kun sarake on tyhjä, joten täytä aukko ennen jakamista.</string>
     <string name="help_suits_title">Maat</string>
-    <string name="help_suits">Yksi maa on lempein peli, neljä vaikein; kaksi on niiden välissä ja on oletusasetus. Määrä lukitaan, kun peli jaetaan — vaihda se asetuksista, ja se koskee seuraavaa uutta peliä.</string>
+    <string name="help_suits">Yksi maa on lempein peli, neljä vaikein; kaksi on niiden välissä ja on oletusasetus. Määrä lukitaan, kun peli jaetaan — vaihda se Valinnoista, ja se koskee seuraavaa uutta peliä.</string>
     <string name="help_controls_title">Napautus, veto ja vihje</string>
     <string name="help_controls">Napauta korttia lähettääksesi sen seuraavaan sallittuun sarakkeeseen oikealla, kiertäen tarvittaessa alkuun; napauta uudelleen jatkaaksesi sen siirtämistä. Vedä valitaksesi sarakkeen itse. Vihje syttyy jokaisen sarjan ylimpään korttiin, jolla on jokin paikka mennä. Kun jäljellä on enää viimeinen sarja, peli viimeistelee sen puolestasi.</string>
 

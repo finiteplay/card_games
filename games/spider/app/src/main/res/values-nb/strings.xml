@@ -28,7 +28,7 @@
     <string name="help_stock_title">Dele ut en rad</string>
     <string name="help_stock">Å trykke på bunken deler ut ett synlig kort på hver kolonne samtidig — det finnes ingen avlagt bunke, og man trekker ikke ett kort om gangen. Den avslår mens en kolonne er tom, så fyll hullet før du deler ut.</string>
     <string name="help_suits_title">Farger</string>
-    <string name="help_suits">Én farge er det mildeste spillet, fire det vanskeligste; to ligger midt imellom og er standardinnstillingen. Antallet fastsettes når et spill deles ut — endre det i Innstillinger, så gjelder det for neste nye spill.</string>
+    <string name="help_suits">Én farge er det mildeste spillet, fire det vanskeligste; to ligger midt imellom og er standardinnstillingen. Antallet fastsettes når et spill deles ut — endre det i Valg, så gjelder det for neste nye spill.</string>
     <string name="help_controls_title">Trykk, dra og hint</string>
     <string name="help_controls">Trykk på et kort for å sende det til nærmeste gyldige kolonne til høyre, med retur til starten ved behov; trykk igjen for å fortsette å flytte det. Dra for å velge kolonne selv. Hintet lyser opp det øverste kortet i hver rekke som har et sted å gå. Når bare den siste rekken gjenstår, fullfører spillet den for deg.</string>
 

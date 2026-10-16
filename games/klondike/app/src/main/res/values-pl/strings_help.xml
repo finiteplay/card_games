@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Które ruchy są dozwolone</string>
     <string name="help_rules_moves">W kolumnach karta kładzie się na karcie o jedną rangę wyższej i w przeciwnym kolorze: czerwona 8 na czarnej 9. Sekwencja ułożona już w tym porządku przenosi się w całości. Do pustej kolumny może wejść tylko Król. Odkryta karta zawsze może pójść na swój stos, a wierzchnią kartę ze stosu możesz zdjąć z powrotem, jeśli jej potrzebujesz.</string>
     <string name="help_rules_help_title">Co aplikacja robi za ciebie</string>
-    <string name="help_rules_help">Dotknij karty, a trafi w najlepsze dozwolone miejsce, albo przeciągnij ją tam, gdzie chcesz. Asy i bezpieczne karty same wędrują na stosy, o ile nie wyłączysz tego w Ustawieniach. Cofanie jest nieograniczone, a Podpowiedź zawsze pokaże ruch, który zachowuje szansę na wygraną.</string>
+    <string name="help_rules_help">Dotknij karty, a trafi w najlepsze dozwolone miejsce, albo przeciągnij ją tam, gdzie chcesz. Asy i bezpieczne karty same wędrują na stosy, o ile nie wyłączysz tego w Opcjach. Cofanie jest nieograniczone, a Rada zawsze pokaże ruch, który zachowuje szansę na wygraną.</string>
 
     <string name="help_strategy_intro">To powszechnie znane zasady gry Klondike. Żadna z nich nie jest tajemnicą i żadna nie jest gwarancją - to po prostu to, co zwykle działa.</string>
     <string name="help_strategy_1_title">Najpierw odkrywaj karty</string>

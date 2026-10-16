@@ -28,7 +28,7 @@
     <string name="help_stock_title">Give en række</string>
     <string name="help_stock">At trykke på bunken giver ét vendt kort til hver kolonne på én gang — der er ingen kasseret bunke, og man trækker ikke ét kort ad gangen. Den afviser, mens en kolonne er tom, så udfyld hullet, før du giver kort.</string>
     <string name="help_suits_title">Farver</string>
-    <string name="help_suits">Én farve er det mildeste spil, fire det sværeste; to ligger midtimellem og er standardindstillingen. Antallet fastlægges, når et spil gives — skift det i Indstillinger, så gælder det for næste nye spil.</string>
+    <string name="help_suits">Én farve er det mildeste spil, fire det sværeste; to ligger midtimellem og er standardindstillingen. Antallet fastlægges, når et spil gives — skift det i Valg, så gælder det for næste nye spil.</string>
     <string name="help_controls_title">Tryk, træk og hint</string>
     <string name="help_controls">Tryk på et kort for at sende det til den nærmeste gyldige kolonne til højre, med tilbagevenden til starten ved behov; tryk igen for at blive ved med at flytte det. Træk for selv at vælge kolonne. Hintet lyser det øverste kort op i hver række, der har et sted at gå hen. Når kun den sidste række er tilbage, fuldfører spillet den for dig.</string>
 

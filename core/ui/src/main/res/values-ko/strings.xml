@@ -102,6 +102,8 @@
     <string name="pending_replay_action">이 게임 다시 하기</string>
     <string name="pending_body">현재 게임: %1$d 수, %2$s. 이 게임은 사라집니다.</string>
     <string name="status_moves_time">이동 수: %1$d  시간: %2$s</string>
+    <string name="status_moves_label">이동 수:</string>
+    <string name="status_time_label">시간:</string>
     <string name="status_won">승리</string>
     <string name="stat_section_efficiency">인증된 해법 대비 효율</string>
     <string name="stat_section_hints">힌트</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">개인정보 처리방침</string>
     <string name="about_acknowledgements">오픈소스 고지</string>
     <string name="acknowledgements_intro">이 앱에는 오픈소스 소프트웨어가 포함되어 있습니다:</string>
+
+    <string name="animal_owl">부엉박사</string>
+    <string name="animal_tortoise">꼭꼭북이</string>
+    <string name="animal_panda">다콜판다</string>
+    <string name="animal_gecko">착붙이</string>
+    <string name="animal_fox">능청여우</string>
+    <string name="animal_honey_badger">꿀배짱</string>
+    <string name="animal_capybara">느긋바라</string>
 </resources>

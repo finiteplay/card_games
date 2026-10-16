@@ -2,7 +2,7 @@
 <resources>
     <string name="action_settings">Ρυθμίσεις</string>
     <string name="action_statistics">Στατιστικά</string>
-    <string name="action_replay">Επανάληψη</string>
+    <string name="action_replay">Ξανά</string>
     <string name="action_new">Νέο</string>
     <string name="action_hint">Υπόδειξη</string>
     <string name="action_suggested">Προτεινόμενο</string>
@@ -49,11 +49,11 @@
     <string name="setting_left_handed">Διάταξη για αριστερόχειρες</string>
     <string name="setting_sound">Ήχος</string>
     <string name="setting_language">Γλώσσα</string>
-    <string name="language_system">Προεπιλογή συστήματος</string>
+    <string name="language_system">Γλώσσα συστήματος</string>
     <string name="setting_theme">Θέμα</string>
     <string name="theme_light">Ανοιχτό</string>
     <string name="theme_dark">Σκούρο</string>
-    <string name="theme_system">Προεπιλογή συστήματος</string>
+    <string name="theme_system">Του συστήματος</string>
     <string name="theme_auto">Αυτόματο</string>
     <string name="statistics_title">Στατιστικά</string>
     <string name="period_week">Εβδομάδα</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Επανάληψη αυτής της παρτίδας</string>
     <string name="pending_body">Τρέχον παιχνίδι: %1$d κινήσεις, %2$s. Αυτό το παιχνίδι θα χαθεί.</string>
     <string name="status_moves_time">Κινήσεις: %1$d  Χρόνος: %2$s</string>
+    <string name="status_moves_label">Κινήσεις:</string>
+    <string name="status_time_label">Χρόνος:</string>
     <string name="status_won">Κερδίσατε</string>
     <string name="stat_section_efficiency">Αποδοτικότητα έναντι της πιστοποιημένης λύσης</string>
     <string name="stat_section_hints">Υποδείξεις</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Πολιτική απορρήτου</string>
     <string name="about_acknowledgements">Αναγνωρίσεις</string>
     <string name="acknowledgements_intro">Αυτή η εφαρμογή περιλαμβάνει λογισμικό ανοικτού κώδικα:</string>
+
+    <string name="animal_owl">Γλαυκούλα</string>
+    <string name="animal_tortoise">Καβουκάς</string>
+    <string name="animal_panda">Παντούλης</string>
+    <string name="animal_gecko">Τρεχαμίδι</string>
+    <string name="animal_fox">Αλεποτρότ</string>
+    <string name="animal_honey_badger">Ασβουλίνο</string>
+    <string name="animal_capybara">Χαλαμπάρα</string>
 </resources>

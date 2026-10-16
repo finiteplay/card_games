@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Vilka drag som är tillåtna</string>
     <string name="help_rules_moves">På spelplanen läggs ett kort på ett kort som är ett steg högre och har motsatt färg: en röd 8 på en svart 9. En sekvens som redan ligger i den ordningen flyttas i ett svep. Bara en Kung får läggas i en tom kolumn. Ett fritt kort får alltid gå upp till sin hemhög, och det översta kortet i en hemhög får du ta ner igen om du behöver det.</string>
     <string name="help_rules_help_title">Vad appen gör åt dig</string>
-    <string name="help_rules_help">Tryck på ett kort så går det till den bästa tillåtna platsen, eller dra det dit du vill. Ess och säkra kort går upp till hemhögarna av sig själva om du inte stänger av det i Inställningar. Ångra är obegränsat, och Tips visar alltid ett drag som håller vinsten möjlig.</string>
+    <string name="help_rules_help">Tryck på ett kort så går det till den bästa tillåtna platsen, eller dra det dit du vill. Ess och säkra kort går upp till hemhögarna av sig själva om du inte stänger av det i Alternativ. Ångra är obegränsat, och Tips visar alltid ett drag som håller vinsten möjlig.</string>
 
     <string name="help_strategy_intro">Det här är de välkända principerna i Klondike. Ingen av dem är en hemlighet och ingen är en garanti - de är helt enkelt det som brukar fungera.</string>
     <string name="help_strategy_1_title">Vänd upp kort först</string>

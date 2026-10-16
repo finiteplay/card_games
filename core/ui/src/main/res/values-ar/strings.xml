@@ -102,6 +102,8 @@
     <string name="pending_replay_action">إعادة لعب هذه اللعبة</string>
     <string name="pending_body">اللعبة الحالية: %1$d حركة، %2$s. ستُفقد هذه اللعبة.</string>
     <string name="status_moves_time">الحركات: %1$d  الوقت: %2$s</string>
+    <string name="status_moves_label">الحركات:</string>
+    <string name="status_time_label">الوقت:</string>
     <string name="status_won">فوز</string>
     <string name="stat_section_efficiency">الكفاءة مقابل الحل المعتمد</string>
     <string name="stat_section_hints">التلميحات</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">سياسة الخصوصية</string>
     <string name="about_acknowledgements">شكر وتقدير</string>
     <string name="acknowledgements_intro">يتضمن هذا التطبيق برامج مفتوحة المصدر:</string>
+
+    <string name="animal_owl">فهمان</string>
+    <string name="animal_tortoise">سلحوف</string>
+    <string name="animal_panda">بامبولي</string>
+    <string name="animal_gecko">شطّور</string>
+    <string name="animal_fox">ثعلوب</string>
+    <string name="animal_honey_badger">مقدام</string>
+    <string name="animal_capybara">رايقبارا</string>
 </resources>

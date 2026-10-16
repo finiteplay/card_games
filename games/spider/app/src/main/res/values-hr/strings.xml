@@ -28,7 +28,7 @@
     <string name="help_stock_title">Dijeljenje reda</string>
     <string name="help_stock">Dodirom na špil dijeli se po jedna otvorena karta na svaki stupac odjednom — nema odbačenog špila i ne vuče se karta po karta. Dijeljenje se odbija dok je neki stupac prazan, pa prvo popunite prazninu.</string>
     <string name="help_suits_title">Boje</string>
-    <string name="help_suits">Jedna boja je najblaža igra, četiri najteža; dvije su između i zadana su postavka. Broj se određuje pri dijeljenju igre — promijenite ga u Postavkama i primijenit će se na sljedeću novu igru.</string>
+    <string name="help_suits">Jedna boja je najblaža igra, četiri najteža; dvije su između i zadana su postavka. Broj se određuje pri dijeljenju igre — promijenite ga u Opcijama i primijenit će se na sljedeću novu igru.</string>
     <string name="help_controls_title">Dodir, povlačenje i savjet</string>
     <string name="help_controls">Dodirnite kartu da je pošaljete u sljedeći dopušteni stupac desno, uz povratak na početak po potrebi; dodirnite ponovno da je nastavite pomicati. Povucite da sami odaberete stupac. Savjet osvjetljava gornju kartu svakog niza koji ima kamo ići. Kad preostane samo posljednji niz, igra ga dovršava umjesto vas.</string>
 

@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Chơi lại ván này</string>
     <string name="pending_body">Ván hiện tại: %1$d nước đi, %2$s. Ván này sẽ bị mất.</string>
     <string name="status_moves_time">Nước đi: %1$d  Thời gian: %2$s</string>
+    <string name="status_moves_label">Nước đi:</string>
+    <string name="status_time_label">Thời gian:</string>
     <string name="status_won">Đã thắng</string>
     <string name="stat_section_efficiency">Hiệu quả so với lời giải đã chứng nhận</string>
     <string name="stat_section_hints">Gợi ý</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Chính sách quyền riêng tư</string>
     <string name="about_acknowledgements">Ghi nhận</string>
     <string name="acknowledgements_intro">Ứng dụng này có phần mềm nguồn mở:</string>
+
+    <string name="animal_owl">Cú Khôn</string>
+    <string name="animal_tortoise">Rùa Rụt Rè</string>
+    <string name="animal_panda">Mê Trúc</string>
+    <string name="animal_gecko">Kè Lanh</string>
+    <string name="animal_fox">Cáo Lém</string>
+    <string name="animal_honey_badger">Lửng Gan</string>
+    <string name="animal_capybara">Bara Tà Tà</string>
 </resources>

@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Které tahy jsou platné</string>
     <string name="help_rules_moves">Na hrací ploše se karta pokládá na kartu o hodnotu vyšší a opačné barvy: červená 8 na černou 9. Posloupnost, která už v tomto pořadí leží, se přesouvá celá. Do prázdného sloupce smí jen Král. Odkrytá karta může kdykoli na svůj základ a vrchní kartu ze základu si můžete sundat zpět, když ji potřebujete.</string>
     <string name="help_rules_help_title">Co za vás dělá aplikace</string>
-    <string name="help_rules_help">Klepněte na kartu a půjde na nejlepší dovolené místo, nebo ji přetáhněte tam, kam chcete. Esa a bezpečné karty putují na základy samy, pokud to nevypnete v Nastavení. Vracení tahů je neomezené a Nápověda vám vždy ukáže tah, který ponechává výhru možnou.</string>
+    <string name="help_rules_help">Klepněte na kartu a půjde na nejlepší dovolené místo, nebo ji přetáhněte tam, kam chcete. Esa a bezpečné karty putují na základy samy, pokud to nevypnete ve Volbách. Vracení tahů je neomezené a Rada vám vždy ukáže tah, který ponechává výhru možnou.</string>
 
     <string name="help_strategy_intro">Toto jsou obecně známé zásady hry Klondike. Žádná z nich není tajemstvím a žádná není zárukou - jsou to prostě ty, které obvykle fungují.</string>
     <string name="help_strategy_1_title">Nejdřív odkrývejte karty</string>

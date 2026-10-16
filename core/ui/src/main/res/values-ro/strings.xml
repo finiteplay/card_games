@@ -56,7 +56,7 @@
     <string name="theme_system">Implicit de sistem</string>
     <string name="theme_auto">Automat</string>
     <string name="statistics_title">Statistici</string>
-    <string name="period_week">Săptămână</string>
+    <string name="period_week">7 zile</string>
     <string name="period_month">Lună</string>
     <string name="period_all_time">Tot timpul</string>
     <string name="stat_wins">Victorii: %1$d</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Reia acest joc</string>
     <string name="pending_body">Joc curent: %1$d mutări, %2$s. Acest joc va fi pierdut.</string>
     <string name="status_moves_time">Mutări: %1$d  Timp: %2$s</string>
+    <string name="status_moves_label">Mutări:</string>
+    <string name="status_time_label">Timp:</string>
     <string name="status_won">Ai câștigat</string>
     <string name="stat_section_efficiency">Eficiență față de soluția certificată</string>
     <string name="stat_section_hints">Indicii</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Politica de confidențialitate</string>
     <string name="about_acknowledgements">Mulțumiri</string>
     <string name="acknowledgements_intro">Această aplicație include software open-source:</string>
+
+    <string name="animal_owl">Bufnache</string>
+    <string name="animal_tortoise">Carapăcel</string>
+    <string name="animal_panda">Bambusel</string>
+    <string name="animal_gecko">Zvârlugă</string>
+    <string name="animal_fox">Vulpotrot</string>
+    <string name="animal_honey_badger">Bursucino</string>
+    <string name="animal_capybara">Lejerbara</string>
 </resources>

@@ -28,9 +28,9 @@
     <string name="help_stock_title">Distribuire una riga</string>
     <string name="help_stock">Toccando il tallone si distribuisce una carta scoperta su ogni colonna contemporaneamente: non c\'è uno scarto né si pesca una carta alla volta. Si rifiuta mentre una colonna è vuota, quindi riempi il vuoto prima di distribuire.</string>
     <string name="help_suits_title">Semi</string>
-    <string name="help_suits">Un seme è la partita più semplice, quattro la più difficile; due sta nel mezzo ed è l\'impostazione predefinita. Il numero si fissa quando la partita viene distribuita: cambialo nelle Impostazioni e si applicherà alla prossima nuova partita.</string>
-    <string name="help_controls_title">Tocco, trascinamento e suggerimento</string>
-    <string name="help_controls">Tocca una carta per inviarla alla successiva colonna valida alla sua destra, tornando all\'inizio se necessario; tocca di nuovo per continuare a spostarla. Trascina per scegliere tu stesso la colonna. Il suggerimento illumina la carta in cima a ogni sequenza che ha dove andare. Quando resta solo l\'ultima sequenza, il gioco la completa per te.</string>
+    <string name="help_suits">Un seme è la partita più semplice, quattro la più difficile; due sta nel mezzo ed è l\'impostazione predefinita. Il numero si fissa quando la partita viene distribuita: cambialo nelle Opzioni e si applicherà alla prossima nuova partita.</string>
+    <string name="help_controls_title">Tocco, trascinamento e consiglio</string>
+    <string name="help_controls">Tocca una carta per inviarla alla successiva colonna valida alla sua destra, tornando all\'inizio se necessario; tocca di nuovo per continuare a spostarla. Trascina per scegliere tu stesso la colonna. Il consiglio illumina la carta in cima a ogni sequenza che ha dove andare. Quando resta solo l\'ultima sequenza, il gioco la completa per te.</string>
 
     <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
          Klondike's and FreeCell's own text. -->

@@ -57,7 +57,7 @@
 
     <!-- Stuck (no moves) notice -->
     <string name="stuck_title">Geen zetten meer</string>
-    <string name="stuck_body">Er is geen geldige zet en de voorraad kan niet helpen. Maak ongedaan of start een nieuw spel.</string>
+    <string name="stuck_body">Er is geen geldige zet en de voorraad kan niet helpen. Zet terug of start een nieuw spel.</string>
 
     <!-- Unrecoverable screen -->
     <string name="unrecoverable_title">Dit spel kan niet starten</string>

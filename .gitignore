@@ -5,10 +5,9 @@ build/
 local.properties
 captures/
 screenshots/
-!brand/google-play/*/screenshots/
-!brand/google-play/*/screenshots/*.png
-brand/google-play/*/screenshots/*-raw.png
-brand/google-play/*/screenshots/emulator-current.png
+# Store screenshots are generated (tools/store-screenshots), not stored: about 900 MB for 31 languages.
+# What is tracked is the recipe and brand/google-play/screenshots-manifest.json.
+brand/google-play/*/screenshots-localized/
 .externalNativeBuild/
 .cxx/
 app/build/

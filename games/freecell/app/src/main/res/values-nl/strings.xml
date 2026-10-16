@@ -5,7 +5,7 @@
     <string name="recovery_notice">Je opgeslagen spel kon niet worden geopend, dus er is een nieuw spel gedeeld.</string>
     <string name="setting_automatic_moves">Automatisch naar de stapels verplaatsen</string>
     <string name="stuck_title">Geen zetten meer</string>
-    <string name="stuck_body">Er is geen geldige zet meer. Maak ongedaan of start een nieuw spel.</string>
+    <string name="stuck_body">Er is geen geldige zet meer. Zet terug of start een nieuw spel.</string>
     <string name="hint_thinking">Denken…</string>
     <string name="hint_no_solution">Vanaf hier is winnen niet meer mogelijk.</string>
     <string name="hint_inconclusive">Kon het niet op tijd bepalen — probeer het opnieuw of speel verder.</string>

@@ -28,7 +28,7 @@
     <string name="help_stock_title">Eine Reihe austeilen</string>
     <string name="help_stock">Ein Tippen auf den Stapel teilt eine Karte offen auf jede Spalte gleichzeitig aus — es gibt keinen Ablagestapel und man zieht nicht Karte für Karte. Es wird verweigert, solange eine Spalte leer ist, also fülle die Lücke vor dem Austeilen.</string>
     <string name="help_suits_title">Farben</string>
-    <string name="help_suits">Eine Farbe ist das sanfteste Spiel, vier das schwerste; zwei liegt dazwischen und ist die Standardeinstellung. Die Anzahl wird beim Austeilen festgelegt — ändere sie in den Einstellungen, damit sie für das nächste neue Spiel gilt.</string>
+    <string name="help_suits">Eine Farbe ist das sanfteste Spiel, vier das schwerste; zwei liegt dazwischen und ist die Standardeinstellung. Die Anzahl wird beim Austeilen festgelegt — ändere sie in den Optionen, damit sie für das nächste neue Spiel gilt.</string>
     <string name="help_controls_title">Tippen, Ziehen und Hinweis</string>
     <string name="help_controls">Tippe auf eine Karte, um sie in die nächste zulässige Spalte rechts davon zu schicken, mit Umlauf zum Anfang; tippe erneut, um sie weiterzubewegen. Ziehe, um die Spalte selbst zu wählen. Der Hinweis lässt die oberste Karte jeder Folge aufleuchten, die irgendwohin ziehen kann. Bleibt nur noch die letzte Folge übrig, beendet das Spiel sie für dich.</string>
 

@@ -28,7 +28,7 @@
     <string name="help_stock_title">Membagikan satu baris</string>
     <string name="help_stock">Mengetuk tumpukan kartu membagikan satu kartu terbuka ke setiap kolom sekaligus — tidak ada tumpukan buangan dan tidak ada kartu yang diambil satu per satu. Pembagian ditolak selama ada kolom kosong, jadi isi celah itu sebelum membagikan.</string>
     <string name="help_suits_title">Jenis</string>
-    <string name="help_suits">Satu jenis adalah permainan paling ringan, empat yang paling sulit; dua berada di tengah dan merupakan pengaturan default. Jumlahnya ditetapkan saat permainan dibagikan — ubah di Pengaturan dan akan berlaku untuk permainan baru berikutnya.</string>
+    <string name="help_suits">Satu jenis adalah permainan paling ringan, empat yang paling sulit; dua berada di tengah dan merupakan pengaturan default. Jumlahnya ditetapkan saat permainan dibagikan — ubah di Setelan dan akan berlaku untuk permainan baru berikutnya.</string>
     <string name="help_controls_title">Ketuk, seret, dan petunjuk</string>
     <string name="help_controls">Ketuk kartu untuk mengirimkannya ke kolom sah berikutnya di sebelah kanannya, kembali ke awal jika perlu; ketuk lagi untuk terus memindahkannya. Seret untuk memilih kolom sendiri. Petunjuk menyalakan kartu teratas dari setiap rangkaian yang memiliki tujuan. Saat hanya rangkaian terakhir yang tersisa, permainan menyelesaikannya untuk Anda.</string>
 

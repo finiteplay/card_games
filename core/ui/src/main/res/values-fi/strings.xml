@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="company_byline">tekijä: FinitePlay LLC</string>
-    <string name="action_settings">Asetukset</string>
+    <string name="action_settings">Valinnat</string>
     <string name="action_statistics">Tilastot</string>
     <string name="action_replay">Toista</string>
     <string name="action_new">Uusi</string>
@@ -29,14 +29,14 @@
     <string name="suit_diamonds">Ruutu</string>
     <string name="suit_hearts">Hertta</string>
     <string name="suit_spades">Pata</string>
-    <string name="settings_title">Asetukset</string>
+    <string name="settings_title">Valinnat</string>
     <string name="setting_enable_animations">Ota animaatiot käyttöön</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
     <string name="setting_hint_shows_winning_move">Älykäs vihje</string>
     <string name="setting_hint_timeout">Vihjeen aikaraja</string>
     <string name="hint_timeout_seconds_value">%1$d sekuntia</string>
-    <string name="setting_rest_reminder">Taukomuistutukset</string>
+    <string name="setting_rest_reminder">Taukomuistutus</string>
     <string name="rest_reminder_never">Ei koskaan</string>
     <string name="rest_reminder_minutes_value">%1$d minuuttia</string>
     <string name="rest_reminder_title">Pidetäänkö tauko?</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Toista tämä jako</string>
     <string name="pending_body">Nykyinen peli: %1$d siirtoa, %2$s. Tämä peli menetetään.</string>
     <string name="status_moves_time">Siirrot: %1$d  Aika: %2$s</string>
+    <string name="status_moves_label">Siirrot:</string>
+    <string name="status_time_label">Aika:</string>
     <string name="status_won">Voitettu</string>
     <string name="stat_section_efficiency">Tehokkuus sertifioituun ratkaisuun verrattuna</string>
     <string name="stat_section_hints">Vihjeet</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Tietosuojakäytäntö</string>
     <string name="about_acknowledgements">Kiitokset</string>
     <string name="acknowledgements_intro">Tämä sovellus sisältää avoimen lähdekoodin ohjelmistoja:</string>
+
+    <string name="animal_owl">Huhuli</string>
+    <string name="animal_tortoise">Piilonen</string>
+    <string name="animal_panda">Pampula</string>
+    <string name="animal_gecko">Säätäjä</string>
+    <string name="animal_fox">Kettutango</string>
+    <string name="animal_honey_badger">Mesimörkö</string>
+    <string name="animal_capybara">Rentobara</string>
 </resources>

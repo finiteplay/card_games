@@ -28,7 +28,7 @@
     <string name="help_stock_title">Rozdanie radu</string>
     <string name="help_stock">Klepnutím na balík sa rozdá jedna karta lícom nahor na každý stĺpec naraz — neexistuje odkladací balík a karty sa neťahajú jednotlivo. Rozdanie odmietne, kým je nejaký stĺpec prázdny, preto medzeru najprv zaplňte.</string>
     <string name="help_suits_title">Farby</string>
-    <string name="help_suits">Jedna farba je najmiernejšia hra, štyri najťažšia; dve sú medzi tým a sú predvolené. Počet sa stanoví pri rozdaní hry — zmeňte ho v Nastaveniach a prejaví sa pri ďalšej novej hre.</string>
+    <string name="help_suits">Jedna farba je najmiernejšia hra, štyri najťažšia; dve sú medzi tým a sú predvolené. Počet sa stanoví pri rozdaní hry — zmeňte ho vo Voľbách a prejaví sa pri ďalšej novej hre.</string>
     <string name="help_controls_title">Klepnutie, ťahanie a pomôcka</string>
     <string name="help_controls">Klepnutím na kartu ju pošlete do najbližšieho povoleného stĺpca vpravo, v prípade potreby s návratom na začiatok; ďalším klepnutím ju posuniete ďalej. Pretiahnutím zvolíte stĺpec sami. Pomôcka rozsvieti vrchnú kartu každej postupnosti, ktorá má kam ísť. Keď zostáva len posledná postupnosť, hra ju dokončí za vás.</string>
 

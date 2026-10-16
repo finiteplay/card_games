@@ -3,7 +3,7 @@
     <string name="app_name" translatable="false">Texas Hold\'em by FinitePlay</string>
 
     <!-- Board title is localized for each supported UI language. -->
-    <string name="game_title">Texas Hold\'em</string>
+    <string name="game_title">Texas Hold’em</string>
 
     <!-- Help: three tabs. Hand names are also the showdown's labels. -->
     <string name="help_title">How to play</string>

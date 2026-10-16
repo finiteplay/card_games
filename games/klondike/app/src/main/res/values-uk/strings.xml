@@ -34,7 +34,7 @@
     <string name="draw_mode_one">Тягнути по одній</string>
     <string name="draw_mode_three">Тягнути по три</string>
     <string name="stuck_title">Ходів не залишилося</string>
-    <string name="stuck_body">Немає жодного дозволеного ходу, і колода не допоможе. Скасуйте хід або почніть нову гру.</string>
+    <string name="stuck_body">Немає жодного дозволеного ходу, і колода не допоможе. Поверніть хід назад або почніть нову гру.</string>
     <string name="unrecoverable_title">Цю гру неможливо почати</string>
     <string name="unrecoverable_body">Вбудований каталог роздач не пройшов перевірку, тому жодну роздачу не можна сертифікувати як розв\'язну. Перевстановлення застосунку може це виправити.</string>
     <string name="unrecoverable_retry">Спробувати ще раз</string>

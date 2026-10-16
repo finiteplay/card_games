@@ -2,7 +2,7 @@
 <resources>
     <string name="help_title">Πώς παίζεται</string>
     <string name="help_tab_rules">Κανόνες</string>
-    <string name="help_tab_strategy">Στρατηγική</string>
+    <string name="help_tab_strategy">Τακτική</string>
     <string name="help_tab_levels">Επίπεδα</string>
 
     <string name="help_rules_goal_title">Ο στόχος</string>

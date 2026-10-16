@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Hvilke trekk som er lovlige</string>
     <string name="help_rules_moves">På spillebordet legges et kort på et kort som er én valør høyere og har motsatt farge: en rød 8 på en svart 9. En sekvens som allerede ligger i den rekkefølgen, flyttes samlet. Bare en Konge kan legges i en tom kolonne. Et frilagt kort kan alltid gå opp til grunnbunken sin, og det øverste kortet i en grunnbunke kan du hente ned igjen hvis du trenger det.</string>
     <string name="help_rules_help_title">Hva appen gjør for deg</string>
-    <string name="help_rules_help">Trykk på et kort, så går det til den beste lovlige plassen, eller dra det dit du vil. Ess og trygge kort går opp til grunnbunkene av seg selv, med mindre du slår det av i Innstillinger. Angre er ubegrenset, og Hint viser deg alltid et trekk som holder seieren mulig.</string>
+    <string name="help_rules_help">Trykk på et kort, så går det til den beste lovlige plassen, eller dra det dit du vil. Ess og trygge kort går opp til grunnbunkene av seg selv, med mindre du slår det av i Valg. Angre er ubegrenset, og Hint viser deg alltid et trekk som holder seieren mulig.</string>
 
     <string name="help_strategy_intro">Dette er de velkjente prinsippene i Klondike. Ingen av dem er en hemmelighet og ingen er en garanti - de er rett og slett det som pleier å fungere.</string>
     <string name="help_strategy_1_title">Snu kort først</string>

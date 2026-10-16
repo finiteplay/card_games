@@ -49,6 +49,8 @@ import org.finiteplay.core.ui.layout.boardTitleColor
 import org.finiteplay.core.ui.layout.boardTitleStyle
 import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.freecell.R
+import org.finiteplay.core.ui.layout.appendCounters
+import org.finiteplay.core.ui.layout.counterIcons
 
 /**
  * The game's name and what it currently reads: title on the leading edge, the hand number and
@@ -93,11 +95,8 @@ internal fun StatusRow(
             modifier = Modifier.weight(1f).heightIn(min = reservedHeight).padding(horizontal = 8.dp),
             contentAlignment = Alignment.Center,
         ) {
-            val counters = if (won) {
-                stringResource(CoreR.string.status_won)
-            } else {
-                stringResource(CoreR.string.status_moves_time, moves, formatElapsed(elapsedSeconds))
-            }
+            val wonText = if (won) stringResource(CoreR.string.status_won) else null
+            val elapsed = formatElapsed(elapsedSeconds)
             // The hand number is a link, not merely text: it is the shortest route to choosing
             // another deal, and Statistics is not where a player looks for one.
             val handLink = LinkAnnotation.Clickable(
@@ -109,10 +108,11 @@ internal fun StatusRow(
                     withLink(handLink) { append(stringResource(R.string.status_hand_number, dealNumber)) }
                     append("\n")
                 }
-                append(counters)
+                if (wonText != null) append(wonText) else appendCounters(moves, elapsed)
             }
             Text(
                 text = text,
+                inlineContent = counterIcons(statusStyle, boardStatusColor()),
                 style = statusStyle,
                 color = boardStatusColor(),
                 textAlign = TextAlign.Center,

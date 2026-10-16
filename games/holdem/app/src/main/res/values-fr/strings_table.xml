@@ -12,7 +12,7 @@
     <string name="action_call">Suivre&#10;%1$,d</string>
     <string name="action_call_all_in">Suivre&#10;tapis</string>
     <string name="action_bet">Miser&#10;%1$,d</string>
-    <string name="action_raise">Relancer à&#10;%1$,d</string>
+    <string name="action_raise">Relance à&#10;%1$,d</string>
     <string name="action_all_in">Tapis&#10;%1$,d</string>
     <string name="action_next_hand">Main suivante</string>
     <string name="action_new_tournament">Nouveau tournoi</string>

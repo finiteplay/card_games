@@ -48,6 +48,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.isSpecified
+import androidx.compose.ui.text.rememberTextMeasurer
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import org.finiteplay.core.ui.R
 import org.finiteplay.core.ui.theme.LocalAppColors
@@ -281,18 +284,59 @@ private fun ActionButton(
             tint = iconColor,
             modifier = Modifier.size((if (compact) 22.dp else 30.dp) * chromeScale()),
         )
-        Text(
-            text = label,
-            style = (if (compact) MaterialTheme.typography.labelSmall else MaterialTheme.typography.labelMedium)
-                .let { it.copy(fontSize = it.fontSize * chromeScale()) },
-            textAlign = TextAlign.Center,
-            fontWeight = if (highlighted) FontWeight.Bold else null,
-            minLines = if (compact) 1 else ACTION_LABEL_LINES,
-            maxLines = ACTION_LABEL_LINES,
-            overflow = TextOverflow.Ellipsis,
-            color = textColor,
+        BoxWithConstraints(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.TopCenter) {
+            val labelStyle = (if (compact) MaterialTheme.typography.labelSmall else MaterialTheme.typography.labelMedium)
+                .let { it.copy(fontSize = it.fontSize * chromeScale()) }
+            Text(
+                text = label,
+                style = shrunkToFitWords(label, labelStyle, constraints.maxWidth, highlighted),
+                textAlign = TextAlign.Center,
+                fontWeight = if (highlighted) FontWeight.Bold else null,
+                minLines = if (compact) 1 else ACTION_LABEL_LINES,
+                maxLines = ACTION_LABEL_LINES,
+                overflow = TextOverflow.Ellipsis,
+                color = textColor,
+            )
+        }
+    }
+}
+
+/** Never smaller than this share of the label's size, so a long word costs legibility only so far. */
+private const val MIN_LABEL_SHRINK = 0.72f
+
+/**
+ * [style], made smaller when the longest word of [label] is wider than [maxWidthPx]. A label wraps
+ * between words, but a word wider than the button is broken mid-word ("Einstellun/gen"), which
+ * reads as a fault; a slightly smaller type keeps every word whole. Scripts that wrap anywhere
+ * (Han, kana, Hangul, Thai) with no spaces are left alone, and a word that still does not fit at [MIN_LABEL_SHRINK]
+ * needs a shorter term, which the text-fit audit reports.
+ */
+@Composable
+private fun shrunkToFitWords(label: String, style: TextStyle, maxWidthPx: Int, bold: Boolean): TextStyle {
+    val measurer = rememberTextMeasurer()
+    return remember(label, style, maxWidthPx, bold) {
+        // A label of one unbroken run of Han, kana, Hangul or Thai may wrap anywhere; one with spaces ("オールイン 1,500") has words to keep whole.
+        if (maxWidthPx <= 0 || (!label.contains(' ') && label.any { isUnspacedScript(it) })) return@remember style
+        val measured = if (bold) style.copy(fontWeight = FontWeight.Bold) else style
+        val widest = label.split(" ").filter { it.isNotEmpty() }.maxOfOrNull { word ->
+            measurer.measure(word, measured, softWrap = false, maxLines = 1).size.width
+        } ?: return@remember style
+        if (widest <= maxWidthPx) return@remember style
+        // A hair under the exact ratio: rounding the other way would break the word this just made fit.
+        val factor = (maxWidthPx.toFloat() / widest * 0.98f).coerceIn(MIN_LABEL_SHRINK, 1f)
+        style.copy(
+            fontSize = style.fontSize * factor,
+            // Scaled with the size: the spacing is part of each word's width, and left alone it keeps a shrunk word a few pixels too wide.
+            letterSpacing = if (style.letterSpacing.isSpecified) style.letterSpacing * factor else style.letterSpacing,
+            lineHeight = if (style.lineHeight.isSpecified) style.lineHeight * factor else style.lineHeight,
         )
     }
+}
+
+private fun isUnspacedScript(c: Char): Boolean = when (Character.UnicodeScript.of(c.code)) {
+    Character.UnicodeScript.HAN, Character.UnicodeScript.HIRAGANA, Character.UnicodeScript.KATAKANA,
+    Character.UnicodeScript.HANGUL, Character.UnicodeScript.THAI -> true
+    else -> false
 }
 
 /** First repeat after this long held, then every [HOLD_START_MS] shrinking toward [HOLD_FASTEST_MS]. */

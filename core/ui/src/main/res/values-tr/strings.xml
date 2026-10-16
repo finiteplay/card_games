@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Bu eli tekrar oyna</string>
     <string name="pending_body">Mevcut oyun: %1$d hamle, %2$s. Bu oyun kaybedilecek.</string>
     <string name="status_moves_time">Hamle: %1$d  Süre: %2$s</string>
+    <string name="status_moves_label">Hamle:</string>
+    <string name="status_time_label">Süre:</string>
     <string name="status_won">Kazandınız</string>
     <string name="stat_section_efficiency">Onaylı çözüme göre verimlilik</string>
     <string name="stat_section_hints">İpuçları</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Gizlilik politikası</string>
     <string name="about_acknowledgements">Teşekkürler</string>
     <string name="acknowledgements_intro">Bu uygulama açık kaynak yazılım içerir:</string>
+
+    <string name="animal_owl">Huhubey</string>
+    <string name="animal_tortoise">Kabukçu</string>
+    <string name="animal_panda">Bambucuk</string>
+    <string name="animal_gecko">Kıpırgeko</string>
+    <string name="animal_fox">Tilkitrot</string>
+    <string name="animal_honey_badger">Porsukino</string>
+    <string name="animal_capybara">Keyfibara</string>
 </resources>

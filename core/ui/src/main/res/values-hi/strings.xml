@@ -102,6 +102,8 @@
     <string name="pending_replay_action">इस बाँट को फिर से खेलें</string>
     <string name="pending_body">मौजूदा खेल: %1$d चालें, %2$s। यह खेल समाप्त हो जाएगा।</string>
     <string name="status_moves_time">चालें: %1$d  समय: %2$s</string>
+    <string name="status_moves_label">चालें:</string>
+    <string name="status_time_label">समय:</string>
     <string name="status_won">जीत</string>
     <string name="stat_section_efficiency">प्रमाणित समाधान की तुलना में दक्षता</string>
     <string name="stat_section_hints">संकेत</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">गोपनीयता नीति</string>
     <string name="about_acknowledgements">आभार</string>
     <string name="acknowledgements_intro">इस ऐप में ओपन-सोर्स सॉफ़्टवेयर शामिल है:</string>
+
+    <string name="animal_owl">समझू</string>
+    <string name="animal_tortoise">कवचू</string>
+    <string name="animal_panda">गोलू</string>
+    <string name="animal_gecko">जुगाड़ू</string>
+    <string name="animal_fox">दाँवू</string>
+    <string name="animal_honey_badger">शहदवीर</string>
+    <string name="animal_capybara">मस्तबारा</string>
 </resources>

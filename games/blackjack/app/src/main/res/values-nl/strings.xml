@@ -3,7 +3,7 @@
     <string name="game_title">Blackjack</string>
     <string name="action_hit">Kaart</string>
     <string name="action_stand">Blijven</string>
-    <string name="action_double">Verdubbelen</string>
+    <string name="action_double">Dubbelen</string>
     <string name="action_split">Splitsen</string>
     <string name="action_deal">Delen</string>
     <string name="action_next_round">Volgende ronde</string>
@@ -51,7 +51,7 @@
     <string name="help_hit">Pak nog een kaart. Je kunt blijven pakken zolang je hand onder 21 zit.</string>
     <string name="help_stand_title">Blijven</string>
     <string name="help_stand">Houd je hand zoals die is en beëindig je beurt.</string>
-    <string name="help_double_title">Verdubbelen</string>
+    <string name="help_double_title">Dubbelen</string>
     <string name="help_double">Op je eerste twee kaarten verdubbel je je inzet en pak je precies één kaart extra. Je beurt is dan voorbij. Gebruik het als je hand sterk is maar nog niet af.</string>
     <string name="help_split_title">Splitsen</string>
     <string name="help_split">Hebben je eerste twee kaarten dezelfde waarde, splits ze dan in twee handen, elk met de oorspronkelijke inzet. Je kunt in totaal maximaal vier handen hebben. Gesplitste azen krijgen elk één kaart en kunnen niet verder pakken.</string>

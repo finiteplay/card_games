@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Einstellungen</string>
+    <string name="action_settings">Optionen</string>
     <string name="action_statistics">Statistiken</string>
     <string name="action_replay">Wiederholen</string>
     <string name="action_new">Neu</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Karo</string>
     <string name="suit_hearts">Herz</string>
     <string name="suit_spades">Pik</string>
-    <string name="settings_title">Einstellungen</string>
+    <string name="settings_title">Optionen</string>
     <string name="setting_enable_animations">Animationen aktivieren</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Dieses Spiel wiederholen</string>
     <string name="pending_body">Aktuelles Spiel: %1$d Züge, %2$s. Dieses Spiel geht verloren.</string>
     <string name="status_moves_time">Züge: %1$d  Zeit: %2$s</string>
+    <string name="status_moves_label">Züge:</string>
+    <string name="status_time_label">Zeit:</string>
     <string name="status_won">Gewonnen</string>
     <string name="stat_section_efficiency">Effizienz im Vergleich zur zertifizierten Lösung</string>
     <string name="stat_section_hints">Tipps</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Datenschutzerklärung</string>
     <string name="about_acknowledgements">Danksagungen</string>
     <string name="acknowledgements_intro">Diese App enthält Open-Source-Software:</string>
+
+    <string name="animal_owl">Schlaueule</string>
+    <string name="animal_tortoise">Schildbert</string>
+    <string name="animal_panda">Bambussi</string>
+    <string name="animal_gecko">Geckoflitz</string>
+    <string name="animal_fox">Grinsfuchs</string>
+    <string name="animal_honey_badger">Draufdachs</string>
+    <string name="animal_capybara">Chillbara</string>
 </resources>

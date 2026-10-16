@@ -12,7 +12,7 @@
     <string name="help_rules_moves_title">Welke zetten mogen</string>
     <string name="help_rules_moves">In de kolommen gaat een kaart op een kaart die één rang hoger is en van de andere kleur: een rode 8 op een zwarte 9. Een reeks die al in die volgorde ligt, verhuist in één keer. Alleen een Heer mag naar een lege kolom. Een vrijliggende kaart mag altijd naar haar stapel bovenaan, en de bovenste kaart daarvan mag je weer terughalen als je haar nodig hebt.</string>
     <string name="help_rules_help_title">Wat de app voor je doet</string>
-    <string name="help_rules_help">Tik op een kaart en die gaat naar de beste toegestane plek, of sleep haar waarheen je wilt. Azen en veilige kaarten gaan vanzelf naar boven, tenzij je dat uitzet in Instellingen. Ongedaan maken is onbeperkt, en Hint laat je altijd een zet zien die winnen mogelijk houdt.</string>
+    <string name="help_rules_help">Tik op een kaart en die gaat naar de beste toegestane plek, of sleep haar waarheen je wilt. Azen en veilige kaarten gaan vanzelf naar boven, tenzij je dat uitzet in Opties. Zet terug kun je onbeperkt gebruiken, en Hint laat je altijd een zet zien die winnen mogelijk houdt.</string>
 
     <string name="help_strategy_intro">Dit zijn de bekende principes van Klondike. Geen ervan is een geheim en geen ervan is een garantie - het is simpelweg wat meestal werkt.</string>
     <string name="help_strategy_1_title">Draai eerst kaarten om</string>
@@ -24,7 +24,7 @@
     <string name="help_strategy_4_title">Let op de hele talon, niet alleen op de aflegstapel</string>
     <string name="help_strategy_4">Trekken is gratis en de talon wordt nooit opnieuw geschud, dus erdoorheen gaan kost alleen zetten. Let op wat voorbijkomt: weten dat een kaart terugkomt verandert de zet die je nu moet doen.</string>
     <string name="help_strategy_5_title">Zit je vast, ga dan terug</string>
-    <string name="help_strategy_5">Ongedaan maken kost je niets dan een zet in de teller. Als een gift opdroogt, is een paar zetten teruglopen en de andere tak nemen meestal sneller dan hopen dat de talon je redt.</string>
+    <string name="help_strategy_5">Zet terug kost je niets dan een zet in de teller. Als een gift opdroogt, is een paar zetten teruglopen en de andere tak nemen meestal sneller dan hopen dat de talon je redt.</string>
 
     <string name="help_levels_intro">Elke gift hier is door een computer gehaald voordat hij bij jou kwam, en het niveau zegt wat er nodig was om te winnen - of, bovenaan de ladder, dat niets het lukte. Het meet de gift, niet jou.</string>
     <string name="help_levels_trivial_title">Triviaal</string>

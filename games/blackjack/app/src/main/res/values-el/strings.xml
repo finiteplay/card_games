@@ -3,7 +3,7 @@
     <string name="game_title">Μπλακτζάκ</string>
     <string name="action_hit">Κάρτα</string>
     <string name="action_stand">Στάση</string>
-    <string name="action_double">Διπλασιασμός</string>
+    <string name="action_double">Διπλό</string>
     <string name="action_split">Διαχωρισμός</string>
     <string name="action_deal">Μοίρασμα</string>
     <string name="action_next_round">Επόμενος γύρος</string>
@@ -42,7 +42,7 @@
     <string name="help_chips_title">Μάρκες</string>
     <string name="help_chips">Ξεκινάς με 1.000 μάρκες. Οι μάρκες είναι μόνο για παιχνίδι και δεν αγοράζονται ούτε εξαργυρώνονται. Τα πονταρίσματα πάνε ανά 10, από 10 έως 500. Αν τελειώσουν οι μάρκες, μπορείς να κάνεις επαναφορά σε 1.000 και τα στατιστικά διατηρούνται.</string>
     <string name="help_tab_rules">Κανόνες</string>
-    <string name="help_tab_strategy">Στρατηγική</string>
+    <string name="help_tab_strategy">Τακτική</string>
     <string name="help_values_title">Αξίες καρτών</string>
     <string name="help_values">Οι αριθμημένες κάρτες μετρούν τον αριθμό τους. Ο βαλές, η ντάμα και ο ρήγας μετρούν 10. Ο άσος μετρά 1 ή 11, ό,τι συμφέρει το χέρι. Άσος και κάρτα αξίας δέκα στις δύο πρώτες κάρτες είναι μπλάκτζακ και πληρώνει 3 προς 2.</string>
     <string name="help_round_title">Ένας γύρος</string>
@@ -51,7 +51,7 @@
     <string name="help_hit">Πάρε μία ακόμη κάρτα. Μπορείς να συνεχίσεις όσο το χέρι σου είναι κάτω από 21.</string>
     <string name="help_stand_title">Στάση</string>
     <string name="help_stand">Κράτα το χέρι σου όπως είναι και τελείωσε τη σειρά σου.</string>
-    <string name="help_double_title">Διπλασιασμός</string>
+    <string name="help_double_title">Διπλό</string>
     <string name="help_double">Στις δύο πρώτες κάρτες διπλασίασε το ποντάρισμα και πάρε ακριβώς μία κάρτα. Η σειρά σου τελειώνει. Χρησιμοποίησέ το όταν το χέρι είναι δυνατό αλλά όχι τελειωμένο.</string>
     <string name="help_split_title">Διαχωρισμός</string>
     <string name="help_split">Όταν οι δύο πρώτες κάρτες έχουν την ίδια αξία, χώρισέ τες σε δύο χέρια, με το αρχικό ποντάρισμα το καθένα. Μπορείς να έχεις έως τέσσερα χέρια. Οι άσοι που χωρίζονται παίρνουν από μία κάρτα και δεν παίρνουν άλλη.</string>

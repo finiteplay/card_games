@@ -6,7 +6,8 @@ enum class PlayStyle { TIGHT, LOOSE, AGGRESSIVE, PASSIVE }
 /**
  * The animals that sit at our card tables. Each one is a fixed character: the same name, colour and
  * way of playing in every game that seats opponents, so "Foxtrot" is always the sneaky aggressive
- * one. [displayName] is a made-up name, never translated; [style] is how the animal plays;
+ * one. [displayName] is the English original of a made-up name; the player sees it in their own language
+ * (`animal_*` strings in `core:ui`, `Animal.localizedName`); [style] is how the animal plays;
  * [colorArgb] is the disc its drawn icon sits on (the art is `AnimalAvatar` in `core:ui`).
  */
 enum class Animal(val displayName: String, val style: PlayStyle, val colorArgb: Long) {

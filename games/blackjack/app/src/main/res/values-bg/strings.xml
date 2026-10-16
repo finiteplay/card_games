@@ -42,7 +42,7 @@
     <string name="help_chips_title">Чипове</string>
     <string name="help_chips">Започваш с 1 000 чипа. Чиповете са само за игра и не могат да се купуват или изплащат. Залозите са на стъпки от 10, от 10 до 500. Ако чиповете ти свършат, можеш да ги нулираш до 1 000, а статистиката се запазва.</string>
     <string name="help_tab_rules">Правила</string>
-    <string name="help_tab_strategy">Стратегия</string>
+    <string name="help_tab_strategy">Тактика</string>
     <string name="help_values_title">Стойности на картите</string>
     <string name="help_values">Картите с числа носят своето число. Вале, дама и поп носят 10. Асът е 1 или 11, което е по-добре за ръката. Ас и карта със стойност десет в първите две карти е блекджек и се плаща 3 към 2.</string>
     <string name="help_round_title">Рундът</string>
@@ -59,7 +59,7 @@
     <string name="help_insurance">Когато дилърът показва ас, можеш да се застраховаш за половината от залога. Плаща 2 към 1, ако дилърът има блекджек, и се губи в противен случай.</string>
     <string name="help_dealer_title">Дилърът</string>
     <string name="help_dealer">Дилърът не взема решения: тегли карти, докато стигне 17 или повече, и спира на всяко 17, включително мека 17, в която асът се брои за 11.</string>
-    <string name="help_strategy_intro">Прост план, който ти дава добри шансове. Бутонът за подсказка следва същата стратегия в пълни подробности.</string>
+    <string name="help_strategy_intro">Прост план, който ти дава добри шансове. Бутонът Съвет следва същата стратегия в пълни подробности.</string>
     <string name="help_strategy_1">Винаги теглѝ при 8 или по-малко и винаги спирай при твърда 17 или повече.</string>
     <string name="help_strategy_2">При 12 до 16 спри, ако дилърът показва от 2 до 6, защото вероятно ще прехвърли. Теглѝ, ако показва 7 или повече.</string>
     <string name="help_strategy_3">Удвоявай при 11 и при 10, когато дилърът показва 9 или по-малко. Ако не можеш да удвоиш, теглѝ.</string>
@@ -83,14 +83,14 @@
     <string name="hint_figures">Дилърът се прехвърля %1$d%% · Картата те прехвърля %2$d%%</string>
     <string name="hint_figures_dealer_only">Дилърът се прехвърля %1$d%%</string>
     <!-- Looking back at a round played after a Hint. -->
-    <string name="review_title">Поглед назад към подсказката</string>
-    <string name="review_followed_won">Последва подсказката и спечели.</string>
-    <string name="review_followed_lost">Последва подсказката и загуби, случва се: картите на дилъра решават рунда. Оценявай решението, не резултата.</string>
-    <string name="review_followed_push">Последва подсказката и стана равенство: запази чиповете си.</string>
+    <string name="review_title">Поглед назад към съвета</string>
+    <string name="review_followed_won">Последва съвета и спечели.</string>
+    <string name="review_followed_lost">Последва съвета и загуби, случва се: картите на дилъра решават рунда. Оценявай решението, не резултата.</string>
+    <string name="review_followed_push">Последва съвета и стана равенство: запази чиповете си.</string>
     <!-- %1$s = what the Hint suggested (Hit, Stand, Double, Split, Decline), %2$s = the Hint reason, a full sentence -->
-    <string name="review_ignored_won">Спечели, но подсказката предлагаше: %1$s. Причината: %2$s Победата срещу шансовете е късмет, не план.</string>
-    <string name="review_ignored_lost">Подсказката предлагаше: %1$s, но ти избра друго и загуби. Причината: %2$s</string>
-    <string name="review_ignored_push">Подсказката предлагаше: %1$s, а ти избра друго. Причината: %2$s</string>
+    <string name="review_ignored_won">Спечели, но съветът предлагаше: %1$s. Причината: %2$s Победата срещу шансовете е късмет, не план.</string>
+    <string name="review_ignored_lost">Съветът предлагаше: %1$s, но ти избра друго и загуби. Причината: %2$s</string>
+    <string name="review_ignored_push">Съветът предлагаше: %1$s, а ти избра друго. Причината: %2$s</string>
     <!-- How the round ended. %1$d = a hand total. -->
     <string name="review_dealer_finished">Дилърът приключи с %1$d.</string>
     <string name="review_dealer_busted">Дилърът се прехвърли.</string>

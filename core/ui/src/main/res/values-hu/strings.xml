@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Beállítások</string>
+    <string name="action_settings">Opciók</string>
     <string name="action_statistics">Statisztika</string>
-    <string name="action_replay">Újrajátszás</string>
+    <string name="action_replay">Újra</string>
     <string name="action_new">Új</string>
     <string name="action_hint">Tipp</string>
     <string name="action_suggested">Javasolt</string>
-    <string name="action_undo">Visszavonás</string>
+    <string name="action_undo">Vissza</string>
     <string name="action_close">Bezárás</string>
     <string name="action_dismiss">Elvetés</string>
     <string name="action_new_game">Új Játék</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Káró</string>
     <string name="suit_hearts">Kőr</string>
     <string name="suit_spades">Pikk</string>
-    <string name="settings_title">Beállítások</string>
+    <string name="settings_title">Opciók</string>
     <string name="setting_enable_animations">Animációk engedélyezése</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -49,11 +49,11 @@
     <string name="setting_left_handed">Balkezes elrendezés</string>
     <string name="setting_sound">Hang</string>
     <string name="setting_language">Nyelv</string>
-    <string name="language_system">Rendszer alapértelmezés</string>
+    <string name="language_system">Rendszer szerint</string>
     <string name="setting_theme">Téma</string>
     <string name="theme_light">Világos</string>
     <string name="theme_dark">Sötét</string>
-    <string name="theme_system">Rendszer alapértelmezése</string>
+    <string name="theme_system">Rendszer szerint</string>
     <string name="theme_auto">Automatikus</string>
     <string name="statistics_title">Statisztika</string>
     <string name="period_week">Hét</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Ennek a játéknak az újrajátszása</string>
     <string name="pending_body">Jelenlegi játék: %1$d lépés, %2$s. Ez a játék elveszik.</string>
     <string name="status_moves_time">Lépések: %1$d  Idő: %2$s</string>
+    <string name="status_moves_label">Lépések:</string>
+    <string name="status_time_label">Idő:</string>
     <string name="status_won">Nyertél</string>
     <string name="stat_section_efficiency">Hatékonyság a hitelesített megoldáshoz képest</string>
     <string name="stat_section_hints">Tippek</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Adatvédelmi irányelvek</string>
     <string name="about_acknowledgements">Köszönetnyilvánítás</string>
     <string name="acknowledgements_intro">Ez az alkalmazás nyílt forráskódú szoftvert tartalmaz:</string>
+
+    <string name="animal_owl">Huhogó</string>
+    <string name="animal_tortoise">Páncélka</string>
+    <string name="animal_panda">Bambuszka</string>
+    <string name="animal_gecko">Fürgekkó</string>
+    <string name="animal_fox">Ravaszdi</string>
+    <string name="animal_honey_badger">Borzino</string>
+    <string name="animal_capybara">Nyugibara</string>
 </resources>

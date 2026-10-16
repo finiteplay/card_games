@@ -12,7 +12,7 @@
     <string name="stat_tile_showdowns_won">Showdown vinti</string>
     <string name="stat_showdowns_value">%1$d / %2$d</string>
     <string name="stat_tile_largest_pot">Piatto più grande</string>
-    <string name="stat_tile_vpip">Entrato volontariamente prima del flop</string>
+    <string name="stat_tile_vpip">Entrato per scelta prima del flop</string>
     <string name="stat_tile_pfr">Rilanciato prima del flop</string>
     <string name="place_1">1º</string>
     <string name="place_2">2º</string>

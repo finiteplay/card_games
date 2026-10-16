@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="company_byline">door FinitePlay LLC</string>
-    <string name="action_settings">Instellingen</string>
+    <string name="action_settings">Opties</string>
     <string name="action_statistics">Statistieken</string>
     <string name="action_replay">Opnieuw spelen</string>
     <string name="action_new">Nieuw</string>
     <string name="action_hint">Hint</string>
     <string name="action_suggested">Aanbevolen</string>
-    <string name="action_undo">Ongedaan maken</string>
+    <string name="action_undo">Zet terug</string>
     <string name="action_close">Sluiten</string>
     <string name="action_dismiss">Negeren</string>
     <string name="action_new_game">Nieuw spel</string>
@@ -29,14 +29,14 @@
     <string name="suit_diamonds">Ruiten</string>
     <string name="suit_hearts">Harten</string>
     <string name="suit_spades">Schoppen</string>
-    <string name="settings_title">Instellingen</string>
+    <string name="settings_title">Opties</string>
     <string name="setting_enable_animations">Animaties inschakelen</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
     <string name="setting_hint_shows_winning_move">Slimme hint</string>
     <string name="setting_hint_timeout">Time-out voor hint</string>
     <string name="hint_timeout_seconds_value">%1$d seconden</string>
-    <string name="setting_rest_reminder">Pauzeherinneringen</string>
+    <string name="setting_rest_reminder">Pauzeherinnering</string>
     <string name="rest_reminder_never">Nooit</string>
     <string name="rest_reminder_minutes_value">%1$d minuten</string>
     <string name="rest_reminder_title">Pauze nemen?</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Dit spel opnieuw spelen</string>
     <string name="pending_body">Huidig spel: %1$d zetten, %2$s. Dit spel gaat verloren.</string>
     <string name="status_moves_time">Zetten: %1$d  Tijd: %2$s</string>
+    <string name="status_moves_label">Zetten:</string>
+    <string name="status_time_label">Tijd:</string>
     <string name="status_won">Gewonnen</string>
     <string name="stat_section_efficiency">Efficiëntie t.o.v. de gecertificeerde oplossing</string>
     <string name="stat_section_hints">Hints</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Privacybeleid</string>
     <string name="about_acknowledgements">Erkenningen</string>
     <string name="acknowledgements_intro">Deze app bevat open-sourcesoftware:</string>
+
+    <string name="animal_owl">Slimuil</string>
+    <string name="animal_tortoise">Schuilpad</string>
+    <string name="animal_panda">Bamboefje</string>
+    <string name="animal_gecko">Gekkerd</string>
+    <string name="animal_fox">Grijnsvos</string>
+    <string name="animal_honey_badger">Durfdas</string>
+    <string name="animal_capybara">Rustbara</string>
 </resources>

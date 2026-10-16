@@ -113,6 +113,8 @@ import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.core.ui.sound.AndroidSoundPlayer
 import org.finiteplay.core.ui.sound.GatedSoundPlayer
 import org.finiteplay.core.ui.sound.SoundEffect
+import org.finiteplay.core.ui.layout.appendCounters
+import org.finiteplay.core.ui.layout.counterIcons
 
 /** Which full-screen overlay, if any, sits on top of the board (`docs/games/klondike/UI_SPEC.md`). */
 private enum class Overlay { SETTINGS, STATISTICS, HELP }
@@ -707,8 +709,8 @@ private fun StatusRow(
             // lines and wrap between the level and the counters when a translation needs
             // it. The level keeps the difficulty's color through a span; the name is
             // always spelled out, so color adds emphasis rather than carrying meaning.
-            val wonSuffix = if (state.isWon) " · " + stringResource(CoreR.string.status_won) else ""
-            val counters = stringResource(CoreR.string.status_moves_time, state.moveCount, formatElapsed(elapsedSeconds)) + wonSuffix
+            val won = if (state.isWon) " · " + stringResource(CoreR.string.status_won) else ""
+            val elapsed = formatElapsed(elapsedSeconds)
             // The level is a link, not merely coloured text: it is the shortest route to
             // changing level, and Settings is a long way to go for something named on screen
             // (`UI_SPEC.md` "Status Row"). Only the level span is clickable — the counters
@@ -738,10 +740,12 @@ private fun StatusRow(
                     // one with a second line to spend: the level goes above, the counters below.
                     if (showStatistics) appendLine() else append("  ")
                 }
-                append(counters)
+                appendCounters(state.moveCount, elapsed)
+                append(won)
             }
             Text(
                 text = status,
+                inlineContent = counterIcons(statusStyle, boardStatusColor()),
                 style = statusStyle,
                 color = boardStatusColor(),
                 textAlign = TextAlign.Center,

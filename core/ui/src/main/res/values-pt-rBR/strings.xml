@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Configurações</string>
+    <string name="action_settings">Ajustes</string>
     <string name="action_statistics">Estatísticas</string>
     <string name="action_replay">Repetir</string>
     <string name="action_new">Novo</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Ouros</string>
     <string name="suit_hearts">Copas</string>
     <string name="suit_spades">Espadas</string>
-    <string name="settings_title">Configurações</string>
+    <string name="settings_title">Ajustes</string>
     <string name="setting_enable_animations">Ativar animações</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Repetir este jogo</string>
     <string name="pending_body">Jogo atual: %1$d jogadas, %2$s. Este jogo será perdido.</string>
     <string name="status_moves_time">Jogadas: %1$d  Tempo: %2$s</string>
+    <string name="status_moves_label">Jogadas:</string>
+    <string name="status_time_label">Tempo:</string>
     <string name="status_won">Vencido</string>
     <string name="stat_section_efficiency">Eficiência em relação à solução certificada</string>
     <string name="stat_section_hints">Dicas</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Política de privacidade</string>
     <string name="about_acknowledgements">Agradecimentos</string>
     <string name="acknowledgements_intro">Este aplicativo inclui software de código aberto:</string>
+
+    <string name="animal_owl">Corujildo</string>
+    <string name="animal_tortoise">Jabutimido</string>
+    <string name="animal_panda">Bambuleio</string>
+    <string name="animal_gecko">Lagartreco</string>
+    <string name="animal_fox">Sorraposa</string>
+    <string name="animal_honey_badger">Texugão</string>
+    <string name="animal_capybara">Calmivara</string>
 </resources>

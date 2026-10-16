@@ -60,6 +60,7 @@ import org.finiteplay.core.ui.table.feltTable
 import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.holdem.R
 import kotlinx.coroutines.delay
+import org.finiteplay.core.ui.animal.localizedName
 
 /**
  * The table, the bar and the dialogs. Everything shown is derived from [HoldemViewModel.table], which
@@ -242,7 +243,7 @@ private const val BLINDS_NOTICE_MS = 3_000L
 @Composable
 private fun AnnouncementRegion(viewModel: HoldemViewModel) {
     val announced = viewModel.announcement ?: return
-    val text = announcementText(announced.what) { seat -> if (seat == 0) stringResource(R.string.you) else viewModel.profiles.getOrNull(seat - 1)?.name ?: "" }
+    val text = announcementText(announced.what) { seat -> if (seat == 0) stringResource(R.string.you) else viewModel.profiles.getOrNull(seat - 1)?.animal?.localizedName() ?: "" }
     Box(
         modifier = Modifier
             .size(1.dp)

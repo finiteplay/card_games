@@ -28,9 +28,9 @@
     <string name="help_stock_title">Rozdawanie rzędu</string>
     <string name="help_stock">Dotknięcie stosu rozdaje jedną odkrytą kartę na każdą kolumnę naraz — nie ma stosu odrzuconych ani dobierania pojedynczych kart. Rozdanie jest odrzucane, gdy jakaś kolumna jest pusta, więc uzupełnij lukę przed rozdaniem.</string>
     <string name="help_suits_title">Kolory</string>
-    <string name="help_suits">Jeden kolor to najłagodniejsza gra, cztery — najtrudniejsza; dwa znajdują się pośrodku i są ustawieniem domyślnym. Liczba jest ustalana przy rozdaniu — zmień ją w Ustawieniach, a zastosuje się do kolejnej nowej gry.</string>
-    <string name="help_controls_title">Dotknięcie, przeciąganie i podpowiedź</string>
-    <string name="help_controls">Dotknij karty, aby wysłać ją do najbliższej dozwolonej kolumny po prawej, z zawinięciem do początku; dotknij ponownie, aby przenieść ją dalej. Przeciągnij, aby samodzielnie wybrać kolumnę. Podpowiedź podświetla górną kartę każdej sekwencji, która ma dokąd pójść. Gdy zostanie tylko ostatnia sekwencja, gra kończy ją za ciebie.</string>
+    <string name="help_suits">Jeden kolor to najłagodniejsza gra, cztery — najtrudniejsza; dwa znajdują się pośrodku i są ustawieniem domyślnym. Liczba jest ustalana przy rozdaniu — zmień ją w Opcjach, a zastosuje się do kolejnej nowej gry.</string>
+    <string name="help_controls_title">Dotknięcie, przeciąganie i rada</string>
+    <string name="help_controls">Dotknij karty, aby wysłać ją do najbliższej dozwolonej kolumny po prawej, z zawinięciem do początku; dotknij ponownie, aby przenieść ją dalej. Przeciągnij, aby samodzielnie wybrać kolumnę. Rada podświetla górną kartę każdej sekwencji, która ma dokąd pójść. Gdy zostanie tylko ostatnia sekwencja, gra kończy ją za ciebie.</string>
 
     <!-- Solver-backed hint mode notices (setting_hint_shows_winning_move), matching
          Klondike's and FreeCell's own text. -->

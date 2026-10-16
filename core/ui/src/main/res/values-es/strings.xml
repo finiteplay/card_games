@@ -49,11 +49,11 @@
     <string name="setting_left_handed">Diseño para zurdos</string>
     <string name="setting_sound">Sonido</string>
     <string name="setting_language">Idioma</string>
-    <string name="language_system">Predeterminado del sistema</string>
+    <string name="language_system">Según el sistema</string>
     <string name="setting_theme">Tema</string>
     <string name="theme_light">Claro</string>
     <string name="theme_dark">Oscuro</string>
-    <string name="theme_system">Predeterminado del sistema</string>
+    <string name="theme_system">Según el sistema</string>
     <string name="theme_auto">Automático</string>
     <string name="statistics_title">Estadísticas</string>
     <string name="period_week">Semana</string>
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Repetir esta partida</string>
     <string name="pending_body">Partida actual: %1$d movimientos, %2$s. Esta partida se perderá.</string>
     <string name="status_moves_time">Movimientos: %1$d  Tiempo: %2$s</string>
+    <string name="status_moves_label">Movimientos:</string>
+    <string name="status_time_label">Tiempo:</string>
     <string name="status_won">Ganada</string>
     <string name="stat_section_efficiency">Eficiencia frente a la solución certificada</string>
     <string name="stat_section_hints">Pistas</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Política de privacidad</string>
     <string name="about_acknowledgements">Agradecimientos</string>
     <string name="acknowledgements_intro">Esta aplicación incluye software de código abierto:</string>
+
+    <string name="animal_owl">Buhísimo</string>
+    <string name="animal_tortoise">Tortulenta</string>
+    <string name="animal_panda">Bambulín</string>
+    <string name="animal_gecko">Pegatodo</string>
+    <string name="animal_fox">Sonrizorro</string>
+    <string name="animal_honey_badger">Tejonazo</string>
+    <string name="animal_capybara">Siestibara</string>
 </resources>

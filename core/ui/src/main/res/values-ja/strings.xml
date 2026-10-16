@@ -102,6 +102,8 @@
     <string name="pending_replay_action">この配り札をリプレイ</string>
     <string name="pending_body">現在のゲーム：%1$d 手、%2$s。このゲームは失われます。</string>
     <string name="status_moves_time">手数: %1$d  時間: %2$s</string>
+    <string name="status_moves_label">手数:</string>
+    <string name="status_time_label">時間:</string>
     <string name="status_won">勝利</string>
     <string name="stat_section_efficiency">認定ソリューションとの効率比較</string>
     <string name="stat_section_hints">ヒント</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">プライバシーポリシー</string>
     <string name="about_acknowledgements">謝辞</string>
     <string name="acknowledgements_intro">このアプリにはオープンソースソフトウェアが含まれています:</string>
+
+    <string name="animal_owl">フク先生</string>
+    <string name="animal_tortoise">コウラ丸</string>
+    <string name="animal_panda">ササパン</string>
+    <string name="animal_gecko">ペタ吉</string>
+    <string name="animal_fox">コンニヤリ</string>
+    <string name="animal_honey_badger">イケテル</string>
+    <string name="animal_capybara">のんびら</string>
 </resources>

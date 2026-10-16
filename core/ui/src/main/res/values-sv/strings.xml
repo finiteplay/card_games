@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="company_byline">av FinitePlay LLC</string>
-    <string name="action_settings">Inställningar</string>
+    <string name="action_settings">Alternativ</string>
     <string name="action_statistics">Statistik</string>
     <string name="action_replay">Spela igen</string>
     <string name="action_new">Ny</string>
@@ -29,7 +29,7 @@
     <string name="suit_diamonds">Ruter</string>
     <string name="suit_hearts">Hjärter</string>
     <string name="suit_spades">Spader</string>
-    <string name="settings_title">Inställningar</string>
+    <string name="settings_title">Alternativ</string>
     <string name="setting_enable_animations">Aktivera animationer</string>
 
     <!-- Hint mode toggle: on shows a proven winning move, off highlights every legal move instead. -->
@@ -102,6 +102,8 @@
     <string name="pending_replay_action">Spela detta spel igen</string>
     <string name="pending_body">Nuvarande spel: %1$d drag, %2$s. Detta spel går förlorat.</string>
     <string name="status_moves_time">Drag: %1$d  Tid: %2$s</string>
+    <string name="status_moves_label">Drag:</string>
+    <string name="status_time_label">Tid:</string>
     <string name="status_won">Vunnet</string>
     <string name="stat_section_efficiency">Effektivitet mot den certifierade lösningen</string>
     <string name="stat_section_hints">Tips</string>
@@ -139,4 +141,12 @@
     <string name="about_privacy_policy">Integritetspolicy</string>
     <string name="about_acknowledgements">Erkännanden</string>
     <string name="acknowledgements_intro">Den här appen innehåller programvara med öppen källkod:</string>
+
+    <string name="animal_owl">Uhuggla</string>
+    <string name="animal_tortoise">Gömpadda</string>
+    <string name="animal_panda">Bambulle</string>
+    <string name="animal_gecko">Klängis</string>
+    <string name="animal_fox">Rävpolka</string>
+    <string name="animal_honey_badger">Kaxling</string>
+    <string name="animal_capybara">Lugnbara</string>
 </resources>

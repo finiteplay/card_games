@@ -30,19 +30,19 @@
     <string name="hint_threat_beat">Šanca, že súper už má lepšiu ruku: %1$d%%</string>
     <string name="hint_threat_list">Najpravdepodobnejšie lepšie ruky: %1$s</string>
     <string name="hint_threat_item">%1$s %2$d%%</string>
-    <string name="review_title">Spätný pohľad na nápovedu</string>
-    <string name="review_followed_won">Riadili ste sa nápovedou a vyhrali ste: mali ste asi %1$d%% šancu na výhru.</string>
-    <string name="review_followed_lost">Riadili ste sa nápovedou a prehrali ste, čo sa stáva: s približne %1$d%% prehráte v %2$d%% prípadov. Posudzujte rozhodnutie, nie výsledok.</string>
-    <string name="review_followed_fold">Zahodili ste, ako nápoveda odporúčala, a ušetrili ste žetóny na lepšiu príležitosť.</string>
-    <string name="review_ignored_won">Vyhrali ste, ale nápoveda navrhovala: %1$s. Dôvod: %2$s Výhra proti rade je šťastie, nie plán.</string>
-    <string name="review_ignored_lost">Nápoveda navrhovala: %1$s, ale rozhodli ste sa inak a prehrali ste. Dôvod: %2$s</string>
-    <string name="review_ignored_fold">Zahodili ste, ale nápoveda navrhovala: %1$s. Dôvod: %2$s</string>
-    <string name="review_beaten_by">Prehrali ste s kombináciou: %1$s. Nápoveda ju odhadla asi na %2$d%%.</string>
+    <string name="review_title">Spätný pohľad na tip</string>
+    <string name="review_followed_won">Riadili ste sa tipom a vyhrali ste: mali ste asi %1$d%% šancu na výhru.</string>
+    <string name="review_followed_lost">Riadili ste sa tipom a prehrali ste, čo sa stáva: s približne %1$d%% prehráte v %2$d%% prípadov. Posudzujte rozhodnutie, nie výsledok.</string>
+    <string name="review_followed_fold">Zahodili ste, ako tip odporúčal, a ušetrili ste žetóny na lepšiu príležitosť.</string>
+    <string name="review_ignored_won">Vyhrali ste, ale tip navrhoval: %1$s. Dôvod: %2$s Výhra proti tipu je šťastie, nie plán.</string>
+    <string name="review_ignored_lost">Tip navrhoval: %1$s, ale rozhodli ste sa inak a prehrali ste. Dôvod: %2$s</string>
+    <string name="review_ignored_fold">Zahodili ste, ale tip navrhoval: %1$s. Dôvod: %2$s</string>
+    <string name="review_beaten_by">Prehrali ste s kombináciou: %1$s. Tip ju odhadol asi na %2$d%%.</string>
 
     <!-- With hindsight: %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">Túto ruku by ste vyhrali, ale keď ste sa rozhodovali, mali ste šancu len asi %1$d%%. Posudzujte rozhodnutie, nie výsledok.</string>
     <string name="review_hindsight_fold_lost">Túto ruku by ste prehrali: keď ste sa rozhodovali, mali ste šancu asi %1$d%%.</string>
     <string name="review_chance_at_decision">Keď ste sa rozhodovali, mali ste šancu asi %1$d%%.</string>
     <string name="review_chance_slim_win">Vyhrali ste, ale šanca bola pri rozhodovaní slabá: asi %1$d%%.</string>
-    <string name="review_followed_won_slim">Riadili ste sa nápovedou a vyhrali ste, ale šanca bola slabá: asi %1$d%%. Dobré rozhodnutia nemajú vždy šťastie.</string>
+    <string name="review_followed_won_slim">Riadili ste sa tipom a vyhrali ste, ale šanca bola slabá: asi %1$d%%. Dobré rozhodnutia nemajú vždy šťastie.</string>
 </resources>

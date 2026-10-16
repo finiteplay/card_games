@@ -7,7 +7,7 @@
         <item quantity="other">Mano %1$d · %2$,d / %3$,d en %4$d manos</item>
     </plurals>
     <string name="action_leave_tournament">Salir del torneo</string>
-    <string name="action_fold">Retirarse</string>
+    <string name="action_fold">No ir</string>
     <string name="action_check">Pasar</string>
     <string name="action_call">Igualar&#10;%1$,d</string>
     <string name="action_call_all_in">Igualar&#10;all in</string>
@@ -36,7 +36,7 @@
     <string name="seat_action_raise">Sube %1$,d</string>
     <string name="seat_action_call">Iguala</string>
     <string name="seat_action_check">Pasa</string>
-    <string name="seat_action_fold">Se retira</string>
+    <string name="seat_action_fold">No va</string>
     <string name="seat_action_all_in">All in</string>
     <string name="marker_dealer">D</string>
     <string name="marker_small_blind">SB</string>
@@ -120,7 +120,7 @@
     <string name="a11y_out">Fuera, terminó en el puesto %1$s</string>
     <string name="a11y_all_in">all in</string>
     <string name="a11y_thinking">le toca</string>
-    <string name="ann_fold">%1$s se retira</string>
+    <string name="ann_fold">%1$s no va</string>
     <string name="ann_check">%1$s pasa</string>
     <string name="ann_call">%1$s iguala %2$,d</string>
     <string name="ann_bet">%1$s apuesta %2$,d</string>
