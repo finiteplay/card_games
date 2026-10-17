@@ -76,6 +76,23 @@ object TablePresenter {
         )
     }
 
+    /** The presentation after the blinds when they leave no decision to make. */
+    fun afterDeal(shown: TableModel, after: HoldemState): List<Step> {
+        if (after.phase == Phase.BETTING) return emptyList()
+
+        val steps = ArrayList<Step>()
+        var model = gather(shown, after)
+        steps += Step(model, Pause.GATHER)
+
+        for (size in nextBoardSizes(shown.board.size, after.board.size)) {
+            val newCards = after.board.subList(model.board.size, size)
+            model = model.copy(board = after.board.take(size), seats = model.seats.map { it.copy(lastAction = null) })
+            steps += Step(model, Pause.STREET, listOf(SoundEffect.DEAL), Announcement.BoardDealt(model.street, newCards.toList()))
+        }
+        steps += resultSteps(model, after)
+        return steps
+    }
+
     /**
      * The table as it stood after [log] had been played from the start of the hand [start]: what a
      * hand restored from a save shows. Built by stepping through the same states a live hand shows,

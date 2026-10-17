@@ -295,7 +295,10 @@ class HoldemViewModel(
         commit(resumed, saveOnly = !plan.saved)
         val start = org.finiteplay.holdem.rules.replayHand(tournament, emptyList())!!.state
         table = TablePresenter.restored(start, resumed.log)
-        play { advance() }
+        play {
+            if (resumed.log.isEmpty()) present(TablePresenter.afterDeal(table, resumed.state))
+            advance()
+        }
     }
 
     /**
@@ -357,7 +360,10 @@ class HoldemViewModel(
         blindsUp = null
         soundSink(SoundEffect.SHUFFLE)
         soundSink(SoundEffect.DEAL)
-        play { advance() }
+        play {
+            present(TablePresenter.afterDeal(table, session.state))
+            advance()
+        }
     }
 
     // ---- the player ------------------------------------------------------------------------
@@ -574,6 +580,7 @@ class HoldemViewModel(
         show(TablePresenter.dealt(session.state))
         soundSink(SoundEffect.SHUFFLE)
         soundSink(SoundEffect.DEAL)
+        present(TablePresenter.afterDeal(table, session.state))
     }
 
     // ---- settings --------------------------------------------------------------------------
