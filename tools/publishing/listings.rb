@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 # Read or update listing text using the existing publishing account; never uploads a bundle.
+# `text` saves listing text only; `update` also reconciles the English phone screenshots from screenshots/ (older flow;
+# localized screenshots are planned and applied by tools/publishing/screenshots.rb).
 require 'json'
 require 'digest'
 require 'fileutils'
@@ -9,7 +11,7 @@ $stdout.sync = true
 
 ROOT = File.expand_path('../..', __dir__)
 mode = ARGV.shift || 'inspect'
-abort 'Mode must be inspect, update, or export' unless %w[inspect update export].include?(mode)
+abort 'Mode must be inspect, update, text, or export' unless %w[inspect update text export].include?(mode)
 games = ARGV.empty? ? %w[klondike spider freecell blackjack holdem] : ARGV
 abort 'Unknown game' unless (games - %w[klondike spider freecell blackjack holdem]).empty?
 
@@ -85,7 +87,7 @@ games.each do |game|
         service.update_edit_listing(package, edit.id, language, localized)
       end
       order_path = File.join(ROOT, 'brand/google-play', game, 'screenshot-order.txt')
-      if File.exist?(order_path)
+      if mode == 'update' && File.exist?(order_path)
         desired_paths = File.readlines(order_path, chomp: true).reject(&:empty?).map do |name|
           raise 'Unsafe screenshot path' unless File.basename(name) == name
           File.join(ROOT, 'brand/google-play', game, 'screenshots', name)

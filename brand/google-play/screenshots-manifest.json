@@ -10,8 +10,8 @@
     },
     "bg": {
      "01-betting.png": "d242c537a65c815f77ab20283560f6f98f421233b974f7aea3d7ae9440f4733e",
-     "02-gameplay.png": "e0c6923eca67f7e8adc44d10d3996fdd8f76ba6a62639aaff2779f1776100a31",
-     "03-hint.png": "cf6c019f409f1bfa6780b2890a2780f8673b53e7f685b32f2c3ada76ccb77f5f",
+     "02-gameplay.png": "0909e75ef9936b6faa4b1c79f8da8b98932189187518d39028c31dbdf3b56136",
+     "03-hint.png": "2e23e1e73fc07f68b93b9523632842983a3413c67c6bbc9f86ce07161de98606",
      "04-settings.png": "91af718577e1b4064b08dfeccc46587fc607613e659b7816ed02418407234069"
     },
     "cs-CZ": {
@@ -40,8 +40,8 @@
     },
     "en-US": {
      "01-betting.png": "605477d1dc6cf213e44b2b2056bcadda5f603ff29c81c63139fa869e59279472",
-     "02-gameplay.png": "80e1f16db9384f1f9274b5c890dbec73adefd103a7f825dbfb4cceab7afb8da7",
-     "03-hint.png": "8681ebeb225e41c0ea38430e932c53b6857b22e6842a12639a93b03478322ad2",
+     "02-gameplay.png": "d4e6faf270fd013244c49abb718963a2e55b8b381a4ec5d08b5f0b58795bb19c",
+     "03-hint.png": "44db0c17a1f92f7dd9d054b85daa04324d31a2a97bfd09f9b8bd32b6450e49da",
      "04-settings.png": "4907ca10cf7dd94105548f26c8dc13be4cb3ed0d54a4043a4c68ce5db3e65e56"
     },
     "es-ES": {
@@ -166,9 +166,9 @@
     },
     "uk": {
      "01-betting.png": "867bc0d9d1de424188a3d26dbc4c2538e8e8130a1ec78f4fddd15252a02137ab",
-     "02-gameplay.png": "60b0ff7582ad6d66aae8711aaff50b5c58839681a613756111dad388c7a4281d",
-     "03-hint.png": "05fd010a42952f30432cf9b0de0dc9219121afb373f2903a04185229279334be",
-     "04-settings.png": "3bef3e52981719f12ae19906c1c9abfe6f39ec989f9db0cd5bc71483205dc6c5"
+     "02-gameplay.png": "91fc4c1d67c41ca544faa709a80efc3351f243f6472c739356d54372f403225d",
+     "03-hint.png": "e564bbe6dbc6ff78251a488d3be31f3234cc7f63914da14368fde04f409fd01b",
+     "04-settings.png": "b018c5e55259868bc8ba75dce77dbdec1f553fe0aea607e0f2d0ff83dabdef50"
     },
     "vi": {
      "01-betting.png": "43a9a126985f91bb0bd7dc6130ab5f0005b6beaba921cefead2ec77a14a77385",
@@ -354,158 +354,159 @@
   "holdem": {
    "languages": {
     "ar": {
-     "01-gameplay.png": "3cfa24468586fc69f755a1287f6ce757eb8df41c74b6d7433f3f827be84d7f51",
-     "02-hint.png": "c79d3ca0c286c6a05dd300a741d24794443ff5071c34115aca1e4470849cd3f4",
-     "03-settings.png": "21d465b2d1d6e78248f5a34ef4095db8165675f2f2429a1bf30b699daab0ac08"
+     "01-gameplay.png": "9a931631483fcee7c4b129c0cc41e0cc6202b212047369425bab555962772048",
+     "02-hint.png": "227c68703eaaa75231f9a069b9a3180830c3705cec85ceba1e6d716d3b9c3f1a",
+     "03-settings.png": "12683a79c0df9e732389e59bc80b2bec5431ba5a07497cf7311744ab11a6ba6a"
     },
     "bg": {
-     "01-gameplay.png": "4f93407e4735482e303c21526808b6558294aca58e5fd6ab83aa6368855cb2b6",
-     "02-hint.png": "1d78afb25ce1a42673af8739f3d5f3b521fb96135a5bec32e06bbfbe684045ed",
-     "03-settings.png": "13f7c457c143a80630f34cf40151466763b4d4695eb1959ee4cffe6308ef78a8"
+     "01-gameplay.png": "c47bf0747113ccc3958737b028ed5d1745fdae07fade45c24fa4a11041f361a2",
+     "02-hint.png": "19f05441a31e769d797b555fcf6c19ddf145f8027d4f997e1601b8602e303a74",
+     "03-settings.png": "34037bfb918d5dce6601cf6c1db5a3b0b70279f2e44f59483a5cbb15b8583161"
     },
     "cs-CZ": {
-     "01-gameplay.png": "6c4ea425abdaa38636bde5351d54dc11cad9b249aa2cbe765b1d12a877267de4",
-     "02-hint.png": "a27ca0776f1362af104d5fb80d904235b98a0129d55ec88e791c20d3e764d083",
-     "03-settings.png": "6eb4698b78dbe90217e59433a3dbb3fca8aa844372bd0da6477da827ed95e149"
+     "01-gameplay.png": "498a4a9fe6e0ae57758dba7c80af808f304283a7314188a4f925ab2e1465280a",
+     "02-hint.png": "caef0a6e6732959b6f8498538cf0407ea540dfb9d57ddb4182a02092b0cedf17",
+     "03-settings.png": "a5c5d0c5d9bf99c590abbea6e1c4e7cb4b391c694d60eecc71b8674891a1b5f2"
     },
     "da-DK": {
-     "01-gameplay.png": "070f417040486b4988ed840c47f5e7cb4a94386de14b16c13f18bd7a1d0fac6d",
-     "02-hint.png": "824c39669e79f20ddb3f2dde96059b9d5d7f8d596eb35a09b62dcd11ceace05f",
+     "01-gameplay.png": "de734f1515f582bff860a683f6478b0206cfa99196e8ed1e923c5c097a0266eb",
+     "02-hint.png": "ab198ba8ba4b2f0f8e7e5395352db80c38a92978fa0f82ba10d4f57e06e83caf",
      "03-settings.png": "a37af8c5c5bbeb8827897d3da047f491266b69c90999c2bdf2283fb24ab6883d"
     },
     "de-DE": {
-     "01-gameplay.png": "487ac57520979736ce1e76daa13059dadc522726708dced082efcc23603c130f",
-     "02-hint.png": "5dca337fd2fccb8329085267b3e5388169c1acb8bf2ef4a63313135315b8f375",
-     "03-settings.png": "99f24b839039e71e5b2b37f89afd766ef572bc8c58520cb0ee357d5ad963fc82"
+     "01-gameplay.png": "e084341e792469fca3ca3c5c14d4ff01f1aef41fb127fcb74d2fe975d41d2121",
+     "02-hint.png": "98a056a37c0d21f384798ddb87e2ff51b2d6386db9bd4095947ccc253c564e44",
+     "03-settings.png": "37d2ce12910cec4dfa1dbc7be226cb83949cc3f8f76a3f1ad13ecb988f1e3228"
     },
     "el-GR": {
-     "01-gameplay.png": "831ea015dbfc7d60c218dcb76e43b81f9775c9e495f0325ec48ae35bd598d245",
-     "02-hint.png": "21a7cf308d58ddc53ca3f1535cab54d89c4db8b8eea50937ee3597be0ad164f6",
-     "03-settings.png": "2eb89537428289e25ebfd1e3b0c7ce8846afffdd5c6ebac8f1dc25531c814096"
+     "01-gameplay.png": "151111754f11ed9503f8eae1e64e240f0cc6dc88ea363f55c8123a63d9ef2f37",
+     "02-hint.png": "4ce0151d31b22979f830ac0d21af87f8c21606f0f11e5c5bbd0587eaf0d39076",
+     "03-settings.png": "c101f57fa37b8c2851a12c8f4ca02a7497a9f70809931f680112d59880280a12"
     },
     "en-US": {
-     "01-gameplay.png": "802e606584a8daae2379d895618115bff5e0ecd0e67d4fc00f77739dc7f94bd4",
-     "02-hint.png": "d6008d2464ab81f0f81c30a6cf11aeff52d9890d3864edd73df8920238fa1c69",
+     "01-gameplay.png": "b3c07b57e78e6ecb1a8bc634687d8792c1fd8ce94d11c6ec259f89711f83cd33",
+     "02-hint.png": "368e011f6234a57f3b4b99dd02af0a33cf289786dc50ed3d7548891f3916ae7c",
      "03-settings.png": "0a0919b1e4d34a81f23fb855fb1a5a199ac9b440674fe5c82e598198f6677d28"
     },
     "es-ES": {
-     "01-gameplay.png": "59e5aeb1335b371b6899951749df2fd902a3a04216fba5f4a4540ef38bd7a7d3",
-     "02-hint.png": "d499a710e68f567906cf029eede89cb9b19b5ae1a42ba7304031735964f8c80d",
-     "03-settings.png": "7ac79706d241aea7845930177618e3ee909e4ebb885f110a0767fd53a4580b9d"
+     "01-gameplay.png": "b1de4147090dcadc51549df7fa21e21855eee4c964020f6408c6473f7cde5b6e",
+     "02-hint.png": "fffbc3826abfca7d235dd05da193928a61c8bb591a9af87008385d10131f76a0",
+     "03-settings.png": "5c75d479b33fe3e47ceeaf399affa181866f69f84c218afa45afc595c1b628ea"
     },
     "fi-FI": {
-     "01-gameplay.png": "609b74571261d2e45d4c2812e984b7d5f7fcab00eab5a5d35be32b95e083c2ab",
-     "02-hint.png": "f156d6e84c5b123622e8f9442eee11c0432d3534f6a1c990db2c765aef636332",
-     "03-settings.png": "c9095ad0da885fb6dc15bdc11ca82ac6801f6c5828cb2ee7bacc0c67d3dc96ea"
+     "01-gameplay.png": "951ad4ca2789dd4d23d43896fa46c796c3e03bf53ffcad27cfeeb1ab09f6afa9",
+     "02-hint.png": "72a7514618784ec2a57ca5eec5879c0989545ae65ae8390ff43c1ffd8b5d3adc",
+     "03-settings.png": "287886882a8842eee8961e41d31c6ad997f60a34160b59df16c9305c04f262b6"
     },
     "fr-FR": {
-     "01-gameplay.png": "bf9f16b7381514cf13e744f835d0bfce8622edf4ad7cd7b9b1fd902c1a045409",
-     "02-hint.png": "55d71dcdbd88d2914782ba5c61855907007339a1ee6aac623fbad9cdb343af0b",
-     "03-settings.png": "7ca469fb2ae99ea5af43b08bc16556b7236bf36e45401f93094d90aa4263718a"
+     "01-gameplay.png": "a6ed680adfc450703b8621781c4df75bf40a9ad68d6add7011f4c2d668b199c7",
+     "02-hint.png": "b802ca868fa526a96e3bb84e8b04e26339cacb2cbb5adf443d6a7e1f1b4cacec",
+     "03-settings.png": "a89aad9a6d0662c3d5b309ca204f5fdf3bd4e62a7b35adced755bfb02831d95e"
     },
     "hi-IN": {
-     "01-gameplay.png": "869e5bf02dbbde9be2123e66916df66b9cd0619e8bffdcda9e61b2d296dbba26",
-     "02-hint.png": "8e11de9b4606632277ceab864069530c48aaf82af22e08077acbd8159c80f5f0",
-     "03-settings.png": "77760bce28d5eb3a1f36e973b0485f946325578273b2db53f16381112090cf79"
+     "01-gameplay.png": "c22ff69e15237dc0e9f15df051cda49e2a203c008bf4f173326d8790dbc80b70",
+     "02-hint.png": "0adf2eb74bd8420e18af4e485c5c036c56a7694cd2c1083a097f0fbbbe0709c8",
+     "03-settings.png": "91aa007a9e1be19084584c5c618a2ebee51ad019a8a6c43387f6cb8faf846b1d"
     },
     "hr": {
-     "01-gameplay.png": "9d964df356bc6d97df41b7ca8598da73110c377255c1698c269fff0d7982e9f5",
-     "02-hint.png": "8d9adf453a4c8aea43715f790c6cf18b0e33fe196ea9462025ed1aa06464e8c8",
-     "03-settings.png": "a10f63b9e0feb7fec682d9370ad758895addd7a0ab0a39015fb548921a99b6d2"
+     "01-gameplay.png": "fe6a3ab19b8f6a10eb86e79f300d3e178afd49477d76056b14bd3e436e82b309",
+     "02-hint.png": "b7c9d5dcd95776818cc69f7d4c0b58ce546211be64094588a9f67881c0cdd8f1",
+     "03-settings.png": "302bf0a3407892f9a0b027d3e63d1de9be6d09d9374751de1844b8c18ea2e254"
     },
     "hu-HU": {
-     "01-gameplay.png": "75c9e08f2bd5eed9b9fde780fb0e469b8ea37ec349054ac7fdf8c8ee59a67b16",
-     "02-hint.png": "3da8f23fee457f54877c6ab308b070c3d62cebadbd044c4641478a6ebe67a805",
-     "03-settings.png": "4da20dc9f2b4461b8d2ac94b6ef938868d6f0d31b950668ad1a68fa3848acf45"
+     "01-gameplay.png": "f98dfe5654448fbc5b24ad9b934840db71b2d82fe9ad690effc22bb32000bd39",
+     "02-hint.png": "504db26798b55f0710f9d7b55e99bae43471d323ab6c3c9613e919bea8824768",
+     "03-settings.png": "70eca6db853e7db9e814774026b1bde87b70d136659c86e4c732965198a5ca7f"
     },
     "id": {
-     "01-gameplay.png": "939f918886a51398fc663ea3b92448ba435d484e445451e13135c95264c04506",
-     "02-hint.png": "28b83eb714ffeed83078a7529acfb461ce3e804cc3e3eec7cad45996ce927d26",
-     "03-settings.png": "bea97a27b98b42f21a4ab74532b901113383f82239190b3aaa74b41059e5dad5"
+     "01-gameplay.png": "f01050d46ce178cc8de1b410de3073b230ac6f0cac5b2efe5ac8b4abb1999d28",
+     "02-hint.png": "fb0ed4f51b4f2bb5123d13fbbf0d3f7fbac110c08c11cbd2d637e83dad479296",
+     "03-settings.png": "f6fd1463fb493d7a80b09903d0678a2d81e9b1b20bbf7726a5db4019f9a8399a"
     },
     "it-IT": {
-     "01-gameplay.png": "0c5da1171ba30e0e55422c0bffe6291fd3c13abe7224b9229c732cdaa139174f",
-     "02-hint.png": "13633ee40b8287643f12924848e88d7aa4d9c10cec5340f6994cba9af4646de9",
-     "03-settings.png": "bff856f1839d688a03f4a58eda5ec72e1a7fcee9608b3a19c58317726af87571"
+     "01-gameplay.png": "de156b851c20a065514ec0c8864d08b912b34873ec972eaf966bba4891df9769",
+     "02-hint.png": "411773bbdd3d0aa398717e3de8fc765177c3e549d60690b56310ddc835c1b637",
+     "03-settings.png": "537eb0a46cad590094fcf0225967018b9345473e4d07fa3e17a755d38cbdc980"
     },
     "iw-IL": {
-     "01-gameplay.png": "ba74f147b168acecf177edd208b51ba4501b007ae539363a419e8c2f8d56bf4b",
-     "02-hint.png": "d7e2f08888565abe9698a35fd5c557e7fd50392229fbd3a40f64c4401a66ccf3"
+     "01-gameplay.png": "4e8ad3bbf99b6346ceef2e972acff00432645777eeea2b88e5a1ccb8d8aba41a",
+     "02-hint.png": "566ef71340b8bad9779fa2602cafce09e24d63c4b9edf7fe2208619ef07ddb47",
+     "03-settings.png": "77dab2fd83cb0b0f0f64523d2b78ef7087ca183bdba256c99783c4622e840173"
     },
     "ja-JP": {
-     "01-gameplay.png": "47d0c80a51b035e6a8478d78f4a270ab4f263f7197aab0d4f5a2cc6095870913",
-     "02-hint.png": "b2a00a272003436d54efff741a15d24ab157d07fdea22e80f26fef5eb9655afe",
-     "03-settings.png": "e884f95b5e09736d77a079fd8a29d781d7ff18d35229d5544add5e7629108e69"
+     "01-gameplay.png": "b10a2cee56a523420c74591b040bb58aa9e7f7ccc00d43e3edec696d45a01160",
+     "02-hint.png": "a64613acdcfeae0a6f24498340f7c979a1157a0e1b609b4538e597dad3815615",
+     "03-settings.png": "299f3657b0b8ca507ac639244059e88d0c7d289f4768ee70c7131a53dc5115fc"
     },
     "ko-KR": {
-     "01-gameplay.png": "fab072c5759ed788c2fed54a1e0bead3324ef9c79fd541032a956c04e55e7df9",
-     "02-hint.png": "5ca31c6970920bb58f6e17a09f2b517998419f12ea960765462e3cedcaf998fe",
-     "03-settings.png": "37cbb8f335095d68217652e1c8deed40858bb1aa857f3b86e181809512323647"
+     "01-gameplay.png": "6daf602c7e15d7ee0debd2c764ca5ef957d7e5f5278211d2a1c0ae566c64b917",
+     "02-hint.png": "4e20137c216ddc1097621d952e5c8084b48905ee896a0fc258cee8a0eca01d80",
+     "03-settings.png": "18035f376baf460b4ff4af5abc012d21bd98aec789f83eb22ac30956148db104"
     },
     "nl-NL": {
-     "01-gameplay.png": "d1334068b5077520eed973bc5b73fb942ec9171651ace61b6e1def0575f6421d",
-     "02-hint.png": "2af3ba7be03ce3a2e3a7c94e604d10936da277831e3d78b7142ae82cdc47f3c1",
-     "03-settings.png": "12508c83e3274df6addc09e46bb16d5443f98f815911c0116e2cb83bca435e4e"
+     "01-gameplay.png": "f08016644492b67a10dd3e9ab7016d277e3465837298f253944742bbb9f78098",
+     "02-hint.png": "d291b70b2e1864bc33fb0293eee99a9af8571da2f44f9f98df78f335dadfde7b",
+     "03-settings.png": "8cf929fcbdf95bacd249c05a61e3de0270902464578a4dd82b33ac5d47597aee"
     },
     "no-NO": {
-     "01-gameplay.png": "f56f308763ba80f5ecd2d620643e07596f362c8a08c02867abcd4d1390f6dba1",
-     "02-hint.png": "eb214ed82b0e0fe528e34735024ca8a80f8cd48ba55c249905b13af3fe07fb87",
+     "01-gameplay.png": "78c1504fd8556918e7c53e67fe7ac70665ce96d4bb7bc2d0d686f555741a505c",
+     "02-hint.png": "b5c7f947379f7fe460045a3388a53dad5df0f7c868f82848a3d556fe5fdcbcee",
      "03-settings.png": "e59152eb9ae2dfba9625e0eeb44355b2bc784bf064de2236bf7b7440829bc7f5"
     },
     "pl-PL": {
-     "01-gameplay.png": "dd8b40b23f59e9d1f6d87198e023737fb40032b04a74b1f79c8319226686e0de",
-     "02-hint.png": "572bf628c8878a4926e86c45aa079a1f7a84d49e76b50e83c444b83a16ceabda",
-     "03-settings.png": "cd0139ca444127bc160eabcf8b28366c91b6b378dbe6c703efca1ce3cbc26db4"
+     "01-gameplay.png": "22d8885c41c6427da31e7631e961670749b247e8913830dd5e919a26784ccda7",
+     "02-hint.png": "0e1b20541c15d5e71a7f59775981099b1c1e3adab9c1e2119476c82997f5a543",
+     "03-settings.png": "e6fc16e8a2ad4e04093b1ab7385fa323eefc9a3c0c0a3bb6ee80855cce93724c"
     },
     "pt-BR": {
-     "01-gameplay.png": "dc181def1e7adec24da23d717b2ea857c8ea087fb476be74c2201fd5b8d45b4a",
-     "02-hint.png": "fa578d093761201694d884184aaacd37994dceb86dbc9133963b76653b963386",
+     "01-gameplay.png": "ecb17e59875ad403dc9b230d5465a8e281eb655a2f5dd4604085d44a3fd27367",
+     "02-hint.png": "427644cb3b41eb45f3b899ba18e603af3d4c5ee88fd4b04b80ce8fbd726ef825",
      "03-settings.png": "3f10da3bd8c7187b44f5fd6d9f946e5f1437ea1566c59a816dfee6c1b239c0d6"
     },
     "ro": {
-     "01-gameplay.png": "745d4d1c77f13b0d59a1acc9823e6cb2869ed5f2633d257ee06f951085f59d9f",
-     "02-hint.png": "3feccc62dc42aa018ac4e8255aaff0eadd3a722219ecd10097f119d6a83d8ed1",
-     "03-settings.png": "8f518c44d336ff93e36f215dd6d2ae06f2bfe1291846850ec8072d5b00816a4b"
+     "01-gameplay.png": "b4c406f3ef94f463c4137c81b915c31ec0b920858cd6041fb585002340cf7953",
+     "02-hint.png": "53ec6b10ab0801afa5e14f6909ed22b310bcb0baddf93f90f65cf77f95fe5295",
+     "03-settings.png": "6b724d41fec6c3d3d1d8add4230b62c5ea0fade0c72dd6a0c94338fc77a35862"
     },
     "sk": {
-     "01-gameplay.png": "aa5b4c2d0a2eebef0f64de8cc32300cf6cabd9e4ec771f1ea6517ccb3f158c50",
-     "02-hint.png": "af4fd0927f6f3a350245db5d5778443724c98ff1662487ffa5fbe4e5c8f0ecb9",
-     "03-settings.png": "af69becb0b83f65fa36d776da954f7dffbfaf8482439614720f65af66cc0501e"
+     "01-gameplay.png": "eeea4d73007162cce565c5d96d16c555ca09cd448042c8730733d80f95af9bdb",
+     "02-hint.png": "4684966ce18f9f2447d2655420d58e9855b2a8971cd5004dbc61c90b8c85508b",
+     "03-settings.png": "9aca767ee8cf89124dd9b7cec8ad14130a0cadf13e828f912015ffa8afba595b"
     },
     "sv-SE": {
-     "01-gameplay.png": "c215b578b4ec73fe4793637b0459cf81f49a100f7b7c66273c2bc8262efe647b",
-     "02-hint.png": "71a5642c59c833ed6baab44d7fac119e17da81dbffa761bc7e8043494f883935",
+     "01-gameplay.png": "63dc90307709fbd8fb9c4a96465717dad3d8836c74acc9393841fd118027e95f",
+     "02-hint.png": "5a34403d8c61c21b285331c8c514c3a63d94d2b8323729240ffef6633a252bbb",
      "03-settings.png": "9b747e690c722b0b5261124bfd5e69b5686f2677a16ac1ede516a10bdbe86e44"
     },
     "th": {
-     "01-gameplay.png": "f7d05d3cc2e7a7e14bf2aa801e66b5e3ca9f1198dd82a8ac6add6ba4077469d6",
-     "02-hint.png": "c8d847bdffc6def10736d28b394e09a4dd7c0bd9234690a8556ee62be7f7ef5c",
-     "03-settings.png": "096253479224fdf50dc83eabaab93add0e55dd75f84bba0995cafc49d8046082"
+     "01-gameplay.png": "efe048ec0d2e569c9a2915cf497d6717442d49c0ce689bace2ca20dca63800f8",
+     "02-hint.png": "b51e54e45f96e7382d86d4098a2b19872a002f7de66596b83a0c534ce6814103",
+     "03-settings.png": "e3446f352d188abbb4459621f6f5869c98acfd575d59152c9d526305824ca2ac"
     },
     "tr-TR": {
-     "01-gameplay.png": "e883e2ab04fd5728484c3e0d794b54496c61bff4924059c41e5be4ff7c3ff68e",
-     "02-hint.png": "b719355f4e1313be0a1f6dc13e30539ec3b2a87803aedbcf9324b92f843cac7b",
-     "03-settings.png": "b47d362e19b0a9ff3c5a3f3cda198fe09d599428ed9a8c94e2fa60e1dbf7bb55"
+     "01-gameplay.png": "7e59a3b0a3c12f8b57902ca1a91f7a1636e9287580b4c15cb92dd3f96c62ee5f",
+     "02-hint.png": "ad1bdd51cc4643cfd803d4af8d0260088948c9b8bf8ec1ce2ca5cf27683a39fc",
+     "03-settings.png": "ad1bdd51cc4643cfd803d4af8d0260088948c9b8bf8ec1ce2ca5cf27683a39fc"
     },
     "uk": {
-     "01-gameplay.png": "684fdbdcf6b2dc99af578637e78c3beea3945a77e5cc02cf70441c1194eb5a4c",
-     "02-hint.png": "486032ae07c710a72818ccc31397cbb3498009972966679cb26976ec6d2f192f",
+     "01-gameplay.png": "d99e154d26762c895069dc33500a2a15293f60cfbacc54b5da2f46726bd0c57c",
+     "02-hint.png": "278f3741eac8490857cf687dae07659d46e3cd79e239e575f387e558c9016668",
      "03-settings.png": "bb6e4287edf382e478ec476803f88a59c7ed7fe0ae827c9f97b2dff3f60c0450"
     },
     "vi": {
-     "01-gameplay.png": "3b89d9f6061d512a47532f72d0e746d11238d953e02181f73408ecab251df928",
-     "02-hint.png": "fa4fa508dce3bcfb7d5ec240f7c11c7bd36fdfe03b70f51f6c727f9777ab6809",
-     "03-settings.png": "87180ffa05fd4a1b203e9aec505d7abb834d1a38d62edd81d597ce46fabdeb8c"
+     "01-gameplay.png": "8df103af0e3efe0a8d361d319f1b0d5985a8410c20a65d7da9111a2d91621c9f",
+     "02-hint.png": "f144f2b39c89aa69aa9fcff7760403f584819fbcc5d2b2738cb7fa7dcb5fc469",
+     "03-settings.png": "6f9bcefa17c2c3c3d294aadce965e46147dd84e51e3e70206f6126512576a178"
     },
     "zh-CN": {
-     "01-gameplay.png": "054a95d45ed059f976ba6df241b59fd0e37b03c75814ee596ace7e29aadacb9c",
-     "02-hint.png": "8c2f4e76f3b33e9232e22602538a72f8b59ec9dea918c50ae3092467fc52d340",
-     "03-settings.png": "05f5daa2fc872d73f0f5e47326d5ef4c4da8a994572cfba7bf582600ec01ede5"
+     "01-gameplay.png": "79b69173bc6231f81c35da7ccf950703c20278ec2b0440e040c0a76e9c9b98d8",
+     "02-hint.png": "a00b280db8ac1239341f29aeb208069332d0302292db86ba647fbb54e3d4694c",
+     "03-settings.png": "d7d8c5ec7851ee712057d07161eb9232bb2724b602745746a4edb53050039f22"
     },
     "zh-TW": {
-     "01-gameplay.png": "914ab17f9f415a4eec5f0ba19967c11c1cf72fa847e2d69a73d983beabf450ab",
-     "02-hint.png": "90254daacba27b90eedaef6d626ea6e079eb938e998558917b92f9c11937b064",
-     "03-settings.png": "7ea92cc753af2d4a9f5acc45143648acdce4c3c3e783aa094fd6d8a2eb514e77"
+     "01-gameplay.png": "cde656365cb996c1ecec5e5aaf1ebbe0344494e0ee955c9c26cf2dc6e91205de",
+     "02-hint.png": "ca90337e71887b899b7ad75048e622b78a83741f8a58e5338fb4caee3699b9b3",
+     "03-settings.png": "9d8e04e7a61f6a0b1e9b578c6196516cb0ca43ef00567cd6c010e1801f899584"
     }
    },
    "versionCode": 4
