@@ -313,7 +313,9 @@ about the player's last hinted decision in the hand (`HandReview`).
 - **Showdown.** Every live opponent's cards turn face up, one seat at a time clockwise from the last
   aggressor. The **winning five cards** of each pot's winner — from the hole and the board — are
   raised 6 dp with a gold outline; every other card on the table dims to 60%. Under each shown hand
-  its name: `Flush, king high`, `Two pair, aces and sevens`, `Straight, five high`.
+  its name: `Flush, king high`, `Two pair, aces and sevens`, `Straight, five high`. Opponent
+  hand-name labels keep white text over a 36%-opaque black background regardless of whether the
+  seat is active, folded, or eliminated; fading a seat must not change its hand label's translucency.
 - **Pots are awarded one at a time**, the main pot last (`RULES.md` "Pots and Showdown"). A banner
   over the board names each — `Side pot · 600` — and the winners' seats show `+600`. A split pot
   shows each share on its own seat, the odd chip included.

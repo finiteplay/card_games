@@ -39,7 +39,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.CompositingStrategy
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -51,6 +53,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.zIndex
 import org.finiteplay.cards.Card
 import org.finiteplay.core.ui.animal.AnimalAvatar
 import org.finiteplay.core.ui.layout.FinitePlayLogo
@@ -364,105 +367,111 @@ private fun OpponentSeat(
         else -> "%,d".format(model.stack)
     }
     val spoken = seatSpoken(table, seat, profile, stackText)
+    val seatAlpha = if (out) 0.4f else if (model.folded) 0.5f else 1f
     Box(
         modifier = Modifier
             .width(width)
             .height(height)
-            .alpha(if (out) 0.4f else if (model.folded) 0.5f else 1f)
             .semantics(mergeDescendants = true) { contentDescription = spoken }
             .testTag("seat_$seat"),
     ) {
-        Surface(
-            modifier = Modifier.fillMaxSize(),
-            shape = RoundedCornerShape(10.dp),
-            color = Color.Black.copy(alpha = 0.34f),
-            border = if (acting) BorderStroke(2.5.dp, ring.copy(alpha = pulse)) else BorderStroke(1.dp, Color.White.copy(alpha = 0.18f)),
-        ) {}
-        Column(modifier = Modifier.fillMaxSize().padding(horizontal = 4.dp).clearAndSetSemantics { }) {
-            Row(modifier = Modifier.height(28.dp).fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                Avatar(profile)
-                Column(modifier = Modifier.weight(1f)) {
-                    Text(profile.animal.localizedName(), style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, autoSize = FitName, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_${seat}_name"))
-                    val last = model.lastAction
-                    val won = model.net?.takeIf { it > 0 && !out }
-                    if (won != null) {
-                        // The hand is over: what this seat won, small, where its style word was.
-                        Text(stringResource(R.string.seat_won, signed(won)), fontSize = 10.sp, lineHeight = 11.sp, fontWeight = FontWeight.ExtraBold, color = markWin, maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_won"))
-                    } else if (last != null && !out) {
-                        Text(lastActionText(last), fontSize = 10.sp, lineHeight = 11.sp, color = ring, maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_action"))
-                    } else {
-                        Text(styleText(profile.style), fontSize = 10.sp, lineHeight = 11.sp, color = Color.White.copy(alpha = 0.75f), maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_style"))
+        // Keep the overflowing hand label outside the seat's fading/compositing layer.
+        Box(modifier = Modifier.fillMaxSize().graphicsLayer {
+            alpha = seatAlpha
+            compositingStrategy = CompositingStrategy.ModulateAlpha
+        }) {
+            Surface(
+                modifier = Modifier.fillMaxSize(),
+                shape = RoundedCornerShape(10.dp),
+                color = Color.Black.copy(alpha = 0.34f),
+                border = if (acting) BorderStroke(2.5.dp, ring.copy(alpha = pulse)) else BorderStroke(1.dp, Color.White.copy(alpha = 0.18f)),
+            ) {}
+            Column(modifier = Modifier.fillMaxSize().padding(horizontal = 4.dp).clearAndSetSemantics { }) {
+                Row(modifier = Modifier.height(28.dp).fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Avatar(profile)
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(profile.animal.localizedName(), style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1, autoSize = FitName, overflow = TextOverflow.Ellipsis, modifier = Modifier.testTag("seat_${seat}_name"))
+                        val last = model.lastAction
+                        val won = model.net?.takeIf { it > 0 && !out }
+                        if (won != null) {
+                            // The hand is over: what this seat won, small, where its style word was.
+                            Text(stringResource(R.string.seat_won, signed(won)), fontSize = 10.sp, lineHeight = 11.sp, fontWeight = FontWeight.ExtraBold, color = markWin, maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_won"))
+                        } else if (last != null && !out) {
+                            Text(lastActionText(last), fontSize = 10.sp, lineHeight = 11.sp, color = ring, maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_action"))
+                        } else {
+                            Text(styleText(profile.style), fontSize = 10.sp, lineHeight = 11.sp, color = Color.White.copy(alpha = 0.75f), maxLines = 1, autoSize = FitSubtitle, modifier = Modifier.testTag("seat_${seat}_style"))
+                        }
+                    }
+                }
+                Text(
+                    text = stackText,
+                    style = MaterialTheme.typography.labelMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = Color.White,
+                    maxLines = 1,
+                    modifier = Modifier.height(16.dp).testTag("seat_${seat}_stack"),
+                )
+            }
+            // The cards: two backs while in the hand, face up from showdown; taller than the compact row, they cover the stack line.
+            if (model.contesting && !out) {
+                val cards: List<Card?> = model.cards ?: listOf(null, null)
+                Box(modifier = Modifier.align(Alignment.BottomCenter)) {
+                    key(table.handNumber) {
+                        val shownWidth = if (model.cards != null) maxOf(cardWidth, TableGeometry.MIN_CARD_WIDTH.dp) else cardWidth
+                        CardFan(
+                            cards = cards,
+                            cardWidth = shownWidth,
+                            handWidth = width,
+                            step = shownWidth * TableGeometry.STEP_FRACTION,
+                            raisedIndices = indicesIn(cards, table.highlight),
+                            raise = RAISE_DP.dp,
+                            testTag = "seat_${seat}_cards",
+                            modifier = Modifier.liftable(),
+                        )
                     }
                 }
             }
-            Text(
-                text = stackText,
-                style = MaterialTheme.typography.labelMedium,
-                fontWeight = FontWeight.SemiBold,
-                color = Color.White,
-                maxLines = 1,
-                modifier = Modifier.height(16.dp).testTag("seat_${seat}_stack"),
-            )
-        }
-        // The cards: two backs while in the hand, face up from showdown; taller than the compact row, they cover the stack line.
-        if (model.contesting && !out) {
-            val cards: List<Card?> = model.cards ?: listOf(null, null)
-            Box(modifier = Modifier.align(Alignment.BottomCenter)) {
-                key(table.handNumber) {
-                    val shownWidth = if (model.cards != null) maxOf(cardWidth, TableGeometry.MIN_CARD_WIDTH.dp) else cardWidth
-                    CardFan(
-                        cards = cards,
-                        cardWidth = shownWidth,
-                        handWidth = width,
-                        step = shownWidth * TableGeometry.STEP_FRACTION,
-                        raisedIndices = indicesIn(cards, table.highlight),
-                        raise = RAISE_DP.dp,
-                        testTag = "seat_${seat}_cards",
-                        modifier = Modifier.liftable(),
-                    )
-                }
-            }
-            val value = model.handValue
-            if (value != null && model.cards != null) {
-                val name = handName(model.cards + table.board, value)
-                // As wide as the seat and no wider, shrunk to fit: a long name ("Two pair, queens and jacks")
-                // must not run off the screen's edge from a seat that sits against it.
+            val net = model.net
+            if (model.award > 0 && net == null) {
                 Text(
-                    text = handNameText(name),
-                    fontSize = 10.sp,
-                    lineHeight = 11.sp,
-                    color = Color.White,
-                    textAlign = TextAlign.Center,
-                    maxLines = 1,
-                    autoSize = FitSubtitle,
-                    modifier = Modifier.align(Alignment.BottomCenter).offset(y = 22.dp).width(width)
-                        .background(Color.Black.copy(alpha = 0.7f), RoundedCornerShape(4.dp)).padding(horizontal = 4.dp)
-                        .testTag("seat_${seat}_hand"),
+                    text = stringResource(R.string.seat_award, model.award),
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.ExtraBold,
+                    color = markWin,
+                    modifier = Modifier.align(Alignment.TopCenter).offset(y = (-10).dp).wrapContentSize(unbounded = true)
+                        .background(Color.Black.copy(alpha = 0.7f), RoundedCornerShape(6.dp)).padding(horizontal = 6.dp)
+                        .testTag("seat_${seat}_award"),
                 )
             }
-        }
-        val net = model.net
-        if (model.award > 0 && net == null) {
-            Text(
-                text = stringResource(R.string.seat_award, model.award),
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.ExtraBold,
-                color = markWin,
-                modifier = Modifier.align(Alignment.TopCenter).offset(y = (-10).dp).wrapContentSize(unbounded = true)
-                    .background(Color.Black.copy(alpha = 0.7f), RoundedCornerShape(6.dp)).padding(horizontal = 6.dp)
-                    .testTag("seat_${seat}_award"),
-            )
-        }
-        Box(modifier = Modifier.align(if (seat <= 3) Alignment.BottomEnd else Alignment.BottomStart).offset(y = 8.dp).wrapContentSize(unbounded = true)) {
-            Markers(table, seat)
-        }
-        if (model.bet > 0) {
-            val m = when (pill) {
-                PillSide.Below -> Modifier.align(Alignment.BottomCenter).offset(y = 11.dp)
-                PillSide.End -> Modifier.align(Alignment.CenterEnd).offset(x = 26.dp)
-                PillSide.Start -> Modifier.align(Alignment.CenterStart).offset(x = (-26).dp)
+            Box(modifier = Modifier.align(if (seat <= 3) Alignment.BottomEnd else Alignment.BottomStart).offset(y = 8.dp).wrapContentSize(unbounded = true)) {
+                Markers(table, seat)
             }
-            BetPill(model.bet, "seat_${seat}_bet", m)
+            if (model.bet > 0) {
+                val m = when (pill) {
+                    PillSide.Below -> Modifier.align(Alignment.BottomCenter).offset(y = 11.dp)
+                    PillSide.End -> Modifier.align(Alignment.CenterEnd).offset(x = 26.dp)
+                    PillSide.Start -> Modifier.align(Alignment.CenterStart).offset(x = (-26).dp)
+                }
+                BetPill(model.bet, "seat_${seat}_bet", m)
+            }
+        }
+        val value = model.handValue
+        if (value != null && model.cards != null) {
+            val name = handName(model.cards + table.board, value)
+            // Draw the hand label last so later seat markers and bet pills cannot cover its text.
+            Text(
+                text = handNameText(name),
+                fontSize = 10.sp,
+                lineHeight = 11.sp,
+                color = Color.White,
+                textAlign = TextAlign.Center,
+                maxLines = 1,
+                autoSize = FitSubtitle,
+                modifier = Modifier.align(Alignment.BottomCenter).offset(y = 22.dp).width(width)
+                    .background(Color.Black.copy(alpha = 0.36f), RoundedCornerShape(4.dp)).padding(horizontal = 4.dp)
+                    .zIndex(1f)
+                    .testTag("seat_${seat}_hand"),
+            )
         }
     }
 }
