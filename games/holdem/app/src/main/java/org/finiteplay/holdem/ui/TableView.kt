@@ -347,6 +347,9 @@ private fun OpponentSeat(
     compact: Boolean,
     animate: Boolean,
     pill: PillSide,
+    // A seat knocked out on this very hand has just turned its cards over: they stay up, undimmed, until the next hand,
+    // so the player can look at what beat them (or what they beat) before dealing again.
+    val reviewing = out && model.cards != null
 ) {
     val model = table.seats[seat]
     val out = model.place != null
@@ -367,7 +370,7 @@ private fun OpponentSeat(
         else -> "%,d".format(model.stack)
     }
     val spoken = seatSpoken(table, seat, profile, stackText)
-    val seatAlpha = if (out) 0.4f else if (model.folded) 0.5f else 1f
+    val seatAlpha = if (reviewing) 1f else if (out) 0.4f else if (model.folded) 0.5f else 1f
     Box(
         modifier = Modifier
             .width(width)
@@ -413,7 +416,7 @@ private fun OpponentSeat(
                 )
             }
             // The cards: two backs while in the hand, face up from showdown; taller than the compact row, they cover the stack line.
-            if (model.contesting && !out) {
+            if (model.contesting && (!out || reviewing)) {
                 val cards: List<Card?> = model.cards ?: listOf(null, null)
                 Box(modifier = Modifier.align(Alignment.BottomCenter)) {
                     key(table.handNumber) {
