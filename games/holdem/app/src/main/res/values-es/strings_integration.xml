@@ -47,4 +47,5 @@
     <string name="review_chance_at_decision">Cuando decidiste, tu probabilidad era de cerca de un %1$d%%.</string>
     <string name="review_chance_slim_win">Ganaste, pero tu probabilidad era escasa cuando decidiste: cerca de un %1$d%%.</string>
     <string name="review_followed_won_slim">Seguiste la pista y ganaste, pero tu probabilidad era escasa: cerca de un %1$d%%. Las buenas decisiones no siempre tienen suerte.</string>
+    <string name="review_hindsight_fold_tied">Esta mano habría terminado en empate: cuando decidiste, tu probabilidad de ganar era de aproximadamente %1$d%%.</string>
 </resources>

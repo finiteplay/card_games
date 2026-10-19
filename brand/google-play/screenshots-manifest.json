@@ -40,9 +40,9 @@
     },
     "en-US": {
      "01-betting.png": "605477d1dc6cf213e44b2b2056bcadda5f603ff29c81c63139fa869e59279472",
-     "02-gameplay.png": "d4e6faf270fd013244c49abb718963a2e55b8b381a4ec5d08b5f0b58795bb19c",
-     "03-hint.png": "44db0c17a1f92f7dd9d054b85daa04324d31a2a97bfd09f9b8bd32b6450e49da",
-     "04-settings.png": "4907ca10cf7dd94105548f26c8dc13be4cb3ed0d54a4043a4c68ce5db3e65e56"
+     "02-gameplay.png": "662f3daf63a2db6ca2418675078cc4d961bf07d063ded5cc9e62453d169cee3e",
+     "03-hint.png": "271971aff9658fba3403b1f0ba9984bcdc15b0f14189607b5b124eb4fe6e1bb3",
+     "04-settings.png": "fb181cea4ab815871e1e601d84f4abfd62a717fdc74cc8f1c6c5c7b2bbdd6d1c"
     },
     "es-ES": {
      "01-betting.png": "3f087f9e452c114c2c91aef94f2e1873bf88e304fdc3b024c3c807b9003bea12",
@@ -189,7 +189,7 @@
      "04-settings.png": "43be0cee888c246d85ef445e3cba9e509684ea004590e7f1a20bfbe743dc3d9a"
     }
    },
-   "versionCode": 6
+   "versionCode": 7
   },
   "freecell": {
    "languages": {
@@ -349,7 +349,7 @@
      "03-settings.png": "f243922c6552560946b481cc6bae4fd09636ebb82702e83c16b74d597e9c6d3b"
     }
    },
-   "versionCode": 6
+   "versionCode": 7
   },
   "holdem": {
    "languages": {
@@ -359,7 +359,7 @@
      "03-settings.png": "12683a79c0df9e732389e59bc80b2bec5431ba5a07497cf7311744ab11a6ba6a"
     },
     "bg": {
-     "01-gameplay.png": "c47bf0747113ccc3958737b028ed5d1745fdae07fade45c24fa4a11041f361a2",
+     "01-gameplay.png": "0c38085598ad5930c41b5f3800fbf9d3b9172e23013253a187ecd060c1cdaafa",
      "02-hint.png": "19f05441a31e769d797b555fcf6c19ddf145f8027d4f997e1601b8602e303a74",
      "03-settings.png": "34037bfb918d5dce6601cf6c1db5a3b0b70279f2e44f59483a5cbb15b8583161"
     },
@@ -384,9 +384,9 @@
      "03-settings.png": "c101f57fa37b8c2851a12c8f4ca02a7497a9f70809931f680112d59880280a12"
     },
     "en-US": {
-     "01-gameplay.png": "b3c07b57e78e6ecb1a8bc634687d8792c1fd8ce94d11c6ec259f89711f83cd33",
-     "02-hint.png": "368e011f6234a57f3b4b99dd02af0a33cf289786dc50ed3d7548891f3916ae7c",
-     "03-settings.png": "0a0919b1e4d34a81f23fb855fb1a5a199ac9b440674fe5c82e598198f6677d28"
+     "01-gameplay.png": "ba3c872ae99be040216f0428369352d8cd3f856719bf64c34caa882c56f478f1",
+     "02-hint.png": "7f62d8c0b5144adfeb58d177e755034b840ba377b75c06a8e9c97cadd99a0660",
+     "03-settings.png": "5480cbb06489092662bc042942cdd8250c9fa05b84659ad8bf6e19d1de7247aa"
     },
     "es-ES": {
      "01-gameplay.png": "b1de4147090dcadc51549df7fa21e21855eee4c964020f6408c6473f7cde5b6e",
@@ -396,7 +396,7 @@
     "fi-FI": {
      "01-gameplay.png": "951ad4ca2789dd4d23d43896fa46c796c3e03bf53ffcad27cfeeb1ab09f6afa9",
      "02-hint.png": "72a7514618784ec2a57ca5eec5879c0989545ae65ae8390ff43c1ffd8b5d3adc",
-     "03-settings.png": "287886882a8842eee8961e41d31c6ad997f60a34160b59df16c9305c04f262b6"
+     "03-settings.png": "df63f84b42abe96abb168a3ef2bc653d0bd8ef3f4dfd13aff512f80e14350081"
     },
     "fr-FR": {
      "01-gameplay.png": "a6ed680adfc450703b8621781c4df75bf40a9ad68d6add7011f4c2d668b199c7",
@@ -484,9 +484,9 @@
      "03-settings.png": "e3446f352d188abbb4459621f6f5869c98acfd575d59152c9d526305824ca2ac"
     },
     "tr-TR": {
-     "01-gameplay.png": "7e59a3b0a3c12f8b57902ca1a91f7a1636e9287580b4c15cb92dd3f96c62ee5f",
-     "02-hint.png": "ad1bdd51cc4643cfd803d4af8d0260088948c9b8bf8ec1ce2ca5cf27683a39fc",
-     "03-settings.png": "ad1bdd51cc4643cfd803d4af8d0260088948c9b8bf8ec1ce2ca5cf27683a39fc"
+     "01-gameplay.png": "145673da4da77f3e274c4694773188acf4e7b293b54ed8235491490a01965f15",
+     "02-hint.png": "39ef8b849d0d15291a03dc4bab4f25f87eb0f5a4dfe1ebe8f3c3f118a7ff8ccb",
+     "03-settings.png": "8e807446acd7e3b6578cdc0465410759b0a3bb0b9d60a795444248be8637532a"
     },
     "uk": {
      "01-gameplay.png": "d99e154d26762c895069dc33500a2a15293f60cfbacc54b5da2f46726bd0c57c",
@@ -509,7 +509,7 @@
      "03-settings.png": "9d8e04e7a61f6a0b1e9b578c6196516cb0ca43ef00567cd6c010e1801f899584"
     }
    },
-   "versionCode": 4
+   "versionCode": 5
   },
   "klondike": {
    "languages": {
@@ -669,7 +669,7 @@
      "03-settings.png": "dbb38041a9541486087a394943c32a7194c6cb63bc34d0c32e35cc05f7051bba"
     }
    },
-   "versionCode": 7
+   "versionCode": 8
   },
   "spider": {
    "languages": {
@@ -829,11 +829,11 @@
      "03-settings.png": "5876d8c25d81a782511b6df55c18ec48a1b3fef9122093ff13d94c0642ba04c1"
     }
    },
-   "versionCode": 6
+   "versionCode": 7
   }
  },
  "generated": "2026-10-16",
  "recipe": "tools/store-screenshots (1080x1920 emulator, font scale 1.0, release builds)",
- "uploaded": null,
- "versionName": "0.3.0"
+ "uploaded": "2026-10-16",
+ "versionName": "0.3.1"
 }

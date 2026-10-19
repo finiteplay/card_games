@@ -47,4 +47,5 @@
     <string name="review_chance_at_decision">Als du entschieden hast, lag deine Chance bei etwa %1$d%%.</string>
     <string name="review_chance_slim_win">Du hast gewonnen, aber deine Chance war beim Entscheiden gering: etwa %1$d%%.</string>
     <string name="review_followed_won_slim">Du bist dem Tipp gefolgt und hast gewonnen, aber deine Chance war gering: etwa %1$d%%. Gute Entscheidungen haben nicht immer Glück.</string>
+    <string name="review_hindsight_fold_tied">Diese Hand wäre unentschieden ausgegangen: Zum Zeitpunkt deiner Entscheidung lag deine Gewinnchance bei etwa %1$d%%.</string>
 </resources>

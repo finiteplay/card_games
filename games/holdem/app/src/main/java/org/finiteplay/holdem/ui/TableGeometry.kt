@@ -49,6 +49,8 @@ object TableGeometry {
     const val RAIL_WIDTH = 76f
     const val SIZING_COLUMN_WIDTH = 76f
     const val LANDSCAPE_SEAT_WIDTH = 96f
+    /** Reserve room for the landscape pot label and its optional side-pot count. */
+    const val LANDSCAPE_POT_HEIGHT = 44f
 
     enum class Density { Regular, Compact, Squeezed }
 
@@ -154,6 +156,7 @@ object TableGeometry {
         val seatHeight: Float,
         val opponentCardWidth: Float,
         val boardCardWidth: Float,
+        val middleBandHeight: Float,
         val yourCardWidth: Float,
         val yourSeatHeight: Float,
         val gap: Float,
@@ -163,29 +166,62 @@ object TableGeometry {
         /** The middle band's contents: a seat at each edge and the board between them. */
         val middleRowWidth: Float get() = 2 * seatWidth + boardWidth
 
-        /** The three bands and the two gaps between them. */
-        val totalHeight: Float get() = 2 * seatHeight + yourSeatHeight + 2 * gap
+        /** The top, middle (side seats plus board/pot), and player bands with their gaps. */
+        val totalHeight: Float get() = seatHeight + middleBandHeight + yourSeatHeight + 2 * gap
     }
 
     fun landscape(screenWidth: Float, screenHeight: Float): Landscape {
         val tableWidth = screenWidth - RAIL_WIDTH - SIZING_COLUMN_WIDTH
         val tableHeight = screenHeight - STATUS_ROW
-        val seatHeight = SEAT_NAME_ROW + SEAT_STACK_ROW + REGULAR_SEAT_CARD_ROW
-        val board = max(
+        // Landscape is height-constrained: use compact opponent seats so the player's own
+        // seat remains visible below the board and pot, even when a side-pot count is shown.
+        val seatHeight = SEAT_NAME_ROW + SEAT_STACK_ROW + COMPACT_SEAT_CARD_ROW
+        val widthLimitedBoard = max(
             MIN_CARD_WIDTH,
             min(MAX_BOARD_CARD_WIDTH, (areaWidth(tableWidth) - 2 * LANDSCAPE_SEAT_WIDTH - 4 * BOARD_CARD_GAP) / 5f),
         )
-        val yourSeat = ceil(cardHeight(COMPACT_YOUR_CARD_WIDTH)) + YOUR_LINE
+        var yourCard = COMPACT_YOUR_CARD_WIDTH
+        while (yourCard >= MIN_CARD_WIDTH) {
+            val yourSeat = ceil(cardHeight(yourCard)) + YOUR_LINE
+            var board = widthLimitedBoard
+            while (board >= MIN_CARD_WIDTH) {
+                val middleBand = max(seatHeight, ceil(cardHeight(board)) + LANDSCAPE_POT_HEIGHT)
+                val required = seatHeight + middleBand + yourSeat + 2 * REGULAR_MIN_GAP
+                if (required <= tableHeight) {
+                    return Landscape(
+                        tableWidth = tableWidth,
+                        tableHeight = tableHeight,
+                        seatWidth = LANDSCAPE_SEAT_WIDTH,
+                        seatHeight = seatHeight,
+                        opponentCardWidth = COMPACT_OPPONENT_CARD_WIDTH,
+                        boardCardWidth = board,
+                        middleBandHeight = middleBand,
+                        yourCardWidth = yourCard,
+                        yourSeatHeight = yourSeat,
+                        gap = max(REGULAR_MIN_GAP, (tableHeight - seatHeight - middleBand - yourSeat) / 2f),
+                    )
+                }
+                board -= 1f
+            }
+            yourCard -= 1f
+        }
+
+        // Keep the supported minimum card sizes and let the bands use every available dp.
+        val minBoard = MIN_CARD_WIDTH
+        val minYourCard = MIN_CARD_WIDTH
+        val yourSeat = ceil(cardHeight(minYourCard)) + YOUR_LINE
+        val middleBand = max(seatHeight, ceil(cardHeight(minBoard)) + LANDSCAPE_POT_HEIGHT)
         return Landscape(
             tableWidth = tableWidth,
             tableHeight = tableHeight,
             seatWidth = LANDSCAPE_SEAT_WIDTH,
             seatHeight = seatHeight,
-            opponentCardWidth = REGULAR_OPPONENT_CARD_WIDTH,
-            boardCardWidth = board,
-            yourCardWidth = COMPACT_YOUR_CARD_WIDTH,
+            opponentCardWidth = COMPACT_OPPONENT_CARD_WIDTH,
+            boardCardWidth = minBoard,
+            middleBandHeight = middleBand,
+            yourCardWidth = minYourCard,
             yourSeatHeight = yourSeat,
-            gap = max(REGULAR_MIN_GAP, (tableHeight - 2 * seatHeight - yourSeat) / 2f),
+            gap = 0f,
         )
     }
 }

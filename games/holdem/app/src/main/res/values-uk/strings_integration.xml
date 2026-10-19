@@ -48,6 +48,7 @@
     <!-- With hindsight. %1$d = your chance to win at the moment you decided, in percent. -->
     <string name="review_hindsight_fold_won">Ви б виграли цю роздачу, але на момент рішення ваші шанси були лише близько %1$d%%. Оцінюйте рішення, а не результат.</string>
     <string name="review_hindsight_fold_lost">Ви б програли цю роздачу: на момент рішення ваші шанси були близько %1$d%%.</string>
+    <string name="review_hindsight_fold_tied">У цій роздачі була б нічия: на момент рішення ваші шанси на перемогу становили близько %1$d%%.</string>
     <string name="review_chance_at_decision">На момент рішення ваші шанси були близько %1$d%%.</string>
     <string name="review_chance_slim_win">Ви виграли, але на момент рішення шанси були малі: близько %1$d%%.</string>
     <string name="review_followed_won_slim">Ви послухали пораду й виграли, але шанси були малі: близько %1$d%%. Добрі рішення не завжди супроводжує удача.</string>

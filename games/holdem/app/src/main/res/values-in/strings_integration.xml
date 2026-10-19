@@ -45,4 +45,5 @@
     <string name="review_chance_at_decision">Saat memutuskan, peluang Anda sekitar %1$d%%.</string>
     <string name="review_chance_slim_win">Anda menang, tapi peluang Anda tipis saat memutuskan: sekitar %1$d%%.</string>
     <string name="review_followed_won_slim">Anda mengikuti Petunjuk dan menang, tapi peluang Anda tipis: sekitar %1$d%%. Keputusan bagus tidak selalu beruntung.</string>
+    <string name="review_hindsight_fold_tied">Tangan ini akan berakhir seri: saat Anda mengambil keputusan, peluang menang Anda sekitar %1$d%%.</string>
 </resources>

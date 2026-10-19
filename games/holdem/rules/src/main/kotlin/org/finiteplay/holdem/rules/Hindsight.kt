@@ -17,11 +17,19 @@ fun HoldemState.runOutBoard(): List<Card> {
  * at the end of the hand? Null when the seat did not fold or nobody else was left to compare with.
  * It judges the cards only: had the seat stayed in, the others might have bet differently.
  */
-fun HoldemState.wouldHaveWon(seat: Int): Boolean? {
+enum class HindsightResult { WON, TIED, LOST }
+
+fun HoldemState.hindsightResult(seat: Int): HindsightResult? {
     if (!inHand(seat) || !folded[seat]) return null
     val rivals = seatsInHand.filter { it != seat && !folded[it] }
     if (rivals.isEmpty()) return null
     val board = runOutBoard()
     val mine = evaluate(holeCards[seat] + board)
-    return rivals.all { mine > evaluate(holeCards[it] + board) }
+    val comparisons = rivals.map { mine.compareTo(evaluate(holeCards[it] + board)) }
+    return when {
+        comparisons.all { it > 0 } -> HindsightResult.WON
+        comparisons.any { it < 0 } -> HindsightResult.LOST
+        comparisons.any { it == 0 } -> HindsightResult.TIED
+        else -> HindsightResult.WON
+    }
 }

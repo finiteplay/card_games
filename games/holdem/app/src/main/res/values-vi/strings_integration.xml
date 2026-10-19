@@ -54,4 +54,5 @@
     <string name="review_chance_at_decision">Lúc quyết định, khả năng thắng của bạn khoảng %1$d%%.</string>
     <string name="review_chance_slim_win">Bạn thắng, nhưng lúc quyết định khả năng thắng khá mong manh: khoảng %1$d%%.</string>
     <string name="review_followed_won_slim">Bạn làm theo Gợi ý và thắng, nhưng khả năng thắng khá mong manh: khoảng %1$d%%. Quyết định đúng không phải lúc nào cũng may mắn.</string>
+    <string name="review_hindsight_fold_tied">Ván này sẽ hòa: vào lúc bạn quyết định, khả năng thắng của bạn khoảng %1$d%%.</string>
 </resources>

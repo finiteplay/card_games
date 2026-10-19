@@ -55,4 +55,5 @@
     <string name="review_chance_at_decision">Όταν αποφάσισες, η πιθανότητά σου ήταν περίπου %1$d%%.</string>
     <string name="review_chance_slim_win">Κέρδισες, αλλά η πιθανότητά σου ήταν μικρή όταν αποφάσισες: περίπου %1$d%%.</string>
     <string name="review_followed_won_slim">Ακολούθησες την Υπόδειξη και κέρδισες, αλλά η πιθανότητά σου ήταν μικρή: περίπου %1$d%%. Οι καλές αποφάσεις δεν έχουν πάντα τύχη.</string>
+    <string name="review_hindsight_fold_tied">Αυτή η παρτίδα θα έληγε ισόπαλη: τη στιγμή της απόφασής σου, η πιθανότητα νίκης σου ήταν περίπου %1$d%%.</string>
 </resources>

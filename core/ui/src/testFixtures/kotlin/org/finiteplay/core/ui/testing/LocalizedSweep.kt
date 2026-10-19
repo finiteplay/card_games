@@ -46,7 +46,7 @@ fun ComposeContentTestRule.setLocalizedContent(
     setContent {
         val base = LocalContext.current
         val tag = Locale.forLanguageTag(state.locale)
-        val configuration = Configuration(base.resources.configuration).apply {
+        val configuration = Configuration(LocalConfiguration.current).apply {
             setLocale(tag)
             setLayoutDirection(tag)
         }

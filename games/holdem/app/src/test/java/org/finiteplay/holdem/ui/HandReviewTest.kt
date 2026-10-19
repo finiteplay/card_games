@@ -4,6 +4,7 @@ import org.finiteplay.holdem.opponents.HintReason
 import org.finiteplay.holdem.opponents.Threats
 import org.finiteplay.holdem.rules.Action
 import org.finiteplay.holdem.rules.HandCategory
+import org.finiteplay.holdem.rules.HindsightResult
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -69,11 +70,12 @@ class HandReviewTest {
 
     @Test
     fun `a fold carries what the folded hand would have done, and only a fold does`() {
-        val folded = reviewOf(use(true), -50, true, null, wouldHaveWon = true)!!
-        assertEquals(true, folded.wouldHaveWon)
-        assertEquals(false, reviewOf(use(true), -50, true, null, wouldHaveWon = false)!!.wouldHaveWon)
-        assertNull(reviewOf(use(true), -50, true, null)!!.wouldHaveWon)
+        val folded = reviewOf(use(true), -50, true, null, HindsightResult.WON)!!
+        assertEquals(HindsightResult.WON, folded.hindsightResult)
+        assertEquals(HindsightResult.TIED, reviewOf(use(true), -50, true, null, HindsightResult.TIED)!!.hindsightResult)
+        assertEquals(HindsightResult.LOST, reviewOf(use(true), -50, true, null, HindsightResult.LOST)!!.hindsightResult)
+        assertNull(reviewOf(use(true), -50, true, null)!!.hindsightResult)
         // A hand that was played to the end has nothing to look back on: the cards were shown.
-        assertNull(reviewOf(use(true), 400, false, null, wouldHaveWon = true)!!.wouldHaveWon)
+        assertNull(reviewOf(use(true), 400, false, null, HindsightResult.WON)!!.hindsightResult)
     }
 }

@@ -68,6 +68,7 @@ import org.finiteplay.core.ui.animal.localizedName
 
 private const val RAISE_DP = 6
 private const val LOGO_CLEAR_GAP_DP = 92f
+private const val LANDSCAPE_LOGO_MIN_GAP_DP = 32f
 private const val FALLBACK_LOGO_HEIGHT_DP = 36f
 
 private val markWin = Color(0xFF7CE08F)
@@ -152,10 +153,7 @@ private fun Portrait(table: TableModel, profiles: List<OpponentProfile>, animate
 @Composable
 private fun Landscape(table: TableModel, profiles: List<OpponentProfile>, animate: Boolean, width: Float, height: Float) {
     val g = TableGeometry.landscape(width + TableGeometry.RAIL_WIDTH + TableGeometry.SIZING_COLUMN_WIDTH, height + TableGeometry.STATUS_ROW)
-    val logoInGap = g.gap >= LOGO_CLEAR_GAP_DP
-    val fallbackLogoHeight = if (logoInGap) 0f else minOf(FALLBACK_LOGO_HEIGHT_DP, g.gap * 2f)
-    val gap = if (logoInGap) g.gap else (g.gap - fallbackLogoHeight / 2f).coerceAtLeast(0f)
-    val potWidth = (width - 2 * TableGeometry.SIDE_MARGIN - 2 * g.seatWidth).coerceAtLeast(0f)
+    val logoInGap = g.gap >= LANDSCAPE_LOGO_MIN_GAP_DP
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = TableGeometry.SIDE_MARGIN.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -166,23 +164,22 @@ private fun Landscape(table: TableModel, profiles: List<OpponentProfile>, animat
             }
         }
         if (logoInGap) {
-            Box(modifier = Modifier.fillMaxWidth().height(gap.dp), contentAlignment = Alignment.Center) {
+            Box(modifier = Modifier.fillMaxWidth().height(g.gap.dp), contentAlignment = Alignment.Center) {
                 FinitePlayLogo(
-                    modifier = Modifier.width((width * 0.52f).dp).heightIn(max = (gap - 8f).coerceAtLeast(1f).dp),
+                    modifier = Modifier.width((width * 0.52f).dp).heightIn(max = (g.gap - 8f).coerceAtLeast(1f).dp),
                     widthFraction = 1f,
                 )
             }
-        } else Spacer(modifier = Modifier.height(gap.dp))
+        } else Spacer(modifier = Modifier.height(g.gap.dp))
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
             OpponentSeat(1, table, profiles[0], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, false, animate, PillSide.End)
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 BoardBand(table, g.boardCardWidth.dp, TableGeometry.cardHeight(g.boardCardWidth).let { kotlin.math.ceil(it) }.dp, animate)
                 PotView(table, compactLine = true)
-                if (!logoInGap) SmallLogoBelowPot(fallbackLogoHeight, potWidth)
             }
             OpponentSeat(5, table, profiles[4], g.seatWidth.dp, g.seatHeight.dp, g.opponentCardWidth.dp, false, animate, PillSide.Start)
         }
-        Spacer(modifier = Modifier.height(gap.dp))
+        Spacer(modifier = Modifier.height(g.gap.dp))
         YourSeat(table, g.yourCardWidth.dp, g.yourSeatHeight.dp, animate)
     }
 }
@@ -347,12 +344,12 @@ private fun OpponentSeat(
     compact: Boolean,
     animate: Boolean,
     pill: PillSide,
-    // A seat knocked out on this very hand has just turned its cards over: they stay up, undimmed, until the next hand,
-    // so the player can look at what beat them (or what they beat) before dealing again.
-    val reviewing = out && model.cards != null
 ) {
     val model = table.seats[seat]
     val out = model.place != null
+    // A seat knocked out on this very hand has just turned its cards over: they stay up, undimmed, until the next hand,
+    // so the player can look at what beat them (or what they beat) before dealing again.
+    val reviewing = out && model.cards != null
     val acting = table.actor == seat
     val pulse = if (acting && table.thinking && animate) {
         rememberInfiniteTransition(label = "think").animateFloat(

@@ -54,4 +54,5 @@
     <string name="review_chance_at_decision">做決定時，你的勝率約為 %1$d%%。</string>
     <string name="review_chance_slim_win">你贏了，但做決定時勝率很低：約 %1$d%%。</string>
     <string name="review_followed_won_slim">你照提示做並贏了，但勝率很低：約 %1$d%%。好的決策不一定總有好運。</string>
+    <string name="review_hindsight_fold_tied">這手牌原本會平手：你做決定時的勝率約為 %1$d%%。</string>
 </resources>

@@ -47,4 +47,5 @@
     <string name="review_chance_at_decision">Quand vous avez décidé, vos chances étaient d\'environ %1$d%%.</string>
     <string name="review_chance_slim_win">Vous avez gagné, mais vos chances étaient minces au moment de décider : environ %1$d%%.</string>
     <string name="review_followed_won_slim">Vous avez suivi l\'indice et gagné, mais vos chances étaient minces : environ %1$d%%. Une bonne décision n\'a pas toujours de la chance.</string>
+    <string name="review_hindsight_fold_tied">Cette main se serait terminée par une égalité : au moment de votre décision, vos chances de gagner étaient d’environ %1$d%%.</string>
 </resources>

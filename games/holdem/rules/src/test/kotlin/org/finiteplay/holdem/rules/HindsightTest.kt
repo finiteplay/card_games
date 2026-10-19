@@ -38,12 +38,17 @@ class HindsightTest {
             val board = state.runOutBoard()
             for (seat in state.seatsInHand) {
                 if (seat == rival) {
-                    assertNull("the winner never folded", state.wouldHaveWon(seat))
+                    assertNull("the winner never folded", state.hindsightResult(seat))
                     continue
                 }
-                val expected = evaluate(state.holeCards[seat] + board) > evaluate(state.holeCards[rival] + board)
-                assertEquals("seed $seed seat $seat", expected, state.wouldHaveWon(seat))
-                if (expected) wins++ else losses++
+                val comparison = evaluate(state.holeCards[seat] + board).compareTo(evaluate(state.holeCards[rival] + board))
+                val expected = when {
+                    comparison > 0 -> HindsightResult.WON
+                    comparison < 0 -> HindsightResult.LOST
+                    else -> HindsightResult.TIED
+                }
+                assertEquals("seed $seed seat $seat", expected, state.hindsightResult(seat))
+                if (expected == HindsightResult.WON) wins++ else losses++
             }
         }
         assertTrue("both outcomes occur: $wins wins, $losses losses", wins > 20 && losses > 20)

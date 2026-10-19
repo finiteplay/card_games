@@ -188,9 +188,10 @@ fun reviewLines(review: HandReview): List<String> {
     }
     val beaten = review.beatenBy?.let { cat -> review.beatenPercent?.let { stringResource(R.string.review_beaten_by, categoryNounText(cat), it) } }
     val chance = when {
-        review.kind == ReviewKind.FOLLOWED_FOLD || review.kind == ReviewKind.IGNORED_FOLD -> when (review.wouldHaveWon) {
-            true -> stringResource(R.string.review_hindsight_fold_won, equity)
-            false -> stringResource(R.string.review_hindsight_fold_lost, equity)
+        review.kind == ReviewKind.FOLLOWED_FOLD || review.kind == ReviewKind.IGNORED_FOLD -> when (review.hindsightResult) {
+            org.finiteplay.holdem.rules.HindsightResult.WON -> stringResource(R.string.review_hindsight_fold_won, equity)
+            org.finiteplay.holdem.rules.HindsightResult.TIED -> stringResource(R.string.review_hindsight_fold_tied, equity)
+            org.finiteplay.holdem.rules.HindsightResult.LOST -> stringResource(R.string.review_hindsight_fold_lost, equity)
             null -> if (review.kind == ReviewKind.IGNORED_FOLD) stringResource(R.string.review_chance_at_decision, equity) else null
         }
         review.kind == ReviewKind.IGNORED_WON -> stringResource(if (slim) R.string.review_chance_slim_win else R.string.review_chance_at_decision, equity)

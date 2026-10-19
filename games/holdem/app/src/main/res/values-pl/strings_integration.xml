@@ -52,4 +52,5 @@
     <string name="review_chance_at_decision">Gdy decydowałeś, miałeś około %1$d%% szans.</string>
     <string name="review_chance_slim_win">Wygrałeś, ale gdy decydowałeś, szanse były małe: około %1$d%%.</string>
     <string name="review_followed_won_slim">Zastosowałeś się do rady i wygrałeś, ale szanse były małe: około %1$d%%. Dobre decyzje nie zawsze mają szczęście.</string>
+    <string name="review_hindsight_fold_tied">To rozdanie zakończyłoby się remisem: w chwili decyzji Twoja szansa na wygraną wynosiła około %1$d%%.</string>
 </resources>

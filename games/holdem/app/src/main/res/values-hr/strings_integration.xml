@@ -45,4 +45,5 @@
     <string name="review_chance_at_decision">Kad ste odlučivali, šansa vam je bila oko %1$d%%.</string>
     <string name="review_chance_slim_win">Pobijedili ste, ali šansa vam je bila slaba kad ste odlučivali: oko %1$d%%.</string>
     <string name="review_followed_won_slim">Slijedili ste savjet i pobijedili, ali šansa vam je bila slaba: oko %1$d%%. Dobre odluke nisu uvijek sretne.</string>
+    <string name="review_hindsight_fold_tied">Ova bi ruka završila neriješeno: u trenutku odluke šansa za pobjedu bila vam je oko %1$d%%.</string>
 </resources>

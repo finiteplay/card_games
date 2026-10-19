@@ -55,4 +55,5 @@
     <string name="review_chance_at_decision">Când ai decis, aveai cam %1$d%% șanse.</string>
     <string name="review_chance_slim_win">Ai câștigat, dar aveai șanse mici când ai decis: cam %1$d%%.</string>
     <string name="review_followed_won_slim">Ai urmat Indiciul și ai câștigat, dar șansele erau mici: cam %1$d%%. Deciziile bune nu au mereu noroc.</string>
+    <string name="review_hindsight_fold_tied">Mâna aceasta s-ar fi încheiat la egalitate: când ai decis, șansa ta de câștig era de aproximativ %1$d%%.</string>
 </resources>

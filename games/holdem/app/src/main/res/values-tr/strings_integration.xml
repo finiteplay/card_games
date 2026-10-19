@@ -55,4 +55,5 @@
     <string name="review_chance_at_decision">Karar verdiğinde şansın yaklaşık %%%1$d idi.</string>
     <string name="review_chance_slim_win">Kazandın, ama karar verdiğinde şansın düşüktü: yaklaşık %%%1$d.</string>
     <string name="review_followed_won_slim">İpucuna uydun ve kazandın, ama şansın düşüktü: yaklaşık %%%1$d. İyi kararlar her zaman şanslı olmaz.</string>
+    <string name="review_hindsight_fold_tied">Bu el berabere bitecekti: karar verdiğin andaki kazanma şansın yaklaşık %1$d%% idi.</string>
 </resources>

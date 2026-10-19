@@ -54,4 +54,5 @@
     <string name="review_chance_at_decision">決めた時点の勝率は約%1$d%%でした。</string>
     <string name="review_chance_slim_win">勝ちましたが、決めた時点の勝率は低く、約%1$d%%でした。</string>
     <string name="review_followed_won_slim">ヒントに従って勝ちましたが、勝率は低く、約%1$d%%でした。良い判断が運に恵まれるとは限りません。</string>
+    <string name="review_hindsight_fold_tied">このハンドは引き分けになっていました。判断した時点での勝率は約%1$d%%でした。</string>
 </resources>

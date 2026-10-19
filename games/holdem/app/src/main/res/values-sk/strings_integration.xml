@@ -45,4 +45,5 @@
     <string name="review_chance_at_decision">Keď ste sa rozhodovali, mali ste šancu asi %1$d%%.</string>
     <string name="review_chance_slim_win">Vyhrali ste, ale šanca bola pri rozhodovaní slabá: asi %1$d%%.</string>
     <string name="review_followed_won_slim">Riadili ste sa tipom a vyhrali ste, ale šanca bola slabá: asi %1$d%%. Dobré rozhodnutia nemajú vždy šťastie.</string>
+    <string name="review_hindsight_fold_tied">Táto ruka by sa skončila remízou: v čase rozhodnutia bola vaša šanca na výhru asi %1$d%%.</string>
 </resources>

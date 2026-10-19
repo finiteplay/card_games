@@ -26,7 +26,8 @@ import org.finiteplay.holdem.opponents.HintReason
 import org.finiteplay.holdem.opponents.Threats
 import org.finiteplay.holdem.rules.HandCategory
 import org.finiteplay.holdem.rules.categoryOf
-import org.finiteplay.holdem.rules.wouldHaveWon
+import org.finiteplay.holdem.rules.HindsightResult
+import org.finiteplay.holdem.rules.hindsightResult
 import org.finiteplay.holdem.opponents.hint
 import org.finiteplay.holdem.rules.Action
 import org.finiteplay.holdem.rules.HoldemSession
@@ -83,8 +84,8 @@ data class HandReview(
     val hint: HintShown,
     val beatenBy: HandCategory? = null,
     val beatenPercent: Int? = null,
-    /** For a fold: whether the folded hand, run out to the river, would have beaten everyone still in at the end. */
-    val wouldHaveWon: Boolean? = null,
+    /** For a fold: how the folded hand would have finished against everyone still in at the end. */
+    val hindsightResult: HindsightResult? = null,
 )
 
 /** The last decision the player took with a Hint on screen: whether they did as it said, and whether it was their final action of the hand. */
@@ -105,7 +106,7 @@ internal fun followedHint(taken: Action, suggested: Action): Boolean = kindOf(ta
  * fold that was not the hinted decision. [net] is the player's chips won or lost over the hand,
  * [folded] whether they folded, and [bestOpponent] the best hand an opponent showed down, if any.
  */
-internal fun reviewOf(use: HintUse?, net: Int, folded: Boolean, bestOpponent: HandCategory?, wouldHaveWon: Boolean? = null): HandReview? {
+internal fun reviewOf(use: HintUse?, net: Int, folded: Boolean, bestOpponent: HandCategory?, hindsightResult: HindsightResult? = null): HandReview? {
     use ?: return null
     val hint = use.hint
     val kind = when {
@@ -119,7 +120,7 @@ internal fun reviewOf(use: HintUse?, net: Int, folded: Boolean, bestOpponent: Ha
     } else {
         null
     }
-    return HandReview(kind, hint, warned?.first, warned?.second, wouldHaveWon.takeIf { folded })
+    return HandReview(kind, hint, warned?.first, warned?.second, hindsightResult.takeIf { folded })
 }
 
 /** The dialog when the tournament is over for the player: where they finished, and the two figures it states. */
@@ -237,7 +238,18 @@ class HoldemViewModel(
     private var largestPot = 0
 
     /** Where cues go; the screen sets it to its sound player. */
+    private var soundSinkAttached = false
+    private var initialDealSoundsPending = false
     var soundSink: (SoundEffect) -> Unit = {}
+        set(value) {
+            field = value
+            soundSinkAttached = true
+            if (initialDealSoundsPending) {
+                initialDealSoundsPending = false
+                value(SoundEffect.SHUFFLE)
+                value(SoundEffect.DEAL)
+            }
+        }
 
     private val pacing: Pacing get() = Pacing(settings.animationsEnabled)
 
@@ -358,8 +370,13 @@ class HoldemViewModel(
         }
         table = TablePresenter.dealt(session.state)
         blindsUp = null
-        soundSink(SoundEffect.SHUFFLE)
-        soundSink(SoundEffect.DEAL)
+        if (soundSinkAttached) {
+            soundSink(SoundEffect.SHUFFLE)
+            soundSink(SoundEffect.DEAL)
+        } else {
+            // The first deal starts from init, before GameScreen can attach the real sound player.
+            initialDealSoundsPending = true
+        }
         play {
             present(TablePresenter.afterDeal(table, session.state))
             advance()
@@ -521,7 +538,7 @@ class HoldemViewModel(
         largestPot = maxOf(largestPot, state.result?.payouts?.get(0) ?: 0)
         val me = table.seats[0]
         val bestOpponent = table.seats.drop(1).filter { it.contesting }.mapNotNull { it.handValue }.maxOrNull()?.let(::categoryOf)
-        val hindsight = if (me.folded) state.wouldHaveWon(0) else null
+        val hindsight = if (me.folded) state.hindsightResult(0) else null
         handReview = me.net?.let { reviewOf(hintUse, it, me.folded, bestOpponent, hindsight) }
         if (table.stage == Stage.TOURNAMENT_OVER) showEnd()
     }

@@ -47,4 +47,5 @@
     <string name="review_chance_at_decision">Quando hai deciso, la tua probabilità era del %1$d%% circa.</string>
     <string name="review_chance_slim_win">Hai vinto, ma la tua probabilità era scarsa quando hai deciso: circa il %1$d%%.</string>
     <string name="review_followed_won_slim">Hai seguito il consiglio e hai vinto, ma la tua probabilità era scarsa: circa il %1$d%%. Le buone decisioni non sono sempre fortunate.</string>
+    <string name="review_hindsight_fold_tied">Questa mano sarebbe finita in parità: al momento della decisione, la tua probabilità di vincere era circa %1$d%%.</string>
 </resources>

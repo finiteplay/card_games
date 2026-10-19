@@ -52,4 +52,5 @@
     <string name="review_chance_at_decision">Päättäessäsi mahdollisuutesi oli noin %1$d%%.</string>
     <string name="review_chance_slim_win">Voitit, mutta mahdollisuutesi oli pieni päättäessäsi: noin %1$d%%.</string>
     <string name="review_followed_won_slim">Noudatit vihjettä ja voitit, mutta mahdollisuutesi oli pieni: noin %1$d%%. Hyvillä päätöksillä ei aina ole onnea.</string>
+    <string name="review_hindsight_fold_tied">Tämä käsi olisi päättynyt tasan: päätöshetkellä voittomahdollisuutesi oli noin %1$d%%.</string>
 </resources>

@@ -52,4 +52,5 @@
     <string name="review_chance_at_decision">Da du bestemte deg, var sjansen din omtrent %1$d%%.</string>
     <string name="review_chance_slim_win">Du vant, men sjansen var liten da du bestemte deg: omtrent %1$d%%.</string>
     <string name="review_followed_won_slim">Du fulgte Hint og vant, men sjansen var liten: omtrent %1$d%%. Gode beslutninger har ikke alltid flaks.</string>
+    <string name="review_hindsight_fold_tied">Denne hånden ville endt uavgjort: Da du bestemte deg, var vinnersjansen din omtrent %1$d%%.</string>
 </resources>

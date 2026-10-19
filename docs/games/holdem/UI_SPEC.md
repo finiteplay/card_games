@@ -115,11 +115,13 @@ and Leave — and the rail keeps at most four buttons (Fold, Call, Raise, All in
 fits the 316 dp a 360 dp window leaves under the status row. The test tags stay `action_settings` and
 `action_hint` wherever the control is. Portrait is unchanged.
 
-The table is three bands: the top band of three seats; a middle band with an opponent seat at each
-edge and the board between them, the pot line under the board; and your seat. Handedness mirrors
-the bar's order in portrait and its side in landscape and changes nothing else.
-The FinitePlay wordmark uses the gap above the board cards when it fits, and sits below the pot line
-otherwise, sized to fit between the side seats.
+The table is three bands: the top band of three compact seats; a middle band with an opponent seat at
+each edge and the board between them, the pot line under the board; and your seat. Landscape opponent
+seats use 22 dp card backs and a 76 dp box so the player's seat remains visible below the board and
+pot, including when a side-pot count is shown. Handedness mirrors the bar's order in portrait and its
+side in landscape and changes nothing else.
+The FinitePlay wordmark uses the gap above the board cards when that gap is at least 32 dp. When the
+gap is smaller, omit it rather than making the middle band taller and clipping the player's seat.
 
 ## Action Bar
 
@@ -224,8 +226,10 @@ seat is its cards plus a 20 dp line for the stack and markers (90 + 20 = 110; 73
   while shown; the stack reappears with the next hand.
 - **Landscape** at 640 × 360 dp: the rail is 76 dp and the sizing column 76 dp, leaving 488 dp for
   the table. The middle band holds two 96 dp seats and the 276 dp board, 468 dp in all. The table's
-  height, 316 dp under the status row, takes regular seats and your cards at the compact 52 dp, the
-  board and the pot line (93 dp) fitting inside the middle band: 100 + 100 + 93 + 16 = 309 dp.
+  height, 316 dp under the status row, uses 76 dp compact opponent seats with 22 dp card backs; a
+  117 dp middle band reserves the 73 dp board and up to 44 dp for the pot label and side-pot count;
+  your 52 dp cards make a 93 dp seat. The 286 dp bands leave 15 dp gaps on each side, keeping all
+  six seats visible.
 - Text scales with the system font size; card faces scale with the card (`docs/PLATFORM.md`
   "Accessibility"). A name that no longer fits is ellipsized; a stack figure never is — the style
   word gives way first.
@@ -297,10 +301,11 @@ the next hand deals:
 
 With hindsight, setting the odds the player had when deciding beside what then happened:
 
-- **A fold** says whether the folded hand, run out to the river, would have beaten everyone still in at
-  the end (`HoldemState.wouldHaveWon`): `You would have won this hand, but when you decided your chance
-  was only about 26%. Judge the decision, not the result.` or `You would have lost this hand: your
-  chance was about 19% when you decided.` It judges the cards only: had the player stayed, the
+- **A fold** says whether the folded hand, run out to the river, would have beaten, tied, or lost to
+  everyone still in at the end (`HoldemState.hindsightResult`): `You would have won this hand, but when
+  you decided your chance was only about 26%. Judge the decision, not the result.`, `This hand would
+  have been a tie`, or `You would have lost this hand: your chance was about 19% when you decided.`
+  It judges the cards only: had the player stayed, the
   others might have bet differently.
 - **A win against the odds** says so: `You won, but your chance was slim when you decided: about 12%.`
   (under 40%); going against the Hint adds `When you decided, your chance was about 35%.`

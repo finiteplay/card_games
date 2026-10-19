@@ -8,8 +8,8 @@ import org.finiteplay.core.ui.R
 
 /**
  * The string resource holding this animal's name in the player's language. Each language has its own playful
- * pun on the animal or its personality (`docs/games/holdem/OPPONENT_NAMES_REVIEW.md`); [Animal.displayName] is
- * only the English original, kept for logs and tests.
+ * pun on the animal or its personality; [Animal.displayName] is only the English original, kept
+ * for logs and tests.
  */
 @StringRes
 fun Animal.nameRes(): Int = when (this) {

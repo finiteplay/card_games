@@ -54,4 +54,5 @@
     <string name="review_chance_at_decision">결정할 때의 승률은 약 %1$d%%였습니다.</string>
     <string name="review_chance_slim_win">이겼지만 결정할 때의 승률은 약 %1$d%%로 낮았습니다.</string>
     <string name="review_followed_won_slim">힌트를 따라 이겼지만 승률은 약 %1$d%%로 낮았습니다. 좋은 결정이 항상 운이 따르는 것은 아닙니다.</string>
+    <string name="review_hindsight_fold_tied">이 핸드는 무승부로 끝났을 것입니다. 결정할 당시 승리 확률은 약 %1$d%%였습니다.</string>
 </resources>

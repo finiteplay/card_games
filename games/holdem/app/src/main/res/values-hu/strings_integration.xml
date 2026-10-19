@@ -55,4 +55,5 @@
     <string name="review_chance_at_decision">Amikor döntöttél, az esélyed kb. %1$d%% volt.</string>
     <string name="review_chance_slim_win">Nyertél, de döntéskor kicsi volt az esélyed: kb. %1$d%%.</string>
     <string name="review_followed_won_slim">Követted a tippet, és nyertél, de kicsi volt az esélyed: kb. %1$d%%. A jó döntésekhez nem mindig jár szerencse.</string>
+    <string name="review_hindsight_fold_tied">Ez a leosztás döntetlennel zárult volna: döntésed pillanatában a nyerési esélyed körülbelül %1$d%% volt.</string>
 </resources>
