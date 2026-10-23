@@ -149,4 +149,22 @@
     <string name="animal_fox">Kettutango</string>
     <string name="animal_honey_badger">Mesimörkö</string>
     <string name="animal_capybara">Rentobara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Lähetä palautetta</string>
+    <string name="feedback_title">Lähetä palautetta</string>
+    <string name="feedback_category_problem">Ongelma</string>
+    <string name="feedback_category_idea">Idea</string>
+    <string name="feedback_category_other">Jotain muuta</string>
+    <string name="feedback_message_label">Viestisi</string>
+    <string name="feedback_include_info">Liitä sovelluksen versio, kieli ja laitemalli</string>
+    <string name="feedback_privacy_note">Tämä avaa sähköpostisovelluksesi ja luonnoksen osoitteeseen %1$s. Mitään ei lähetetä, ennen kuin lähetät viestin sieltä; itse peli ei koskaan muodosta verkkoyhteyttä.</string>
+    <string name="feedback_send">Lähetä</string>
+    <string name="feedback_no_email_app">Sähköpostisovellusta ei löytynyt. Voit kirjoittaa osoitteeseen %1$s.</string>
+    <string name="enjoy_title">Pidätkö tästä pelistä?</string>
+    <string name="enjoy_body">Arvio Google Playssa auttaa muita pelaajia löytämään sen. Jos jokin ei ole kunnossa, kerro meille, mitä voisimme parantaa.</string>
+    <string name="enjoy_plea">Palautteesi on ratkaisevan tärkeää ilmaisten ohjelmien kehittämiselle.</string>
+    <string name="enjoy_yes">Kyllä</string>
+    <string name="enjoy_no">Ei oikeastaan</string>
 </resources>

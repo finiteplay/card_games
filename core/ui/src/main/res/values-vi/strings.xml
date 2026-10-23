@@ -149,4 +149,21 @@
     <string name="animal_fox">Cáo Lém</string>
     <string name="animal_honey_badger">Lửng Gan</string>
     <string name="animal_capybara">Bara Tà Tà</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">Gửi phản hồi</string>
+    <string name="feedback_title">Gửi phản hồi</string>
+    <string name="feedback_category_problem">Sự cố</string>
+    <string name="feedback_category_idea">Ý tưởng</string>
+    <string name="feedback_category_other">Khác</string>
+    <string name="feedback_message_label">Nội dung của bạn</string>
+    <string name="feedback_include_info">Kèm phiên bản ứng dụng, ngôn ngữ và kiểu máy</string>
+    <string name="feedback_privacy_note">Thao tác này mở ứng dụng email với thư nháp gửi đến %1$s. Không có gì được gửi đi cho đến khi bạn gửi từ đó; bản thân trò chơi không bao giờ kết nối mạng.</string>
+    <string name="feedback_send">Gửi</string>
+    <string name="feedback_no_email_app">Không tìm thấy ứng dụng email. Bạn có thể viết thư đến %1$s.</string>
+    <string name="enjoy_title">Bạn có thích trò chơi này không?</string>
+    <string name="enjoy_body">Đánh giá trên Google Play giúp người chơi khác tìm thấy trò chơi. Nếu có điều gì chưa ổn, hãy cho chúng tôi biết cần cải thiện gì.</string>
+    <string name="enjoy_plea">Phản hồi của bạn rất quan trọng đối với việc phát triển phần mềm miễn phí.</string>
+    <string name="enjoy_yes">Có</string>
+    <string name="enjoy_no">Không hẳn</string>
 </resources>

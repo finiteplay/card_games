@@ -62,6 +62,7 @@ import org.finiteplay.freecell.solver.HINT_SOLVER_LIMITS
 import org.finiteplay.freecell.solver.HintEngine
 import org.finiteplay.freecell.solver.HintOutcome
 import org.finiteplay.solitaire.catalog.catalog.DealTraversal
+import org.finiteplay.core.ui.feedback.EnjoyController
 
 /**
  * Versions this pass deals against — frozen the same way Klondike's and Spider's are
@@ -162,6 +163,8 @@ class FreeCellViewModel(
     private val moveRecorder: MoveRecorder? = null,
     /** Which deals have been played and won; null in tests that do not exercise it (progress is then kept in memory only). */
     private val dealProgressStore: DealProgressStore? = null,
+    /** The "enjoying this game?" question (`docs/PLATFORM.md` "Feedback and rating"); null in tests that do not exercise it. */
+    val enjoy: EnjoyController? = null,
 ) : ViewModel() {
 
     /** Current settings; [FreeCellSettings.DEFAULT] until the store has been read, and always that when there is none. */
@@ -617,6 +620,7 @@ class FreeCellViewModel(
             hintsUsed = hintsUsedThisGame,
             solutionMoveCount = solutionMoveCount,
         )
+        if (outcome == FreeCellOutcome.WIN) enjoy?.goodResult()
         viewModelScope.launch {
             store.upsert(record)
             historyRecords = store.current()
@@ -626,6 +630,8 @@ class FreeCellViewModel(
     private fun needsConfirmation(): Boolean = session.hasPlayerActed && session.state.status != GameStatus.WON
 
     fun requestNewGame() {
+        // Moving on from a win: the "enjoying this game?" question, if the win made it due, opens over the new deal.
+        if (session.state.status == GameStatus.WON) enjoy?.moveOn()
         if (needsConfirmation()) pendingAction = DiscardingAction.NEW_GAME else newGame()
     }
 

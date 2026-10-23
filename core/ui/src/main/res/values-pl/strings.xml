@@ -149,4 +149,22 @@
     <string name="animal_fox">Chytrusek</string>
     <string name="animal_honey_badger">Zadziorek</string>
     <string name="animal_capybara">Luzibara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Wyślij opinię</string>
+    <string name="feedback_title">Wyślij opinię</string>
+    <string name="feedback_category_problem">Problem</string>
+    <string name="feedback_category_idea">Pomysł</string>
+    <string name="feedback_category_other">Coś innego</string>
+    <string name="feedback_message_label">Twoja wiadomość</string>
+    <string name="feedback_include_info">Dołącz wersję aplikacji, język i model urządzenia</string>
+    <string name="feedback_privacy_note">Otworzy się Twoja aplikacja pocztowa z wersją roboczą wiadomości do %1$s. Nic nie zostanie wysłane, dopóki nie wyślesz jej stamtąd; sama gra nigdy nie łączy się z internetem.</string>
+    <string name="feedback_send">Wyślij</string>
+    <string name="feedback_no_email_app">Nie znaleziono aplikacji pocztowej. Możesz napisać na adres %1$s.</string>
+    <string name="enjoy_title">Podoba Ci się ta gra?</string>
+    <string name="enjoy_body">Ocena w Google Play pomaga innym graczom ją znaleźć. Jeśli coś jest nie tak, napisz nam, co poprawić.</string>
+    <string name="enjoy_plea">Twoja opinia jest kluczowa dla rozwoju darmowego oprogramowania.</string>
+    <string name="enjoy_yes">Tak</string>
+    <string name="enjoy_no">Nie bardzo</string>
 </resources>

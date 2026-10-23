@@ -60,6 +60,8 @@ import org.finiteplay.spider.R
 import org.finiteplay.spider.layout.SuitCount
 import org.finiteplay.core.ui.layout.appendCounters
 import org.finiteplay.core.ui.layout.counterIcons
+import androidx.compose.foundation.text.TextAutoSize
+import androidx.compose.ui.unit.sp
 
 /**
  * The status row's accent for a suit count, borrowing three stops off Klondike's own
@@ -162,6 +164,8 @@ internal fun StatusRow(
                 textAlign = TextAlign.Center,
                 maxLines = statusLines,
                 overflow = TextOverflow.Ellipsis,
+                // Shrinks before it cuts: a long level name in a language like Japanese leaves the row narrow.
+                autoSize = TextAutoSize.StepBased(minFontSize = 9.sp, maxFontSize = statusStyle.fontSize, stepSize = 0.5.sp),
                 modifier = Modifier.testTag("status_row"),
             )
         }

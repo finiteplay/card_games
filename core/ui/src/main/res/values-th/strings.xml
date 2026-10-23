@@ -149,4 +149,21 @@
     <string name="animal_fox">จิ้งจอกแสบ</string>
     <string name="animal_honey_badger">แบดใจถึง</string>
     <string name="animal_capybara">คาปิชิล</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">ส่งความคิดเห็น</string>
+    <string name="feedback_title">ส่งความคิดเห็น</string>
+    <string name="feedback_category_problem">ปัญหา</string>
+    <string name="feedback_category_idea">ไอเดีย</string>
+    <string name="feedback_category_other">อื่นๆ</string>
+    <string name="feedback_message_label">ข้อความของคุณ</string>
+    <string name="feedback_include_info">แนบเวอร์ชันแอป ภาษา และรุ่นอุปกรณ์</string>
+    <string name="feedback_privacy_note">การดำเนินการนี้จะเปิดแอปอีเมลพร้อมฉบับร่างถึง %1$s จะยังไม่มีอะไรถูกส่งจนกว่าคุณจะส่งจากแอปนั้น และตัวเกมเองไม่เคยเชื่อมต่ออินเทอร์เน็ต</string>
+    <string name="feedback_send">ส่ง</string>
+    <string name="feedback_no_email_app">ไม่พบแอปอีเมล คุณสามารถเขียนถึง %1$s ได้</string>
+    <string name="enjoy_title">ชอบเกมนี้ไหม</string>
+    <string name="enjoy_body">การให้คะแนนบน Google Play ช่วยให้ผู้เล่นคนอื่นพบเกมนี้ หากมีอะไรที่ยังไม่ดี บอกเราได้ว่าควรปรับปรุงอะไร</string>
+    <string name="enjoy_plea">ความคิดเห็นของคุณมีความสำคัญอย่างยิ่งต่อการพัฒนาซอฟต์แวร์ฟรี</string>
+    <string name="enjoy_yes">ชอบ</string>
+    <string name="enjoy_no">ไม่ค่อยชอบ</string>
 </resources>

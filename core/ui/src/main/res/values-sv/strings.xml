@@ -149,4 +149,22 @@
     <string name="animal_fox">Rävpolka</string>
     <string name="animal_honey_badger">Kaxling</string>
     <string name="animal_capybara">Lugnbara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Skicka feedback</string>
+    <string name="feedback_title">Skicka feedback</string>
+    <string name="feedback_category_problem">Problem</string>
+    <string name="feedback_category_idea">Idé</string>
+    <string name="feedback_category_other">Något annat</string>
+    <string name="feedback_message_label">Ditt meddelande</string>
+    <string name="feedback_include_info">Bifoga appversion, språk och enhetsmodell</string>
+    <string name="feedback_privacy_note">Din e-postapp öppnas med ett utkast till %1$s. Inget skickas förrän du skickar det därifrån; själva spelet går aldrig ut på internet.</string>
+    <string name="feedback_send">Skicka</string>
+    <string name="feedback_no_email_app">Ingen e-postapp hittades. Du kan skriva till %1$s.</string>
+    <string name="enjoy_title">Gillar du spelet?</string>
+    <string name="enjoy_body">Ett betyg på Google Play hjälper andra spelare att hitta det. Om något inte känns rätt, berätta vad vi kan förbättra.</string>
+    <string name="enjoy_plea">Din feedback är avgörande för utvecklingen av gratis programvara.</string>
+    <string name="enjoy_yes">Ja</string>
+    <string name="enjoy_no">Inte riktigt</string>
 </resources>

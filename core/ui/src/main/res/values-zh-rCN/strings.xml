@@ -149,4 +149,21 @@
     <string name="animal_fox">狐说</string>
     <string name="animal_honey_badger">冲冲獾</string>
     <string name="animal_capybara">淡定豚</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">发送反馈</string>
+    <string name="feedback_title">发送反馈</string>
+    <string name="feedback_category_problem">问题</string>
+    <string name="feedback_category_idea">建议</string>
+    <string name="feedback_category_other">其他</string>
+    <string name="feedback_message_label">留言内容</string>
+    <string name="feedback_include_info">附上应用版本、语言和设备型号</string>
+    <string name="feedback_privacy_note">这会打开你的邮件应用，并创建一封发给 %1$s 的草稿。在你从那里发送之前，不会发出任何内容；游戏本身从不联网。</string>
+    <string name="feedback_send">发送</string>
+    <string name="feedback_no_email_app">未找到邮件应用。你可以写信至 %1$s。</string>
+    <string name="enjoy_title">喜欢这款游戏吗？</string>
+    <string name="enjoy_body">在 Google Play 上评分，可以帮助其他玩家发现这款游戏。如果有不满意的地方，请告诉我们需要改进什么。</string>
+    <string name="enjoy_plea">您的反馈对免费软件的开发至关重要。</string>
+    <string name="enjoy_yes">喜欢</string>
+    <string name="enjoy_no">不太喜欢</string>
 </resources>

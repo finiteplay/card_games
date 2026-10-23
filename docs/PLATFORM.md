@@ -165,6 +165,52 @@ move up (`core/session`'s `levelUpFor`, `core/ui`'s `LevelUpDialog`):
   **Yes** switches the level and deals a new game at it; **Not yet** (or Back) deals a new game at
   the current level.
 
+## Feedback and rating
+
+Two things let a player talk to the publisher, both from `core/ui`'s `feedback` package and both without the app going
+online: the app has no network permission and makes no request.
+
+- **The feedback form** (`FeedbackDialog`), opened from Settings > About > *Send feedback* and from the *Not really*
+  answer below. The player picks what it is about (*Problem*, *Idea*, *Something else*), writes a message (at most 4,000
+  characters) and may untick *Include app version, language and device model* (ticked by default). **Send** opens the
+  player's email app on a new message to the support address (`feedback_email`, `contact@finiteplay.org`, the one every
+  store listing gives) through `ACTION_SENDTO` on `mailto:`, which reaches only email apps. The subject is
+  `<app name> <version> – Problem|Idea|Other` (the category word is English in every language, so the mailbox can be
+  sorted); the body is the message, then, if ticked, the app and version, the Android release and API level, the device
+  make and model, and the language. Nothing else is added. The note on the form says that nothing is sent until the
+  player sends it from their email app. With no email app, a message shows the address instead.
+- **"Enjoying this game?"** (`EnjoyController`, `EnjoyFlow`). The dialog shows `BeggingCat` (a black cat with huge
+  glistening eyes and its paws together, drawn in code, in the colours of the rest-reminder cat), says that a rating on
+  Google Play helps other players find the game and that, if something is not right, the player can tell us what to
+  improve, and adds that the player's feedback is crucial for the development of free software. **Yes** opens the
+  game's Google Play page (the Play app, else the browser; a debug build's `.dev` id maps to the release app); **Not
+  really** opens the feedback form. Tapping outside or Back is neither: it is not an answer.
+
+**When it is asked** (`core/session`'s `shouldAskEnjoy`), only at the end of a game or tournament that went well, never over a
+dialog or a result banner, and only when all of these hold:
+
+- at least `ENJOY_MIN_SESSIONS` (10) sessions: app starts at least 30 minutes apart, so rotating or switching away and back
+  is one session;
+- at least `ENJOY_MIN_DAYS` (3) separate calendar days (in the player's time zone) on which the game was started, however
+  many sessions each day had; a clock set back never adds a day;
+- at least `ENJOY_MIN_GOOD_RESULTS` (3) good results: a solitaire won, a Blackjack round won, a poker tournament finished first
+  or second place, counted with the result just reached;
+- the question was never answered, and was not shown in the last `ENJOY_RETRY_DAYS` (30) days.
+
+**Where it opens.** A solitaire: when New Game is chosen from a won board, after the win dialog and after the level-up
+question (which comes first, and replaces that deal), over the new deal. Poker: when the tournament's end dialog is closed,
+or New Tournament is chosen from it. Blackjack, which has no end screen: five seconds after a won round, once the result
+banner has gone, if the player is still looking at the settled table. A game lost, abandoned or left is not asked about.
+
+**What is kept** (`core/storage`'s `EngagementStore`, its own file): the number of sessions, of separate days played (and the last of
+them) and of good results, when the question was last shown, and whether it was answered. Counts and dates only; nothing about a game
+and nothing that leaves the device. A corrupt file reads back as a new player.
+
+**Open question.** Asking whether the player enjoys the game and sending only a *yes* to the store is "review gating", which
+some store guidelines discourage. The dialog says up front where each answer leads, and the store page stays reachable to
+everyone (the listing), but Google Play's current policy on prompting for ratings should be read before a release that
+includes this.
+
 ## Time in words
 
 A length of time the player reads as a sentence — the rest reminder, the break dialog's spoken
@@ -198,7 +244,7 @@ still present in a game's code are incidental, not a contract, and nothing verif
 
 ## Settings: About
 
-Every app's Settings ends with an About group (`core/ui`'s `AboutSettingsGroup`): the running build's version, a link to the publisher's website, a link to the privacy policy, and an Acknowledgements entry that opens a dialog listing the open-source software the app ships and its licences (`COPYRIGHT.txt` is the record, and what it may contain is `AGENTS.md` "Licensing"). The links open in the player's browser; the app itself makes no network request. The privacy policy address is `privacy_policy_url` in `core/ui`'s resources.
+Every app's Settings ends with an About group (`core/ui`'s `AboutSettingsGroup`): the running build's version, a link to the publisher's website, a link to the privacy policy, a *Send feedback* entry that opens the feedback form (`## Feedback and rating`), and an Acknowledgements entry that opens a dialog listing the open-source software the app ships and its licences (`COPYRIGHT.txt` is the record, and what it may contain is `AGENTS.md` "Licensing"). The links open in the player's browser; the app itself makes no network request. The privacy policy address is `privacy_policy_url` in `core/ui`'s resources.
 
 ## Persistence
 

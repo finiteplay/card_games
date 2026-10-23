@@ -149,4 +149,22 @@
     <string name="animal_fox">Rævestreg</string>
     <string name="animal_honey_badger">Kækling</string>
     <string name="animal_capybara">Hyggebara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Send feedback</string>
+    <string name="feedback_title">Send feedback</string>
+    <string name="feedback_category_problem">Problem</string>
+    <string name="feedback_category_idea">Idé</string>
+    <string name="feedback_category_other">Noget andet</string>
+    <string name="feedback_message_label">Din besked</string>
+    <string name="feedback_include_info">Medtag appversion, sprog og enhedsmodel</string>
+    <string name="feedback_privacy_note">Dette åbner din mailapp med en kladde til %1$s. Intet sendes, før du selv sender den derfra; selve spillet går aldrig online.</string>
+    <string name="feedback_send">Send</string>
+    <string name="feedback_no_email_app">Ingen mailapp fundet. Du kan skrive til %1$s.</string>
+    <string name="enjoy_title">Kan du lide spillet?</string>
+    <string name="enjoy_body">En bedømmelse på Google Play hjælper andre spillere med at finde det. Hvis noget ikke er i orden, så fortæl os, hvad vi kan forbedre.</string>
+    <string name="enjoy_plea">Din feedback er afgørende for udviklingen af gratis software.</string>
+    <string name="enjoy_yes">Ja</string>
+    <string name="enjoy_no">Ikke rigtig</string>
 </resources>

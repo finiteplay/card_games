@@ -56,11 +56,11 @@ fun ActionBar(
     landscapeGroup: LandscapeActionGroup = LandscapeActionGroup.PRIMARY,
 ) {
     val accents = LocalAppColors.current.action
-    val settings = BoardAction(stringResource(CoreR.string.action_settings), Icons.Filled.Settings, accents.settings, enabled = true, onClick = onSettings)
-    val replay = BoardAction(stringResource(CoreR.string.action_replay), Icons.Filled.Replay, accents.replay, enabled = true, onClick = onReplay)
-    val new = BoardAction(stringResource(CoreR.string.action_new), Icons.Filled.Add, accents.new, enabled = true, onClick = onNew)
-    val hint = BoardAction(stringResource(CoreR.string.action_hint), Icons.Filled.Lightbulb, accents.hint, enabled = hintEnabled, onClick = onHint)
-    val undo = BoardAction(stringResource(CoreR.string.action_undo), Icons.AutoMirrored.Filled.Undo, accents.undo, enabled = canUndo, onClick = onUndo)
+    val settings = BoardAction(stringResource(CoreR.string.action_settings), Icons.Filled.Settings, accents.settings, enabled = true, onClick = onSettings, testTag = "action_settings")
+    val replay = BoardAction(stringResource(CoreR.string.action_replay), Icons.Filled.Replay, accents.replay, enabled = true, onClick = onReplay, testTag = "action_replay")
+    val new = BoardAction(stringResource(CoreR.string.action_new), Icons.Filled.Add, accents.new, enabled = true, onClick = onNew, testTag = "action_new")
+    val hint = BoardAction(stringResource(CoreR.string.action_hint), Icons.Filled.Lightbulb, accents.hint, enabled = hintEnabled, onClick = onHint, testTag = "action_hint")
+    val undo = BoardAction(stringResource(CoreR.string.action_undo), Icons.AutoMirrored.Filled.Undo, accents.undo, enabled = canUndo, onClick = onUndo, testTag = "action_undo")
 
     val actions = if (orientation == BoardOrientation.PORTRAIT) {
         listOf(settings, replay, new, hint, undo)

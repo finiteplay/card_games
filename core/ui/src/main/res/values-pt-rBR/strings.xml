@@ -149,4 +149,22 @@
     <string name="animal_fox">Sorraposa</string>
     <string name="animal_honey_badger">Texugão</string>
     <string name="animal_capybara">Calmivara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Enviar feedback</string>
+    <string name="feedback_title">Enviar feedback</string>
+    <string name="feedback_category_problem">Problema</string>
+    <string name="feedback_category_idea">Ideia</string>
+    <string name="feedback_category_other">Outra coisa</string>
+    <string name="feedback_message_label">Sua mensagem</string>
+    <string name="feedback_include_info">Incluir versão do app, idioma e modelo do aparelho</string>
+    <string name="feedback_privacy_note">Isso abre seu app de e-mail com um rascunho para %1$s. Nada é enviado até você enviar por lá; o jogo em si nunca fica on-line.</string>
+    <string name="feedback_send">Enviar</string>
+    <string name="feedback_no_email_app">Nenhum app de e-mail encontrado. Você pode escrever para %1$s.</string>
+    <string name="enjoy_title">Está gostando deste jogo?</string>
+    <string name="enjoy_body">Uma avaliação no Google Play ajuda outros jogadores a encontrá-lo. Se algo não estiver bom, conte para a gente o que melhorar.</string>
+    <string name="enjoy_plea">Seu feedback é fundamental para o desenvolvimento de software gratuito.</string>
+    <string name="enjoy_yes">Sim</string>
+    <string name="enjoy_no">Nem tanto</string>
 </resources>

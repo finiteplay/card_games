@@ -149,4 +149,21 @@
     <string name="animal_fox">コンニヤリ</string>
     <string name="animal_honey_badger">イケテル</string>
     <string name="animal_capybara">のんびら</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">フィードバックを送信</string>
+    <string name="feedback_title">フィードバックを送信</string>
+    <string name="feedback_category_problem">問題</string>
+    <string name="feedback_category_idea">アイデア</string>
+    <string name="feedback_category_other">その他</string>
+    <string name="feedback_message_label">メッセージ</string>
+    <string name="feedback_include_info">アプリのバージョン、言語、機種を含める</string>
+    <string name="feedback_privacy_note">メールアプリが開き、%1$s 宛ての下書きが作成されます。そこで送信するまで何も送られません。ゲーム自体がオンラインに接続することはありません。</string>
+    <string name="feedback_send">送信</string>
+    <string name="feedback_no_email_app">メールアプリが見つかりません。%1$s までご連絡ください。</string>
+    <string name="enjoy_title">このゲームを楽しんでいますか？</string>
+    <string name="enjoy_body">Google Play で評価していただくと、ほかのプレイヤーがこのゲームを見つけやすくなります。気になる点があれば、改善してほしいことを教えてください。</string>
+    <string name="enjoy_plea">皆さまのフィードバックは、無料ソフトウェアの開発に欠かせません。</string>
+    <string name="enjoy_yes">はい</string>
+    <string name="enjoy_no">いまひとつ</string>
 </resources>

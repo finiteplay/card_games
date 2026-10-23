@@ -35,6 +35,8 @@ import org.finiteplay.freecell.storage.FreeCellSettingsStore
 import org.finiteplay.freecell.storage.FreeCellTraversalStore
 import org.finiteplay.freecell.ui.game.FreeCellViewModel
 import org.finiteplay.freecell.ui.game.GameScreen
+import org.finiteplay.core.ui.feedback.EnjoyController
+import org.finiteplay.core.storage.EngagementStore
 
 class MainActivity : ComponentActivity() {
     /** Applies the in-app language before any resource is resolved (see [AppLocale]). */
@@ -102,6 +104,7 @@ private fun rememberFreeCellViewModelFactory(): ViewModelProvider.Factory {
                     historyStore = FreeCellHistoryStore(filesDir),
                     traversalStore = FreeCellTraversalStore(filesDir),
                     dealProgressStore = DealProgressStore(filesDir),
+                    enjoy = EnjoyController(EngagementStore(filesDir)),
                     catalogLoader = { FreeCellCertifiedDealCatalog.load(context) },
                     solutionCatalog = FreeCellSolutionCatalog(context),
                     moveRecorder = debugMoveRecorder(filesDir),

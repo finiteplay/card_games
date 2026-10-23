@@ -149,4 +149,22 @@
     <string name="animal_fox">Ravaszdi</string>
     <string name="animal_honey_badger">Borzino</string>
     <string name="animal_capybara">Nyugibara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Visszajelzés küldése</string>
+    <string name="feedback_title">Visszajelzés küldése</string>
+    <string name="feedback_category_problem">Probléma</string>
+    <string name="feedback_category_idea">Ötlet</string>
+    <string name="feedback_category_other">Valami más</string>
+    <string name="feedback_message_label">Üzeneted</string>
+    <string name="feedback_include_info">Alkalmazásverzió, nyelv és eszközmodell csatolása</string>
+    <string name="feedback_privacy_note">Ez megnyitja az e-mail-alkalmazásodat egy %1$s címre szóló piszkozattal. Semmi sem megy el, amíg onnan el nem küldöd; maga a játék soha nem csatlakozik az internethez.</string>
+    <string name="feedback_send">Küldés</string>
+    <string name="feedback_no_email_app">Nem található e-mail-alkalmazás. Írhatsz ide: %1$s.</string>
+    <string name="enjoy_title">Tetszik a játék?</string>
+    <string name="enjoy_body">Egy értékelés a Google Playen segít más játékosoknak megtalálni. Ha valami nem stimmel, írd meg, min javítsunk.</string>
+    <string name="enjoy_plea">A visszajelzésed döntő fontosságú az ingyenes szoftverek fejlesztéséhez.</string>
+    <string name="enjoy_yes">Igen</string>
+    <string name="enjoy_no">Nem igazán</string>
 </resources>

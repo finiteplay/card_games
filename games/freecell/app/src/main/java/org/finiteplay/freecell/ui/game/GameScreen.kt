@@ -40,6 +40,7 @@ import org.finiteplay.core.ui.table.feltTable
 import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.freecell.layout.GameStatus
 import org.finiteplay.freecell.rules.isStuck
+import org.finiteplay.core.ui.feedback.EnjoyHost
 
 /**
  * Status row, board, and the game's actions (Settings, Replay, New Game, Hint, Undo), plus the
@@ -197,6 +198,8 @@ fun GameScreen(viewModel: FreeCellViewModel, modifier: Modifier = Modifier) {
             onClose = { showStatistics = false },
         )
     }
+
+    EnjoyHost(viewModel.enjoy)
 
     LaunchedEffect(showWinDialog) { if (showWinDialog) soundPlayer.play(SoundEffect.WIN) }
     if (showWinDialog) {

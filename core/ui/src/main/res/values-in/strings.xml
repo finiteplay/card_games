@@ -149,4 +149,21 @@
     <string name="animal_fox">Rubahaha</string>
     <string name="animal_honey_badger">Madunekat</string>
     <string name="animal_capybara">Santaibara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">Kirim masukan</string>
+    <string name="feedback_title">Kirim masukan</string>
+    <string name="feedback_category_problem">Masalah</string>
+    <string name="feedback_category_idea">Ide</string>
+    <string name="feedback_category_other">Hal lain</string>
+    <string name="feedback_message_label">Pesan Anda</string>
+    <string name="feedback_include_info">Sertakan versi aplikasi, bahasa, dan model perangkat</string>
+    <string name="feedback_privacy_note">Ini membuka aplikasi email Anda dengan draf untuk %1$s. Tidak ada yang terkirim sampai Anda mengirimnya dari sana; permainan ini sendiri tidak pernah online.</string>
+    <string name="feedback_send">Kirim</string>
+    <string name="feedback_no_email_app">Aplikasi email tidak ditemukan. Anda dapat menulis ke %1$s.</string>
+    <string name="enjoy_title">Menikmati permainan ini?</string>
+    <string name="enjoy_body">Penilaian di Google Play membantu pemain lain menemukannya. Jika ada yang kurang pas, beri tahu kami apa yang perlu diperbaiki.</string>
+    <string name="enjoy_plea">Masukan Anda sangat penting bagi pengembangan perangkat lunak gratis.</string>
+    <string name="enjoy_yes">Ya</string>
+    <string name="enjoy_no">Tidak juga</string>
 </resources>

@@ -57,6 +57,7 @@ import org.finiteplay.core.ui.sound.GatedSoundPlayer
 import org.finiteplay.core.ui.sound.SoundEffect
 import org.finiteplay.core.ui.table.feltTable
 import org.finiteplay.core.ui.theme.LocalAppColors
+import org.finiteplay.core.ui.feedback.EnjoyHost
 
 /** Pacing of the dealer's reveal (`UI_SPEC.md` "Motion"): between cards, and before results. */
 private const val DEALER_STEP_MS = 600L
@@ -73,6 +74,7 @@ fun GameScreen(viewModel: BlackjackViewModel, modifier: Modifier = Modifier) {
     var showSettings by remember { mutableStateOf(false) }
     var showHelp by remember { mutableStateOf(false) }
     var showStatistics by remember { mutableStateOf(false) }
+    EnjoyHost(viewModel.enjoy)
 
     val androidSoundPlayer = remember { AndroidSoundPlayer(context) }
     DisposableEffect(androidSoundPlayer) { onDispose { androidSoundPlayer.release() } }

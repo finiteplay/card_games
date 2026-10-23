@@ -149,4 +149,22 @@
     <string name="animal_fox">Revlender</string>
     <string name="animal_honey_badger">Røffling</string>
     <string name="animal_capybara">Rolibara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Send tilbakemelding</string>
+    <string name="feedback_title">Send tilbakemelding</string>
+    <string name="feedback_category_problem">Problem</string>
+    <string name="feedback_category_idea">Idé</string>
+    <string name="feedback_category_other">Noe annet</string>
+    <string name="feedback_message_label">Din melding</string>
+    <string name="feedback_include_info">Ta med appversjon, språk og enhetsmodell</string>
+    <string name="feedback_privacy_note">E-postappen din åpnes med et utkast til %1$s. Ingenting sendes før du sender det derfra; selve spillet går aldri på nett.</string>
+    <string name="feedback_send">Send</string>
+    <string name="feedback_no_email_app">Fant ingen e-postapp. Du kan skrive til %1$s.</string>
+    <string name="enjoy_title">Liker du spillet?</string>
+    <string name="enjoy_body">En vurdering på Google Play hjelper andre spillere med å finne det. Hvis noe ikke er som det skal, si fra om hva vi kan forbedre.</string>
+    <string name="enjoy_plea">Tilbakemeldingen din er avgjørende for utviklingen av gratis programvare.</string>
+    <string name="enjoy_yes">Ja</string>
+    <string name="enjoy_no">Ikke helt</string>
 </resources>

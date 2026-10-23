@@ -149,4 +149,22 @@
     <string name="animal_fox">Liškotrot</string>
     <string name="animal_honey_badger">Medojedino</string>
     <string name="animal_capybara">Pohodbara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Odeslat zpětnou vazbu</string>
+    <string name="feedback_title">Odeslat zpětnou vazbu</string>
+    <string name="feedback_category_problem">Problém</string>
+    <string name="feedback_category_idea">Nápad</string>
+    <string name="feedback_category_other">Něco jiného</string>
+    <string name="feedback_message_label">Tvoje zpráva</string>
+    <string name="feedback_include_info">Přiložit verzi aplikace, jazyk a model zařízení</string>
+    <string name="feedback_privacy_note">Otevře se tvoje e-mailová aplikace s konceptem zprávy na %1$s. Nic se neodešle, dokud ji tam neodešleš; samotná hra se nikdy nepřipojuje k internetu.</string>
+    <string name="feedback_send">Odeslat</string>
+    <string name="feedback_no_email_app">Nebyla nalezena žádná e-mailová aplikace. Můžeš napsat na %1$s.</string>
+    <string name="enjoy_title">Baví tě tato hra?</string>
+    <string name="enjoy_body">Hodnocení na Google Play pomůže ostatním hráčům ji najít. Pokud něco není v pořádku, napiš nám, co zlepšit.</string>
+    <string name="enjoy_plea">Vaše zpětná vazba je zásadní pro vývoj bezplatného softwaru.</string>
+    <string name="enjoy_yes">Ano</string>
+    <string name="enjoy_no">Ani ne</string>
 </resources>

@@ -61,6 +61,7 @@ import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.holdem.R
 import kotlinx.coroutines.delay
 import org.finiteplay.core.ui.animal.localizedName
+import org.finiteplay.core.ui.feedback.EnjoyHost
 
 /**
  * The table, the bar and the dialogs. Everything shown is derived from [HoldemViewModel.table], which
@@ -193,6 +194,7 @@ fun GameScreen(
 
     if (viewModel.leaveConfirmVisible) LeaveDialog(viewModel)
     viewModel.endDialog?.let { EndDialog(it, viewModel, onStatistics) }
+    EnjoyHost(viewModel.enjoy)
 
     if (viewModel.showRestReminderDialog) {
         RestReminderDialog(

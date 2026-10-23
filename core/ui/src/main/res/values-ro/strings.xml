@@ -149,4 +149,22 @@
     <string name="animal_fox">Vulpotrot</string>
     <string name="animal_honey_badger">Bursucino</string>
     <string name="animal_capybara">Lejerbara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Trimite feedback</string>
+    <string name="feedback_title">Trimite feedback</string>
+    <string name="feedback_category_problem">Problemă</string>
+    <string name="feedback_category_idea">Idee</string>
+    <string name="feedback_category_other">Altceva</string>
+    <string name="feedback_message_label">Mesajul tău</string>
+    <string name="feedback_include_info">Include versiunea aplicației, limba și modelul dispozitivului</string>
+    <string name="feedback_privacy_note">Se deschide aplicația ta de e-mail cu o ciornă către %1$s. Nu se trimite nimic până nu o trimiți tu de acolo; jocul în sine nu se conectează niciodată la internet.</string>
+    <string name="feedback_send">Trimite</string>
+    <string name="feedback_no_email_app">Nu s-a găsit nicio aplicație de e-mail. Poți scrie la %1$s.</string>
+    <string name="enjoy_title">Îți place jocul?</string>
+    <string name="enjoy_body">O evaluare pe Google Play îi ajută pe alți jucători să-l găsească. Dacă ceva nu e în regulă, spune-ne ce să îmbunătățim.</string>
+    <string name="enjoy_plea">Feedbackul tău este esențial pentru dezvoltarea software-ului gratuit.</string>
+    <string name="enjoy_yes">Da</string>
+    <string name="enjoy_no">Nu prea</string>
 </resources>

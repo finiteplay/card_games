@@ -5,6 +5,7 @@ import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.isDialog
 
 /** The interface languages of every game (`docs/languages.txt`), as the tags the in-app language override takes. */
 object AuditLocales {
@@ -18,6 +19,12 @@ object AuditLocales {
 fun ComposeTestRule.audit(audit: TextFitAudit, screen: String) {
     waitForIdle()
     audit.scan(onRoot(useUnmergedTree = true).fetchSemanticsNode(), screen)
+}
+
+/** Files what is in the dialog on screen now under [screen]: a dialog is a window of its own, so [audit] does not see it. */
+fun ComposeTestRule.auditDialog(audit: TextFitAudit, screen: String) {
+    waitForIdle()
+    audit.scan(onNode(isDialog(), useUnmergedTree = true).fetchSemanticsNode(), screen)
 }
 
 /** Taps [tag] if the screen has it; returns whether it did. */

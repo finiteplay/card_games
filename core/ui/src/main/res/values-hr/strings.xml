@@ -149,4 +149,22 @@
     <string name="animal_fox">Lukavko</string>
     <string name="animal_honey_badger">Medoboj</string>
     <string name="animal_capybara">Ležibara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Pošalji povratne informacije</string>
+    <string name="feedback_title">Pošalji povratne informacije</string>
+    <string name="feedback_category_problem">Problem</string>
+    <string name="feedback_category_idea">Ideja</string>
+    <string name="feedback_category_other">Nešto drugo</string>
+    <string name="feedback_message_label">Tvoja poruka</string>
+    <string name="feedback_include_info">Priloži verziju aplikacije, jezik i model uređaja</string>
+    <string name="feedback_privacy_note">Otvara se tvoja aplikacija za e-poštu s nacrtom poruke za %1$s. Ništa se ne šalje dok je ondje ne pošalješ; sama igra nikad se ne spaja na internet.</string>
+    <string name="feedback_send">Pošalji</string>
+    <string name="feedback_no_email_app">Nije pronađena aplikacija za e-poštu. Možeš pisati na %1$s.</string>
+    <string name="enjoy_title">Sviđa li ti se igra?</string>
+    <string name="enjoy_body">Ocjena na Google Playu pomaže drugim igračima da je pronađu. Ako nešto ne valja, reci nam što da poboljšamo.</string>
+    <string name="enjoy_plea">Vaše povratne informacije presudne su za razvoj besplatnog softvera.</string>
+    <string name="enjoy_yes">Da</string>
+    <string name="enjoy_no">Baš i ne</string>
 </resources>

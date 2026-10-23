@@ -30,6 +30,8 @@ import org.finiteplay.holdem.storage.HoldemSettingsStore
 import org.finiteplay.holdem.storage.HoldemTournamentStore
 import org.finiteplay.holdem.ui.GameScreen
 import org.finiteplay.holdem.ui.HoldemViewModel
+import org.finiteplay.core.ui.feedback.EnjoyController
+import org.finiteplay.core.storage.EngagementStore
 
 class MainActivity : ComponentActivity() {
     /** Applies the in-app language before any resource is resolved (see [AppLocale]). */
@@ -86,6 +88,7 @@ private fun rememberHoldemViewModelFactory(): ViewModelProvider.Factory {
                 HoldemViewModel(
                     storage = HoldemGameStorage(HoldemTournamentStore(filesDir), HoldemHandStore(filesDir)),
                     settingsStore = HoldemSettingsStore(filesDir),
+                    enjoy = EnjoyController(EngagementStore(filesDir)),
                 )
             }
         }

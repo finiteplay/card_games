@@ -29,6 +29,8 @@ import org.finiteplay.blackjack.ui.GameScreen
 import org.finiteplay.core.storage.AppLocale
 import org.finiteplay.core.ui.theme.FinitePlayTheme
 import org.finiteplay.core.ui.theme.resolveDark
+import org.finiteplay.core.ui.feedback.EnjoyController
+import org.finiteplay.core.storage.EngagementStore
 
 class MainActivity : ComponentActivity() {
     /** Applies the in-app language before any resource is resolved (see [AppLocale]). */
@@ -87,6 +89,7 @@ private fun rememberBlackjackViewModelFactory(): ViewModelProvider.Factory {
                     roundStore = BlackjackRoundStore(filesDir),
                     ledgerStore = BlackjackLedgerStore(filesDir),
                     settingsStore = BlackjackSettingsStore(filesDir),
+                    enjoy = EnjoyController(EngagementStore(filesDir)),
                 )
             }
         }

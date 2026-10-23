@@ -27,6 +27,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import org.finiteplay.core.ui.R
+import org.finiteplay.core.ui.feedback.FeedbackDialog
 import org.finiteplay.core.ui.theme.LocalAppColors
 
 /**
@@ -56,7 +57,7 @@ val SHARED_OPEN_SOURCE_NOTICES = listOf(
 
 /**
  * The About group, last in Settings: the running build's version, the publisher's website, the
- * privacy policy, and the open-source acknowledgements in a dialog.
+ * privacy policy, the feedback form, and the open-source acknowledgements in a dialog.
  *
  * The version is read from the package rather than compiled in: `buildConfig` is disabled in this
  * project, so `BuildConfig.VERSION_NAME` does not exist, and the package manager is the one source
@@ -73,6 +74,7 @@ fun AboutSettingsGroup(extraNotices: List<OpenSourceNotice> = emptyList()) {
     }
     val uriHandler = LocalUriHandler.current
     var showAcknowledgements by remember { mutableStateOf(false) }
+    var showFeedback by remember { mutableStateOf(false) }
 
     SettingsGroup(stringResource(R.string.settings_group_about)) {
         InfoSettingRow(
@@ -84,11 +86,15 @@ fun AboutSettingsGroup(extraNotices: List<OpenSourceNotice> = emptyList()) {
         LinkSettingRow(stringResource(R.string.about_website), website, "about_website") { uriHandler.openUri(website) }
         val privacy = stringResource(R.string.privacy_policy_url)
         LinkSettingRow(stringResource(R.string.about_privacy_policy), null, "about_privacy_policy") { uriHandler.openUri(privacy) }
+        LinkSettingRow(stringResource(R.string.about_send_feedback), null, "about_send_feedback") { showFeedback = true }
         LinkSettingRow(stringResource(R.string.about_acknowledgements), null, "about_acknowledgements") { showAcknowledgements = true }
     }
 
     if (showAcknowledgements) {
         AcknowledgementsDialog(SHARED_OPEN_SOURCE_NOTICES + extraNotices) { showAcknowledgements = false }
+    }
+    if (showFeedback) {
+        FeedbackDialog(onDone = { showFeedback = false })
     }
 }
 

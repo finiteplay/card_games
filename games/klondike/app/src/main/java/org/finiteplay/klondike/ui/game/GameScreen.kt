@@ -115,6 +115,11 @@ import org.finiteplay.core.ui.sound.GatedSoundPlayer
 import org.finiteplay.core.ui.sound.SoundEffect
 import org.finiteplay.core.ui.layout.appendCounters
 import org.finiteplay.core.ui.layout.counterIcons
+import org.finiteplay.core.ui.feedback.EnjoyHost
+import org.finiteplay.core.ui.feedback.EnjoyController
+import org.finiteplay.core.storage.EngagementStore
+import androidx.compose.foundation.text.TextAutoSize
+import androidx.compose.ui.unit.sp
 
 /** Which full-screen overlay, if any, sits on top of the board (`docs/games/klondike/UI_SPEC.md`). */
 private enum class Overlay { SETTINGS, STATISTICS, HELP }
@@ -576,6 +581,8 @@ fun GameScreen(
         )
     }
 
+    EnjoyHost(viewModel.enjoy)
+
     viewModel.levelUpOffer?.let { offer ->
         LevelUpDialog(
             wins = offer.wins,
@@ -754,6 +761,8 @@ private fun StatusRow(
                 // a long translation may still use a second line rather than ellipsizing.
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
+                // Shrinks before it cuts: a long level name in a language like Japanese leaves the row narrow.
+                autoSize = TextAutoSize.StepBased(minFontSize = 9.sp, maxFontSize = statusStyle.fontSize, stepSize = 0.5.sp),
                 modifier = Modifier.testTag("status_row"),
             )
         }
@@ -892,6 +901,7 @@ fun rememberGameViewModelFactory(): ViewModelProvider.Factory {
                     gameArchiveStore = GameArchiveStore(filesDir),
                     catalogTraversalStore = CatalogTraversalStore(filesDir),
                     dealProgressStore = DealProgressStore(filesDir),
+                    enjoy = EnjoyController(EngagementStore(filesDir)),
                     solutionCatalog = SolutionCatalog(context),
                     certifiedCatalog = when (catalog) {
                         is CertifiedDealCatalog.LoadResult.Valid -> catalog.catalog

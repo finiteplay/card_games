@@ -149,4 +149,22 @@
     <string name="animal_fox">Хитрулис</string>
     <string name="animal_honey_badger">Медозавр</string>
     <string name="animal_capybara">Спокібара</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Надіслати відгук</string>
+    <string name="feedback_title">Надіслати відгук</string>
+    <string name="feedback_category_problem">Проблема</string>
+    <string name="feedback_category_idea">Ідея</string>
+    <string name="feedback_category_other">Інше</string>
+    <string name="feedback_message_label">Ваше повідомлення</string>
+    <string name="feedback_include_info">Додати версію застосунку, мову та модель пристрою</string>
+    <string name="feedback_privacy_note">Відкриється ваш поштовий застосунок із чернеткою листа на адресу %1$s. Нічого не надсилається, доки ви не надішлете лист звідти; сама гра ніколи не виходить в інтернет.</string>
+    <string name="feedback_send">Надіслати</string>
+    <string name="feedback_no_email_app">Поштовий застосунок не знайдено. Ви можете написати на %1$s.</string>
+    <string name="enjoy_title">Подобається ця гра?</string>
+    <string name="enjoy_body">Оцінка в Google Play допомагає іншим гравцям знайти гру. Якщо щось не так, розкажіть, що нам покращити.</string>
+    <string name="enjoy_plea">Ваш відгук має вирішальне значення для розвитку безкоштовного програмного забезпечення.</string>
+    <string name="enjoy_yes">Так</string>
+    <string name="enjoy_no">Не дуже</string>
 </resources>

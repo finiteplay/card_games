@@ -37,6 +37,8 @@ import org.finiteplay.core.ui.layout.RestReminderInterval
 import org.finiteplay.core.ui.theme.ThemeMode
 import java.security.SecureRandom
 import java.util.UUID
+import org.finiteplay.core.ui.feedback.EnjoyController
+import kotlinx.coroutines.delay
 
 /** What the table is showing, which decides the action bar (`docs/games/blackjack/UI_SPEC.md` "Screens and States"). */
 enum class TableState { LOADING, IDLE, INSURANCE, PLAYING, SETTLED }
@@ -65,6 +67,8 @@ class BlackjackViewModel(
     private val seedSource: () -> Long = SecureRandom()::nextLong,
     /** Test and debug seam: the shoe a round is dealt from. Null in release, where it is always the seed's own. */
     private val shoeOverride: ((Long) -> List<org.finiteplay.cards.Card>)? = null,
+    /** The "enjoying this game?" question (`docs/PLATFORM.md` "Feedback and rating"); null in tests that do not exercise it. */
+    val enjoy: EnjoyController? = null,
 ) : ViewModel() {
 
     var isLoading by mutableStateOf(true)
@@ -255,6 +259,7 @@ class BlackjackViewModel(
                     ledger = paid
                     roundStore.clear()
                     resetOfferVisible = Chips.needsReset(paid.bankroll)
+                    if (state.settlement!!.total > 0) askEnjoyAfterBanner()
                 } else {
                     roundStore.save(SavedRound(gameId, state.seed, state.bet, next.log))
                 }
@@ -269,6 +274,20 @@ class BlackjackViewModel(
             } finally {
                 busy = false
             }
+        }
+    }
+
+    /**
+     * A won round is a good result. The "enjoying this game?" question, if the win made it due, opens a few seconds
+     * later, once the result banner has gone and only if the player is still looking at the settled table: it never
+     * opens over the banner, nor over the next round.
+     */
+    private fun askEnjoyAfterBanner() {
+        val enjoy = enjoy ?: return
+        enjoy.goodResult()
+        viewModelScope.launch {
+            delay(ENJOY_AFTER_ROUND_MS)
+            if (tableState == TableState.SETTLED && !busy && !resetOfferVisible) enjoy.moveOn()
         }
     }
 
@@ -422,3 +441,6 @@ internal fun reviewOf(use: AdviceUse?, state: BlackjackState): RoundReview? {
     }
     return RoundReview(kind, use.advice, details)
 }
+
+/** How long after a won round the "enjoying this game?" question waits: past the result banner, which is on screen for a few seconds. */
+private const val ENJOY_AFTER_ROUND_MS = 5_000L

@@ -36,6 +36,8 @@ import org.finiteplay.core.ui.theme.ThemeMode
 import org.finiteplay.core.ui.theme.resolveDark
 import org.finiteplay.spider.ui.game.GameScreen
 import org.finiteplay.spider.ui.game.SpiderViewModel
+import org.finiteplay.core.ui.feedback.EnjoyController
+import org.finiteplay.core.storage.EngagementStore
 
 class MainActivity : ComponentActivity() {
     /** Applies the in-app language before any resource is resolved (see [AppLocale]). */
@@ -104,6 +106,7 @@ private fun rememberSpiderViewModelFactory(): ViewModelProvider.Factory {
                     historyStore = SpiderHistoryStore(filesDir),
                     traversalStore = SpiderTraversalStore(filesDir),
                     dealProgressStore = DealProgressStore(filesDir),
+                    enjoy = EnjoyController(EngagementStore(filesDir)),
                     certifiedCatalog = when (catalog) {
                         is SpiderCertifiedDealCatalog.LoadResult.Valid -> catalog.catalog
                         is SpiderCertifiedDealCatalog.LoadResult.Invalid -> null

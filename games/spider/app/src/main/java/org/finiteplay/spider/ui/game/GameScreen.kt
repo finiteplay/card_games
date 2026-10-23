@@ -65,6 +65,7 @@ import org.finiteplay.core.ui.table.feltTable
 import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.spider.R
 import org.finiteplay.spider.layout.GameStatus
+import org.finiteplay.core.ui.feedback.EnjoyHost
 
 /**
  * Status row, board, and the two actions this vertical slice has (Undo, New Game). Settings,
@@ -296,6 +297,8 @@ fun GameScreen(viewModel: SpiderViewModel, modifier: Modifier = Modifier) {
             onDismiss = viewModel::dismissPendingAction,
         )
     }
+
+    EnjoyHost(viewModel.enjoy)
 
     viewModel.levelUpOffer?.let { offer ->
         LevelUpDialog(

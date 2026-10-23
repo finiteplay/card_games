@@ -70,6 +70,7 @@ import org.finiteplay.core.storage.advancedBy
 import org.finiteplay.spider.storage.computeSpiderStatistics
 import kotlin.random.Random
 import kotlin.time.Duration.Companion.seconds
+import org.finiteplay.core.ui.feedback.EnjoyController
 
 /**
  * Versions this pass deals against — frozen the same way Klondike's are, and stated here rather
@@ -161,6 +162,8 @@ class SpiderViewModel(
     private val dealProgressStore: DealProgressStore? = null,
     /** Builds the hint engine for a timeout; a seam so a test can supply one that never finds a line. */
     private val hintEngineFactory: (HintTimeout) -> HintEngine = { HintEngine(SpiderSolver(hintSolverLimits(it))) },
+    /** The "enjoying this game?" question (`docs/PLATFORM.md` "Feedback and rating"); null in tests that do not exercise it. */
+    val enjoy: EnjoyController? = null,
 ) : ViewModel() {
 
     /** Whether the active deal came from the certified catalog rather than the uncertified formula. */
@@ -319,6 +322,7 @@ class SpiderViewModel(
             solutionMoveCount = solutionMoveCount,
         )
         val wonSuits = session.state.suitCount
+        if (outcome == SpiderOutcome.WIN) enjoy?.goodResult()
         viewModelScope.launch {
             store.upsert(record)
             historyRecords = store.current()
@@ -927,6 +931,8 @@ class SpiderViewModel(
             levelUpOffer = offer
             return
         }
+        // Moving on from a win: the "enjoying this game?" question, if the win made it due, opens over the new deal.
+        if (session.state.isWon) enjoy?.moveOn()
         if (needsConfirmation()) pendingAction = DiscardingAction.NEW_GAME else newGame()
     }
 

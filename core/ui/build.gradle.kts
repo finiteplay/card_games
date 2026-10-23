@@ -36,6 +36,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    // The dialogs' own tests (Robolectric) resolve this module's strings.
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 // Depends on :core:cards and nothing game-shaped: card rendering needs to know what a
@@ -44,7 +49,7 @@ android {
 dependencies {
     api(project(":core:cards"))
     // For SYSTEM_LANGUAGE, the persisted value the language picker offers. core:storage depends
-    // on no other project, so this direction cannot cycle.
+    // only on core:session, which depends on no project, so this direction cannot cycle.
     api(project(":core:storage"))
     // For formatElapsed, so a dialog naming a game's elapsed time reads it the same way the
     // status row does. core:session depends on no other project, so this cannot cycle.
@@ -58,8 +63,16 @@ dependencies {
     api(libs.compose.ui)
     api(libs.compose.material.icons.extended)
     implementation(libs.compose.ui.tooling.preview)
+    // For EnjoyHost, which counts a session when the app comes to the foreground.
+    implementation(libs.lifecycle.runtime.compose)
 
     testImplementation(libs.junit4)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.compose.ui.test.junit4)
+    testImplementation(libs.androidx.espresso.core)
+    debugImplementation(libs.compose.ui.test.manifest)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(testFixtures(project(":core:storage")))
 
     testFixturesImplementation(composeBom)
     testFixturesImplementation(libs.compose.ui)

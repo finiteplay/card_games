@@ -149,4 +149,22 @@
     <string name="animal_fox">Ryško</string>
     <string name="animal_honey_badger">Medoboj</string>
     <string name="animal_capybara">Pohodbara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Odoslať spätnú väzbu</string>
+    <string name="feedback_title">Odoslať spätnú väzbu</string>
+    <string name="feedback_category_problem">Problém</string>
+    <string name="feedback_category_idea">Nápad</string>
+    <string name="feedback_category_other">Niečo iné</string>
+    <string name="feedback_message_label">Tvoja správa</string>
+    <string name="feedback_include_info">Priložiť verziu aplikácie, jazyk a model zariadenia</string>
+    <string name="feedback_privacy_note">Otvorí sa tvoja e-mailová aplikácia s konceptom správy na %1$s. Nič sa neodošle, kým ju tam neodošleš; samotná hra sa nikdy nepripája na internet.</string>
+    <string name="feedback_send">Odoslať</string>
+    <string name="feedback_no_email_app">Nenašla sa žiadna e-mailová aplikácia. Môžeš napísať na %1$s.</string>
+    <string name="enjoy_title">Baví ťa táto hra?</string>
+    <string name="enjoy_body">Hodnotenie na Google Play pomôže ostatným hráčom ju nájsť. Ak niečo nie je v poriadku, napíš nám, čo zlepšiť.</string>
+    <string name="enjoy_plea">Vaša spätná väzba je kľúčová pre vývoj bezplatného softvéru.</string>
+    <string name="enjoy_yes">Áno</string>
+    <string name="enjoy_no">Ani nie</string>
 </resources>

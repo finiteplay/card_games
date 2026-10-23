@@ -149,4 +149,21 @@
     <string name="animal_fox">능청여우</string>
     <string name="animal_honey_badger">꿀배짱</string>
     <string name="animal_capybara">느긋바라</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">의견 보내기</string>
+    <string name="feedback_title">의견 보내기</string>
+    <string name="feedback_category_problem">문제</string>
+    <string name="feedback_category_idea">아이디어</string>
+    <string name="feedback_category_other">기타</string>
+    <string name="feedback_message_label">메시지</string>
+    <string name="feedback_include_info">앱 버전, 언어, 기기 모델 포함</string>
+    <string name="feedback_privacy_note">이메일 앱에서 %1$s 주소로 보낼 초안이 열립니다. 그곳에서 직접 보내기 전에는 아무것도 전송되지 않으며, 게임 자체는 인터넷에 연결되지 않습니다.</string>
+    <string name="feedback_send">보내기</string>
+    <string name="feedback_no_email_app">이메일 앱을 찾을 수 없습니다. %1$s 주소로 연락해 주세요.</string>
+    <string name="enjoy_title">이 게임이 마음에 드시나요?</string>
+    <string name="enjoy_body">Google Play에 평점을 남겨 주시면 다른 플레이어가 이 게임을 찾는 데 도움이 됩니다. 아쉬운 점이 있다면 무엇을 개선하면 좋을지 알려 주세요.</string>
+    <string name="enjoy_plea">여러분의 의견은 무료 소프트웨어 개발에 매우 중요합니다.</string>
+    <string name="enjoy_yes">네</string>
+    <string name="enjoy_no">그저 그래요</string>
 </resources>

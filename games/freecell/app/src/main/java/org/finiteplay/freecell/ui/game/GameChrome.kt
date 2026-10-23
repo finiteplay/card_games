@@ -51,6 +51,8 @@ import org.finiteplay.core.ui.theme.LocalAppColors
 import org.finiteplay.freecell.R
 import org.finiteplay.core.ui.layout.appendCounters
 import org.finiteplay.core.ui.layout.counterIcons
+import androidx.compose.foundation.text.TextAutoSize
+import androidx.compose.ui.unit.sp
 
 /**
  * The game's name and what it currently reads: title on the leading edge, the hand number and
@@ -118,6 +120,8 @@ internal fun StatusRow(
                 textAlign = TextAlign.Center,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
+                // Shrinks before it cuts: a long level name in a language like Japanese leaves the row narrow.
+                autoSize = TextAutoSize.StepBased(minFontSize = 9.sp, maxFontSize = statusStyle.fontSize, stepSize = 0.5.sp),
                 modifier = Modifier.testTag("status_row"),
             )
         }

@@ -149,4 +149,21 @@
     <string name="animal_fox">दाँवू</string>
     <string name="animal_honey_badger">शहदवीर</string>
     <string name="animal_capybara">मस्तबारा</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">फ़ीडबैक भेजें</string>
+    <string name="feedback_title">फ़ीडबैक भेजें</string>
+    <string name="feedback_category_problem">समस्या</string>
+    <string name="feedback_category_idea">सुझाव</string>
+    <string name="feedback_category_other">कुछ और</string>
+    <string name="feedback_message_label">आपका संदेश</string>
+    <string name="feedback_include_info">ऐप संस्करण, भाषा और डिवाइस मॉडल जोड़ें</string>
+    <string name="feedback_privacy_note">इससे आपका ईमेल ऐप %1$s के लिए एक ड्राफ़्ट के साथ खुलेगा। जब तक आप वहाँ से नहीं भेजते, कुछ भी नहीं भेजा जाता; खेल खुद कभी ऑनलाइन नहीं होता।</string>
+    <string name="feedback_send">भेजें</string>
+    <string name="feedback_no_email_app">कोई ईमेल ऐप नहीं मिला। आप %1$s पर लिख सकते हैं।</string>
+    <string name="enjoy_title">क्या आपको यह खेल पसंद आ रहा है?</string>
+    <string name="enjoy_body">Google Play पर रेटिंग देने से दूसरे खिलाड़ियों को इसे ढूँढ़ने में मदद मिलती है। अगर कुछ ठीक नहीं लगा, तो हमें बताएँ कि क्या बेहतर करें।</string>
+    <string name="enjoy_plea">आपकी प्रतिक्रिया मुफ़्त सॉफ़्टवेयर के विकास के लिए बेहद ज़रूरी है।</string>
+    <string name="enjoy_yes">हाँ</string>
+    <string name="enjoy_no">ज़्यादा नहीं</string>
 </resources>

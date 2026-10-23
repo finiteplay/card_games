@@ -48,6 +48,8 @@ import org.finiteplay.holdem.storage.StoredTournament
 import org.finiteplay.holdem.storage.settleHand
 import org.finiteplay.holdem.storage.settleTournament
 import java.security.SecureRandom
+import org.finiteplay.core.ui.feedback.EnjoyController
+import org.finiteplay.core.session.isPodiumFinish
 
 /** What the table's chrome reads: the settings store's values, or these defaults when none is attached. */
 data class TableSettings(
@@ -164,6 +166,8 @@ class HoldemViewModel(
     /** The two stores in their write order; null keeps the tournament in memory, as the tests do. */
     private val storage: HoldemGameStorage? = null,
     private val settingsStore: HoldemSettingsStore? = null,
+    /** The "enjoying this game?" question (`docs/PLATFORM.md` "Feedback and rating"); null in tests that do not exercise it. */
+    val enjoy: EnjoyController? = null,
 ) : ViewModel() {
 
     var settings by mutableStateOf(initialSettings)
@@ -344,6 +348,8 @@ class HoldemViewModel(
     fun newTournament() {
         playJob?.cancel()
         playJob = null
+        // Moving on from a finished tournament: the "enjoying this game?" question, if a good finish made it due.
+        if (table.stage == Stage.TOURNAMENT_OVER) enjoy?.moveOn()
         endDialog = null
         leaveConfirmVisible = false
         viewModelScope.launch(start = CoroutineStart.UNDISPATCHED) { begin() }
@@ -497,6 +503,7 @@ class HoldemViewModel(
 
     fun dismissEndDialog() {
         endDialog = null
+        enjoy?.moveOn()
     }
 
     // ---- presentation ----------------------------------------------------------------------
@@ -540,7 +547,11 @@ class HoldemViewModel(
         val bestOpponent = table.seats.drop(1).filter { it.contesting }.mapNotNull { it.handValue }.maxOrNull()?.let(::categoryOf)
         val hindsight = if (me.folded) state.hindsightResult(0) else null
         handReview = me.net?.let { reviewOf(hintUse, it, me.folded, bestOpponent, hindsight) }
-        if (table.stage == Stage.TOURNAMENT_OVER) showEnd()
+        if (table.stage == Stage.TOURNAMENT_OVER) {
+            showEnd()
+            // First or second place is a good result; the question waits for the end dialog to be dealt with.
+            if (state.places[0]?.let(::isPodiumFinish) == true) enjoy?.goodResult()
+        }
     }
 
     private fun showEnd() {

@@ -149,4 +149,22 @@
     <string name="animal_fox">Αλεποτρότ</string>
     <string name="animal_honey_badger">Ασβουλίνο</string>
     <string name="animal_capybara">Χαλαμπάρα</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Αποστολή σχολίων</string>
+    <string name="feedback_title">Αποστολή σχολίων</string>
+    <string name="feedback_category_problem">Πρόβλημα</string>
+    <string name="feedback_category_idea">Ιδέα</string>
+    <string name="feedback_category_other">Κάτι άλλο</string>
+    <string name="feedback_message_label">Το μήνυμά σας</string>
+    <string name="feedback_include_info">Προσθήκη έκδοσης εφαρμογής, γλώσσας και μοντέλου συσκευής</string>
+    <string name="feedback_privacy_note">Ανοίγει την εφαρμογή email σας με ένα πρόχειρο προς %1$s. Δεν αποστέλλεται τίποτα μέχρι να το στείλετε από εκεί· το ίδιο το παιχνίδι δεν συνδέεται ποτέ στο διαδίκτυο.</string>
+    <string name="feedback_send">Αποστολή</string>
+    <string name="feedback_no_email_app">Δεν βρέθηκε εφαρμογή email. Μπορείτε να γράψετε στο %1$s.</string>
+    <string name="enjoy_title">Σας αρέσει το παιχνίδι;</string>
+    <string name="enjoy_body">Μια βαθμολογία στο Google Play βοηθά άλλους παίκτες να το βρουν. Αν κάτι δεν πάει καλά, πείτε μας τι να βελτιώσουμε.</string>
+    <string name="enjoy_plea">Τα σχόλιά σας είναι ζωτικής σημασίας για την ανάπτυξη δωρεάν λογισμικού.</string>
+    <string name="enjoy_yes">Ναι</string>
+    <string name="enjoy_no">Όχι ιδιαίτερα</string>
 </resources>

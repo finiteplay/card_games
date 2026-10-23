@@ -77,6 +77,7 @@ import org.finiteplay.klondike.storage.filterByPeriod
 import org.finiteplay.klondike.storage.shouldRunTimer
 import java.util.UUID
 import kotlin.time.Duration.Companion.seconds
+import org.finiteplay.core.ui.feedback.EnjoyController
 
 /** D1a/S1 own real deal versioning; A2a fixes every version at 1 (`EXECUTION_PLAN.md` A1). */
 private val PLACEHOLDER_VERSIONS = GameVersions(catalogVersion = 1, rulesVersion = 1, shuffleVersion = 1)
@@ -211,6 +212,8 @@ class GameViewModel(
     private val catalogLoader: (() -> CertifiedDealCatalog.LoadResult)? = null,
     /** Which deals have been played and won; null in tests that do not exercise it (progress is then kept in memory only). */
     private val dealProgressStore: DealProgressStore? = null,
+    /** The "enjoying this game?" question (`docs/PLATFORM.md` "Feedback and rating"); null in tests that do not exercise it. */
+    val enjoy: EnjoyController? = null,
 ) : ViewModel() {
 
     // Not drawn from seedSource: drawing here, unconditionally, would advance the
@@ -643,6 +646,8 @@ class GameViewModel(
             levelUpOffer = offer
             return
         }
+        // Moving on from a win: the "enjoying this game?" question, if the win made it due, opens over the new deal.
+        if (session.state.isWon) enjoy?.moveOn()
         if (needsConfirmation()) pendingConfirmation = PendingConfirmation.NEW_GAME else performNewGame()
     }
 
@@ -1287,6 +1292,7 @@ class GameViewModel(
             difficulty = dealDifficulty,
         )
         val wonTier = dealDifficulty
+        if (outcome == Outcome.WIN) enjoy?.goodResult()
         viewModelScope.launch {
             historyStore.upsert(record)
             if (outcome == Outcome.WIN && wonTier != null) {

@@ -149,4 +149,22 @@
     <string name="animal_fox">Лисотрот</string>
     <string name="animal_honey_badger">Язовчино</string>
     <string name="animal_capybara">Кефибара</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Изпрати отзив</string>
+    <string name="feedback_title">Изпрати отзив</string>
+    <string name="feedback_category_problem">Проблем</string>
+    <string name="feedback_category_idea">Идея</string>
+    <string name="feedback_category_other">Друго</string>
+    <string name="feedback_message_label">Вашето съобщение</string>
+    <string name="feedback_include_info">Добави версия на приложението, език и модел на устройството</string>
+    <string name="feedback_privacy_note">Това отваря вашето приложение за имейл с чернова до %1$s. Нищо не се изпраща, докато не я изпратите оттам; самата игра никога не се свързва с интернет.</string>
+    <string name="feedback_send">Изпрати</string>
+    <string name="feedback_no_email_app">Няма намерено приложение за имейл. Можете да пишете на %1$s.</string>
+    <string name="enjoy_title">Харесва ли ви играта?</string>
+    <string name="enjoy_body">Оценка в Google Play помага на други играчи да я намерят. Ако нещо не е наред, кажете ни какво да подобрим.</string>
+    <string name="enjoy_plea">Вашата обратна връзка е от решаващо значение за развитието на безплатния софтуер.</string>
+    <string name="enjoy_yes">Да</string>
+    <string name="enjoy_no">Не съвсем</string>
 </resources>

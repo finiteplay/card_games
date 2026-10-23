@@ -44,6 +44,9 @@ android {
 dependencies {
     api(libs.datastore.preferences)
     api(libs.kotlinx.coroutines.core)
+    // The engagement record the store keeps (`Engagement`) is defined with the rules that read it. core:session
+    // depends on no other project, so this direction cannot cycle.
+    api(project(":core:session"))
 
     testImplementation(libs.junit4)
     testImplementation(libs.kotlinx.coroutines.test)

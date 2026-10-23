@@ -149,4 +149,21 @@
     <string name="animal_fox">ثعلوب</string>
     <string name="animal_honey_badger">مقدام</string>
     <string name="animal_capybara">رايقبارا</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The form only opens the player's email app; the game never goes online. -->
+    <string name="about_send_feedback">إرسال ملاحظات</string>
+    <string name="feedback_title">إرسال ملاحظات</string>
+    <string name="feedback_category_problem">مشكلة</string>
+    <string name="feedback_category_idea">فكرة</string>
+    <string name="feedback_category_other">شيء آخر</string>
+    <string name="feedback_message_label">رسالتك</string>
+    <string name="feedback_include_info">إرفاق الإصدار واللغة وطراز الجهاز</string>
+    <string name="feedback_privacy_note">سيفتح هذا تطبيق البريد الإلكتروني مع مسودة موجهة إلى %1$s. لن يُرسَل أي شيء حتى ترسلها من هناك، واللعبة نفسها لا تتصل بالإنترنت أبدًا.</string>
+    <string name="feedback_send">إرسال</string>
+    <string name="feedback_no_email_app">لم يتم العثور على تطبيق بريد إلكتروني. يمكنك مراسلتنا على %1$s.</string>
+    <string name="enjoy_title">هل تستمتع بهذه اللعبة؟</string>
+    <string name="enjoy_body">تقييمك على Google Play يساعد اللاعبين الآخرين في العثور عليها. وإذا كان هناك شيء غير مناسب، فأخبرنا بما يمكننا تحسينه.</string>
+    <string name="enjoy_plea">ملاحظاتك ضرورية لتطوير البرمجيات المجانية.</string>
+    <string name="enjoy_yes">نعم</string>
+    <string name="enjoy_no">ليس تمامًا</string>
 </resources>

@@ -161,4 +161,23 @@
     <string name="animal_fox">Foxtrot</string>
     <string name="animal_honey_badger">Badgerino</string>
     <string name="animal_capybara">Chillbara</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="feedback_email" translatable="false">contact@finiteplay.org</string>
+    <string name="about_send_feedback">Send feedback</string>
+    <string name="feedback_title">Send feedback</string>
+    <string name="feedback_category_problem">Problem</string>
+    <string name="feedback_category_idea">Idea</string>
+    <string name="feedback_category_other">Something else</string>
+    <string name="feedback_message_label">Your message</string>
+    <string name="feedback_include_info">Include app version, language and device model</string>
+    <string name="feedback_privacy_note">This opens your email app with a draft to %1$s. Nothing is sent until you send it there; the game itself never goes online.</string>
+    <string name="feedback_send">Send</string>
+    <string name="feedback_no_email_app">No email app found. You can write to %1$s.</string>
+    <string name="enjoy_title">Enjoying this game?</string>
+    <string name="enjoy_body">A rating on Google Play helps other players find it. If something is not right, tell us what to improve.</string>
+    <string name="enjoy_plea">Your feedback is crucial for the development of free software.</string>
+    <string name="enjoy_yes">Yes</string>
+    <string name="enjoy_no">Not really</string>
 </resources>

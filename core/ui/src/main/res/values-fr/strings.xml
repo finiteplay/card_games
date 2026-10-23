@@ -149,4 +149,22 @@
     <string name="animal_fox">Renarnaque</string>
     <string name="animal_honey_badger">Bagarmiel</string>
     <string name="animal_capybara">Capépère</string>
+
+    <!-- Feedback and the rating question (docs/PLATFORM.md "Feedback and rating"). The address is the support contact
+         every store listing gives; the form only opens the player's email app, the game never goes online. -->
+    <string name="about_send_feedback">Envoyer des commentaires</string>
+    <string name="feedback_title">Envoyer des commentaires</string>
+    <string name="feedback_category_problem">Problème</string>
+    <string name="feedback_category_idea">Idée</string>
+    <string name="feedback_category_other">Autre chose</string>
+    <string name="feedback_message_label">Votre message</string>
+    <string name="feedback_include_info">Inclure la version de l\'application, la langue et le modèle de l\'appareil</string>
+    <string name="feedback_privacy_note">Cela ouvre votre application de messagerie avec un brouillon adressé à %1$s. Rien n\'est envoyé tant que vous ne l\'envoyez pas depuis celle-ci ; le jeu lui-même ne se connecte jamais à Internet.</string>
+    <string name="feedback_send">Envoyer</string>
+    <string name="feedback_no_email_app">Aucune application de messagerie trouvée. Vous pouvez écrire à %1$s.</string>
+    <string name="enjoy_title">Ce jeu vous plaît ?</string>
+    <string name="enjoy_body">Une note sur Google Play aide d\'autres joueurs à le trouver. Si quelque chose ne va pas, dites-nous ce qu\'il faut améliorer.</string>
+    <string name="enjoy_plea">Vos retours sont essentiels au développement de logiciels gratuits.</string>
+    <string name="enjoy_yes">Oui</string>
+    <string name="enjoy_no">Pas vraiment</string>
 </resources>
